@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NZ GST Calculator — NZ Tradie Tools</title>
+    <meta name="description" content="Add or remove 15% GST instantly. Works for any NZ tradie invoice or quote.">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+            <nav class="main-nav">
+                
+                <a href="/">Home</a>
+                
+                <a href="/calculators/">Calculators</a>
+                
+                <a href="/articles/">Articles</a>
+                
+                <a href="/contact/">Contact</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <div class="container page-layout">
+        <main class="main-content">
+            <h1>NZ GST Calculator</h1>
+            <p class="lead">Add or remove 15% GST instantly. Works for any NZ tradie invoice or quote.</p>
+
+            
+
+            <div class="calculator-wrapper">
+                <div class="calc-tabs">
+  <button class="calc-tab active" onclick="switchTab('add')">Add GST</button>
+  <button class="calc-tab" onclick="switchTab('remove')">Remove GST</button>
+</div>
+<div id="tab-add">
+  <div class="calc-grid">
+    <div class="calc-group" style="grid-column:1/-1">
+      <label>Amount (ex GST) — $</label>
+      <input type="number" id="add-amount" placeholder="e.g. 1000" oninput="calcAdd()">
+    </div>
+  </div>
+  <div class="calc-result" id="add-result" style="display:none">
+    <h3>Result</h3>
+    <div class="result-row"><span>Ex-GST amount</span><span id="add-ex"></span></div>
+    <div class="result-row"><span>GST (15%)</span><span id="add-gst"></span></div>
+    <div class="result-row"><span>Total (inc GST)</span><span id="add-inc"></span></div>
+  </div>
+</div>
+<div id="tab-remove" style="display:none">
+  <div class="calc-grid">
+    <div class="calc-group" style="grid-column:1/-1">
+      <label>Amount (inc GST) — $</label>
+      <input type="number" id="rem-amount" placeholder="e.g. 1150" oninput="calcRemove()">
+    </div>
+  </div>
+  <div class="calc-result" id="rem-result" style="display:none">
+    <h3>Result</h3>
+    <div class="result-row"><span>Ex-GST amount</span><span id="rem-ex"></span></div>
+    <div class="result-row"><span>GST (15%)</span><span id="rem-gst"></span></div>
+    <div class="result-row"><span>Total (inc GST)</span><span id="rem-inc"></span></div>
+  </div>
+</div>
+<script>
+function fmt(n){return '$'+n.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g,',');}
+function switchTab(t){
+  document.querySelectorAll('.calc-tab').forEach(function(b,i){b.classList.toggle('active',i===(t==='add'?0:1));});
+  document.getElementById('tab-add').style.display=t==='add'?'':'none';
+  document.getElementById('tab-remove').style.display=t==='remove'?'':'none';
+}
+function calcAdd(){
+  var v=parseFloat(document.getElementById('add-amount').value);
+  var r=document.getElementById('add-result');
+  if(isNaN(v)||v<0){r.style.display='none';return;}
+  var gst=v*0.15,inc=v+gst;
+  document.getElementById('add-ex').textContent=fmt(v);
+  document.getElementById('add-gst').textContent=fmt(gst);
+  document.getElementById('add-inc').textContent=fmt(inc);
+  r.style.display='';
+}
+function calcRemove(){
+  var v=parseFloat(document.getElementById('rem-amount').value);
+  var r=document.getElementById('rem-result');
+  if(isNaN(v)||v<0){r.style.display='none';return;}
+  var ex=v/1.15,gst=v-ex;
+  document.getElementById('rem-ex').textContent=fmt(ex);
+  document.getElementById('rem-gst').textContent=fmt(gst);
+  document.getElementById('rem-inc').textContent=fmt(v);
+  r.style.display='';
+}
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="how-gst-works-for-nz-tradies">How GST Works for NZ Tradies</h2>
+<p>New Zealand's Goods and Services Tax (GST) is a flat 15% added to most goods and services. If your business earns more than $60,000 in a 12-month period, you must register for GST with Inland Revenue (IRD).</p>
+<h3 id="key-gst-rules-for-tradies">Key GST Rules for Tradies</h3>
+<ul>
+<li><strong>GST registration threshold:</strong> $60,000 turnover in any 12-month period</li>
+<li><strong>GST rate:</strong> 15% flat (no reduced or zero rates for standard tradie work)</li>
+<li><strong>Filing frequency:</strong> Monthly, two-monthly, or six-monthly depending on turnover</li>
+<li><strong>Tax invoices required</strong> for any sale over $50 to a GST-registered customer</li>
+</ul>
+<h3 id="what-to-include-on-a-gst-invoice">What to Include on a GST Invoice</h3>
+<p>Your tax invoice must show:
+- The words "tax invoice" clearly
+- Your name and GST registration number
+- Date of supply
+- Description of goods or services
+- Amount ex-GST, GST charged, and total inc-GST</p>
+<h3 id="common-gst-mistakes-tradies-make">Common GST Mistakes Tradies Make</h3>
+<ol>
+<li><strong>Forgetting to add GST to quotes</strong> — always quote ex-GST and show GST separately</li>
+<li><strong>Claiming GST on private expenses</strong> — you can only claim GST on business purchases</li>
+<li><strong>Missing the registration threshold</strong> — IRD can back-date your registration and send a bill</li>
+</ol>
+<p>Use <a href="https://www.xero.com/nz/"><a href="https://www.xero.com/nz/" rel="sponsored noopener" target="_blank">Xero</a></a> or <a href="https://www.myob.com/nz/">MYOB</a> to automate GST filing and avoid errors.</p>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator.html">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator.html">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator.html">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator.html">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator.html">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://www.xero.com/nz/" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 NZ Tradie Tools. All rights reserved.</p>
+            <p class="disclosure">Some links on this site are affiliate links — we may earn a commission at no extra cost to you.</p>
+        </div>
+    </footer>
+</body>
+</html>

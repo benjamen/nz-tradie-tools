@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NZ Tradie Tools — Free Calculators &amp; Guides for New Zealand Tradies</title>
+    <meta name="description" content="{{ description }}">
+    <link rel="stylesheet" href="/static/css/style.css">
+    {% if adsense_id %}
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ adsense_id }}" crossorigin="anonymous"></script>
+    {% endif %}
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+            <nav class="main-nav">
+                {% for item in nav %}
+                <a href="{{ item.url }}">{{ item.label }}</a>
+                {% endfor %}
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Free Tools &amp; Guides for NZ Tradies</h1>
+            <p>GST calculators, hourly rate tools, job costing, tax guides — everything a New Zealand tradie needs to run a smarter business.</p>
+            <a href="/calculators/" class="btn-primary">Browse Free Calculators →</a>
+        </div>
+    </section>
+
+    <div class="container">
+        {% if adsense_id %}
+        <ins class="adsbygoogle ad-banner" style="display:block" data-ad-client="{{ adsense_id }}" data-ad-slot="HOME_TOP" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        {% endif %}
+
+        <section class="section">
+            <h2>Free Calculators</h2>
+            <div class="card-grid">
+                {% for calc in calculators %}
+                <a href="{{ calc.url }}" class="card">
+                    <h3>{{ calc.title }}</h3>
+                    <p>{{ calc.description }}</p>
+                </a>
+                {% endfor %}
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Latest Articles</h2>
+            <div class="article-list">
+                {% for article in articles %}
+                <div class="article-card">
+                    <a href="{{ article.url }}"><h3>{{ article.title }}</h3></a>
+                    <div class="article-meta">{{ article.date }}</div>
+                    <p>{{ article.description }}</p>
+                    {% if article.tags %}
+                    <div class="tags">
+                        {% for tag in article.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+            <p><a href="/articles/">View all articles →</a></p>
+        </section>
+
+        <section class="section cta-box">
+            <h2>Get Free NZ Tradie Templates</h2>
+            <p>Quote templates, compliance checklists, vehicle log books — free for NZ tradies.</p>
+            <form action="{{ formspree_endpoint }}" method="POST" class="lead-form">
+                <input type="text" name="name" placeholder="Your name" required>
+                <input type="text" name="trade" placeholder="Your trade (builder, plumber, sparky...)">
+                <input type="text" name="region" placeholder="NZ region">
+                <input type="email" name="email" placeholder="Email address" required>
+                <button type="submit">Send me the free templates →</button>
+            </form>
+        </section>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; {{ year }} NZ Tradie Tools. All rights reserved.</p>
+            <p class="disclosure">Some links on this site are affiliate links — we may earn a commission at no extra cost to you. We only recommend tools we'd genuinely use.</p>
+        </div>
+    </footer>
+</body>
+</html>

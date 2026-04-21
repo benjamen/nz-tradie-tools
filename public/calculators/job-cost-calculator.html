@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NZ Job Cost & Quote Builder — NZ Tradie Tools</title>
+    <meta name="description" content="Calculate job costs, apply your markup, and produce a quote price with GST for NZ tradie jobs.">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+            <nav class="main-nav">
+                
+                <a href="/">Home</a>
+                
+                <a href="/calculators/">Calculators</a>
+                
+                <a href="/articles/">Articles</a>
+                
+                <a href="/contact/">Contact</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <div class="container page-layout">
+        <main class="main-content">
+            <h1>NZ Job Cost & Quote Builder</h1>
+            <p class="lead">Calculate job costs, apply your markup, and produce a quote price with GST for NZ tradie jobs.</p>
+
+            
+
+            <div class="calculator-wrapper">
+                <div class="calc-grid">
+  <div class="calc-group">
+    <label>Labour cost (ex GST) — $</label>
+    <input type="number" id="labour" value="0" oninput="calcJob()">
+  </div>
+  <div class="calc-group">
+    <label>Materials cost (ex GST) — $</label>
+    <input type="number" id="materials" value="0" oninput="calcJob()">
+  </div>
+  <div class="calc-group">
+    <label>Subcontractor cost (ex GST) — $</label>
+    <input type="number" id="sub" value="0" oninput="calcJob()">
+  </div>
+  <div class="calc-group">
+    <label>Other costs (ex GST) — $</label>
+    <input type="number" id="other" value="0" oninput="calcJob()">
+  </div>
+  <div class="calc-group">
+    <label>Markup on labour %</label>
+    <input type="number" id="labour-markup" value="20" oninput="calcJob()">
+  </div>
+  <div class="calc-group">
+    <label>Markup on materials %</label>
+    <input type="number" id="mat-markup" value="15" oninput="calcJob()">
+  </div>
+</div>
+<div class="calc-result" id="job-result">
+  <h3>Quote Summary</h3>
+  <div class="result-row"><span>Labour (with markup)</span><span id="j-labour"></span></div>
+  <div class="result-row"><span>Materials (with markup)</span><span id="j-mat"></span></div>
+  <div class="result-row"><span>Subcontractors</span><span id="j-sub"></span></div>
+  <div class="result-row"><span>Other costs</span><span id="j-other"></span></div>
+  <div class="result-row"><span>Subtotal (ex GST)</span><span id="j-sub-total"></span></div>
+  <div class="result-row"><span>GST (15%)</span><span id="j-gst"></span></div>
+  <div class="result-row"><span>Total quote price (inc GST)</span><span id="j-total"></span></div>
+  <div class="result-row"><span>Your gross profit</span><span id="j-profit" class="result-highlight"></span></div>
+</div>
+<script>
+function fmt(n){return '$'+n.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g,',');}
+function calcJob(){
+  var lab=parseFloat(document.getElementById('labour').value)||0;
+  var mat=parseFloat(document.getElementById('materials').value)||0;
+  var sub=parseFloat(document.getElementById('sub').value)||0;
+  var oth=parseFloat(document.getElementById('other').value)||0;
+  var lm=parseFloat(document.getElementById('labour-markup').value)||0;
+  var mm=parseFloat(document.getElementById('mat-markup').value)||0;
+  var labCharge=lab*(1+lm/100);
+  var matCharge=mat*(1+mm/100);
+  var subtotal=labCharge+matCharge+sub+oth;
+  var gst=subtotal*0.15;
+  var total=subtotal+gst;
+  var profit=(labCharge-lab)+(matCharge-mat);
+  document.getElementById('j-labour').textContent=fmt(labCharge);
+  document.getElementById('j-mat').textContent=fmt(matCharge);
+  document.getElementById('j-sub').textContent=fmt(sub);
+  document.getElementById('j-other').textContent=fmt(oth);
+  document.getElementById('j-sub-total').textContent=fmt(subtotal);
+  document.getElementById('j-gst').textContent=fmt(gst);
+  document.getElementById('j-total').textContent=fmt(total);
+  document.getElementById('j-profit').textContent=fmt(profit);
+}
+calcJob();
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="how-to-build-an-accurate-job-quote">How to Build an Accurate Job Quote</h2>
+<p>Winning jobs is great, but winning profitable jobs is better. Many NZ tradies underprice their work because they forget to account for all costs and apply the right markup.</p>
+<h3 id="the-difference-between-markup-and-margin">The Difference Between Markup and Margin</h3>
+<p>This trips up many tradies:</p>
+<ul>
+<li><strong>Markup</strong> — the percentage you add on top of your cost (e.g. cost $100, markup 20% = charge $120)</li>
+<li><strong>Margin</strong> — the percentage of the selling price that is profit (e.g. sell $120, profit $20 = 16.7% margin)</li>
+</ul>
+<p>A 20% markup gives you a 16.7% gross margin — not 20%.</p>
+<h3 id="typical-markup-rates-for-nz-tradies">Typical Markup Rates for NZ Tradies</h3>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Common markup</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Labour</td>
+<td>15–30%</td>
+</tr>
+<tr>
+<td>Materials</td>
+<td>10–20%</td>
+</tr>
+<tr>
+<td>Subcontractors</td>
+<td>5–15%</td>
+</tr>
+<tr>
+<td>Plant/equipment hire</td>
+<td>10–15%</td>
+</tr>
+</tbody>
+</table>
+<h3 id="what-to-always-include-in-a-quote">What to Always Include in a Quote</h3>
+<ol>
+<li>All labour time (including travel, site prep, cleanup)</li>
+<li>Materials at supplier cost — then apply your markup</li>
+<li>Any subcontractor or hire costs</li>
+<li>A contingency for variations (5–10% on complex jobs)</li>
+<li>GST clearly shown separately</li>
+</ol>
+<h3 id="quote-presentation-tips">Quote Presentation Tips</h3>
+<ul>
+<li>Use a professional template — <a href="https://www.tradifyhq.com/"><a href="https://www.tradifyhq.com/" rel="sponsored noopener" target="_blank">Tradify</a></a> and <a href="https://www.fergus.com/"><a href="https://www.fergus.com/" rel="sponsored noopener" target="_blank">Fergus</a></a> both produce great-looking quotes</li>
+<li>Always specify what's <strong>included</strong> and what's <strong>excluded</strong></li>
+<li>Set a quote validity period (e.g. 30 days)</li>
+<li>Require a deposit on large jobs (10–20% is standard)</li>
+</ul>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator.html">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator.html">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator.html">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator.html">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator.html">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://www.xero.com/nz/" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 NZ Tradie Tools. All rights reserved.</p>
+            <p class="disclosure">Some links on this site are affiliate links — we may earn a commission at no extra cost to you.</p>
+        </div>
+    </footer>
+</body>
+</html>

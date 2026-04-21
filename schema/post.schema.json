@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "title": { "type": "string" },
+    "date": { "type": "string", "format": "date" },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "author": { "type": "string" },
+    "draft": { "type": "boolean" }
+  },
+  "required": ["title", "date", "author"]
+}

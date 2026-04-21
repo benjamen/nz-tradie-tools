@@ -1,0 +1,22 @@
+{
+  "title": "NZ Tradie Tools",
+  "description": "Free calculators, guides, and tools for New Zealand tradies — builders, plumbers, electricians, painters and more.",
+  "base_url": "https://benbroadway.github.io/nz-tradie-tools",
+  "author": "NZ Tradie Tools",
+  "adsense_id": "",
+  "formspree_endpoint": "https://formspree.io/f/REPLACE_ME",
+  "affiliates": {
+    "xero": "https://www.xero.com/nz/",
+    "fergus": "https://www.fergus.com/",
+    "tradify": "https://www.tradifyhq.com/",
+    "myob": "https://www.myob.com/nz/",
+    "simpro": "https://www.simprogroup.com/",
+    "buildxact": "https://www.buildxact.com/nz/"
+  },
+  "nav": [
+    {"label": "Home", "url": "/"},
+    {"label": "Calculators", "url": "/calculators/"},
+    {"label": "Articles", "url": "/articles/"},
+    {"label": "Contact", "url": "/contact/"}
+  ]
+}

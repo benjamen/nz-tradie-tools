@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page_title }}</title>
+    <meta name="description" content="{{ description }}">
+    <link rel="stylesheet" href="/static/css/style.css">
+    {% if adsense_id %}
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ adsense_id }}" crossorigin="anonymous"></script>
+    {% endif %}
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+            <nav class="main-nav">
+                {% for item in nav %}
+                <a href="{{ item.url }}">{{ item.label }}</a>
+                {% endfor %}
+            </nav>
+        </div>
+    </header>
+
+    <div class="container" style="padding-top:2rem">
+        <h1>{{ section_label }}</h1>
+
+        {% if section == "calculators" %}
+        <div class="card-grid">
+            {% for page in pages %}
+            <a href="{{ page.url }}" class="card">
+                <h3>{{ page.title }}</h3>
+                <p>{{ page.description }}</p>
+            </a>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="article-list">
+            {% for page in pages %}
+            <div class="article-card">
+                <a href="{{ page.url }}"><h3>{{ page.title }}</h3></a>
+                <div class="article-meta">{{ page.date }}</div>
+                <p>{{ page.description }}</p>
+                {% if page.tags %}
+                <div class="tags">
+                    {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+                </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; {{ year }} NZ Tradie Tools. All rights reserved.</p>
+            <p class="disclosure">Some links on this site are affiliate links — we may earn a commission at no extra cost to you.</p>
+        </div>
+    </footer>
+</body>
+</html>

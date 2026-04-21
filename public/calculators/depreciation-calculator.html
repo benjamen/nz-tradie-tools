@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NZ Tool & Equipment Depreciation Calculator — NZ Tradie Tools</title>
+    <meta name="description" content="Calculate the annual depreciation deduction for your tools and equipment using the IRD diminishing value method.">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+            <nav class="main-nav">
+                
+                <a href="/">Home</a>
+                
+                <a href="/calculators/">Calculators</a>
+                
+                <a href="/articles/">Articles</a>
+                
+                <a href="/contact/">Contact</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <div class="container page-layout">
+        <main class="main-content">
+            <h1>NZ Tool & Equipment Depreciation Calculator</h1>
+            <p class="lead">Calculate the annual depreciation deduction for your tools and equipment using the IRD diminishing value method.</p>
+
+            
+
+            <div class="calculator-wrapper">
+                <div class="calc-grid">
+  <div class="calc-group">
+    <label>Purchase price (ex GST) — $</label>
+    <input type="number" id="price" placeholder="e.g. 5000" oninput="calcDep()">
+  </div>
+  <div class="calc-group">
+    <label>Depreciation rate (DV%) — IRD rate</label>
+    <select id="dep-rate" onchange="calcDep()">
+      <option value="30">30% — Power tools, hand tools</option>
+      <option value="25">25% — Ladders, scaffolding</option>
+      <option value="20">20% — Work vehicles (cars/utes)</option>
+      <option value="13.5">13.5% — Trailers</option>
+      <option value="48">48% — Computers, tablets</option>
+      <option value="67">67% — Mobile phones</option>
+      <option value="custom">Custom rate</option>
+    </select>
+  </div>
+  <div class="calc-group" id="custom-group" style="display:none">
+    <label>Custom DV rate %</label>
+    <input type="number" id="custom-rate" placeholder="e.g. 25" oninput="calcDep()">
+  </div>
+  <div class="calc-group">
+    <label>Years to show</label>
+    <input type="number" id="years" value="5" min="1" max="15" oninput="calcDep()">
+  </div>
+  <div class="calc-group">
+    <label>Business use %</label>
+    <input type="number" id="bus-pct" value="100" min="1" max="100" oninput="calcDep()">
+  </div>
+</div>
+<div id="dep-result" style="display:none;margin-top:1.25rem">
+  <div class="calc-result">
+    <h3>Depreciation Schedule</h3>
+    <div id="dep-table"></div>
+  </div>
+</div>
+<script>
+document.getElementById('dep-rate').addEventListener('change',function(){
+  document.getElementById('custom-group').style.display=this.value==='custom'?'':'none';
+  calcDep();
+});
+function fmt(n){return '$'+n.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g,',');}
+function calcDep(){
+  var price=parseFloat(document.getElementById('price').value);
+  var sel=document.getElementById('dep-rate').value;
+  var rate=sel==='custom'?parseFloat(document.getElementById('custom-rate').value):parseFloat(sel);
+  var yrs=parseInt(document.getElementById('years').value)||5;
+  var bus=parseFloat(document.getElementById('bus-pct').value)||100;
+  var res=document.getElementById('dep-result');
+  if(isNaN(price)||price<=0||isNaN(rate)||rate<=0){res.style.display='none';return;}
+  var html='<div class="result-row" style="font-weight:600"><span>Year</span><span>Depreciation</span><span>Book value</span><span>Tax deduction</span></div>';
+  var val=price;
+  for(var y=1;y<=yrs;y++){
+    var dep=val*(rate/100);
+    var deduct=dep*(bus/100);
+    val=val-dep;
+    html+='<div class="result-row"><span>Year '+y+'</span><span>'+fmt(dep)+'</span><span>'+fmt(val)+'</span><span class="result-highlight">'+fmt(deduct)+'</span></div>';
+  }
+  document.getElementById('dep-table').innerHTML=html;
+  res.style.display='';
+}
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="how-depreciation-works-for-nz-tradies">How Depreciation Works for NZ Tradies</h2>
+<p>When you buy tools or equipment for your business, you generally can't deduct the full cost in the year of purchase (unless it's under $1,000 — see low-value asset rule below). Instead, you claim depreciation over the asset's useful life.</p>
+<h3 id="the-low-value-asset-rule">The Low-Value Asset Rule</h3>
+<p><strong>Good news:</strong> Items costing $1,000 or less (ex GST) can be written off in full in the year of purchase. This covers most hand tools, drill bits, small power tools, and accessories.</p>
+<p>For anything over $1,000, you depreciate it over time.</p>
+<h3 id="ird-depreciation-rates-for-tradies">IRD Depreciation Rates for Tradies</h3>
+<p>IRD publishes depreciation rates for different asset types. The <strong>diminishing value (DV)</strong> method is most common:</p>
+<table>
+<thead>
+<tr>
+<th>Asset</th>
+<th>DV rate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Power tools (drill, grinder, saw)</td>
+<td>30%</td>
+</tr>
+<tr>
+<td>Hand tools</td>
+<td>30%</td>
+</tr>
+<tr>
+<td>Ladders, scaffolding</td>
+<td>25%</td>
+</tr>
+<tr>
+<td>Work vehicles (utes, vans)</td>
+<td>20%</td>
+</tr>
+<tr>
+<td>Trailers</td>
+<td>13.5%</td>
+</tr>
+<tr>
+<td>Computers, tablets</td>
+<td>48%</td>
+</tr>
+<tr>
+<td>Mobile phones</td>
+<td>67%</td>
+</tr>
+</tbody>
+</table>
+<p>Full rate table at <a href="https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-income/depreciation">ird.govt.nz/depreciation</a>.</p>
+<h3 id="business-vs-private-use">Business vs Private Use</h3>
+<p>If you use equipment for both business and private purposes (e.g. a ute you also use on weekends), you can only claim the business-use percentage. Keep a logbook to support your claim.</p>
+<h3 id="tracking-depreciation">Tracking Depreciation</h3>
+<p>Your accountant or a tool like <a href="https://www.xero.com/nz/"><a href="https://www.xero.com/nz/" rel="sponsored noopener" target="_blank">Xero</a></a> can manage a fixed asset register that automatically calculates annual depreciation. Well worth it once you have more than a handful of assets.</p>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator.html">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator.html">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator.html">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator.html">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator.html">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://www.xero.com/nz/" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 NZ Tradie Tools. All rights reserved.</p>
+            <p class="disclosure">Some links on this site are affiliate links — we may earn a commission at no extra cost to you.</p>
+        </div>
+    </footer>
+</body>
+</html>

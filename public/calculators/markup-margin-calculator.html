@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markup vs Margin Calculator for NZ Tradies — NZ Tradie Tools</title>
+    <meta name="description" content="Convert between markup percentage and gross margin percentage — a common source of confusion that can cost tradies thousands.">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+            <nav class="main-nav">
+                
+                <a href="/">Home</a>
+                
+                <a href="/calculators/">Calculators</a>
+                
+                <a href="/articles/">Articles</a>
+                
+                <a href="/contact/">Contact</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <div class="container page-layout">
+        <main class="main-content">
+            <h1>Markup vs Margin Calculator for NZ Tradies</h1>
+            <p class="lead">Convert between markup percentage and gross margin percentage — a common source of confusion that can cost tradies thousands.</p>
+
+            
+
+            <div class="calculator-wrapper">
+                <div class="calc-tabs">
+  <button class="calc-tab active" onclick="switchMM('markup')">Markup → Margin</button>
+  <button class="calc-tab" onclick="switchMM('margin')">Margin → Markup</button>
+  <button class="calc-tab" onclick="switchMM('price')">Cost → Price</button>
+</div>
+<div id="mm-markup">
+  <div class="calc-grid">
+    <div class="calc-group" style="grid-column:1/-1">
+      <label>Markup % you apply</label>
+      <input type="number" id="mu-pct" placeholder="e.g. 25" oninput="calcMU()">
+    </div>
+  </div>
+  <div class="calc-result" id="mu-result" style="display:none">
+    <h3>Result</h3>
+    <div class="result-row"><span>Markup</span><span id="mu-out-mu"></span></div>
+    <div class="result-row"><span>Equivalent gross margin</span><span id="mu-out-mg"></span></div>
+    <div class="result-row"><span>Example: cost $100 → charge</span><span id="mu-out-ex"></span></div>
+  </div>
+</div>
+<div id="mm-margin" style="display:none">
+  <div class="calc-grid">
+    <div class="calc-group" style="grid-column:1/-1">
+      <label>Gross margin % you want</label>
+      <input type="number" id="mg-pct" placeholder="e.g. 20" oninput="calcMG()">
+    </div>
+  </div>
+  <div class="calc-result" id="mg-result" style="display:none">
+    <h3>Result</h3>
+    <div class="result-row"><span>Gross margin</span><span id="mg-out-mg"></span></div>
+    <div class="result-row"><span>Required markup to achieve this</span><span id="mg-out-mu"></span></div>
+    <div class="result-row"><span>Example: cost $100 → charge</span><span id="mg-out-ex"></span></div>
+  </div>
+</div>
+<div id="mm-price" style="display:none">
+  <div class="calc-grid">
+    <div class="calc-group">
+      <label>Your cost (ex GST) — $</label>
+      <input type="number" id="pr-cost" placeholder="e.g. 500" oninput="calcPR()">
+    </div>
+    <div class="calc-group">
+      <label>Markup % to apply</label>
+      <input type="number" id="pr-mu" placeholder="e.g. 20" oninput="calcPR()">
+    </div>
+  </div>
+  <div class="calc-result" id="pr-result" style="display:none">
+    <h3>Result</h3>
+    <div class="result-row"><span>Your cost</span><span id="pr-out-cost"></span></div>
+    <div class="result-row"><span>Markup amount</span><span id="pr-out-mu"></span></div>
+    <div class="result-row"><span>Price ex GST</span><span id="pr-out-ex"></span></div>
+    <div class="result-row"><span>GST (15%)</span><span id="pr-out-gst"></span></div>
+    <div class="result-row"><span>Price inc GST</span><span id="pr-out-inc"></span></div>
+    <div class="result-row"><span>Gross margin</span><span id="pr-out-mg" class="result-highlight"></span></div>
+  </div>
+</div>
+<script>
+function pct(n){return n.toFixed(1)+'%';}
+function fmt(n){return '$'+n.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g,',');}
+function switchMM(t){
+  var tabs=['markup','margin','price'];
+  document.querySelectorAll('.calc-tab').forEach(function(b,i){b.classList.toggle('active',i===tabs.indexOf(t));});
+  tabs.forEach(function(id){document.getElementById('mm-'+id).style.display=id===t?'':'none';});
+}
+function calcMU(){
+  var mu=parseFloat(document.getElementById('mu-pct').value);
+  var r=document.getElementById('mu-result');
+  if(isNaN(mu)||mu<0){r.style.display='none';return;}
+  var mg=mu/(1+mu/100);
+  var charge=100*(1+mu/100);
+  document.getElementById('mu-out-mu').textContent=pct(mu);
+  document.getElementById('mu-out-mg').textContent=pct(mg);
+  document.getElementById('mu-out-ex').textContent=fmt(charge);
+  r.style.display='';
+}
+function calcMG(){
+  var mg=parseFloat(document.getElementById('mg-pct').value);
+  var r=document.getElementById('mg-result');
+  if(isNaN(mg)||mg>=100||mg<0){r.style.display='none';return;}
+  var mu=mg/(1-mg/100);
+  var charge=100/(1-mg/100);
+  document.getElementById('mg-out-mg').textContent=pct(mg);
+  document.getElementById('mg-out-mu').textContent=pct(mu);
+  document.getElementById('mg-out-ex').textContent=fmt(charge);
+  r.style.display='';
+}
+function calcPR(){
+  var cost=parseFloat(document.getElementById('pr-cost').value);
+  var mu=parseFloat(document.getElementById('pr-mu').value);
+  var r=document.getElementById('pr-result');
+  if(isNaN(cost)||isNaN(mu)||cost<=0){r.style.display='none';return;}
+  var muAmt=cost*mu/100;
+  var exGst=cost+muAmt;
+  var gst=exGst*0.15;
+  var inc=exGst+gst;
+  var mg=muAmt/exGst*100;
+  document.getElementById('pr-out-cost').textContent=fmt(cost);
+  document.getElementById('pr-out-mu').textContent=fmt(muAmt);
+  document.getElementById('pr-out-ex').textContent=fmt(exGst);
+  document.getElementById('pr-out-gst').textContent=fmt(gst);
+  document.getElementById('pr-out-inc').textContent=fmt(inc);
+  document.getElementById('pr-out-mg').textContent=pct(mg)+' margin';
+  r.style.display='';
+}
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="markup-vs-margin-why-it-matters-for-nz-tradies">Markup vs Margin: Why It Matters for NZ Tradies</h2>
+<p>This is one of the most common pricing mistakes — and it can cost you thousands per year.</p>
+<h3 id="the-key-difference">The Key Difference</h3>
+<p><strong>Markup</strong> is calculated on your <strong>cost</strong>.
+<strong>Margin</strong> is calculated on your <strong>selling price</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>You apply</th>
+<th>On a $1,000 job cost</th>
+<th>You charge</th>
+<th>Your profit</th>
+<th>Markup</th>
+<th>Margin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20% markup</td>
+<td>$1,000</td>
+<td>$1,200</td>
+<td>$200</td>
+<td>20%</td>
+<td>16.7%</td>
+</tr>
+<tr>
+<td>20% margin</td>
+<td>$1,000</td>
+<td>$1,250</td>
+<td>$250</td>
+<td>25%</td>
+<td>20%</td>
+</tr>
+</tbody>
+</table>
+<p>If you say "I want to make 20% on this job" but calculate 20% markup, you're actually making 16.7% margin — not 20%.</p>
+<h3 id="why-tradies-get-caught-out">Why Tradies Get Caught Out</h3>
+<p>Many tradies quote a "25% margin" but calculate it as markup. Over a year, this can mean losing tens of thousands of dollars in expected profit.</p>
+<p><strong>Example:</strong>
+- Annual materials spend: $200,000
+- You think you're making 25% margin: expect $66,667 profit
+- But you calculated 25% markup: you actually made $50,000
+- <strong>Shortfall: $16,667/year</strong></p>
+<h3 id="the-formula">The Formula</h3>
+<p><strong>To get X% margin:</strong>
+<code>Selling price = Cost ÷ (1 - X/100)</code></p>
+<p><strong>To get X% markup:</strong>
+<code>Selling price = Cost × (1 + X/100)</code></p>
+<h3 id="recommended-margins-for-nz-tradies">Recommended Margins for NZ Tradies</h3>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Target gross margin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Labour</td>
+<td>25–40%</td>
+</tr>
+<tr>
+<td>Materials</td>
+<td>15–25%</td>
+</tr>
+<tr>
+<td>Subcontractors</td>
+<td>10–15%</td>
+</tr>
+<tr>
+<td>Overall job</td>
+<td>20–30%</td>
+</tr>
+</tbody>
+</table>
+<p>Use <a href="https://www.fergus.com/"><a href="https://www.fergus.com/" rel="sponsored noopener" target="_blank">Fergus</a></a> or <a href="https://www.simprogroup.com/"><a href="https://www.simprogroup.com/" rel="sponsored noopener" target="_blank">Simpro</a></a> to track your actual margins job by job and see where you're winning and losing.</p>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator.html">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator.html">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator.html">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator.html">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator.html">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://www.xero.com/nz/" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 NZ Tradie Tools. All rights reserved.</p>
+            <p class="disclosure">Some links on this site are affiliate links — we may earn a commission at no extra cost to you.</p>
+        </div>
+    </footer>
+</body>
+</html>

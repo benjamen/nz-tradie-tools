@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page_title }} — NZ Tradie Tools</title>
+    <meta name="description" content="{{ description }}">
+    <link rel="stylesheet" href="/static/css/style.css">
+    {% if adsense_id %}
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ adsense_id }}" crossorigin="anonymous"></script>
+    {% endif %}
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+            <nav class="main-nav">
+                {% for item in nav %}
+                <a href="{{ item.url }}">{{ item.label }}</a>
+                {% endfor %}
+            </nav>
+        </div>
+    </header>
+
+    <div class="container page-layout">
+        <main class="main-content">
+            <h1>{{ title }}</h1>
+            <p class="lead">{{ description }}</p>
+
+            {% if adsense_id %}
+            <ins class="adsbygoogle ad-banner" style="display:block" data-ad-client="{{ adsense_id }}" data-ad-slot="CALC_TOP" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            {% endif %}
+
+            <div class="calculator-wrapper">
+                {{ calculator_html }}
+            </div>
+
+            <div class="article-body">
+                {{ content }}
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator.html">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator.html">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator.html">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator.html">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator.html">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="{{ affiliates.xero }}" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="{{ affiliates.fergus }}" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="{{ affiliates.tradify }}" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="{{ affiliates.myob }}" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; {{ year }} NZ Tradie Tools. All rights reserved.</p>
+            <p class="disclosure">Some links on this site are affiliate links — we may earn a commission at no extra cost to you.</p>
+        </div>
+    </footer>
+</body>
+</html>

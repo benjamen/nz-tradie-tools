@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NZ Vehicle Mileage Claim Calculator — NZ Tradie Tools</title>
+    <meta name="description" content="Calculate your IRD mileage reimbursement or tax deduction using the 2024-25 NZ mileage rates.">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+            <nav class="main-nav">
+                
+                <a href="/">Home</a>
+                
+                <a href="/calculators/">Calculators</a>
+                
+                <a href="/articles/">Articles</a>
+                
+                <a href="/contact/">Contact</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <div class="container page-layout">
+        <main class="main-content">
+            <h1>NZ Vehicle Mileage Claim Calculator</h1>
+            <p class="lead">Calculate your IRD mileage reimbursement or tax deduction using the 2024-25 NZ mileage rates.</p>
+
+            
+
+            <div class="calculator-wrapper">
+                <div class="calc-grid">
+  <div class="calc-group" style="grid-column:1/-1">
+    <label>Kilometres driven for business</label>
+    <input type="number" id="km" placeholder="e.g. 15000" oninput="calcMile()">
+  </div>
+  <div class="calc-group" style="grid-column:1/-1">
+    <label>IRD mileage rate</label>
+    <select id="rate" onchange="calcMile()">
+      <option value="0.95">$0.95/km — petrol or diesel (up to 14,000 km/yr)</option>
+      <option value="0.35">$0.35/km — petrol or diesel (over 14,000 km/yr)</option>
+      <option value="0.09">$0.09/km — electric vehicle</option>
+    </select>
+  </div>
+</div>
+<div class="calc-result" id="mile-result" style="display:none">
+  <h3>Mileage Claim</h3>
+  <div class="result-row"><span>Kilometres claimed</span><span id="m-km"></span></div>
+  <div class="result-row"><span>Rate applied</span><span id="m-rate"></span></div>
+  <div class="result-row"><span>Total deduction / reimbursement</span><span id="m-total"></span></div>
+  <div class="result-row"><span>Tax saved (approx 28% tax rate)</span><span id="m-tax"></span></div>
+</div>
+<script>
+function fmt(n){return '$'+n.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g,',');}
+function calcMile(){
+  var km=parseFloat(document.getElementById('km').value);
+  var r=parseFloat(document.getElementById('rate').value);
+  var res=document.getElementById('mile-result');
+  if(isNaN(km)||km<=0){res.style.display='none';return;}
+  // Handle two-tier rate for petrol over 14000
+  var total;
+  if(r===0.95&&km>14000){
+    total=14000*0.95+(km-14000)*0.35;
+  } else {
+    total=km*r;
+  }
+  document.getElementById('m-km').textContent=Math.round(km).toLocaleString()+' km';
+  document.getElementById('m-rate').textContent='$'+r.toFixed(2)+'/km';
+  document.getElementById('m-total').textContent=fmt(total);
+  document.getElementById('m-tax').textContent=fmt(total*0.28);
+  res.style.display='';
+}
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="ird-mileage-rates-for-nz-tradies-202425">IRD Mileage Rates for NZ Tradies (2024–25)</h2>
+<p>If you use your personal vehicle for business, you can claim a tax deduction based on the IRD's kilometre rates.</p>
+<h3 id="202425-ird-kilometre-rates">2024–25 IRD Kilometre Rates</h3>
+<table>
+<thead>
+<tr>
+<th>Vehicle type</th>
+<th>First 14,000 km</th>
+<th>Over 14,000 km</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Petrol or diesel</td>
+<td><strong>$0.95/km</strong></td>
+<td><strong>$0.35/km</strong></td>
+</tr>
+<tr>
+<td>Petrol hybrid</td>
+<td>$0.26/km</td>
+<td>$0.19/km</td>
+</tr>
+<tr>
+<td>Electric</td>
+<td>$0.09/km</td>
+<td>$0.09/km</td>
+</tr>
+</tbody>
+</table>
+<p><em>Rates updated August 2024. Always check <a href="https://www.ird.govt.nz">ird.govt.nz</a> for current rates.</em></p>
+<h3 id="what-counts-as-business-travel">What Counts as Business Travel?</h3>
+<ul>
+<li>Travel between job sites</li>
+<li>Travel from your office or yard to job sites</li>
+<li>Trips to suppliers to pick up materials</li>
+<li>Client meetings</li>
+</ul>
+<p><strong>Does NOT include:</strong> travel between home and your regular place of business (commuting).</p>
+<p>If you work from home and your home is your base, travel from home to client sites <strong>is</strong> deductible.</p>
+<h3 id="how-to-claim-vehicle-expenses">How to Claim Vehicle Expenses</h3>
+<p><strong>Option 1: IRD kilometre rate (this calculator)</strong>
+- Record every business trip (date, km, purpose)
+- Multiply by the IRD rate
+- No GST to claim, but simpler record-keeping</p>
+<p><strong>Option 2: Actual cost method</strong>
+- Track all actual vehicle expenses (fuel, insurance, servicing, registration, depreciation)
+- Calculate the business use percentage
+- Claim that percentage of actual costs
+- More complex but often higher deduction for high-mileage tradies</p>
+<h3 id="keeping-a-mileage-log">Keeping a Mileage Log</h3>
+<p>IRD can ask for records any time. Keep a logbook with:
+- Date of each trip
+- Start and end odometer readings (or km for the trip)
+- Purpose of the trip
+- Client or job name</p>
+<p>Apps like <a href="https://www.tradifyhq.com/"><a href="https://www.tradifyhq.com/" rel="sponsored noopener" target="_blank">Tradify</a></a> include built-in mileage tracking. Alternatively, a simple spreadsheet works fine.</p>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator.html">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator.html">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator.html">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator.html">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator.html">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://www.xero.com/nz/" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 NZ Tradie Tools. All rights reserved.</p>
+            <p class="disclosure">Some links on this site are affiliate links — we may earn a commission at no extra cost to you.</p>
+        </div>
+    </footer>
+</body>
+</html>
