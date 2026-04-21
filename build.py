@@ -15,7 +15,7 @@ SITE_ROOT = Path(__file__).parent
 CONTENT_DIR = SITE_ROOT / "content"
 LAYOUTS_DIR = SITE_ROOT / "layouts"
 STATIC_DIR = SITE_ROOT / "static"
-PUBLIC_DIR = SITE_ROOT / "public"
+PUBLIC_DIR = SITE_ROOT / "docs"
 CONFIG_FILE = SITE_ROOT / "site.json"
 
 MD = markdown.Markdown(extensions=["tables", "fenced_code", "toc", "attr_list"])
