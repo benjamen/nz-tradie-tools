@@ -1,8 +1,8 @@
 {
   "title": "NZ Tradie Tools",
   "description": "Free calculators, guides, and tools for New Zealand tradies — builders, plumbers, electricians, painters and more.",
-  "base_url": "https://benjamen.github.io/nz-tradie-tools",
-  "base_path": "/nz-tradie-tools",
+  "base_url": "https://tradietools.nz",
+  "base_path": "",
   "author": "NZ Tradie Tools",
   "adsense_id": "",
   "formspree_endpoint": "https://formspree.io/f/xgorlloq",
