@@ -10,7 +10,12 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ base_url }}/">
     <meta property="og:site_name" content="NZ Tradie Tools">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"NZ Tradie Tools","url":{{ base_url | tojson }},"description":{{ description | tojson }},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":{{ (base_url ~ "/?s={search_term_string}") | tojson }}},"query-input":"required name=search_term_string"}}</script>
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="NZ Tradie Tools — Free Calculators &amp; Guides for NZ Tradies">
+    <meta name="twitter:description" content="{{ description }}">
+    <link rel="canonical" href="{{ base_url }}/">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"NZ Tradie Tools","url":{{ base_url | tojson }},"description":{{ description | tojson }}}</script>
+    <link rel="icon" href="{{ base_path }}/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="{{ base_path }}/static/css/style.css">
     {% if adsense_id %}
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client="{{ adsense_id }}" crossorigin="anonymous"></script>
@@ -98,6 +103,7 @@
     <footer class="site-footer">
         <div class="container">
             <p>&copy; {{ year }} NZ Tradie Tools. All rights reserved.</p>
+            <p><a href="{{ base_path }}/privacy/" style="color:rgba(255,255,255,.6);font-size:.8rem">Privacy Policy</a></p>
             <p class="disclosure">Some links on this site are affiliate links — we may earn a commission at no extra cost to you. We only recommend tools we'd genuinely use.</p>
         </div>
     </footer>

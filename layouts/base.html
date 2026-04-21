@@ -10,7 +10,12 @@
     <meta property="og:type" content="article">
     <meta property="og:url" content="{{ base_url }}/articles/{{ slug }}.html">
     <meta property="og:site_name" content="NZ Tradie Tools">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":{{ page_title | tojson }},"description":{{ description | tojson }},"datePublished":{{ date_iso | tojson }},"author":{"@type":"Organization","name":"NZ Tradie Tools"},"publisher":{"@type":"Organization","name":"NZ Tradie Tools","url":{{ base_url | tojson }}}}</script>
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ page_title }} — NZ Tradie Tools">
+    <meta name="twitter:description" content="{{ description }}">
+    <link rel="canonical" href="{{ base_url }}/articles/{{ slug }}.html">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":{{ page_title | tojson }},"description":{{ description | tojson }},"datePublished":{{ date_iso | tojson }},"author":{"@type":"Organization","name":"NZ Tradie Tools"},"publisher":{"@type":"Organization","name":"NZ Tradie Tools","url":{{ base_url | tojson }}}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":{{ base_url | tojson }}},{"@type":"ListItem","position":2,"name":"Articles","item":{{ (base_url ~ "/articles/") | tojson }}},{"@type":"ListItem","position":3,"name":{{ page_title | tojson }},"item":{{ (base_url ~ "/articles/" ~ slug ~ ".html") | tojson }}}]}]}</script>
+    <link rel="icon" href="{{ base_path }}/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="{{ base_path }}/static/css/style.css">
     {% if adsense_id %}
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ adsense_id }}" crossorigin="anonymous"></script>
@@ -105,6 +110,7 @@
     <footer class="site-footer">
         <div class="container">
             <p>&copy; {{ year }} NZ Tradie Tools. All rights reserved.</p>
+            <p><a href="{{ base_path }}/privacy/" style="color:rgba(255,255,255,.6);font-size:.8rem">Privacy Policy</a></p>
             <p class="disclosure">Some links on this site are affiliate links — we may earn a commission at no extra cost to you. We only recommend tools we'd genuinely use.</p>
         </div>
     </footer>

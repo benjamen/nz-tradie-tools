@@ -71,6 +71,9 @@ def build():
                 dest = PUBLIC_DIR / "static" / f.relative_to(STATIC_DIR)
                 dest.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(f, dest)
+        favicon = STATIC_DIR / "favicon.svg"
+        if favicon.exists():
+            shutil.copy2(favicon, PUBLIC_DIR / "favicon.svg")
 
     articles = []
     calculators = []
@@ -93,6 +96,7 @@ def build():
     build_listing(articles, config, env, "articles", nav, base_path)
     build_listing(calculators, config, env, "calculators", nav, base_path)
     build_contact(config, env, nav, base_path)
+    build_privacy(config, env, nav, base_path)
 
     trades_count, locations_count = build_trades_and_locations(config, env, nav, base_path)
 
@@ -318,6 +322,19 @@ def build_listing(pages, config, env, section, nav, base_path):
         "year": datetime.now().year,
     }
     (PUBLIC_DIR / section / "index.html").write_text(template.render(**ctx), encoding="utf-8")
+
+
+def build_privacy(config, env, nav, base_path):
+    template = env.get_template("privacy.html")
+    ctx = {
+        **config,
+        "base_path": base_path,
+        "nav": nav,
+        "date": datetime.now().strftime("%-d %B %Y"),
+        "year": datetime.now().year,
+    }
+    (PUBLIC_DIR / "privacy").mkdir(exist_ok=True)
+    (PUBLIC_DIR / "privacy" / "index.html").write_text(template.render(**ctx), encoding="utf-8")
 
 
 def build_contact(config, env, nav, base_path):

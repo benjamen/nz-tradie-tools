@@ -10,6 +10,12 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ base_url }}/locations/{{ city.slug }}/">
     <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Find a Tradie in {{ city.name }}, NZ">
+    <meta name="twitter:description" content="Top-rated builders, plumbers, electricians and painters in {{ city.name }} — Google ratings and local pricing.">
+    <link rel="canonical" href="{{ base_url }}/locations/{{ city.slug }}/">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":{{ base_url | tojson }}},{"@type":"ListItem","position":2,"name":"Find a Tradie","item":{{ (base_url ~ "/trades/") | tojson }}},{"@type":"ListItem","position":3,"name":{{ city.name | tojson }},"item":{{ (base_url ~ "/locations/" ~ city.slug ~ "/") | tojson }}}]}</script>
+    <link rel="icon" href="{{ base_path }}/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="{{ base_path }}/static/css/style.css">
     {% if adsense_id %}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ adsense_id }}" crossorigin="anonymous"></script>{% endif %}
 </head>
@@ -108,6 +114,7 @@
     <footer class="site-footer">
         <div class="container">
             <p>&copy; {{ year }} NZ Tradie Tools. All rights reserved.</p>
+            <p><a href="{{ base_path }}/privacy/" style="color:rgba(255,255,255,.6);font-size:.8rem">Privacy Policy</a></p>
             <p class="disclosure">Some links on this site are affiliate links — we may earn a commission at no extra cost to you.</p>
         </div>
     </footer>

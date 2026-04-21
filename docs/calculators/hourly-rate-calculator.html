@@ -10,6 +10,11 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tradietools.nz/calculators/hourly-rate-calculator.html">
     <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="NZ Tradie Hourly Rate Calculator — NZ Tradie Tools">
+    <meta name="twitter:description" content="Work out what to charge per hour based on your target income, overheads, and billable hours. Includes ACC levy estimates.">
+    <link rel="canonical" href="https://tradietools.nz/calculators/hourly-rate-calculator.html">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="/static/css/style.css">
     
 </head>
@@ -42,6 +47,35 @@
 
             <div class="calculator-wrapper">
                 <div class="calc-grid">
+  <div class="calc-group">
+    <label>Your trade</label>
+    <select id="trade-sel" onchange="showMarket()">
+      <option value="">— Select trade (optional) —</option>
+      <option value="builders">Builder / LBP</option>
+      <option value="plumbers">Plumber / Gasfitter</option>
+      <option value="electricians">Electrician</option>
+      <option value="painters">Painter</option>
+    </select>
+  </div>
+  <div class="calc-group">
+    <label>City / Region</label>
+    <select id="city-sel" onchange="showMarket()">
+      <option value="">— Select city (optional) —</option>
+      <option value="auckland">Auckland</option>
+      <option value="wellington">Wellington</option>
+      <option value="christchurch">Christchurch</option>
+      <option value="hamilton">Hamilton</option>
+      <option value="tauranga">Tauranga</option>
+      <option value="queenstown">Queenstown</option>
+      <option value="dunedin">Dunedin</option>
+      <option value="palmerston-north">Palmerston North</option>
+      <option value="napier">Napier / Hastings</option>
+      <option value="new-plymouth">New Plymouth</option>
+      <option value="whangarei">Whangarei</option>
+      <option value="nelson">Nelson</option>
+      <option value="invercargill">Invercargill</option>
+    </select>
+  </div>
   <div class="calc-group">
     <label>Desired annual income (take-home) — $</label>
     <input type="number" id="income" value="80000" oninput="calcRate()">
@@ -103,9 +137,37 @@ function calcRate(){
   document.getElementById('r-min').textContent=fmt(minRate)+'/hr';
   document.getElementById('r-rec').textContent=fmt(recRate)+'/hr';
   document.getElementById('r-gst').textContent=fmt(recRate*1.15)+'/hr';
+  showMarket();
+}
+var MKT={
+  builders:     {auckland:[100,120],wellington:[90,110],christchurch:[85,105],hamilton:[80,100],tauranga:[85,105],queenstown:[105,125],dunedin:[75,95],whangarei:[75,95],"palmerston-north":[75,95],napier:[75,95],"new-plymouth":[75,95],nelson:[80,100],invercargill:[70,90]},
+  plumbers:     {auckland:[125,155],wellington:[115,145],christchurch:[105,135],hamilton:[100,130],tauranga:[105,135],queenstown:[130,160],dunedin:[95,125],whangarei:[95,125],"palmerston-north":[95,125],napier:[95,125],"new-plymouth":[95,125],nelson:[100,130],invercargill:[90,120]},
+  electricians: {auckland:[118,142],wellington:[108,132],christchurch:[103,127],hamilton:[98,122],tauranga:[103,127],queenstown:[123,147],dunedin:[93,117],whangarei:[93,117],"palmerston-north":[93,117],napier:[93,117],"new-plymouth":[93,117],nelson:[98,122],invercargill:[88,112]},
+  painters:     {auckland:[65,85],wellington:[60,80],christchurch:[55,75],hamilton:[50,70],tauranga:[55,75],queenstown:[70,90],dunedin:[48,68],whangarei:[48,68],"palmerston-north":[48,68],napier:[48,68],"new-plymouth":[48,68],nelson:[50,70],invercargill:[45,65]}
+};
+function showMarket(){
+  var trade=document.getElementById('trade-sel').value;
+  var city=document.getElementById('city-sel').value;
+  var box=document.getElementById('market-hint');
+  if(!box)return;
+  if(trade&&city&&MKT[trade]&&MKT[trade][city]){
+    var r=MKT[trade][city];
+    var rec=parseFloat((document.getElementById('r-rec')||{}).textContent&&document.getElementById('r-rec').textContent.replace(/[$,]/g,''))||0;
+    var cityName=document.getElementById('city-sel').options[document.getElementById('city-sel').selectedIndex].text;
+    var tradeName=document.getElementById('trade-sel').options[document.getElementById('trade-sel').selectedIndex].text;
+    var status='';
+    if(rec>0){
+      if(rec<r[0]) status='<span style="color:#dc2626"> — below market rate, consider increasing</span>';
+      else if(rec>r[1]) status='<span style="color:#059669"> — above market rate</span>';
+      else status='<span style="color:#059669"> — within market range ✓</span>';
+    }
+    box.style.display='block';
+    box.innerHTML='<strong>Market rate for '+tradeName+' in '+cityName+':</strong> $'+r[0]+'–$'+r[1]+'/hr (ex GST)'+status;
+  } else { if(box) box.style.display='none'; }
 }
 calcRate();
 </script>
+<div id="market-hint" style="display:none;background:#e8f4fd;border:1px solid #b3d9f5;border-radius:6px;padding:.75rem 1rem;margin-top:1rem;font-size:.9rem;color:#0055a5"></div>
 
             </div>
 
@@ -198,6 +260,7 @@ calcRate();
     <footer class="site-footer">
         <div class="container">
             <p>&copy; 2026 NZ Tradie Tools. All rights reserved.</p>
+            <p><a href="/privacy/" style="color:rgba(255,255,255,.6);font-size:.8rem">Privacy Policy</a></p>
             <p class="disclosure">Some links on this site are affiliate links — we may earn a commission at no extra cost to you.</p>
         </div>
     </footer>
