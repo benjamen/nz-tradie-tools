@@ -1,0 +1,118 @@
+{
+  "trade": "builders",
+  "city": "auckland",
+  "updated": "2026-04-21",
+  "regional_cost_note": "Auckland builders typically charge $90–$130/hr for labour due to higher overheads and strong demand. New builds run $3,500–$5,000/m² for quality construction. Always get 3 quotes.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Signature Homes Auckland",
+      "rating": 4.9,
+      "review_count": 312,
+      "suburb": "Newmarket",
+      "phone": "09 522 0100",
+      "website": "https://www.signaturehomes.com/auckland",
+      "known_for": "New builds, design-and-build packages across Auckland",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "G.J. Gardner Homes Auckland",
+      "rating": 4.8,
+      "review_count": 287,
+      "suburb": "Mt Wellington",
+      "phone": "09 573 0880",
+      "website": "https://www.gjgardner.co.nz",
+      "known_for": "Affordable new builds, fixed-price contracts",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Stonewood Homes Auckland",
+      "rating": 4.8,
+      "review_count": 198,
+      "suburb": "Albany",
+      "phone": "09 415 0040",
+      "website": "https://www.stonewood.co.nz",
+      "known_for": "New builds North Shore and Auckland-wide",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Classic Builders Auckland",
+      "rating": 4.7,
+      "review_count": 245,
+      "suburb": "East Tamaki",
+      "phone": "09 274 4370",
+      "website": "https://www.classicbuilders.co.nz",
+      "known_for": "Townhouses, new builds, first home packages",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Mike Greer Homes Auckland",
+      "rating": 4.7,
+      "review_count": 176,
+      "suburb": "Takanini",
+      "phone": "09 295 1880",
+      "website": "https://www.mikegreer.co.nz",
+      "known_for": "South Auckland new builds, multi-unit developments",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Jalcon Homes",
+      "rating": 4.8,
+      "review_count": 134,
+      "suburb": "Silverdale",
+      "phone": "09 427 0310",
+      "website": "https://www.jalcon.co.nz",
+      "known_for": "Premium new builds North Auckland and Rodney",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "Fowler Homes Auckland",
+      "rating": 4.7,
+      "review_count": 122,
+      "suburb": "Henderson",
+      "phone": "09 836 4800",
+      "website": "https://www.fowlerhomes.co.nz",
+      "known_for": "West Auckland new builds, renovations",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "David Reid Homes Auckland",
+      "rating": 4.9,
+      "review_count": 89,
+      "suburb": "Remuera",
+      "phone": "09 524 0050",
+      "website": "https://www.davidreidhomes.co.nz",
+      "known_for": "Luxury custom builds, high-end renovations",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Versatile Homes Auckland",
+      "rating": 4.6,
+      "review_count": 167,
+      "suburb": "Penrose",
+      "phone": "09 525 1950",
+      "website": "https://www.versatile.co.nz",
+      "known_for": "Kitset and transportable homes, granny flats",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Dwell NZ",
+      "rating": 4.8,
+      "review_count": 78,
+      "suburb": "Parnell",
+      "phone": "09 303 4450",
+      "website": "https://www.dwellnz.co.nz",
+      "known_for": "Boutique renovations and high-end alterations",
+      "source": "Google Maps"
+    }
+  ]
+}

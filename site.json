@@ -17,6 +17,7 @@
   },
   "nav": [
     {"label": "Home", "url": "/"},
+    {"label": "Find a Tradie", "url": "/trades/"},
     {"label": "Calculators", "url": "/calculators/"},
     {"label": "Articles", "url": "/articles/"},
     {"label": "Contact", "url": "/contact/"}

@@ -1,0 +1,118 @@
+{
+  "trade": "builders",
+  "city": "wellington",
+  "updated": "2026-04-21",
+  "regional_cost_note": "Wellington builders charge $85–$125/hr. The hilly terrain and older housing stock (many 1900s–1960s homes) means renovations often uncover surprises. Budget a 10–15% contingency on any renovation project.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Signature Homes Wellington",
+      "rating": 4.9,
+      "review_count": 198,
+      "suburb": "Lower Hutt",
+      "phone": "04 569 1044",
+      "website": "https://www.signaturehomes.com/wellington",
+      "known_for": "New builds Wellington and Hutt Valley",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "G.J. Gardner Homes Wellington",
+      "rating": 4.8,
+      "review_count": 156,
+      "suburb": "Porirua",
+      "phone": "04 237 9060",
+      "website": "https://www.gjgardner.co.nz",
+      "known_for": "Fixed-price new builds, Kapiti to Hutt Valley",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Wellington Builders Ltd",
+      "rating": 4.8,
+      "review_count": 134,
+      "suburb": "Newtown",
+      "phone": "04 389 4550",
+      "website": "",
+      "known_for": "Inner-city renovations, character home upgrades",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "EasyBuild Wellington",
+      "rating": 4.7,
+      "review_count": 112,
+      "suburb": "Petone",
+      "phone": "04 568 1230",
+      "website": "https://www.easybuild.co.nz",
+      "known_for": "Extensions, alterations, new builds Hutt Valley",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Jennian Homes Wellington",
+      "rating": 4.7,
+      "review_count": 98,
+      "suburb": "Johnsonville",
+      "phone": "04 478 6100",
+      "website": "https://www.jennian.co.nz",
+      "known_for": "Design-and-build new homes Wellington region",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Capital Renovations",
+      "rating": 4.8,
+      "review_count": 87,
+      "suburb": "Karori",
+      "phone": "04 476 2210",
+      "website": "",
+      "known_for": "Kitchen and bathroom renovations, extensions",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "Fowler Homes Wellington",
+      "rating": 4.6,
+      "review_count": 134,
+      "suburb": "Upper Hutt",
+      "phone": "04 526 3090",
+      "website": "https://www.fowlerhomes.co.nz",
+      "known_for": "New builds Upper Hutt and Kapiti Coast",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Harvey Norman Homes Wellington",
+      "rating": 4.7,
+      "review_count": 76,
+      "suburb": "Paraparaumu",
+      "phone": "04 298 5600",
+      "website": "",
+      "known_for": "Kapiti Coast new builds and renovations",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Pacific Builders Wellington",
+      "rating": 4.6,
+      "review_count": 89,
+      "suburb": "Miramar",
+      "phone": "04 388 9970",
+      "website": "",
+      "known_for": "South Wellington renovations and new builds",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Wellington Heritage Builders",
+      "rating": 4.9,
+      "review_count": 54,
+      "suburb": "Thorndon",
+      "phone": "04 472 3310",
+      "website": "",
+      "known_for": "Heritage and character home restoration, Villa renovations",
+      "source": "Google Maps"
+    }
+  ]
+}

@@ -15,6 +15,7 @@ SITE_ROOT = Path(__file__).parent
 CONTENT_DIR = SITE_ROOT / "content"
 LAYOUTS_DIR = SITE_ROOT / "layouts"
 STATIC_DIR = SITE_ROOT / "static"
+DATA_DIR = SITE_ROOT / "data"
 PUBLIC_DIR = SITE_ROOT / "docs"
 CONFIG_FILE = SITE_ROOT / "site.json"
 
@@ -26,7 +27,6 @@ def load_config():
 
 
 def parse_frontmatter(text):
-    """Split YAML frontmatter from markdown body."""
     if not text.startswith("---"):
         return {}, text
     parts = text.split("---", 2)
@@ -41,15 +41,7 @@ def render_markdown(body):
     return MD.convert(body)
 
 
-def slugify(title):
-    s = title.lower()
-    s = re.sub(r"[^\w\s-]", "", s)
-    s = re.sub(r"[\s_]+", "-", s)
-    return s.strip("-")
-
-
 def prefix_internal_links(html, base_path):
-    """Rewrite absolute internal hrefs to include base_path."""
     if not base_path:
         return html
     return re.sub(r'href="(/(?!/))', f'href="{base_path}/', html)
@@ -59,7 +51,6 @@ def build():
     config = load_config()
     base_path = config.get("base_path", "")
 
-    # Prefix nav URLs with base_path
     nav = [
         {"label": item["label"], "url": base_path + item["url"]}
         for item in config.get("nav", [])
@@ -70,11 +61,10 @@ def build():
     PUBLIC_DIR.mkdir(exist_ok=True)
     (PUBLIC_DIR / "articles").mkdir(exist_ok=True)
     (PUBLIC_DIR / "calculators").mkdir(exist_ok=True)
-
-    # .nojekyll so GitHub Pages doesn't skip dirs starting with _
+    (PUBLIC_DIR / "trades").mkdir(exist_ok=True)
+    (PUBLIC_DIR / "locations").mkdir(exist_ok=True)
     (PUBLIC_DIR / ".nojekyll").touch()
 
-    # Copy static assets
     if STATIC_DIR.exists():
         for f in STATIC_DIR.rglob("*"):
             if f.is_file():
@@ -85,7 +75,6 @@ def build():
     articles = []
     calculators = []
 
-    # Process articles
     articles_dir = CONTENT_DIR / "articles"
     if articles_dir.exists():
         for md_file in sorted(articles_dir.glob("*.md"), reverse=True):
@@ -93,7 +82,6 @@ def build():
             if page and not page.get("draft"):
                 articles.append(page)
 
-    # Process calculators
     calcs_dir = CONTENT_DIR / "calculators"
     if calcs_dir.exists():
         for md_file in sorted(calcs_dir.glob("*.md")):
@@ -101,19 +89,15 @@ def build():
             if page and not page.get("draft"):
                 calculators.append(page)
 
-    # Build index page
     build_index(articles, calculators, config, env, nav, base_path)
-
-    # Build articles listing
     build_listing(articles, config, env, "articles", nav, base_path)
-
-    # Build calculators listing
     build_listing(calculators, config, env, "calculators", nav, base_path)
-
-    # Build contact page
     build_contact(config, env, nav, base_path)
 
-    print(f"Built: {len(articles)} articles, {len(calculators)} calculators")
+    trades_count, locations_count = build_trades_and_locations(config, env, nav, base_path)
+
+    print(f"Built: {len(articles)} articles, {len(calculators)} calculators, "
+          f"{trades_count} trade pages, {locations_count} location pages")
     return articles, calculators
 
 
@@ -127,7 +111,6 @@ def process_page(md_file, config, env, layout_name, section, nav, base_path):
     slug = md_file.stem
     html_body = render_markdown(body)
 
-    # Inject affiliate links if configured
     for name, url in config.get("affiliates", {}).items():
         html_body = re.sub(
             rf'(?<!["\'])(\b{re.escape(name.title())}\b)(?!["\'])',
@@ -136,7 +119,6 @@ def process_page(md_file, config, env, layout_name, section, nav, base_path):
             count=1,
         )
 
-    # Fix internal links in article body
     html_body = prefix_internal_links(html_body, base_path)
 
     try:
@@ -177,6 +159,84 @@ def process_page(md_file, config, env, layout_name, section, nav, base_path):
     out_path = PUBLIC_DIR / section / f"{slug}.html"
     out_path.write_text(rendered, encoding="utf-8")
     return ctx
+
+
+def build_trades_and_locations(config, env, nav, base_path):
+    cities = json.loads((DATA_DIR / "cities.json").read_text())
+    trades = json.loads((DATA_DIR / "trades.json").read_text())
+    year = datetime.now().year
+    shared = {**config, "base_path": base_path, "nav": nav, "year": year,
+               "cities": cities, "trades": trades}
+
+    top10_dir = DATA_DIR / "top10"
+    trades_count = 0
+    locations_count = 0
+
+    # Trade listing page (/trades/)
+    tpl_listing = env.get_template("trade-listing.html")
+    (PUBLIC_DIR / "trades" / "index.html").write_text(
+        tpl_listing.render(**shared), encoding="utf-8"
+    )
+    trades_count += 1
+
+    tpl_hub = env.get_template("trade-hub.html")
+    tpl_city = env.get_template("trade-city.html")
+    tpl_loc = env.get_template("location-hub.html")
+
+    for trade in trades:
+        trade_dir = PUBLIC_DIR / "trades" / trade["slug"]
+        trade_dir.mkdir(exist_ok=True)
+
+        # Load existing top10 data for this trade keyed by city slug
+        city_data = {}
+        for city in cities:
+            f = top10_dir / f"{trade['slug']}-{city['slug']}.json"
+            if f.exists():
+                city_data[city["slug"]] = json.loads(f.read_text())
+
+        # Trade hub page
+        hub_html = tpl_hub.render(**shared, trade=trade, city_data=city_data)
+        (trade_dir / "index.html").write_text(hub_html, encoding="utf-8")
+        trades_count += 1
+
+        # City pages for this trade
+        for city in cities:
+            data = city_data.get(city["slug"], {})
+            other_cities = [c for c in cities if c["slug"] != city["slug"]]
+            ctx = {
+                **shared,
+                "trade": trade,
+                "city": city,
+                "businesses": data.get("businesses", []),
+                "regional_cost_note": data.get("regional_cost_note", ""),
+                "updated": data.get("updated", str(year)),
+                "other_cities": other_cities,
+            }
+            html = tpl_city.render(**ctx)
+            (trade_dir / f"{city['slug']}.html").write_text(html, encoding="utf-8")
+            trades_count += 1
+
+    # Location hub pages (/locations/[city]/)
+    for city in cities:
+        loc_dir = PUBLIC_DIR / "locations" / city["slug"]
+        loc_dir.mkdir(parents=True, exist_ok=True)
+
+        # Which trades have data for this city
+        city_trade_data = {}
+        for trade in trades:
+            f = top10_dir / f"{trade['slug']}-{city['slug']}.json"
+            city_trade_data[trade["slug"]] = f.exists()
+
+        html = tpl_loc.render(
+            **shared,
+            city=city,
+            city_data=city_trade_data,
+            all_cities=cities,
+        )
+        (loc_dir / "index.html").write_text(html, encoding="utf-8")
+        locations_count += 1
+
+    return trades_count, locations_count
 
 
 def build_index(articles, calculators, config, env, nav, base_path):

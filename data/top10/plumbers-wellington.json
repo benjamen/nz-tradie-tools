@@ -1,0 +1,118 @@
+{
+  "trade": "plumbers",
+  "city": "wellington",
+  "updated": "2026-04-21",
+  "regional_cost_note": "Wellington plumbers charge $110–$150/hr including GST. The city's older housing stock means more unexpected issues during renovation work. Budget extra time for access in hilly suburbs.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Laser Plumbing Wellington",
+      "rating": 4.9,
+      "review_count": 312,
+      "suburb": "Newtown",
+      "phone": "04 389 7590",
+      "website": "https://www.laserplumbing.co.nz",
+      "known_for": "Wellington-wide residential and commercial plumbing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Mr Rooter Plumbing Wellington",
+      "rating": 4.8,
+      "review_count": 267,
+      "suburb": "Petone",
+      "phone": "0800 476 688",
+      "website": "https://www.mrrooter.co.nz",
+      "known_for": "24/7 emergency plumbing, blocked drains, Hutt Valley",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Capital Plumbing Wellington",
+      "rating": 4.8,
+      "review_count": 198,
+      "suburb": "Karori",
+      "phone": "04 476 5500",
+      "website": "https://www.capitalplumbing.co.nz",
+      "known_for": "Central Wellington plumbing, gasfitting, hot water",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Wellington Plumbing Co",
+      "rating": 4.7,
+      "review_count": 176,
+      "suburb": "Island Bay",
+      "phone": "04 383 7770",
+      "website": "",
+      "known_for": "South Wellington and Rongotai, bathroom renovations",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Hutt Valley Plumbing",
+      "rating": 4.8,
+      "review_count": 154,
+      "suburb": "Lower Hutt",
+      "phone": "04 566 3300",
+      "website": "",
+      "known_for": "Hutt Valley plumbing, drainage, new builds",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Kapiti Plumbing",
+      "rating": 4.7,
+      "review_count": 143,
+      "suburb": "Paraparaumu",
+      "phone": "04 298 4440",
+      "website": "https://www.kapitiplumbing.co.nz",
+      "known_for": "Kapiti Coast plumbing and gasfitting",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "Plumb Right Wellington",
+      "rating": 4.7,
+      "review_count": 128,
+      "suburb": "Tawa",
+      "phone": "04 232 4560",
+      "website": "",
+      "known_for": "North Wellington, Tawa and Porirua plumbing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Same Day Trades Wellington",
+      "rating": 4.6,
+      "review_count": 198,
+      "suburb": "Porirua",
+      "phone": "0800 726 337",
+      "website": "https://www.samedaytrades.co.nz",
+      "known_for": "Fast-response plumbing Wellington region",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Plumbing Brothers Wellington",
+      "rating": 4.7,
+      "review_count": 112,
+      "suburb": "Miramar",
+      "phone": "04 388 5540",
+      "website": "",
+      "known_for": "Eastern suburbs and Miramar Peninsula",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Upper Hutt Plumbing",
+      "rating": 4.8,
+      "review_count": 87,
+      "suburb": "Upper Hutt",
+      "phone": "04 528 7770",
+      "website": "",
+      "known_for": "Upper Hutt and Wainuiomata plumbing",
+      "source": "Google Maps"
+    }
+  ]
+}

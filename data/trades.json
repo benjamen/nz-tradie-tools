@@ -1,0 +1,106 @@
+[
+  {
+    "slug": "builders",
+    "name": "Builders & LBPs",
+    "singular": "builder",
+    "plural": "builders",
+    "icon": "🏗️",
+    "description": "Licensed Building Practitioners for new builds, renovations, extensions, and structural work.",
+    "licensing": "LBP (Licensed Building Practitioner) licence required for restricted building work on homes and small buildings.",
+    "licence_check_url": "https://www.lbp.govt.nz/public-register",
+    "avg_cost_nz": "$80–$120/hr for labour, or fixed-price contracts for new builds",
+    "what_to_look_for": [
+      "Valid LBP licence (check the public register)",
+      "Public liability insurance (ask for a certificate)",
+      "References from recent similar jobs",
+      "Building consent experience",
+      "Clear written quote with inclusions and exclusions"
+    ],
+    "red_flags": [
+      "Won't provide LBP licence number",
+      "No written quote",
+      "Asks for full payment upfront",
+      "Can't provide references"
+    ],
+    "calculator_link": "/calculators/job-cost-calculator.html",
+    "related_article": "/articles/how-to-get-lbp-licence-new-zealand.html"
+  },
+  {
+    "slug": "plumbers",
+    "name": "Plumbers & Gasfitters",
+    "singular": "plumber",
+    "plural": "plumbers",
+    "icon": "🔧",
+    "description": "Licensed plumbers and gasfitters for water supply, drainage, hot water, and gas fitting work.",
+    "licensing": "Must be registered and licensed under the Plumbers, Gasfitters and Drainlayers Act 2006. Check the PGD Board register.",
+    "licence_check_url": "https://www.pgdb.co.nz/licensing/licence-search/",
+    "avg_cost_nz": "$90–$130/hr (higher for after-hours callouts)",
+    "what_to_look_for": [
+      "Current registration with the PGD Board",
+      "Licensed for the specific work type (plumbing, gasfitting, or drainlaying)",
+      "Public liability insurance",
+      "Responds promptly to urgent callouts",
+      "Upfront pricing or clear hourly rate"
+    ],
+    "red_flags": [
+      "Can't provide registration number",
+      "Quotes suspiciously low for gas work",
+      "No insurance",
+      "Doesn't provide a written invoice"
+    ],
+    "calculator_link": "/calculators/hourly-rate-calculator.html",
+    "related_article": "/articles/how-to-write-a-quote-that-wins-jobs-nz.html"
+  },
+  {
+    "slug": "electricians",
+    "name": "Electricians",
+    "singular": "electrician",
+    "plural": "electricians",
+    "icon": "⚡",
+    "description": "Registered electrical workers for wiring, switchboards, heat pumps, EV chargers, and all electrical installations.",
+    "licensing": "Must be a Registered Electrical Worker (REW) under the Electricity Act 1992. All electrical work must be certified.",
+    "licence_check_url": "https://www.electricalworkers.govt.nz/register-search",
+    "avg_cost_nz": "$80–$120/hr plus materials",
+    "what_to_look_for": [
+      "Registered Electrical Worker (REW) licence",
+      "Issues an Electrical Certificate of Compliance (CoC) after work",
+      "Public liability insurance",
+      "Familiar with NZ electrical standards (AS/NZS 3000)",
+      "Experience with your specific job type (domestic, commercial, heat pumps)"
+    ],
+    "red_flags": [
+      "Can't provide REW registration number",
+      "Doesn't mention a Certificate of Compliance",
+      "Quotes for work without seeing the site",
+      "No insurance certificate"
+    ],
+    "calculator_link": "/calculators/job-cost-calculator.html",
+    "related_article": "/articles/best-job-management-software-nz-tradies-2026.html"
+  },
+  {
+    "slug": "painters",
+    "name": "Painters & Decorators",
+    "singular": "painter",
+    "plural": "painters",
+    "icon": "🖌️",
+    "description": "Professional painters for interior and exterior residential and commercial painting, wallpapering, and decorating.",
+    "licensing": "No mandatory licensing in NZ, but look for members of the Painting and Decorating Association NZ (PDANZ).",
+    "licence_check_url": "https://www.pdanz.org.nz",
+    "avg_cost_nz": "$55–$80/hr, or $400–$700/day. Full interior house repaint: $3,000–$8,000+",
+    "what_to_look_for": [
+      "PDANZ membership (voluntary but signals quality)",
+      "Public liability insurance",
+      "References and photos of recent work",
+      "Detailed quote specifying paint brand, number of coats, preparation work",
+      "Experience with your surface type (weatherboard, plaster, etc.)"
+    ],
+    "red_flags": [
+      "Quote doesn't specify prep work",
+      "Won't specify paint brand or quality",
+      "No references",
+      "Asks for most payment upfront"
+    ],
+    "calculator_link": "/calculators/job-cost-calculator.html",
+    "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
+  }
+]

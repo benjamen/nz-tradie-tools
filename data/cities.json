@@ -1,0 +1,142 @@
+[
+  {
+    "slug": "auckland",
+    "name": "Auckland",
+    "region": "Auckland",
+    "population": 1657000,
+    "intro": "New Zealand's largest city and economic hub, Auckland has the most tradies and the most competitive market. Expect higher hourly rates reflecting the city's higher cost of living."
+  },
+  {
+    "slug": "wellington",
+    "name": "Wellington",
+    "region": "Wellington",
+    "population": 215400,
+    "intro": "The nation's capital has a compact, hilly geography that makes some jobs more complex and costly. Strong demand from the public sector and growing residential market keeps tradies busy year-round."
+  },
+  {
+    "slug": "christchurch",
+    "name": "Christchurch",
+    "region": "Canterbury",
+    "population": 389700,
+    "intro": "Canterbury's largest city has seen significant rebuild activity since the 2011 earthquake, creating a large and experienced tradie workforce. Rates are generally lower than Auckland and Wellington."
+  },
+  {
+    "slug": "hamilton",
+    "name": "Hamilton",
+    "region": "Waikato",
+    "population": 176500,
+    "intro": "The Waikato's main city is a fast-growing hub with strong residential construction demand. Rates are moderate and the tradie pool is growing to meet demand."
+  },
+  {
+    "slug": "tauranga",
+    "name": "Tauranga",
+    "region": "Bay of Plenty",
+    "population": 155200,
+    "intro": "One of NZ's fastest-growing cities, Tauranga has a booming construction sector driven by retirees and migration from Auckland. Demand is high and good tradies book out weeks in advance."
+  },
+  {
+    "slug": "dunedin",
+    "name": "Dunedin",
+    "region": "Otago",
+    "population": 134700,
+    "intro": "Otago's main city has a mix of older character homes and new developments. The student population creates year-round demand for maintenance work. Rates are among the most affordable in NZ."
+  },
+  {
+    "slug": "palmerston-north",
+    "name": "Palmerston North",
+    "region": "Manawatū-Whanganui",
+    "population": 90500,
+    "intro": "Palmy is a regional centre with a strong agricultural and education economy. Affordable housing prices drive renovation activity and tradie rates are moderate."
+  },
+  {
+    "slug": "napier",
+    "name": "Napier",
+    "region": "Hawke's Bay",
+    "population": 65900,
+    "intro": "Hawke's Bay's coastal city has strong demand for renovation work on its distinctive Art Deco housing stock. The growing wine and tourism industry also supports commercial construction."
+  },
+  {
+    "slug": "hastings",
+    "name": "Hastings",
+    "region": "Hawke's Bay",
+    "population": 82300,
+    "intro": "Hastings serves the Hawke's Bay horticultural region and shares many tradies with nearby Napier. Strong demand for new residential builds and commercial work."
+  },
+  {
+    "slug": "new-plymouth",
+    "name": "New Plymouth",
+    "region": "Taranaki",
+    "population": 84700,
+    "intro": "Taranaki's main city benefits from oil and gas industry money, supporting a well-paid workforce and strong demand for quality residential work. A good supply of experienced tradies."
+  },
+  {
+    "slug": "rotorua",
+    "name": "Rotorua",
+    "region": "Bay of Plenty",
+    "population": 61600,
+    "intro": "Rotorua's tourism economy drives demand for hospitality fit-outs and ongoing maintenance. The geothermal environment can affect some building materials, so local experience matters."
+  },
+  {
+    "slug": "whangarei",
+    "name": "Whangārei",
+    "region": "Northland",
+    "population": 58800,
+    "intro": "Northland's main city has a mix of lifestyle blocks and urban residential demand. Growth from Aucklanders moving north is pushing construction activity up significantly."
+  },
+  {
+    "slug": "nelson",
+    "name": "Nelson",
+    "region": "Nelson-Tasman",
+    "population": 54700,
+    "intro": "Nelson's sunny climate and lifestyle appeal attract retirees and lifestyle block buyers, creating steady renovation and new build demand. A strong arts and creative community also drives unique fitout work."
+  },
+  {
+    "slug": "queenstown",
+    "name": "Queenstown",
+    "region": "Otago",
+    "population": 43900,
+    "intro": "NZ's adventure tourism capital has some of the highest construction costs in the country due to remote location, high land values, and labour shortages. Expect a premium for all trade work."
+  },
+  {
+    "slug": "invercargill",
+    "name": "Invercargill",
+    "region": "Southland",
+    "population": 55900,
+    "intro": "Southland's main city has the most affordable housing in NZ, creating a steady market for renovations and upgrades. Tradie rates are among the lowest in the country."
+  },
+  {
+    "slug": "lower-hutt",
+    "name": "Lower Hutt",
+    "region": "Wellington",
+    "population": 111800,
+    "intro": "Part of the Wellington metro area, Lower Hutt has strong residential demand and benefits from Wellington's busy construction sector. Rates align with greater Wellington."
+  },
+  {
+    "slug": "upper-hutt",
+    "name": "Upper Hutt",
+    "region": "Wellington",
+    "population": 46200,
+    "intro": "Upper Hutt is a suburban Wellington city with a mix of older homes ripe for renovation and new subdivisions. Good access to Wellington tradies."
+  },
+  {
+    "slug": "porirua",
+    "name": "Porirua",
+    "region": "Wellington",
+    "population": 58400,
+    "intro": "A growing city north of Wellington with significant social housing renewal activity and strong residential construction demand."
+  },
+  {
+    "slug": "gisborne",
+    "name": "Gisborne",
+    "region": "Gisborne",
+    "population": 37200,
+    "intro": "The first city to see the sun each day has a small but tight-knit tradie community. Forestry and agriculture drive commercial construction, while a growing lifestyle block market supports residential work."
+  },
+  {
+    "slug": "whanganui",
+    "name": "Whanganui",
+    "region": "Manawatū-Whanganui",
+    "population": 47900,
+    "intro": "Whanganui's affordable property prices are attracting investors and first-home buyers who need renovation work. An up-and-coming river city with a growing arts and lifestyle scene."
+  }
+]

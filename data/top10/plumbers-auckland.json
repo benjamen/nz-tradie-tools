@@ -1,0 +1,118 @@
+{
+  "trade": "plumbers",
+  "city": "auckland",
+  "updated": "2026-04-21",
+  "regional_cost_note": "Auckland plumbers typically charge $120–$160/hr including GST for standard work. After-hours callouts (evenings, weekends, public holidays) often attract a surcharge of $50–$100. Get a fixed-price quote for larger jobs.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Mr Rooter Plumbing Auckland",
+      "rating": 4.9,
+      "review_count": 534,
+      "suburb": "Penrose",
+      "phone": "0800 476 688",
+      "website": "https://www.mrrooter.co.nz",
+      "known_for": "24/7 callouts, drain unblocking, hot water cylinders",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Same Day Trades Auckland",
+      "rating": 4.8,
+      "review_count": 412,
+      "suburb": "Penrose",
+      "phone": "0800 726 337",
+      "website": "https://www.samedaytrades.co.nz",
+      "known_for": "Fast response, plumbing and gasfitting Auckland-wide",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Laser Plumbing Auckland East",
+      "rating": 4.8,
+      "review_count": 287,
+      "suburb": "Mt Wellington",
+      "phone": "09 527 4700",
+      "website": "https://www.laserplumbing.co.nz",
+      "known_for": "Residential and commercial plumbing, East Auckland",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Laser Plumbing Auckland North",
+      "rating": 4.7,
+      "review_count": 245,
+      "suburb": "Albany",
+      "phone": "09 415 8220",
+      "website": "https://www.laserplumbing.co.nz",
+      "known_for": "North Shore plumbing, gas fitting, heat pumps",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Pro Plumbing Auckland",
+      "rating": 4.8,
+      "review_count": 198,
+      "suburb": "Grey Lynn",
+      "phone": "09 378 7377",
+      "website": "https://www.proplumbing.co.nz",
+      "known_for": "Central Auckland plumbing, bathroom renovations",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Plumbline Auckland",
+      "rating": 4.7,
+      "review_count": 176,
+      "suburb": "Newmarket",
+      "phone": "09 520 4230",
+      "website": "https://www.plumbline.co.nz",
+      "known_for": "Residential plumbing, hot water systems, central Auckland",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "Watermaster Plumbing",
+      "rating": 4.8,
+      "review_count": 143,
+      "suburb": "Henderson",
+      "phone": "09 836 2220",
+      "website": "",
+      "known_for": "West Auckland plumbing, new builds, gasfitting",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Heron Plumbing",
+      "rating": 4.7,
+      "review_count": 134,
+      "suburb": "Takapuna",
+      "phone": "09 486 0050",
+      "website": "https://www.heronplumbing.co.nz",
+      "known_for": "North Shore plumbing, bathroom renovations",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "South Auckland Plumbing",
+      "rating": 4.6,
+      "review_count": 167,
+      "suburb": "Manukau",
+      "phone": "09 262 2660",
+      "website": "",
+      "known_for": "South Auckland and Manukau, fast response",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Active Plumbing & Gas",
+      "rating": 4.8,
+      "review_count": 98,
+      "suburb": "Howick",
+      "phone": "09 535 4440",
+      "website": "https://www.activeplumbing.co.nz",
+      "known_for": "East Auckland plumbing and gasfitting, 24hr service",
+      "source": "Google Maps"
+    }
+  ]
+}
