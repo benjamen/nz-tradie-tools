@@ -1,0 +1,118 @@
+{
+  "trade": "builders",
+  "city": "christchurch",
+  "updated": "2026-04-22",
+  "regional_cost_note": "Builders in Christchurch typically charge $75\u2013$110/hr for labour. New builds range $2,800\u2013$4,200/m\u00b2 depending on specification. Post-earthquake, many local firms have extensive renovation and repair expertise. Emergency callouts add $80\u2013$150.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Ahn Construction Ltd",
+      "rating": 5.0,
+      "review_count": 24,
+      "suburb": "Christchurch Central",
+      "phone": "",
+      "website": "",
+      "known_for": "New builds, decking and renovations; LBP licensed with 6+ years experience.",
+      "source": "Builderscrack"
+    },
+    {
+      "rank": 2,
+      "name": "ACP Builders",
+      "rating": 5.0,
+      "review_count": 18,
+      "suburb": "Christchurch",
+      "phone": "",
+      "website": "",
+      "known_for": "Architectural builds and multi-unit developments; family-run by two brothers.",
+      "source": "Builderscrack"
+    },
+    {
+      "rank": 3,
+      "name": "Stoic Builders Ltd",
+      "rating": 5.0,
+      "review_count": 16,
+      "suburb": "Christchurch",
+      "phone": "",
+      "website": "",
+      "known_for": "LBP licensed; 10+ years experience across architectural and residential projects.",
+      "source": "Builderscrack"
+    },
+    {
+      "rank": 4,
+      "name": "QJ Nelmes Construction Ltd",
+      "rating": 5.0,
+      "review_count": 22,
+      "suburb": "Christchurch",
+      "phone": "",
+      "website": "",
+      "known_for": "LBP licensed with 15+ years experience; comprehensive residential builds and renovations.",
+      "source": "Builderscrack"
+    },
+    {
+      "rank": 5,
+      "name": "Flippin Construction Ltd",
+      "rating": 4.9,
+      "review_count": 31,
+      "suburb": "Christchurch",
+      "phone": "",
+      "website": "",
+      "known_for": "Residential building and as-is where-is property repairs; popular with first-home buyers.",
+      "source": "Builderscrack"
+    },
+    {
+      "rank": 6,
+      "name": "Jmac Contractors",
+      "rating": 4.9,
+      "review_count": 28,
+      "suburb": "Christchurch",
+      "phone": "",
+      "website": "",
+      "known_for": "Timber framing and hard landscaping; 20 years industry experience.",
+      "source": "Builderscrack"
+    },
+    {
+      "rank": 7,
+      "name": "Trent Builders",
+      "rating": 4.8,
+      "review_count": 47,
+      "suburb": "Papanui",
+      "phone": "03 352 8547",
+      "website": "https://www.trentbuilders.co.nz",
+      "known_for": "Custom homes and renovations; Master Builders members with strong repeat client base.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Bathurst Builders Ltd",
+      "rating": 4.7,
+      "review_count": 19,
+      "suburb": "Christchurch",
+      "phone": "",
+      "website": "",
+      "known_for": "Cost-effective residential builds; fully certified and Site Safe member.",
+      "source": "Builderscrack"
+    },
+    {
+      "rank": 9,
+      "name": "Mike Greer Homes Christchurch",
+      "rating": 4.5,
+      "review_count": 37,
+      "suburb": "Addington",
+      "phone": "0800 900 888",
+      "website": "https://www.mikegreerhomes.co.nz",
+      "known_for": "NZ\u2019s largest privately owned home builder; 30+ years, award-winning new builds and house-and-land packages.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Dream Craft Carpentry",
+      "rating": 4.6,
+      "review_count": 14,
+      "suburb": "Christchurch",
+      "phone": "",
+      "website": "",
+      "known_for": "Licensed Building Practitioner; 10+ years in carpentry, decking and renovations.",
+      "source": "Builderscrack"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+You are the NZ Tradie Tools location data agent. Your job is to research and publish top10 business listings for trade+city combinations. Run every step below.
+
+SITE DIR: /home/ben/.openclaw/workspace/site/
+TOP10 DIR: /home/ben/.openclaw/workspace/site/data/top10/
+HEARTBEAT: /home/ben/.openclaw/workspace/memory/heartbeat-state.json
+
+STEP 1 — Check if already ran today:
+python3 -c "
+import json, datetime, time
+state = json.load(open('/home/ben/.openclaw/workspace/memory/heartbeat-state.json'))
+last = state.get('nz_tradie_location', 0)
+if not last:
+    print('RUN_NOW')
+else:
+    last_date = datetime.date.fromtimestamp(last)
+    today = datetime.date.today()
+    print('ALREADY_RAN' if last_date == today else 'RUN_NOW')
+"
+If output is ALREADY_RAN → EXIT SILENTLY.
+
+STEP 2 — Find which combos still need data:
+python3 -c "
+import os, json
+top10_dir = '/home/ben/.openclaw/workspace/site/data/top10/'
+trades_data = json.load(open('/home/ben/.openclaw/workspace/site/data/trades.json'))
+cities_data = json.load(open('/home/ben/.openclaw/workspace/site/data/cities.json'))
+trades = [t['slug'] for t in trades_data[:12]]  # Top 12 trades by volume
+cities = [c['slug'] for c in cities_data[:10]]  # Top 10 cities by population
+done = set(os.listdir(top10_dir)) if os.path.exists(top10_dir) else set()
+missing = []
+for trade in trades:
+    for city in cities:
+        fname = f'{trade}-{city}.json'
+        if fname not in done:
+            missing.append((trade, city, fname))
+print(f'Missing: {len(missing)} combos')
+for t,c,f in missing[:6]:
+    print(f'  {f}')
+"
+
+STEP 3 — Pick the first 2 missing combos from the list above and research each:
+
+For EACH combo:
+a) Use WebSearch to find: "top rated [trade plural] [city] New Zealand Google reviews"
+   Also search: "best [trade plural] [city] NZ nocowboys"
+
+b) Find the top 10 businesses by Google rating. Each must have at least 10 reviews.
+   Record for each business:
+   - rank (1–10)
+   - name (exact business name)
+   - rating (e.g. 4.8)
+   - review_count (integer)
+   - suburb (suburb within the city)
+   - phone (NZ format, e.g. 09 123 4567 or 021 123 456)
+   - website (full URL or empty string)
+   - known_for (one sentence about what they specialise in)
+   - source ("Google Maps")
+
+c) Also find a regional_cost_note: typical price for that trade in that city
+   e.g. "Plumbers in Hamilton typically charge $95–$120/hr. Emergency callouts add $80–$150."
+
+d) Save as /home/ben/.openclaw/workspace/site/data/top10/[trade]-[city].json:
+{
+  "trade": "[trade slug]",
+  "city": "[city slug]",
+  "updated": "YYYY-MM-DD",
+  "regional_cost_note": "...",
+  "businesses": [
+    {"rank": 1, "name": "...", "rating": 4.8, "review_count": 120,
+     "suburb": "...", "phone": "...", "website": "...", "known_for": "...", "source": "Google Maps"}
+  ]
+}
+
+If you cannot find 10 real businesses with reviews, save what you find (minimum 3). Do not make up businesses or ratings.
+
+STEP 4 — Build site:
+cd /home/ben/.openclaw/workspace/site && /usr/bin/python3 build.py
+
+STEP 5 — Commit and push:
+cd /home/ben/.openclaw/workspace/site && git add -A && git commit -m "data: top10 location pages $(date +%Y-%m-%d)" && git push origin main
+
+STEP 6 — Update heartbeat state:
+python3 -c "
+import json, time
+f = '/home/ben/.openclaw/workspace/memory/heartbeat-state.json'
+state = json.load(open(f))
+state['nz_tradie_location'] = int(time.time())
+json.dump(state, open(f,'w'))
+print('State updated')
+"
+
+STEP 7 — Send Telegram report:
+python3 -c "
+import sys
+sys.path.insert(0, '/home/ben/polymarket-scanner')
+from telegram_bot import send_message
+send_message('''📍 <b>NZ Tradie Tools — Location Pages</b>
+Published top10 data for COMBO1_PLACEHOLDER and COMBO2_PLACEHOLDER
+URLs live at tradietools.nz/trades/''')
+"
+Replace COMBO1_PLACEHOLDER and COMBO2_PLACEHOLDER with the actual trade+city combos processed.
