@@ -316,14 +316,65 @@
         </div>
     </footer>
 
+    <!-- Hidden logo file input -->
+    <input type="file" id="logo-file-input" accept="image/*" style="display:none" onchange="handleLogoUpload(this)">
+
     <script>
+    /* ── Logo upload ── */
+    var LOGO_KEY = 'nztt_business_logo';
+
+    function applyLogo(dataUrl) {
+        document.querySelectorAll('.logo-box-clickable').forEach(function(box) {
+            box.innerHTML = '<img src="' + dataUrl + '" style="max-width:100%;max-height:90px;object-fit:contain;display:block;margin:auto" alt="Business logo">';
+            box.style.background = 'transparent';
+            box.style.border = '1px dashed #ccc';
+            box.title = 'Click to change logo';
+        });
+        var btn = document.getElementById('btn-remove-logo');
+        if (btn) btn.style.display = 'block';
+    }
+
+    function handleLogoUpload(input) {
+        var file = input.files[0];
+        if (!file) return;
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            var dataUrl = e.target.result;
+            try { localStorage.setItem(LOGO_KEY, dataUrl); } catch(err) {}
+            applyLogo(dataUrl);
+        };
+        reader.readAsDataURL(file);
+        input.value = '';
+    }
+
+    function removeLogo() {
+        try { localStorage.removeItem(LOGO_KEY); } catch(err) {}
+        document.querySelectorAll('.logo-box-clickable').forEach(function(box) {
+            box.innerHTML = 'Click to upload logo';
+            box.style.background = '';
+            box.style.border = '';
+            box.title = 'Click to upload your logo';
+        });
+        var btn = document.getElementById('btn-remove-logo');
+        if (btn) btn.style.display = 'none';
+    }
+
+    /* Restore saved logo on page load */
+    (function() {
+        try {
+            var saved = localStorage.getItem(LOGO_KEY);
+            if (saved) applyLogo(saved);
+        } catch(err) {}
+    })();
+
+    /* ── PDF download ── */
     function downloadPDF() {
         var el = document.getElementById('template-doc');
         var opt = {
             margin: 10,
             filename: 'vehicle-log-book-nz-tradie-tools.pdf',
             image: { type: 'jpeg', quality: 0.98 },
-            html2canvas: { scale: 2, useCORS: true },
+            html2canvas: { scale: 2, useCORS: true, allowTaint: true },
             jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
         };
         html2pdf().set(opt).from(el).save();

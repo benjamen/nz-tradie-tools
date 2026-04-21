@@ -37,7 +37,7 @@
     page-break-inside: avoid;
 }
 
-.doc-logo-box {
+.doc-logo-box, .logo-box-clickable {
     border: 1px solid #ccc;
     padding: .75rem;
     text-align: center;
@@ -48,6 +48,17 @@
     align-items: center;
     justify-content: center;
     background: #f6f6f6;
+}
+
+.logo-box-clickable {
+    cursor: pointer;
+    transition: border-color .15s, background .15s;
+}
+
+.logo-box-clickable:hover {
+    border-color: #005ea2;
+    background: #dbe8f5;
+    color: #005ea2;
 }
 
 .doc-title {
@@ -312,6 +323,39 @@ div[contenteditable].block-field:focus {
 
 .btn-print:hover { background: #f0f4f8; }
 
+.btn-logo-upload {
+    display: block;
+    width: 100%;
+    background: #fff;
+    color: #005ea2;
+    border: 2px solid #005ea2;
+    padding: .6rem 1rem;
+    font-size: .88rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: .4rem;
+    font-family: Arial, sans-serif;
+}
+
+.btn-logo-upload:hover { background: #dbe8f5; }
+
+.btn-logo-remove {
+    display: block;
+    width: 100%;
+    background: transparent;
+    color: #888;
+    border: 1px solid #ccc;
+    padding: .4rem 1rem;
+    font-size: .8rem;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: .4rem;
+    font-family: Arial, sans-serif;
+}
+
+.btn-logo-remove:hover { color: #c0392b; border-color: #c0392b; }
+
 .template-tips {
     background: #fff;
     border: 1px solid #b8b8b8;
@@ -422,9 +466,16 @@ div[contenteditable].block-field:focus {
         outline: none;
     }
 
-    .doc-logo-box {
+    .doc-logo-box, .logo-box-clickable {
         border: 1px solid #ccc;
         background: #f0f0f0 !important;
+    }
+
+    .logo-box-clickable img {
+        max-width: 100%;
+        max-height: 90px;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
     }
 
     /* Prevent table rows splitting across pages */
