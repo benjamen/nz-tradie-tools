@@ -74,7 +74,7 @@
       "Quotes for work without seeing the site",
       "No insurance certificate"
     ],
-    "calculator_link": "/calculators/job-cost-calculator.html",
+    "calculator_link": "/calculators/cable-sizing-calculator.html",
     "related_article": "/articles/best-job-management-software-nz-tradies-2026.html"
   },
   {
@@ -100,7 +100,1125 @@
       "No references",
       "Asks for most payment upfront"
     ],
+    "calculator_link": "/calculators/paint-calculator.html",
+    "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
+  },
+  {
+    "slug": "roofers",
+    "name": "Roofers & Roof Tilers",
+    "singular": "roofer",
+    "plural": "roofers",
+    "icon": "🏠",
+    "description": "Roofing contractors for metal roofing, concrete tiles, membrane roofing, re-roofing, and leak repairs.",
+    "licensing": "No mandatory licensing, but look for members of the Roofing Association of NZ (RANZ). LBP required for structural roof changes.",
+    "licence_check_url": "https://www.ranz.co.nz",
+    "avg_cost_nz": "Full re-roof: $8,000–$25,000+ depending on size and material. Repairs: $300–$2,000",
+    "what_to_look_for": [
+      "RANZ membership for quality assurance",
+      "Experience with your specific roof type (Colorsteel, concrete tile, membrane)",
+      "Public liability insurance",
+      "10-year workmanship guarantee",
+      "Product and manufacturer warranties supplied in writing"
+    ],
+    "red_flags": [
+      "Asks for full payment before work begins",
+      "Can't show photos of similar past jobs",
+      "No written quote with specifications",
+      "Won't provide a workmanship guarantee"
+    ],
+    "calculator_link": "/calculators/roof-area-calculator.html",
+    "related_article": "/articles/how-to-write-a-quote-that-wins-jobs-nz.html"
+  },
+  {
+    "slug": "landscapers",
+    "name": "Landscapers & Garden Designers",
+    "singular": "landscaper",
+    "plural": "landscapers",
+    "icon": "🌿",
+    "description": "Professional landscapers for garden design, planting, lawn installation, paving, irrigation, and outdoor living spaces.",
+    "licensing": "No mandatory licensing. Look for members of Landscape NZ (formerly NZILA/LAND8).",
+    "licence_check_url": "https://www.landscapenz.org.nz",
+    "avg_cost_nz": "$65–$95/hr for labour. Full garden makeover: $5,000–$80,000+ depending on scope",
+    "what_to_look_for": [
+      "Portfolio of similar completed projects",
+      "Knowledge of NZ native plants and local soils",
+      "Public liability insurance",
+      "Clear scope with plant species and quantities specified",
+      "Aftercare advice and plant warranties"
+    ],
+    "red_flags": [
+      "No plant species specified in quote",
+      "Can't show portfolio",
+      "No soil preparation included in quote",
+      "No aftercare advice"
+    ],
+    "calculator_link": "/calculators/irrigation-calculator.html",
+    "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
+  },
+  {
+    "slug": "tilers",
+    "name": "Tilers",
+    "singular": "tiler",
+    "plural": "tilers",
+    "icon": "🔲",
+    "description": "Tile layers for floors, walls, bathrooms, kitchens, and outdoor areas. Includes waterproofing and grout work.",
+    "licensing": "No mandatory licensing. Waterproofing must comply with NZ Building Code E3.",
+    "licence_check_url": "https://www.rmnz.org.nz",
+    "avg_cost_nz": "$80–$120/hr. Floor tiling: $90–$150/m² installed. Wall tiling: $100–$170/m²",
+    "what_to_look_for": [
+      "Experience with your tile type (large format, mosaic, outdoor)",
+      "Waterproofing membrane specification included",
+      "Adhesive and grout product details in quote",
+      "Layout plan before starting",
+      "References from bathroom/wet area projects"
+    ],
+    "red_flags": [
+      "No waterproofing mentioned for wet areas",
+      "Can't specify adhesive or grout products",
+      "Quote per m² only — no detail on prep",
+      "Won't do a layout plan"
+    ],
+    "calculator_link": "/calculators/tile-calculator.html",
+    "related_article": "/articles/how-to-write-a-quote-that-wins-jobs-nz.html"
+  },
+  {
+    "slug": "plasterers",
+    "name": "Plasterers",
+    "singular": "plasterer",
+    "plural": "plasterers",
+    "icon": "🏚️",
+    "description": "Interior and exterior plasterers for plasterboard stopping, texture coatings, Rockcote, and heritage lime plaster work.",
+    "licensing": "No mandatory licensing in NZ.",
+    "licence_check_url": "https://www.masterplasterers.co.nz",
+    "avg_cost_nz": "$35–$60/m² for standard plasterboard stopping. Exterior texture coatings: $25–$55/m²",
+    "what_to_look_for": [
+      "Experience with your specific system (GIB, plaster, texture coat)",
+      "Knowledge of E2 (External Moisture) requirements for exterior work",
+      "References from similar projects",
+      "Specification of products (primer, texture, topcoat)",
+      "Clean and tidy work practices"
+    ],
+    "red_flags": [
+      "Can't specify the product system being used",
+      "No experience with exterior cladding waterproofing",
+      "Won't provide a written quote",
+      "No references"
+    ],
     "calculator_link": "/calculators/job-cost-calculator.html",
     "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
+  },
+  {
+    "slug": "carpet-layers",
+    "name": "Carpet Layers & Flooring Specialists",
+    "singular": "carpet layer",
+    "plural": "carpet layers",
+    "icon": "🪵",
+    "description": "Specialists in carpet, vinyl, LVP, engineered timber, laminate, and hardwood floor installation.",
+    "licensing": "No mandatory licensing. Look for members of the NZ Flooring Association (NZFA).",
+    "licence_check_url": "https://www.flooring.org.nz",
+    "avg_cost_nz": "Carpet: $18–$30/m² installed. LVP: $25–$45/m² installed. Engineered timber: $35–$60/m²",
+    "what_to_look_for": [
+      "NZ Flooring Association membership",
+      "Experience with your specific floor type",
+      "Subfloor preparation included in quote",
+      "Underlay specification and thickness",
+      "Warranty on installation workmanship"
+    ],
+    "red_flags": [
+      "No subfloor prep included",
+      "Won't specify underlay",
+      "Per m² quote only with no detail",
+      "Can't show installation photos"
+    ],
+    "calculator_link": "/calculators/carpet-flooring-calculator.html",
+    "related_article": "/articles/how-to-write-a-quote-that-wins-jobs-nz.html"
+  },
+  {
+    "slug": "concreters",
+    "name": "Concreters",
+    "singular": "concreter",
+    "plural": "concreters",
+    "icon": "🧱",
+    "description": "Concrete specialists for driveways, paths, slabs, footings, decorative concrete, and concrete cutting.",
+    "licensing": "No mandatory licensing. LBP required for structural concrete work on buildings.",
+    "licence_check_url": "https://www.lbp.govt.nz/public-register",
+    "avg_cost_nz": "Plain concrete driveway: $110–$160/m² installed. Exposed aggregate: $140–$200/m². Decorative: $180–$350/m²",
+    "what_to_look_for": [
+      "NZ cement specification in quote (strength, finish)",
+      "Reinforcement detail (mesh, rebar)",
+      "Control joint pattern plan",
+      "Drainage design (fall direction)",
+      "Curing procedure included"
+    ],
+    "red_flags": [
+      "No control joint plan",
+      "Can't specify concrete strength (MPa)",
+      "No reinforcement mentioned",
+      "Won't give per m² rate"
+    ],
+    "calculator_link": "/calculators/concrete-calculator.html",
+    "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
+  },
+  {
+    "slug": "carpenters",
+    "name": "Carpenters & Joiners",
+    "singular": "carpenter",
+    "plural": "carpenters",
+    "icon": "🪚",
+    "description": "Skilled carpenters for decking, stairs, interior joinery, door hanging, window installation, and custom timber work.",
+    "licensing": "LBP required for structural carpentry on residential buildings.",
+    "licence_check_url": "https://www.lbp.govt.nz/public-register",
+    "avg_cost_nz": "$80–$110/hr. Custom decking: $600–$1,200/m² installed. Interior fit-out: $85–$120/hr",
+    "what_to_look_for": [
+      "LBP licence for any structural work",
+      "Portfolio of custom joinery or decking projects",
+      "Timber species and treatment specification",
+      "Experience with your specific project type",
+      "Clean finish and attention to detail"
+    ],
+    "red_flags": [
+      "Can't provide LBP number for structural work",
+      "Won't specify timber treatment grade",
+      "No photos of finished work",
+      "Vague quote without specifications"
+    ],
+    "calculator_link": "/calculators/timber-framing-calculator.html",
+    "related_article": "/articles/how-to-get-lbp-licence-new-zealand.html"
+  },
+  {
+    "slug": "gasfitters",
+    "name": "Gasfitters",
+    "singular": "gasfitter",
+    "plural": "gasfitters",
+    "icon": "🔥",
+    "description": "Licensed gasfitters for LPG and natural gas installations, appliance connections, and gas line work.",
+    "licensing": "Must be licensed under the Plumbers, Gasfitters and Drainlayers Act 2006. Gas work requires a specific gasfitting licence.",
+    "licence_check_url": "https://www.pgdb.co.nz/licensing/licence-search/",
+    "avg_cost_nz": "$90–$130/hr. Gas cooker connection: $200–$450. New gas line installation: $500–$2,500+",
+    "what_to_look_for": [
+      "Specific gasfitting licence (separate from plumbing)",
+      "Experience with your gas type (LPG or natural gas)",
+      "Issues a Gas Certificate of Compliance",
+      "Familiarity with AS/NZS 5601 gas installation code",
+      "Public liability insurance"
+    ],
+    "red_flags": [
+      "Can't show gasfitting licence (not just plumbing)",
+      "Won't provide a Certificate of Compliance",
+      "Quotes very low for gas line work",
+      "No insurance"
+    ],
+    "calculator_link": "/calculators/job-cost-calculator.html",
+    "related_article": "/articles/how-to-write-a-quote-that-wins-jobs-nz.html"
+  },
+  {
+    "slug": "drainlayers",
+    "name": "Drainlayers",
+    "singular": "drainlayer",
+    "plural": "drainlayers",
+    "icon": "🌊",
+    "description": "Licensed drainlayers for stormwater, sewer connections, septic systems, French drains, and drainage design.",
+    "licensing": "Must be registered and licensed under the Plumbers, Gasfitters and Drainlayers Act 2006.",
+    "licence_check_url": "https://www.pgdb.co.nz/licensing/licence-search/",
+    "avg_cost_nz": "$90–$130/hr. Simple drain connection: $800–$2,500. Septic system: $8,000–$20,000+",
+    "what_to_look_for": [
+      "Current drainlayer licence",
+      "Council pre-approval for new connections",
+      "Drain camera inspection before any major work",
+      "Drainage design with fall calculations",
+      "Backfill and compaction specification"
+    ],
+    "red_flags": [
+      "Doesn't mention council approval for connections",
+      "No fall calculations in quote",
+      "Won't camera inspect existing drains",
+      "Can't provide licence number"
+    ],
+    "calculator_link": "/calculators/drain-grade-calculator.html",
+    "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
+  },
+  {
+    "slug": "glaziers",
+    "name": "Glaziers & Glass Specialists",
+    "singular": "glazier",
+    "plural": "glaziers",
+    "icon": "🪟",
+    "description": "Glass installation and replacement for windows, doors, shower screens, balustrades, and commercial glazing.",
+    "licensing": "No mandatory licensing. Must comply with NZ Building Code Clause F4 (Safety from Falling).",
+    "licence_check_url": "https://www.masterglaziers.co.nz",
+    "avg_cost_nz": "Window replacement (double-glazed): $400–$900 per unit. Shower screen: $800–$2,500. Glass balustrade: $350–$700/m",
+    "what_to_look_for": [
+      "Glass specification (toughened, laminated, double-glazed) in writing",
+      "Building Code F4 compliance for safety glass locations",
+      "NZGMA membership",
+      "Experience with your glass type",
+      "Correct weather seals and flashing included"
+    ],
+    "red_flags": [
+      "Won't specify glass type",
+      "Standard float glass in safety locations",
+      "No mention of building code compliance",
+      "Won't warranty their work"
+    ],
+    "calculator_link": "/calculators/job-cost-calculator.html",
+    "related_article": "/articles/how-to-write-a-quote-that-wins-jobs-nz.html"
+  },
+  {
+    "slug": "fencers",
+    "name": "Fencers",
+    "singular": "fencer",
+    "plural": "fencers",
+    "icon": "🏗️",
+    "description": "Fencing contractors for timber, steel, Colorsteel, pool fencing, and rural fencing.",
+    "licensing": "No mandatory licensing. Pool fencing must comply with the Fencing of Swimming Pools Act 1987.",
+    "licence_check_url": "https://www.masterbuilders.co.nz",
+    "avg_cost_nz": "Timber paling fence: $150–$280/m installed. Colorsteel: $200–$350/m. Pool fence (glass): $300–$600/m",
+    "what_to_look_for": [
+      "Post spacing and depth specification",
+      "H treatment grade for in-ground posts (H4 or H5)",
+      "Pool fence compliance certificate if applicable",
+      "Concrete footing detail",
+      "Proper capping and finishing"
+    ],
+    "red_flags": [
+      "H3 posts for in-ground use (must be H4/H5)",
+      "No concrete footings mentioned",
+      "Won't specify post depth",
+      "No pool fence compliance for pool enclosures"
+    ],
+    "calculator_link": "/calculators/fence-calculator.html",
+    "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
+  },
+  {
+    "slug": "waterproofers",
+    "name": "Waterproofers",
+    "singular": "waterproofer",
+    "plural": "waterproofers",
+    "icon": "💧",
+    "description": "Specialist waterproofing contractors for bathrooms, decks, roofs, basements, and below-ground structures.",
+    "licensing": "No mandatory licensing. Must comply with NZ Building Code Clause E2 and E3.",
+    "licence_check_url": "https://www.masterbuilders.co.nz",
+    "avg_cost_nz": "Bathroom waterproofing: $800–$2,500. Deck membrane: $80–$180/m². Roof membrane: $60–$130/m²",
+    "what_to_look_for": [
+      "Specific membrane system named (Sika, Ardex, Mapei etc)",
+      "Manufacturer's approved applicator status",
+      "Primer and detailing spec in quote",
+      "Flood test before tiling",
+      "Building Code E2/E3 compliance certification"
+    ],
+    "red_flags": [
+      "Won't name the membrane product",
+      "No flood test offered",
+      "No manufacturer warranty",
+      "Experience only with residential (not your commercial job type)"
+    ],
+    "calculator_link": "/calculators/waterproofing-calculator.html",
+    "related_article": "/articles/how-to-write-a-quote-that-wins-jobs-nz.html"
+  },
+  {
+    "slug": "insulation-installers",
+    "name": "Insulation Installers",
+    "singular": "insulation installer",
+    "plural": "insulation installers",
+    "icon": "🏠",
+    "description": "Insulation specialists for ceiling, underfloor, and wall insulation. Includes Warmer Kiwi Homes-approved providers.",
+    "licensing": "No mandatory licensing. Warmer Kiwi Homes-registered assessors required for grants.",
+    "licence_check_url": "https://www.energywise.govt.nz",
+    "avg_cost_nz": "Ceiling insulation: $20–$32/m² installed. Underfloor: $20–$28/m²",
+    "what_to_look_for": [
+      "R-value specification matching your climate zone",
+      "Warmer Kiwi Homes registration if claiming grants",
+      "Building Code H1 (2023) compliance",
+      "Proper coverage including eaves and edges",
+      "ECANZ membership"
+    ],
+    "red_flags": [
+      "Can't specify R-value",
+      "R-value below current code minimum",
+      "No mention of grant eligibility",
+      "No post-installation check"
+    ],
+    "calculator_link": "/calculators/insulation-calculator.html",
+    "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
+  },
+  {
+    "slug": "heat-pump-installers",
+    "name": "Heat Pump Installers",
+    "singular": "heat pump installer",
+    "plural": "heat pump installers",
+    "icon": "❄️",
+    "description": "HVAC specialists for heat pump supply and installation, multi-split systems, and ducted systems.",
+    "licensing": "Must be a Registered Electrical Worker (REW). Refrigerant handling requires an additional certificate.",
+    "licence_check_url": "https://www.electricalworkers.govt.nz/register-search",
+    "avg_cost_nz": "Single room unit (supply + install): $2,500–$4,500. Multi-split system: $8,000–$18,000+",
+    "what_to_look_for": [
+      "REW registration certificate",
+      "HVAC-certified installer",
+      "Brand-authorised installer (Mitsubishi, Fujitsu etc)",
+      "Correct sizing calculation for your room",
+      "5+ year warranty on parts and labour"
+    ],
+    "red_flags": [
+      "Won't show REW number",
+      "Oversizes or undersizes without explanation",
+      "No warranty on installation",
+      "Using non-brand-approved parts"
+    ],
+    "calculator_link": "/calculators/heat-pump-sizing-calculator.html",
+    "related_article": "/articles/best-job-management-software-nz-tradies-2026.html"
+  },
+  {
+    "slug": "solar-installers",
+    "name": "Solar Panel Installers",
+    "singular": "solar installer",
+    "plural": "solar installers",
+    "icon": "☀️",
+    "description": "Solar PV specialists for residential and commercial solar panel installation, battery storage, and EV chargers.",
+    "licensing": "Must be a Registered Electrical Worker (REW). Grid-connected systems require notification to lines company.",
+    "licence_check_url": "https://www.electricalworkers.govt.nz/register-search",
+    "avg_cost_nz": "5kW system: $12,000–$16,000 installed. 10kW: $20,000–$28,000. Battery storage: add $8,000–$14,000",
+    "what_to_look_for": [
+      "REW registration",
+      "Solar retailer certification (SEANZ member)",
+      "Shading analysis and generation estimate",
+      "Grid connection documentation",
+      "25-year panel warranty + 10-year inverter warranty"
+    ],
+    "red_flags": [
+      "No shading analysis provided",
+      "Generation guarantee not offered in writing",
+      "Not SEANZ registered",
+      "Won't handle grid connection documentation"
+    ],
+    "calculator_link": "/calculators/solar-savings-calculator.html",
+    "related_article": "/articles/best-job-management-software-nz-tradies-2026.html"
+  },
+  {
+    "slug": "scaffolders",
+    "name": "Scaffolders",
+    "singular": "scaffolder",
+    "plural": "scaffolders",
+    "icon": "🏗️",
+    "description": "Scaffolding contractors for residential and commercial access scaffolding, roof edge protection, and mobile scaffolding.",
+    "licensing": "No mandatory licence but scaffolders must be competent under the Health and Safety at Work Act 2015.",
+    "licence_check_url": "https://www.worksafe.govt.nz",
+    "avg_cost_nz": "Residential scaffold (erect + 4 weeks): $2,000–$5,500. Commercial: $25–$50/m² erected",
+    "what_to_look_for": [
+      "Scaffolding designed to AS/NZS 1576",
+      "Tagged scaffold with load rating displayed",
+      "Edge protection for roof access",
+      "WorkSafe compliant setup",
+      "Regular scaffold inspection"
+    ],
+    "red_flags": [
+      "No scaffold tag",
+      "No load rating displayed",
+      "Won't certify the scaffold before use",
+      "No edge protection on steep roofs"
+    ],
+    "calculator_link": "/calculators/scaffolding-calculator.html",
+    "related_article": "/articles/health-and-safety-guide-nz-tradies.html"
+  },
+  {
+    "slug": "demolition-contractors",
+    "name": "Demolition Contractors",
+    "singular": "demolition contractor",
+    "plural": "demolition contractors",
+    "icon": "💥",
+    "description": "Specialist demolition for residential and commercial buildings, internal strip-outs, asbestos remediation, and site clearing.",
+    "licensing": "Asbestos removal over 10m² requires a Class B or Class A asbestos removal licence from WorkSafe.",
+    "licence_check_url": "https://www.worksafe.govt.nz/managing-health-and-safety/asbestos/asbestos-removal-licence/",
+    "avg_cost_nz": "Internal strip-out: $3,000–$12,000. House demolition (small): $15,000–$35,000+. Asbestos removal: $80–$200/m²",
+    "what_to_look_for": [
+      "Asbestos survey before any demolition on pre-2000 buildings",
+      "WorkSafe asbestos removal licence if required",
+      "Consent to demolish from council",
+      "Waste disposal plan with documentation",
+      "Neighbour and utility notification process"
+    ],
+    "red_flags": [
+      "No asbestos survey offered for pre-2000 buildings",
+      "No council consent mentioned",
+      "Suspiciously cheap quote (skipping asbestos process)",
+      "No waste manifest documentation"
+    ],
+    "calculator_link": "/calculators/earthworks-calculator.html",
+    "related_article": "/articles/health-and-safety-guide-nz-tradies.html"
+  },
+  {
+    "slug": "arborists",
+    "name": "Arborists & Tree Services",
+    "singular": "arborist",
+    "plural": "arborists",
+    "icon": "🌳",
+    "description": "Qualified arborists for tree removal, pruning, stump grinding, tree reports, and emergency storm work.",
+    "licensing": "No mandatory licensing. Look for NZ Arboricultural Association (NZAA) certified arborists.",
+    "licence_check_url": "https://www.nzaa.org.nz",
+    "avg_cost_nz": "Small tree removal: $500–$1,500. Large tree: $2,000–$8,000+. Stump grinding: $200–$600",
+    "what_to_look_for": [
+      "NZAA certification or ISA credentials",
+      "Council consent for protected or notable trees",
+      "Public liability insurance (minimum $1M)",
+      "Full clean-up and chip removal included in quote",
+      "Written arborist report if required"
+    ],
+    "red_flags": [
+      "Won't check council consent status",
+      "No insurance documentation",
+      "Quote includes felling but not removal",
+      "Not NZAA certified for complex work"
+    ],
+    "calculator_link": "/calculators/job-cost-calculator.html",
+    "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
+  },
+  {
+    "slug": "kitchen-renovators",
+    "name": "Kitchen Renovators",
+    "singular": "kitchen renovator",
+    "plural": "kitchen renovators",
+    "icon": "🍳",
+    "description": "Kitchen design and renovation specialists for cabinetry, benchtops, appliances, splashbacks, and full kitchen rebuilds.",
+    "licensing": "LBP required for structural changes. Plumbing changes need a licensed plumber.",
+    "licence_check_url": "https://www.lbp.govt.nz/public-register",
+    "avg_cost_nz": "Budget kitchen refresh: $15,000–$25,000. Mid-range full renovation: $30,000–$55,000. Premium: $60,000–$120,000+",
+    "what_to_look_for": [
+      "Full scope in writing (cabinetry, benchtop, appliances, plumbing, electrical)",
+      "3D design plan before committing",
+      "Brand-specified cabinetry and benchtop products",
+      "Project management of all sub-trades",
+      "Builders guarantee / warranty"
+    ],
+    "red_flags": [
+      "No 3D design offered",
+      "Vague quote without product specifications",
+      "Doesn't coordinate plumbing and electrical",
+      "Large upfront deposit (over 30%)"
+    ],
+    "calculator_link": "/calculators/kitchen-renovation-calculator.html",
+    "related_article": "/articles/how-to-write-a-quote-that-wins-jobs-nz.html"
+  },
+  {
+    "slug": "bathroom-renovators",
+    "name": "Bathroom Renovators",
+    "singular": "bathroom renovator",
+    "plural": "bathroom renovators",
+    "icon": "🛁",
+    "description": "Bathroom design and renovation specialists managing tiling, plumbing, waterproofing, fixtures, and fit-out.",
+    "licensing": "LBP for structural work. Licensed plumber required for plumbing. Building Code E3 for waterproofing.",
+    "licence_check_url": "https://www.lbp.govt.nz/public-register",
+    "avg_cost_nz": "Basic refresh: $8,000–$15,000. Mid-range full reno: $18,000–$35,000. Premium: $35,000–$80,000+",
+    "what_to_look_for": [
+      "Full scope including waterproofing specification",
+      "Coordinates all sub-trades (plumber, tiler, electrician)",
+      "Building Code E3 waterproofing compliance",
+      "Fixture allowance clearly documented",
+      "Timeline and progress payment schedule"
+    ],
+    "red_flags": [
+      "Waterproofing not specifically addressed",
+      "Won't coordinate sub-trades",
+      "No fixture allowance detail",
+      "Very large upfront deposit"
+    ],
+    "calculator_link": "/calculators/bathroom-renovation-calculator.html",
+    "related_article": "/articles/how-to-write-a-quote-that-wins-jobs-nz.html"
+  },
+  {
+    "slug": "pest-controllers",
+    "name": "Pest Controllers",
+    "singular": "pest controller",
+    "plural": "pest controllers",
+    "icon": "🐜",
+    "description": "Licensed pest management professionals for rodents, insects, wasps, possums, and building fumigation.",
+    "licensing": "Must hold a NZQA Pest Management qualification and comply with the HSNO Act for restricted substances.",
+    "licence_check_url": "https://www.pexa.org.nz",
+    "avg_cost_nz": "Rodent control: $250–$600. Wasp nest: $120–$300. Full building treatment: $400–$1,200+",
+    "what_to_look_for": [
+      "NZQA qualification or PEXA membership",
+      "Licensed to use restricted substances",
+      "Treatment report and product safety data sheets",
+      "Re-treatment guarantee if pests return",
+      "Advice on prevention measures"
+    ],
+    "red_flags": [
+      "Won't provide treatment details or product names",
+      "No qualification mentioned",
+      "No re-treatment guarantee",
+      "Very cheap quote using generic products"
+    ],
+    "calculator_link": "/calculators/job-cost-calculator.html",
+    "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
+  },
+  {
+    "slug": "security-system-installers",
+    "name": "Security System Installers",
+    "singular": "security installer",
+    "plural": "security system installers",
+    "icon": "🔒",
+    "description": "Security specialists for alarm systems, CCTV, intercoms, access control, and monitored security.",
+    "licensing": "Must hold a Private Security Personnel and Private Investigators Act 2010 licence for monitoring and patrol services.",
+    "licence_check_url": "https://www.dia.govt.nz/diawebsite.nsf/wpg_URL/Services-Private-Security-Private-Investigators-Index",
+    "avg_cost_nz": "Basic alarm system: $1,200–$2,800 installed. CCTV (4 cameras): $1,500–$3,500. Full monitored system: $2,500–$6,000+",
+    "what_to_look_for": [
+      "Private Security licence if providing monitoring",
+      "Brand-name equipment (Hikvision, Dahua, Ajax, DSC)",
+      "Installation warranty (minimum 12 months)",
+      "Response time SLA for monitored services",
+      "Remote access via app"
+    ],
+    "red_flags": [
+      "No licence for monitoring services",
+      "Generic unbranded equipment",
+      "Won't provide monitoring response times",
+      "Monthly fees not clearly disclosed upfront"
+    ],
+    "calculator_link": "/calculators/job-cost-calculator.html",
+    "related_article": "/articles/best-job-management-software-nz-tradies-2026.html"
+  },
+  {
+    "slug": "hvac-engineers",
+    "name": "HVAC Engineers & Air Conditioning",
+    "singular": "HVAC engineer",
+    "plural": "HVAC engineers",
+    "icon": "🌡️",
+    "description": "Commercial and residential HVAC for ventilation systems, air conditioning, ducted systems, and building automation.",
+    "licensing": "REW required for electrical work. Refrigerant handling certificate required.",
+    "licence_check_url": "https://www.electricalworkers.govt.nz/register-search",
+    "avg_cost_nz": "Ducted system (residential): $8,000–$18,000. Commercial HVAC: $150–$400/m² of conditioned space",
+    "what_to_look_for": [
+      "HVAC design load calculation provided",
+      "Energy efficiency rating (EER/COP)",
+      "Air balancing and commissioning included",
+      "Maintenance plan offered",
+      "ASHRAE or CIBSE design standards reference"
+    ],
+    "red_flags": [
+      "No load calculation offered",
+      "Oversizes system without justification",
+      "No commissioning report",
+      "No maintenance plan"
+    ],
+    "calculator_link": "/calculators/heat-pump-sizing-calculator.html",
+    "related_article": "/articles/best-job-management-software-nz-tradies-2026.html"
+  },
+  {
+    "slug": "architects",
+    "name": "Architects",
+    "singular": "architect",
+    "plural": "architects",
+    "icon": "📐",
+    "description": "Registered architects for residential design, commercial projects, heritage work, and resource consent applications.",
+    "licensing": "Must be registered with the New Zealand Registered Architects Board (NZRAB).",
+    "licence_check_url": "https://www.nzrab.nz/public-register",
+    "avg_cost_nz": "Residential design: 8–15% of construction cost. Fixed fee for small projects: $5,000–$25,000+",
+    "what_to_look_for": [
+      "NZRAB registration",
+      "Portfolio of similar project types",
+      "Clear scope of services (concept, consents, contract administration)",
+      "Fee structure (percentage, fixed, or time-based)",
+      "Insurance (professional indemnity)"
+    ],
+    "red_flags": [
+      "Not NZRAB registered",
+      "Vague fee structure",
+      "No professional indemnity insurance",
+      "No portfolio of similar work"
+    ],
+    "calculator_link": "/calculators/job-cost-calculator.html",
+    "related_article": "/articles/how-to-get-lbp-licence-new-zealand.html"
+  },
+  {
+    "slug": "excavators",
+    "name": "Excavation & Earthworks Contractors",
+    "singular": "excavation contractor",
+    "plural": "excavation contractors",
+    "icon": "🚜",
+    "description": "Excavation specialists for site preparation, foundations, drainage trenching, retaining walls, and bulk earthworks.",
+    "licensing": "No mandatory licensing. Some earthworks require resource consent under the RMA.",
+    "licence_check_url": "https://www.ecan.govt.nz",
+    "avg_cost_nz": "Excavator hire (with operator): $180–$220/hr. Site cut (per m³): $35–$65 disposed. Foundation excavation: $800–$3,000+",
+    "what_to_look_for": [
+      "Correct machine size for your job",
+      "Resource consent compliance if required",
+      "Spoil disposal plan included",
+      "Utility location (Call Before You Dig) process",
+      "Compaction testing for engineered fill"
+    ],
+    "red_flags": [
+      "Doesn't check for underground services",
+      "No spoil disposal plan",
+      "Can't do compaction testing",
+      "No resource consent check for large volumes"
+    ],
+    "calculator_link": "/calculators/earthworks-calculator.html",
+    "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
+  },
+  {
+    "slug": "steel-fabricators",
+    "name": "Steel Fabricators & Structural Steel",
+    "singular": "steel fabricator",
+    "plural": "steel fabricators",
+    "icon": "⚙️",
+    "description": "Structural and architectural steel fabrication for beams, portals, stairs, balustrades, and custom metalwork.",
+    "licensing": "Structural steel work on buildings requires an LBP licence (Design or Structure category).",
+    "licence_check_url": "https://www.lbp.govt.nz/public-register",
+    "avg_cost_nz": "Structural steel beam: $120–$250/m installed. Steel portal frame: $35,000–$80,000+. Balustrade: $400–$900/m",
+    "what_to_look_for": [
+      "LBP credentials for structural work",
+      "Steel grade specification (AS3678, Grade 300 etc)",
+      "Welding certification (AWS D1.1 or AS/NZS 1554)",
+      "Protective coating / hot-dip galvanising spec",
+      "Engineer-approved drawings"
+    ],
+    "red_flags": [
+      "No welder certification",
+      "Won't specify steel grade",
+      "No engineer approval for structural members",
+      "No coating specification"
+    ],
+    "calculator_link": "/calculators/job-cost-calculator.html",
+    "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
+  },
+  {
+    "slug": "cabinet-makers",
+    "name": "Cabinet Makers & Joiners",
+    "singular": "cabinet maker",
+    "plural": "cabinet makers",
+    "icon": "🪑",
+    "description": "Custom cabinet makers and joiners for kitchens, wardrobes, bathrooms, entertainment units, and commercial joinery.",
+    "licensing": "No mandatory licensing. LBP required for installation work affecting building structure.",
+    "licence_check_url": "https://www.nzjf.org.nz",
+    "avg_cost_nz": "Custom kitchen cabinetry: $1,500–$3,000/m run. Custom wardrobe: $800–$2,500/m. Commercial joinery: varies",
+    "what_to_look_for": [
+      "Board substrate specification (MDF, plywood, particle board)",
+      "Hardware brands (Blum, Hettich, Grass)",
+      "Soft-close drawer and door spec",
+      "Finish type (vinyl wrap, lacquer, paint)",
+      "CAD drawings before manufacture"
+    ],
+    "red_flags": [
+      "Won't specify substrate material",
+      "Generic or unbranded hardware",
+      "No drawings before manufacturing",
+      "Quote significantly below comparable custom makers"
+    ],
+    "calculator_link": "/calculators/job-cost-calculator.html",
+    "related_article": "/articles/how-to-write-a-quote-that-wins-jobs-nz.html"
+  },
+  {
+    "slug": "garage-door-installers",
+    "name": "Garage Door Suppliers & Installers",
+    "singular": "garage door installer",
+    "plural": "garage door installers",
+    "icon": "🚗",
+    "description": "Supply and installation of panel lift, roller, and sectional garage doors with automated openers.",
+    "licensing": "No mandatory licensing. Building consent required if installing a garage for the first time.",
+    "licence_check_url": "https://www.lbp.govt.nz/public-register",
+    "avg_cost_nz": "Single roller door (supply + install): $1,800–$3,500. Double panel lift (automated): $3,000–$6,500",
+    "what_to_look_for": [
+      "Wind load rating for your region",
+      "Motor brand and warranty (ATA, Merlin, B&D)",
+      "Safety edge and auto-reverse features",
+      "Insulated panel option for temperature control",
+      "Remote and app control compatibility"
+    ],
+    "red_flags": [
+      "No wind load rating stated",
+      "Unknown motor brand",
+      "No safety edge",
+      "Won't specify panel insulation value"
+    ],
+    "calculator_link": "/calculators/job-cost-calculator.html",
+    "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
+  },
+  {
+    "slug": "locksmiths",
+    "name": "Locksmiths",
+    "singular": "locksmith",
+    "plural": "locksmiths",
+    "icon": "🔑",
+    "description": "Emergency lockouts, lock installation and re-keying, high-security deadbolts, and master key systems.",
+    "licensing": "No mandatory licensing. Building entry requires authorization. Emergency locksmiths operate 24/7.",
+    "licence_check_url": "https://www.masterlocksmiths.co.nz",
+    "avg_cost_nz": "Standard lockout: $120–$250. New lock supply + fit: $150–$450. Master key system: $600–$2,500+",
+    "what_to_look_for": [
+      "MLNZ (Master Locksmiths NZ) membership",
+      "Lock grade specification (Grade 1/2/3)",
+      "Key control documentation for master systems",
+      "Transparent call-out and labour rates",
+      "After-hours rate clearly stated"
+    ],
+    "red_flags": [
+      "Won't show ID before entering",
+      "No pricing transparency",
+      "Can't provide lock grade information",
+      "Extremely high after-hours charges without disclosure"
+    ],
+    "calculator_link": "/calculators/job-cost-calculator.html",
+    "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
+  },
+  {
+    "slug": "bricklayers",
+    "name": "Bricklayers & Blocklayers",
+    "singular": "bricklayer",
+    "plural": "bricklayers",
+    "icon": "🧱",
+    "description": "Specialist bricklayers for residential and commercial brick, block, and stone construction.",
+    "licensing": "LBP required for structural masonry work on residential buildings.",
+    "licence_check_url": "https://www.lbp.govt.nz/public-register",
+    "avg_cost_nz": "Single-skin brickwork: $120–$180/m² installed. Block wall: $110–$160/m². Heritage restoration: $200–$400/m²",
+    "what_to_look_for": [
+      "LBP credentials for structural work",
+      "Mortar mix specification",
+      "DPC (damp proof course) detail",
+      "Movement joint design",
+      "Experience with your brick or block type"
+    ],
+    "red_flags": [
+      "No mortar mix specified",
+      "No DPC mentioned for ground-level walls",
+      "No movement joints in long walls",
+      "Can't provide LBP for structural work"
+    ],
+    "calculator_link": "/calculators/brick-block-calculator.html",
+    "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
+  },
+  {
+    "slug": "window-installers",
+    "name": "Window & Door Installers",
+    "singular": "window installer",
+    "plural": "window installers",
+    "icon": "🪟",
+    "description": "Supply and installation of aluminium and timber joinery, double glazing, bi-fold doors, and skylights.",
+    "licensing": "LBP required for installation of new windows and external doors in NZ homes.",
+    "licence_check_url": "https://www.lbp.govt.nz/public-register",
+    "avg_cost_nz": "Aluminium double-glazed window: $600–$1,500 installed. Full house re-window: $15,000–$45,000+",
+    "what_to_look_for": [
+      "LBP licence",
+      "Glass specification (toughened, low-e, argon-filled)",
+      "Joinery thermal rating (H-value or window energy rating)",
+      "Flashing and weatherproofing detail",
+      "NZ window manufacturer (Altherm, Vantage, Stegbar)"
+    ],
+    "red_flags": [
+      "No LBP mentioned",
+      "Can't specify glass or frame performance ratings",
+      "No flashing detail in quote",
+      "Unknown or imported joinery brand"
+    ],
+    "calculator_link": "/calculators/job-cost-calculator.html",
+    "related_article": "/articles/how-to-get-lbp-licence-new-zealand.html"
+  },
+  {
+    "slug": "irrigation-specialists",
+    "name": "Irrigation Specialists",
+    "singular": "irrigation specialist",
+    "plural": "irrigation specialists",
+    "icon": "💧",
+    "description": "Irrigation design and installation for residential lawns, commercial landscapes, and rural properties.",
+    "licensing": "No mandatory licensing. Water takes for irrigation may require resource consent under the RMA.",
+    "licence_check_url": "https://www.irrigationnz.co.nz",
+    "avg_cost_nz": "Residential lawn system: $2,500–$6,000. Drip irrigation (per m²): $8–$18 installed",
+    "what_to_look_for": [
+      "IrrigationNZ member",
+      "Hydraulic design for correct zone sizing",
+      "Water meter and backflow prevention included",
+      "Smart controller with soil moisture sensors",
+      "Council water restriction compliance"
+    ],
+    "red_flags": [
+      "No backflow prevention",
+      "No hydraulic design",
+      "Single zone for large areas (inefficient)",
+      "No smart controller option"
+    ],
+    "calculator_link": "/calculators/irrigation-calculator.html",
+    "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
+  },
+  {
+    "slug": "pool-builders",
+    "name": "Pool Builders",
+    "singular": "pool builder",
+    "plural": "pool builders",
+    "icon": "🏊",
+    "description": "Swimming pool construction specialists for fibreglass, concrete, and above-ground pools, including fencing and compliance.",
+    "licensing": "Building consent required for all pools. Pool fence must comply with the Fencing of Swimming Pools Act 1987.",
+    "licence_check_url": "https://www.lbp.govt.nz/public-register",
+    "avg_cost_nz": "Fibreglass pool: $35,000–$70,000 installed. Concrete/gunite: $50,000–$120,000+. Above-ground: $3,000–$12,000",
+    "what_to_look_for": [
+      "Building consent included in quote",
+      "Pool fence compliance certification",
+      "Manufacturer warranty (fibreglass shell, filtration)",
+      "Site visit and soil assessment",
+      "Reference from similar installations"
+    ],
+    "red_flags": [
+      "Building consent not included",
+      "No fence compliance mentioned",
+      "No soil assessment for in-ground pool",
+      "Very low quote without specification"
+    ],
+    "calculator_link": "/calculators/pool-volume-calculator.html",
+    "related_article": "/articles/how-to-write-a-quote-that-wins-jobs-nz.html"
+  },
+  {
+    "slug": "asphalt-contractors",
+    "name": "Asphalt & Driveway Contractors",
+    "singular": "asphalt contractor",
+    "plural": "asphalt contractors",
+    "icon": "🛣️",
+    "description": "Asphalt, chip seal, and tar seal contractors for driveways, car parks, and road surfacing.",
+    "licensing": "No mandatory licensing for residential driveways. Road work may require council approvals.",
+    "licence_check_url": "https://www.nzta.govt.nz",
+    "avg_cost_nz": "Asphalt driveway: $80–$130/m² installed. Chip seal driveway: $25–$55/m². New sealed road (per km): $300,000+",
+    "what_to_look_for": [
+      "Base course specification and depth",
+      "Asphalt depth and grade specified",
+      "Drainage design (crossfall)",
+      "Edge restraints or kerbing",
+      "Warranty on workmanship"
+    ],
+    "red_flags": [
+      "No base course preparation",
+      "Won't specify asphalt depth",
+      "No drainage design",
+      "Very cheap quote (thin asphalt, no base)"
+    ],
+    "calculator_link": "/calculators/paving-calculator.html",
+    "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
+  },
+  {
+    "slug": "interior-designers",
+    "name": "Interior Designers",
+    "singular": "interior designer",
+    "plural": "interior designers",
+    "icon": "🎨",
+    "description": "Professional interior designers for residential and commercial space planning, colour schemes, furniture, and fit-out.",
+    "licensing": "No mandatory licensing. Look for members of Spatial Design NZ or NZIA (for architects who do interiors).",
+    "licence_check_url": "https://www.spatialdesignnz.org.nz",
+    "avg_cost_nz": "Design fee: $100–$180/hr or 10–20% of project value. Full interior design project: $5,000–$30,000+ in fees",
+    "what_to_look_for": [
+      "Portfolio matching your style preferences",
+      "Clear fee structure (hourly, fixed, or percentage)",
+      "3D visualisation included",
+      "Trade accounts for sourcing furniture/materials",
+      "Coordination with contractors"
+    ],
+    "red_flags": [
+      "No portfolio",
+      "Vague fee structure",
+      "Can't provide 3D visualisation",
+      "No trade pricing access"
+    ],
+    "calculator_link": "/calculators/job-cost-calculator.html",
+    "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
+  },
+  {
+    "slug": "surveyors",
+    "name": "Land Surveyors",
+    "singular": "land surveyor",
+    "plural": "land surveyors",
+    "icon": "📏",
+    "description": "Licensed cadastral and topographic surveyors for land subdivision, boundary disputes, and building setout.",
+    "licensing": "Must be licensed under the Cadastral Survey Act 2002 for cadastral work. Registration with NZIS.",
+    "licence_check_url": "https://www.linz.govt.nz/surveying/cadastral-surveyors",
+    "avg_cost_nz": "Boundary survey: $1,200–$3,500. Subdivision: $4,000–$25,000+. Building setout: $800–$2,500",
+    "what_to_look_for": [
+      "Licensed cadastral surveyor for boundary/subdivision work",
+      "NZIS (NZ Institution of Surveyors) member",
+      "Topographic survey for resource consent",
+      "GPS RTK or total station equipment",
+      "Title plan and LINZ registration included"
+    ],
+    "red_flags": [
+      "Not licensed for cadastral work",
+      "Can't register plans with LINZ",
+      "Using GPS only without total station for precise work",
+      "No NZIS membership"
+    ],
+    "calculator_link": "/calculators/job-cost-calculator.html",
+    "related_article": "/articles/how-to-get-lbp-licence-new-zealand.html"
+  },
+  {
+    "slug": "stonemasons",
+    "name": "Stonemasons",
+    "singular": "stonemason",
+    "plural": "stonemasons",
+    "icon": "🪨",
+    "description": "Heritage and contemporary stonemasons for natural stone walls, paving, chimneys, and restoration work.",
+    "licensing": "LBP required for structural stone work. Heritage work may require special consent.",
+    "licence_check_url": "https://www.lbp.govt.nz/public-register",
+    "avg_cost_nz": "Natural stone wall: $350–$700/m² installed. Stone paving: $200–$450/m². Heritage restoration: $400–$900/m²",
+    "what_to_look_for": [
+      "Portfolio of stone work matching your project",
+      "Mortar specification compatible with the stone type",
+      "LBP for structural work",
+      "Experience with NZ stone (schist, bluestone, granite)",
+      "Drainage design for dry-stack walls"
+    ],
+    "red_flags": [
+      "Incompatible mortar mix for stone type",
+      "No experience with your stone material",
+      "No LBP for structural walls",
+      "No drainage detail for retaining walls"
+    ],
+    "calculator_link": "/calculators/retaining-wall-calculator.html",
+    "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
+  },
+  {
+    "slug": "timber-floor-specialists",
+    "name": "Timber Floor Specialists",
+    "singular": "timber floor specialist",
+    "plural": "timber floor specialists",
+    "icon": "🪵",
+    "description": "Hardwood floor installation, sanding, polishing, and restoration for solid and engineered timber floors.",
+    "licensing": "No mandatory licensing. NZFA (NZ Flooring Association) membership is a quality indicator.",
+    "licence_check_url": "https://www.flooring.org.nz",
+    "avg_cost_nz": "Solid hardwood (supply + install): $150–$280/m². Sanding and polishing: $25–$55/m²",
+    "what_to_look_for": [
+      "Timber species and grade specification",
+      "Moisture testing of subfloor before installation",
+      "Acclimatisation period for solid timber",
+      "Coating system (oil, polyurethane, wax) specified",
+      "NZFA membership"
+    ],
+    "red_flags": [
+      "No moisture check before installation",
+      "Won't specify coating system",
+      "No acclimatisation period for solid timber",
+      "Unknown timber source or species"
+    ],
+    "calculator_link": "/calculators/carpet-flooring-calculator.html",
+    "related_article": "/articles/how-to-write-a-quote-that-wins-jobs-nz.html"
+  },
+  {
+    "slug": "drainage-specialists",
+    "name": "Drainage & Stormwater Specialists",
+    "singular": "drainage specialist",
+    "plural": "drainage specialists",
+    "icon": "🌊",
+    "description": "Stormwater and site drainage design, installation, and maintenance for residential and commercial properties.",
+    "licensing": "Licensed drainlayer required for sewer connections. Resource consent for stormwater discharge.",
+    "licence_check_url": "https://www.pgdb.co.nz/licensing/licence-search/",
+    "avg_cost_nz": "French drain: $80–$150/m installed. Soakpit: $1,500–$4,000. Full site drainage: $5,000–$25,000+",
+    "what_to_look_for": [
+      "Licensed drainlayer for sewer connections",
+      "Hydraulic design with grade calculations",
+      "Council compliance for stormwater discharge",
+      "CCTV drain inspection capability",
+      "Maintenance access point installation"
+    ],
+    "red_flags": [
+      "No hydraulic design",
+      "No council compliance check",
+      "Can't do CCTV inspection",
+      "No maintenance access points"
+    ],
+    "calculator_link": "/calculators/drain-grade-calculator.html",
+    "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
+  },
+  {
+    "slug": "cladding-installers",
+    "name": "Cladding Installers",
+    "singular": "cladding installer",
+    "plural": "cladding installers",
+    "icon": "🏘️",
+    "description": "Exterior cladding specialists for weatherboard, fibre cement, aluminium composite, brick veneer, and modern facade systems.",
+    "licensing": "LBP required for cladding installation on residential buildings under the Building Act.",
+    "licence_check_url": "https://www.lbp.govt.nz/public-register",
+    "avg_cost_nz": "Primed pine weatherboard: $120–$180/m² installed. Fibre cement: $100–$160/m². Brick veneer: $180–$280/m²",
+    "what_to_look_for": [
+      "LBP licence",
+      "Compliance with NZ Building Code E2 (External Moisture)",
+      "Manufacturer's approved installation method",
+      "Flashing and cavity detail specification",
+      "20-year manufacturer warranty on products"
+    ],
+    "red_flags": [
+      "No LBP licence",
+      "Won't reference E2 compliance",
+      "Unknown cladding brand without warranty",
+      "No cavity system on weathertight cladding"
+    ],
+    "calculator_link": "/calculators/job-cost-calculator.html",
+    "related_article": "/articles/how-to-get-lbp-licence-new-zealand.html"
+  },
+  {
+    "slug": "lighting-specialists",
+    "name": "Lighting Designers & Installers",
+    "singular": "lighting specialist",
+    "plural": "lighting specialists",
+    "icon": "💡",
+    "description": "Architectural and commercial lighting design, LED upgrades, smart lighting, and outdoor lighting installation.",
+    "licensing": "Must be a Registered Electrical Worker (REW) for installation. No separate lighting licence required.",
+    "licence_check_url": "https://www.electricalworkers.govt.nz/register-search",
+    "avg_cost_nz": "Full house LED upgrade (supply + install): $2,500–$6,000. Commercial lighting design: $150–$250/hr. Outdoor lighting: $400–$1,800/circuit",
+    "what_to_look_for": [
+      "REW registration for all installation work",
+      "Lux level design for commercial spaces",
+      "LED brand specification (Philips, LIFX, Lutron)",
+      "Smart lighting and DALI control experience",
+      "Energy savings calculations provided"
+    ],
+    "red_flags": [
+      "No REW registration",
+      "Generic unbranded LED fittings",
+      "No lux design for commercial",
+      "Smart system incompatible with your existing platform"
+    ],
+    "calculator_link": "/calculators/cable-sizing-calculator.html",
+    "related_article": "/articles/best-job-management-software-nz-tradies-2026.html"
+  },
+  {
+    "slug": "commercial-cleaners",
+    "name": "Commercial & Industrial Cleaners",
+    "singular": "commercial cleaner",
+    "plural": "commercial cleaners",
+    "icon": "🧹",
+    "description": "Commercial cleaning contractors for offices, construction site cleans, high-pressure washing, and post-renovation cleaning.",
+    "licensing": "No mandatory licensing. Chemical handling requires HSNO compliance.",
+    "licence_check_url": "https://www.serviceiq.org.nz",
+    "avg_cost_nz": "Office cleaning: $30–$55/hr. Construction clean: $2–$5/m². High-pressure washing: $3–$8/m²",
+    "what_to_look_for": [
+      "Public liability insurance",
+      "Chemical safety data sheets for products used",
+      "Documented cleaning schedule",
+      "Police vetting for staff with facility access",
+      "Green/eco-certified products option"
+    ],
+    "red_flags": [
+      "No insurance",
+      "Can't provide product safety data sheets",
+      "No police vetting process for keyholders",
+      "Extremely low price (corners cut)"
+    ],
+    "calculator_link": "/calculators/job-cost-calculator.html",
+    "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
+  },
+  {
+    "slug": "quantity-surveyors",
+    "name": "Quantity Surveyors",
+    "singular": "quantity surveyor",
+    "plural": "quantity surveyors",
+    "icon": "📊",
+    "description": "Building cost estimators and construction economists for project budgeting, contract administration, and dispute resolution.",
+    "licensing": "NZIQS (NZ Institute of Quantity Surveyors) membership is the professional standard.",
+    "licence_check_url": "https://www.nziqs.co.nz",
+    "avg_cost_nz": "Construction cost estimate: $2,000–$8,000. Contract administration: 1–3% of construction cost",
+    "what_to_look_for": [
+      "NZIQS membership (PQS or AIQS equivalent)",
+      "Experience with your project type (residential, commercial, civil)",
+      "Elemental cost plan format",
+      "Tender evaluation included",
+      "Professional indemnity insurance"
+    ],
+    "red_flags": [
+      "Not NZIQS-affiliated",
+      "Estimate without site visit",
+      "No professional indemnity insurance",
+      "Vague scope of services"
+    ],
+    "calculator_link": "/calculators/job-cost-calculator.html",
+    "related_article": "/articles/how-to-get-lbp-licence-new-zealand.html"
   }
 ]

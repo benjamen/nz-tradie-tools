@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insulation Calculator — NZ R-Value & Area — NZ Tradie Tools</title>
+    <meta name="description" content="Calculate how much insulation you need for your NZ home — ceiling, underfloor, and wall insulation. R-values, batts, and cost estimates.">
+    <meta property="og:title" content="Insulation Calculator — NZ R-Value & Area — NZ Tradie Tools">
+    <meta property="og:description" content="Calculate how much insulation you need for your NZ home — ceiling, underfloor, and wall insulation. R-values, batts, and cost estimates.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradietools.nz/calculators/insulation-calculator.html">
+    <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Insulation Calculator — NZ R-Value & Area — NZ Tradie Tools">
+    <meta name="twitter:description" content="Calculate how much insulation you need for your NZ home — ceiling, underfloor, and wall insulation. R-values, batts, and cost estimates.">
+    <link rel="canonical" href="https://tradietools.nz/calculators/insulation-calculator.html">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+            <nav class="main-nav">
+                
+                <a href="/">Home</a>
+                
+                <a href="/trades/">Find a Tradie</a>
+                
+                <a href="/jobs/">Job Costs</a>
+                
+                <a href="/calculators/">Calculators</a>
+                
+                <a href="/articles/">Articles</a>
+                
+                <a href="/templates/">Templates</a>
+                
+                <a href="/contact/">Contact</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <div class="container page-layout">
+        <main class="main-content">
+            <h1>Insulation Calculator — NZ R-Value & Area</h1>
+            <p class="lead">Calculate how much insulation you need for your NZ home — ceiling, underfloor, and wall insulation. R-values, batts, and cost estimates.</p>
+
+            
+
+            <div class="calculator-wrapper">
+                <div class="calc-tabs">
+  <button class="calc-tab active" onclick="switchITab('ceil')">Ceiling</button>
+  <button class="calc-tab" onclick="switchITab('floor')">Underfloor</button>
+  <button class="calc-tab" onclick="switchITab('wall')">Wall</button>
+</div>
+<div id="itab-ceil">
+  <div class="calc-grid">
+    <div class="calc-group"><label>House floor area (m²)</label><input type="number" id="ci-area" placeholder="e.g. 120" oninput="calcCeil()"></div>
+    <div class="calc-group"><label>Climate zone</label>
+      <select id="ci-zone" onchange="calcCeil()">
+        <option value="6.6">Zone 1 — Auckland, Northland</option>
+        <option value="6.6">Zone 2 — Waikato, Bay of Plenty, Gisborne</option>
+        <option value="4.0" selected>Zone 3 — Hawke's Bay, Taranaki, Manawatu, Wellington</option>
+        <option value="4.0">Zone 4 — Nelson, Marlborough, West Coast</option>
+        <option value="3.3">Zone 5 — Canterbury, Otago</option>
+        <option value="3.3">Zone 6 — Southland, Fiordland</option>
+      </select>
+    </div>
+    <div class="calc-group"><label>Existing insulation?</label>
+      <select id="ci-exist" onchange="calcCeil()">
+        <option value="0">None</option>
+        <option value="1" selected>Old / thin (pre-2000)</option>
+        <option value="2">Meets current code</option>
+      </select>
+    </div>
+  </div>
+  <div class="calc-result" id="ci-result" style="display:none">
+    <h3>Ceiling Insulation</h3>
+    <div class="result-row"><span>Minimum R-value required (NZ H1)</span><span id="ci-rval"></span></div>
+    <div class="result-row"><span>Area to insulate</span><span id="ci-area-out"></span></div>
+    <div class="result-row"><span>Batts required (approx)</span><span id="ci-batts"></span></div>
+    <div class="result-row"><span>Estimated material cost</span><span id="ci-mat"></span></div>
+    <div class="result-row"><span>Estimated installed cost</span><span id="ci-install" class="result-highlight"></span></div>
+  </div>
+</div>
+<div id="itab-floor" style="display:none">
+  <div class="calc-grid">
+    <div class="calc-group"><label>House floor area (m²)</label><input type="number" id="fi-area" placeholder="e.g. 120" oninput="calcFloor()"></div>
+    <div class="calc-group"><label>Floor type</label>
+      <select id="fi-type" onchange="calcFloor()">
+        <option value="1" selected>Suspended timber (standard)</option>
+        <option value="1.3">Irregular joists / old villa</option>
+      </select>
+    </div>
+  </div>
+  <div class="calc-result" id="fi-result" style="display:none">
+    <h3>Underfloor Insulation</h3>
+    <div class="result-row"><span>Required R-value (NZ H1)</span><span>R 1.3</span></div>
+    <div class="result-row"><span>Area to insulate</span><span id="fi-area-out"></span></div>
+    <div class="result-row"><span>Estimated material cost</span><span id="fi-mat"></span></div>
+    <div class="result-row"><span>Estimated installed cost</span><span id="fi-install" class="result-highlight"></span></div>
+  </div>
+</div>
+<div id="itab-wall" style="display:none">
+  <div class="calc-grid">
+    <div class="calc-group"><label>External wall area (m²)</label><input type="number" id="wi-area" placeholder="e.g. 80" oninput="calcWall()"></div>
+    <div class="calc-group"><label>Wall construction</label>
+      <select id="wi-type" onchange="calcWall()">
+        <option value="1" selected>Timber framed (new build / retrofit)</option>
+        <option value="1.5">Solid / brick (retrofit blown-in)</option>
+      </select>
+    </div>
+  </div>
+  <div class="calc-result" id="wi-result" style="display:none">
+    <h3>Wall Insulation</h3>
+    <div class="result-row"><span>Required R-value (NZ H1)</span><span>R 2.0</span></div>
+    <div class="result-row"><span>Area to insulate</span><span id="wi-area-out"></span></div>
+    <div class="result-row"><span>Estimated material cost</span><span id="wi-mat"></span></div>
+    <div class="result-row"><span>Estimated installed cost</span><span id="wi-install" class="result-highlight"></span></div>
+  </div>
+</div>
+<script>
+function nzd(n){return '$'+Math.round(n).toLocaleString();}
+function switchITab(t){
+  ['ceil','floor','wall'].forEach(function(id){document.getElementById('itab-'+id).style.display=id===t?'':'none';});
+  document.querySelectorAll('.calc-tab').forEach(function(b,i){b.classList.toggle('active',['ceil','floor','wall'][i]===t);});
+}
+function calcCeil(){
+  var area=parseFloat(document.getElementById('ci-area').value)||0;
+  var rval=parseFloat(document.getElementById('ci-zone').value);
+  var exist=parseInt(document.getElementById('ci-exist').value);
+  if(!area){document.getElementById('ci-result').style.display='none';return;}
+  var eff=exist===2?0:area;
+  var batts=Math.ceil(eff/0.56);
+  var mat=eff*(exist===0?18:12);
+  var install=eff*(exist===0?28:20)+350;
+  document.getElementById('ci-rval').textContent='R '+rval;
+  document.getElementById('ci-area-out').textContent=eff.toFixed(1)+' m²';
+  document.getElementById('ci-batts').textContent=batts+' batts';
+  document.getElementById('ci-mat').textContent=nzd(mat);
+  document.getElementById('ci-install').textContent=nzd(install);
+  document.getElementById('ci-result').style.display='';
+}
+function calcFloor(){
+  var area=parseFloat(document.getElementById('fi-area').value)||0;
+  var mult=parseFloat(document.getElementById('fi-type').value);
+  if(!area){document.getElementById('fi-result').style.display='none';return;}
+  var eff=area*mult;
+  document.getElementById('fi-area-out').textContent=area.toFixed(1)+' m²';
+  document.getElementById('fi-mat').textContent=nzd(eff*14);
+  document.getElementById('fi-install').textContent=nzd(eff*22+300);
+  document.getElementById('fi-result').style.display='';
+}
+function calcWall(){
+  var area=parseFloat(document.getElementById('wi-area').value)||0;
+  var mult=parseFloat(document.getElementById('wi-type').value);
+  if(!area){document.getElementById('wi-result').style.display='none';return;}
+  document.getElementById('wi-area-out').textContent=area.toFixed(1)+' m²';
+  document.getElementById('wi-mat').textContent=nzd(area*16*mult);
+  document.getElementById('wi-install').textContent=nzd(area*30*mult+400);
+  document.getElementById('wi-result').style.display='';
+}
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="nz-insulation-requirements-h1-2023">NZ Insulation Requirements (H1 2023)</h2>
+<p>The NZ Building Code clause H1 (Energy Efficiency) was significantly updated in 2023, raising minimum R-values across all climate zones. All new builds and major renovations must comply.</p>
+<h3 id="nz-climate-zones">NZ Climate Zones</h3>
+<table>
+<thead>
+<tr>
+<th>Zone</th>
+<th>Cities</th>
+<th>Min ceiling R-value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Northland, Auckland</td>
+<td>R 6.6</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Waikato, BOP, Gisborne</td>
+<td>R 6.6</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Hawke's Bay, Wellington, Taranaki</td>
+<td>R 4.0</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Nelson, Marlborough, West Coast</td>
+<td>R 4.0</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Canterbury, Otago</td>
+<td>R 3.3</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Southland, Fiordland</td>
+<td>R 3.3</td>
+</tr>
+</tbody>
+</table>
+<h3 id="insulation-grants">Insulation Grants</h3>
+<p>Check if you qualify for <strong>Warmer Kiwi Homes</strong> grants — eligible homeowners can receive up to <strong>66% subsidy</strong> on insulation installation. Visit <a href="https://www.energywise.govt.nz/at-home/insulate/">EECA Energywise</a> for details.</p>
+<h3 id="typical-installed-costs">Typical Installed Costs</h3>
+<ul>
+<li>Ceiling insulation: <strong>$18–$30/m²</strong> installed</li>
+<li>Underfloor insulation: <strong>$20–$28/m²</strong> installed  </li>
+<li>Wall insulation (new build): <strong>$25–$40/m²</strong> installed</li>
+</ul>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:linear-gradient(135deg,#0055a5 0%,#003d7a 100%);color:#fff;border:none">
+                <h3 style="color:#fff">🚀 Fastcrew — One App for Everything</h3>
+                <p style="color:rgba(255,255,255,.88);font-size:.85rem;margin-bottom:.6rem">Tired of paying for 4–5 different apps? Fastcrew replaces them all:</p>
+                <ul style="color:rgba(255,255,255,.82);font-size:.82rem;margin:0 0 1rem;padding-left:1.1rem">
+                    <li>Jobs, quotes &amp; invoicing</li>
+                    <li>Built-in H&amp;S &amp; compliance</li>
+                    <li>Xero sync + Stripe payments</li>
+                    <li>Flat $20/seat — no tier lock-in</li>
+                </ul>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#e55a00;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Get early access →</a>
+            </div>
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator.html">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator.html">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator.html">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator.html">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator.html">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://fastcrew.nz" rel="noopener" target="_blank">Fastcrew — All-in-One Tradie App</a></li>
+                    <li><a href="https://www.xero.com/nz/" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">NZ Tradie Tools</p>
+                <p>Free calculators, templates and guides for New Zealand tradies.</p>
+                <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
+            </div>
+            <div style="text-align:right">
+                <p><a href="/privacy/">Privacy Policy</a></p>
+                <p><a href="/contact/">Contact</a></p>
+                <p style="margin-top:.5rem">&copy; 2026 NZ Tradie Tools</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

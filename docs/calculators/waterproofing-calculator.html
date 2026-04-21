@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waterproofing Calculator — NZ (Bathrooms & Decks) — NZ Tradie Tools</title>
+    <meta name="description" content="Calculate waterproofing membrane, primer, and tape quantities for NZ bathrooms, showers, and decks.">
+    <meta property="og:title" content="Waterproofing Calculator — NZ (Bathrooms & Decks) — NZ Tradie Tools">
+    <meta property="og:description" content="Calculate waterproofing membrane, primer, and tape quantities for NZ bathrooms, showers, and decks.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradietools.nz/calculators/waterproofing-calculator.html">
+    <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Waterproofing Calculator — NZ (Bathrooms & Decks) — NZ Tradie Tools">
+    <meta name="twitter:description" content="Calculate waterproofing membrane, primer, and tape quantities for NZ bathrooms, showers, and decks.">
+    <link rel="canonical" href="https://tradietools.nz/calculators/waterproofing-calculator.html">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+            <nav class="main-nav">
+                
+                <a href="/">Home</a>
+                
+                <a href="/trades/">Find a Tradie</a>
+                
+                <a href="/jobs/">Job Costs</a>
+                
+                <a href="/calculators/">Calculators</a>
+                
+                <a href="/articles/">Articles</a>
+                
+                <a href="/templates/">Templates</a>
+                
+                <a href="/contact/">Contact</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <div class="container page-layout">
+        <main class="main-content">
+            <h1>Waterproofing Calculator — NZ (Bathrooms & Decks)</h1>
+            <p class="lead">Calculate waterproofing membrane, primer, and tape quantities for NZ bathrooms, showers, and decks.</p>
+
+            
+
+            <div class="calculator-wrapper">
+                <div class="calc-tabs">
+  <button class="calc-tab active" onclick="switchWPTab('bath')">Bathroom / Shower</button>
+  <button class="calc-tab" onclick="switchWPTab('deck')">Deck / Balcony</button>
+</div>
+<div id="wptab-bath">
+  <div class="calc-grid">
+    <div class="calc-group"><label>Floor area (m²)</label><input type="number" id="wp-fa" placeholder="e.g. 4" oninput="calcWP()"></div>
+    <div class="calc-group"><label>Shower floor area (m²)</label><input type="number" id="wp-sa" placeholder="e.g. 1.0" oninput="calcWP()"></div>
+    <div class="calc-group"><label>Wet wall height (m)</label><input type="number" id="wp-wh" placeholder="e.g. 1.8" value="1.8" oninput="calcWP()"></div>
+    <div class="calc-group"><label>Wet wall perimeter (m)</label><input type="number" id="wp-wp" placeholder="e.g. 6" oninput="calcWP()"></div>
+    <div class="calc-group"><label>Product type</label>
+      <select id="wp-prod" onchange="calcWP()">
+        <option value="1" selected>Liquid membrane (2 coat)</option>
+        <option value="0.8">Sheet membrane (Protecto-wrap etc)</option>
+      </select>
+    </div>
+  </div>
+  <div class="calc-result" id="wp-result" style="display:none">
+    <h3>Waterproofing Quantities</h3>
+    <div class="result-row"><span>Total area to waterproof</span><span id="wp-area"></span></div>
+    <div class="result-row"><span>Membrane required (2 coats)</span><span id="wp-mem" class="result-highlight"></span></div>
+    <div class="result-row"><span>Primer</span><span id="wp-primer"></span></div>
+    <div class="result-row"><span>Jointing tape (lm)</label></span><span id="wp-tape"></span></div>
+    <div class="result-row"><span>Estimated material cost</span><span id="wp-cost"></span></div>
+    <div class="result-row"><span>Estimated installed cost</span><span id="wp-install"></span></div>
+  </div>
+</div>
+<div id="wptab-deck" style="display:none">
+  <div class="calc-grid">
+    <div class="calc-group"><label>Deck area (m²)</label><input type="number" id="dk-area" placeholder="e.g. 20" oninput="calcDeck()"></div>
+    <div class="calc-group"><label>Perimeter (m)</label><input type="number" id="dk-per" placeholder="e.g. 18" oninput="calcDeck()"></div>
+    <div class="calc-group"><label>Deck type</label>
+      <select id="dk-type" onchange="calcDeck()">
+        <option value="1" selected>Trafficable membrane (GRP/fibreglass)</option>
+        <option value="0.8">TPO / torch-on membrane</option>
+        <option value="0.6">Rubber deck coating</option>
+      </select>
+    </div>
+  </div>
+  <div class="calc-result" id="dk-result" style="display:none">
+    <h3>Deck Waterproofing</h3>
+    <div class="result-row"><span>Membrane area</span><span id="dk-area-out"></span></div>
+    <div class="result-row"><span>Estimated material cost</span><span id="dk-mat"></span></div>
+    <div class="result-row"><span>Estimated installed cost</span><span id="dk-install" class="result-highlight"></span></div>
+  </div>
+</div>
+<script>
+function nzd(n){return '$'+Math.round(n).toLocaleString();}
+function switchWPTab(t){
+  document.getElementById('wptab-bath').style.display=t==='bath'?'':'none';
+  document.getElementById('wptab-deck').style.display=t==='deck'?'':'none';
+  document.querySelectorAll('.calc-tab').forEach(function(b,i){b.classList.toggle('active',['bath','deck'][i]===t);});
+}
+function calcWP(){
+  var fa=parseFloat(document.getElementById('wp-fa').value)||0;
+  var sa=parseFloat(document.getElementById('wp-sa').value)||0;
+  var wh=parseFloat(document.getElementById('wp-wh').value)||1.8;
+  var wp=parseFloat(document.getElementById('wp-wp').value)||0;
+  var prod=parseFloat(document.getElementById('wp-prod').value);
+  if(!fa){document.getElementById('wp-result').style.display='none';return;}
+  var wallArea=wp*wh;
+  var total=(fa+sa+wallArea)*prod;
+  var memL=Math.ceil(total/8)+1;
+  var primer=Math.ceil(total/12)+1;
+  var tape=Math.ceil((wp+sa*4)*1.1);
+  var matCost=memL*85+primer*45+tape*4.5;
+  var install=total*45+350;
+  document.getElementById('wp-area').textContent=total.toFixed(1)+' m²';
+  document.getElementById('wp-mem').textContent=memL+'L membrane (@ 0.5L/m²/coat × 2 coats)';
+  document.getElementById('wp-primer').textContent=primer+'L';
+  document.getElementById('wp-tape').textContent=tape+' lm';
+  document.getElementById('wp-cost').textContent=nzd(matCost);
+  document.getElementById('wp-install').textContent=nzd(matCost+install);
+  document.getElementById('wp-result').style.display='';
+}
+function calcDeck(){
+  var area=parseFloat(document.getElementById('dk-area').value)||0;
+  var per=parseFloat(document.getElementById('dk-per').value)||0;
+  var type=parseFloat(document.getElementById('dk-type').value);
+  if(!area){document.getElementById('dk-result').style.display='none';return;}
+  var mat=(area+per*0.3)*75*type;
+  var install=area*90*type+800;
+  document.getElementById('dk-area-out').textContent=(area+per*0.3).toFixed(1)+' m² (incl. upstands)';
+  document.getElementById('dk-mat').textContent=nzd(mat);
+  document.getElementById('dk-install').textContent=nzd(mat+install)+' – '+nzd((mat+install)*1.2);
+  document.getElementById('dk-result').style.display='';
+}
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="nz-waterproofing-requirements">NZ Waterproofing Requirements</h2>
+<p>Waterproofing is mandated under <strong>NZ Building Code Clause E3</strong> (Internal Moisture). Failing to waterproof correctly is one of the most common causes of leaky building claims in NZ.</p>
+<h3 id="what-must-be-waterproofed">What Must Be Waterproofed</h3>
+<ul>
+<li><strong>Shower floors and walls</strong> (min 1.8m up walls in shower area)</li>
+<li><strong>Bathroom floors</strong> (all floor area)</li>
+<li><strong>Balconies and decks</strong> (trafficable or non-trafficable membranes)</li>
+<li><strong>Wet areas in commercial buildings</strong></li>
+</ul>
+<h3 id="approved-membrane-systems-nz">Approved Membrane Systems (NZ)</h3>
+<ul>
+<li><strong>Liquid applied membranes</strong> (Ardex, Mapei, Laticrete) — most common in bathrooms</li>
+<li><strong>Sheet membranes</strong> (Wedi, Schluter Kerdi) — faster install in showers</li>
+<li><strong>GRP/fibreglass</strong> — standard for trafficable decks</li>
+<li><strong>TPO/single-ply</strong> — commercial flat roofs and large decks</li>
+</ul>
+<h3 id="why-diy-waterproofing-fails">Why DIY Waterproofing Fails</h3>
+<p>NZ has strict requirements for membrane coverage, lap joints, and curing times. Defective waterproofing voids your building consent and can result in costly remediation. Always use a <a href="/trades/waterproofers/">licensed waterproofer</a> or qualified tiler for wet area waterproofing.</p>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:linear-gradient(135deg,#0055a5 0%,#003d7a 100%);color:#fff;border:none">
+                <h3 style="color:#fff">🚀 Fastcrew — One App for Everything</h3>
+                <p style="color:rgba(255,255,255,.88);font-size:.85rem;margin-bottom:.6rem">Tired of paying for 4–5 different apps? Fastcrew replaces them all:</p>
+                <ul style="color:rgba(255,255,255,.82);font-size:.82rem;margin:0 0 1rem;padding-left:1.1rem">
+                    <li>Jobs, quotes &amp; invoicing</li>
+                    <li>Built-in H&amp;S &amp; compliance</li>
+                    <li>Xero sync + Stripe payments</li>
+                    <li>Flat $20/seat — no tier lock-in</li>
+                </ul>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#e55a00;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Get early access →</a>
+            </div>
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator.html">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator.html">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator.html">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator.html">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator.html">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://fastcrew.nz" rel="noopener" target="_blank">Fastcrew — All-in-One Tradie App</a></li>
+                    <li><a href="https://www.xero.com/nz/" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">NZ Tradie Tools</p>
+                <p>Free calculators, templates and guides for New Zealand tradies.</p>
+                <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
+            </div>
+            <div style="text-align:right">
+                <p><a href="/privacy/">Privacy Policy</a></p>
+                <p><a href="/contact/">Contact</a></p>
+                <p style="margin-top:.5rem">&copy; 2026 NZ Tradie Tools</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

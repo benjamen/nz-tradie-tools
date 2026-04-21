@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staircase Calculator — NZ (Rise, Run & Dimensions) — NZ Tradie Tools</title>
+    <meta name="description" content="Calculate staircase dimensions for NZ Building Code compliance — number of steps, rise, going, and total run.">
+    <meta property="og:title" content="Staircase Calculator — NZ (Rise, Run & Dimensions) — NZ Tradie Tools">
+    <meta property="og:description" content="Calculate staircase dimensions for NZ Building Code compliance — number of steps, rise, going, and total run.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradietools.nz/calculators/staircase-calculator.html">
+    <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Staircase Calculator — NZ (Rise, Run & Dimensions) — NZ Tradie Tools">
+    <meta name="twitter:description" content="Calculate staircase dimensions for NZ Building Code compliance — number of steps, rise, going, and total run.">
+    <link rel="canonical" href="https://tradietools.nz/calculators/staircase-calculator.html">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+            <nav class="main-nav">
+                
+                <a href="/">Home</a>
+                
+                <a href="/trades/">Find a Tradie</a>
+                
+                <a href="/jobs/">Job Costs</a>
+                
+                <a href="/calculators/">Calculators</a>
+                
+                <a href="/articles/">Articles</a>
+                
+                <a href="/templates/">Templates</a>
+                
+                <a href="/contact/">Contact</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <div class="container page-layout">
+        <main class="main-content">
+            <h1>Staircase Calculator — NZ (Rise, Run & Dimensions)</h1>
+            <p class="lead">Calculate staircase dimensions for NZ Building Code compliance — number of steps, rise, going, and total run.</p>
+
+            
+
+            <div class="calculator-wrapper">
+                <div class="calc-grid">
+  <div class="calc-group"><label>Floor-to-floor height (mm)</label><input type="number" id="st-h" placeholder="e.g. 2700" oninput="calcStair()"></div>
+  <div class="calc-group"><label>Preferred rise per step (mm)</label><input type="number" id="st-r" placeholder="e.g. 175" value="175" oninput="calcStair()"></div>
+  <div class="calc-group"><label>Going (tread depth, mm)</label><input type="number" id="st-g" placeholder="e.g. 255" value="255" oninput="calcStair()"></div>
+  <div class="calc-group"><label>Stair width (mm)</label><input type="number" id="st-w" placeholder="e.g. 900" value="900" oninput="calcStair()"></div>
+  <div class="calc-group"><label>Timber type</label>
+    <select id="st-mat" onchange="calcStair()">
+      <option value="180" selected>Pine (treated)</option>
+      <option value="320">Rimu / matai</option>
+      <option value="420">Oak / engineered hardwood</option>
+    </select>
+  </div>
+</div>
+<div class="calc-result" id="st-result" style="display:none">
+  <h3>Staircase Dimensions</h3>
+  <div class="result-row"><span>Number of risers</span><span id="st-nris"></span></div>
+  <div class="result-row"><span>Actual rise per step</span><span id="st-arise"></span></div>
+  <div class="result-row"><span>Total run (horizontal)</span><span id="st-run"></span></div>
+  <div class="result-row"><span>Pitch angle</span><span id="st-pitch"></span></div>
+  <div class="result-row"><span id="st-code-label">NZ Building Code (2R+G check)</span><span id="st-code"></span></div>
+  <div class="result-row"><span>Stringer length</span><span id="st-string"></span></div>
+  <div class="result-row"><span>Treads required</span><span id="st-treads"></span></div>
+  <div class="result-row"><span>Estimated material cost</span><span id="st-mat-cost" class="result-highlight"></span></div>
+</div>
+<div id="st-warn" style="display:none;background:#fff3cd;border:1px solid #ffc107;padding:.75rem 1rem;margin-top:.75rem;font-size:.88rem;border-radius:4px"></div>
+<script>
+function calcStair(){
+  var h=parseFloat(document.getElementById('st-h').value)||0;
+  var r=parseFloat(document.getElementById('st-r').value)||175;
+  var g=parseFloat(document.getElementById('st-g').value)||255;
+  var w=parseFloat(document.getElementById('st-w').value)||900;
+  var matPpm=parseFloat(document.getElementById('st-mat').value);
+  if(!h){document.getElementById('st-result').style.display='none';return;}
+  var nRis=Math.round(h/r);
+  var aRise=h/nRis;
+  var nTreads=nRis-1;
+  var totalRun=nTreads*g;
+  var pitch=Math.atan(h/totalRun)*180/Math.PI;
+  var stringLen=Math.sqrt(h*h+totalRun*totalRun)/1000;
+  var rg2=2*aRise+g;
+  var codeOk=aRise>=150&&aRise<=220&&g>=220&&g<=355&&rg2>=550&&rg2<=700;
+  var warns=[];
+  if(aRise<150||aRise>220)warns.push('Rise '+aRise.toFixed(1)+'mm is outside NZ code range (150–220mm)');
+  if(g<220||g>355)warns.push('Going '+g+'mm is outside NZ code range (220–355mm)');
+  if(rg2<550||rg2>700)warns.push('2R+G='+rg2.toFixed(0)+' is outside NZ comfort range (550–700mm)');
+  var matCost=nTreads*(w/1000*0.6*matPpm)+stringLen*2*matPpm*0.05*2;
+  document.getElementById('st-nris').textContent=nRis+' risers ('+nTreads+' treads)';
+  document.getElementById('st-arise').textContent=aRise.toFixed(1)+' mm';
+  document.getElementById('st-run').textContent=(totalRun/1000).toFixed(2)+' m ('+totalRun+' mm)';
+  document.getElementById('st-pitch').textContent=pitch.toFixed(1)+'°';
+  document.getElementById('st-code').textContent=(codeOk?'✓ Compliant':'✗ Non-compliant')+' (2R+G = '+rg2.toFixed(0)+'mm)';
+  document.getElementById('st-code').style.color=codeOk?'#16a34a':'#dc2626';
+  document.getElementById('st-string').textContent=stringLen.toFixed(2)+' m per stringer';
+  document.getElementById('st-treads').textContent=nTreads+' treads @ '+w+'mm wide';
+  document.getElementById('st-mat-cost').textContent='$'+Math.round(matCost).toLocaleString()+' – $'+Math.round(matCost*1.4).toLocaleString()+' (materials only)';
+  document.getElementById('st-result').style.display='';
+  var warnEl=document.getElementById('st-warn');
+  if(warns.length){warnEl.innerHTML='<strong>⚠ Code warnings:</strong><ul style="margin:.3rem 0 0 1.2rem">'+warns.map(function(w){return'<li>'+w+'</li>';}).join('')+'</ul>';warnEl.style.display='';}
+  else{warnEl.style.display='none';}
+}
+calcStair();
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="nz-building-code-staircase-requirements">NZ Building Code Staircase Requirements</h2>
+<p>All staircases in NZ homes must comply with <strong>NZ Building Code Clause D1</strong> (Access Routes). Key requirements:</p>
+<h3 id="domestic-staircase-dimensions">Domestic Staircase Dimensions</h3>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Minimum</th>
+<th>Maximum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rise (riser height)</td>
+<td>150mm</td>
+<td>220mm</td>
+</tr>
+<tr>
+<td>Going (tread depth)</td>
+<td>220mm</td>
+<td>355mm</td>
+</tr>
+<tr>
+<td>2R+G comfort formula</td>
+<td>550mm</td>
+<td>700mm</td>
+</tr>
+<tr>
+<td>Stair width (domestic)</td>
+<td>800mm</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Handrail height</td>
+<td>900mm</td>
+<td>1,000mm</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-2rg-formula">The 2R+G Formula</h3>
+<p>The comfort formula <strong>2 × Rise + Going = 550–700mm</strong> ensures a natural walking stride. A rise of 175mm and going of 255mm gives 2(175)+255 = 605mm — near perfect.</p>
+<h3 id="typical-staircase-costs">Typical Staircase Costs</h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Estimated cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Straight pine staircase (supply + install)</td>
+<td>$3,500–$6,000</td>
+</tr>
+<tr>
+<td>Straight hardwood (rimu, oak)</td>
+<td>$6,000–$12,000</td>
+</tr>
+<tr>
+<td>Quarter-turn / L-shaped</td>
+<td>$7,000–$15,000</td>
+</tr>
+<tr>
+<td>Floating/open tread (architectural)</td>
+<td>$15,000–$35,000+</td>
+</tr>
+</tbody>
+</table>
+<p>All staircase work requiring building consent needs an <a href="/trades/builders/">LBP-licensed builder</a>.</p>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:linear-gradient(135deg,#0055a5 0%,#003d7a 100%);color:#fff;border:none">
+                <h3 style="color:#fff">🚀 Fastcrew — One App for Everything</h3>
+                <p style="color:rgba(255,255,255,.88);font-size:.85rem;margin-bottom:.6rem">Tired of paying for 4–5 different apps? Fastcrew replaces them all:</p>
+                <ul style="color:rgba(255,255,255,.82);font-size:.82rem;margin:0 0 1rem;padding-left:1.1rem">
+                    <li>Jobs, quotes &amp; invoicing</li>
+                    <li>Built-in H&amp;S &amp; compliance</li>
+                    <li>Xero sync + Stripe payments</li>
+                    <li>Flat $20/seat — no tier lock-in</li>
+                </ul>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#e55a00;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Get early access →</a>
+            </div>
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator.html">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator.html">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator.html">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator.html">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator.html">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://fastcrew.nz" rel="noopener" target="_blank">Fastcrew — All-in-One Tradie App</a></li>
+                    <li><a href="https://www.xero.com/nz/" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">NZ Tradie Tools</p>
+                <p>Free calculators, templates and guides for New Zealand tradies.</p>
+                <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
+            </div>
+            <div style="text-align:right">
+                <p><a href="/privacy/">Privacy Policy</a></p>
+                <p><a href="/contact/">Contact</a></p>
+                <p style="margin-top:.5rem">&copy; 2026 NZ Tradie Tools</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

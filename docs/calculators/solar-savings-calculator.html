@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Panel Savings Calculator — NZ — NZ Tradie Tools</title>
+    <meta name="description" content="Estimate how much solar panels will save you in NZ — system size, annual generation, payback period, and ROI.">
+    <meta property="og:title" content="Solar Panel Savings Calculator — NZ — NZ Tradie Tools">
+    <meta property="og:description" content="Estimate how much solar panels will save you in NZ — system size, annual generation, payback period, and ROI.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradietools.nz/calculators/solar-savings-calculator.html">
+    <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Solar Panel Savings Calculator — NZ — NZ Tradie Tools">
+    <meta name="twitter:description" content="Estimate how much solar panels will save you in NZ — system size, annual generation, payback period, and ROI.">
+    <link rel="canonical" href="https://tradietools.nz/calculators/solar-savings-calculator.html">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+            <nav class="main-nav">
+                
+                <a href="/">Home</a>
+                
+                <a href="/trades/">Find a Tradie</a>
+                
+                <a href="/jobs/">Job Costs</a>
+                
+                <a href="/calculators/">Calculators</a>
+                
+                <a href="/articles/">Articles</a>
+                
+                <a href="/templates/">Templates</a>
+                
+                <a href="/contact/">Contact</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <div class="container page-layout">
+        <main class="main-content">
+            <h1>Solar Panel Savings Calculator — NZ</h1>
+            <p class="lead">Estimate how much solar panels will save you in NZ — system size, annual generation, payback period, and ROI.</p>
+
+            
+
+            <div class="calculator-wrapper">
+                <div class="calc-grid">
+  <div class="calc-group"><label>System size (kW)</label>
+    <select id="sl-kw" onchange="calcSolar()">
+      <option value="3">3 kW (approx 9 panels)</option>
+      <option value="5" selected>5 kW (approx 14 panels)</option>
+      <option value="6.6">6.6 kW (approx 18 panels)</option>
+      <option value="10">10 kW (approx 27 panels)</option>
+      <option value="13">13 kW (approx 36 panels)</option>
+    </select>
+  </div>
+  <div class="calc-group"><label>Location</label>
+    <select id="sl-loc" onchange="calcSolar()">
+      <option value="1600">Auckland / Northland</option>
+      <option value="1650">Bay of Plenty / Gisborne</option>
+      <option value="1500" selected>Waikato / Wellington</option>
+      <option value="1750">Nelson / Marlborough</option>
+      <option value="1850">Hawke's Bay / Manawatu</option>
+      <option value="1600">Canterbury</option>
+      <option value="1450">Otago / Southland</option>
+    </select>
+  </div>
+  <div class="calc-group"><label>Current electricity rate ($/kWh)</label><input type="number" id="sl-rate" placeholder="e.g. 0.32" value="0.32" step="0.01" oninput="calcSolar()"></div>
+  <div class="calc-group"><label>Annual power bill ($)</label><input type="number" id="sl-bill" placeholder="e.g. 2400" oninput="calcSolar()"></div>
+  <div class="calc-group"><label>Add battery storage?</label>
+    <select id="sl-bat" onchange="calcSolar()">
+      <option value="0">No</option>
+      <option value="8000">Yes — 10kWh battery (~$8,000)</option>
+      <option value="14000">Yes — 15kWh battery (~$14,000)</option>
+    </select>
+  </div>
+  <div class="calc-group"><label>Export buyback rate ($/kWh)</label><input type="number" id="sl-export" placeholder="e.g. 0.12" value="0.12" step="0.01" oninput="calcSolar()"></div>
+</div>
+<div class="calc-result" id="sl-result" style="display:none">
+  <h3>Solar Savings Estimate</h3>
+  <div class="result-row"><span>Annual generation</span><span id="sl-gen"></span></div>
+  <div class="result-row"><span>Self-consumption (est. 60%)</span><span id="sl-self"></span></div>
+  <div class="result-row"><span>Export to grid (est. 40%)</span><span id="sl-exp"></span></div>
+  <div class="result-row"><span>Annual savings (import avoided)</span><span id="sl-save"></span></div>
+  <div class="result-row"><span>Annual export income</span><span id="sl-einc"></span></div>
+  <div class="result-row"><span>Total annual benefit</span><span id="sl-total" class="result-highlight"></span></div>
+  <div class="result-row"><span>System + install cost (est.)</span><span id="sl-cost"></span></div>
+  <div class="result-row"><span>Simple payback period</span><span id="sl-payback"></span></div>
+  <div class="result-row"><span>25-year return (no inflation)</span><span id="sl-25yr"></span></div>
+</div>
+<script>
+function nzd(n){return '$'+Math.round(n).toLocaleString();}
+function calcSolar(){
+  var kw=parseFloat(document.getElementById('sl-kw').value);
+  var loc=parseFloat(document.getElementById('sl-loc').value);
+  var rate=parseFloat(document.getElementById('sl-rate').value)||0.32;
+  var bat=parseFloat(document.getElementById('sl-bat').value)||0;
+  var export_rate=parseFloat(document.getElementById('sl-export').value)||0.12;
+  var annualGen=kw*loc*0.78;
+  var selfPct=bat>0?0.75:0.60;
+  var selfUse=annualGen*selfPct;
+  var exported=annualGen*(1-selfPct);
+  var savings=selfUse*rate;
+  var exportInc=exported*export_rate;
+  var total=savings+exportInc;
+  var systemCost=kw*2200+2500+bat;
+  var payback=systemCost/total;
+  var ret25=total*25-systemCost;
+  document.getElementById('sl-gen').textContent=Math.round(annualGen).toLocaleString()+' kWh/yr';
+  document.getElementById('sl-self').textContent=Math.round(selfUse).toLocaleString()+' kWh/yr';
+  document.getElementById('sl-exp').textContent=Math.round(exported).toLocaleString()+' kWh/yr';
+  document.getElementById('sl-save').textContent=nzd(savings)+'/yr';
+  document.getElementById('sl-einc').textContent=nzd(exportInc)+'/yr';
+  document.getElementById('sl-total').textContent=nzd(total)+'/yr';
+  document.getElementById('sl-cost').textContent=nzd(systemCost)+' – '+nzd(systemCost*1.15);
+  document.getElementById('sl-payback').textContent=payback.toFixed(1)+' years';
+  document.getElementById('sl-25yr').textContent=nzd(ret25);
+  document.getElementById('sl-result').style.display='';
+}
+calcSolar();
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="solar-in-new-zealand-is-it-worth-it">Solar in New Zealand — Is It Worth It?</h2>
+<p>Yes, for most NZ homeowners — especially in the top of the South Island and East Coast regions which get excellent solar hours. A typical 5kW system in Nelson can generate <strong>8,500 kWh/yr</strong>, covering 70–80% of average household use.</p>
+<h3 id="system-costs-in-nz-2025">System Costs in NZ (2025)</h3>
+<table>
+<thead>
+<tr>
+<th>System size</th>
+<th>Approx cost (installed)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3 kW</td>
+<td>$8,000–$12,000</td>
+</tr>
+<tr>
+<td>5 kW</td>
+<td>$12,000–$16,000</td>
+</tr>
+<tr>
+<td>6.6 kW</td>
+<td>$14,000–$19,000</td>
+</tr>
+<tr>
+<td>10 kW</td>
+<td>$20,000–$28,000</td>
+</tr>
+<tr>
+<td>+ 10kWh battery</td>
+<td>Add $8,000–$12,000</td>
+</tr>
+</tbody>
+</table>
+<h3 id="export-buyback-rates">Export Buyback Rates</h3>
+<p>NZ electricity retailers vary widely — from <strong>$0.08 to $0.17/kWh</strong> for solar export. Check your retailer's solar buy-back plan, or consider switching. Some retailers (Contact, Mercury, Genesis) offer dedicated solar plans.</p>
+<h3 id="what-to-check-before-installing">What to Check Before Installing</h3>
+<ol>
+<li><strong>Roof orientation</strong> — north-facing roofs are ideal. East/west splits can still work well</li>
+<li><strong>Shading</strong> — even partial shading significantly reduces output</li>
+<li><strong>Roof condition</strong> — replace an aging roof before adding solar panels</li>
+<li><strong>Grid connection</strong> — notify your lines company before installation</li>
+</ol>
+<p>All solar installers must be <a href="/trades/electricians/">REW-registered electricians</a>.</p>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:linear-gradient(135deg,#0055a5 0%,#003d7a 100%);color:#fff;border:none">
+                <h3 style="color:#fff">🚀 Fastcrew — One App for Everything</h3>
+                <p style="color:rgba(255,255,255,.88);font-size:.85rem;margin-bottom:.6rem">Tired of paying for 4–5 different apps? Fastcrew replaces them all:</p>
+                <ul style="color:rgba(255,255,255,.82);font-size:.82rem;margin:0 0 1rem;padding-left:1.1rem">
+                    <li>Jobs, quotes &amp; invoicing</li>
+                    <li>Built-in H&amp;S &amp; compliance</li>
+                    <li>Xero sync + Stripe payments</li>
+                    <li>Flat $20/seat — no tier lock-in</li>
+                </ul>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#e55a00;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Get early access →</a>
+            </div>
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator.html">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator.html">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator.html">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator.html">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator.html">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://fastcrew.nz" rel="noopener" target="_blank">Fastcrew — All-in-One Tradie App</a></li>
+                    <li><a href="https://www.xero.com/nz/" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">NZ Tradie Tools</p>
+                <p>Free calculators, templates and guides for New Zealand tradies.</p>
+                <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
+            </div>
+            <div style="text-align:right">
+                <p><a href="/privacy/">Privacy Policy</a></p>
+                <p><a href="/contact/">Contact</a></p>
+                <p style="margin-top:.5rem">&copy; 2026 NZ Tradie Tools</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYE Employee Cost Calculator — NZ — NZ Tradie Tools</title>
+    <meta name="description" content="Calculate the true cost of employing someone in NZ — PAYE, ACC, KiwiSaver, holiday pay, and total employer cost.">
+    <meta property="og:title" content="PAYE Employee Cost Calculator — NZ — NZ Tradie Tools">
+    <meta property="og:description" content="Calculate the true cost of employing someone in NZ — PAYE, ACC, KiwiSaver, holiday pay, and total employer cost.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradietools.nz/calculators/paye-employee-calculator.html">
+    <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="PAYE Employee Cost Calculator — NZ — NZ Tradie Tools">
+    <meta name="twitter:description" content="Calculate the true cost of employing someone in NZ — PAYE, ACC, KiwiSaver, holiday pay, and total employer cost.">
+    <link rel="canonical" href="https://tradietools.nz/calculators/paye-employee-calculator.html">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+            <nav class="main-nav">
+                
+                <a href="/">Home</a>
+                
+                <a href="/trades/">Find a Tradie</a>
+                
+                <a href="/jobs/">Job Costs</a>
+                
+                <a href="/calculators/">Calculators</a>
+                
+                <a href="/articles/">Articles</a>
+                
+                <a href="/templates/">Templates</a>
+                
+                <a href="/contact/">Contact</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <div class="container page-layout">
+        <main class="main-content">
+            <h1>PAYE Employee Cost Calculator — NZ</h1>
+            <p class="lead">Calculate the true cost of employing someone in NZ — PAYE, ACC, KiwiSaver, holiday pay, and total employer cost.</p>
+
+            
+
+            <div class="calculator-wrapper">
+                <div class="calc-grid">
+  <div class="calc-group"><label>Gross annual salary ($)</label><input type="number" id="py-sal" placeholder="e.g. 65000" oninput="calcPAYE()"></div>
+  <div class="calc-group"><label>KiwiSaver (employer %)</label>
+    <select id="py-ks" onchange="calcPAYE()">
+      <option value="3" selected>3% (minimum)</option>
+      <option value="4">4%</option>
+      <option value="6">6%</option>
+      <option value="8">8%</option>
+      <option value="10">10%</option>
+    </select>
+  </div>
+  <div class="calc-group"><label>Holiday pay treatment</label>
+    <select id="py-hp" onchange="calcPAYE()">
+      <option value="0.08" selected>8% on gross (included in salary)</option>
+      <option value="0">In salary (4 weeks leave)</option>
+    </select>
+  </div>
+  <div class="calc-group"><label>Region (for ACC)</label>
+    <select id="py-reg" onchange="calcPAYE()">
+      <option value="low">Low risk (office / retail)</option>
+      <option value="med" selected>Medium risk (trades / construction)</option>
+      <option value="high">High risk (roofing / scaffolding)</option>
+    </select>
+  </div>
+</div>
+<div class="calc-result" id="py-result" style="display:none">
+  <h3>Employee Cost Breakdown</h3>
+  <div class="result-row"><span>Gross salary</span><span id="py-gross"></span></div>
+  <div class="result-row"><span>Employer KiwiSaver</span><span id="py-ks-out"></span></div>
+  <div class="result-row"><span>ACC employer levy (est.)</span><span id="py-acc"></span></div>
+  <div class="result-row"><span>Holiday pay provision (8%)</span><span id="py-hpout"></span></div>
+  <div class="result-row"><span>Total cost to employer / yr</span><span id="py-total" class="result-highlight"></span></div>
+  <div class="result-row"><span>Effective hourly rate (2080hrs)</span><span id="py-hr"></span></div>
+  <div class="result-row"><span>Employee take-home (est.)</span><span id="py-takehome"></span></div>
+</div>
+<script>
+function nzd(n){return '$'+Math.round(n).toLocaleString();}
+function calcPAYE(){
+  var sal=parseFloat(document.getElementById('py-sal').value)||0;
+  var ks=parseFloat(document.getElementById('py-ks').value)/100;
+  var hp=parseFloat(document.getElementById('py-hp').value);
+  var reg=document.getElementById('py-reg').value;
+  if(!sal){document.getElementById('py-result').style.display='none';return;}
+  var accRates={low:0.0067,med:0.016,high:0.028};
+  var acc=sal*accRates[reg];
+  var ksCost=sal*ks;
+  var hpCost=hp?sal*0.08:0;
+  var total=sal+ksCost+acc+hpCost;
+  var hrRate=total/2080;
+  var taxable=sal;
+  var paye=0;
+  if(taxable<=14000)paye=taxable*0.105;
+  else if(taxable<=48000)paye=1470+(taxable-14000)*0.175;
+  else if(taxable<=70000)paye=7420+(taxable-48000)*0.30;
+  else if(taxable<=180000)paye=14020+(taxable-70000)*0.33;
+  else paye=50320+(taxable-180000)*0.39;
+  var acc_emp=sal*0.016;
+  var takehome=sal-paye-acc_emp-(sal*ks);
+  document.getElementById('py-gross').textContent=nzd(sal)+'/yr';
+  document.getElementById('py-ks-out').textContent=nzd(ksCost)+'/yr ('+(ks*100)+'%)';
+  document.getElementById('py-acc').textContent=nzd(acc)+'/yr';
+  document.getElementById('py-hpout').textContent=hp?nzd(hpCost)+'/yr':'Included in salary';
+  document.getElementById('py-total').textContent=nzd(total)+'/yr';
+  document.getElementById('py-hr').textContent='$'+hrRate.toFixed(2)+'/hr';
+  document.getElementById('py-takehome').textContent=nzd(takehome)+'/yr (~$'+Math.round(takehome/26).toLocaleString()+'/fortnight)';
+  document.getElementById('py-result').style.display='';
+}
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="true-cost-of-employment-in-nz">True Cost of Employment in NZ</h2>
+<p>Most small businesses underestimate the true cost of an employee. On top of gross salary, you must account for:</p>
+<h3 id="employer-obligations-2025">Employer Obligations (2025)</h3>
+<table>
+<thead>
+<tr>
+<th>Cost</th>
+<th>Rate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>KiwiSaver (employer contribution)</td>
+<td>Minimum 3% of gross</td>
+</tr>
+<tr>
+<td>ACC employer levy</td>
+<td>$0.67–$2.80 per $100 wages (varies by industry)</td>
+</tr>
+<tr>
+<td>Holiday pay</td>
+<td>8% of gross (or 4 weeks leave)</td>
+</tr>
+<tr>
+<td>Statutory holidays</td>
+<td>12 days/yr paid</td>
+</tr>
+</tbody>
+</table>
+<h3 id="acc-levy-rates-by-industry-202425">ACC Levy Rates by Industry (2024–25)</h3>
+<p>Construction and trades pay significantly higher ACC levies than office work. The NZ "work levy" is based on your ANZSIC industry code:
+- <strong>Painting / decorating:</strong> $1.18 per $100
+- <strong>Plumbing / electrical:</strong> $0.87 per $100<br />
+- <strong>Roofing / scaffolding:</strong> $2.50+ per $100
+- <strong>General construction:</strong> $1.60 per $100</p>
+<p>ACC levies are updated annually. Check the <a href="https://www.acc.co.nz/for-business/levies/">ACC website</a> for current rates.</p>
+<h3 id="rule-of-thumb">Rule of Thumb</h3>
+<p>Budget <strong>20–30% on top of gross salary</strong> for the true employer cost. A $65,000/yr employee typically costs <strong>$78,000–$85,000</strong> all-in.</p>
+<p>See our <a href="/calculators/overtime-calculator.html">Overtime Calculator</a> for weekly pay breakdowns.</p>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:linear-gradient(135deg,#0055a5 0%,#003d7a 100%);color:#fff;border:none">
+                <h3 style="color:#fff">🚀 Fastcrew — One App for Everything</h3>
+                <p style="color:rgba(255,255,255,.88);font-size:.85rem;margin-bottom:.6rem">Tired of paying for 4–5 different apps? Fastcrew replaces them all:</p>
+                <ul style="color:rgba(255,255,255,.82);font-size:.82rem;margin:0 0 1rem;padding-left:1.1rem">
+                    <li>Jobs, quotes &amp; invoicing</li>
+                    <li>Built-in H&amp;S &amp; compliance</li>
+                    <li>Xero sync + Stripe payments</li>
+                    <li>Flat $20/seat — no tier lock-in</li>
+                </ul>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#e55a00;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Get early access →</a>
+            </div>
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator.html">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator.html">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator.html">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator.html">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator.html">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://fastcrew.nz" rel="noopener" target="_blank">Fastcrew — All-in-One Tradie App</a></li>
+                    <li><a href="https://www.xero.com/nz/" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">NZ Tradie Tools</p>
+                <p>Free calculators, templates and guides for New Zealand tradies.</p>
+                <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
+            </div>
+            <div style="text-align:right">
+                <p><a href="/privacy/">Privacy Policy</a></p>
+                <p><a href="/contact/">Contact</a></p>
+                <p style="margin-top:.5rem">&copy; 2026 NZ Tradie Tools</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

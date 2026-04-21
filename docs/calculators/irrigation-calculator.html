@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irrigation System Calculator — NZ — NZ Tradie Tools</title>
+    <meta name="description" content="Calculate irrigation pipe lengths, sprinkler head spacing, flow rates, and system cost for NZ gardens and lawns.">
+    <meta property="og:title" content="Irrigation System Calculator — NZ — NZ Tradie Tools">
+    <meta property="og:description" content="Calculate irrigation pipe lengths, sprinkler head spacing, flow rates, and system cost for NZ gardens and lawns.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradietools.nz/calculators/irrigation-calculator.html">
+    <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Irrigation System Calculator — NZ — NZ Tradie Tools">
+    <meta name="twitter:description" content="Calculate irrigation pipe lengths, sprinkler head spacing, flow rates, and system cost for NZ gardens and lawns.">
+    <link rel="canonical" href="https://tradietools.nz/calculators/irrigation-calculator.html">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+            <nav class="main-nav">
+                
+                <a href="/">Home</a>
+                
+                <a href="/trades/">Find a Tradie</a>
+                
+                <a href="/jobs/">Job Costs</a>
+                
+                <a href="/calculators/">Calculators</a>
+                
+                <a href="/articles/">Articles</a>
+                
+                <a href="/templates/">Templates</a>
+                
+                <a href="/contact/">Contact</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <div class="container page-layout">
+        <main class="main-content">
+            <h1>Irrigation System Calculator — NZ</h1>
+            <p class="lead">Calculate irrigation pipe lengths, sprinkler head spacing, flow rates, and system cost for NZ gardens and lawns.</p>
+
+            
+
+            <div class="calculator-wrapper">
+                <div class="calc-tabs">
+  <button class="calc-tab active" onclick="switchIRTab('lawn')">Lawn Sprinklers</button>
+  <button class="calc-tab" onclick="switchIRTab('drip')">Drip Irrigation</button>
+  <button class="calc-tab" onclick="switchIRTab('cost')">System Cost</button>
+</div>
+<div id="irtab-lawn">
+  <div class="calc-grid">
+    <div class="calc-group"><label>Lawn area (m²)</label><input type="number" id="ls-area" placeholder="e.g. 150" oninput="calcLawn()"></div>
+    <div class="calc-group"><label>Sprinkler type</label>
+      <select id="ls-type" onchange="calcLawn()">
+        <option value="pop-up" selected>Pop-up rotary (4m radius)</option>
+        <option value="fixed">Fixed spray (2.5m radius)</option>
+        <option value="rotor">Hunter rotor (5m radius)</option>
+      </select>
+    </div>
+    <div class="calc-group"><label>Water pressure (bar)</label>
+      <select id="ls-press" onchange="calcLawn()">
+        <option value="low">Low (1–2 bar)</option>
+        <option value="med" selected>Medium (2–4 bar)</option>
+        <option value="high">High (4+ bar)</option>
+      </select>
+    </div>
+  </div>
+  <div class="calc-result" id="ls-result" style="display:none">
+    <h3>Lawn Irrigation</h3>
+    <div class="result-row"><span>Sprinkler heads required</span><span id="ls-heads" class="result-highlight"></span></div>
+    <div class="result-row"><span>Flow rate per zone (L/min)</span><span id="ls-flow"></span></div>
+    <div class="result-row"><span>Estimated zones needed</span><span id="ls-zones"></span></div>
+    <div class="result-row"><span>Pipe run estimate</span><span id="ls-pipe"></span></div>
+    <div class="result-row"><span>Daily water use (15min/zone)</span><span id="ls-water"></span></div>
+  </div>
+</div>
+<div id="irtab-drip" style="display:none">
+  <div class="calc-grid">
+    <div class="calc-group"><label>Garden bed area (m²)</label><input type="number" id="dr-area" placeholder="e.g. 30" oninput="calcDrip()"></div>
+    <div class="calc-group"><label>Emitter spacing (m)</label>
+      <select id="dr-sp" onchange="calcDrip()">
+        <option value="0.3">300mm (dense planting)</option>
+        <option value="0.45" selected>450mm (standard)</option>
+        <option value="0.6">600mm (shrubs / trees)</option>
+      </select>
+    </div>
+    <div class="calc-group"><label>Emitter flow rate (L/hr)</label>
+      <select id="dr-lhr" onchange="calcDrip()">
+        <option value="2" selected>2 L/hr (standard)</option>
+        <option value="4">4 L/hr</option>
+        <option value="8">8 L/hr (trees)</option>
+      </select>
+    </div>
+  </div>
+  <div class="calc-result" id="dr-result" style="display:none">
+    <h3>Drip Irrigation</h3>
+    <div class="result-row"><span>Emitters required</span><span id="dr-emit" class="result-highlight"></span></div>
+    <div class="result-row"><span>Total flow rate</span><span id="dr-flow"></span></div>
+    <div class="result-row"><span>Drip tape / supply line (lm)</span><span id="dr-pipe"></span></div>
+    <div class="result-row"><span>Water use per hour</span><span id="dr-water"></span></div>
+  </div>
+</div>
+<div id="irtab-cost" style="display:none">
+  <div class="calc-grid">
+    <div class="calc-group"><label>Total lawn area (m²)</label><input type="number" id="sc-lawn" placeholder="e.g. 200" oninput="calcSysCost()"></div>
+    <div class="calc-group"><label>Garden bed area (m²)</label><input type="number" id="sc-beds" placeholder="e.g. 50" value="0" oninput="calcSysCost()"></div>
+    <div class="calc-group"><label>Include controller?</label>
+      <select id="sc-ctrl" onchange="calcSysCost()">
+        <option value="350" selected>Yes — smart WiFi controller</option>
+        <option value="150">Yes — basic timer</option>
+        <option value="0">No</option>
+      </select>
+    </div>
+  </div>
+  <div class="calc-result" id="sc-result" style="display:none">
+    <h3>Irrigation System Cost Estimate</h3>
+    <div class="result-row"><span>Materials (heads, pipe, fittings)</span><span id="sc-mat"></span></div>
+    <div class="result-row"><span>Controller</span><span id="sc-ctrl-out"></span></div>
+    <div class="result-row"><span>Labour (installation)</span><span id="sc-lab"></span></div>
+    <div class="result-row"><span>Total estimate</span><span id="sc-total" class="result-highlight"></span></div>
+  </div>
+</div>
+<script>
+function nzd(n){return '$'+Math.round(n).toLocaleString();}
+function switchIRTab(t){
+  ['lawn','drip','cost'].forEach(function(id){document.getElementById('irtab-'+id).style.display=id===t?'':'none';});
+  document.querySelectorAll('.calc-tab').forEach(function(b,i){b.classList.toggle('active',['lawn','drip','cost'][i]===t);});
+}
+function calcLawn(){
+  var area=parseFloat(document.getElementById('ls-area').value)||0;
+  var type=document.getElementById('ls-type').value;
+  var press=document.getElementById('ls-press').value;
+  if(!area){document.getElementById('ls-result').style.display='none';return;}
+  var radii={popup:4,fixed:2.5,rotor:5};
+  var radius=radii[type.replace('-','')]||4;
+  var coverage=Math.PI*radius*radius*0.75;
+  var heads=Math.ceil(area/coverage);
+  var flowPerHead={low:8,med:12,high:16};
+  var flow=flowPerHead[press];
+  var maxPerZone=press==='low'?3:press==='med'?5:8;
+  var zones=Math.ceil(heads/maxPerZone);
+  var pipe=Math.sqrt(area)*4;
+  var water=heads*flow*15*zones;
+  document.getElementById('ls-heads').textContent=heads+' heads ('+radius+'m radius)';
+  document.getElementById('ls-flow').textContent=(flow*maxPerZone)+' L/min per zone';
+  document.getElementById('ls-zones').textContent=zones+' zones';
+  document.getElementById('ls-pipe').textContent=pipe.toFixed(0)+' lm (approx)';
+  document.getElementById('ls-water').textContent=water.toFixed(0)+' L/day';
+  document.getElementById('ls-result').style.display='';
+}
+function calcDrip(){
+  var area=parseFloat(document.getElementById('dr-area').value)||0;
+  var sp=parseFloat(document.getElementById('dr-sp').value);
+  var lhr=parseFloat(document.getElementById('dr-lhr').value);
+  if(!area){document.getElementById('dr-result').style.display='none';return;}
+  var emits=Math.ceil(area/(sp*sp));
+  var flow=emits*lhr;
+  var pipe=Math.sqrt(area)*3;
+  document.getElementById('dr-emit').textContent=emits+' emitters';
+  document.getElementById('dr-flow').textContent=flow.toFixed(0)+' L/hr';
+  document.getElementById('dr-pipe').textContent=pipe.toFixed(0)+' lm supply line';
+  document.getElementById('dr-water').textContent=flow.toFixed(0)+' L/hr run time';
+  document.getElementById('dr-result').style.display='';
+}
+function calcSysCost(){
+  var lawn=parseFloat(document.getElementById('sc-lawn').value)||0;
+  var beds=parseFloat(document.getElementById('sc-beds').value)||0;
+  var ctrl=parseFloat(document.getElementById('sc-ctrl').value);
+  if(!lawn&&!beds){document.getElementById('sc-result').style.display='none';return;}
+  var mat=(lawn*8)+(beds*6)+ctrl;
+  var lab=(lawn+beds)*6+800;
+  var total=mat+lab;
+  document.getElementById('sc-mat').textContent=nzd(mat-ctrl);
+  document.getElementById('sc-ctrl-out').textContent=nzd(ctrl);
+  document.getElementById('sc-lab').textContent=nzd(lab);
+  document.getElementById('sc-total').textContent=nzd(total)+' – '+nzd(total*1.2);
+  document.getElementById('sc-result').style.display='';
+}
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="irrigation-in-new-zealand">Irrigation in New Zealand</h2>
+<p>A well-designed irrigation system saves water, time, and keeps your garden thriving through NZ's dry summers — especially in the East Coast, Canterbury, and Central Otago regions.</p>
+<h3 id="water-use-considerations">Water Use Considerations</h3>
+<ul>
+<li>NZ average summer lawn water need: <strong>25–30mm/week</strong></li>
+<li>At 25mm/week, a 200m² lawn needs <strong>5,000 litres per week</strong></li>
+<li>Smart controllers with <strong>soil moisture sensors</strong> can cut water use by 30–50%</li>
+</ul>
+<h3 id="typical-irrigation-system-costs">Typical Irrigation System Costs</h3>
+<table>
+<thead>
+<tr>
+<th>System type</th>
+<th>Cost per m²</th>
+<th>Typical 200m² job</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Basic pop-up lawn</td>
+<td>$12–$18</td>
+<td>$2,400–$3,600</td>
+</tr>
+<tr>
+<td>Rotor system (large areas)</td>
+<td>$10–$15</td>
+<td>$2,000–$3,000</td>
+</tr>
+<tr>
+<td>Drip irrigation (garden beds)</td>
+<td>$8–$14</td>
+<td>per m²</td>
+</tr>
+<tr>
+<td>Full smart system (wifi controller)</td>
+<td>$18–$28</td>
+<td>$3,600–$5,600+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="council-water-restrictions">Council Water Restrictions</h3>
+<p>Most NZ councils have seasonal water restriction bylaws — check before designing an irrigation system that relies on town supply. Water meters are now mandatory on all new NZ connections.</p>
+<p>Find <a href="/trades/irrigation-specialists/">irrigation specialists</a> for your project.</p>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:linear-gradient(135deg,#0055a5 0%,#003d7a 100%);color:#fff;border:none">
+                <h3 style="color:#fff">🚀 Fastcrew — One App for Everything</h3>
+                <p style="color:rgba(255,255,255,.88);font-size:.85rem;margin-bottom:.6rem">Tired of paying for 4–5 different apps? Fastcrew replaces them all:</p>
+                <ul style="color:rgba(255,255,255,.82);font-size:.82rem;margin:0 0 1rem;padding-left:1.1rem">
+                    <li>Jobs, quotes &amp; invoicing</li>
+                    <li>Built-in H&amp;S &amp; compliance</li>
+                    <li>Xero sync + Stripe payments</li>
+                    <li>Flat $20/seat — no tier lock-in</li>
+                </ul>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#e55a00;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Get early access →</a>
+            </div>
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator.html">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator.html">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator.html">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator.html">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator.html">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://fastcrew.nz" rel="noopener" target="_blank">Fastcrew — All-in-One Tradie App</a></li>
+                    <li><a href="https://www.xero.com/nz/" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">NZ Tradie Tools</p>
+                <p>Free calculators, templates and guides for New Zealand tradies.</p>
+                <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
+            </div>
+            <div style="text-align:right">
+                <p><a href="/privacy/">Privacy Policy</a></p>
+                <p><a href="/contact/">Contact</a></p>
+                <p style="margin-top:.5rem">&copy; 2026 NZ Tradie Tools</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

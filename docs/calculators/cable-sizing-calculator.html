@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrical Cable Sizing Calculator — NZ — NZ Tradie Tools</title>
+    <meta name="description" content="Calculate the correct cable size for NZ electrical installations — current capacity, voltage drop, and circuit breaker sizing.">
+    <meta property="og:title" content="Electrical Cable Sizing Calculator — NZ — NZ Tradie Tools">
+    <meta property="og:description" content="Calculate the correct cable size for NZ electrical installations — current capacity, voltage drop, and circuit breaker sizing.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradietools.nz/calculators/cable-sizing-calculator.html">
+    <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Electrical Cable Sizing Calculator — NZ — NZ Tradie Tools">
+    <meta name="twitter:description" content="Calculate the correct cable size for NZ electrical installations — current capacity, voltage drop, and circuit breaker sizing.">
+    <link rel="canonical" href="https://tradietools.nz/calculators/cable-sizing-calculator.html">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+            <nav class="main-nav">
+                
+                <a href="/">Home</a>
+                
+                <a href="/trades/">Find a Tradie</a>
+                
+                <a href="/jobs/">Job Costs</a>
+                
+                <a href="/calculators/">Calculators</a>
+                
+                <a href="/articles/">Articles</a>
+                
+                <a href="/templates/">Templates</a>
+                
+                <a href="/contact/">Contact</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <div class="container page-layout">
+        <main class="main-content">
+            <h1>Electrical Cable Sizing Calculator — NZ</h1>
+            <p class="lead">Calculate the correct cable size for NZ electrical installations — current capacity, voltage drop, and circuit breaker sizing.</p>
+
+            
+
+            <div class="calculator-wrapper">
+                <div class="calc-tabs">
+  <button class="calc-tab active" onclick="switchCSTab('size')">Cable Size</button>
+  <button class="calc-tab" onclick="switchCSTab('vd')">Voltage Drop</button>
+  <button class="calc-tab" onclick="switchCSTab('cb')">Circuit Breaker</button>
+</div>
+<div id="cstab-size">
+  <div class="calc-grid">
+    <div class="calc-group"><label>Load (Watts)</label><input type="number" id="cs-w" placeholder="e.g. 2400" oninput="calcCableSize()"></div>
+    <div class="calc-group"><label>Voltage</label>
+      <select id="cs-v" onchange="calcCableSize()">
+        <option value="230" selected>230V (single phase — NZ standard)</option>
+        <option value="400">400V (three phase)</option>
+      </select>
+    </div>
+    <div class="calc-group"><label>Installation method</label>
+      <select id="cs-inst" onchange="calcCableSize()">
+        <option value="1" selected>In conduit / wall</option>
+        <option value="1.25">Open air / trunking</option>
+        <option value="0.75">Buried in ground</option>
+        <option value="0.7">Grouped (4+ cables)</option>
+      </select>
+    </div>
+    <div class="calc-group"><label>Cable run length (m)</label><input type="number" id="cs-len" placeholder="e.g. 20" oninput="calcCableSize()"></div>
+  </div>
+  <div class="calc-result" id="cs-result" style="display:none">
+    <h3>Cable Sizing</h3>
+    <div class="result-row"><span>Load current</span><span id="cs-amps"></span></div>
+    <div class="result-row"><span>Minimum cable size</span><span id="cs-size" class="result-highlight"></span></div>
+    <div class="result-row"><span>Recommended circuit breaker</span><span id="cs-cb"></span></div>
+    <div class="result-row"><span>Voltage drop (estimated)</span><span id="cs-vd"></span></div>
+    <div id="cs-note" style="margin-top:.6rem;padding:.5rem .75rem;background:#dbeafe;border-left:3px solid #3b82f6;font-size:.84rem"></div>
+  </div>
+</div>
+<div id="cstab-vd" style="display:none">
+  <div class="calc-grid">
+    <div class="calc-group"><label>Cable cross-section (mm²)</label>
+      <select id="vd-size" onchange="calcVD()">
+        <option value="1.5">1.5mm²</option>
+        <option value="2.5" selected>2.5mm²</option>
+        <option value="4">4mm²</option>
+        <option value="6">6mm²</option>
+        <option value="10">10mm²</option>
+        <option value="16">16mm²</option>
+      </select>
+    </div>
+    <div class="calc-group"><label>Current (A)</label><input type="number" id="vd-a" placeholder="e.g. 15" oninput="calcVD()"></div>
+    <div class="calc-group"><label>One-way length (m)</label><input type="number" id="vd-len" placeholder="e.g. 30" oninput="calcVD()"></div>
+    <div class="calc-group"><label>Supply voltage (V)</label><input type="number" id="vd-v" placeholder="230" value="230" oninput="calcVD()"></div>
+  </div>
+  <div class="calc-result" id="vd-result" style="display:none">
+    <h3>Voltage Drop</h3>
+    <div class="result-row"><span>Voltage drop</span><span id="vd-drop" class="result-highlight"></span></div>
+    <div class="result-row"><span>% of supply voltage</span><span id="vd-pct"></span></div>
+    <div class="result-row"><span>NZ limit (AS/NZS 3000)</span><span>5% max (11.5V at 230V)</span></div>
+    <div id="vd-status" style="margin-top:.5rem;padding:.5rem .75rem;font-size:.84rem;border-radius:3px;font-weight:700"></div>
+  </div>
+</div>
+<div id="cstab-cb" style="display:none">
+  <div class="calc-grid">
+    <div class="calc-group"><label>Total load (Watts)</label><input type="number" id="cb-w" placeholder="e.g. 3600" oninput="calcCB()"></div>
+    <div class="calc-group"><label>Voltage (V)</label><input type="number" id="cb-v" placeholder="230" value="230" oninput="calcCB()"></div>
+    <div class="calc-group"><label>Diversity factor (%)</label><input type="number" id="cb-div" placeholder="100" value="100" oninput="calcCB()"></div>
+  </div>
+  <div class="calc-result" id="cb-result" style="display:none">
+    <h3>Circuit Breaker Size</h3>
+    <div class="result-row"><span>Design current</span><span id="cb-amps"></span></div>
+    <div class="result-row"><span>Recommended MCB size</span><span id="cb-size" class="result-highlight"></span></div>
+  </div>
+</div>
+<script>
+function switchCSTab(t){
+  ['size','vd','cb'].forEach(function(id){document.getElementById('cstab-'+id).style.display=id===t?'':'none';});
+  document.querySelectorAll('.calc-tab').forEach(function(b,i){b.classList.toggle('active',['size','vd','cb'][i]===t);});
+}
+var resistivity={1.5:12.1,2.5:7.41,4:4.61,6:3.08,10:1.83,16:1.15,25:0.727};
+function calcCableSize(){
+  var w=parseFloat(document.getElementById('cs-w').value)||0;
+  var v=parseFloat(document.getElementById('cs-v').value);
+  var inst=parseFloat(document.getElementById('cs-inst').value);
+  var len=parseFloat(document.getElementById('cs-len').value)||0;
+  if(!w){document.getElementById('cs-result').style.display='none';return;}
+  var amps=w/v;
+  var designAmps=amps/inst;
+  var sizes=[1.5,2.5,4,6,10,16,25];
+  var caps={1.5:13,2.5:18,4:24,6:31,10:43,16:57,25:75};
+  var sz=sizes.find(function(s){return caps[s]>=designAmps;})||25;
+  var cbs=[6,10,13,16,20,25,32,40,50,63];
+  var cb=cbs.find(function(c){return c>=amps;})||63;
+  var vdrop=resistivity[sz]*2*len*amps/1000;
+  var vdpct=vdrop/v*100;
+  document.getElementById('cs-amps').textContent=amps.toFixed(1)+' A';
+  document.getElementById('cs-size').textContent=sz+'mm² (capacity: '+caps[sz]+'A derated)';
+  document.getElementById('cs-cb').textContent=cb+'A MCB (Type B or C)';
+  document.getElementById('cs-vd').textContent=vdrop.toFixed(2)+'V ('+vdpct.toFixed(1)+'%)'+(vdpct>5?' ⚠ Exceeds 5% limit':'');
+  document.getElementById('cs-note').textContent='Note: This is a guide only. All NZ electrical work must be designed and installed by a Registered Electrical Worker (REW) in accordance with AS/NZS 3000.';
+  document.getElementById('cs-result').style.display='';
+}
+function calcVD(){
+  var sz=parseFloat(document.getElementById('vd-size').value);
+  var a=parseFloat(document.getElementById('vd-a').value)||0;
+  var len=parseFloat(document.getElementById('vd-len').value)||0;
+  var v=parseFloat(document.getElementById('vd-v').value)||230;
+  if(!a||!len){document.getElementById('vd-result').style.display='none';return;}
+  var drop=resistivity[sz]*2*len*a/1000;
+  var pct=drop/v*100;
+  document.getElementById('vd-drop').textContent=drop.toFixed(2)+'V';
+  document.getElementById('vd-pct').textContent=pct.toFixed(2)+'%';
+  var s=document.getElementById('vd-status');
+  if(pct>5){s.style.background='#fef2f2';s.style.color='#991b1b';s.textContent='✗ Exceeds NZ 5% limit — increase cable size or reduce run length.';}
+  else{s.style.background='#f0fdf4';s.style.color='#166534';s.textContent='✓ Within NZ AS/NZS 3000 voltage drop limit (5%).';}
+  document.getElementById('vd-result').style.display='';
+}
+function calcCB(){
+  var w=parseFloat(document.getElementById('cb-w').value)||0;
+  var v=parseFloat(document.getElementById('cb-v').value)||230;
+  var div=parseFloat(document.getElementById('cb-div').value)||100;
+  if(!w){document.getElementById('cb-result').style.display='none';return;}
+  var a=w/v*div/100;
+  var cbs=[6,10,13,16,20,25,32,40,50,63,80,100];
+  var sz=cbs.find(function(c){return c>=a;})||100;
+  document.getElementById('cb-amps').textContent=a.toFixed(1)+' A';
+  document.getElementById('cb-size').textContent=sz+' A MCB';
+  document.getElementById('cb-result').style.display='';
+}
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="nz-electrical-standards">NZ Electrical Standards</h2>
+<p>All electrical installations in NZ must comply with <strong>AS/NZS 3000</strong> (Wiring Rules) as adopted under the NZ Electricity Regulations 2010.</p>
+<h3 id="common-cable-sizes">Common Cable Sizes</h3>
+<table>
+<thead>
+<tr>
+<th>Application</th>
+<th>Typical cable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>General power circuits</td>
+<td>2.5mm² TPS</td>
+</tr>
+<tr>
+<td>Lighting circuits</td>
+<td>1.5mm² TPS</td>
+</tr>
+<tr>
+<td>Hot water / stove</td>
+<td>4mm² or 6mm²</td>
+</tr>
+<tr>
+<td>Air conditioning (large)</td>
+<td>6mm² or 10mm²</td>
+</tr>
+<tr>
+<td>Sub-board / main feed</td>
+<td>16mm²+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="voltage-drop-limits-asnzs-3000">Voltage Drop Limits (AS/NZS 3000)</h3>
+<ul>
+<li><strong>5% maximum</strong> from supply point to any point in the installation</li>
+<li>At 230V: maximum 11.5V drop allowed</li>
+<li>Longer cable runs always need larger cable to compensate</li>
+</ul>
+<h3 id="important">Important</h3>
+<p>All electrical work in NZ must be carried out by a <strong>Registered Electrical Worker (REW)</strong>. This calculator is a reference tool for planning purposes only. Find <a href="/trades/electricians/">licensed electricians</a> in your area.</p>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:linear-gradient(135deg,#0055a5 0%,#003d7a 100%);color:#fff;border:none">
+                <h3 style="color:#fff">🚀 Fastcrew — One App for Everything</h3>
+                <p style="color:rgba(255,255,255,.88);font-size:.85rem;margin-bottom:.6rem">Tired of paying for 4–5 different apps? Fastcrew replaces them all:</p>
+                <ul style="color:rgba(255,255,255,.82);font-size:.82rem;margin:0 0 1rem;padding-left:1.1rem">
+                    <li>Jobs, quotes &amp; invoicing</li>
+                    <li>Built-in H&amp;S &amp; compliance</li>
+                    <li>Xero sync + Stripe payments</li>
+                    <li>Flat $20/seat — no tier lock-in</li>
+                </ul>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#e55a00;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Get early access →</a>
+            </div>
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator.html">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator.html">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator.html">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator.html">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator.html">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://fastcrew.nz" rel="noopener" target="_blank">Fastcrew — All-in-One Tradie App</a></li>
+                    <li><a href="https://www.xero.com/nz/" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">NZ Tradie Tools</p>
+                <p>Free calculators, templates and guides for New Zealand tradies.</p>
+                <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
+            </div>
+            <div style="text-align:right">
+                <p><a href="/privacy/">Privacy Policy</a></p>
+                <p><a href="/contact/">Contact</a></p>
+                <p style="margin-top:.5rem">&copy; 2026 NZ Tradie Tools</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

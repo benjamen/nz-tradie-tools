@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scaffolding Cost Calculator — NZ — NZ Tradie Tools</title>
+    <meta name="description" content="Estimate scaffolding hire costs for NZ building projects — residential, commercial, and roof access.">
+    <meta property="og:title" content="Scaffolding Cost Calculator — NZ — NZ Tradie Tools">
+    <meta property="og:description" content="Estimate scaffolding hire costs for NZ building projects — residential, commercial, and roof access.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradietools.nz/calculators/scaffolding-calculator.html">
+    <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Scaffolding Cost Calculator — NZ — NZ Tradie Tools">
+    <meta name="twitter:description" content="Estimate scaffolding hire costs for NZ building projects — residential, commercial, and roof access.">
+    <link rel="canonical" href="https://tradietools.nz/calculators/scaffolding-calculator.html">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+            <nav class="main-nav">
+                
+                <a href="/">Home</a>
+                
+                <a href="/trades/">Find a Tradie</a>
+                
+                <a href="/jobs/">Job Costs</a>
+                
+                <a href="/calculators/">Calculators</a>
+                
+                <a href="/articles/">Articles</a>
+                
+                <a href="/templates/">Templates</a>
+                
+                <a href="/contact/">Contact</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <div class="container page-layout">
+        <main class="main-content">
+            <h1>Scaffolding Cost Calculator — NZ</h1>
+            <p class="lead">Estimate scaffolding hire costs for NZ building projects — residential, commercial, and roof access.</p>
+
+            
+
+            <div class="calculator-wrapper">
+                <div class="calc-grid">
+  <div class="calc-group"><label>Building perimeter to scaffold (m)</label><input type="number" id="sc-per" placeholder="e.g. 40" oninput="calcScaff()"></div>
+  <div class="calc-group"><label>Building height (m)</label>
+    <select id="sc-h" onchange="calcScaff()">
+      <option value="4.5">Single storey (up to 4.5m)</option>
+      <option value="7.5" selected>Two storey (up to 7.5m)</option>
+      <option value="10.5">Three storey (up to 10.5m)</option>
+      <option value="14">Four storey+</option>
+    </select>
+  </div>
+  <div class="calc-group"><label>Hire duration (weeks)</label><input type="number" id="sc-wks" placeholder="e.g. 4" value="4" oninput="calcScaff()"></div>
+  <div class="calc-group"><label>Access type</label>
+    <select id="sc-type" onchange="calcScaff()">
+      <option value="1" selected>Standard perimeter scaffold</option>
+      <option value="0.6">Partial / one face only</option>
+      <option value="1.4">Roof scaffold with edge protection</option>
+      <option value="1.8">Internal scaffold (commercial)</option>
+    </select>
+  </div>
+  <div class="calc-group"><label>Region</label>
+    <select id="sc-reg" onchange="calcScaff()">
+      <option value="1.15">Auckland</option>
+      <option value="1.0" selected>Wellington / Hamilton</option>
+      <option value="0.95">Christchurch</option>
+      <option value="0.9">Provincial / South Island</option>
+    </select>
+  </div>
+</div>
+<div class="calc-result" id="sc-result" style="display:none">
+  <h3>Scaffolding Estimate</h3>
+  <div class="result-row"><span>Scaffold area (approx)</span><span id="sc-area"></span></div>
+  <div class="result-row"><span>Erect &amp; dismantle</span><span id="sc-ed"></span></div>
+  <div class="result-row"><span>Weekly hire charge</span><span id="sc-week"></span></div>
+  <div class="result-row"><span>Total hire (<span id="sc-wks-out"></span> weeks)</span><span id="sc-hire"></span></div>
+  <div class="result-row"><span>Total estimate (excl. GST)</span><span id="sc-total" class="result-highlight"></span></div>
+  <div class="result-row"><span>Total incl. 15% GST</span><span id="sc-gst"></span></div>
+</div>
+<script>
+function nzd(n){return '$'+Math.round(n).toLocaleString();}
+function calcScaff(){
+  var per=parseFloat(document.getElementById('sc-per').value)||0;
+  var h=parseFloat(document.getElementById('sc-h').value);
+  var wks=parseFloat(document.getElementById('sc-wks').value)||4;
+  var type=parseFloat(document.getElementById('sc-type').value);
+  var reg=parseFloat(document.getElementById('sc-reg').value);
+  if(!per){document.getElementById('sc-result').style.display='none';return;}
+  var area=per*h*type;
+  var ed=(area*22+1200)*reg;
+  var weeklyHire=(area*3.5)*reg;
+  var hireTotal=weeklyHire*wks;
+  var total=ed+hireTotal;
+  document.getElementById('sc-area').textContent=area.toFixed(0)+' m²';
+  document.getElementById('sc-ed').textContent=nzd(ed);
+  document.getElementById('sc-week').textContent=nzd(weeklyHire)+'/wk';
+  document.getElementById('sc-wks-out').textContent=wks;
+  document.getElementById('sc-hire').textContent=nzd(hireTotal);
+  document.getElementById('sc-total').textContent=nzd(total);
+  document.getElementById('sc-gst').textContent=nzd(total*1.15);
+  document.getElementById('sc-result').style.display='';
+}
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="scaffolding-costs-in-nz">Scaffolding Costs in NZ</h2>
+<p>Scaffolding is a significant cost for any multi-level building project. In NZ, scaffolding must comply with <strong>WorkSafe NZ</strong> requirements and the <strong>Health and Safety at Work Act 2015</strong>.</p>
+<h3 id="typical-nz-scaffolding-rates">Typical NZ Scaffolding Rates</h3>
+<table>
+<thead>
+<tr>
+<th>Job type</th>
+<th>Cost range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Single storey house (erect + 4wks hire)</td>
+<td>$1,800–$3,500</td>
+</tr>
+<tr>
+<td>Two storey house (full perimeter)</td>
+<td>$3,500–$6,500</td>
+</tr>
+<tr>
+<td>Roof scaffold with edge protection</td>
+<td>$2,500–$5,000</td>
+</tr>
+<tr>
+<td>Commercial project (per m²)</td>
+<td>$25–$50/m² erected</td>
+</tr>
+</tbody>
+</table>
+<h3 id="when-scaffolding-is-required">When Scaffolding Is Required</h3>
+<p>Under NZ workplace safety regulations:
+- <strong>Any work at height over 1.8m</strong> requires fall prevention
+- Scaffolding is required where <strong>catch platforms</strong> or safety nets aren't practicable
+- Scaffolding must be erected and dismantled by a <strong>competent person</strong></p>
+<h3 id="scaffold-hire-vs-buy">Scaffold Hire vs Buy</h3>
+<p>For most residential projects, hire is cheaper than buying. Only consider buying if you have multiple ongoing projects. Typical hire rates: <strong>$3–$6 per m² per week</strong> plus erection/dismantling.</p>
+<p>Find <a href="/trades/scaffolders/">certified scaffolding contractors</a> in your area.</p>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:linear-gradient(135deg,#0055a5 0%,#003d7a 100%);color:#fff;border:none">
+                <h3 style="color:#fff">🚀 Fastcrew — One App for Everything</h3>
+                <p style="color:rgba(255,255,255,.88);font-size:.85rem;margin-bottom:.6rem">Tired of paying for 4–5 different apps? Fastcrew replaces them all:</p>
+                <ul style="color:rgba(255,255,255,.82);font-size:.82rem;margin:0 0 1rem;padding-left:1.1rem">
+                    <li>Jobs, quotes &amp; invoicing</li>
+                    <li>Built-in H&amp;S &amp; compliance</li>
+                    <li>Xero sync + Stripe payments</li>
+                    <li>Flat $20/seat — no tier lock-in</li>
+                </ul>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#e55a00;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Get early access →</a>
+            </div>
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator.html">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator.html">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator.html">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator.html">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator.html">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://fastcrew.nz" rel="noopener" target="_blank">Fastcrew — All-in-One Tradie App</a></li>
+                    <li><a href="https://www.xero.com/nz/" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">NZ Tradie Tools</p>
+                <p>Free calculators, templates and guides for New Zealand tradies.</p>
+                <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
+            </div>
+            <div style="text-align:right">
+                <p><a href="/privacy/">Privacy Policy</a></p>
+                <p><a href="/contact/">Contact</a></p>
+                <p style="margin-top:.5rem">&copy; 2026 NZ Tradie Tools</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

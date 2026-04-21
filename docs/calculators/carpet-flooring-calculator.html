@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carpet & Flooring Calculator — NZ — NZ Tradie Tools</title>
+    <meta name="description" content="Calculate carpet, vinyl, and floating floor quantities and costs for NZ homes. Includes underlay and installation.">
+    <meta property="og:title" content="Carpet & Flooring Calculator — NZ — NZ Tradie Tools">
+    <meta property="og:description" content="Calculate carpet, vinyl, and floating floor quantities and costs for NZ homes. Includes underlay and installation.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradietools.nz/calculators/carpet-flooring-calculator.html">
+    <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Carpet & Flooring Calculator — NZ — NZ Tradie Tools">
+    <meta name="twitter:description" content="Calculate carpet, vinyl, and floating floor quantities and costs for NZ homes. Includes underlay and installation.">
+    <link rel="canonical" href="https://tradietools.nz/calculators/carpet-flooring-calculator.html">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+            <nav class="main-nav">
+                
+                <a href="/">Home</a>
+                
+                <a href="/trades/">Find a Tradie</a>
+                
+                <a href="/jobs/">Job Costs</a>
+                
+                <a href="/calculators/">Calculators</a>
+                
+                <a href="/articles/">Articles</a>
+                
+                <a href="/templates/">Templates</a>
+                
+                <a href="/contact/">Contact</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <div class="container page-layout">
+        <main class="main-content">
+            <h1>Carpet & Flooring Calculator — NZ</h1>
+            <p class="lead">Calculate carpet, vinyl, and floating floor quantities and costs for NZ homes. Includes underlay and installation.</p>
+
+            
+
+            <div class="calculator-wrapper">
+                <div class="calc-tabs">
+  <button class="calc-tab active" onclick="switchFLTab('carpet')">Carpet</button>
+  <button class="calc-tab" onclick="switchFLTab('vinyl')">Vinyl / LVP</button>
+  <button class="calc-tab" onclick="switchFLTab('timber')">Timber / Laminate</button>
+</div>
+<div id="fltab-carpet">
+  <div class="calc-grid">
+    <div class="calc-group"><label>Room length (m)</label><input type="number" id="ca-len" placeholder="e.g. 5" oninput="calcCarpet()"></div>
+    <div class="calc-group"><label>Room width (m)</label><input type="number" id="ca-wid" placeholder="e.g. 4" oninput="calcCarpet()"></div>
+    <div class="calc-group"><label>Carpet width (m)</label>
+      <select id="ca-roll" onchange="calcCarpet()">
+        <option value="3.66" selected>3.66m (standard NZ roll)</option>
+        <option value="4.0">4.0m roll</option>
+        <option value="5.0">5.0m roll</option>
+      </select>
+    </div>
+    <div class="calc-group"><label>Carpet quality</label>
+      <select id="ca-qual" onchange="calcCarpet()">
+        <option value="25">Budget (loop pile) — $25/m²</option>
+        <option value="45" selected>Mid-range (cut pile) — $45/m²</option>
+        <option value="75">Premium (wool blend) — $75/m²</option>
+        <option value="120">Luxury (pure wool) — $120/m²</option>
+      </select>
+    </div>
+    <div class="calc-group"><label>Underlay</label>
+      <select id="ca-ul" onchange="calcCarpet()">
+        <option value="8">Budget (8mm foam) — $8/m²</option>
+        <option value="15" selected>Standard (10mm rebond) — $15/m²</option>
+        <option value="22">Premium (12mm high density) — $22/m²</option>
+      </select>
+    </div>
+  </div>
+  <div class="calc-result" id="ca-result" style="display:none">
+    <h3>Carpet Estimate</h3>
+    <div class="result-row"><span>Room area</span><span id="ca-area"></span></div>
+    <div class="result-row"><span>Carpet needed (roll width)</span><span id="ca-carpet"></span></div>
+    <div class="result-row"><span>Carpet cost</span><span id="ca-ccost"></span></div>
+    <div class="result-row"><span>Underlay cost</span><span id="ca-ucost"></span></div>
+    <div class="result-row"><span>Installation</span><span id="ca-lab"></span></div>
+    <div class="result-row"><span>Total estimate</span><span id="ca-total" class="result-highlight"></span></div>
+  </div>
+</div>
+<div id="fltab-vinyl" style="display:none">
+  <div class="calc-grid">
+    <div class="calc-group"><label>Area (m²)</label><input type="number" id="vl-area" placeholder="e.g. 20" oninput="calcVinyl()"></div>
+    <div class="calc-group"><label>Wastage %</label><input type="number" id="vl-waste" value="10" oninput="calcVinyl()"></div>
+    <div class="calc-group"><label>Product type</label>
+      <select id="vl-type" onchange="calcVinyl()">
+        <option value="35">Vinyl plank (LVP) budget — $35/m²</option>
+        <option value="55" selected>LVP mid-range — $55/m²</option>
+        <option value="90">LVP premium (Hybrid) — $90/m²</option>
+        <option value="25">Sheet vinyl — $25/m²</option>
+      </select>
+    </div>
+  </div>
+  <div class="calc-result" id="vl-result" style="display:none">
+    <h3>Vinyl / LVP Estimate</h3>
+    <div class="result-row"><span>Area to cover (incl. wastage)</span><span id="vl-area-out"></span></div>
+    <div class="result-row"><span>Material cost</span><span id="vl-mat"></span></div>
+    <div class="result-row"><span>Installation</span><span id="vl-lab"></span></div>
+    <div class="result-row"><span>Total estimate</span><span id="vl-total" class="result-highlight"></span></div>
+  </div>
+</div>
+<div id="fltab-timber" style="display:none">
+  <div class="calc-grid">
+    <div class="calc-group"><label>Area (m²)</label><input type="number" id="tm-area" placeholder="e.g. 35" oninput="calcTimber()"></div>
+    <div class="calc-group"><label>Wastage %</label><input type="number" id="tm-waste" value="10" oninput="calcTimber()"></div>
+    <div class="calc-group"><label>Product type</label>
+      <select id="tm-type" onchange="calcTimber()">
+        <option value="30">Laminate (AC4 rating) — $30/m²</option>
+        <option value="60" selected>Engineered timber — $60/m²</option>
+        <option value="110">Solid hardwood — $110/m²</option>
+        <option value="85">NZ rimu/matai (recycled) — $85/m²</option>
+      </select>
+    </div>
+  </div>
+  <div class="calc-result" id="tm-result" style="display:none">
+    <h3>Timber / Laminate Estimate</h3>
+    <div class="result-row"><span>Area to cover</span><span id="tm-area-out"></span></div>
+    <div class="result-row"><span>Material cost</span><span id="tm-mat"></span></div>
+    <div class="result-row"><span>Underlay + installation</span><span id="tm-lab"></span></div>
+    <div class="result-row"><span>Total estimate</span><span id="tm-total" class="result-highlight"></span></div>
+  </div>
+</div>
+<script>
+function nzd(n){return '$'+Math.round(n).toLocaleString();}
+function switchFLTab(t){
+  ['carpet','vinyl','timber'].forEach(function(id){document.getElementById('fltab-'+id).style.display=id===t?'':'none';});
+  document.querySelectorAll('.calc-tab').forEach(function(b,i){b.classList.toggle('active',['carpet','vinyl','timber'][i]===t);});
+}
+function calcCarpet(){
+  var len=parseFloat(document.getElementById('ca-len').value)||0;
+  var wid=parseFloat(document.getElementById('ca-wid').value)||0;
+  var roll=parseFloat(document.getElementById('ca-roll').value);
+  var qual=parseFloat(document.getElementById('ca-qual').value);
+  var ul=parseFloat(document.getElementById('ca-ul').value);
+  if(!len||!wid){document.getElementById('ca-result').style.display='none';return;}
+  var area=len*wid;
+  var strips=Math.ceil(wid/roll);
+  var carpetM2=strips*roll*len;
+  var ccost=carpetM2*qual;
+  var ucost=area*ul;
+  var lab=area*18+120;
+  var total=ccost+ucost+lab;
+  document.getElementById('ca-area').textContent=area.toFixed(2)+' m²';
+  document.getElementById('ca-carpet').textContent=carpetM2.toFixed(1)+' m² ('+strips+' strip'+( strips>1?'s':'')+' @ '+roll+'m wide)';
+  document.getElementById('ca-ccost').textContent=nzd(ccost);
+  document.getElementById('ca-ucost').textContent=nzd(ucost);
+  document.getElementById('ca-lab').textContent=nzd(lab);
+  document.getElementById('ca-total').textContent=nzd(total);
+  document.getElementById('ca-result').style.display='';
+}
+function calcVinyl(){
+  var area=parseFloat(document.getElementById('vl-area').value)||0;
+  var waste=parseFloat(document.getElementById('vl-waste').value)||10;
+  var cost=parseFloat(document.getElementById('vl-type').value);
+  if(!area){document.getElementById('vl-result').style.display='none';return;}
+  var eff=area*(1+waste/100);
+  var mat=eff*cost;
+  var lab=area*25+200;
+  document.getElementById('vl-area-out').textContent=eff.toFixed(2)+' m²';
+  document.getElementById('vl-mat').textContent=nzd(mat);
+  document.getElementById('vl-lab').textContent=nzd(lab);
+  document.getElementById('vl-total').textContent=nzd(mat+lab);
+  document.getElementById('vl-result').style.display='';
+}
+function calcTimber(){
+  var area=parseFloat(document.getElementById('tm-area').value)||0;
+  var waste=parseFloat(document.getElementById('tm-waste').value)||10;
+  var cost=parseFloat(document.getElementById('tm-type').value);
+  if(!area){document.getElementById('tm-result').style.display='none';return;}
+  var eff=area*(1+waste/100);
+  var mat=eff*cost;
+  var lab=area*35+300;
+  document.getElementById('tm-area-out').textContent=eff.toFixed(2)+' m²';
+  document.getElementById('tm-mat').textContent=nzd(mat);
+  document.getElementById('tm-lab').textContent=nzd(lab)+' (incl. underlay)';
+  document.getElementById('tm-total').textContent=nzd(mat+lab);
+  document.getElementById('tm-result').style.display='';
+}
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="flooring-costs-in-nz-2025">Flooring Costs in NZ (2025)</h2>
+<p>Flooring is one of the highest-impact renovations for the money. Here's what to expect:</p>
+<h3 id="cost-guide">Cost Guide</h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Material (m²)</th>
+<th>Installed (m²)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Budget carpet</td>
+<td>$25–$35</td>
+<td>$55–$70</td>
+</tr>
+<tr>
+<td>Mid-range carpet</td>
+<td>$45–$65</td>
+<td>$80–$105</td>
+</tr>
+<tr>
+<td>Premium wool carpet</td>
+<td>$75–$150</td>
+<td>$110–$200</td>
+</tr>
+<tr>
+<td>Sheet vinyl</td>
+<td>$20–$40</td>
+<td>$45–$70</td>
+</tr>
+<tr>
+<td>LVP / Hybrid</td>
+<td>$45–$120</td>
+<td>$80–$160</td>
+</tr>
+<tr>
+<td>Laminate</td>
+<td>$25–$45</td>
+<td>$55–$80</td>
+</tr>
+<tr>
+<td>Engineered timber</td>
+<td>$55–$120</td>
+<td>$95–$170</td>
+</tr>
+<tr>
+<td>Solid hardwood</td>
+<td>$90–$200</td>
+<td>$150–$280</td>
+</tr>
+</tbody>
+</table>
+<h3 id="carpet-roll-width">Carpet Roll Width</h3>
+<p>NZ standard carpet rolls are <strong>3.66m wide</strong>. Rooms wider than this need joins — which affects price and aesthetics. For wide rooms, consider broadloom or plan seams carefully with your carpet layer.</p>
+<h3 id="what-to-ask-your-flooring-contractor">What to Ask Your Flooring Contractor</h3>
+<ul>
+<li>Is the subfloor included in preparation?</li>
+<li>What's the underlay spec (thickness, density)?</li>
+<li>Are transitions/edging strips included?</li>
+<li>What's the manufacturer's warranty?</li>
+</ul>
+<p>Find <a href="/trades/carpet-layers/">carpet layers and flooring specialists</a> near you.</p>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:linear-gradient(135deg,#0055a5 0%,#003d7a 100%);color:#fff;border:none">
+                <h3 style="color:#fff">🚀 Fastcrew — One App for Everything</h3>
+                <p style="color:rgba(255,255,255,.88);font-size:.85rem;margin-bottom:.6rem">Tired of paying for 4–5 different apps? Fastcrew replaces them all:</p>
+                <ul style="color:rgba(255,255,255,.82);font-size:.82rem;margin:0 0 1rem;padding-left:1.1rem">
+                    <li>Jobs, quotes &amp; invoicing</li>
+                    <li>Built-in H&amp;S &amp; compliance</li>
+                    <li>Xero sync + Stripe payments</li>
+                    <li>Flat $20/seat — no tier lock-in</li>
+                </ul>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#e55a00;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Get early access →</a>
+            </div>
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator.html">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator.html">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator.html">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator.html">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator.html">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://fastcrew.nz" rel="noopener" target="_blank">Fastcrew — All-in-One Tradie App</a></li>
+                    <li><a href="https://www.xero.com/nz/" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">NZ Tradie Tools</p>
+                <p>Free calculators, templates and guides for New Zealand tradies.</p>
+                <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
+            </div>
+            <div style="text-align:right">
+                <p><a href="/privacy/">Privacy Policy</a></p>
+                <p><a href="/contact/">Contact</a></p>
+                <p style="margin-top:.5rem">&copy; 2026 NZ Tradie Tools</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

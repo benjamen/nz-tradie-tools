@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bathroom Renovation Cost Calculator — NZ — NZ Tradie Tools</title>
+    <meta name="description" content="Estimate your bathroom renovation cost in New Zealand. Covers tiling, plumbing, waterproofing, fixtures, and labour.">
+    <meta property="og:title" content="Bathroom Renovation Cost Calculator — NZ — NZ Tradie Tools">
+    <meta property="og:description" content="Estimate your bathroom renovation cost in New Zealand. Covers tiling, plumbing, waterproofing, fixtures, and labour.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradietools.nz/calculators/bathroom-renovation-calculator.html">
+    <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Bathroom Renovation Cost Calculator — NZ — NZ Tradie Tools">
+    <meta name="twitter:description" content="Estimate your bathroom renovation cost in New Zealand. Covers tiling, plumbing, waterproofing, fixtures, and labour.">
+    <link rel="canonical" href="https://tradietools.nz/calculators/bathroom-renovation-calculator.html">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+            <nav class="main-nav">
+                
+                <a href="/">Home</a>
+                
+                <a href="/trades/">Find a Tradie</a>
+                
+                <a href="/jobs/">Job Costs</a>
+                
+                <a href="/calculators/">Calculators</a>
+                
+                <a href="/articles/">Articles</a>
+                
+                <a href="/templates/">Templates</a>
+                
+                <a href="/contact/">Contact</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <div class="container page-layout">
+        <main class="main-content">
+            <h1>Bathroom Renovation Cost Calculator — NZ</h1>
+            <p class="lead">Estimate your bathroom renovation cost in New Zealand. Covers tiling, plumbing, waterproofing, fixtures, and labour.</p>
+
+            
+
+            <div class="calculator-wrapper">
+                <div class="calc-tabs">
+  <button class="calc-tab active" onclick="switchBTab('basic')">Basic Reno</button>
+  <button class="calc-tab" onclick="switchBTab('full')">Full Gut & Rebuild</button>
+</div>
+<div id="btab-basic">
+  <div class="calc-grid">
+    <div class="calc-group"><label>Bathroom size</label>
+      <select id="b-size" onchange="calcBathBasic()">
+        <option value="4">Small (up to 4m²)</option>
+        <option value="7" selected>Medium (5–7m²)</option>
+        <option value="12">Large (8–12m²)</option>
+        <option value="20">Ensuite / Master (12m²+)</option>
+      </select>
+    </div>
+    <div class="calc-group"><label>Quality level</label>
+      <select id="b-qual" onchange="calcBathBasic()">
+        <option value="0.7">Budget (Bunnings / trades pricing)</option>
+        <option value="1" selected>Mid-range</option>
+        <option value="1.6">High-end / Premium</option>
+      </select>
+    </div>
+    <div class="calc-group"><label>Replace toilet?</label>
+      <select id="b-toilet" onchange="calcBathBasic()">
+        <option value="0">No</option>
+        <option value="900" selected>Yes</option>
+      </select>
+    </div>
+    <div class="calc-group"><label>Replace vanity?</label>
+      <select id="b-vanity" onchange="calcBathBasic()">
+        <option value="0">No</option>
+        <option value="1200" selected>Yes</option>
+      </select>
+    </div>
+    <div class="calc-group"><label>Replace shower / bath?</label>
+      <select id="b-shower" onchange="calcBathBasic()">
+        <option value="0">No</option>
+        <option value="2500" selected>Yes — shower</option>
+        <option value="1800">Yes — bath</option>
+        <option value="4000">Yes — both</option>
+      </select>
+    </div>
+    <div class="calc-group"><label>New tiling?</label>
+      <select id="b-tiles" onchange="calcBathBasic()">
+        <option value="0">No</option>
+        <option value="1" selected>Floor only</option>
+        <option value="2">Floor + feature wall</option>
+        <option value="3">Full tile (floor + all walls)</option>
+      </select>
+    </div>
+  </div>
+  <div class="calc-result" id="b-result">
+    <h3>Estimated Cost</h3>
+    <div class="result-row"><span>Materials &amp; fixtures</span><span id="b-mat"></span></div>
+    <div class="result-row"><span>Labour (plumber + tiler + builder)</span><span id="b-lab"></span></div>
+    <div class="result-row"><span>Waterproofing &amp; prep</span><span id="b-wp"></span></div>
+    <div class="result-row"><span>Total estimate (excl. GST)</span><span id="b-total" class="result-highlight"></span></div>
+    <div class="result-row"><span>Total incl. 15% GST</span><span id="b-gst"></span></div>
+  </div>
+</div>
+<div id="btab-full" style="display:none">
+  <div class="calc-grid">
+    <div class="calc-group"><label>Floor area (m²)</label><input type="number" id="bf-area" placeholder="e.g. 7" oninput="calcBathFull()"></div>
+    <div class="calc-group"><label>Wall area to tile (m²)</label><input type="number" id="bf-wall" placeholder="e.g. 18" oninput="calcBathFull()"></div>
+    <div class="calc-group"><label>Tile cost ($/m²)</label><input type="number" id="bf-tcost" placeholder="e.g. 60" value="60" oninput="calcBathFull()"></div>
+    <div class="calc-group"><label>Fixtures budget ($)</label><input type="number" id="bf-fix" placeholder="e.g. 4000" oninput="calcBathFull()"></div>
+  </div>
+  <div class="calc-result" id="bf-result" style="display:none">
+    <h3>Estimated Cost</h3>
+    <div class="result-row"><span>Tiles (supply + lay)</span><span id="bf-tiles"></span></div>
+    <div class="result-row"><span>Waterproofing</span><span id="bf-wp"></span></div>
+    <div class="result-row"><span>Fixtures</span><span id="bf-fix-out"></span></div>
+    <div class="result-row"><span>Plumbing labour</span><span id="bf-plumb"></span></div>
+    <div class="result-row"><span>Builder / sundries</span><span id="bf-build"></span></div>
+    <div class="result-row"><span>Total estimate (excl. GST)</span><span id="bf-total" class="result-highlight"></span></div>
+    <div class="result-row"><span>Total incl. GST</span><span id="bf-gst"></span></div>
+  </div>
+</div>
+<script>
+function nzd(n){return '$'+Math.round(n).toLocaleString();}
+function switchBTab(t){
+  document.getElementById('btab-basic').style.display=t==='basic'?'':'none';
+  document.getElementById('btab-full').style.display=t==='full'?'':'none';
+  document.querySelectorAll('.calc-tab').forEach(function(b,i){b.classList.toggle('active',['basic','full'][i]===t);});
+}
+function calcBathBasic(){
+  var sz=parseFloat(document.getElementById('b-size').value);
+  var ql=parseFloat(document.getElementById('b-qual').value);
+  var toilet=parseFloat(document.getElementById('b-toilet').value);
+  var vanity=parseFloat(document.getElementById('b-vanity').value);
+  var shower=parseFloat(document.getElementById('b-shower').value);
+  var tiles=parseInt(document.getElementById('b-tiles').value);
+  var tileBase=[0,sz*120,sz*120+sz*0.6*140,sz*120+sz*2.5*140][tiles];
+  var mat=(toilet+vanity+shower+tileBase)*ql;
+  var lab=(1200+sz*180)*ql;
+  var wp=sz*95*ql;
+  var total=mat+lab+wp;
+  document.getElementById('b-mat').textContent=nzd(mat);
+  document.getElementById('b-lab').textContent=nzd(lab);
+  document.getElementById('b-wp').textContent=nzd(wp);
+  document.getElementById('b-total').textContent=nzd(total);
+  document.getElementById('b-gst').textContent=nzd(total*1.15);
+}
+function calcBathFull(){
+  var fa=parseFloat(document.getElementById('bf-area').value)||0;
+  var wa=parseFloat(document.getElementById('bf-wall').value)||0;
+  var tc=parseFloat(document.getElementById('bf-tcost').value)||60;
+  var fix=parseFloat(document.getElementById('bf-fix').value)||0;
+  if(!fa&&!wa&&!fix){return;}
+  var tiles=(fa+wa)*(tc+85);
+  var wp=fa*95+500;
+  var plumb=fix*0.35+800;
+  var build=1200+fa*150;
+  var total=tiles+wp+fix+plumb+build;
+  document.getElementById('bf-tiles').textContent=nzd(tiles);
+  document.getElementById('bf-wp').textContent=nzd(wp);
+  document.getElementById('bf-fix-out').textContent=nzd(fix);
+  document.getElementById('bf-plumb').textContent=nzd(plumb);
+  document.getElementById('bf-build').textContent=nzd(build);
+  document.getElementById('bf-total').textContent=nzd(total);
+  document.getElementById('bf-gst').textContent=nzd(total*1.15);
+  document.getElementById('bf-result').style.display='';
+}
+calcBathBasic();
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="bathroom-renovation-costs-in-nz">Bathroom Renovation Costs in NZ</h2>
+<p>A bathroom renovation is one of the most popular home improvements in New Zealand — and one of the most frequently under-budgeted. Typical costs range from <strong>$8,000 for a basic refresh</strong> to <strong>$35,000+ for a full master ensuite rebuild</strong>.</p>
+<h3 id="what-drives-the-cost">What Drives the Cost?</h3>
+<ul>
+<li><strong>Tiling</strong> — tiler rates run $80–$120/hr. Full-tile bathrooms (floor + all walls) add $3,000–$8,000 in labour alone</li>
+<li><strong>Waterproofing</strong> — mandatory under NZ Building Code E3. Budget $800–$1,500 for a standard bathroom</li>
+<li><strong>Plumbing</strong> — moving a toilet or shower drain is expensive ($1,500–$3,000 extra). Try to keep fixtures in existing locations</li>
+<li><strong>Fixtures quality</strong> — a Bunnings-spec toilet + vanity combo runs $1,500; a premium European set can hit $8,000+</li>
+</ul>
+<h3 id="cost-ranges-by-bathroom-type">Cost Ranges by Bathroom Type</h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Budget</th>
+<th>Mid</th>
+<th>High-end</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Small bathroom (4m²)</td>
+<td>$8,000–$12,000</td>
+<td>$14,000–$20,000</td>
+<td>$22,000–$35,000</td>
+</tr>
+<tr>
+<td>Medium bathroom (7m²)</td>
+<td>$12,000–$18,000</td>
+<td>$20,000–$30,000</td>
+<td>$32,000–$50,000</td>
+</tr>
+<tr>
+<td>Master ensuite (12m²+)</td>
+<td>$18,000–$28,000</td>
+<td>$30,000–$45,000</td>
+<td>$45,000–$80,000+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="always-get-3-quotes">Always Get 3 Quotes</h3>
+<p>Bathroom quotes vary enormously. Use our <a href="/calculators/job-cost-calculator.html">Job Cost Calculator</a> to sanity-check any quote before signing.</p>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:linear-gradient(135deg,#0055a5 0%,#003d7a 100%);color:#fff;border:none">
+                <h3 style="color:#fff">🚀 Fastcrew — One App for Everything</h3>
+                <p style="color:rgba(255,255,255,.88);font-size:.85rem;margin-bottom:.6rem">Tired of paying for 4–5 different apps? Fastcrew replaces them all:</p>
+                <ul style="color:rgba(255,255,255,.82);font-size:.82rem;margin:0 0 1rem;padding-left:1.1rem">
+                    <li>Jobs, quotes &amp; invoicing</li>
+                    <li>Built-in H&amp;S &amp; compliance</li>
+                    <li>Xero sync + Stripe payments</li>
+                    <li>Flat $20/seat — no tier lock-in</li>
+                </ul>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#e55a00;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Get early access →</a>
+            </div>
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator.html">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator.html">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator.html">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator.html">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator.html">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://fastcrew.nz" rel="noopener" target="_blank">Fastcrew — All-in-One Tradie App</a></li>
+                    <li><a href="https://www.xero.com/nz/" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">NZ Tradie Tools</p>
+                <p>Free calculators, templates and guides for New Zealand tradies.</p>
+                <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
+            </div>
+            <div style="text-align:right">
+                <p><a href="/privacy/">Privacy Policy</a></p>
+                <p><a href="/contact/">Contact</a></p>
+                <p style="margin-top:.5rem">&copy; 2026 NZ Tradie Tools</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

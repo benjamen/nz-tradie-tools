@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paving Calculator — NZ (Pavers, Base & Sand) — NZ Tradie Tools</title>
+    <meta name="description" content="Calculate how many pavers, base course, and sand you need for a NZ paving project. Includes cost estimates.">
+    <meta property="og:title" content="Paving Calculator — NZ (Pavers, Base & Sand) — NZ Tradie Tools">
+    <meta property="og:description" content="Calculate how many pavers, base course, and sand you need for a NZ paving project. Includes cost estimates.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradietools.nz/calculators/paving-calculator.html">
+    <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Paving Calculator — NZ (Pavers, Base & Sand) — NZ Tradie Tools">
+    <meta name="twitter:description" content="Calculate how many pavers, base course, and sand you need for a NZ paving project. Includes cost estimates.">
+    <link rel="canonical" href="https://tradietools.nz/calculators/paving-calculator.html">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+            <nav class="main-nav">
+                
+                <a href="/">Home</a>
+                
+                <a href="/trades/">Find a Tradie</a>
+                
+                <a href="/jobs/">Job Costs</a>
+                
+                <a href="/calculators/">Calculators</a>
+                
+                <a href="/articles/">Articles</a>
+                
+                <a href="/templates/">Templates</a>
+                
+                <a href="/contact/">Contact</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <div class="container page-layout">
+        <main class="main-content">
+            <h1>Paving Calculator — NZ (Pavers, Base & Sand)</h1>
+            <p class="lead">Calculate how many pavers, base course, and sand you need for a NZ paving project. Includes cost estimates.</p>
+
+            
+
+            <div class="calculator-wrapper">
+                <div class="calc-grid">
+  <div class="calc-group"><label>Length (m)</label><input type="number" id="pv-len" placeholder="e.g. 6" oninput="calcPave()"></div>
+  <div class="calc-group"><label>Width (m)</label><input type="number" id="pv-wid" placeholder="e.g. 4" oninput="calcPave()"></div>
+  <div class="calc-group"><label>Paver size</label>
+    <select id="pv-size" onchange="calcPave()">
+      <option value="25">400×400mm concrete paver (6.25/m²)</option>
+      <option value="40" selected>600×600mm concrete paver (2.78/m²)</option>
+      <option value="35">600×300mm paver (5.56/m²)</option>
+      <option value="50">200×100mm brick paver (50/m²)</option>
+      <option value="22">Natural stone 600×400mm (4.17/m²)</option>
+    </select>
+  </div>
+  <div class="calc-group"><label>Paver cost ($/m²)</label><input type="number" id="pv-cost" placeholder="e.g. 45" value="45" oninput="calcPave()"></div>
+  <div class="calc-group"><label>Wastage %</label><input type="number" id="pv-waste" value="10" oninput="calcPave()"></div>
+  <div class="calc-group"><label>Base course depth (mm)</label>
+    <select id="pv-base" onchange="calcPave()">
+      <option value="75">75mm — pedestrian only</option>
+      <option value="100" selected>100mm — standard residential</option>
+      <option value="150">150mm — driveway / vehicle access</option>
+      <option value="200">200mm — heavy vehicle</option>
+    </select>
+  </div>
+</div>
+<div class="calc-result" id="pv-result" style="display:none">
+  <h3>Paving Quantities</h3>
+  <div class="result-row"><span>Area</span><span id="pv-area"></span></div>
+  <div class="result-row"><span>Pavers (incl. wastage)</span><span id="pv-pavers"></span></div>
+  <div class="result-row"><span>Base course AP20 (m³)</span><span id="pv-bc"></span></div>
+  <div class="result-row"><span>Bedding sand (m³)</span><span id="pv-sand"></span></div>
+  <div class="result-row"><span>Material cost estimate</span><span id="pv-mat"></span></div>
+  <div class="result-row"><span>Installed cost estimate</span><span id="pv-install" class="result-highlight"></span></div>
+</div>
+<script>
+function nzd(n){return '$'+Math.round(n).toLocaleString();}
+function calcPave(){
+  var len=parseFloat(document.getElementById('pv-len').value)||0;
+  var wid=parseFloat(document.getElementById('pv-wid').value)||0;
+  var perM2=parseFloat(document.getElementById('pv-size').value);
+  var cost=parseFloat(document.getElementById('pv-cost').value)||45;
+  var waste=parseFloat(document.getElementById('pv-waste').value)||10;
+  var baseMm=parseFloat(document.getElementById('pv-base').value);
+  if(!len||!wid){document.getElementById('pv-result').style.display='none';return;}
+  var area=len*wid;
+  var pavers=Math.ceil(area*perM2*(1+waste/100));
+  var base=+(area*baseMm/1000*1.15).toFixed(2);
+  var sand=+(area*0.04).toFixed(2);
+  var matCost=area*cost*(1+waste/100)+base*55+sand*80+area*1.5;
+  var install=area*65+(baseMm>=150?area*20:0)+800;
+  document.getElementById('pv-area').textContent=area.toFixed(2)+' m²';
+  document.getElementById('pv-pavers').textContent=pavers.toLocaleString()+' pavers';
+  document.getElementById('pv-bc').textContent=base+' m³';
+  document.getElementById('pv-sand').textContent=sand+' m³ (30–40mm bedding)';
+  document.getElementById('pv-mat').textContent=nzd(matCost);
+  document.getElementById('pv-install').textContent=nzd(matCost+install)+' – '+nzd((matCost+install)*1.2);
+  document.getElementById('pv-result').style.display='';
+}
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="paving-in-nz-what-to-budget">Paving in NZ — What to Budget</h2>
+<p>Paving costs vary widely depending on material choice and access. A standard concrete paver driveway is one of the most cost-effective options; natural stone adds significant expense.</p>
+<h3 id="paver-costs-by-type-nz-2025">Paver Costs by Type (NZ, 2025)</h3>
+<table>
+<thead>
+<tr>
+<th>Paver type</th>
+<th>Material cost (m²)</th>
+<th>Installed (m²)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Concrete pavers (plain)</td>
+<td>$30–$60</td>
+<td>$110–$160</td>
+</tr>
+<tr>
+<td>Brick / clay pavers</td>
+<td>$55–$95</td>
+<td>$140–$200</td>
+</tr>
+<tr>
+<td>Natural stone (bluestone etc)</td>
+<td>$90–$180</td>
+<td>$200–$320</td>
+</tr>
+<tr>
+<td>Porcelain tiles (outdoor)</td>
+<td>$70–$140</td>
+<td>$170–$260</td>
+</tr>
+</tbody>
+</table>
+<h3 id="base-course-requirements">Base Course Requirements</h3>
+<p>Correct base preparation is critical — poor base = sunken, cracked pavers within 2–3 years:
+- <strong>Pedestrian paths:</strong> 75mm AP20 compacted
+- <strong>Driveways (cars):</strong> 100–150mm AP20 compacted
+- <strong>Driveways (trucks/heavy):</strong> 150–200mm AP20 + geotextile</p>
+<h3 id="drainage">Drainage</h3>
+<p>Always design paving to drain <em>away</em> from the house at minimum <strong>1:100 fall</strong> (10mm per metre). Poor drainage is the #1 cause of paving failures.</p>
+<p>Find <a href="/trades/concreters/">licensed paving contractors</a> for your project.</p>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:linear-gradient(135deg,#0055a5 0%,#003d7a 100%);color:#fff;border:none">
+                <h3 style="color:#fff">🚀 Fastcrew — One App for Everything</h3>
+                <p style="color:rgba(255,255,255,.88);font-size:.85rem;margin-bottom:.6rem">Tired of paying for 4–5 different apps? Fastcrew replaces them all:</p>
+                <ul style="color:rgba(255,255,255,.82);font-size:.82rem;margin:0 0 1rem;padding-left:1.1rem">
+                    <li>Jobs, quotes &amp; invoicing</li>
+                    <li>Built-in H&amp;S &amp; compliance</li>
+                    <li>Xero sync + Stripe payments</li>
+                    <li>Flat $20/seat — no tier lock-in</li>
+                </ul>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#e55a00;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Get early access →</a>
+            </div>
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator.html">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator.html">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator.html">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator.html">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator.html">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://fastcrew.nz" rel="noopener" target="_blank">Fastcrew — All-in-One Tradie App</a></li>
+                    <li><a href="https://www.xero.com/nz/" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">NZ Tradie Tools</p>
+                <p>Free calculators, templates and guides for New Zealand tradies.</p>
+                <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
+            </div>
+            <div style="text-align:right">
+                <p><a href="/privacy/">Privacy Policy</a></p>
+                <p><a href="/contact/">Contact</a></p>
+                <p style="margin-top:.5rem">&copy; 2026 NZ Tradie Tools</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

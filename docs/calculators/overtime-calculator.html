@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overtime & Holiday Pay Calculator — NZ — NZ Tradie Tools</title>
+    <meta name="description" content="Calculate overtime pay, time-and-a-half, double time, and public holiday rates for NZ employees and contractors.">
+    <meta property="og:title" content="Overtime & Holiday Pay Calculator — NZ — NZ Tradie Tools">
+    <meta property="og:description" content="Calculate overtime pay, time-and-a-half, double time, and public holiday rates for NZ employees and contractors.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradietools.nz/calculators/overtime-calculator.html">
+    <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Overtime & Holiday Pay Calculator — NZ — NZ Tradie Tools">
+    <meta name="twitter:description" content="Calculate overtime pay, time-and-a-half, double time, and public holiday rates for NZ employees and contractors.">
+    <link rel="canonical" href="https://tradietools.nz/calculators/overtime-calculator.html">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+            <nav class="main-nav">
+                
+                <a href="/">Home</a>
+                
+                <a href="/trades/">Find a Tradie</a>
+                
+                <a href="/jobs/">Job Costs</a>
+                
+                <a href="/calculators/">Calculators</a>
+                
+                <a href="/articles/">Articles</a>
+                
+                <a href="/templates/">Templates</a>
+                
+                <a href="/contact/">Contact</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <div class="container page-layout">
+        <main class="main-content">
+            <h1>Overtime & Holiday Pay Calculator — NZ</h1>
+            <p class="lead">Calculate overtime pay, time-and-a-half, double time, and public holiday rates for NZ employees and contractors.</p>
+
+            
+
+            <div class="calculator-wrapper">
+                <div class="calc-tabs">
+  <button class="calc-tab active" onclick="switchOTTab('ot')">Overtime Pay</button>
+  <button class="calc-tab" onclick="switchOTTab('ph')">Public Holidays</button>
+  <button class="calc-tab" onclick="switchOTTab('al')">Annual Leave</button>
+</div>
+<div id="ottab-ot">
+  <div class="calc-grid">
+    <div class="calc-group"><label>Base hourly rate ($)</label><input type="number" id="ot-rate" placeholder="e.g. 28" oninput="calcOT()"></div>
+    <div class="calc-group"><label>Standard hours worked</label><input type="number" id="ot-std" placeholder="e.g. 40" oninput="calcOT()"></div>
+    <div class="calc-group"><label>Overtime hours (1.5x)</label><input type="number" id="ot-1h" placeholder="e.g. 4" value="0" oninput="calcOT()"></div>
+    <div class="calc-group"><label>Double time hours (2x)</label><input type="number" id="ot-2h" placeholder="e.g. 0" value="0" oninput="calcOT()"></div>
+    <div class="calc-group"><label>KiwiSaver (employer %)</label><input type="number" id="ot-ks" placeholder="3" value="3" oninput="calcOT()"></div>
+  </div>
+  <div class="calc-result" id="ot-result" style="display:none">
+    <h3>Weekly Pay Breakdown</h3>
+    <div class="result-row"><span>Standard pay</span><span id="ot-std-pay"></span></div>
+    <div class="result-row"><span>Overtime (1.5x)</span><span id="ot-ot-pay"></span></div>
+    <div class="result-row"><span>Double time (2x)</span><span id="ot-dt-pay"></span></div>
+    <div class="result-row"><span>Gross weekly total</span><span id="ot-gross" class="result-highlight"></span></div>
+    <div class="result-row"><span>Employer KiwiSaver</span><span id="ot-ks-out"></span></div>
+    <div class="result-row"><span>Total cost to employer</span><span id="ot-employer"></span></div>
+  </div>
+</div>
+<div id="ottab-ph" style="display:none">
+  <div class="calc-grid">
+    <div class="calc-group"><label>Hourly rate ($)</label><input type="number" id="ph-rate" placeholder="e.g. 28" oninput="calcPH()"></div>
+    <div class="calc-group"><label>Hours worked on public holiday</label><input type="number" id="ph-hrs" placeholder="e.g. 8" oninput="calcPH()"></div>
+    <div class="calc-group"><label>Was it an otherwise working day?</label>
+      <select id="ph-owd" onchange="calcPH()">
+        <option value="1" selected>Yes</option>
+        <option value="0">No</option>
+      </select>
+    </div>
+  </div>
+  <div class="calc-result" id="ph-result" style="display:none">
+    <h3>Public Holiday Pay</h3>
+    <div class="result-row"><span>Time-and-a-half payment</span><span id="ph-pay"></span></div>
+    <div class="result-row"><span>TOIL day entitled</span><span id="ph-toil"></span></div>
+    <div class="result-row"><span>Total entitlement</span><span id="ph-total" class="result-highlight"></span></div>
+  </div>
+</div>
+<div id="ottab-al" style="display:none">
+  <div class="calc-grid">
+    <div class="calc-group"><label>Annual salary or weekly rate ($)</label><input type="number" id="al-wage" placeholder="e.g. 65000" oninput="calcAL()"></div>
+    <div class="calc-group"><label>Wage type</label>
+      <select id="al-type" onchange="calcAL()">
+        <option value="annual" selected>Annual salary</option>
+        <option value="weekly">Weekly wage</option>
+      </select>
+    </div>
+    <div class="calc-group"><label>Weeks leave to calculate</label><input type="number" id="al-wks" placeholder="e.g. 4" value="4" oninput="calcAL()"></div>
+  </div>
+  <div class="calc-result" id="al-result" style="display:none">
+    <h3>Annual Leave Pay</h3>
+    <div class="result-row"><span>Weekly rate</span><span id="al-wrate"></span></div>
+    <div class="result-row"><span>Annual leave entitlement (4 weeks)</span><span id="al-ent"></span></div>
+    <div class="result-row"><span>Leave pay for selected weeks</span><span id="al-pay" class="result-highlight"></span></div>
+    <div class="result-row"><span>8% of gross earnings check</span><span id="al-pct"></span></div>
+  </div>
+</div>
+<script>
+function nzd(n){return '$'+n.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g,',');}
+function switchOTTab(t){
+  ['ot','ph','al'].forEach(function(id){document.getElementById('ottab-'+id).style.display=id===t?'':'none';});
+  document.querySelectorAll('.calc-tab').forEach(function(b,i){b.classList.toggle('active',['ot','ph','al'][i]===t);});
+}
+function calcOT(){
+  var r=parseFloat(document.getElementById('ot-rate').value)||0;
+  var std=parseFloat(document.getElementById('ot-std').value)||0;
+  var ot=parseFloat(document.getElementById('ot-1h').value)||0;
+  var dt=parseFloat(document.getElementById('ot-2h').value)||0;
+  var ks=parseFloat(document.getElementById('ot-ks').value)||3;
+  if(!r||!std){document.getElementById('ot-result').style.display='none';return;}
+  var stdPay=r*std;
+  var otPay=r*1.5*ot;
+  var dtPay=r*2*dt;
+  var gross=stdPay+otPay+dtPay;
+  var ksCost=gross*ks/100;
+  document.getElementById('ot-std-pay').textContent=nzd(stdPay);
+  document.getElementById('ot-ot-pay').textContent=nzd(otPay)+(ot?'  ('+ot+'hrs × $'+nzd(r*1.5)+')':'');
+  document.getElementById('ot-dt-pay').textContent=nzd(dtPay)+(dt?'  ('+dt+'hrs × $'+nzd(r*2)+')':'');
+  document.getElementById('ot-gross').textContent=nzd(gross);
+  document.getElementById('ot-ks-out').textContent=nzd(ksCost)+' ('+ks+'%)';
+  document.getElementById('ot-employer').textContent=nzd(gross+ksCost);
+  document.getElementById('ot-result').style.display='';
+}
+function calcPH(){
+  var r=parseFloat(document.getElementById('ph-rate').value)||0;
+  var hrs=parseFloat(document.getElementById('ph-hrs').value)||0;
+  var owd=parseInt(document.getElementById('ph-owd').value);
+  if(!r||!hrs){document.getElementById('ph-result').style.display='none';return;}
+  var pay=r*1.5*hrs;
+  document.getElementById('ph-pay').textContent=nzd(pay);
+  document.getElementById('ph-toil').textContent=owd?'Yes — entitled to 1 extra day off':'Not entitled (not an otherwise working day)';
+  document.getElementById('ph-total').textContent=nzd(pay)+(owd?' + 1 day TOIL':'');
+  document.getElementById('ph-result').style.display='';
+}
+function calcAL(){
+  var wage=parseFloat(document.getElementById('al-wage').value)||0;
+  var type=document.getElementById('al-type').value;
+  var wks=parseFloat(document.getElementById('al-wks').value)||4;
+  if(!wage){document.getElementById('al-result').style.display='none';return;}
+  var weekly=type==='annual'?wage/52:wage;
+  var annual=weekly*4;
+  var pay=weekly*wks;
+  var pct=wage*(type==='annual'?1:52)*0.08;
+  document.getElementById('al-wrate').textContent=nzd(weekly)+'/week';
+  document.getElementById('al-ent').textContent=nzd(annual);
+  document.getElementById('al-pay').textContent=nzd(pay);
+  document.getElementById('al-pct').textContent=nzd(pct)+'/yr (higher of weekly rate or 8% applies)';
+  document.getElementById('al-result').style.display='';
+}
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="nz-employment-pay-rules-for-tradies">NZ Employment Pay Rules for Tradies</h2>
+<h3 id="overtime">Overtime</h3>
+<p>The <strong>Employment Relations Act 2000</strong> doesn't mandate specific overtime rates — it depends on your employment agreement. However, industry standard for NZ tradies is:
+- <strong>Time-and-a-half (1.5x)</strong> after 40 hours/week or outside agreed hours
+- <strong>Double time (2x)</strong> for Sundays or agreed public holiday rates</p>
+<h3 id="public-holidays">Public Holidays</h3>
+<p>Under the <strong>Holidays Act 2003</strong>, employees who work on a <a href="https://www.employment.govt.nz/leave-and-holidays/public-holidays/">public holiday</a> are entitled to:
+- <strong>Time-and-a-half</strong> pay for hours worked
+- <strong>An alternative holiday</strong> (TOIL day) if it was an <em>otherwise working day</em></p>
+<p>NZ has <strong>12 public holidays</strong> per year including Waitangi Day, ANZAC Day, Christmas, Easter, and regional Anniversary Days.</p>
+<h3 id="annual-leave">Annual Leave</h3>
+<p>All NZ employees are entitled to <strong>at least 4 weeks</strong> paid annual leave after 12 months. Pay is the <strong>greater of</strong>:
+- Their ordinary weekly rate × 4 weeks, or
+- 8% of gross annual earnings</p>
+<p>Use our <a href="/calculators/paye-employee-calculator.html">PAYE Employee Cost Calculator</a> to see total cost to employer.</p>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:linear-gradient(135deg,#0055a5 0%,#003d7a 100%);color:#fff;border:none">
+                <h3 style="color:#fff">🚀 Fastcrew — One App for Everything</h3>
+                <p style="color:rgba(255,255,255,.88);font-size:.85rem;margin-bottom:.6rem">Tired of paying for 4–5 different apps? Fastcrew replaces them all:</p>
+                <ul style="color:rgba(255,255,255,.82);font-size:.82rem;margin:0 0 1rem;padding-left:1.1rem">
+                    <li>Jobs, quotes &amp; invoicing</li>
+                    <li>Built-in H&amp;S &amp; compliance</li>
+                    <li>Xero sync + Stripe payments</li>
+                    <li>Flat $20/seat — no tier lock-in</li>
+                </ul>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#e55a00;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Get early access →</a>
+            </div>
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator.html">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator.html">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator.html">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator.html">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator.html">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://fastcrew.nz" rel="noopener" target="_blank">Fastcrew — All-in-One Tradie App</a></li>
+                    <li><a href="https://www.xero.com/nz/" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">NZ Tradie Tools</p>
+                <p>Free calculators, templates and guides for New Zealand tradies.</p>
+                <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
+            </div>
+            <div style="text-align:right">
+                <p><a href="/privacy/">Privacy Policy</a></p>
+                <p><a href="/contact/">Contact</a></p>
+                <p style="margin-top:.5rem">&copy; 2026 NZ Tradie Tools</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

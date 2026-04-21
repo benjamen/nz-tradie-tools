@@ -54,7 +54,7 @@
                     
                     <!-- HANDOVER CHECKLIST -->
                     <div class="doc-header">
-                        <div><div class="doc-logo-box">Your logo here</div></div>
+                        <div><div class="doc-logo-box" class="logo-box-clickable" onclick="document.getElementById('logo-file-input').click()" title="Click to upload your logo" style="cursor:pointer">Click to upload logo</div></div>
                         <div>
                             <div class="doc-title">PROJECT HANDOVER CHECKLIST</div>
                             <div class="doc-meta">
@@ -148,6 +148,8 @@
                     <h3>🎯 Project Handover Checklist</h3>
                     <button class="btn-download" onclick="downloadPDF()">⬇ Download PDF</button>
                     <button class="btn-print" onclick="window.print()">🖨 Print</button>
+                    <button class="btn-logo-upload" onclick="document.getElementById('logo-file-input').click()">📷 Upload Logo</button>
+                    <button class="btn-logo-remove" id="btn-remove-logo" onclick="removeLogo()" style="display:none">✕ Remove Logo</button>
                     <p style="font-size:.8rem;color:#888;margin:.5rem 0 0;text-align:center">No sign-up required. Free forever.</p>
                 </div>
                 <div class="template-tips">
