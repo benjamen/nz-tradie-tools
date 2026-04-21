@@ -1,238 +1,296 @@
 /* Template pages — screen + print styles */
 
+/* ── Template layout ── */
 .template-layout {
     display: grid;
-    grid-template-columns: 1fr 320px;
+    grid-template-columns: 1fr 300px;
     gap: 2rem;
     align-items: start;
-    margin: 2rem 0;
+    margin: 1.5rem 0;
 }
 
 @media (max-width: 900px) {
     .template-layout { grid-template-columns: 1fr; }
 }
 
-/* The printable document */
+/* ── The printable document ── */
 #template-doc {
     background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 6px;
+    border: 1px solid #c9c9c9;
+    border-top: 4px solid #005ea2;
     padding: 2.5rem;
-    font-family: Arial, sans-serif;
-    font-size: .92rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9rem;
     line-height: 1.5;
-    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    box-shadow: 0 2px 6px rgba(0,0,0,.08);
     min-height: 600px;
 }
 
+/* ── Document header ── */
 .doc-header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 120px 1fr;
     gap: 1.5rem;
     margin-bottom: 1.5rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 2px solid #0055a5;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #1b2a4a;
+    page-break-inside: avoid;
 }
 
 .doc-logo-box {
-    border: 2px dashed #ccc;
-    border-radius: 4px;
-    padding: 1rem;
+    border: 1px solid #ccc;
+    padding: .75rem;
     text-align: center;
     color: #aaa;
-    font-size: .82rem;
-    min-height: 80px;
+    font-size: .75rem;
+    min-height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: #f6f6f6;
 }
 
 .doc-title {
-    font-size: 1.4rem;
+    font-size: 1.35rem;
     font-weight: 700;
-    color: #0055a5;
-    margin: 0 0 .25rem;
+    color: #1b2a4a;
+    margin: 0 0 .3rem;
+    letter-spacing: .02em;
 }
 
 .doc-meta {
     font-size: .82rem;
-    color: #666;
+    color: #555;
+    line-height: 1.6;
 }
 
+/* ── Two-column parties grid ── */
 .doc-parties {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-    margin-bottom: 1.5rem;
+    gap: 1.25rem;
+    margin-bottom: 1.25rem;
+    page-break-inside: avoid;
 }
 
+/* ── Section labels ── */
 .doc-section-label {
-    font-size: .75rem;
+    font-size: .7rem;
     font-weight: 700;
     text-transform: uppercase;
-    color: #888;
-    margin-bottom: .25rem;
-    letter-spacing: .04em;
+    color: #777;
+    margin-bottom: .3rem;
+    letter-spacing: .06em;
 }
 
+/* ── Editable fields ── */
 [contenteditable] {
     outline: none;
-    border-bottom: 1px dashed #bbb;
-    min-width: 80px;
-    display: inline-block;
+    min-width: 60px;
+    min-height: 1.2em;
+}
+
+/* Inline editable (within text) */
+span[contenteditable] {
+    border-bottom: 1px dashed #aaa;
     padding: 0 2px;
-    transition: border-color .15s;
+    display: inline-block;
 }
 
-[contenteditable]:focus {
-    border-bottom-color: #0055a5;
-    background: #f0f7ff;
+span[contenteditable]:focus {
+    border-bottom-color: #005ea2;
+    background: #e8f3ff;
 }
 
-[contenteditable].block-field {
+/* Block editable fields */
+div[contenteditable].block-field {
     display: block;
-    border: 1px dashed #bbb;
-    border-radius: 3px;
-    padding: .4rem .5rem;
-    margin: .25rem 0;
-    min-height: 1.6em;
+    border: 1px solid #ccc;
+    padding: .4rem .6rem;
+    margin: .2rem 0 .5rem;
+    min-height: 1.8em;
     width: 100%;
-    box-sizing: border-box;
+    background: #fafafa;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .88rem;
+    line-height: 1.5;
 }
 
-[contenteditable].block-field:focus {
-    border-color: #0055a5;
-    background: #f0f7ff;
+div[contenteditable].block-field:focus {
+    border-color: #005ea2;
+    background: #e8f3ff;
+    outline: 2px solid rgba(0,94,162,.2);
 }
 
-/* Line items table */
+/* ── Line items table ── */
 .line-items-table {
     width: 100%;
     border-collapse: collapse;
     margin: 1rem 0;
-    font-size: .88rem;
+    font-size: .85rem;
+    table-layout: fixed;
 }
 
 .line-items-table th {
-    background: #0055a5;
+    background: #1b2a4a;
     color: #fff;
-    padding: .5rem .75rem;
+    padding: .45rem .65rem;
     text-align: left;
-    font-size: .82rem;
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: .03em;
+    white-space: nowrap;
 }
 
-.line-items-table th:last-child,
-.line-items-table td:last-child {
-    text-align: right;
-}
+.line-items-table th:last-child { text-align: right; }
 
 .line-items-table td {
-    padding: .45rem .75rem;
-    border-bottom: 1px solid #e5e7eb;
+    padding: .4rem .65rem;
+    border-bottom: 1px solid #e0e0e0;
+    vertical-align: middle;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
+.line-items-table td:last-child { text-align: right; }
+.line-items-table tr:nth-child(even) td { background: #f4f6f8; }
 .line-items-table tr:last-child td { border-bottom: none; }
-.line-items-table tr:nth-child(even) td { background: #f8f9fa; }
 
+/* contenteditable inside table cells */
+.line-items-table td[contenteditable],
+.line-items-table [contenteditable] {
+    cursor: text;
+    min-height: 1.4em;
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background: transparent;
+}
+
+.line-items-table td[contenteditable]:focus,
+.line-items-table [contenteditable]:focus {
+    background: #e8f3ff;
+    outline: 1px solid #005ea2;
+}
+
+/* ── Totals block ── */
 .doc-totals {
     margin-left: auto;
-    width: 260px;
-    margin-top: .5rem;
+    width: 280px;
+    margin-top: .75rem;
 }
 
 .doc-totals-row {
     display: flex;
     justify-content: space-between;
-    padding: .3rem 0;
-    font-size: .9rem;
-    border-bottom: 1px solid #eee;
+    padding: .3rem .5rem;
+    font-size: .88rem;
+    border-bottom: 1px solid #e8e8e8;
 }
 
 .doc-totals-row.total {
     font-weight: 700;
     font-size: 1rem;
-    border-bottom: 2px solid #0055a5;
-    padding-bottom: .4rem;
-    color: #0055a5;
+    border-top: 2px solid #1b2a4a;
+    border-bottom: none;
+    padding-top: .4rem;
+    color: #1b2a4a;
+    background: #f0f4f8;
 }
 
+/* ── Footer note ── */
 .doc-footer-note {
     margin-top: 1.5rem;
-    font-size: .8rem;
+    font-size: .75rem;
     color: #888;
-    border-top: 1px solid #eee;
-    padding-top: .75rem;
+    border-top: 1px solid #ddd;
+    padding-top: .65rem;
 }
 
+/* ── Signature block ── */
 .signature-block {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 2.5rem;
     margin-top: 2rem;
+    page-break-inside: avoid;
 }
 
 .sig-line {
     border-bottom: 1px solid #333;
-    min-height: 40px;
-    margin-bottom: .25rem;
+    min-height: 44px;
+    margin-bottom: .3rem;
 }
 
 .sig-label {
-    font-size: .78rem;
+    font-size: .75rem;
     color: #666;
+    font-style: italic;
 }
 
-/* Checklist items */
+/* ── Checklist items ── */
 .checklist-item {
     display: flex;
     align-items: flex-start;
-    gap: .75rem;
+    gap: .65rem;
     padding: .4rem 0;
     border-bottom: 1px solid #f0f0f0;
-    font-size: .9rem;
+    font-size: .88rem;
+    page-break-inside: avoid;
 }
+
+.checklist-item:last-child { border-bottom: none; }
 
 .checklist-item input[type="checkbox"] {
-    width: 16px;
-    height: 16px;
+    width: 15px;
+    height: 15px;
     margin-top: 2px;
     flex-shrink: 0;
-    accent-color: #0055a5;
+    accent-color: #005ea2;
+    cursor: pointer;
 }
 
-/* Side panel */
+.checklist-item span[contenteditable] {
+    flex: 1;
+    border-bottom: none;
+}
+
+/* ── Template sidebar ── */
 .template-sidebar {
     position: sticky;
     top: 1.5rem;
 }
 
 .template-actions {
-    background: #f8f9fa;
-    border: 1px solid #e5e7eb;
-    border-radius: 8px;
-    padding: 1.25rem;
+    background: #f6f6f6;
+    border: 1px solid #b8b8b8;
+    border-top: 3px solid #005ea2;
+    padding: 1.1rem 1.25rem;
     margin-bottom: 1rem;
 }
 
 .template-actions h3 {
-    margin: 0 0 .75rem;
-    font-size: 1rem;
-    color: #111;
+    margin: 0 0 .85rem;
+    font-size: .85rem;
+    color: #1b2a4a;
+    font-weight: 700;
 }
 
 .btn-download {
     display: block;
     width: 100%;
-    background: #0055a5;
+    background: #1b2a4a;
     color: #fff;
     border: none;
     padding: .7rem 1rem;
-    border-radius: 6px;
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: .92rem;
+    font-weight: 700;
     cursor: pointer;
     text-align: center;
     margin-bottom: .5rem;
+    font-family: Arial, sans-serif;
+    letter-spacing: .03em;
 }
 
 .btn-download:hover { background: #003d7a; }
@@ -241,91 +299,100 @@
     display: block;
     width: 100%;
     background: #fff;
-    color: #0055a5;
-    border: 1px solid #0055a5;
+    color: #1b2a4a;
+    border: 2px solid #1b2a4a;
     padding: .6rem 1rem;
-    border-radius: 6px;
-    font-size: .95rem;
-    font-weight: 600;
+    font-size: .88rem;
+    font-weight: 700;
     cursor: pointer;
     text-align: center;
     margin-bottom: .5rem;
+    font-family: Arial, sans-serif;
 }
 
-.btn-print:hover { background: #f0f7ff; }
+.btn-print:hover { background: #f0f4f8; }
 
 .template-tips {
     background: #fff;
-    border: 1px solid #e5e7eb;
-    border-radius: 8px;
-    padding: 1.25rem;
-    font-size: .88rem;
+    border: 1px solid #b8b8b8;
+    padding: 1.1rem 1.25rem;
+    font-size: .85rem;
+    margin-bottom: 1rem;
 }
 
-.template-tips h4 { margin: 0 0 .6rem; font-size: .9rem; }
-.template-tips ul { margin: 0; padding-left: 1.2rem; }
-.template-tips li { margin-bottom: .35rem; }
+.template-tips h4 { margin: 0 0 .55rem; font-size: .82rem; text-transform: uppercase; letter-spacing: .06em; color: #555; }
+.template-tips ul { margin: 0 0 .5rem 1.1rem; }
+.template-tips li { margin-bottom: .3rem; }
 
-/* Template listing grid */
+/* ── Template listing grid ── */
 .template-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.25rem;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 1px;
+    background: #b8b8b8;
+    border: 1px solid #b8b8b8;
     margin: 1.5rem 0;
 }
 
 .template-card {
     background: #fff;
-    border: 1px solid #e5e7eb;
-    border-radius: 8px;
     padding: 1.25rem;
     text-decoration: none;
     color: inherit;
-    transition: box-shadow .15s, border-color .15s;
+    transition: background .15s;
     display: block;
+    border-left: 4px solid transparent;
 }
 
 .template-card:hover {
-    box-shadow: 0 4px 12px rgba(0,0,0,.1);
-    border-color: #0055a5;
+    background: #dbe8f5;
+    border-left-color: #005ea2;
     text-decoration: none;
 }
 
-.template-card-icon { font-size: 1.75rem; margin-bottom: .5rem; }
-.template-card h3 { margin: 0 0 .4rem; font-size: 1rem; color: #111; }
-.template-card p { margin: 0 0 .75rem; font-size: .85rem; color: #555; }
-.template-card-cta { font-size: .85rem; color: #0055a5; font-weight: 600; }
+.template-card-icon { font-size: 1.5rem; margin-bottom: .45rem; }
+.template-card h3 { margin: 0 0 .35rem; font-size: .95rem; color: #1b2a4a; }
+.template-card p { margin: 0 0 .6rem; font-size: .83rem; color: #5a5a5a; }
+.template-card-cta { font-size: .82rem; color: #005ea2; font-weight: 700; text-decoration: none; }
 
-/* Category badges */
+/* ── Category badges ── */
 .category-badge {
     display: inline-block;
-    padding: .15rem .5rem;
-    border-radius: 20px;
-    font-size: .75rem;
-    font-weight: 600;
+    padding: .1rem .45rem;
+    font-size: .68rem;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: .03em;
-    margin-bottom: .5rem;
+    letter-spacing: .05em;
+    margin-bottom: .4rem;
 }
 
-.cat-finance { background: #dbeafe; color: #1d4ed8; }
-.cat-operations { background: #dcfce7; color: #166534; }
-.cat-legal { background: #fef9c3; color: #854d0e; }
-.cat-safety { background: #fee2e2; color: #991b1b; }
-.cat-marketing { background: #f3e8ff; color: #6b21a8; }
+.cat-finance    { background: #dbe8f5; color: #003d7a; }
+.cat-operations { background: #dcfce7; color: #14532d; }
+.cat-legal      { background: #fef9c3; color: #713f12; }
+.cat-safety     { background: #fee2e2; color: #7f1d1d; }
+.cat-marketing  { background: #f3e8ff; color: #581c87; }
 
-/* Print styles */
+/* ── Print styles ── */
 @media print {
     .no-print { display: none !important; }
 
-    body { margin: 0; padding: 0; }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10pt;
+        color: #000;
+        background: #fff;
+        margin: 0;
+        padding: 0;
+    }
 
     #template-doc {
         border: none;
+        border-top: none;
         box-shadow: none;
         padding: 0;
         margin: 0;
         width: 100%;
+        font-size: 10pt;
     }
 
     .template-layout {
@@ -334,12 +401,41 @@
 
     .template-sidebar { display: none; }
 
-    [contenteditable] {
-        border: none;
+    .doc-title { font-size: 16pt; }
+    .doc-header { border-bottom: 2pt solid #000; }
+    .doc-footer-note { font-size: 8pt; }
+
+    /* Make contenteditable look like filled-in fields when printed */
+    span[contenteditable] {
+        border-bottom: 1px solid #000;
         background: transparent !important;
+    }
+
+    div[contenteditable].block-field {
+        border: 1px solid #999;
+        background: transparent !important;
+    }
+
+    .line-items-table td[contenteditable]:focus,
+    .line-items-table [contenteditable]:focus {
+        background: transparent !important;
+        outline: none;
     }
 
     .doc-logo-box {
         border: 1px solid #ccc;
+        background: #f0f0f0 !important;
+    }
+
+    /* Prevent table rows splitting across pages */
+    tr { page-break-inside: avoid; }
+    .signature-block { page-break-inside: avoid; }
+    .doc-parties { page-break-inside: avoid; }
+    .checklist-item { page-break-inside: avoid; }
+
+    /* Page margins */
+    @page {
+        margin: 15mm 15mm 15mm 15mm;
+        size: A4;
     }
 }
