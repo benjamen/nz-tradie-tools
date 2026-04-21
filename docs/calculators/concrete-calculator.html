@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concrete Calculator — NZ — NZ Tradie Tools</title>
+    <meta name="description" content="Calculate how much concrete you need in m³ and 20kg bags. Covers slabs, footings, posts, and pathways.">
+    <meta property="og:title" content="Concrete Calculator — NZ — NZ Tradie Tools">
+    <meta property="og:description" content="Calculate how much concrete you need in m³ and 20kg bags. Covers slabs, footings, posts, and pathways.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradietools.nz/calculators/concrete-calculator.html">
+    <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Concrete Calculator — NZ — NZ Tradie Tools">
+    <meta name="twitter:description" content="Calculate how much concrete you need in m³ and 20kg bags. Covers slabs, footings, posts, and pathways.">
+    <link rel="canonical" href="https://tradietools.nz/calculators/concrete-calculator.html">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+            <nav class="main-nav">
+                
+                <a href="/">Home</a>
+                
+                <a href="/trades/">Find a Tradie</a>
+                
+                <a href="/jobs/">Job Costs</a>
+                
+                <a href="/calculators/">Calculators</a>
+                
+                <a href="/articles/">Articles</a>
+                
+                <a href="/templates/">Templates</a>
+                
+                <a href="/contact/">Contact</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <div class="container page-layout">
+        <main class="main-content">
+            <h1>Concrete Calculator — NZ</h1>
+            <p class="lead">Calculate how much concrete you need in m³ and 20kg bags. Covers slabs, footings, posts, and pathways.</p>
+
+            
+
+            <div class="calculator-wrapper">
+                <div class="calc-tabs">
+  <button class="calc-tab active" onclick="switchCTab('slab')">Slab / Path</button>
+  <button class="calc-tab" onclick="switchCTab('footing')">Strip Footing</button>
+  <button class="calc-tab" onclick="switchCTab('post')">Post Holes</button>
+</div>
+<div id="ctab-slab">
+  <div class="calc-grid">
+    <div class="calc-group"><label>Length (m)</label><input type="number" id="s-len" placeholder="e.g. 6" oninput="calcSlab()"></div>
+    <div class="calc-group"><label>Width (m)</label><input type="number" id="s-wid" placeholder="e.g. 4" oninput="calcSlab()"></div>
+    <div class="calc-group"><label>Depth (mm)</label><input type="number" id="s-dep" placeholder="e.g. 100" oninput="calcSlab()"></div>
+    <div class="calc-group"><label>Wastage %</label><input type="number" id="s-waste" placeholder="10" value="10" oninput="calcSlab()"></div>
+  </div>
+  <div class="calc-result" id="s-result" style="display:none">
+    <h3>Result</h3>
+    <div class="result-row"><span>Volume required</span><span id="s-m3"></span></div>
+    <div class="result-row"><span>With wastage</span><span id="s-m3w"></span></div>
+    <div class="result-row"><span>20kg bags (if mixing)</span><span id="s-bags"></span></div>
+    <div class="result-row"><span>Estimated cost (ready-mix)</span><span id="s-cost"></span></div>
+  </div>
+</div>
+<div id="ctab-footing" style="display:none">
+  <div class="calc-grid">
+    <div class="calc-group"><label>Total length (m)</label><input type="number" id="f-len" placeholder="e.g. 20" oninput="calcFooting()"></div>
+    <div class="calc-group"><label>Width (mm)</label><input type="number" id="f-wid" placeholder="e.g. 400" oninput="calcFooting()"></div>
+    <div class="calc-group"><label>Depth (mm)</label><input type="number" id="f-dep" placeholder="e.g. 400" oninput="calcFooting()"></div>
+  </div>
+  <div class="calc-result" id="f-result" style="display:none">
+    <h3>Result</h3>
+    <div class="result-row"><span>Volume required</span><span id="f-m3"></span></div>
+    <div class="result-row"><span>With 10% wastage</span><span id="f-m3w"></span></div>
+    <div class="result-row"><span>20kg bags (if mixing)</span><span id="f-bags"></span></div>
+  </div>
+</div>
+<div id="ctab-post" style="display:none">
+  <div class="calc-grid">
+    <div class="calc-group"><label>Number of holes</label><input type="number" id="p-num" placeholder="e.g. 10" oninput="calcPost()"></div>
+    <div class="calc-group"><label>Hole diameter (mm)</label><input type="number" id="p-dia" placeholder="e.g. 300" oninput="calcPost()"></div>
+    <div class="calc-group"><label>Hole depth (mm)</label><input type="number" id="p-dep" placeholder="e.g. 600" oninput="calcPost()"></div>
+  </div>
+  <div class="calc-result" id="p-result" style="display:none">
+    <h3>Result</h3>
+    <div class="result-row"><span>Total volume</span><span id="p-m3"></span></div>
+    <div class="result-row"><span>20kg bags total</span><span id="p-bags"></span></div>
+    <div class="result-row"><span>Bags per hole</span><span id="p-bph"></span></div>
+  </div>
+</div>
+<script>
+var READY_MIX_PRICE=280;
+function fmt(n){return n.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g,',');}
+function switchCTab(t){
+  ['slab','footing','post'].forEach(function(id){document.getElementById('ctab-'+id).style.display=id===t?'':'none';});
+  document.querySelectorAll('.calc-tab').forEach(function(b,i){b.classList.toggle('active',['slab','footing','post'][i]===t);});
+}
+function calcSlab(){
+  var l=parseFloat(document.getElementById('s-len').value)||0,
+      w=parseFloat(document.getElementById('s-wid').value)||0,
+      d=parseFloat(document.getElementById('s-dep').value)||0,
+      waste=(parseFloat(document.getElementById('s-waste').value)||10)/100;
+  if(!l||!w||!d){document.getElementById('s-result').style.display='none';return;}
+  var m3=l*w*(d/1000), m3w=m3*(1+waste), bags=Math.ceil(m3w/0.01);
+  document.getElementById('s-m3').textContent=fmt(m3)+' m³';
+  document.getElementById('s-m3w').textContent=fmt(m3w)+' m³';
+  document.getElementById('s-bags').textContent=bags+' × 20kg bags';
+  document.getElementById('s-cost').textContent='$'+fmt(m3w*READY_MIX_PRICE)+' (est. ready-mix, ex GST)';
+  document.getElementById('s-result').style.display='';
+}
+function calcFooting(){
+  var l=parseFloat(document.getElementById('f-len').value)||0,
+      w=parseFloat(document.getElementById('f-wid').value)||0,
+      d=parseFloat(document.getElementById('f-dep').value)||0;
+  if(!l||!w||!d){document.getElementById('f-result').style.display='none';return;}
+  var m3=l*(w/1000)*(d/1000), m3w=m3*1.1, bags=Math.ceil(m3w/0.01);
+  document.getElementById('f-m3').textContent=fmt(m3)+' m³';
+  document.getElementById('f-m3w').textContent=fmt(m3w)+' m³';
+  document.getElementById('f-bags').textContent=bags+' × 20kg bags';
+  document.getElementById('f-result').style.display='';
+}
+function calcPost(){
+  var n=parseFloat(document.getElementById('p-num').value)||0,
+      dia=parseFloat(document.getElementById('p-dia').value)||0,
+      dep=parseFloat(document.getElementById('p-dep').value)||0;
+  if(!n||!dia||!dep){document.getElementById('p-result').style.display='none';return;}
+  var r=dia/2/1000, vol=Math.PI*r*r*(dep/1000), total=vol*n, bags=Math.ceil(total/0.01), bph=Math.ceil(vol/0.01);
+  document.getElementById('p-m3').textContent=fmt(total)+' m³';
+  document.getElementById('p-bags').textContent=bags+' × 20kg bags';
+  document.getElementById('p-bph').textContent=bph+' bags per hole';
+  document.getElementById('p-result').style.display='';
+}
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="concrete-calculator-for-nz-builders-tradies">Concrete Calculator for NZ Builders &amp; Tradies</h2>
+<p>Use this calculator to work out how much concrete you need for slabs, paths, strip footings, or post holes. Enter your dimensions and get the volume in m³ plus the equivalent number of 20kg bags.</p>
+<h3 id="concrete-rules-of-thumb">Concrete Rules of Thumb</h3>
+<ul>
+<li><strong>Slabs &amp; paths:</strong> 100mm deep is standard for pedestrian areas; 150mm for vehicle traffic</li>
+<li><strong>Ready-mix vs bagged:</strong> Ready-mix is more economical for anything over 0.5 m³ — typically $260–$320/m³ in NZ</li>
+<li><strong>One 20kg bag</strong> of dry-mix concrete yields approximately 0.01 m³</li>
+<li><strong>Always add 10% wastage</strong> to account for uneven subgrade and spillage</li>
+</ul>
+<h3 id="concrete-strength-grades-nz">Concrete Strength Grades (NZ)</h3>
+<table>
+<thead>
+<tr>
+<th>Grade</th>
+<th>Common Use</th>
+<th>Typical Compressive Strength</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>17.5 MPa</td>
+<td>Non-structural fills</td>
+<td>Low-load paths</td>
+</tr>
+<tr>
+<td>25 MPa</td>
+<td>Residential slabs, paths</td>
+<td>Standard residential</td>
+</tr>
+<tr>
+<td>30 MPa</td>
+<td>Driveways, structural</td>
+<td>Vehicle loads</td>
+</tr>
+<tr>
+<td>40 MPa</td>
+<td>Commercial, structural</td>
+<td>Heavy loads</td>
+</tr>
+</tbody>
+</table>
+<h3 id="hiring-a-concrete-contractor">Hiring a Concrete Contractor?</h3>
+<p>Check our <a href="/jobs/driveway/">driveway cost guide</a> for typical NZ prices, or find a <a href="/trades/builders/">local builder or concreter</a> for quotes.</p>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:linear-gradient(135deg,#0055a5 0%,#003d7a 100%);color:#fff;border:none">
+                <h3 style="color:#fff">🚀 Fastcrew — NZ Tradie App</h3>
+                <p style="color:rgba(255,255,255,.88);font-size:.88rem;margin-bottom:1rem">Built for NZ tradies. Quoting, scheduling, invoicing — all in one app. Join the beta.</p>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#e55a00;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Join the waitlist →</a>
+            </div>
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator.html">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator.html">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator.html">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator.html">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator.html">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://www.xero.com/nz/" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 NZ Tradie Tools. All rights reserved.</p>
+            <p><a href="/privacy/" style="color:rgba(255,255,255,.6);font-size:.8rem">Privacy Policy</a></p>
+            <p class="disclosure">Some links on this site are affiliate links — we may earn a commission at no extra cost to you.</p>
+        </div>
+    </footer>
+</body>
+</html>

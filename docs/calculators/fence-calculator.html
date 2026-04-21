@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fence Calculator — NZ — NZ Tradie Tools</title>
+    <meta name="description" content="Calculate posts, rails, palings, and concrete needed for any NZ fence. Covers timber paling, post-and-rail, and Colorbond.">
+    <meta property="og:title" content="Fence Calculator — NZ — NZ Tradie Tools">
+    <meta property="og:description" content="Calculate posts, rails, palings, and concrete needed for any NZ fence. Covers timber paling, post-and-rail, and Colorbond.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradietools.nz/calculators/fence-calculator.html">
+    <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Fence Calculator — NZ — NZ Tradie Tools">
+    <meta name="twitter:description" content="Calculate posts, rails, palings, and concrete needed for any NZ fence. Covers timber paling, post-and-rail, and Colorbond.">
+    <link rel="canonical" href="https://tradietools.nz/calculators/fence-calculator.html">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+            <nav class="main-nav">
+                
+                <a href="/">Home</a>
+                
+                <a href="/trades/">Find a Tradie</a>
+                
+                <a href="/jobs/">Job Costs</a>
+                
+                <a href="/calculators/">Calculators</a>
+                
+                <a href="/articles/">Articles</a>
+                
+                <a href="/templates/">Templates</a>
+                
+                <a href="/contact/">Contact</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <div class="container page-layout">
+        <main class="main-content">
+            <h1>Fence Calculator — NZ</h1>
+            <p class="lead">Calculate posts, rails, palings, and concrete needed for any NZ fence. Covers timber paling, post-and-rail, and Colorbond.</p>
+
+            
+
+            <div class="calculator-wrapper">
+                <div class="calc-grid">
+  <div class="calc-group"><label>Fence length (m)</label><input type="number" id="fn-len" placeholder="e.g. 30" oninput="calcFence()"></div>
+  <div class="calc-group"><label>Fence height (m)</label><input type="number" id="fn-h" placeholder="e.g. 1.8" value="1.8" oninput="calcFence()"></div>
+  <div class="calc-group"><label>Post spacing (m)</label><input type="number" id="fn-ps" placeholder="e.g. 2.4" value="2.4" oninput="calcFence()"></div>
+  <div class="calc-group"><label>Post hole depth (m)</label><input type="number" id="fn-pd" placeholder="e.g. 0.6" value="0.6" oninput="calcFence()"></div>
+  <div class="calc-group"><label>Paling width (mm)</label><input type="number" id="fn-pw" placeholder="e.g. 100" value="100" oninput="calcFence()"></div>
+  <div class="calc-group"><label>Paling gap (mm)</label><input type="number" id="fn-pg" placeholder="e.g. 5" value="5" oninput="calcFence()"></div>
+  <div class="calc-group"><label>Number of rails</label><input type="number" id="fn-nr" placeholder="e.g. 3" value="3" oninput="calcFence()"></div>
+</div>
+<div class="calc-result" id="fn-result" style="display:none">
+  <h3>Result</h3>
+  <div class="result-row"><span>Posts needed</span><span id="fn-posts"></span></div>
+  <div class="result-row"><span>Rails needed</span><span id="fn-rails"></span></div>
+  <div class="result-row"><span>Palings needed</span><span id="fn-palings"></span></div>
+  <div class="result-row"><span>Concrete (20kg bags)</span><span id="fn-concrete"></span></div>
+  <div class="result-row"><span>Post hole diameter</span><span id="fn-phdia"></span></div>
+</div>
+<script>
+function calcFence(){
+  var l=parseFloat(document.getElementById('fn-len').value)||0,
+      h=parseFloat(document.getElementById('fn-h').value)||1.8,
+      ps=parseFloat(document.getElementById('fn-ps').value)||2.4,
+      pd=parseFloat(document.getElementById('fn-pd').value)||0.6,
+      pw=parseFloat(document.getElementById('fn-pw').value)||100,
+      pg=parseFloat(document.getElementById('fn-pg').value)||5,
+      nr=parseFloat(document.getElementById('fn-nr').value)||3;
+  if(!l){document.getElementById('fn-result').style.display='none';return;}
+  var posts=Math.ceil(l/ps)+1;
+  var rails=Math.ceil(l/ps)*nr;
+  var spacingM=(pw+pg)/1000;
+  var palingsPerBay=Math.ceil(ps/spacingM);
+  var palings=palingsPerBay*Math.ceil(l/ps);
+  var holeDia=0.2, holeR=holeDia/2;
+  var concretePerHole=Math.PI*holeR*holeR*pd;
+  var bags=Math.ceil(concretePerHole*posts/0.01);
+  document.getElementById('fn-posts').textContent=posts+' posts';
+  document.getElementById('fn-rails').textContent=rails+' rails ('+l+'m lengths)';
+  document.getElementById('fn-palings').textContent=palings+' palings';
+  document.getElementById('fn-concrete').textContent=bags+' × 20kg bags';
+  document.getElementById('fn-phdia').textContent=(holeDia*1000)+'mm recommended';
+  document.getElementById('fn-result').style.display='';
+}
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="fence-calculator-for-nz-builders-fencers">Fence Calculator for NZ Builders &amp; Fencers</h2>
+<p>Calculate posts, rails, palings, and concrete for timber paling fences. Useful for quoting or ordering materials.</p>
+<h3 id="nz-fencing-standards">NZ Fencing Standards</h3>
+<ul>
+<li><strong>Boundary fences:</strong> Standard height is 1.8m for residential privacy</li>
+<li><strong>Pool fencing:</strong> Minimum 1.2m, NZ Building Code F9 — must be self-closing</li>
+<li><strong>Post depth:</strong> Bury at least 1/3 of total post length underground (min 600mm)</li>
+<li><strong>Timber treatment:</strong> All ground-contact timber must be <strong>H4 treated</strong></li>
+</ul>
+<h3 id="recommended-post-sizes">Recommended Post Sizes</h3>
+<table>
+<thead>
+<tr>
+<th>Fence Height</th>
+<th>Post Size</th>
+<th>Post Spacing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Up to 1.2m</td>
+<td>100×75mm H4</td>
+<td>Up to 2.4m</td>
+</tr>
+<tr>
+<td>1.2–1.8m</td>
+<td>100×100mm H4</td>
+<td>Up to 2.4m</td>
+</tr>
+<tr>
+<td>1.8m+</td>
+<td>125×125mm H4</td>
+<td>Up to 2.4m</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fencing-cost-guide">Fencing Cost Guide</h3>
+<p>See our <a href="/jobs/fencing-and-gates/">fencing &amp; gates cost guide</a> for NZ prices by city.</p>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:linear-gradient(135deg,#0055a5 0%,#003d7a 100%);color:#fff;border:none">
+                <h3 style="color:#fff">🚀 Fastcrew — NZ Tradie App</h3>
+                <p style="color:rgba(255,255,255,.88);font-size:.88rem;margin-bottom:1rem">Built for NZ tradies. Quoting, scheduling, invoicing — all in one app. Join the beta.</p>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#e55a00;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Join the waitlist →</a>
+            </div>
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator.html">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator.html">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator.html">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator.html">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator.html">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://www.xero.com/nz/" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 NZ Tradie Tools. All rights reserved.</p>
+            <p><a href="/privacy/" style="color:rgba(255,255,255,.6);font-size:.8rem">Privacy Policy</a></p>
+            <p class="disclosure">Some links on this site are affiliate links — we may earn a commission at no extra cost to you.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decking Calculator — NZ — NZ Tradie Tools</title>
+    <meta name="description" content="Calculate how many deck boards, joists, posts and screws you need for any NZ deck. Covers timber and composite.">
+    <meta property="og:title" content="Decking Calculator — NZ — NZ Tradie Tools">
+    <meta property="og:description" content="Calculate how many deck boards, joists, posts and screws you need for any NZ deck. Covers timber and composite.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradietools.nz/calculators/decking-calculator.html">
+    <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Decking Calculator — NZ — NZ Tradie Tools">
+    <meta name="twitter:description" content="Calculate how many deck boards, joists, posts and screws you need for any NZ deck. Covers timber and composite.">
+    <link rel="canonical" href="https://tradietools.nz/calculators/decking-calculator.html">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+            <nav class="main-nav">
+                
+                <a href="/">Home</a>
+                
+                <a href="/trades/">Find a Tradie</a>
+                
+                <a href="/jobs/">Job Costs</a>
+                
+                <a href="/calculators/">Calculators</a>
+                
+                <a href="/articles/">Articles</a>
+                
+                <a href="/templates/">Templates</a>
+                
+                <a href="/contact/">Contact</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <div class="container page-layout">
+        <main class="main-content">
+            <h1>Decking Calculator — NZ</h1>
+            <p class="lead">Calculate how many deck boards, joists, posts and screws you need for any NZ deck. Covers timber and composite.</p>
+
+            
+
+            <div class="calculator-wrapper">
+                <div class="calc-grid">
+  <div class="calc-group"><label>Deck length (m)</label><input type="number" id="d-len" placeholder="e.g. 6" oninput="calcDeck()"></div>
+  <div class="calc-group"><label>Deck width (m)</label><input type="number" id="d-wid" placeholder="e.g. 4" oninput="calcDeck()"></div>
+  <div class="calc-group"><label>Board width (mm)</label><input type="number" id="d-bw" placeholder="e.g. 140" value="140" oninput="calcDeck()"></div>
+  <div class="calc-group"><label>Board gap (mm)</label><input type="number" id="d-gap" placeholder="e.g. 5" value="5" oninput="calcDeck()"></div>
+  <div class="calc-group"><label>Joist spacing (mm)</label><input type="number" id="d-js" placeholder="e.g. 450" value="450" oninput="calcDeck()"></div>
+  <div class="calc-group"><label>Board price per m ($)</label><input type="number" id="d-price" placeholder="e.g. 12" oninput="calcDeck()"></div>
+</div>
+<div class="calc-result" id="d-result" style="display:none">
+  <h3>Result</h3>
+  <div class="result-row"><span>Deck area</span><span id="d-area"></span></div>
+  <div class="result-row"><span>Boards needed (deck length)</span><span id="d-boards"></span></div>
+  <div class="result-row"><span>Joists needed</span><span id="d-joists"></span></div>
+  <div class="result-row"><span>Screws (approx)</span><span id="d-screws"></span></div>
+  <div class="result-row"><span>Estimated board cost</span><span id="d-cost"></span></div>
+</div>
+<script>
+function calcDeck(){
+  var l=parseFloat(document.getElementById('d-len').value)||0,
+      w=parseFloat(document.getElementById('d-wid').value)||0,
+      bw=parseFloat(document.getElementById('d-bw').value)||140,
+      gap=parseFloat(document.getElementById('d-gap').value)||5,
+      js=parseFloat(document.getElementById('d-js').value)||450,
+      price=parseFloat(document.getElementById('d-price').value)||0;
+  if(!l||!w){document.getElementById('d-result').style.display='none';return;}
+  var area=l*w;
+  var boardSpacing=(bw+gap)/1000;
+  var numBoards=Math.ceil(w/boardSpacing)+1;
+  var joists=Math.ceil(l/(js/1000))+1;
+  var screws=numBoards*joists*2;
+  document.getElementById('d-area').textContent=area.toFixed(2)+' m²';
+  document.getElementById('d-boards').textContent=numBoards+' boards × '+l+'m long';
+  document.getElementById('d-joists').textContent=joists+' joists';
+  document.getElementById('d-screws').textContent=screws+' screws (approx)';
+  document.getElementById('d-cost').textContent=price?'$'+(numBoards*l*price).toFixed(2)+' (boards only)':'— (enter price above)';
+  document.getElementById('d-result').style.display='';
+}
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="decking-calculator-for-nz-builders">Decking Calculator for NZ Builders</h2>
+<p>Calculate the materials you need for any deck size — boards, joists, and fixings. Works for 90×19mm, 140×19mm, or any custom board size.</p>
+<h3 id="common-nz-decking-board-sizes">Common NZ Decking Board Sizes</h3>
+<table>
+<thead>
+<tr>
+<th>Size</th>
+<th>Board Width</th>
+<th>Typical Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>90×19mm</td>
+<td>90mm</td>
+<td>Smaller decks, less wastage</td>
+</tr>
+<tr>
+<td>140×19mm</td>
+<td>140mm</td>
+<td>Standard residential</td>
+</tr>
+<tr>
+<td>140×28mm</td>
+<td>140mm</td>
+<td>Heavier commercial use</td>
+</tr>
+<tr>
+<td>90×45mm H4</td>
+<td>90mm</td>
+<td>Structural framing</td>
+</tr>
+</tbody>
+</table>
+<h3 id="joist-spacing-rules-nz">Joist Spacing Rules (NZ)</h3>
+<ul>
+<li><strong>19mm boards:</strong> max 450mm joist spacing</li>
+<li><strong>28mm boards:</strong> up to 600mm joist spacing</li>
+<li><strong>Always check NZ Building Code B1</strong> for structural requirements</li>
+</ul>
+<h3 id="decking-timber-grades">Decking Timber Grades</h3>
+<p>In NZ, all ground-contact or external timber must be <strong>H3.2 treated</strong> (above ground, protected) or <strong>H4 treated</strong> (ground contact). Untreated timber will rot within 2–5 years.</p>
+<h3 id="what-does-a-deck-cost">What Does a Deck Cost?</h3>
+<p>See our <a href="/jobs/decking/">deck building cost guide</a> for typical NZ prices by city, or find a <a href="/trades/builders/">local builder</a>.</p>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:linear-gradient(135deg,#0055a5 0%,#003d7a 100%);color:#fff;border:none">
+                <h3 style="color:#fff">🚀 Fastcrew — NZ Tradie App</h3>
+                <p style="color:rgba(255,255,255,.88);font-size:.88rem;margin-bottom:1rem">Built for NZ tradies. Quoting, scheduling, invoicing — all in one app. Join the beta.</p>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#e55a00;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Join the waitlist →</a>
+            </div>
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator.html">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator.html">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator.html">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator.html">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator.html">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://www.xero.com/nz/" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 NZ Tradie Tools. All rights reserved.</p>
+            <p><a href="/privacy/" style="color:rgba(255,255,255,.6);font-size:.8rem">Privacy Policy</a></p>
+            <p class="disclosure">Some links on this site are affiliate links — we may earn a commission at no extra cost to you.</p>
+        </div>
+    </footer>
+</body>
+</html>

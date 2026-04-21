@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint Calculator — NZ — NZ Tradie Tools</title>
+    <meta name="description" content="Calculate how many litres of paint you need for walls, ceilings, and exteriors. Works for any NZ room or house.">
+    <meta property="og:title" content="Paint Calculator — NZ — NZ Tradie Tools">
+    <meta property="og:description" content="Calculate how many litres of paint you need for walls, ceilings, and exteriors. Works for any NZ room or house.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradietools.nz/calculators/paint-calculator.html">
+    <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Paint Calculator — NZ — NZ Tradie Tools">
+    <meta name="twitter:description" content="Calculate how many litres of paint you need for walls, ceilings, and exteriors. Works for any NZ room or house.">
+    <link rel="canonical" href="https://tradietools.nz/calculators/paint-calculator.html">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+            <nav class="main-nav">
+                
+                <a href="/">Home</a>
+                
+                <a href="/trades/">Find a Tradie</a>
+                
+                <a href="/jobs/">Job Costs</a>
+                
+                <a href="/calculators/">Calculators</a>
+                
+                <a href="/articles/">Articles</a>
+                
+                <a href="/templates/">Templates</a>
+                
+                <a href="/contact/">Contact</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <div class="container page-layout">
+        <main class="main-content">
+            <h1>Paint Calculator — NZ</h1>
+            <p class="lead">Calculate how many litres of paint you need for walls, ceilings, and exteriors. Works for any NZ room or house.</p>
+
+            
+
+            <div class="calculator-wrapper">
+                <div class="calc-tabs">
+  <button class="calc-tab active" onclick="switchPTab('room')">Room / Interior</button>
+  <button class="calc-tab" onclick="switchPTab('exterior')">House Exterior</button>
+</div>
+<div id="ptab-room">
+  <div class="calc-grid">
+    <div class="calc-group"><label>Room length (m)</label><input type="number" id="r-len" placeholder="e.g. 5" oninput="calcRoom()"></div>
+    <div class="calc-group"><label>Room width (m)</label><input type="number" id="r-wid" placeholder="e.g. 4" oninput="calcRoom()"></div>
+    <div class="calc-group"><label>Ceiling height (m)</label><input type="number" id="r-h" placeholder="e.g. 2.4" oninput="calcRoom()"></div>
+    <div class="calc-group"><label>Number of coats</label><input type="number" id="r-coats" placeholder="2" value="2" oninput="calcRoom()"></div>
+    <div class="calc-group"><label>Doors (deduct 1.8m² each)</label><input type="number" id="r-doors" placeholder="1" value="1" oninput="calcRoom()"></div>
+    <div class="calc-group"><label>Windows (deduct 1.4m² each)</label><input type="number" id="r-wins" placeholder="1" value="1" oninput="calcRoom()"></div>
+    <div class="calc-group"><label>Wall coverage (m²/L)</label><input type="number" id="r-cov" placeholder="10" value="10" oninput="calcRoom()"></div>
+  </div>
+  <div class="calc-result" id="r-result" style="display:none">
+    <h3>Result</h3>
+    <div class="result-row"><span>Total wall area</span><span id="r-area"></span></div>
+    <div class="result-row"><span>Net paintable area</span><span id="r-net"></span></div>
+    <div class="result-row"><span>Litres needed (walls)</span><span id="r-litres"></span></div>
+    <div class="result-row"><span>Ceiling area</span><span id="r-ceil-area"></span></div>
+    <div class="result-row"><span>Litres needed (ceiling)</span><span id="r-ceil-litres"></span></div>
+  </div>
+</div>
+<div id="ptab-exterior" style="display:none">
+  <div class="calc-grid">
+    <div class="calc-group"><label>House perimeter (m)</label><input type="number" id="e-per" placeholder="e.g. 40" oninput="calcExt()"></div>
+    <div class="calc-group"><label>Wall height (m)</label><input type="number" id="e-h" placeholder="e.g. 6" oninput="calcExt()"></div>
+    <div class="calc-group"><label>Number of coats</label><input type="number" id="e-coats" placeholder="2" value="2" oninput="calcExt()"></div>
+    <div class="calc-group"><label>Coverage (m²/L)</label><input type="number" id="e-cov" placeholder="8" value="8" oninput="calcExt()"></div>
+    <div class="calc-group"><label>Deduct for windows/doors (m²)</label><input type="number" id="e-ded" placeholder="20" value="20" oninput="calcExt()"></div>
+  </div>
+  <div class="calc-result" id="e-result" style="display:none">
+    <h3>Result</h3>
+    <div class="result-row"><span>Gross wall area</span><span id="e-gross"></span></div>
+    <div class="result-row"><span>Net paintable area</span><span id="e-net"></span></div>
+    <div class="result-row"><span>Litres needed</span><span id="e-litres"></span></div>
+    <div class="result-row"><span>Estimated cost (mid-range paint)</span><span id="e-cost"></span></div>
+  </div>
+</div>
+<script>
+function switchPTab(t){
+  document.getElementById('ptab-room').style.display=t==='room'?'':'none';
+  document.getElementById('ptab-exterior').style.display=t==='exterior'?'':'none';
+  document.querySelectorAll('.calc-tab').forEach(function(b,i){b.classList.toggle('active',i===(t==='room'?0:1));});
+}
+function fmt(n){return n.toFixed(1);}
+function calcRoom(){
+  var l=parseFloat(document.getElementById('r-len').value)||0,
+      w=parseFloat(document.getElementById('r-wid').value)||0,
+      h=parseFloat(document.getElementById('r-h').value)||2.4,
+      coats=parseFloat(document.getElementById('r-coats').value)||2,
+      doors=parseFloat(document.getElementById('r-doors').value)||0,
+      wins=parseFloat(document.getElementById('r-wins').value)||0,
+      cov=parseFloat(document.getElementById('r-cov').value)||10;
+  if(!l||!w){document.getElementById('r-result').style.display='none';return;}
+  var wallArea=2*(l+w)*h, deduct=doors*1.8+wins*1.4, net=Math.max(0,wallArea-deduct);
+  var litres=net*coats/cov, ceilArea=l*w, ceilLitres=ceilArea*coats/(cov*1.1);
+  document.getElementById('r-area').textContent=fmt(wallArea)+' m²';
+  document.getElementById('r-net').textContent=fmt(net)+' m²';
+  document.getElementById('r-litres').textContent=Math.ceil(litres)+' L ('+coats+' coats)';
+  document.getElementById('r-ceil-area').textContent=fmt(ceilArea)+' m²';
+  document.getElementById('r-ceil-litres').textContent=Math.ceil(ceilLitres)+' L ('+coats+' coats)';
+  document.getElementById('r-result').style.display='';
+}
+function calcExt(){
+  var per=parseFloat(document.getElementById('e-per').value)||0,
+      h=parseFloat(document.getElementById('e-h').value)||0,
+      coats=parseFloat(document.getElementById('e-coats').value)||2,
+      cov=parseFloat(document.getElementById('e-cov').value)||8,
+      ded=parseFloat(document.getElementById('e-ded').value)||20;
+  if(!per||!h){document.getElementById('e-result').style.display='none';return;}
+  var gross=per*h, net=Math.max(0,gross-ded), litres=net*coats/cov;
+  document.getElementById('e-gross').textContent=fmt(gross)+' m²';
+  document.getElementById('e-net').textContent=fmt(net)+' m²';
+  document.getElementById('e-litres').textContent=Math.ceil(litres)+' L';
+  document.getElementById('e-cost').textContent='$'+(Math.ceil(litres)*12).toLocaleString()+'–$'+(Math.ceil(litres)*22).toLocaleString()+' approx.';
+  document.getElementById('e-result').style.display='';
+}
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="paint-calculator-for-nz-painters-homeowners">Paint Calculator for NZ Painters &amp; Homeowners</h2>
+<p>Calculate how many litres of paint you need for any room, ceiling, or exterior. Coverage rates vary by product — always check the tin, but 10 m²/L is a safe average for interior walls and 8 m²/L for exteriors.</p>
+<h3 id="coverage-guide-by-paint-type">Coverage Guide by Paint Type</h3>
+<table>
+<thead>
+<tr>
+<th>Paint Type</th>
+<th>Typical Coverage</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Interior walls (water-based)</td>
+<td>10–14 m²/L</td>
+<td>Per coat</td>
+</tr>
+<tr>
+<td>Interior ceiling</td>
+<td>11–15 m²/L</td>
+<td>Flat white, per coat</td>
+</tr>
+<tr>
+<td>Exterior (texture)</td>
+<td>4–8 m²/L</td>
+<td>Rough surfaces use more</td>
+</tr>
+<tr>
+<td>Exterior (smooth)</td>
+<td>8–12 m²/L</td>
+<td>Weatherboard, per coat</td>
+</tr>
+<tr>
+<td>Primer/undercoat</td>
+<td>8–10 m²/L</td>
+<td>Always prime bare timber</td>
+</tr>
+</tbody>
+</table>
+<h3 id="how-many-coats">How Many Coats?</h3>
+<ul>
+<li><strong>New surfaces:</strong> 1 coat primer + 2 coats topcoat minimum</li>
+<li><strong>Repaints (same colour):</strong> 2 coats</li>
+<li><strong>Colour change (dark to light):</strong> 3 coats often needed</li>
+<li><strong>Bare timber exterior:</strong> Primer + 2–3 topcoats</li>
+</ul>
+<h3 id="hiring-a-painter">Hiring a Painter?</h3>
+<p>See typical <a href="/jobs/painting/">painting costs in NZ</a> or find a <a href="/trades/painters/">local painter</a> to get a free quote.</p>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:linear-gradient(135deg,#0055a5 0%,#003d7a 100%);color:#fff;border:none">
+                <h3 style="color:#fff">🚀 Fastcrew — NZ Tradie App</h3>
+                <p style="color:rgba(255,255,255,.88);font-size:.88rem;margin-bottom:1rem">Built for NZ tradies. Quoting, scheduling, invoicing — all in one app. Join the beta.</p>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#e55a00;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Join the waitlist →</a>
+            </div>
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator.html">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator.html">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator.html">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator.html">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator.html">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://www.xero.com/nz/" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 NZ Tradie Tools. All rights reserved.</p>
+            <p><a href="/privacy/" style="color:rgba(255,255,255,.6);font-size:.8rem">Privacy Policy</a></p>
+            <p class="disclosure">Some links on this site are affiliate links — we may earn a commission at no extra cost to you.</p>
+        </div>
+    </footer>
+</body>
+</html>

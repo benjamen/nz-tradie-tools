@@ -98,5 +98,105 @@
     "preview_note": "Leave this with every customer. A Google review from a happy client is worth its weight in gold.",
     "seo_title": "Free NZ Tradie Customer Feedback Form — Review Request Template",
     "seo_description": "Free customer feedback form for NZ tradies. Collect reviews and make it easy for happy customers to leave Google reviews. Download as PDF."
+  },
+  {
+    "slug": "swms",
+    "title": "Safe Work Method Statement (SWMS)",
+    "description": "Document high-risk construction work activities, hazards, and control measures — required under NZ H&S regulations.",
+    "category": "safety",
+    "icon": "⚠️",
+    "preview_note": "Complete a separate SWMS for each high-risk task before work starts.",
+    "seo_title": "Free SWMS Template NZ — Safe Work Method Statement Download",
+    "seo_description": "Free Safe Work Method Statement (SWMS) template for NZ tradies. Document high-risk construction work hazards and controls. Download as PDF."
+  },
+  {
+    "slug": "toolbox-meeting",
+    "title": "Toolbox Meeting Record",
+    "description": "Record your weekly toolbox meetings for H&S compliance — sign-off sheet with date, topics, and attendees.",
+    "category": "safety",
+    "icon": "🗣️",
+    "preview_note": "Hold toolbox meetings at least weekly on active construction sites. Keep records for 7 years.",
+    "seo_title": "Free Toolbox Meeting Template NZ — H&S Sign-Off Record",
+    "seo_description": "Free toolbox meeting record template for NZ tradies. Log weekly H&S meetings with attendees and topics covered. Download as PDF."
+  },
+  {
+    "slug": "progress-claim",
+    "title": "Progress Claim",
+    "description": "Claim payment for work completed to date on larger contracts — with retention, variations, and approved amounts.",
+    "category": "finance",
+    "icon": "📊",
+    "preview_note": "Use for contracts where payment is claimed in stages (e.g. builds, fitouts). Check your contract terms.",
+    "seo_title": "Free Progress Claim Template NZ — Construction Payment Claim",
+    "seo_description": "Free progress claim template for NZ construction contracts. Includes retention, variations, and previously claimed amounts. Download as PDF."
+  },
+  {
+    "slug": "defects-list",
+    "title": "Defects / Snagging List",
+    "description": "Document defects and outstanding items at practical completion — agree on remediation dates with the client.",
+    "category": "operations",
+    "icon": "🔍",
+    "preview_note": "Walk the site with the client, photograph defects, and agree on a completion date for each item.",
+    "seo_title": "Free Defects List Template NZ — Snagging Checklist for Tradies",
+    "seo_description": "Free defects and snagging list template for NZ tradies. Document outstanding items at project completion and agree remediation dates."
+  },
+  {
+    "slug": "handover-checklist",
+    "title": "Project Handover Checklist",
+    "description": "Ensure nothing is missed when handing over a completed project — covers documentation, warranties, and client sign-off.",
+    "category": "operations",
+    "icon": "🎯",
+    "preview_note": "Complete this checklist before your final invoice. A clean handover means faster payment.",
+    "seo_title": "Free Project Handover Checklist NZ — Construction Handover Template",
+    "seo_description": "Free project handover checklist for NZ tradies. Covers documentation, warranties, keys, and client sign-off. Download as PDF."
+  },
+  {
+    "slug": "purchase-order",
+    "title": "Purchase Order",
+    "description": "Formalise material and subcontractor orders with a written purchase order — essential for larger projects.",
+    "category": "finance",
+    "icon": "📦",
+    "preview_note": "Use a PO for every significant order. It protects you if goods arrive wrong or pricing disputes arise.",
+    "seo_title": "Free Purchase Order Template NZ — Tradie PO Form Download",
+    "seo_description": "Free purchase order template for NZ tradies and builders. Formalise material orders with written POs to avoid disputes. Download as PDF."
+  },
+  {
+    "slug": "employee-induction",
+    "title": "Employee Induction Checklist",
+    "description": "Onboard new staff and subcontractors with a structured induction — covers H&S, PPE, emergency procedures, and expectations.",
+    "category": "safety",
+    "icon": "👷",
+    "preview_note": "Complete this with every new worker on day one. Both parties sign. Keep on file.",
+    "seo_title": "Free Employee Induction Checklist NZ — New Worker Onboarding",
+    "seo_description": "Free employee induction checklist for NZ tradies. Covers H&S, emergency procedures, PPE, and company rules. Download as PDF."
+  },
+  {
+    "slug": "incident-report",
+    "title": "Incident & Near Miss Report",
+    "description": "Document workplace incidents, injuries, and near misses — required under HSWA 2015 for notifiable incidents.",
+    "category": "safety",
+    "icon": "🚨",
+    "preview_note": "Report all incidents within 24 hours. Notify WorkSafe NZ immediately for serious incidents.",
+    "seo_title": "Free Incident Report Template NZ — Workplace Injury & Near Miss Form",
+    "seo_description": "Free incident and near miss report template for NZ tradies. HSWA 2015 compliant. Document workplace injuries and notify WorkSafe. Download as PDF."
+  },
+  {
+    "slug": "maintenance-schedule",
+    "title": "Maintenance Schedule",
+    "description": "Annual property maintenance schedule to offer clients as an add-on service — builds recurring revenue.",
+    "category": "marketing",
+    "icon": "🗓️",
+    "preview_note": "Offer this as a paid annual service — great for plumbers, electricians, and HVAC tradies.",
+    "seo_title": "Free Property Maintenance Schedule Template NZ — Annual Checklist",
+    "seo_description": "Free property maintenance schedule template for NZ tradies. Offer annual maintenance programmes to homeowners. Download as PDF."
+  },
+  {
+    "slug": "contractor-induction",
+    "title": "Contractor / Visitor Site Induction",
+    "description": "Quick site induction for visitors, deliveries, and short-term contractors — sign-in and safety briefing in one form.",
+    "category": "safety",
+    "icon": "📋",
+    "preview_note": "Keep this at the site entrance. Every visitor signs in before entering the site.",
+    "seo_title": "Free Site Induction Form NZ — Visitor & Contractor Sign-In",
+    "seo_description": "Free contractor and visitor site induction form for NZ construction sites. HSWA 2015 compliant sign-in and safety briefing. Download as PDF."
   }
 ]

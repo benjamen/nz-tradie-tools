@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roof Area Calculator — NZ — NZ Tradie Tools</title>
+    <meta name="description" content="Calculate actual roof area from your house footprint and roof pitch. Works for gable, hip, and skillion roofs.">
+    <meta property="og:title" content="Roof Area Calculator — NZ — NZ Tradie Tools">
+    <meta property="og:description" content="Calculate actual roof area from your house footprint and roof pitch. Works for gable, hip, and skillion roofs.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradietools.nz/calculators/roof-area-calculator.html">
+    <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Roof Area Calculator — NZ — NZ Tradie Tools">
+    <meta name="twitter:description" content="Calculate actual roof area from your house footprint and roof pitch. Works for gable, hip, and skillion roofs.">
+    <link rel="canonical" href="https://tradietools.nz/calculators/roof-area-calculator.html">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+            <nav class="main-nav">
+                
+                <a href="/">Home</a>
+                
+                <a href="/trades/">Find a Tradie</a>
+                
+                <a href="/jobs/">Job Costs</a>
+                
+                <a href="/calculators/">Calculators</a>
+                
+                <a href="/articles/">Articles</a>
+                
+                <a href="/templates/">Templates</a>
+                
+                <a href="/contact/">Contact</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <div class="container page-layout">
+        <main class="main-content">
+            <h1>Roof Area Calculator — NZ</h1>
+            <p class="lead">Calculate actual roof area from your house footprint and roof pitch. Works for gable, hip, and skillion roofs.</p>
+
+            
+
+            <div class="calculator-wrapper">
+                <div class="calc-tabs">
+  <button class="calc-tab active" onclick="switchRTab('gable')">Gable Roof</button>
+  <button class="calc-tab" onclick="switchRTab('hip')">Hip Roof</button>
+  <button class="calc-tab" onclick="switchRTab('skillion')">Skillion / Flat</button>
+</div>
+<div id="rtab-gable">
+  <div class="calc-grid">
+    <div class="calc-group"><label>House length (m)</label><input type="number" id="g-len" placeholder="e.g. 15" oninput="calcGable()"></div>
+    <div class="calc-group"><label>House width (m)</label><input type="number" id="g-wid" placeholder="e.g. 10" oninput="calcGable()"></div>
+    <div class="calc-group"><label>Roof pitch (degrees)</label><input type="number" id="g-pitch" placeholder="e.g. 25" oninput="calcGable()"></div>
+    <div class="calc-group"><label>Eave overhang (m)</label><input type="number" id="g-eave" placeholder="e.g. 0.6" value="0.6" oninput="calcGable()"></div>
+  </div>
+  <div class="calc-result" id="g-result" style="display:none">
+    <h3>Result</h3>
+    <div class="result-row"><span>Plan area (footprint)</span><span id="g-plan"></span></div>
+    <div class="result-row"><span>Pitch multiplier</span><span id="g-mult"></span></div>
+    <div class="result-row"><span>Actual roof area</span><span id="g-area"></span></div>
+    <div class="result-row"><span>With 10% wastage</span><span id="g-areaw"></span></div>
+  </div>
+</div>
+<div id="rtab-hip" style="display:none">
+  <div class="calc-grid">
+    <div class="calc-group"><label>House length (m)</label><input type="number" id="h-len" placeholder="e.g. 15" oninput="calcHip()"></div>
+    <div class="calc-group"><label>House width (m)</label><input type="number" id="h-wid" placeholder="e.g. 10" oninput="calcHip()"></div>
+    <div class="calc-group"><label>Roof pitch (degrees)</label><input type="number" id="h-pitch" placeholder="e.g. 20" oninput="calcHip()"></div>
+    <div class="calc-group"><label>Eave overhang (m)</label><input type="number" id="h-eave" placeholder="e.g. 0.6" value="0.6" oninput="calcHip()"></div>
+  </div>
+  <div class="calc-result" id="h-result" style="display:none">
+    <h3>Result</h3>
+    <div class="result-row"><span>Plan area</span><span id="h-plan"></span></div>
+    <div class="result-row"><span>Actual roof area</span><span id="h-area"></span></div>
+    <div class="result-row"><span>With 10% wastage</span><span id="h-areaw"></span></div>
+  </div>
+</div>
+<div id="rtab-skillion" style="display:none">
+  <div class="calc-grid">
+    <div class="calc-group"><label>Roof length (m)</label><input type="number" id="sk-len" placeholder="e.g. 10" oninput="calcSkillion()"></div>
+    <div class="calc-group"><label>Roof width (m)</label><input type="number" id="sk-wid" placeholder="e.g. 8" oninput="calcSkillion()"></div>
+    <div class="calc-group"><label>Pitch (degrees, 0=flat)</label><input type="number" id="sk-pitch" placeholder="e.g. 5" oninput="calcSkillion()"></div>
+  </div>
+  <div class="calc-result" id="sk-result" style="display:none">
+    <h3>Result</h3>
+    <div class="result-row"><span>Actual roof area</span><span id="sk-area"></span></div>
+    <div class="result-row"><span>With 10% wastage</span><span id="sk-areaw"></span></div>
+  </div>
+</div>
+<script>
+function switchRTab(t){
+  ['gable','hip','skillion'].forEach(function(id){document.getElementById('rtab-'+id).style.display=id===t?'':'none';});
+  document.querySelectorAll('.calc-tab').forEach(function(b,i){b.classList.toggle('active',['gable','hip','skillion'][i]===t);});
+}
+function pitchMult(deg){return 1/Math.cos(deg*Math.PI/180);}
+function calcGable(){
+  var l=parseFloat(document.getElementById('g-len').value)||0,
+      w=parseFloat(document.getElementById('g-wid').value)||0,
+      pitch=parseFloat(document.getElementById('g-pitch').value)||0,
+      eave=parseFloat(document.getElementById('g-eave').value)||0.6;
+  if(!l||!w){document.getElementById('g-result').style.display='none';return;}
+  var lE=l+eave*2, wE=w+eave*2, plan=lE*wE, mult=pitchMult(pitch), area=plan*mult;
+  document.getElementById('g-plan').textContent=plan.toFixed(1)+' m²';
+  document.getElementById('g-mult').textContent=mult.toFixed(3)+' (×'+mult.toFixed(3)+')';
+  document.getElementById('g-area').textContent=area.toFixed(1)+' m²';
+  document.getElementById('g-areaw').textContent=(area*1.1).toFixed(1)+' m²';
+  document.getElementById('g-result').style.display='';
+}
+function calcHip(){
+  var l=parseFloat(document.getElementById('h-len').value)||0,
+      w=parseFloat(document.getElementById('h-wid').value)||0,
+      pitch=parseFloat(document.getElementById('h-pitch').value)||0,
+      eave=parseFloat(document.getElementById('h-eave').value)||0.6;
+  if(!l||!w){document.getElementById('h-result').style.display='none';return;}
+  var lE=l+eave*2, wE=w+eave*2, plan=lE*wE, mult=pitchMult(pitch), area=plan*mult;
+  document.getElementById('h-plan').textContent=plan.toFixed(1)+' m²';
+  document.getElementById('h-area').textContent=area.toFixed(1)+' m²';
+  document.getElementById('h-areaw').textContent=(area*1.1).toFixed(1)+' m²';
+  document.getElementById('h-result').style.display='';
+}
+function calcSkillion(){
+  var l=parseFloat(document.getElementById('sk-len').value)||0,
+      w=parseFloat(document.getElementById('sk-wid').value)||0,
+      pitch=parseFloat(document.getElementById('sk-pitch').value)||0;
+  if(!l||!w){document.getElementById('sk-result').style.display='none';return;}
+  var area=l*w*pitchMult(pitch);
+  document.getElementById('sk-area').textContent=area.toFixed(1)+' m²';
+  document.getElementById('sk-areaw').textContent=(area*1.1).toFixed(1)+' m²';
+  document.getElementById('sk-result').style.display='';
+}
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="roof-area-calculator-for-nz-roofers-builders">Roof Area Calculator for NZ Roofers &amp; Builders</h2>
+<p>Calculate the actual roof area for quoting, ordering materials, or scoping a roofing job. The key factor is <strong>pitch</strong> — a steeper roof has significantly more area than the house footprint.</p>
+<h3 id="common-nz-roof-pitches">Common NZ Roof Pitches</h3>
+<table>
+<thead>
+<tr>
+<th>Pitch (degrees)</th>
+<th>Description</th>
+<th>Area multiplier</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5°</td>
+<td>Near flat (skillion/commercial)</td>
+<td>1.004×</td>
+</tr>
+<tr>
+<td>15°</td>
+<td>Shallow residential</td>
+<td>1.04×</td>
+</tr>
+<tr>
+<td>20°</td>
+<td>Common NZ residential</td>
+<td>1.06×</td>
+</tr>
+<tr>
+<td>25°</td>
+<td>Medium pitch</td>
+<td>1.10×</td>
+</tr>
+<tr>
+<td>30°</td>
+<td>Steep residential</td>
+<td>1.15×</td>
+</tr>
+<tr>
+<td>35°</td>
+<td>Very steep</td>
+<td>1.22×</td>
+</tr>
+</tbody>
+</table>
+<h3 id="materials-per-m2-nz">Materials Per m² (NZ)</h3>
+<ul>
+<li><strong>Colorsteel/corrugate:</strong> ~1.05 m² ordered per 1 m² area (5% lap wastage)</li>
+<li><strong>Concrete/clay tiles:</strong> ~10–12 tiles per m² depending on tile size</li>
+<li><strong>Metal tiles:</strong> ask supplier for coverage rate</li>
+</ul>
+<h3 id="roof-replacement-costs">Roof Replacement Costs</h3>
+<p>See our <a href="/jobs/roofing/">roof replacement cost guide</a> for Auckland, Wellington, Christchurch and more.</p>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:linear-gradient(135deg,#0055a5 0%,#003d7a 100%);color:#fff;border:none">
+                <h3 style="color:#fff">🚀 Fastcrew — NZ Tradie App</h3>
+                <p style="color:rgba(255,255,255,.88);font-size:.88rem;margin-bottom:1rem">Built for NZ tradies. Quoting, scheduling, invoicing — all in one app. Join the beta.</p>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#e55a00;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Join the waitlist →</a>
+            </div>
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator.html">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator.html">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator.html">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator.html">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator.html">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://www.xero.com/nz/" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 NZ Tradie Tools. All rights reserved.</p>
+            <p><a href="/privacy/" style="color:rgba(255,255,255,.6);font-size:.8rem">Privacy Policy</a></p>
+            <p class="disclosure">Some links on this site are affiliate links — we may earn a commission at no extra cost to you.</p>
+        </div>
+    </footer>
+</body>
+</html>
