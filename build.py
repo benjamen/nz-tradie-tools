@@ -80,10 +80,11 @@ def build():
 
     articles_dir = CONTENT_DIR / "articles"
     if articles_dir.exists():
-        for md_file in sorted(articles_dir.glob("*.md"), reverse=True):
+        for md_file in articles_dir.glob("*.md"):
             page = process_page(md_file, config, env, "base.html", "articles", nav, base_path)
             if page and not page.get("draft"):
                 articles.append(page)
+    articles.sort(key=lambda a: a.get("date_iso", ""), reverse=True)
 
     articles_by_slug = {a["slug"]: a for a in articles}
     calcs_dir = CONTENT_DIR / "calculators"

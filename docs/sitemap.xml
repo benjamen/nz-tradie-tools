@@ -31,38 +31,8 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/xero-vs-myob-nz-tradies.html</loc>
-    <lastmod>2026-04-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tradietools.nz/articles/why-we-built-fastcrew.html</loc>
-    <lastmod>2026-04-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tradietools.nz/articles/vehicle-expenses-nz-tradies-ird.html</loc>
-    <lastmod>2026-04-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tradietools.nz/articles/tradie-app-fatigue-nz.html</loc>
-    <lastmod>2026-04-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tradietools.nz/articles/sole-trader-setup-guide-nz-tradies.html</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tradietools.nz/articles/nz-tradie-tax-guide-what-you-can-claim.html</loc>
-    <lastmod>2026-04-18</lastmod>
+    <loc>https://tradietools.nz/articles/mobile-invoicing-construction.html</loc>
+    <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -73,56 +43,26 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/mobile-invoicing-construction.html</loc>
-    <lastmod>2026-04-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tradietools.nz/articles/how-to-write-a-quote-that-wins-jobs-nz.html</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tradietools.nz/articles/how-to-price-a-job-nz-tradie-guide.html</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tradietools.nz/articles/how-to-get-paid-faster-nz-tradie.html</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tradietools.nz/articles/how-to-get-lbp-licence-new-zealand.html</loc>
-    <lastmod>2026-04-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://tradietools.nz/articles/how-to-choose-right-insurance-nz-tradies.html</loc>
     <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/health-and-safety-guide-nz-tradies.html</loc>
-    <lastmod>2026-04-18</lastmod>
+    <loc>https://tradietools.nz/articles/why-we-built-fastcrew.html</loc>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/growing-tradie-business-nz.html</loc>
-    <lastmod>2026-04-16</lastmod>
+    <loc>https://tradietools.nz/articles/tradie-app-fatigue-nz.html</loc>
+    <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/fergus-vs-tradify-vs-simpro-nz.html</loc>
-    <lastmod>2026-04-06</lastmod>
+    <loc>https://tradietools.nz/articles/best-job-management-software-nz-tradies-2026.html</loc>
+    <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -133,8 +73,68 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/best-job-management-software-nz-tradies-2026.html</loc>
-    <lastmod>2026-04-20</lastmod>
+    <loc>https://tradietools.nz/articles/nz-tradie-tax-guide-what-you-can-claim.html</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/health-and-safety-guide-nz-tradies.html</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/how-to-get-paid-faster-nz-tradie.html</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/growing-tradie-business-nz.html</loc>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/how-to-price-a-job-nz-tradie-guide.html</loc>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/xero-vs-myob-nz-tradies.html</loc>
+    <lastmod>2026-04-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/how-to-get-lbp-licence-new-zealand.html</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/how-to-write-a-quote-that-wins-jobs-nz.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/vehicle-expenses-nz-tradies-ird.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/fergus-vs-tradify-vs-simpro-nz.html</loc>
+    <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/sole-trader-setup-guide-nz-tradies.html</loc>
+    <lastmod>2026-04-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
