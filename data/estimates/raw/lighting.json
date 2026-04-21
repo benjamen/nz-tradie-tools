@@ -12,7 +12,7 @@
     "Ensure your electrician is registered with the Electrical Workers Registration Board",
     "Dimmer switches add cost but improve comfort and save power"
   ],
-  "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+  "source": "NZ Tradie Tools Research 2026",
   "scenarios": {
     "small": {
       "label": "Small job (5–10 downlights, 1 room)",

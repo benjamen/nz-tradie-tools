@@ -12,7 +12,7 @@
     "Ensure stopping is fully dry before painting — rush jobs cause cracking",
     "GIB Aqualine or equivalent is required in wet areas"
   ],
-  "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+  "source": "NZ Tradie Tools Research 2026",
   "scenarios": {
     "small": {
       "label": "1–2 rooms repair/replacement (≤25m²)",

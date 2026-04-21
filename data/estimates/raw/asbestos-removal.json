@@ -12,7 +12,7 @@
     "Homes built before 1990 often contain asbestos in walls, ceilings, and floor tiles",
     "Get a clearance certificate after removal — required for council CCC"
   ],
-  "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+  "source": "NZ Tradie Tools Research 2026",
   "scenarios": {
     "small": {
       "label": "Small area — tiles or eaves (≤10m²)",

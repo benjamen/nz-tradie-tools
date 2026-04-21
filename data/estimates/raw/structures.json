@@ -12,7 +12,7 @@
     "Prefab kitset garages are cheaper but require consent if attached to house",
     "Insulate if used as a sleepout — NZ building code requires it"
   ],
-  "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+  "source": "NZ Tradie Tools Research 2026",
   "scenarios": {
     "small": {
       "label": "Single garage or carport (≤25m²)",

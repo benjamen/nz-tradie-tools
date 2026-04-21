@@ -12,7 +12,7 @@
     "Timber palings are cheapest but need treatment or painting",
     "Get neighbour agreement in writing for boundary fences"
   ],
-  "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+  "source": "NZ Tradie Tools Research 2026",
   "scenarios": {
     "small": {
       "label": "Short fence run (≤25m, timber palings)",

@@ -12,7 +12,7 @@
     "Check if you qualify for Warmer Kiwi Homes government subsidy",
     "R3.6 is minimum recommended for NZ ceiling insulation"
   ],
-  "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+  "source": "NZ Tradie Tools Research 2026",
   "scenarios": {
     "small": {
       "label": "Ceiling only, small home (≤90m²)",

@@ -35,7 +35,7 @@
         "Budget 10–15% extra for unexpected issues behind walls",
         "Choose fittings before quoting so labour scope is clear"
       ],
-      "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+      "source": "NZ Tradie Tools Research 2026",
       "scenarios": {
         "small": {
           "label": "Small bathroom (≤5m², budget fixtures)",
@@ -67,7 +67,7 @@
         "Allow 6–12 weeks lead time for custom cabinetry",
         "Use a project manager for full kitchen gut-and-redo"
       ],
-      "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+      "source": "NZ Tradie Tools Research 2026",
       "scenarios": {
         "small": {
           "label": "Minor refresh (new benchtop/splashback only)",
@@ -99,7 +99,7 @@
         "Hardwood and composite last longer but cost more upfront",
         "Get a fixed-price quote to avoid cost blowout"
       ],
-      "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+      "source": "NZ Tradie Tools Research 2026",
       "scenarios": {
         "small": {
           "label": "Small deck (≤20m², treated pine)",
@@ -131,7 +131,7 @@
         "Ask for a specification listing paint brand and sheen",
         "Exterior repaints every 8–10 years extend cladding life significantly"
       ],
-      "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+      "source": "NZ Tradie Tools Research 2026",
       "scenarios": {
         "small": {
           "label": "Small home interior (2–3 rooms)",
@@ -163,7 +163,7 @@
         "Colorsteel is the most cost-effective option in NZ",
         "Consider insulation upgrade while the roof is off"
       ],
-      "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+      "source": "NZ Tradie Tools Research 2026",
       "scenarios": {
         "small": {
           "label": "Small home roof (≤100m², iron/Colorsteel)",
@@ -195,7 +195,7 @@
         "Timber palings are cheapest but need treatment or painting",
         "Get neighbour agreement in writing for boundary fences"
       ],
-      "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+      "source": "NZ Tradie Tools Research 2026",
       "scenarios": {
         "small": {
           "label": "Short fence run (≤25m, timber palings)",
@@ -227,7 +227,7 @@
         "Engineered timber is more stable than solid timber in NZ's climate",
         "Get subfloor checked for moisture before installing timber"
       ],
-      "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+      "source": "NZ Tradie Tools Research 2026",
       "scenarios": {
         "small": {
           "label": "Small area (≤40m², vinyl plank/laminate)",
@@ -259,7 +259,7 @@
         "Check if you qualify for Warmer Kiwi Homes government subsidy",
         "R3.6 is minimum recommended for NZ ceiling insulation"
       ],
-      "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+      "source": "NZ Tradie Tools Research 2026",
       "scenarios": {
         "small": {
           "label": "Ceiling only, small home (≤90m²)",
@@ -291,7 +291,7 @@
         "Exposed aggregate or brushed concrete adds grip and looks better",
         "Get at least 2 quotes — driveway pricing varies significantly"
       ],
-      "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+      "source": "NZ Tradie Tools Research 2026",
       "scenarios": {
         "small": {
           "label": "Short driveway (≤40m², concrete)",
@@ -323,7 +323,7 @@
         "Native plants require less maintenance and suit NZ conditions",
         "Ask if topsoil and plants are included in the quote"
       ],
-      "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+      "source": "NZ Tradie Tools Research 2026",
       "scenarios": {
         "small": {
           "label": "Small garden makeover (≤60m²)",
@@ -355,7 +355,7 @@
         "Always include drainage behind the wall to prevent failure",
         "Concrete block outlasts timber but costs more upfront"
       ],
-      "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+      "source": "NZ Tradie Tools Research 2026",
       "scenarios": {
         "small": {
           "label": "Short timber wall (≤6m, up to 1m high)",
@@ -387,7 +387,7 @@
         "Ensure stopping is fully dry before painting — rush jobs cause cracking",
         "GIB Aqualine or equivalent is required in wet areas"
       ],
-      "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+      "source": "NZ Tradie Tools Research 2026",
       "scenarios": {
         "small": {
           "label": "1–2 rooms repair/replacement (≤25m²)",
@@ -419,7 +419,7 @@
         "Aluminium gutters are the standard in NZ — avoid galvanised in coastal areas",
         "Check downpipes run to proper stormwater drain, not just the garden"
       ],
-      "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+      "source": "NZ Tradie Tools Research 2026",
       "scenarios": {
         "small": {
           "label": "Small home (≤25m of guttering)",
@@ -451,7 +451,7 @@
         "Check your council rules on wood burner installation (many urban areas restrict)",
         "HRV or DVS systems are worth it in damp NZ homes"
       ],
-      "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+      "source": "NZ Tradie Tools Research 2026",
       "scenarios": {
         "small": {
           "label": "Single heat pump (1 indoor unit)",
@@ -483,7 +483,7 @@
         "Ensure your electrician is registered with the Electrical Workers Registration Board",
         "Dimmer switches add cost but improve comfort and save power"
       ],
-      "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+      "source": "NZ Tradie Tools Research 2026",
       "scenarios": {
         "small": {
           "label": "Small job (5–10 downlights, 1 room)",
@@ -515,7 +515,7 @@
         "Homes built before 1990 often contain asbestos in walls, ceilings, and floor tiles",
         "Get a clearance certificate after removal — required for council CCC"
       ],
-      "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+      "source": "NZ Tradie Tools Research 2026",
       "scenarios": {
         "small": {
           "label": "Small area — tiles or eaves (≤10m²)",
@@ -547,7 +547,7 @@
         "Retrofit double glazing is cheaper than full window replacement",
         "Safety glass is required by NZ code near doors and low windows"
       ],
-      "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+      "source": "NZ Tradie Tools Research 2026",
       "scenarios": {
         "small": {
           "label": "1–3 standard pane replacements",
@@ -579,7 +579,7 @@
         "Cavity-drain cladding systems are now standard — avoid direct-fix",
         "James Hardie and weathertex are popular mid-range cladding options in NZ"
       ],
-      "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+      "source": "NZ Tradie Tools Research 2026",
       "scenarios": {
         "small": {
           "label": "One or two elevations (≤50m²)",
@@ -611,7 +611,7 @@
         "Prefab kitset garages are cheaper but require consent if attached to house",
         "Insulate if used as a sleepout — NZ building code requires it"
       ],
-      "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+      "source": "NZ Tradie Tools Research 2026",
       "scenarios": {
         "small": {
           "label": "Single garage or carport (≤25m²)",

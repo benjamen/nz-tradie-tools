@@ -12,7 +12,7 @@
     "Ask for a specification listing paint brand and sheen",
     "Exterior repaints every 8–10 years extend cladding life significantly"
   ],
-  "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+  "source": "NZ Tradie Tools Research 2026",
   "scenarios": {
     "small": {
       "label": "Small home interior (2–3 rooms)",

@@ -12,7 +12,7 @@
     "Always include drainage behind the wall to prevent failure",
     "Concrete block outlasts timber but costs more upfront"
   ],
-  "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+  "source": "NZ Tradie Tools Research 2026",
   "scenarios": {
     "small": {
       "label": "Short timber wall (≤6m, up to 1m high)",

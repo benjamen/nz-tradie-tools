@@ -341,7 +341,7 @@ def main():
             "excludes": cat["excludes"],
             "related_trade": cat["related_trade"],
             "tips": cat["tips"],
-            "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+            "source": "NZ Tradie Tools Research 2026",
             "scenarios": {
                 sc["key"]: {
                     "label": sc["label"],
@@ -368,7 +368,7 @@ def main():
             "excludes": cat["excludes"],
             "related_trade": cat["related_trade"],
             "tips": cat["tips"],
-            "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+            "source": "NZ Tradie Tools Research 2026",
             "scenarios": {
                 sc["key"]: {"label": sc["label"], "min": sc["min"], "max": sc["max"]}
                 for sc in cat["scenarios"]

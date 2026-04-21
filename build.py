@@ -271,7 +271,10 @@ def build_job_pages(config, env, nav, base_path):
     shared = {**config, "base_path": base_path, "nav": nav, "year": year,
               "cities": cities, "trades": trades, "regional_multipliers": regional_multipliers}
 
-    jobs_list = list(jobs.values())
+    # Inject slug into each job dict so templates can use {{ job.slug }}
+    jobs_list = [{"slug": slug, **job} for slug, job in jobs.items()]
+    jobs_by_slug = {j["slug"]: j for j in jobs_list}
+
     tpl_city = env.get_template("job-city.html")
     tpl_hub = env.get_template("job-hub.html")
     tpl_listing = env.get_template("jobs-listing.html")
@@ -279,7 +282,6 @@ def build_job_pages(config, env, nav, base_path):
     count = 0
 
     # Jobs listing index
-    featured_slugs = ["auckland", "wellington", "christchurch", "hamilton", "tauranga", "christchurch"]
     featured_cities = [c for c in cities if c["slug"] in ["auckland", "wellington", "christchurch", "hamilton", "tauranga"]]
     (jobs_dir / "index.html").write_text(
         tpl_listing.render(**shared, jobs=jobs_list, featured_cities=featured_cities),
@@ -287,10 +289,11 @@ def build_job_pages(config, env, nav, base_path):
     )
     count += 1
 
-    for slug, job in jobs.items():
+    for job in jobs_list:
+        slug = job["slug"]
         job_dir = jobs_dir / slug
         job_dir.mkdir(exist_ok=True)
-        other_jobs = [j for s, j in jobs.items() if s != slug]
+        other_jobs = [j for j in jobs_list if j["slug"] != slug]
 
         # Job national hub
         (job_dir / "index.html").write_text(
