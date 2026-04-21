@@ -96,6 +96,11 @@ def build():
 
     trades_count, locations_count = build_trades_and_locations(config, env, nav, base_path)
 
+    cities = json.loads((DATA_DIR / "cities.json").read_text())
+    trades_data = json.loads((DATA_DIR / "trades.json").read_text())
+    build_sitemap(articles, calculators, cities, trades_data, config)
+    build_robots(config)
+
     print(f"Built: {len(articles)} articles, {len(calculators)} calculators, "
           f"{trades_count} trade pages, {locations_count} location pages")
     return articles, calculators
@@ -129,8 +134,10 @@ def process_page(md_file, config, env, layout_name, section, nav, base_path):
     date_val = front.get("date", "")
     if hasattr(date_val, "strftime"):
         date_str = date_val.strftime("%-d %B %Y")
+        date_iso = date_val.strftime("%Y-%m-%d")
     else:
         date_str = str(date_val)
+        date_iso = str(date_val)
 
     tags = front.get("tags", [])
     if isinstance(tags, str):
@@ -143,6 +150,7 @@ def process_page(md_file, config, env, layout_name, section, nav, base_path):
         "title": front.get("title"),
         "description": front.get("description", front.get("title")),
         "date": date_str,
+        "date_iso": date_iso,
         "author": front.get("author", config.get("author", "")),
         "tags": tags,
         "content": html_body,
@@ -237,6 +245,49 @@ def build_trades_and_locations(config, env, nav, base_path):
         locations_count += 1
 
     return trades_count, locations_count
+
+
+def build_sitemap(articles, calculators, cities, trades, config):
+    base_url = config.get("base_url", "").rstrip("/")
+    today = datetime.now().strftime("%Y-%m-%d")
+    urls = []
+
+    urls.append({"loc": f"{base_url}/", "priority": "1.0", "changefreq": "daily", "lastmod": today})
+    for section, pri in [("articles", "0.6"), ("calculators", "0.8"), ("trades", "0.9")]:
+        urls.append({"loc": f"{base_url}/{section}/", "priority": pri, "changefreq": "weekly", "lastmod": today})
+
+    for a in articles:
+        urls.append({"loc": f"{base_url}/articles/{a['slug']}.html", "priority": "0.7",
+                     "changefreq": "monthly", "lastmod": a.get("date_iso", today)})
+    for c in calculators:
+        urls.append({"loc": f"{base_url}/calculators/{c['slug']}.html", "priority": "0.8",
+                     "changefreq": "monthly", "lastmod": today})
+    for trade in trades:
+        urls.append({"loc": f"{base_url}/trades/{trade['slug']}/", "priority": "0.9",
+                     "changefreq": "weekly", "lastmod": today})
+        for city in cities:
+            urls.append({"loc": f"{base_url}/trades/{trade['slug']}/{city['slug']}.html",
+                         "priority": "0.8", "changefreq": "weekly", "lastmod": today})
+    for city in cities:
+        urls.append({"loc": f"{base_url}/locations/{city['slug']}/", "priority": "0.7",
+                     "changefreq": "weekly", "lastmod": today})
+
+    lines = ['<?xml version="1.0" encoding="UTF-8"?>',
+             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    for u in urls:
+        lines += ["  <url>", f"    <loc>{u['loc']}</loc>",
+                  f"    <lastmod>{u['lastmod']}</lastmod>",
+                  f"    <changefreq>{u['changefreq']}</changefreq>",
+                  f"    <priority>{u['priority']}</priority>", "  </url>"]
+    lines.append("</urlset>")
+    (PUBLIC_DIR / "sitemap.xml").write_text("\n".join(lines), encoding="utf-8")
+
+
+def build_robots(config):
+    base_url = config.get("base_url", "").rstrip("/")
+    (PUBLIC_DIR / "robots.txt").write_text(
+        f"User-agent: *\nAllow: /\n\nSitemap: {base_url}/sitemap.xml\n", encoding="utf-8"
+    )
 
 
 def build_index(articles, calculators, config, env, nav, base_path):

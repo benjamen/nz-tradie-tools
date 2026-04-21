@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find the Best {{ trade.name }} in New Zealand — Top Rated by City</title>
     <meta name="description" content="Find top-rated {{ trade.plural }} in every NZ city. Google ratings, pricing guides, licensing info, and what to look for when hiring a {{ trade.singular }}.">
+    <meta property="og:title" content="Find the Best {{ trade.name }} in New Zealand — Top Rated by City">
+    <meta property="og:description" content="Find top-rated {{ trade.plural }} in every NZ city. Google ratings, pricing guides, and licensing info.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ base_url }}/trades/{{ trade.slug }}/">
+    <meta property="og:site_name" content="NZ Tradie Tools">
     <link rel="stylesheet" href="{{ base_path }}/static/css/style.css">
     {% if adsense_id %}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ adsense_id }}" crossorigin="anonymous"></script>{% endif %}
 </head>

@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top 10 {{ trade.name }} in {{ city.name }} {{ year }} — Rated &amp; Reviewed</title>
     <meta name="description" content="The top-rated {{ trade.plural }} in {{ city.name }}, NZ — based on Google reviews. Includes local pricing, what to check, and how to choose the best {{ trade.singular }} for your job.">
+    <meta property="og:title" content="Top 10 {{ trade.name }} in {{ city.name }} {{ year }} — Rated &amp; Reviewed">
+    <meta property="og:description" content="The top-rated {{ trade.plural }} in {{ city.name }}, NZ — based on Google reviews, local pricing, and what to check before you hire.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ base_url }}/trades/{{ trade.slug }}/{{ city.slug }}.html">
+    <meta property="og:site_name" content="NZ Tradie Tools">
+    {% if businesses %}<script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"Top 10 {{ trade.name }} in {{ city.name }}","itemListElement":[{% for b in businesses %}{"@type":"ListItem","position":{{ b.rank }},"item":{"@type":"HomeAndConstructionBusiness","name":{{ b.name | tojson }},"address":{"@type":"PostalAddress","addressLocality":{{ b.suburb | tojson }},"addressRegion":{{ city.name | tojson }},"addressCountry":"NZ"}{% if b.phone %},"telephone":{{ b.phone | tojson }}{% endif %}{% if b.website %},"url":{{ b.website | tojson }}{% endif %},"aggregateRating":{"@type":"AggregateRating","ratingValue":{{ b.rating }},"reviewCount":{{ b.review_count }}}}}{% if not loop.last %},{% endif %}{% endfor %}]}</script>{% endif %}
     <link rel="stylesheet" href="{{ base_path }}/static/css/style.css">
     <style>
         .top10-list { display:flex; flex-direction:column; gap:1.25rem; margin:1.5rem 0; }

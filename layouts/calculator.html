@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page_title }} — NZ Tradie Tools</title>
     <meta name="description" content="{{ description }}">
+    <meta property="og:title" content="{{ page_title }} — NZ Tradie Tools">
+    <meta property="og:description" content="{{ description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ base_url }}/calculators/{{ slug }}.html">
+    <meta property="og:site_name" content="NZ Tradie Tools">
     <link rel="stylesheet" href="{{ base_path }}/static/css/style.css">
     {% if adsense_id %}
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ adsense_id }}" crossorigin="anonymous"></script>
