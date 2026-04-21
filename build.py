@@ -103,12 +103,13 @@ def build():
     cities = json.loads((DATA_DIR / "cities.json").read_text())
     trades_data = json.loads((DATA_DIR / "trades.json").read_text())
     job_pages = build_job_pages(config, env, nav, base_path)
+    template_pages = build_templates(config, env, nav, base_path)
     build_sitemap(articles, calculators, cities, trades_data, config, job_pages)
     build_robots(config)
 
     print(f"Built: {len(articles)} articles, {len(calculators)} calculators, "
           f"{trades_count} trade pages, {locations_count} location pages, "
-          f"{job_pages} job cost pages")
+          f"{job_pages} job cost pages, {template_pages} template pages")
     return articles, calculators
 
 
@@ -322,6 +323,35 @@ def build_job_pages(config, env, nav, base_path):
     return count
 
 
+def build_templates(config, env, nav, base_path):
+    templates_file = DATA_DIR / "templates.json"
+    if not templates_file.exists():
+        return 0
+
+    templates = json.loads(templates_file.read_text())
+    year = datetime.now().year
+    shared = {**config, "base_path": base_path, "nav": nav, "year": year}
+
+    templates_dir = PUBLIC_DIR / "templates"
+    templates_dir.mkdir(exist_ok=True)
+
+    tpl_listing = env.get_template("template-listing.html")
+    tpl_page = env.get_template("template-page.html")
+
+    (templates_dir / "index.html").write_text(
+        tpl_listing.render(**shared, templates=templates), encoding="utf-8"
+    )
+
+    count = 1
+    for tmpl in templates:
+        other_templates = [t for t in templates if t["slug"] != tmpl["slug"]]
+        html = tpl_page.render(**shared, tmpl=tmpl, other_templates=other_templates)
+        (templates_dir / f"{tmpl['slug']}.html").write_text(html, encoding="utf-8")
+        count += 1
+
+    return count
+
+
 def build_sitemap(articles, calculators, cities, trades, config, job_pages_count=0):
     base_url = config.get("base_url", "").rstrip("/")
     today = datetime.now().strftime("%Y-%m-%d")
@@ -356,6 +386,15 @@ def build_sitemap(articles, calculators, cities, trades, config, job_pages_count
             for city in cities:
                 urls.append({"loc": f"{base_url}/jobs/{job_slug}/{city['slug']}.html",
                              "priority": "0.85", "changefreq": "monthly", "lastmod": today})
+
+    templates_file = DATA_DIR / "templates.json"
+    if templates_file.exists():
+        tmpl_data = json.loads(templates_file.read_text())
+        urls.append({"loc": f"{base_url}/templates/", "priority": "0.9",
+                     "changefreq": "monthly", "lastmod": today})
+        for t in tmpl_data:
+            urls.append({"loc": f"{base_url}/templates/{t['slug']}.html",
+                         "priority": "0.85", "changefreq": "monthly", "lastmod": today})
 
     lines = ['<?xml version="1.0" encoding="UTF-8"?>',
              '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']

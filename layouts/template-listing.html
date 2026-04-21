@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free NZ Tradie Templates ({{ year }}) — Quote, Invoice, Safety & More</title>
+    <meta name="description" content="Free downloadable templates for NZ tradies — job quotes, GST invoices, job sheets, variation orders, site safety checklists and more. Download as PDF instantly.">
+    <meta property="og:title" content="Free NZ Tradie Templates {{ year }} — Quote, Invoice, Safety & More">
+    <meta property="og:description" content="Free professional templates for NZ tradies. Quote templates, GST invoices, job sheets, variation orders, safety checklists. Download PDF instantly.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ base_url }}/templates/">
+    <meta property="og:site_name" content="NZ Tradie Tools">
+    <link rel="canonical" href="{{ base_url }}/templates/">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"Free NZ Tradie Templates","description":"Free downloadable templates for New Zealand tradies","url":{{ (base_url ~ "/templates/") | tojson }},"numberOfItems":{{ templates | length }},"itemListElement":[{% for t in templates %}{"@type":"ListItem","position":{{ loop.index }},"name":{{ t.title | tojson }},"url":{{ (base_url ~ "/templates/" ~ t.slug ~ ".html") | tojson }}}{% if not loop.last %},{% endif %}{% endfor %}]}</script>
+    <link rel="icon" href="{{ base_path }}/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="{{ base_path }}/static/css/style.css">
+    <link rel="stylesheet" href="{{ base_path }}/static/css/templates.css">
+    {% if adsense_id %}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ adsense_id }}" crossorigin="anonymous"></script>{% endif %}
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="{{ base_path }}/" class="logo">🔧 NZ Tradie Tools</a>
+            <nav class="main-nav">
+                {% for item in nav %}<a href="{{ item.url }}">{{ item.label }}</a>{% endfor %}
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="padding:2.5rem 0">
+        <div class="container">
+            <h1>Free NZ Tradie Templates ({{ year }})</h1>
+            <p>Professional, ready-to-use templates for NZ tradies — download as PDF, print, or fill in online. GST compliant, IRD-ready.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        {% if adsense_id %}
+        <ins class="adsbygoogle ad-banner" style="display:block" data-ad-client="{{ adsense_id }}" data-ad-slot="TEMPLATES_TOP" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        {% endif %}
+
+        <section class="section">
+            <h2>Browse All Templates</h2>
+            <div class="template-grid">
+                {% for t in templates %}
+                <a href="{{ base_path }}/templates/{{ t.slug }}.html" class="template-card">
+                    <div class="template-card-icon">{{ t.icon }}</div>
+                    <span class="category-badge cat-{{ t.category }}">{{ t.category }}</span>
+                    <h3>{{ t.title }}</h3>
+                    <p>{{ t.description }}</p>
+                    <span class="template-card-cta">⬇ Free Download →</span>
+                </a>
+                {% endfor %}
+            </div>
+        </section>
+
+        <section class="section" style="background:#f8f9fa;border-radius:8px;padding:1.5rem 2rem;margin:2rem 0">
+            <h2 style="margin-top:0">Why Use These Templates?</h2>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.25rem;margin-top:1rem">
+                <div>
+                    <strong>GST & IRD Compliant</strong>
+                    <p style="font-size:.88rem;color:#555;margin:.3rem 0 0">All finance templates include the required fields for valid NZ tax documents.</p>
+                </div>
+                <div>
+                    <strong>Download as PDF</strong>
+                    <p style="font-size:.88rem;color:#555;margin:.3rem 0 0">Fill in your details online and download a professional PDF in seconds — no sign-up required.</p>
+                </div>
+                <div>
+                    <strong>NZ-Specific</strong>
+                    <p style="font-size:.88rem;color:#555;margin:.3rem 0 0">Built for NZ tradies with IRD numbers, GST rates, and local legislation in mind.</p>
+                </div>
+                <div>
+                    <strong>Completely Free</strong>
+                    <p style="font-size:.88rem;color:#555;margin:.3rem 0 0">No subscription, no watermarks, no email required. Just download and use.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section cta-box">
+            <h2>Get All Templates as a Bundle</h2>
+            <p>Sign up for free and we'll email you all 10 templates as a ready-to-use pack.</p>
+            <form action="{{ formspree_endpoint }}" method="POST" class="lead-form">
+                <input type="text" name="name" placeholder="Your name" required>
+                <input type="email" name="email" placeholder="Email address" required>
+                <input type="hidden" name="type" value="templates-bundle">
+                <button type="submit">Email me the full bundle →</button>
+            </form>
+        </section>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; {{ year }} NZ Tradie Tools. All rights reserved.</p>
+            <p><a href="{{ base_path }}/privacy/" style="color:rgba(255,255,255,.6);font-size:.8rem">Privacy Policy</a></p>
+            <p class="disclosure">Some links on this site are affiliate links — we may earn a commission at no extra cost to you.</p>
+        </div>
+    </footer>
+</body>
+</html>

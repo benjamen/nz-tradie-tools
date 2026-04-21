@@ -21,6 +21,7 @@
     {"label": "Job Costs", "url": "/jobs/"},
     {"label": "Calculators", "url": "/calculators/"},
     {"label": "Articles", "url": "/articles/"},
+    {"label": "Templates", "url": "/templates/"},
     {"label": "Contact", "url": "/contact/"}
   ]
 }

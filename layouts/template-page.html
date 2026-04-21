@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ tmpl.seo_title }}</title>
+    <meta name="description" content="{{ tmpl.seo_description }}">
+    <meta property="og:title" content="{{ tmpl.seo_title }}">
+    <meta property="og:description" content="{{ tmpl.seo_description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ base_url }}/templates/{{ tmpl.slug }}.html">
+    <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ tmpl.title }} — Free NZ Download">
+    <meta name="twitter:description" content="{{ tmpl.description }}">
+    <link rel="canonical" href="{{ base_url }}/templates/{{ tmpl.slug }}.html">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":{{ base_url | tojson }}},{"@type":"ListItem","position":2,"name":"Templates","item":{{ (base_url ~ "/templates/") | tojson }}},{"@type":"ListItem","position":3,"name":{{ tmpl.title | tojson }},"item":{{ (base_url ~ "/templates/" ~ tmpl.slug ~ ".html") | tojson }}}]},{"@type":"HowTo","name":{{ ("How to use the " ~ tmpl.title) | tojson }},"description":{{ tmpl.description | tojson }},"step":[{"@type":"HowToStep","name":"Fill in your details","text":"Click any field in the template and type your business details."},{"@type":"HowToStep","name":"Customise the content","text":"Edit line items, dates, and other fields to match your job."},{"@type":"HowToStep","name":"Download as PDF","text":"Click the Download PDF button to save a professional PDF to your device."}]}]}</script>
+    <link rel="icon" href="{{ base_path }}/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="{{ base_path }}/static/css/style.css">
+    <link rel="stylesheet" href="{{ base_path }}/static/css/templates.css">
+    {% if adsense_id %}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ adsense_id }}" crossorigin="anonymous"></script>{% endif %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="site-header no-print">
+        <div class="container">
+            <a href="{{ base_path }}/" class="logo">🔧 NZ Tradie Tools</a>
+            <nav class="main-nav">
+                {% for item in nav %}<a href="{{ item.url }}">{{ item.label }}</a>{% endfor %}
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero no-print" style="padding:1.5rem 0">
+        <div class="container">
+            <p style="margin:0;font-size:.9rem;opacity:.8"><a href="{{ base_path }}/templates/" style="color:rgba(255,255,255,.8)">Templates</a> › {{ tmpl.title }}</p>
+            <h1 style="margin:.4rem 0 .25rem">{{ tmpl.icon }} {{ tmpl.title }}</h1>
+            <p style="margin:0">{{ tmpl.description }}</p>
+        </div>
+    </section>
+
+    <div class="container no-print" style="margin-bottom:.5rem">
+        <p style="font-size:.88rem;color:#555;margin:.75rem 0"><strong>How to use:</strong> {{ tmpl.preview_note }} All fields are editable — click any text to change it.</p>
+    </div>
+
+    <div class="container">
+        <div class="template-layout">
+
+            <!-- The printable document -->
+            <div>
+                {% if adsense_id %}
+                <ins class="adsbygoogle ad-banner no-print" style="display:block;margin-bottom:1rem" data-ad-client="{{ adsense_id }}" data-ad-slot="TEMPLATE_TOP" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                {% endif %}
+
+                <div id="template-doc">
+                    {% if tmpl.slug == "quote-template" %}
+                    <!-- JOB QUOTE TEMPLATE -->
+                    <div class="doc-header">
+                        <div>
+                            <div class="doc-logo-box">Your logo here</div>
+                        </div>
+                        <div>
+                            <div class="doc-title">JOB QUOTE</div>
+                            <div class="doc-meta">
+                                Quote #: <span contenteditable>QT-001</span><br>
+                                Date: <span contenteditable>{{ year }}-01-01</span><br>
+                                Valid until: <span contenteditable>30 days from above</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doc-parties">
+                        <div>
+                            <div class="doc-section-label">From (Your Business)</div>
+                            <div contenteditable class="block-field">Your Business Name</div>
+                            <div contenteditable class="block-field">123 Trade Street, Auckland</div>
+                            <div contenteditable class="block-field">021 000 0000</div>
+                            <div contenteditable class="block-field">GST No: 123-456-789</div>
+                        </div>
+                        <div>
+                            <div class="doc-section-label">Prepared For</div>
+                            <div contenteditable class="block-field">Client Name</div>
+                            <div contenteditable class="block-field">Client Address</div>
+                            <div contenteditable class="block-field">Client Phone / Email</div>
+                        </div>
+                    </div>
+                    <div style="margin-bottom:1rem">
+                        <div class="doc-section-label">Job Description</div>
+                        <div contenteditable class="block-field" style="min-height:3em">Supply and install [description of work]. All materials and labour included as per scope below.</div>
+                    </div>
+                    <div class="doc-section-label">Job Address</div>
+                    <div contenteditable class="block-field" style="margin-bottom:1rem">123 Job Site Road, Suburb, City</div>
+                    <table class="line-items-table">
+                        <thead><tr><th>Description</th><th>Qty</th><th>Unit</th><th>Rate ($)</th><th>Total ($)</th></tr></thead>
+                        <tbody>
+                            <tr><td contenteditable>Labour — [trade type]</td><td contenteditable>8</td><td contenteditable>hrs</td><td contenteditable>95.00</td><td contenteditable>760.00</td></tr>
+                            <tr><td contenteditable>Materials — [describe]</td><td contenteditable>1</td><td contenteditable>lot</td><td contenteditable>450.00</td><td contenteditable>450.00</td></tr>
+                            <tr><td contenteditable>Call-out / Travel</td><td contenteditable>1</td><td contenteditable>—</td><td contenteditable>75.00</td><td contenteditable>75.00</td></tr>
+                            <tr><td contenteditable></td><td></td><td></td><td></td><td contenteditable></td></tr>
+                        </tbody>
+                    </table>
+                    <div class="doc-totals">
+                        <div class="doc-totals-row"><span>Subtotal</span><span>$<span contenteditable>1,285.00</span></span></div>
+                        <div class="doc-totals-row"><span>GST (15%)</span><span>$<span contenteditable>192.75</span></span></div>
+                        <div class="doc-totals-row total"><span>TOTAL</span><span>$<span contenteditable>1,477.75</span></span></div>
+                    </div>
+                    <div style="margin-top:1.5rem">
+                        <div class="doc-section-label">Payment Terms</div>
+                        <div contenteditable class="block-field">50% deposit on acceptance. Balance due on completion. Bank: [Your Bank], Account: [XX-XXXX-XXXXXXX-XX]</div>
+                    </div>
+                    <div style="margin-top:1rem">
+                        <div class="doc-section-label">Notes / Exclusions</div>
+                        <div contenteditable class="block-field" style="min-height:2.5em">This quote excludes: consent fees, asbestos removal, any work not described above. Variations will be quoted separately.</div>
+                    </div>
+                    <div class="signature-block">
+                        <div><div class="sig-line"></div><div class="sig-label">Authorised by (Tradie)</div></div>
+                        <div><div class="sig-line"></div><div class="sig-label">Accepted by (Customer) / Date</div></div>
+                    </div>
+                    <div class="doc-footer-note">NZ Tradie Tools — tradietools.nz | This quote is valid for <span contenteditable>30</span> days. GST registered under the Goods and Services Tax Act 1985.</div>
+
+                    {% elif tmpl.slug == "tax-invoice-template" %}
+                    <!-- GST TAX INVOICE -->
+                    <div class="doc-header">
+                        <div><div class="doc-logo-box">Your logo here</div></div>
+                        <div>
+                            <div class="doc-title">TAX INVOICE</div>
+                            <div class="doc-meta">
+                                Invoice #: <span contenteditable>INV-001</span><br>
+                                Date: <span contenteditable>{{ year }}-01-01</span><br>
+                                Due: <span contenteditable>{{ year }}-01-20</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doc-parties">
+                        <div>
+                            <div class="doc-section-label">From</div>
+                            <div contenteditable class="block-field">Your Business Name</div>
+                            <div contenteditable class="block-field">123 Trade Street, Auckland</div>
+                            <div contenteditable class="block-field">021 000 0000</div>
+                            <div contenteditable class="block-field">GST No: 123-456-789</div>
+                            <div contenteditable class="block-field">IRD No: 123-456-789</div>
+                        </div>
+                        <div>
+                            <div class="doc-section-label">Bill To</div>
+                            <div contenteditable class="block-field">Client / Company Name</div>
+                            <div contenteditable class="block-field">Client Address</div>
+                            <div contenteditable class="block-field">Client GST No (if applicable)</div>
+                        </div>
+                    </div>
+                    <div style="margin-bottom:1rem">
+                        <div class="doc-section-label">Job / Services</div>
+                        <div contenteditable class="block-field">Job at: <span contenteditable>123 Site Address</span></div>
+                    </div>
+                    <table class="line-items-table">
+                        <thead><tr><th>Description</th><th>Qty</th><th>Rate ($)</th><th>Amount (excl. GST)</th></tr></thead>
+                        <tbody>
+                            <tr><td contenteditable>Labour — [trade/hours]</td><td contenteditable>8 hrs</td><td contenteditable>95.00</td><td contenteditable>760.00</td></tr>
+                            <tr><td contenteditable>Materials</td><td contenteditable>1 lot</td><td contenteditable>450.00</td><td contenteditable>450.00</td></tr>
+                            <tr><td contenteditable></td><td></td><td></td><td contenteditable></td></tr>
+                        </tbody>
+                    </table>
+                    <div class="doc-totals">
+                        <div class="doc-totals-row"><span>Subtotal (excl. GST)</span><span>$<span contenteditable>1,210.00</span></span></div>
+                        <div class="doc-totals-row"><span>GST (15%)</span><span>$<span contenteditable>181.50</span></span></div>
+                        <div class="doc-totals-row total"><span>TOTAL (incl. GST)</span><span>$<span contenteditable>1,391.50</span></span></div>
+                    </div>
+                    <div style="margin-top:1.5rem">
+                        <div class="doc-section-label">Payment Details</div>
+                        <div contenteditable class="block-field">Bank: [Your Bank] | Account: [XX-XXXX-XXXXXXX-XX] | Ref: INV-001</div>
+                    </div>
+                    <div class="doc-footer-note">This is a tax invoice for GST purposes. GST registered under the Goods and Services Tax Act 1985. | NZ Tradie Tools — tradietools.nz</div>
+
+                    {% elif tmpl.slug == "job-sheet" %}
+                    <!-- JOB SHEET / WORK ORDER -->
+                    <div class="doc-header">
+                        <div><div class="doc-logo-box">Your logo here</div></div>
+                        <div>
+                            <div class="doc-title">JOB SHEET</div>
+                            <div class="doc-meta">
+                                Job #: <span contenteditable>JS-001</span><br>
+                                Date: <span contenteditable>{{ year }}-01-01</span><br>
+                                Tradie: <span contenteditable>Name</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doc-parties">
+                        <div>
+                            <div class="doc-section-label">Customer</div>
+                            <div contenteditable class="block-field">Customer Name</div>
+                            <div contenteditable class="block-field">Phone</div>
+                        </div>
+                        <div>
+                            <div class="doc-section-label">Job Address</div>
+                            <div contenteditable class="block-field">123 Site Road, Suburb, City</div>
+                        </div>
+                    </div>
+                    <div style="margin-bottom:1rem">
+                        <div class="doc-section-label">Job Description / Instructions</div>
+                        <div contenteditable class="block-field" style="min-height:3em">Describe the work to be carried out...</div>
+                    </div>
+                    <table class="line-items-table">
+                        <thead><tr><th>Task</th><th>Start</th><th>Finish</th><th>Hrs</th><th>Done ✓</th></tr></thead>
+                        <tbody>
+                            <tr><td contenteditable>Task 1</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td></tr>
+                            <tr><td contenteditable>Task 2</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td></tr>
+                            <tr><td contenteditable>Task 3</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td></tr>
+                            <tr><td contenteditable>Task 4</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td></tr>
+                        </tbody>
+                    </table>
+                    <div style="margin:1rem 0">
+                        <div class="doc-section-label">Materials Used</div>
+                        <div contenteditable class="block-field" style="min-height:2.5em">List materials, parts, quantities...</div>
+                    </div>
+                    <div style="margin:1rem 0">
+                        <div class="doc-section-label">Notes / Issues</div>
+                        <div contenteditable class="block-field" style="min-height:2em">Any issues found, follow-up required, or items to quote...</div>
+                    </div>
+                    <div class="signature-block">
+                        <div><div class="sig-line"></div><div class="sig-label">Tradie signature / Time out</div></div>
+                        <div><div class="sig-line"></div><div class="sig-label">Customer sign-off</div></div>
+                    </div>
+                    <div class="doc-footer-note">NZ Tradie Tools — tradietools.nz</div>
+
+                    {% elif tmpl.slug == "variation-order" %}
+                    <!-- VARIATION ORDER -->
+                    <div class="doc-header">
+                        <div><div class="doc-logo-box">Your logo here</div></div>
+                        <div>
+                            <div class="doc-title">VARIATION ORDER</div>
+                            <div class="doc-meta">
+                                VO #: <span contenteditable>VO-001</span><br>
+                                Date: <span contenteditable>{{ year }}-01-01</span><br>
+                                Ref Quote/Contract: <span contenteditable>QT-001</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doc-parties">
+                        <div>
+                            <div class="doc-section-label">Contractor</div>
+                            <div contenteditable class="block-field">Your Business Name</div>
+                            <div contenteditable class="block-field">Contact / Phone</div>
+                        </div>
+                        <div>
+                            <div class="doc-section-label">Client</div>
+                            <div contenteditable class="block-field">Client Name</div>
+                            <div contenteditable class="block-field">Job Address</div>
+                        </div>
+                    </div>
+                    <div style="margin-bottom:1rem">
+                        <div class="doc-section-label">Reason for Variation</div>
+                        <div contenteditable class="block-field" style="min-height:2.5em">Describe what changed and why — e.g. additional scope requested by client, unforeseen site conditions, change in specifications...</div>
+                    </div>
+                    <div style="margin-bottom:1rem">
+                        <div class="doc-section-label">Work Added / Changed</div>
+                        <div contenteditable class="block-field" style="min-height:2.5em">Describe the additional or changed work in detail...</div>
+                    </div>
+                    <table class="line-items-table">
+                        <thead><tr><th>Description</th><th>Qty</th><th>Rate ($)</th><th>Total ($)</th></tr></thead>
+                        <tbody>
+                            <tr><td contenteditable>Additional labour</td><td contenteditable>4 hrs</td><td contenteditable>95.00</td><td contenteditable>380.00</td></tr>
+                            <tr><td contenteditable>Additional materials</td><td contenteditable>1 lot</td><td contenteditable>250.00</td><td contenteditable>250.00</td></tr>
+                        </tbody>
+                    </table>
+                    <div class="doc-totals">
+                        <div class="doc-totals-row"><span>Variation subtotal</span><span>$<span contenteditable>630.00</span></span></div>
+                        <div class="doc-totals-row"><span>GST (15%)</span><span>$<span contenteditable>94.50</span></span></div>
+                        <div class="doc-totals-row total"><span>Variation total</span><span>$<span contenteditable>724.50</span></span></div>
+                    </div>
+                    <div style="margin-top:1rem;font-size:.88rem;background:#fff8e1;padding:.75rem;border-radius:4px;border:1px solid #ffe082">
+                        <strong>Important:</strong> No variation work will commence until this document is signed by the client. Proceeding without written approval may result in non-payment.
+                    </div>
+                    <div class="signature-block" style="margin-top:1.5rem">
+                        <div><div class="sig-line"></div><div class="sig-label">Contractor authorised by / Date</div></div>
+                        <div><div class="sig-line"></div><div class="sig-label">Client approved by / Date</div></div>
+                    </div>
+                    <div class="doc-footer-note">NZ Tradie Tools — tradietools.nz</div>
+
+                    {% elif tmpl.slug == "site-safety-checklist" %}
+                    <!-- SITE SAFETY CHECKLIST -->
+                    <div class="doc-header">
+                        <div><div class="doc-logo-box">Your logo here</div></div>
+                        <div>
+                            <div class="doc-title">SITE SAFETY CHECKLIST</div>
+                            <div class="doc-meta">
+                                Date: <span contenteditable>{{ year }}-01-01</span><br>
+                                Site: <span contenteditable>123 Job Site Road</span><br>
+                                Completed by: <span contenteditable>Name / Role</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="font-size:.82rem;background:#fff3cd;padding:.5rem .75rem;border-radius:4px;margin:0 0 1rem">HSWA 2015 — PCBU obligations. Complete before starting work. Keep on site for duration of job.</p>
+                    {% set checks = [
+                        ("Site Access & Induction", ["Site boundaries identified and marked", "Emergency exit routes clear and known", "First aid kit on site and stocked", "Emergency contact numbers posted", "All workers inducted to site"]),
+                        ("Hazard Identification", ["Site hazards identified and recorded", "Asbestos / lead paint risk assessed", "Underground / overhead services located", "Slip, trip and fall hazards managed", "Chemical / hazardous substances noted"]),
+                        ("PPE & Equipment", ["All workers wearing appropriate PPE", "Tools and equipment in safe condition", "Ladders / scaffolding inspected", "Electrical equipment tested and tagged", "Power tools guarded and safe"]),
+                        ("Working at Heights (if applicable)", ["Fall protection plan in place", "Scaffolding erected by competent person", "Guardrails and toe boards fitted", "Safety harness / anchor points checked"]),
+                        ("Electrical Safety", ["Electrical isolation confirmed where required", "RCDs / safety switches in use", "No exposed wiring or damaged cords"]),
+                        ("Sign-off", [])
+                    ] %}
+                    {% for section, items in checks %}
+                    <div style="margin-bottom:1rem">
+                        <div class="doc-section-label">{{ section }}</div>
+                        {% if items %}
+                        {% for item in items %}
+                        <div class="checklist-item">
+                            <input type="checkbox">
+                            <span contenteditable>{{ item }}</span>
+                        </div>
+                        {% endfor %}
+                        {% else %}
+                        <div class="signature-block" style="margin-top:.75rem">
+                            <div><div class="sig-line"></div><div class="sig-label">Supervisor signature / Date</div></div>
+                            <div><div class="sig-line"></div><div class="sig-label">Site manager / Date</div></div>
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                    <div class="doc-footer-note">Health & Safety at Work Act 2015 compliance checklist. NZ Tradie Tools — tradietools.nz</div>
+
+                    {% elif tmpl.slug == "subcontractor-agreement" %}
+                    <!-- SUBCONTRACTOR AGREEMENT -->
+                    <div class="doc-header">
+                        <div><div class="doc-logo-box">Your logo here</div></div>
+                        <div>
+                            <div class="doc-title">SUBCONTRACTOR AGREEMENT</div>
+                            <div class="doc-meta">Date: <span contenteditable>{{ year }}-01-01</span></div>
+                        </div>
+                    </div>
+                    <div class="doc-parties">
+                        <div>
+                            <div class="doc-section-label">Principal Contractor</div>
+                            <div contenteditable class="block-field">Your Business Name</div>
+                            <div contenteditable class="block-field">Address / Phone</div>
+                        </div>
+                        <div>
+                            <div class="doc-section-label">Subcontractor</div>
+                            <div contenteditable class="block-field">Subcontractor Business Name</div>
+                            <div contenteditable class="block-field">Address / Phone / GST No</div>
+                        </div>
+                    </div>
+                    <div style="margin-bottom:.75rem">
+                        <div class="doc-section-label">1. Scope of Work</div>
+                        <div contenteditable class="block-field" style="min-height:3em">Describe the work the subcontractor will perform, including location and timeframe...</div>
+                    </div>
+                    <div style="margin-bottom:.75rem">
+                        <div class="doc-section-label">2. Payment</div>
+                        <div contenteditable class="block-field">Rate: $[amount] per [hour/day/lump sum]. Invoicing: [weekly / on completion]. Payment within [14] days of invoice.</div>
+                    </div>
+                    <div style="margin-bottom:.75rem">
+                        <div class="doc-section-label">3. GST</div>
+                        <div contenteditable class="block-field">Subcontractor is / is not GST registered. GST No: [if applicable]</div>
+                    </div>
+                    <div style="margin-bottom:.75rem">
+                        <div class="doc-section-label">4. Insurance</div>
+                        <div contenteditable class="block-field">Subcontractor holds: Public liability insurance (min $1M). Proof to be provided before commencing work.</div>
+                    </div>
+                    <div style="margin-bottom:.75rem">
+                        <div class="doc-section-label">5. Health & Safety</div>
+                        <div contenteditable class="block-field">Subcontractor agrees to comply with the HSWA 2015 and the Principal's site safety requirements at all times.</div>
+                    </div>
+                    <div style="margin-bottom:.75rem">
+                        <div class="doc-section-label">6. Liability</div>
+                        <div contenteditable class="block-field">Subcontractor is responsible for defects arising from their own work and must rectify at their own cost within [14] days of notification.</div>
+                    </div>
+                    <div style="margin-bottom:.75rem">
+                        <div class="doc-section-label">7. Independent Contractor</div>
+                        <div contenteditable class="block-field">This agreement does not create an employment relationship. The subcontractor is an independent contractor responsible for their own tax obligations.</div>
+                    </div>
+                    <div class="signature-block">
+                        <div><div class="sig-line"></div><div class="sig-label">Principal Contractor / Date</div></div>
+                        <div><div class="sig-line"></div><div class="sig-label">Subcontractor / Date</div></div>
+                    </div>
+                    <div class="doc-footer-note">This is a simple template only — not legal advice. For large contracts, seek legal review. NZ Tradie Tools — tradietools.nz</div>
+
+                    {% elif tmpl.slug == "vehicle-log-book" %}
+                    <!-- VEHICLE LOG BOOK -->
+                    <div class="doc-header">
+                        <div><div class="doc-logo-box">Your logo here</div></div>
+                        <div>
+                            <div class="doc-title">VEHICLE LOG BOOK</div>
+                            <div class="doc-meta">
+                                Vehicle: <span contenteditable>Make/Model/Reg</span><br>
+                                Owner: <span contenteditable>Business Name</span><br>
+                                Period: <span contenteditable>{{ year }}-04-01 to {{ year }}-03-31</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="font-size:.82rem;background:#e8f4fd;padding:.5rem .75rem;border-radius:4px;margin:0 0 1rem">IRD requires a log book for at least 90 consecutive days to establish your business use percentage. Keep receipts for all fuel and maintenance.</p>
+                    <table class="line-items-table">
+                        <thead><tr><th>Date</th><th>From</th><th>To</th><th>Purpose</th><th>Odometer Start</th><th>Odometer End</th><th>km</th><th>Business? Y/N</th></tr></thead>
+                        <tbody>
+                            {% for i in range(12) %}
+                            <tr>
+                                <td contenteditable></td>
+                                <td contenteditable></td>
+                                <td contenteditable></td>
+                                <td contenteditable></td>
+                                <td contenteditable></td>
+                                <td contenteditable></td>
+                                <td contenteditable></td>
+                                <td contenteditable></td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    <div class="doc-totals" style="margin-top:1rem">
+                        <div class="doc-totals-row"><span>Total km this period</span><span contenteditable>0</span></div>
+                        <div class="doc-totals-row"><span>Business km</span><span contenteditable>0</span></div>
+                        <div class="doc-totals-row total"><span>Business use %</span><span contenteditable>0%</span></div>
+                    </div>
+                    <div class="doc-footer-note">Retain this log book and all vehicle expense receipts for 7 years. IRD may audit vehicle expense claims. NZ Tradie Tools — tradietools.nz</div>
+
+                    {% elif tmpl.slug == "tool-inventory" %}
+                    <!-- TOOL INVENTORY -->
+                    <div class="doc-header">
+                        <div><div class="doc-logo-box">Your logo here</div></div>
+                        <div>
+                            <div class="doc-title">TOOL & EQUIPMENT INVENTORY</div>
+                            <div class="doc-meta">
+                                Business: <span contenteditable>Your Business Name</span><br>
+                                Updated: <span contenteditable>{{ year }}-01-01</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="font-size:.82rem;background:#e8f4fd;padding:.5rem .75rem;border-radius:4px;margin:0 0 1rem">Keep this register updated for insurance claims, theft reporting, and IRD depreciation calculations. Store a copy offsite or in the cloud.</p>
+                    <table class="line-items-table">
+                        <thead><tr><th>Item / Description</th><th>Make / Model</th><th>Serial No.</th><th>Purchase Date</th><th>Cost ($)</th><th>Current Value ($)</th><th>Location</th></tr></thead>
+                        <tbody>
+                            <tr><td contenteditable>Circular saw</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>Van</td></tr>
+                            <tr><td contenteditable>Drill / driver</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>Van</td></tr>
+                            <tr><td contenteditable>Angle grinder</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>Van</td></tr>
+                            <tr><td contenteditable>Jigsaw</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>Van</td></tr>
+                            <tr><td contenteditable>Ladder (6m)</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>Roof rack</td></tr>
+                            {% for i in range(8) %}
+                            <tr><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td></tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    <div class="doc-totals" style="margin-top:1rem">
+                        <div class="doc-totals-row total"><span>Total insured value</span><span>$<span contenteditable>0.00</span></span></div>
+                    </div>
+                    <div class="doc-footer-note">NZ Tradie Tools — tradietools.nz | Update annually and after any major purchases.</div>
+
+                    {% elif tmpl.slug == "job-completion-certificate" %}
+                    <!-- JOB COMPLETION CERTIFICATE -->
+                    <div class="doc-header">
+                        <div><div class="doc-logo-box">Your logo here</div></div>
+                        <div>
+                            <div class="doc-title">JOB COMPLETION CERTIFICATE</div>
+                            <div class="doc-meta">
+                                Cert #: <span contenteditable>CC-001</span><br>
+                                Date: <span contenteditable>{{ year }}-01-01</span><br>
+                                Job Ref: <span contenteditable>QT-001</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doc-parties">
+                        <div>
+                            <div class="doc-section-label">Contractor</div>
+                            <div contenteditable class="block-field">Your Business Name</div>
+                            <div contenteditable class="block-field">Contact / Phone</div>
+                        </div>
+                        <div>
+                            <div class="doc-section-label">Client</div>
+                            <div contenteditable class="block-field">Client Name</div>
+                            <div contenteditable class="block-field">Job Address</div>
+                        </div>
+                    </div>
+                    <div style="margin-bottom:1rem">
+                        <div class="doc-section-label">Work Completed</div>
+                        <div contenteditable class="block-field" style="min-height:3em">Describe the work that has been completed, referencing the original quote or job sheet...</div>
+                    </div>
+                    <div style="margin-bottom:1rem">
+                        <div class="doc-section-label">Defects / Outstanding Items</div>
+                        <div contenteditable class="block-field" style="min-height:2em">None — all work completed to specification. (Or list any agreed snagging items and remediation date.)</div>
+                    </div>
+                    <div style="background:#f0fff4;border:1px solid #bbf7d0;border-radius:4px;padding:.75rem;margin:1rem 0;font-size:.88rem">
+                        <strong>By signing below, the client confirms:</strong><br>
+                        • The work described above has been completed to their satisfaction<br>
+                        • The contractor may now issue the final invoice<br>
+                        • Any defects listed above will be remedied within the agreed timeframe
+                    </div>
+                    <div class="signature-block">
+                        <div><div class="sig-line"></div><div class="sig-label">Contractor / Date</div></div>
+                        <div><div class="sig-line"></div><div class="sig-label">Client / Date</div></div>
+                    </div>
+                    <div class="doc-footer-note">NZ Tradie Tools — tradietools.nz | Keep a copy for your records.</div>
+
+                    {% elif tmpl.slug == "customer-feedback-form" %}
+                    <!-- CUSTOMER FEEDBACK FORM -->
+                    <div class="doc-header">
+                        <div><div class="doc-logo-box">Your logo here</div></div>
+                        <div>
+                            <div class="doc-title">CUSTOMER FEEDBACK</div>
+                            <div class="doc-meta">
+                                Date: <span contenteditable>{{ year }}-01-01</span><br>
+                                Job: <span contenteditable>Job description / address</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="font-size:.9rem;color:#333;margin-bottom:1.25rem">Thank you for choosing <span contenteditable>[Your Business Name]</span>. We'd love to hear how we did — your feedback helps us improve.</p>
+                    <div style="margin-bottom:1.25rem">
+                        <div class="doc-section-label">Overall Rating</div>
+                        <div style="display:flex;gap:.75rem;margin-top:.35rem;font-size:1.5rem">
+                            <label style="cursor:pointer" title="Poor">⭐ Poor</label>
+                            <label style="cursor:pointer" title="Fair">⭐⭐ Fair</label>
+                            <label style="cursor:pointer" title="Good">⭐⭐⭐ Good</label>
+                            <label style="cursor:pointer" title="Great">⭐⭐⭐⭐ Great</label>
+                            <label style="cursor:pointer" title="Excellent">⭐⭐⭐⭐⭐ Excellent</label>
+                        </div>
+                    </div>
+                    {% set questions = ["Quality of work", "Tidiness / clean-up", "Communication", "Punctuality", "Value for money"] %}
+                    {% for q in questions %}
+                    <div class="checklist-item" style="align-items:center">
+                        <span style="flex:1;font-weight:500">{{ q }}</span>
+                        <span style="font-size:.85rem;color:#666">1&nbsp;
+                            <input type="radio" name="q{{ loop.index }}" value="1">
+                            <input type="radio" name="q{{ loop.index }}" value="2">
+                            <input type="radio" name="q{{ loop.index }}" value="3">
+                            <input type="radio" name="q{{ loop.index }}" value="4">
+                            <input type="radio" name="q{{ loop.index }}" value="5">
+                        &nbsp;5</span>
+                    </div>
+                    {% endfor %}
+                    <div style="margin:1rem 0">
+                        <div class="doc-section-label">Comments</div>
+                        <div contenteditable class="block-field" style="min-height:3em"></div>
+                    </div>
+                    <div style="background:#e8f4fd;border:1px solid #b3d9f5;border-radius:4px;padding:.75rem;margin:1rem 0;font-size:.88rem">
+                        <strong>Happy with our work? Leave us a Google review!</strong><br>
+                        Visit: <span contenteditable>[your Google Business link here — g.page/yourbusiness/review]</span><br>
+                        It takes 2 minutes and helps other Kiwis find a tradie they can trust. Thank you!
+                    </div>
+                    <div style="margin-top:.75rem">
+                        <div class="doc-section-label">Your Name (optional)</div>
+                        <div contenteditable class="block-field"></div>
+                    </div>
+                    <div class="doc-footer-note">NZ Tradie Tools — tradietools.nz</div>
+                    {% endif %}
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="template-sidebar no-print">
+                <div class="template-actions">
+                    <h3>{{ tmpl.icon }} {{ tmpl.title }}</h3>
+                    <button class="btn-download" onclick="downloadPDF()">⬇ Download PDF</button>
+                    <button class="btn-print" onclick="window.print()">🖨 Print</button>
+                    <p style="font-size:.8rem;color:#888;margin:.5rem 0 0;text-align:center">No sign-up required. Free forever.</p>
+                </div>
+                <div class="template-tips">
+                    <h4>How to use this template</h4>
+                    <ul>
+                        <li>Click any field to edit it</li>
+                        <li>Fill in your business details first</li>
+                        <li>Click "Download PDF" to save</li>
+                        <li>Or click "Print" for a paper copy</li>
+                    </ul>
+                    <p style="margin:.75rem 0 0;font-size:.82rem;color:#888">{{ tmpl.preview_note }}</p>
+                </div>
+                {% if adsense_id %}
+                <ins class="adsbygoogle" style="display:block;margin-top:1rem" data-ad-client="{{ adsense_id }}" data-ad-slot="TEMPLATE_SIDE" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                {% endif %}
+                <div class="sidebar-widget" style="margin-top:1rem">
+                    <h3>Other Templates</h3>
+                    <ul>
+                        {% for t in other_templates %}
+                        <li><a href="{{ base_path }}/templates/{{ t.slug }}.html">{{ t.icon }} {{ t.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </aside>
+        </div>
+
+        <section style="margin:2rem 0 1rem" class="no-print">
+            <h2>More Free Tools for NZ Tradies</h2>
+            <div style="display:flex;flex-wrap:wrap;gap:.75rem">
+                <a href="{{ base_path }}/calculators/job-cost-calculator.html" class="card" style="flex:1;min-width:200px;padding:1rem">
+                    <strong>Job Cost Calculator</strong>
+                    <p style="font-size:.85rem;margin:.3rem 0 0;color:#555">Calculate labour, materials and GST</p>
+                </a>
+                <a href="{{ base_path }}/calculators/gst-calculator.html" class="card" style="flex:1;min-width:200px;padding:1rem">
+                    <strong>GST Calculator</strong>
+                    <p style="font-size:.85rem;margin:.3rem 0 0;color:#555">Add or remove 15% GST instantly</p>
+                </a>
+                <a href="{{ base_path }}/calculators/hourly-rate-calculator.html" class="card" style="flex:1;min-width:200px;padding:1rem">
+                    <strong>Hourly Rate Calculator</strong>
+                    <p style="font-size:.85rem;margin:.3rem 0 0;color:#555">Work out what you should be charging</p>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <footer class="site-footer no-print">
+        <div class="container">
+            <p>&copy; {{ year }} NZ Tradie Tools. All rights reserved.</p>
+            <p><a href="{{ base_path }}/privacy/" style="color:rgba(255,255,255,.6);font-size:.8rem">Privacy Policy</a></p>
+            <p class="disclosure">Some links on this site are affiliate links — we may earn a commission at no extra cost to you.</p>
+        </div>
+    </footer>
+
+    <script>
+    function downloadPDF() {
+        var el = document.getElementById('template-doc');
+        var opt = {
+            margin: 10,
+            filename: '{{ tmpl.slug }}-nz-tradie-tools.pdf',
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { scale: 2, useCORS: true },
+            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+        };
+        html2pdf().set(opt).from(el).save();
+    }
+    </script>
+</body>
+</html>

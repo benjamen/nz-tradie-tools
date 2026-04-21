@@ -1,0 +1,102 @@
+[
+  {
+    "slug": "quote-template",
+    "title": "NZ Job Quote Template",
+    "description": "Professional job quote template for NZ tradies — GST compliant, ready to customise and download as PDF.",
+    "category": "finance",
+    "icon": "📋",
+    "preview_note": "Fill in your business details and job scope, then click Download PDF.",
+    "seo_title": "Free NZ Tradie Quote Template (GST Compliant) — Download PDF",
+    "seo_description": "Free NZ job quote template for tradies. GST compliant, includes line items, labour, materials, and payment terms. Download as PDF instantly."
+  },
+  {
+    "slug": "tax-invoice-template",
+    "title": "GST Tax Invoice Template",
+    "description": "IRD-compliant GST tax invoice template for registered NZ tradies — includes all required fields for a valid tax invoice.",
+    "category": "finance",
+    "icon": "🧾",
+    "preview_note": "Enter your GST number and invoice details, then download as PDF.",
+    "seo_title": "Free NZ GST Tax Invoice Template — IRD Compliant Download",
+    "seo_description": "Free GST tax invoice template for NZ tradies. IRD compliant format with GST number, invoice number, and all required fields. Download as PDF."
+  },
+  {
+    "slug": "job-sheet",
+    "title": "Job Sheet / Work Order",
+    "description": "Daily job sheet and work order template for NZ tradies — track tasks, time, materials, and sign-off on site.",
+    "category": "operations",
+    "icon": "🗂️",
+    "preview_note": "Print or download to take on-site. Fill in job details before you start.",
+    "seo_title": "Free NZ Tradie Job Sheet Template — Work Order Download",
+    "seo_description": "Free job sheet and work order template for NZ tradies. Track tasks, time spent, materials used and get customer sign-off. Download as PDF."
+  },
+  {
+    "slug": "variation-order",
+    "title": "Variation Order Template",
+    "description": "Protect yourself when scope changes mid-job — get written approval for all variations before doing extra work.",
+    "category": "legal",
+    "icon": "📝",
+    "preview_note": "Always get a signed variation order before starting extra work.",
+    "seo_title": "Free NZ Variation Order Template for Tradies — Download PDF",
+    "seo_description": "Free variation order template for NZ tradies. Document scope changes, get written customer approval, and protect yourself from payment disputes."
+  },
+  {
+    "slug": "site-safety-checklist",
+    "title": "Site Safety Checklist",
+    "description": "Health & Safety at Work Act 2015 compliant site safety checklist — cover your PCBU obligations before work starts.",
+    "category": "safety",
+    "icon": "🦺",
+    "preview_note": "Complete this checklist before starting work on any new site.",
+    "seo_title": "Free NZ Site Safety Checklist — HSWA 2015 Compliant Download",
+    "seo_description": "Free site safety checklist for NZ tradies. Covers Health & Safety at Work Act 2015 PCBU obligations. Download and complete before starting work."
+  },
+  {
+    "slug": "subcontractor-agreement",
+    "title": "Subcontractor Agreement",
+    "description": "Simple subcontractor agreement template for NZ tradies — covers scope, payment terms, liability, and insurance requirements.",
+    "category": "legal",
+    "icon": "🤝",
+    "preview_note": "Get this signed before any subcontractor starts work.",
+    "seo_title": "Free NZ Subcontractor Agreement Template — Download PDF",
+    "seo_description": "Free simple subcontractor agreement for NZ tradies. Covers scope of work, payment terms, GST, liability, and insurance. Download as PDF."
+  },
+  {
+    "slug": "vehicle-log-book",
+    "title": "Vehicle Log Book (IRD)",
+    "description": "IRD-compliant vehicle log book for NZ tradies claiming vehicle expenses — track business vs private use for your tax return.",
+    "category": "finance",
+    "icon": "🚐",
+    "preview_note": "Record every business trip. IRD may request this to verify your vehicle expense claim.",
+    "seo_title": "Free NZ Vehicle Log Book Template — IRD Compliant Download",
+    "seo_description": "Free vehicle log book template for NZ tradies. IRD compliant format to track business vs private vehicle use for tax returns. Download as PDF."
+  },
+  {
+    "slug": "tool-inventory",
+    "title": "Tool & Equipment Inventory",
+    "description": "Keep track of all your tools and equipment for insurance, depreciation claims, and theft reporting.",
+    "category": "operations",
+    "icon": "🔧",
+    "preview_note": "Update this list regularly and keep a copy offsite or in the cloud.",
+    "seo_title": "Free NZ Tradie Tool Inventory Template — Equipment Register Download",
+    "seo_description": "Free tool and equipment inventory template for NZ tradies. Track serial numbers, purchase dates and values for insurance and depreciation claims."
+  },
+  {
+    "slug": "job-completion-certificate",
+    "title": "Job Completion Certificate",
+    "description": "Get written sign-off from customers when the job is done — essential before issuing your final invoice.",
+    "category": "operations",
+    "icon": "✅",
+    "preview_note": "Have the customer sign this before you leave site. It triggers your final payment.",
+    "seo_title": "Free NZ Job Completion Certificate Template — Download PDF",
+    "seo_description": "Free job completion certificate for NZ tradies. Get written customer sign-off before issuing your final invoice. Download as PDF."
+  },
+  {
+    "slug": "customer-feedback-form",
+    "title": "Customer Feedback & Review Form",
+    "description": "Collect customer feedback and make it easy for happy clients to leave you a Google review — the fastest way to grow your tradie business.",
+    "category": "marketing",
+    "icon": "⭐",
+    "preview_note": "Leave this with every customer. A Google review from a happy client is worth its weight in gold.",
+    "seo_title": "Free NZ Tradie Customer Feedback Form — Review Request Template",
+    "seo_description": "Free customer feedback form for NZ tradies. Collect reviews and make it easy for happy customers to leave Google reviews. Download as PDF."
+  }
+]
