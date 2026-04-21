@@ -47,6 +47,7 @@ calculator_html: |
     res.style.display='';
   }
   </script>
+related_articles: [vehicle-expenses-nz-tradies-ird]
 ---
 
 ## IRD Mileage Rates for NZ Tradies (2024–25)

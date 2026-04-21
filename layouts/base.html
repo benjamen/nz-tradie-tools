@@ -14,6 +14,7 @@
     <meta name="twitter:title" content="{{ page_title }} — NZ Tradie Tools">
     <meta name="twitter:description" content="{{ description }}">
     <link rel="canonical" href="{{ base_url }}/articles/{{ slug }}.html">
+    <link rel="alternate" type="application/rss+xml" title="NZ Tradie Tools — Articles" href="{{ base_url }}/rss.xml">
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":{{ page_title | tojson }},"description":{{ description | tojson }},"datePublished":{{ date_iso | tojson }},"author":{"@type":"Organization","name":"NZ Tradie Tools"},"publisher":{"@type":"Organization","name":"NZ Tradie Tools","url":{{ base_url | tojson }}}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":{{ base_url | tojson }}},{"@type":"ListItem","position":2,"name":"Articles","item":{{ (base_url ~ "/articles/") | tojson }}},{"@type":"ListItem","position":3,"name":{{ page_title | tojson }},"item":{{ (base_url ~ "/articles/" ~ slug ~ ".html") | tojson }}}]}]}</script>
     <link rel="icon" href="{{ base_path }}/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="{{ base_path }}/static/css/style.css">

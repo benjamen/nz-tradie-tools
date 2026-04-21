@@ -85,10 +85,12 @@ def build():
             if page and not page.get("draft"):
                 articles.append(page)
 
+    articles_by_slug = {a["slug"]: a for a in articles}
     calcs_dir = CONTENT_DIR / "calculators"
     if calcs_dir.exists():
         for md_file in sorted(calcs_dir.glob("*.md")):
-            page = process_page(md_file, config, env, "calculator.html", "calculators", nav, base_path)
+            page = process_page(md_file, config, env, "calculator.html", "calculators", nav, base_path,
+                                articles=articles, articles_by_slug=articles_by_slug)
             if page and not page.get("draft"):
                 calculators.append(page)
 
@@ -106,6 +108,7 @@ def build():
     template_pages = build_templates(config, env, nav, base_path)
     build_sitemap(articles, calculators, cities, trades_data, config, job_pages)
     build_robots(config)
+    build_rss(articles, config)
 
     print(f"Built: {len(articles)} articles, {len(calculators)} calculators, "
           f"{trades_count} trade pages, {locations_count} location pages, "
@@ -113,7 +116,7 @@ def build():
     return articles, calculators
 
 
-def process_page(md_file, config, env, layout_name, section, nav, base_path):
+def process_page(md_file, config, env, layout_name, section, nav, base_path, articles=None, articles_by_slug=None):
     text = md_file.read_text(encoding="utf-8")
     front, body = parse_frontmatter(text)
 
@@ -150,6 +153,11 @@ def process_page(md_file, config, env, layout_name, section, nav, base_path):
     if isinstance(tags, str):
         tags = [t.strip() for t in tags.split(",")]
 
+    related_slugs = front.get("related_articles", [])
+    if isinstance(related_slugs, str):
+        related_slugs = [s.strip() for s in related_slugs.split(",")]
+    related_articles_data = [articles_by_slug[s] for s in related_slugs if articles_by_slug and s in articles_by_slug]
+
     ctx = {
         **config,
         "base_path": base_path,
@@ -168,6 +176,8 @@ def process_page(md_file, config, env, layout_name, section, nav, base_path):
         "calculator_html": front.get("calculator_html", ""),
         "nav": nav,
         "year": datetime.now().year,
+        "recent_articles": (articles or [])[:3],
+        "related_articles_data": related_articles_data,
     }
 
     rendered = template.render(**ctx)
@@ -407,6 +417,49 @@ def build_sitemap(articles, calculators, cities, trades, config, job_pages_count
     (PUBLIC_DIR / "sitemap.xml").write_text("\n".join(lines), encoding="utf-8")
 
 
+def build_rss(articles, config):
+    base_url = config.get("base_url", "").rstrip("/")
+    site_title = config.get("title", "NZ Tradie Tools")
+    build_date = datetime.now().strftime("%a, %d %b %Y %H:%M:%S +0000")
+
+    def esc(s):
+        return str(s).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+    items = []
+    for a in articles[:20]:
+        pub_date = a.get("date_iso", "")
+        try:
+            pub_date_rss = datetime.strptime(pub_date, "%Y-%m-%d").strftime("%a, %d %b %Y 00:00:00 +0000")
+        except Exception:
+            pub_date_rss = build_date
+        link = f"{base_url}/articles/{a['slug']}.html"
+        items.append(
+            f"  <item>\n"
+            f"    <title>{esc(a.get('page_title', ''))}</title>\n"
+            f"    <link>{link}</link>\n"
+            f"    <guid isPermaLink=\"true\">{link}</guid>\n"
+            f"    <description>{esc(a.get('description', ''))}</description>\n"
+            f"    <pubDate>{pub_date_rss}</pubDate>\n"
+            f"  </item>"
+        )
+
+    rss = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n'
+        '  <channel>\n'
+        f'    <title>{esc(site_title)}</title>\n'
+        f'    <link>{base_url}/</link>\n'
+        '    <description>Free calculators, templates and guides for New Zealand tradies.</description>\n'
+        '    <language>en-nz</language>\n'
+        f'    <lastBuildDate>{build_date}</lastBuildDate>\n'
+        f'    <atom:link href="{base_url}/rss.xml" rel="self" type="application/rss+xml"/>\n'
+        + "\n".join(items) + "\n"
+        '  </channel>\n'
+        '</rss>\n'
+    )
+    (PUBLIC_DIR / "rss.xml").write_text(rss, encoding="utf-8")
+
+
 def build_robots(config):
     base_url = config.get("base_url", "").rstrip("/")
     (PUBLIC_DIR / "robots.txt").write_text(
@@ -431,10 +484,15 @@ def build_index(articles, calculators, config, env, nav, base_path):
 def build_listing(pages, config, env, section, nav, base_path):
     template = env.get_template("listing.html")
     label = section.title()
+    descriptions = {
+        "articles": "Free guides, tips and news for New Zealand tradies — tax, licensing, pricing, H&S compliance and more.",
+        "calculators": "Free NZ tradie calculators — GST, hourly rate, job cost, depreciation, overtime and 30+ more. All NZ-specific.",
+    }
     ctx = {
         **config,
         "base_path": base_path,
         "page_title": f"{label} — {config['title']}",
+        "description": descriptions.get(section, config.get("description", "")),
         "pages": pages,
         "section": section,
         "section_label": label,

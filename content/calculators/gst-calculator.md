@@ -3,6 +3,7 @@ title: "NZ GST Calculator"
 description: "Add or remove 15% GST instantly. Works for any NZ tradie invoice or quote."
 tags: [GST, tax, calculator, NZ]
 author: "NZ Tradie Tools"
+related_articles: [nz-tradie-tax-guide-what-you-can-claim, sole-trader-setup-guide-nz-tradies, how-to-write-a-quote-that-wins-jobs-nz]
 layout: calculator
 calculator_html: |
   <div class="calc-tabs">

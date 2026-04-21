@@ -3,6 +3,7 @@ title: "NZ Tradie Hourly Rate Calculator"
 description: "Work out what to charge per hour based on your target income, overheads, and billable hours. Includes ACC levy estimates."
 tags: [hourly rate, pricing, calculator, NZ]
 author: "NZ Tradie Tools"
+related_articles: [how-to-price-a-job-nz-tradie-guide, sole-trader-setup-guide-nz-tradies, nz-construction-recovery-2026-what-tradies-need-to-know]
 layout: calculator
 calculator_html: |
   <div class="calc-grid">

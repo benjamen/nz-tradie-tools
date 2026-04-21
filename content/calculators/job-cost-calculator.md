@@ -3,6 +3,7 @@ title: "NZ Job Cost & Quote Builder"
 description: "Calculate job costs, apply your markup, and produce a quote price with GST for NZ tradie jobs — with regional labour rates by city."
 tags: [quoting, job cost, markup, GST, calculator, NZ]
 author: "NZ Tradie Tools"
+related_articles: [how-to-price-a-job-nz-tradie-guide, how-to-write-a-quote-that-wins-jobs-nz, nz-construction-recovery-2026-what-tradies-need-to-know]
 layout: calculator
 calculator_html: |
   <div class="calc-grid">

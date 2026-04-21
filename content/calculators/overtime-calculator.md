@@ -118,6 +118,7 @@ calculator_html: |
     document.getElementById('al-result').style.display='';
   }
   </script>
+related_articles: [nz-tradie-tax-guide-what-you-can-claim]
 ---
 
 ## NZ Employment Pay Rules for Tradies
