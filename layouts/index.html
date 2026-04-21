@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NZ Tradie Tools — Free Calculators &amp; Guides for New Zealand Tradies</title>
     <meta name="description" content="{{ description }}">
-    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="{{ base_path }}/static/css/style.css">
     {% if adsense_id %}
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ adsense_id }}" crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client="{{ adsense_id }}" crossorigin="anonymous"></script>
     {% endif %}
 </head>
 <body>
     <header class="site-header">
         <div class="container">
-            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+            <a href="{{ base_path }}/" class="logo">🔧 NZ Tradie Tools</a>
             <nav class="main-nav">
                 {% for item in nav %}
                 <a href="{{ item.url }}">{{ item.label }}</a>
@@ -26,7 +26,7 @@
         <div class="container">
             <h1>Free Tools &amp; Guides for NZ Tradies</h1>
             <p>GST calculators, hourly rate tools, job costing, tax guides — everything a New Zealand tradie needs to run a smarter business.</p>
-            <a href="/calculators/" class="btn-primary">Browse Free Calculators →</a>
+            <a href="{{ base_path }}/calculators/" class="btn-primary">Browse Free Calculators →</a>
         </div>
     </section>
 
@@ -64,7 +64,7 @@
                 </div>
                 {% endfor %}
             </div>
-            <p><a href="/articles/">View all articles →</a></p>
+            <p><a href="{{ base_path }}/articles/">View all articles →</a></p>
         </section>
 
         <section class="section cta-box">
