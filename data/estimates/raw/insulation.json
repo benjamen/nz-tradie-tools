@@ -1,0 +1,33 @@
+{
+  "slug": "insulation",
+  "label": "Insulation Installation",
+  "trade": "builders",
+  "icon": "🏡",
+  "description": "Ceiling, underfloor, or wall insulation installation including batts or blown-in insulation.",
+  "includes": "Labour and insulation material. Ceiling, underfloor, or wall options.",
+  "excludes": "Removal of old wet/contaminated insulation (extra cost), very restricted access.",
+  "related_trade": "/trades/builders/",
+  "tips": [
+    "Ceiling insulation gives the best return on investment",
+    "Check if you qualify for Warmer Kiwi Homes government subsidy",
+    "R3.6 is minimum recommended for NZ ceiling insulation"
+  ],
+  "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+  "scenarios": {
+    "small": {
+      "label": "Ceiling only, small home (≤90m²)",
+      "min": 1200,
+      "max": 3000
+    },
+    "medium": {
+      "label": "Ceiling + underfloor (120–160m² home)",
+      "min": 3500,
+      "max": 7000
+    },
+    "large": {
+      "label": "Full home ceiling + underfloor + walls",
+      "min": 7500,
+      "max": 16000
+    }
+  }
+}

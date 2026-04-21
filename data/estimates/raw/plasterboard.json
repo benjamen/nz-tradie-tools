@@ -1,0 +1,33 @@
+{
+  "slug": "plasterboard",
+  "label": "Plasterboard & Stopping",
+  "trade": "builders",
+  "icon": "🔲",
+  "description": "Plasterboard installation, stopping, and finishing ready for paint.",
+  "includes": "Plasterboard supply and installation, all stopping coats, sanding to Level 4 finish.",
+  "excludes": "Painting, architectural features/bulkheads quoted separately.",
+  "related_trade": "/trades/builders/",
+  "tips": [
+    "Level 4 stopping is standard for painted surfaces in NZ",
+    "Ensure stopping is fully dry before painting — rush jobs cause cracking",
+    "GIB Aqualine or equivalent is required in wet areas"
+  ],
+  "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+  "scenarios": {
+    "small": {
+      "label": "1–2 rooms repair/replacement (≤25m²)",
+      "min": 1500,
+      "max": 4500
+    },
+    "medium": {
+      "label": "Full home fit-out (80–120m²)",
+      "min": 8000,
+      "max": 20000
+    },
+    "large": {
+      "label": "Large home or commercial (150m²+)",
+      "min": 20000,
+      "max": 45000
+    }
+  }
+}

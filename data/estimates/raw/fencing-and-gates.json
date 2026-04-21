@@ -1,0 +1,33 @@
+{
+  "slug": "fencing-and-gates",
+  "label": "Fencing & Gates",
+  "trade": "builders",
+  "icon": "🚧",
+  "description": "New fence installation including posts, rails, and palings or panels.",
+  "includes": "Post holes, concrete, posts, rails, palings or panels, and fixings.",
+  "excludes": "Removal of old fencing (usually extra cost), gates unless specified.",
+  "related_trade": "/trades/builders/",
+  "tips": [
+    "Check boundary lines with your council before starting",
+    "Timber palings are cheapest but need treatment or painting",
+    "Get neighbour agreement in writing for boundary fences"
+  ],
+  "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+  "scenarios": {
+    "small": {
+      "label": "Short fence run (≤25m, timber palings)",
+      "min": 2500,
+      "max": 5500
+    },
+    "medium": {
+      "label": "Medium fence run (25–60m, timber/Colorbond)",
+      "min": 6000,
+      "max": 13000
+    },
+    "large": {
+      "label": "Long fence run (60m+, timber/Colorbond)",
+      "min": 13000,
+      "max": 28000
+    }
+  }
+}

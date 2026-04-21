@@ -1,0 +1,33 @@
+{
+  "slug": "kitchen-renovation",
+  "label": "Kitchen Renovation",
+  "trade": "builders",
+  "icon": "🍳",
+  "description": "Kitchen renovation including cabinetry, benchtop, splashback, and connections.",
+  "includes": "Labour, cabinetry, benchtop, splashback, plumbing connections, basic electrical.",
+  "excludes": "Appliances (unless specified), structural changes, consent fees.",
+  "related_trade": "/trades/builders/",
+  "tips": [
+    "Get separate quotes for cabinetry, plumbing, and electrical",
+    "Allow 6–12 weeks lead time for custom cabinetry",
+    "Use a project manager for full kitchen gut-and-redo"
+  ],
+  "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+  "scenarios": {
+    "small": {
+      "label": "Minor refresh (new benchtop/splashback only)",
+      "min": 5000,
+      "max": 12000
+    },
+    "medium": {
+      "label": "Full renovation (new cabinets, bench, appliances)",
+      "min": 18000,
+      "max": 40000
+    },
+    "large": {
+      "label": "Premium fit-out (stone bench, custom cabinetry)",
+      "min": 45000,
+      "max": 100000
+    }
+  }
+}

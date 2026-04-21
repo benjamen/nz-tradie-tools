@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NZ Job Cost Guides ({{ year }}) — Renovation & Tradie Price Estimates</title>
+    <meta name="description" content="How much does it cost to renovate in NZ? Price guides for {{ year }} covering bathroom renovations, kitchens, decks, roofing, fencing and more — with regional pricing by city.">
+    <meta property="og:title" content="NZ Job Cost Guides {{ year }} — Renovation & Tradie Price Estimates">
+    <meta property="og:description" content="Price guides for NZ renovation and tradie jobs — bathroom, kitchen, deck, roofing, painting and more, by city.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ base_url }}/jobs/">
+    <meta property="og:site_name" content="NZ Tradie Tools">
+    <link rel="canonical" href="{{ base_url }}/jobs/">
+    <link rel="icon" href="{{ base_path }}/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="{{ base_path }}/static/css/style.css">
+    {% if adsense_id %}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ adsense_id }}" crossorigin="anonymous"></script>{% endif %}
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="{{ base_path }}/" class="logo">🔧 NZ Tradie Tools</a>
+            <nav class="main-nav">
+                {% for item in nav %}<a href="{{ item.url }}">{{ item.label }}</a>{% endfor %}
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="padding:2.5rem 0">
+        <div class="container">
+            <h1>NZ Job Cost Guides ({{ year }})</h1>
+            <p>Typical renovation and tradie costs across New Zealand — with regional pricing for every major city.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        {% if adsense_id %}
+        <ins class="adsbygoogle ad-banner" style="display:block" data-ad-client="{{ adsense_id }}" data-ad-slot="JOBS_TOP" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        {% endif %}
+
+        <section class="section">
+            <h2>Browse by Job Type</h2>
+            <div class="card-grid">
+                {% for job in jobs %}
+                <a href="{{ base_path }}/jobs/{{ job.slug }}/" class="card">
+                    <h3>{{ job.icon }} {{ job.label }}</h3>
+                    <p style="font-size:.88rem;color:#555">{{ job.description[:80] }}...</p>
+                    <p style="color:#0055a5;font-size:.85rem;margin-top:.5rem">View price guide →</p>
+                </a>
+                {% endfor %}
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Popular: Bathroom & Kitchen Renovation Costs by City</h2>
+            <div class="card-grid">
+                {% for city in featured_cities %}
+                <div class="card" style="cursor:default">
+                    <h3>{{ city.name }}</h3>
+                    <ul style="font-size:.88rem;padding-left:1.1rem;margin:.5rem 0">
+                        <li><a href="{{ base_path }}/jobs/bathroom-renovation/{{ city.slug }}.html">Bathroom renovation cost</a></li>
+                        <li><a href="{{ base_path }}/jobs/kitchen-renovation/{{ city.slug }}.html">Kitchen renovation cost</a></li>
+                        <li><a href="{{ base_path }}/jobs/decking/{{ city.slug }}.html">Deck building cost</a></li>
+                        <li><a href="{{ base_path }}/jobs/roofing/{{ city.slug }}.html">Roof replacement cost</a></li>
+                    </ul>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+
+        <section class="section cta-box">
+            <h2>Get Free Quote Comparison Templates</h2>
+            <p>Checklists for getting and comparing tradie quotes — free for NZ homeowners and tradies.</p>
+            <form action="{{ formspree_endpoint }}" method="POST" class="lead-form">
+                <input type="text" name="name" placeholder="Your name" required>
+                <input type="email" name="email" placeholder="Email address" required>
+                <button type="submit">Send me the free templates →</button>
+            </form>
+        </section>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; {{ year }} NZ Tradie Tools. All rights reserved.</p>
+            <p><a href="{{ base_path }}/privacy/" style="color:rgba(255,255,255,.6);font-size:.8rem">Privacy Policy</a></p>
+            <p class="disclosure">Some links on this site are affiliate links — we may earn a commission at no extra cost to you.</p>
+        </div>
+    </footer>
+</body>
+</html>

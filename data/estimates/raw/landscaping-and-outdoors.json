@@ -1,0 +1,33 @@
+{
+  "slug": "landscaping-and-outdoors",
+  "label": "Landscaping",
+  "trade": "builders",
+  "icon": "🌿",
+  "description": "Garden landscaping including lawn, planting, paths, and garden beds.",
+  "includes": "Labour, topsoil, plants, lawn, garden paths, and irrigation if required.",
+  "excludes": "Tree removal, major earthworks and consent for large structures.",
+  "related_trade": "/trades/builders/",
+  "tips": [
+    "Hire a landscape designer for complex projects — saves cost in the long run",
+    "Native plants require less maintenance and suit NZ conditions",
+    "Ask if topsoil and plants are included in the quote"
+  ],
+  "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+  "scenarios": {
+    "small": {
+      "label": "Small garden makeover (≤60m²)",
+      "min": 3000,
+      "max": 9000
+    },
+    "medium": {
+      "label": "Medium landscaping project (60–200m²)",
+      "min": 10000,
+      "max": 28000
+    },
+    "large": {
+      "label": "Full property landscaping (200m²+)",
+      "min": 30000,
+      "max": 80000
+    }
+  }
+}

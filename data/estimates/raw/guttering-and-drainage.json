@@ -1,0 +1,33 @@
+{
+  "slug": "guttering-and-drainage",
+  "label": "Guttering & Drainage",
+  "trade": "plumbers",
+  "icon": "🌧️",
+  "description": "Gutter replacement or new installation and stormwater drainage.",
+  "includes": "Gutters, downpipes, brackets, sealants, and connection to stormwater drainage.",
+  "excludes": "Roof repairs, stormwater drainage beyond the property boundary.",
+  "related_trade": "/trades/plumbers/",
+  "tips": [
+    "Replace gutters every 20–30 years or when they start sagging or leaking",
+    "Aluminium gutters are the standard in NZ — avoid galvanised in coastal areas",
+    "Check downpipes run to proper stormwater drain, not just the garden"
+  ],
+  "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+  "scenarios": {
+    "small": {
+      "label": "Small home (≤25m of guttering)",
+      "min": 1500,
+      "max": 3500
+    },
+    "medium": {
+      "label": "Average home (25–60m of guttering)",
+      "min": 3500,
+      "max": 7500
+    },
+    "large": {
+      "label": "Large home (60m+ guttering + downpipes)",
+      "min": 8000,
+      "max": 16000
+    }
+  }
+}

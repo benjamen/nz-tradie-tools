@@ -1,0 +1,33 @@
+{
+  "slug": "cladding",
+  "label": "External Cladding",
+  "trade": "builders",
+  "icon": "🏗️",
+  "description": "External wall cladding replacement or installation including weatherboards, Linea, or Hardie.",
+  "includes": "Removal of old cladding if replacing, building wrap, new cladding, and flashings.",
+  "excludes": "Painting (usually quoted separately), structural repairs to framing.",
+  "related_trade": "/trades/builders/",
+  "tips": [
+    "Leaky home era (1994–2004) homes must be fully recladded if using direct-fix",
+    "Cavity-drain cladding systems are now standard — avoid direct-fix",
+    "James Hardie and weathertex are popular mid-range cladding options in NZ"
+  ],
+  "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+  "scenarios": {
+    "small": {
+      "label": "One or two elevations (≤50m²)",
+      "min": 9000,
+      "max": 18000
+    },
+    "medium": {
+      "label": "Partial re-clad (50–130m², Linea/Hardie)",
+      "min": 22000,
+      "max": 45000
+    },
+    "large": {
+      "label": "Full home re-clad (130m²+)",
+      "min": 50000,
+      "max": 100000
+    }
+  }
+}

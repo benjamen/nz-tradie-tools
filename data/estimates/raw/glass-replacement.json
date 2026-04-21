@@ -1,0 +1,33 @@
+{
+  "slug": "glass-replacement",
+  "label": "Glass & Glazing",
+  "trade": "builders",
+  "icon": "🪟",
+  "description": "Window or door glass replacement including single, double glaze, and retrofit.",
+  "includes": "Glass supply and installation, sealing, and glazing beads. Frames if required.",
+  "excludes": "Full window frame replacement (separate quote), building consent for major changes.",
+  "related_trade": "/trades/builders/",
+  "tips": [
+    "Double glazing reduces heat loss by ~50% vs single glaze",
+    "Retrofit double glazing is cheaper than full window replacement",
+    "Safety glass is required by NZ code near doors and low windows"
+  ],
+  "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+  "scenarios": {
+    "small": {
+      "label": "1–3 standard pane replacements",
+      "min": 400,
+      "max": 1500
+    },
+    "medium": {
+      "label": "Double glaze retrofit (5–10 windows)",
+      "min": 4000,
+      "max": 10000
+    },
+    "large": {
+      "label": "Full home re-glaze to double glaze",
+      "min": 12000,
+      "max": 35000
+    }
+  }
+}

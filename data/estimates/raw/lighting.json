@@ -1,0 +1,33 @@
+{
+  "slug": "lighting",
+  "label": "Lighting Installation",
+  "trade": "electricians",
+  "icon": "💡",
+  "description": "Interior or exterior lighting installation including downlights, feature lighting, and sensors.",
+  "includes": "Labour, wiring, switch installation, and light fittings (if supply-and-install).",
+  "excludes": "Fittings if customer-supplied, switchboard upgrades (quoted separately).",
+  "related_trade": "/trades/electricians/",
+  "tips": [
+    "LED downlights save significant power over halogen",
+    "Ensure your electrician is registered with the Electrical Workers Registration Board",
+    "Dimmer switches add cost but improve comfort and save power"
+  ],
+  "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+  "scenarios": {
+    "small": {
+      "label": "Small job (5–10 downlights, 1 room)",
+      "min": 600,
+      "max": 2000
+    },
+    "medium": {
+      "label": "Full home lighting fit-out (20–30 lights)",
+      "min": 2500,
+      "max": 7000
+    },
+    "large": {
+      "label": "New build or major refit (40+ lights)",
+      "min": 7000,
+      "max": 18000
+    }
+  }
+}

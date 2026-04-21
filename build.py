@@ -102,11 +102,13 @@ def build():
 
     cities = json.loads((DATA_DIR / "cities.json").read_text())
     trades_data = json.loads((DATA_DIR / "trades.json").read_text())
-    build_sitemap(articles, calculators, cities, trades_data, config)
+    job_pages = build_job_pages(config, env, nav, base_path)
+    build_sitemap(articles, calculators, cities, trades_data, config, job_pages)
     build_robots(config)
 
     print(f"Built: {len(articles)} articles, {len(calculators)} calculators, "
-          f"{trades_count} trade pages, {locations_count} location pages")
+          f"{trades_count} trade pages, {locations_count} location pages, "
+          f"{job_pages} job cost pages")
     return articles, calculators
 
 
@@ -251,13 +253,79 @@ def build_trades_and_locations(config, env, nav, base_path):
     return trades_count, locations_count
 
 
-def build_sitemap(articles, calculators, cities, trades, config):
+def build_job_pages(config, env, nav, base_path):
+    estimates_file = DATA_DIR / "job_estimates.json"
+    if not estimates_file.exists():
+        return 0
+
+    data = json.loads(estimates_file.read_text())
+    jobs = data["jobs"]
+    regional_multipliers = data["regional_multipliers"]
+    cities = json.loads((DATA_DIR / "cities.json").read_text())
+    trades = json.loads((DATA_DIR / "trades.json").read_text())
+    year = datetime.now().year
+
+    jobs_dir = PUBLIC_DIR / "jobs"
+    jobs_dir.mkdir(exist_ok=True)
+
+    shared = {**config, "base_path": base_path, "nav": nav, "year": year,
+              "cities": cities, "trades": trades, "regional_multipliers": regional_multipliers}
+
+    jobs_list = list(jobs.values())
+    tpl_city = env.get_template("job-city.html")
+    tpl_hub = env.get_template("job-hub.html")
+    tpl_listing = env.get_template("jobs-listing.html")
+
+    count = 0
+
+    # Jobs listing index
+    featured_slugs = ["auckland", "wellington", "christchurch", "hamilton", "tauranga", "christchurch"]
+    featured_cities = [c for c in cities if c["slug"] in ["auckland", "wellington", "christchurch", "hamilton", "tauranga"]]
+    (jobs_dir / "index.html").write_text(
+        tpl_listing.render(**shared, jobs=jobs_list, featured_cities=featured_cities),
+        encoding="utf-8"
+    )
+    count += 1
+
+    for slug, job in jobs.items():
+        job_dir = jobs_dir / slug
+        job_dir.mkdir(exist_ok=True)
+        other_jobs = [j for s, j in jobs.items() if s != slug]
+
+        # Job national hub
+        (job_dir / "index.html").write_text(
+            tpl_hub.render(**shared, job=job, other_jobs=other_jobs),
+            encoding="utf-8"
+        )
+        count += 1
+
+        # Job × city pages
+        for city in cities:
+            mult = regional_multipliers.get(city["slug"], 1.0)
+            other_cities = [c for c in cities if c["slug"] != city["slug"]]
+            ctx = {
+                **shared,
+                "job": job,
+                "city": city,
+                "multiplier": mult,
+                "other_cities": other_cities,
+                "other_jobs": other_jobs,
+            }
+            (job_dir / f"{city['slug']}.html").write_text(
+                tpl_city.render(**ctx), encoding="utf-8"
+            )
+            count += 1
+
+    return count
+
+
+def build_sitemap(articles, calculators, cities, trades, config, job_pages_count=0):
     base_url = config.get("base_url", "").rstrip("/")
     today = datetime.now().strftime("%Y-%m-%d")
     urls = []
 
     urls.append({"loc": f"{base_url}/", "priority": "1.0", "changefreq": "daily", "lastmod": today})
-    for section, pri in [("articles", "0.6"), ("calculators", "0.8"), ("trades", "0.9")]:
+    for section, pri in [("articles", "0.6"), ("calculators", "0.8"), ("trades", "0.9"), ("jobs", "0.9")]:
         urls.append({"loc": f"{base_url}/{section}/", "priority": pri, "changefreq": "weekly", "lastmod": today})
 
     for a in articles:
@@ -275,6 +343,16 @@ def build_sitemap(articles, calculators, cities, trades, config):
     for city in cities:
         urls.append({"loc": f"{base_url}/locations/{city['slug']}/", "priority": "0.7",
                      "changefreq": "weekly", "lastmod": today})
+
+    estimates_file = DATA_DIR / "job_estimates.json"
+    if estimates_file.exists():
+        job_data = json.loads(estimates_file.read_text())
+        for job_slug in job_data["jobs"]:
+            urls.append({"loc": f"{base_url}/jobs/{job_slug}/", "priority": "0.9",
+                         "changefreq": "monthly", "lastmod": today})
+            for city in cities:
+                urls.append({"loc": f"{base_url}/jobs/{job_slug}/{city['slug']}.html",
+                             "priority": "0.85", "changefreq": "monthly", "lastmod": today})
 
     lines = ['<?xml version="1.0" encoding="UTF-8"?>',
              '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']

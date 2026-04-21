@@ -1,0 +1,33 @@
+{
+  "slug": "retaining-walls",
+  "label": "Retaining Walls",
+  "trade": "builders",
+  "icon": "🧱",
+  "description": "Retaining wall construction in timber, concrete block, or engineered stone.",
+  "includes": "Labour, materials (timber/block/stone), drainage behind wall, and concrete footings.",
+  "excludes": "Building consent for walls over 1.5m high, earthworks and soil disposal.",
+  "related_trade": "/trades/builders/",
+  "tips": [
+    "Walls over 1.5m require building consent in most NZ councils",
+    "Always include drainage behind the wall to prevent failure",
+    "Concrete block outlasts timber but costs more upfront"
+  ],
+  "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+  "scenarios": {
+    "small": {
+      "label": "Short timber wall (≤6m, up to 1m high)",
+      "min": 3000,
+      "max": 7500
+    },
+    "medium": {
+      "label": "Medium block wall (6–20m, 1–1.5m high)",
+      "min": 10000,
+      "max": 25000
+    },
+    "large": {
+      "label": "Large engineered wall (20m+, 1.5m+ high)",
+      "min": 28000,
+      "max": 70000
+    }
+  }
+}

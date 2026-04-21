@@ -1,0 +1,33 @@
+{
+  "slug": "roofing",
+  "label": "Roof Replacement",
+  "trade": "builders",
+  "icon": "🏠",
+  "description": "Full roof replacement including removal of old roofing, underlay, and new Colorsteel or tile.",
+  "includes": "Removal of old roof, underlay, all flashings, new roofing material and fixings.",
+  "excludes": "Guttering (quoted separately), fascia/soffit repairs, roof painting.",
+  "related_trade": "/trades/builders/",
+  "tips": [
+    "Get quotes from licensed roofing contractors only",
+    "Colorsteel is the most cost-effective option in NZ",
+    "Consider insulation upgrade while the roof is off"
+  ],
+  "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+  "scenarios": {
+    "small": {
+      "label": "Small home roof (≤100m², iron/Colorsteel)",
+      "min": 12000,
+      "max": 22000
+    },
+    "medium": {
+      "label": "Average home roof (100–180m², Colorsteel)",
+      "min": 22000,
+      "max": 40000
+    },
+    "large": {
+      "label": "Large home roof (180m²+, Colorsteel/tile)",
+      "min": 40000,
+      "max": 75000
+    }
+  }
+}

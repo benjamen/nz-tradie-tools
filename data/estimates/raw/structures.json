@@ -1,0 +1,33 @@
+{
+  "slug": "structures",
+  "label": "Garages & Sleepouts",
+  "trade": "builders",
+  "icon": "🏚️",
+  "description": "Garage, carport, sleepout, or garden shed construction to lockup stage.",
+  "includes": "Foundation/slab, framing, roofing, cladding, windows, and door to lockup stage.",
+  "excludes": "Building consent, internal lining/fitout, electrical, plumbing.",
+  "related_trade": "/trades/builders/",
+  "tips": [
+    "Most garages and sleepouts require building consent — allow 4–8 weeks",
+    "Prefab kitset garages are cheaper but require consent if attached to house",
+    "Insulate if used as a sleepout — NZ building code requires it"
+  ],
+  "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+  "scenarios": {
+    "small": {
+      "label": "Single garage or carport (≤25m²)",
+      "min": 15000,
+      "max": 30000
+    },
+    "medium": {
+      "label": "Double garage or sleepout (25–50m²)",
+      "min": 30000,
+      "max": 60000
+    },
+    "large": {
+      "label": "Large garage-workshop or studio (50m²+)",
+      "min": 60000,
+      "max": 110000
+    }
+  }
+}

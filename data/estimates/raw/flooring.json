@@ -1,0 +1,33 @@
+{
+  "slug": "flooring",
+  "label": "Flooring Installation",
+  "trade": "builders",
+  "icon": "🏢",
+  "description": "Flooring installation including timber, laminate, vinyl, tile, or carpet.",
+  "includes": "Labour, underlay where needed, adhesives, and trims. Materials priced separately unless specified.",
+  "excludes": "Subfloor repairs, furniture removal, tile removal (extra cost).",
+  "related_trade": "/trades/builders/",
+  "tips": [
+    "Vinyl plank is the best value for wet areas like bathrooms and laundries",
+    "Engineered timber is more stable than solid timber in NZ's climate",
+    "Get subfloor checked for moisture before installing timber"
+  ],
+  "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+  "scenarios": {
+    "small": {
+      "label": "Small area (≤40m², vinyl plank/laminate)",
+      "min": 2500,
+      "max": 7000
+    },
+    "medium": {
+      "label": "Full home (80–120m², engineered timber)",
+      "min": 9000,
+      "max": 22000
+    },
+    "large": {
+      "label": "Large home (120m²+, hardwood timber)",
+      "min": 22000,
+      "max": 55000
+    }
+  }
+}

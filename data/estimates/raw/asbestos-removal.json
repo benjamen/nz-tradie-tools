@@ -1,0 +1,33 @@
+{
+  "slug": "asbestos-removal",
+  "label": "Asbestos Removal",
+  "trade": "builders",
+  "icon": "⚠️",
+  "description": "Licensed asbestos identification, removal, and disposal including clearance certificate.",
+  "includes": "Site assessment, licensed removal, disposal, and written clearance certificate.",
+  "excludes": "Asbestos testing if not yet done, reinstatement/repair work after removal.",
+  "related_trade": "/trades/builders/",
+  "tips": [
+    "Never remove asbestos yourself — licensed removalist required by NZ law",
+    "Homes built before 1990 often contain asbestos in walls, ceilings, and floor tiles",
+    "Get a clearance certificate after removal — required for council CCC"
+  ],
+  "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+  "scenarios": {
+    "small": {
+      "label": "Small area — tiles or eaves (≤10m²)",
+      "min": 1500,
+      "max": 5000
+    },
+    "medium": {
+      "label": "Medium area — wall linings or soffit (≤30m²)",
+      "min": 6000,
+      "max": 16000
+    },
+    "large": {
+      "label": "Large or whole-house removal (30m²+)",
+      "min": 18000,
+      "max": 45000
+    }
+  }
+}

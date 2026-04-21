@@ -1,0 +1,33 @@
+{
+  "slug": "bathroom-renovation",
+  "label": "Bathroom Renovation",
+  "trade": "plumbers",
+  "icon": "🚿",
+  "description": "Full bathroom renovation including tiling, plumbing, fixtures, and waterproofing.",
+  "includes": "Labour, fixtures (toilet, vanity, shower/bath), tiling, waterproofing, and plumbing connections.",
+  "excludes": "Building consent for structural changes, asbestos removal, electrical work beyond lighting.",
+  "related_trade": "/trades/plumbers/",
+  "tips": [
+    "Get a licensed plumber for all drainage and water supply work",
+    "Budget 10–15% extra for unexpected issues behind walls",
+    "Choose fittings before quoting so labour scope is clear"
+  ],
+  "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+  "scenarios": {
+    "small": {
+      "label": "Small bathroom (≤5m², budget fixtures)",
+      "min": 8000,
+      "max": 14000
+    },
+    "medium": {
+      "label": "Medium bathroom (6–10m², standard fixtures)",
+      "min": 15000,
+      "max": 28000
+    },
+    "large": {
+      "label": "Large bathroom (10m²+, premium fixtures)",
+      "min": 30000,
+      "max": 60000
+    }
+  }
+}

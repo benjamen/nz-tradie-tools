@@ -1,0 +1,33 @@
+{
+  "slug": "painting",
+  "label": "Interior & Exterior Painting",
+  "trade": "painters",
+  "icon": "🎨",
+  "description": "Professional interior or exterior painting including preparation and two coats.",
+  "includes": "Surface preparation, filling, sanding, primer where needed, two coats of finish paint.",
+  "excludes": "Wallpaper removal (extra charge), plaster repair beyond minor filling.",
+  "related_trade": "/trades/painters/",
+  "tips": [
+    "Good preparation is 80% of a quality paint job",
+    "Ask for a specification listing paint brand and sheen",
+    "Exterior repaints every 8–10 years extend cladding life significantly"
+  ],
+  "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+  "scenarios": {
+    "small": {
+      "label": "Small home interior (2–3 rooms)",
+      "min": 2500,
+      "max": 6000
+    },
+    "medium": {
+      "label": "Full home interior or exterior repaint",
+      "min": 6000,
+      "max": 14000
+    },
+    "large": {
+      "label": "Large home interior + exterior",
+      "min": 15000,
+      "max": 30000
+    }
+  }
+}

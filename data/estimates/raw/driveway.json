@@ -1,0 +1,33 @@
+{
+  "slug": "driveway",
+  "label": "Driveway Construction",
+  "trade": "builders",
+  "icon": "🛣️",
+  "description": "New driveway or resurfacing in concrete, asphalt, or pavers.",
+  "includes": "Labour, base preparation, compaction, concrete/asphalt/pavers, and edging.",
+  "excludes": "Removal of old driveway (usually extra), drainage work, consent if crossing footpath.",
+  "related_trade": "/trades/builders/",
+  "tips": [
+    "Concrete outlasts asphalt by 15–20 years in NZ conditions",
+    "Exposed aggregate or brushed concrete adds grip and looks better",
+    "Get at least 2 quotes — driveway pricing varies significantly"
+  ],
+  "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+  "scenarios": {
+    "small": {
+      "label": "Short driveway (≤40m², concrete)",
+      "min": 5000,
+      "max": 10000
+    },
+    "medium": {
+      "label": "Standard driveway (40–80m², concrete)",
+      "min": 10000,
+      "max": 20000
+    },
+    "large": {
+      "label": "Long driveway (80m²+, concrete/pavers)",
+      "min": 20000,
+      "max": 45000
+    }
+  }
+}

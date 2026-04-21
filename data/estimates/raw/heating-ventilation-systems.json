@@ -1,0 +1,33 @@
+{
+  "slug": "heating-ventilation-systems",
+  "label": "Heating & Ventilation",
+  "trade": "electricians",
+  "icon": "🌡️",
+  "description": "Heat pump, wood burner, or HRV ventilation system supply and installation.",
+  "includes": "Supply and installation of heat pump or HRV, electrical connection, and commissioning.",
+  "excludes": "Flue for wood burners (specialist), consent fees, electrical switchboard upgrade.",
+  "related_trade": "/trades/electricians/",
+  "tips": [
+    "Heat pumps are the most cost-effective heating in NZ — 3:1 efficiency ratio",
+    "Check your council rules on wood burner installation (many urban areas restrict)",
+    "HRV or DVS systems are worth it in damp NZ homes"
+  ],
+  "source": "NZ market research (Builderscrack, Rawlinsons, industry data) 2025",
+  "scenarios": {
+    "small": {
+      "label": "Single heat pump (1 indoor unit)",
+      "min": 2500,
+      "max": 4500
+    },
+    "medium": {
+      "label": "Multi-split system (2–3 indoor units)",
+      "min": 6000,
+      "max": 12000
+    },
+    "large": {
+      "label": "Ducted system or 4+ units",
+      "min": 15000,
+      "max": 35000
+    }
+  }
+}

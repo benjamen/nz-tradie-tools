@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ job.label }} Cost in {{ city.name }} ({{ year }}) — NZ Price Guide</title>
+    <meta name="description" content="How much does {{ job.label|lower }} cost in {{ city.name }}? Typical NZ prices for {{ year }}: {{ job.scenarios.small.label }} from ${{ '{:,}'.format((job.scenarios.small.min * multiplier)|int) }}, {{ job.scenarios.medium.label }} from ${{ '{:,}'.format((job.scenarios.medium.min * multiplier)|int) }}. Get quotes from rated local tradies.">
+    <meta property="og:title" content="{{ job.label }} Cost in {{ city.name }} {{ year }} — NZ Price Guide">
+    <meta property="og:description" content="Typical {{ job.label|lower }} costs in {{ city.name }}, NZ for {{ year }}. See price ranges, what's included, and how to get the best quote.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ base_url }}/jobs/{{ job.slug }}/{{ city.slug }}.html">
+    <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ job.label }} Cost in {{ city.name }} {{ year }}">
+    <meta name="twitter:description" content="Typical {{ job.label|lower }} costs in {{ city.name }} — price ranges, tips, and how to get the best quote.">
+    <link rel="canonical" href="{{ base_url }}/jobs/{{ job.slug }}/{{ city.slug }}.html">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":{{ base_url | tojson }}},{"@type":"ListItem","position":2,"name":"Job Cost Guides","item":{{ (base_url ~ "/jobs/") | tojson }}},{"@type":"ListItem","position":3,"name":{{ job.label | tojson }},"item":{{ (base_url ~ "/jobs/" ~ job.slug ~ "/") | tojson }}},{"@type":"ListItem","position":4,"name":{{ city.name | tojson }},"item":{{ (base_url ~ "/jobs/" ~ job.slug ~ "/" ~ city.slug ~ ".html") | tojson }}}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":{{ ("How much does " ~ job.label|lower ~ " cost in " ~ city.name ~ "?") | tojson }},"acceptedAnswer":{"@type":"Answer","text":{{ ("In " ~ city.name ~ ", " ~ job.label|lower ~ " typically costs $" ~ '{:,}'.format((job.scenarios.small.min * multiplier)|int) ~ "–$" ~ '{:,}'.format((job.scenarios.large.max * multiplier)|int) ~ " depending on scope and materials.") | tojson }}}}]}]}</script>
+    <link rel="icon" href="{{ base_path }}/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="{{ base_path }}/static/css/style.css">
+    {% if adsense_id %}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ adsense_id }}" crossorigin="anonymous"></script>{% endif %}
+    <style>
+        .price-table { width:100%; border-collapse:collapse; margin:1.25rem 0; }
+        .price-table th { background:#0055a5; color:#fff; padding:.6rem 1rem; text-align:left; font-size:.9rem; }
+        .price-table td { padding:.6rem 1rem; border-bottom:1px solid #e5e7eb; font-size:.9rem; }
+        .price-table tr:last-child td { border-bottom:none; }
+        .price-table tr:nth-child(even) td { background:#f8f9fa; }
+        .price-range { font-weight:700; color:#0055a5; }
+        .includes-excludes { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin:1rem 0; }
+        @media(max-width:600px){ .includes-excludes{grid-template-columns:1fr;} }
+        .ie-box { background:#f8f9fa; border-radius:6px; padding:1rem; }
+        .ie-box h4 { margin:0 0 .5rem; font-size:.9rem; }
+        .ie-box ul { margin:0; padding-left:1.2rem; font-size:.88rem; }
+        .quote-checker { background:#e8f4fd; border:1px solid #b3d9f5; border-radius:6px; padding:1.25rem; margin:1.5rem 0; }
+        .quote-checker h3 { margin:0 0 .75rem; color:#0055a5; font-size:1rem; }
+        .quote-input-row { display:flex; gap:.75rem; align-items:center; flex-wrap:wrap; }
+        .quote-input-row input { flex:1; min-width:150px; padding:.5rem .75rem; border:1px solid #ccc; border-radius:4px; font-size:1rem; }
+        .quote-input-row button { background:#0055a5; color:#fff; border:none; padding:.5rem 1.25rem; border-radius:4px; cursor:pointer; font-size:.95rem; }
+        #quote-result { margin-top:.75rem; font-weight:600; font-size:.95rem; }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="{{ base_path }}/" class="logo">🔧 NZ Tradie Tools</a>
+            <nav class="main-nav">
+                {% for item in nav %}<a href="{{ item.url }}">{{ item.label }}</a>{% endfor %}
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="padding:2.5rem 0">
+        <div class="container">
+            <h1>{{ job.icon }} {{ job.label }} Cost in {{ city.name }} ({{ year }})</h1>
+            <p>Typical NZ prices for {{ job.label|lower }} in {{ city.name }} — updated {{ year }}. Based on real quotes from NZ tradies.</p>
+        </div>
+    </section>
+
+    <div class="container page-layout">
+        <main class="main-content">
+
+            <p>{{ city.intro }} {{ job.description }}</p>
+
+            {% if adsense_id %}
+            <ins class="adsbygoogle ad-banner" style="display:block" data-ad-client="{{ adsense_id }}" data-ad-slot="JOB_TOP" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            {% endif %}
+
+            <h2>{{ job.label }} Price Guide — {{ city.name }} {{ year }}</h2>
+            <table class="price-table">
+                <thead>
+                    <tr><th>Scope</th><th>Estimated Cost ({{ city.name }})</th><th>What's Typical</th></tr>
+                </thead>
+                <tbody>
+                    {% for key, sc in job.scenarios.items() %}
+                    <tr>
+                        <td>{{ sc.label }}</td>
+                        <td class="price-range">${{ '{:,}'.format((sc.min * multiplier)|int) }} – ${{ '{:,}'.format((sc.max * multiplier)|int) }}</td>
+                        <td style="color:#666;font-size:.85rem">inc GST</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <p style="font-size:.82rem;color:#888">Prices are estimates for {{ city.name }}, {{ city.region }}. Actual costs vary by site conditions, materials, and contractor. Get 3 quotes before committing. Source: NZ industry data {{ year }}.</p>
+
+            <div class="quote-checker">
+                <h3>🧮 Is Your Quote in the Right Range?</h3>
+                <div class="quote-input-row">
+                    <select id="qc-scope" style="padding:.5rem .75rem;border:1px solid #ccc;border-radius:4px;font-size:.95rem">
+                        {% for key, sc in job.scenarios.items() %}
+                        <option value="{{ (sc.min * multiplier)|int }},{{ (sc.max * multiplier)|int }}">{{ sc.label }}</option>
+                        {% endfor %}
+                    </select>
+                    <input type="number" id="qc-amount" placeholder="Your quote ($)" min="0">
+                    <button onclick="checkQuote()">Check it</button>
+                </div>
+                <div id="quote-result"></div>
+            </div>
+            <script>
+            function checkQuote(){
+                var parts=document.getElementById('qc-scope').value.split(',');
+                var lo=parseInt(parts[0]),hi=parseInt(parts[1]);
+                var q=parseFloat(document.getElementById('qc-amount').value)||0;
+                var el=document.getElementById('quote-result');
+                if(!q){el.textContent='';return;}
+                var pct=Math.round((q-lo)/(hi-lo)*100);
+                if(q<lo*0.85) el.innerHTML='<span style="color:#059669">✓ Below typical range — double-check scope is complete</span>';
+                else if(q<=hi) el.innerHTML='<span style="color:#059669">✓ Within the typical range for '+document.getElementById('qc-scope').selectedOptions[0].text+'</span>';
+                else if(q<=hi*1.2) el.innerHTML='<span style="color:#d97706">⚠ Slightly above typical — ask for a detailed breakdown</span>';
+                else el.innerHTML='<span style="color:#dc2626">✗ Significantly above typical range — get additional quotes</span>';
+            }
+            </script>
+
+            <div class="includes-excludes">
+                <div class="ie-box">
+                    <h4>✅ Typically Included</h4>
+                    <p style="font-size:.88rem;margin:0">{{ job.includes }}</p>
+                </div>
+                <div class="ie-box">
+                    <h4>❌ Usually Extra</h4>
+                    <p style="font-size:.88rem;margin:0">{{ job.excludes }}</p>
+                </div>
+            </div>
+
+            <div class="article-body">
+                <h2>Tips for Hiring in {{ city.name }}</h2>
+                <ul>
+                    {% for tip in job.tips %}
+                    <li>{{ tip }}</li>
+                    {% endfor %}
+                    <li>Always get at least 3 written quotes — prices in {{ city.name }} can vary 30–40%.</li>
+                    <li>Check the tradie's licence on the relevant NZ register before signing anything.</li>
+                </ul>
+
+                <h2>Frequently Asked Questions</h2>
+                <h3>How much does {{ job.label|lower }} cost in {{ city.name }}?</h3>
+                <p>In {{ city.name }}, {{ job.label|lower }} typically costs ${{ '{:,}'.format((job.scenarios.small.min * multiplier)|int) }}–${{ '{:,}'.format((job.scenarios.large.max * multiplier)|int) }} depending on scope and materials. See the price table above for small, medium, and large job ranges.</p>
+
+                <h3>Why are prices higher in {{ city.name }} than other NZ cities?</h3>
+                {% if multiplier >= 1.05 %}
+                <p>{{ city.name }} tradies typically charge 5–20% more than the national average due to higher labour costs, travel time, and strong demand. Getting multiple quotes is especially important here.</p>
+                {% elif multiplier <= 0.95 %}
+                <p>{{ city.name }} is one of NZ's more affordable markets for tradie work. Prices are typically 5–10% below the national average, though quality varies — always check reviews and licences.</p>
+                {% else %}
+                <p>{{ city.name }} pricing is close to the NZ average. Use the price table above as a guide and always get 3 quotes.</p>
+                {% endif %}
+
+                <h3>How do I find a reliable tradie for {{ job.label|lower }} in {{ city.name }}?</h3>
+                <p>Start with our <a href="{{ base_path }}{{ job.related_trade }}{{ city.slug }}.html">top-rated {{ job.trade }} in {{ city.name }}</a> list, then cross-check on <a href="https://www.nocowboys.co.nz" rel="noopener" target="_blank">No Cowboys</a>. Always verify licences and get a written quote before work starts.</p>
+            </div>
+
+            <div class="cta-box">
+                <h3>Get a Free Quote Comparison Checklist</h3>
+                <p>Know exactly what to ask before hiring a tradie for {{ job.label|lower }} in {{ city.name }}.</p>
+                <form action="{{ formspree_endpoint }}" method="POST" class="lead-form">
+                    <input type="text" name="name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Email address" required>
+                    <input type="hidden" name="job" value="{{ job.label }}">
+                    <input type="hidden" name="city" value="{{ city.name }}">
+                    <button type="submit">Send me the checklist →</button>
+                </form>
+            </div>
+
+            <h3 style="margin-top:1.5rem">Other Cities — {{ job.label }} Costs</h3>
+            <div style="display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.5rem">
+                {% for c in other_cities %}
+                <a href="{{ base_path }}/jobs/{{ job.slug }}/{{ c.slug }}.html" style="background:#f0f0f0;padding:.3rem .8rem;border-radius:20px;font-size:.85rem">{{ c.name }}</a>
+                {% endfor %}
+            </div>
+
+            <h3 style="margin-top:1.5rem">Other Job Costs in {{ city.name }}</h3>
+            <div style="display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.5rem">
+                {% for j in other_jobs %}
+                <a href="{{ base_path }}/jobs/{{ j.slug }}/{{ city.slug }}.html" style="background:#f0f0f0;padding:.3rem .8rem;border-radius:20px;font-size:.85rem">{{ j.icon }} {{ j.label }}</a>
+                {% endfor %}
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:linear-gradient(135deg,#0055a5 0%,#003d7a 100%);color:#fff;border:none">
+                <h3 style="color:#fff">🚀 Fastcrew — NZ Tradie App</h3>
+                <p style="color:rgba(255,255,255,.88);font-size:.88rem;margin-bottom:1rem">Built for NZ tradies. Quoting, scheduling, invoicing — all in one app.</p>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#e55a00;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Join the waitlist →</a>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Free Calculators</h3>
+                <ul>
+                    <li><a href="{{ base_path }}/calculators/job-cost-calculator.html">Job Cost & Quote Builder</a></li>
+                    <li><a href="{{ base_path }}/calculators/gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="{{ base_path }}/calculators/hourly-rate-calculator.html">Hourly Rate</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Find Local Tradies</h3>
+                <ul>
+                    {% for trade in trades %}
+                    <li><a href="{{ base_path }}/trades/{{ trade.slug }}/{{ city.slug }}.html">{{ trade.icon }} {{ trade.name }} in {{ city.name }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software</h3>
+                <ul>
+                    <li><a href="{{ affiliates.fergus }}" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="{{ affiliates.tradify }}" rel="sponsored noopener" target="_blank">Tradify — Quoting</a></li>
+                    <li><a href="{{ affiliates.xero }}" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; {{ year }} NZ Tradie Tools. All rights reserved.</p>
+            <p><a href="{{ base_path }}/privacy/" style="color:rgba(255,255,255,.6);font-size:.8rem">Privacy Policy</a></p>
+            <p class="disclosure">Some links on this site are affiliate links — we may earn a commission at no extra cost to you.</p>
+        </div>
+    </footer>
+</body>
+</html>
