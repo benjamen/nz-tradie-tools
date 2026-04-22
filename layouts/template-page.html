@@ -20,6 +20,10 @@
     <link rel="stylesheet" href="{{ base_path }}/static/css/templates.css">
     {% if adsense_id %}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ adsense_id }}" crossorigin="anonymous"></script>{% endif %}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" crossorigin="anonymous"></script>
+    {% if ga_id %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ ga_id }}"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{ ga_id }}');</script>
+    {% endif %}
 </head>
 <body>
     <header class="site-header no-print">
