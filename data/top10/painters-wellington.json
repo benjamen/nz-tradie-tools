@@ -1,0 +1,63 @@
+{
+  "trade": "painters",
+  "city": "wellington",
+  "updated": "2026-04-22",
+  "regional_cost_note": "Painters in Wellington typically charge $40–$65/hr. Wellington's wind and moisture require specialist exterior prep and paint selection; factor in additional preparation costs for older homes.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Flett Painters",
+      "rating": 4.9,
+      "review_count": 156,
+      "suburb": "Wellington",
+      "phone": "",
+      "website": "",
+      "known_for": "Master Painter of the Year 2023 at NZ Master Painters Awards; 11 gold awards in a single evening — Wellington's most decorated painter.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "ZR Decorating Services",
+      "rating": 5.0,
+      "review_count": 83,
+      "suburb": "Wellington",
+      "phone": "",
+      "website": "",
+      "known_for": "5.0 across 83 reviews; one of Wellington's most consistently high-rated decorators for interior residential work.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Paradise Painting Services Ltd",
+      "rating": 4.9,
+      "review_count": 34,
+      "suburb": "Wellington",
+      "phone": "",
+      "website": "",
+      "known_for": "Dulux Accredited Master Painter with 19+ years experience; thorough prep work and reliable project management.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Viet Duc Painting",
+      "rating": 5.0,
+      "review_count": 72,
+      "suburb": "Tawa",
+      "phone": "",
+      "website": "",
+      "known_for": "Locally owned; perfect 5-star rating across platforms, known for 'white glove' approach to interior painting.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Wellington Master Painters",
+      "rating": 4.7,
+      "review_count": 41,
+      "suburb": "Lower Hutt",
+      "phone": "",
+      "website": "",
+      "known_for": "Registered Master Painters; full interior and exterior service including wallpaper removal and plaster repair.",
+      "source": "Google Maps"
+    }
+  ]
+}

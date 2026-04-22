@@ -1,0 +1,74 @@
+{
+  "trade": "electricians",
+  "city": "christchurch",
+  "updated": "2026-04-22",
+  "regional_cost_note": "Electricians in Christchurch typically charge $80–$120/hr plus GST, with callout fees of $50–$100. Canterbury has a large pool of experienced electricians following post-earthquake rebuild activity.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Ascend Electrical",
+      "rating": 5.0,
+      "review_count": 76,
+      "suburb": "Hillmorton",
+      "phone": "",
+      "website": "",
+      "known_for": "5.0 Google rating; helpful, reliable, and committed to quality across residential and commercial work.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Winchester Electrical",
+      "rating": 5.0,
+      "review_count": 91,
+      "suburb": "Spreydon",
+      "phone": "",
+      "website": "",
+      "known_for": "5.0 Google rating; new homes, renovations, switchboard upgrades, EV chargers and solar; Lifetime workmanship warranty.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Christchurch Electrical",
+      "rating": 4.8,
+      "review_count": 203,
+      "suburb": "Christchurch",
+      "phone": "03 338 8000",
+      "website": "https://www.christchurchelectrical.co.nz",
+      "known_for": "70+ year institution with 70+ qualified electricians; residential, commercial, industrial, solar and communications departments.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Juice Electrical",
+      "rating": 4.8,
+      "review_count": 114,
+      "suburb": "Christchurch",
+      "phone": "",
+      "website": "",
+      "known_for": "Detailed quotes, clear explanations, efficient work with high-quality materials; NZ safety standards compliant.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Bronson Electrical",
+      "rating": 4.8,
+      "review_count": 68,
+      "suburb": "Christchurch",
+      "phone": "",
+      "website": "",
+      "known_for": "Top-rated Canterbury electrician with proven reviews and outstanding results across residential and commercial projects.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Easy Electrical",
+      "rating": 4.7,
+      "review_count": 52,
+      "suburb": "Christchurch",
+      "phone": "",
+      "website": "https://easyelectrical.co.nz",
+      "known_for": "Friendly local team offering fixed-price residential electrical work across greater Christchurch.",
+      "source": "Google Maps"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "trade": "roofers",
+  "city": "christchurch",
+  "updated": "2026-04-22",
+  "regional_cost_note": "Roofers in Christchurch typically charge $130–$380/m² for a full re-roof. Canterbury has a large pool of experienced roofers following post-earthquake insurance work. LBP verification is essential.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Re-Roofing Specialists",
+      "rating": 4.9,
+      "review_count": 108,
+      "suburb": "Christchurch",
+      "phone": "",
+      "website": "",
+      "known_for": "Operating since 1975; 4.9 Google rating from 100+ reviews; Canterbury's most experienced re-roofing firm.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Huston Cross Roofing",
+      "rating": 4.8,
+      "review_count": 82,
+      "suburb": "Woolston",
+      "phone": "",
+      "website": "",
+      "known_for": "Specialist in major residential re-roofing; particularly sought-after for tile-to-Colorsteel upgrades across Canterbury.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "The Roofer — Adrian Simmons",
+      "rating": 4.9,
+      "review_count": 47,
+      "suburb": "Christchurch",
+      "phone": "",
+      "website": "",
+      "known_for": "Ultimate specialist for architectural, heritage, and complex roofing materials; London City & Guilds qualified with decades of local experience.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Canterbury Roofing",
+      "rating": 4.7,
+      "review_count": 63,
+      "suburb": "Christchurch",
+      "phone": "",
+      "website": "",
+      "known_for": "Full residential and commercial roofing; re-roofing, repairs, spouting, and solar panel roof penetrations.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Christchurch Roofing Contractors",
+      "rating": 4.7,
+      "review_count": 51,
+      "suburb": "Christchurch North",
+      "phone": "",
+      "website": "",
+      "known_for": "RANZ members; trusted post-earthquake repair specialists with strong insurance claim experience.",
+      "source": "Google Maps"
+    }
+  ]
+}

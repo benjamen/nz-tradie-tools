@@ -10,9 +10,11 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ base_url }}/calculators/{{ slug }}.html">
     <meta property="og:site_name" content="NZ Tradie Tools">
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ page_title }} — NZ Tradie Tools">
     <meta name="twitter:description" content="{{ description }}">
+    <meta property="og:image" content="{{ base_url }}/static/img/social-card.svg">
+    <meta name="twitter:image" content="{{ base_url }}/static/img/social-card.svg">
     <link rel="canonical" href="{{ base_url }}/calculators/{{ slug }}.html">
     <link rel="alternate" type="application/rss+xml" title="NZ Tradie Tools — Articles" href="{{ base_url }}/rss.xml">
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":{{ page_title | tojson }},"description":{{ description | tojson }},"applicationCategory":"FinanceApplication","operatingSystem":"Web","url":{{ (base_url ~ "/calculators/" ~ slug ~ ".html") | tojson }},"offers":{"@type":"Offer","price":"0","priceCurrency":"NZD"},"author":{"@type":"Organization","name":"NZ Tradie Tools","url":{{ base_url | tojson }}}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":{{ base_url | tojson }}},{"@type":"ListItem","position":2,"name":"Calculators","item":{{ (base_url ~ "/calculators/") | tojson }}},{"@type":"ListItem","position":3,"name":{{ page_title | tojson }},"item":{{ (base_url ~ "/calculators/" ~ slug ~ ".html") | tojson }}}]}]}</script>

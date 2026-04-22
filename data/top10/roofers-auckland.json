@@ -1,0 +1,74 @@
+{
+  "trade": "roofers",
+  "city": "auckland",
+  "updated": "2026-04-22",
+  "regional_cost_note": "Roofers in Auckland typically charge $150–$400/m² for a full re-roof (materials + labour). A standard 3-bedroom house re-roof costs $15,000–$25,000. Always verify LBP and RANZ membership.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Axiom Roofing",
+      "rating": 4.9,
+      "review_count": 58,
+      "suburb": "Auckland",
+      "phone": "",
+      "website": "",
+      "known_for": "97.7% NoCowboys rating; exclusively uses NZ-made roofing products; full residential and commercial re-roofing.",
+      "source": "NoCowboys"
+    },
+    {
+      "rank": 2,
+      "name": "Johnson Roofing",
+      "rating": 4.9,
+      "review_count": 134,
+      "suburb": "Auckland",
+      "phone": "",
+      "website": "",
+      "known_for": "Genuine 24/7 emergency response across Auckland from Orewa to Manukau; specialists in leak detection and urgent repairs.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "WE ROOF LTD",
+      "rating": 4.8,
+      "review_count": 97,
+      "suburb": "Auckland",
+      "phone": "",
+      "website": "",
+      "known_for": "10-year workmanship warranty on all new installations plus NZ COLORSTEEL manufacturer warranty up to 50 years.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Solution Roofing Auckland",
+      "rating": 4.8,
+      "review_count": 86,
+      "suburb": "Auckland",
+      "phone": "",
+      "website": "",
+      "known_for": "Professional crew that shows up on time; praised for communication, tidy sites, and quality materials.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Auckland Roofing Solutions",
+      "rating": 4.8,
+      "review_count": 74,
+      "suburb": "Auckland",
+      "phone": "",
+      "website": "https://aucklandroofingsolutions.co.nz",
+      "known_for": "Full residential roofing service; re-roofing, repairs, guttering and spouting across greater Auckland.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Dynamic Roofing Auckland",
+      "rating": 4.7,
+      "review_count": 52,
+      "suburb": "West Auckland",
+      "phone": "",
+      "website": "",
+      "known_for": "Long-run iron specialists; competitive pricing for re-roofs across West and South Auckland.",
+      "source": "Google Maps"
+    }
+  ]
+}

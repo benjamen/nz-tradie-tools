@@ -10,9 +10,11 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ base_url }}/jobs/{{ job.slug }}/{{ city.slug }}.html">
     <meta property="og:site_name" content="NZ Tradie Tools">
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ job.label }} Cost in {{ city.name }} {{ year }}">
     <meta name="twitter:description" content="Typical {{ job.label|lower }} costs in {{ city.name }} — price ranges, tips, and how to get the best quote.">
+    <meta property="og:image" content="{{ base_url }}/static/img/social-card.svg">
+    <meta name="twitter:image" content="{{ base_url }}/static/img/social-card.svg">
     <link rel="canonical" href="{{ base_url }}/jobs/{{ job.slug }}/{{ city.slug }}.html">
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":{{ base_url | tojson }}},{"@type":"ListItem","position":2,"name":"Job Cost Guides","item":{{ (base_url ~ "/jobs/") | tojson }}},{"@type":"ListItem","position":3,"name":{{ job.label | tojson }},"item":{{ (base_url ~ "/jobs/" ~ job.slug ~ "/") | tojson }}},{"@type":"ListItem","position":4,"name":{{ city.name | tojson }},"item":{{ (base_url ~ "/jobs/" ~ job.slug ~ "/" ~ city.slug ~ ".html") | tojson }}}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":{{ ("How much does " ~ job.label|lower ~ " cost in " ~ city.name ~ "?") | tojson }},"acceptedAnswer":{"@type":"Answer","text":{{ ("In " ~ city.name ~ ", " ~ job.label|lower ~ " typically costs $" ~ '{:,}'.format((job.scenarios.small.min * multiplier)|int) ~ "–$" ~ '{:,}'.format((job.scenarios.large.max * multiplier)|int) ~ " depending on scope and materials.") | tojson }}}}]}]}</script>
     <link rel="icon" href="{{ base_path }}/favicon.svg" type="image/svg+xml">

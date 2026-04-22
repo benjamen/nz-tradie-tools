@@ -1,0 +1,63 @@
+{
+  "trade": "electricians",
+  "city": "wellington",
+  "updated": "2026-04-22",
+  "regional_cost_note": "Electricians in Wellington typically charge $85–$130/hr. Wind and seismic factors mean Wellington electricians often have strong expertise in weatherproofing and switchboard upgrades.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Astral Electrical",
+      "rating": 5.0,
+      "review_count": 134,
+      "suburb": "Khandallah",
+      "phone": "",
+      "website": "",
+      "known_for": "5.0 Google rating; 24/7 Wellington-wide service, Master Electricians $20k workmanship guarantee; specialists in EV charging and renovations.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "FG Electrical",
+      "rating": 5.0,
+      "review_count": 89,
+      "suburb": "Wellington",
+      "phone": "",
+      "website": "",
+      "known_for": "Reliable and trusted electrical services with consistently top-rated workmanship across Wellington.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Laser Electrical Wellington",
+      "rating": 4.8,
+      "review_count": 112,
+      "suburb": "Wellington",
+      "phone": "0800 454 646",
+      "website": "https://laserplumbing.co.nz",
+      "known_for": "National franchise local team; full residential and commercial electrical services with responsive scheduling.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Capital Electrical Services",
+      "rating": 4.8,
+      "review_count": 67,
+      "suburb": "Petone",
+      "phone": "",
+      "website": "",
+      "known_for": "Commercial and residential electrical specialists; strong reputation for switchboard upgrades and EV charger installations.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Wellington Electrical Contractors",
+      "rating": 4.7,
+      "review_count": 54,
+      "suburb": "Wellington Central",
+      "phone": "",
+      "website": "",
+      "known_for": "Established Wellington firm covering all residential electrical work, including solar and heat pump wiring.",
+      "source": "Google Maps"
+    }
+  ]
+}

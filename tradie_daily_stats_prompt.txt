@@ -1,0 +1,89 @@
+You are the NZ Tradie Tools daily stats agent. Your job is to send a brief Telegram summary of site growth and automation health. Run every step below.
+
+SITE DIR: /home/ben/.openclaw/workspace/site/
+HEARTBEAT: /home/ben/.openclaw/workspace/memory/heartbeat-state.json
+
+STEP 1 — Count site content:
+python3 -c "
+import pathlib, json, datetime
+
+site = pathlib.Path('/home/ben/.openclaw/workspace/site')
+
+articles = list((site / 'content/articles').glob('*.md'))
+calculators = list((site / 'content/calculators').glob('*.md'))
+templates = list((site / 'content/templates').glob('*.md'))
+top10_files = list((site / 'data/top10').glob('*.json'))
+
+# Count unique cities and trades with data
+combos = len(top10_files)
+trades_with_data = len(set(f.stem.rsplit('-', 1)[0] for f in top10_files))
+cities_with_data = len(set(f.stem.rsplit('-', 1)[1] for f in top10_files))
+
+# Most recent article
+art_dates = []
+for a in articles:
+    text = a.read_text()
+    for line in text.splitlines():
+        if line.startswith('date:'):
+            art_dates.append((line.replace('date:', '').strip(), a.stem))
+            break
+art_dates.sort(reverse=True)
+latest_title = art_dates[0][1].replace('-', ' ').title() if art_dates else 'unknown'
+latest_date = art_dates[0][0] if art_dates else 'unknown'
+
+# Heartbeat timestamps
+state = json.load(open('/home/ben/.openclaw/workspace/memory/heartbeat-state.json'))
+now = datetime.datetime.now()
+today = now.date()
+
+def days_ago(ts):
+    if not ts:
+        return 'never'
+    d = datetime.datetime.fromtimestamp(ts).date()
+    diff = (today - d).days
+    if diff == 0:
+        return 'today'
+    elif diff == 1:
+        return 'yesterday'
+    else:
+        return f'{diff}d ago'
+
+article_ran = days_ago(state.get('nz_tradie_content', 0))
+location_ran = days_ago(state.get('nz_tradie_location', 0))
+
+article_status = '✅' if state.get('nz_tradie_content', 0) and (today - datetime.datetime.fromtimestamp(state['nz_tradie_content']).date()).days <= 1 else '⚠️'
+location_status = '✅' if state.get('nz_tradie_location', 0) and (today - datetime.datetime.fromtimestamp(state['nz_tradie_location']).date()).days <= 1 else '⚠️'
+
+print(f'ARTICLES={len(articles)}')
+print(f'CALCULATORS={len(calculators)}')
+print(f'TEMPLATES={len(templates)}')
+print(f'TOP10_COMBOS={combos}')
+print(f'LATEST_ARTICLE={latest_title}')
+print(f'LATEST_DATE={latest_date}')
+print(f'ARTICLE_STATUS={article_status} {article_ran}')
+print(f'LOCATION_STATUS={location_status} {location_ran}')
+"
+
+STEP 2 — Send the Telegram daily stats message:
+python3 -c "
+import sys
+sys.path.insert(0, '/home/ben/polymarket-scanner')
+from telegram_bot import send_message
+
+# Replace the values below with what STEP 1 printed
+send_message('''📊 <b>NZ Tradie Tools — Daily Stats</b>
+
+📝 Articles: ARTICLES_VAL
+🧮 Calculators: CALCULATORS_VAL
+📄 Templates: TEMPLATES_VAL
+📍 Location combos with data: TOP10_COMBOS_VAL / 120
+
+🆕 Latest article: LATEST_ARTICLE_VAL (LATEST_DATE_VAL)
+
+🤖 Automation:
+  Content: ARTICLE_STATUS_VAL
+  Location: LOCATION_STATUS_VAL
+
+🌐 <a href=\"https://tradietools.nz\">tradietools.nz</a>''')
+"
+Replace each _VAL placeholder with the actual value printed in STEP 1.

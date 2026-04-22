@@ -10,9 +10,11 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ base_url }}/templates/{{ tmpl.slug }}.html">
     <meta property="og:site_name" content="NZ Tradie Tools">
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ tmpl.title }} — Free NZ Download">
     <meta name="twitter:description" content="{{ tmpl.description }}">
+    <meta property="og:image" content="{{ base_url }}/static/img/social-card.svg">
+    <meta name="twitter:image" content="{{ base_url }}/static/img/social-card.svg">
     <link rel="canonical" href="{{ base_url }}/templates/{{ tmpl.slug }}.html">
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":{{ base_url | tojson }}},{"@type":"ListItem","position":2,"name":"Templates","item":{{ (base_url ~ "/templates/") | tojson }}},{"@type":"ListItem","position":3,"name":{{ tmpl.title | tojson }},"item":{{ (base_url ~ "/templates/" ~ tmpl.slug ~ ".html") | tojson }}}]},{"@type":"HowTo","name":{{ ("How to use the " ~ tmpl.title) | tojson }},"description":{{ tmpl.description | tojson }},"step":[{"@type":"HowToStep","name":"Fill in your details","text":"Click any field in the template and type your business details."},{"@type":"HowToStep","name":"Customise the content","text":"Edit line items, dates, and other fields to match your job."},{"@type":"HowToStep","name":"Download as PDF","text":"Click the Download PDF button to save a professional PDF to your device."}]}]}</script>
     <link rel="icon" href="{{ base_path }}/favicon.svg" type="image/svg+xml">

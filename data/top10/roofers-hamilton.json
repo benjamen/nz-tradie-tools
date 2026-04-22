@@ -1,0 +1,63 @@
+{
+  "trade": "roofers",
+  "city": "hamilton",
+  "updated": "2026-04-22",
+  "regional_cost_note": "Roofers in Hamilton typically charge $120–$350/m² for a full re-roof. Waikato's climate drives strong demand for long-run iron and zinc-alum roofing products.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "The Roofing Specialists Hamilton",
+      "rating": 4.7,
+      "review_count": 94,
+      "suburb": "Colombo Street, Hamilton",
+      "phone": "",
+      "website": "",
+      "known_for": "Longest-established dedicated roofer in Hamilton since 1988; founding RANZ member; re-roofing, repairs, painting and specialist membrane systems.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Waikato Roofing",
+      "rating": 4.8,
+      "review_count": 67,
+      "suburb": "Hamilton",
+      "phone": "",
+      "website": "",
+      "known_for": "Trusted Hamilton roofers; COLORSTEEL re-roofing specialists with strong partnerships with local suppliers.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Hamilton Roofing Contractors",
+      "rating": 4.7,
+      "review_count": 54,
+      "suburb": "Te Rapa",
+      "phone": "",
+      "website": "",
+      "known_for": "Full re-roofing and roof repair service across Hamilton and greater Waikato; competitive pricing.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Laser Roofing Waikato",
+      "rating": 4.7,
+      "review_count": 43,
+      "suburb": "Hamilton",
+      "phone": "",
+      "website": "",
+      "known_for": "National franchise local team; residential re-roofing, leak repairs, and spouting replacement.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Superior Roofing Waikato",
+      "rating": 4.6,
+      "review_count": 31,
+      "suburb": "Frankton",
+      "phone": "",
+      "website": "",
+      "known_for": "LBP licensed roofers; new build roofing and re-roofing across Hamilton and Waikato region.",
+      "source": "Google Maps"
+    }
+  ]
+}

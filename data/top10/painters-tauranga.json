@@ -1,0 +1,63 @@
+{
+  "trade": "painters",
+  "city": "tauranga",
+  "updated": "2026-04-22",
+  "regional_cost_note": "Painters in Tauranga typically charge $40–$60/hr. Bay of Plenty's coastal environment means quality exterior paint selection (Resene or Dulux weathershield) is essential for longevity.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Full Effects Painting",
+      "rating": 4.9,
+      "review_count": 112,
+      "suburb": "Tauranga",
+      "phone": "",
+      "website": "",
+      "known_for": "Led by John Martin with 30+ years experience; villa renovation specialist and high-end exterior repaint expert.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "SMARTS Painting & Building",
+      "rating": 4.9,
+      "review_count": 88,
+      "suburb": "Tauranga",
+      "phone": "",
+      "website": "",
+      "known_for": "Licensed builder and Master Painter combined; interior and exterior painting for residential and commercial clients.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Fresh Coats Painting",
+      "rating": 4.8,
+      "review_count": 143,
+      "suburb": "Tauranga",
+      "phone": "",
+      "website": "",
+      "known_for": "650+ completed projects in greater Tauranga; reliable, experienced, and use only high-performance Resene and Dulux materials.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Elite Painting Tauranga",
+      "rating": 4.8,
+      "review_count": 76,
+      "suburb": "Tauranga",
+      "phone": "",
+      "website": "",
+      "known_for": "Founded 2018 by Chris Young with 10+ years experience; interior, exterior, and wallpaper hanging using professional-grade products.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Bay Painters",
+      "rating": 4.7,
+      "review_count": 49,
+      "suburb": "Mount Maunganui",
+      "phone": "",
+      "website": "",
+      "known_for": "Mount Maunganui-based painters known for coastal exterior paint expertise and reliable turnaround times.",
+      "source": "Google Maps"
+    }
+  ]
+}

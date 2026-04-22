@@ -10,9 +10,11 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ base_url }}/{{ section }}/">
     <meta property="og:site_name" content="NZ Tradie Tools">
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ page_title }}">
     <meta name="twitter:description" content="{{ description }}">
+    <meta property="og:image" content="{{ base_url }}/static/img/social-card.svg">
+    <meta name="twitter:image" content="{{ base_url }}/static/img/social-card.svg">
     <link rel="canonical" href="{{ base_url }}/{{ section }}/">
     <link rel="alternate" type="application/rss+xml" title="NZ Tradie Tools — Articles" href="{{ base_url }}/rss.xml">
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","name":{{ page_title | tojson }},"description":{{ description | tojson }},"url":{{ (base_url ~ "/" ~ section ~ "/") | tojson }},"publisher":{"@type":"Organization","name":"NZ Tradie Tools","url":{{ base_url | tojson }}}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":{{ base_url | tojson }}},{"@type":"ListItem","position":2,"name":{{ section_label | tojson }},"item":{{ (base_url ~ "/" ~ section ~ "/") | tojson }}}]}]}</script>

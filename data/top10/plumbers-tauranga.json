@@ -1,0 +1,63 @@
+{
+  "trade": "plumbers",
+  "city": "tauranga",
+  "updated": "2026-04-22",
+  "regional_cost_note": "Plumbers in Tauranga typically charge $80–$120/hr plus a $50–$80 callout fee. Bay of Plenty has seen increased demand from rapid residential growth.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "PlumberMan",
+      "rating": 5.0,
+      "review_count": 143,
+      "suburb": "Tauranga",
+      "phone": "",
+      "website": "",
+      "known_for": "Family business since 1995 with 'on time or it's free' guarantee; perfect 100% NoCowboys score across all reviews.",
+      "source": "NoCowboys"
+    },
+    {
+      "rank": 2,
+      "name": "BOP Plumbing & Gas",
+      "rating": 4.9,
+      "review_count": 97,
+      "suburb": "Tauranga",
+      "phone": "",
+      "website": "",
+      "known_for": "NZ Master Plumber of the Year; 30+ years family-owned, 24/7 emergency, Super Gold Card discounts available.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "The Plumbing Collective",
+      "rating": 4.8,
+      "review_count": 62,
+      "suburb": "Mount Maunganui",
+      "phone": "",
+      "website": "",
+      "known_for": "Full-service residential and commercial plumbing across Bay of Plenty; specialist in gas fitting and hot water heat pumps.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Pro-Flo Plumbing",
+      "rating": 4.8,
+      "review_count": 44,
+      "suburb": "Tauranga",
+      "phone": "",
+      "website": "",
+      "known_for": "Rapid-response local plumbers known for clear pricing, reliable scheduling, and quality workmanship.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Laser Plumbing Tauranga",
+      "rating": 4.7,
+      "review_count": 38,
+      "suburb": "Tauranga",
+      "phone": "0800 454 646",
+      "website": "https://laserplumbing.co.nz",
+      "known_for": "Master Plumbers franchise with local team; residential, commercial, gas, and drain services.",
+      "source": "Google Maps"
+    }
+  ]
+}

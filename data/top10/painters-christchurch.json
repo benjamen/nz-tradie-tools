@@ -1,0 +1,63 @@
+{
+  "trade": "painters",
+  "city": "christchurch",
+  "updated": "2026-04-22",
+  "regional_cost_note": "Painters in Christchurch typically charge $35–$60/hr. Post-earthquake, many Canterbury painters have strong experience in plaster repair and weathertight work alongside standard repaints.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "David Robertson Decorators Ltd",
+      "rating": 4.9,
+      "review_count": 84,
+      "suburb": "Christchurch",
+      "phone": "",
+      "website": "",
+      "known_for": "Exceptional residential painting and plastering; NZ Master Painters guarantee; noted in NZ House of the Year judging.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "P&D Painters Ltd",
+      "rating": 4.9,
+      "review_count": 53,
+      "suburb": "Christchurch",
+      "phone": "",
+      "website": "",
+      "known_for": "140 years of combined experience across a ten-person team; thorough surface preparation and long-lasting finishes.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Newman Decorators",
+      "rating": 4.8,
+      "review_count": 67,
+      "suburb": "Christchurch",
+      "phone": "",
+      "website": "",
+      "known_for": "Led by Lindsay Newman with 35+ years experience; registered Master Painters and NZ House of the Year award entrant.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Canterbury Painters",
+      "rating": 4.8,
+      "review_count": 49,
+      "suburb": "Christchurch",
+      "phone": "",
+      "website": "",
+      "known_for": "Local painters specialising in exterior repaints, weathertight repairs, and commercial repaint projects.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Christchurch Master Painters",
+      "rating": 4.7,
+      "review_count": 38,
+      "suburb": "Christchurch North",
+      "phone": "",
+      "website": "",
+      "known_for": "Registered Master Painters; interior and exterior residential and light commercial work across greater Christchurch.",
+      "source": "Google Maps"
+    }
+  ]
+}

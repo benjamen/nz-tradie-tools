@@ -1,0 +1,63 @@
+{
+  "trade": "painters",
+  "city": "hamilton",
+  "updated": "2026-04-22",
+  "regional_cost_note": "Painters in Hamilton typically charge $35–$55/hr. Waikato rates are generally 10–20% below Auckland. A full exterior repaint of a standard home costs $4,000–$10,000.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "J L Connolly Painters",
+      "rating": 4.9,
+      "review_count": 98,
+      "suburb": "Hamilton",
+      "phone": "",
+      "website": "",
+      "known_for": "Hamilton's oldest painting company, founded 1950; Registered Master Painters member since 1969 — over 55 years of continuous membership.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "MSPS Painters",
+      "rating": 4.9,
+      "review_count": 71,
+      "suburb": "Hamilton",
+      "phone": "",
+      "website": "",
+      "known_for": "Backed by a 5-year quality workmanship guarantee; if their work fails within 5 years, they return and fix it at no cost.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "First Rate Finish",
+      "rating": 4.8,
+      "review_count": 63,
+      "suburb": "Frankton",
+      "phone": "",
+      "website": "",
+      "known_for": "Experienced interior and exterior painters praised for project management; handles standard residential to large commercial.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Fresh Look Painters",
+      "rating": 4.8,
+      "review_count": 54,
+      "suburb": "Hamilton",
+      "phone": "",
+      "website": "",
+      "known_for": "Family-owned; known for tidy workmanship, affordable pricing, and reliability — they show up when they say they will.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Waikato Painters",
+      "rating": 4.7,
+      "review_count": 37,
+      "suburb": "Hamilton East",
+      "phone": "",
+      "website": "",
+      "known_for": "Local painters covering greater Hamilton and Waikato; interior, exterior, and commercial repaints.",
+      "source": "Google Maps"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "trade": "plumbers",
+  "city": "christchurch",
+  "updated": "2026-04-22",
+  "regional_cost_note": "Plumbers in Christchurch typically charge $90–$130/hr. Emergency callouts add $80–$150. Post-earthquake, many firms have strong experience in pipe replacement and reticulation.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Walton Plumbing",
+      "rating": 4.9,
+      "review_count": 87,
+      "suburb": "Christchurch",
+      "phone": "03 366 6006",
+      "website": "https://www.waltonplumbing.co.nz",
+      "known_for": "Canterbury's longest-running plumbing firm since 1931; 24-hour emergency service with 15-minute callback guarantee.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Clyne & Bennie Plumbing",
+      "rating": 4.9,
+      "review_count": 112,
+      "suburb": "Christchurch",
+      "phone": "03 366 7410",
+      "website": "https://www.clyneandbennie.co.nz",
+      "known_for": "65+ year firm with 75+ certified plumbers and gasfitters; NZ Master Plumber of the Year award winner.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "A1 Plumbing Services",
+      "rating": 4.8,
+      "review_count": 54,
+      "suburb": "Christchurch",
+      "phone": "",
+      "website": "",
+      "known_for": "Led by Kerry with 30+ years experience; fast, reliable residential and commercial plumbing since 2012.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Integrity Plumbing",
+      "rating": 4.8,
+      "review_count": 41,
+      "suburb": "Christchurch",
+      "phone": "",
+      "website": "https://integrityplumbing.co.nz",
+      "known_for": "Licensed and certified plumbers; transparent pricing and reliable scheduling for residential and commercial jobs.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Christchurch Plumbing Specialists",
+      "rating": 4.7,
+      "review_count": 33,
+      "suburb": "Christchurch Central",
+      "phone": "",
+      "website": "",
+      "known_for": "Specialists in hot water systems, bathroom renovations, and new builds across greater Christchurch.",
+      "source": "Google Maps"
+    }
+  ]
+}

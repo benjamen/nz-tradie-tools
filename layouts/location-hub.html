@@ -10,9 +10,11 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ base_url }}/locations/{{ city.slug }}/">
     <meta property="og:site_name" content="NZ Tradie Tools">
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Find a Tradie in {{ city.name }}, NZ">
     <meta name="twitter:description" content="Top-rated builders, plumbers, electricians and painters in {{ city.name }} — Google ratings and local pricing.">
+    <meta property="og:image" content="{{ base_url }}/static/img/social-card.svg">
+    <meta name="twitter:image" content="{{ base_url }}/static/img/social-card.svg">
     <link rel="canonical" href="{{ base_url }}/locations/{{ city.slug }}/">
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":{{ base_url | tojson }}},{"@type":"ListItem","position":2,"name":"Find a Tradie","item":{{ (base_url ~ "/trades/") | tojson }}},{"@type":"ListItem","position":3,"name":{{ city.name | tojson }},"item":{{ (base_url ~ "/locations/" ~ city.slug ~ "/") | tojson }}}]}</script>
     <link rel="icon" href="{{ base_path }}/favicon.svg" type="image/svg+xml">

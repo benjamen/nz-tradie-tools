@@ -1,0 +1,63 @@
+{
+  "trade": "roofers",
+  "city": "wellington",
+  "updated": "2026-04-22",
+  "regional_cost_note": "Roofers in Wellington typically charge $160–$420/m² for a full re-roof. Wellington's high winds and steep sections mean additional safety provisions are often required, adding to costs.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Bayside Roofing",
+      "rating": 4.9,
+      "review_count": 87,
+      "suburb": "Wellington",
+      "phone": "",
+      "website": "",
+      "known_for": "Family-owned; personal and consultative approach; clients praise the direct communication and hands-on service.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Solution Roofing Wellington",
+      "rating": 4.8,
+      "review_count": 73,
+      "suburb": "Wellington",
+      "phone": "",
+      "website": "",
+      "known_for": "Professional crew leaving sites tidy daily; excellent communication and consistent finish quality.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Wellington Roofing Specialists",
+      "rating": 4.8,
+      "review_count": 61,
+      "suburb": "Wellington",
+      "phone": "",
+      "website": "",
+      "known_for": "LBP licensed roofers specialising in steep-pitch and heritage roofing common in Wellington's older suburbs.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Capital Roofing",
+      "rating": 4.7,
+      "review_count": 49,
+      "suburb": "Lower Hutt",
+      "phone": "",
+      "website": "",
+      "known_for": "Full re-roofing and repair service across greater Wellington including Hutt Valley and Porirua.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Hutt Valley Roofing",
+      "rating": 4.7,
+      "review_count": 38,
+      "suburb": "Lower Hutt",
+      "phone": "",
+      "website": "",
+      "known_for": "RANZ members; competitive pricing for residential re-roofs across the greater Wellington region.",
+      "source": "Google Maps"
+    }
+  ]
+}

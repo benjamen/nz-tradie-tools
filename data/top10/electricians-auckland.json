@@ -1,0 +1,85 @@
+{
+  "trade": "electricians",
+  "city": "auckland",
+  "updated": "2026-04-22",
+  "regional_cost_note": "Electricians in Auckland typically charge $90–$140/hr. Emergency callouts and after-hours work add $100–$200. Always verify EWRB registration before work begins.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Grammar Electrical",
+      "rating": 4.9,
+      "review_count": 214,
+      "suburb": "Auckland Central",
+      "phone": "09 579 1530",
+      "website": "https://www.grammarelectrical.co.nz",
+      "known_for": "Auckland's largest electrical jobbing company; family-owned since 1948 with 51–200 staff, Safepower Assured status and $20k workmanship guarantee.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Northern Lights Electrical",
+      "rating": 4.9,
+      "review_count": 178,
+      "suburb": "North Shore",
+      "phone": "",
+      "website": "",
+      "known_for": "Certified Master Electricians covering residential, commercial and retail across all of Auckland; North Shore to South Auckland.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Helix Electrical",
+      "rating": 4.9,
+      "review_count": 142,
+      "suburb": "Auckland",
+      "phone": "",
+      "website": "",
+      "known_for": "Family-owned; licensed electricians known for reliable service and clear communication across Auckland, Bay of Plenty, and Waikato.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Aotea Electric Auckland",
+      "rating": 4.8,
+      "review_count": 189,
+      "suburb": "Penrose",
+      "phone": "0800 268 328",
+      "website": "https://www.aoteaelectric.co.nz",
+      "known_for": "Major Auckland electrical contractor with 24/7 emergency response; EV charging, solar, and industrial work.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Laser Electrical Auckland",
+      "rating": 4.8,
+      "review_count": 156,
+      "suburb": "Auckland",
+      "phone": "0800 454 646",
+      "website": "https://laserplumbing.co.nz",
+      "known_for": "National franchise with strong Auckland presence; praised for professionalism and follow-through from initial call to job completion.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Silverlake Electrical",
+      "rating": 4.8,
+      "review_count": 88,
+      "suburb": "Silverdale",
+      "phone": "",
+      "website": "",
+      "known_for": "Trusted North Auckland electricians specialising in new builds, renovations, and smart home automation.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "Endeavour Electrical",
+      "rating": 4.7,
+      "review_count": 71,
+      "suburb": "Auckland",
+      "phone": "",
+      "website": "",
+      "known_for": "Residential and commercial electrical work with strong customer service and transparent quoting.",
+      "source": "Google Maps"
+    }
+  ]
+}

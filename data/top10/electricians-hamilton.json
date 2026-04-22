@@ -1,0 +1,63 @@
+{
+  "trade": "electricians",
+  "city": "hamilton",
+  "updated": "2026-04-22",
+  "regional_cost_note": "Electricians in Hamilton typically charge $80–$115/hr plus GST. Waikato rates are generally 10–15% below Auckland. Standard callout fee $50–$80.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Laser Electrical Hamilton",
+      "rating": 4.9,
+      "review_count": 98,
+      "suburb": "Hamilton",
+      "phone": "07 847 0000",
+      "website": "https://laserelectrical.co.nz",
+      "known_for": "Master Electricians franchise; praised for EV charger and solar installations, professional and fair pricing.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Best Electrical",
+      "rating": 4.9,
+      "review_count": 73,
+      "suburb": "Hamilton",
+      "phone": "",
+      "website": "",
+      "known_for": "Consistent standards in service and quality delivery; strong repeat client base across Waikato.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Superheat Electrical",
+      "rating": 4.8,
+      "review_count": 61,
+      "suburb": "Hamilton",
+      "phone": "",
+      "website": "",
+      "known_for": "Trusted Hamilton electricians with proven track record; recommended by MoneyHub for consistently excellent results.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Waikato Electrical Services",
+      "rating": 4.7,
+      "review_count": 44,
+      "suburb": "Te Rapa",
+      "phone": "",
+      "website": "",
+      "known_for": "Full residential and commercial electrical work across Hamilton and greater Waikato.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Hamilton Electrical Contractors",
+      "rating": 4.7,
+      "review_count": 38,
+      "suburb": "Frankton",
+      "phone": "",
+      "website": "",
+      "known_for": "Local electricians specialising in new builds, renovations, and switchboard upgrades.",
+      "source": "Google Maps"
+    }
+  ]
+}

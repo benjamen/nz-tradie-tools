@@ -1,0 +1,63 @@
+{
+  "trade": "roofers",
+  "city": "tauranga",
+  "updated": "2026-04-22",
+  "regional_cost_note": "Roofers in Tauranga typically charge $140–$380/m² for a full re-roof. Coastal properties often require marine-grade materials and anti-corrosion coatings, adding 15–20% to standard costs.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Custom Roof Ltd",
+      "rating": 4.9,
+      "review_count": 88,
+      "suburb": "Mount Maunganui",
+      "phone": "",
+      "website": "",
+      "known_for": "Bay of Plenty's leading re-roofing specialist; LBP and RANZ member; COLORSTEEL experts with manufacturer-backed warranties.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Otter Roofing",
+      "rating": 4.9,
+      "review_count": 74,
+      "suburb": "Tauranga",
+      "phone": "",
+      "website": "",
+      "known_for": "Reliable, efficient, and professional; LBP licensed covering everything from minor leak repairs to full residential re-roofs.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Artisans Roofing",
+      "rating": 4.8,
+      "review_count": 61,
+      "suburb": "Tauranga",
+      "phone": "",
+      "website": "",
+      "known_for": "Family-operated; highly regarded for honest communication and competitive quotes without compromising on quality.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Bay of Plenty Roofing",
+      "rating": 4.7,
+      "review_count": 49,
+      "suburb": "Papamoa",
+      "phone": "",
+      "website": "",
+      "known_for": "Local roofers specialising in coastal-environment materials; marine-grade coatings and anti-corrosion products.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Tauranga Roofing Specialists",
+      "rating": 4.7,
+      "review_count": 38,
+      "suburb": "Tauranga",
+      "phone": "",
+      "website": "",
+      "known_for": "RANZ members; residential re-roofing, spouting and fascia replacement across greater Bay of Plenty.",
+      "source": "Google Maps"
+    }
+  ]
+}

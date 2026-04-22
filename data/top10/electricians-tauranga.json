@@ -1,0 +1,63 @@
+{
+  "trade": "electricians",
+  "city": "tauranga",
+  "updated": "2026-04-22",
+  "regional_cost_note": "Electricians in Tauranga typically charge $80–$115/hr plus GST. Bay of Plenty demand has grown rapidly with population growth; book ahead for non-urgent work.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Hiko Electrical",
+      "rating": 4.9,
+      "review_count": 117,
+      "suburb": "Tauranga",
+      "phone": "",
+      "website": "https://bizwin.co.nz/best-electrician-tauranga/",
+      "known_for": "One of Tauranga's most trusted electrical companies; specialists in solar, EV charging, and smart home automation.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Lee Electrical",
+      "rating": 4.9,
+      "review_count": 84,
+      "suburb": "Tauranga",
+      "phone": "",
+      "website": "",
+      "known_for": "Top-rated BOP electricians with excellent communication and reliable service for residential and commercial work.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Elite Electrical BOP",
+      "rating": 4.9,
+      "review_count": 71,
+      "suburb": "Mount Maunganui",
+      "phone": "",
+      "website": "",
+      "known_for": "Trusted Bay of Plenty electricians; specialists in high-spec new builds and industrial maintenance.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Laser Electrical Tauranga",
+      "rating": 4.8,
+      "review_count": 62,
+      "suburb": "Tauranga",
+      "phone": "0800 454 646",
+      "website": "https://laserelectrical.co.nz",
+      "known_for": "National franchise with local team; full residential, commercial, and solar electrical services.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "BOP Electrical Services",
+      "rating": 4.7,
+      "review_count": 39,
+      "suburb": "Papamoa",
+      "phone": "",
+      "website": "",
+      "known_for": "Local family-run electricians; competitive rates and reliable scheduling for Bay of Plenty homeowners.",
+      "source": "Google Maps"
+    }
+  ]
+}

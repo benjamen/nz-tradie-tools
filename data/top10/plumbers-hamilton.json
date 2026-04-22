@@ -1,0 +1,63 @@
+{
+  "trade": "plumbers",
+  "city": "hamilton",
+  "updated": "2026-04-22",
+  "regional_cost_note": "Plumbers in Hamilton typically charge $85–$120/hr. Waikato rates are generally 10% lower than Auckland. Emergency callouts add $70–$130.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Matt Farrell Plumbing",
+      "rating": 5.0,
+      "review_count": 181,
+      "suburb": "Hamilton",
+      "phone": "",
+      "website": "",
+      "known_for": "44 years in the plumbing trade, running his own business for 29 of those; perfect 5.0 across 181 Builderscrack reviews.",
+      "source": "Builderscrack"
+    },
+    {
+      "rank": 2,
+      "name": "C F Reese Plumbing",
+      "rating": 4.9,
+      "review_count": 68,
+      "suburb": "Hamilton",
+      "phone": "07 838 1234",
+      "website": "",
+      "known_for": "Established 1946; designs entire hydraulic systems bridging architecture and plumbing for complex new builds.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Laser Plumbing Hamilton",
+      "rating": 4.8,
+      "review_count": 55,
+      "suburb": "Hamilton",
+      "phone": "0800 454 646",
+      "website": "https://laserplumbing.co.nz",
+      "known_for": "National franchise with local expertise; Master Plumbers member with full residential and commercial service.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Waikato Plumbing",
+      "rating": 4.7,
+      "review_count": 38,
+      "suburb": "Frankton",
+      "phone": "",
+      "website": "",
+      "known_for": "Residential plumbing, bathroom renovations and drainage across Hamilton and greater Waikato.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Hamilton Drain Layers",
+      "rating": 4.7,
+      "review_count": 29,
+      "suburb": "Te Rapa",
+      "phone": "",
+      "website": "",
+      "known_for": "Specialist drainage and stormwater; preferred contractor for new subdivisions across Waikato.",
+      "source": "Google Maps"
+    }
+  ]
+}
