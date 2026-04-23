@@ -1,0 +1,118 @@
+{
+  "trade": "builders",
+  "city": "palmerston-north",
+  "updated": "2026-04-24",
+  "regional_cost_note": "Builders in Palmerston North typically charge $60–$80/hr for residential labour, some of the most competitive rates in New Zealand. New builds in Manawatu average $2,200–$2,800/m². Kitchen and bathroom renovations typically run $25,000–$60,000 depending on specification. Busy demand means booking 6–12 weeks ahead is common.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Long Building Solutions",
+      "rating": 4.9,
+      "review_count": 54,
+      "suburb": "Palmerston North",
+      "phone": "",
+      "website": "https://www.longbuildingsolutions.co.nz",
+      "known_for": "Family-owned local builder specialising in new builds, renovations, rural construction, and hard landscaping across Manawatu.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Inhouse Construction",
+      "rating": 4.9,
+      "review_count": 41,
+      "suburb": "Palmerston North",
+      "phone": "",
+      "website": "https://www.inhouseconstruction.co.nz",
+      "known_for": "High-quality residential new builds and renovations; clients consistently praise quality and attention to detail.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Premium Builders PN",
+      "rating": 4.8,
+      "review_count": 38,
+      "suburb": "Palmerston North",
+      "phone": "",
+      "website": "https://www.premiumbuilders.co.nz",
+      "known_for": "Custom homes and developments across Palmerston North since 2008, combining innovation with skilled craftsmanship.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Supreme Build Ltd",
+      "rating": 4.8,
+      "review_count": 33,
+      "suburb": "Palmerston North",
+      "phone": "",
+      "website": "https://www.supremebuild.co.nz",
+      "known_for": "Full-range construction covering new homes, renovations, decks, and fencing for residential clients in the Manawatu.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "JG Construction",
+      "rating": 4.8,
+      "review_count": 27,
+      "suburb": "Palmerston North",
+      "phone": "",
+      "website": "",
+      "known_for": "Residential construction specialists established in 2018; known for high-quality finishes and reliable project delivery.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Buildtech NZ",
+      "rating": 4.7,
+      "review_count": 46,
+      "suburb": "Palmerston North",
+      "phone": "",
+      "website": "https://buildtechnz.co.nz",
+      "known_for": "Custom home specialists guaranteeing builds underway within 3 months of contract signing and completed within 6–8 months.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "Gatchworks",
+      "rating": 4.7,
+      "review_count": 21,
+      "suburb": "Palmerston North",
+      "phone": "",
+      "website": "https://www.gatchworks.com",
+      "known_for": "Trusted Manawatu builder since 2021 focused on quality residential builds and renovations with strong client relationships.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "A.S. Building Ltd",
+      "rating": 4.6,
+      "review_count": 13,
+      "suburb": "Palmerston North",
+      "phone": "",
+      "website": "",
+      "known_for": "Certified builders offering new builds, carpentry, landscaping, and renovations; 98.7% satisfaction rating on NoCowboys.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Ward S D Builder",
+      "rating": 4.6,
+      "review_count": 18,
+      "suburb": "Manawatu",
+      "phone": "",
+      "website": "",
+      "known_for": "Over 34 years building across the Manawatu region; a trusted local name for reliable residential construction.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Hayden Homes",
+      "rating": 4.5,
+      "review_count": 32,
+      "suburb": "Palmerston North",
+      "phone": "",
+      "website": "https://www.haydenhomes.co.nz",
+      "known_for": "Quality home builders in Palmerston North with a strong track record across new builds and residential alterations.",
+      "source": "Google Maps"
+    }
+  ]
+}

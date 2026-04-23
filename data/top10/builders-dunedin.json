@@ -1,0 +1,107 @@
+{
+  "trade": "builders",
+  "city": "dunedin",
+  "updated": "2026-04-24",
+  "regional_cost_note": "Builders in Dunedin typically charge $65–$85/hr for residential labour, reflecting Otago's competitive tradie market. New builds average $2,500–$3,200/m² for quality construction. Heritage renovations in Dunedin's hill suburbs can carry a 20–30% premium for specialist skills. Always get 3 fixed-price quotes.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "SB2 Build",
+      "rating": 4.9,
+      "review_count": 47,
+      "suburb": "Mosgiel",
+      "phone": "027 479 7532",
+      "website": "",
+      "known_for": "Hands-on residential new builds and renovations across Dunedin and greater Otago, praised for direct communication and staying on budget.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "BuildSmart",
+      "rating": 4.8,
+      "review_count": 62,
+      "suburb": "Dunedin Central",
+      "phone": "021 228 4531",
+      "website": "https://www.webuildsmart.co.nz",
+      "known_for": "Certified Builder specialists in renovations, new builds, and investment property development; fixed-price contracts standard.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Next Level Building & Construction",
+      "rating": 4.8,
+      "review_count": 38,
+      "suburb": "Dunedin",
+      "phone": "",
+      "website": "https://www.nextlevelbuildnz.com",
+      "known_for": "Bathroom renovations, home extensions, and complex alterations across Dunedin; 50+ years combined team experience.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Jeffrey Dennison Builders",
+      "rating": 4.8,
+      "review_count": 29,
+      "suburb": "Dunedin",
+      "phone": "",
+      "website": "https://jdbuilders.nz",
+      "known_for": "Master Builder since 2016 covering residential and light commercial projects from Oamaru to Timaru with a reputation for precision.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "G.J. Gardner Homes Dunedin",
+      "rating": 4.7,
+      "review_count": 114,
+      "suburb": "South Dunedin",
+      "phone": "03 455 5510",
+      "website": "https://www.gjgardner.co.nz",
+      "known_for": "Fixed-price new home builds for Dunedin and Otago, backed by a national guarantee and strong trade supplier network.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Richard Hendry Builders Ltd",
+      "rating": 4.7,
+      "review_count": 22,
+      "suburb": "Tainui",
+      "phone": "",
+      "website": "",
+      "known_for": "Over 20 years of Dunedin residential building experience; strong word-of-mouth reputation and high NoCowboys rating.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "Better Built Homes",
+      "rating": 4.7,
+      "review_count": 19,
+      "suburb": "Pine Hill",
+      "phone": "",
+      "website": "",
+      "known_for": "Design-and-build specialists in Pine Hill; Master Builders member with 8+ years creating functional, quality homes.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Wilson Builders",
+      "rating": 4.6,
+      "review_count": 31,
+      "suburb": "Dunedin Central",
+      "phone": "027 712 4892",
+      "website": "",
+      "known_for": "Registered Master Builder and LBP covering residential and light commercial; strong portfolio of Dunedin renovations.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Hasler D W Builders Ltd",
+      "rating": 4.5,
+      "review_count": 16,
+      "suburb": "South Dunedin",
+      "phone": "027 255 1136",
+      "website": "",
+      "known_for": "Long-established Dunedin builder (est. 1980) serving Otago with reliable residential construction and alterations.",
+      "source": "Google Maps"
+    }
+  ]
+}

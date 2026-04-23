@@ -5,14 +5,42 @@
     <link>https://tradietools.nz/</link>
     <description>Free calculators, templates and guides for New Zealand tradies.</description>
     <language>en-nz</language>
-    <lastBuildDate>Thu, 23 Apr 2026 14:39:45 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Apr 2026 10:34:05 +0000</lastBuildDate>
     <atom:link href="https://tradietools.nz/rss.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>TEST ARTICLE: NZ Tradie Industry Update (April 25, 2026)</title>
+    <link>https://tradietools.nz/articles/test-article-2026-04-25.html</link>
+    <guid isPermaLink="true">https://tradietools.nz/articles/test-article-2026-04-25.html</guid>
+    <description>This is a test article created for the daily content workflow.</description>
+    <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
+  </item>
   <item>
     <title>Mobile Invoicing for NZ Construction Trades</title>
     <link>https://tradietools.nz/articles/mobile-invoicing-construction.html</link>
     <guid isPermaLink="true">https://tradietools.nz/articles/mobile-invoicing-construction.html</guid>
     <description>Mobile Invoicing for NZ Construction Trades</description>
     <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Managing Rising Material Costs: A Guide for NZ Tradies in 2026</title>
+    <link>https://tradietools.nz/articles/managing-rising-material-costs-nz-2026.html</link>
+    <guid isPermaLink="true">https://tradietools.nz/articles/managing-rising-material-costs-nz-2026.html</guid>
+    <description>With material costs increasing, here is how you can manage your margins and keep your NZ tradie business profitable.</description>
+    <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>TEST: Best AI Admin Tools for NZ Tradies in 2026</title>
+    <link>https://tradietools.nz/articles/test-best-ai-admin-tools-for-nz-tradies-in-2026.html</link>
+    <guid isPermaLink="true">https://tradietools.nz/articles/test-best-ai-admin-tools-for-nz-tradies-in-2026.html</guid>
+    <description>A test automation article covering practical AI admin tools that can save New Zealand tradies time on quotes, invoicing, and job admin.</description>
+    <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Understanding the New Plumbing Self-Certification Scheme for NZ Tradies</title>
+    <link>https://tradietools.nz/articles/new-plumbing-self-certification-nz.html</link>
+    <guid isPermaLink="true">https://tradietools.nz/articles/new-plumbing-self-certification-nz.html</guid>
+    <description>A look at the new plumbing self-certification rules in NZ and what they mean for your workflow and productivity.</description>
+    <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
   </item>
   <item>
     <title>NZ Construction Recovery 2026: What Every Tradie Needs to Know</title>
@@ -118,20 +146,6 @@
     <guid isPermaLink="true">https://tradietools.nz/articles/vehicle-expenses-nz-tradies-ird.html</guid>
     <description>How to claim vehicle expenses as a NZ self-employed tradie — logbook, mileage rates, actual costs, GST on vehicles, and what IRD expects.</description>
     <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
-  </item>
-  <item>
-    <title>Fergus vs Tradify vs Simpro: Which is Best for NZ Tradies?</title>
-    <link>https://tradietools.nz/articles/fergus-vs-tradify-vs-simpro-nz.html</link>
-    <guid isPermaLink="true">https://tradietools.nz/articles/fergus-vs-tradify-vs-simpro-nz.html</guid>
-    <description>A detailed side-by-side comparison of the three most popular job management apps for New Zealand tradies — with real NZD pricing.</description>
-    <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
-  </item>
-  <item>
-    <title>How to Set Up as a Sole Trader in NZ: The Tradie's Guide</title>
-    <link>https://tradietools.nz/articles/sole-trader-setup-guide-nz-tradies.html</link>
-    <guid isPermaLink="true">https://tradietools.nz/articles/sole-trader-setup-guide-nz-tradies.html</guid>
-    <description>Everything a New Zealand tradie needs to know to start trading legally as a sole trader — IRD registration, GST, bank accounts, insurance, and tools.</description>
-    <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
   </item>
   </channel>
 </rss>

@@ -10,6 +10,7 @@ from pathlib import Path
 import markdown
 import yaml
 from jinja2 import Environment, FileSystemLoader
+import logging
 
 SITE_ROOT = Path(__file__).parent
 CONTENT_DIR = SITE_ROOT / "content"
@@ -47,23 +48,36 @@ def prefix_internal_links(html, base_path):
     return re.sub(r'href="(/(?!/))', f'href="{base_path}/', html)
 
 
+def build_nav(config):
+    logging.info("Building navigation")
+    nav_items = config.get("nav", [])
+    nav_html = ""
+    for item in nav_items:
+        nav_html += f'<li><a href="{item["url"]}">{item["label"]}</a></li>'
+    return nav_html
+
+
+def build_articles(env, config, nav, base_path):
+    logging.info("Building articles")
+    articles_dir = CONTENT_DIR / "articles"
+    for article_path in articles_dir.glob("*.md"):
+        front, body = parse_frontmatter(article_path.read_text())
+        html_body = render_markdown(body)
+        html_body = prefix_internal_links(html_body, front.get("base_path", ""))
+        template = env.get_template(front.get("layout", "article.html"))
+        output_path = PUBLIC_DIR / article_path.with_suffix(".html").relative_to(CONTENT_DIR)
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        output_path.write_text(template.render(**front, content=html_body, nav=nav))
+        logging.info(f"Article built: {output_path}")
+
+
 def build():
+    logging.info("Build start")
     config = load_config()
-    base_path = config.get("base_path", "")
-
-    nav = [
-        {"label": item["label"], "url": base_path + item["url"]}
-        for item in config.get("nav", [])
-    ]
-
     env = Environment(loader=FileSystemLoader(str(LAYOUTS_DIR)))
-
-    PUBLIC_DIR.mkdir(exist_ok=True)
-    (PUBLIC_DIR / "articles").mkdir(exist_ok=True)
-    (PUBLIC_DIR / "calculators").mkdir(exist_ok=True)
-    (PUBLIC_DIR / "trades").mkdir(exist_ok=True)
-    (PUBLIC_DIR / "locations").mkdir(exist_ok=True)
-    (PUBLIC_DIR / ".nojekyll").touch()
+    nav = build_nav(config)
+    base_path = config.get("base_path", "")
+    build_articles(env, config, nav, base_path)
 
     if STATIC_DIR.exists():
         for f in STATIC_DIR.rglob("*"):
