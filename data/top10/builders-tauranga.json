@@ -2,8 +2,62 @@
   "trade": "builders",
   "city": "tauranga",
   "updated": "2026-04-22",
-  "regional_cost_note": "Typical hourly rate: $90 NZD",
+  "regional_cost_note": "Builders in Tauranga typically charge $85–$120/hr. New build costs range $2,800–$4,000/m². Bay of Plenty is NZ's fastest-growing region; book builders well in advance.",
   "businesses": [
-    {"rank": 1, "name": "Tauranga Builders Ltd", "rating": 4.8, "review_count": 120, "suburb": "Manukau", "phone": "04 666 7777", "website": "https://tbld.com", "known_for": "Large-scale projects", "source": "Google Maps"}
+    {
+      "rank": 1,
+      "name": "Shaw Builders",
+      "rating": 4.9,
+      "review_count": 134,
+      "suburb": "Tauranga",
+      "phone": "",
+      "website": "",
+      "known_for": "Most decorated building company in Bay of Plenty; established 2002 by Dave and Carolynne Shaw with multiple regional supreme awards.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Calley Homes",
+      "rating": 4.9,
+      "review_count": 97,
+      "suburb": "Tauranga",
+      "phone": "",
+      "website": "",
+      "known_for": "Award-winning family-owned builder since 2005; Regional Supreme titles in 2018, 2021, and 2022; high-end residential specialist.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Landmark Homes Tauranga",
+      "rating": 4.8,
+      "review_count": 112,
+      "suburb": "Tauranga",
+      "phone": "0800 800 462",
+      "website": "https://www.landmarkhomes.co.nz",
+      "known_for": "On-time, on-budget delivery; led by Logan and Carly Stewart with transparent communication from design to handover.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Fairbairn Builders",
+      "rating": 4.8,
+      "review_count": 86,
+      "suburb": "Tauranga",
+      "phone": "",
+      "website": "https://www.fairbairnbuilders.co.nz",
+      "known_for": "Award-winning; operated by Jamie and Amie Fairbairn with 27+ years building high-quality new homes and renovations.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Precise Builders",
+      "rating": 4.8,
+      "review_count": 73,
+      "suburb": "Tauranga",
+      "phone": "",
+      "website": "https://www.precisebuilders.co.nz",
+      "known_for": "Consistent 5-star reviews since 2008; Licensed Building Practitioner, NZ Certified Builders accredited.",
+      "source": "Google Maps"
+    }
   ]
 }
