@@ -1,0 +1,41 @@
+{
+  "trade": "builders",
+  "city": "hastings",
+  "updated": "2026-04-25",
+  "regional_cost_note": "Builders in Hastings typically charge $80\u2013$100/hr for labour. New build costs range $2,600\u2013$3,800/m\u00b2, generally 10\u201315% below Auckland rates. Strong demand from the horticultural sector supports commercial and light-industrial construction alongside residential. Always verify your builder's LBP licence at lbp.govt.nz.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "RHL Build & Construct",
+      "rating": 5.0,
+      "review_count": 85,
+      "suburb": "Hastings",
+      "phone": "",
+      "website": "",
+      "known_for": "Highly rated for affordable, efficient residential builds and renovations; new homes, fencing, earthworks, and roofing across Hawke's Bay.",
+      "source": "Builderscrack"
+    },
+    {
+      "rank": 2,
+      "name": "Advance Trade Solutions",
+      "rating": 4.0,
+      "review_count": 83,
+      "suburb": "Hastings Central",
+      "phone": "",
+      "website": "",
+      "known_for": "Multi-trade outfit handling carpentry, plumbing, painting, and electrical in Hastings; over 100 completed jobs with fast turnaround.",
+      "source": "Builderscrack"
+    },
+    {
+      "rank": 3,
+      "name": "Cathro Construction",
+      "rating": 3.9,
+      "review_count": 30,
+      "suburb": "Hastings",
+      "phone": "",
+      "website": "",
+      "known_for": "Sole-trader builder with 10 years' experience; residential work including foundations, roofing, fencing, sheds, and general construction repairs.",
+      "source": "Builderscrack"
+    }
+  ]
+}

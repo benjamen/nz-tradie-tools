@@ -5,8 +5,22 @@
     <link>https://tradietools.nz/</link>
     <description>Free calculators, templates and guides for New Zealand tradies.</description>
     <language>en-nz</language>
-    <lastBuildDate>Fri, 24 Apr 2026 10:34:05 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 25 Apr 2026 10:45:17 +0000</lastBuildDate>
     <atom:link href="https://tradietools.nz/rss.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Preparing for Winter: A Maintenance Checklist for NZ Tradies</title>
+    <link>https://tradietools.nz/articles/preparing-for-winter-maintenance-checklist-nz.html</link>
+    <guid isPermaLink="true">https://tradietools.nz/articles/preparing-for-winter-maintenance-checklist-nz.html</guid>
+    <description>As the temperature drops in NZ, help your clients prepare their properties with this essential winter maintenance checklist.</description>
+    <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>TEST ARTICLE: NZ Tradie Seasonal Update (April 25, 2026)</title>
+    <link>https://tradietools.nz/articles/test-article-2026-04-25-2.html</link>
+    <guid isPermaLink="true">https://tradietools.nz/articles/test-article-2026-04-25-2.html</guid>
+    <description>A test article for the daily content workflow.</description>
+    <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
+  </item>
   <item>
     <title>TEST ARTICLE: NZ Tradie Industry Update (April 25, 2026)</title>
     <link>https://tradietools.nz/articles/test-article-2026-04-25.html</link>
@@ -26,6 +40,13 @@
     <link>https://tradietools.nz/articles/managing-rising-material-costs-nz-2026.html</link>
     <guid isPermaLink="true">https://tradietools.nz/articles/managing-rising-material-costs-nz-2026.html</guid>
     <description>With material costs increasing, here is how you can manage your margins and keep your NZ tradie business profitable.</description>
+    <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>TEST ARTICLE: NZ Tradie Workflow Optimization (April 24, 2026)</title>
+    <link>https://tradietools.nz/articles/test-article-2026-04-24.html</link>
+    <guid isPermaLink="true">https://tradietools.nz/articles/test-article-2026-04-24.html</guid>
+    <description>This is a test article created to ensure the automated daily content generation remains functional.</description>
     <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
   </item>
   <item>
@@ -125,27 +146,6 @@
     <guid isPermaLink="true">https://tradietools.nz/articles/xero-vs-myob-nz-tradies.html</guid>
     <description>An honest comparison of Xero and MYOB for New Zealand self-employed tradies — pricing, features, GST filing, bank feeds, and integrations with Fergus and Tradify.</description>
     <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-  </item>
-  <item>
-    <title>How to Get Your LBP Licence in New Zealand (2025 Guide)</title>
-    <link>https://tradietools.nz/articles/how-to-get-lbp-licence-new-zealand.html</link>
-    <guid isPermaLink="true">https://tradietools.nz/articles/how-to-get-lbp-licence-new-zealand.html</guid>
-    <description>Step-by-step guide to obtaining a Licensed Building Practitioner (LBP) licence in New Zealand — eligibility, application, skills maintenance, and costs.</description>
-    <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
-  </item>
-  <item>
-    <title>How to Write a Quote That Wins Jobs (NZ Tradie Guide)</title>
-    <link>https://tradietools.nz/articles/how-to-write-a-quote-that-wins-jobs-nz.html</link>
-    <guid isPermaLink="true">https://tradietools.nz/articles/how-to-write-a-quote-that-wins-jobs-nz.html</guid>
-    <description>A practical guide to writing professional, winning quotes as a NZ tradie — structure, presentation, pricing, follow-up, and a free template.</description>
-    <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
-  </item>
-  <item>
-    <title>Vehicle Expenses for NZ Tradies: IRD Rules Explained (2025)</title>
-    <link>https://tradietools.nz/articles/vehicle-expenses-nz-tradies-ird.html</link>
-    <guid isPermaLink="true">https://tradietools.nz/articles/vehicle-expenses-nz-tradies-ird.html</guid>
-    <description>How to claim vehicle expenses as a NZ self-employed tradie — logbook, mileage rates, actual costs, GST on vehicles, and what IRD expects.</description>
-    <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
   </item>
   </channel>
 </rss>
