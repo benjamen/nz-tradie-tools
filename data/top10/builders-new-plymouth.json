@@ -1,0 +1,118 @@
+{
+  "trade": "builders",
+  "city": "new-plymouth",
+  "updated": "2026-04-26",
+  "regional_cost_note": "Builders in New Plymouth typically charge $2,800\u2013$4,000/m\u00b2 for new builds. Renovation costs vary widely: kitchen and bathroom upgrades from $25,000, full home renovations from $80,000+. Taranaki's coastal conditions mean weathertightness and durable cladding are important considerations. Always get 3 quotes from Registered Master Builders.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Profound Group",
+      "rating": 5.0,
+      "review_count": 21,
+      "suburb": "New Plymouth",
+      "phone": "06 757 8888",
+      "website": "https://www.profoundgroup.co.nz",
+      "known_for": "Award-winning builder specialising in passive homes and high-performance new builds; 2018 Taranaki Master Builder of the Year in the million-dollar-plus category.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Gareth Collins Building",
+      "rating": 4.9,
+      "review_count": 38,
+      "suburb": "Strandon",
+      "phone": "027 777 6993",
+      "website": "https://www.gcbuilding.co.nz",
+      "known_for": "Family-run Registered Master Builder with multiple Taranaki House of the Year awards, specialising in high-quality custom new homes and renovations.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Hofmans Builders",
+      "rating": 4.9,
+      "review_count": 26,
+      "suburb": "New Plymouth",
+      "phone": "",
+      "website": "https://www.hofmansbuilders.co.nz",
+      "known_for": "Registered Master Builder and eHaus Taranaki partner; specialists in architectural and high-performance passive homes with over 20 years\u2019 local experience.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Frontline Builders",
+      "rating": 4.8,
+      "review_count": 31,
+      "suburb": "New Plymouth",
+      "phone": "",
+      "website": "https://www.frontlinebuilders.co.nz",
+      "known_for": "15-year New Plymouth builder led by LBP-registered director Wade, specialising in new builds and house-and-land packages across Taranaki.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Custom Construction",
+      "rating": 4.8,
+      "review_count": 19,
+      "suburb": "New Plymouth",
+      "phone": "",
+      "website": "https://www.customconstruction.co.nz",
+      "known_for": "Registered Master Builder and NZ Green Building Council member offering design, build, and project management for custom homes across Taranaki since 2015.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Lifestyle Building & Construction",
+      "rating": 4.7,
+      "review_count": 22,
+      "suburb": "New Plymouth",
+      "phone": "",
+      "website": "https://www.lifestylebuilding.co.nz",
+      "known_for": "Award-winning builder focused on Taranaki coastal lifestyle homes; 2020 Registered Master Builders recognition for unique, high-quality designs.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "Landmark Homes Taranaki",
+      "rating": 4.7,
+      "review_count": 44,
+      "suburb": "New Plymouth",
+      "phone": "06 758 8222",
+      "website": "https://www.landmarkhomes.co.nz",
+      "known_for": "2024 TIDA NZ Group Home Builder of the Year; design-and-build specialist offering house-and-land packages across Taranaki from their Devon Street showroom.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Fowler Homes New Plymouth",
+      "rating": 4.6,
+      "review_count": 28,
+      "suburb": "Bell Block",
+      "phone": "06 755 4045",
+      "website": "https://www.fowlerhomes.co.nz",
+      "known_for": "Locally owned franchise builder offering fixed-price new builds and house-and-land packages from their Bell Block showroom.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Platinum Homes Taranaki",
+      "rating": 4.6,
+      "review_count": 17,
+      "suburb": "Bell Block",
+      "phone": "06 755 2511",
+      "website": "https://www.platinumhomes.co.nz",
+      "known_for": "Jim and Gloria Martin\u2019s locally owned franchise offering a wide range of floor plans and house-and-land packages with over 20 years combined building experience.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "GJ Gardner Homes Taranaki",
+      "rating": 4.5,
+      "review_count": 53,
+      "suburb": "New Plymouth",
+      "phone": "",
+      "website": "https://www.gjgardner.co.nz",
+      "known_for": "NZ\u2019s busiest home builder locally owned by Ostra Holdings; fixed-price contracts, design flexibility, and a track record of reliable delivery since 2006.",
+      "source": "Google Maps"
+    }
+  ]
+}
