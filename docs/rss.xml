@@ -5,13 +5,20 @@
     <link>https://tradietools.nz/</link>
     <description>Free calculators, templates and guides for New Zealand tradies.</description>
     <language>en-nz</language>
-    <lastBuildDate>Sun, 26 Apr 2026 22:13:27 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 26 Apr 2026 22:19:50 +0000</lastBuildDate>
     <atom:link href="https://tradietools.nz/rss.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>Opportunities in NZ Water Infrastructure: What Tradies Need to Know</title>
     <link>https://tradietools.nz/articles/opportunities-in-nz-water-infrastructure.html</link>
     <guid isPermaLink="true">https://tradietools.nz/articles/opportunities-in-nz-water-infrastructure.html</guid>
     <description>With over $13 billion in planned water infrastructure investment across NZ, discover how tradies can get involved in this growing sector.</description>
+    <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Hiring an Apprentice in NZ: The 2026 Guide for Tradies</title>
+    <link>https://tradietools.nz/articles/hiring-an-apprentice-nz-tradie-guide-2026.html</link>
+    <guid isPermaLink="true">https://tradietools.nz/articles/hiring-an-apprentice-nz-tradie-guide-2026.html</guid>
+    <description>Everything NZ tradies need to know about hiring an apprentice in 2026 — BCITO changes, Apprenticeship Boost funding, costs, and how to make it work for your business.</description>
     <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
   </item>
   <item>
@@ -139,13 +146,6 @@
     <guid isPermaLink="true">https://tradietools.nz/articles/how-to-write-a-quote-that-wins-jobs-nz.html</guid>
     <description>A practical guide to writing professional, winning quotes as a NZ tradie — structure, presentation, pricing, follow-up, and a free template.</description>
     <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
-  </item>
-  <item>
-    <title>Vehicle Expenses for NZ Tradies: IRD Rules Explained (2025)</title>
-    <link>https://tradietools.nz/articles/vehicle-expenses-nz-tradies-ird.html</link>
-    <guid isPermaLink="true">https://tradietools.nz/articles/vehicle-expenses-nz-tradies-ird.html</guid>
-    <description>How to claim vehicle expenses as a NZ self-employed tradie — logbook, mileage rates, actual costs, GST on vehicles, and what IRD expects.</description>
-    <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
   </item>
   </channel>
 </rss>
