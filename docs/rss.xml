@@ -5,8 +5,15 @@
     <link>https://tradietools.nz/</link>
     <description>Free calculators, templates and guides for New Zealand tradies.</description>
     <language>en-nz</language>
-    <lastBuildDate>Tue, 28 Apr 2026 10:36:46 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Apr 2026 11:44:37 +0000</lastBuildDate>
     <atom:link href="https://tradietools.nz/rss.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>NZ Minimum Wage Rises to $23.95 in April 2026: What It Means for Tradie Businesses</title>
+    <link>https://tradietools.nz/articles/minimum-wage-increase-april-2026-tradie-costs.html</link>
+    <guid isPermaLink="true">https://tradietools.nz/articles/minimum-wage-increase-april-2026-tradie-costs.html</guid>
+    <description>The adult minimum wage increased to $23.95/hr on 1 April 2026. Here's how to update your labour costs, quotes, and pricing before you fall behind.</description>
+    <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+  </item>
   <item>
     <title>What the New NZ-India Trade Agreement Means for Your Construction Business</title>
     <link>https://tradietools.nz/articles/nz-india-fta-impact-tradies.html</link>
@@ -15,10 +22,10 @@
     <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
   </item>
   <item>
-    <title>TEST ARTICLE: NZ Tradie Economic Outlook (April 28, 2026)</title>
-    <link>https://tradietools.nz/articles/test-article-2026-04-28.html</link>
-    <guid isPermaLink="true">https://tradietools.nz/articles/test-article-2026-04-28.html</guid>
-    <description>A test article for the daily content workflow.</description>
+    <title>Healthy Homes Compliance Work: A Goldmine for NZ Tradies in 2026</title>
+    <link>https://tradietools.nz/articles/healthy-homes-compliance-work-nz-tradies-2026.html</link>
+    <guid isPermaLink="true">https://tradietools.nz/articles/healthy-homes-compliance-work-nz-tradies-2026.html</guid>
+    <description>Every NZ rental must now meet Healthy Homes Standards from day one of any tenancy. Here's what work landlords need done — and how tradies can position to win it.</description>
     <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
   </item>
   <item>
@@ -139,13 +146,6 @@
     <guid isPermaLink="true">https://tradietools.nz/articles/how-to-get-paid-faster-nz-tradie.html</guid>
     <description>Late payments kill tradie cash flow. Here's exactly how to get paid faster in 2026 — invoicing, payment terms, on-site payments, and legal options.</description>
     <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
-  </item>
-  <item>
-    <title>How to Grow Your Tradie Business in NZ — From One-Man Band to a Proper Team</title>
-    <link>https://tradietools.nz/articles/growing-tradie-business-nz.html</link>
-    <guid isPermaLink="true">https://tradietools.nz/articles/growing-tradie-business-nz.html</guid>
-    <description>Practical advice for NZ tradies ready to grow — when to hire, how to systemise, what software you need, and how to avoid the growth traps that kill small trade businesses.</description>
-    <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
   </item>
   </channel>
 </rss>
