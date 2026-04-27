@@ -29,7 +29,10 @@
     <header class="site-header">
         <div class="container">
             <a href="/" class="logo">🔧 NZ Tradie Tools</a>
-            <nav class="main-nav">
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="main-nav">
                 
                 <a href=""></a>
                 
@@ -606,6 +609,22 @@
                 <a href=""></a>
                 
             </nav>
+            <script>
+            (function(){
+                var t=document.querySelector('.nav-toggle'),n=document.getElementById('main-nav');
+                if(!t||!n)return;
+                t.addEventListener('click',function(){
+                    var o=n.classList.toggle('is-open');
+                    t.setAttribute('aria-expanded',o);
+                });
+                document.addEventListener('click',function(e){
+                    if(!t.contains(e.target)&&!n.contains(e.target)){
+                        n.classList.remove('is-open');
+                        t.setAttribute('aria-expanded','false');
+                    }
+                });
+            })();
+            </script>
         </div>
     </header>
 
