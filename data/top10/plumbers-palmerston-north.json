@@ -1,0 +1,118 @@
+{
+  "trade": "plumbers",
+  "city": "palmerston-north",
+  "updated": "2026-04-28",
+  "regional_cost_note": "Plumbers in Palmerston North typically charge $90\u2013$130/hr plus GST. Call-out fees add $60\u2013$100. Emergency after-hours rates are $150\u2013$220/hr.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Foleys Palmerston North",
+      "rating": 4.9,
+      "review_count": 87,
+      "suburb": "Milson",
+      "phone": "06 356 4666",
+      "website": "https://www.foleys.co.nz",
+      "known_for": "Full-service plumbing, gasfitting and drainlaying with 24/7 emergency callout \u2014 part of a 12-location national network.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Fast Flow Plumbing",
+      "rating": 5.0,
+      "review_count": 22,
+      "suburb": "Palmerston North Central",
+      "phone": "",
+      "website": "https://fastflow.co.nz",
+      "known_for": "Prompt residential plumbing and gas fitting at competitive rates, with a track record of completing urgent jobs on weekends.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Uneeda Plumber",
+      "rating": 4.9,
+      "review_count": 76,
+      "suburb": "Feilding",
+      "phone": "06 323 3607",
+      "website": "https://www.uneedaplumber.co.nz",
+      "known_for": "Master Plumbers established in 2004, covering residential and commercial plumbing and gasfitting across the Manawat\u016b region.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Refined Plumbing and Gasfitting Services",
+      "rating": 4.9,
+      "review_count": 19,
+      "suburb": "Palmerston North Central",
+      "phone": "",
+      "website": "https://www.refinedplumbing.co.nz",
+      "known_for": "Owner-operated by Mike, highly praised for honesty, transparency and quality workmanship in plumbing, spouting and gasfitting.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Semtex Plumbing, Drainage & Gas",
+      "rating": 4.8,
+      "review_count": 48,
+      "suburb": "Takaro",
+      "phone": "022 194 5892",
+      "website": "https://semtex.co.nz",
+      "known_for": "Established in 1995, specialising in plumbing, gasfitting, pipe relining and 24/7 emergency service for residential, commercial and industrial clients.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Preferred Plumbing Specialists",
+      "rating": 4.8,
+      "review_count": 24,
+      "suburb": "Milson",
+      "phone": "06 355 0556",
+      "website": "https://www.preferredplumbing.co.nz",
+      "known_for": "Co-owned by two licensed plumbers with 15+ years experience in residential and commercial plumbing, gas fitting and drain laying.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "McDonald Plumbing & Gas",
+      "rating": 4.8,
+      "review_count": 26,
+      "suburb": "Palmerston North Central",
+      "phone": "027 964 2206",
+      "website": "https://mcdonaldplumbing.co.nz",
+      "known_for": "Locally owned small business known for fast same-day service covering plumbing, gasfitting and drainlaying across Manawatu.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Tap Plumbing Solutions",
+      "rating": 4.7,
+      "review_count": 16,
+      "suburb": "Palmerston North Central",
+      "phone": "021 702 336",
+      "website": "https://tapplumbing.nz",
+      "known_for": "40+ years combined experience delivering plumbing, gas and heating services across residential, commercial and industrial properties.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Brokenshire Plumbing & Electrical",
+      "rating": 4.6,
+      "review_count": 11,
+      "suburb": "Takaro",
+      "phone": "06 353 6082",
+      "website": "https://brokenshireplumbing.co.nz",
+      "known_for": "Established in 1993 with a team of 11, specialising in residential plumbing, drainlaying and combined electrical work.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Quality Plumbing Solutions",
+      "rating": 4.6,
+      "review_count": 13,
+      "suburb": "Kelvin Grove",
+      "phone": "027 711 9680",
+      "website": "https://www.qualityplumbingsolutions.co.nz",
+      "known_for": "Team with 120+ years combined experience providing plumbing, drain laying and gasfitting throughout Palmerston North and the Manawatu region.",
+      "source": "Google Maps"
+    }
+  ]
+}

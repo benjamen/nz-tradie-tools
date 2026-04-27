@@ -1,0 +1,118 @@
+{
+  "trade": "plumbers",
+  "city": "napier",
+  "updated": "2026-04-28",
+  "regional_cost_note": "Plumbers in Napier and wider Hawke\u2019s Bay typically charge $90\u2013$120/hr plus GST. Call-out fees add $60\u2013$90. Emergency and after-hours callouts run $150\u2013$220/hr.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Alchemy Plumbing & Gas",
+      "rating": 5.0,
+      "review_count": 38,
+      "suburb": "Napier South",
+      "phone": "027 334 5558",
+      "website": "https://www.alchemyplumbing.nz",
+      "known_for": "Hawke\u2019s Bay\u2019s highest-rated plumbing company \u2014 family-run, specialising in plumbing, gasfitting, drainage, hot water and solar installations.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Laser Plumbing & Electrical Napier",
+      "rating": 4.9,
+      "review_count": 42,
+      "suburb": "Onekawa",
+      "phone": "06 843 2474",
+      "website": "https://napier.laserplumbingandelectrical.co.nz",
+      "known_for": "National-franchise plumbing and electrical specialists offering 24/7 emergency response to domestic, commercial and industrial clients.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Cape Plumbing",
+      "rating": 4.9,
+      "review_count": 56,
+      "suburb": "Te Awanga",
+      "phone": "",
+      "website": "https://capeplumbing.co.nz",
+      "known_for": "Master Plumbers with 20+ years in Hawke\u2019s Bay, specialising in plumbing, gasfitting, drainlaying and central heating installations.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "The Napier Plumber",
+      "rating": 4.8,
+      "review_count": 22,
+      "suburb": "Napier",
+      "phone": "",
+      "website": "https://thenapierplumber.co.nz",
+      "known_for": "Owner-operator Mike with 25 years as a licensed plumber and gas fitter delivering reliable, competitively priced services across Napier.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Your Plumber HB",
+      "rating": 4.8,
+      "review_count": 18,
+      "suburb": "Napier",
+      "phone": "",
+      "website": "https://yourplumberhb.com",
+      "known_for": "Family-run business with 40+ years experience, known for old-fashioned punctuality, reliability and value-for-money across all of Hawke\u2019s Bay.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Bartholomew Plumbing",
+      "rating": 4.8,
+      "review_count": 10,
+      "suburb": "Onekawa",
+      "phone": "06 843 6150",
+      "website": "https://bartholomewplumbing.co.nz",
+      "known_for": "Trusted Napier institution since 1963, covering residential, commercial and industrial plumbing, gasfitting and drainlaying.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "H & O Plumbing",
+      "rating": 4.7,
+      "review_count": 18,
+      "suburb": "Onekawa",
+      "phone": "",
+      "website": "https://hoplumbing.com",
+      "known_for": "Established in 1994, staffed by Master Plumbers with 150 years combined experience in plumbing, drainage, gasfitting and heating.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Bay Wide Plumbing",
+      "rating": 4.7,
+      "review_count": 15,
+      "suburb": "Napier",
+      "phone": "027 733 7717",
+      "website": "https://baywideplumbing.co.nz",
+      "known_for": "Master Plumbers and Gas Fitters with 10+ years in Hawke\u2019s Bay, providing fast reliable plumbing with a dedicated after-hours emergency service.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Hawke\u2019s Bay Plumbing & Gas",
+      "rating": 4.7,
+      "review_count": 11,
+      "suburb": "Napier",
+      "phone": "",
+      "website": "https://hbpg.nz",
+      "known_for": "Local plumbing and gas fitting specialists covering residential and commercial work across the Napier and Hawke\u2019s Bay region.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Plumbers HB",
+      "rating": 4.6,
+      "review_count": 14,
+      "suburb": "Hastings",
+      "phone": "",
+      "website": "https://plumbershb.co.nz",
+      "known_for": "Hawke\u2019s Bay-wide plumber covering Napier, Hastings and Central Hawke\u2019s Bay with transparent published rates and no surprise callout fees.",
+      "source": "Google Maps"
+    }
+  ]
+}

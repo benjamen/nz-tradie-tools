@@ -5,8 +5,22 @@
     <link>https://tradietools.nz/</link>
     <description>Free calculators, templates and guides for New Zealand tradies.</description>
     <language>en-nz</language>
-    <lastBuildDate>Mon, 27 Apr 2026 21:39:20 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Apr 2026 10:36:46 +0000</lastBuildDate>
     <atom:link href="https://tradietools.nz/rss.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>What the New NZ-India Trade Agreement Means for Your Construction Business</title>
+    <link>https://tradietools.nz/articles/nz-india-fta-impact-tradies.html</link>
+    <guid isPermaLink="true">https://tradietools.nz/articles/nz-india-fta-impact-tradies.html</guid>
+    <description>How the historic free trade agreement between New Zealand and India might affect material costs and opportunities for NZ tradies.</description>
+    <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>TEST ARTICLE: NZ Tradie Economic Outlook (April 28, 2026)</title>
+    <link>https://tradietools.nz/articles/test-article-2026-04-28.html</link>
+    <guid isPermaLink="true">https://tradietools.nz/articles/test-article-2026-04-28.html</guid>
+    <description>A test article for the daily content workflow.</description>
+    <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+  </item>
   <item>
     <title>Opportunities in NZ Water Infrastructure: What Tradies Need to Know</title>
     <link>https://tradietools.nz/articles/opportunities-in-nz-water-infrastructure.html</link>
@@ -132,20 +146,6 @@
     <guid isPermaLink="true">https://tradietools.nz/articles/growing-tradie-business-nz.html</guid>
     <description>Practical advice for NZ tradies ready to grow — when to hire, how to systemise, what software you need, and how to avoid the growth traps that kill small trade businesses.</description>
     <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
-  </item>
-  <item>
-    <title>How to Price a Job: The Complete NZ Tradie Guide</title>
-    <link>https://tradietools.nz/articles/how-to-price-a-job-nz-tradie-guide.html</link>
-    <guid isPermaLink="true">https://tradietools.nz/articles/how-to-price-a-job-nz-tradie-guide.html</guid>
-    <description>Stop guessing and start making real profit. A step-by-step pricing guide for NZ tradies covering labour, materials, overhead, markup, and GST.</description>
-    <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
-  </item>
-  <item>
-    <title>Xero vs MYOB for NZ Tradies: Which is Better in 2026?</title>
-    <link>https://tradietools.nz/articles/xero-vs-myob-nz-tradies.html</link>
-    <guid isPermaLink="true">https://tradietools.nz/articles/xero-vs-myob-nz-tradies.html</guid>
-    <description>An honest comparison of Xero and MYOB for New Zealand self-employed tradies — pricing, features, GST filing, bank feeds, and integrations with Fergus and Tradify.</description>
-    <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
   </item>
   </channel>
 </rss>
