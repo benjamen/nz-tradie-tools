@@ -49,12 +49,7 @@ def prefix_internal_links(html, base_path):
 
 
 def build_nav(config):
-    logging.info("Building navigation")
-    nav_items = config.get("nav", [])
-    nav_html = ""
-    for item in nav_items:
-        nav_html += f'<li><a href="{item["url"]}">{item["label"]}</a></li>'
-    return nav_html
+    return config.get("nav", [])
 
 
 def build_articles(env, config, nav, base_path):
