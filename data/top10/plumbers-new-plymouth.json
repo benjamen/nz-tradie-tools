@@ -1,0 +1,118 @@
+{
+  "trade": "plumbers",
+  "city": "new-plymouth",
+  "updated": "2026-04-29",
+  "regional_cost_note": "Plumbers in New Plymouth typically charge $90–$120/hr plus GST. Naki Plumbing charges a $120+GST call-out fee plus a minimum one-hour labour charge. Emergency and after-hours work adds $100–$200. Look for PGDB-registered certifying plumbers for compliance work on gas and new installations.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Verve Plumbing Services",
+      "rating": 4.9,
+      "review_count": 48,
+      "suburb": "Vogeltown",
+      "phone": "027 555 2566",
+      "website": "https://www.verveplumbing.co.nz",
+      "known_for": "Owner-operator Carlin Lepper with 10+ years residential and light commercial experience; praised for responsiveness and meticulous workmanship.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Hanover Plumbing & Gas",
+      "rating": 4.8,
+      "review_count": 67,
+      "suburb": "Westown",
+      "phone": "06 758 7747",
+      "website": "https://www.hanoverplumbing.co.nz",
+      "known_for": "Trusted Master Plumber serving Taranaki since 2015; 24/7 emergency service with CCTV drain cameras, hot water systems and gas appliance servicing.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Ariki Plumbing",
+      "rating": 4.8,
+      "review_count": 34,
+      "suburb": "Vogeltown",
+      "phone": "06 753 0023",
+      "website": "https://www.arikiplumbing.co.nz",
+      "known_for": "Family-owned plumbers, gasfitters and drainlayers; known for prompt communication, fair pricing and quality kitchen and bathroom work.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "How Good Plumbing",
+      "rating": 4.9,
+      "review_count": 41,
+      "suburb": "New Plymouth",
+      "phone": "",
+      "website": "https://www.howgoodplumbing.co.nz",
+      "known_for": "Small family-run team; lead plumber Isaac has 14+ years experience in shower and bath installs, gas conversions and blocked drain clearing.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Savvygas Taranaki",
+      "rating": 4.8,
+      "review_count": 45,
+      "suburb": "New Plymouth / Stratford",
+      "phone": "",
+      "website": "https://www.savvygas.co.nz",
+      "known_for": "Taranaki-wide specialists in plumbing, gasfitting, drainage and heating; retail showroom in Stratford for heating and hot water product selection.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Cortina Plumbing",
+      "rating": 4.7,
+      "review_count": 22,
+      "suburb": "New Plymouth",
+      "phone": "021 277 9565",
+      "website": "https://www.cortinaplumbing.co.nz",
+      "known_for": "Over 15 years serving New Plymouth; specialises in gas fitting, hot water system replacements, drainage and residential maintenance.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "Naki Plumbing and Gas",
+      "rating": 4.7,
+      "review_count": 29,
+      "suburb": "New Plymouth",
+      "phone": "",
+      "website": "https://nakiplumbing.co.nz",
+      "known_for": "Transparent published fee structure; local Taranaki specialists covering plumbing, gas fitting and drainlaying for residential clients.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Straight Flush Plumbing",
+      "rating": 4.7,
+      "review_count": 18,
+      "suburb": "New Plymouth",
+      "phone": "",
+      "website": "",
+      "known_for": "20 years' industry experience covering plumbing, gas fitting, drain laying and roofing; well-reviewed on Builderscrack for professional and friendly service.",
+      "source": "Builderscrack"
+    },
+    {
+      "rank": 9,
+      "name": "Laser Plumbing New Plymouth",
+      "rating": 4.2,
+      "review_count": 14,
+      "suburb": "Waiwhakaiho",
+      "phone": "06 758 5424",
+      "website": "https://www.lasergroup.co.nz/m/laser-plumbing-new-plymouth",
+      "known_for": "Part of the national Laser Plumbing franchise; 25+ years serving Taranaki after Gardiner Plumbing joined the Laser network in late 2024.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Chesters Plumbing",
+      "rating": 4.5,
+      "review_count": 11,
+      "suburb": "New Plymouth",
+      "phone": "",
+      "website": "",
+      "known_for": "Established local New Plymouth plumbers serving residential and commercial clients across Taranaki.",
+      "source": "Google Maps"
+    }
+  ]
+}

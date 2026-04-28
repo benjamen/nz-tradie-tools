@@ -5,8 +5,22 @@
     <link>https://tradietools.nz/</link>
     <description>Free calculators, templates and guides for New Zealand tradies.</description>
     <language>en-nz</language>
-    <lastBuildDate>Tue, 28 Apr 2026 11:44:37 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Apr 2026 10:35:11 +0000</lastBuildDate>
     <atom:link href="https://tradietools.nz/rss.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>TEST ARTICLE: NZ Tradie Workflow Check (April 29, 2026 - Morning)</title>
+    <link>https://tradietools.nz/articles/test-article-2026-04-29.html</link>
+    <guid isPermaLink="true">https://tradietools.nz/articles/test-article-2026-04-29.html</guid>
+    <description>A test article for the daily content workflow.</description>
+    <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Understanding the New NZ Granny Flat Rules: A Guide for Builders</title>
+    <link>https://tradietools.nz/articles/new-nz-granny-flat-rules-builders.html</link>
+    <guid isPermaLink="true">https://tradietools.nz/articles/new-nz-granny-flat-rules-builders.html</guid>
+    <description>Everything NZ builders need to know about the expanded granny flat building consent exemptions introduced in April 2026.</description>
+    <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
+  </item>
   <item>
     <title>NZ Minimum Wage Rises to $23.95 in April 2026: What It Means for Tradie Businesses</title>
     <link>https://tradietools.nz/articles/minimum-wage-increase-april-2026-tradie-costs.html</link>
@@ -19,6 +33,13 @@
     <link>https://tradietools.nz/articles/nz-india-fta-impact-tradies.html</link>
     <guid isPermaLink="true">https://tradietools.nz/articles/nz-india-fta-impact-tradies.html</guid>
     <description>How the historic free trade agreement between New Zealand and India might affect material costs and opportunities for NZ tradies.</description>
+    <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>TEST ARTICLE: NZ Tradie Afternoon Workflow Check (April 28, 2026)</title>
+    <link>https://tradietools.nz/articles/test-article-2026-04-28-2.html</link>
+    <guid isPermaLink="true">https://tradietools.nz/articles/test-article-2026-04-28-2.html</guid>
+    <description>A secondary test article for the daily content workflow.</description>
     <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
   </item>
   <item>
@@ -125,27 +146,6 @@
     <guid isPermaLink="true">https://tradietools.nz/articles/fastcrew-vs-tradify-vs-fergus-nz.html</guid>
     <description>An honest comparison of Fastcrew, Tradify, and Fergus for NZ tradies — pricing, features, ease of use, and NZ compliance support.</description>
     <pubDate>Sun, 19 Apr 2026 00:00:00 +0000</pubDate>
-  </item>
-  <item>
-    <title>NZ Tradie Tax Guide 2025–26: What You Can Claim</title>
-    <link>https://tradietools.nz/articles/nz-tradie-tax-guide-what-you-can-claim.html</link>
-    <guid isPermaLink="true">https://tradietools.nz/articles/nz-tradie-tax-guide-what-you-can-claim.html</guid>
-    <description>A plain-English guide to tax deductions for New Zealand self-employed tradies — tools, vehicles, home office, ACC, and more. IRD-referenced.</description>
-    <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
-  </item>
-  <item>
-    <title>NZ Tradie Health &amp; Safety Guide 2026 — HSWA Obligations for Small Trade Businesses</title>
-    <link>https://tradietools.nz/articles/health-and-safety-guide-nz-tradies.html</link>
-    <guid isPermaLink="true">https://tradietools.nz/articles/health-and-safety-guide-nz-tradies.html</guid>
-    <description>A practical guide to Health &amp; Safety at Work Act 2015 obligations for NZ tradies — PCBU duties, SWMS, incident reporting, and what you actually need to have in place.</description>
-    <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
-  </item>
-  <item>
-    <title>How to Get Paid Faster as a NZ Tradie — 8 Practical Tips</title>
-    <link>https://tradietools.nz/articles/how-to-get-paid-faster-nz-tradie.html</link>
-    <guid isPermaLink="true">https://tradietools.nz/articles/how-to-get-paid-faster-nz-tradie.html</guid>
-    <description>Late payments kill tradie cash flow. Here's exactly how to get paid faster in 2026 — invoicing, payment terms, on-site payments, and legal options.</description>
-    <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
   </item>
   </channel>
 </rss>
