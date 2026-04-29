@@ -5,8 +5,22 @@
     <link>https://tradietools.nz/</link>
     <description>Free calculators, templates and guides for New Zealand tradies.</description>
     <language>en-nz</language>
-    <lastBuildDate>Wed, 29 Apr 2026 10:35:11 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Apr 2026 10:34:57 +0000</lastBuildDate>
     <atom:link href="https://tradietools.nz/rss.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>The Fuel Price Shock: How to Protect Your NZ Tradie Business Margins</title>
+    <link>https://tradietools.nz/articles/fuel-price-shock-nz-tradies.html</link>
+    <guid isPermaLink="true">https://tradietools.nz/articles/fuel-price-shock-nz-tradies.html</guid>
+    <description>Diesel prices have surged in 2026, hitting excavation and transport costs. Learn how to adjust your quotes and protect your margins.</description>
+    <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>TEST ARTICLE: NZ Tradie Workflow Check (April 30, 2026)</title>
+    <link>https://tradietools.nz/articles/test-article-2026-04-30.html</link>
+    <guid isPermaLink="true">https://tradietools.nz/articles/test-article-2026-04-30.html</guid>
+    <description>A test article for the daily content workflow.</description>
+    <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
+  </item>
   <item>
     <title>TEST ARTICLE: NZ Tradie Workflow Check (April 29, 2026 - Morning)</title>
     <link>https://tradietools.nz/articles/test-article-2026-04-29.html</link>
@@ -19,6 +33,13 @@
     <link>https://tradietools.nz/articles/new-nz-granny-flat-rules-builders.html</link>
     <guid isPermaLink="true">https://tradietools.nz/articles/new-nz-granny-flat-rules-builders.html</guid>
     <description>Everything NZ builders need to know about the expanded granny flat building consent exemptions introduced in April 2026.</description>
+    <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>TEST ARTICLE: NZ Tradie Workflow Check (April 29, 2026 - Afternoon)</title>
+    <link>https://tradietools.nz/articles/test-article-2026-04-29-2.html</link>
+    <guid isPermaLink="true">https://tradietools.nz/articles/test-article-2026-04-29-2.html</guid>
+    <description>A secondary test article for the daily content workflow.</description>
     <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
   </item>
   <item>
@@ -125,27 +146,6 @@
     <guid isPermaLink="true">https://tradietools.nz/articles/why-we-built-fastcrew.html</guid>
     <description>The honest story behind Fastcrew — why we got fed up with expensive, bloated tradie software and decided to build something better for Kiwi tradies.</description>
     <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-  </item>
-  <item>
-    <title>Tradie App Fatigue: Why NZ Tradies Are Paying Too Much for Too Many Tools</title>
-    <link>https://tradietools.nz/articles/tradie-app-fatigue-nz.html</link>
-    <guid isPermaLink="true">https://tradietools.nz/articles/tradie-app-fatigue-nz.html</guid>
-    <description>Most NZ tradies juggle 4–5 different software subscriptions. We break down the real cost and what to do about it.</description>
-    <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
-  </item>
-  <item>
-    <title>Best Job Management Software for NZ Tradies 2026</title>
-    <link>https://tradietools.nz/articles/best-job-management-software-nz-tradies-2026.html</link>
-    <guid isPermaLink="true">https://tradietools.nz/articles/best-job-management-software-nz-tradies-2026.html</guid>
-    <description>Honest comparison of Fergus, Tradify, Simpro, ServiceM8 and more — tested by NZ tradies. Prices, features, and which one suits your trade.</description>
-    <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
-  </item>
-  <item>
-    <title>Fastcrew vs Tradify vs Fergus: Which NZ Tradie App Is Right for Your Business?</title>
-    <link>https://tradietools.nz/articles/fastcrew-vs-tradify-vs-fergus-nz.html</link>
-    <guid isPermaLink="true">https://tradietools.nz/articles/fastcrew-vs-tradify-vs-fergus-nz.html</guid>
-    <description>An honest comparison of Fastcrew, Tradify, and Fergus for NZ tradies — pricing, features, ease of use, and NZ compliance support.</description>
-    <pubDate>Sun, 19 Apr 2026 00:00:00 +0000</pubDate>
   </item>
   </channel>
 </rss>

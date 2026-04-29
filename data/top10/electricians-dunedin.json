@@ -1,0 +1,107 @@
+{
+  "trade": "electricians",
+  "city": "dunedin",
+  "updated": "2026-04-30",
+  "regional_cost_note": "Electricians in Dunedin typically charge $75–$90/hr plus GST, slightly below Auckland and Wellington rates. Standard callout fees run $80–$120. Emergency and after-hours callouts add $100–$180 on top of the hourly rate.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Sam I Am Electrical",
+      "rating": 5.0,
+      "review_count": 200,
+      "suburb": "Central Dunedin",
+      "phone": "027 641 5352",
+      "website": "https://samiamelectrical.co.nz",
+      "known_for": "Owner-operated by Sam Katuszka with 18+ years experience; known for personal service, transparent communication, and tidy workmanship on residential and small commercial jobs.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Honest Electrical Limited",
+      "rating": 5.0,
+      "review_count": 48,
+      "suburb": "South Dunedin",
+      "phone": "027 277 8316",
+      "website": "https://honestelectrical.co.nz",
+      "known_for": "Full-service domestic electrician covering wiring, switchboard upgrades, EV charger installation, data cabling, ventilation, and safety inspections with 15+ years in the trade.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Leading Electrical Dunedin",
+      "rating": 5.0,
+      "review_count": 32,
+      "suburb": "Central Dunedin",
+      "phone": "",
+      "website": "",
+      "known_for": "Specialists in heritage home electrical upgrades and renovations; deep experience handling the practical challenges of century-old Dunedin villas where other electricians struggle to quote.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Whitburn Electrical",
+      "rating": 5.0,
+      "review_count": 28,
+      "suburb": "Dunedin",
+      "phone": "027 302 3864",
+      "website": "https://www.whitburnelectrical.co.nz",
+      "known_for": "24/7 availability for residential and commercial clients, specialising in insurance rewiring, heat pump installations, and electrical maintenance for rental properties.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Active Electro Dunedin Ltd",
+      "rating": 4.9,
+      "review_count": 55,
+      "suburb": "St Kilda",
+      "phone": "03 456 4087",
+      "website": "",
+      "known_for": "Covering the wider Dunedin region with 24/7 emergency availability for residential and commercial electrical repairs and new installations.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Tansley Electrical",
+      "rating": 4.8,
+      "review_count": 42,
+      "suburb": "South Dunedin",
+      "phone": "03 455 1105",
+      "website": "https://www.tansleyelectrical.co.nz",
+      "known_for": "Award-winning firm with 60+ years of Dunedin history; handles large commercial, industrial, and heritage projects across Dunedin, Queenstown, and Invercargill.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "McArthur & Symons Electrical",
+      "rating": 4.7,
+      "review_count": 38,
+      "suburb": "Northeast Valley",
+      "phone": "",
+      "website": "https://www.mse.nz",
+      "known_for": "Family-owned business established in 1977; expert in residential and commercial work including heat pumps, data cabling, appliance testing, and 24/7 emergency callouts.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "A1 Electrical Contractors",
+      "rating": 4.7,
+      "review_count": 35,
+      "suburb": "Bradford",
+      "phone": "03 453 0415",
+      "website": "https://www.a1electrical.co.nz",
+      "known_for": "Serving the wider Dunedin region since 2006 with professional domestic and commercial electrical services; praised for fast, professional service and sound advice.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Dunedin Electricians Ltd",
+      "rating": 4.6,
+      "review_count": 22,
+      "suburb": "Dunedin",
+      "phone": "022 313 0968",
+      "website": "https://dunedinelectricians.nz",
+      "known_for": "Swift residential and commercial electrical solutions across Otago, handling a broad range of installation, repair, and fault-finding work.",
+      "source": "Google Maps"
+    }
+  ]
+}

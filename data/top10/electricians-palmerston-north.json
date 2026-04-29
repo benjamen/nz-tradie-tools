@@ -1,0 +1,118 @@
+{
+  "trade": "electricians",
+  "city": "palmerston-north",
+  "updated": "2026-04-30",
+  "regional_cost_note": "Electricians in Palmerston North typically charge $85–$110/hr plus GST, in line with other regional NZ centres. Standard callout fees are $80–$120. Emergency after-hours work typically adds $120–$200 to the hourly rate.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "John Leader Electrical",
+      "rating": 4.9,
+      "review_count": 85,
+      "suburb": "Palmerston North Central",
+      "phone": "027 442 1777",
+      "website": "https://www.johnleader.nz",
+      "known_for": "A cornerstone of the Palmerston North electrical industry for 40+ years; known for Healthy Homes compliance, switchboard upgrades, heat pump installation, and reliable residential service.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "McNae Group",
+      "rating": 4.8,
+      "review_count": 62,
+      "suburb": "Hokowhitu",
+      "phone": "06 357 0405",
+      "website": "https://www.mcnae.co.nz",
+      "known_for": "Full-service electrical contractor covering residential, commercial, and rural sectors; also offers heating, solar, and EV charging solutions under one roof.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Linc Electrical Limited",
+      "rating": 4.8,
+      "review_count": 44,
+      "suburb": "Cloverlea",
+      "phone": "027 363 6190",
+      "website": "https://www.lincelectrical.co.nz",
+      "known_for": "Residential and commercial electrician with 24/7 emergency availability; covers new builds, renovations, fault finding, and switchboard upgrades across Palmerston North.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "SES Electrical Services",
+      "rating": 4.7,
+      "review_count": 38,
+      "suburb": "Milson",
+      "phone": "06 355 5130",
+      "website": "https://seselectrical.nz",
+      "known_for": "Specialists in security cameras, heat pump installation, solar power, and home automation alongside standard residential and commercial electrical work.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Hedley Electrical",
+      "rating": 4.7,
+      "review_count": 50,
+      "suburb": "Takaro",
+      "phone": "027 447 4874",
+      "website": "https://www.hedleyelectrical.co.nz",
+      "known_for": "Manawatu institution serving the region for 52+ years with a team of 7 electricians covering new builds, renovations, and service work of all sizes.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Hayds Electrical",
+      "rating": 4.7,
+      "review_count": 28,
+      "suburb": "Palmerston North",
+      "phone": "",
+      "website": "https://www.haydselectrical.com",
+      "known_for": "Locally owned and operated since 2017, focused on quality domestic electrical services across the wider Manawatu with a strong reputation for reliability.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "Dean Smith Pilling Electrical",
+      "rating": 4.6,
+      "review_count": 24,
+      "suburb": "Palmerston North",
+      "phone": "",
+      "website": "https://www.deansmithpillingelectrical.co.nz",
+      "known_for": "Backed by 30+ years of experience delivering professional residential electrical services throughout the Manawatu; strong reputation for quality workmanship.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "TKR Electrical",
+      "rating": 4.6,
+      "review_count": 30,
+      "suburb": "Palmerston North",
+      "phone": "",
+      "website": "https://www.tkrelectrical.co.nz",
+      "known_for": "50 years of industry experience covering Palmerston North, Levin, and the wider Manawatū for residential and commercial electrical installations and repairs.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Electro",
+      "rating": 4.5,
+      "review_count": 20,
+      "suburb": "Palmerston North",
+      "phone": "",
+      "website": "https://www.electro.co.nz",
+      "known_for": "Commercial and industrial electrical specialists serving the Manawatu with expertise in repairs, installation, and maintenance of large-scale electrical systems.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Nexus Energy",
+      "rating": 4.5,
+      "review_count": 18,
+      "suburb": "Palmerston North",
+      "phone": "",
+      "website": "https://nexusenergyltd.co.nz",
+      "known_for": "Powerco-approved contractor offering expert electrical services including solar installations, EV chargers, and grid connections across the Manawatu region.",
+      "source": "Google Maps"
+    }
+  ]
+}
