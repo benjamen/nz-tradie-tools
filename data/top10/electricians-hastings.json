@@ -1,0 +1,118 @@
+{
+  "trade": "electricians",
+  "city": "hastings",
+  "updated": "2026-05-01",
+  "regional_cost_note": "Electricians in Hastings typically charge $90\u2013$115/hr + GST. Most require a minimum 1-hour callout. After-hours and emergency callouts add $60\u2013$100. Solar installations typically start from $8,000\u2013$12,000 for a residential system.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Mill Electrical",
+      "rating": 5.0,
+      "review_count": 0,
+      "suburb": "Havelock North",
+      "phone": "0800 877 799",
+      "website": "https://www.millelectrical.co.nz/",
+      "known_for": "Havelock North family business with 40 years experience specialising in home automation, LED upgrades, hot water systems, underfloor heating and security systems.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Laser Electrical Hastings",
+      "rating": 0.0,
+      "review_count": 0,
+      "suburb": "Mayfair, Hastings",
+      "phone": "06 878 9332",
+      "website": "https://www.lasergroup.co.nz/m/laser-electrical-hastings",
+      "known_for": "Established in 1983, offering commercial maintenance, industrial automation, domestic renovations and 24/7 emergency electrical services across Hawke\u2019s Bay.",
+      "source": "Business Website"
+    },
+    {
+      "rank": 3,
+      "name": "Harkness Electrical",
+      "rating": 0.0,
+      "review_count": 0,
+      "suburb": "Hastings",
+      "phone": "06 873 3444",
+      "website": "https://www.harknesselectrical.co.nz/",
+      "known_for": "30-year Hastings firm providing domestic, commercial and industrial electrical services with energy efficiency solutions and a 2-year labour warranty.",
+      "source": "Business Website"
+    },
+    {
+      "rank": 4,
+      "name": "Best-Forsyth Electrical",
+      "rating": 0.0,
+      "review_count": 0,
+      "suburb": "Hastings",
+      "phone": "06 876 9482",
+      "website": "https://www.bestforsythelectrical.co.nz/",
+      "known_for": "Master Electricians specialist in switchboard design, manufacturing and process automation for commercial and industrial clients, serving Hawke\u2019s Bay for 35+ years.",
+      "source": "Business Website"
+    },
+    {
+      "rank": 5,
+      "name": "Zeus Solar and Electrical",
+      "rating": 5.0,
+      "review_count": 0,
+      "suburb": "Havelock North",
+      "phone": "020 4117 7118",
+      "website": "https://zeussolar.co.nz/",
+      "known_for": "Residential and commercial electrician based in Havelock North specialising in solar installations, new builds, renovations and electrical safety inspections.",
+      "source": "Business Website"
+    },
+    {
+      "rank": 6,
+      "name": "Hillmac Electrical",
+      "rating": 0.0,
+      "review_count": 0,
+      "suburb": "Havelock North",
+      "phone": "027 445 2008",
+      "website": "https://hillmacelectrical.co.nz/",
+      "known_for": "Well-regarded Havelock North electricians known for reliable general residential work and heat pump installation.",
+      "source": "WhoDoYou"
+    },
+    {
+      "rank": 7,
+      "name": "Broad Electrical Services",
+      "rating": 0.0,
+      "review_count": 0,
+      "suburb": "Omahu, Hastings",
+      "phone": "027 778 8060",
+      "website": "https://broadelectricalservices.co.nz/",
+      "known_for": "Hastings-based contractor covering residential, commercial, industrial and agricultural irrigation electrical across Hawke\u2019s Bay, with experience in council and large-scale projects.",
+      "source": "Business Website"
+    },
+    {
+      "rank": 8,
+      "name": "Bruce Moroney Electrical",
+      "rating": 0.0,
+      "review_count": 0,
+      "suburb": "Hastings",
+      "phone": "06 871 0808",
+      "website": "https://www.brucemoroneyelectrical.co.nz/electricians-hastings/",
+      "known_for": "Domestic, commercial and industrial electricians with 20+ years experience and 24/7 emergency availability across Napier and Hastings.",
+      "source": "Business Website"
+    },
+    {
+      "rank": 9,
+      "name": "Just Electrics",
+      "rating": 0.0,
+      "review_count": 0,
+      "suburb": "Napier (serves Hastings)",
+      "phone": "06 842 2155",
+      "website": "https://www.justelectrics.co.nz/",
+      "known_for": "Napier-based family firm serving Hastings and Havelock North with 100+ years combined experience across heating, cooling, solar and EV charging stations.",
+      "source": "Business Website"
+    },
+    {
+      "rank": 10,
+      "name": "Reset Electrical",
+      "rating": 0.0,
+      "review_count": 0,
+      "suburb": "Napier (serves Hastings)",
+      "phone": "0800 473 738",
+      "website": "https://resetelectrical.co.nz/",
+      "known_for": "Full-service Napier and Hastings electrician with 24/7 emergency cover, specialising in new builds, commercial fitouts and heat pump installation.",
+      "source": "Business Website"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "trade": "electricians",
+  "city": "napier",
+  "updated": "2026-05-01",
+  "regional_cost_note": "Electricians in Napier typically charge $90\u2013$120/hr + GST. Most require a minimum 1-hour callout. After-hours and emergency callouts add $60\u2013$100. Switchboard upgrades start around $1,200\u2013$2,500 + GST depending on size.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "PERL Electrical Napier",
+      "rating": 4.9,
+      "review_count": 47,
+      "suburb": "Napier",
+      "phone": "06 650 0113",
+      "website": "https://perlelectrical.co.nz/napier/",
+      "known_for": "Comprehensive residential, commercial and industrial electrical services with 15+ years Hawke\u2019s Bay experience, including solar, EV charging, CCTV and switchboard upgrades.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Big Spark Electrical + Heat Pumps",
+      "rating": 5.0,
+      "review_count": 0,
+      "suburb": "Havelock North",
+      "phone": "021 258 3048",
+      "website": "https://bigsparkelectrical.co.nz/",
+      "known_for": "Heat pump installation and servicing alongside general residential electrical work, operated by a registered electrician with 15+ years experience across Napier and Hawke\u2019s Bay.",
+      "source": "Business Website"
+    },
+    {
+      "rank": 3,
+      "name": "Just Electrics",
+      "rating": 0.0,
+      "review_count": 0,
+      "suburb": "Onekawa, Napier",
+      "phone": "06 842 2155",
+      "website": "https://www.justelectrics.co.nz/",
+      "known_for": "Family-owned firm with a 10-person team and 100+ years combined experience, specialising in heating, cooling, solar, EV charging and full residential rewires.",
+      "source": "Business Website"
+    },
+    {
+      "rank": 4,
+      "name": "Napier Electric Company",
+      "rating": 0.0,
+      "review_count": 0,
+      "suburb": "Onekawa, Napier",
+      "phone": "0800 769 370",
+      "website": "https://napierelectric.co.nz/",
+      "known_for": "Domestic and commercial electrical, data, audio and security installation based in Onekawa, with consistently strong customer reviews for communication and attention to detail.",
+      "source": "Business Website"
+    },
+    {
+      "rank": 5,
+      "name": "Reset Electrical",
+      "rating": 0.0,
+      "review_count": 0,
+      "suburb": "Napier",
+      "phone": "0800 473 738",
+      "website": "https://resetelectrical.co.nz/",
+      "known_for": "Full-service residential and commercial electrician offering new builds, LED upgrades, heat pump installation and 24/7 emergency callouts across Napier and Hastings.",
+      "source": "Business Website"
+    },
+    {
+      "rank": 6,
+      "name": "EMF Electrical Ltd",
+      "rating": 0.0,
+      "review_count": 0,
+      "suburb": "Onekawa, Napier",
+      "phone": "06 843 9013",
+      "website": "https://www.emfelectrical.co.nz/",
+      "known_for": "Napier\u2019s trusted local electricians for domestic, commercial and industrial work including fault finding, rewiring, fire alarms and data cabling.",
+      "source": "Business Website"
+    },
+    {
+      "rank": 7,
+      "name": "Booysen Electrical",
+      "rating": 0.0,
+      "review_count": 0,
+      "suburb": "Napier",
+      "phone": "022 129 3549",
+      "website": "https://electricalservices.co.nz/",
+      "known_for": "Licensed electricians with 18 years combined experience specialising in new builds, home automation, CCTV, burglar alarms and access control across Napier and Hastings.",
+      "source": "Business Website"
+    },
+    {
+      "rank": 8,
+      "name": "Bruce Moroney Electrical",
+      "rating": 0.0,
+      "review_count": 0,
+      "suburb": "Onekawa, Napier",
+      "phone": "06 843 8230",
+      "website": "https://www.brucemoroneyelectrical.co.nz/",
+      "known_for": "Domestic, commercial and industrial electricians with 20+ years experience offering 24-hour emergency service, switchboard upgrades and caravan EWOFs across Napier and Hastings.",
+      "source": "Business Website"
+    }
+  ]
+}
