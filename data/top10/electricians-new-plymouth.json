@@ -1,0 +1,118 @@
+{
+  "trade": "electricians",
+  "city": "new-plymouth",
+  "updated": "2026-05-08",
+  "regional_cost_note": "Electricians in New Plymouth typically charge $75–$105/hr + GST for a registered/qualified electrician. Emergency callouts and after-hours work attract surcharges. Taranaki regional rates sit below Auckland/Wellington ($95–$130/hr + GST).",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Electric Avenue Taranaki",
+      "rating": 5.0,
+      "review_count": 74,
+      "suburb": "Bell Block",
+      "phone": "06 920 3258",
+      "website": "https://www.eataranaki.co.nz",
+      "known_for": "Residential, rural, commercial, industrial, and agricultural/poultry electrical services with 24/7 industrial plant coverage and SKOV technician capability.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Central Taranaki Electrical",
+      "rating": 5.0,
+      "review_count": 33,
+      "suburb": "Stratford",
+      "phone": "027 755 4279",
+      "website": "",
+      "known_for": "General residential and commercial electrical work across Taranaki, consistently praised for quality and customer service.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Taranaki Electrical Services",
+      "rating": 4.7,
+      "review_count": 29,
+      "suburb": "New Plymouth Central",
+      "phone": "06 758 5052",
+      "website": "https://taranakielectrical.co.nz",
+      "known_for": "New Plymouth's longest-established electrical contractor covering residential, commercial, and industrial work including solar, home automation, and emergency lighting design.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "HEL Rimu Ltd",
+      "rating": 4.6,
+      "review_count": 27,
+      "suburb": "Bell Block",
+      "phone": "0800 200 210",
+      "website": "https://www.helrimu.co.nz",
+      "known_for": "Broad Taranaki-wide coverage across domestic, commercial, industrial, rural, and poultry sectors — formed by the merger of two established local firms in 2019.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Ideal Electrical New Plymouth",
+      "rating": 4.7,
+      "review_count": 10,
+      "suburb": "Waiwhakaiho",
+      "phone": "06 757 3988",
+      "website": "",
+      "known_for": "Electrical supply and service trade counter well regarded for stock availability and helpful staff for both trade and DIY customers.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Laser Electrical New Plymouth",
+      "rating": 4.1,
+      "review_count": 9,
+      "suburb": "Westown",
+      "phone": "06 759 0175",
+      "website": "http://laserelectrical.co.nz",
+      "known_for": "Part of the national Laser Group network, offering residential and commercial electrical work alongside plumbing and gas services.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "PERL Electrical",
+      "rating": 0,
+      "review_count": 0,
+      "suburb": "New Plymouth",
+      "phone": "027 642 0092",
+      "website": "https://perlelectrical.co.nz",
+      "known_for": "24/7 commercial fit-outs, EV charging, solar, and industrial instrumentation specialists. Transparent published rates at $75/hr + GST.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Phasetech Electrical",
+      "rating": 0,
+      "review_count": 0,
+      "suburb": "New Plymouth",
+      "phone": "027 309 7741",
+      "website": "https://phasetech.co.nz",
+      "known_for": "General domestic and commercial electrical work including heat pumps, security systems, and data cabling across New Plymouth.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "KES Electrical",
+      "rating": 0,
+      "review_count": 0,
+      "suburb": "Waiwhakaiho",
+      "phone": "0800 666 002",
+      "website": "https://www.keselectrical.co.nz",
+      "known_for": "Master Electricians member covering domestic, commercial, industrial, and solar installation across New Plymouth and Taranaki.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Kinetic Electrical",
+      "rating": 0,
+      "review_count": 0,
+      "suburb": "New Plymouth",
+      "phone": "",
+      "website": "https://kinetic-electric.co.nz",
+      "known_for": "Commercial and industrial electrical specialist serving New Plymouth and the wider Taranaki region.",
+      "source": "Google Maps"
+    }
+  ]
+}

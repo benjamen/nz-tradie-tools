@@ -1,0 +1,118 @@
+{
+  "trade": "painters",
+  "city": "dunedin",
+  "updated": "2026-05-08",
+  "regional_cost_note": "Painters in Dunedin typically charge $42–$65/hr for qualified tradespeople, with apprentices around $28–$38/hr. Day rates run $360–$600. Dunedin rates sit roughly 10–20% below Auckland and Wellington.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "1st Choice Decorators Ltd",
+      "rating": 5.0,
+      "review_count": 29,
+      "suburb": "Dunedin",
+      "phone": "027 291 2245",
+      "website": "https://1stchoicedecorators.co.nz",
+      "known_for": "Third-generation Dulux Accredited painters specialising in interior/exterior painting, spraying, gib stopping, and wallpaper hanging.",
+      "source": "Builderscrack"
+    },
+    {
+      "rank": 2,
+      "name": "Three60 Painting",
+      "rating": 4.5,
+      "review_count": 0,
+      "suburb": "Dunedin Central",
+      "phone": "03 488 0306",
+      "website": "https://three60painting.co.nz",
+      "known_for": "Dulux Accredited DCC Registered Contractor specialising in interior/exterior residential painting, gib stopping, and deck/concrete coatings.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Andreus Painters Limited",
+      "rating": 0,
+      "review_count": 0,
+      "suburb": "Dunedin CBD",
+      "phone": "027 221 8486",
+      "website": "https://www.andreus.co.nz",
+      "known_for": "Award-winning Registered Master Painters and Resene Eco.Decorator operating since 1997, specialising in eco-friendly residential and commercial interior/exterior painting.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Sims & Blue Limited",
+      "rating": 0,
+      "review_count": 0,
+      "suburb": "Dunedin",
+      "phone": "03 455 0488",
+      "website": "https://www.simsandblue.co.nz",
+      "known_for": "Family business operating since 1962 specialising in residential and commercial painting, wall coverings, specialty finishes, and colour consultancy.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Murray Turner Decorators Ltd",
+      "rating": 0,
+      "review_count": 0,
+      "suburb": "South Dunedin",
+      "phone": "027 555 9949",
+      "website": "https://www.murrayturner.co.nz",
+      "known_for": "Master Painters NZ member since 1999 specialising in exterior, interior, new build painting, wallpapering, and spray painting across Dunedin and Otago.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "PaintSmart",
+      "rating": 0,
+      "review_count": 0,
+      "suburb": "Dunedin CBD",
+      "phone": "021 112 8057",
+      "website": "https://www.wepaintsmart.co.nz",
+      "known_for": "Registered Master Painters and Dulux Accredited, specialising in residential interior, exterior, and roof painting with a 5-year workmanship warranty.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "Kelly Painting & Decorating Ltd",
+      "rating": 0,
+      "review_count": 0,
+      "suburb": "Dunedin",
+      "phone": "027 587 7992",
+      "website": "https://www.kellypainting.net.nz",
+      "known_for": "Family business painting for over 50 years, Master Painters NZ member, covering residential and commercial interior, exterior, and roof painting across Dunedin and Otago.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Decorating Services Ltd",
+      "rating": 0,
+      "review_count": 0,
+      "suburb": "South Dunedin",
+      "phone": "03 456 3530",
+      "website": "https://www.decoratingservicesltd.co.nz",
+      "known_for": "30+ years in operation with a team of 16, specialising in commercial and residential painting, wallpaper hanging, intumescent fireproof coatings, and acoustic wall coverings.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Wrens (James Wrens And Co. Limited)",
+      "rating": 4.0,
+      "review_count": 9,
+      "suburb": "Dunedin Central",
+      "phone": "0800 117 203",
+      "website": "https://www.wrens.co.nz",
+      "known_for": "Operating for 125+ years, Master Painters/Plasterers/Tilers member, specialising in painting, plastering, and tiling for residential and commercial clients.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Action Painters",
+      "rating": 0,
+      "review_count": 0,
+      "suburb": "Dunedin",
+      "phone": "",
+      "website": "https://www.actionpainters.co.nz",
+      "known_for": "Registered Master Painters, locally owned, covering all residential and commercial painting in Dunedin and Otago.",
+      "source": "Google Maps"
+    }
+  ]
+}
