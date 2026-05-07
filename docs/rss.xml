@@ -5,8 +5,15 @@
     <link>https://tradietools.nz/</link>
     <description>Free calculators, templates and guides for New Zealand tradies.</description>
     <language>en-nz</language>
-    <lastBuildDate>Fri, 01 May 2026 10:36:50 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2026 10:03:21 +0000</lastBuildDate>
     <atom:link href="https://tradietools.nz/rss.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>The 20% Investment Boost: How NZ Tradies Can Claim It Before EOFY</title>
+    <link>https://tradietools.nz/articles/nz-tradie-investment-boost-deduction-2026.html</link>
+    <guid isPermaLink="true">https://tradietools.nz/articles/nz-tradie-investment-boost-deduction-2026.html</guid>
+    <description>IRD's 20% Investment Boost lets NZ tradies deduct an extra 20% on new assets bought from May 2025. Here's exactly how to claim it before your 2026 return is due.</description>
+    <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+  </item>
   <item>
     <title>Understanding the New Proportional Liability Rules for NZ Tradies</title>
     <link>https://tradietools.nz/articles/proportional-liability-nz-tradies.html</link>
@@ -139,13 +146,6 @@
     <guid isPermaLink="true">https://tradietools.nz/articles/best-job-management-software-nz-tradies-2026.html</guid>
     <description>Honest comparison of Fergus, Tradify, Simpro, ServiceM8 and more — tested by NZ tradies. Prices, features, and which one suits your trade.</description>
     <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
-  </item>
-  <item>
-    <title>Fastcrew vs Tradify vs Fergus: Which NZ Tradie App Is Right for Your Business?</title>
-    <link>https://tradietools.nz/articles/fastcrew-vs-tradify-vs-fergus-nz.html</link>
-    <guid isPermaLink="true">https://tradietools.nz/articles/fastcrew-vs-tradify-vs-fergus-nz.html</guid>
-    <description>An honest comparison of Fastcrew, Tradify, and Fergus for NZ tradies — pricing, features, ease of use, and NZ compliance support.</description>
-    <pubDate>Sun, 19 Apr 2026 00:00:00 +0000</pubDate>
   </item>
   </channel>
 </rss>
