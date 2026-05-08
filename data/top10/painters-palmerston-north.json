@@ -1,0 +1,85 @@
+{
+  "trade": "painters",
+  "city": "palmerston-north",
+  "updated": "2026-05-09",
+  "regional_cost_note": "Painters in Palmerston North typically charge $40\u2013$62/hr for qualified work. Interior painting costs $22\u2013$45/m\u00b2, exterior $30\u2013$60/m\u00b2. Rates sit 10\u201315% below the national average due to lower business overheads, flat terrain reducing scaffolding costs, and good painter availability across the Manawat\u016b region.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Complete Painting & Decorating",
+      "rating": 4.8,
+      "review_count": 21,
+      "suburb": "Hokowhitu",
+      "phone": "027 843 8609",
+      "website": "https://completepainting.co.nz",
+      "known_for": "Interior, exterior and roof painting with a Master Painters 5-year workmanship guarantee; covers airless spraying and wallpaper hanging across greater Palmerston North.",
+      "source": "Builderscrack"
+    },
+    {
+      "rank": 2,
+      "name": "Just Us Painting & Decorating",
+      "rating": 5.0,
+      "review_count": 9,
+      "suburb": "Palmerston North Central",
+      "phone": "027 847 4354",
+      "website": "https://justus.co.nz",
+      "known_for": "40+ years industry experience; friendly residential painting, staining, water blasting, wallpapering and insurance repaints throughout the Manawat\u016b.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Martin Beveridge Ltd",
+      "rating": 4.9,
+      "review_count": 27,
+      "suburb": "Roslyn",
+      "phone": "06 374 6290",
+      "website": "https://martinbeveridge.co.nz",
+      "known_for": "Award-winning Master Painters since 1973; NZ Master Painters Gold & Silver Award winners specialising in residential, commercial and heritage painting plus wall coverings.",
+      "source": "NoCowboys"
+    },
+    {
+      "rank": 4,
+      "name": "Dassler Painting & Decorating Ltd",
+      "rating": 4.7,
+      "review_count": 17,
+      "suburb": "Milson",
+      "phone": "06 358 7603",
+      "website": "https://www.dasslerdecorating.co.nz",
+      "known_for": "Master Painters NZ member since 2010; 20+ years experience in quality residential and commercial painting for new builds and refurbishments.",
+      "source": "Yellow NZ"
+    },
+    {
+      "rank": 5,
+      "name": "Paly Pro Painting & Plastering",
+      "rating": 4.6,
+      "review_count": 13,
+      "suburb": "Palmerston North Central",
+      "phone": "027 4411 117",
+      "website": "https://palypro.com",
+      "known_for": "Painting and plastering specialists using premium Resene and Dulux products; also covers GIB repairs, water blasting and roof painting.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "SJP Painters & Decorators",
+      "rating": 4.6,
+      "review_count": 11,
+      "suburb": "Papaioea",
+      "phone": "021 406 394",
+      "website": "",
+      "known_for": "Residential and commercial painting across Palmerston North; praised for reliable communication and clean, tidy workmanship.",
+      "source": "Builderscrack"
+    },
+    {
+      "rank": 7,
+      "name": "Dynamic Decorating",
+      "rating": 4.5,
+      "review_count": 10,
+      "suburb": "Awapuni",
+      "phone": "027 252 9424",
+      "website": "",
+      "known_for": "Interior and exterior residential painting across the Manawat\u016b; competitive rates and strong local reputation among homeowners.",
+      "source": "Builderscrack"
+    }
+  ]
+}
