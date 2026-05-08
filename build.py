@@ -347,6 +347,28 @@ def build_job_pages(config, env, nav, base_path):
     return count
 
 
+def _extract_template_doc(html):
+    """Extract the #template-doc div content from a rendered template page."""
+    marker = '<div id="template-doc">'
+    start = html.find(marker)
+    if start == -1:
+        return html
+    pos = start + len(marker)
+    depth = 1
+    while depth > 0 and pos < len(html):
+        next_open  = html.find('<div', pos)
+        next_close = html.find('</div>', pos)
+        if next_close == -1:
+            break
+        if next_open != -1 and next_open < next_close:
+            depth += 1
+            pos = next_open + 4
+        else:
+            depth -= 1
+            pos = next_close + 6
+    return html[start:pos]
+
+
 def build_templates(config, env, nav, base_path):
     templates_file = DATA_DIR / "templates.json"
     if not templates_file.exists():
@@ -373,15 +395,8 @@ def build_templates(config, env, nav, base_path):
         (templates_dir / f"{tmpl['slug']}.html").write_text(html, encoding="utf-8")
         count += 1
 
-    # Build the downloadable ZIP bundle — PDFs generated via headless Chromium
-    css_main = (SITE_ROOT / "static" / "css" / "style.css").read_text(encoding="utf-8")
+    # Build the downloadable ZIP bundle — clean PDFs via headless Chromium
     css_tmpl = (SITE_ROOT / "static" / "css" / "templates.css").read_text(encoding="utf-8")
-    combined_css = f"<style>\n{css_main}\n{css_tmpl}\n</style>"
-
-    link_re = re.compile(r'<link[^>]+stylesheet[^>]+>', re.IGNORECASE)
-    ga_re = re.compile(r'<script[^>]*googletagmanager[^<]*</script>\s*<script>window\.dataLayer.*?</script>', re.DOTALL)
-    adsense_re = re.compile(r'<script[^>]*adsbygoogle[^<]*</script>', re.IGNORECASE)
-    cdn_re = re.compile(r'<script[^>]+html2pdf[^>]*></script>', re.IGNORECASE)
 
     chromium = shutil.which("chromium-browser") or shutil.which("chromium") or shutil.which("google-chrome")
 
@@ -393,19 +408,53 @@ def build_templates(config, env, nav, base_path):
                 html_path = templates_dir / f"{tmpl['slug']}.html"
                 if not html_path.exists():
                     continue
-                html = html_path.read_text(encoding="utf-8")
-                html = link_re.sub("", html)
-                html = ga_re.sub("", html)
-                html = adsense_re.sub("", html)
-                html = cdn_re.sub("", html)
-                html = html.replace("</head>", f"{combined_css}\n</head>", 1)
+
+                # Extract just the #template-doc div — no nav, no sidebar, no wrapper padding
+                raw = html_path.read_text(encoding="utf-8")
+                doc_content = _extract_template_doc(raw)
+
+                # Build a clean minimal page for PDF rendering
+                pdf_html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+{css_tmpl}
+body {{
+    margin: 0;
+    padding: 12mm 15mm;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    color: #000;
+    background: #fff;
+}}
+#template-doc {{
+    border: none !important;
+    border-top: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    min-height: unset !important;
+}}
+.logo-box-clickable, .doc-logo-box {{
+    background: #f0f0f0 !important;
+    border: 1px solid #ccc !important;
+    color: #999 !important;
+    font-size: 8pt !important;
+}}
+@page {{ margin: 12mm 15mm; size: A4; }}
+</style>
+</head>
+<body>
+{doc_content}
+</body>
+</html>"""
 
                 tmp_html = Path(tmp) / f"{tmpl['slug']}.html"
                 tmp_pdf  = Path(tmp) / f"{tmpl['slug']}.pdf"
-                tmp_html.write_text(html, encoding="utf-8")
+                tmp_html.write_text(pdf_html, encoding="utf-8")
 
                 if chromium:
-                    result = subprocess.run(
+                    subprocess.run(
                         [chromium, "--headless", "--no-sandbox", "--disable-gpu",
                          "--print-to-pdf-no-header",
                          f"--print-to-pdf={tmp_pdf}",
@@ -414,13 +463,11 @@ def build_templates(config, env, nav, base_path):
                     )
                     if tmp_pdf.exists():
                         zf.write(tmp_pdf, f"nz-tradie-templates/{tmpl['slug']}.pdf")
-                        logging.info(f"PDF: {tmpl['slug']}.pdf ({tmp_pdf.stat().st_size} bytes)")
                     else:
-                        # Fall back to self-contained HTML if PDF fails
-                        zf.writestr(f"nz-tradie-templates/{tmpl['slug']}.html", html)
+                        zf.writestr(f"nz-tradie-templates/{tmpl['slug']}.html", pdf_html)
                         logging.warning(f"PDF failed for {tmpl['slug']}, included HTML instead")
                 else:
-                    zf.writestr(f"nz-tradie-templates/{tmpl['slug']}.html", html)
+                    zf.writestr(f"nz-tradie-templates/{tmpl['slug']}.html", pdf_html)
 
     return count
 
