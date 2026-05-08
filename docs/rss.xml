@@ -5,7 +5,7 @@
     <link>https://tradietools.nz/</link>
     <description>Free calculators, templates and guides for New Zealand tradies.</description>
     <language>en-nz</language>
-    <lastBuildDate>Fri, 08 May 2026 21:48:57 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2026 22:11:09 +0000</lastBuildDate>
     <atom:link href="https://tradietools.nz/rss.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>8 Common Tax Mistakes NZ Tradies Make (and How to Fix Them)</title>
@@ -26,6 +26,13 @@
     <link>https://tradietools.nz/articles/public-liability-insurance-nz-tradies.html</link>
     <guid isPermaLink="true">https://tradietools.nz/articles/public-liability-insurance-nz-tradies.html</guid>
     <description>Most commercial clients and principal contractors require it. One uninsured claim could cost you everything. Here's what public liability insurance covers, what it costs, and how to make sure you have the right amount.</description>
+    <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Going Self-Employed as a NZ Tradie — Your Complete Start-Up Checklist</title>
+    <link>https://tradietools.nz/articles/going-self-employed-nz-tradie-guide.html</link>
+    <guid isPermaLink="true">https://tradietools.nz/articles/going-self-employed-nz-tradie-guide.html</guid>
+    <description>Everything you need to do when going self-employed as a tradie in New Zealand — IRD registration, GST, ACC, insurance, contracts, and tax obligations explained step by step.</description>
     <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
   </item>
   <item>
@@ -138,13 +145,6 @@
     <link>https://tradietools.nz/articles/building-consent-reform-nz-2026-tradies-guide.html</link>
     <guid isPermaLink="true">https://tradietools.nz/articles/building-consent-reform-nz-2026-tradies-guide.html</guid>
     <description>The biggest building consent reform in decades is underway in NZ. Granny flat exemptions, product approvals, liability changes — here's what it means for your work.</description>
-    <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
-  </item>
-  <item>
-    <title>Hiring an Apprentice in NZ: The 2026 Guide for Tradies</title>
-    <link>https://tradietools.nz/articles/hiring-an-apprentice-nz-tradie-guide-2026.html</link>
-    <guid isPermaLink="true">https://tradietools.nz/articles/hiring-an-apprentice-nz-tradie-guide-2026.html</guid>
-    <description>Everything NZ tradies need to know about hiring an apprentice in 2026 — BCITO changes, Apprenticeship Boost funding, costs, and how to make it work for your business.</description>
     <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
   </item>
   </channel>

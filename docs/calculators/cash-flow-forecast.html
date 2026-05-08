@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Flow Forecast Calculator — 12-Week Tradie Business Planner — NZ Tradie Tools</title>
+    <meta name="description" content="Plan your tradie business cash flow 12 weeks ahead — track expected income, expenses, tax reserve, and running balance to spot cash gaps before they hit.">
+    <meta property="og:title" content="Cash Flow Forecast Calculator — 12-Week Tradie Business Planner — NZ Tradie Tools">
+    <meta property="og:description" content="Plan your tradie business cash flow 12 weeks ahead — track expected income, expenses, tax reserve, and running balance to spot cash gaps before they hit.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradietools.nz/calculators/cash-flow-forecast.html">
+    <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cash Flow Forecast Calculator — 12-Week Tradie Business Planner — NZ Tradie Tools">
+    <meta name="twitter:description" content="Plan your tradie business cash flow 12 weeks ahead — track expected income, expenses, tax reserve, and running balance to spot cash gaps before they hit.">
+    <meta property="og:image" content="https://tradietools.nz/static/img/social-card.svg">
+    <meta name="twitter:image" content="https://tradietools.nz/static/img/social-card.svg">
+    <link rel="canonical" href="https://tradietools.nz/calculators/cash-flow-forecast.html">
+    <link rel="alternate" type="application/rss+xml" title="NZ Tradie Tools — Articles" href="https://tradietools.nz/rss.xml">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"Cash Flow Forecast Calculator \u2014 12-Week Tradie Business Planner","description":"Plan your tradie business cash flow 12 weeks ahead \u2014 track expected income, expenses, tax reserve, and running balance to spot cash gaps before they hit.","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://tradietools.nz/calculators/cash-flow-forecast.html","offers":{"@type":"Offer","price":"0","priceCurrency":"NZD"},"author":{"@type":"Organization","name":"NZ Tradie Tools","url":"https://tradietools.nz"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tradietools.nz"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://tradietools.nz/calculators/"},{"@type":"ListItem","position":3,"name":"Cash Flow Forecast Calculator \u2014 12-Week Tradie Business Planner","item":"https://tradietools.nz/calculators/cash-flow-forecast.html"}]}]}</script>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJW7HLW8D8"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BJW7HLW8D8');</script>
+    
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                
+                <a href="/">Home</a>
+                
+                <a href="/trades/">Find a Tradie</a>
+                
+                <a href="/jobs/">Job Costs</a>
+                
+                <a href="/calculators/">Calculators</a>
+                
+                <a href="/articles/">Articles</a>
+                
+                <a href="/templates/">Templates</a>
+                
+                <a href="/contact/">Contact</a>
+                
+            </nav>
+            <script>
+            (function(){
+                var t=document.querySelector('.nav-toggle'),n=document.getElementById('main-nav');
+                if(!t||!n)return;
+                t.addEventListener('click',function(){
+                    var o=n.classList.toggle('is-open');
+                    t.setAttribute('aria-expanded',o);
+                });
+                document.addEventListener('click',function(e){
+                    if(!t.contains(e.target)&&!n.contains(e.target)){
+                        n.classList.remove('is-open');
+                        t.setAttribute('aria-expanded','false');
+                    }
+                });
+            })();
+            </script>
+        </div>
+    </header>
+
+    <div class="container page-layout">
+        <main class="main-content">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="/">Home</a> &rsaquo;
+                <a href="/calculators/">Calculators</a> &rsaquo;
+                <span>Cash Flow Forecast Calculator — 12-Week Tradie Business Planner</span>
+            </nav>
+            <h1>Cash Flow Forecast Calculator — 12-Week Tradie Business Planner</h1>
+            <p class="lead">Plan your tradie business cash flow 12 weeks ahead — track expected income, expenses, tax reserve, and running balance to spot cash gaps before they hit.</p>
+
+            
+
+            <div class="calculator-wrapper">
+                <div class="calc-grid">
+  <div class="calc-group"><label>Opening bank balance ($)</label><input type="number" id="cf-open" placeholder="e.g. 5000" value="5000" oninput="buildCF()"></div>
+  <div class="calc-group"><label>Expected weekly income ($)</label><input type="number" id="cf-income" placeholder="e.g. 3500" oninput="buildCF()"></div>
+  <div class="calc-group"><label>Weekly wages / subbie payments ($)</label><input type="number" id="cf-wages" placeholder="e.g. 0" value="0" oninput="buildCF()"></div>
+  <div class="calc-group"><label>Weekly materials / supplies ($)</label><input type="number" id="cf-mats" placeholder="e.g. 400" value="0" oninput="buildCF()"></div>
+  <div class="calc-group"><label>Weekly overheads (fuel, phone, etc.) ($)</label><input type="number" id="cf-overheads" placeholder="e.g. 200" value="0" oninput="buildCF()"></div>
+  <div class="calc-group"><label>Set-aside for tax &amp; GST (%)</label><input type="number" id="cf-tax-pct" placeholder="e.g. 28" value="28" oninput="buildCF()"></div>
+  <div class="calc-group">
+    <label>Large payments (week &amp; amount)</label>
+    <div style="display:flex;gap:.5rem;align-items:center;flex-wrap:wrap">
+      <input type="number" id="lp1-wk" placeholder="Wk #" style="width:60px" oninput="buildCF()">
+      <input type="number" id="lp1-amt" placeholder="$" style="width:100px" oninput="buildCF()">
+      <input type="number" id="lp2-wk" placeholder="Wk #" style="width:60px" oninput="buildCF()">
+      <input type="number" id="lp2-amt" placeholder="$" style="width:100px" oninput="buildCF()">
+    </div>
+    <small style="color:#888;font-size:.78rem">e.g. IRD provisional tax, equipment purchase</small>
+  </div>
+</div>
+<div id="cf-result" style="display:none;margin-top:1rem">
+  <h3 style="margin-bottom:.5rem">12-Week Cash Flow Forecast</h3>
+  <div style="overflow-x:auto">
+    <table class="calc-table" id="cf-table" style="font-size:.82rem;width:100%;border-collapse:collapse">
+      <thead>
+        <tr style="background:#1b2a4a;color:#fff">
+          <th style="padding:.4rem .5rem;text-align:left">Week</th>
+          <th style="padding:.4rem .5rem;text-align:right">Income</th>
+          <th style="padding:.4rem .5rem;text-align:right">Expenses</th>
+          <th style="padding:.4rem .5rem;text-align:right">Tax Reserve</th>
+          <th style="padding:.4rem .5rem;text-align:right">Net</th>
+          <th style="padding:.4rem .5rem;text-align:right">Balance</th>
+        </tr>
+      </thead>
+      <tbody id="cf-tbody"></tbody>
+    </table>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:.75rem;margin-top:1rem">
+    <div style="background:#f0f4f8;padding:.75rem;border-radius:4px">
+      <div style="font-size:.75rem;color:#666;text-transform:uppercase;letter-spacing:.04em">Closing Balance</div>
+      <div style="font-size:1.2rem;font-weight:700" id="cf-close"></div>
+    </div>
+    <div style="background:#f0f4f8;padding:.75rem;border-radius:4px">
+      <div style="font-size:.75rem;color:#666;text-transform:uppercase;letter-spacing:.04em">Lowest Balance</div>
+      <div style="font-size:1.2rem;font-weight:700" id="cf-low"></div>
+    </div>
+    <div style="background:#f0f4f8;padding:.75rem;border-radius:4px">
+      <div style="font-size:.75rem;color:#666;text-transform:uppercase;letter-spacing:.04em">Tax Reserve Built</div>
+      <div style="font-size:1.2rem;font-weight:700" id="cf-taxres"></div>
+    </div>
+  </div>
+</div>
+<script>
+function nzd(n,c){var s=(c||'$')+Math.abs(n).toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g,',');return n<0?'('+s+')':s;}
+function buildCF(){
+  var open=parseFloat(document.getElementById('cf-open').value)||0;
+  var inc=parseFloat(document.getElementById('cf-income').value)||0;
+  var wages=parseFloat(document.getElementById('cf-wages').value)||0;
+  var mats=parseFloat(document.getElementById('cf-mats').value)||0;
+  var oh=parseFloat(document.getElementById('cf-overheads').value)||0;
+  var taxPct=(parseFloat(document.getElementById('cf-tax-pct').value)||28)/100;
+  var lp1wk=parseInt(document.getElementById('lp1-wk').value)||0;
+  var lp1amt=parseFloat(document.getElementById('lp1-amt').value)||0;
+  var lp2wk=parseInt(document.getElementById('lp2-wk').value)||0;
+  var lp2amt=parseFloat(document.getElementById('lp2-amt').value)||0;
+  if(!inc){document.getElementById('cf-result').style.display='none';return;}
+  var bal=open;
+  var minBal=open;
+  var totalTax=0;
+  var tbody=document.getElementById('cf-tbody');
+  tbody.innerHTML='';
+  for(var w=1;w<=12;w++){
+    var taxRes=inc*taxPct;
+    var netInc=inc-taxRes;
+    var exp=wages+mats+oh;
+    if(w===lp1wk) exp+=lp1amt;
+    if(w===lp2wk) exp+=lp2amt;
+    var net=netInc-exp;
+    bal+=net;
+    totalTax+=taxRes;
+    if(bal<minBal) minBal=bal;
+    var neg=bal<0;
+    var tr=document.createElement('tr');
+    tr.style.background=neg?'#fee2e2':(w%2===0?'#f4f6f8':'#fff');
+    tr.innerHTML='<td style="padding:.35rem .5rem">Wk '+w+'</td>'+
+      '<td style="padding:.35rem .5rem;text-align:right;color:#166534">'+nzd(inc)+'</td>'+
+      '<td style="padding:.35rem .5rem;text-align:right;color:#7f1d1d">'+nzd(exp)+'</td>'+
+      '<td style="padding:.35rem .5rem;text-align:right;color:#713f12">'+nzd(taxRes)+'</td>'+
+      '<td style="padding:.35rem .5rem;text-align:right;font-weight:600;color:'+(net>=0?'#166534':'#c0392b')+'">'+nzd(net)+'</td>'+
+      '<td style="padding:.35rem .5rem;text-align:right;font-weight:700;color:'+(bal>=0?'#1b2a4a':'#c0392b')+'">'+nzd(bal)+'</td>';
+    tbody.appendChild(tr);
+  }
+  document.getElementById('cf-close').textContent=nzd(bal);
+  document.getElementById('cf-close').style.color=bal>=0?'#166534':'#c0392b';
+  document.getElementById('cf-low').textContent=nzd(minBal);
+  document.getElementById('cf-low').style.color=minBal>=0?'#166534':'#c0392b';
+  document.getElementById('cf-taxres').textContent=nzd(totalTax);
+  document.getElementById('cf-result').style.display='';
+}
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="using-the-cash-flow-forecast">Using the Cash Flow Forecast</h2>
+<p>Enter your expected weekly income and regular expenses. Red rows show weeks where your bank balance goes negative — a warning sign to act before it happens.</p>
+<h3 id="tips-for-accurate-forecasting">Tips for Accurate Forecasting</h3>
+<p><strong>Income:</strong> Be conservative. If you expect $4,000 but clients sometimes pay late, use $3,000–$3,500. The point of forecasting is to spot problems early.</p>
+<p><strong>Tax reserve:</strong> The calculator sets aside the % you specify from income each week into an imaginary "tax account." This models the good habit of ring-fencing tax money as it arrives. 25–30% is typical for a GST-registered sole trader.</p>
+<p><strong>Large payments:</strong> Use these fields for known one-off outgoings — an IRD provisional tax instalment, vehicle registration, annual insurance premium, or a large materials order.</p>
+<h3 id="warning-signs-to-watch">Warning Signs to Watch</h3>
+<ul>
+<li><strong>Negative balance weeks</strong> — you'll need overdraft, a credit card, or to bring forward an invoice</li>
+<li><strong>Closing balance below 1 month expenses</strong> — insufficient buffer for unexpected delays</li>
+<li><strong>Tax reserve lower than expected IRD bill</strong> — increase the reserve % immediately</li>
+</ul>
+<h3 id="building-a-cash-buffer">Building a Cash Buffer</h3>
+<p>Aim for a minimum <strong>4-week buffer</strong> in your business account (4 × total weekly expenses). This absorbs a bad week, a slow client, or an unexpected cost without causing a crisis.</p>
+<p>Use our <a href="/calculators/job-cost-calculator.html">Job Cost Calculator</a> to check whether individual jobs are contributing enough margin to fund this buffer.</p>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:linear-gradient(135deg,#0055a5 0%,#003d7a 100%);color:#fff;border:none">
+                <h3 style="color:#fff">🚀 Fastcrew — One App for Everything</h3>
+                <p style="color:rgba(255,255,255,.88);font-size:.85rem;margin-bottom:.6rem">Tired of paying for 4–5 different apps? Fastcrew replaces them all:</p>
+                <ul style="color:rgba(255,255,255,.82);font-size:.82rem;margin:0 0 1rem;padding-left:1.1rem">
+                    <li>Jobs, quotes &amp; invoicing</li>
+                    <li>Built-in H&amp;S &amp; compliance</li>
+                    <li>Xero sync + Stripe payments</li>
+                    <li>Flat $20/seat — no tier lock-in</li>
+                </ul>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#e55a00;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Get early access →</a>
+            </div>
+            
+            
+            <div class="sidebar-widget">
+                <h3>Related Guides</h3>
+                <ul>
+                    
+                    <li><a href="/articles/cash-flow-management-nz-tradies.html">Cash Flow Management for NZ Tradies — Getting Paid and Staying Solvent</a></li>
+                    
+                    <li><a href="/articles/provisional-tax-nz-tradies.html">Provisional Tax for NZ Tradies: What It Is and How to Manage It</a></li>
+                    
+                </ul>
+            </div>
+            
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator.html">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator.html">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator.html">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator.html">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator.html">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://fastcrew.nz" rel="noopener" target="_blank">Fastcrew — All-in-One Tradie App</a></li>
+                    <li><a href="https://www.xero.com/nz/" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">NZ Tradie Tools</p>
+                <p>Free calculators, templates and guides for New Zealand tradies.</p>
+                <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
+            </div>
+            <div style="text-align:right">
+                <p><a href="/glossary/">Tradie Glossary</a></p>
+                <p><a href="/privacy/">Privacy Policy</a></p>
+                <p><a href="/contact/">Contact</a></p>
+                <p style="margin-top:.5rem">&copy; 2026 NZ Tradie Tools</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

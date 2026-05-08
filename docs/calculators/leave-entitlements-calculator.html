@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NZ Leave Entitlements Calculator — Annual Leave, Sick Leave & Public Holidays — NZ Tradie Tools</title>
+    <meta name="description" content="Calculate the full value of statutory leave entitlements for NZ employees — annual leave, sick leave, public holidays, and bereavement leave.">
+    <meta property="og:title" content="NZ Leave Entitlements Calculator — Annual Leave, Sick Leave & Public Holidays — NZ Tradie Tools">
+    <meta property="og:description" content="Calculate the full value of statutory leave entitlements for NZ employees — annual leave, sick leave, public holidays, and bereavement leave.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradietools.nz/calculators/leave-entitlements-calculator.html">
+    <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NZ Leave Entitlements Calculator — Annual Leave, Sick Leave & Public Holidays — NZ Tradie Tools">
+    <meta name="twitter:description" content="Calculate the full value of statutory leave entitlements for NZ employees — annual leave, sick leave, public holidays, and bereavement leave.">
+    <meta property="og:image" content="https://tradietools.nz/static/img/social-card.svg">
+    <meta name="twitter:image" content="https://tradietools.nz/static/img/social-card.svg">
+    <link rel="canonical" href="https://tradietools.nz/calculators/leave-entitlements-calculator.html">
+    <link rel="alternate" type="application/rss+xml" title="NZ Tradie Tools — Articles" href="https://tradietools.nz/rss.xml">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"NZ Leave Entitlements Calculator \u2014 Annual Leave, Sick Leave \u0026 Public Holidays","description":"Calculate the full value of statutory leave entitlements for NZ employees \u2014 annual leave, sick leave, public holidays, and bereavement leave.","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://tradietools.nz/calculators/leave-entitlements-calculator.html","offers":{"@type":"Offer","price":"0","priceCurrency":"NZD"},"author":{"@type":"Organization","name":"NZ Tradie Tools","url":"https://tradietools.nz"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tradietools.nz"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://tradietools.nz/calculators/"},{"@type":"ListItem","position":3,"name":"NZ Leave Entitlements Calculator \u2014 Annual Leave, Sick Leave \u0026 Public Holidays","item":"https://tradietools.nz/calculators/leave-entitlements-calculator.html"}]}]}</script>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJW7HLW8D8"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BJW7HLW8D8');</script>
+    
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                
+                <a href="/">Home</a>
+                
+                <a href="/trades/">Find a Tradie</a>
+                
+                <a href="/jobs/">Job Costs</a>
+                
+                <a href="/calculators/">Calculators</a>
+                
+                <a href="/articles/">Articles</a>
+                
+                <a href="/templates/">Templates</a>
+                
+                <a href="/contact/">Contact</a>
+                
+            </nav>
+            <script>
+            (function(){
+                var t=document.querySelector('.nav-toggle'),n=document.getElementById('main-nav');
+                if(!t||!n)return;
+                t.addEventListener('click',function(){
+                    var o=n.classList.toggle('is-open');
+                    t.setAttribute('aria-expanded',o);
+                });
+                document.addEventListener('click',function(e){
+                    if(!t.contains(e.target)&&!n.contains(e.target)){
+                        n.classList.remove('is-open');
+                        t.setAttribute('aria-expanded','false');
+                    }
+                });
+            })();
+            </script>
+        </div>
+    </header>
+
+    <div class="container page-layout">
+        <main class="main-content">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="/">Home</a> &rsaquo;
+                <a href="/calculators/">Calculators</a> &rsaquo;
+                <span>NZ Leave Entitlements Calculator — Annual Leave, Sick Leave & Public Holidays</span>
+            </nav>
+            <h1>NZ Leave Entitlements Calculator — Annual Leave, Sick Leave & Public Holidays</h1>
+            <p class="lead">Calculate the full value of statutory leave entitlements for NZ employees — annual leave, sick leave, public holidays, and bereavement leave.</p>
+
+            
+
+            <div class="calculator-wrapper">
+                <div class="calc-tabs">
+  <button class="calc-tab active" onclick="switchLVTab('annual')">Annual Leave</button>
+  <button class="calc-tab" onclick="switchLVTab('sick')">Sick Leave</button>
+  <button class="calc-tab" onclick="switchLVTab('summary')">Full Summary</button>
+</div>
+
+<div id="lvtab-annual">
+  <div class="calc-grid">
+    <div class="calc-group">
+      <label>Wage type</label>
+      <select id="lv-type" onchange="calcLV()">
+        <option value="hourly">Hourly rate</option>
+        <option value="annual">Annual salary</option>
+        <option value="weekly">Weekly wage</option>
+      </select>
+    </div>
+    <div class="calc-group"><label>Rate / salary ($)</label><input type="number" id="lv-rate" placeholder="e.g. 30" oninput="calcLV()"></div>
+    <div class="calc-group"><label>Hours per week (if hourly)</label><input type="number" id="lv-hrs" placeholder="e.g. 40" value="40" oninput="calcLV()"></div>
+  </div>
+  <div class="calc-result" id="lv-annual-result" style="display:none">
+    <h3>Annual Leave (Holidays Act 2003)</h3>
+    <div class="result-row"><span>Weekly wage</span><span id="lv-weekly"></span></div>
+    <div class="result-row"><span>Annual gross earnings</span><span id="lv-annual-gross"></span></div>
+    <div class="result-row"><span>4 weeks annual leave value</span><span id="lv-al-val" class="result-highlight"></span></div>
+    <div class="result-row"><span>8% of annual gross (alternative)</span><span id="lv-8pct"></span></div>
+    <div class="result-row"><span>Leave paid at higher of the two</span><span id="lv-higher"></span></div>
+    <div class="result-row"><span>Per public holiday (8 hrs)</span><span id="lv-ph-day"></span></div>
+    <div class="result-row"><span>12 public holidays value/year</span><span id="lv-ph-total"></span></div>
+  </div>
+</div>
+
+<div id="lvtab-sick" style="display:none">
+  <div class="calc-grid">
+    <div class="calc-group"><label>Hourly rate ($)</label><input type="number" id="sl-rate" placeholder="e.g. 30" oninput="calcSL()"></div>
+    <div class="calc-group"><label>Hours per day</label><input type="number" id="sl-hrs" placeholder="e.g. 8" value="8" oninput="calcSL()"></div>
+  </div>
+  <div class="calc-result" id="lv-sick-result" style="display:none">
+    <h3>Sick Leave (Holidays Act 2003)</h3>
+    <div class="result-row"><span>Sick leave entitlement</span><span>10 days/year</span></div>
+    <div class="result-row"><span>When it starts</span><span>From first day of employment (2021 amendment)</span></div>
+    <div class="result-row"><span>Maximum accrual</span><span>20 days (if not taken)</span></div>
+    <div class="result-row"><span>Value per sick day</span><span id="sl-day-val"></span></div>
+    <div class="result-row"><span>10 days annual value</span><span id="sl-annual-val" class="result-highlight"></span></div>
+    <div class="result-row"><span>Bereavement leave (close family)</span><span>3 days paid</span></div>
+    <div class="result-row"><span>Bereavement leave (other)</span><span>1 day paid</span></div>
+    <div class="result-row"><span>Domestic violence leave</span><span>10 days paid/year</span></div>
+  </div>
+</div>
+
+<div id="lvtab-summary" style="display:none">
+  <div class="calc-grid">
+    <div class="calc-group"><label>Hourly rate ($)</label><input type="number" id="sum-rate" placeholder="e.g. 30" oninput="calcSUM()"></div>
+    <div class="calc-group"><label>Hours per week</label><input type="number" id="sum-hrs" placeholder="e.g. 40" value="40" oninput="calcSUM()"></div>
+  </div>
+  <div class="calc-result" id="lv-sum-result" style="display:none">
+    <h3>Total Annual Leave Cost to Employer</h3>
+    <div class="result-row"><span>Annual leave (4 weeks)</span><span id="sum-al"></span></div>
+    <div class="result-row"><span>Public holidays (12 days)</span><span id="sum-ph"></span></div>
+    <div class="result-row"><span>Sick leave provision (10 days)</span><span id="sum-sl"></span></div>
+    <div class="result-row"><span>Total leave value/year</span><span id="sum-total" class="result-highlight"></span></div>
+    <div class="result-row"><span>As % of base wages</span><span id="sum-pct"></span></div>
+    <div style="margin-top:.75rem;padding:.6rem;background:#e8f4fd;border-radius:4px;font-size:.85rem">
+      Leave adds approximately <strong id="sum-adder"></strong> to the true cost of employment. Factor this into your labour rates and job pricing.
+    </div>
+  </div>
+</div>
+
+<script>
+function nzd(n){return '$'+n.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g,',');}
+function switchLVTab(t){
+  ['annual','sick','summary'].forEach(function(id){document.getElementById('lvtab-'+id).style.display=id===t?'':'none';});
+  document.querySelectorAll('.calc-tab').forEach(function(b,i){b.classList.toggle('active',['annual','sick','summary'][i]===t);});
+}
+function calcLV(){
+  var type=document.getElementById('lv-type').value;
+  var rate=parseFloat(document.getElementById('lv-rate').value)||0;
+  var hrs=parseFloat(document.getElementById('lv-hrs').value)||40;
+  if(!rate){document.getElementById('lv-annual-result').style.display='none';return;}
+  var weekly = type==='hourly' ? rate*hrs : type==='annual' ? rate/52 : rate;
+  var annual = weekly*52;
+  var alVal = weekly*4;
+  var pct8 = annual*0.08;
+  var higher = Math.max(alVal,pct8);
+  var phDay = (type==='hourly'?rate:weekly/hrs||0)*8;
+  var phTotal = phDay*12;
+  document.getElementById('lv-weekly').textContent=nzd(weekly)+'/week';
+  document.getElementById('lv-annual-gross').textContent=nzd(annual)+'/year';
+  document.getElementById('lv-al-val').textContent=nzd(alVal);
+  document.getElementById('lv-8pct').textContent=nzd(pct8);
+  document.getElementById('lv-higher').textContent=nzd(higher);
+  document.getElementById('lv-ph-day').textContent=nzd(phDay);
+  document.getElementById('lv-ph-total').textContent=nzd(phTotal);
+  document.getElementById('lv-annual-result').style.display='';
+}
+function calcSL(){
+  var r=parseFloat(document.getElementById('sl-rate').value)||0;
+  var h=parseFloat(document.getElementById('sl-hrs').value)||8;
+  if(!r){document.getElementById('lv-sick-result').style.display='none';return;}
+  var dayVal=r*h;
+  document.getElementById('sl-day-val').textContent=nzd(dayVal);
+  document.getElementById('sl-annual-val').textContent=nzd(dayVal*10);
+  document.getElementById('lv-sick-result').style.display='';
+}
+function calcSUM(){
+  var r=parseFloat(document.getElementById('sum-rate').value)||0;
+  var h=parseFloat(document.getElementById('sum-hrs').value)||40;
+  if(!r){document.getElementById('lv-sum-result').style.display='none';return;}
+  var weekly=r*h;
+  var annual=weekly*52;
+  var al=weekly*4;
+  var ph=r*8*12;
+  var sl=r*8*10;
+  var total=al+ph+sl;
+  var pct=total/annual*100;
+  document.getElementById('sum-al').textContent=nzd(al);
+  document.getElementById('sum-ph').textContent=nzd(ph);
+  document.getElementById('sum-sl').textContent=nzd(sl);
+  document.getElementById('sum-total').textContent=nzd(total);
+  document.getElementById('sum-pct').textContent=pct.toFixed(1)+'% of base wages';
+  document.getElementById('sum-adder').textContent=pct.toFixed(0)+'%';
+  document.getElementById('lv-sum-result').style.display='';
+}
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="nz-statutory-leave-entitlements-holidays-act-2003">NZ Statutory Leave Entitlements (Holidays Act 2003)</h2>
+<h3 id="annual-leave">Annual Leave</h3>
+<p>All NZ employees are entitled to <strong>at least 4 weeks</strong> paid annual leave after 12 months of continuous employment. Pay is the <strong>greater of</strong>:
+- Their <strong>ordinary weekly rate × 4 weeks</strong>, or
+- <strong>8% of gross earnings</strong> for the year</p>
+<p>This means part-time and irregular-hours workers often benefit from the 8% calculation.</p>
+<h3 id="sick-leave">Sick Leave</h3>
+<p>Since 2021, employees are entitled to <strong>10 days sick leave per year</strong> from their first day of employment. Up to 20 days can accumulate if not taken.</p>
+<p>Sick leave is paid at the employee's ordinary rate for the hours they would have worked.</p>
+<h3 id="public-holidays">Public Holidays</h3>
+<p>NZ has <strong>12 public holidays</strong> per year. Employees who work on a public holiday receive:
+- <strong>Time-and-a-half</strong> for hours worked
+- <strong>An alternative holiday</strong> (day off in lieu) if it was an otherwise working day</p>
+<h3 id="bereavement-leave">Bereavement Leave</h3>
+<ul>
+<li><strong>3 days</strong> paid leave for death of a spouse/partner, parent, child, sibling, grandparent, or in-law</li>
+<li><strong>1 day</strong> for any other person if the employee has a genuine bereavement</li>
+</ul>
+<h3 id="what-this-means-for-job-pricing">What This Means for Job Pricing</h3>
+<p>Leave entitlements add approximately <strong>17–22%</strong> on top of base hourly wages when factored into true employment cost. Use our <a href="/calculators/labour-cost-calculator.html">Labour Cost Calculator</a> and <a href="/calculators/paye-employee-calculator.html">PAYE Employee Cost Calculator</a> to see the full picture.</p>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:linear-gradient(135deg,#0055a5 0%,#003d7a 100%);color:#fff;border:none">
+                <h3 style="color:#fff">🚀 Fastcrew — One App for Everything</h3>
+                <p style="color:rgba(255,255,255,.88);font-size:.85rem;margin-bottom:.6rem">Tired of paying for 4–5 different apps? Fastcrew replaces them all:</p>
+                <ul style="color:rgba(255,255,255,.82);font-size:.82rem;margin:0 0 1rem;padding-left:1.1rem">
+                    <li>Jobs, quotes &amp; invoicing</li>
+                    <li>Built-in H&amp;S &amp; compliance</li>
+                    <li>Xero sync + Stripe payments</li>
+                    <li>Flat $20/seat — no tier lock-in</li>
+                </ul>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#e55a00;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Get early access →</a>
+            </div>
+            
+            
+            <div class="sidebar-widget">
+                <h3>Related Guides</h3>
+                <ul>
+                    
+                    <li><a href="/articles/hiring-an-apprentice-nz-tradie-guide-2026.html">Hiring an Apprentice in NZ: The 2026 Guide for Tradies</a></li>
+                    
+                    <li><a href="/articles/minimum-wage-increase-april-2026-tradie-costs.html">NZ Minimum Wage Rises to $23.95 in April 2026: What It Means for Tradie Businesses</a></li>
+                    
+                </ul>
+            </div>
+            
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator.html">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator.html">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator.html">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator.html">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator.html">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://fastcrew.nz" rel="noopener" target="_blank">Fastcrew — All-in-One Tradie App</a></li>
+                    <li><a href="https://www.xero.com/nz/" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">NZ Tradie Tools</p>
+                <p>Free calculators, templates and guides for New Zealand tradies.</p>
+                <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
+            </div>
+            <div style="text-align:right">
+                <p><a href="/glossary/">Tradie Glossary</a></p>
+                <p><a href="/privacy/">Privacy Policy</a></p>
+                <p><a href="/contact/">Contact</a></p>
+                <p style="margin-top:.5rem">&copy; 2026 NZ Tradie Tools</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

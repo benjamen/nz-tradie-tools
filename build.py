@@ -113,6 +113,8 @@ def build():
     build_listing(calculators, config, env, "calculators", nav, base_path)
     build_contact(config, env, nav, base_path)
     build_privacy(config, env, nav, base_path)
+    build_glossary(config, env, nav, base_path)
+    build_faq(config, env, nav, base_path)
 
     trades_count, locations_count = build_trades_and_locations(config, env, nav, base_path)
 
@@ -478,6 +480,8 @@ def build_sitemap(articles, calculators, cities, trades, config, job_pages_count
     urls = []
 
     urls.append({"loc": f"{base_url}/", "priority": "1.0", "changefreq": "daily", "lastmod": today})
+    urls.append({"loc": f"{base_url}/glossary/", "priority": "0.7", "changefreq": "monthly", "lastmod": today})
+    urls.append({"loc": f"{base_url}/faq/", "priority": "0.8", "changefreq": "monthly", "lastmod": today})
     for section, pri in [("articles", "0.6"), ("calculators", "0.8"), ("trades", "0.9"), ("jobs", "0.9")]:
         urls.append({"loc": f"{base_url}/{section}/", "priority": pri, "changefreq": "weekly", "lastmod": today})
 
@@ -623,6 +627,30 @@ def build_privacy(config, env, nav, base_path):
     }
     (PUBLIC_DIR / "privacy").mkdir(exist_ok=True)
     (PUBLIC_DIR / "privacy" / "index.html").write_text(template.render(**ctx), encoding="utf-8")
+
+
+def build_faq(config, env, nav, base_path):
+    template = env.get_template("faq.html")
+    ctx = {
+        **config,
+        "base_path": base_path,
+        "nav": nav,
+        "year": datetime.now().year,
+    }
+    (PUBLIC_DIR / "faq").mkdir(exist_ok=True)
+    (PUBLIC_DIR / "faq" / "index.html").write_text(template.render(**ctx), encoding="utf-8")
+
+
+def build_glossary(config, env, nav, base_path):
+    template = env.get_template("glossary.html")
+    ctx = {
+        **config,
+        "base_path": base_path,
+        "nav": nav,
+        "year": datetime.now().year,
+    }
+    (PUBLIC_DIR / "glossary").mkdir(exist_ok=True)
+    (PUBLIC_DIR / "glossary" / "index.html").write_text(template.render(**ctx), encoding="utf-8")
 
 
 def build_contact(config, env, nav, base_path):

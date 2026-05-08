@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NZ Tradie FAQ — Frequently Asked Questions Answered</title>
+    <meta name="description" content="Answers to the most common questions NZ tradies ask about tax, GST, ACC, contracts, pricing, and running a self-employed trade business.">
+    <meta property="og:title" content="NZ Tradie FAQ — Frequently Asked Questions Answered">
+    <meta property="og:description" content="Answers to the most common questions NZ tradies ask about tax, GST, ACC, contracts, and pricing.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ base_url }}/faq/">
+    <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="{{ base_url }}/static/img/social-card.svg">
+    <meta name="twitter:image" content="{{ base_url }}/static/img/social-card.svg">
+    <link rel="canonical" href="{{ base_url }}/faq/">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {"@type":"Question","name":"When do I have to register for GST in NZ?","acceptedAnswer":{"@type":"Answer","text":"You must register for GST when your annual turnover exceeds $60,000 in any 12-month period (rolling, not the tax year). You can also register voluntarily before reaching that threshold."}},
+            {"@type":"Question","name":"What is provisional tax and when do I pay it?","acceptedAnswer":{"@type":"Answer","text":"Provisional tax is pre-payment of your income tax for the current year. You pay it in three instalments: 28 August, 15 January, and 7 May. It's required if your residual income tax (RIT) from the previous year was over $5,000."}},
+            {"@type":"Question","name":"What can I claim as a tax deduction as a NZ tradie?","acceptedAnswer":{"@type":"Answer","text":"You can claim tools and equipment, vehicle expenses (with a logbook), fuel, work clothing, phone and internet (business portion), training and licenses, insurance, home office costs, accounting fees, and ACC levies as tax deductions."}},
+            {"@type":"Question","name":"Do I need public liability insurance as a self-employed tradie?","acceptedAnswer":{"@type":"Answer","text":"Public liability insurance is not legally required but is strongly recommended. Most principal contractors and commercial clients require it ($1M–$2M cover) before you can work on their sites. It costs $400–$1,200/year depending on trade and turnover."}},
+            {"@type":"Question","name":"What is an LBP licence and do I need one?","acceptedAnswer":{"@type":"Answer","text":"An LBP (Licensed Building Practitioner) licence is required to carry out or supervise Restricted Building Work (RBW) — including structural work, weathertightness, foundations, and cladding on homes. It's illegal to do RBW without an LBP licence."}},
+            {"@type":"Question","name":"What is the difference between a subcontractor and an employee?","acceptedAnswer":{"@type":"Answer","text":"The key difference is control and independence. IRD uses several tests: does the person work for multiple clients, do they set their own hours, do they provide their own tools, and do they bear financial risk? Getting this wrong can lead to back-tax, PAYE, and KiwiSaver obligations."}},
+            {"@type":"Question","name":"What is retention money in a construction contract?","acceptedAnswer":{"@type":"Answer","text":"Retention is a percentage (usually 5–10%) withheld from each payment as security. It's released in two tranches: at practical completion and at the end of the defects liability period. Under the CCA 2002, retention money must be held in trust."}},
+            {"@type":"Question","name":"How do I charge GST on a quote?","acceptedAnswer":{"@type":"Answer","text":"If you are GST-registered, add 15% to your subtotal. For example, a $1,000 job becomes $1,150 incl. GST. Your invoice must show the GST amount separately and include your GST number."}},
+            {"@type":"Question","name":"What is a PCBU?","acceptedAnswer":{"@type":"Answer","text":"PCBU stands for Person Conducting a Business or Undertaking — the HSWA 2015 term for anyone running a business, including sole trader tradies. As a PCBU, you must manage workplace health and safety risks for workers and others affected by your work."}},
+            {"@type":"Question","name":"What ACC levies do self-employed tradies pay?","acceptedAnswer":{"@type":"Answer","text":"Self-employed tradies pay three ACC levies: (1) Work levy — based on your trade classification (e.g., roofers pay more than electricians), (2) Earner levy — 1.33% of liable income for non-work injuries, (3) Working Safer levy — 0.08% to fund WorkSafe NZ."}}
+          ]
+        },
+        {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":{{ base_url | tojson }}},{"@type":"ListItem","position":2,"name":"FAQ","item":{{ (base_url ~ "/faq/") | tojson }}}]}
+      ]
+    }
+    </script>
+    <link rel="icon" href="{{ base_path }}/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="{{ base_path }}/static/css/style.css">
+    {% if adsense_id %}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ adsense_id }}" crossorigin="anonymous"></script>{% endif %}
+    {% if ga_id %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ ga_id }}"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{ ga_id }}');</script>
+    {% endif %}
+    <style>
+    .faq-item{border:1px solid #dde3ec;border-radius:6px;margin-bottom:.75rem;overflow:hidden}
+    .faq-q{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.25rem;cursor:pointer;background:#fff;font-weight:600;font-size:.97rem;color:#1b2a4a;gap:.75rem;user-select:none}
+    .faq-q:hover{background:#f6f8fb}
+    .faq-q .icon{flex-shrink:0;font-size:1.2rem;transition:transform .2s;color:#0055a5}
+    .faq-a{display:none;padding:.75rem 1.25rem 1rem;background:#f9fafb;font-size:.92rem;color:#333;line-height:1.65;border-top:1px solid #dde3ec}
+    .faq-a a{color:#0055a5}
+    .faq-item.open .faq-a{display:block}
+    .faq-item.open .icon{transform:rotate(45deg)}
+    .faq-cat{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:#777;margin:1.75rem 0 .6rem;padding-bottom:.3rem;border-bottom:2px solid #e8ecf0}
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="{{ base_path }}/" class="logo">🔧 NZ Tradie Tools</a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                {% for item in nav %}<a href="{{ item.url }}">{{ item.label }}</a>{% endfor %}
+            </nav>
+            <script>
+            (function(){
+                var t=document.querySelector('.nav-toggle'),n=document.getElementById('main-nav');
+                if(!t||!n)return;
+                t.addEventListener('click',function(){var o=n.classList.toggle('is-open');t.setAttribute('aria-expanded',o);});
+                document.addEventListener('click',function(e){if(!t.contains(e.target)&&!n.contains(e.target)){n.classList.remove('is-open');t.setAttribute('aria-expanded','false');}});
+            })();
+            </script>
+        </div>
+    </header>
+
+    <section class="hero" style="padding:2.5rem 0">
+        <div class="container">
+            <h1>❓ NZ Tradie FAQ</h1>
+            <p>Quick answers to the most common questions about tax, GST, ACC, contracts, and running a self-employed trade business in New Zealand.</p>
+        </div>
+    </section>
+
+    <div class="container page-layout">
+        <main class="main-content">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="{{ base_path }}/">Home</a> &rsaquo; <span>FAQ</span>
+            </nav>
+
+            <!-- Tax & IRD -->
+            <div class="faq-cat">Tax &amp; IRD</div>
+
+            <div class="faq-item">
+                <div class="faq-q">When do I have to register for GST in NZ? <span class="icon">+</span></div>
+                <div class="faq-a">You must register for GST when your turnover exceeds <strong>$60,000 in any rolling 12-month period</strong> — not the financial year. You can also register voluntarily before you reach that threshold (useful if you want to claim GST back on tools and materials from day one). Once registered, add 15% GST to all invoices and file GST returns with IRD. Full guide: <a href="{{ base_path }}/articles/should-i-register-for-gst-nz-tradie.html">Should I Register for GST?</a></div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">What is provisional tax and when do I pay it? <span class="icon">+</span></div>
+                <div class="faq-a">Provisional tax is pre-payment of your expected income tax for the current year. It kicks in if your <em>residual income tax</em> (what you owed after other deductions) from the previous year exceeded <strong>$5,000</strong>. Standard payment dates: <strong>28 August, 15 January, 7 May</strong>. The trap: you don't pay it in year one, but year two can bring a double-hit (last year's tax bill + this year's first instalment). Set aside 25–30% of every payment from day one. <a href="{{ base_path }}/articles/provisional-tax-nz-tradies.html">Full provisional tax guide →</a></div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">What can I claim as a tax deduction as a self-employed tradie? <span class="icon">+</span></div>
+                <div class="faq-a">Common deductible expenses include:
+                    <ul style="margin:.5rem 0 0 1rem">
+                        <li>Tools and equipment (under $1,000 — claim in full; over $1,000 — depreciate)</li>
+                        <li>Vehicle expenses (logbook required for mixed-use vehicles)</li>
+                        <li>Fuel, oil, and maintenance for work vehicles</li>
+                        <li>Work clothing (safety boots, hi-vis, branded workwear)</li>
+                        <li>Phone and internet (business-use portion)</li>
+                        <li>Licences, registrations, and professional memberships</li>
+                        <li>ACC levies, insurance premiums, and accounting fees</li>
+                        <li>Home office costs (if you genuinely use it for business admin)</li>
+                    </ul>
+                    Full list: <a href="{{ base_path }}/articles/nz-tradie-tax-guide-what-you-can-claim.html">NZ Tradie Tax Deductions Guide →</a>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">How do I add GST to a quote or invoice? <span class="icon">+</span></div>
+                <div class="faq-a">If you're GST-registered, add 15% to your pre-GST subtotal. Example: $1,000 work + $150 GST = $1,150 total (incl. GST). Your tax invoice must show your GST number, the GST amount, and the total including GST. Use our <a href="{{ base_path }}/calculators/gst-calculator.html">GST Calculator</a> and free <a href="{{ base_path }}/templates/tax-invoice-template.html">Tax Invoice Template</a>.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Should I set up a company or stay as a sole trader? <span class="icon">+</span></div>
+                <div class="faq-a">Most tradies start as sole traders and it works well at lower incomes. The company tax rate (28%) becomes attractive when you're earning enough that your personal rate exceeds it — roughly <strong>$90,000+ in net self-employment profit</strong>. A company also provides limited liability protection. The tradeoff: more compliance, accounting costs, and you still pay personal income tax on money you draw as salary. Full analysis: <a href="{{ base_path }}/articles/sole-trader-vs-company-nz-tradies.html">Sole Trader vs Company Guide →</a></div>
+            </div>
+
+            <!-- ACC & Insurance -->
+            <div class="faq-cat">ACC &amp; Insurance</div>
+
+            <div class="faq-item">
+                <div class="faq-q">What ACC levies do self-employed tradies pay? <span class="icon">+</span></div>
+                <div class="faq-a">Three levies:
+                    <ol style="margin:.5rem 0 0 1rem">
+                        <li><strong>Work levy</strong> — based on your trade (e.g., roofers ~4.38%, electricians ~1.02%). Covers work-related injuries.</li>
+                        <li><strong>Earner levy</strong> — 1.33% of liable income (capped at $139,384 for 2025/26). Covers non-work injuries.</li>
+                        <li><strong>Working Safer levy</strong> — 0.08%. Funds WorkSafe NZ.</li>
+                    </ol>
+                    ACC only covers <em>accidents</em> — not illness. IRD calculates and bills you after your tax return. Use our <a href="{{ base_path }}/calculators/acc-levy-calculator.html">ACC Levy Calculator</a> to estimate before the bill arrives.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Do I need public liability insurance as a self-employed tradie? <span class="icon">+</span></div>
+                <div class="faq-a">It's not legally required, but it's essential. Most principal contractors and commercial clients require at least <strong>$1M–$2M public liability cover</strong> before you can start work on site. Without it, you could be personally liable for third-party property damage or injury. Costs $400–$1,200/year. <a href="{{ base_path }}/articles/public-liability-insurance-nz-tradies.html">Full public liability guide →</a></div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Does ACC cover me if I get sick and can't work? <span class="icon">+</span></div>
+                <div class="faq-a"><strong>No.</strong> ACC only covers injuries caused by accidents. Illness, gradual-onset conditions (back problems from years of heavy work), mental health issues, and conditions like cancer are not covered by ACC. If you can't work due to illness, you get nothing — unless you have income protection insurance. <a href="{{ base_path }}/articles/income-protection-insurance-nz-tradies.html">Why ACC isn't enough →</a></div>
+            </div>
+
+            <!-- Contracts & Payment -->
+            <div class="faq-cat">Contracts &amp; Getting Paid</div>
+
+            <div class="faq-item">
+                <div class="faq-q">Do I need a written contract for every job? <span class="icon">+</span></div>
+                <div class="faq-a">Verbal contracts are legally valid in NZ, but they're almost impossible to enforce when disputes arise. For any job above a few hundred dollars, you should have written agreement on scope, price, payment terms, and what happens with variations. The <strong>Construction Contracts Act 2002</strong> applies automatically to all construction contracts — knowing it protects you. <a href="{{ base_path }}/articles/tradie-contract-guide-nz.html">Tradie contracts guide →</a> | <a href="{{ base_path }}/templates/quote-template.html">Free quote template →</a></div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">What can I do if a client won't pay my invoice? <span class="icon">+</span></div>
+                <div class="faq-a">Step through these in order:
+                    <ol style="margin:.5rem 0 0 1rem">
+                        <li>Friendly reminder with a payment link</li>
+                        <li>Formal demand letter (free to write, holds legal weight)</li>
+                        <li>File a Disputes Register listing (public, $38, deters non-payers)</li>
+                        <li>Disputes Tribunal — free, handles up to $30,000, binding decisions</li>
+                        <li>CCA adjudication — fast-track for construction payment disputes</li>
+                    </ol>
+                    Full process: <a href="{{ base_path }}/articles/unpaid-invoices-options-nz-tradies.html">How to Chase an Unpaid Invoice →</a>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">What is a variation order and why do I need one? <span class="icon">+</span></div>
+                <div class="faq-a">A variation order is a written record of any change to the original contract scope, price, or timeline. Without it, you have no proof the client agreed to extra work or cost. Verbal agreements to "just do a bit more" regularly turn into unpaid disputes. Issue a variation order for every change — even small ones. Download our free <a href="{{ base_path }}/templates/variation-order.html">Variation Order template</a>.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">What is retention money? <span class="icon">+</span></div>
+                <div class="faq-a">Retention is a percentage (typically 5–10%) withheld from each payment as security that you'll fix defects. It's released in two tranches: first at practical completion, second at the end of the defects liability period (usually 6–12 months later). Under the CCA 2002, retention money must be held in trust by the party holding it. See our <a href="{{ base_path }}/glossary/#R">Glossary entry →</a></div>
+            </div>
+
+            <!-- Licensing & Compliance -->
+            <div class="faq-cat">Licensing &amp; Compliance</div>
+
+            <div class="faq-item">
+                <div class="faq-q">What is an LBP licence and do I need one? <span class="icon">+</span></div>
+                <div class="faq-a">An LBP (Licensed Building Practitioner) licence is required to carry out or supervise <strong>Restricted Building Work (RBW)</strong> — structural work, weathertightness, foundations, external cladding, and design on houses and small buildings. Doing RBW without an LBP licence is an offence under the Building Act 2004. Check the register at <a href="https://www.lbp.govt.nz" rel="noopener" target="_blank">lbp.govt.nz</a>.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Do I need building consent for my client's job? <span class="icon">+</span></div>
+                <div class="faq-a">Most structural work, new buildings, additions, plumbing, drainage, and deck/pool work requires consent. Some minor work is exempt (painting, like-for-like replacements, small sheds under 10m²). The key rule: even exempt work must still comply with the Building Code. When in doubt, check with the local council (BCA). Full guide: <a href="{{ base_path }}/articles/do-you-need-building-consent-nz.html">Do You Need Building Consent? →</a></div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">What is a SWMS and when do I need one? <span class="icon">+</span></div>
+                <div class="faq-a">A SWMS (Safe Work Method Statement) is a written document identifying hazardous tasks, the risks, and how you'll control them. Required for high-risk construction work under HSWA. Principal contractors often require SWMS from all subcontractors before work starts. Download our free <a href="{{ base_path }}/templates/swms.html">SWMS template</a>.</div>
+            </div>
+
+            <!-- Pricing & Business -->
+            <div class="faq-cat">Pricing &amp; Business</div>
+
+            <div class="faq-item">
+                <div class="faq-q">How do I work out what to charge per hour? <span class="icon">+</span></div>
+                <div class="faq-a">Your rate must cover: take-home pay + income tax + ACC + vehicle + tools + insurance + public holidays + slow periods. Many tradies undercharge by only thinking about take-home. Use our <a href="{{ base_path }}/calculators/hourly-rate-calculator.html">Hourly Rate Calculator</a> to build a rate that accounts for all costs and targets your actual income goal.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Should I quote fixed price or time and materials? <span class="icon">+</span></div>
+                <div class="faq-a">Fixed price suits well-defined jobs (new builds, bathroom renovation with clear scope). It protects the client but you carry the risk of cost overruns. Time and materials suits less-defined jobs (repairs, maintenance, investigation work). Hybrid approaches work well: quote materials as a provisional sum or PC sum, and labour as time and materials. Always have a variation clause regardless. <a href="{{ base_path }}/articles/how-to-price-a-job-nz-tradie-guide.html">Job pricing guide →</a></div>
+            </div>
+
+            <div style="margin-top:2rem;padding:1.25rem;background:#f0f4f8;border-radius:6px;font-size:.9rem">
+                <strong>Got a question not answered here?</strong> <a href="{{ base_path }}/contact/">Contact us</a> or browse the <a href="{{ base_path }}/glossary/">NZ Tradie Glossary</a> for term definitions.
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:linear-gradient(135deg,#0055a5 0%,#003d7a 100%);color:#fff;border:none">
+                <h3 style="color:#fff">🚀 Fastcrew — One App for Everything</h3>
+                <p style="color:rgba(255,255,255,.88);font-size:.85rem;margin-bottom:.6rem">Tired of paying for 4–5 different apps? Fastcrew replaces them all.</p>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#e55a00;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Get early access →</a>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Popular Guides</h3>
+                <ul>
+                    <li><a href="{{ base_path }}/articles/going-self-employed-nz-tradie-guide.html">Going Self-Employed Checklist</a></li>
+                    <li><a href="{{ base_path }}/articles/sole-trader-vs-company-nz-tradies.html">Sole Trader vs Company</a></li>
+                    <li><a href="{{ base_path }}/articles/should-i-register-for-gst-nz-tradie.html">GST Registration Guide</a></li>
+                    <li><a href="{{ base_path }}/articles/provisional-tax-nz-tradies.html">Provisional Tax Guide</a></li>
+                    <li><a href="{{ base_path }}/articles/tradie-contract-guide-nz.html">Contracts Guide</a></li>
+                    <li><a href="{{ base_path }}/articles/unpaid-invoices-options-nz-tradies.html">Chasing Unpaid Invoices</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Free Calculators</h3>
+                <ul>
+                    <li><a href="{{ base_path }}/calculators/gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="{{ base_path }}/calculators/hourly-rate-calculator.html">Hourly Rate Calculator</a></li>
+                    <li><a href="{{ base_path }}/calculators/acc-levy-calculator.html">ACC Levy Calculator</a></li>
+                    <li><a href="{{ base_path }}/calculators/job-cost-calculator.html">Job Cost Builder</a></li>
+                    <li><a href="{{ base_path }}/calculators/">All 40 calculators →</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Free Templates</h3>
+                <ul>
+                    <li><a href="{{ base_path }}/templates/quote-template.html">Quote Template</a></li>
+                    <li><a href="{{ base_path }}/templates/tax-invoice-template.html">Tax Invoice</a></li>
+                    <li><a href="{{ base_path }}/templates/variation-order.html">Variation Order</a></li>
+                    <li><a href="{{ base_path }}/templates/swms.html">SWMS</a></li>
+                    <li><a href="{{ base_path }}/templates/">All 28 templates →</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget" style="background:#f6f8fb;border:1px solid #dde3ec">
+                <h3 style="margin-top:0">📬 Weekly Tips</h3>
+                <p style="font-size:.83rem;color:#555;margin-bottom:.75rem">Tax reminders, pricing guides — every week, free.</p>
+                <form action="{{ formspree_endpoint }}" method="POST">
+                    <input type="hidden" name="_subject" value="NZ Tradie Tools — Newsletter Signup">
+                    <input type="hidden" name="source" value="faq-sidebar">
+                    <input type="email" name="email" placeholder="Your email" required style="width:100%;padding:.45rem .6rem;border:1px solid #ccc;border-radius:4px;font-size:.88rem;margin-bottom:.5rem;box-sizing:border-box">
+                    <button type="submit" style="width:100%;background:#0055a5;color:#fff;border:none;padding:.5rem;border-radius:4px;font-size:.88rem;font-weight:600;cursor:pointer">Subscribe free →</button>
+                </form>
+            </div>
+        </aside>
+    </div>
+
+    <script>
+    document.querySelectorAll('.faq-q').forEach(function(q){
+        q.addEventListener('click',function(){
+            var item=this.closest('.faq-item');
+            var wasOpen=item.classList.contains('open');
+            document.querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('open');});
+            if(!wasOpen) item.classList.add('open');
+        });
+    });
+    </script>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">NZ Tradie Tools</p>
+                <p>Free calculators, templates and guides for New Zealand tradies.</p>
+                <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
+            </div>
+            <div style="text-align:right">
+                <p><a href="{{ base_path }}/glossary/">Tradie Glossary</a></p>
+                <p><a href="{{ base_path }}/privacy/">Privacy Policy</a></p>
+                <p><a href="{{ base_path }}/contact/">Contact</a></p>
+                <p style="margin-top:.5rem">&copy; {{ year }} NZ Tradie Tools</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

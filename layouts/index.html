@@ -112,6 +112,21 @@
             <p><a href="{{ base_path }}/articles/">View all articles →</a></p>
         </section>
 
+        <!-- Newsletter signup -->
+        <section class="section" style="background:linear-gradient(135deg,#1b2a4a 0%,#0055a5 100%);border-radius:10px;padding:2.5rem;color:#fff;text-align:center;margin:2rem 0">
+            <h2 style="color:#fff;margin-top:0;font-size:1.6rem">📬 Weekly Tradie Tips — Free</h2>
+            <p style="color:rgba(255,255,255,.88);font-size:1rem;max-width:480px;margin:.5rem auto 1.5rem">Tax reminders, pricing guides, new calculators, and NZ industry updates. One email per week. No spam.</p>
+            <form action="{{ formspree_endpoint }}" method="POST" class="lead-form" style="max-width:440px;margin:0 auto">
+                <input type="hidden" name="_subject" value="NZ Tradie Tools — Newsletter Signup">
+                <input type="hidden" name="source" value="homepage-newsletter">
+                <input type="text" name="name" placeholder="Your name" required style="background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.3);color:#fff">
+                <input type="text" name="trade" placeholder="Your trade (builder, plumber, sparky...)" style="background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.3);color:#fff">
+                <input type="email" name="email" placeholder="Email address" required style="background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.3);color:#fff">
+                <button type="submit" style="background:#e55a00;border-color:#e55a00">Subscribe — it's free →</button>
+            </form>
+            <p style="color:rgba(255,255,255,.5);font-size:.78rem;margin-top:1rem">Unsubscribe any time. We never sell your data.</p>
+        </section>
+
         <section class="section cta-box">
             <h2>Get Free NZ Tradie Templates</h2>
             <p>Quote templates, compliance checklists, vehicle log books — free for NZ tradies.</p>
@@ -135,6 +150,7 @@
                 <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
             </div>
             <div style="text-align:right">
+                <p><a href="{{ base_path }}/glossary/">Tradie Glossary</a></p>
                 <p><a href="{{ base_path }}/privacy/">Privacy Policy</a></p>
                 <p><a href="{{ base_path }}/contact/">Contact</a></p>
                 <p style="margin-top:.5rem">&copy; {{ year }} NZ Tradie Tools</p>
