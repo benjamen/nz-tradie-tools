@@ -370,14 +370,30 @@ def build_templates(config, env, nav, base_path):
         (templates_dir / f"{tmpl['slug']}.html").write_text(html, encoding="utf-8")
         count += 1
 
-    # Build the downloadable ZIP bundle
+    # Build the downloadable ZIP bundle — self-contained HTML (CSS embedded inline)
+    css_main = (SITE_ROOT / "static" / "css" / "style.css").read_text(encoding="utf-8")
+    css_tmpl = (SITE_ROOT / "static" / "css" / "templates.css").read_text(encoding="utf-8")
+    combined_css = f"<style>\n{css_main}\n{css_tmpl}\n</style>"
+
+    # Regex to strip <link> stylesheet tags and <script> GA tags, then inject inline CSS
+    link_re = re.compile(r'<link[^>]+stylesheet[^>]+>', re.IGNORECASE)
+    ga_re = re.compile(r'<script[^>]*googletagmanager[^<]*</script>\s*<script>window\.dataLayer.*?</script>', re.DOTALL)
+    adsense_re = re.compile(r'<script[^>]*adsbygoogle[^<]*</script>', re.IGNORECASE)
+
     zip_path = PUBLIC_DIR / "static" / "tradie-templates-bundle.zip"
     zip_path.parent.mkdir(parents=True, exist_ok=True)
     with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
         for tmpl in templates:
             html_path = templates_dir / f"{tmpl['slug']}.html"
-            if html_path.exists():
-                zf.write(html_path, f"nz-tradie-templates/{tmpl['slug']}.html")
+            if not html_path.exists():
+                continue
+            html = html_path.read_text(encoding="utf-8")
+            # Remove external stylesheet links, inject combined CSS before </head>
+            html = link_re.sub("", html)
+            html = ga_re.sub("", html)
+            html = adsense_re.sub("", html)
+            html = html.replace("</head>", f"{combined_css}\n</head>", 1)
+            zf.writestr(f"nz-tradie-templates/{tmpl['slug']}.html", html)
 
     return count
 
