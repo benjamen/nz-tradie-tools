@@ -999,6 +999,500 @@
                     </div>
                     <div class="doc-footer-note">All visitors must sign in and out. Health & Safety at Work Act 2015. NZ Tradie Tools — tradietools.nz</div>
 
+                    {% elif tmpl.slug == "terms-of-trade" %}
+                    <!-- TERMS OF TRADE -->
+                    <div class="doc-header">
+                        <div><div class="logo-box-clickable" onclick="document.getElementById('logo-file-input').click()" title="Click to upload your logo">Click to upload logo</div></div>
+                        <div>
+                            <div class="doc-title">TERMS OF TRADE</div>
+                            <div class="doc-meta">
+                                Business: <span contenteditable>Your Business Name</span><br>
+                                Date: <span contenteditable>{{ year }}-01-01</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-bottom:.75rem">
+                        <div class="doc-section-label">1. Parties</div>
+                        <div contenteditable class="block-field"><strong>Contractor:</strong> <span contenteditable>[Your Business Name]</span>, trading as [trading name if applicable], GST No: [xxx-xxx-xxx] ("we", "us", "our").<br><strong>Client:</strong> The person or entity accepting these terms ("you", "your").</div>
+                    </div>
+                    <div style="margin-bottom:.75rem">
+                        <div class="doc-section-label">2. Quotes &amp; Acceptance</div>
+                        <div contenteditable class="block-field">All quotes are valid for 30 days from the date of issue. A quote is not a contract until accepted in writing (email or signed quote). Verbal acceptance may be relied upon but written confirmation is preferred.</div>
+                    </div>
+                    <div style="margin-bottom:.75rem">
+                        <div class="doc-section-label">3. Payment Terms</div>
+                        <div contenteditable class="block-field">Payment is due within 14 days of invoice date unless otherwise agreed in writing. A deposit of [X%] may be required before work commences. Bank: [Bank Name] | Account: [XX-XXXX-XXXXXXX-XX]. Late payments accrue interest at [2%] per month.</div>
+                    </div>
+                    <div style="margin-bottom:.75rem">
+                        <div class="doc-section-label">4. Variations</div>
+                        <div contenteditable class="block-field">Any additional work beyond the original scope must be agreed in writing via a Variation Order before work commences. Verbal instructions to vary may be charged at our standard rate at our discretion.</div>
+                    </div>
+                    <div style="margin-bottom:.75rem">
+                        <div class="doc-section-label">5. Access &amp; Site Conditions</div>
+                        <div contenteditable class="block-field">The client is responsible for providing safe site access and ensuring the site is ready for work as agreed. Delays caused by lack of access or unsuitable site conditions may result in additional charges.</div>
+                    </div>
+                    <div style="margin-bottom:.75rem">
+                        <div class="doc-section-label">6. Liability</div>
+                        <div contenteditable class="block-field">Our liability is limited to the value of the work performed. We are not liable for consequential or indirect loss. Nothing in these terms limits rights under the Consumer Guarantees Act 1993 where applicable.</div>
+                    </div>
+                    <div style="margin-bottom:.75rem">
+                        <div class="doc-section-label">7. Consumer Guarantees Act 1993</div>
+                        <div contenteditable class="block-field">Where services are supplied to a consumer, nothing in these terms limits or excludes rights under the Consumer Guarantees Act 1993. Where services are supplied for business purposes, the Consumer Guarantees Act 1993 is excluded to the extent permitted by law.</div>
+                    </div>
+                    <div style="margin-bottom:.75rem">
+                        <div class="doc-section-label">8. Dispute Resolution</div>
+                        <div contenteditable class="block-field">Any disputes should first be raised in writing. If unresolved within 20 working days, either party may refer the matter to mediation or adjudication under the Construction Contracts Act 2002 (where applicable).</div>
+                    </div>
+                    <div style="margin-bottom:.75rem">
+                        <div class="doc-section-label">9. Cancellation</div>
+                        <div contenteditable class="block-field">If the client cancels after acceptance, we reserve the right to charge for work completed and materials ordered to date. A cancellation fee of [X%] of the quoted price may apply.</div>
+                    </div>
+                    <div class="signature-block">
+                        <div><div class="sig-line"></div><div class="sig-label">Contractor / Date</div></div>
+                        <div><div class="sig-line"></div><div class="sig-label">Client signature / Date</div></div>
+                    </div>
+                    <div class="doc-footer-note">These terms are a template only — not legal advice. For high-value contracts, seek legal review. NZ Tradie Tools — tradietools.nz</div>
+
+                    {% elif tmpl.slug == "cca-payment-claim" %}
+                    <!-- CCA PAYMENT CLAIM -->
+                    <div class="doc-header">
+                        <div><div class="logo-box-clickable" onclick="document.getElementById('logo-file-input').click()" title="Click to upload your logo">Click to upload logo</div></div>
+                        <div>
+                            <div class="doc-title">PAYMENT CLAIM</div>
+                            <div class="doc-meta">
+                                Claim #: <span contenteditable>CCA-001</span><br>
+                                Date served: <span contenteditable>{{ year }}-01-01</span><br>
+                                Contract ref: <span contenteditable>CONTRACT-001</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin:.5rem 0 1rem;font-size:.82rem;background:#e8f4fd;padding:.5rem .75rem;border-radius:4px">
+                        This is a payment claim served under the <strong>Construction Contracts Act 2002</strong>. The respondent must respond with a payment schedule within <strong>20 working days</strong> of receiving this claim, or the claimed amount becomes payable in full.
+                    </div>
+                    <div class="doc-parties">
+                        <div>
+                            <div class="doc-section-label">Claimant (Contractor)</div>
+                            <div contenteditable class="block-field">Your Business Name</div>
+                            <div contenteditable class="block-field">Address</div>
+                            <div contenteditable class="block-field">GST No: [your GST number]</div>
+                        </div>
+                        <div>
+                            <div class="doc-section-label">Respondent (Principal / Client)</div>
+                            <div contenteditable class="block-field">Client / Developer Name</div>
+                            <div contenteditable class="block-field">Address</div>
+                        </div>
+                    </div>
+                    <div style="margin-bottom:1rem">
+                        <div class="doc-section-label">Construction Work / Services</div>
+                        <div contenteditable class="block-field">Project name and site address</div>
+                    </div>
+                    <div style="margin-bottom:1rem">
+                        <div class="doc-section-label">Claim Period</div>
+                        <div contenteditable class="block-field">Work performed from <span contenteditable>[start date]</span> to <span contenteditable>[end date]</span></div>
+                    </div>
+                    <table class="line-items-table">
+                        <colgroup><col style="width:44%"><col style="width:22%"><col style="width:17%"><col style="width:17%"></colgroup>
+                        <thead><tr><th>Description of Work</th><th>Scheduled Amount ($)</th><th>% Complete</th><th>Claimed ($)</th></tr></thead>
+                        <tbody>
+                            <tr><td contenteditable>Contract work — [description]</td><td contenteditable>100,000</td><td contenteditable>60%</td><td contenteditable>60,000</td></tr>
+                            <tr><td contenteditable>Approved Variation — VO-001</td><td contenteditable>5,500</td><td contenteditable>100%</td><td contenteditable>5,500</td></tr>
+                            <tr><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td></tr>
+                        </tbody>
+                    </table>
+                    <div class="doc-totals">
+                        <div class="doc-totals-row"><span>Gross amount claimed</span><span>$<span contenteditable>65,500</span></span></div>
+                        <div class="doc-totals-row"><span>Less retention (<span contenteditable>5</span>%)</span><span>($<span contenteditable>3,275</span>)</span></div>
+                        <div class="doc-totals-row"><span>Less previously claimed &amp; paid</span><span>($<span contenteditable>0</span>)</span></div>
+                        <div class="doc-totals-row"><span>Net claim (excl. GST)</span><span>$<span contenteditable>62,225</span></span></div>
+                        <div class="doc-totals-row"><span>GST (15%)</span><span>$<span contenteditable>9,334</span></span></div>
+                        <div class="doc-totals-row total"><span>AMOUNT CLAIMED</span><span>$<span contenteditable>71,559</span></span></div>
+                    </div>
+                    <div style="margin-top:1rem">
+                        <div class="doc-section-label">Payment Instructions</div>
+                        <div contenteditable class="block-field">Bank: [Bank Name] | Account: [XX-XXXX-XXXXXXX-XX] | Reference: CCA-001</div>
+                    </div>
+                    <div class="signature-block">
+                        <div><div class="sig-line"></div><div class="sig-label">Claimant signature / Date</div></div>
+                        <div><div class="sig-line"></div><div class="sig-label">Served on (respondent) / Date received</div></div>
+                    </div>
+                    <div class="doc-footer-note">Payment claim under Construction Contracts Act 2002 (NZ). Keep a copy of service proof (email, courier receipt). NZ Tradie Tools — tradietools.nz</div>
+
+                    {% elif tmpl.slug == "site-safety-plan" %}
+                    <!-- SITE-SPECIFIC SAFETY PLAN (SSSP) -->
+                    <div class="doc-header">
+                        <div><div class="logo-box-clickable" onclick="document.getElementById('logo-file-input').click()" title="Click to upload your logo">Click to upload logo</div></div>
+                        <div>
+                            <div class="doc-title">SITE-SPECIFIC SAFETY PLAN</div>
+                            <div class="doc-meta">
+                                SSSP #: <span contenteditable>SSSP-001</span><br>
+                                Site: <span contenteditable>Site address</span><br>
+                                Date: <span contenteditable>{{ year }}-01-01</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="font-size:.82rem;background:#fff3cd;padding:.5rem .75rem;border-radius:4px;margin:0 0 1rem">Health &amp; Safety at Work Act 2015. A Site-Specific Safety Plan (SSSP) must be in place before work starts. Share with all subcontractors and keep on site for the duration of the project.</p>
+                    <div class="doc-parties">
+                        <div>
+                            <div class="doc-section-label">Principal Contractor / PCBU</div>
+                            <div contenteditable class="block-field">Business Name</div>
+                            <div contenteditable class="block-field">Site Manager: Name / Phone</div>
+                        </div>
+                        <div>
+                            <div class="doc-section-label">Project Details</div>
+                            <div contenteditable class="block-field">Project description</div>
+                            <div contenteditable class="block-field">Expected duration: [start] to [end]</div>
+                        </div>
+                    </div>
+                    <div style="margin-bottom:.75rem">
+                        <div class="doc-section-label">Emergency Contacts</div>
+                        <table class="line-items-table last-col-left" style="font-size:.82rem">
+                            <colgroup><col style="width:30%"><col style="width:35%"><col style="width:35%"></colgroup>
+                            <thead><tr><th>Role</th><th>Name</th><th>Phone</th></tr></thead>
+                            <tbody>
+                                <tr><td>Site Manager</td><td contenteditable></td><td contenteditable></td></tr>
+                                <tr><td>First Aider</td><td contenteditable></td><td contenteditable></td></tr>
+                                <tr><td>Emergency Services</td><td>111</td><td>111</td></tr>
+                                <tr><td>WorkSafe NZ</td><td>0800 030 040</td><td>0800 030 040</td></tr>
+                                <tr><td contenteditable>Other</td><td contenteditable></td><td contenteditable></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div style="margin-bottom:.75rem">
+                        <div class="doc-section-label">Site Hazard Register</div>
+                        <table class="line-items-table last-col-left" style="font-size:.82rem">
+                            <colgroup><col style="width:30%"><col style="width:20%"><col style="width:35%"><col style="width:15%"></colgroup>
+                            <thead><tr><th>Hazard</th><th>Risk (H/M/L)</th><th>Control Measure</th><th>Responsible</th></tr></thead>
+                            <tbody>
+                                <tr><td contenteditable>Working at heights</td><td contenteditable>H</td><td contenteditable>Edge protection, harness, permit required</td><td contenteditable>Site Manager</td></tr>
+                                <tr><td contenteditable>Excavation</td><td contenteditable>H</td><td contenteditable>Dial Before You Dig, shoring, exclusion zone</td><td contenteditable>Site Manager</td></tr>
+                                <tr><td contenteditable>Electrical</td><td contenteditable>H</td><td contenteditable>Isolation before work, RCDs, tested equipment</td><td contenteditable>Electrician</td></tr>
+                                <tr><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td></tr>
+                                <tr><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div style="margin-bottom:.75rem">
+                        <div class="doc-section-label">PPE Requirements (all workers)</div>
+                        <div contenteditable class="block-field">Hard hat, hi-vis vest, safety boots (steel-capped), safety glasses. Additional PPE as required by SWMS for specific tasks.</div>
+                    </div>
+                    <div style="margin-bottom:.75rem">
+                        <div class="doc-section-label">First Aid</div>
+                        <div contenteditable class="block-field">First aid kit location: [specify]. First aider on site: [name]. Nearest hospital: [name and address].</div>
+                    </div>
+                    <div style="margin-bottom:.75rem">
+                        <div class="doc-section-label">Emergency Evacuation</div>
+                        <div contenteditable class="block-field">Assembly point: [location]. Evacuation procedure: stop work immediately, alert all workers, proceed to assembly point, account for all persons, contact emergency services if required.</div>
+                    </div>
+                    <div style="margin-bottom:.75rem">
+                        <div class="doc-section-label">Subcontractors on Site</div>
+                        <table class="line-items-table last-col-left" style="font-size:.82rem">
+                            <colgroup><col style="width:30%"><col style="width:25%"><col style="width:25%"><col style="width:20%"></colgroup>
+                            <thead><tr><th>Company / Trade</th><th>Contact</th><th>SWMS Provided</th><th>Inducted</th></tr></thead>
+                            <tbody>
+                                {% for i in range(5) %}<tr><td contenteditable></td><td contenteditable></td><td contenteditable>Y / N</td><td contenteditable>Y / N</td></tr>{% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="signature-block">
+                        <div><div class="sig-line"></div><div class="sig-label">Site Manager / Date</div></div>
+                        <div><div class="sig-line"></div><div class="sig-label">Review date / Reviewed by</div></div>
+                    </div>
+                    <div class="doc-footer-note">Review this SSSP whenever site conditions change. Health &amp; Safety at Work Act 2015. NZ Tradie Tools — tradietools.nz</div>
+
+                    {% elif tmpl.slug == "job-safety-analysis" %}
+                    <!-- JOB SAFETY ANALYSIS (JSA) -->
+                    <div class="doc-header">
+                        <div><div class="logo-box-clickable" onclick="document.getElementById('logo-file-input').click()" title="Click to upload your logo">Click to upload logo</div></div>
+                        <div>
+                            <div class="doc-title">JOB SAFETY ANALYSIS (JSA)</div>
+                            <div class="doc-meta">
+                                JSA #: <span contenteditable>JSA-001</span><br>
+                                Date: <span contenteditable>{{ year }}-01-01</span><br>
+                                Task: <span contenteditable>Describe the specific task</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="font-size:.82rem;background:#fff3cd;padding:.5rem .75rem;border-radius:4px;margin:0 0 1rem">Complete a JSA for each specific task before work begins. All workers performing the task must read and sign. Review if task conditions change.</p>
+                    <div class="doc-parties">
+                        <div>
+                            <div class="doc-section-label">Site / Project</div>
+                            <div contenteditable class="block-field">Site address</div>
+                            <div contenteditable class="block-field">Principal Contractor: [Name]</div>
+                        </div>
+                        <div>
+                            <div class="doc-section-label">Prepared by</div>
+                            <div contenteditable class="block-field">Name / Role</div>
+                            <div contenteditable class="block-field">Review date: [date]</div>
+                        </div>
+                    </div>
+                    <div style="margin-bottom:1rem">
+                        <div class="doc-section-label">PPE Required for This Task</div>
+                        <div contenteditable class="block-field">List all PPE required for this specific task...</div>
+                    </div>
+                    <div style="margin-bottom:.5rem">
+                        <div class="doc-section-label">Task Steps, Hazards &amp; Controls</div>
+                    </div>
+                    <table class="line-items-table last-col-left">
+                        <colgroup><col style="width:4%"><col style="width:22%"><col style="width:20%"><col style="width:11%"><col style="width:30%"><col style="width:13%"></colgroup>
+                        <thead><tr><th>#</th><th>Task Step</th><th>Hazard / Risk</th><th>Risk Level</th><th>Control Measure</th><th>Residual Risk</th></tr></thead>
+                        <tbody>
+                            <tr><td>1</td><td contenteditable>Set up work area</td><td contenteditable>Slip/trip hazards</td><td contenteditable>M</td><td contenteditable>Clear area, barricade if needed</td><td contenteditable>L</td></tr>
+                            <tr><td>2</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td></tr>
+                            <tr><td>3</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td></tr>
+                            <tr><td>4</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td></tr>
+                            <tr><td>5</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td></tr>
+                            <tr><td>6</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td></tr>
+                        </tbody>
+                    </table>
+                    <div style="margin:.75rem 0;font-size:.8rem;color:#666">Risk Level: <strong>H</strong> = High (stop work if uncontrolled) | <strong>M</strong> = Medium | <strong>L</strong> = Low</div>
+                    <div style="margin-bottom:.75rem">
+                        <div class="doc-section-label">Emergency Procedures</div>
+                        <div contenteditable class="block-field">Emergency contact: [Name / Phone]. First aid location: [Location]. If serious incident: call 111, do not disturb scene, notify WorkSafe 0800 030 040.</div>
+                    </div>
+                    <div style="margin-bottom:.75rem">
+                        <div class="doc-section-label">Worker Sign-Off — I have read and understood this JSA</div>
+                        <table class="line-items-table last-col-left" style="font-size:.82rem">
+                            <colgroup><col style="width:30%"><col style="width:25%"><col style="width:30%"><col style="width:15%"></colgroup>
+                            <thead><tr><th>Name</th><th>Role</th><th>Signature</th><th>Date</th></tr></thead>
+                            <tbody>
+                                {% for i in range(6) %}<tr><td contenteditable></td><td contenteditable></td><td></td><td contenteditable></td></tr>{% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="doc-footer-note">Health &amp; Safety at Work Act 2015. Review JSA if conditions change. NZ Tradie Tools — tradietools.nz</div>
+
+                    {% elif tmpl.slug == "weekly-timesheet" %}
+                    <!-- WEEKLY TIMESHEET -->
+                    <div class="doc-header">
+                        <div><div class="logo-box-clickable" onclick="document.getElementById('logo-file-input').click()" title="Click to upload your logo">Click to upload logo</div></div>
+                        <div>
+                            <div class="doc-title">WEEKLY TIMESHEET</div>
+                            <div class="doc-meta">
+                                Week ending: <span contenteditable>{{ year }}-01-07</span><br>
+                                Business: <span contenteditable>Your Business Name</span>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="line-items-table last-col-left" style="margin-bottom:.5rem">
+                        <colgroup><col style="width:22%"><col style="width:20%"><col style="width:10%"><col style="width:8%"><col style="width:8%"><col style="width:8%"><col style="width:8%"><col style="width:8%"><col style="width:8%"></colgroup>
+                        <thead><tr><th>Employee</th><th>Job / Site</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th><th>Sun</th></tr></thead>
+                        <tbody>
+                            {% for i in range(8) %}
+                            <tr>
+                                <td contenteditable>{% if i == 0 %}Employee Name{% endif %}</td>
+                                <td contenteditable></td>
+                                <td contenteditable></td>
+                                <td contenteditable></td>
+                                <td contenteditable></td>
+                                <td contenteditable></td>
+                                <td contenteditable></td>
+                                <td contenteditable></td>
+                                <td contenteditable></td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    <div class="doc-totals" style="width:340px">
+                        <div class="doc-totals-row"><span>Total ordinary hours</span><span contenteditable>0</span></div>
+                        <div class="doc-totals-row"><span>Overtime hours (1.5×)</span><span contenteditable>0</span></div>
+                        <div class="doc-totals-row"><span>Public holiday hours (2×)</span><span contenteditable>0</span></div>
+                        <div class="doc-totals-row total"><span>Total hours payable</span><span contenteditable>0</span></div>
+                    </div>
+                    <div style="margin:1rem 0">
+                        <div class="doc-section-label">Notes</div>
+                        <div contenteditable class="block-field" style="min-height:2em">Annual leave, sick leave, or other notes for payroll...</div>
+                    </div>
+                    <div class="signature-block">
+                        <div><div class="sig-line"></div><div class="sig-label">Employee signature</div></div>
+                        <div><div class="sig-line"></div><div class="sig-label">Employer / supervisor approved / Date</div></div>
+                    </div>
+                    <div class="doc-footer-note">Retain timesheets for 7 years for IRD payroll records. NZ Tradie Tools — tradietools.nz</div>
+
+                    {% elif tmpl.slug == "payment-reminder" %}
+                    <!-- PAYMENT REMINDER / OVERDUE INVOICE -->
+                    <div class="doc-header">
+                        <div><div class="logo-box-clickable" onclick="document.getElementById('logo-file-input').click()" title="Click to upload your logo">Click to upload logo</div></div>
+                        <div>
+                            <div class="doc-title">PAYMENT REMINDER</div>
+                            <div class="doc-meta">
+                                Date: <span contenteditable>{{ year }}-01-01</span><br>
+                                Notice type: <span contenteditable>First Reminder / Final Notice</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doc-parties">
+                        <div>
+                            <div class="doc-section-label">From</div>
+                            <div contenteditable class="block-field">Your Business Name</div>
+                            <div contenteditable class="block-field">Phone / Email</div>
+                        </div>
+                        <div>
+                            <div class="doc-section-label">To</div>
+                            <div contenteditable class="block-field">Client Name</div>
+                            <div contenteditable class="block-field">Client Address / Email</div>
+                        </div>
+                    </div>
+                    <div style="margin:.5rem 0 1rem;padding:.75rem 1rem;border-left:4px solid #e53e3e;background:#fff5f5;font-size:.9rem">
+                        <strong>Invoice overdue — payment required</strong>
+                    </div>
+                    <div style="margin-bottom:1rem">
+                        <div class="doc-section-label">Invoice Details</div>
+                        <table class="line-items-table last-col-left">
+                            <colgroup><col style="width:30%"><col style="width:30%"><col style="width:20%"><col style="width:20%"></colgroup>
+                            <thead><tr><th>Invoice #</th><th>Invoice Date</th><th>Due Date</th><th>Amount Owing</th></tr></thead>
+                            <tbody>
+                                <tr><td contenteditable>INV-001</td><td contenteditable>{{ year }}-01-01</td><td contenteditable>{{ year }}-01-14</td><td contenteditable>$1,500.00</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div style="margin-bottom:1rem">
+                        <div class="doc-section-label">Message</div>
+                        <div contenteditable class="block-field" style="min-height:5em">Dear [Client Name],
+
+This is a reminder that payment of $[amount] for Invoice #[number] was due on [date] and remains outstanding.
+
+Please arrange payment to the bank details below as soon as possible. If you have already made payment, please disregard this notice.
+
+If you have any queries regarding this invoice, please contact us on [phone/email].
+
+Bank: [Bank Name] | Account: [XX-XXXX-XXXXXXX-XX] | Reference: [Invoice number]
+
+If payment is not received by [date — 7 days from this letter], we will have no option but to refer this matter to a debt collection agency and/or pursue recovery under the Construction Contracts Act 2002 (if applicable).</div>
+                    </div>
+                    <div class="signature-block">
+                        <div><div class="sig-line"></div><div class="sig-label">Authorised by / Date</div></div>
+                        <div></div>
+                    </div>
+                    <div class="doc-footer-note">Keep a copy of this notice and any delivery confirmation. NZ Tradie Tools — tradietools.nz</div>
+
+                    {% elif tmpl.slug == "site-inspection-form" %}
+                    <!-- PRE-QUOTE SITE INSPECTION FORM -->
+                    <div class="doc-header">
+                        <div><div class="logo-box-clickable" onclick="document.getElementById('logo-file-input').click()" title="Click to upload your logo">Click to upload logo</div></div>
+                        <div>
+                            <div class="doc-title">SITE INSPECTION FORM</div>
+                            <div class="doc-meta">
+                                Ref: <span contenteditable>SI-001</span><br>
+                                Date: <span contenteditable>{{ year }}-01-01</span><br>
+                                Tradie: <span contenteditable>Your Name</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doc-parties">
+                        <div>
+                            <div class="doc-section-label">Client</div>
+                            <div contenteditable class="block-field">Client Name</div>
+                            <div contenteditable class="block-field">Phone / Email</div>
+                        </div>
+                        <div>
+                            <div class="doc-section-label">Site Address</div>
+                            <div contenteditable class="block-field">123 Inspection Road, Suburb, City</div>
+                        </div>
+                    </div>
+                    <div style="margin-bottom:.75rem">
+                        <div class="doc-section-label">Work Requested</div>
+                        <div contenteditable class="block-field" style="min-height:2em">Describe what the client wants done...</div>
+                    </div>
+                    <div style="margin-bottom:.75rem">
+                        <div class="doc-section-label">Site Conditions Observed</div>
+                        <table class="line-items-table last-col-left" style="font-size:.85rem">
+                            <colgroup><col style="width:50%"><col style="width:15%"><col style="width:35%"></colgroup>
+                            <thead><tr><th>Item</th><th>Y / N / N/A</th><th>Notes</th></tr></thead>
+                            <tbody>
+                                <tr><td>Safe vehicle/equipment access</td><td contenteditable>Y</td><td contenteditable></td></tr>
+                                <tr><td>Existing damage or defects noted</td><td contenteditable>N</td><td contenteditable></td></tr>
+                                <tr><td>Asbestos / hazardous materials risk</td><td contenteditable>N</td><td contenteditable></td></tr>
+                                <tr><td>Services (power/water/gas) located</td><td contenteditable>Y</td><td contenteditable></td></tr>
+                                <tr><td>Height or confined space work required</td><td contenteditable>N</td><td contenteditable></td></tr>
+                                <tr><td>Photos taken of existing conditions</td><td contenteditable>Y</td><td contenteditable>Filed under job ref</td></tr>
+                                <tr><td contenteditable>Other</td><td contenteditable></td><td contenteditable></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div style="margin-bottom:.75rem">
+                        <div class="doc-section-label">Key Measurements / Notes</div>
+                        <div contenteditable class="block-field" style="min-height:3em">Record dimensions, quantities, special requirements, or any conditions that will affect the quote...</div>
+                    </div>
+                    <div style="margin-bottom:.75rem">
+                        <div class="doc-section-label">Risks / Issues Identified</div>
+                        <div contenteditable class="block-field" style="min-height:2em">Note anything that could affect cost, timeframe, or health and safety...</div>
+                    </div>
+                    <div style="margin:.75rem 0;font-size:.82rem;background:#e8f4fd;padding:.5rem .75rem;border-radius:4px">
+                        <strong>Client acknowledgement:</strong> By signing below, the client confirms they were present during this inspection and that the site conditions noted above are accurate to the best of their knowledge.
+                    </div>
+                    <div class="signature-block">
+                        <div><div class="sig-line"></div><div class="sig-label">Tradie / Date</div></div>
+                        <div><div class="sig-line"></div><div class="sig-label">Client (site conditions confirmed) / Date</div></div>
+                    </div>
+                    <div class="doc-footer-note">This form documents site conditions at time of inspection. Conditions may change prior to work commencing. NZ Tradie Tools — tradietools.nz</div>
+
+                    {% elif tmpl.slug == "retention-release" %}
+                    <!-- RETENTION RELEASE CERTIFICATE -->
+                    <div class="doc-header">
+                        <div><div class="logo-box-clickable" onclick="document.getElementById('logo-file-input').click()" title="Click to upload your logo">Click to upload logo</div></div>
+                        <div>
+                            <div class="doc-title">RETENTION RELEASE CERTIFICATE</div>
+                            <div class="doc-meta">
+                                Ref: <span contenteditable>RR-001</span><br>
+                                Date: <span contenteditable>{{ year }}-01-01</span><br>
+                                Contract ref: <span contenteditable>CONTRACT-001</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin:.5rem 0 1rem;font-size:.82rem;background:#e8f4fd;padding:.5rem .75rem;border-radius:4px">
+                        Retention held under the <strong>Construction Contracts Act 2002</strong>. Retention moneys must be held on trust and released at the end of the defect liability period once all defects are remedied.
+                    </div>
+                    <div class="doc-parties">
+                        <div>
+                            <div class="doc-section-label">Contractor (Requesting Release)</div>
+                            <div contenteditable class="block-field">Your Business Name</div>
+                            <div contenteditable class="block-field">Address / Contact</div>
+                            <div contenteditable class="block-field">GST No: [your number]</div>
+                        </div>
+                        <div>
+                            <div class="doc-section-label">Principal / Client (Holding Retention)</div>
+                            <div contenteditable class="block-field">Client / Developer Name</div>
+                            <div contenteditable class="block-field">Address / Contact</div>
+                        </div>
+                    </div>
+                    <div style="margin-bottom:1rem">
+                        <div class="doc-section-label">Project</div>
+                        <div contenteditable class="block-field">Project name and site address</div>
+                    </div>
+                    <table class="line-items-table">
+                        <colgroup><col style="width:55%"><col style="width:45%"></colgroup>
+                        <thead><tr><th>Item</th><th>Amount / Details</th></tr></thead>
+                        <tbody>
+                            <tr><td>Original contract sum (excl. GST)</td><td contenteditable>$200,000</td></tr>
+                            <tr><td>Approved variations</td><td contenteditable>$15,000</td></tr>
+                            <tr><td>Total contract value (excl. GST)</td><td contenteditable>$215,000</td></tr>
+                            <tr><td>Retention rate</td><td contenteditable>5%</td></tr>
+                            <tr><td>Total retention held</td><td contenteditable>$10,750</td></tr>
+                            <tr><td>Practical completion date</td><td contenteditable></td></tr>
+                            <tr><td>Defect liability period</td><td contenteditable>12 months from practical completion</td></tr>
+                            <tr><td>Defect liability period end date</td><td contenteditable></td></tr>
+                            <tr><td>Defects identified at practical completion</td><td contenteditable>None / [list ref]</td></tr>
+                            <tr><td>Defects remedied by</td><td contenteditable>N/A / [date]</td></tr>
+                        </tbody>
+                    </table>
+                    <div class="doc-totals" style="margin-top:1rem">
+                        <div class="doc-totals-row"><span>Retention to release (excl. GST)</span><span>$<span contenteditable>10,750</span></span></div>
+                        <div class="doc-totals-row"><span>GST (15%)</span><span>$<span contenteditable>1,612</span></span></div>
+                        <div class="doc-totals-row total"><span>TOTAL RETENTION RELEASE</span><span>$<span contenteditable>12,362</span></span></div>
+                    </div>
+                    <div style="margin-top:1rem">
+                        <div class="doc-section-label">Payment Instructions</div>
+                        <div contenteditable class="block-field">Bank: [Bank Name] | Account: [XX-XXXX-XXXXXXX-XX] | Reference: RR-001 / [Contract ref]</div>
+                    </div>
+                    <div style="margin:.75rem 0;font-size:.82rem;background:#f0fff4;padding:.5rem .75rem;border-radius:4px">
+                        <strong>By signing below, the principal confirms:</strong> The defect liability period has expired, all notified defects have been remedied to satisfaction, and the retention moneys stated above are authorised for release.
+                    </div>
+                    <div class="signature-block">
+                        <div><div class="sig-line"></div><div class="sig-label">Contractor / Date</div></div>
+                        <div><div class="sig-line"></div><div class="sig-label">Principal / Client authorised by / Date</div></div>
+                    </div>
+                    <div class="doc-footer-note">Construction Contracts Act 2002 — retention moneys must be held on trust (s18C). NZ Tradie Tools — tradietools.nz</div>
+
                     {% endif %}
                 </div>
             </div>

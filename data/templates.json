@@ -198,5 +198,85 @@
     "preview_note": "Keep this at the site entrance. Every visitor signs in before entering the site.",
     "seo_title": "Free Site Induction Form NZ — Visitor & Contractor Sign-In",
     "seo_description": "Free contractor and visitor site induction form for NZ construction sites. HSWA 2015 compliant sign-in and safety briefing. Download as PDF."
+  },
+  {
+    "slug": "terms-of-trade",
+    "title": "Terms of Trade / Customer Agreement",
+    "description": "Protect your tradie business with clear terms — covers payment, variations, liability, and Consumer Guarantees Act compliance.",
+    "category": "legal",
+    "icon": "📜",
+    "preview_note": "Have customers sign this before any significant job. It protects you if payment disputes arise.",
+    "seo_title": "Free NZ Tradie Terms of Trade Template — Customer Agreement Download",
+    "seo_description": "Free terms of trade template for NZ tradies. Covers payment terms, variations, liability cap, Consumer Guarantees Act, and dispute resolution. Download as PDF."
+  },
+  {
+    "slug": "cca-payment-claim",
+    "title": "CCA Payment Claim",
+    "description": "Formal payment claim under the Construction Contracts Act 2002 — the correct legal format for claiming progress payments in NZ.",
+    "category": "finance",
+    "icon": "⚖️",
+    "preview_note": "Serve this payment claim in writing. The respondent has 20 working days to issue a payment schedule.",
+    "seo_title": "Free CCA Payment Claim Template NZ — Construction Contracts Act 2002",
+    "seo_description": "Free Construction Contracts Act 2002 payment claim template for NZ tradies and builders. Correct legal format for claiming progress payments. Download as PDF."
+  },
+  {
+    "slug": "site-safety-plan",
+    "title": "Site-Specific Safety Plan (SSSP)",
+    "description": "Whole-site health and safety management plan for NZ construction sites — covers emergency procedures, hazards, and subcontractor management.",
+    "category": "safety",
+    "icon": "🏗️",
+    "preview_note": "Complete before work starts. Keep on site and share with all subcontractors.",
+    "seo_title": "Free Site-Specific Safety Plan Template NZ — SSSP HSWA 2015",
+    "seo_description": "Free site-specific safety plan (SSSP) template for NZ construction sites. HSWA 2015 compliant. Covers hazards, emergency procedures, and subcontractor management."
+  },
+  {
+    "slug": "job-safety-analysis",
+    "title": "Job Safety Analysis (JSA)",
+    "description": "Step-by-step task hazard analysis for NZ tradies — identify risks and control measures for each step of a specific job.",
+    "category": "safety",
+    "icon": "🔎",
+    "preview_note": "Complete a JSA for each task before work begins. Workers must read and sign.",
+    "seo_title": "Free Job Safety Analysis Template NZ — JSA Form Download",
+    "seo_description": "Free job safety analysis (JSA) template for NZ tradies. Step-by-step hazard identification and control measures. HSWA 2015 compliant. Download as PDF."
+  },
+  {
+    "slug": "weekly-timesheet",
+    "title": "Weekly Timesheet",
+    "description": "Track employee hours, jobs, and overtime for accurate payroll — IRD compliant weekly timesheet for NZ tradies.",
+    "category": "operations",
+    "icon": "⏱️",
+    "preview_note": "Complete and sign weekly. Keep copies for 7 years for IRD payroll records.",
+    "seo_title": "Free Weekly Timesheet Template NZ — Tradie Employee Hours Tracker",
+    "seo_description": "Free weekly timesheet template for NZ tradies. Track employee hours, overtime, and job codes for payroll and IRD compliance. Download as PDF."
+  },
+  {
+    "slug": "payment-reminder",
+    "title": "Overdue Invoice / Payment Reminder",
+    "description": "Professional payment reminder letter for NZ tradies — escalates from friendly reminder to formal demand before debt collection.",
+    "category": "finance",
+    "icon": "💌",
+    "preview_note": "Send the friendly reminder first, then escalate to final notice if payment isn't received within 7 days.",
+    "seo_title": "Free Payment Reminder Letter NZ — Overdue Invoice Demand Template",
+    "seo_description": "Free overdue invoice and payment reminder letter template for NZ tradies. Escalate from friendly reminder to formal demand letter. Download as PDF."
+  },
+  {
+    "slug": "site-inspection-form",
+    "title": "Pre-Quote Site Inspection Form",
+    "description": "Document site conditions before quoting — protect yourself from 'you didn't say it would cost that' disputes.",
+    "category": "operations",
+    "icon": "🔍",
+    "preview_note": "Complete on-site before preparing your quote. Have the customer sign to confirm conditions sighted.",
+    "seo_title": "Free Pre-Quote Site Inspection Form NZ — Tradie Site Visit Checklist",
+    "seo_description": "Free pre-quote site inspection form for NZ tradies. Document site conditions before quoting to protect against scope and cost disputes. Download as PDF."
+  },
+  {
+    "slug": "retention-release",
+    "title": "Retention Release Certificate",
+    "description": "Formally release retention held under the Construction Contracts Act 2002 — confirms defect liability period has ended.",
+    "category": "finance",
+    "icon": "🔓",
+    "preview_note": "Issue at the end of the defect liability period. Both parties sign to confirm retention is released.",
+    "seo_title": "Free Retention Release Certificate NZ — CCA Retention Template",
+    "seo_description": "Free retention release certificate for NZ construction contracts. Formally release CCA retention at end of defect liability period. Download as PDF."
   }
 ]
