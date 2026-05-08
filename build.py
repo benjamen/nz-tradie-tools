@@ -455,8 +455,8 @@ body {{
 
                 if chromium:
                     subprocess.run(
-                        [chromium, "--headless", "--no-sandbox", "--disable-gpu",
-                         "--print-to-pdf-no-header",
+                        [chromium, "--headless=new", "--no-sandbox", "--disable-gpu",
+                         "--no-pdf-header-footer",
                          f"--print-to-pdf={tmp_pdf}",
                          f"file://{tmp_html}"],
                         capture_output=True, timeout=30

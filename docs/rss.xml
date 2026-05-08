@@ -5,15 +5,8 @@
     <link>https://tradietools.nz/</link>
     <description>Free calculators, templates and guides for New Zealand tradies.</description>
     <language>en-nz</language>
-    <lastBuildDate>Fri, 08 May 2026 20:37:11 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2026 20:58:09 +0000</lastBuildDate>
     <atom:link href="https://tradietools.nz/rss.xml" rel="self" type="application/rss+xml"/>
-  <item>
-    <title>TEST ARTICLE: NZ Tradie Workflow Check (May 8, 2026)</title>
-    <link>https://tradietools.nz/articles/test-article-2026-05-08.html</link>
-    <guid isPermaLink="true">https://tradietools.nz/articles/test-article-2026-05-08.html</guid>
-    <description>A test article for the daily content workflow.</description>
-    <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-  </item>
   <item>
     <title>The 20% Investment Boost: How NZ Tradies Can Claim It Before EOFY</title>
     <link>https://tradietools.nz/articles/nz-tradie-investment-boost-deduction-2026.html</link>
@@ -145,6 +138,13 @@
     <link>https://tradietools.nz/articles/tradie-app-fatigue-nz.html</link>
     <guid isPermaLink="true">https://tradietools.nz/articles/tradie-app-fatigue-nz.html</guid>
     <description>Most NZ tradies juggle 4–5 different software subscriptions. We break down the real cost and what to do about it.</description>
+    <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Best Job Management Software for NZ Tradies 2026</title>
+    <link>https://tradietools.nz/articles/best-job-management-software-nz-tradies-2026.html</link>
+    <guid isPermaLink="true">https://tradietools.nz/articles/best-job-management-software-nz-tradies-2026.html</guid>
+    <description>Honest comparison of Fergus, Tradify, Simpro, ServiceM8 and more — tested by NZ tradies. Prices, features, and which one suits your trade.</description>
     <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
   </item>
   </channel>
