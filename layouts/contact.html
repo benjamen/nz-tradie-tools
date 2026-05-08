@@ -50,6 +50,8 @@
         <p>Got a question, suggestion, or want to advertise on NZ Tradie Tools? Fill in the form below.</p>
 
         <form action="{{ formspree_endpoint }}" method="POST" class="lead-form">
+            <input type="hidden" name="_subject" value="NZ Tradie Tools — Contact Form">
+            <input type="hidden" name="source" value="contact-page">
             <input type="text" name="name" placeholder="Your name" required>
             <input type="text" name="trade" placeholder="Your trade (optional)">
             <input type="email" name="email" placeholder="Email address" required>
