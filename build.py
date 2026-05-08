@@ -2,8 +2,11 @@
 """NZ Tradie Tools — static site generator."""
 
 import json
+import logging
 import re
 import shutil
+import subprocess
+import tempfile
 import zipfile
 from datetime import datetime
 from pathlib import Path
@@ -370,30 +373,54 @@ def build_templates(config, env, nav, base_path):
         (templates_dir / f"{tmpl['slug']}.html").write_text(html, encoding="utf-8")
         count += 1
 
-    # Build the downloadable ZIP bundle — self-contained HTML (CSS embedded inline)
+    # Build the downloadable ZIP bundle — PDFs generated via headless Chromium
     css_main = (SITE_ROOT / "static" / "css" / "style.css").read_text(encoding="utf-8")
     css_tmpl = (SITE_ROOT / "static" / "css" / "templates.css").read_text(encoding="utf-8")
     combined_css = f"<style>\n{css_main}\n{css_tmpl}\n</style>"
 
-    # Regex to strip <link> stylesheet tags and <script> GA tags, then inject inline CSS
     link_re = re.compile(r'<link[^>]+stylesheet[^>]+>', re.IGNORECASE)
     ga_re = re.compile(r'<script[^>]*googletagmanager[^<]*</script>\s*<script>window\.dataLayer.*?</script>', re.DOTALL)
     adsense_re = re.compile(r'<script[^>]*adsbygoogle[^<]*</script>', re.IGNORECASE)
+    cdn_re = re.compile(r'<script[^>]+html2pdf[^>]*></script>', re.IGNORECASE)
+
+    chromium = shutil.which("chromium-browser") or shutil.which("chromium") or shutil.which("google-chrome")
 
     zip_path = PUBLIC_DIR / "static" / "tradie-templates-bundle.zip"
     zip_path.parent.mkdir(parents=True, exist_ok=True)
     with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
-        for tmpl in templates:
-            html_path = templates_dir / f"{tmpl['slug']}.html"
-            if not html_path.exists():
-                continue
-            html = html_path.read_text(encoding="utf-8")
-            # Remove external stylesheet links, inject combined CSS before </head>
-            html = link_re.sub("", html)
-            html = ga_re.sub("", html)
-            html = adsense_re.sub("", html)
-            html = html.replace("</head>", f"{combined_css}\n</head>", 1)
-            zf.writestr(f"nz-tradie-templates/{tmpl['slug']}.html", html)
+        with tempfile.TemporaryDirectory(dir=SITE_ROOT) as tmp:
+            for tmpl in templates:
+                html_path = templates_dir / f"{tmpl['slug']}.html"
+                if not html_path.exists():
+                    continue
+                html = html_path.read_text(encoding="utf-8")
+                html = link_re.sub("", html)
+                html = ga_re.sub("", html)
+                html = adsense_re.sub("", html)
+                html = cdn_re.sub("", html)
+                html = html.replace("</head>", f"{combined_css}\n</head>", 1)
+
+                tmp_html = Path(tmp) / f"{tmpl['slug']}.html"
+                tmp_pdf  = Path(tmp) / f"{tmpl['slug']}.pdf"
+                tmp_html.write_text(html, encoding="utf-8")
+
+                if chromium:
+                    result = subprocess.run(
+                        [chromium, "--headless", "--no-sandbox", "--disable-gpu",
+                         "--print-to-pdf-no-header",
+                         f"--print-to-pdf={tmp_pdf}",
+                         f"file://{tmp_html}"],
+                        capture_output=True, timeout=30
+                    )
+                    if tmp_pdf.exists():
+                        zf.write(tmp_pdf, f"nz-tradie-templates/{tmpl['slug']}.pdf")
+                        logging.info(f"PDF: {tmpl['slug']}.pdf ({tmp_pdf.stat().st_size} bytes)")
+                    else:
+                        # Fall back to self-contained HTML if PDF fails
+                        zf.writestr(f"nz-tradie-templates/{tmpl['slug']}.html", html)
+                        logging.warning(f"PDF failed for {tmpl['slug']}, included HTML instead")
+                else:
+                    zf.writestr(f"nz-tradie-templates/{tmpl['slug']}.html", html)
 
     return count
 
