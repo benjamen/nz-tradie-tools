@@ -4,6 +4,7 @@
 import json
 import re
 import shutil
+import zipfile
 from datetime import datetime
 from pathlib import Path
 
@@ -368,6 +369,15 @@ def build_templates(config, env, nav, base_path):
         html = tpl_page.render(**shared, tmpl=tmpl, other_templates=other_templates)
         (templates_dir / f"{tmpl['slug']}.html").write_text(html, encoding="utf-8")
         count += 1
+
+    # Build the downloadable ZIP bundle
+    zip_path = PUBLIC_DIR / "static" / "tradie-templates-bundle.zip"
+    zip_path.parent.mkdir(parents=True, exist_ok=True)
+    with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
+        for tmpl in templates:
+            html_path = templates_dir / f"{tmpl['slug']}.html"
+            if html_path.exists():
+                zf.write(html_path, f"nz-tradie-templates/{tmpl['slug']}.html")
 
     return count
 
