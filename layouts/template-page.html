@@ -116,6 +116,7 @@
                     <div class="doc-section-label">Job Address</div>
                     <div contenteditable class="block-field" style="margin-bottom:1rem">123 Job Site Road, Suburb, City</div>
                     <table class="line-items-table">
+                        <colgroup><col style="width:45%"><col style="width:8%"><col style="width:10%"><col style="width:18%"><col style="width:19%"></colgroup>
                         <thead><tr><th>Description</th><th>Qty</th><th>Unit</th><th>Rate ($)</th><th>Total ($)</th></tr></thead>
                         <tbody>
                             <tr><td contenteditable>Labour — [trade type]</td><td contenteditable>8</td><td contenteditable>hrs</td><td contenteditable>95.00</td><td contenteditable>760.00</td></tr>
@@ -174,9 +175,10 @@
                     </div>
                     <div style="margin-bottom:1rem">
                         <div class="doc-section-label">Job / Services</div>
-                        <div contenteditable class="block-field">Job at: <span contenteditable>123 Site Address</span></div>
+                        <div contenteditable class="block-field">Job at: 123 Site Address</div>
                     </div>
                     <table class="line-items-table">
+                        <colgroup><col style="width:45%"><col style="width:15%"><col style="width:20%"><col style="width:20%"></colgroup>
                         <thead><tr><th>Description</th><th>Qty</th><th>Rate ($)</th><th>Amount (excl. GST)</th></tr></thead>
                         <tbody>
                             <tr><td contenteditable>Labour — [trade/hours]</td><td contenteditable>8 hrs</td><td contenteditable>95.00</td><td contenteditable>760.00</td></tr>
@@ -224,6 +226,7 @@
                         <div contenteditable class="block-field" style="min-height:3em">Describe the work to be carried out...</div>
                     </div>
                     <table class="line-items-table">
+                        <colgroup><col style="width:42%"><col style="width:15%"><col style="width:15%"><col style="width:13%"><col style="width:15%"></colgroup>
                         <thead><tr><th>Task</th><th>Start</th><th>Finish</th><th>Hrs</th><th>Done ✓</th></tr></thead>
                         <tbody>
                             <tr><td contenteditable>Task 1</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td></tr>
@@ -280,6 +283,7 @@
                         <div contenteditable class="block-field" style="min-height:2.5em">Describe the additional or changed work in detail...</div>
                     </div>
                     <table class="line-items-table">
+                        <colgroup><col style="width:45%"><col style="width:15%"><col style="width:20%"><col style="width:20%"></colgroup>
                         <thead><tr><th>Description</th><th>Qty</th><th>Rate ($)</th><th>Total ($)</th></tr></thead>
                         <tbody>
                             <tr><td contenteditable>Additional labour</td><td contenteditable>4 hrs</td><td contenteditable>95.00</td><td contenteditable>380.00</td></tr>
@@ -412,7 +416,8 @@
                     </div>
                     <p style="font-size:.82rem;background:#e8f4fd;padding:.5rem .75rem;border-radius:4px;margin:0 0 1rem">IRD requires a log book for at least 90 consecutive days to establish your business use percentage. Keep receipts for all fuel and maintenance.</p>
                     <table class="line-items-table">
-                        <thead><tr><th>Date</th><th>From</th><th>To</th><th>Purpose</th><th>Odometer Start</th><th>Odometer End</th><th>km</th><th>Business? Y/N</th></tr></thead>
+                        <colgroup><col style="width:10%"><col style="width:12%"><col style="width:12%"><col style="width:22%"><col style="width:13%"><col style="width:13%"><col style="width:8%"><col style="width:10%"></colgroup>
+                        <thead><tr><th>Date</th><th>From</th><th>To</th><th>Purpose</th><th>Odo Start</th><th>Odo End</th><th>km</th><th>Business?</th></tr></thead>
                         <tbody>
                             {% for i in range(12) %}
                             <tr>
@@ -449,7 +454,8 @@
                     </div>
                     <p style="font-size:.82rem;background:#e8f4fd;padding:.5rem .75rem;border-radius:4px;margin:0 0 1rem">Keep this register updated for insurance claims, theft reporting, and IRD depreciation calculations. Store a copy offsite or in the cloud.</p>
                     <table class="line-items-table">
-                        <thead><tr><th>Item / Description</th><th>Make / Model</th><th>Serial No.</th><th>Purchase Date</th><th>Cost ($)</th><th>Current Value ($)</th><th>Location</th></tr></thead>
+                        <colgroup><col style="width:24%"><col style="width:18%"><col style="width:13%"><col style="width:13%"><col style="width:10%"><col style="width:13%"><col style="width:9%"></colgroup>
+                        <thead><tr><th>Item / Description</th><th>Make / Model</th><th>Serial No.</th><th>Purchase Date</th><th>Cost ($)</th><th>Value ($)</th><th>Location</th></tr></thead>
                         <tbody>
                             <tr><td contenteditable>Circular saw</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>Van</td></tr>
                             <tr><td contenteditable>Drill / driver</td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable>Van</td></tr>
@@ -588,6 +594,7 @@
                         </div>
                     </div>
                     <table class="line-items-table">
+                        <colgroup><col style="width:15%"><col style="width:22%"><col style="width:12%"><col style="width:36%"><col style="width:15%"></colgroup>
                         <thead><tr><th>Task Step</th><th>Hazard / Risk</th><th>Likelihood</th><th>Control Measure</th><th>Residual Risk</th></tr></thead>
                         <tbody>
                             <tr><td contenteditable>Step 1</td><td contenteditable>Describe hazard</td><td contenteditable>High/Med/Low</td><td contenteditable>Control measure to eliminate or minimise</td><td contenteditable>Low</td></tr>
@@ -608,6 +615,7 @@
                     <div style="margin:1rem 0">
                         <div class="doc-section-label">Worker Sign-Off (all workers must sign)</div>
                         <table class="line-items-table" style="font-size:.82rem">
+                            <colgroup><col style="width:30%"><col style="width:25%"><col style="width:30%"><col style="width:15%"></colgroup>
                             <thead><tr><th>Name</th><th>Role</th><th>Signature</th><th>Date</th></tr></thead>
                             <tbody>
                                 {% for i in range(5) %}<tr><td contenteditable></td><td contenteditable></td><td></td><td contenteditable></td></tr>{% endfor %}
@@ -647,6 +655,7 @@
                     <div style="margin-bottom:1rem">
                         <div class="doc-section-label">Attendees — Sign Here</div>
                         <table class="line-items-table" style="font-size:.82rem">
+                            <colgroup><col style="width:35%"><col style="width:30%"><col style="width:35%"></colgroup>
                             <thead><tr><th>Name</th><th>Company</th><th>Signature</th></tr></thead>
                             <tbody>
                                 {% for i in range(10) %}<tr><td contenteditable></td><td contenteditable></td><td></td></tr>{% endfor %}
@@ -685,6 +694,7 @@
                         <div contenteditable class="block-field">Project name and address</div>
                     </div>
                     <table class="line-items-table">
+                        <colgroup><col style="width:42%"><col style="width:22%"><col style="width:14%"><col style="width:22%"></colgroup>
                         <thead><tr><th>Description</th><th>Contract Value ($)</th><th>% Complete</th><th>This Claim ($)</th></tr></thead>
                         <tbody>
                             <tr><td contenteditable>Section 1 — [Foundations]</td><td contenteditable>45,000</td><td contenteditable>100%</td><td contenteditable>45,000</td></tr>
@@ -734,6 +744,7 @@
                         </div>
                     </div>
                     <table class="line-items-table">
+                        <colgroup><col style="width:4%"><col style="width:15%"><col style="width:35%"><col style="width:12%"><col style="width:18%"><col style="width:16%"></colgroup>
                         <thead><tr><th>#</th><th>Location</th><th>Defect Description</th><th>Photo Ref</th><th>Remedy By</th><th>Completed ✓</th></tr></thead>
                         <tbody>
                             {% for i in range(12) %}
@@ -814,6 +825,7 @@
                         <div contenteditable class="block-field">Delivery address / site address</div>
                     </div>
                     <table class="line-items-table">
+                        <colgroup><col style="width:40%"><col style="width:10%"><col style="width:10%"><col style="width:20%"><col style="width:20%"></colgroup>
                         <thead><tr><th>Item / Description</th><th>Qty</th><th>Unit</th><th>Unit Price ($)</th><th>Total ($)</th></tr></thead>
                         <tbody>
                             {% for i in range(6) %}
@@ -978,6 +990,7 @@
                     <div style="margin-bottom:.75rem">
                         <div class="doc-section-label">Visitor / Contractor Sign-In Register</div>
                         <table class="line-items-table" style="font-size:.82rem">
+                            <colgroup><col style="width:20%"><col style="width:18%"><col style="width:25%"><col style="width:11%"><col style="width:11%"><col style="width:15%"></colgroup>
                             <thead><tr><th>Name</th><th>Company</th><th>Purpose of visit</th><th>Time in</th><th>Time out</th><th>Signature</th></tr></thead>
                             <tbody>
                                 {% for i in range(12) %}<tr><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td contenteditable></td><td></td></tr>{% endfor %}
