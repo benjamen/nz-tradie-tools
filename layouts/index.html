@@ -116,6 +116,8 @@
             <h2>Get Free NZ Tradie Templates</h2>
             <p>Quote templates, compliance checklists, vehicle log books — free for NZ tradies.</p>
             <form action="{{ formspree_endpoint }}" method="POST" class="lead-form">
+                <input type="hidden" name="_subject" value="NZ Tradie Tools — Homepage Templates Request">
+                <input type="hidden" name="source" value="homepage">
                 <input type="text" name="name" placeholder="Your name" required>
                 <input type="text" name="trade" placeholder="Your trade (builder, plumber, sparky...)">
                 <input type="text" name="region" placeholder="NZ region">

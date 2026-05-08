@@ -158,6 +158,8 @@
                 <h3>Get a Free Quote Comparison Checklist</h3>
                 <p>Know exactly what to ask before hiring a {{ trade.singular }} in {{ city.name }}.</p>
                 <form action="{{ formspree_endpoint }}" method="POST" class="lead-form">
+                    <input type="hidden" name="_subject" value="NZ Tradie Tools — {{ trade.name }} Checklist ({{ city.name }})">
+                    <input type="hidden" name="source" value="trade-city">
                     <input type="text" name="name" placeholder="Your name" required>
                     <input type="email" name="email" placeholder="Email address" required>
                     <input type="hidden" name="trade" value="{{ trade.name }}">

@@ -97,6 +97,8 @@
             <h2>Get Free Quote Comparison Templates</h2>
             <p>Checklists for getting and comparing tradie quotes — free for NZ homeowners and tradies.</p>
             <form action="{{ formspree_endpoint }}" method="POST" class="lead-form">
+                <input type="hidden" name="_subject" value="NZ Tradie Tools — Job Costs Templates Request">
+                <input type="hidden" name="source" value="jobs-listing">
                 <input type="text" name="name" placeholder="Your name" required>
                 <input type="email" name="email" placeholder="Email address" required>
                 <button type="submit">Send me the free templates →</button>

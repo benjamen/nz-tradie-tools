@@ -98,6 +98,8 @@
                 <h3>Get Free {{ city.name }} Tradie Templates</h3>
                 <p>Quote comparison checklists and questions to ask before you hire — free.</p>
                 <form action="{{ formspree_endpoint }}" method="POST" class="lead-form">
+                    <input type="hidden" name="_subject" value="NZ Tradie Tools — {{ city.name }} Checklist Request">
+                    <input type="hidden" name="source" value="location-hub">
                     <input type="text" name="name" placeholder="Your name" required>
                     <input type="email" name="email" placeholder="Email address" required>
                     <input type="hidden" name="city" value="{{ city.name }}">
