@@ -116,6 +116,11 @@
         <section class="section" style="background:linear-gradient(135deg,#1b2a4a 0%,#0055a5 100%);border-radius:10px;padding:2.5rem;color:#fff;text-align:center;margin:2rem 0">
             <h2 style="color:#fff;margin-top:0;font-size:1.6rem">📬 Weekly Tradie Tips — Free</h2>
             <p style="color:rgba(255,255,255,.88);font-size:1rem;max-width:480px;margin:.5rem auto 1.5rem">Tax reminders, pricing guides, new calculators, and NZ industry updates. One email per week. No spam.</p>
+            {% if beehiiv_embed_url %}
+            <div style="max-width:480px;margin:0 auto">
+                <iframe src="{{ beehiiv_embed_url }}" data-test-id="beehiiv-embed" width="100%" height="320" frameborder="0" scrolling="no" style="border-radius:6px;border:none;margin:0;background-color:transparent"></iframe>
+            </div>
+            {% else %}
             <form action="{{ formspree_endpoint }}" method="POST" class="lead-form" style="max-width:440px;margin:0 auto">
                 <input type="hidden" name="_subject" value="NZ Tradie Tools — Newsletter Signup">
                 <input type="hidden" name="source" value="homepage-newsletter">
@@ -125,6 +130,7 @@
                 <button type="submit" style="background:#e55a00;border-color:#e55a00">Subscribe — it's free →</button>
             </form>
             <p style="color:rgba(255,255,255,.5);font-size:.78rem;margin-top:1rem">Unsubscribe any time. We never sell your data.</p>
+            {% endif %}
         </section>
 
         <section class="section cta-box">
