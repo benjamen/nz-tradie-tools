@@ -6,6 +6,10 @@
   "author": "NZ Tradie Tools",
   "ga_id": "G-BJW7HLW8D8",
   "adsense_id": "",
+  "adsense_slot_article_top": "",
+  "adsense_slot_article_bottom": "",
+  "adsense_slot_calc_top": "",
+  "adsense_slot_home_top": "",
   "formspree_endpoint": "https://formspree.io/f/xgorlloq",
   "contact_email": "instituteofbba@gmail.com",
   "affiliates": {
@@ -23,6 +27,8 @@
     {"label": "Calculators", "url": "/calculators/"},
     {"label": "Articles", "url": "/articles/"},
     {"label": "Templates", "url": "/templates/"},
+    {"label": "FAQ", "url": "/faq/"},
+    {"label": "Glossary", "url": "/glossary/"},
     {"label": "Contact", "url": "/contact/"}
   ]
 }

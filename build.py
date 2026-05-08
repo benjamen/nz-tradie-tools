@@ -124,6 +124,7 @@ def build():
     template_pages = build_templates(config, env, nav, base_path)
     build_sitemap(articles, calculators, cities, trades_data, config, job_pages)
     build_robots(config)
+    build_ads_txt(config)
     build_rss(articles, config)
 
     print(f"Built: {len(articles)} articles, {len(calculators)} calculators, "
@@ -579,6 +580,14 @@ def build_robots(config):
     (PUBLIC_DIR / "robots.txt").write_text(
         f"User-agent: *\nAllow: /\n\nSitemap: {base_url}/sitemap.xml\n", encoding="utf-8"
     )
+
+
+def build_ads_txt(config):
+    adsense_id = config.get("adsense_id", "").strip()
+    if adsense_id:
+        publisher_id = adsense_id.replace("ca-pub-", "")
+        content = f"google.com, pub-{publisher_id}, DIRECT, f08c47fec0942fa0\n"
+        (PUBLIC_DIR / "ads.txt").write_text(content, encoding="utf-8")
 
 
 def build_index(articles, calculators, config, env, nav, base_path):
