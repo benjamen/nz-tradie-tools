@@ -164,6 +164,12 @@ div[contenteditable].block-field:focus {
 }
 
 .line-items-table td:last-child { text-align: right; }
+
+/* Override right-alignment for tables where last col is not a money total */
+.line-items-table.last-col-left th:last-child,
+.line-items-table.last-col-left td:last-child { text-align: left; }
+.line-items-table.last-col-center th:last-child,
+.line-items-table.last-col-center td:last-child { text-align: center; }
 .line-items-table tr:nth-child(even) td { background: #f4f6f8; }
 .line-items-table tr:last-child td { border-bottom: none; }
 
