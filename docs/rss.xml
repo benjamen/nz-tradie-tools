@@ -5,8 +5,15 @@
     <link>https://tradietools.nz/</link>
     <description>Free calculators, templates and guides for New Zealand tradies.</description>
     <language>en-nz</language>
-    <lastBuildDate>Sat, 09 May 2026 00:10:12 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 09 May 2026 10:03:03 +0000</lastBuildDate>
     <atom:link href="https://tradietools.nz/rss.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>ACC Levies for NZ Tradies 2026/27: What Every Self-Employed Tradie Must Know</title>
+    <link>https://tradietools.nz/articles/acc-levies-nz-tradies-2026-guide.html</link>
+    <guid isPermaLink="true">https://tradietools.nz/articles/acc-levies-nz-tradies-2026-guide.html</guid>
+    <description>ACC levies are changing in 2026/27. Here's what NZ self-employed tradies need to know about rates, CoverPlus Extra, and how to reduce your bill.</description>
+    <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+  </item>
   <item>
     <title>How Much Do Builders Charge in NZ? 2026 Pricing Guide</title>
     <link>https://tradietools.nz/articles/builder-pricing-guide-nz-2026.html</link>
@@ -139,13 +146,6 @@
     <guid isPermaLink="true">https://tradietools.nz/articles/fuel-price-shock-nz-tradies.html</guid>
     <description>Diesel prices have surged in 2026, hitting excavation and transport costs. Learn how to adjust your quotes and protect your margins.</description>
     <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
-  </item>
-  <item>
-    <title>Understanding the New NZ Granny Flat Rules: A Guide for Builders</title>
-    <link>https://tradietools.nz/articles/new-nz-granny-flat-rules-builders.html</link>
-    <guid isPermaLink="true">https://tradietools.nz/articles/new-nz-granny-flat-rules-builders.html</guid>
-    <description>Everything NZ builders need to know about the expanded granny flat building consent exemptions introduced in April 2026.</description>
-    <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
   </item>
   </channel>
 </rss>
