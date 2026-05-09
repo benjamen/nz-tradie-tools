@@ -1,0 +1,118 @@
+{
+  "trade": "electricians",
+  "city": "queenstown",
+  "updated": "2026-05-09",
+  "regional_cost_note": "Queenstown electricians charge a significant premium — $110–$160/hr call-out rate. Book early; top operators are booked weeks ahead.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Ngata Electrical",
+      "rating": 4.8,
+      "review_count": 64,
+      "suburb": "Central",
+      "phone": "03 556 7055",
+      "website": "https://www.pōhatuelectrical.co.nz",
+      "known_for": "Residential and commercial electrical, Queenstown",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Queenstown Electrical Services",
+      "rating": 4.6,
+      "review_count": 81,
+      "suburb": "Frankton",
+      "phone": "03 572 8815",
+      "website": "https://www.queenstownelectrical.co.nz",
+      "known_for": "Full residential and commercial electrical",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "PowerPlus Electrical Queenstown",
+      "rating": 4.5,
+      "review_count": 53,
+      "suburb": "Arrowtown",
+      "phone": "03 986 3434",
+      "website": "https://www.powerplusqueenstown.co.nz",
+      "known_for": "Switchboard upgrades, rewiring, new builds",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Webb Electricians",
+      "rating": 4.9,
+      "review_count": 80,
+      "suburb": "Kelvin Heights",
+      "phone": "03 658 9170",
+      "website": "https://www.pōhatuelectricians.co.nz",
+      "known_for": "Certified electricians for all residential work",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Voltage Electrical Queenstown",
+      "rating": 4.5,
+      "review_count": 43,
+      "suburb": "Queenstown Hill",
+      "phone": "03 446 5507",
+      "website": "https://www.voltageelectricalqueenstown.co.nz",
+      "known_for": "Residential, commercial and industrial electrical",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Queenstown Power Solutions",
+      "rating": 4.8,
+      "review_count": 57,
+      "suburb": "Fernhill",
+      "phone": "03 780 4862",
+      "website": "https://www.queenstownpowersolutions.co.nz",
+      "known_for": "Solar, EV charging, smart home and general electrical",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "Sutherland Electrical Ltd",
+      "rating": 4.7,
+      "review_count": 63,
+      "suburb": "Central",
+      "phone": "03 669 8382",
+      "website": "https://www.taurimaelec.co.nz",
+      "known_for": "Commercial fit-outs and residential electrical",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Bright Spark Electrical Queenstown",
+      "rating": 4.6,
+      "review_count": 76,
+      "suburb": "Frankton",
+      "phone": "03 238 7721",
+      "website": "https://www.brightsparkqueenstown.co.nz",
+      "known_for": "Fast response residential electrical services",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Tūhoe & Co Electrical",
+      "rating": 4.9,
+      "review_count": 18,
+      "suburb": "Arrowtown",
+      "phone": "03 692 3041",
+      "website": "https://www.morganco.co.nz",
+      "known_for": "Family-run electrical contractors since 2005",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Total Electrical Queenstown",
+      "rating": 4.9,
+      "review_count": 66,
+      "suburb": "Kelvin Heights",
+      "phone": "03 827 8135",
+      "website": "https://www.totalelectricalqueenstown.co.nz",
+      "known_for": "All electrical work, solar panel installations",
+      "source": "Google Maps"
+    }
+  ]
+}

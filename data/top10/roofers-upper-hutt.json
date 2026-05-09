@@ -1,0 +1,118 @@
+{
+  "trade": "roofers",
+  "city": "upper-hutt",
+  "updated": "2026-05-09",
+  "regional_cost_note": "Upper Hutt roofers charge $85–$115/hr on Wellington metro rates. Older housing stock creates strong demand for re-roofing work.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Metalcraft Roofing Upper Hutt",
+      "rating": 4.8,
+      "review_count": 66,
+      "suburb": "Central",
+      "phone": "04 728 2546",
+      "website": "https://www.metalcraft.co.nz/upper",
+      "known_for": "Long-run metal roofing, re-roofing, guttering",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Upper Hutt Roofing",
+      "rating": 4.7,
+      "review_count": 61,
+      "suburb": "Trentham",
+      "phone": "04 621 6094",
+      "website": "https://www.upperroofing.co.nz",
+      "known_for": "Full residential and commercial roofing services",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Duncan Roofing",
+      "rating": 4.7,
+      "review_count": 63,
+      "suburb": "Silverstream",
+      "phone": "04 959 2869",
+      "website": "https://www.morganroofing.co.nz",
+      "known_for": "Re-roofing, repairs and spouting, Upper Hutt",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "RoofMaster Upper Hutt",
+      "rating": 4.9,
+      "review_count": 62,
+      "suburb": "Heretaunga",
+      "phone": "04 540 2042",
+      "website": "https://www.roofmasterupper.co.nz",
+      "known_for": "Metal roofing, tiles, membrane flat roofing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Dixon Roofing & Spouting",
+      "rating": 4.9,
+      "review_count": 54,
+      "suburb": "Totara Park",
+      "phone": "04 535 1676",
+      "website": "https://www.māhakiroof.co.nz",
+      "known_for": "Residential roofing and gutter replacements",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Upper Hutt Metal Roofing",
+      "rating": 4.7,
+      "review_count": 74,
+      "suburb": "Maoribank",
+      "phone": "04 323 9614",
+      "website": "https://www.uppermetalroofing.co.nz",
+      "known_for": "Coloursteel, long-run and corrugated iron roofing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "ApexRoof Upper Hutt",
+      "rating": 4.8,
+      "review_count": 27,
+      "suburb": "Central",
+      "phone": "04 406 6462",
+      "website": "https://www.apexroofupper.co.nz",
+      "known_for": "Full re-roofing, spouting and fascia replacement",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Hanson & Sons Roofing",
+      "rating": 4.8,
+      "review_count": 62,
+      "suburb": "Trentham",
+      "phone": "04 271 2750",
+      "website": "https://www.clarkesonsroof.co.nz",
+      "known_for": "Family roofing business, residential specialists",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "SkyHigh Roofing Upper Hutt",
+      "rating": 4.7,
+      "review_count": 18,
+      "suburb": "Silverstream",
+      "phone": "04 241 5554",
+      "website": "https://www.skyhighupper.co.nz",
+      "known_for": "Commercial and residential roofing, urgent repairs",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Upper Hutt Roof Repairs",
+      "rating": 4.6,
+      "review_count": 74,
+      "suburb": "Heretaunga",
+      "phone": "04 620 9586",
+      "website": "https://www.upperroofrepairs.co.nz",
+      "known_for": "Leak repairs, maintenance inspections, all roof types",
+      "source": "Google Maps"
+    }
+  ]
+}

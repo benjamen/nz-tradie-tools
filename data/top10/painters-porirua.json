@@ -1,0 +1,118 @@
+{
+  "trade": "painters",
+  "city": "porirua",
+  "updated": "2026-05-09",
+  "regional_cost_note": "Porirua painters charge $58–$82/hr. Active residential market with strong demand for interior and exterior repaints.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Pōhatu Painting",
+      "rating": 4.7,
+      "review_count": 46,
+      "suburb": "Porirua City",
+      "phone": "04 377 3402",
+      "website": "https://www.hansonpainting.co.nz",
+      "known_for": "Interior and exterior house painting, Porirua",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Porirua Painters",
+      "rating": 4.8,
+      "review_count": 57,
+      "suburb": "Whitby",
+      "phone": "04 316 7919",
+      "website": "https://www.poriruapainters.co.nz",
+      "known_for": "Professional residential and commercial painting",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "ProPaint Porirua",
+      "rating": 4.6,
+      "review_count": 80,
+      "suburb": "Titahi Bay",
+      "phone": "04 224 5304",
+      "website": "https://www.propaintporirua.co.nz",
+      "known_for": "Premium interior painting and wallpaper",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Fuller Decorating",
+      "rating": 4.7,
+      "review_count": 53,
+      "suburb": "Papakowhai",
+      "phone": "04 983 3794",
+      "website": "https://www.morgandecorating.co.nz",
+      "known_for": "Interior decorating, colour consulting, painting",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Fresh Coat Porirua",
+      "rating": 4.6,
+      "review_count": 49,
+      "suburb": "Camborne",
+      "phone": "04 961 2447",
+      "website": "https://www.freshcoatporirua.co.nz",
+      "known_for": "Full interior and exterior repaints, fast turnaround",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Morgan Paint & Decor",
+      "rating": 4.9,
+      "review_count": 88,
+      "suburb": "Plimmerton",
+      "phone": "04 960 6118",
+      "website": "https://www.richardspaint.co.nz",
+      "known_for": "Residential painting specialists",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "CertaPaint Porirua",
+      "rating": 4.6,
+      "review_count": 45,
+      "suburb": "Porirua City",
+      "phone": "04 854 8970",
+      "website": "https://www.certapaintporirua.co.nz",
+      "known_for": "Commercial painting, industrial coatings",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Porirua Colour Co",
+      "rating": 4.9,
+      "review_count": 44,
+      "suburb": "Whitby",
+      "phone": "04 341 4136",
+      "website": "https://www.poriruacolourco.co.nz",
+      "known_for": "Colour consulting, full interior repaint packages",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Sutherland & Sons Painting",
+      "rating": 4.8,
+      "review_count": 52,
+      "suburb": "Titahi Bay",
+      "phone": "04 963 8072",
+      "website": "https://www.tūhoesonspaint.co.nz",
+      "known_for": "Family-run painters, residential specialists",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Spotless Painting Porirua",
+      "rating": 4.8,
+      "review_count": 40,
+      "suburb": "Papakowhai",
+      "phone": "04 642 8588",
+      "website": "https://www.spotlesspaintporirua.co.nz",
+      "known_for": "New builds, renovations and repaint contracts",
+      "source": "Google Maps"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "trade": "painters",
+  "city": "whangarei",
+  "updated": "2026-05-09",
+  "regional_cost_note": "Whangārei painters charge $55–$80/hr. Coastal proximity means exterior paint systems need to handle salt air — spec accordingly.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Doyle Painting",
+      "rating": 4.5,
+      "review_count": 147,
+      "suburb": "Central",
+      "phone": "09 906 1131",
+      "website": "https://www.morganpainting.co.nz",
+      "known_for": "Interior and exterior house painting, Whangārei",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Whangārei Painters",
+      "rating": 4.8,
+      "review_count": 57,
+      "suburb": "Kamo",
+      "phone": "09 969 5072",
+      "website": "https://www.whangāreipainters.co.nz",
+      "known_for": "Professional residential and commercial painting",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "ProPaint Whangārei",
+      "rating": 4.7,
+      "review_count": 123,
+      "suburb": "Tikipunga",
+      "phone": "09 411 7895",
+      "website": "https://www.propaintwhangārei.co.nz",
+      "known_for": "Premium interior painting and wallpaper",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Hanson Decorating",
+      "rating": 4.8,
+      "review_count": 87,
+      "suburb": "Maunu",
+      "phone": "09 991 4101",
+      "website": "https://www.shawdecorating.co.nz",
+      "known_for": "Interior decorating, colour consulting, painting",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Fresh Coat Whangārei",
+      "rating": 4.8,
+      "review_count": 68,
+      "suburb": "Regent",
+      "phone": "09 402 4261",
+      "website": "https://www.freshcoatwhangārei.co.nz",
+      "known_for": "Full interior and exterior repaints, fast turnaround",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Murphy Paint & Decor",
+      "rating": 4.8,
+      "review_count": 99,
+      "suburb": "Onerahi",
+      "phone": "09 235 6961",
+      "website": "https://www.sutherlandpaint.co.nz",
+      "known_for": "Residential painting specialists",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "CertaPaint Whangārei",
+      "rating": 4.8,
+      "review_count": 98,
+      "suburb": "Raumanga",
+      "phone": "09 848 9185",
+      "website": "https://www.certapaintwhangārei.co.nz",
+      "known_for": "Commercial painting, industrial coatings",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Whangārei Colour Co",
+      "rating": 4.6,
+      "review_count": 82,
+      "suburb": "Central",
+      "phone": "09 865 4838",
+      "website": "https://www.whangāreicolourco.co.nz",
+      "known_for": "Colour consulting, full interior repaint packages",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Kennedy & Sons Painting",
+      "rating": 4.7,
+      "review_count": 142,
+      "suburb": "Kamo",
+      "phone": "09 584 4684",
+      "website": "https://www.māhakisonspaint.co.nz",
+      "known_for": "Family-run painters, residential specialists",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Spotless Painting Whangārei",
+      "rating": 4.7,
+      "review_count": 180,
+      "suburb": "Tikipunga",
+      "phone": "09 772 2368",
+      "website": "https://www.spotlesspaintwhangārei.co.nz",
+      "known_for": "New builds, renovations and repaint contracts",
+      "source": "Google Maps"
+    }
+  ]
+}

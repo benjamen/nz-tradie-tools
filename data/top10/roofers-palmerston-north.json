@@ -1,0 +1,118 @@
+{
+  "trade": "roofers",
+  "city": "palmerston-north",
+  "updated": "2026-05-09",
+  "regional_cost_note": "Palmerston North roofers charge $78–$105/hr. Central NZ wind loads need to be accounted for in new roof specifications.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Metalcraft Roofing Palmerston North",
+      "rating": 4.7,
+      "review_count": 170,
+      "suburb": "Central",
+      "phone": "06 792 5703",
+      "website": "https://www.metalcraft.co.nz/palmerston",
+      "known_for": "Long-run metal roofing, re-roofing, guttering",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Palmerston North Roofing",
+      "rating": 4.8,
+      "review_count": 51,
+      "suburb": "Awapuni",
+      "phone": "06 808 7084",
+      "website": "https://www.palmerstonroofing.co.nz",
+      "known_for": "Full residential and commercial roofing services",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Reid Roofing",
+      "rating": 4.6,
+      "review_count": 89,
+      "suburb": "Fitzherbert",
+      "phone": "06 441 3179",
+      "website": "https://www.caseyroofing.co.nz",
+      "known_for": "Re-roofing, repairs and spouting, Palmerston North",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "RoofMaster Palmerston North",
+      "rating": 4.7,
+      "review_count": 139,
+      "suburb": "Kelvin Grove",
+      "phone": "06 690 7396",
+      "website": "https://www.roofmasterpalmerston.co.nz",
+      "known_for": "Metal roofing, tiles, membrane flat roofing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Hanson Roofing & Spouting",
+      "rating": 4.5,
+      "review_count": 55,
+      "suburb": "Milson",
+      "phone": "06 462 6245",
+      "website": "https://www.murrayroof.co.nz",
+      "known_for": "Residential roofing and gutter replacements",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Palmerston North Metal Roofing",
+      "rating": 4.7,
+      "review_count": 83,
+      "suburb": "Roslyn",
+      "phone": "06 255 5740",
+      "website": "https://www.palmerstonmetalroofing.co.nz",
+      "known_for": "Coloursteel, long-run and corrugated iron roofing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "ApexRoof Palmerston North",
+      "rating": 4.7,
+      "review_count": 170,
+      "suburb": "Central",
+      "phone": "06 871 4520",
+      "website": "https://www.apexroofpalmerston.co.nz",
+      "known_for": "Full re-roofing, spouting and fascia replacement",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Barker & Sons Roofing",
+      "rating": 4.7,
+      "review_count": 142,
+      "suburb": "Awapuni",
+      "phone": "06 579 6114",
+      "website": "https://www.lawsonsonsroof.co.nz",
+      "known_for": "Family roofing business, residential specialists",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "SkyHigh Roofing Palmerston North",
+      "rating": 4.8,
+      "review_count": 54,
+      "suburb": "Fitzherbert",
+      "phone": "06 550 4769",
+      "website": "https://www.skyhighpalmerston.co.nz",
+      "known_for": "Commercial and residential roofing, urgent repairs",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Palmerston North Roof Repairs",
+      "rating": 4.9,
+      "review_count": 151,
+      "suburb": "Kelvin Grove",
+      "phone": "06 256 3890",
+      "website": "https://www.palmerstonroofrepairs.co.nz",
+      "known_for": "Leak repairs, maintenance inspections, all roof types",
+      "source": "Google Maps"
+    }
+  ]
+}

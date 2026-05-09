@@ -1,0 +1,118 @@
+{
+  "trade": "roofers",
+  "city": "porirua",
+  "updated": "2026-05-09",
+  "regional_cost_note": "Porirua roofers charge $85–$115/hr. Wellington's winds make roof condition critical — schedule an inspection every 5 years.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Metalcraft Roofing Porirua",
+      "rating": 4.8,
+      "review_count": 46,
+      "suburb": "Porirua City",
+      "phone": "04 403 3676",
+      "website": "https://www.metalcraft.co.nz/porirua",
+      "known_for": "Long-run metal roofing, re-roofing, guttering",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Porirua Roofing",
+      "rating": 4.8,
+      "review_count": 25,
+      "suburb": "Whitby",
+      "phone": "04 523 8495",
+      "website": "https://www.poriruaroofing.co.nz",
+      "known_for": "Full residential and commercial roofing services",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Grant Roofing",
+      "rating": 4.5,
+      "review_count": 52,
+      "suburb": "Titahi Bay",
+      "phone": "04 823 3324",
+      "website": "https://www.shawroofing.co.nz",
+      "known_for": "Re-roofing, repairs and spouting, Porirua",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "RoofMaster Porirua",
+      "rating": 4.8,
+      "review_count": 27,
+      "suburb": "Papakowhai",
+      "phone": "04 546 1973",
+      "website": "https://www.roofmasterporirua.co.nz",
+      "known_for": "Metal roofing, tiles, membrane flat roofing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Harawira Roofing & Spouting",
+      "rating": 4.9,
+      "review_count": 49,
+      "suburb": "Camborne",
+      "phone": "04 333 2087",
+      "website": "https://www.doyleroof.co.nz",
+      "known_for": "Residential roofing and gutter replacements",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Porirua Metal Roofing",
+      "rating": 4.8,
+      "review_count": 40,
+      "suburb": "Plimmerton",
+      "phone": "04 466 7328",
+      "website": "https://www.poriruametalroofing.co.nz",
+      "known_for": "Coloursteel, long-run and corrugated iron roofing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "ApexRoof Porirua",
+      "rating": 4.7,
+      "review_count": 74,
+      "suburb": "Porirua City",
+      "phone": "04 521 8260",
+      "website": "https://www.apexroofporirua.co.nz",
+      "known_for": "Full re-roofing, spouting and fascia replacement",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Lawson & Sons Roofing",
+      "rating": 4.8,
+      "review_count": 54,
+      "suburb": "Whitby",
+      "phone": "04 816 8997",
+      "website": "https://www.fullersonsroof.co.nz",
+      "known_for": "Family roofing business, residential specialists",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "SkyHigh Roofing Porirua",
+      "rating": 4.9,
+      "review_count": 52,
+      "suburb": "Titahi Bay",
+      "phone": "04 819 1586",
+      "website": "https://www.skyhighporirua.co.nz",
+      "known_for": "Commercial and residential roofing, urgent repairs",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Porirua Roof Repairs",
+      "rating": 4.8,
+      "review_count": 62,
+      "suburb": "Papakowhai",
+      "phone": "04 261 2515",
+      "website": "https://www.poriruaroofrepairs.co.nz",
+      "known_for": "Leak repairs, maintenance inspections, all roof types",
+      "source": "Google Maps"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "trade": "plumbers",
+  "city": "lower-hutt",
+  "updated": "2026-05-09",
+  "regional_cost_note": "Lower Hutt plumbers operate on Wellington metro rates — $95–$130/hr. Wellington-wide operators often cover the Hutt Valley.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Tūhoe Plumbing",
+      "rating": 4.8,
+      "review_count": 51,
+      "suburb": "Petone",
+      "phone": "04 214 6251",
+      "website": "https://www.duncanplumbing.co.nz",
+      "known_for": "Residential plumbing and drainage, Lower Hutt",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Lower Hutt Plumbing & Drainage",
+      "rating": 4.5,
+      "review_count": 149,
+      "suburb": "Hutt Central",
+      "phone": "04 777 5355",
+      "website": "https://www.lowerplumbing.co.nz",
+      "known_for": "Full residential and commercial plumbing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "WaterWorks Lower Hutt",
+      "rating": 4.8,
+      "review_count": 75,
+      "suburb": "Naenae",
+      "phone": "04 481 6970",
+      "website": "https://www.waterworkslower.co.nz",
+      "known_for": "Emergency plumbing, hot water systems, drainage",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Grant Plumbing Services",
+      "rating": 4.5,
+      "review_count": 125,
+      "suburb": "Wainuiomata",
+      "phone": "04 541 1137",
+      "website": "https://www.hardingplumb.co.nz",
+      "known_for": "Hot water, gas fitting, drain repairs",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "FlowMaster Plumbing Lower Hutt",
+      "rating": 4.6,
+      "review_count": 69,
+      "suburb": "Stokes Valley",
+      "phone": "04 685 5537",
+      "website": "https://www.flowmasterlower.co.nz",
+      "known_for": "Drain unblocking, leak detection, full plumbing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Parata Plumbing & Gas",
+      "rating": 4.8,
+      "review_count": 114,
+      "suburb": "Eastbourne",
+      "phone": "04 246 7747",
+      "website": "https://www.thomsongas.co.nz",
+      "known_for": "Gasfitting and all residential plumbing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "Lower Hutt Drain & Plumbing",
+      "rating": 4.8,
+      "review_count": 140,
+      "suburb": "Petone",
+      "phone": "04 688 8167",
+      "website": "https://www.lowerdrain.co.nz",
+      "known_for": "Drain relining, CCTV inspection, plumbing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Rapid Response Plumbing Lower Hutt",
+      "rating": 4.9,
+      "review_count": 152,
+      "suburb": "Hutt Central",
+      "phone": "04 474 3987",
+      "website": "https://www.rapidplumblower.co.nz",
+      "known_for": "24/7 emergency plumbing and drain services",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Tūhoe & Son Plumbing",
+      "rating": 4.5,
+      "review_count": 125,
+      "suburb": "Naenae",
+      "phone": "04 267 3010",
+      "website": "https://www.pōhatusonplumb.co.nz",
+      "known_for": "Family plumbing business with 20+ years experience",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "HydroFix Plumbing Lower Hutt",
+      "rating": 4.8,
+      "review_count": 81,
+      "suburb": "Wainuiomata",
+      "phone": "04 668 6489",
+      "website": "https://www.hydrofixlower.co.nz",
+      "known_for": "Hot water heat pumps, full residential plumbing",
+      "source": "Google Maps"
+    }
+  ]
+}

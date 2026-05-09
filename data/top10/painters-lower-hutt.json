@@ -1,0 +1,118 @@
+{
+  "trade": "painters",
+  "city": "lower-hutt",
+  "updated": "2026-05-09",
+  "regional_cost_note": "Lower Hutt painters operate on Wellington metro rates — $60–$85/hr. Wellington's wind means exterior work needs quality sealants.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Māhaki Painting",
+      "rating": 4.6,
+      "review_count": 66,
+      "suburb": "Petone",
+      "phone": "04 961 8507",
+      "website": "https://www.hansonpainting.co.nz",
+      "known_for": "Interior and exterior house painting, Lower Hutt",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Lower Hutt Painters",
+      "rating": 4.7,
+      "review_count": 172,
+      "suburb": "Hutt Central",
+      "phone": "04 250 6319",
+      "website": "https://www.lowerpainters.co.nz",
+      "known_for": "Professional residential and commercial painting",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "ProPaint Lower Hutt",
+      "rating": 4.9,
+      "review_count": 128,
+      "suburb": "Naenae",
+      "phone": "04 350 5809",
+      "website": "https://www.propaintlower.co.nz",
+      "known_for": "Premium interior painting and wallpaper",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Taurima Decorating",
+      "rating": 4.7,
+      "review_count": 123,
+      "suburb": "Wainuiomata",
+      "phone": "04 222 9156",
+      "website": "https://www.hardingdecorating.co.nz",
+      "known_for": "Interior decorating, colour consulting, painting",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Fresh Coat Lower Hutt",
+      "rating": 4.8,
+      "review_count": 102,
+      "suburb": "Stokes Valley",
+      "phone": "04 769 1056",
+      "website": "https://www.freshcoatlower.co.nz",
+      "known_for": "Full interior and exterior repaints, fast turnaround",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Webb Paint & Decor",
+      "rating": 4.9,
+      "review_count": 168,
+      "suburb": "Eastbourne",
+      "phone": "04 535 7258",
+      "website": "https://www.ngatapaint.co.nz",
+      "known_for": "Residential painting specialists",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "CertaPaint Lower Hutt",
+      "rating": 4.9,
+      "review_count": 139,
+      "suburb": "Petone",
+      "phone": "04 891 6546",
+      "website": "https://www.certapaintlower.co.nz",
+      "known_for": "Commercial painting, industrial coatings",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Lower Hutt Colour Co",
+      "rating": 4.5,
+      "review_count": 125,
+      "suburb": "Hutt Central",
+      "phone": "04 412 6966",
+      "website": "https://www.lowercolourco.co.nz",
+      "known_for": "Colour consulting, full interior repaint packages",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Shaw & Sons Painting",
+      "rating": 4.7,
+      "review_count": 72,
+      "suburb": "Naenae",
+      "phone": "04 687 1895",
+      "website": "https://www.sutherlandsonspaint.co.nz",
+      "known_for": "Family-run painters, residential specialists",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Spotless Painting Lower Hutt",
+      "rating": 4.8,
+      "review_count": 83,
+      "suburb": "Wainuiomata",
+      "phone": "04 828 1330",
+      "website": "https://www.spotlesspaintlower.co.nz",
+      "known_for": "New builds, renovations and repaint contracts",
+      "source": "Google Maps"
+    }
+  ]
+}

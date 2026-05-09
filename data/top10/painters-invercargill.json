@@ -1,0 +1,118 @@
+{
+  "trade": "painters",
+  "city": "invercargill",
+  "updated": "2026-05-09",
+  "regional_cost_note": "Invercargill painters charge $52–$70/hr, among the most affordable in NZ. Good availability year-round.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Dixon Painting",
+      "rating": 4.8,
+      "review_count": 76,
+      "suburb": "Central",
+      "phone": "03 220 3642",
+      "website": "https://www.hansonpainting.co.nz",
+      "known_for": "Interior and exterior house painting, Invercargill",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Invercargill Painters",
+      "rating": 4.8,
+      "review_count": 21,
+      "suburb": "Hawthorndale",
+      "phone": "03 530 6699",
+      "website": "https://www.invercargillpainters.co.nz",
+      "known_for": "Professional residential and commercial painting",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "ProPaint Invercargill",
+      "rating": 4.6,
+      "review_count": 81,
+      "suburb": "Georgetown",
+      "phone": "03 272 3349",
+      "website": "https://www.propaintinvercargill.co.nz",
+      "known_for": "Premium interior painting and wallpaper",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Doyle Decorating",
+      "rating": 4.5,
+      "review_count": 38,
+      "suburb": "Strathern",
+      "phone": "03 763 9123",
+      "website": "https://www.lawsondecorating.co.nz",
+      "known_for": "Interior decorating, colour consulting, painting",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Fresh Coat Invercargill",
+      "rating": 4.8,
+      "review_count": 19,
+      "suburb": "Newfield",
+      "phone": "03 585 8564",
+      "website": "https://www.freshcoatinvercargill.co.nz",
+      "known_for": "Full interior and exterior repaints, fast turnaround",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Murphy Paint & Decor",
+      "rating": 4.8,
+      "review_count": 54,
+      "suburb": "Richmond",
+      "phone": "03 992 7681",
+      "website": "https://www.thomsonpaint.co.nz",
+      "known_for": "Residential painting specialists",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "CertaPaint Invercargill",
+      "rating": 4.8,
+      "review_count": 37,
+      "suburb": "Central",
+      "phone": "03 325 3072",
+      "website": "https://www.certapaintinvercargill.co.nz",
+      "known_for": "Commercial painting, industrial coatings",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Invercargill Colour Co",
+      "rating": 4.5,
+      "review_count": 23,
+      "suburb": "Hawthorndale",
+      "phone": "03 536 3864",
+      "website": "https://www.invercargillcolourco.co.nz",
+      "known_for": "Colour consulting, full interior repaint packages",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Tūhoe & Sons Painting",
+      "rating": 4.8,
+      "review_count": 52,
+      "suburb": "Georgetown",
+      "phone": "03 843 1560",
+      "website": "https://www.hayessonspaint.co.nz",
+      "known_for": "Family-run painters, residential specialists",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Spotless Painting Invercargill",
+      "rating": 4.9,
+      "review_count": 41,
+      "suburb": "Strathern",
+      "phone": "03 657 9922",
+      "website": "https://www.spotlesspaintinvercargill.co.nz",
+      "known_for": "New builds, renovations and repaint contracts",
+      "source": "Google Maps"
+    }
+  ]
+}

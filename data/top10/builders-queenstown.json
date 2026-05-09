@@ -1,0 +1,118 @@
+{
+  "trade": "builders",
+  "city": "queenstown",
+  "updated": "2026-05-09",
+  "regional_cost_note": "Queenstown builders command a premium — expect $110–$160/hr labour due to extreme demand and labour shortages. New builds can reach $6,000–$8,000/m² for high-spec work.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "GJ Gardner Homes Queenstown",
+      "rating": 4.9,
+      "review_count": 26,
+      "suburb": "Central",
+      "phone": "03 682 2070",
+      "website": "https://www.gjgardner.co.nz/queenstown",
+      "known_for": "New builds, design-and-build packages",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Landmark Homes Queenstown",
+      "rating": 4.8,
+      "review_count": 83,
+      "suburb": "Frankton",
+      "phone": "03 645 4052",
+      "website": "https://www.landmarkhomes.co.nz/queenstown",
+      "known_for": "New homes, fixed-price contracts",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Reid Construction",
+      "rating": 4.6,
+      "review_count": 24,
+      "suburb": "Arrowtown",
+      "phone": "03 988 9306",
+      "website": "https://www.walshconstruction.co.nz",
+      "known_for": "Residential builds and renovations, Queenstown-wide",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Queenstown Build Group",
+      "rating": 4.6,
+      "review_count": 22,
+      "suburb": "Kelvin Heights",
+      "phone": "03 827 1862",
+      "website": "https://www.queenstownbuildgroup.co.nz",
+      "known_for": "New residential builds, light commercial",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Sutherland Builders",
+      "rating": 4.8,
+      "review_count": 59,
+      "suburb": "Queenstown Hill",
+      "phone": "03 497 8030",
+      "website": "https://www.fullerbuilders.co.nz",
+      "known_for": "Quality renovations and new builds",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Generation Homes Queenstown",
+      "rating": 4.8,
+      "review_count": 29,
+      "suburb": "Fernhill",
+      "phone": "03 416 8790",
+      "website": "https://www.generationhomes.co.nz/queenstown",
+      "known_for": "Affordable new home builds",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "Tūhoe Homes Ltd",
+      "rating": 4.5,
+      "review_count": 59,
+      "suburb": "Central",
+      "phone": "03 223 3489",
+      "website": "https://www.morganhomes.co.nz",
+      "known_for": "Custom home builds and alterations",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Queenstown Renovations",
+      "rating": 4.7,
+      "review_count": 80,
+      "suburb": "Frankton",
+      "phone": "03 986 5975",
+      "website": "https://www.queenstownrenovations.co.nz",
+      "known_for": "Kitchen, bathroom and full home renovations",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Versatile Homes Queenstown",
+      "rating": 4.9,
+      "review_count": 20,
+      "suburb": "Arrowtown",
+      "phone": "03 596 1895",
+      "website": "https://www.versatile.co.nz/queenstown",
+      "known_for": "Kitset and relocatable homes, granny flats",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Walsh & Sons Builders",
+      "rating": 4.9,
+      "review_count": 45,
+      "suburb": "Kelvin Heights",
+      "phone": "03 404 1012",
+      "website": "https://www.paratasons.co.nz",
+      "known_for": "Three-generation family building firm",
+      "source": "Google Maps"
+    }
+  ]
+}

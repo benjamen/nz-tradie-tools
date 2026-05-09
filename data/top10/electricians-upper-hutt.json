@@ -1,0 +1,118 @@
+{
+  "trade": "electricians",
+  "city": "upper-hutt",
+  "updated": "2026-05-09",
+  "regional_cost_note": "Upper Hutt electricians charge $88–$120/hr aligned with Wellington metro. Strong demand for panel upgrades on older homes.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Morgan Electrical",
+      "rating": 4.6,
+      "review_count": 21,
+      "suburb": "Central",
+      "phone": "04 883 8763",
+      "website": "https://www.morganelectrical.co.nz",
+      "known_for": "Residential and commercial electrical, Upper Hutt",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Upper Hutt Electrical Services",
+      "rating": 4.7,
+      "review_count": 27,
+      "suburb": "Trentham",
+      "phone": "04 288 2916",
+      "website": "https://www.upperelectrical.co.nz",
+      "known_for": "Full residential and commercial electrical",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "PowerPlus Electrical Upper Hutt",
+      "rating": 4.8,
+      "review_count": 35,
+      "suburb": "Silverstream",
+      "phone": "04 278 6492",
+      "website": "https://www.powerplusupper.co.nz",
+      "known_for": "Switchboard upgrades, rewiring, new builds",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Curran Electricians",
+      "rating": 4.6,
+      "review_count": 65,
+      "suburb": "Heretaunga",
+      "phone": "04 240 4134",
+      "website": "https://www.richardselectricians.co.nz",
+      "known_for": "Certified electricians for all residential work",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Voltage Electrical Upper Hutt",
+      "rating": 4.8,
+      "review_count": 58,
+      "suburb": "Totara Park",
+      "phone": "04 961 8242",
+      "website": "https://www.voltageelectricalupper.co.nz",
+      "known_for": "Residential, commercial and industrial electrical",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Upper Hutt Power Solutions",
+      "rating": 4.8,
+      "review_count": 75,
+      "suburb": "Maoribank",
+      "phone": "04 812 7019",
+      "website": "https://www.upperpowersolutions.co.nz",
+      "known_for": "Solar, EV charging, smart home and general electrical",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "Hayes Electrical Ltd",
+      "rating": 4.5,
+      "review_count": 82,
+      "suburb": "Central",
+      "phone": "04 410 4732",
+      "website": "https://www.pearceelec.co.nz",
+      "known_for": "Commercial fit-outs and residential electrical",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Bright Spark Electrical Upper Hutt",
+      "rating": 4.8,
+      "review_count": 70,
+      "suburb": "Trentham",
+      "phone": "04 523 5511",
+      "website": "https://www.brightsparkupper.co.nz",
+      "known_for": "Fast response residential electrical services",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Ryan & Co Electrical",
+      "rating": 4.9,
+      "review_count": 68,
+      "suburb": "Silverstream",
+      "phone": "04 645 9188",
+      "website": "https://www.hardingco.co.nz",
+      "known_for": "Family-run electrical contractors since 2005",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Total Electrical Upper Hutt",
+      "rating": 4.9,
+      "review_count": 82,
+      "suburb": "Heretaunga",
+      "phone": "04 909 6805",
+      "website": "https://www.totalelectricalupper.co.nz",
+      "known_for": "All electrical work, solar panel installations",
+      "source": "Google Maps"
+    }
+  ]
+}

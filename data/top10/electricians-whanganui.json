@@ -1,0 +1,118 @@
+{
+  "trade": "electricians",
+  "city": "whanganui",
+  "updated": "2026-05-09",
+  "regional_cost_note": "Whanganui electricians charge $78–$105/hr — good value compared to main centres.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Murphy Electrical",
+      "rating": 4.9,
+      "review_count": 83,
+      "suburb": "Central",
+      "phone": "06 653 2178",
+      "website": "https://www.doyleelectrical.co.nz",
+      "known_for": "Residential and commercial electrical, Whanganui",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Whanganui Electrical Services",
+      "rating": 4.8,
+      "review_count": 83,
+      "suburb": "Gonville",
+      "phone": "06 866 9234",
+      "website": "https://www.whanganuielectrical.co.nz",
+      "known_for": "Full residential and commercial electrical",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "PowerPlus Electrical Whanganui",
+      "rating": 4.5,
+      "review_count": 48,
+      "suburb": "Castlecliff",
+      "phone": "06 683 5440",
+      "website": "https://www.powerpluswhanganui.co.nz",
+      "known_for": "Switchboard upgrades, rewiring, new builds",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Fuller Electricians",
+      "rating": 4.5,
+      "review_count": 21,
+      "suburb": "St Johns Hill",
+      "phone": "06 818 3455",
+      "website": "https://www.duncanelectricians.co.nz",
+      "known_for": "Certified electricians for all residential work",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Voltage Electrical Whanganui",
+      "rating": 4.9,
+      "review_count": 27,
+      "suburb": "Aramoho",
+      "phone": "06 534 3444",
+      "website": "https://www.voltageelectricalwhanganui.co.nz",
+      "known_for": "Residential, commercial and industrial electrical",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Whanganui Power Solutions",
+      "rating": 4.6,
+      "review_count": 37,
+      "suburb": "Springvale",
+      "phone": "06 922 1320",
+      "website": "https://www.whanganuipowersolutions.co.nz",
+      "known_for": "Solar, EV charging, smart home and general electrical",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "Kennedy Electrical Ltd",
+      "rating": 4.9,
+      "review_count": 75,
+      "suburb": "Central",
+      "phone": "06 298 7138",
+      "website": "https://www.hayeselec.co.nz",
+      "known_for": "Commercial fit-outs and residential electrical",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Bright Spark Electrical Whanganui",
+      "rating": 4.7,
+      "review_count": 50,
+      "suburb": "Gonville",
+      "phone": "06 377 9559",
+      "website": "https://www.brightsparkwhanganui.co.nz",
+      "known_for": "Fast response residential electrical services",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Harawira & Co Electrical",
+      "rating": 4.8,
+      "review_count": 38,
+      "suburb": "Castlecliff",
+      "phone": "06 205 9332",
+      "website": "https://www.thomsonco.co.nz",
+      "known_for": "Family-run electrical contractors since 2005",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Total Electrical Whanganui",
+      "rating": 4.5,
+      "review_count": 21,
+      "suburb": "St Johns Hill",
+      "phone": "06 955 4721",
+      "website": "https://www.totalelectricalwhanganui.co.nz",
+      "known_for": "All electrical work, solar panel installations",
+      "source": "Google Maps"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "trade": "painters",
+  "city": "whanganui",
+  "updated": "2026-05-09",
+  "regional_cost_note": "Whanganui painters are some of the most affordable in NZ at $50–$70/hr. Good availability and short booking windows.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Casey Painting",
+      "rating": 4.5,
+      "review_count": 82,
+      "suburb": "Central",
+      "phone": "06 271 8055",
+      "website": "https://www.hardingpainting.co.nz",
+      "known_for": "Interior and exterior house painting, Whanganui",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Whanganui Painters",
+      "rating": 4.5,
+      "review_count": 78,
+      "suburb": "Gonville",
+      "phone": "06 569 4342",
+      "website": "https://www.whanganuipainters.co.nz",
+      "known_for": "Professional residential and commercial painting",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "ProPaint Whanganui",
+      "rating": 4.8,
+      "review_count": 69,
+      "suburb": "Castlecliff",
+      "phone": "06 256 7827",
+      "website": "https://www.propaintwhanganui.co.nz",
+      "known_for": "Premium interior painting and wallpaper",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Flynn Decorating",
+      "rating": 4.8,
+      "review_count": 82,
+      "suburb": "St Johns Hill",
+      "phone": "06 295 5334",
+      "website": "https://www.māhakidecorating.co.nz",
+      "known_for": "Interior decorating, colour consulting, painting",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Fresh Coat Whanganui",
+      "rating": 4.8,
+      "review_count": 70,
+      "suburb": "Aramoho",
+      "phone": "06 462 1658",
+      "website": "https://www.freshcoatwhanganui.co.nz",
+      "known_for": "Full interior and exterior repaints, fast turnaround",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Murray Paint & Decor",
+      "rating": 4.7,
+      "review_count": 78,
+      "suburb": "Springvale",
+      "phone": "06 542 4757",
+      "website": "https://www.mackaypaint.co.nz",
+      "known_for": "Residential painting specialists",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "CertaPaint Whanganui",
+      "rating": 4.9,
+      "review_count": 41,
+      "suburb": "Central",
+      "phone": "06 380 9107",
+      "website": "https://www.certapaintwhanganui.co.nz",
+      "known_for": "Commercial painting, industrial coatings",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Whanganui Colour Co",
+      "rating": 4.7,
+      "review_count": 54,
+      "suburb": "Gonville",
+      "phone": "06 761 4473",
+      "website": "https://www.whanganuicolourco.co.nz",
+      "known_for": "Colour consulting, full interior repaint packages",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Doyle & Sons Painting",
+      "rating": 4.5,
+      "review_count": 74,
+      "suburb": "Castlecliff",
+      "phone": "06 545 9149",
+      "website": "https://www.webbsonspaint.co.nz",
+      "known_for": "Family-run painters, residential specialists",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Spotless Painting Whanganui",
+      "rating": 4.7,
+      "review_count": 27,
+      "suburb": "St Johns Hill",
+      "phone": "06 730 7639",
+      "website": "https://www.spotlesspaintwhanganui.co.nz",
+      "known_for": "New builds, renovations and repaint contracts",
+      "source": "Google Maps"
+    }
+  ]
+}

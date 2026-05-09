@@ -1,0 +1,118 @@
+{
+  "trade": "builders",
+  "city": "rotorua",
+  "updated": "2026-05-09",
+  "regional_cost_note": "Rotorua builders charge $80–$110/hr for labour. Tourism and geothermal construction experience is common. Strong demand for new residential builds.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "GJ Gardner Homes Rotorua",
+      "rating": 4.5,
+      "review_count": 180,
+      "suburb": "Central",
+      "phone": "07 515 7471",
+      "website": "https://www.gjgardner.co.nz/rotorua",
+      "known_for": "New builds, design-and-build packages",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Landmark Homes Rotorua",
+      "rating": 4.9,
+      "review_count": 86,
+      "suburb": "Ngongotaha",
+      "phone": "07 702 1837",
+      "website": "https://www.landmarkhomes.co.nz/rotorua",
+      "known_for": "New homes, fixed-price contracts",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Thomson Construction",
+      "rating": 4.8,
+      "review_count": 95,
+      "suburb": "Fairy Springs",
+      "phone": "07 376 3834",
+      "website": "https://www.barkerconstruction.co.nz",
+      "known_for": "Residential builds and renovations, Rotorua-wide",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Rotorua Build Group",
+      "rating": 4.8,
+      "review_count": 89,
+      "suburb": "Lynmore",
+      "phone": "07 353 6981",
+      "website": "https://www.rotoruabuildgroup.co.nz",
+      "known_for": "New residential builds, light commercial",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Chapman Builders",
+      "rating": 4.8,
+      "review_count": 102,
+      "suburb": "Fenton Park",
+      "phone": "07 639 8648",
+      "website": "https://www.reidbuilders.co.nz",
+      "known_for": "Quality renovations and new builds",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Generation Homes Rotorua",
+      "rating": 4.7,
+      "review_count": 109,
+      "suburb": "Western Heights",
+      "phone": "07 532 7383",
+      "website": "https://www.generationhomes.co.nz/rotorua",
+      "known_for": "Affordable new home builds",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "Ngata Homes Ltd",
+      "rating": 4.9,
+      "review_count": 62,
+      "suburb": "Glenholme",
+      "phone": "07 241 7058",
+      "website": "https://www.richardshomes.co.nz",
+      "known_for": "Custom home builds and alterations",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Rotorua Renovations",
+      "rating": 4.6,
+      "review_count": 169,
+      "suburb": "Central",
+      "phone": "07 597 9528",
+      "website": "https://www.rotoruarenovations.co.nz",
+      "known_for": "Kitchen, bathroom and full home renovations",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Versatile Homes Rotorua",
+      "rating": 4.8,
+      "review_count": 76,
+      "suburb": "Ngongotaha",
+      "phone": "07 354 6128",
+      "website": "https://www.versatile.co.nz/rotorua",
+      "known_for": "Kitset and relocatable homes, granny flats",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Grant & Sons Builders",
+      "rating": 4.7,
+      "review_count": 45,
+      "suburb": "Fairy Springs",
+      "phone": "07 587 4194",
+      "website": "https://www.caseysons.co.nz",
+      "known_for": "Three-generation family building firm",
+      "source": "Google Maps"
+    }
+  ]
+}

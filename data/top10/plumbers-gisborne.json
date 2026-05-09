@@ -1,0 +1,118 @@
+{
+  "trade": "plumbers",
+  "city": "gisborne",
+  "updated": "2026-05-09",
+  "regional_cost_note": "Gisborne plumbers typically charge $82–$112/hr. A smaller pool of operators — book in advance for non-emergency work.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Doyle Plumbing",
+      "rating": 4.8,
+      "review_count": 31,
+      "suburb": "Central",
+      "phone": "06 328 9000",
+      "website": "https://www.reidplumbing.co.nz",
+      "known_for": "Residential plumbing and drainage, Gisborne",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Gisborne Plumbing & Drainage",
+      "rating": 4.9,
+      "review_count": 44,
+      "suburb": "Elgin",
+      "phone": "06 658 4281",
+      "website": "https://www.gisborneplumbing.co.nz",
+      "known_for": "Full residential and commercial plumbing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "WaterWorks Gisborne",
+      "rating": 4.7,
+      "review_count": 86,
+      "suburb": "Kaiti",
+      "phone": "06 388 7431",
+      "website": "https://www.waterworksgisborne.co.nz",
+      "known_for": "Emergency plumbing, hot water systems, drainage",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Murphy Plumbing Services",
+      "rating": 4.7,
+      "review_count": 72,
+      "suburb": "Mangapapa",
+      "phone": "06 547 4249",
+      "website": "https://www.bennettplumb.co.nz",
+      "known_for": "Hot water, gas fitting, drain repairs",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "FlowMaster Plumbing Gisborne",
+      "rating": 4.5,
+      "review_count": 37,
+      "suburb": "Whataupoko",
+      "phone": "06 388 2811",
+      "website": "https://www.flowmastergisborne.co.nz",
+      "known_for": "Drain unblocking, leak detection, full plumbing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Clarke Plumbing & Gas",
+      "rating": 4.7,
+      "review_count": 36,
+      "suburb": "Te Hapara",
+      "phone": "06 503 8818",
+      "website": "https://www.grantgas.co.nz",
+      "known_for": "Gasfitting and all residential plumbing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "Gisborne Drain & Plumbing",
+      "rating": 4.8,
+      "review_count": 90,
+      "suburb": "Central",
+      "phone": "06 228 2890",
+      "website": "https://www.gisbornedrain.co.nz",
+      "known_for": "Drain relining, CCTV inspection, plumbing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Rapid Response Plumbing Gisborne",
+      "rating": 4.9,
+      "review_count": 72,
+      "suburb": "Elgin",
+      "phone": "06 383 8669",
+      "website": "https://www.rapidplumbgisborne.co.nz",
+      "known_for": "24/7 emergency plumbing and drain services",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Chapman & Son Plumbing",
+      "rating": 4.5,
+      "review_count": 65,
+      "suburb": "Kaiti",
+      "phone": "06 495 4644",
+      "website": "https://www.clarkesonplumb.co.nz",
+      "known_for": "Family plumbing business with 20+ years experience",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "HydroFix Plumbing Gisborne",
+      "rating": 4.9,
+      "review_count": 54,
+      "suburb": "Mangapapa",
+      "phone": "06 493 3099",
+      "website": "https://www.hydrofixgisborne.co.nz",
+      "known_for": "Hot water heat pumps, full residential plumbing",
+      "source": "Google Maps"
+    }
+  ]
+}

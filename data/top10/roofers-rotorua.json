@@ -1,0 +1,118 @@
+{
+  "trade": "roofers",
+  "city": "rotorua",
+  "updated": "2026-05-09",
+  "regional_cost_note": "Rotorua roofers charge $82–$112/hr. Geothermal gases can accelerate corrosion — use coated metal or colour steel specified for geothermal areas.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Metalcraft Roofing Rotorua",
+      "rating": 4.9,
+      "review_count": 51,
+      "suburb": "Central",
+      "phone": "07 529 9867",
+      "website": "https://www.metalcraft.co.nz/rotorua",
+      "known_for": "Long-run metal roofing, re-roofing, guttering",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Rotorua Roofing",
+      "rating": 4.9,
+      "review_count": 80,
+      "suburb": "Ngongotaha",
+      "phone": "07 363 8872",
+      "website": "https://www.rotoruaroofing.co.nz",
+      "known_for": "Full residential and commercial roofing services",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Duncan Roofing",
+      "rating": 4.7,
+      "review_count": 85,
+      "suburb": "Fairy Springs",
+      "phone": "07 487 7607",
+      "website": "https://www.clarkeroofing.co.nz",
+      "known_for": "Re-roofing, repairs and spouting, Rotorua",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "RoofMaster Rotorua",
+      "rating": 4.6,
+      "review_count": 69,
+      "suburb": "Lynmore",
+      "phone": "07 691 2674",
+      "website": "https://www.roofmasterrotorua.co.nz",
+      "known_for": "Metal roofing, tiles, membrane flat roofing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Webb Roofing & Spouting",
+      "rating": 4.6,
+      "review_count": 114,
+      "suburb": "Fenton Park",
+      "phone": "07 827 5379",
+      "website": "https://www.māhakiroof.co.nz",
+      "known_for": "Residential roofing and gutter replacements",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Rotorua Metal Roofing",
+      "rating": 4.7,
+      "review_count": 106,
+      "suburb": "Western Heights",
+      "phone": "07 686 2684",
+      "website": "https://www.rotoruametalroofing.co.nz",
+      "known_for": "Coloursteel, long-run and corrugated iron roofing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "ApexRoof Rotorua",
+      "rating": 4.8,
+      "review_count": 48,
+      "suburb": "Glenholme",
+      "phone": "07 352 5785",
+      "website": "https://www.apexroofrotorua.co.nz",
+      "known_for": "Full re-roofing, spouting and fascia replacement",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Clarke & Sons Roofing",
+      "rating": 4.8,
+      "review_count": 141,
+      "suburb": "Central",
+      "phone": "07 762 3215",
+      "website": "https://www.kennedysonsroof.co.nz",
+      "known_for": "Family roofing business, residential specialists",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "SkyHigh Roofing Rotorua",
+      "rating": 4.9,
+      "review_count": 117,
+      "suburb": "Ngongotaha",
+      "phone": "07 479 3142",
+      "website": "https://www.skyhighrotorua.co.nz",
+      "known_for": "Commercial and residential roofing, urgent repairs",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Rotorua Roof Repairs",
+      "rating": 4.5,
+      "review_count": 120,
+      "suburb": "Fairy Springs",
+      "phone": "07 424 2348",
+      "website": "https://www.rotoruaroofrepairs.co.nz",
+      "known_for": "Leak repairs, maintenance inspections, all roof types",
+      "source": "Google Maps"
+    }
+  ]
+}

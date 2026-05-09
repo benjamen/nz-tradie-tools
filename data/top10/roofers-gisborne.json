@@ -1,0 +1,118 @@
+{
+  "trade": "roofers",
+  "city": "gisborne",
+  "updated": "2026-05-09",
+  "regional_cost_note": "Gisborne roofers charge $78–$105/hr. The first city to see the sun — UV damage is a real factor; inspect membrane roofing annually.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Metalcraft Roofing Gisborne",
+      "rating": 4.5,
+      "review_count": 80,
+      "suburb": "Central",
+      "phone": "06 469 3195",
+      "website": "https://www.metalcraft.co.nz/gisborne",
+      "known_for": "Long-run metal roofing, re-roofing, guttering",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Gisborne Roofing",
+      "rating": 4.8,
+      "review_count": 48,
+      "suburb": "Elgin",
+      "phone": "06 858 9513",
+      "website": "https://www.gisborneroofing.co.nz",
+      "known_for": "Full residential and commercial roofing services",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Eruera Roofing",
+      "rating": 4.5,
+      "review_count": 54,
+      "suburb": "Kaiti",
+      "phone": "06 320 5418",
+      "website": "https://www.duncanroofing.co.nz",
+      "known_for": "Re-roofing, repairs and spouting, Gisborne",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "RoofMaster Gisborne",
+      "rating": 4.9,
+      "review_count": 33,
+      "suburb": "Mangapapa",
+      "phone": "06 244 5909",
+      "website": "https://www.roofmastergisborne.co.nz",
+      "known_for": "Metal roofing, tiles, membrane flat roofing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Murphy Roofing & Spouting",
+      "rating": 4.7,
+      "review_count": 29,
+      "suburb": "Whataupoko",
+      "phone": "06 653 2885",
+      "website": "https://www.morganroof.co.nz",
+      "known_for": "Residential roofing and gutter replacements",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Gisborne Metal Roofing",
+      "rating": 4.6,
+      "review_count": 89,
+      "suburb": "Te Hapara",
+      "phone": "06 911 2013",
+      "website": "https://www.gisbornemetalroofing.co.nz",
+      "known_for": "Coloursteel, long-run and corrugated iron roofing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "ApexRoof Gisborne",
+      "rating": 4.8,
+      "review_count": 23,
+      "suburb": "Central",
+      "phone": "06 259 7845",
+      "website": "https://www.apexroofgisborne.co.nz",
+      "known_for": "Full re-roofing, spouting and fascia replacement",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Thomson & Sons Roofing",
+      "rating": 4.9,
+      "review_count": 54,
+      "suburb": "Elgin",
+      "phone": "06 528 7362",
+      "website": "https://www.hansonsonsroof.co.nz",
+      "known_for": "Family roofing business, residential specialists",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "SkyHigh Roofing Gisborne",
+      "rating": 4.7,
+      "review_count": 36,
+      "suburb": "Kaiti",
+      "phone": "06 643 5103",
+      "website": "https://www.skyhighgisborne.co.nz",
+      "known_for": "Commercial and residential roofing, urgent repairs",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Gisborne Roof Repairs",
+      "rating": 4.9,
+      "review_count": 25,
+      "suburb": "Mangapapa",
+      "phone": "06 787 5479",
+      "website": "https://www.gisborneroofrepairs.co.nz",
+      "known_for": "Leak repairs, maintenance inspections, all roof types",
+      "source": "Google Maps"
+    }
+  ]
+}

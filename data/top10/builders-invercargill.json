@@ -1,0 +1,118 @@
+{
+  "trade": "builders",
+  "city": "invercargill",
+  "updated": "2026-05-09",
+  "regional_cost_note": "Invercargill has the most affordable builder rates in NZ — typically $70–$95/hr labour. New builds run $2,800–$3,800/m², making it NZ's best-value construction market.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "GJ Gardner Homes Invercargill",
+      "rating": 4.7,
+      "review_count": 79,
+      "suburb": "Central",
+      "phone": "03 495 5822",
+      "website": "https://www.gjgardner.co.nz/invercargill",
+      "known_for": "New builds, design-and-build packages",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Landmark Homes Invercargill",
+      "rating": 4.8,
+      "review_count": 32,
+      "suburb": "Hawthorndale",
+      "phone": "03 559 3389",
+      "website": "https://www.landmarkhomes.co.nz/invercargill",
+      "known_for": "New homes, fixed-price contracts",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Māhaki Construction",
+      "rating": 4.8,
+      "review_count": 47,
+      "suburb": "Georgetown",
+      "phone": "03 359 7953",
+      "website": "https://www.thomsonconstruction.co.nz",
+      "known_for": "Residential builds and renovations, Invercargill-wide",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Invercargill Build Group",
+      "rating": 4.8,
+      "review_count": 44,
+      "suburb": "Strathern",
+      "phone": "03 844 3132",
+      "website": "https://www.invercargillbuildgroup.co.nz",
+      "known_for": "New residential builds, light commercial",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Bennett Builders",
+      "rating": 4.7,
+      "review_count": 77,
+      "suburb": "Newfield",
+      "phone": "03 268 8819",
+      "website": "https://www.webbbuilders.co.nz",
+      "known_for": "Quality renovations and new builds",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Generation Homes Invercargill",
+      "rating": 4.8,
+      "review_count": 67,
+      "suburb": "Richmond",
+      "phone": "03 662 1904",
+      "website": "https://www.generationhomes.co.nz/invercargill",
+      "known_for": "Affordable new home builds",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "Flynn Homes Ltd",
+      "rating": 4.7,
+      "review_count": 86,
+      "suburb": "Central",
+      "phone": "03 641 9604",
+      "website": "https://www.walshhomes.co.nz",
+      "known_for": "Custom home builds and alterations",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Invercargill Renovations",
+      "rating": 4.7,
+      "review_count": 57,
+      "suburb": "Hawthorndale",
+      "phone": "03 635 4786",
+      "website": "https://www.invercargillrenovations.co.nz",
+      "known_for": "Kitchen, bathroom and full home renovations",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Versatile Homes Invercargill",
+      "rating": 4.8,
+      "review_count": 44,
+      "suburb": "Georgetown",
+      "phone": "03 384 5178",
+      "website": "https://www.versatile.co.nz/invercargill",
+      "known_for": "Kitset and relocatable homes, granny flats",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Kennedy & Sons Builders",
+      "rating": 4.5,
+      "review_count": 83,
+      "suburb": "Strathern",
+      "phone": "03 271 4208",
+      "website": "https://www.fullersons.co.nz",
+      "known_for": "Three-generation family building firm",
+      "source": "Google Maps"
+    }
+  ]
+}

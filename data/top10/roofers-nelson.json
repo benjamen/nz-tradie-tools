@@ -1,0 +1,118 @@
+{
+  "trade": "roofers",
+  "city": "nelson",
+  "updated": "2026-05-09",
+  "regional_cost_note": "Nelson roofers charge $80–$110/hr. UV exposure in Nelson's sunny climate is high — use quality paint systems on long-run roofing.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Metalcraft Roofing Nelson",
+      "rating": 4.8,
+      "review_count": 155,
+      "suburb": "Central",
+      "phone": "03 249 6400",
+      "website": "https://www.metalcraft.co.nz/nelson",
+      "known_for": "Long-run metal roofing, re-roofing, guttering",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Nelson Roofing",
+      "rating": 4.7,
+      "review_count": 172,
+      "suburb": "Richmond",
+      "phone": "03 540 5687",
+      "website": "https://www.nelsonroofing.co.nz",
+      "known_for": "Full residential and commercial roofing services",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Tūhoe Roofing",
+      "rating": 4.6,
+      "review_count": 77,
+      "suburb": "Stoke",
+      "phone": "03 428 1559",
+      "website": "https://www.morganroofing.co.nz",
+      "known_for": "Re-roofing, repairs and spouting, Nelson",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "RoofMaster Nelson",
+      "rating": 4.9,
+      "review_count": 144,
+      "suburb": "Tahunanui",
+      "phone": "03 328 5927",
+      "website": "https://www.roofmasternelson.co.nz",
+      "known_for": "Metal roofing, tiles, membrane flat roofing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Māhaki Roofing & Spouting",
+      "rating": 4.8,
+      "review_count": 135,
+      "suburb": "Atawhai",
+      "phone": "03 574 3574",
+      "website": "https://www.morganroof.co.nz",
+      "known_for": "Residential roofing and gutter replacements",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Nelson Metal Roofing",
+      "rating": 4.8,
+      "review_count": 53,
+      "suburb": "The Wood",
+      "phone": "03 601 7105",
+      "website": "https://www.nelsonmetalroofing.co.nz",
+      "known_for": "Coloursteel, long-run and corrugated iron roofing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "ApexRoof Nelson",
+      "rating": 4.7,
+      "review_count": 59,
+      "suburb": "Brightwater",
+      "phone": "03 520 6832",
+      "website": "https://www.apexroofnelson.co.nz",
+      "known_for": "Full re-roofing, spouting and fascia replacement",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Murphy & Sons Roofing",
+      "rating": 4.8,
+      "review_count": 114,
+      "suburb": "Central",
+      "phone": "03 427 6075",
+      "website": "https://www.webbsonsroof.co.nz",
+      "known_for": "Family roofing business, residential specialists",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "SkyHigh Roofing Nelson",
+      "rating": 4.6,
+      "review_count": 54,
+      "suburb": "Richmond",
+      "phone": "03 246 2410",
+      "website": "https://www.skyhighnelson.co.nz",
+      "known_for": "Commercial and residential roofing, urgent repairs",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Nelson Roof Repairs",
+      "rating": 4.9,
+      "review_count": 81,
+      "suburb": "Stoke",
+      "phone": "03 335 3239",
+      "website": "https://www.nelsonroofrepairs.co.nz",
+      "known_for": "Leak repairs, maintenance inspections, all roof types",
+      "source": "Google Maps"
+    }
+  ]
+}

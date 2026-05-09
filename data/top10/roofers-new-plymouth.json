@@ -1,0 +1,118 @@
+{
+  "trade": "roofers",
+  "city": "new-plymouth",
+  "updated": "2026-05-09",
+  "regional_cost_note": "New Plymouth roofers charge $80–$110/hr. Taranaki wind exposure requires hurricane-rated fixings on metal roofing.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Metalcraft Roofing New Plymouth",
+      "rating": 4.7,
+      "review_count": 113,
+      "suburb": "Central",
+      "phone": "06 943 1359",
+      "website": "https://www.metalcraft.co.nz/new",
+      "known_for": "Long-run metal roofing, re-roofing, guttering",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "New Plymouth Roofing",
+      "rating": 4.8,
+      "review_count": 138,
+      "suburb": "Bell Block",
+      "phone": "06 291 3271",
+      "website": "https://www.newroofing.co.nz",
+      "known_for": "Full residential and commercial roofing services",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Tūhoe Roofing",
+      "rating": 4.5,
+      "review_count": 163,
+      "suburb": "Fitzroy",
+      "phone": "06 331 5633",
+      "website": "https://www.duncanroofing.co.nz",
+      "known_for": "Re-roofing, repairs and spouting, New Plymouth",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "RoofMaster New Plymouth",
+      "rating": 4.8,
+      "review_count": 101,
+      "suburb": "Merrilands",
+      "phone": "06 653 8915",
+      "website": "https://www.roofmasternew.co.nz",
+      "known_for": "Metal roofing, tiles, membrane flat roofing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Clarke Roofing & Spouting",
+      "rating": 4.8,
+      "review_count": 144,
+      "suburb": "Strandon",
+      "phone": "06 501 5551",
+      "website": "https://www.murphyroof.co.nz",
+      "known_for": "Residential roofing and gutter replacements",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "New Plymouth Metal Roofing",
+      "rating": 4.9,
+      "review_count": 63,
+      "suburb": "Moturoa",
+      "phone": "06 508 4143",
+      "website": "https://www.newmetalroofing.co.nz",
+      "known_for": "Coloursteel, long-run and corrugated iron roofing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "ApexRoof New Plymouth",
+      "rating": 4.7,
+      "review_count": 135,
+      "suburb": "Central",
+      "phone": "06 754 4257",
+      "website": "https://www.apexroofnew.co.nz",
+      "known_for": "Full re-roofing, spouting and fascia replacement",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Lawson & Sons Roofing",
+      "rating": 4.9,
+      "review_count": 46,
+      "suburb": "Bell Block",
+      "phone": "06 887 9608",
+      "website": "https://www.dixonsonsroof.co.nz",
+      "known_for": "Family roofing business, residential specialists",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "SkyHigh Roofing New Plymouth",
+      "rating": 4.6,
+      "review_count": 143,
+      "suburb": "Fitzroy",
+      "phone": "06 585 8708",
+      "website": "https://www.skyhighnew.co.nz",
+      "known_for": "Commercial and residential roofing, urgent repairs",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "New Plymouth Roof Repairs",
+      "rating": 4.9,
+      "review_count": 80,
+      "suburb": "Merrilands",
+      "phone": "06 895 4457",
+      "website": "https://www.newroofrepairs.co.nz",
+      "known_for": "Leak repairs, maintenance inspections, all roof types",
+      "source": "Google Maps"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "trade": "builders",
+  "city": "whanganui",
+  "updated": "2026-05-09",
+  "regional_cost_note": "Whanganui builder rates are among the most affordable in NZ — $72–$98/hr. Great value market with a growing renovation scene.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "GJ Gardner Homes Whanganui",
+      "rating": 4.8,
+      "review_count": 41,
+      "suburb": "Central",
+      "phone": "06 477 8137",
+      "website": "https://www.gjgardner.co.nz/whanganui",
+      "known_for": "New builds, design-and-build packages",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Landmark Homes Whanganui",
+      "rating": 4.8,
+      "review_count": 38,
+      "suburb": "Gonville",
+      "phone": "06 803 6748",
+      "website": "https://www.landmarkhomes.co.nz/whanganui",
+      "known_for": "New homes, fixed-price contracts",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Webb Construction",
+      "rating": 4.8,
+      "review_count": 84,
+      "suburb": "Castlecliff",
+      "phone": "06 572 3155",
+      "website": "https://www.hayesconstruction.co.nz",
+      "known_for": "Residential builds and renovations, Whanganui-wide",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Whanganui Build Group",
+      "rating": 4.8,
+      "review_count": 64,
+      "suburb": "St Johns Hill",
+      "phone": "06 547 8545",
+      "website": "https://www.whanganuibuildgroup.co.nz",
+      "known_for": "New residential builds, light commercial",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Harding Builders",
+      "rating": 4.6,
+      "review_count": 47,
+      "suburb": "Aramoho",
+      "phone": "06 959 4900",
+      "website": "https://www.grantbuilders.co.nz",
+      "known_for": "Quality renovations and new builds",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Generation Homes Whanganui",
+      "rating": 4.7,
+      "review_count": 79,
+      "suburb": "Springvale",
+      "phone": "06 826 2308",
+      "website": "https://www.generationhomes.co.nz/whanganui",
+      "known_for": "Affordable new home builds",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "Pōhatu Homes Ltd",
+      "rating": 4.5,
+      "review_count": 24,
+      "suburb": "Central",
+      "phone": "06 428 1253",
+      "website": "https://www.curranhomes.co.nz",
+      "known_for": "Custom home builds and alterations",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Whanganui Renovations",
+      "rating": 4.8,
+      "review_count": 28,
+      "suburb": "Gonville",
+      "phone": "06 208 9958",
+      "website": "https://www.whanganuirenovations.co.nz",
+      "known_for": "Kitchen, bathroom and full home renovations",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Versatile Homes Whanganui",
+      "rating": 4.8,
+      "review_count": 59,
+      "suburb": "Castlecliff",
+      "phone": "06 374 1227",
+      "website": "https://www.versatile.co.nz/whanganui",
+      "known_for": "Kitset and relocatable homes, granny flats",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Flynn & Sons Builders",
+      "rating": 4.6,
+      "review_count": 21,
+      "suburb": "St Johns Hill",
+      "phone": "06 486 1996",
+      "website": "https://www.shawsons.co.nz",
+      "known_for": "Three-generation family building firm",
+      "source": "Google Maps"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "trade": "plumbers",
+  "city": "whangarei",
+  "updated": "2026-05-09",
+  "regional_cost_note": "Whangārei plumbers charge $88–$118/hr. Coastal lifestyle block work is common — greywater systems and rainwater tanks are specialties.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Ngata Plumbing",
+      "rating": 4.9,
+      "review_count": 156,
+      "suburb": "Central",
+      "phone": "09 882 9671",
+      "website": "https://www.ryanplumbing.co.nz",
+      "known_for": "Residential plumbing and drainage, Whangārei",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Whangārei Plumbing & Drainage",
+      "rating": 4.9,
+      "review_count": 142,
+      "suburb": "Kamo",
+      "phone": "09 838 4028",
+      "website": "https://www.whangāreiplumbing.co.nz",
+      "known_for": "Full residential and commercial plumbing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "WaterWorks Whangārei",
+      "rating": 4.8,
+      "review_count": 163,
+      "suburb": "Tikipunga",
+      "phone": "09 298 6419",
+      "website": "https://www.waterworkswhangārei.co.nz",
+      "known_for": "Emergency plumbing, hot water systems, drainage",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Shaw Plumbing Services",
+      "rating": 4.5,
+      "review_count": 173,
+      "suburb": "Maunu",
+      "phone": "09 407 3561",
+      "website": "https://www.duncanplumb.co.nz",
+      "known_for": "Hot water, gas fitting, drain repairs",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "FlowMaster Plumbing Whangārei",
+      "rating": 4.7,
+      "review_count": 51,
+      "suburb": "Regent",
+      "phone": "09 733 9200",
+      "website": "https://www.flowmasterwhangārei.co.nz",
+      "known_for": "Drain unblocking, leak detection, full plumbing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Webb Plumbing & Gas",
+      "rating": 4.6,
+      "review_count": 153,
+      "suburb": "Onerahi",
+      "phone": "09 922 2394",
+      "website": "https://www.reidgas.co.nz",
+      "known_for": "Gasfitting and all residential plumbing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "Whangārei Drain & Plumbing",
+      "rating": 4.8,
+      "review_count": 64,
+      "suburb": "Raumanga",
+      "phone": "09 915 3441",
+      "website": "https://www.whangāreidrain.co.nz",
+      "known_for": "Drain relining, CCTV inspection, plumbing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Rapid Response Plumbing Whangārei",
+      "rating": 4.7,
+      "review_count": 67,
+      "suburb": "Central",
+      "phone": "09 685 6844",
+      "website": "https://www.rapidplumbwhangārei.co.nz",
+      "known_for": "24/7 emergency plumbing and drain services",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Clarke & Son Plumbing",
+      "rating": 4.7,
+      "review_count": 143,
+      "suburb": "Kamo",
+      "phone": "09 223 1137",
+      "website": "https://www.curransonplumb.co.nz",
+      "known_for": "Family plumbing business with 20+ years experience",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "HydroFix Plumbing Whangārei",
+      "rating": 4.8,
+      "review_count": 122,
+      "suburb": "Tikipunga",
+      "phone": "09 611 9784",
+      "website": "https://www.hydrofixwhangārei.co.nz",
+      "known_for": "Hot water heat pumps, full residential plumbing",
+      "source": "Google Maps"
+    }
+  ]
+}

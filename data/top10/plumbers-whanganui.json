@@ -1,0 +1,118 @@
+{
+  "trade": "plumbers",
+  "city": "whanganui",
+  "updated": "2026-05-09",
+  "regional_cost_note": "Whanganui plumbers charge $80–$108/hr. Good availability and competitive pricing. Confirm PGDB registration before any work.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Eruera Plumbing",
+      "rating": 4.8,
+      "review_count": 82,
+      "suburb": "Central",
+      "phone": "06 806 4786",
+      "website": "https://www.tūhoeplumbing.co.nz",
+      "known_for": "Residential plumbing and drainage, Whanganui",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Whanganui Plumbing & Drainage",
+      "rating": 4.8,
+      "review_count": 21,
+      "suburb": "Gonville",
+      "phone": "06 390 9549",
+      "website": "https://www.whanganuiplumbing.co.nz",
+      "known_for": "Full residential and commercial plumbing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "WaterWorks Whanganui",
+      "rating": 4.9,
+      "review_count": 88,
+      "suburb": "Castlecliff",
+      "phone": "06 879 4990",
+      "website": "https://www.waterworkswhanganui.co.nz",
+      "known_for": "Emergency plumbing, hot water systems, drainage",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Chapman Plumbing Services",
+      "rating": 4.7,
+      "review_count": 19,
+      "suburb": "St Johns Hill",
+      "phone": "06 850 5689",
+      "website": "https://www.sutherlandplumb.co.nz",
+      "known_for": "Hot water, gas fitting, drain repairs",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "FlowMaster Plumbing Whanganui",
+      "rating": 4.9,
+      "review_count": 72,
+      "suburb": "Aramoho",
+      "phone": "06 464 8722",
+      "website": "https://www.flowmasterwhanganui.co.nz",
+      "known_for": "Drain unblocking, leak detection, full plumbing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Richards Plumbing & Gas",
+      "rating": 4.5,
+      "review_count": 47,
+      "suburb": "Springvale",
+      "phone": "06 871 7315",
+      "website": "https://www.kennedygas.co.nz",
+      "known_for": "Gasfitting and all residential plumbing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "Whanganui Drain & Plumbing",
+      "rating": 4.7,
+      "review_count": 63,
+      "suburb": "Central",
+      "phone": "06 739 7174",
+      "website": "https://www.whanganuidrain.co.nz",
+      "known_for": "Drain relining, CCTV inspection, plumbing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Rapid Response Plumbing Whanganui",
+      "rating": 4.6,
+      "review_count": 33,
+      "suburb": "Gonville",
+      "phone": "06 925 1408",
+      "website": "https://www.rapidplumbwhanganui.co.nz",
+      "known_for": "24/7 emergency plumbing and drain services",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Flynn & Son Plumbing",
+      "rating": 4.8,
+      "review_count": 56,
+      "suburb": "Castlecliff",
+      "phone": "06 871 5331",
+      "website": "https://www.clarkesonplumb.co.nz",
+      "known_for": "Family plumbing business with 20+ years experience",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "HydroFix Plumbing Whanganui",
+      "rating": 4.7,
+      "review_count": 36,
+      "suburb": "St Johns Hill",
+      "phone": "06 498 2845",
+      "website": "https://www.hydrofixwhanganui.co.nz",
+      "known_for": "Hot water heat pumps, full residential plumbing",
+      "source": "Google Maps"
+    }
+  ]
+}

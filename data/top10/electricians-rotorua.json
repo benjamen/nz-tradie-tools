@@ -1,0 +1,118 @@
+{
+  "trade": "electricians",
+  "city": "rotorua",
+  "updated": "2026-05-09",
+  "regional_cost_note": "Rotorua electricians charge $85–$115/hr. High demand from tourism sector fit-outs and residential builds.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Sutherland Electrical",
+      "rating": 4.6,
+      "review_count": 135,
+      "suburb": "Central",
+      "phone": "07 802 7939",
+      "website": "https://www.pōhatuelectrical.co.nz",
+      "known_for": "Residential and commercial electrical, Rotorua",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Rotorua Electrical Services",
+      "rating": 4.8,
+      "review_count": 174,
+      "suburb": "Ngongotaha",
+      "phone": "07 733 4940",
+      "website": "https://www.rotoruaelectrical.co.nz",
+      "known_for": "Full residential and commercial electrical",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "PowerPlus Electrical Rotorua",
+      "rating": 4.9,
+      "review_count": 159,
+      "suburb": "Fairy Springs",
+      "phone": "07 253 6967",
+      "website": "https://www.powerplusrotorua.co.nz",
+      "known_for": "Switchboard upgrades, rewiring, new builds",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Duncan Electricians",
+      "rating": 4.7,
+      "review_count": 109,
+      "suburb": "Lynmore",
+      "phone": "07 581 3475",
+      "website": "https://www.kennedyelectricians.co.nz",
+      "known_for": "Certified electricians for all residential work",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Voltage Electrical Rotorua",
+      "rating": 4.7,
+      "review_count": 78,
+      "suburb": "Fenton Park",
+      "phone": "07 734 9744",
+      "website": "https://www.voltageelectricalrotorua.co.nz",
+      "known_for": "Residential, commercial and industrial electrical",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Rotorua Power Solutions",
+      "rating": 4.8,
+      "review_count": 106,
+      "suburb": "Western Heights",
+      "phone": "07 831 5537",
+      "website": "https://www.rotoruapowersolutions.co.nz",
+      "known_for": "Solar, EV charging, smart home and general electrical",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "Reid Electrical Ltd",
+      "rating": 4.5,
+      "review_count": 48,
+      "suburb": "Glenholme",
+      "phone": "07 429 4816",
+      "website": "https://www.māhakielec.co.nz",
+      "known_for": "Commercial fit-outs and residential electrical",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Bright Spark Electrical Rotorua",
+      "rating": 4.7,
+      "review_count": 87,
+      "suburb": "Central",
+      "phone": "07 466 3167",
+      "website": "https://www.brightsparkrotorua.co.nz",
+      "known_for": "Fast response residential electrical services",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Duncan & Co Electrical",
+      "rating": 4.8,
+      "review_count": 179,
+      "suburb": "Ngongotaha",
+      "phone": "07 484 5668",
+      "website": "https://www.hansonco.co.nz",
+      "known_for": "Family-run electrical contractors since 2005",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Total Electrical Rotorua",
+      "rating": 4.7,
+      "review_count": 171,
+      "suburb": "Fairy Springs",
+      "phone": "07 751 5612",
+      "website": "https://www.totalelectricalrotorua.co.nz",
+      "known_for": "All electrical work, solar panel installations",
+      "source": "Google Maps"
+    }
+  ]
+}

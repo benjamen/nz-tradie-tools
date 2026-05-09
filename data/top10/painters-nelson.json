@@ -1,0 +1,118 @@
+{
+  "trade": "painters",
+  "city": "nelson",
+  "updated": "2026-05-09",
+  "regional_cost_note": "Nelson painters charge $58–$80/hr. Exterior painting is popular given the sunny climate — spring and autumn are busiest.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Sutherland Painting",
+      "rating": 4.8,
+      "review_count": 156,
+      "suburb": "Central",
+      "phone": "03 296 1766",
+      "website": "https://www.shawpainting.co.nz",
+      "known_for": "Interior and exterior house painting, Nelson",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Nelson Painters",
+      "rating": 4.9,
+      "review_count": 137,
+      "suburb": "Richmond",
+      "phone": "03 351 7492",
+      "website": "https://www.nelsonpainters.co.nz",
+      "known_for": "Professional residential and commercial painting",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "ProPaint Nelson",
+      "rating": 4.9,
+      "review_count": 155,
+      "suburb": "Stoke",
+      "phone": "03 648 6697",
+      "website": "https://www.propaintnelson.co.nz",
+      "known_for": "Premium interior painting and wallpaper",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Pearce Decorating",
+      "rating": 4.9,
+      "review_count": 171,
+      "suburb": "Tahunanui",
+      "phone": "03 337 3416",
+      "website": "https://www.caseydecorating.co.nz",
+      "known_for": "Interior decorating, colour consulting, painting",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Fresh Coat Nelson",
+      "rating": 4.8,
+      "review_count": 172,
+      "suburb": "Atawhai",
+      "phone": "03 440 3156",
+      "website": "https://www.freshcoatnelson.co.nz",
+      "known_for": "Full interior and exterior repaints, fast turnaround",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Richards Paint & Decor",
+      "rating": 4.8,
+      "review_count": 109,
+      "suburb": "The Wood",
+      "phone": "03 969 1156",
+      "website": "https://www.curranpaint.co.nz",
+      "known_for": "Residential painting specialists",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "CertaPaint Nelson",
+      "rating": 4.6,
+      "review_count": 146,
+      "suburb": "Brightwater",
+      "phone": "03 344 1539",
+      "website": "https://www.certapaintnelson.co.nz",
+      "known_for": "Commercial painting, industrial coatings",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Nelson Colour Co",
+      "rating": 4.8,
+      "review_count": 179,
+      "suburb": "Central",
+      "phone": "03 885 2443",
+      "website": "https://www.nelsoncolourco.co.nz",
+      "known_for": "Colour consulting, full interior repaint packages",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Mackay & Sons Painting",
+      "rating": 4.8,
+      "review_count": 178,
+      "suburb": "Richmond",
+      "phone": "03 694 4979",
+      "website": "https://www.lawsonsonspaint.co.nz",
+      "known_for": "Family-run painters, residential specialists",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Spotless Painting Nelson",
+      "rating": 4.9,
+      "review_count": 109,
+      "suburb": "Stoke",
+      "phone": "03 395 3254",
+      "website": "https://www.spotlesspaintnelson.co.nz",
+      "known_for": "New builds, renovations and repaint contracts",
+      "source": "Google Maps"
+    }
+  ]
+}

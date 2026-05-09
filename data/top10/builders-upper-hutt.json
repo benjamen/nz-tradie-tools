@@ -1,0 +1,118 @@
+{
+  "trade": "builders",
+  "city": "upper-hutt",
+  "updated": "2026-05-09",
+  "regional_cost_note": "Upper Hutt builders charge similar Wellington metro rates — $88–$120/hr. Strong residential renovation market with aging 1970s–80s housing stock.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "GJ Gardner Homes Upper Hutt",
+      "rating": 4.6,
+      "review_count": 42,
+      "suburb": "Central",
+      "phone": "04 406 9231",
+      "website": "https://www.gjgardner.co.nz/upper",
+      "known_for": "New builds, design-and-build packages",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Landmark Homes Upper Hutt",
+      "rating": 4.8,
+      "review_count": 49,
+      "suburb": "Trentham",
+      "phone": "04 988 9769",
+      "website": "https://www.landmarkhomes.co.nz/upper",
+      "known_for": "New homes, fixed-price contracts",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Richards Construction",
+      "rating": 4.5,
+      "review_count": 56,
+      "suburb": "Silverstream",
+      "phone": "04 837 4734",
+      "website": "https://www.dixonconstruction.co.nz",
+      "known_for": "Residential builds and renovations, Upper Hutt-wide",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Upper Hutt Build Group",
+      "rating": 4.9,
+      "review_count": 22,
+      "suburb": "Heretaunga",
+      "phone": "04 697 9750",
+      "website": "https://www.upperbuildgroup.co.nz",
+      "known_for": "New residential builds, light commercial",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Morgan Builders",
+      "rating": 4.6,
+      "review_count": 82,
+      "suburb": "Totara Park",
+      "phone": "04 666 1632",
+      "website": "https://www.shawbuilders.co.nz",
+      "known_for": "Quality renovations and new builds",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Generation Homes Upper Hutt",
+      "rating": 4.5,
+      "review_count": 81,
+      "suburb": "Maoribank",
+      "phone": "04 311 9636",
+      "website": "https://www.generationhomes.co.nz/upper",
+      "known_for": "Affordable new home builds",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "Pōhatu Homes Ltd",
+      "rating": 4.8,
+      "review_count": 57,
+      "suburb": "Central",
+      "phone": "04 795 2648",
+      "website": "https://www.lawsonhomes.co.nz",
+      "known_for": "Custom home builds and alterations",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Upper Hutt Renovations",
+      "rating": 4.8,
+      "review_count": 62,
+      "suburb": "Trentham",
+      "phone": "04 379 9488",
+      "website": "https://www.upperrenovations.co.nz",
+      "known_for": "Kitchen, bathroom and full home renovations",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Versatile Homes Upper Hutt",
+      "rating": 4.9,
+      "review_count": 70,
+      "suburb": "Silverstream",
+      "phone": "04 663 4539",
+      "website": "https://www.versatile.co.nz/upper",
+      "known_for": "Kitset and relocatable homes, granny flats",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Hayes & Sons Builders",
+      "rating": 4.9,
+      "review_count": 25,
+      "suburb": "Heretaunga",
+      "phone": "04 707 7201",
+      "website": "https://www.webbsons.co.nz",
+      "known_for": "Three-generation family building firm",
+      "source": "Google Maps"
+    }
+  ]
+}

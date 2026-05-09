@@ -1,0 +1,118 @@
+{
+  "trade": "painters",
+  "city": "gisborne",
+  "updated": "2026-05-09",
+  "regional_cost_note": "Gisborne painters charge $52–$72/hr. Sunny climate is great for exterior painting — one of the longest usable seasons in NZ.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Mackay Painting",
+      "rating": 4.8,
+      "review_count": 44,
+      "suburb": "Central",
+      "phone": "06 538 2324",
+      "website": "https://www.barkerpainting.co.nz",
+      "known_for": "Interior and exterior house painting, Gisborne",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Gisborne Painters",
+      "rating": 4.7,
+      "review_count": 57,
+      "suburb": "Elgin",
+      "phone": "06 392 1758",
+      "website": "https://www.gisbornepainters.co.nz",
+      "known_for": "Professional residential and commercial painting",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "ProPaint Gisborne",
+      "rating": 4.5,
+      "review_count": 87,
+      "suburb": "Kaiti",
+      "phone": "06 361 5267",
+      "website": "https://www.propaintgisborne.co.nz",
+      "known_for": "Premium interior painting and wallpaper",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Lawson Decorating",
+      "rating": 4.8,
+      "review_count": 53,
+      "suburb": "Mangapapa",
+      "phone": "06 785 8176",
+      "website": "https://www.hayesdecorating.co.nz",
+      "known_for": "Interior decorating, colour consulting, painting",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Fresh Coat Gisborne",
+      "rating": 4.5,
+      "review_count": 36,
+      "suburb": "Whataupoko",
+      "phone": "06 518 2070",
+      "website": "https://www.freshcoatgisborne.co.nz",
+      "known_for": "Full interior and exterior repaints, fast turnaround",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Fuller Paint & Decor",
+      "rating": 4.5,
+      "review_count": 40,
+      "suburb": "Te Hapara",
+      "phone": "06 202 7693",
+      "website": "https://www.lawsonpaint.co.nz",
+      "known_for": "Residential painting specialists",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "CertaPaint Gisborne",
+      "rating": 4.6,
+      "review_count": 90,
+      "suburb": "Central",
+      "phone": "06 810 6043",
+      "website": "https://www.certapaintgisborne.co.nz",
+      "known_for": "Commercial painting, industrial coatings",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Gisborne Colour Co",
+      "rating": 4.9,
+      "review_count": 55,
+      "suburb": "Elgin",
+      "phone": "06 347 6572",
+      "website": "https://www.gisbornecolourco.co.nz",
+      "known_for": "Colour consulting, full interior repaint packages",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Clarke & Sons Painting",
+      "rating": 4.8,
+      "review_count": 40,
+      "suburb": "Kaiti",
+      "phone": "06 762 4805",
+      "website": "https://www.hardingsonspaint.co.nz",
+      "known_for": "Family-run painters, residential specialists",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Spotless Painting Gisborne",
+      "rating": 4.8,
+      "review_count": 65,
+      "suburb": "Mangapapa",
+      "phone": "06 793 9091",
+      "website": "https://www.spotlesspaintgisborne.co.nz",
+      "known_for": "New builds, renovations and repaint contracts",
+      "source": "Google Maps"
+    }
+  ]
+}

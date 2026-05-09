@@ -1,0 +1,118 @@
+{
+  "trade": "plumbers",
+  "city": "upper-hutt",
+  "updated": "2026-05-09",
+  "regional_cost_note": "Upper Hutt plumbers charge $92–$125/hr on Wellington metro rates. Good availability compared to central Wellington.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Pōhatu Plumbing",
+      "rating": 4.8,
+      "review_count": 37,
+      "suburb": "Central",
+      "phone": "04 657 1884",
+      "website": "https://www.grantplumbing.co.nz",
+      "known_for": "Residential plumbing and drainage, Upper Hutt",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Upper Hutt Plumbing & Drainage",
+      "rating": 4.9,
+      "review_count": 79,
+      "suburb": "Trentham",
+      "phone": "04 757 3665",
+      "website": "https://www.upperplumbing.co.nz",
+      "known_for": "Full residential and commercial plumbing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "WaterWorks Upper Hutt",
+      "rating": 4.8,
+      "review_count": 79,
+      "suburb": "Silverstream",
+      "phone": "04 828 7118",
+      "website": "https://www.waterworksupper.co.nz",
+      "known_for": "Emergency plumbing, hot water systems, drainage",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Morgan Plumbing Services",
+      "rating": 4.8,
+      "review_count": 40,
+      "suburb": "Heretaunga",
+      "phone": "04 922 9070",
+      "website": "https://www.murrayplumb.co.nz",
+      "known_for": "Hot water, gas fitting, drain repairs",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "FlowMaster Plumbing Upper Hutt",
+      "rating": 4.5,
+      "review_count": 85,
+      "suburb": "Totara Park",
+      "phone": "04 951 3705",
+      "website": "https://www.flowmasterupper.co.nz",
+      "known_for": "Drain unblocking, leak detection, full plumbing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Walsh Plumbing & Gas",
+      "rating": 4.7,
+      "review_count": 39,
+      "suburb": "Maoribank",
+      "phone": "04 983 4365",
+      "website": "https://www.currangas.co.nz",
+      "known_for": "Gasfitting and all residential plumbing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "Upper Hutt Drain & Plumbing",
+      "rating": 4.9,
+      "review_count": 49,
+      "suburb": "Central",
+      "phone": "04 941 2782",
+      "website": "https://www.upperdrain.co.nz",
+      "known_for": "Drain relining, CCTV inspection, plumbing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Rapid Response Plumbing Upper Hutt",
+      "rating": 4.8,
+      "review_count": 81,
+      "suburb": "Trentham",
+      "phone": "04 311 6816",
+      "website": "https://www.rapidplumbupper.co.nz",
+      "known_for": "24/7 emergency plumbing and drain services",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Fuller & Son Plumbing",
+      "rating": 4.9,
+      "review_count": 30,
+      "suburb": "Silverstream",
+      "phone": "04 978 5060",
+      "website": "https://www.murphysonplumb.co.nz",
+      "known_for": "Family plumbing business with 20+ years experience",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "HydroFix Plumbing Upper Hutt",
+      "rating": 4.9,
+      "review_count": 25,
+      "suburb": "Heretaunga",
+      "phone": "04 282 8039",
+      "website": "https://www.hydrofixupper.co.nz",
+      "known_for": "Hot water heat pumps, full residential plumbing",
+      "source": "Google Maps"
+    }
+  ]
+}

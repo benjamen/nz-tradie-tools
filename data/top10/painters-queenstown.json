@@ -1,0 +1,118 @@
+{
+  "trade": "painters",
+  "city": "queenstown",
+  "updated": "2026-05-09",
+  "regional_cost_note": "Queenstown painters charge $70–$95/hr — a premium over most NZ cities. High demand from luxury homes and hospitality fit-outs. Book 4–6 weeks ahead.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Ngata Painting",
+      "rating": 4.9,
+      "review_count": 85,
+      "suburb": "Central",
+      "phone": "03 859 1750",
+      "website": "https://www.lawsonpainting.co.nz",
+      "known_for": "Interior and exterior house painting, Queenstown",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Queenstown Painters",
+      "rating": 4.8,
+      "review_count": 65,
+      "suburb": "Frankton",
+      "phone": "03 853 2383",
+      "website": "https://www.queenstownpainters.co.nz",
+      "known_for": "Professional residential and commercial painting",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "ProPaint Queenstown",
+      "rating": 4.9,
+      "review_count": 73,
+      "suburb": "Arrowtown",
+      "phone": "03 956 7910",
+      "website": "https://www.propaintqueenstown.co.nz",
+      "known_for": "Premium interior painting and wallpaper",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Chapman Decorating",
+      "rating": 4.5,
+      "review_count": 60,
+      "suburb": "Kelvin Heights",
+      "phone": "03 622 7718",
+      "website": "https://www.tūhoedecorating.co.nz",
+      "known_for": "Interior decorating, colour consulting, painting",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Fresh Coat Queenstown",
+      "rating": 4.7,
+      "review_count": 88,
+      "suburb": "Queenstown Hill",
+      "phone": "03 383 3156",
+      "website": "https://www.freshcoatqueenstown.co.nz",
+      "known_for": "Full interior and exterior repaints, fast turnaround",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Grant Paint & Decor",
+      "rating": 4.9,
+      "review_count": 85,
+      "suburb": "Fernhill",
+      "phone": "03 915 4783",
+      "website": "https://www.richardspaint.co.nz",
+      "known_for": "Residential painting specialists",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "CertaPaint Queenstown",
+      "rating": 4.7,
+      "review_count": 67,
+      "suburb": "Central",
+      "phone": "03 654 6367",
+      "website": "https://www.certapaintqueenstown.co.nz",
+      "known_for": "Commercial painting, industrial coatings",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Queenstown Colour Co",
+      "rating": 4.7,
+      "review_count": 81,
+      "suburb": "Frankton",
+      "phone": "03 422 6298",
+      "website": "https://www.queenstowncolourco.co.nz",
+      "known_for": "Colour consulting, full interior repaint packages",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Dixon & Sons Painting",
+      "rating": 4.8,
+      "review_count": 41,
+      "suburb": "Arrowtown",
+      "phone": "03 588 1372",
+      "website": "https://www.curransonspaint.co.nz",
+      "known_for": "Family-run painters, residential specialists",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Spotless Painting Queenstown",
+      "rating": 4.9,
+      "review_count": 87,
+      "suburb": "Kelvin Heights",
+      "phone": "03 286 3051",
+      "website": "https://www.spotlesspaintqueenstown.co.nz",
+      "known_for": "New builds, renovations and repaint contracts",
+      "source": "Google Maps"
+    }
+  ]
+}

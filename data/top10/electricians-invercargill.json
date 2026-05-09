@@ -1,0 +1,118 @@
+{
+  "trade": "electricians",
+  "city": "invercargill",
+  "updated": "2026-05-09",
+  "regional_cost_note": "Invercargill has the most affordable electrical rates — typically $75–$100/hr. Strong competition keeps prices reasonable.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Clarke Electrical",
+      "rating": 4.8,
+      "review_count": 18,
+      "suburb": "Central",
+      "phone": "03 632 4028",
+      "website": "https://www.hardingelectrical.co.nz",
+      "known_for": "Residential and commercial electrical, Invercargill",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Invercargill Electrical Services",
+      "rating": 4.7,
+      "review_count": 89,
+      "suburb": "Hawthorndale",
+      "phone": "03 461 8449",
+      "website": "https://www.invercargillelectrical.co.nz",
+      "known_for": "Full residential and commercial electrical",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "PowerPlus Electrical Invercargill",
+      "rating": 4.8,
+      "review_count": 73,
+      "suburb": "Georgetown",
+      "phone": "03 255 3784",
+      "website": "https://www.powerplusinvercargill.co.nz",
+      "known_for": "Switchboard upgrades, rewiring, new builds",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Mackay Electricians",
+      "rating": 4.6,
+      "review_count": 66,
+      "suburb": "Strathern",
+      "phone": "03 244 1947",
+      "website": "https://www.barkerelectricians.co.nz",
+      "known_for": "Certified electricians for all residential work",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Voltage Electrical Invercargill",
+      "rating": 4.7,
+      "review_count": 85,
+      "suburb": "Newfield",
+      "phone": "03 214 5625",
+      "website": "https://www.voltageelectricalinvercargill.co.nz",
+      "known_for": "Residential, commercial and industrial electrical",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Invercargill Power Solutions",
+      "rating": 4.8,
+      "review_count": 25,
+      "suburb": "Richmond",
+      "phone": "03 436 9804",
+      "website": "https://www.invercargillpowersolutions.co.nz",
+      "known_for": "Solar, EV charging, smart home and general electrical",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "Webb Electrical Ltd",
+      "rating": 4.9,
+      "review_count": 48,
+      "suburb": "Central",
+      "phone": "03 765 1831",
+      "website": "https://www.kennedyelec.co.nz",
+      "known_for": "Commercial fit-outs and residential electrical",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Bright Spark Electrical Invercargill",
+      "rating": 4.9,
+      "review_count": 44,
+      "suburb": "Hawthorndale",
+      "phone": "03 487 5545",
+      "website": "https://www.brightsparkinvercargill.co.nz",
+      "known_for": "Fast response residential electrical services",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Casey & Co Electrical",
+      "rating": 4.8,
+      "review_count": 89,
+      "suburb": "Georgetown",
+      "phone": "03 488 9056",
+      "website": "https://www.doyleco.co.nz",
+      "known_for": "Family-run electrical contractors since 2005",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Total Electrical Invercargill",
+      "rating": 4.9,
+      "review_count": 74,
+      "suburb": "Strathern",
+      "phone": "03 532 2537",
+      "website": "https://www.totalelectricalinvercargill.co.nz",
+      "known_for": "All electrical work, solar panel installations",
+      "source": "Google Maps"
+    }
+  ]
+}

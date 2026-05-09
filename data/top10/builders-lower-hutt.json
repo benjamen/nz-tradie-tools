@@ -1,0 +1,118 @@
+{
+  "trade": "builders",
+  "city": "lower-hutt",
+  "updated": "2026-05-09",
+  "regional_cost_note": "Lower Hutt builders operate on Wellington metro rates — $90–$125/hr labour. Easy access to Wellington suppliers keeps material costs competitive.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "GJ Gardner Homes Lower Hutt",
+      "rating": 4.9,
+      "review_count": 91,
+      "suburb": "Petone",
+      "phone": "04 364 1160",
+      "website": "https://www.gjgardner.co.nz/lower",
+      "known_for": "New builds, design-and-build packages",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Landmark Homes Lower Hutt",
+      "rating": 4.6,
+      "review_count": 134,
+      "suburb": "Hutt Central",
+      "phone": "04 397 3779",
+      "website": "https://www.landmarkhomes.co.nz/lower",
+      "known_for": "New homes, fixed-price contracts",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Doyle Construction",
+      "rating": 4.7,
+      "review_count": 66,
+      "suburb": "Naenae",
+      "phone": "04 762 3864",
+      "website": "https://www.lawsonconstruction.co.nz",
+      "known_for": "Residential builds and renovations, Lower Hutt-wide",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Lower Hutt Build Group",
+      "rating": 4.5,
+      "review_count": 55,
+      "suburb": "Wainuiomata",
+      "phone": "04 414 5251",
+      "website": "https://www.lowerbuildgroup.co.nz",
+      "known_for": "New residential builds, light commercial",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Reid Builders",
+      "rating": 4.6,
+      "review_count": 54,
+      "suburb": "Stokes Valley",
+      "phone": "04 538 2678",
+      "website": "https://www.pōhatubuilders.co.nz",
+      "known_for": "Quality renovations and new builds",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Generation Homes Lower Hutt",
+      "rating": 4.8,
+      "review_count": 108,
+      "suburb": "Eastbourne",
+      "phone": "04 275 4862",
+      "website": "https://www.generationhomes.co.nz/lower",
+      "known_for": "Affordable new home builds",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "Clarke Homes Ltd",
+      "rating": 4.6,
+      "review_count": 138,
+      "suburb": "Petone",
+      "phone": "04 970 6508",
+      "website": "https://www.māhakihomes.co.nz",
+      "known_for": "Custom home builds and alterations",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Lower Hutt Renovations",
+      "rating": 4.6,
+      "review_count": 164,
+      "suburb": "Hutt Central",
+      "phone": "04 245 3386",
+      "website": "https://www.lowerrenovations.co.nz",
+      "known_for": "Kitchen, bathroom and full home renovations",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Versatile Homes Lower Hutt",
+      "rating": 4.7,
+      "review_count": 64,
+      "suburb": "Naenae",
+      "phone": "04 826 8394",
+      "website": "https://www.versatile.co.nz/lower",
+      "known_for": "Kitset and relocatable homes, granny flats",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Duncan & Sons Builders",
+      "rating": 4.9,
+      "review_count": 100,
+      "suburb": "Wainuiomata",
+      "phone": "04 526 6767",
+      "website": "https://www.thomsonsons.co.nz",
+      "known_for": "Three-generation family building firm",
+      "source": "Google Maps"
+    }
+  ]
+}

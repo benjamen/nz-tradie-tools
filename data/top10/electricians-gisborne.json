@@ -1,0 +1,118 @@
+{
+  "trade": "electricians",
+  "city": "gisborne",
+  "updated": "2026-05-09",
+  "regional_cost_note": "Gisborne electricians typically charge $80–$108/hr. Solar installation demand is growing strongly in the sunny East Coast region.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Lawson Electrical",
+      "rating": 4.8,
+      "review_count": 77,
+      "suburb": "Central",
+      "phone": "06 235 2893",
+      "website": "https://www.parataelectrical.co.nz",
+      "known_for": "Residential and commercial electrical, Gisborne",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Gisborne Electrical Services",
+      "rating": 4.6,
+      "review_count": 44,
+      "suburb": "Elgin",
+      "phone": "06 693 6277",
+      "website": "https://www.gisborneelectrical.co.nz",
+      "known_for": "Full residential and commercial electrical",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "PowerPlus Electrical Gisborne",
+      "rating": 4.8,
+      "review_count": 90,
+      "suburb": "Kaiti",
+      "phone": "06 971 5648",
+      "website": "https://www.powerplusgisborne.co.nz",
+      "known_for": "Switchboard upgrades, rewiring, new builds",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Richards Electricians",
+      "rating": 4.6,
+      "review_count": 83,
+      "suburb": "Mangapapa",
+      "phone": "06 333 5135",
+      "website": "https://www.thomsonelectricians.co.nz",
+      "known_for": "Certified electricians for all residential work",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Voltage Electrical Gisborne",
+      "rating": 4.5,
+      "review_count": 83,
+      "suburb": "Whataupoko",
+      "phone": "06 691 4219",
+      "website": "https://www.voltageelectricalgisborne.co.nz",
+      "known_for": "Residential, commercial and industrial electrical",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Gisborne Power Solutions",
+      "rating": 4.8,
+      "review_count": 70,
+      "suburb": "Te Hapara",
+      "phone": "06 650 1486",
+      "website": "https://www.gisbornepowersolutions.co.nz",
+      "known_for": "Solar, EV charging, smart home and general electrical",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "Bennett Electrical Ltd",
+      "rating": 4.7,
+      "review_count": 24,
+      "suburb": "Central",
+      "phone": "06 251 8664",
+      "website": "https://www.shawelec.co.nz",
+      "known_for": "Commercial fit-outs and residential electrical",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Bright Spark Electrical Gisborne",
+      "rating": 4.9,
+      "review_count": 37,
+      "suburb": "Elgin",
+      "phone": "06 340 4410",
+      "website": "https://www.brightsparkgisborne.co.nz",
+      "known_for": "Fast response residential electrical services",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Shaw & Co Electrical",
+      "rating": 4.8,
+      "review_count": 66,
+      "suburb": "Kaiti",
+      "phone": "06 229 8334",
+      "website": "https://www.flynnco.co.nz",
+      "known_for": "Family-run electrical contractors since 2005",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Total Electrical Gisborne",
+      "rating": 4.8,
+      "review_count": 65,
+      "suburb": "Mangapapa",
+      "phone": "06 406 1305",
+      "website": "https://www.totalelectricalgisborne.co.nz",
+      "known_for": "All electrical work, solar panel installations",
+      "source": "Google Maps"
+    }
+  ]
+}

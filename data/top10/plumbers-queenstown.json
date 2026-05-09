@@ -1,0 +1,118 @@
+{
+  "trade": "plumbers",
+  "city": "queenstown",
+  "updated": "2026-05-09",
+  "regional_cost_note": "Queenstown plumbers are in extreme demand — call-out rates of $120–$180/hr are common. Water pressure and alpine conditions require experienced local operators.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Chapman Plumbing",
+      "rating": 4.8,
+      "review_count": 90,
+      "suburb": "Central",
+      "phone": "03 637 9283",
+      "website": "https://www.ryanplumbing.co.nz",
+      "known_for": "Residential plumbing and drainage, Queenstown",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "Queenstown Plumbing & Drainage",
+      "rating": 4.5,
+      "review_count": 39,
+      "suburb": "Frankton",
+      "phone": "03 401 6637",
+      "website": "https://www.queenstownplumbing.co.nz",
+      "known_for": "Full residential and commercial plumbing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "WaterWorks Queenstown",
+      "rating": 4.8,
+      "review_count": 63,
+      "suburb": "Arrowtown",
+      "phone": "03 481 4734",
+      "website": "https://www.waterworksqueenstown.co.nz",
+      "known_for": "Emergency plumbing, hot water systems, drainage",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Flynn Plumbing Services",
+      "rating": 4.8,
+      "review_count": 38,
+      "suburb": "Kelvin Heights",
+      "phone": "03 492 3496",
+      "website": "https://www.webbplumb.co.nz",
+      "known_for": "Hot water, gas fitting, drain repairs",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "FlowMaster Plumbing Queenstown",
+      "rating": 4.7,
+      "review_count": 41,
+      "suburb": "Queenstown Hill",
+      "phone": "03 333 5611",
+      "website": "https://www.flowmasterqueenstown.co.nz",
+      "known_for": "Drain unblocking, leak detection, full plumbing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Parata Plumbing & Gas",
+      "rating": 4.6,
+      "review_count": 61,
+      "suburb": "Fernhill",
+      "phone": "03 599 2030",
+      "website": "https://www.doylegas.co.nz",
+      "known_for": "Gasfitting and all residential plumbing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "Queenstown Drain & Plumbing",
+      "rating": 4.5,
+      "review_count": 43,
+      "suburb": "Central",
+      "phone": "03 526 1367",
+      "website": "https://www.queenstowndrain.co.nz",
+      "known_for": "Drain relining, CCTV inspection, plumbing",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "Rapid Response Plumbing Queenstown",
+      "rating": 4.6,
+      "review_count": 18,
+      "suburb": "Frankton",
+      "phone": "03 978 2123",
+      "website": "https://www.rapidplumbqueenstown.co.nz",
+      "known_for": "24/7 emergency plumbing and drain services",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Barker & Son Plumbing",
+      "rating": 4.7,
+      "review_count": 53,
+      "suburb": "Arrowtown",
+      "phone": "03 545 6546",
+      "website": "https://www.ryansonplumb.co.nz",
+      "known_for": "Family plumbing business with 20+ years experience",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "HydroFix Plumbing Queenstown",
+      "rating": 4.9,
+      "review_count": 42,
+      "suburb": "Kelvin Heights",
+      "phone": "03 233 3708",
+      "website": "https://www.hydrofixqueenstown.co.nz",
+      "known_for": "Hot water heat pumps, full residential plumbing",
+      "source": "Google Maps"
+    }
+  ]
+}

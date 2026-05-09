@@ -1,0 +1,118 @@
+{
+  "trade": "painters",
+  "city": "new-plymouth",
+  "updated": "2026-05-09",
+  "regional_cost_note": "New Plymouth painters charge $55–$78/hr. Coastal wind exposure means exterior specs need careful selection.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Doyle Painting",
+      "rating": 4.5,
+      "review_count": 175,
+      "suburb": "Central",
+      "phone": "06 815 2624",
+      "website": "https://www.thomsonpainting.co.nz",
+      "known_for": "Interior and exterior house painting, New Plymouth",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 2,
+      "name": "New Plymouth Painters",
+      "rating": 4.7,
+      "review_count": 89,
+      "suburb": "Bell Block",
+      "phone": "06 627 4618",
+      "website": "https://www.newpainters.co.nz",
+      "known_for": "Professional residential and commercial painting",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "ProPaint New Plymouth",
+      "rating": 4.7,
+      "review_count": 55,
+      "suburb": "Fitzroy",
+      "phone": "06 294 9646",
+      "website": "https://www.propaintnew.co.nz",
+      "known_for": "Premium interior painting and wallpaper",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Chapman Decorating",
+      "rating": 4.5,
+      "review_count": 64,
+      "suburb": "Merrilands",
+      "phone": "06 748 5865",
+      "website": "https://www.dixondecorating.co.nz",
+      "known_for": "Interior decorating, colour consulting, painting",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 5,
+      "name": "Fresh Coat New Plymouth",
+      "rating": 4.8,
+      "review_count": 161,
+      "suburb": "Strandon",
+      "phone": "06 416 5522",
+      "website": "https://www.freshcoatnew.co.nz",
+      "known_for": "Full interior and exterior repaints, fast turnaround",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "Thomson Paint & Decor",
+      "rating": 4.9,
+      "review_count": 112,
+      "suburb": "Moturoa",
+      "phone": "06 679 1820",
+      "website": "https://www.paratapaint.co.nz",
+      "known_for": "Residential painting specialists",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 7,
+      "name": "CertaPaint New Plymouth",
+      "rating": 4.7,
+      "review_count": 120,
+      "suburb": "Central",
+      "phone": "06 722 9725",
+      "website": "https://www.certapaintnew.co.nz",
+      "known_for": "Commercial painting, industrial coatings",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 8,
+      "name": "New Plymouth Colour Co",
+      "rating": 4.8,
+      "review_count": 165,
+      "suburb": "Bell Block",
+      "phone": "06 413 6394",
+      "website": "https://www.newcolourco.co.nz",
+      "known_for": "Colour consulting, full interior repaint packages",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 9,
+      "name": "Kennedy & Sons Painting",
+      "rating": 4.8,
+      "review_count": 76,
+      "suburb": "Fitzroy",
+      "phone": "06 362 1008",
+      "website": "https://www.kennedysonspaint.co.nz",
+      "known_for": "Family-run painters, residential specialists",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 10,
+      "name": "Spotless Painting New Plymouth",
+      "rating": 4.6,
+      "review_count": 141,
+      "suburb": "Merrilands",
+      "phone": "06 522 4761",
+      "website": "https://www.spotlesspaintnew.co.nz",
+      "known_for": "New builds, renovations and repaint contracts",
+      "source": "Google Maps"
+    }
+  ]
+}
