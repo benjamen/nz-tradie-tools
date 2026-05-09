@@ -140,6 +140,15 @@ calculator_html: |
     document.getElementById('sc-result').style.display='';
   }
   </script>
+faqs:
+  - q: 'How do I calculate how much water my garden or lawn needs in NZ?'
+    a: 'Lawns need approximately 25 mm of water per week in warm weather. A 100 m² lawn needs 2,500 L/week. Multiply by your sprinkler flow rate to find run time. Vegetable gardens need 30–40 mm/week.'
+  - q: 'What pipe size do I need for a garden irrigation system in NZ?'
+    a: 'Typical residential irrigation uses 25 mm poly mainline for runs under 50 m, then 13–19 mm laterals to heads. For larger commercial or lifestyle blocks, 32–40 mm mains may be needed. Always size for pressure losses at design flow.'
+  - q: 'Does irrigation work in NZ need council approval?'
+    a: 'Large-scale irrigation (farming or commercial horticultural) may require a water permit under the RMA from your regional council. Residential garden irrigation generally does not require consent.'
+  - q: 'What is the best time to run irrigation in NZ?'
+    a: 'Early morning (4–7 am) is ideal — wind is low, evaporation is minimal, and foliage dries before evening reducing disease risk. Avoid midday irrigation as 30–40% of water can be lost to evaporation.'
 ---
 
 ## Irrigation in New Zealand

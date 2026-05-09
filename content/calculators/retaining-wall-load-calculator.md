@@ -81,6 +81,15 @@ calculator_html: |
     r.style.display="";
   }
   </script>
+faqs:
+  - q: 'How do engineers calculate retaining wall loads in NZ?'
+    a: 'Lateral earth pressure is calculated using the Rankine formula: Pa = ½ × Ka × γ × H². Ka (active pressure coefficient) depends on soil friction angle. For typical NZ soil with φ=30°, Ka ≈ 0.33. Add surcharge for loaded areas above the wall.'
+  - q: 'When does a retaining wall need engineering in NZ?'
+    a: 'Any retaining wall over 1.5 m or near a structure, boundary, or drainage requires engineering design and a building consent. Walls on soft ground, in seismic risk areas, or retaining saturated fill need specific engineering regardless of height.'
+  - q: 'What is active earth pressure for a retaining wall?'
+    a: 'Active earth pressure is the minimum lateral force a retained soil mass exerts on a retaining wall. It applies when the wall is free to tilt slightly away from the soil. Most retaining wall design uses active pressure as the design case.'
+  - q: 'What surcharge load should I design a retaining wall for in NZ?'
+    a: 'NZS 3604 recommends a minimum surcharge of 5 kPa for residential areas (e.g. foot traffic on soil above). Driveway or parking areas above a retaining wall typically use 10 kPa surcharge in NZ design practice.'
 ---
 
 ## NZ Retaining Wall Consent Rules

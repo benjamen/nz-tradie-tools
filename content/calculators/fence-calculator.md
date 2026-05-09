@@ -48,6 +48,15 @@ calculator_html: |
     document.getElementById('fn-result').style.display='';
   }
   </script>
+faqs:
+  - q: 'How much fencing do I need per lineal metre in NZ?'
+    a: 'Measure total fence line in metres. Standard paling fences use posts every 2.4–2.7 m. A 30 m fence needs roughly 12–13 posts. Rails, palings or battens, and fixings are then calculated off this.'
+  - q: 'How much does a fence cost per metre in NZ?'
+    a: 'A standard 1.8 m timber paling fence in NZ costs $90–$180/lm supply and install. A metal post-and-rail lifestyle fence is $100–$200/lm. Retaining fences with structural requirements can reach $300–$500/lm.'
+  - q: 'Do I need council approval for a fence in NZ?'
+    a: 'Fences up to 2 m high are generally permitted without resource consent. Fences on boundary or over 2 m often require neighbour agreement and council consent. Retaining fences over 1 m usually need a building consent.'
+  - q: 'What timber treatment is needed for NZ fence posts?'
+    a: 'Posts in-ground require H5 treatment (CCA-treated). Rails and battens above ground require H3.2. Using the correct hazard class is mandatory under NZS 3602.'
 ---
 
 ## Fence Calculator for NZ Builders & Fencers

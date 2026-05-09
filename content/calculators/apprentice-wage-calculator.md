@@ -87,6 +87,15 @@ calculator_html: |
   calcAP();
   </script>
 related_articles: [hiring-an-apprentice-nz-tradie-guide-2026, subcontractor-vs-employee-gateway-test-nz-2026]
+faqs:
+  - q: 'What is the minimum wage for NZ apprentices in 2025?'
+    a: 'From 1 April 2025, the adult minimum wage in NZ is $23.15/hr. Apprentices aged 16–17 may be paid the starting-out wage of $18.52/hr for the first 200 hours or three months, whichever comes first.'
+  - q: 'Do apprentices get the same pay as qualified tradies in NZ?'
+    a: 'No. Apprentice pay is negotiated between employer and apprentice but must meet minimum wage. Industry guides suggest a progression from around 50–60% of a qualified rate in year 1 rising to 80–90% by year 3–4.'
+  - q: 'Are apprentice wages tax-deductible for a tradie business?'
+    a: 'Yes, all wage payments including apprentice wages are fully deductible as a business expense in NZ.'
+  - q: 'How does a Managed Apprenticeships training contract affect wages?'
+    a: 'Under BCITO or other ITOs, the training agreement sets minimum pay bands. These are minimums only — employers can and often do pay more, especially for experienced apprentices.'
 ---
 
 ## NZ Apprentice Wage Rates 2026

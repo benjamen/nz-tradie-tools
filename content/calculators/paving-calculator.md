@@ -62,6 +62,15 @@ calculator_html: |
     document.getElementById('pv-result').style.display='';
   }
   </script>
+faqs:
+  - q: 'How much pavers do I need per square metre?'
+    a: 'The number of pavers per m² depends on paver size. Standard 230×115 mm clay pavers laid in a running bond need about 38/m². 400×400 mm concrete pavers need about 6.25/m². Add 5–10% for cuts and waste.'
+  - q: 'How deep should a paver base be in NZ?'
+    a: 'For pedestrian areas, a compacted base of 100 mm AP20 (road metal) with 25–30 mm of compacted bedding sand is standard in NZ. For driveways and vehicle areas, increase base to 150–200 mm of compacted AP40.'
+  - q: 'How much does paving cost per square metre in NZ?'
+    a: 'Supply and lay of concrete block paving in NZ costs $80–$130/m² for straightforward residential areas. Natural stone or imported cobble sets can reach $150–$250/m². Complex patterns or tight access add cost.'
+  - q: 'Do I need a building consent for a driveway in NZ?'
+    a: 'Most residential driveways do not require a building consent but may need council approval for a vehicle crossing permit if connecting to a public road. Check with your local council before laying a new driveway.'
 ---
 
 ## Paving in NZ — What to Budget

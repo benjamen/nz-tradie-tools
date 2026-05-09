@@ -129,6 +129,15 @@ calculator_html: |
   }
   calcBathBasic();
   </script>
+faqs:
+  - q: 'How much does a bathroom renovation cost in New Zealand?'
+    a: 'A basic NZ bathroom refresh costs $8,000–$15,000. A mid-range renovation with new fittings and tiling runs $15,000–$30,000. A full luxury bathroom with underfloor heating and high-end fixtures can reach $50,000+.'
+  - q: 'Do I need a building consent for a bathroom renovation in NZ?'
+    a: 'Replacing like-for-like fittings does not require consent. Moving plumbing, adding a bedroom, or altering structural elements does require a building consent from your local council.'
+  - q: 'How long does a bathroom renovation take in NZ?'
+    a: 'A standard bathroom renovation typically takes 1–3 weeks once materials are on site. Delays from council consent, tile lead times, or specialist trades (e.g. waterproofing inspections) can extend this.'
+  - q: 'What is the biggest cost in a bathroom renovation?'
+    a: 'Labour is typically the biggest single cost, often 40–50% of total budget. Tiling, plumbing, and waterproofing are the most labour-intensive parts. Premium fixtures and fittings can also push costs up quickly.'
 ---
 
 ## Bathroom Renovation Costs in NZ

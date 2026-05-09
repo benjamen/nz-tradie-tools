@@ -17,7 +17,7 @@
     <meta name="twitter:image" content="https://tradietools.nz/static/img/social-card.svg">
     <link rel="canonical" href="https://tradietools.nz/calculators/vehicle-mileage-calculator.html">
     <link rel="alternate" type="application/rss+xml" title="NZ Tradie Tools — Articles" href="https://tradietools.nz/rss.xml">
-    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"NZ Vehicle Mileage Claim Calculator","description":"Calculate your IRD mileage reimbursement or tax deduction using the 2024-25 NZ mileage rates.","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://tradietools.nz/calculators/vehicle-mileage-calculator.html","offers":{"@type":"Offer","price":"0","priceCurrency":"NZD"},"author":{"@type":"Organization","name":"NZ Tradie Tools","url":"https://tradietools.nz"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tradietools.nz"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://tradietools.nz/calculators/"},{"@type":"ListItem","position":3,"name":"NZ Vehicle Mileage Claim Calculator","item":"https://tradietools.nz/calculators/vehicle-mileage-calculator.html"}]}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"NZ Vehicle Mileage Claim Calculator","description":"Calculate your IRD mileage reimbursement or tax deduction using the 2024-25 NZ mileage rates.","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://tradietools.nz/calculators/vehicle-mileage-calculator.html","offers":{"@type":"Offer","price":"0","priceCurrency":"NZD"},"author":{"@type":"Organization","name":"NZ Tradie Tools","url":"https://tradietools.nz"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tradietools.nz"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://tradietools.nz/calculators/"},{"@type":"ListItem","position":3,"name":"NZ Vehicle Mileage Claim Calculator","item":"https://tradietools.nz/calculators/vehicle-mileage-calculator.html"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the IRD mileage rate for NZ in 2025?","acceptedAnswer":{"@type":"Answer","text":"The IRD Tier 1 rate for the first 14,000 km of business travel per year is 73c/km for petrol or diesel vehicles in 2024\u201325. The Tier 2 rate for km above 14,000 is 21c/km. Electric vehicles use different rates."}},{"@type":"Question","name":"Can NZ tradies claim vehicle expenses or mileage?","acceptedAnswer":{"@type":"Answer","text":"Yes. You can either: (a) claim actual vehicle expenses (fuel, WOF, registration, insurance, loan interest) multiplied by business use %, or (b) use the IRD mileage rate for business km travelled. Most tradies use actual costs with a logbook."}},{"@type":"Question","name":"Do I need a logbook for vehicle expenses in NZ?","acceptedAnswer":{"@type":"Answer","text":"To claim actual vehicle expenses on a mixed-use vehicle, you need a logbook for 3 months every 3 years to establish the business vs private use percentage. The mileage rate method requires a record of business trips only."}},{"@type":"Question","name":"What vehicles qualify for the IRD mileage rate in NZ?","acceptedAnswer":{"@type":"Answer","text":"The IRD kilometre rate method applies to motor vehicles (including utes and vans). It is most suitable for low-km business use. Vehicles used predominantly for work (over 75% business) are often better treated as fully deductible business assets."}}]}]}</script>
     <meta name="google-adsense-account" content="ca-pub-8059857496012230">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="/static/css/style.css">
@@ -195,6 +195,45 @@ function calcMile(){
 - Client or job name</p>
 <p>Apps like <a href="https://www.tradifyhq.com/"><a href="https://www.tradifyhq.com/" rel="sponsored noopener" target="_blank">Tradify</a></a> include built-in mileage tracking. Alternatively, a simple spreadsheet works fine.</p>
             </div>
+
+            
+            <section class="faq-section" style="margin-top:2rem">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">What is the IRD mileage rate for NZ in 2025?</button>
+                        <div class="faq-answer" hidden><p>The IRD Tier 1 rate for the first 14,000 km of business travel per year is 73c/km for petrol or diesel vehicles in 2024–25. The Tier 2 rate for km above 14,000 is 21c/km. Electric vehicles use different rates.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">Can NZ tradies claim vehicle expenses or mileage?</button>
+                        <div class="faq-answer" hidden><p>Yes. You can either: (a) claim actual vehicle expenses (fuel, WOF, registration, insurance, loan interest) multiplied by business use %, or (b) use the IRD mileage rate for business km travelled. Most tradies use actual costs with a logbook.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">Do I need a logbook for vehicle expenses in NZ?</button>
+                        <div class="faq-answer" hidden><p>To claim actual vehicle expenses on a mixed-use vehicle, you need a logbook for 3 months every 3 years to establish the business vs private use percentage. The mileage rate method requires a record of business trips only.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">What vehicles qualify for the IRD mileage rate in NZ?</button>
+                        <div class="faq-answer" hidden><p>The IRD kilometre rate method applies to motor vehicles (including utes and vans). It is most suitable for low-km business use. Vehicles used predominantly for work (over 75% business) are often better treated as fully deductible business assets.</p></div>
+                    </div>
+                    
+                </div>
+            </section>
+            <script>
+            document.querySelectorAll('.faq-question').forEach(function(btn){
+                btn.addEventListener('click',function(){
+                    var ans=this.nextElementSibling;
+                    var open=this.getAttribute('aria-expanded')==='true';
+                    this.setAttribute('aria-expanded',!open);
+                    if(open){ans.hidden=true;}else{ans.hidden=false;}
+                });
+            });
+            </script>
+            
         </main>
 
         <aside class="sidebar">

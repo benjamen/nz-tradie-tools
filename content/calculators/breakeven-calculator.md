@@ -120,6 +120,15 @@ calculator_html: |
     document.getElementById('jb-result').style.display='';
   }
   </script>
+faqs:
+  - q: 'How do I calculate breakeven for my tradie business?'
+    a: 'Breakeven = Fixed Costs ÷ Gross Margin %. If your monthly fixed costs are $5,000 and your gross margin is 40%, you need $12,500 in revenue to break even. Any revenue above that is profit.'
+  - q: 'What counts as a fixed cost for a NZ tradie?'
+    a: 'Fixed costs are expenses that don''t change with job volume: insurance, vehicle registration, phone plan, accounting fees, tool finance repayments, and rent for a workshop or yard.'
+  - q: 'What is a good gross margin for a NZ tradie business?'
+    a: 'Most NZ tradie businesses target 35–55% gross margin (revenue minus direct job costs, before overheads). Electricians and plumbers typically achieve 40–50%; painters and decorators often see 30–40%.'
+  - q: 'Why is knowing my breakeven important?'
+    a: 'Knowing your breakeven tells you the minimum revenue you must generate to cover all costs. It helps you price jobs correctly, set sales targets, and know when you can safely hire another person.'
 ---
 
 ## Why Tradies Need to Know Their Numbers

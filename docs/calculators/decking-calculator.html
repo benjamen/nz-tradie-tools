@@ -17,7 +17,7 @@
     <meta name="twitter:image" content="https://tradietools.nz/static/img/social-card.svg">
     <link rel="canonical" href="https://tradietools.nz/calculators/decking-calculator.html">
     <link rel="alternate" type="application/rss+xml" title="NZ Tradie Tools — Articles" href="https://tradietools.nz/rss.xml">
-    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"Decking Calculator \u2014 NZ","description":"Calculate how many deck boards, joists, posts and screws you need for any NZ deck. Covers timber and composite.","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://tradietools.nz/calculators/decking-calculator.html","offers":{"@type":"Offer","price":"0","priceCurrency":"NZD"},"author":{"@type":"Organization","name":"NZ Tradie Tools","url":"https://tradietools.nz"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tradietools.nz"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://tradietools.nz/calculators/"},{"@type":"ListItem","position":3,"name":"Decking Calculator \u2014 NZ","item":"https://tradietools.nz/calculators/decking-calculator.html"}]}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"Decking Calculator \u2014 NZ","description":"Calculate how many deck boards, joists, posts and screws you need for any NZ deck. Covers timber and composite.","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://tradietools.nz/calculators/decking-calculator.html","offers":{"@type":"Offer","price":"0","priceCurrency":"NZD"},"author":{"@type":"Organization","name":"NZ Tradie Tools","url":"https://tradietools.nz"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tradietools.nz"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://tradietools.nz/calculators/"},{"@type":"ListItem","position":3,"name":"Decking Calculator \u2014 NZ","item":"https://tradietools.nz/calculators/decking-calculator.html"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much timber do I need for a 20 m\u00b2 deck in NZ?","acceptedAnswer":{"@type":"Answer","text":"A 20 m\u00b2 deck using 140\u00d745 mm decking boards at 5 mm gaps needs approximately 140 running metres of decking (about 28 \u00d7 5.1 m lengths). Add 10% for end cuts and wastage."}},{"@type":"Question","name":"How much does a deck cost to build in NZ?","acceptedAnswer":{"@type":"Answer","text":"A simple ground-level treated pine deck in NZ costs approximately $800\u2013$1,400/m\u00b2 supply and install. A composite or hardwood deck with stairs and handrails can reach $1,800\u2013$3,000/m\u00b2."}},{"@type":"Question","name":"Do I need a building consent for a deck in NZ?","acceptedAnswer":{"@type":"Answer","text":"Decks less than 1.5 m above ground and under 20 m\u00b2 are typically exempt from building consent. Decks attached to a dwelling, above 1.5 m, or over 20 m\u00b2 generally require consent from your local council."}},{"@type":"Question","name":"What timber treatment is needed for NZ outdoor decking?","acceptedAnswer":{"@type":"Answer","text":"NZS 3602 requires H3.2 preservative-treated timber for decking in NZ (above ground, exposed). For areas in contact with ground or water, H4 or H5 treatment is required."}}]}]}</script>
     <meta name="google-adsense-account" content="ca-pub-8059857496012230">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="/static/css/style.css">
@@ -179,6 +179,45 @@ function calcDeck(){
 <h3 id="what-does-a-deck-cost">What Does a Deck Cost?</h3>
 <p>See our <a href="/jobs/decking/">deck building cost guide</a> for typical NZ prices by city, or find a <a href="/trades/builders/">local builder</a>.</p>
             </div>
+
+            
+            <section class="faq-section" style="margin-top:2rem">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">How much timber do I need for a 20 m² deck in NZ?</button>
+                        <div class="faq-answer" hidden><p>A 20 m² deck using 140×45 mm decking boards at 5 mm gaps needs approximately 140 running metres of decking (about 28 × 5.1 m lengths). Add 10% for end cuts and wastage.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">How much does a deck cost to build in NZ?</button>
+                        <div class="faq-answer" hidden><p>A simple ground-level treated pine deck in NZ costs approximately $800–$1,400/m² supply and install. A composite or hardwood deck with stairs and handrails can reach $1,800–$3,000/m².</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">Do I need a building consent for a deck in NZ?</button>
+                        <div class="faq-answer" hidden><p>Decks less than 1.5 m above ground and under 20 m² are typically exempt from building consent. Decks attached to a dwelling, above 1.5 m, or over 20 m² generally require consent from your local council.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">What timber treatment is needed for NZ outdoor decking?</button>
+                        <div class="faq-answer" hidden><p>NZS 3602 requires H3.2 preservative-treated timber for decking in NZ (above ground, exposed). For areas in contact with ground or water, H4 or H5 treatment is required.</p></div>
+                    </div>
+                    
+                </div>
+            </section>
+            <script>
+            document.querySelectorAll('.faq-question').forEach(function(btn){
+                btn.addEventListener('click',function(){
+                    var ans=this.nextElementSibling;
+                    var open=this.getAttribute('aria-expanded')==='true';
+                    this.setAttribute('aria-expanded',!open);
+                    if(open){ans.hidden=true;}else{ans.hidden=false;}
+                });
+            });
+            </script>
+            
         </main>
 
         <aside class="sidebar">

@@ -67,6 +67,15 @@ calculator_html: |
   }
   calcStair();
   </script>
+faqs:
+  - q: 'What are the code requirements for stair dimensions in NZ?'
+    a: 'NZS 3604 and the NZ Building Code (Clause D1) require: maximum riser height 220 mm, minimum tread depth 250 mm, riser-to-tread formula: 2R + G = 600–700 mm. Handrails are required on all stairs over 4 risers.'
+  - q: 'How many steps do I need for a 2.4 m floor-to-floor height?'
+    a: 'At a comfortable 175 mm riser height: 2400 ÷ 175 = 13.7, round to 14 risers (steps). Tread depth would be 600 − (2 × 175) = 250 mm (minimum). Total stair run = 14 × 250 mm = 3,500 mm horizontal.'
+  - q: 'Do stairs need a building consent in NZ?'
+    a: 'Internal stair replacements that are like-for-like are exempt from consent. New stairs, stairs serving a new level, or stairs outside NZS 3604 parameters require a building consent.'
+  - q: 'What timber is used for stairs in NZ?'
+    a: 'Interior stairs use H1.2 or H3.1 treated pine or laminated timber for structural stringers. Treads are typically 44 mm dressed pine, hardwood, or engineered timber flooring glued and screwed. Hardwood treads are preferred for durability.'
 ---
 
 ## NZ Building Code Staircase Requirements

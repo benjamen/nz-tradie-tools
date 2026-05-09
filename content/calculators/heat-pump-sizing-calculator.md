@@ -116,6 +116,15 @@ calculator_html: |
     document.getElementById('wh-result').style.display='';
   }
   </script>
+faqs:
+  - q: 'How do I size a heat pump for a NZ room?'
+    a: 'MBIE''s formula: kW required = room volume (m³) × climate factor ÷ 10. A 45 m² living room (2.4 m ceiling = 108 m³) in Auckland needs about 2.7 kW. Add 20% for older, poorly insulated homes.'
+  - q: 'What size heat pump do I need for a NZ house?'
+    a: 'A typical NZ 3-bedroom home needs a 5–7 kW heat pump for the living area, or a multi-split system to cover multiple rooms. Larger homes in cold regions (Zones 5–6) may need 8–12 kW capacity.'
+  - q: 'What is the EECA heat pump sizing calculator?'
+    a: 'EECA (Energy Efficiency and Conservation Authority) provides a free online tool to size heat pumps for Healthy Homes compliance. It considers floor area, insulation, climate zone, and window area.'
+  - q: 'Does heat pump size affect Healthy Homes compliance?'
+    a: 'Yes. Under the Healthy Homes heating standard, the heat pump must be sized using the MBIE assessment method to verify it can achieve 18°C in the main living room. An undersized unit does not comply.'
 ---
 
 ## Heat Pump Sizing Guide for NZ Homes

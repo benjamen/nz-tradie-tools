@@ -99,6 +99,15 @@ calculator_html: |
     document.getElementById('k-result').style.display='';
   }
   </script>
+faqs:
+  - q: 'How much does a kitchen renovation cost in NZ?'
+    a: 'A basic kitchen update in NZ costs $10,000–$20,000. A mid-range renovation with new cabinetry, benchtop and appliances runs $20,000–$45,000. A full high-spec kitchen can cost $50,000–$100,000+.'
+  - q: 'Does a kitchen renovation require a building consent in NZ?'
+    a: 'Like-for-like replacement of cabinetry, benchtops, and appliances does not require consent. Moving plumbing, drainage, gas, or structural walls requires a building consent and appropriate licensed trades.'
+  - q: 'How long does a kitchen renovation take in NZ?'
+    a: 'Most kitchen renovations take 2–5 weeks once all materials are on site and trades are coordinated. Custom cabinetry can add 4–8 weeks of lead time from order to delivery.'
+  - q: 'What adds the most value to a kitchen renovation in NZ?'
+    a: 'Quality benchtops (stone or engineered stone), modern cabinetry, good lighting, and energy-efficient appliances add the most resale value. Quality plumbing fitments and good ventilation add practical long-term value.'
 ---
 
 ## Kitchen Renovation Costs in New Zealand

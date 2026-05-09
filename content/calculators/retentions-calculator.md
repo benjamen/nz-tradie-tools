@@ -77,6 +77,15 @@ calculator_html: |
     r.style.display="";
   }
   </script>
+faqs:
+  - q: 'What is a construction retention in NZ?'
+    a: 'A retention is an amount (typically 5–10%) withheld from progress payments on construction contracts. It is held as security against defects and released at practical completion and/or end of defects liability period.'
+  - q: 'What does the Construction Contracts Act 2002 say about retentions?'
+    a: 'Under the CCA 2002 (as amended 2015), retention money held by a head contractor or commercial principal must be held on trust and not used for any other purpose. Trust account requirements apply to retentions over $20,000 per sub.'
+  - q: 'When must retentions be released in NZ?'
+    a: 'The release schedule is agreed in the contract. Typically 50% is released at practical completion and the remaining 50% at expiry of the defects liability period (usually 12 months after PC). CCA payment claim rules apply.'
+  - q: 'What is the maximum retention percentage in NZ?'
+    a: 'There is no statutory maximum, but 5% is the NZ standard. Some residential contracts use 10% for smaller sub-trades. Retentions above 10% are unusual and may be challenged as unreasonable under the CCA.'
 ---
 
 ## NZ Construction Retentions — Know Your Rights

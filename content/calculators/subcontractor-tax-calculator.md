@@ -140,6 +140,15 @@ calculator_html: |
     document.getElementById('pv-result').style.display='';
   }
   </script>
+faqs:
+  - q: 'How is tax deducted for NZ subcontractors?'
+    a: 'Subcontractors who perform labour in NZ may have schedular payments (withholding tax) deducted by the payer. The standard rate is 20% (15% if the sub gives an election). GST-registered subs can file to reduce or cease withholding.'
+  - q: 'What is the NZ schedular payment tax rate for builders?'
+    a: 'Most building and construction labour in NZ falls under the schedular payment regime. The default withholding rate is 20% of gross payment. Subcontractors can elect a lower rate (e.g. 15%) or apply to IRD for a special rate.'
+  - q: 'Is withholding tax the same as income tax for subcontractors in NZ?'
+    a: 'Withholding tax is an advance payment toward annual income tax. At year end, the sub files an income tax return and reconciles — if withholding tax paid exceeds their annual liability, they receive a refund; if underpaid, they pay the balance.'
+  - q: 'Can a NZ subcontractor avoid withholding tax?'
+    a: 'Yes. If the subcontractor is GST-registered, they can provide a certificate to the payer and elect not to have tax withheld. They are then responsible for paying provisional tax directly to IRD. Apply through your tax agent or myIR.'
 ---
 
 ## Tax for NZ Subcontractors

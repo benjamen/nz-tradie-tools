@@ -84,6 +84,15 @@ calculator_html: |
     r.style.display="";
   }
   </script>
+faqs:
+  - q: 'How is holiday pay calculated in NZ?'
+    a: 'Under the Holidays Act 2003, annual holiday pay is the greater of: (a) ordinary weekly pay (OWP) at the time of leave, or (b) average weekly earnings (AWE) over the previous 12 months. Most modern payroll software calculates this automatically.'
+  - q: 'What is 8% holiday pay in NZ?'
+    a: '8% is the minimum holiday pay entitlement as a percentage of gross earnings (representing 4 weeks of a 52-week year). It is used when an employee agrees to have holidays paid out, or for casual workers per pay period.'
+  - q: 'Can NZ employees cash up annual leave?'
+    a: 'Yes. Employees can cash up one week of their 4-week annual leave entitlement per year, if the employer agrees. The remaining 3 weeks must be taken as actual leave.'
+  - q: 'How much notice do I need to give before taking annual leave in NZ?'
+    a: 'There is no specific minimum notice period in law, but employers and employees should agree on leave timing. Employers can also direct employees to take leave with 14 days'' notice if this is reasonable.'
 ---
 
 ## Holiday Pay Under the Holidays Act 2003

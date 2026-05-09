@@ -89,6 +89,15 @@ calculator_html: |
     r.style.display="";
   }
   </script>
+faqs:
+  - q: 'How do I calculate repayments on a tradie equipment loan?'
+    a: 'Monthly repayment = P × [r(1+r)^n] ÷ [(1+r)^n – 1], where P = loan amount, r = monthly interest rate, n = number of months. For example, $30,000 at 8.5% over 5 years = $615/month.'
+  - q: 'Should I buy or finance equipment as a NZ tradie?'
+    a: 'Finance preserves cash flow and keeps capital working in the business. If equipment earns more than its finance cost, borrowing makes sense. If your business can buy outright without straining cash, that eliminates interest cost.'
+  - q: 'Can I claim equipment loan repayments as a tax deduction in NZ?'
+    a: 'You can claim the interest portion of loan repayments as a deduction, but not the principal. You also claim depreciation on the asset separately based on IRD depreciation rates.'
+  - q: 'What is a balloon payment on equipment finance?'
+    a: 'A balloon payment is a large lump sum due at the end of the loan term. It lowers monthly repayments during the loan but requires you to pay out, refinance, or return the asset at the end.'
 ---
 
 ## Financing Tools and Equipment for NZ Tradies

@@ -65,6 +65,15 @@ calculator_html: |
     document.getElementById('rw-result').style.display='';
   }
   </script>
+faqs:
+  - q: 'Do I need a building consent for a retaining wall in NZ?'
+    a: 'Retaining walls over 1.5 m high (or 1 m near a boundary or a structure) generally require a building consent in NZ. Some councils have lower thresholds. Always check with your local council before construction.'
+  - q: 'What materials are used for retaining walls in NZ?'
+    a: 'Common NZ retaining wall materials include: treated timber (H5), concrete block, Besser block, concrete poured in place, Keystone or Allan Block modular systems, and gabion baskets. Timber is common for heights under 1.2 m; engineered systems for taller walls.'
+  - q: 'How much does a retaining wall cost per metre in NZ?'
+    a: 'A basic timber retaining wall in NZ costs $300–$500/lm (up to 1 m high). Concrete block walls run $500–$900/lm. For walls over 1.5 m requiring engineering, expect $1,000–$2,000+/lm depending on height, fill, and access.'
+  - q: 'How deep do retaining wall posts need to be in NZ?'
+    a: 'As a rule of thumb, treated timber posts should be embedded to at least 1/3 of the exposed height (minimum 600 mm in solid ground). Engineer design typically specifies depth and post size based on soil pressure calculations.'
 ---
 
 ## Retaining Wall Costs in NZ

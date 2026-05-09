@@ -84,6 +84,15 @@ calculator_html: |
     document.getElementById('e-result').style.display='';
   }
   </script>
+faqs:
+  - q: 'How much paint do I need per square metre?'
+    a: 'Most NZ interior paints cover 10–14 m² per litre (one coat). For a room with 40 m² of wall area, two coats needs 40 ÷ 12 × 2 = 6.7 litres. Always round up and buy the next litre up.'
+  - q: 'How do I calculate paint for a room?'
+    a: 'Calculate wall area: add all wall lengths × ceiling height. Subtract door (1.8 m²) and window (1.4 m²) areas. Divide by spread rate (from paint tin label) and multiply by number of coats. Add 10% extra for second-coat touch-ups.'
+  - q: 'What paint should I use in a NZ bathroom?'
+    a: 'Use a semi-gloss or gloss finish waterborne paint specifically rated for wet areas or bathrooms. Products with anti-mould or moisture-resistant formulation are recommended for high-humidity NZ bathrooms.'
+  - q: 'How much does it cost to paint a house interior in NZ?'
+    a: 'Professional interior painting in NZ costs approximately $20–$40/m² for walls and ceilings (2 coats, walls only). A typical 3-bedroom home with 250–300 m² of paintable surface costs $5,000–$12,000 fully painted.'
 ---
 
 ## Paint Calculator for NZ Painters & Homeowners

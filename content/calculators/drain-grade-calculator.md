@@ -111,6 +111,15 @@ calculator_html: |
     document.getElementById('ps-result').style.display='';
   }
   </script>
+faqs:
+  - q: 'What is the minimum fall for a drain in NZ?'
+    a: 'NZS 3114 and the NZ Building Code require a minimum grade of 1:60 (1.67%) for 100 mm wastewater drains. Larger drains (150 mm+) may use 1:100, while very small drains (75 mm) should be 1:40 or steeper.'
+  - q: 'How do I calculate drain fall in millimetres?'
+    a: 'Multiply run length by the grade fraction. For 10 m of drain at 1:60: 10,000 mm ÷ 60 = 167 mm fall. The downstream invert should be 167 mm lower than the upstream invert.'
+  - q: 'What pipe slope is needed for a 150 mm stormwater drain?'
+    a: 'A 150 mm stormwater pipe typically uses a minimum grade of 1:100 (1%) or 10 mm per metre. Check with your local council — some require steeper grades in areas with high sediment load.'
+  - q: 'Can a drain be too steep in NZ?'
+    a: 'Yes. Overly steep drains can allow water to run faster than solids, leaving blockages. As a general rule, grades steeper than 1:10 for wastewater require specialist design consideration.'
 ---
 
 ## NZ Drainage Pipe Grade Requirements

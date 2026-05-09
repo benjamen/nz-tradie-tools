@@ -65,6 +65,15 @@ calculator_html: |
     r.style.display='';
   }
   </script>
+faqs:
+  - q: 'How much KiwiSaver does an employer pay in NZ?'
+    a: 'Employers must pay a minimum of 3% of an employee''s gross wages as a KiwiSaver employer contribution. This is in addition to the employee''s own contribution and is not deducted from wages.'
+  - q: 'What is ESCT and how does it work?'
+    a: 'ESCT (Employer Superannuation Contribution Tax) is deducted from the employer''s KiwiSaver contribution before it reaches the employee''s account. The ESCT rate depends on the employee''s annual salary: 10.5% up to $16,800, rising to 39% over $216,000.'
+  - q: 'Is the employer KiwiSaver contribution tax-deductible?'
+    a: 'Yes. Employer KiwiSaver contributions are a deductible business expense in NZ. The net cost after tax (at 28% company rate) is approximately 2.16% of payroll for a 3% contribution.'
+  - q: 'Does an employer have to pay KiwiSaver for casual workers?'
+    a: 'Employers must enrol employees who work 20+ hours/week unless the employee opts out within 8 weeks. Casual workers under 20 hours/week are not automatically enrolled but can opt in voluntarily.'
 ---
 
 ## Understanding the True Cost of KiwiSaver for Employers

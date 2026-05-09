@@ -96,6 +96,15 @@ calculator_html: |
     document.getElementById('bl-result').style.display='';
   }
   </script>
+faqs:
+  - q: 'How many bricks do I need per square metre in NZ?'
+    a: 'Standard NZ metric bricks (230×110×76 mm) laid in a single-skin stretcher bond require approximately 50 bricks per m². Add 5–10% for cuts and wastage.'
+  - q: 'How many concrete blocks per square metre?'
+    a: 'Standard 390×190×190 mm hollow concrete blocks require approximately 12.5 blocks per m² of single-skin wall. Add 5% wastage for cuts.'
+  - q: 'How much mortar do I need for bricklaying?'
+    a: 'A rough rule is 1 bag of cement (20 kg) per 70–80 bricks. A standard mix is 1 part cement to 5–6 parts sand by volume. Always allow 10% extra for waste.'
+  - q: 'Can I use brick calculators for a retaining wall?'
+    a: 'Yes, but retaining walls need engineering sign-off for heights above 1.5 m in NZ (or lower if surcharge loads apply). The block count calculation is the same; the footing and reinforcing design is additional.'
 ---
 
 ## NZ Brick & Block Sizes

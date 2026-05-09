@@ -101,6 +101,15 @@ calculator_html: |
     r.style.display='';
   }
   </script>
+faqs:
+  - q: 'Is it better to be a contractor or employee as a tradie in NZ?'
+    a: 'Contractors often earn a higher gross rate but pay their own ACC, tax, and have no paid leave. Employees receive holiday pay, sick leave, and KiwiSaver employer contributions. The calculator helps compare true net take-home.'
+  - q: 'What is a contracting premium over employment in NZ?'
+    a: 'A typical contracting premium is 20–30% above equivalent employment rates to compensate for no paid leave, no employer KiwiSaver, and self-funded ACC and insurance. Below 15% premium, employment is usually better financially.'
+  - q: 'Can a tradie be forced to be a contractor instead of an employee in NZ?'
+    a: 'No. The Employment Relations Act 2000 uses a ''real nature of the relationship'' test. If you work exclusively for one party under their direction, you may be legally an employee regardless of the written contract label.'
+  - q: 'What taxes does a self-employed contractor pay in NZ?'
+    a: 'Contractors pay income tax (via provisional tax or schedular payments), ACC earners'' and work levies, and GST if turnover exceeds $60,000/year. No employer KiwiSaver contribution is received.'
 ---
 
 ## Contractor vs Employee — What's the Real Difference?

@@ -115,6 +115,15 @@ calculator_html: |
     document.getElementById('ff-result').style.display='';
   }
   </script>
+faqs:
+  - q: 'How much timber do I need for wall framing in NZ?'
+    a: 'A standard NZ 90×45 mm wall frame at 600 mm stud centres uses approximately 1.7 linear metres of timber per m² of wall (top plate, bottom plate, studs, and nogs). Add 15% for waste and lintels.'
+  - q: 'What is NZS 3604 framing?'
+    a: 'NZS 3604 is the NZ Standard for light timber framing. It provides prescriptive design rules for residential and small commercial buildings without requiring a structural engineer — provided the building falls within defined limits of scope.'
+  - q: 'What timber treatment is needed for NZ wall framing?'
+    a: 'Internal wall framing requires H1.2 borate-treated timber in NZ (per NZS 3602). Exterior walls, floors on ground, and wet areas require H3.1 or H3.2. Ground contact requires H4 or higher.'
+  - q: 'How do I calculate studs needed for a wall?'
+    a: 'Number of studs = (wall length ÷ stud spacing) + 1, for a plain wall. Add extra studs for: corners (3 studs), T-junctions (3 studs), both sides of each door or window opening, plus trimmers and jack studs for each opening.'
 ---
 
 ## Timber Framing in NZ

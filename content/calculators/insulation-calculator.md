@@ -118,6 +118,15 @@ calculator_html: |
     document.getElementById('wi-result').style.display='';
   }
   </script>
+faqs:
+  - q: 'How much ceiling insulation do I need in NZ?'
+    a: 'Measure your ceiling area in m². Add 10% for waste and overlaps. Standard NZ pink batts come in 580 mm or 430 mm widths to fit between joists at 600 mm or 450 mm centres respectively.'
+  - q: 'What thickness of insulation do I need in my NZ ceiling?'
+    a: 'H1 5th edition requires R6.6 in ceiling for Auckland/Bay of Plenty and up to R9.6 for alpine zones. A 240 mm glasswool batt gives roughly R6.0, while polyester or higher-density glasswool can achieve R6.6+ in 220–240 mm.'
+  - q: 'Does underfloor insulation need vapour barrier in NZ?'
+    a: 'In most NZ climates, a polythene vapour barrier on the ground (0.25 mm minimum) is recommended under the building to reduce ground moisture entering the subfloor space, particularly in zones with high rainfall.'
+  - q: 'Can I DIY insulation in NZ?'
+    a: 'Glasswool and polyester ceiling batts can be installed by homeowners in NZ without a licensed contractor. Underfloor insulation installation (particularly polyester wrap systems) is also DIY-friendly. Spray foam insulation must be installed by a licensed applicator.'
 ---
 
 ## NZ Insulation Requirements (H1 2023)

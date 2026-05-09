@@ -94,6 +94,15 @@ calculator_html: |
     document.getElementById('p-result').style.display='';
   }
   </script>
+faqs:
+  - q: 'How much concrete do I need for a 100 mm slab in NZ?'
+    a: 'Volume = length × width × 0.1 m. For a 6 m × 4 m slab at 100 mm thick: 6 × 4 × 0.1 = 2.4 m³. Always order 5–10% extra for sub-base variation and spillage.'
+  - q: 'How much does concrete cost per cubic metre in NZ?'
+    a: 'Ready-mix concrete in NZ costs approximately $200–$260/m³ for standard 25 MPa residential mix, delivered. Prices vary by region and supplier — rural areas typically pay more for delivery.'
+  - q: 'What strength concrete do I need for a NZ house slab?'
+    a: 'NZS 3109 specifies minimum 17.5 MPa for concrete in contact with the ground, but 25 MPa is the standard residential specification in NZ. Driveways and heavier loads may require 30 MPa.'
+  - q: 'Do I need reinforcing steel in a concrete slab in NZ?'
+    a: 'Most NZ residential slabs require steel reinforcing mesh (usually H8 mesh at 200 mm centres) or steel fibre to control cracking and meet NZS 3604 or engineer-specific requirements.'
 ---
 
 ## Concrete Calculator for NZ Builders & Tradies

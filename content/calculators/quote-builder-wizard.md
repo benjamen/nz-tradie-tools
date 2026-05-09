@@ -291,6 +291,15 @@ calculator_html: |
   document.getElementById('qb-date').value=new Date().toISOString().split('T')[0];
   </script>
 related_articles: [how-to-price-a-job-nz-tradie-guide, tradie-contract-guide-nz]
+faqs:
+  - q: 'What should a NZ tradie quote include to be legally valid?'
+    a: 'A NZ quote should include: your business name and NZBN/GST number, date and expiry, client details, detailed scope of work, inclusions and exclusions, total price (+ GST or GST incl), and payment terms.'
+  - q: 'What is the difference between a quote and an estimate in NZ?'
+    a: 'A quote is a fixed price offer. If accepted, you must complete the work at that price unless agreed variations arise. An estimate is an approximation and is not binding. Clients prefer quotes; courts distinguish between the two.'
+  - q: 'How long should a tradie quote be valid for in NZ?'
+    a: 'Most NZ tradies set a quote validity of 30–60 days. In periods of material price volatility, 14–30 days may be more appropriate. Always specify the expiry date on the quote document.'
+  - q: 'Do I need to charge GST on quotes if I''m not yet GST-registered?'
+    a: 'No. If you''re not GST-registered, your quote is GST-exclusive and you should clearly state ''Not registered for GST'' or ''No GST applicable''. Once you register, you must charge GST on all taxable supplies.'
 ---
 
 ## How to Use the Quote Builder

@@ -129,6 +129,15 @@ calculator_html: |
     r.style.display="";
   }
   </script>
+faqs:
+  - q: 'How much does scaffolding hire cost per week in NZ?'
+    a: 'Residential scaffolding hire in NZ typically costs $150–$350 per week for a standard single-storey perimeter job. Two-storey and larger commercial jobs can cost $500–$2,000+/week depending on size and complexity.'
+  - q: 'Is it cheaper to hire or buy scaffolding as a tradie in NZ?'
+    a: 'For occasional use (less than 20 hire weeks per year), hiring is usually cheaper. Once you reach around 20+ weeks/year of need, owning becomes more cost-effective after factoring in storage, maintenance, and transport.'
+  - q: 'What is included in scaffolding hire in NZ?'
+    a: 'Most NZ scaffolding hire includes: delivery and pickup, erection and dismantling by a competent person, standard tubes and fittings, toe boards, and mesh or plank decking. Handrails, stair access towers, and sheeting are often extras.'
+  - q: 'How long does it take to erect scaffolding in NZ?'
+    a: 'A standard residential perimeter scaffold for a single-storey NZ house takes 1–2 days to erect. Two-storey homes take 2–3 days. Complex commercial scaffold can take a full week or more for large crews.'
 ---
 
 ## Scaffolding for NZ Tradies — When You Need It and What It Costs

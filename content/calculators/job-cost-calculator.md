@@ -150,6 +150,15 @@ calculator_html: |
   }
   calcJob();
   </script>
+faqs:
+  - q: 'How do I calculate the cost of a job as a NZ tradie?'
+    a: 'Job cost = (hours × hourly rate) + materials cost + subcontractor costs + overhead allocation. Add your profit margin last. Always price from cost up, not from what you think the client will pay.'
+  - q: 'What profit margin should a NZ tradie add to a job quote?'
+    a: 'A minimum gross margin of 35–45% is typical for NZ trade businesses. Net profit after overheads should target 15–25%. Underpricing may win the job but erodes business viability over time.'
+  - q: 'What should I include in a job quote in NZ?'
+    a: 'A valid NZ job quote should include: scope of work, inclusions and exclusions, materials specification, labour hours or fixed price, GST status (+ GST or GST inclusive), payment terms, and expiry date of quote.'
+  - q: 'How do I handle variation costs on a quoted job?'
+    a: 'Issue a written variation order before doing extra work, outlining additional scope, cost, and effect on timeline. Under NZ contract law, variations not documented in writing are difficult to enforce as additional charges.'
 ---
 
 ## How to Build an Accurate Job Quote

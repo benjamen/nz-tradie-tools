@@ -67,6 +67,15 @@ calculator_html: |
     r.style.display='';
   }
   </script>
+faqs:
+  - q: 'How much does a building consent cost in NZ?'
+    a: 'Fees vary by council and project value. As a guide, a $150,000 residential project typically attracts $1,500–$3,500 in council consent fees, plus $150 (MBIE) and $150 (BRANZ) levies.'
+  - q: 'How is the MBIE building levy calculated?'
+    a: 'The MBIE levy is $1.75 per $1,000 of project value (on projects over $65,000). So a $200,000 project pays $350 in MBIE levy.'
+  - q: 'Do I need a building consent for a deck in NZ?'
+    a: 'Decks under 1.5 m above ground and under 20 m² may be exempt from consent. Larger decks, or those attached to the house structure, generally require consent. Check with your local council.'
+  - q: 'What is the BRANZ levy?'
+    a: 'The BRANZ levy is $1.00 per $1,000 of project value for projects over $20,000. It funds building research in NZ. It is paid alongside the MBIE levy when lodging a building consent.'
 ---
 
 ## Why Consent Fees Matter for Builders

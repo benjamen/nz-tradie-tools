@@ -17,7 +17,7 @@
     <meta name="twitter:image" content="https://tradietools.nz/static/img/social-card.svg">
     <link rel="canonical" href="https://tradietools.nz/calculators/brick-block-calculator.html">
     <link rel="alternate" type="application/rss+xml" title="NZ Tradie Tools — Articles" href="https://tradietools.nz/rss.xml">
-    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"Brick \u0026 Block Calculator \u2014 NZ","description":"Calculate how many bricks or blocks you need for a wall, plus mortar and sand quantities. NZ standard brick and block sizes.","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://tradietools.nz/calculators/brick-block-calculator.html","offers":{"@type":"Offer","price":"0","priceCurrency":"NZD"},"author":{"@type":"Organization","name":"NZ Tradie Tools","url":"https://tradietools.nz"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tradietools.nz"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://tradietools.nz/calculators/"},{"@type":"ListItem","position":3,"name":"Brick \u0026 Block Calculator \u2014 NZ","item":"https://tradietools.nz/calculators/brick-block-calculator.html"}]}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"Brick \u0026 Block Calculator \u2014 NZ","description":"Calculate how many bricks or blocks you need for a wall, plus mortar and sand quantities. NZ standard brick and block sizes.","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://tradietools.nz/calculators/brick-block-calculator.html","offers":{"@type":"Offer","price":"0","priceCurrency":"NZD"},"author":{"@type":"Organization","name":"NZ Tradie Tools","url":"https://tradietools.nz"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tradietools.nz"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://tradietools.nz/calculators/"},{"@type":"ListItem","position":3,"name":"Brick \u0026 Block Calculator \u2014 NZ","item":"https://tradietools.nz/calculators/brick-block-calculator.html"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How many bricks do I need per square metre in NZ?","acceptedAnswer":{"@type":"Answer","text":"Standard NZ metric bricks (230\u00d7110\u00d776 mm) laid in a single-skin stretcher bond require approximately 50 bricks per m\u00b2. Add 5\u201310% for cuts and wastage."}},{"@type":"Question","name":"How many concrete blocks per square metre?","acceptedAnswer":{"@type":"Answer","text":"Standard 390\u00d7190\u00d7190 mm hollow concrete blocks require approximately 12.5 blocks per m\u00b2 of single-skin wall. Add 5% wastage for cuts."}},{"@type":"Question","name":"How much mortar do I need for bricklaying?","acceptedAnswer":{"@type":"Answer","text":"A rough rule is 1 bag of cement (20 kg) per 70\u201380 bricks. A standard mix is 1 part cement to 5\u20136 parts sand by volume. Always allow 10% extra for waste."}},{"@type":"Question","name":"Can I use brick calculators for a retaining wall?","acceptedAnswer":{"@type":"Answer","text":"Yes, but retaining walls need engineering sign-off for heights above 1.5 m in NZ (or lower if surcharge loads apply). The block count calculation is the same; the footing and reinforcing design is additional."}}]}]}</script>
     <meta name="google-adsense-account" content="ca-pub-8059857496012230">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="/static/css/style.css">
@@ -204,6 +204,45 @@ function calcBlock(){
 <h3 id="labour-rates">Labour Rates</h3>
 <p>A skilled bricklayer charges <strong>$70–$100/hr</strong> in NZ. Expect <strong>$80–$130/m²</strong> all-in for a single-skin brick wall (supply + lay).</p>
             </div>
+
+            
+            <section class="faq-section" style="margin-top:2rem">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">How many bricks do I need per square metre in NZ?</button>
+                        <div class="faq-answer" hidden><p>Standard NZ metric bricks (230×110×76 mm) laid in a single-skin stretcher bond require approximately 50 bricks per m². Add 5–10% for cuts and wastage.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">How many concrete blocks per square metre?</button>
+                        <div class="faq-answer" hidden><p>Standard 390×190×190 mm hollow concrete blocks require approximately 12.5 blocks per m² of single-skin wall. Add 5% wastage for cuts.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">How much mortar do I need for bricklaying?</button>
+                        <div class="faq-answer" hidden><p>A rough rule is 1 bag of cement (20 kg) per 70–80 bricks. A standard mix is 1 part cement to 5–6 parts sand by volume. Always allow 10% extra for waste.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">Can I use brick calculators for a retaining wall?</button>
+                        <div class="faq-answer" hidden><p>Yes, but retaining walls need engineering sign-off for heights above 1.5 m in NZ (or lower if surcharge loads apply). The block count calculation is the same; the footing and reinforcing design is additional.</p></div>
+                    </div>
+                    
+                </div>
+            </section>
+            <script>
+            document.querySelectorAll('.faq-question').forEach(function(btn){
+                btn.addEventListener('click',function(){
+                    var ans=this.nextElementSibling;
+                    var open=this.getAttribute('aria-expanded')==='true';
+                    this.setAttribute('aria-expanded',!open);
+                    if(open){ans.hidden=true;}else{ans.hidden=false;}
+                });
+            });
+            </script>
+            
         </main>
 
         <aside class="sidebar">

@@ -17,7 +17,7 @@
     <meta name="twitter:image" content="https://tradietools.nz/static/img/social-card.svg">
     <link rel="canonical" href="https://tradietools.nz/calculators/scaffolding-hire-calculator.html">
     <link rel="alternate" type="application/rss+xml" title="NZ Tradie Tools — Articles" href="https://tradietools.nz/rss.xml">
-    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"NZ Scaffolding Hire vs Buy Calculator","description":"Compare the cost of hiring vs buying scaffolding for NZ tradies \u2014 roofing, painting, cladding and maintenance jobs.","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://tradietools.nz/calculators/scaffolding-hire-calculator.html","offers":{"@type":"Offer","price":"0","priceCurrency":"NZD"},"author":{"@type":"Organization","name":"NZ Tradie Tools","url":"https://tradietools.nz"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tradietools.nz"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://tradietools.nz/calculators/"},{"@type":"ListItem","position":3,"name":"NZ Scaffolding Hire vs Buy Calculator","item":"https://tradietools.nz/calculators/scaffolding-hire-calculator.html"}]}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"NZ Scaffolding Hire vs Buy Calculator","description":"Compare the cost of hiring vs buying scaffolding for NZ tradies \u2014 roofing, painting, cladding and maintenance jobs.","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://tradietools.nz/calculators/scaffolding-hire-calculator.html","offers":{"@type":"Offer","price":"0","priceCurrency":"NZD"},"author":{"@type":"Organization","name":"NZ Tradie Tools","url":"https://tradietools.nz"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tradietools.nz"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://tradietools.nz/calculators/"},{"@type":"ListItem","position":3,"name":"NZ Scaffolding Hire vs Buy Calculator","item":"https://tradietools.nz/calculators/scaffolding-hire-calculator.html"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does scaffolding hire cost per week in NZ?","acceptedAnswer":{"@type":"Answer","text":"Residential scaffolding hire in NZ typically costs $150\u2013$350 per week for a standard single-storey perimeter job. Two-storey and larger commercial jobs can cost $500\u2013$2,000+/week depending on size and complexity."}},{"@type":"Question","name":"Is it cheaper to hire or buy scaffolding as a tradie in NZ?","acceptedAnswer":{"@type":"Answer","text":"For occasional use (less than 20 hire weeks per year), hiring is usually cheaper. Once you reach around 20+ weeks/year of need, owning becomes more cost-effective after factoring in storage, maintenance, and transport."}},{"@type":"Question","name":"What is included in scaffolding hire in NZ?","acceptedAnswer":{"@type":"Answer","text":"Most NZ scaffolding hire includes: delivery and pickup, erection and dismantling by a competent person, standard tubes and fittings, toe boards, and mesh or plank decking. Handrails, stair access towers, and sheeting are often extras."}},{"@type":"Question","name":"How long does it take to erect scaffolding in NZ?","acceptedAnswer":{"@type":"Answer","text":"A standard residential perimeter scaffold for a single-storey NZ house takes 1\u20132 days to erect. Two-storey homes take 2\u20133 days. Complex commercial scaffold can take a full week or more for large crews."}}]}]}</script>
     <meta name="google-adsense-account" content="ca-pub-8059857496012230">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="/static/css/style.css">
@@ -265,6 +265,45 @@ function calcSCCompare(){
 <p>Buying scaffolding makes sense if you do more than 8–12 scaffold jobs per year consistently. Below that threshold, hire costs are typically lower once you factor in storage space, maintenance, and the capital tied up in equipment.</p>
 <p>A used scaffold set suitable for residential work can be purchased for $10,000–$25,000 from trade suppliers or auction sites. Factor in annual inspection costs (required under the Health and Safety at Work (General Risk and Workplace Management) Regulations 2016) and storage.</p>
             </div>
+
+            
+            <section class="faq-section" style="margin-top:2rem">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">How much does scaffolding hire cost per week in NZ?</button>
+                        <div class="faq-answer" hidden><p>Residential scaffolding hire in NZ typically costs $150–$350 per week for a standard single-storey perimeter job. Two-storey and larger commercial jobs can cost $500–$2,000+/week depending on size and complexity.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">Is it cheaper to hire or buy scaffolding as a tradie in NZ?</button>
+                        <div class="faq-answer" hidden><p>For occasional use (less than 20 hire weeks per year), hiring is usually cheaper. Once you reach around 20+ weeks/year of need, owning becomes more cost-effective after factoring in storage, maintenance, and transport.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">What is included in scaffolding hire in NZ?</button>
+                        <div class="faq-answer" hidden><p>Most NZ scaffolding hire includes: delivery and pickup, erection and dismantling by a competent person, standard tubes and fittings, toe boards, and mesh or plank decking. Handrails, stair access towers, and sheeting are often extras.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">How long does it take to erect scaffolding in NZ?</button>
+                        <div class="faq-answer" hidden><p>A standard residential perimeter scaffold for a single-storey NZ house takes 1–2 days to erect. Two-storey homes take 2–3 days. Complex commercial scaffold can take a full week or more for large crews.</p></div>
+                    </div>
+                    
+                </div>
+            </section>
+            <script>
+            document.querySelectorAll('.faq-question').forEach(function(btn){
+                btn.addEventListener('click',function(){
+                    var ans=this.nextElementSibling;
+                    var open=this.getAttribute('aria-expanded')==='true';
+                    this.setAttribute('aria-expanded',!open);
+                    if(open){ans.hidden=true;}else{ans.hidden=false;}
+                });
+            });
+            </script>
+            
         </main>
 
         <aside class="sidebar">

@@ -102,6 +102,17 @@ calculator_html: |
     r.style.display='';
   }
   </script>
+faqs:
+  - q: 'What is provisional tax in NZ?'
+    a: 'Provisional tax is advance income tax paid during the year by NZ taxpayers whose residual income tax (RIT) exceeds $5,000. It avoids a large end-of-year tax bill by spreading payments across 3 instalments.'
+  - q: 'How do I calculate NZ provisional tax using the standard method?'
+    a: 'Standard uplift = prior year RIT × 1.05 (5% increase). This total is paid in 3 equal instalments: 28 August, 15 January, and 7 May (for 31 March balance date). If prior year RIT was $9,000, each instalment is $3,150.'
+  - q: 'What is the safe harbour for NZ provisional tax?'
+    a: 'If your RIT for the year is under $60,000 and you pay at least 100% of your prior year RIT (standard uplift without the 5%), you avoid use-of-money interest (UOMI) even if you underpay. This is the ''safe harbour'' threshold.'
+  - q: 'Can I use the estimation method for provisional tax?'
+    a: 'Yes. If you expect your current-year income to differ significantly from last year''s, you can estimate your RIT and pay based on that. However, if your estimate is too low, IRD may charge UOMI on the shortfall.'
+  - q: 'When are provisional tax due dates in NZ?'
+    a: 'For taxpayers with a 31 March balance date (most common): Instalment 1 is 28 August, Instalment 2 is 15 January, and Instalment 3 is 7 May of the following year.'
 ---
 
 ## What Is Provisional Tax?

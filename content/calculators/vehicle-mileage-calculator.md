@@ -48,6 +48,15 @@ calculator_html: |
   }
   </script>
 related_articles: [vehicle-expenses-nz-tradies-ird]
+faqs:
+  - q: 'What is the IRD mileage rate for NZ in 2025?'
+    a: 'The IRD Tier 1 rate for the first 14,000 km of business travel per year is 73c/km for petrol or diesel vehicles in 2024–25. The Tier 2 rate for km above 14,000 is 21c/km. Electric vehicles use different rates.'
+  - q: 'Can NZ tradies claim vehicle expenses or mileage?'
+    a: 'Yes. You can either: (a) claim actual vehicle expenses (fuel, WOF, registration, insurance, loan interest) multiplied by business use %, or (b) use the IRD mileage rate for business km travelled. Most tradies use actual costs with a logbook.'
+  - q: 'Do I need a logbook for vehicle expenses in NZ?'
+    a: 'To claim actual vehicle expenses on a mixed-use vehicle, you need a logbook for 3 months every 3 years to establish the business vs private use percentage. The mileage rate method requires a record of business trips only.'
+  - q: 'What vehicles qualify for the IRD mileage rate in NZ?'
+    a: 'The IRD kilometre rate method applies to motor vehicles (including utes and vans). It is most suitable for low-km business use. Vehicles used predominantly for work (over 75% business) are often better treated as fully deductible business assets.'
 ---
 
 ## IRD Mileage Rates for NZ Tradies (2024–25)

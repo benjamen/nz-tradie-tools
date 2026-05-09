@@ -108,6 +108,15 @@ calculator_html: |
     r.style.display='';
   }
   </script>
+faqs:
+  - q: 'What is the difference between markup and margin?'
+    a: 'Markup is profit as a percentage of COST. Margin is profit as a percentage of SELLING PRICE. A 50% markup on a $100 cost gives a $150 price. A 50% margin on $150 price gives $75 profit — these are very different numbers.'
+  - q: 'What markup should a NZ tradie use for materials?'
+    a: 'A common benchmark is 20–30% markup on materials (17–23% margin). This covers admin, procurement time, warranty risk, and waste. Some trades mark up specialty materials higher; consumables are often bundled into the hourly rate.'
+  - q: 'How do I convert markup to margin?'
+    a: 'Margin = Markup ÷ (1 + Markup). For a 40% markup: 0.40 ÷ 1.40 = 28.6% margin. To convert margin to markup: Markup = Margin ÷ (1 − Margin). For 30% margin: 0.30 ÷ 0.70 = 42.9% markup.'
+  - q: 'Why do tradies need to know the difference between markup and margin?'
+    a: 'Confusing markup and margin is one of the most common pricing errors in trade businesses. A tradie who adds 25% markup thinking it''s a 25% margin is actually achieving only a 20% margin — and may not have enough to cover overheads.'
 ---
 
 ## Markup vs Margin: Why It Matters for NZ Tradies

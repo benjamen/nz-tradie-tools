@@ -93,6 +93,15 @@ calculator_html: |
     document.getElementById('dk-result').style.display='';
   }
   </script>
+faqs:
+  - q: 'How much waterproofing membrane do I need for a NZ bathroom?'
+    a: 'A typical 3 m² shower floor and 1.5 m high walls on 2 shower walls (3 m²) needs about 6–7 m² of membrane coverage total. Cartridge products cover 1–2 m²/L applied at 1 mm dry film thickness; allow 2 coats.'
+  - q: 'What waterproofing is required under tiles in NZ?'
+    a: 'NZS 4237 and the NZ Building Code Clause E3 require a waterproof membrane in all wet area floors and walls to a height of at least 1.5 m in showers, and 150 mm up walls in wet floors. This applies to all new tile installations in NZ.'
+  - q: 'What types of waterproofing are used in NZ bathrooms?'
+    a: 'Common NZ products: liquid-applied membrane (TPO or polyurethane — Laticrete, Ardex, Mapei), sheet membrane (torch-on for decks), and sheet-backed foam board (Wedi, Schluter Kerdi). Liquid-applied is most common for residential bathrooms.'
+  - q: 'How long should waterproofing cure before tiling in NZ?'
+    a: 'Liquid-applied membranes typically require 24–48 hours dry time between coats and a minimum 24 hours after the final coat before tiling. Always follow the manufacturer''s data sheet — temperature and humidity affect cure times.'
 ---
 
 ## NZ Waterproofing Requirements

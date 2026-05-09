@@ -122,6 +122,15 @@ calculator_html: |
     document.getElementById('qc-result').style.display='';
   }
   </script>
+faqs:
+  - q: 'How do I calculate total labour cost for a NZ construction job?'
+    a: 'Total labour cost = number of workers × hours per worker × fully loaded hourly rate (including ACC, KiwiSaver, leave entitlement, and tool allowance). Always use fully loaded rates in quotes to avoid undercharging.'
+  - q: 'What is a fully loaded labour rate in NZ?'
+    a: 'A fully loaded rate includes: gross wage + employer KiwiSaver (3%) + ACC employer levy + holiday pay reserve (8%) + sick leave liability. For a worker on $40/hr, the fully loaded cost is approximately $47–$50/hr.'
+  - q: 'How much should I charge for labour on a building project?'
+    a: 'NZ building labour charge-out rates in 2025 range from $85–$130/hr for a licensed builder, $95–$140/hr for a licensed electrician or plumber, and $70–$100/hr for experienced carpenters or labourers.'
+  - q: 'Can I claim labour costs as a business expense in NZ?'
+    a: 'Yes. All wages, including your own PAYE wages if you are an employee of your own company, are fully deductible. Subcontractor payments are also deductible provided you hold a valid tax invoice.'
 ---
 
 ## Setting Your Labour Rate in NZ

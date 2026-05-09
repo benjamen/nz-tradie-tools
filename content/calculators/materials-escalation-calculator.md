@@ -74,6 +74,15 @@ calculator_html: |
   }
   </script>
 related_articles: [managing-rising-material-costs-nz-2026, how-to-price-a-job-nz-tradie-guide]
+faqs:
+  - q: 'How much have building material costs increased in NZ?'
+    a: 'NZ building material costs rose significantly in 2021–2023, with some materials (structural steel, timber, roofing) up 30–60%. By 2025, most categories have stabilised but remain 20–30% above 2019 levels.'
+  - q: 'How do I allow for materials price escalation in a long project quote?'
+    a: 'Add an escalation clause to quotes over 3 months: price materials at quote date and specify that materials will be invoiced at actual cost at time of purchase, or include a fixed escalation allowance of 3–8% per year.'
+  - q: 'What is a price escalation clause in NZ construction contracts?'
+    a: 'A price escalation clause (fluctuation clause) in an NZ construction contract allows the contract sum to be adjusted if material or labour costs change beyond an agreed threshold during the contract period. NZS 3910 includes a standard fluctuations provision.'
+  - q: 'What materials are most volatile in NZ construction pricing?'
+    a: 'Structural steel, copper (electrical and plumbing), timber, and insulation have historically been most volatile. Imported products (from China, US) are also subject to exchange rate movements.'
 ---
 
 ## Why Materials Escalation Matters

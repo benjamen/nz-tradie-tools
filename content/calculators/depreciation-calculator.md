@@ -67,6 +67,15 @@ calculator_html: |
     res.style.display='';
   }
   </script>
+faqs:
+  - q: 'How does tax depreciation work for tradies in NZ?'
+    a: 'The IRD allows you to deduct the depreciation of business assets over their useful life. For tools and equipment you can use the diminishing value (DV) or straight-line (SL) method based on IRD-set rates.'
+  - q: 'Can I write off tools immediately in NZ?'
+    a: 'Yes. Assets costing $1,000 or less (excluding GST) can be written off immediately as a low-value asset deduction. From 17 March 2021 this threshold increased from $500 to $1,000.'
+  - q: 'What is the depreciation rate for a ute in NZ?'
+    a: 'The IRD depreciation rate for a light commercial vehicle (ute) is 30% DV or 21% SL. So a $40,000 ute depreciates by $12,000 DV in year 1, $8,400 in year 2, and so on.'
+  - q: 'Do I claim depreciation on tools I also use personally?'
+    a: 'You can only claim the business-use portion. If a tool is used 80% for work and 20% personally, you claim 80% of the depreciation. Keep a usage log if the split is likely to be questioned.'
 ---
 
 ## How Depreciation Works for NZ Tradies

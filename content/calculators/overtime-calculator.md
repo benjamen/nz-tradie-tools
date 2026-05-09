@@ -119,6 +119,15 @@ calculator_html: |
   }
   </script>
 related_articles: [nz-tradie-tax-guide-what-you-can-claim]
+faqs:
+  - q: 'Is overtime compulsory in NZ?'
+    a: 'There is no statutory right to overtime in NZ employment law. Overtime terms are set in the employment agreement. However, if required to work overtime, the rate must be agreed (often time-and-a-half or double time).'
+  - q: 'What is time-and-a-half overtime pay in NZ?'
+    a: 'Time-and-a-half means 1.5× the employee''s regular hourly rate. If the ordinary rate is $30/hr, time-and-a-half is $45/hr. This is the most common NZ overtime rate for extra hours on weekdays.'
+  - q: 'How is overtime taxed in NZ?'
+    a: 'Overtime earnings are taxed as ordinary income under PAYE. The employer withholds PAYE at the employee''s applicable tax rate (based on annual income). There is no special tax rate for overtime in NZ.'
+  - q: 'What public holiday rates apply when employees work in NZ?'
+    a: 'When an employee works on a public holiday that is also a day they would otherwise work, they must receive at least time-and-a-half pay plus an alternative holiday (time in lieu). Sunday rates are typically set by the employment agreement.'
 ---
 
 ## NZ Employment Pay Rules for Tradies

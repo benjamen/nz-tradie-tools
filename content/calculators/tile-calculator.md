@@ -42,6 +42,15 @@ calculator_html: |
     document.getElementById('t-result').style.display='';
   }
   </script>
+faqs:
+  - q: 'How many tiles do I need per square metre?'
+    a: 'Divide 1 m² by (tile length × tile width), including the grout joint. For 300×300 mm tiles with a 3 mm joint: 1 ÷ (0.303 × 0.303) ≈ 10.9 tiles/m². Always add 10% for cuts, 15% for diagonal laying.'
+  - q: 'How much tile adhesive do I need?'
+    a: 'Standard notched trowel application uses approximately 3–4 kg of adhesive per m². Large-format tiles (600+ mm) using the back-butter method may use 5–6 kg/m². A 20 kg bag covers about 4–6 m².'
+  - q: 'How much does tiling cost per square metre in NZ?'
+    a: 'Professional tiling in NZ costs $60–$100/m² for labour only (floor tiles, straightforward room). Bathroom wall tiling or complex floor patterns (herringbone, diagonal) costs $80–$130/m² labour. Tile supply is additional.'
+  - q: 'What grout joint size should I use for floor tiles?'
+    a: 'NZ tile industry guidance: 2–3 mm for rectified tiles (machine-cut), 3–5 mm for standard tiles, 8–10 mm for irregular or natural stone. Wider joints accommodate variation in tile size and are easier to keep clean.'
 ---
 
 ## Tile Calculator for NZ Tilers & Homeowners

@@ -78,6 +78,15 @@ calculator_html: |
   }
   calcHW();
   </script>
+faqs:
+  - q: 'What size hot water cylinder do I need in NZ?'
+    a: 'A common rule is 45–55 litres per person. So a household of 4 needs a 180–220 litre cylinder. Large families, frequent bathers, or high hot water demand may need 250–300 litres.'
+  - q: 'Does a hot water cylinder need Healthy Homes compliance?'
+    a: 'Healthy Homes Standards do not directly regulate hot water systems in rentals. However, the hot water cylinder must have a functioning pressure relief valve and comply with NZOSHA and plumbing regulations.'
+  - q: 'What temperature should a hot water cylinder be set to in NZ?'
+    a: 'NZS 4305 recommends storing hot water at 60°C minimum to prevent Legionella bacteria growth. Tempering valves are required at point-of-use for showers to limit temperature to 45°C for safety.'
+  - q: 'Should I get a heat pump hot water system in NZ?'
+    a: 'Heat pump water heaters are 3–4× more energy efficient than electric resistance elements and can reduce water heating costs by 60–70%. EECA estimates payback of 3–5 years at current power prices in NZ.'
 ---
 
 ## Hot Water Cylinder Sizing for NZ Plumbers

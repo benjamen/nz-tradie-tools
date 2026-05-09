@@ -129,6 +129,15 @@ calculator_html: |
   }
   </script>
 related_articles: [hiring-an-apprentice-nz-tradie-guide-2026, minimum-wage-increase-april-2026-tradie-costs]
+faqs:
+  - q: 'How much annual leave is an NZ employee entitled to?'
+    a: 'All employees in NZ are entitled to 4 weeks'' annual leave per year under the Holidays Act 2003, after completing 12 months of continuous employment. After each additional 12 months, entitlement refreshes.'
+  - q: 'How many sick days do NZ employees get?'
+    a: 'Employees in NZ get 10 days'' sick leave per year (after 6 months of employment), with up to 20 days able to be carried forward. The total sick leave balance cannot exceed 20 days at any one time.'
+  - q: 'What public holidays are NZ employees entitled to?'
+    a: 'NZ has 12 public holidays per year. Employees who would otherwise work on a public holiday are entitled to a paid day off and an alternative holiday if they do work. Provincial anniversaries are also recognised in each region.'
+  - q: 'What is the difference between sick leave and bereavement leave in NZ?'
+    a: 'Sick leave is for illness or injury. Bereavement leave provides 3 days for the death of a spouse, parent, child, sibling, or grandparent, and 1 day for other close relatives or people the employee had a close relationship with.'
 ---
 
 ## NZ Statutory Leave Entitlements (Holidays Act 2003)

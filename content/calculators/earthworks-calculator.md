@@ -137,6 +137,15 @@ calculator_html: |
     document.getElementById('es-result').style.display='';
   }
   </script>
+faqs:
+  - q: 'How much does earthworks cost per cubic metre in NZ?'
+    a: 'General earthworks in NZ costs $25–$80/m³ cut and fill, depending on soil type, access, and distance to disposal. Rocky ground can reach $150–$250/m³. Offsite disposal adds tip fees of $80–$120/m³.'
+  - q: 'What is swell factor in earthworks?'
+    a: 'When soil is excavated, it expands in volume (swell). Clay expands by 20–35%, gravel by 10–15%. So 100 m³ of in-situ clay becomes approximately 125–135 m³ of loose material for trucking.'
+  - q: 'Do I need a resource consent for earthworks in NZ?'
+    a: 'Most councils require resource consent for earthworks exceeding certain thresholds — typically 200–500 m³ or more than 1 m depth, or if near waterways or steep slopes. Check your district plan.'
+  - q: 'How do I convert earthworks between cubic metres and tonnes?'
+    a: 'Average NZ soil weighs 1.4–1.8 tonnes/m³ (bulk). A common conversion is 1.6 t/m³. So 100 m³ of general fill = about 160 tonnes. Sandy soil is lighter; heavy clay is heavier.'
 ---
 
 ## Earthworks in NZ — What to Know

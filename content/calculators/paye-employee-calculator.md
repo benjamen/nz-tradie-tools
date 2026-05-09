@@ -73,6 +73,15 @@ calculator_html: |
     document.getElementById('py-result').style.display='';
   }
   </script>
+faqs:
+  - q: 'How is PAYE calculated in NZ?'
+    a: 'PAYE is calculated on an employee''s gross pay using the applicable income tax rate for their annual income bracket. ACC earners'' levy ($1.39/$100) is also deducted. The employer calculates and remits this to IRD on the employee''s behalf.'
+  - q: 'What are the NZ income tax rates for 2025?'
+    a: '2024–25 NZ income tax rates: 10.5% on $0–$14,000; 17.5% on $14,001–$48,000; 30% on $48,001–$70,000; 33% on $70,001–$180,000; 39% on income over $180,000.'
+  - q: 'What is the student loan PAYE deduction rate in NZ?'
+    a: 'Student loan repayments are deducted at 12 cents per dollar of gross earnings above the repayment threshold ($24,128 for 2024–25). Employees notify their employer via their tax code declaration (IR330).'
+  - q: 'What is a tax code in NZ and which one should I use?'
+    a: 'Your tax code tells your employer which PAYE rate to use. ''M'' is for your main/only job. ''S'' is for secondary income. ''SH'' and ''ST'' are for higher secondary income. Use ''M SL'' if you have a student loan on your primary job.'
 ---
 
 ## True Cost of Employment in NZ

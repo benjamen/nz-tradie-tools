@@ -87,6 +87,15 @@ calculator_html: |
     r.style.display="";
   }
   </script>
+faqs:
+  - q: 'What does it really cost to employ a tradie in NZ?'
+    a: 'On top of wages, an employer pays: employer KiwiSaver (3%), ACC employer levy (varies by industry, typically 0.2–1%), annual leave loading (effectively 8%), and any tools, phone, or vehicle costs. Total true cost is often 15–25% above the gross wage.'
+  - q: 'What is the employer KiwiSaver contribution rate in NZ?'
+    a: 'Employers must contribute a minimum of 3% of an employee''s gross wages to KiwiSaver. This is paid on top of the employee''s wage and is a compulsory cost.'
+  - q: 'How much annual leave does an NZ employee get?'
+    a: 'All NZ employees are entitled to 4 weeks'' annual leave per year under the Holidays Act 2003. This equates to 8% of gross earnings as a leave reserve.'
+  - q: 'What ACC costs does an NZ employer pay?'
+    a: 'Employers pay an ACC work levy based on their industry classification and payroll. Rates for 2024–25 range from about $0.18 to $3.00 per $100 of payroll depending on trade risk. Builders are around $0.90–$1.50/100.'
 ---
 
 ## The Real Cost of Hiring a Tradie in NZ

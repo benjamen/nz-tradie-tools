@@ -72,6 +72,15 @@ calculator_html: |
     r.style.display="";
   }
   </script>
+faqs:
+  - q: 'What happens if I underpay provisional tax in NZ?'
+    a: 'If you underpay provisional tax, IRD charges use-of-money interest (UOMI) on the underpaid amount at 10.39% per year from the date the payment was due. You may also face an underestimation penalty if using the estimation method.'
+  - q: 'How can I top up provisional tax before year end in NZ?'
+    a: 'Log in to myIR and make a voluntary payment at any time before your final instalment date or tax return due date. Label it as a provisional tax payment for the current tax year.'
+  - q: 'What is the UOMI rate in NZ for underpaid provisional tax?'
+    a: 'As of 2024–25, the UOMI rate charged by IRD on underpaid tax is 10.39% per annum. IRD also pays 3.53% UOMI to taxpayers on overpayments.'
+  - q: 'Should I top up provisional tax now or wait until year end?'
+    a: 'Topping up early reduces UOMI from the due date. If you''re confident your year-end RIT will be higher than your instalments, making an early voluntary payment saves interest. Use your accounting software or tax agent to estimate the shortfall.'
 ---
 
 ## Provisional Tax Safe Harbour — The Safety Net Most Tradies Don't Know About

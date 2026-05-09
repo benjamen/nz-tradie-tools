@@ -146,6 +146,15 @@ calculator_html: |
     document.getElementById('tm-result').style.display='';
   }
   </script>
+faqs:
+  - q: 'How much carpet do I need per square metre in NZ?'
+    a: 'Measure the room''s length × width in metres. Add 10–15% for cuts, pattern matching, and doorway wastage. Most NZ carpet comes in 3.66 m or 4 m widths, so room shape affects offcuts.'
+  - q: 'How much does carpet installation cost in NZ?'
+    a: 'Carpet supply and install in NZ typically costs $45–$120/m² depending on carpet quality and underlay. Budget $65–$85/m² for a good mid-range carpet with 10 mm underlay fitted.'
+  - q: 'What underlay should I use under carpet in NZ?'
+    a: 'An 8–10 mm polyurethane or rubber crumb underlay (rated 150 kg/m³ or above) is standard for residential carpet in NZ. Thicker underlay (12 mm) adds comfort but is not always needed.'
+  - q: 'How do I calculate staircase carpet in NZ?'
+    a: 'Measure each step: tread depth + riser height × width, then multiply by number of steps. Add 15% wastage for cutting around spindles. A standard NZ staircase of 14 steps uses roughly 5–7 m² of carpet.'
 ---
 
 ## Flooring Costs in NZ (2025)

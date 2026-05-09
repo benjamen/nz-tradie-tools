@@ -93,6 +93,15 @@ calculator_html: |
     r.style.display="";
   }
   </script>
+faqs:
+  - q: 'How much paint do I need for weatherboard cladding in NZ?'
+    a: 'A standard 10 m × 2.4 m weatherboard wall (24 m²) needs roughly 3–4 litres of paint per coat at 8–10 m²/L spread rate. Two coats = 6–8 litres. Add 10% for waste and overruns.'
+  - q: 'How many coats of paint does exterior cladding need in NZ?'
+    a: 'Bare or repainted timber cladding typically needs 1 coat of primer + 2 topcoats. Previously painted cladding in good condition may need only 2 topcoats. Always follow the paint manufacturer''s data sheet.'
+  - q: 'What exterior paint is best for NZ weatherboards?'
+    a: 'Water-based acrylic paints are the standard for NZ weatherboards — they flex with timber movement and resist the UV and moisture of NZ''s climate. Look for products rated for NZ exterior conditions with a 10+ year durability claim.'
+  - q: 'How much does exterior painting cost per square metre in NZ?'
+    a: 'Exterior painting in NZ typically costs $15–$35/m² for labour only, or $25–$50/m² supply and apply. High multi-storey homes, complex profiles, or significant prep work push costs higher.'
 ---
 
 ## Paint Quantity for NZ Cladding Systems

@@ -139,6 +139,15 @@ calculator_html: |
     document.getElementById('rc-result').style.display='';
   }
   </script>
+faqs:
+  - q: 'How do I calculate pool volume in NZ?'
+    a: 'Rectangular pool: length × width × average depth. Circular pool: π × radius² × average depth. A 10 m × 4 m pool with 1.5 m average depth = 60 m³ = 60,000 litres.'
+  - q: 'How much does a pool cost to install in NZ?'
+    a: 'A fibreglass pool in NZ costs $35,000–$70,000 fully installed (pool, excavation, fence, pump, filtration). A concrete pool costs $60,000–$120,000+. Ongoing running costs are $2,000–$4,000/year.'
+  - q: 'Does a pool need a fence in NZ?'
+    a: 'Yes. All pools with water depth over 400 mm must be fenced to the Building Act 2004 and NZS 8500:2006 pool safety standard. The fence must have a self-closing, self-latching gate. Fines for non-compliance are up to $4,000.'
+  - q: 'How much chlorine do I need for a NZ pool?'
+    a: 'Maintain 1–3 ppm free chlorine in outdoor pools (NZRA guidelines). A 60 m³ pool needs approximately 60–180 g of granular chlorine per dose (weekly), adjusted by sun exposure and bather load.'
 ---
 
 ## Pool Costs in NZ

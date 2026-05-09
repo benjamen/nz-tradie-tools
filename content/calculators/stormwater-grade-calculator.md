@@ -85,6 +85,15 @@ calculator_html: |
     r.style.display="";
   }
   </script>
+faqs:
+  - q: 'What is the minimum grade for a stormwater pipe in NZ?'
+    a: 'NZS 3114 and the NZ Building Code require a minimum grade of 1:100 (1%) for 100 mm stormwater pipes. Larger pipes (150 mm+) may use 1:200 in some situations. Upsize the pipe for flat sites to maintain self-cleansing velocity.'
+  - q: 'How do I calculate stormwater flow for a roof in NZ?'
+    a: 'Rainfall intensity in NZ varies by region. As a guide, Auckland uses 150 mm/hr for a 10-year storm. Flow = area (m²) × intensity (mm/hr) ÷ 3,600. A 200 m² roof in Auckland at 150 mm/hr produces 8.3 L/s — requiring at least 100 mm pipe.'
+  - q: 'What pipe material is used for stormwater in NZ?'
+    a: 'Common NZ stormwater pipe materials: uPVC (NZS 7643), corrugated HDPE (flexible), or concrete (older/larger systems). uPVC is the standard for residential sub-100 mm drainage; HDPE is used for rural and flexible-layout situations.'
+  - q: 'Does stormwater need to be diverted away from foundations in NZ?'
+    a: 'Yes. The NZ Building Code Clause E1 requires buildings to be designed and built so that stormwater is managed to protect the building''s structural performance. Surface drainage must direct water away from foundations.'
 ---
 
 ## NZ Drain Grade Standards — AS/NZS 3500.3

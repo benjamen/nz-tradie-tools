@@ -191,6 +191,7 @@ def process_page(md_file, config, env, layout_name, section, nav, base_path, art
         "url": f"{base_path}/{section}/{slug}.html",
         "draft": front.get("draft", False),
         "calculator_html": front.get("calculator_html", ""),
+        "faqs": front.get("faqs", []),
         "nav": nav,
         "year": datetime.now().year,
         "recent_articles": (articles or [])[:3],

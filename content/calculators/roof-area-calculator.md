@@ -93,6 +93,15 @@ calculator_html: |
     document.getElementById('sk-result').style.display='';
   }
   </script>
+faqs:
+  - q: 'How do I calculate roof area in NZ?'
+    a: 'Measure the building footprint and multiply by a pitch factor. For a 15° pitch (standard NZ gable), pitch factor ≈ 1.04. For a 25° pitch, factor ≈ 1.10. Hip roofs add area for the hip sections. Valleys and dormers need individual calculation.'
+  - q: 'How much does roofing cost per square metre in NZ?'
+    a: 'Corrugated iron (Colorsteel) roofing in NZ costs $80–$140/m² supply and install. Concrete or clay tiles cost $100–$180/m². Membrane roofing for low-slope roofs costs $120–$250/m². Prices vary by region and roof complexity.'
+  - q: 'How long does a roof last in NZ?'
+    a: 'Steel roofing (Colorsteel, Zincalume) lasts 40–70 years in NZ. Concrete tiles last 50+ years. Corrugated iron without coating lasts 30–40 years in mild coastal climates; less in harsh salt air environments.'
+  - q: 'Do I need a building consent to reroof in NZ?'
+    a: 'A like-for-like reroof (same material, same pitch) is generally exempt from consent. Changing roofing material, pitch, or adding skylights/dormers requires a building consent from your local council.'
 ---
 
 ## Roof Area Calculator for NZ Roofers & Builders

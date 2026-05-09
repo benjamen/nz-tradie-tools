@@ -104,6 +104,15 @@ calculator_html: |
   }
   </script>
 related_articles: [cash-flow-management-nz-tradies, provisional-tax-nz-tradies]
+faqs:
+  - q: 'How do I do a cash flow forecast for my tradie business?'
+    a: 'List all expected income by week or month (jobs invoiced, deposits received). Then list all expected outgoings (wages, materials, insurance, ACC, GST payments). The difference each period is your net cash position.'
+  - q: 'How far ahead should I forecast cash flow?'
+    a: 'Most small tradie businesses forecast 3–6 months ahead. This is far enough to spot cash shortfalls before they hit, but close enough that numbers remain useful. Update it monthly.'
+  - q: 'What causes cash flow problems for NZ tradies?'
+    a: 'The most common causes are: slow-paying clients (30–60 day terms), GST and provisional tax not set aside, uneven work flow (feast and famine), and materials costs paid before jobs are invoiced.'
+  - q: 'How can I improve cash flow as a tradie?'
+    a: 'Require a deposit upfront (20–30%), invoice immediately on job completion, offer payment by credit card, chase overdue invoices within 7 days, and hold a GST reserve account separate from operating funds.'
 ---
 
 ## Using the Cash Flow Forecast

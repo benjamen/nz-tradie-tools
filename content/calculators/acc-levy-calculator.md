@@ -74,6 +74,15 @@ calculator_html: |
   }
   </script>
 related_articles: [nz-tradie-tax-guide-what-you-can-claim, income-protection-insurance-nz-tradies]
+faqs:
+  - q: 'How is ACC levy calculated for self-employed NZ tradies?'
+    a: 'Self-employed tradies pay ACC based on their liable earnings (net profit up to the maximum) multiplied by their industry levy rate. The 2024–25 working safer levy is $0.08 per $100 plus a trade-specific earners'' levy, totalling roughly $1.39–$2.80 per $100 for most trades.'
+  - q: 'What is the ACC earners'' levy rate in New Zealand?'
+    a: 'For 2024–25 the earners'' levy is $1.39 per $100 of liable earnings, paid by all NZ earners. Self-employed people also pay a work levy set by their industry classification.'
+  - q: 'Is ACC levy tax-deductible for NZ sole traders?'
+    a: 'Yes. The work portion of your ACC levy is fully tax-deductible as a business expense. The earners'' levy portion is not deductible.'
+  - q: 'What is the maximum liable earnings for ACC?'
+    a: 'The maximum liable earnings for 2024–25 is $142,283. ACC levies are only charged on income up to this threshold.'
 ---
 
 ## How ACC Levies Work for Self-Employed Tradies

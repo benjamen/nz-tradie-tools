@@ -17,7 +17,7 @@
     <meta name="twitter:image" content="https://tradietools.nz/static/img/social-card.svg">
     <link rel="canonical" href="https://tradietools.nz/calculators/materials-escalation-calculator.html">
     <link rel="alternate" type="application/rss+xml" title="NZ Tradie Tools — Articles" href="https://tradietools.nz/rss.xml">
-    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"Materials Price Escalation Calculator \u2014 Budget for Rising Costs NZ","description":"Calculate the impact of materials price inflation on your construction quote \u2014 ensure your estimate accounts for rising costs over the project duration.","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://tradietools.nz/calculators/materials-escalation-calculator.html","offers":{"@type":"Offer","price":"0","priceCurrency":"NZD"},"author":{"@type":"Organization","name":"NZ Tradie Tools","url":"https://tradietools.nz"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tradietools.nz"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://tradietools.nz/calculators/"},{"@type":"ListItem","position":3,"name":"Materials Price Escalation Calculator \u2014 Budget for Rising Costs NZ","item":"https://tradietools.nz/calculators/materials-escalation-calculator.html"}]}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"Materials Price Escalation Calculator \u2014 Budget for Rising Costs NZ","description":"Calculate the impact of materials price inflation on your construction quote \u2014 ensure your estimate accounts for rising costs over the project duration.","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://tradietools.nz/calculators/materials-escalation-calculator.html","offers":{"@type":"Offer","price":"0","priceCurrency":"NZD"},"author":{"@type":"Organization","name":"NZ Tradie Tools","url":"https://tradietools.nz"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tradietools.nz"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://tradietools.nz/calculators/"},{"@type":"ListItem","position":3,"name":"Materials Price Escalation Calculator \u2014 Budget for Rising Costs NZ","item":"https://tradietools.nz/calculators/materials-escalation-calculator.html"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much have building material costs increased in NZ?","acceptedAnswer":{"@type":"Answer","text":"NZ building material costs rose significantly in 2021\u20132023, with some materials (structural steel, timber, roofing) up 30\u201360%. By 2025, most categories have stabilised but remain 20\u201330% above 2019 levels."}},{"@type":"Question","name":"How do I allow for materials price escalation in a long project quote?","acceptedAnswer":{"@type":"Answer","text":"Add an escalation clause to quotes over 3 months: price materials at quote date and specify that materials will be invoiced at actual cost at time of purchase, or include a fixed escalation allowance of 3\u20138% per year."}},{"@type":"Question","name":"What is a price escalation clause in NZ construction contracts?","acceptedAnswer":{"@type":"Answer","text":"A price escalation clause (fluctuation clause) in an NZ construction contract allows the contract sum to be adjusted if material or labour costs change beyond an agreed threshold during the contract period. NZS 3910 includes a standard fluctuations provision."}},{"@type":"Question","name":"What materials are most volatile in NZ construction pricing?","acceptedAnswer":{"@type":"Answer","text":"Structural steel, copper (electrical and plumbing), timber, and insulation have historically been most volatile. Imported products (from China, US) are also subject to exchange rate movements."}}]}]}</script>
     <meta name="google-adsense-account" content="ca-pub-8059857496012230">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="/static/css/style.css">
@@ -184,6 +184,45 @@ Limit your quote validity to 14–30 days for material-heavy jobs. This forces a
 </ul>
 <p>Always check current prices with your supplier before quoting on large projects. Use our <a href="/calculators/job-cost-calculator.html">Job Cost Calculator</a> to build accurate job estimates from the ground up.</p>
             </div>
+
+            
+            <section class="faq-section" style="margin-top:2rem">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">How much have building material costs increased in NZ?</button>
+                        <div class="faq-answer" hidden><p>NZ building material costs rose significantly in 2021–2023, with some materials (structural steel, timber, roofing) up 30–60%. By 2025, most categories have stabilised but remain 20–30% above 2019 levels.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">How do I allow for materials price escalation in a long project quote?</button>
+                        <div class="faq-answer" hidden><p>Add an escalation clause to quotes over 3 months: price materials at quote date and specify that materials will be invoiced at actual cost at time of purchase, or include a fixed escalation allowance of 3–8% per year.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">What is a price escalation clause in NZ construction contracts?</button>
+                        <div class="faq-answer" hidden><p>A price escalation clause (fluctuation clause) in an NZ construction contract allows the contract sum to be adjusted if material or labour costs change beyond an agreed threshold during the contract period. NZS 3910 includes a standard fluctuations provision.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">What materials are most volatile in NZ construction pricing?</button>
+                        <div class="faq-answer" hidden><p>Structural steel, copper (electrical and plumbing), timber, and insulation have historically been most volatile. Imported products (from China, US) are also subject to exchange rate movements.</p></div>
+                    </div>
+                    
+                </div>
+            </section>
+            <script>
+            document.querySelectorAll('.faq-question').forEach(function(btn){
+                btn.addEventListener('click',function(){
+                    var ans=this.nextElementSibling;
+                    var open=this.getAttribute('aria-expanded')==='true';
+                    this.setAttribute('aria-expanded',!open);
+                    if(open){ans.hidden=true;}else{ans.hidden=false;}
+                });
+            });
+            </script>
+            
         </main>
 
         <aside class="sidebar">

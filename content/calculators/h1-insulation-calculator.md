@@ -81,6 +81,15 @@ calculator_html: |
     r.style.display='';
   }
   </script>
+faqs:
+  - q: 'What R-value do I need under NZ Building Code H1?'
+    a: 'H1 5th edition (from 2023) sets zone-dependent minimum R-values. Auckland (Zone 1) requires R2.9 underfloor, R6.6 ceiling. Queenstown (Zone 6) requires R3.6 underfloor, R9.6 ceiling. Walls range R2.0–R2.8 by zone.'
+  - q: 'Which NZ climate zone am I in for insulation?'
+    a: 'NZ has 6 climate zones. Zone 1 covers Northland and Auckland; Zone 2 Waikato to Bay of Plenty; Zone 3 Hawke''s Bay and Taranaki; Zone 4 Wellington and Nelson; Zone 5 inland South Island; Zone 6 alpine areas including Queenstown and Wanaka.'
+  - q: 'Does H1 5th edition apply to renovations?'
+    a: 'H1 5th edition applies to new builds consented after its adoption date. Renovations that alter the building envelope (e.g. reroofing, new exterior cladding) generally trigger the current H1 requirements for the altered areas.'
+  - q: 'How do I meet H1 requirements in my wall assembly?'
+    a: 'Typical NZ wall assemblies meet H1 using a combination of framing R-value (timber), bulk insulation batt R-value, and sometimes external rigid foam insulation. The total system R-value must meet or exceed the zone minimum.'
 ---
 
 ## NZ H1 Energy Efficiency — 2023 Requirements

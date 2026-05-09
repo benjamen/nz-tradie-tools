@@ -100,6 +100,15 @@ calculator_html: |
     r.style.display="";
   }
   </script>
+faqs:
+  - q: 'What size skip bin do I need for a renovation in NZ?'
+    a: 'A 3 m³ skip suits a bathroom or kitchen renovation (1–2 tonnes of waste). A 6 m³ skip suits a mid-size renovation or small demolition. A 9–12 m³ skip is for large house renovations or roofing jobs. Volume and weight both matter.'
+  - q: 'How much does a skip bin cost in NZ?'
+    a: 'Skip bin hire in NZ costs approximately $250–$400 for a 2–3 m³ mini skip, $400–$600 for a 4–6 m³ skip, and $600–$1,000 for a 9–12 m³ large skip. Prices include delivery and pickup but not overfill or heavy material surcharges.'
+  - q: 'Can concrete and bricks go in a skip bin in NZ?'
+    a: 'Many skip providers in NZ do not accept heavy materials like concrete, bricks, or tiles in general waste skips due to weight limits. You may need a dedicated ''heavy waste'' or ''concrete only'' skip, which is priced separately.'
+  - q: 'What is the NZ waste levy on skip bins?'
+    a: 'The NZ Waste Minimisation Act levy is currently $60/tonne for waste disposed to landfill (2024). This levy is passed on to customers by skip bin operators and is included in most skip hire prices for mixed construction waste.'
 ---
 
 ## NZ Construction Waste Disposal Costs

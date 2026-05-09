@@ -66,6 +66,17 @@ calculator_html: |
     r.style.display='';
   }
   </script>
+faqs:
+  - q: 'What is the GST rate in New Zealand?'
+    a: 'GST in New Zealand is 15%, applied to most goods and services. It was increased from 12.5% to 15% in October 2010.'
+  - q: 'How do I add GST to a price in NZ?'
+    a: 'Multiply the GST-exclusive price by 1.15. For example, $500 + GST = $500 × 1.15 = $575. To find the GST amount only: $500 × 0.15 = $75.'
+  - q: 'How do I remove GST from a price in NZ?'
+    a: 'Divide the GST-inclusive price by 1.15. For example, $575 ÷ 1.15 = $500 (GST-exclusive). The GST component is $575 − $500 = $75, or equivalently $575 × 3/23 = $75.'
+  - q: 'When do I need to register for GST in NZ?'
+    a: 'You must register for GST if your turnover exceeds (or will exceed) $60,000 in any 12-month period. You can register voluntarily below this threshold. Most tradie businesses should register once they start earning consistently.'
+  - q: 'How often do I file a GST return in NZ?'
+    a: 'Most small businesses file GST returns every 2 months (bi-monthly). Businesses with turnover under $500,000 can apply for 6-monthly filing. Large businesses (turnover over $24 million) file monthly.'
 ---
 
 ## How GST Works for NZ Tradies

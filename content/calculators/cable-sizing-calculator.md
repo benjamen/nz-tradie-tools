@@ -130,6 +130,15 @@ calculator_html: |
     document.getElementById('cb-result').style.display='';
   }
   </script>
+faqs:
+  - q: 'How do I size electrical cable in NZ?'
+    a: 'Cable sizing in NZ follows AS/NZS 3008. Key factors are: load current (amps), cable installation method, ambient temperature, and permissible voltage drop (typically 5% for final subcircuits). Always consult a licensed electrician.'
+  - q: 'What cable size is needed for a 20-amp circuit?'
+    a: 'A 20 A circuit in a typical residential installation (clipped direct, 30°C ambient) generally uses 2.5 mm² twin-and-earth cable. Longer runs or higher ambient temperatures may require 4 mm².'
+  - q: 'What is the maximum voltage drop allowed in NZ?'
+    a: 'AS/NZS 3000:2018 allows a maximum of 5% voltage drop from the supply point to any point of use for lighting and power circuits in NZ installations.'
+  - q: 'Do I need a licensed electrician to size cables in NZ?'
+    a: 'All electrical work in NZ must be carried out and certified by a licensed electrical worker (LEW). Cable sizing is part of that design work and must comply with AS/NZS 3008 and the NZ Electrical Code of Practice.'
 ---
 
 ## NZ Electrical Standards

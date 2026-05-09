@@ -17,7 +17,7 @@
     <meta name="twitter:image" content="https://tradietools.nz/static/img/social-card.svg">
     <link rel="canonical" href="https://tradietools.nz/calculators/quote-builder-wizard.html">
     <link rel="alternate" type="application/rss+xml" title="NZ Tradie Tools — Articles" href="https://tradietools.nz/rss.xml">
-    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"Quote Builder Wizard \u2014 Build a Professional NZ Tradie Quote Step by Step","description":"Build a complete, professional quote for any NZ trade job in 4 steps \u2014 labour, materials, markup, GST, and a printable summary your client can sign.","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://tradietools.nz/calculators/quote-builder-wizard.html","offers":{"@type":"Offer","price":"0","priceCurrency":"NZD"},"author":{"@type":"Organization","name":"NZ Tradie Tools","url":"https://tradietools.nz"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tradietools.nz"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://tradietools.nz/calculators/"},{"@type":"ListItem","position":3,"name":"Quote Builder Wizard \u2014 Build a Professional NZ Tradie Quote Step by Step","item":"https://tradietools.nz/calculators/quote-builder-wizard.html"}]}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"Quote Builder Wizard \u2014 Build a Professional NZ Tradie Quote Step by Step","description":"Build a complete, professional quote for any NZ trade job in 4 steps \u2014 labour, materials, markup, GST, and a printable summary your client can sign.","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://tradietools.nz/calculators/quote-builder-wizard.html","offers":{"@type":"Offer","price":"0","priceCurrency":"NZD"},"author":{"@type":"Organization","name":"NZ Tradie Tools","url":"https://tradietools.nz"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tradietools.nz"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://tradietools.nz/calculators/"},{"@type":"ListItem","position":3,"name":"Quote Builder Wizard \u2014 Build a Professional NZ Tradie Quote Step by Step","item":"https://tradietools.nz/calculators/quote-builder-wizard.html"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What should a NZ tradie quote include to be legally valid?","acceptedAnswer":{"@type":"Answer","text":"A NZ quote should include: your business name and NZBN/GST number, date and expiry, client details, detailed scope of work, inclusions and exclusions, total price (+ GST or GST incl), and payment terms."}},{"@type":"Question","name":"What is the difference between a quote and an estimate in NZ?","acceptedAnswer":{"@type":"Answer","text":"A quote is a fixed price offer. If accepted, you must complete the work at that price unless agreed variations arise. An estimate is an approximation and is not binding. Clients prefer quotes; courts distinguish between the two."}},{"@type":"Question","name":"How long should a tradie quote be valid for in NZ?","acceptedAnswer":{"@type":"Answer","text":"Most NZ tradies set a quote validity of 30\u201360 days. In periods of material price volatility, 14\u201330 days may be more appropriate. Always specify the expiry date on the quote document."}},{"@type":"Question","name":"Do I need to charge GST on quotes if I\u0027m not yet GST-registered?","acceptedAnswer":{"@type":"Answer","text":"No. If you\u0027re not GST-registered, your quote is GST-exclusive and you should clearly state \u0027Not registered for GST\u0027 or \u0027No GST applicable\u0027. Once you register, you must charge GST on all taxable supplies."}}]}]}</script>
     <meta name="google-adsense-account" content="ca-pub-8059857496012230">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="/static/css/style.css">
@@ -402,6 +402,45 @@ document.getElementById('qb-date').value=new Date().toISOString().split('T')[0];
 - At completion, issue the <strong>final invoice</strong> referencing the original quote number</p>
 <p>Use our <a href="/calculators/job-cost-calculator.html">Job Cost Calculator</a> to check your margins after the job is done.</p>
             </div>
+
+            
+            <section class="faq-section" style="margin-top:2rem">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">What should a NZ tradie quote include to be legally valid?</button>
+                        <div class="faq-answer" hidden><p>A NZ quote should include: your business name and NZBN/GST number, date and expiry, client details, detailed scope of work, inclusions and exclusions, total price (+ GST or GST incl), and payment terms.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">What is the difference between a quote and an estimate in NZ?</button>
+                        <div class="faq-answer" hidden><p>A quote is a fixed price offer. If accepted, you must complete the work at that price unless agreed variations arise. An estimate is an approximation and is not binding. Clients prefer quotes; courts distinguish between the two.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">How long should a tradie quote be valid for in NZ?</button>
+                        <div class="faq-answer" hidden><p>Most NZ tradies set a quote validity of 30–60 days. In periods of material price volatility, 14–30 days may be more appropriate. Always specify the expiry date on the quote document.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">Do I need to charge GST on quotes if I'm not yet GST-registered?</button>
+                        <div class="faq-answer" hidden><p>No. If you're not GST-registered, your quote is GST-exclusive and you should clearly state 'Not registered for GST' or 'No GST applicable'. Once you register, you must charge GST on all taxable supplies.</p></div>
+                    </div>
+                    
+                </div>
+            </section>
+            <script>
+            document.querySelectorAll('.faq-question').forEach(function(btn){
+                btn.addEventListener('click',function(){
+                    var ans=this.nextElementSibling;
+                    var open=this.getAttribute('aria-expanded')==='true';
+                    this.setAttribute('aria-expanded',!open);
+                    if(open){ans.hidden=true;}else{ans.hidden=false;}
+                });
+            });
+            </script>
+            
         </main>
 
         <aside class="sidebar">

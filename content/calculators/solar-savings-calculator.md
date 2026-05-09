@@ -80,6 +80,15 @@ calculator_html: |
   }
   calcSolar();
   </script>
+faqs:
+  - q: 'How much does a solar system cost in NZ in 2025?'
+    a: 'A typical 5 kW residential solar system in NZ costs $10,000–$16,000 installed including inverter and racking. A 10 kW system costs $18,000–$28,000. Battery storage (10 kWh) adds $8,000–$15,000.'
+  - q: 'How much solar power can I generate in NZ?'
+    a: 'NZ annual solar irradiance averages 4–5 peak sun hours/day in most regions. A 5 kW system generates approximately 6,500–7,500 kWh/year. The South Island and areas with more cloud cover generate slightly less.'
+  - q: 'What is the payback period for solar in NZ?'
+    a: 'With power prices at 30–35c/kWh and export rates of 7–12c/kWh, a 5 kW system typically pays back in 8–12 years. Payback is faster if you use most power onsite rather than exporting.'
+  - q: 'Can a NZ tradie install their own solar panels?'
+    a: 'In NZ, electrical connection of solar systems must be done by a licensed electrical worker (LEW). Panel racking installation can be done by a builder or homeowner, but the electrical DC/AC connection and grid connection requires a LEW.'
 ---
 
 ## Solar in New Zealand — Is It Worth It?

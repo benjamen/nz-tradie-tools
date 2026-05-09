@@ -17,7 +17,7 @@
     <meta name="twitter:image" content="{{ base_url }}/static/img/social-card.svg">
     <link rel="canonical" href="{{ base_url }}/calculators/{{ slug }}.html">
     <link rel="alternate" type="application/rss+xml" title="NZ Tradie Tools — Articles" href="{{ base_url }}/rss.xml">
-    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":{{ page_title | tojson }},"description":{{ description | tojson }},"applicationCategory":"FinanceApplication","operatingSystem":"Web","url":{{ (base_url ~ "/calculators/" ~ slug ~ ".html") | tojson }},"offers":{"@type":"Offer","price":"0","priceCurrency":"NZD"},"author":{"@type":"Organization","name":"NZ Tradie Tools","url":{{ base_url | tojson }}}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":{{ base_url | tojson }}},{"@type":"ListItem","position":2,"name":"Calculators","item":{{ (base_url ~ "/calculators/") | tojson }}},{"@type":"ListItem","position":3,"name":{{ page_title | tojson }},"item":{{ (base_url ~ "/calculators/" ~ slug ~ ".html") | tojson }}}]}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":{{ page_title | tojson }},"description":{{ description | tojson }},"applicationCategory":"FinanceApplication","operatingSystem":"Web","url":{{ (base_url ~ "/calculators/" ~ slug ~ ".html") | tojson }},"offers":{"@type":"Offer","price":"0","priceCurrency":"NZD"},"author":{"@type":"Organization","name":"NZ Tradie Tools","url":{{ base_url | tojson }}}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":{{ base_url | tojson }}},{"@type":"ListItem","position":2,"name":"Calculators","item":{{ (base_url ~ "/calculators/") | tojson }}},{"@type":"ListItem","position":3,"name":{{ page_title | tojson }},"item":{{ (base_url ~ "/calculators/" ~ slug ~ ".html") | tojson }}}]}{% if faqs %},{"@type":"FAQPage","mainEntity":[{% for faq in faqs %}{"@type":"Question","name":{{ faq.q | tojson }},"acceptedAnswer":{"@type":"Answer","text":{{ faq.a | tojson }}}}{% if not loop.last %},{% endif %}{% endfor %}]}{% endif %}]}</script>
     {% if adsense_id %}<meta name="google-adsense-account" content="{{ adsense_id }}">{% endif %}
     <link rel="icon" href="{{ base_path }}/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="{{ base_path }}/static/css/style.css">
@@ -82,6 +82,30 @@
             <div class="article-body">
                 {{ content }}
             </div>
+
+            {% if faqs %}
+            <section class="faq-section" style="margin-top:2rem">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    {% for faq in faqs %}
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">{{ faq.q }}</button>
+                        <div class="faq-answer" hidden><p>{{ faq.a }}</p></div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+            <script>
+            document.querySelectorAll('.faq-question').forEach(function(btn){
+                btn.addEventListener('click',function(){
+                    var ans=this.nextElementSibling;
+                    var open=this.getAttribute('aria-expanded')==='true';
+                    this.setAttribute('aria-expanded',!open);
+                    if(open){ans.hidden=true;}else{ans.hidden=false;}
+                });
+            });
+            </script>
+            {% endif %}
         </main>
 
         <aside class="sidebar">

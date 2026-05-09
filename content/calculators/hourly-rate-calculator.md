@@ -128,6 +128,15 @@ calculator_html: |
   calcRate();
   </script>
   <div id="market-hint" style="display:none;background:#e8f4fd;border:1px solid #b3d9f5;border-radius:6px;padding:.75rem 1rem;margin-top:1rem;font-size:.9rem;color:#0055a5"></div>
+faqs:
+  - q: 'How do I calculate my hourly rate as a self-employed NZ tradie?'
+    a: 'Add up all annual costs: wages target + ACC + insurance + vehicle + tools + overheads. Divide by your billable hours per year (typically 1,200–1,400 for a sole trader). Add your profit margin on top.'
+  - q: 'What is a fair hourly rate for a NZ tradesperson in 2025?'
+    a: 'Typical NZ tradie rates in 2025: electricians $100–$130/hr, plumbers $110–$150/hr, builders $90–$120/hr, painters $60–$90/hr. Rates vary by region — Auckland and Wellington are generally 10–20% higher.'
+  - q: 'How many billable hours can a NZ sole trader charge per year?'
+    a: 'A NZ sole trader working 46 weeks (52 minus 4 weeks leave and 2 weeks public holidays) with 8-hour days has around 1,840 potential hours. After travel, quoting, admin and downtime, realistic billable hours are 1,200–1,500/year.'
+  - q: 'Should I charge GST on top of my hourly rate?'
+    a: 'If you are GST-registered, yes — you add 15% GST on top of your rate when invoicing. Your quoted rate may be shown ex-GST or inc-GST; be clear with clients which you are quoting.'
 ---
 
 ## How to Set Your Hourly Rate as a NZ Tradie

@@ -17,7 +17,7 @@
     <meta name="twitter:image" content="https://tradietools.nz/static/img/social-card.svg">
     <link rel="canonical" href="https://tradietools.nz/calculators/retaining-wall-calculator.html">
     <link rel="alternate" type="application/rss+xml" title="NZ Tradie Tools — Articles" href="https://tradietools.nz/rss.xml">
-    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"Retaining Wall Calculator \u2014 NZ","description":"Estimate retaining wall materials and costs for NZ \u2014 concrete blocks, timber, or keystone. Includes drainage aggregate.","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://tradietools.nz/calculators/retaining-wall-calculator.html","offers":{"@type":"Offer","price":"0","priceCurrency":"NZD"},"author":{"@type":"Organization","name":"NZ Tradie Tools","url":"https://tradietools.nz"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tradietools.nz"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://tradietools.nz/calculators/"},{"@type":"ListItem","position":3,"name":"Retaining Wall Calculator \u2014 NZ","item":"https://tradietools.nz/calculators/retaining-wall-calculator.html"}]}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"Retaining Wall Calculator \u2014 NZ","description":"Estimate retaining wall materials and costs for NZ \u2014 concrete blocks, timber, or keystone. Includes drainage aggregate.","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://tradietools.nz/calculators/retaining-wall-calculator.html","offers":{"@type":"Offer","price":"0","priceCurrency":"NZD"},"author":{"@type":"Organization","name":"NZ Tradie Tools","url":"https://tradietools.nz"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tradietools.nz"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://tradietools.nz/calculators/"},{"@type":"ListItem","position":3,"name":"Retaining Wall Calculator \u2014 NZ","item":"https://tradietools.nz/calculators/retaining-wall-calculator.html"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do I need a building consent for a retaining wall in NZ?","acceptedAnswer":{"@type":"Answer","text":"Retaining walls over 1.5 m high (or 1 m near a boundary or a structure) generally require a building consent in NZ. Some councils have lower thresholds. Always check with your local council before construction."}},{"@type":"Question","name":"What materials are used for retaining walls in NZ?","acceptedAnswer":{"@type":"Answer","text":"Common NZ retaining wall materials include: treated timber (H5), concrete block, Besser block, concrete poured in place, Keystone or Allan Block modular systems, and gabion baskets. Timber is common for heights under 1.2 m; engineered systems for taller walls."}},{"@type":"Question","name":"How much does a retaining wall cost per metre in NZ?","acceptedAnswer":{"@type":"Answer","text":"A basic timber retaining wall in NZ costs $300\u2013$500/lm (up to 1 m high). Concrete block walls run $500\u2013$900/lm. For walls over 1.5 m requiring engineering, expect $1,000\u2013$2,000+/lm depending on height, fill, and access."}},{"@type":"Question","name":"How deep do retaining wall posts need to be in NZ?","acceptedAnswer":{"@type":"Answer","text":"As a rule of thumb, treated timber posts should be embedded to at least 1/3 of the exposed height (minimum 600 mm in solid ground). Engineer design typically specifies depth and post size based on soil pressure calculations."}}]}]}</script>
     <meta name="google-adsense-account" content="ca-pub-8059857496012230">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="/static/css/style.css">
@@ -197,6 +197,45 @@ function calcRetain(){
 - Ag-pipe at the base with outlets every 3–4m</p>
 <p>Use our <a href="/calculators/earthworks-calculator.html">Earthworks Calculator</a> to estimate excavation volumes.</p>
             </div>
+
+            
+            <section class="faq-section" style="margin-top:2rem">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">Do I need a building consent for a retaining wall in NZ?</button>
+                        <div class="faq-answer" hidden><p>Retaining walls over 1.5 m high (or 1 m near a boundary or a structure) generally require a building consent in NZ. Some councils have lower thresholds. Always check with your local council before construction.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">What materials are used for retaining walls in NZ?</button>
+                        <div class="faq-answer" hidden><p>Common NZ retaining wall materials include: treated timber (H5), concrete block, Besser block, concrete poured in place, Keystone or Allan Block modular systems, and gabion baskets. Timber is common for heights under 1.2 m; engineered systems for taller walls.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">How much does a retaining wall cost per metre in NZ?</button>
+                        <div class="faq-answer" hidden><p>A basic timber retaining wall in NZ costs $300–$500/lm (up to 1 m high). Concrete block walls run $500–$900/lm. For walls over 1.5 m requiring engineering, expect $1,000–$2,000+/lm depending on height, fill, and access.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">How deep do retaining wall posts need to be in NZ?</button>
+                        <div class="faq-answer" hidden><p>As a rule of thumb, treated timber posts should be embedded to at least 1/3 of the exposed height (minimum 600 mm in solid ground). Engineer design typically specifies depth and post size based on soil pressure calculations.</p></div>
+                    </div>
+                    
+                </div>
+            </section>
+            <script>
+            document.querySelectorAll('.faq-question').forEach(function(btn){
+                btn.addEventListener('click',function(){
+                    var ans=this.nextElementSibling;
+                    var open=this.getAttribute('aria-expanded')==='true';
+                    this.setAttribute('aria-expanded',!open);
+                    if(open){ans.hidden=true;}else{ans.hidden=false;}
+                });
+            });
+            </script>
+            
         </main>
 
         <aside class="sidebar">

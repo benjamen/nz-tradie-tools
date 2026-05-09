@@ -80,6 +80,15 @@ calculator_html: |
     r.style.display="";
   }
   </script>
+faqs:
+  - q: 'What is voltage drop and why does it matter in NZ electrical installations?'
+    a: 'Voltage drop is the reduction in voltage along a cable due to resistance. AS/NZS 3000:2018 limits voltage drop to 5% from the supply point to the point of use. Excessive voltage drop causes poor equipment performance and motor overheating.'
+  - q: 'How do I calculate voltage drop for a NZ electrical circuit?'
+    a: 'Vd = 2 × I × L × R/1000, where I = current (A), L = cable length (m), R = resistance of cable conductor (Ω/km from AS/NZS 3008). For a 20 A circuit, 30 m of 2.5 mm² cable: Vd = 2 × 20 × 30 × 7.41/1000 = 8.9 V (4.0% of 230 V).'
+  - q: 'When does voltage drop require upsizing the cable in NZ?'
+    a: 'If calculated voltage drop exceeds 5% (11.5 V on a 230 V supply), you must use a larger cable cross-section. Increase to the next standard size (e.g. 2.5 mm² to 4 mm²) and recalculate until within limit.'
+  - q: 'Does AS/NZS 3000 voltage drop apply to solar PV circuits in NZ?'
+    a: 'Yes. DC wiring from solar panels to the inverter should also be designed for less than 3% voltage drop (some designers use 1–2%) to minimise energy losses. AC output circuits follow the standard 5% limit.'
 ---
 
 ## Voltage Drop in NZ Electrical Installations

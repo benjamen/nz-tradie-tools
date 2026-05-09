@@ -99,6 +99,15 @@ calculator_html: |
     r.style.display='';
   }
   </script>
+faqs:
+  - q: 'What are the NZ Healthy Homes Standards for rental properties?'
+    a: 'The five Healthy Homes Standards require landlords to provide: adequate heating (heat pump or equivalent), ceiling and underfloor insulation to H1 spec, effective ventilation (extractor fans), draught stopping, and moisture ingress prevention.'
+  - q: 'When do Healthy Homes Standards apply in NZ?'
+    a: 'From 1 July 2024, all private rental properties must comply with all five Healthy Homes Standards. Landlords who don''t comply face fines of up to $7,200 per breach.'
+  - q: 'How much does it cost to comply with Healthy Homes Standards?'
+    a: 'Average compliance cost for a typical NZ rental property is $3,000–$8,000. Properties needing a new heat pump ($2,000–$5,000), full insulation ($2,000–$4,000), and extractor fans ($300–$600) are at the upper end.'
+  - q: 'What heating is required under NZ Healthy Homes?'
+    a: 'The heating standard requires a fixed heater capable of heating the main living room to at least 18°C on the coldest days. A heat pump is the most common solution — it must be sized correctly using the MBIE heating assessment tool.'
 ---
 
 ## NZ Healthy Homes Standards — What Tradies Need to Know

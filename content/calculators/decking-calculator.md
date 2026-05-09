@@ -43,6 +43,15 @@ calculator_html: |
     document.getElementById('d-result').style.display='';
   }
   </script>
+faqs:
+  - q: 'How much timber do I need for a 20 m² deck in NZ?'
+    a: 'A 20 m² deck using 140×45 mm decking boards at 5 mm gaps needs approximately 140 running metres of decking (about 28 × 5.1 m lengths). Add 10% for end cuts and wastage.'
+  - q: 'How much does a deck cost to build in NZ?'
+    a: 'A simple ground-level treated pine deck in NZ costs approximately $800–$1,400/m² supply and install. A composite or hardwood deck with stairs and handrails can reach $1,800–$3,000/m².'
+  - q: 'Do I need a building consent for a deck in NZ?'
+    a: 'Decks less than 1.5 m above ground and under 20 m² are typically exempt from building consent. Decks attached to a dwelling, above 1.5 m, or over 20 m² generally require consent from your local council.'
+  - q: 'What timber treatment is needed for NZ outdoor decking?'
+    a: 'NZS 3602 requires H3.2 preservative-treated timber for decking in NZ (above ground, exposed). For areas in contact with ground or water, H4 or H5 treatment is required.'
 ---
 
 ## Decking Calculator for NZ Builders
