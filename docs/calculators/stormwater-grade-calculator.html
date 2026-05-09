@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NZ Stormwater & Wastewater Pipe Grade Calculator — NZ Tradie Tools</title>
+    <meta name="description" content="Calculate minimum pipe fall and check compliance with NZ Building Code E1/E2 and AS/NZS 3500.3 drainage standard for stormwater and foul drainage.">
+    <meta property="og:title" content="NZ Stormwater & Wastewater Pipe Grade Calculator — NZ Tradie Tools">
+    <meta property="og:description" content="Calculate minimum pipe fall and check compliance with NZ Building Code E1/E2 and AS/NZS 3500.3 drainage standard for stormwater and foul drainage.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradietools.nz/calculators/stormwater-grade-calculator.html">
+    <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NZ Stormwater & Wastewater Pipe Grade Calculator — NZ Tradie Tools">
+    <meta name="twitter:description" content="Calculate minimum pipe fall and check compliance with NZ Building Code E1/E2 and AS/NZS 3500.3 drainage standard for stormwater and foul drainage.">
+    <meta property="og:image" content="https://tradietools.nz/static/img/social-card.svg">
+    <meta name="twitter:image" content="https://tradietools.nz/static/img/social-card.svg">
+    <link rel="canonical" href="https://tradietools.nz/calculators/stormwater-grade-calculator.html">
+    <link rel="alternate" type="application/rss+xml" title="NZ Tradie Tools — Articles" href="https://tradietools.nz/rss.xml">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"NZ Stormwater \u0026 Wastewater Pipe Grade Calculator","description":"Calculate minimum pipe fall and check compliance with NZ Building Code E1/E2 and AS/NZS 3500.3 drainage standard for stormwater and foul drainage.","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://tradietools.nz/calculators/stormwater-grade-calculator.html","offers":{"@type":"Offer","price":"0","priceCurrency":"NZD"},"author":{"@type":"Organization","name":"NZ Tradie Tools","url":"https://tradietools.nz"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tradietools.nz"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://tradietools.nz/calculators/"},{"@type":"ListItem","position":3,"name":"NZ Stormwater \u0026 Wastewater Pipe Grade Calculator","item":"https://tradietools.nz/calculators/stormwater-grade-calculator.html"}]}]}</script>
+    <meta name="google-adsense-account" content="ca-pub-8059857496012230">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8059857496012230" crossorigin="anonymous"></script>
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJW7HLW8D8"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BJW7HLW8D8');</script>
+    
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                
+                <a href="/">Home</a>
+                
+                <a href="/trades/">Find a Tradie</a>
+                
+                <a href="/jobs/">Job Costs</a>
+                
+                <a href="/calculators/">Calculators</a>
+                
+                <a href="/articles/">Articles</a>
+                
+                <a href="/templates/">Templates</a>
+                
+                <a href="/faq/">FAQ</a>
+                
+                <a href="/glossary/">Glossary</a>
+                
+                <a href="/contact/">Contact</a>
+                
+            </nav>
+            <script>
+            (function(){
+                var t=document.querySelector('.nav-toggle'),n=document.getElementById('main-nav');
+                if(!t||!n)return;
+                t.addEventListener('click',function(){
+                    var o=n.classList.toggle('is-open');
+                    t.setAttribute('aria-expanded',o);
+                });
+                document.addEventListener('click',function(e){
+                    if(!t.contains(e.target)&&!n.contains(e.target)){
+                        n.classList.remove('is-open');
+                        t.setAttribute('aria-expanded','false');
+                    }
+                });
+            })();
+            </script>
+        </div>
+    </header>
+
+    <div class="container page-layout">
+        <main class="main-content">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="/">Home</a> &rsaquo;
+                <a href="/calculators/">Calculators</a> &rsaquo;
+                <span>NZ Stormwater & Wastewater Pipe Grade Calculator</span>
+            </nav>
+            <h1>NZ Stormwater & Wastewater Pipe Grade Calculator</h1>
+            <p class="lead">Calculate minimum pipe fall and check compliance with NZ Building Code E1/E2 and AS/NZS 3500.3 drainage standard for stormwater and foul drainage.</p>
+
+            
+            <ins class="adsbygoogle ad-banner" style="display:block" data-ad-client="ca-pub-8059857496012230" data-ad-slot="" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            
+
+            <div class="calculator-wrapper">
+                <div class="calc-grid">
+  <div class="calc-group">
+    <label>Drain type</label>
+    <select id="sg-type" onchange="calcSG()">
+      <option value="foul">Foul / wastewater drain</option>
+      <option value="storm">Stormwater drain</option>
+    </select>
+  </div>
+  <div class="calc-group">
+    <label>Pipe diameter (mm)</label>
+    <select id="sg-diameter" onchange="calcSG()">
+      <option value="100">100mm</option>
+      <option value="150">150mm</option>
+      <option value="225">225mm</option>
+      <option value="300">300mm</option>
+      <option value="375">375mm</option>
+      <option value="450">450mm</option>
+    </select>
+  </div>
+  <div class="calc-group">
+    <label>Pipe material</label>
+    <select id="sg-material" onchange="calcSG()">
+      <option value="upvc">uPVC (smooth bore)</option>
+      <option value="concrete">Concrete / vitrified clay</option>
+      <option value="hdpe">HDPE</option>
+    </select>
+  </div>
+  <div class="calc-group">
+    <label>Drain run length (m)</label>
+    <input type="number" id="sg-length" placeholder="e.g. 12" oninput="calcSG()">
+  </div>
+  <div class="calc-group">
+    <label>Proposed fall (mm drop over run)</label>
+    <input type="number" id="sg-fall" placeholder="e.g. 150" oninput="calcSG()">
+  </div>
+</div>
+<div class="calc-result" id="sg-result" style="display:none">
+  <h3>Drain Grade Result</h3>
+  <div class="result-row"><span>Proposed grade</span><span id="sg-r-grade"></span></div>
+  <div class="result-row"><span>AS/NZS 3500 minimum grade</span><span id="sg-r-mingrade"></span></div>
+  <div class="result-row"><span>Minimum fall over this run</span><span id="sg-r-minfall"></span></div>
+  <div class="result-row"><span>Compliance</span><span id="sg-r-comply"></span></div>
+  <div style="margin-top:.75rem;background:#f0f4ff;border-radius:6px;padding:.75rem;font-size:.85rem">
+    <strong>Self-cleaning velocity:</strong> Grades steeper than 1:40 achieve self-cleaning velocity in most foul drains. Flat grades below 1:100 risk solids settling and blockages.
+  </div>
+</div>
+<script>
+function calcSG(){
+  var type=document.getElementById("sg-type").value;
+  var dia=parseInt(document.getElementById("sg-diameter").value)||100;
+  var mat=document.getElementById("sg-material").value;
+  var len=parseFloat(document.getElementById("sg-length").value)||0;
+  var fall=parseFloat(document.getElementById("sg-fall").value)||0;
+  var r=document.getElementById("sg-result");
+  if(!len||!fall){r.style.display="none";return;}
+  var grade=len/fall;
+  var minGrade;
+  if(type==="foul"){
+    if(dia<=100)minGrade=mat==="concrete"?55:50;
+    else if(dia<=150)minGrade=mat==="concrete"?80:70;
+    else if(dia<=225)minGrade=100;
+    else minGrade=150;
+  }else{
+    if(dia<=100)minGrade=100;
+    else if(dia<=150)minGrade=150;
+    else if(dia<=225)minGrade=200;
+    else minGrade=300;
+  }
+  var minFall=(len/minGrade*1000).toFixed(0);
+  var pass=grade<=minGrade;
+  document.getElementById("sg-r-grade").textContent="1:"+grade.toFixed(0)+" ("+((fall/len)*100).toFixed(2)+"%)";
+  document.getElementById("sg-r-mingrade").textContent="1:"+minGrade+" (AS/NZS 3500.3)";
+  document.getElementById("sg-r-minfall").textContent=minFall+"mm over "+len+"m";
+  document.getElementById("sg-r-comply").innerHTML=pass
+    ?"<span style="color:#22543d;font-weight:600">✓ Compliant — grade meets minimum</span>"
+    :"<span style="color:#c53030;font-weight:600">✗ Too flat — increase fall to "+minFall+"mm minimum</span>";
+  r.style.display="";
+}
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="nz-drain-grade-standards-asnzs-35003">NZ Drain Grade Standards — AS/NZS 3500.3</h2>
+<p>Minimum drain grades in NZ are specified in <strong>AS/NZS 3500.3 Plumbing and Drainage — Stormwater Drainage</strong>, which forms part of the NZ Building Code under clause E1 (Surface Water) and E2 (External Moisture).</p>
+<h3 id="minimum-grades-for-foul-drains-wastewater">Minimum Grades for Foul Drains (Wastewater)</h3>
+<table>
+<thead>
+<tr>
+<th>Pipe size</th>
+<th>uPVC minimum grade</th>
+<th>Concrete/Clay minimum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100mm</td>
+<td>1:50</td>
+<td>1:55</td>
+</tr>
+<tr>
+<td>150mm</td>
+<td>1:70</td>
+<td>1:80</td>
+</tr>
+<tr>
+<td>225mm</td>
+<td>1:100</td>
+<td>1:100</td>
+</tr>
+<tr>
+<td>300mm+</td>
+<td>1:150</td>
+<td>1:150</td>
+</tr>
+</tbody>
+</table>
+<h3 id="minimum-grades-for-stormwater-drains">Minimum Grades for Stormwater Drains</h3>
+<p>Stormwater drains can generally be flatter than foul drains:</p>
+<table>
+<thead>
+<tr>
+<th>Pipe size</th>
+<th>Minimum grade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100mm</td>
+<td>1:100</td>
+</tr>
+<tr>
+<td>150mm</td>
+<td>1:150</td>
+</tr>
+<tr>
+<td>225mm</td>
+<td>1:200</td>
+</tr>
+<tr>
+<td>300mm+</td>
+<td>1:300</td>
+</tr>
+</tbody>
+</table>
+<h3 id="self-cleaning-velocity">Self-Cleaning Velocity</h3>
+<p>The minimum grades above are set to achieve <strong>self-cleaning velocity</strong> — typically 0.7 m/s for foul drains. At this flow rate, solids are carried along rather than settling. Drains flatter than the minimum will block repeatedly.</p>
+<h3 id="when-engineering-is-required">When Engineering Is Required</h3>
+<p>Drains that cannot achieve minimum grades due to site constraints may require engineering solutions — pump stations, vacuum drainage, or pressure systems. Always flag this to the client before starting work, as it significantly affects cost.</p>
+<p>All drainage work must be performed by a <strong>registered drainlayer</strong> and inspected by the local council before backfilling. Self-certification is being expanded but as of 2026, council inspection is still required for most buried drainage.</p>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:#0f172a;color:#fff;border:none">
+                <img src="https://fastcrew.nz/assets/fastcrew/images/Fastcrewlogo-light.png" alt="FastCrew" style="height:28px;margin-bottom:.75rem;display:block">
+                <p style="color:rgba(255,255,255,.88);font-size:.85rem;margin-bottom:.6rem">The only tradie app built for NZ compliance.</p>
+                <ul style="color:rgba(255,255,255,.82);font-size:.82rem;margin:0 0 1rem;padding-left:1.1rem">
+                    <li>AI-powered quoting</li>
+                    <li>H&amp;S compliance &amp; SWMS</li>
+                    <li>Jobs, quotes &amp; invoicing</li>
+                    <li>Xero + Stripe · From $39/mo</li>
+                </ul>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#ea6325;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Start free trial →</a>
+                <p style="color:rgba(255,255,255,.5);font-size:.75rem;text-align:center;margin:.5rem 0 0">14-day free trial · No credit card required</p>
+            </div>
+            
+            
+            <div class="sidebar-widget">
+                <h3>Related Guides</h3>
+                <ul>
+                    
+                    <li><a href="/articles/new-plumbing-self-certification-nz.html">Understanding the New Plumbing Self-Certification Scheme for NZ Tradies</a></li>
+                    
+                    <li><a href="/articles/new-lead-free-plumbing-standards-nz.html">New Lead-Free Plumbing Standards: What NZ Plumbers Need to Know</a></li>
+                    
+                </ul>
+            </div>
+            
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator.html">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator.html">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator.html">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator.html">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator.html">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://fastcrew.nz" rel="noopener" target="_blank">Fastcrew — All-in-One Tradie App</a></li>
+                    <li><a href="https://www.xero.com/nz/" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">NZ Tradie Tools</p>
+                <p>Free calculators, templates and guides for New Zealand tradies.</p>
+                <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
+            </div>
+            <div style="text-align:right">
+                <p><a href="/glossary/">Tradie Glossary</a></p>
+                <p><a href="/privacy/">Privacy Policy</a></p>
+                <p><a href="/contact/">Contact</a></p>
+                <p style="margin-top:.5rem">&copy; 2026 NZ Tradie Tools</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

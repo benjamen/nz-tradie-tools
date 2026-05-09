@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NZ Scaffolding Hire vs Buy Calculator — NZ Tradie Tools</title>
+    <meta name="description" content="Compare the cost of hiring vs buying scaffolding for NZ tradies — roofing, painting, cladding and maintenance jobs.">
+    <meta property="og:title" content="NZ Scaffolding Hire vs Buy Calculator — NZ Tradie Tools">
+    <meta property="og:description" content="Compare the cost of hiring vs buying scaffolding for NZ tradies — roofing, painting, cladding and maintenance jobs.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradietools.nz/calculators/scaffolding-hire-calculator.html">
+    <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NZ Scaffolding Hire vs Buy Calculator — NZ Tradie Tools">
+    <meta name="twitter:description" content="Compare the cost of hiring vs buying scaffolding for NZ tradies — roofing, painting, cladding and maintenance jobs.">
+    <meta property="og:image" content="https://tradietools.nz/static/img/social-card.svg">
+    <meta name="twitter:image" content="https://tradietools.nz/static/img/social-card.svg">
+    <link rel="canonical" href="https://tradietools.nz/calculators/scaffolding-hire-calculator.html">
+    <link rel="alternate" type="application/rss+xml" title="NZ Tradie Tools — Articles" href="https://tradietools.nz/rss.xml">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"NZ Scaffolding Hire vs Buy Calculator","description":"Compare the cost of hiring vs buying scaffolding for NZ tradies \u2014 roofing, painting, cladding and maintenance jobs.","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://tradietools.nz/calculators/scaffolding-hire-calculator.html","offers":{"@type":"Offer","price":"0","priceCurrency":"NZD"},"author":{"@type":"Organization","name":"NZ Tradie Tools","url":"https://tradietools.nz"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tradietools.nz"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://tradietools.nz/calculators/"},{"@type":"ListItem","position":3,"name":"NZ Scaffolding Hire vs Buy Calculator","item":"https://tradietools.nz/calculators/scaffolding-hire-calculator.html"}]}]}</script>
+    <meta name="google-adsense-account" content="ca-pub-8059857496012230">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8059857496012230" crossorigin="anonymous"></script>
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJW7HLW8D8"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BJW7HLW8D8');</script>
+    
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                
+                <a href="/">Home</a>
+                
+                <a href="/trades/">Find a Tradie</a>
+                
+                <a href="/jobs/">Job Costs</a>
+                
+                <a href="/calculators/">Calculators</a>
+                
+                <a href="/articles/">Articles</a>
+                
+                <a href="/templates/">Templates</a>
+                
+                <a href="/faq/">FAQ</a>
+                
+                <a href="/glossary/">Glossary</a>
+                
+                <a href="/contact/">Contact</a>
+                
+            </nav>
+            <script>
+            (function(){
+                var t=document.querySelector('.nav-toggle'),n=document.getElementById('main-nav');
+                if(!t||!n)return;
+                t.addEventListener('click',function(){
+                    var o=n.classList.toggle('is-open');
+                    t.setAttribute('aria-expanded',o);
+                });
+                document.addEventListener('click',function(e){
+                    if(!t.contains(e.target)&&!n.contains(e.target)){
+                        n.classList.remove('is-open');
+                        t.setAttribute('aria-expanded','false');
+                    }
+                });
+            })();
+            </script>
+        </div>
+    </header>
+
+    <div class="container page-layout">
+        <main class="main-content">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="/">Home</a> &rsaquo;
+                <a href="/calculators/">Calculators</a> &rsaquo;
+                <span>NZ Scaffolding Hire vs Buy Calculator</span>
+            </nav>
+            <h1>NZ Scaffolding Hire vs Buy Calculator</h1>
+            <p class="lead">Compare the cost of hiring vs buying scaffolding for NZ tradies — roofing, painting, cladding and maintenance jobs.</p>
+
+            
+            <ins class="adsbygoogle ad-banner" style="display:block" data-ad-client="ca-pub-8059857496012230" data-ad-slot="" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            
+
+            <div class="calculator-wrapper">
+                <div class="calc-tabs">
+  <button class="calc-tab active" onclick="switchSC('hire')">Hire Cost Calculator</button>
+  <button class="calc-tab" onclick="switchSC('compare')">Hire vs Buy Comparison</button>
+</div>
+<div id="sc-hire">
+  <div class="calc-grid">
+    <div class="calc-group">
+      <label>Building perimeter to scaffold (m)</label>
+      <input type="number" id="sc-perim" placeholder="e.g. 40" oninput="calcSCHire()">
+    </div>
+    <div class="calc-group">
+      <label>Building height (m)</label>
+      <input type="number" id="sc-height" placeholder="e.g. 5.5" step="0.5" oninput="calcSCHire()">
+    </div>
+    <div class="calc-group">
+      <label>Hire duration (weeks)</label>
+      <input type="number" id="sc-weeks" placeholder="e.g. 3" oninput="calcSCHire()">
+    </div>
+    <div class="calc-group">
+      <label>Region</label>
+      <select id="sc-region" onchange="calcSCHire()">
+        <option value="1.2">Auckland</option>
+        <option value="1.1">Wellington</option>
+        <option value="1.0">Christchurch / Hamilton</option>
+        <option value="0.9">Regional NZ</option>
+      </select>
+    </div>
+  </div>
+  <div class="calc-result" id="sc-hire-result" style="display:none">
+    <h3>Scaffolding Hire Estimate</h3>
+    <div class="result-row"><span>Scaffold area</span><span id="sc-r-area"></span></div>
+    <div class="result-row"><span>Erect &amp; dismantle cost (est.)</span><span id="sc-r-ed"></span></div>
+    <div class="result-row"><span>Weekly hire rate (est.)</span><span id="sc-r-weekly"></span></div>
+    <div class="result-row"><span>Hire charge (<span id="sc-r-wks"></span> weeks)</span><span id="sc-r-hire-total"></span></div>
+    <div class="result-row" style="font-weight:700;border-top:2px solid #0055a5;padding-top:.5rem"><span>Total estimated hire cost</span><span id="sc-r-total"></span></div>
+    <p style="font-size:.8rem;color:#666;margin-top:.75rem">WorkSafe NZ requires scaffolding for work above 5m. Costs include basic guardrails — edge protection and full enclosure cost more. Get 3 quotes for large jobs.</p>
+  </div>
+</div>
+<div id="sc-compare" style="display:none">
+  <div class="calc-grid">
+    <div class="calc-group">
+      <label>Average hire cost per job — $</label>
+      <input type="number" id="sc-avg-hire" placeholder="e.g. 2500" oninput="calcSCCompare()">
+    </div>
+    <div class="calc-group">
+      <label>Jobs per year requiring scaffolding</label>
+      <input type="number" id="sc-jobs" placeholder="e.g. 15" oninput="calcSCCompare()">
+    </div>
+    <div class="calc-group">
+      <label>Purchase price of scaffolding set — $</label>
+      <input type="number" id="sc-buy-price" placeholder="e.g. 18000" oninput="calcSCCompare()">
+    </div>
+    <div class="calc-group">
+      <label>Years to compare</label>
+      <input type="number" id="sc-years" value="5" min="1" max="15" oninput="calcSCCompare()">
+    </div>
+  </div>
+  <div class="calc-result" id="sc-compare-result" style="display:none">
+    <h3>Hire vs Buy — <span id="sc-r-cmp-years"></span>-Year Comparison</h3>
+    <div class="result-row"><span>Total hire cost over period</span><span id="sc-r-cmp-hire" style="color:#c53030"></span></div>
+    <div class="result-row"><span>Purchase price</span><span id="sc-r-cmp-buy"></span></div>
+    <div class="result-row"><span>Estimated maintenance / storage</span><span id="sc-r-cmp-maint"></span></div>
+    <div class="result-row"><span>Total ownership cost</span><span id="sc-r-cmp-own-total" style="color:#c53030"></span></div>
+    <div class="result-row" style="font-weight:700;border-top:2px solid #0055a5;padding-top:.5rem"><span>Break-even point</span><span id="sc-r-cmp-breakeven"></span></div>
+    <div id="sc-r-verdict" style="margin-top:.75rem;border-radius:6px;padding:.75rem;font-size:.85rem"></div>
+  </div>
+</div>
+<script>
+function fmt(n){return "$"+Math.round(n).toLocaleString("en-NZ");}
+function switchSC(m){
+  document.querySelectorAll(".calc-tab").forEach(function(b,i){b.classList.toggle("active",i===(m==="hire"?0:1));});
+  document.getElementById("sc-hire").style.display=m==="hire"?"":"none";
+  document.getElementById("sc-compare").style.display=m==="compare"?"":"none";
+}
+function calcSCHire(){
+  var perim=parseFloat(document.getElementById("sc-perim").value)||0;
+  var height=parseFloat(document.getElementById("sc-height").value)||0;
+  var weeks=parseFloat(document.getElementById("sc-weeks").value)||0;
+  var reg=parseFloat(document.getElementById("sc-region").value)||1.0;
+  var r=document.getElementById("sc-hire-result");
+  if(!perim||!height||!weeks){r.style.display="none";return;}
+  var area=perim*height;
+  var ed=(800+area*8)*reg;
+  var weeklyRate=(300+area*4)*reg;
+  var hireTotal=weeklyRate*weeks;
+  var total=ed+hireTotal;
+  document.getElementById("sc-r-area").textContent=area.toFixed(0)+"m²";
+  document.getElementById("sc-r-ed").textContent=fmt(ed);
+  document.getElementById("sc-r-weekly").textContent=fmt(weeklyRate)+"/wk";
+  document.getElementById("sc-r-wks").textContent=weeks;
+  document.getElementById("sc-r-hire-total").textContent=fmt(hireTotal);
+  document.getElementById("sc-r-total").textContent=fmt(total);
+  r.style.display="";
+}
+function calcSCCompare(){
+  var avgHire=parseFloat(document.getElementById("sc-avg-hire").value)||0;
+  var jobs=parseFloat(document.getElementById("sc-jobs").value)||0;
+  var buyPrice=parseFloat(document.getElementById("sc-buy-price").value)||0;
+  var years=parseFloat(document.getElementById("sc-years").value)||5;
+  var r=document.getElementById("sc-compare-result");
+  if(!avgHire||!jobs||!buyPrice){r.style.display="none";return;}
+  var annualHire=avgHire*jobs;
+  var totalHire=annualHire*years;
+  var maint=buyPrice*0.05*years;
+  var ownTotal=buyPrice+maint;
+  var breakeven=buyPrice/(annualHire-buyPrice*0.05);
+  document.getElementById("sc-r-cmp-years").textContent=years;
+  document.getElementById("sc-r-cmp-hire").textContent=fmt(totalHire);
+  document.getElementById("sc-r-cmp-buy").textContent=fmt(buyPrice);
+  document.getElementById("sc-r-cmp-maint").textContent=fmt(maint);
+  document.getElementById("sc-r-cmp-own-total").textContent=fmt(ownTotal);
+  document.getElementById("sc-r-cmp-breakeven").textContent=breakeven>0?breakeven.toFixed(1)+" years":"Never (hire is cheaper)";
+  var v=document.getElementById("sc-r-verdict");
+  if(totalHire>ownTotal){
+    v.style.background="#f0fff4";v.style.border="1px solid #68d391";
+    v.innerHTML="<strong style="color:#22543d">Buying is cheaper</strong> over "+years+" years — you save "+fmt(totalHire-ownTotal)+" compared to hiring. Buying makes sense if you have consistent volume.";
+  }else{
+    v.style.background="#f0f4ff";v.style.border="1px solid #90cdf4";
+    v.innerHTML="<strong>Hiring is cheaper</strong> over "+years+" years — you save "+fmt(ownTotal-totalHire)+" by hiring rather than buying. Unless volume increases, continue hiring.";
+  }
+  r.style.display="";
+}
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="scaffolding-for-nz-tradies-when-you-need-it-and-what-it-costs">Scaffolding for NZ Tradies — When You Need It and What It Costs</h2>
+<p>Scaffolding is a significant cost on roofing, painting, and cladding jobs — and one that's frequently underquoted.</p>
+<h3 id="worksafe-nz-requirements">WorkSafe NZ Requirements</h3>
+<p>Under the <strong>Health and Safety at Work Act 2015</strong> and <strong>WorkSafe NZ guidelines</strong>, scaffolding is required for work at height over <strong>5 metres</strong> where a person could fall. This covers:</p>
+<ul>
+<li>Full re-roofing work on two-storey homes</li>
+<li>Exterior painting above the first storey</li>
+<li>Cladding installation and repair on multi-storey buildings</li>
+<li>Fascia and gutter work on tall buildings</li>
+</ul>
+<p>Working above 5m without compliant edge protection is a notifiable event if someone falls — and prosecution under the HSWA can result in significant fines.</p>
+<h3 id="typical-scaffolding-hire-costs-in-nz-2026">Typical Scaffolding Hire Costs in NZ (2026)</h3>
+<table>
+<thead>
+<tr>
+<th>Building size</th>
+<th>Erect/dismantle</th>
+<th>Per week hire</th>
+<th>2-week total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Small single storey (perimeter ~30m)</td>
+<td>$600–$900</td>
+<td>$350–$500</td>
+<td>$1,300–$1,900</td>
+</tr>
+<tr>
+<td>Standard 2-storey (perimeter ~50m)</td>
+<td>$1,200–$1,800</td>
+<td>$600–$900</td>
+<td>$2,400–$3,600</td>
+</tr>
+<tr>
+<td>Large 2-storey (perimeter ~70m)</td>
+<td>$1,800–$2,800</td>
+<td>$900–$1,400</td>
+<td>$3,600–$5,600</td>
+</tr>
+</tbody>
+</table>
+<h3 id="buying-vs-hiring">Buying vs Hiring</h3>
+<p>Buying scaffolding makes sense if you do more than 8–12 scaffold jobs per year consistently. Below that threshold, hire costs are typically lower once you factor in storage space, maintenance, and the capital tied up in equipment.</p>
+<p>A used scaffold set suitable for residential work can be purchased for $10,000–$25,000 from trade suppliers or auction sites. Factor in annual inspection costs (required under the Health and Safety at Work (General Risk and Workplace Management) Regulations 2016) and storage.</p>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:#0f172a;color:#fff;border:none">
+                <img src="https://fastcrew.nz/assets/fastcrew/images/Fastcrewlogo-light.png" alt="FastCrew" style="height:28px;margin-bottom:.75rem;display:block">
+                <p style="color:rgba(255,255,255,.88);font-size:.85rem;margin-bottom:.6rem">The only tradie app built for NZ compliance.</p>
+                <ul style="color:rgba(255,255,255,.82);font-size:.82rem;margin:0 0 1rem;padding-left:1.1rem">
+                    <li>AI-powered quoting</li>
+                    <li>H&amp;S compliance &amp; SWMS</li>
+                    <li>Jobs, quotes &amp; invoicing</li>
+                    <li>Xero + Stripe · From $39/mo</li>
+                </ul>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#ea6325;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Start free trial →</a>
+                <p style="color:rgba(255,255,255,.5);font-size:.75rem;text-align:center;margin:.5rem 0 0">14-day free trial · No credit card required</p>
+            </div>
+            
+            
+            <div class="sidebar-widget">
+                <h3>Related Guides</h3>
+                <ul>
+                    
+                    <li><a href="/articles/health-and-safety-guide-nz-tradies.html">NZ Tradie Health & Safety Guide 2026 — HSWA Obligations for Small Trade Businesses</a></li>
+                    
+                    <li><a href="/articles/roofer-pricing-guide-nz-2026.html">How Much Do Roofers Charge in NZ? 2026 Roofing Costs & Rates</a></li>
+                    
+                    <li><a href="/articles/painter-pricing-guide-nz-2026.html">How Much Do Painters Charge in NZ? 2026 Rates & Project Costs</a></li>
+                    
+                </ul>
+            </div>
+            
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator.html">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator.html">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator.html">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator.html">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator.html">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://fastcrew.nz" rel="noopener" target="_blank">Fastcrew — All-in-One Tradie App</a></li>
+                    <li><a href="https://www.xero.com/nz/" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">NZ Tradie Tools</p>
+                <p>Free calculators, templates and guides for New Zealand tradies.</p>
+                <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
+            </div>
+            <div style="text-align:right">
+                <p><a href="/glossary/">Tradie Glossary</a></p>
+                <p><a href="/privacy/">Privacy Policy</a></p>
+                <p><a href="/contact/">Contact</a></p>
+                <p style="margin-top:.5rem">&copy; 2026 NZ Tradie Tools</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

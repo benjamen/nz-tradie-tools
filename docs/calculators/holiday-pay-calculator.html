@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NZ Holiday Pay Calculator — Holidays Act 2003 — NZ Tradie Tools</title>
+    <meta name="description" content="Calculate correct annual leave payouts for NZ employees using the Holidays Act 2003 — greater of ordinary weekly pay or average weekly earnings.">
+    <meta property="og:title" content="NZ Holiday Pay Calculator — Holidays Act 2003 — NZ Tradie Tools">
+    <meta property="og:description" content="Calculate correct annual leave payouts for NZ employees using the Holidays Act 2003 — greater of ordinary weekly pay or average weekly earnings.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradietools.nz/calculators/holiday-pay-calculator.html">
+    <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NZ Holiday Pay Calculator — Holidays Act 2003 — NZ Tradie Tools">
+    <meta name="twitter:description" content="Calculate correct annual leave payouts for NZ employees using the Holidays Act 2003 — greater of ordinary weekly pay or average weekly earnings.">
+    <meta property="og:image" content="https://tradietools.nz/static/img/social-card.svg">
+    <meta name="twitter:image" content="https://tradietools.nz/static/img/social-card.svg">
+    <link rel="canonical" href="https://tradietools.nz/calculators/holiday-pay-calculator.html">
+    <link rel="alternate" type="application/rss+xml" title="NZ Tradie Tools — Articles" href="https://tradietools.nz/rss.xml">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"NZ Holiday Pay Calculator \u2014 Holidays Act 2003","description":"Calculate correct annual leave payouts for NZ employees using the Holidays Act 2003 \u2014 greater of ordinary weekly pay or average weekly earnings.","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://tradietools.nz/calculators/holiday-pay-calculator.html","offers":{"@type":"Offer","price":"0","priceCurrency":"NZD"},"author":{"@type":"Organization","name":"NZ Tradie Tools","url":"https://tradietools.nz"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tradietools.nz"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://tradietools.nz/calculators/"},{"@type":"ListItem","position":3,"name":"NZ Holiday Pay Calculator \u2014 Holidays Act 2003","item":"https://tradietools.nz/calculators/holiday-pay-calculator.html"}]}]}</script>
+    <meta name="google-adsense-account" content="ca-pub-8059857496012230">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8059857496012230" crossorigin="anonymous"></script>
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJW7HLW8D8"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BJW7HLW8D8');</script>
+    
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                
+                <a href="/">Home</a>
+                
+                <a href="/trades/">Find a Tradie</a>
+                
+                <a href="/jobs/">Job Costs</a>
+                
+                <a href="/calculators/">Calculators</a>
+                
+                <a href="/articles/">Articles</a>
+                
+                <a href="/templates/">Templates</a>
+                
+                <a href="/faq/">FAQ</a>
+                
+                <a href="/glossary/">Glossary</a>
+                
+                <a href="/contact/">Contact</a>
+                
+            </nav>
+            <script>
+            (function(){
+                var t=document.querySelector('.nav-toggle'),n=document.getElementById('main-nav');
+                if(!t||!n)return;
+                t.addEventListener('click',function(){
+                    var o=n.classList.toggle('is-open');
+                    t.setAttribute('aria-expanded',o);
+                });
+                document.addEventListener('click',function(e){
+                    if(!t.contains(e.target)&&!n.contains(e.target)){
+                        n.classList.remove('is-open');
+                        t.setAttribute('aria-expanded','false');
+                    }
+                });
+            })();
+            </script>
+        </div>
+    </header>
+
+    <div class="container page-layout">
+        <main class="main-content">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="/">Home</a> &rsaquo;
+                <a href="/calculators/">Calculators</a> &rsaquo;
+                <span>NZ Holiday Pay Calculator — Holidays Act 2003</span>
+            </nav>
+            <h1>NZ Holiday Pay Calculator — Holidays Act 2003</h1>
+            <p class="lead">Calculate correct annual leave payouts for NZ employees using the Holidays Act 2003 — greater of ordinary weekly pay or average weekly earnings.</p>
+
+            
+            <ins class="adsbygoogle ad-banner" style="display:block" data-ad-client="ca-pub-8059857496012230" data-ad-slot="" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            
+
+            <div class="calculator-wrapper">
+                <div class="calc-tabs">
+  <button class="calc-tab active" onclick="switchHP('annual')">Annual Leave</button>
+  <button class="calc-tab" onclick="switchHP('casual')">Casual / Termination Pay</button>
+</div>
+<div id="hp-annual">
+  <div class="calc-grid">
+    <div class="calc-group">
+      <label>Ordinary weekly pay (regular weekly wage) — $</label>
+      <input type="number" id="hp-owp" placeholder="e.g. 1250" oninput="calcHP()">
+    </div>
+    <div class="calc-group">
+      <label>Total gross earnings last 12 months — $</label>
+      <input type="number" id="hp-annual-gross" placeholder="e.g. 68000" oninput="calcHP()">
+      <small>Include overtime, allowances, and bonuses that are regular and expected.</small>
+    </div>
+    <div class="calc-group">
+      <label>Weeks of leave being paid</label>
+      <input type="number" id="hp-weeks" value="4" min="1" max="52" oninput="calcHP()">
+    </div>
+  </div>
+  <div class="calc-result" id="hp-annual-result" style="display:none">
+    <h3>Annual Leave Payment</h3>
+    <div class="result-row"><span>Ordinary weekly pay (OWP)</span><span id="hp-r-owp"></span></div>
+    <div class="result-row"><span>Average weekly earnings (AWE over 12 months)</span><span id="hp-r-awe"></span></div>
+    <div class="result-row"><span>Applicable rate (greater of OWP or AWE)</span><span id="hp-r-rate" style="font-weight:700;color:#0055a5"></span></div>
+    <div class="result-row" style="font-weight:700;border-top:2px solid #0055a5;padding-top:.5rem"><span>Total leave payment</span><span id="hp-r-total"></span></div>
+    <div style="margin-top:.75rem;background:#f0f4ff;border-radius:6px;padding:.75rem;font-size:.85rem" id="hp-r-note"></div>
+  </div>
+</div>
+<div id="hp-casual" style="display:none">
+  <div class="calc-grid">
+    <div class="calc-group" style="grid-column:1/-1">
+      <label>Total gross earnings for the period — $</label>
+      <input type="number" id="hp-casual-gross" placeholder="e.g. 25000" oninput="calcHPCasual()">
+      <small>Casual employees accrue annual leave at 8% of gross earnings.</small>
+    </div>
+  </div>
+  <div class="calc-result" id="hp-casual-result" style="display:none">
+    <h3>Casual / Termination Leave Entitlement</h3>
+    <div class="result-row"><span>Gross earnings</span><span id="hpc-r-gross"></span></div>
+    <div class="result-row"><span>Annual leave entitlement (8%)</span><span id="hpc-r-leave" style="font-weight:700"></span></div>
+  </div>
+</div>
+<script>
+function fmt(n){return "$"+n.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g,",");}
+function switchHP(m){
+  document.querySelectorAll(".calc-tab").forEach(function(b,i){b.classList.toggle("active",i===(m==="annual"?0:1));});
+  document.getElementById("hp-annual").style.display=m==="annual"?"":"none";
+  document.getElementById("hp-casual").style.display=m==="casual"?"":"none";
+}
+function calcHP(){
+  var owp=parseFloat(document.getElementById("hp-owp").value)||0;
+  var gross=parseFloat(document.getElementById("hp-annual-gross").value)||0;
+  var weeks=parseFloat(document.getElementById("hp-weeks").value)||4;
+  var r=document.getElementById("hp-annual-result");
+  if(!owp||!gross){r.style.display="none";return;}
+  var awe=gross/52;
+  var rate=Math.max(owp,awe);
+  var total=rate*weeks;
+  var useAWE=awe>owp;
+  document.getElementById("hp-r-owp").textContent=fmt(owp)+"/wk";
+  document.getElementById("hp-r-awe").textContent=fmt(awe)+"/wk";
+  document.getElementById("hp-r-rate").textContent=fmt(rate)+"/wk ("+(useAWE?"AWE applies":"OWP applies")+")";
+  document.getElementById("hp-r-total").textContent=fmt(total);
+  document.getElementById("hp-r-note").innerHTML=useAWE
+    ?"<strong>AWE applies:</strong> The employee's average weekly earnings ($"+fmt(awe)+") exceed their ordinary weekly pay ($"+fmt(owp)+"). Use the AWE rate. This often happens when an employee has worked significant overtime."
+    :"<strong>OWP applies:</strong> The ordinary weekly pay ($"+fmt(owp)+") equals or exceeds the average weekly earnings ($"+fmt(awe)+"). Use the OWP rate.";
+  r.style.display="";
+}
+function calcHPCasual(){
+  var gross=parseFloat(document.getElementById("hp-casual-gross").value)||0;
+  var r=document.getElementById("hp-casual-result");
+  if(!gross){r.style.display="none";return;}
+  document.getElementById("hpc-r-gross").textContent="$"+gross.toLocaleString("en-NZ");
+  document.getElementById("hpc-r-leave").textContent=fmt(gross*0.08);
+  r.style.display="";
+}
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="holiday-pay-under-the-holidays-act-2003">Holiday Pay Under the Holidays Act 2003</h2>
+<p>The Holidays Act 2003 is one of the most misunderstood pieces of employment law in NZ. Even large companies have been caught underpaying, resulting in millions in back-pay obligations.</p>
+<h3 id="the-golden-rule">The Golden Rule</h3>
+<p>Annual leave must be paid at the <strong>greater of</strong>:
+1. <strong>Ordinary Weekly Pay (OWP)</strong> — what the employee normally earns in a week, including regular allowances
+2. <strong>Average Weekly Earnings (AWE)</strong> — total gross earnings over the last 52 weeks ÷ 52</p>
+<p>This means that if an employee has worked significant overtime during the year, their leave rate must reflect that — not just their base wage.</p>
+<h3 id="whats-included-in-gross-earnings-for-awe">What's Included in Gross Earnings (for AWE)</h3>
+<ul>
+<li>Regular wages and salary</li>
+<li>Regular overtime (if it's a consistent pattern)</li>
+<li>Allowances that are regular and expected</li>
+<li>Commission if it's part of regular remuneration</li>
+</ul>
+<p><strong>Excluded:</strong> genuine one-off bonuses, reimbursements, penal rates for truly occasional overtime.</p>
+<h3 id="casual-employees">Casual Employees</h3>
+<p>Casual employees (no guaranteed hours) accrue leave differently:
+- They earn <strong>8% of gross earnings</strong> as annual leave loading, typically included in each pay
+- If 8% is included in hourly rate, it must be shown separately on payslips</p>
+<h3 id="the-risk-of-getting-it-wrong">The Risk of Getting It Wrong</h3>
+<p>Underpaying leave is a breach of the Employment Relations Act. MBIE can audit any employer, and back-pay must be paid with interest. Use <a href="https://www.employment.govt.nz/leave-and-holidays/annual-holidays/">Employment NZ's tools</a> to verify your calculations.</p>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:#0f172a;color:#fff;border:none">
+                <img src="https://fastcrew.nz/assets/fastcrew/images/Fastcrewlogo-light.png" alt="FastCrew" style="height:28px;margin-bottom:.75rem;display:block">
+                <p style="color:rgba(255,255,255,.88);font-size:.85rem;margin-bottom:.6rem">The only tradie app built for NZ compliance.</p>
+                <ul style="color:rgba(255,255,255,.82);font-size:.82rem;margin:0 0 1rem;padding-left:1.1rem">
+                    <li>AI-powered quoting</li>
+                    <li>H&amp;S compliance &amp; SWMS</li>
+                    <li>Jobs, quotes &amp; invoicing</li>
+                    <li>Xero + Stripe · From $39/mo</li>
+                </ul>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#ea6325;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Start free trial →</a>
+                <p style="color:rgba(255,255,255,.5);font-size:.75rem;text-align:center;margin:.5rem 0 0">14-day free trial · No credit card required</p>
+            </div>
+            
+            
+            <div class="sidebar-widget">
+                <h3>Related Guides</h3>
+                <ul>
+                    
+                    <li><a href="/articles/hiring-an-apprentice-nz-tradie-guide-2026.html">Hiring an Apprentice in NZ: The 2026 Guide for Tradies</a></li>
+                    
+                    <li><a href="/articles/minimum-wage-increase-april-2026-tradie-costs.html">NZ Minimum Wage Rises to $23.95 in April 2026: What It Means for Tradie Businesses</a></li>
+                    
+                </ul>
+            </div>
+            
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator.html">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator.html">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator.html">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator.html">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator.html">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://fastcrew.nz" rel="noopener" target="_blank">Fastcrew — All-in-One Tradie App</a></li>
+                    <li><a href="https://www.xero.com/nz/" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">NZ Tradie Tools</p>
+                <p>Free calculators, templates and guides for New Zealand tradies.</p>
+                <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
+            </div>
+            <div style="text-align:right">
+                <p><a href="/glossary/">Tradie Glossary</a></p>
+                <p><a href="/privacy/">Privacy Policy</a></p>
+                <p><a href="/contact/">Contact</a></p>
+                <p style="margin-top:.5rem">&copy; 2026 NZ Tradie Tools</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

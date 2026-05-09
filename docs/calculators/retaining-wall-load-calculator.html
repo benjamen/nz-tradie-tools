@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NZ Retaining Wall Soil Pressure Calculator — NZ Tradie Tools</title>
+    <meta name="description" content="Calculate active soil pressure and surcharge loads on retaining walls — and check whether engineering sign-off is required under NZ Building Code B1.">
+    <meta property="og:title" content="NZ Retaining Wall Soil Pressure Calculator — NZ Tradie Tools">
+    <meta property="og:description" content="Calculate active soil pressure and surcharge loads on retaining walls — and check whether engineering sign-off is required under NZ Building Code B1.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradietools.nz/calculators/retaining-wall-load-calculator.html">
+    <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NZ Retaining Wall Soil Pressure Calculator — NZ Tradie Tools">
+    <meta name="twitter:description" content="Calculate active soil pressure and surcharge loads on retaining walls — and check whether engineering sign-off is required under NZ Building Code B1.">
+    <meta property="og:image" content="https://tradietools.nz/static/img/social-card.svg">
+    <meta name="twitter:image" content="https://tradietools.nz/static/img/social-card.svg">
+    <link rel="canonical" href="https://tradietools.nz/calculators/retaining-wall-load-calculator.html">
+    <link rel="alternate" type="application/rss+xml" title="NZ Tradie Tools — Articles" href="https://tradietools.nz/rss.xml">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"NZ Retaining Wall Soil Pressure Calculator","description":"Calculate active soil pressure and surcharge loads on retaining walls \u2014 and check whether engineering sign-off is required under NZ Building Code B1.","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://tradietools.nz/calculators/retaining-wall-load-calculator.html","offers":{"@type":"Offer","price":"0","priceCurrency":"NZD"},"author":{"@type":"Organization","name":"NZ Tradie Tools","url":"https://tradietools.nz"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tradietools.nz"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://tradietools.nz/calculators/"},{"@type":"ListItem","position":3,"name":"NZ Retaining Wall Soil Pressure Calculator","item":"https://tradietools.nz/calculators/retaining-wall-load-calculator.html"}]}]}</script>
+    <meta name="google-adsense-account" content="ca-pub-8059857496012230">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8059857496012230" crossorigin="anonymous"></script>
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJW7HLW8D8"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BJW7HLW8D8');</script>
+    
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                
+                <a href="/">Home</a>
+                
+                <a href="/trades/">Find a Tradie</a>
+                
+                <a href="/jobs/">Job Costs</a>
+                
+                <a href="/calculators/">Calculators</a>
+                
+                <a href="/articles/">Articles</a>
+                
+                <a href="/templates/">Templates</a>
+                
+                <a href="/faq/">FAQ</a>
+                
+                <a href="/glossary/">Glossary</a>
+                
+                <a href="/contact/">Contact</a>
+                
+            </nav>
+            <script>
+            (function(){
+                var t=document.querySelector('.nav-toggle'),n=document.getElementById('main-nav');
+                if(!t||!n)return;
+                t.addEventListener('click',function(){
+                    var o=n.classList.toggle('is-open');
+                    t.setAttribute('aria-expanded',o);
+                });
+                document.addEventListener('click',function(e){
+                    if(!t.contains(e.target)&&!n.contains(e.target)){
+                        n.classList.remove('is-open');
+                        t.setAttribute('aria-expanded','false');
+                    }
+                });
+            })();
+            </script>
+        </div>
+    </header>
+
+    <div class="container page-layout">
+        <main class="main-content">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="/">Home</a> &rsaquo;
+                <a href="/calculators/">Calculators</a> &rsaquo;
+                <span>NZ Retaining Wall Soil Pressure Calculator</span>
+            </nav>
+            <h1>NZ Retaining Wall Soil Pressure Calculator</h1>
+            <p class="lead">Calculate active soil pressure and surcharge loads on retaining walls — and check whether engineering sign-off is required under NZ Building Code B1.</p>
+
+            
+            <ins class="adsbygoogle ad-banner" style="display:block" data-ad-client="ca-pub-8059857496012230" data-ad-slot="" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            
+
+            <div class="calculator-wrapper">
+                <div class="calc-grid">
+  <div class="calc-group">
+    <label>Wall height (m)</label>
+    <input type="number" id="rw-height" placeholder="e.g. 1.8" step="0.1" oninput="calcRW()">
+  </div>
+  <div class="calc-group">
+    <label>Soil type</label>
+    <select id="rw-soil" onchange="calcRW()">
+      <option value="0.33">Granular / free-draining (Ka=0.33)</option>
+      <option value="0.40">Silty clay (Ka=0.40)</option>
+      <option value="0.50">Soft clay / fill (Ka=0.50)</option>
+    </select>
+  </div>
+  <div class="calc-group">
+    <label>Soil unit weight (kN/m³)</label>
+    <select id="rw-density" onchange="calcRW()">
+      <option value="17">17 kN/m³ — dry granular</option>
+      <option value="19">19 kN/m³ — moist soil (typical NZ)</option>
+      <option value="20">20 kN/m³ — saturated / clay</option>
+    </select>
+  </div>
+  <div class="calc-group">
+    <label>Surcharge load on retained area</label>
+    <select id="rw-surcharge" onchange="calcRW()">
+      <option value="0">None (garden / grass only)</option>
+      <option value="5">Pedestrian only (5 kPa)</option>
+      <option value="10">Driveway (10 kPa)</option>
+      <option value="20">Parking / light vehicles (20 kPa)</option>
+      <option value="50">Heavy vehicles / structure (50 kPa)</option>
+    </select>
+  </div>
+  <div class="calc-group">
+    <label>Distance from wall to boundary / structure (m)</label>
+    <input type="number" id="rw-setback" placeholder="e.g. 1.5" step="0.1" oninput="calcRW()">
+  </div>
+</div>
+<div class="calc-result" id="rw-result" style="display:none">
+  <h3>Soil Pressure Estimate</h3>
+  <div class="result-row"><span>Active earth pressure at base (Rankine)</span><span id="rw-r-pressure"></span></div>
+  <div class="result-row"><span>Surcharge lateral pressure</span><span id="rw-r-surcharge"></span></div>
+  <div class="result-row"><span>Total lateral force per metre of wall</span><span id="rw-r-total"></span></div>
+  <div id="rw-consent" style="margin-top:1rem;border-radius:6px;padding:.75rem;font-size:.85rem"></div>
+  <p style="font-size:.8rem;color:#666;margin-top:.75rem">This is an indicative calculation only using Rankine's simplified theory. Always engage a geotechnical engineer for walls over 1.5m or near structures. This tool does not replace engineering assessment.</p>
+</div>
+<script>
+function calcRW(){
+  var H=parseFloat(document.getElementById("rw-height").value)||0;
+  var Ka=parseFloat(document.getElementById("rw-soil").value)||0.33;
+  var g=parseFloat(document.getElementById("rw-density").value)||19;
+  var q=parseFloat(document.getElementById("rw-surcharge").value)||0;
+  var setback=parseFloat(document.getElementById("rw-setback").value)||0;
+  var r=document.getElementById("rw-result");
+  if(!H){r.style.display="none";return;}
+  var Pa=0.5*Ka*g*H*H;
+  var Pq=Ka*q*H;
+  var total=Pa+Pq;
+  document.getElementById("rw-r-pressure").textContent=Pa.toFixed(1)+" kN/m";
+  document.getElementById("rw-r-surcharge").textContent=Pq.toFixed(1)+" kN/m";
+  document.getElementById("rw-r-total").textContent=total.toFixed(1)+" kN/m";
+  var cb=document.getElementById("rw-consent");
+  var needsConsent=H>1.5||(H>1.0&&setback<1.5);
+  var needsEngineer=H>2.0||q>10||(H>1.5&&q>5);
+  if(needsEngineer){
+    cb.style.background="#fff0f0";cb.style.border="1px solid #fc8181";
+    cb.innerHTML="<strong style="color:#c53030">Engineering sign-off required.</strong> Walls over 2m high, or with significant surcharge loads, require a geotechnical or structural engineer under NZBC B1. Provide engineering calculations to your BCA with the consent application.";
+  }else if(needsConsent){
+    cb.style.background="#fff8e1";cb.style.border="1px solid #f6c90e";
+    cb.innerHTML="<strong>Building consent likely required.</strong> Walls over 1.5m high (or over 1.0m within 1.5m of a boundary or structure) generally require building consent under the Building Act 2004. Check with your local council.";
+  }else{
+    cb.style.background="#f0fff4";cb.style.border="1px solid #68d391";
+    cb.innerHTML="<strong style="color:#22543d">Consent may not be required.</strong> Walls under 1.5m on private property may be exempt — but check with your local council, as exemptions vary. Even exempt walls must still meet NZBC structural standards.";
+  }
+  r.style.display="";
+}
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="nz-retaining-wall-consent-rules">NZ Retaining Wall Consent Rules</h2>
+<p>Retaining walls are one of the most common jobs where consent rules catch builders and landscapers out.</p>
+<h3 id="when-consent-is-required">When Consent Is Required</h3>
+<p>Under <strong>Schedule 1 of the Building Act 2004</strong>, building consent is generally required for retaining walls that:
+- Are <strong>over 1.5m high</strong>, or
+- Are <strong>over 1.0m high</strong> and within 1.5m of a boundary, structure, or public place</p>
+<p>Walls under 1.5m on open private property may qualify for an exemption — but "may" is the key word. Always confirm with your local council, as exemptions can be restricted by site conditions or district plan rules.</p>
+<h3 id="when-engineering-is-required">When Engineering Is Required</h3>
+<p>Any wall that requires consent will also need engineering input demonstrating compliance with <strong>NZBC B1 (Structure)</strong>. Typically this means:
+- A geotechnical site report (for walls over 2m, or on problematic soils)
+- Structural engineering calculations and drawings
+- Specification of materials, drainage, and construction method</p>
+<p>The cost of engineering (typically $1,500–$5,000) should be built into your quote.</p>
+<h3 id="the-soil-pressure-formula">The Soil Pressure Formula</h3>
+<p>This calculator uses <strong>Rankine's active earth pressure theory</strong> — the standard simplified method for estimating lateral soil loads on retaining walls:</p>
+<ul>
+<li>Active pressure: Pa = ½ × Ka × γ × H²</li>
+<li>Surcharge pressure: Pq = Ka × q × H</li>
+</ul>
+<p>Where Ka = coefficient of active earth pressure, γ = soil unit weight (kN/m³), H = wall height (m), q = surcharge pressure (kPa).</p>
+<p>This is indicative only — an actual engineering assessment considers drainage, seismic loads, foundation conditions, and construction method.</p>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:#0f172a;color:#fff;border:none">
+                <img src="https://fastcrew.nz/assets/fastcrew/images/Fastcrewlogo-light.png" alt="FastCrew" style="height:28px;margin-bottom:.75rem;display:block">
+                <p style="color:rgba(255,255,255,.88);font-size:.85rem;margin-bottom:.6rem">The only tradie app built for NZ compliance.</p>
+                <ul style="color:rgba(255,255,255,.82);font-size:.82rem;margin:0 0 1rem;padding-left:1.1rem">
+                    <li>AI-powered quoting</li>
+                    <li>H&amp;S compliance &amp; SWMS</li>
+                    <li>Jobs, quotes &amp; invoicing</li>
+                    <li>Xero + Stripe · From $39/mo</li>
+                </ul>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#ea6325;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Start free trial →</a>
+                <p style="color:rgba(255,255,255,.5);font-size:.75rem;text-align:center;margin:.5rem 0 0">14-day free trial · No credit card required</p>
+            </div>
+            
+            
+            <div class="sidebar-widget">
+                <h3>Related Guides</h3>
+                <ul>
+                    
+                    <li><a href="/articles/do-you-need-building-consent-nz.html">Do You Need Building Consent in NZ? A Tradie's Practical Guide</a></li>
+                    
+                </ul>
+            </div>
+            
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator.html">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator.html">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator.html">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator.html">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator.html">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://fastcrew.nz" rel="noopener" target="_blank">Fastcrew — All-in-One Tradie App</a></li>
+                    <li><a href="https://www.xero.com/nz/" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">NZ Tradie Tools</p>
+                <p>Free calculators, templates and guides for New Zealand tradies.</p>
+                <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
+            </div>
+            <div style="text-align:right">
+                <p><a href="/glossary/">Tradie Glossary</a></p>
+                <p><a href="/privacy/">Privacy Policy</a></p>
+                <p><a href="/contact/">Contact</a></p>
+                <p style="margin-top:.5rem">&copy; 2026 NZ Tradie Tools</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

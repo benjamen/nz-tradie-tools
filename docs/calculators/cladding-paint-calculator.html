@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NZ Weatherboard & Cladding Paint Calculator — NZ Tradie Tools</title>
+    <meta name="description" content="Calculate litres of primer, undercoat and topcoat needed for NZ weatherboard, Hardiplank and plaster cladding systems — using NZ supplier spread rates.">
+    <meta property="og:title" content="NZ Weatherboard & Cladding Paint Calculator — NZ Tradie Tools">
+    <meta property="og:description" content="Calculate litres of primer, undercoat and topcoat needed for NZ weatherboard, Hardiplank and plaster cladding systems — using NZ supplier spread rates.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradietools.nz/calculators/cladding-paint-calculator.html">
+    <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NZ Weatherboard & Cladding Paint Calculator — NZ Tradie Tools">
+    <meta name="twitter:description" content="Calculate litres of primer, undercoat and topcoat needed for NZ weatherboard, Hardiplank and plaster cladding systems — using NZ supplier spread rates.">
+    <meta property="og:image" content="https://tradietools.nz/static/img/social-card.svg">
+    <meta name="twitter:image" content="https://tradietools.nz/static/img/social-card.svg">
+    <link rel="canonical" href="https://tradietools.nz/calculators/cladding-paint-calculator.html">
+    <link rel="alternate" type="application/rss+xml" title="NZ Tradie Tools — Articles" href="https://tradietools.nz/rss.xml">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"NZ Weatherboard \u0026 Cladding Paint Calculator","description":"Calculate litres of primer, undercoat and topcoat needed for NZ weatherboard, Hardiplank and plaster cladding systems \u2014 using NZ supplier spread rates.","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://tradietools.nz/calculators/cladding-paint-calculator.html","offers":{"@type":"Offer","price":"0","priceCurrency":"NZD"},"author":{"@type":"Organization","name":"NZ Tradie Tools","url":"https://tradietools.nz"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tradietools.nz"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://tradietools.nz/calculators/"},{"@type":"ListItem","position":3,"name":"NZ Weatherboard \u0026 Cladding Paint Calculator","item":"https://tradietools.nz/calculators/cladding-paint-calculator.html"}]}]}</script>
+    <meta name="google-adsense-account" content="ca-pub-8059857496012230">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8059857496012230" crossorigin="anonymous"></script>
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJW7HLW8D8"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BJW7HLW8D8');</script>
+    
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                
+                <a href="/">Home</a>
+                
+                <a href="/trades/">Find a Tradie</a>
+                
+                <a href="/jobs/">Job Costs</a>
+                
+                <a href="/calculators/">Calculators</a>
+                
+                <a href="/articles/">Articles</a>
+                
+                <a href="/templates/">Templates</a>
+                
+                <a href="/faq/">FAQ</a>
+                
+                <a href="/glossary/">Glossary</a>
+                
+                <a href="/contact/">Contact</a>
+                
+            </nav>
+            <script>
+            (function(){
+                var t=document.querySelector('.nav-toggle'),n=document.getElementById('main-nav');
+                if(!t||!n)return;
+                t.addEventListener('click',function(){
+                    var o=n.classList.toggle('is-open');
+                    t.setAttribute('aria-expanded',o);
+                });
+                document.addEventListener('click',function(e){
+                    if(!t.contains(e.target)&&!n.contains(e.target)){
+                        n.classList.remove('is-open');
+                        t.setAttribute('aria-expanded','false');
+                    }
+                });
+            })();
+            </script>
+        </div>
+    </header>
+
+    <div class="container page-layout">
+        <main class="main-content">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="/">Home</a> &rsaquo;
+                <a href="/calculators/">Calculators</a> &rsaquo;
+                <span>NZ Weatherboard & Cladding Paint Calculator</span>
+            </nav>
+            <h1>NZ Weatherboard & Cladding Paint Calculator</h1>
+            <p class="lead">Calculate litres of primer, undercoat and topcoat needed for NZ weatherboard, Hardiplank and plaster cladding systems — using NZ supplier spread rates.</p>
+
+            
+            <ins class="adsbygoogle ad-banner" style="display:block" data-ad-client="ca-pub-8059857496012230" data-ad-slot="" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            
+
+            <div class="calculator-wrapper">
+                <div class="calc-grid">
+  <div class="calc-group">
+    <label>Cladding / surface type</label>
+    <select id="cp-type" onchange="calcCP()">
+      <option value="weatherboard-pine">Pine weatherboard (rough sawn)</option>
+      <option value="weatherboard-smooth">Smooth pine / cedar bevel back</option>
+      <option value="hardiplank">James Hardie Hardiplank</option>
+      <option value="plaster">Plaster / Rockcote / GIB Aqualine</option>
+      <option value="concrete-block">Concrete block / masonry</option>
+      <option value="gib-interior">GIB board (interior walls)</option>
+    </select>
+  </div>
+  <div class="calc-group">
+    <label>Total surface area (m²)</label>
+    <input type="number" id="cp-area" placeholder="e.g. 180" oninput="calcCP()">
+  </div>
+  <div class="calc-group">
+    <label>Job type</label>
+    <select id="cp-job" onchange="calcCP()">
+      <option value="new">New surface (full system)</option>
+      <option value="repaint">Repaint (no primer needed)</option>
+      <option value="partial">Spot repairs + repaint</option>
+    </select>
+  </div>
+  <div class="calc-group">
+    <label>Number of topcoats</label>
+    <select id="cp-coats" onchange="calcCP()">
+      <option value="2">2 coats (standard)</option>
+      <option value="3">3 coats (premium / new build)</option>
+    </select>
+  </div>
+</div>
+<div class="calc-result" id="cp-result" style="display:none">
+  <h3>Paint Requirements</h3>
+  <div class="result-row" style="font-weight:600"><span>Product</span><span>Litres needed</span><span>4L tins</span></div>
+  <div id="cp-r-primer-row" class="result-row"><span>Primer / sealer</span><span id="cp-r-primer"></span><span id="cp-r-primer-tins"></span></div>
+  <div id="cp-r-under-row" class="result-row"><span>Undercoat</span><span id="cp-r-under"></span><span id="cp-r-under-tins"></span></div>
+  <div class="result-row"><span id="cp-r-top-label">Topcoat (x<span id="cp-r-coats">2</span>)</span><span id="cp-r-top"></span><span id="cp-r-top-tins"></span></div>
+  <div class="result-row" style="font-weight:700;border-top:2px solid #0055a5;padding-top:.5rem"><span>Total paint volume</span><span id="cp-r-total"></span><span id="cp-r-total-tins"></span></div>
+  <p style="font-size:.8rem;color:#666;margin-top:.75rem">Spread rates based on NZ supplier data (Resene / Dulux trade guides). Add 10–15% for waste and touch-ups. Rough or absorbent surfaces will increase consumption.</p>
+</div>
+<script>
+var SURFACES={
+  "weatherboard-pine":{primerRate:6,underRate:8,topRate:10,hasPrimer:true,hasUnder:true,label:"Pine weatherboard (rough)"},
+  "weatherboard-smooth":{primerRate:8,underRate:10,topRate:12,hasPrimer:true,hasUnder:true,label:"Smooth weatherboard"},
+  "hardiplank":{primerRate:10,underRate:0,topRate:10,hasPrimer:true,hasUnder:false,label:"Hardiplank (factory primed, touch-up)"},
+  "plaster":{primerRate:10,underRate:0,topRate:10,hasPrimer:true,hasUnder:false,label:"Plaster / texture coat"},
+  "concrete-block":{primerRate:5,underRate:7,topRate:8,hasPrimer:true,hasUnder:true,label:"Concrete block"},
+  "gib-interior":{primerRate:12,underRate:0,topRate:12,hasPrimer:true,hasUnder:false,label:"GIB board interior"}
+};
+function tins(L){return Math.ceil(L/4);}
+function calcCP(){
+  var st=document.getElementById("cp-type").value;
+  var area=parseFloat(document.getElementById("cp-area").value)||0;
+  var job=document.getElementById("cp-job").value;
+  var coats=parseInt(document.getElementById("cp-coats").value)||2;
+  var r=document.getElementById("cp-result");
+  if(!area||!st){r.style.display="none";return;}
+  var s=SURFACES[st];
+  var primerL=0,underL=0,topL=0;
+  if(job==="new"){
+    primerL=s.hasPrimer?area/s.primerRate:0;
+    underL=s.hasUnder?area/s.underRate:0;
+    topL=area/s.topRate*coats;
+  }else if(job==="repaint"){
+    topL=area/s.topRate*coats;
+  }else{
+    primerL=s.hasPrimer?area*0.2/s.primerRate:0;
+    topL=area/s.topRate*coats;
+  }
+  var total=primerL+underL+topL;
+  var pr=document.getElementById("cp-r-primer-row");
+  var ur=document.getElementById("cp-r-under-row");
+  pr.style.display=primerL>0?"":"none";
+  ur.style.display=underL>0?"":"none";
+  document.getElementById("cp-r-primer").textContent=primerL.toFixed(1)+"L";
+  document.getElementById("cp-r-primer-tins").textContent=tins(primerL)+" tins";
+  document.getElementById("cp-r-under").textContent=underL.toFixed(1)+"L";
+  document.getElementById("cp-r-under-tins").textContent=tins(underL)+" tins";
+  document.getElementById("cp-r-coats").textContent=coats;
+  document.getElementById("cp-r-top").textContent=topL.toFixed(1)+"L";
+  document.getElementById("cp-r-top-tins").textContent=tins(topL)+" tins";
+  document.getElementById("cp-r-total").textContent=total.toFixed(1)+"L";
+  document.getElementById("cp-r-total-tins").textContent=tins(total)+" tins";
+  r.style.display="";
+}
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="paint-quantity-for-nz-cladding-systems">Paint Quantity for NZ Cladding Systems</h2>
+<p>Generic paint calculators use averaged spread rates that don't account for the significant differences between NZ cladding materials. Rough-sawn pine and smooth Hardiplank consume very different volumes of primer and topcoat.</p>
+<h3 id="nz-cladding-spread-rates">NZ Cladding Spread Rates</h3>
+<p>Spread rates (m² per litre) vary by surface porosity and texture. These are based on Resene and Dulux NZ trade data sheets:</p>
+<table>
+<thead>
+<tr>
+<th>Surface</th>
+<th>Primer</th>
+<th>Topcoat (per coat)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rough-sawn pine weatherboard</td>
+<td>6 m²/L</td>
+<td>10 m²/L</td>
+</tr>
+<tr>
+<td>Smooth bevel-back / cedar</td>
+<td>8 m²/L</td>
+<td>12 m²/L</td>
+</tr>
+<tr>
+<td>Hardiplank (factory primed)</td>
+<td>Touch-up only</td>
+<td>10 m²/L</td>
+</tr>
+<tr>
+<td>Plaster / texture coat</td>
+<td>10 m²/L</td>
+<td>10 m²/L</td>
+</tr>
+<tr>
+<td>Concrete block</td>
+<td>5 m²/L</td>
+<td>8 m²/L</td>
+</tr>
+<tr>
+<td>GIB board (interior)</td>
+<td>12 m²/L</td>
+<td>12 m²/L</td>
+</tr>
+</tbody>
+</table>
+<h3 id="hardiplank-system-notes">Hardiplank System Notes</h3>
+<p>James Hardie Hardiplank comes factory-primed. For new installations, only touch-up priming of cut ends and fixing points is required — not a full primer coat. Two topcoats of an approved acrylic paint system then complete the system. Hardie recommends specific approved paint products — check <a href="https://www.jameshardie.co.nz">jameshardie.co.nz</a> for the current approved products list.</p>
+<h3 id="coastal-and-geothermal-areas">Coastal and Geothermal Areas</h3>
+<p>For properties within 500m of the coast or in geothermal zones (Rotorua area), use a paint system specifically rated for high-corrosion environments. Both Resene and Dulux have specific products for these conditions — standard exterior acrylic will degrade much faster.</p>
+<h3 id="primer-selection">Primer Selection</h3>
+<ul>
+<li><strong>Bare pine</strong>: Resene Wood Primer or Dulux Weathershield Primer Sealer</li>
+<li><strong>Hardiplank cut ends</strong>: Hardie Primer (specifically formulated for fibre cement)</li>
+<li><strong>Plaster</strong>: alkali-resistant primer (standard acrylics can saponify on fresh plaster)</li>
+<li><strong>Concrete</strong>: concrete sealer / block filler before topcoat</li>
+</ul>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:#0f172a;color:#fff;border:none">
+                <img src="https://fastcrew.nz/assets/fastcrew/images/Fastcrewlogo-light.png" alt="FastCrew" style="height:28px;margin-bottom:.75rem;display:block">
+                <p style="color:rgba(255,255,255,.88);font-size:.85rem;margin-bottom:.6rem">The only tradie app built for NZ compliance.</p>
+                <ul style="color:rgba(255,255,255,.82);font-size:.82rem;margin:0 0 1rem;padding-left:1.1rem">
+                    <li>AI-powered quoting</li>
+                    <li>H&amp;S compliance &amp; SWMS</li>
+                    <li>Jobs, quotes &amp; invoicing</li>
+                    <li>Xero + Stripe · From $39/mo</li>
+                </ul>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#ea6325;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Start free trial →</a>
+                <p style="color:rgba(255,255,255,.5);font-size:.75rem;text-align:center;margin:.5rem 0 0">14-day free trial · No credit card required</p>
+            </div>
+            
+            
+            <div class="sidebar-widget">
+                <h3>Related Guides</h3>
+                <ul>
+                    
+                    <li><a href="/articles/painter-pricing-guide-nz-2026.html">How Much Do Painters Charge in NZ? 2026 Rates & Project Costs</a></li>
+                    
+                    <li><a href="/articles/how-to-price-a-job-nz-tradie-guide.html">How to Price a Job: The Complete NZ Tradie Guide</a></li>
+                    
+                </ul>
+            </div>
+            
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator.html">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator.html">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator.html">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator.html">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator.html">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://fastcrew.nz" rel="noopener" target="_blank">Fastcrew — All-in-One Tradie App</a></li>
+                    <li><a href="https://www.xero.com/nz/" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">NZ Tradie Tools</p>
+                <p>Free calculators, templates and guides for New Zealand tradies.</p>
+                <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
+            </div>
+            <div style="text-align:right">
+                <p><a href="/glossary/">Tradie Glossary</a></p>
+                <p><a href="/privacy/">Privacy Policy</a></p>
+                <p><a href="/contact/">Contact</a></p>
+                <p style="margin-top:.5rem">&copy; 2026 NZ Tradie Tools</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

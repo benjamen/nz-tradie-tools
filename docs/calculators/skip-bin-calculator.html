@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NZ Skip Bin Size & Cost Estimator — NZ Tradie Tools</title>
+    <meta name="description" content="Estimate skip bin size and waste disposal cost for NZ construction jobs — including the NZ waste levy per tonne.">
+    <meta property="og:title" content="NZ Skip Bin Size & Cost Estimator — NZ Tradie Tools">
+    <meta property="og:description" content="Estimate skip bin size and waste disposal cost for NZ construction jobs — including the NZ waste levy per tonne.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradietools.nz/calculators/skip-bin-calculator.html">
+    <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NZ Skip Bin Size & Cost Estimator — NZ Tradie Tools">
+    <meta name="twitter:description" content="Estimate skip bin size and waste disposal cost for NZ construction jobs — including the NZ waste levy per tonne.">
+    <meta property="og:image" content="https://tradietools.nz/static/img/social-card.svg">
+    <meta name="twitter:image" content="https://tradietools.nz/static/img/social-card.svg">
+    <link rel="canonical" href="https://tradietools.nz/calculators/skip-bin-calculator.html">
+    <link rel="alternate" type="application/rss+xml" title="NZ Tradie Tools — Articles" href="https://tradietools.nz/rss.xml">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"NZ Skip Bin Size \u0026 Cost Estimator","description":"Estimate skip bin size and waste disposal cost for NZ construction jobs \u2014 including the NZ waste levy per tonne.","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://tradietools.nz/calculators/skip-bin-calculator.html","offers":{"@type":"Offer","price":"0","priceCurrency":"NZD"},"author":{"@type":"Organization","name":"NZ Tradie Tools","url":"https://tradietools.nz"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tradietools.nz"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://tradietools.nz/calculators/"},{"@type":"ListItem","position":3,"name":"NZ Skip Bin Size \u0026 Cost Estimator","item":"https://tradietools.nz/calculators/skip-bin-calculator.html"}]}]}</script>
+    <meta name="google-adsense-account" content="ca-pub-8059857496012230">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8059857496012230" crossorigin="anonymous"></script>
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJW7HLW8D8"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BJW7HLW8D8');</script>
+    
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                
+                <a href="/">Home</a>
+                
+                <a href="/trades/">Find a Tradie</a>
+                
+                <a href="/jobs/">Job Costs</a>
+                
+                <a href="/calculators/">Calculators</a>
+                
+                <a href="/articles/">Articles</a>
+                
+                <a href="/templates/">Templates</a>
+                
+                <a href="/faq/">FAQ</a>
+                
+                <a href="/glossary/">Glossary</a>
+                
+                <a href="/contact/">Contact</a>
+                
+            </nav>
+            <script>
+            (function(){
+                var t=document.querySelector('.nav-toggle'),n=document.getElementById('main-nav');
+                if(!t||!n)return;
+                t.addEventListener('click',function(){
+                    var o=n.classList.toggle('is-open');
+                    t.setAttribute('aria-expanded',o);
+                });
+                document.addEventListener('click',function(e){
+                    if(!t.contains(e.target)&&!n.contains(e.target)){
+                        n.classList.remove('is-open');
+                        t.setAttribute('aria-expanded','false');
+                    }
+                });
+            })();
+            </script>
+        </div>
+    </header>
+
+    <div class="container page-layout">
+        <main class="main-content">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="/">Home</a> &rsaquo;
+                <a href="/calculators/">Calculators</a> &rsaquo;
+                <span>NZ Skip Bin Size & Cost Estimator</span>
+            </nav>
+            <h1>NZ Skip Bin Size & Cost Estimator</h1>
+            <p class="lead">Estimate skip bin size and waste disposal cost for NZ construction jobs — including the NZ waste levy per tonne.</p>
+
+            
+            <ins class="adsbygoogle ad-banner" style="display:block" data-ad-client="ca-pub-8059857496012230" data-ad-slot="" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            
+
+            <div class="calculator-wrapper">
+                <div class="calc-grid">
+  <div class="calc-group">
+    <label>Job type</label>
+    <select id="sb-job" onchange="calcSB()">
+      <option value="bathroom">Bathroom renovation</option>
+      <option value="kitchen">Kitchen renovation</option>
+      <option value="roof">Roof replacement</option>
+      <option value="demo-room">Room demolition</option>
+      <option value="full-reno">Full house renovation</option>
+      <option value="new-build">New build site clearance</option>
+      <option value="landscaping">Landscaping / earthworks</option>
+      <option value="custom">Custom volume</option>
+    </select>
+  </div>
+  <div class="calc-group">
+    <label>Floor area (m²) or quantity</label>
+    <input type="number" id="sb-area" placeholder="e.g. 15" oninput="calcSB()">
+  </div>
+  <div class="calc-group">
+    <label>Region</label>
+    <select id="sb-region" onchange="calcSB()">
+      <option value="1.2">Auckland</option>
+      <option value="1.1">Wellington</option>
+      <option value="1.0">Christchurch</option>
+      <option value="0.95">Hamilton / Tauranga</option>
+      <option value="0.9">Regional NZ</option>
+    </select>
+  </div>
+  <div id="sb-custom-group" style="display:none" class="calc-group" style="grid-column:1/-1">
+    <label>Volume of waste (m³)</label>
+    <input type="number" id="sb-vol" placeholder="e.g. 6" oninput="calcSB()">
+  </div>
+</div>
+<div class="calc-result" id="sb-result" style="display:none">
+  <h3>Waste Disposal Estimate</h3>
+  <div class="result-row"><span>Estimated volume</span><span id="sb-r-vol"></span></div>
+  <div class="result-row"><span>Estimated weight</span><span id="sb-r-weight"></span></div>
+  <div class="result-row"><span>Recommended skip size</span><span id="sb-r-skip" style="font-weight:700;color:#0055a5"></span></div>
+  <div class="result-row"><span>Skip hire estimate (incl. GST)</span><span id="sb-r-hire"></span></div>
+  <div class="result-row"><span>NZ waste levy (est. $60/tonne)</span><span id="sb-r-levy"></span></div>
+  <div class="result-row" style="font-weight:700;border-top:2px solid #0055a5;padding-top:.5rem"><span>Total estimated disposal cost</span><span id="sb-r-total"></span></div>
+  <p style="font-size:.8rem;color:#666;margin-top:.75rem">Estimates only. Costs vary by location, waste type and current tip prices. Hazardous waste (asbestos, treated timber) has additional disposal requirements and costs.</p>
+</div>
+<script>
+function fmt(n){return "$"+Math.round(n).toLocaleString("en-NZ");}
+var JOB_DATA={
+  bathroom:{vol:3,density:0.7,label:"Bathroom reno"},
+  kitchen:{vol:2.5,density:0.6,label:"Kitchen reno"},
+  roof:{vol:5,density:0.5,label:"Roof replacement"},
+  "demo-room":{vol:6,density:0.8,label:"Room demolition"},
+  "full-reno":{vol:20,density:0.7,label:"Full reno"},
+  "new-build":{vol:8,density:0.6,label:"New build clearance"},
+  landscaping:{vol:10,density:1.4,label:"Landscaping"},
+  custom:{vol:0,density:0.7,label:"Custom"}
+};
+var SKIPS=[
+  {size:"2m³ mini skip",cap:2,price:220},
+  {size:"3m³ skip",cap:3,price:280},
+  {size:"6m³ skip",cap:6,price:380},
+  {size:"9m³ skip",cap:9,price:480},
+  {size:"12m³ skip",cap:12,price:580},
+  {size:"15m³ hook bin",cap:15,price:680}
+];
+document.getElementById("sb-job").addEventListener("change",function(){
+  document.getElementById("sb-custom-group").style.display=this.value==="custom"?"":"none";
+});
+function calcSB(){
+  var job=document.getElementById("sb-job").value;
+  var area=parseFloat(document.getElementById("sb-area").value)||1;
+  var reg=parseFloat(document.getElementById("sb-region").value)||1.0;
+  var jd=JOB_DATA[job];
+  var r=document.getElementById("sb-result");
+  var vol;
+  if(job==="custom"){
+    vol=parseFloat(document.getElementById("sb-vol").value)||0;
+  }else{
+    var areaFactor=["bathroom","kitchen","roof","demo-room"].includes(job)?area/15:area/100;
+    vol=jd.vol*Math.max(0.5,areaFactor);
+  }
+  if(!vol||vol<0){r.style.display="none";return;}
+  var weight=vol*jd.density;
+  var skip=SKIPS.find(function(s){return s.cap>=vol;})||SKIPS[SKIPS.length-1];
+  var levy=weight*60;
+  var hire=skip.price*reg;
+  var total=hire+levy;
+  document.getElementById("sb-r-vol").textContent=vol.toFixed(1)+"m³";
+  document.getElementById("sb-r-weight").textContent=weight.toFixed(1)+" tonnes (est.)";
+  document.getElementById("sb-r-skip").textContent=skip.size;
+  document.getElementById("sb-r-hire").textContent=fmt(hire);
+  document.getElementById("sb-r-levy").textContent=fmt(levy);
+  document.getElementById("sb-r-total").textContent=fmt(total);
+  r.style.display="";
+}
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="nz-construction-waste-disposal-costs">NZ Construction Waste Disposal Costs</h2>
+<p>Waste disposal is one of the most commonly underquoted line items in NZ construction. On a full bathroom renovation, skip hire and tip fees can easily reach $800–$1,200 — and if you've quoted a fixed price without allowing for it, that comes out of your margin.</p>
+<h3 id="the-nz-waste-levy">The NZ Waste Levy</h3>
+<p>Under the Waste Minimisation Act 2008, a levy of <strong>$60 per tonne</strong> applies to all waste disposed of at municipal landfills in NZ. This levy is built into tip fees charged by waste companies and skip hire operators.</p>
+<p>The levy is increasing — check <a href="https://environment.govt.nz/what-government-is-doing/areas-of-work/waste/waste-levy/">MfE's waste levy page</a> for the current rate.</p>
+<h3 id="skip-bin-sizes-in-nz">Skip Bin Sizes in NZ</h3>
+<table>
+<thead>
+<tr>
+<th>Skip size</th>
+<th>Typical use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2m³ mini skip</td>
+<td>Small kitchen reno, clean-up</td>
+</tr>
+<tr>
+<td>3m³</td>
+<td>Bathroom strip-out, small jobs</td>
+</tr>
+<tr>
+<td>6m³</td>
+<td>Roof replacement, large reno rooms</td>
+</tr>
+<tr>
+<td>9m³</td>
+<td>Full house declutter, multi-room reno</td>
+</tr>
+<tr>
+<td>12–15m³ hook bin</td>
+<td>New build, demolition, landscaping</td>
+</tr>
+</tbody>
+</table>
+<h3 id="hazardous-waste">Hazardous Waste</h3>
+<p><strong>Asbestos</strong> — any suspected asbestos must be tested before disposal. Licensed asbestos removalists must handle anything above trace amounts. Disposal at approved facilities costs significantly more than standard waste.</p>
+<p><strong>Treated timber (CCA)</strong> — old timber treated with copper-chrome-arsenic cannot go to standard landfill. It must go to a consented facility. Know what you're dealing with before quoting demolition work.</p>
+<p>Include waste disposal as a separate line item on every quote — it protects your margin and is transparent for the client.</p>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:#0f172a;color:#fff;border:none">
+                <img src="https://fastcrew.nz/assets/fastcrew/images/Fastcrewlogo-light.png" alt="FastCrew" style="height:28px;margin-bottom:.75rem;display:block">
+                <p style="color:rgba(255,255,255,.88);font-size:.85rem;margin-bottom:.6rem">The only tradie app built for NZ compliance.</p>
+                <ul style="color:rgba(255,255,255,.82);font-size:.82rem;margin:0 0 1rem;padding-left:1.1rem">
+                    <li>AI-powered quoting</li>
+                    <li>H&amp;S compliance &amp; SWMS</li>
+                    <li>Jobs, quotes &amp; invoicing</li>
+                    <li>Xero + Stripe · From $39/mo</li>
+                </ul>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#ea6325;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Start free trial →</a>
+                <p style="color:rgba(255,255,255,.5);font-size:.75rem;text-align:center;margin:.5rem 0 0">14-day free trial · No credit card required</p>
+            </div>
+            
+            
+            <div class="sidebar-widget">
+                <h3>Related Guides</h3>
+                <ul>
+                    
+                    <li><a href="/articles/how-to-price-a-job-nz-tradie-guide.html">How to Price a Job: The Complete NZ Tradie Guide</a></li>
+                    
+                    <li><a href="/articles/managing-rising-material-costs-nz-2026.html">Managing Rising Material Costs: A Guide for NZ Tradies in 2026</a></li>
+                    
+                    <li><a href="/articles/builder-pricing-guide-nz-2026.html">How Much Do Builders Charge in NZ? 2026 Pricing Guide</a></li>
+                    
+                </ul>
+            </div>
+            
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator.html">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator.html">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator.html">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator.html">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator.html">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://fastcrew.nz" rel="noopener" target="_blank">Fastcrew — All-in-One Tradie App</a></li>
+                    <li><a href="https://www.xero.com/nz/" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">NZ Tradie Tools</p>
+                <p>Free calculators, templates and guides for New Zealand tradies.</p>
+                <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
+            </div>
+            <div style="text-align:right">
+                <p><a href="/glossary/">Tradie Glossary</a></p>
+                <p><a href="/privacy/">Privacy Policy</a></p>
+                <p><a href="/contact/">Contact</a></p>
+                <p style="margin-top:.5rem">&copy; 2026 NZ Tradie Tools</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
