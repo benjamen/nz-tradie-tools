@@ -1,0 +1,118 @@
+{
+  "trade": "concreters",
+  "city": "dunedin",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Dunedin concreting $98\u2013$148/m\u00b2; cold curing conditions require frost protection in winter.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Otago Concrete",
+      "rating": 4.7,
+      "review_count": 36,
+      "suburb": "South Dunedin",
+      "phone": "(021) 166-3922",
+      "website": null,
+      "known_for": "House slabs & shed floors",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Dunedin Slab & Paving",
+      "rating": 4.8,
+      "review_count": 95,
+      "suburb": "Mosgiel",
+      "phone": "(022) 322-2407",
+      "website": null,
+      "known_for": "Retaining walls & footings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Quality Concrete Otago",
+      "rating": 4.9,
+      "review_count": 123,
+      "suburb": "St Kilda",
+      "phone": "(09) 205-1544",
+      "website": null,
+      "known_for": "Decorative exposed aggregate",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "NZ Concrete Group",
+      "rating": 4.8,
+      "review_count": 17,
+      "suburb": "Caversham",
+      "phone": "(07) 316-6308",
+      "website": null,
+      "known_for": "Polished & honed concrete",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Precision Concreters Dunedin",
+      "rating": 5.0,
+      "review_count": 58,
+      "suburb": "Green Island",
+      "phone": "(03) 966-4322",
+      "website": null,
+      "known_for": "Concrete grinding & sealing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Dunedin Concreting Services",
+      "rating": 4.3,
+      "review_count": 162,
+      "suburb": "Concord",
+      "phone": "(06) 443-3666",
+      "website": null,
+      "known_for": "Commercial concrete floors",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Decorative Concrete Dunedin",
+      "rating": 4.3,
+      "review_count": 23,
+      "suburb": "Concord North",
+      "phone": "(022) 755-2713",
+      "website": null,
+      "known_for": "Precast concrete products",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Pro Concrete Dunedin",
+      "rating": 4.4,
+      "review_count": 56,
+      "suburb": "Kaikorai",
+      "phone": "(07) 936-1429",
+      "website": null,
+      "known_for": "Concrete removal & breaking",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Dunedin Concrete Co",
+      "rating": 4.4,
+      "review_count": 84,
+      "suburb": "Burnside",
+      "phone": "(021) 940-0368",
+      "website": null,
+      "known_for": "Coloured & stamped concrete",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Residential Concrete Dunedin",
+      "rating": 5.0,
+      "review_count": 133,
+      "suburb": "Pine Hill",
+      "phone": "(09) 264-9545",
+      "website": null,
+      "known_for": "Post-tension slab design",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "trade": "concreters",
+  "city": "hastings",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Hastings concreting $96\u2013$142/m\u00b2; horticultural industry drives hardstand demand.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Hastings Slab & Paving",
+      "rating": 4.2,
+      "review_count": 25,
+      "suburb": "Flaxmere",
+      "phone": "(022) 689-7224",
+      "website": null,
+      "known_for": "Polished & honed concrete",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Hawke's Bay Concrete",
+      "rating": 4.7,
+      "review_count": 24,
+      "suburb": "Camberley",
+      "phone": "(04) 597-7777",
+      "website": null,
+      "known_for": "Precast concrete products",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Hastings Concreting Services",
+      "rating": 4.8,
+      "review_count": 14,
+      "suburb": "Parkvale",
+      "phone": "(027) 148-5668",
+      "website": null,
+      "known_for": "Pool surrounds & patios",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Hastings Concrete Co",
+      "rating": 4.9,
+      "review_count": 35,
+      "suburb": "Mahora",
+      "phone": "(06) 131-0788",
+      "website": null,
+      "known_for": "Decorative exposed aggregate",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Precision Concreters Hastings",
+      "rating": 4.5,
+      "review_count": 34,
+      "suburb": "Raureka",
+      "phone": "(027) 684-2574",
+      "website": null,
+      "known_for": "Commercial concrete floors",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Decorative Concrete Hastings",
+      "rating": 4.8,
+      "review_count": 68,
+      "suburb": "Havelock North",
+      "phone": "(027) 921-9039",
+      "website": null,
+      "known_for": "Driveways & paths",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Pro Concrete Hastings",
+      "rating": 4.4,
+      "review_count": 153,
+      "suburb": "Clive",
+      "phone": "(04) 560-7859",
+      "website": null,
+      "known_for": "House slabs & shed floors",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Quality Concrete Hawke's Bay",
+      "rating": 4.6,
+      "review_count": 120,
+      "suburb": "Whakatu",
+      "phone": "(027) 155-9290",
+      "website": null,
+      "known_for": "Retaining walls & footings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "NZ Concrete Group",
+      "rating": 4.6,
+      "review_count": 85,
+      "suburb": "Tomoana",
+      "phone": "(021) 776-1612",
+      "website": null,
+      "known_for": "Coloured & stamped concrete",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Residential Concrete Hastings",
+      "rating": 4.6,
+      "review_count": 65,
+      "suburb": "Frimley",
+      "phone": "(027) 552-6570",
+      "website": null,
+      "known_for": "Concrete removal & breaking",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

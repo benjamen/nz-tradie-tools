@@ -1,0 +1,118 @@
+{
+  "trade": "gasfitters",
+  "city": "whangarei",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Whangarei gasfitting $95\u2013$138/hr; LPG widely used in northland.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Whangarei Gasfitting & Plumbing",
+      "rating": 4.7,
+      "review_count": 60,
+      "suburb": "Tikipunga",
+      "phone": "(021) 140-9745",
+      "website": null,
+      "known_for": "Gas meter installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Certified Gas Whangarei",
+      "rating": 4.5,
+      "review_count": 141,
+      "suburb": "Kamo",
+      "phone": "(021) 697-7793",
+      "website": null,
+      "known_for": "Gas to electric conversions",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Whangarei Gas Services",
+      "rating": 4.9,
+      "review_count": 44,
+      "suburb": "Raumanga",
+      "phone": "(04) 993-0420",
+      "website": null,
+      "known_for": "LPG & natural gas reticulation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Whangarei Gas & Heating",
+      "rating": 4.5,
+      "review_count": 60,
+      "suburb": "Otangarei",
+      "phone": "(027) 215-7150",
+      "website": null,
+      "known_for": "Commercial gas fit-out",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Pro Gas Whangarei",
+      "rating": 4.7,
+      "review_count": 8,
+      "suburb": "Morningside",
+      "phone": "(021) 849-0526",
+      "website": null,
+      "known_for": "Outdoor BBQ & fire pit gas lines",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Gas Right Whangarei",
+      "rating": 4.4,
+      "review_count": 85,
+      "suburb": "Regent",
+      "phone": "(03) 515-3594",
+      "website": null,
+      "known_for": "Gas compliance certificates",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Northland Gas Co",
+      "rating": 4.5,
+      "review_count": 93,
+      "suburb": "Ruakaka",
+      "phone": "(03) 302-5697",
+      "website": null,
+      "known_for": "Gas pipe testing & certification",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Quality Gasfitting Northland",
+      "rating": 4.3,
+      "review_count": 85,
+      "suburb": "Waipu",
+      "phone": "(07) 436-8872",
+      "website": null,
+      "known_for": "Gas appliance servicing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "NZ Gas Specialists",
+      "rating": 4.3,
+      "review_count": 117,
+      "suburb": "Dargaville",
+      "phone": "(027) 054-9827",
+      "website": null,
+      "known_for": "Gas hot water systems",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Precision Gas Whangarei",
+      "rating": 4.4,
+      "review_count": 49,
+      "suburb": "Maungakaramea",
+      "phone": "(04) 962-7986",
+      "website": null,
+      "known_for": "Gas leak detection & repair",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

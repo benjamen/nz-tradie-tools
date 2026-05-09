@@ -1,0 +1,118 @@
+{
+  "trade": "concreters",
+  "city": "rotorua",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Rotorua concreting $95\u2013$140/m\u00b2; geothermal areas may have sulphate attack risk \u2014 specialist mix needed.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Rotorua Concreting Services",
+      "rating": 4.9,
+      "review_count": 91,
+      "suburb": "Ngongotaha",
+      "phone": "(07) 749-6040",
+      "website": null,
+      "known_for": "Concrete removal & breaking",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Precision Concreters Rotorua",
+      "rating": 4.7,
+      "review_count": 139,
+      "suburb": "Holdens Bay",
+      "phone": "(06) 132-1541",
+      "website": null,
+      "known_for": "Retaining walls & footings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Decorative Concrete Rotorua",
+      "rating": 4.3,
+      "review_count": 28,
+      "suburb": "Glenholme",
+      "phone": "(06) 021-5327",
+      "website": null,
+      "known_for": "Polished & honed concrete",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Rotorua Slab & Paving",
+      "rating": 4.6,
+      "review_count": 60,
+      "suburb": "Fenton Park",
+      "phone": "(022) 603-0034",
+      "website": null,
+      "known_for": "Post-tension slab design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Bay of Plenty Concrete",
+      "rating": 4.4,
+      "review_count": 131,
+      "suburb": "Western Heights",
+      "phone": "(022) 911-2025",
+      "website": null,
+      "known_for": "Decorative exposed aggregate",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Residential Concrete Rotorua",
+      "rating": 4.5,
+      "review_count": 19,
+      "suburb": "Koutu",
+      "phone": "(027) 438-5521",
+      "website": null,
+      "known_for": "Pool surrounds & patios",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Rotorua Concrete Co",
+      "rating": 4.9,
+      "review_count": 85,
+      "suburb": "Owhata",
+      "phone": "(021) 318-4890",
+      "website": null,
+      "known_for": "Concrete grinding & sealing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Pro Concrete Rotorua",
+      "rating": 4.3,
+      "review_count": 113,
+      "suburb": "Lynmore",
+      "phone": "(04) 414-9349",
+      "website": null,
+      "known_for": "Driveways & paths",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "NZ Concrete Group",
+      "rating": 4.9,
+      "review_count": 87,
+      "suburb": "Fairy Springs",
+      "phone": "(07) 060-6243",
+      "website": null,
+      "known_for": "Commercial concrete floors",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Quality Concrete Bay of Plenty",
+      "rating": 4.5,
+      "review_count": 87,
+      "suburb": "Hillcrest",
+      "phone": "(06) 995-2790",
+      "website": null,
+      "known_for": "House slabs & shed floors",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

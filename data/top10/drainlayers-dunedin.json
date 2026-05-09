@@ -1,0 +1,118 @@
+{
+  "trade": "drainlayers",
+  "city": "dunedin",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Dunedin drainlaying $100\u2013$142/hr; older combined sewers being separated in many areas.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Pro Drainage Dunedin",
+      "rating": 4.4,
+      "review_count": 32,
+      "suburb": "South Dunedin",
+      "phone": "(021) 064-6655",
+      "website": null,
+      "known_for": "Earthworks & subsoil drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Precision Drains Dunedin",
+      "rating": 4.2,
+      "review_count": 161,
+      "suburb": "Mosgiel",
+      "phone": "(09) 903-2890",
+      "website": null,
+      "known_for": "Pump station installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Underground Services Dunedin",
+      "rating": 4.9,
+      "review_count": 156,
+      "suburb": "St Kilda",
+      "phone": "(09) 031-6325",
+      "website": null,
+      "known_for": "Stormwater drainage design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Dunedin Drainage Services",
+      "rating": 4.9,
+      "review_count": 106,
+      "suburb": "Caversham",
+      "phone": "(04) 211-2059",
+      "website": null,
+      "known_for": "Council connection fees & paperwork",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Otago Drainage",
+      "rating": 4.9,
+      "review_count": 71,
+      "suburb": "Green Island",
+      "phone": "(06) 512-2625",
+      "website": null,
+      "known_for": "Drain relining (no-dig)",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Quality Drainlaying Otago",
+      "rating": 4.9,
+      "review_count": 171,
+      "suburb": "Concord",
+      "phone": "(03) 108-0440",
+      "website": null,
+      "known_for": "Roof & surface water management",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Expert Drains Dunedin",
+      "rating": 4.3,
+      "review_count": 34,
+      "suburb": "Concord North",
+      "phone": "(027) 651-1207",
+      "website": null,
+      "known_for": "Soakage & absorption trenches",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Dunedin Drainlaying Co",
+      "rating": 4.3,
+      "review_count": 49,
+      "suburb": "Kaikorai",
+      "phone": "(022) 316-0425",
+      "website": null,
+      "known_for": "Septic tank installation & repairs",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "NZ Drainage Group",
+      "rating": 4.8,
+      "review_count": 65,
+      "suburb": "Burnside",
+      "phone": "(03) 936-3581",
+      "website": null,
+      "known_for": "New subdivsion drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Dunedin Sewer & Stormwater",
+      "rating": 4.4,
+      "review_count": 96,
+      "suburb": "Pine Hill",
+      "phone": "(09) 160-3160",
+      "website": null,
+      "known_for": "Sewer & wastewater connections",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

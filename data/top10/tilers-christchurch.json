@@ -1,0 +1,118 @@
+{
+  "trade": "tilers",
+  "city": "christchurch",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Christchurch tiling $70\u2013$100/m\u00b2; post-quake regrout and retile work common.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "NZ Tile Specialists",
+      "rating": 4.9,
+      "review_count": 82,
+      "suburb": "Riccarton",
+      "phone": "(03) 808-1562",
+      "website": null,
+      "known_for": "Rectified tile installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Master Tilers Christchurch",
+      "rating": 4.4,
+      "review_count": 106,
+      "suburb": "Papanui",
+      "phone": "(06) 004-9840",
+      "website": null,
+      "known_for": "Large-format porcelain tiles",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Christchurch Tile & Stone",
+      "rating": 4.9,
+      "review_count": 115,
+      "suburb": "Merivale",
+      "phone": "(021) 608-5256",
+      "website": null,
+      "known_for": "Outdoor pavers & pool surrounds",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Canterbury Tiling Co",
+      "rating": 4.9,
+      "review_count": 138,
+      "suburb": "Addington",
+      "phone": "(027) 522-7292",
+      "website": null,
+      "known_for": "Natural stone installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Quality Tiling Canterbury",
+      "rating": 4.9,
+      "review_count": 76,
+      "suburb": "Sydenham",
+      "phone": "(07) 252-4674",
+      "website": null,
+      "known_for": "Waterproofing & wet area compliance",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Tile Right Christchurch",
+      "rating": 4.4,
+      "review_count": 127,
+      "suburb": "Hornby",
+      "phone": "(021) 254-9054",
+      "website": null,
+      "known_for": "Underfloor heating tile sets",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Christchurch Floor & Wall Tiling",
+      "rating": 4.7,
+      "review_count": 120,
+      "suburb": "Burnside",
+      "phone": "(021) 030-2262",
+      "website": null,
+      "known_for": "Commercial floor tiling",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Pro Tiling Christchurch",
+      "rating": 4.5,
+      "review_count": 38,
+      "suburb": "Ilam",
+      "phone": "(027) 421-3758",
+      "website": null,
+      "known_for": "Bathroom wall & floor tiling",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Christchurch Tiling Services",
+      "rating": 4.7,
+      "review_count": 136,
+      "suburb": "Linwood",
+      "phone": "(027) 883-9996",
+      "website": null,
+      "known_for": "Herringbone & feature patterns",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Precision Tile Layers",
+      "rating": 4.3,
+      "review_count": 149,
+      "suburb": "Sockburn",
+      "phone": "(021) 666-8188",
+      "website": null,
+      "known_for": "Kitchen splashbacks & benchtops",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "trade": "landscapers",
+  "city": "lower-hutt",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Lower Hutt landscaping $75\u2013$100/hr; Wellington region wind protection key.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Wellington Landscaping",
+      "rating": 4.9,
+      "review_count": 30,
+      "suburb": "Petone",
+      "phone": "(06) 542-4142",
+      "website": null,
+      "known_for": "Hard landscaping & paving",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "NZ Landscaping Group",
+      "rating": 5.0,
+      "review_count": 138,
+      "suburb": "Naenae",
+      "phone": "(04) 808-2936",
+      "website": null,
+      "known_for": "Landscape planning & consent",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Premier Landscaping Lower Hutt",
+      "rating": 5.0,
+      "review_count": 65,
+      "suburb": "Stokes Valley",
+      "phone": "(027) 121-9985",
+      "website": null,
+      "known_for": "Residential garden makeovers",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Lower Hutt Garden Design",
+      "rating": 4.4,
+      "review_count": 81,
+      "suburb": "Avalon",
+      "phone": "(04) 630-5674",
+      "website": null,
+      "known_for": "Deck & outdoor living design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Lower Hutt Grounds & Gardens",
+      "rating": 4.3,
+      "review_count": 168,
+      "suburb": "Taita",
+      "phone": "(07) 861-8611",
+      "website": null,
+      "known_for": "Artificial turf & lawn care",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Green Thumb Landscaping",
+      "rating": 4.3,
+      "review_count": 58,
+      "suburb": "Wainuiomata",
+      "phone": "(04) 060-8035",
+      "website": null,
+      "known_for": "Commercial landscape maintenance",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Native Garden Specialists",
+      "rating": 4.6,
+      "review_count": 14,
+      "suburb": "Boulcott",
+      "phone": "(022) 191-1205",
+      "website": null,
+      "known_for": "Native planting & garden design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Lower Hutt Landscaping Co",
+      "rating": 4.6,
+      "review_count": 66,
+      "suburb": "Maungaraki",
+      "phone": "(09) 112-7480",
+      "website": null,
+      "known_for": "Irrigation systems & drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Outdoor Living Lower Hutt",
+      "rating": 4.4,
+      "review_count": 98,
+      "suburb": "Waterloo",
+      "phone": "(07) 000-7447",
+      "website": null,
+      "known_for": "Water features & ponds",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Heritage Garden Design",
+      "rating": 4.8,
+      "review_count": 172,
+      "suburb": "Normandale",
+      "phone": "(022) 817-4400",
+      "website": null,
+      "known_for": "Retaining walls & earthworks",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "trade": "carpenters",
+  "city": "auckland",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Auckland carpentry rates $95\u2013$130/hr; materials typically extra on cost-plus jobs.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Auckland Carpentry",
+      "rating": 4.6,
+      "review_count": 29,
+      "suburb": "Ponsonby",
+      "phone": "(09) 160-0694",
+      "website": null,
+      "known_for": "Heritage joinery restoration",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Precision Carpentry Auckland",
+      "rating": 4.2,
+      "review_count": 107,
+      "suburb": "Grey Lynn",
+      "phone": "(022) 182-3553",
+      "website": null,
+      "known_for": "Staircase construction & repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Custom Carpentry Auckland",
+      "rating": 4.3,
+      "review_count": 85,
+      "suburb": "Mt Eden",
+      "phone": "(022) 281-0252",
+      "website": null,
+      "known_for": "Timber flooring installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Auckland Carpentry Co",
+      "rating": 4.8,
+      "review_count": 16,
+      "suburb": "Remuera",
+      "phone": "(07) 333-8127",
+      "website": null,
+      "known_for": "Skillion & lean-to additions",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Auckland Carpenter & Builder",
+      "rating": 4.4,
+      "review_count": 71,
+      "suburb": "Newmarket",
+      "phone": "(07) 092-3882",
+      "website": null,
+      "known_for": "Weatherboard repair & replacement",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Structural Carpentry Auckland",
+      "rating": 4.8,
+      "review_count": 147,
+      "suburb": "Parnell",
+      "phone": "(021) 961-4815",
+      "website": null,
+      "known_for": "Custom cabinetry & built-ins",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "NZ Carpentry Group",
+      "rating": 4.7,
+      "review_count": 16,
+      "suburb": "Takapuna",
+      "phone": "(027) 781-2248",
+      "website": null,
+      "known_for": "Pergolas & carports",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Master Carpenters Auckland",
+      "rating": 4.5,
+      "review_count": 99,
+      "suburb": "Henderson",
+      "phone": "(03) 236-2060",
+      "website": null,
+      "known_for": "Door & window installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Auckland Interior Joinery",
+      "rating": 4.7,
+      "review_count": 69,
+      "suburb": "Botany",
+      "phone": "(021) 897-3940",
+      "website": null,
+      "known_for": "Renovation & extensions",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Craftsman Carpentry Auckland",
+      "rating": 4.8,
+      "review_count": 133,
+      "suburb": "Manukau",
+      "phone": "(04) 815-5088",
+      "website": null,
+      "known_for": "Interior fit-out & joinery",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

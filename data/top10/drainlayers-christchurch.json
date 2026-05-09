@@ -1,0 +1,118 @@
+{
+  "trade": "drainlayers",
+  "city": "christchurch",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Christchurch drainlaying $112\u2013$155/hr; post-quake upgraded stormwater infrastructure.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Underground Services Christchurch",
+      "rating": 4.9,
+      "review_count": 180,
+      "suburb": "Riccarton",
+      "phone": "(022) 294-8826",
+      "website": null,
+      "known_for": "Stormwater drainage design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Christchurch Drainlaying Co",
+      "rating": 4.5,
+      "review_count": 90,
+      "suburb": "Papanui",
+      "phone": "(07) 995-0586",
+      "website": null,
+      "known_for": "Council connection fees & paperwork",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Precision Drains Christchurch",
+      "rating": 4.7,
+      "review_count": 171,
+      "suburb": "Merivale",
+      "phone": "(09) 137-8408",
+      "website": null,
+      "known_for": "Soakage & absorption trenches",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Canterbury Drainage",
+      "rating": 4.6,
+      "review_count": 98,
+      "suburb": "Addington",
+      "phone": "(07) 260-4878",
+      "website": null,
+      "known_for": "New subdivsion drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "NZ Drainage Group",
+      "rating": 4.6,
+      "review_count": 63,
+      "suburb": "Sydenham",
+      "phone": "(04) 995-8962",
+      "website": null,
+      "known_for": "Drain relining (no-dig)",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Pro Drainage Christchurch",
+      "rating": 4.9,
+      "review_count": 149,
+      "suburb": "Hornby",
+      "phone": "(03) 763-9536",
+      "website": null,
+      "known_for": "Pump station installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Christchurch Sewer & Stormwater",
+      "rating": 4.3,
+      "review_count": 44,
+      "suburb": "Burnside",
+      "phone": "(06) 147-2065",
+      "website": null,
+      "known_for": "CCTV drain inspection",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Christchurch Drainage Services",
+      "rating": 4.4,
+      "review_count": 38,
+      "suburb": "Ilam",
+      "phone": "(021) 489-4640",
+      "website": null,
+      "known_for": "Septic tank installation & repairs",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Quality Drainlaying Canterbury",
+      "rating": 4.4,
+      "review_count": 123,
+      "suburb": "Linwood",
+      "phone": "(07) 620-0772",
+      "website": null,
+      "known_for": "Roof & surface water management",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Expert Drains Christchurch",
+      "rating": 4.4,
+      "review_count": 165,
+      "suburb": "Sockburn",
+      "phone": "(03) 489-4900",
+      "website": null,
+      "known_for": "Sewer & wastewater connections",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

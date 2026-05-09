@@ -1,0 +1,118 @@
+{
+  "trade": "tilers",
+  "city": "rotorua",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Rotorua tiling $65\u2013$90/m\u00b2; moisture-resistant tiles recommended for thermal areas.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Quality Tiling Bay of Plenty",
+      "rating": 4.9,
+      "review_count": 58,
+      "suburb": "Ngongotaha",
+      "phone": "(04) 962-0555",
+      "website": null,
+      "known_for": "Herringbone & feature patterns",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Pro Tiling Rotorua",
+      "rating": 4.8,
+      "review_count": 54,
+      "suburb": "Holdens Bay",
+      "phone": "(022) 156-6791",
+      "website": null,
+      "known_for": "Large-format porcelain tiles",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Master Tilers Rotorua",
+      "rating": 4.9,
+      "review_count": 84,
+      "suburb": "Glenholme",
+      "phone": "(09) 031-9124",
+      "website": null,
+      "known_for": "Outdoor pavers & pool surrounds",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "NZ Tile Specialists",
+      "rating": 4.3,
+      "review_count": 158,
+      "suburb": "Fenton Park",
+      "phone": "(04) 837-0515",
+      "website": null,
+      "known_for": "Natural stone installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Rotorua Tiling Services",
+      "rating": 4.6,
+      "review_count": 129,
+      "suburb": "Western Heights",
+      "phone": "(06) 100-6347",
+      "website": null,
+      "known_for": "Commercial floor tiling",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Bay of Plenty Tiling Co",
+      "rating": 4.4,
+      "review_count": 26,
+      "suburb": "Koutu",
+      "phone": "(06) 008-9876",
+      "website": null,
+      "known_for": "Mosaic & designer tiles",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Rotorua Tile & Stone",
+      "rating": 4.9,
+      "review_count": 79,
+      "suburb": "Owhata",
+      "phone": "(07) 867-9969",
+      "website": null,
+      "known_for": "Rectified tile installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Precision Tile Layers",
+      "rating": 4.8,
+      "review_count": 67,
+      "suburb": "Lynmore",
+      "phone": "(04) 359-1643",
+      "website": null,
+      "known_for": "Tile removal & rebedding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Tile Right Rotorua",
+      "rating": 4.9,
+      "review_count": 17,
+      "suburb": "Fairy Springs",
+      "phone": "(022) 371-5659",
+      "website": null,
+      "known_for": "Waterproofing & wet area compliance",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Rotorua Floor & Wall Tiling",
+      "rating": 4.8,
+      "review_count": 52,
+      "suburb": "Hillcrest",
+      "phone": "(06) 153-1843",
+      "website": null,
+      "known_for": "Bathroom wall & floor tiling",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

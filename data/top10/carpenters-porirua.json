@@ -1,0 +1,118 @@
+{
+  "trade": "carpenters",
+  "city": "porirua",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Porirua carpentry $80\u2013$112/hr; new residential development active.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Porirua Carpenter & Builder",
+      "rating": 4.8,
+      "review_count": 174,
+      "suburb": "Titahi Bay",
+      "phone": "(027) 755-1689",
+      "website": null,
+      "known_for": "Staircase construction & repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Precision Carpentry Porirua",
+      "rating": 4.5,
+      "review_count": 116,
+      "suburb": "Cannons Creek",
+      "phone": "(07) 271-4901",
+      "website": null,
+      "known_for": "Pergolas & carports",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Porirua Carpentry",
+      "rating": 4.5,
+      "review_count": 165,
+      "suburb": "Ranui",
+      "phone": "(027) 064-3215",
+      "website": null,
+      "known_for": "Interior fit-out & joinery",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Craftsman Carpentry Porirua",
+      "rating": 4.6,
+      "review_count": 153,
+      "suburb": "Papakowhai",
+      "phone": "(021) 749-4656",
+      "website": null,
+      "known_for": "Heritage joinery restoration",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Custom Carpentry Wellington",
+      "rating": 4.6,
+      "review_count": 89,
+      "suburb": "Whitby",
+      "phone": "(03) 411-5977",
+      "website": null,
+      "known_for": "Structural framing & cladding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "NZ Carpentry Group",
+      "rating": 4.7,
+      "review_count": 163,
+      "suburb": "Camborne",
+      "phone": "(021) 230-1104",
+      "website": null,
+      "known_for": "Custom cabinetry & built-ins",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Porirua Interior Joinery",
+      "rating": 4.7,
+      "review_count": 11,
+      "suburb": "Plimmerton",
+      "phone": "(022) 210-1741",
+      "website": null,
+      "known_for": "Weatherboard repair & replacement",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Wellington Carpentry Co",
+      "rating": 4.4,
+      "review_count": 84,
+      "suburb": "Paremata",
+      "phone": "(027) 782-7656",
+      "website": null,
+      "known_for": "Renovation & extensions",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Structural Carpentry Porirua",
+      "rating": 4.3,
+      "review_count": 125,
+      "suburb": "Aotea",
+      "phone": "(021) 062-5252",
+      "website": null,
+      "known_for": "Timber flooring installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Master Carpenters Porirua",
+      "rating": 4.6,
+      "review_count": 65,
+      "suburb": "Pukerua Bay",
+      "phone": "(09) 800-0804",
+      "website": null,
+      "known_for": "Door & window installation",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

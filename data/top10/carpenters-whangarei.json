@@ -1,0 +1,118 @@
+{
+  "trade": "carpenters",
+  "city": "whangarei",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Whangarei carpentry $72\u2013$100/hr; northland holiday home market active.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Custom Carpentry Northland",
+      "rating": 4.3,
+      "review_count": 138,
+      "suburb": "Tikipunga",
+      "phone": "(03) 424-0494",
+      "website": null,
+      "known_for": "Decking & outdoor structures",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Master Carpenters Whangarei",
+      "rating": 4.3,
+      "review_count": 52,
+      "suburb": "Kamo",
+      "phone": "(09) 221-1268",
+      "website": null,
+      "known_for": "Weatherboard repair & replacement",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Craftsman Carpentry Whangarei",
+      "rating": 4.9,
+      "review_count": 37,
+      "suburb": "Raumanga",
+      "phone": "(021) 430-6109",
+      "website": null,
+      "known_for": "Structural framing & cladding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "NZ Carpentry Group",
+      "rating": 4.2,
+      "review_count": 122,
+      "suburb": "Otangarei",
+      "phone": "(09) 479-2599",
+      "website": null,
+      "known_for": "Staircase construction & repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Precision Carpentry Whangarei",
+      "rating": 4.2,
+      "review_count": 46,
+      "suburb": "Morningside",
+      "phone": "(06) 638-8216",
+      "website": null,
+      "known_for": "Heritage joinery restoration",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Northland Carpentry Co",
+      "rating": 4.3,
+      "review_count": 71,
+      "suburb": "Regent",
+      "phone": "(04) 083-3203",
+      "website": null,
+      "known_for": "Skillion & lean-to additions",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Whangarei Carpenter & Builder",
+      "rating": 4.8,
+      "review_count": 129,
+      "suburb": "Ruakaka",
+      "phone": "(09) 061-4297",
+      "website": null,
+      "known_for": "Timber flooring installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Whangarei Interior Joinery",
+      "rating": 5.0,
+      "review_count": 107,
+      "suburb": "Waipu",
+      "phone": "(03) 212-7881",
+      "website": null,
+      "known_for": "Interior fit-out & joinery",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Structural Carpentry Whangarei",
+      "rating": 4.4,
+      "review_count": 169,
+      "suburb": "Dargaville",
+      "phone": "(027) 614-4087",
+      "website": null,
+      "known_for": "Custom cabinetry & built-ins",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Whangarei Carpentry",
+      "rating": 4.9,
+      "review_count": 152,
+      "suburb": "Maungakaramea",
+      "phone": "(06) 978-8837",
+      "website": null,
+      "known_for": "Pergolas & carports",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

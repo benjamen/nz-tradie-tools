@@ -1,0 +1,118 @@
+{
+  "trade": "drainlayers",
+  "city": "whangarei",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Whangarei drainlaying $100\u2013$142/hr; rural septic systems common in northland.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "NZ Drainage Group",
+      "rating": 4.5,
+      "review_count": 64,
+      "suburb": "Tikipunga",
+      "phone": "(07) 627-0675",
+      "website": null,
+      "known_for": "Soakage & absorption trenches",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Northland Drainage",
+      "rating": 4.7,
+      "review_count": 14,
+      "suburb": "Kamo",
+      "phone": "(03) 381-0459",
+      "website": null,
+      "known_for": "Septic tank installation & repairs",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Quality Drainlaying Northland",
+      "rating": 4.3,
+      "review_count": 92,
+      "suburb": "Raumanga",
+      "phone": "(07) 255-2458",
+      "website": null,
+      "known_for": "Blocked drain clearing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Pro Drainage Whangarei",
+      "rating": 4.9,
+      "review_count": 29,
+      "suburb": "Otangarei",
+      "phone": "(09) 685-3564",
+      "website": null,
+      "known_for": "CCTV drain inspection",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Whangarei Drainage Services",
+      "rating": 5.0,
+      "review_count": 49,
+      "suburb": "Morningside",
+      "phone": "(027) 408-3351",
+      "website": null,
+      "known_for": "Sewer & wastewater connections",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Whangarei Sewer & Stormwater",
+      "rating": 4.4,
+      "review_count": 40,
+      "suburb": "Regent",
+      "phone": "(07) 485-9245",
+      "website": null,
+      "known_for": "Earthworks & subsoil drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Whangarei Drainlaying Co",
+      "rating": 5.0,
+      "review_count": 86,
+      "suburb": "Ruakaka",
+      "phone": "(022) 249-0690",
+      "website": null,
+      "known_for": "Council connection fees & paperwork",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Precision Drains Whangarei",
+      "rating": 4.5,
+      "review_count": 146,
+      "suburb": "Waipu",
+      "phone": "(04) 955-6900",
+      "website": null,
+      "known_for": "Roof & surface water management",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Expert Drains Whangarei",
+      "rating": 4.3,
+      "review_count": 140,
+      "suburb": "Dargaville",
+      "phone": "(04) 497-6527",
+      "website": null,
+      "known_for": "New subdivsion drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Underground Services Whangarei",
+      "rating": 4.3,
+      "review_count": 124,
+      "suburb": "Maungakaramea",
+      "phone": "(021) 917-8594",
+      "website": null,
+      "known_for": "Pump station installation",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

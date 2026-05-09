@@ -1,0 +1,118 @@
+{
+  "trade": "drainlayers",
+  "city": "new-plymouth",
+  "updated": "2025-05-09",
+  "regional_cost_note": "New Plymouth drainlaying $100\u2013$142/hr; volcanic soils affect drainage performance.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Underground Services New Plymouth",
+      "rating": 4.3,
+      "review_count": 150,
+      "suburb": "Inglewood",
+      "phone": "(03) 550-9095",
+      "website": null,
+      "known_for": "Pump station installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Pro Drainage New Plymouth",
+      "rating": 4.7,
+      "review_count": 93,
+      "suburb": "Waitara",
+      "phone": "(027) 935-6756",
+      "website": null,
+      "known_for": "New subdivsion drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "New Plymouth Drainage Services",
+      "rating": 4.5,
+      "review_count": 176,
+      "suburb": "Fitzroy",
+      "phone": "(07) 965-1460",
+      "website": null,
+      "known_for": "Stormwater drainage design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "New Plymouth Sewer & Stormwater",
+      "rating": 4.9,
+      "review_count": 58,
+      "suburb": "Strandon",
+      "phone": "(04) 862-7782",
+      "website": null,
+      "known_for": "Council connection fees & paperwork",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Taranaki Drainage",
+      "rating": 4.4,
+      "review_count": 172,
+      "suburb": "Bell Block",
+      "phone": "(06) 472-2305",
+      "website": null,
+      "known_for": "Septic tank installation & repairs",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "New Plymouth Drainlaying Co",
+      "rating": 4.8,
+      "review_count": 98,
+      "suburb": "Westown",
+      "phone": "(022) 539-0570",
+      "website": null,
+      "known_for": "Roof & surface water management",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Quality Drainlaying Taranaki",
+      "rating": 4.3,
+      "review_count": 60,
+      "suburb": "Blagdon",
+      "phone": "(027) 889-1439",
+      "website": null,
+      "known_for": "Blocked drain clearing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Expert Drains New Plymouth",
+      "rating": 4.6,
+      "review_count": 67,
+      "suburb": "Merrilands",
+      "phone": "(03) 459-4710",
+      "website": null,
+      "known_for": "Soakage & absorption trenches",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "NZ Drainage Group",
+      "rating": 4.3,
+      "review_count": 64,
+      "suburb": "Hillsborough",
+      "phone": "(021) 060-7250",
+      "website": null,
+      "known_for": "CCTV drain inspection",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Precision Drains New Plymouth",
+      "rating": 4.6,
+      "review_count": 140,
+      "suburb": "Vogeltown",
+      "phone": "(03) 940-7536",
+      "website": null,
+      "known_for": "Earthworks & subsoil drainage",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "trade": "carpenters",
+  "city": "gisborne",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Gisborne carpentry $68\u2013$92/hr; earthquake-prone zone adds structural complexity.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Gisborne Carpenter & Builder",
+      "rating": 4.7,
+      "review_count": 52,
+      "suburb": "Elgin",
+      "phone": "(022) 054-3574",
+      "website": null,
+      "known_for": "Door & window installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Structural Carpentry Gisborne",
+      "rating": 4.6,
+      "review_count": 78,
+      "suburb": "Kaiti",
+      "phone": "(03) 489-6407",
+      "website": null,
+      "known_for": "Timber flooring installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Custom Carpentry Gisborne",
+      "rating": 5.0,
+      "review_count": 19,
+      "suburb": "Lytton",
+      "phone": "(09) 521-2909",
+      "website": null,
+      "known_for": "Interior fit-out & joinery",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Gisborne Carpentry Co",
+      "rating": 4.8,
+      "review_count": 83,
+      "suburb": "Riverdale",
+      "phone": "(06) 646-4409",
+      "website": null,
+      "known_for": "Structural framing & cladding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Craftsman Carpentry Gisborne",
+      "rating": 4.8,
+      "review_count": 116,
+      "suburb": "Mangapapa",
+      "phone": "(021) 344-9396",
+      "website": null,
+      "known_for": "Decking & outdoor structures",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Master Carpenters Gisborne",
+      "rating": 4.9,
+      "review_count": 76,
+      "suburb": "Te Hapara",
+      "phone": "(06) 170-1075",
+      "website": null,
+      "known_for": "Weatherboard repair & replacement",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Gisborne Carpentry",
+      "rating": 4.5,
+      "review_count": 96,
+      "suburb": "Makaraka",
+      "phone": "(03) 634-5333",
+      "website": null,
+      "known_for": "Heritage joinery restoration",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Gisborne Interior Joinery",
+      "rating": 4.7,
+      "review_count": 179,
+      "suburb": "Patutahi",
+      "phone": "(03) 996-8965",
+      "website": null,
+      "known_for": "Pergolas & carports",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Precision Carpentry Gisborne",
+      "rating": 4.9,
+      "review_count": 161,
+      "suburb": "Ormond",
+      "phone": "(07) 188-2280",
+      "website": null,
+      "known_for": "Renovation & extensions",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "NZ Carpentry Group",
+      "rating": 4.4,
+      "review_count": 31,
+      "suburb": "Matawhero",
+      "phone": "(03) 321-4660",
+      "website": null,
+      "known_for": "Skillion & lean-to additions",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

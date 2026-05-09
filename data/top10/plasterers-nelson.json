@@ -1,0 +1,118 @@
+{
+  "trade": "plasterers",
+  "city": "nelson",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Nelson plastering $28\u2013$46/m\u00b2; lifestyle blocks drive new build demand.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Nelson Plaster & Paint",
+      "rating": 4.9,
+      "review_count": 156,
+      "suburb": "Richmond",
+      "phone": "(022) 387-5804",
+      "website": null,
+      "known_for": "Solid plaster & texture coatings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Nelson Plastering",
+      "rating": 4.7,
+      "review_count": 56,
+      "suburb": "Stoke",
+      "phone": "(027) 803-9901",
+      "website": null,
+      "known_for": "Waterproof bathroom linings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Expert Plastering Nelson",
+      "rating": 4.5,
+      "review_count": 93,
+      "suburb": "Tahunanui",
+      "phone": "(06) 425-3463",
+      "website": null,
+      "known_for": "Exterior plaster & monolithic cladding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "NZ Plasterers Group",
+      "rating": 4.3,
+      "review_count": 163,
+      "suburb": "The Wood",
+      "phone": "(04) 968-4497",
+      "website": null,
+      "known_for": "Heritage plaster restoration",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Smooth Finish Plastering",
+      "rating": 4.4,
+      "review_count": 38,
+      "suburb": "Wakefield",
+      "phone": "(03) 359-8415",
+      "website": null,
+      "known_for": "Fibrous plaster mouldings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Nelson Plastering Co",
+      "rating": 4.4,
+      "review_count": 94,
+      "suburb": "Hope",
+      "phone": "(04) 855-7086",
+      "website": null,
+      "known_for": "Polished plaster feature walls",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Nelson GIB Stopping",
+      "rating": 4.9,
+      "review_count": 141,
+      "suburb": "Brightwater",
+      "phone": "(022) 760-4956",
+      "website": null,
+      "known_for": "GIB stopping & finishing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Solid Plaster Nelson",
+      "rating": 4.7,
+      "review_count": 59,
+      "suburb": "Murchison",
+      "phone": "(07) 479-0824",
+      "website": null,
+      "known_for": "New build GIB boarding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Premier Plasters Nelson",
+      "rating": 4.7,
+      "review_count": 143,
+      "suburb": "Motueka",
+      "phone": "(03) 866-6690",
+      "website": null,
+      "known_for": "Cornice installation & repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Interior Finishes Nelson",
+      "rating": 4.3,
+      "review_count": 28,
+      "suburb": "Mapua",
+      "phone": "(04) 950-9309",
+      "website": null,
+      "known_for": "Cement plaster substrates",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

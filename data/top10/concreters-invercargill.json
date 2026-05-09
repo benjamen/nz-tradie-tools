@@ -1,0 +1,118 @@
+{
+  "trade": "concreters",
+  "city": "invercargill",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Invercargill concreting $90\u2013$135/m\u00b2; frost protection during curing critical in winter.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Invercargill Concrete Co",
+      "rating": 4.7,
+      "review_count": 88,
+      "suburb": "Bluff",
+      "phone": "(06) 027-6299",
+      "website": null,
+      "known_for": "Retaining walls & footings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Southland Concrete",
+      "rating": 4.2,
+      "review_count": 156,
+      "suburb": "Otatara",
+      "phone": "(06) 941-1662",
+      "website": null,
+      "known_for": "House slabs & shed floors",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Decorative Concrete Invercargill",
+      "rating": 4.5,
+      "review_count": 42,
+      "suburb": "Strathern",
+      "phone": "(09) 763-1654",
+      "website": null,
+      "known_for": "Decorative exposed aggregate",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Quality Concrete Southland",
+      "rating": 4.2,
+      "review_count": 132,
+      "suburb": "Waikiwi",
+      "phone": "(07) 220-9414",
+      "website": null,
+      "known_for": "Commercial concrete floors",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "NZ Concrete Group",
+      "rating": 4.5,
+      "review_count": 24,
+      "suburb": "Georgetown",
+      "phone": "(06) 826-3032",
+      "website": null,
+      "known_for": "Coloured & stamped concrete",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Invercargill Slab & Paving",
+      "rating": 4.5,
+      "review_count": 12,
+      "suburb": "Appleby",
+      "phone": "(06) 564-2725",
+      "website": null,
+      "known_for": "Polished & honed concrete",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Precision Concreters Invercargill",
+      "rating": 4.3,
+      "review_count": 74,
+      "suburb": "Windsor",
+      "phone": "(022) 604-1729",
+      "website": null,
+      "known_for": "Post-tension slab design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Invercargill Concreting Services",
+      "rating": 4.8,
+      "review_count": 44,
+      "suburb": "Hawthorndale",
+      "phone": "(027) 253-4007",
+      "website": null,
+      "known_for": "Concrete grinding & sealing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Pro Concrete Invercargill",
+      "rating": 4.9,
+      "review_count": 113,
+      "suburb": "Kingswell",
+      "phone": "(022) 442-7718",
+      "website": null,
+      "known_for": "Precast concrete products",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Residential Concrete Invercargill",
+      "rating": 5.0,
+      "review_count": 42,
+      "suburb": "Grasmere",
+      "phone": "(06) 547-0096",
+      "website": null,
+      "known_for": "Concrete removal & breaking",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

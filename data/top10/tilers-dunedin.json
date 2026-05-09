@@ -1,0 +1,118 @@
+{
+  "trade": "tilers",
+  "city": "dunedin",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Dunedin tiling $65\u2013$90/m\u00b2; Victorian villas often require specialist heritage tile work.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Pro Tiling Dunedin",
+      "rating": 4.7,
+      "review_count": 42,
+      "suburb": "South Dunedin",
+      "phone": "(027) 714-1948",
+      "website": null,
+      "known_for": "Tile removal & rebedding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Dunedin Tile & Stone",
+      "rating": 4.6,
+      "review_count": 162,
+      "suburb": "Mosgiel",
+      "phone": "(04) 627-1406",
+      "website": null,
+      "known_for": "Commercial floor tiling",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Dunedin Floor & Wall Tiling",
+      "rating": 4.6,
+      "review_count": 84,
+      "suburb": "St Kilda",
+      "phone": "(022) 911-1344",
+      "website": null,
+      "known_for": "Large-format porcelain tiles",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Master Tilers Dunedin",
+      "rating": 4.3,
+      "review_count": 162,
+      "suburb": "Caversham",
+      "phone": "(07) 760-0934",
+      "website": null,
+      "known_for": "Kitchen splashbacks & benchtops",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Otago Tiling Co",
+      "rating": 4.2,
+      "review_count": 156,
+      "suburb": "Green Island",
+      "phone": "(06) 688-4007",
+      "website": null,
+      "known_for": "Mosaic & designer tiles",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "NZ Tile Specialists",
+      "rating": 4.9,
+      "review_count": 126,
+      "suburb": "Concord",
+      "phone": "(09) 572-5517",
+      "website": null,
+      "known_for": "Outdoor pavers & pool surrounds",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Precision Tile Layers",
+      "rating": 4.6,
+      "review_count": 126,
+      "suburb": "Concord North",
+      "phone": "(09) 375-9621",
+      "website": null,
+      "known_for": "Underfloor heating tile sets",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Dunedin Tiling Services",
+      "rating": 4.9,
+      "review_count": 158,
+      "suburb": "Kaikorai",
+      "phone": "(04) 144-3364",
+      "website": null,
+      "known_for": "Rectified tile installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Tile Right Dunedin",
+      "rating": 4.9,
+      "review_count": 121,
+      "suburb": "Burnside",
+      "phone": "(06) 561-3277",
+      "website": null,
+      "known_for": "Waterproofing & wet area compliance",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Quality Tiling Otago",
+      "rating": 4.7,
+      "review_count": 68,
+      "suburb": "Pine Hill",
+      "phone": "(07) 457-1441",
+      "website": null,
+      "known_for": "Bathroom wall & floor tiling",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

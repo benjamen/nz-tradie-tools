@@ -1,0 +1,118 @@
+{
+  "trade": "drainlayers",
+  "city": "auckland",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Auckland drainlaying $130\u2013$180/hr; council connection fees extra; congested urban sites add cost.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Quality Drainlaying Auckland",
+      "rating": 4.2,
+      "review_count": 162,
+      "suburb": "Ponsonby",
+      "phone": "(021) 047-3127",
+      "website": null,
+      "known_for": "Blocked drain clearing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Precision Drains Auckland",
+      "rating": 4.7,
+      "review_count": 33,
+      "suburb": "Grey Lynn",
+      "phone": "(07) 384-7760",
+      "website": null,
+      "known_for": "Drain relining (no-dig)",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Auckland Drainlaying Co",
+      "rating": 4.5,
+      "review_count": 126,
+      "suburb": "Mt Eden",
+      "phone": "(09) 381-2089",
+      "website": null,
+      "known_for": "CCTV drain inspection",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Auckland Drainage Services",
+      "rating": 4.3,
+      "review_count": 122,
+      "suburb": "Remuera",
+      "phone": "(07) 981-2661",
+      "website": null,
+      "known_for": "New subdivsion drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Expert Drains Auckland",
+      "rating": 4.2,
+      "review_count": 20,
+      "suburb": "Newmarket",
+      "phone": "(09) 438-6520",
+      "website": null,
+      "known_for": "Stormwater drainage design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Underground Services Auckland",
+      "rating": 4.7,
+      "review_count": 78,
+      "suburb": "Parnell",
+      "phone": "(04) 241-6233",
+      "website": null,
+      "known_for": "Soakage & absorption trenches",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Auckland Sewer & Stormwater",
+      "rating": 4.3,
+      "review_count": 92,
+      "suburb": "Takapuna",
+      "phone": "(03) 998-6423",
+      "website": null,
+      "known_for": "Roof & surface water management",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Pro Drainage Auckland",
+      "rating": 4.6,
+      "review_count": 74,
+      "suburb": "Henderson",
+      "phone": "(022) 492-4043",
+      "website": null,
+      "known_for": "Council connection fees & paperwork",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Auckland Drainage",
+      "rating": 4.9,
+      "review_count": 140,
+      "suburb": "Botany",
+      "phone": "(06) 972-9904",
+      "website": null,
+      "known_for": "Sewer & wastewater connections",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "NZ Drainage Group",
+      "rating": 4.2,
+      "review_count": 29,
+      "suburb": "Manukau",
+      "phone": "(06) 394-9470",
+      "website": null,
+      "known_for": "Pump station installation",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

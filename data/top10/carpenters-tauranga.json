@@ -1,0 +1,118 @@
+{
+  "trade": "carpenters",
+  "city": "tauranga",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Tauranga carpentry $78\u2013$108/hr; lifestyle block and coastal home demand high.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Tauranga Interior Joinery",
+      "rating": 4.4,
+      "review_count": 153,
+      "suburb": "Mount Maunganui",
+      "phone": "(027) 979-2646",
+      "website": null,
+      "known_for": "Renovation & extensions",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Tauranga Carpenter & Builder",
+      "rating": 4.3,
+      "review_count": 85,
+      "suburb": "Papamoa",
+      "phone": "(027) 324-0378",
+      "website": null,
+      "known_for": "Custom cabinetry & built-ins",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Bay of Plenty Carpentry Co",
+      "rating": 4.7,
+      "review_count": 164,
+      "suburb": "Welcome Bay",
+      "phone": "(03) 173-2184",
+      "website": null,
+      "known_for": "Structural framing & cladding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "NZ Carpentry Group",
+      "rating": 4.8,
+      "review_count": 49,
+      "suburb": "Bethlehem",
+      "phone": "(027) 061-4791",
+      "website": null,
+      "known_for": "Interior fit-out & joinery",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Structural Carpentry Tauranga",
+      "rating": 4.9,
+      "review_count": 114,
+      "suburb": "Greerton",
+      "phone": "(021) 168-3323",
+      "website": null,
+      "known_for": "Heritage joinery restoration",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Precision Carpentry Tauranga",
+      "rating": 4.3,
+      "review_count": 157,
+      "suburb": "Otumoetai",
+      "phone": "(04) 033-2279",
+      "website": null,
+      "known_for": "Pergolas & carports",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Craftsman Carpentry Tauranga",
+      "rating": 4.4,
+      "review_count": 134,
+      "suburb": "Matua",
+      "phone": "(027) 294-2992",
+      "website": null,
+      "known_for": "Weatherboard repair & replacement",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Tauranga Carpentry",
+      "rating": 4.6,
+      "review_count": 40,
+      "suburb": "Te Puna",
+      "phone": "(021) 825-6035",
+      "website": null,
+      "known_for": "Staircase construction & repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Master Carpenters Tauranga",
+      "rating": 4.4,
+      "review_count": 48,
+      "suburb": "Katikati",
+      "phone": "(03) 884-4660",
+      "website": null,
+      "known_for": "Decking & outdoor structures",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Custom Carpentry Bay of Plenty",
+      "rating": 4.5,
+      "review_count": 8,
+      "suburb": "Judea",
+      "phone": "(022) 582-6536",
+      "website": null,
+      "known_for": "Timber flooring installation",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

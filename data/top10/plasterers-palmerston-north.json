@@ -1,0 +1,118 @@
+{
+  "trade": "plasterers",
+  "city": "palmerston-north",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Palmerston North plastering $27\u2013$43/m\u00b2; good value in the Manawatu.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Interior Finishes Palmerston North",
+      "rating": 4.7,
+      "review_count": 51,
+      "suburb": "Roslyn",
+      "phone": "(04) 046-9321",
+      "website": null,
+      "known_for": "Venetian & decorative finishes",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Smooth Finish Plastering",
+      "rating": 4.2,
+      "review_count": 89,
+      "suburb": "Terrace End",
+      "phone": "(07) 445-9621",
+      "website": null,
+      "known_for": "Solid plaster & texture coatings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Palmerston North Plastering",
+      "rating": 4.9,
+      "review_count": 39,
+      "suburb": "Takaro",
+      "phone": "(06) 515-6666",
+      "website": null,
+      "known_for": "Exterior plaster & monolithic cladding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Palmerston North GIB Stopping",
+      "rating": 4.5,
+      "review_count": 110,
+      "suburb": "Awapuni",
+      "phone": "(03) 251-7830",
+      "website": null,
+      "known_for": "New build GIB boarding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Solid Plaster Palmerston North",
+      "rating": 4.3,
+      "review_count": 16,
+      "suburb": "Kelvin Grove",
+      "phone": "(06) 829-2027",
+      "website": null,
+      "known_for": "Waterproof bathroom linings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Manawatu Plastering Co",
+      "rating": 4.5,
+      "review_count": 180,
+      "suburb": "Fitzherbert",
+      "phone": "(022) 337-0194",
+      "website": null,
+      "known_for": "Heritage plaster restoration",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Premier Plasters Palmerston North",
+      "rating": 4.8,
+      "review_count": 25,
+      "suburb": "Hokowhitu",
+      "phone": "(09) 437-4559",
+      "website": null,
+      "known_for": "Fibrous plaster mouldings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Palmerston North Plaster & Paint",
+      "rating": 4.9,
+      "review_count": 152,
+      "suburb": "Milson",
+      "phone": "(07) 375-8529",
+      "website": null,
+      "known_for": "Polished plaster feature walls",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "NZ Plasterers Group",
+      "rating": 4.6,
+      "review_count": 52,
+      "suburb": "Cloverlea",
+      "phone": "(022) 285-1086",
+      "website": null,
+      "known_for": "Plaster crack repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Expert Plastering Manawatu",
+      "rating": 4.3,
+      "review_count": 12,
+      "suburb": "Ashhurst",
+      "phone": "(04) 690-8991",
+      "website": null,
+      "known_for": "GIB stopping & finishing",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

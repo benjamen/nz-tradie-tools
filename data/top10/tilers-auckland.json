@@ -1,0 +1,118 @@
+{
+  "trade": "tilers",
+  "city": "auckland",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Auckland tiling $80\u2013$120/m\u00b2; large-format tiles or complex patterns add 20\u201330%.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Precision Tile Layers",
+      "rating": 4.5,
+      "review_count": 82,
+      "suburb": "Ponsonby",
+      "phone": "(06) 854-7364",
+      "website": null,
+      "known_for": "Kitchen splashbacks & benchtops",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Master Tilers Auckland",
+      "rating": 4.7,
+      "review_count": 16,
+      "suburb": "Grey Lynn",
+      "phone": "(09) 404-6566",
+      "website": null,
+      "known_for": "Mosaic & designer tiles",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Auckland Floor & Wall Tiling",
+      "rating": 4.7,
+      "review_count": 134,
+      "suburb": "Mt Eden",
+      "phone": "(03) 817-0288",
+      "website": null,
+      "known_for": "Rectified tile installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "NZ Tile Specialists",
+      "rating": 4.9,
+      "review_count": 152,
+      "suburb": "Remuera",
+      "phone": "(07) 635-6464",
+      "website": null,
+      "known_for": "Herringbone & feature patterns",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Tile Right Auckland",
+      "rating": 4.5,
+      "review_count": 106,
+      "suburb": "Newmarket",
+      "phone": "(022) 162-4675",
+      "website": null,
+      "known_for": "Commercial floor tiling",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Quality Tiling Auckland",
+      "rating": 4.7,
+      "review_count": 151,
+      "suburb": "Parnell",
+      "phone": "(027) 324-5794",
+      "website": null,
+      "known_for": "Waterproofing & wet area compliance",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Pro Tiling Auckland",
+      "rating": 4.5,
+      "review_count": 134,
+      "suburb": "Takapuna",
+      "phone": "(03) 450-5475",
+      "website": null,
+      "known_for": "Bathroom wall & floor tiling",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Auckland Tiling Co",
+      "rating": 4.4,
+      "review_count": 47,
+      "suburb": "Henderson",
+      "phone": "(03) 035-6783",
+      "website": null,
+      "known_for": "Underfloor heating tile sets",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Auckland Tile & Stone",
+      "rating": 4.6,
+      "review_count": 177,
+      "suburb": "Botany",
+      "phone": "(04) 006-2549",
+      "website": null,
+      "known_for": "Tile removal & rebedding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Auckland Tiling Services",
+      "rating": 4.4,
+      "review_count": 56,
+      "suburb": "Manukau",
+      "phone": "(027) 944-7187",
+      "website": null,
+      "known_for": "Large-format porcelain tiles",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

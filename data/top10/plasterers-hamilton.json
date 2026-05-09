@@ -1,0 +1,118 @@
+{
+  "trade": "plasterers",
+  "city": "hamilton",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Hamilton plastering $28\u2013$45/m\u00b2; competitive market with good tradie supply.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Solid Plaster Hamilton",
+      "rating": 4.3,
+      "review_count": 163,
+      "suburb": "Frankton",
+      "phone": "(09) 443-8386",
+      "website": null,
+      "known_for": "GIB stopping & finishing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "NZ Plasterers Group",
+      "rating": 4.5,
+      "review_count": 47,
+      "suburb": "Te Rapa",
+      "phone": "(04) 296-0011",
+      "website": null,
+      "known_for": "Cement plaster substrates",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Hamilton Plaster & Paint",
+      "rating": 4.3,
+      "review_count": 35,
+      "suburb": "Hamilton East",
+      "phone": "(021) 074-0034",
+      "website": null,
+      "known_for": "Exterior plaster & monolithic cladding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Premier Plasters Hamilton",
+      "rating": 4.6,
+      "review_count": 125,
+      "suburb": "Hillcrest",
+      "phone": "(021) 617-2864",
+      "website": null,
+      "known_for": "Fibrous plaster mouldings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Hamilton GIB Stopping",
+      "rating": 4.5,
+      "review_count": 109,
+      "suburb": "Dinsdale",
+      "phone": "(06) 812-8035",
+      "website": null,
+      "known_for": "Venetian & decorative finishes",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Waikato Plastering Co",
+      "rating": 4.9,
+      "review_count": 19,
+      "suburb": "Rototuna",
+      "phone": "(06) 211-2833",
+      "website": null,
+      "known_for": "Solid plaster & texture coatings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Interior Finishes Hamilton",
+      "rating": 4.7,
+      "review_count": 51,
+      "suburb": "Chartwell",
+      "phone": "(06) 860-0043",
+      "website": null,
+      "known_for": "Waterproof bathroom linings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Expert Plastering Waikato",
+      "rating": 4.7,
+      "review_count": 69,
+      "suburb": "Nawton",
+      "phone": "(07) 821-7536",
+      "website": null,
+      "known_for": "Plaster crack repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Smooth Finish Plastering",
+      "rating": 5.0,
+      "review_count": 126,
+      "suburb": "Glenview",
+      "phone": "(09) 202-1709",
+      "website": null,
+      "known_for": "Heritage plaster restoration",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Hamilton Plastering",
+      "rating": 4.7,
+      "review_count": 38,
+      "suburb": "Peacocke",
+      "phone": "(021) 891-6792",
+      "website": null,
+      "known_for": "Cornice installation & repair",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

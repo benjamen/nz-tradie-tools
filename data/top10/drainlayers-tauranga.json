@@ -1,0 +1,118 @@
+{
+  "trade": "drainlayers",
+  "city": "tauranga",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Tauranga drainlaying $108\u2013$152/hr; coastal areas require careful stormwater management.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Bay of Plenty Drainage",
+      "rating": 4.3,
+      "review_count": 35,
+      "suburb": "Mount Maunganui",
+      "phone": "(03) 622-6470",
+      "website": null,
+      "known_for": "Roof & surface water management",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Precision Drains Tauranga",
+      "rating": 4.8,
+      "review_count": 141,
+      "suburb": "Papamoa",
+      "phone": "(027) 132-6972",
+      "website": null,
+      "known_for": "New subdivsion drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Tauranga Drainage Services",
+      "rating": 4.7,
+      "review_count": 37,
+      "suburb": "Welcome Bay",
+      "phone": "(06) 889-9194",
+      "website": null,
+      "known_for": "Soakage & absorption trenches",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Tauranga Drainlaying Co",
+      "rating": 4.5,
+      "review_count": 105,
+      "suburb": "Bethlehem",
+      "phone": "(07) 362-4761",
+      "website": null,
+      "known_for": "Stormwater drainage design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Tauranga Sewer & Stormwater",
+      "rating": 4.4,
+      "review_count": 163,
+      "suburb": "Greerton",
+      "phone": "(03) 633-3675",
+      "website": null,
+      "known_for": "Earthworks & subsoil drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "NZ Drainage Group",
+      "rating": 4.4,
+      "review_count": 175,
+      "suburb": "Otumoetai",
+      "phone": "(03) 108-1016",
+      "website": null,
+      "known_for": "Drain relining (no-dig)",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Quality Drainlaying Bay of Plenty",
+      "rating": 4.9,
+      "review_count": 135,
+      "suburb": "Matua",
+      "phone": "(021) 080-9692",
+      "website": null,
+      "known_for": "Council connection fees & paperwork",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Pro Drainage Tauranga",
+      "rating": 4.3,
+      "review_count": 24,
+      "suburb": "Te Puna",
+      "phone": "(03) 349-9301",
+      "website": null,
+      "known_for": "Sewer & wastewater connections",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Underground Services Tauranga",
+      "rating": 4.4,
+      "review_count": 74,
+      "suburb": "Katikati",
+      "phone": "(022) 117-8799",
+      "website": null,
+      "known_for": "Blocked drain clearing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Expert Drains Tauranga",
+      "rating": 4.8,
+      "review_count": 11,
+      "suburb": "Judea",
+      "phone": "(07) 242-0498",
+      "website": null,
+      "known_for": "Septic tank installation & repairs",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

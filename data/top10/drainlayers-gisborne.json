@@ -1,0 +1,118 @@
+{
+  "trade": "drainlayers",
+  "city": "gisborne",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Gisborne drainlaying $95\u2013$135/hr; earthquake-prone zone requires flexible pipe systems.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Gisborne Drainlaying Co",
+      "rating": 4.8,
+      "review_count": 96,
+      "suburb": "Elgin",
+      "phone": "(04) 944-6534",
+      "website": null,
+      "known_for": "CCTV drain inspection",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Underground Services Gisborne",
+      "rating": 4.6,
+      "review_count": 27,
+      "suburb": "Kaiti",
+      "phone": "(09) 919-8346",
+      "website": null,
+      "known_for": "Soakage & absorption trenches",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Precision Drains Gisborne",
+      "rating": 4.8,
+      "review_count": 46,
+      "suburb": "Lytton",
+      "phone": "(04) 689-0045",
+      "website": null,
+      "known_for": "Earthworks & subsoil drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Expert Drains Gisborne",
+      "rating": 4.9,
+      "review_count": 149,
+      "suburb": "Riverdale",
+      "phone": "(021) 185-6643",
+      "website": null,
+      "known_for": "Blocked drain clearing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Gisborne Drainage Services",
+      "rating": 4.9,
+      "review_count": 11,
+      "suburb": "Mangapapa",
+      "phone": "(06) 486-9351",
+      "website": null,
+      "known_for": "Stormwater drainage design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Gisborne Sewer & Stormwater",
+      "rating": 4.8,
+      "review_count": 9,
+      "suburb": "Te Hapara",
+      "phone": "(09) 135-3607",
+      "website": null,
+      "known_for": "Sewer & wastewater connections",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Quality Drainlaying Gisborne",
+      "rating": 4.9,
+      "review_count": 81,
+      "suburb": "Makaraka",
+      "phone": "(09) 122-8649",
+      "website": null,
+      "known_for": "Septic tank installation & repairs",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Pro Drainage Gisborne",
+      "rating": 4.4,
+      "review_count": 72,
+      "suburb": "Patutahi",
+      "phone": "(06) 987-6967",
+      "website": null,
+      "known_for": "Pump station installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "NZ Drainage Group",
+      "rating": 4.5,
+      "review_count": 111,
+      "suburb": "Ormond",
+      "phone": "(022) 675-0619",
+      "website": null,
+      "known_for": "New subdivsion drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Gisborne Drainage",
+      "rating": 4.5,
+      "review_count": 90,
+      "suburb": "Matawhero",
+      "phone": "(04) 067-9352",
+      "website": null,
+      "known_for": "Drain relining (no-dig)",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

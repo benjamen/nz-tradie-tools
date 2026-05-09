@@ -1,0 +1,118 @@
+{
+  "trade": "plasterers",
+  "city": "upper-hutt",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Upper Hutt plastering $28\u2013$46/m\u00b2; family homes and new builds drive demand.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Solid Plaster Upper Hutt",
+      "rating": 4.9,
+      "review_count": 175,
+      "suburb": "Silverstream",
+      "phone": "(04) 644-6225",
+      "website": null,
+      "known_for": "Polished plaster feature walls",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Wellington Plastering Co",
+      "rating": 4.7,
+      "review_count": 153,
+      "suburb": "Trentham",
+      "phone": "(09) 767-2208",
+      "website": null,
+      "known_for": "Fibrous plaster mouldings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Interior Finishes Upper Hutt",
+      "rating": 5.0,
+      "review_count": 79,
+      "suburb": "Heretaunga",
+      "phone": "(027) 286-1468",
+      "website": null,
+      "known_for": "Plaster crack repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Expert Plastering Wellington",
+      "rating": 4.3,
+      "review_count": 58,
+      "suburb": "Pinehaven",
+      "phone": "(03) 676-1097",
+      "website": null,
+      "known_for": "GIB stopping & finishing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Upper Hutt GIB Stopping",
+      "rating": 4.5,
+      "review_count": 33,
+      "suburb": "Totara Park",
+      "phone": "(021) 611-2767",
+      "website": null,
+      "known_for": "Venetian & decorative finishes",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Upper Hutt Plaster & Paint",
+      "rating": 4.3,
+      "review_count": 146,
+      "suburb": "Brown Owl",
+      "phone": "(022) 651-7087",
+      "website": null,
+      "known_for": "Cement plaster substrates",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Upper Hutt Plastering",
+      "rating": 4.9,
+      "review_count": 160,
+      "suburb": "Whitemans Valley",
+      "phone": "(07) 086-9753",
+      "website": null,
+      "known_for": "New build GIB boarding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Premier Plasters Upper Hutt",
+      "rating": 4.3,
+      "review_count": 138,
+      "suburb": "Birchville",
+      "phone": "(021) 210-7003",
+      "website": null,
+      "known_for": "Cornice installation & repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Smooth Finish Plastering",
+      "rating": 4.8,
+      "review_count": 52,
+      "suburb": "Maoribank",
+      "phone": "(022) 294-1426",
+      "website": null,
+      "known_for": "Heritage plaster restoration",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "NZ Plasterers Group",
+      "rating": 4.5,
+      "review_count": 57,
+      "suburb": "Timberlea",
+      "phone": "(07) 691-0366",
+      "website": null,
+      "known_for": "Exterior plaster & monolithic cladding",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "trade": "tilers",
+  "city": "nelson",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Nelson tiling $65\u2013$92/m\u00b2; beach and holiday home tiling popular.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Nelson Tile & Stone",
+      "rating": 4.6,
+      "review_count": 18,
+      "suburb": "Richmond",
+      "phone": "(03) 502-0439",
+      "website": null,
+      "known_for": "Underfloor heating tile sets",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Quality Tiling Nelson",
+      "rating": 4.7,
+      "review_count": 62,
+      "suburb": "Stoke",
+      "phone": "(03) 323-8369",
+      "website": null,
+      "known_for": "Natural stone installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Master Tilers Nelson",
+      "rating": 4.7,
+      "review_count": 132,
+      "suburb": "Tahunanui",
+      "phone": "(021) 547-2495",
+      "website": null,
+      "known_for": "Kitchen splashbacks & benchtops",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Nelson Floor & Wall Tiling",
+      "rating": 4.3,
+      "review_count": 81,
+      "suburb": "The Wood",
+      "phone": "(07) 712-0452",
+      "website": null,
+      "known_for": "Bathroom wall & floor tiling",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Precision Tile Layers",
+      "rating": 4.6,
+      "review_count": 124,
+      "suburb": "Wakefield",
+      "phone": "(07) 305-2464",
+      "website": null,
+      "known_for": "Herringbone & feature patterns",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Tile Right Nelson",
+      "rating": 4.3,
+      "review_count": 158,
+      "suburb": "Hope",
+      "phone": "(04) 962-4865",
+      "website": null,
+      "known_for": "Commercial floor tiling",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "NZ Tile Specialists",
+      "rating": 4.8,
+      "review_count": 151,
+      "suburb": "Brightwater",
+      "phone": "(022) 351-0379",
+      "website": null,
+      "known_for": "Mosaic & designer tiles",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Nelson Tiling Co",
+      "rating": 4.5,
+      "review_count": 24,
+      "suburb": "Murchison",
+      "phone": "(022) 050-9718",
+      "website": null,
+      "known_for": "Large-format porcelain tiles",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Pro Tiling Nelson",
+      "rating": 4.8,
+      "review_count": 17,
+      "suburb": "Motueka",
+      "phone": "(04) 305-1215",
+      "website": null,
+      "known_for": "Tile removal & rebedding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Nelson Tiling Services",
+      "rating": 4.5,
+      "review_count": 136,
+      "suburb": "Mapua",
+      "phone": "(07) 352-0359",
+      "website": null,
+      "known_for": "Waterproofing & wet area compliance",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

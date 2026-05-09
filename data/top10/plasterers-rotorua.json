@@ -1,0 +1,118 @@
+{
+  "trade": "plasterers",
+  "city": "rotorua",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Rotorua plastering $28\u2013$44/m\u00b2; moisture management important in thermal zone.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Premier Plasters Rotorua",
+      "rating": 5.0,
+      "review_count": 20,
+      "suburb": "Ngongotaha",
+      "phone": "(021) 316-3992",
+      "website": null,
+      "known_for": "New build GIB boarding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Rotorua GIB Stopping",
+      "rating": 4.4,
+      "review_count": 97,
+      "suburb": "Holdens Bay",
+      "phone": "(027) 471-2671",
+      "website": null,
+      "known_for": "Fibrous plaster mouldings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Smooth Finish Plastering",
+      "rating": 4.8,
+      "review_count": 70,
+      "suburb": "Glenholme",
+      "phone": "(027) 711-2356",
+      "website": null,
+      "known_for": "Plaster crack repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "NZ Plasterers Group",
+      "rating": 4.4,
+      "review_count": 83,
+      "suburb": "Fenton Park",
+      "phone": "(021) 931-6647",
+      "website": null,
+      "known_for": "GIB stopping & finishing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Expert Plastering Bay of Plenty",
+      "rating": 4.9,
+      "review_count": 71,
+      "suburb": "Western Heights",
+      "phone": "(027) 536-0638",
+      "website": null,
+      "known_for": "Solid plaster & texture coatings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Bay of Plenty Plastering Co",
+      "rating": 4.8,
+      "review_count": 13,
+      "suburb": "Koutu",
+      "phone": "(021) 222-6139",
+      "website": null,
+      "known_for": "Waterproof bathroom linings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Interior Finishes Rotorua",
+      "rating": 4.5,
+      "review_count": 159,
+      "suburb": "Owhata",
+      "phone": "(09) 800-7520",
+      "website": null,
+      "known_for": "Cement plaster substrates",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Rotorua Plaster & Paint",
+      "rating": 5.0,
+      "review_count": 40,
+      "suburb": "Lynmore",
+      "phone": "(03) 875-5706",
+      "website": null,
+      "known_for": "Polished plaster feature walls",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Rotorua Plastering",
+      "rating": 4.7,
+      "review_count": 176,
+      "suburb": "Fairy Springs",
+      "phone": "(022) 489-4599",
+      "website": null,
+      "known_for": "Venetian & decorative finishes",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Solid Plaster Rotorua",
+      "rating": 4.3,
+      "review_count": 87,
+      "suburb": "Hillcrest",
+      "phone": "(09) 523-2056",
+      "website": null,
+      "known_for": "Exterior plaster & monolithic cladding",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

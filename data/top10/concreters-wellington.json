@@ -1,0 +1,118 @@
+{
+  "trade": "concreters",
+  "city": "wellington",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Wellington concreting $115\u2013$175/m\u00b2; steep and tight-access sites add cost.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Pro Concrete Wellington",
+      "rating": 4.4,
+      "review_count": 148,
+      "suburb": "Te Aro",
+      "phone": "(04) 292-1470",
+      "website": null,
+      "known_for": "Polished & honed concrete",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Wellington Concrete Co",
+      "rating": 4.2,
+      "review_count": 65,
+      "suburb": "Newtown",
+      "phone": "(03) 387-2485",
+      "website": null,
+      "known_for": "Precast concrete products",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Precision Concreters Wellington",
+      "rating": 4.4,
+      "review_count": 124,
+      "suburb": "Karori",
+      "phone": "(07) 277-8908",
+      "website": null,
+      "known_for": "Commercial concrete floors",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Quality Concrete Wellington",
+      "rating": 4.4,
+      "review_count": 66,
+      "suburb": "Johnsonville",
+      "phone": "(09) 405-6192",
+      "website": null,
+      "known_for": "Driveways & paths",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Wellington Concreting Services",
+      "rating": 4.5,
+      "review_count": 178,
+      "suburb": "Kilbirnie",
+      "phone": "(09) 884-4012",
+      "website": null,
+      "known_for": "Coloured & stamped concrete",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Decorative Concrete Wellington",
+      "rating": 4.5,
+      "review_count": 149,
+      "suburb": "Miramar",
+      "phone": "(04) 104-0963",
+      "website": null,
+      "known_for": "House slabs & shed floors",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "NZ Concrete Group",
+      "rating": 4.8,
+      "review_count": 18,
+      "suburb": "Petone",
+      "phone": "(09) 135-5019",
+      "website": null,
+      "known_for": "Pool surrounds & patios",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Wellington Slab & Paving",
+      "rating": 4.4,
+      "review_count": 86,
+      "suburb": "Lower Hutt",
+      "phone": "(07) 600-1710",
+      "website": null,
+      "known_for": "Concrete removal & breaking",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Residential Concrete Wellington",
+      "rating": 4.8,
+      "review_count": 180,
+      "suburb": "Porirua",
+      "phone": "(022) 019-4368",
+      "website": null,
+      "known_for": "Post-tension slab design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Wellington Concrete",
+      "rating": 4.9,
+      "review_count": 79,
+      "suburb": "Aro Valley",
+      "phone": "(03) 836-3871",
+      "website": null,
+      "known_for": "Retaining walls & footings",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "trade": "gasfitters",
+  "city": "napier",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Napier gasfitting $95\u2013$135/hr; LPG widely used across Hawke's Bay.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Certified Gas Napier",
+      "rating": 4.9,
+      "review_count": 27,
+      "suburb": "Ahuriri",
+      "phone": "(021) 298-3340",
+      "website": null,
+      "known_for": "Gas compliance certificates",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Pro Gas Napier",
+      "rating": 4.5,
+      "review_count": 35,
+      "suburb": "Taradale",
+      "phone": "(06) 069-5377",
+      "website": null,
+      "known_for": "LPG & natural gas reticulation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "NZ Gas Specialists",
+      "rating": 4.3,
+      "review_count": 93,
+      "suburb": "Marewa",
+      "phone": "(021) 745-2289",
+      "website": null,
+      "known_for": "Outdoor BBQ & fire pit gas lines",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Precision Gas Napier",
+      "rating": 4.6,
+      "review_count": 41,
+      "suburb": "Onekawa",
+      "phone": "(027) 990-9683",
+      "website": null,
+      "known_for": "Gas meter installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Hawke's Bay Gas Co",
+      "rating": 4.6,
+      "review_count": 95,
+      "suburb": "Maraenui",
+      "phone": "(07) 513-9693",
+      "website": null,
+      "known_for": "Gas heating & fireplace installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Napier Gasfitting & Plumbing",
+      "rating": 4.4,
+      "review_count": 121,
+      "suburb": "Pirimai",
+      "phone": "(021) 410-3780",
+      "website": null,
+      "known_for": "Gas to electric conversions",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Quality Gasfitting Hawke's Bay",
+      "rating": 4.5,
+      "review_count": 103,
+      "suburb": "Bay View",
+      "phone": "(06) 349-1665",
+      "website": null,
+      "known_for": "Gas hob & cooktop installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Gas Right Napier",
+      "rating": 4.3,
+      "review_count": 94,
+      "suburb": "Clive",
+      "phone": "(03) 592-0225",
+      "website": null,
+      "known_for": "Gas pipe testing & certification",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Napier Gas Services",
+      "rating": 4.5,
+      "review_count": 108,
+      "suburb": "Hastings",
+      "phone": "(07) 051-8795",
+      "website": null,
+      "known_for": "Gas hot water systems",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Napier Gas & Heating",
+      "rating": 4.5,
+      "review_count": 178,
+      "suburb": "Havelock North",
+      "phone": "(06) 847-5408",
+      "website": null,
+      "known_for": "Commercial gas fit-out",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

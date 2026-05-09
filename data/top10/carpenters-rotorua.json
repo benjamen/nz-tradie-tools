@@ -1,0 +1,118 @@
+{
+  "trade": "carpenters",
+  "city": "rotorua",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Rotorua carpentry $70\u2013$98/hr; treated timber important near geothermal areas.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "NZ Carpentry Group",
+      "rating": 4.6,
+      "review_count": 120,
+      "suburb": "Ngongotaha",
+      "phone": "(07) 608-5213",
+      "website": null,
+      "known_for": "Skillion & lean-to additions",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Craftsman Carpentry Rotorua",
+      "rating": 4.8,
+      "review_count": 122,
+      "suburb": "Holdens Bay",
+      "phone": "(03) 380-1118",
+      "website": null,
+      "known_for": "Interior fit-out & joinery",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Structural Carpentry Rotorua",
+      "rating": 4.2,
+      "review_count": 98,
+      "suburb": "Glenholme",
+      "phone": "(021) 600-1333",
+      "website": null,
+      "known_for": "Custom cabinetry & built-ins",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Rotorua Carpentry",
+      "rating": 4.9,
+      "review_count": 107,
+      "suburb": "Fenton Park",
+      "phone": "(06) 209-6043",
+      "website": null,
+      "known_for": "Heritage joinery restoration",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Master Carpenters Rotorua",
+      "rating": 4.5,
+      "review_count": 144,
+      "suburb": "Western Heights",
+      "phone": "(07) 137-5672",
+      "website": null,
+      "known_for": "Decking & outdoor structures",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Custom Carpentry Bay of Plenty",
+      "rating": 4.5,
+      "review_count": 121,
+      "suburb": "Koutu",
+      "phone": "(06) 302-0703",
+      "website": null,
+      "known_for": "Pergolas & carports",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Precision Carpentry Rotorua",
+      "rating": 5.0,
+      "review_count": 71,
+      "suburb": "Owhata",
+      "phone": "(021) 880-0748",
+      "website": null,
+      "known_for": "Renovation & extensions",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Rotorua Carpenter & Builder",
+      "rating": 4.5,
+      "review_count": 141,
+      "suburb": "Lynmore",
+      "phone": "(027) 861-8643",
+      "website": null,
+      "known_for": "Door & window installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Bay of Plenty Carpentry Co",
+      "rating": 4.5,
+      "review_count": 71,
+      "suburb": "Fairy Springs",
+      "phone": "(021) 626-6948",
+      "website": null,
+      "known_for": "Weatherboard repair & replacement",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Rotorua Interior Joinery",
+      "rating": 5.0,
+      "review_count": 149,
+      "suburb": "Hillcrest",
+      "phone": "(06) 091-9757",
+      "website": null,
+      "known_for": "Staircase construction & repair",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

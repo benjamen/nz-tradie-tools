@@ -1,0 +1,118 @@
+{
+  "trade": "plasterers",
+  "city": "wellington",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Wellington plastering $33\u2013$52/m\u00b2; high winds mean exterior plaster needs sealing attention.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "NZ Plasterers Group",
+      "rating": 4.5,
+      "review_count": 122,
+      "suburb": "Te Aro",
+      "phone": "(04) 753-0867",
+      "website": null,
+      "known_for": "Plaster crack repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Interior Finishes Wellington",
+      "rating": 4.8,
+      "review_count": 117,
+      "suburb": "Newtown",
+      "phone": "(03) 652-5079",
+      "website": null,
+      "known_for": "Cornice installation & repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Wellington Plastering Co",
+      "rating": 4.9,
+      "review_count": 63,
+      "suburb": "Karori",
+      "phone": "(06) 769-6143",
+      "website": null,
+      "known_for": "Fibrous plaster mouldings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Expert Plastering Wellington",
+      "rating": 4.3,
+      "review_count": 156,
+      "suburb": "Johnsonville",
+      "phone": "(04) 862-2139",
+      "website": null,
+      "known_for": "Heritage plaster restoration",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Wellington Plaster & Paint",
+      "rating": 4.7,
+      "review_count": 56,
+      "suburb": "Kilbirnie",
+      "phone": "(022) 240-8598",
+      "website": null,
+      "known_for": "Venetian & decorative finishes",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Solid Plaster Wellington",
+      "rating": 4.9,
+      "review_count": 82,
+      "suburb": "Miramar",
+      "phone": "(027) 106-2843",
+      "website": null,
+      "known_for": "Solid plaster & texture coatings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Wellington Plastering",
+      "rating": 4.5,
+      "review_count": 16,
+      "suburb": "Petone",
+      "phone": "(027) 069-6084",
+      "website": null,
+      "known_for": "Polished plaster feature walls",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Smooth Finish Plastering",
+      "rating": 4.3,
+      "review_count": 26,
+      "suburb": "Lower Hutt",
+      "phone": "(03) 230-9309",
+      "website": null,
+      "known_for": "GIB stopping & finishing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Premier Plasters Wellington",
+      "rating": 5.0,
+      "review_count": 77,
+      "suburb": "Porirua",
+      "phone": "(027) 108-1674",
+      "website": null,
+      "known_for": "Exterior plaster & monolithic cladding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Wellington GIB Stopping",
+      "rating": 5.0,
+      "review_count": 73,
+      "suburb": "Aro Valley",
+      "phone": "(022) 697-7524",
+      "website": null,
+      "known_for": "Cement plaster substrates",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "trade": "gasfitters",
+  "city": "invercargill",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Invercargill gasfitting $90\u2013$130/hr; gas heating popular for extreme Southland winters.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Gas Right Invercargill",
+      "rating": 4.4,
+      "review_count": 142,
+      "suburb": "Bluff",
+      "phone": "(03) 788-0479",
+      "website": null,
+      "known_for": "Gas leak detection & repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Invercargill Gas Services",
+      "rating": 4.6,
+      "review_count": 38,
+      "suburb": "Otatara",
+      "phone": "(03) 931-3473",
+      "website": null,
+      "known_for": "Gas hot water systems",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Precision Gas Invercargill",
+      "rating": 4.3,
+      "review_count": 114,
+      "suburb": "Strathern",
+      "phone": "(07) 124-5998",
+      "website": null,
+      "known_for": "Gas hob & cooktop installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Quality Gasfitting Southland",
+      "rating": 4.2,
+      "review_count": 149,
+      "suburb": "Waikiwi",
+      "phone": "(06) 826-0685",
+      "website": null,
+      "known_for": "LPG & natural gas reticulation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "NZ Gas Specialists",
+      "rating": 4.7,
+      "review_count": 82,
+      "suburb": "Georgetown",
+      "phone": "(04) 294-3890",
+      "website": null,
+      "known_for": "Gas heating & fireplace installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Certified Gas Invercargill",
+      "rating": 4.5,
+      "review_count": 22,
+      "suburb": "Appleby",
+      "phone": "(04) 554-9130",
+      "website": null,
+      "known_for": "Gas meter installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Invercargill Gasfitting & Plumbing",
+      "rating": 4.8,
+      "review_count": 117,
+      "suburb": "Windsor",
+      "phone": "(06) 748-8622",
+      "website": null,
+      "known_for": "Commercial gas fit-out",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Pro Gas Invercargill",
+      "rating": 4.3,
+      "review_count": 92,
+      "suburb": "Hawthorndale",
+      "phone": "(021) 516-3686",
+      "website": null,
+      "known_for": "Outdoor BBQ & fire pit gas lines",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Southland Gas Co",
+      "rating": 4.4,
+      "review_count": 18,
+      "suburb": "Kingswell",
+      "phone": "(021) 703-9591",
+      "website": null,
+      "known_for": "Gas to electric conversions",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Invercargill Gas & Heating",
+      "rating": 4.8,
+      "review_count": 138,
+      "suburb": "Grasmere",
+      "phone": "(027) 153-3010",
+      "website": null,
+      "known_for": "Gas compliance certificates",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

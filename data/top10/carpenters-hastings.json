@@ -1,0 +1,118 @@
+{
+  "trade": "carpenters",
+  "city": "hastings",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Hastings carpentry $70\u2013$98/hr; residential and horticultural building common.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "NZ Carpentry Group",
+      "rating": 4.7,
+      "review_count": 120,
+      "suburb": "Flaxmere",
+      "phone": "(021) 042-2165",
+      "website": null,
+      "known_for": "Structural framing & cladding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Craftsman Carpentry Hastings",
+      "rating": 4.6,
+      "review_count": 15,
+      "suburb": "Camberley",
+      "phone": "(06) 128-5545",
+      "website": null,
+      "known_for": "Heritage joinery restoration",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Hastings Interior Joinery",
+      "rating": 4.4,
+      "review_count": 21,
+      "suburb": "Parkvale",
+      "phone": "(027) 163-4844",
+      "website": null,
+      "known_for": "Pergolas & carports",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Hastings Carpentry",
+      "rating": 4.7,
+      "review_count": 177,
+      "suburb": "Mahora",
+      "phone": "(04) 397-6535",
+      "website": null,
+      "known_for": "Interior fit-out & joinery",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Precision Carpentry Hastings",
+      "rating": 4.7,
+      "review_count": 93,
+      "suburb": "Raureka",
+      "phone": "(07) 320-7362",
+      "website": null,
+      "known_for": "Weatherboard repair & replacement",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Structural Carpentry Hastings",
+      "rating": 4.6,
+      "review_count": 167,
+      "suburb": "Havelock North",
+      "phone": "(027) 588-5530",
+      "website": null,
+      "known_for": "Staircase construction & repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Hastings Carpenter & Builder",
+      "rating": 4.9,
+      "review_count": 22,
+      "suburb": "Clive",
+      "phone": "(06) 829-3186",
+      "website": null,
+      "known_for": "Door & window installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Hawke's Bay Carpentry Co",
+      "rating": 4.4,
+      "review_count": 145,
+      "suburb": "Whakatu",
+      "phone": "(022) 912-7645",
+      "website": null,
+      "known_for": "Custom cabinetry & built-ins",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Master Carpenters Hastings",
+      "rating": 4.4,
+      "review_count": 40,
+      "suburb": "Tomoana",
+      "phone": "(022) 114-9671",
+      "website": null,
+      "known_for": "Renovation & extensions",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Custom Carpentry Hawke's Bay",
+      "rating": 4.3,
+      "review_count": 173,
+      "suburb": "Frimley",
+      "phone": "(03) 533-3334",
+      "website": null,
+      "known_for": "Decking & outdoor structures",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

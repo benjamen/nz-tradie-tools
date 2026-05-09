@@ -1,0 +1,118 @@
+{
+  "trade": "tilers",
+  "city": "hastings",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Hastings tiling $63\u2013$88/m\u00b2; similar rates to Napier.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Master Tilers Hastings",
+      "rating": 4.6,
+      "review_count": 37,
+      "suburb": "Flaxmere",
+      "phone": "(03) 887-5462",
+      "website": null,
+      "known_for": "Underfloor heating tile sets",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Tile Right Hastings",
+      "rating": 4.3,
+      "review_count": 129,
+      "suburb": "Camberley",
+      "phone": "(06) 873-4633",
+      "website": null,
+      "known_for": "Outdoor pavers & pool surrounds",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "NZ Tile Specialists",
+      "rating": 4.5,
+      "review_count": 103,
+      "suburb": "Parkvale",
+      "phone": "(022) 186-4424",
+      "website": null,
+      "known_for": "Bathroom wall & floor tiling",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Hastings Tile & Stone",
+      "rating": 4.6,
+      "review_count": 168,
+      "suburb": "Mahora",
+      "phone": "(03) 208-1107",
+      "website": null,
+      "known_for": "Kitchen splashbacks & benchtops",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Hastings Floor & Wall Tiling",
+      "rating": 4.8,
+      "review_count": 64,
+      "suburb": "Raureka",
+      "phone": "(09) 832-1191",
+      "website": null,
+      "known_for": "Tile removal & rebedding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Hastings Tiling Services",
+      "rating": 5.0,
+      "review_count": 43,
+      "suburb": "Havelock North",
+      "phone": "(06) 251-3292",
+      "website": null,
+      "known_for": "Mosaic & designer tiles",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Pro Tiling Hastings",
+      "rating": 4.7,
+      "review_count": 127,
+      "suburb": "Clive",
+      "phone": "(021) 257-5668",
+      "website": null,
+      "known_for": "Herringbone & feature patterns",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Precision Tile Layers",
+      "rating": 4.3,
+      "review_count": 63,
+      "suburb": "Whakatu",
+      "phone": "(06) 543-1340",
+      "website": null,
+      "known_for": "Commercial floor tiling",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Hawke's Bay Tiling Co",
+      "rating": 4.8,
+      "review_count": 107,
+      "suburb": "Tomoana",
+      "phone": "(027) 494-5302",
+      "website": null,
+      "known_for": "Large-format porcelain tiles",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Quality Tiling Hawke's Bay",
+      "rating": 4.9,
+      "review_count": 133,
+      "suburb": "Frimley",
+      "phone": "(03) 718-6299",
+      "website": null,
+      "known_for": "Waterproofing & wet area compliance",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

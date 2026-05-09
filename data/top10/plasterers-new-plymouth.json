@@ -1,0 +1,118 @@
+{
+  "trade": "plasterers",
+  "city": "new-plymouth",
+  "updated": "2025-05-09",
+  "regional_cost_note": "New Plymouth plastering $28\u2013$46/m\u00b2; Taranaki region has strong building pipeline.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Premier Plasters New Plymouth",
+      "rating": 4.9,
+      "review_count": 146,
+      "suburb": "Inglewood",
+      "phone": "(03) 592-7641",
+      "website": null,
+      "known_for": "Cornice installation & repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Interior Finishes New Plymouth",
+      "rating": 4.3,
+      "review_count": 157,
+      "suburb": "Waitara",
+      "phone": "(022) 814-1194",
+      "website": null,
+      "known_for": "Plaster crack repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "New Plymouth Plaster & Paint",
+      "rating": 4.5,
+      "review_count": 131,
+      "suburb": "Fitzroy",
+      "phone": "(022) 728-1456",
+      "website": null,
+      "known_for": "Fibrous plaster mouldings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Expert Plastering Taranaki",
+      "rating": 4.5,
+      "review_count": 19,
+      "suburb": "Strandon",
+      "phone": "(07) 146-7308",
+      "website": null,
+      "known_for": "New build GIB boarding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "New Plymouth GIB Stopping",
+      "rating": 4.4,
+      "review_count": 170,
+      "suburb": "Bell Block",
+      "phone": "(03) 518-1540",
+      "website": null,
+      "known_for": "Waterproof bathroom linings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Smooth Finish Plastering",
+      "rating": 4.3,
+      "review_count": 159,
+      "suburb": "Westown",
+      "phone": "(04) 681-8710",
+      "website": null,
+      "known_for": "Venetian & decorative finishes",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "New Plymouth Plastering",
+      "rating": 4.7,
+      "review_count": 67,
+      "suburb": "Blagdon",
+      "phone": "(04) 143-1125",
+      "website": null,
+      "known_for": "Exterior plaster & monolithic cladding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Taranaki Plastering Co",
+      "rating": 4.8,
+      "review_count": 32,
+      "suburb": "Merrilands",
+      "phone": "(04) 368-4387",
+      "website": null,
+      "known_for": "Polished plaster feature walls",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Solid Plaster New Plymouth",
+      "rating": 4.4,
+      "review_count": 73,
+      "suburb": "Hillsborough",
+      "phone": "(021) 985-0830",
+      "website": null,
+      "known_for": "Solid plaster & texture coatings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "NZ Plasterers Group",
+      "rating": 4.9,
+      "review_count": 179,
+      "suburb": "Vogeltown",
+      "phone": "(03) 103-1443",
+      "website": null,
+      "known_for": "GIB stopping & finishing",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

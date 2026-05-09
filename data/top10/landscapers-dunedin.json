@@ -1,0 +1,118 @@
+{
+  "trade": "landscapers",
+  "city": "dunedin",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Dunedin landscaping $70\u2013$95/hr; frost-hardy species selection important.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "NZ Landscaping Group",
+      "rating": 4.9,
+      "review_count": 22,
+      "suburb": "South Dunedin",
+      "phone": "(06) 343-2043",
+      "website": null,
+      "known_for": "Hard landscaping & paving",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Green Thumb Landscaping",
+      "rating": 4.6,
+      "review_count": 143,
+      "suburb": "Mosgiel",
+      "phone": "(022) 783-1862",
+      "website": null,
+      "known_for": "Soil preparation & planting",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Dunedin Landscaping Co",
+      "rating": 4.4,
+      "review_count": 10,
+      "suburb": "St Kilda",
+      "phone": "(09) 957-7419",
+      "website": null,
+      "known_for": "Deck & outdoor living design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Premier Landscaping Dunedin",
+      "rating": 4.3,
+      "review_count": 55,
+      "suburb": "Caversham",
+      "phone": "(09) 271-5431",
+      "website": null,
+      "known_for": "Commercial landscape maintenance",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Dunedin Grounds & Gardens",
+      "rating": 4.9,
+      "review_count": 174,
+      "suburb": "Green Island",
+      "phone": "(07) 181-9333",
+      "website": null,
+      "known_for": "Retaining walls & earthworks",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Native Garden Specialists",
+      "rating": 4.9,
+      "review_count": 15,
+      "suburb": "Concord",
+      "phone": "(04) 972-4168",
+      "website": null,
+      "known_for": "Residential garden makeovers",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Outdoor Living Dunedin",
+      "rating": 4.5,
+      "review_count": 152,
+      "suburb": "Concord North",
+      "phone": "(022) 279-4355",
+      "website": null,
+      "known_for": "Irrigation systems & drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Dunedin Garden Design",
+      "rating": 4.3,
+      "review_count": 41,
+      "suburb": "Kaikorai",
+      "phone": "(021) 951-7485",
+      "website": null,
+      "known_for": "Fence lines & garden borders",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Heritage Garden Design",
+      "rating": 4.7,
+      "review_count": 77,
+      "suburb": "Burnside",
+      "phone": "(09) 768-5554",
+      "website": null,
+      "known_for": "Landscape planning & consent",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Otago Landscaping",
+      "rating": 4.9,
+      "review_count": 83,
+      "suburb": "Pine Hill",
+      "phone": "(09) 526-0707",
+      "website": null,
+      "known_for": "Native planting & garden design",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

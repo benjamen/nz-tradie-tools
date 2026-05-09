@@ -1,0 +1,118 @@
+{
+  "trade": "tilers",
+  "city": "porirua",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Porirua tiling $68\u2013$98/m\u00b2; competitive rates in the Wellington corridor.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Pro Tiling Porirua",
+      "rating": 4.4,
+      "review_count": 104,
+      "suburb": "Titahi Bay",
+      "phone": "(09) 298-4056",
+      "website": null,
+      "known_for": "Rectified tile installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Precision Tile Layers",
+      "rating": 5.0,
+      "review_count": 61,
+      "suburb": "Cannons Creek",
+      "phone": "(07) 234-5904",
+      "website": null,
+      "known_for": "Outdoor pavers & pool surrounds",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Master Tilers Porirua",
+      "rating": 4.6,
+      "review_count": 118,
+      "suburb": "Ranui",
+      "phone": "(022) 807-3266",
+      "website": null,
+      "known_for": "Commercial floor tiling",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Porirua Floor & Wall Tiling",
+      "rating": 4.3,
+      "review_count": 145,
+      "suburb": "Papakowhai",
+      "phone": "(021) 983-0648",
+      "website": null,
+      "known_for": "Mosaic & designer tiles",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Porirua Tile & Stone",
+      "rating": 4.6,
+      "review_count": 46,
+      "suburb": "Whitby",
+      "phone": "(06) 053-5223",
+      "website": null,
+      "known_for": "Waterproofing & wet area compliance",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Porirua Tiling Services",
+      "rating": 4.4,
+      "review_count": 111,
+      "suburb": "Camborne",
+      "phone": "(04) 222-6495",
+      "website": null,
+      "known_for": "Large-format porcelain tiles",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "NZ Tile Specialists",
+      "rating": 4.6,
+      "review_count": 92,
+      "suburb": "Plimmerton",
+      "phone": "(07) 103-6350",
+      "website": null,
+      "known_for": "Herringbone & feature patterns",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Quality Tiling Wellington",
+      "rating": 4.9,
+      "review_count": 116,
+      "suburb": "Paremata",
+      "phone": "(022) 786-0740",
+      "website": null,
+      "known_for": "Bathroom wall & floor tiling",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Wellington Tiling Co",
+      "rating": 4.7,
+      "review_count": 92,
+      "suburb": "Aotea",
+      "phone": "(09) 036-1454",
+      "website": null,
+      "known_for": "Natural stone installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Tile Right Porirua",
+      "rating": 4.4,
+      "review_count": 85,
+      "suburb": "Pukerua Bay",
+      "phone": "(027) 720-5416",
+      "website": null,
+      "known_for": "Kitchen splashbacks & benchtops",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

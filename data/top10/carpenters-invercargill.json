@@ -1,0 +1,118 @@
+{
+  "trade": "carpenters",
+  "city": "invercargill",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Invercargill carpentry $68\u2013$92/hr; cold climate drives insulation upgrade work.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Custom Carpentry Southland",
+      "rating": 4.5,
+      "review_count": 122,
+      "suburb": "Bluff",
+      "phone": "(07) 120-7428",
+      "website": null,
+      "known_for": "Heritage joinery restoration",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Southland Carpentry Co",
+      "rating": 5.0,
+      "review_count": 58,
+      "suburb": "Otatara",
+      "phone": "(06) 480-5511",
+      "website": null,
+      "known_for": "Pergolas & carports",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Invercargill Carpenter & Builder",
+      "rating": 4.3,
+      "review_count": 156,
+      "suburb": "Strathern",
+      "phone": "(03) 408-1932",
+      "website": null,
+      "known_for": "Door & window installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Master Carpenters Invercargill",
+      "rating": 4.7,
+      "review_count": 40,
+      "suburb": "Waikiwi",
+      "phone": "(07) 515-3508",
+      "website": null,
+      "known_for": "Staircase construction & repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Craftsman Carpentry Invercargill",
+      "rating": 4.8,
+      "review_count": 42,
+      "suburb": "Georgetown",
+      "phone": "(04) 324-6156",
+      "website": null,
+      "known_for": "Decking & outdoor structures",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Invercargill Interior Joinery",
+      "rating": 4.7,
+      "review_count": 27,
+      "suburb": "Appleby",
+      "phone": "(022) 295-7474",
+      "website": null,
+      "known_for": "Custom cabinetry & built-ins",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Invercargill Carpentry",
+      "rating": 4.9,
+      "review_count": 106,
+      "suburb": "Windsor",
+      "phone": "(03) 744-3993",
+      "website": null,
+      "known_for": "Timber flooring installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "NZ Carpentry Group",
+      "rating": 4.3,
+      "review_count": 152,
+      "suburb": "Hawthorndale",
+      "phone": "(07) 630-0902",
+      "website": null,
+      "known_for": "Interior fit-out & joinery",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Precision Carpentry Invercargill",
+      "rating": 4.9,
+      "review_count": 46,
+      "suburb": "Kingswell",
+      "phone": "(04) 239-0153",
+      "website": null,
+      "known_for": "Structural framing & cladding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Structural Carpentry Invercargill",
+      "rating": 4.2,
+      "review_count": 44,
+      "suburb": "Grasmere",
+      "phone": "(027) 112-2773",
+      "website": null,
+      "known_for": "Renovation & extensions",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

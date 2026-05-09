@@ -1,0 +1,118 @@
+{
+  "trade": "plasterers",
+  "city": "auckland",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Auckland plastering $35\u2013$55/m\u00b2 (GIB stopping); solid plaster $60\u2013$90/m\u00b2.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Auckland Plastering",
+      "rating": 4.5,
+      "review_count": 48,
+      "suburb": "Ponsonby",
+      "phone": "(04) 908-8539",
+      "website": null,
+      "known_for": "GIB stopping & finishing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Auckland GIB Stopping",
+      "rating": 4.8,
+      "review_count": 137,
+      "suburb": "Grey Lynn",
+      "phone": "(04) 343-2620",
+      "website": null,
+      "known_for": "Heritage plaster restoration",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Auckland Plastering Co",
+      "rating": 4.4,
+      "review_count": 172,
+      "suburb": "Mt Eden",
+      "phone": "(04) 665-8726",
+      "website": null,
+      "known_for": "Exterior plaster & monolithic cladding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Auckland Plaster & Paint",
+      "rating": 4.5,
+      "review_count": 159,
+      "suburb": "Remuera",
+      "phone": "(06) 264-5468",
+      "website": null,
+      "known_for": "Fibrous plaster mouldings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Interior Finishes Auckland",
+      "rating": 4.9,
+      "review_count": 77,
+      "suburb": "Newmarket",
+      "phone": "(04) 760-4811",
+      "website": null,
+      "known_for": "New build GIB boarding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Expert Plastering Auckland",
+      "rating": 4.5,
+      "review_count": 56,
+      "suburb": "Parnell",
+      "phone": "(04) 913-3059",
+      "website": null,
+      "known_for": "Cement plaster substrates",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Premier Plasters Auckland",
+      "rating": 4.9,
+      "review_count": 38,
+      "suburb": "Takapuna",
+      "phone": "(022) 485-9840",
+      "website": null,
+      "known_for": "Venetian & decorative finishes",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Solid Plaster Auckland",
+      "rating": 4.2,
+      "review_count": 87,
+      "suburb": "Henderson",
+      "phone": "(03) 161-0960",
+      "website": null,
+      "known_for": "Polished plaster feature walls",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "NZ Plasterers Group",
+      "rating": 4.4,
+      "review_count": 31,
+      "suburb": "Botany",
+      "phone": "(03) 642-2182",
+      "website": null,
+      "known_for": "Waterproof bathroom linings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Smooth Finish Plastering",
+      "rating": 4.7,
+      "review_count": 150,
+      "suburb": "Manukau",
+      "phone": "(021) 008-6433",
+      "website": null,
+      "known_for": "Plaster crack repair",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

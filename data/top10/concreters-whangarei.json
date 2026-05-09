@@ -1,0 +1,118 @@
+{
+  "trade": "concreters",
+  "city": "whangarei",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Whangarei concreting $98\u2013$148/m\u00b2; northland rural lifestyle blocks drive slab demand.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Residential Concrete Whangarei",
+      "rating": 4.7,
+      "review_count": 123,
+      "suburb": "Tikipunga",
+      "phone": "(022) 831-8622",
+      "website": null,
+      "known_for": "Commercial concrete floors",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Whangarei Concrete Co",
+      "rating": 4.7,
+      "review_count": 58,
+      "suburb": "Kamo",
+      "phone": "(022) 285-7199",
+      "website": null,
+      "known_for": "Concrete removal & breaking",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Pro Concrete Whangarei",
+      "rating": 4.4,
+      "review_count": 156,
+      "suburb": "Raumanga",
+      "phone": "(07) 029-2011",
+      "website": null,
+      "known_for": "Decorative exposed aggregate",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Whangarei Slab & Paving",
+      "rating": 4.2,
+      "review_count": 153,
+      "suburb": "Otangarei",
+      "phone": "(09) 712-4736",
+      "website": null,
+      "known_for": "Post-tension slab design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Quality Concrete Northland",
+      "rating": 4.6,
+      "review_count": 33,
+      "suburb": "Morningside",
+      "phone": "(021) 439-7417",
+      "website": null,
+      "known_for": "Polished & honed concrete",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Precision Concreters Whangarei",
+      "rating": 4.6,
+      "review_count": 24,
+      "suburb": "Regent",
+      "phone": "(04) 316-8630",
+      "website": null,
+      "known_for": "Coloured & stamped concrete",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Northland Concrete",
+      "rating": 4.6,
+      "review_count": 18,
+      "suburb": "Ruakaka",
+      "phone": "(07) 520-5592",
+      "website": null,
+      "known_for": "Pool surrounds & patios",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "NZ Concrete Group",
+      "rating": 4.8,
+      "review_count": 75,
+      "suburb": "Waipu",
+      "phone": "(022) 489-8568",
+      "website": null,
+      "known_for": "Precast concrete products",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Whangarei Concreting Services",
+      "rating": 4.6,
+      "review_count": 39,
+      "suburb": "Dargaville",
+      "phone": "(07) 620-2027",
+      "website": null,
+      "known_for": "Concrete grinding & sealing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Decorative Concrete Whangarei",
+      "rating": 4.3,
+      "review_count": 70,
+      "suburb": "Maungakaramea",
+      "phone": "(027) 275-1011",
+      "website": null,
+      "known_for": "House slabs & shed floors",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

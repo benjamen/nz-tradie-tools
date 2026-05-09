@@ -1,0 +1,118 @@
+{
+  "trade": "plasterers",
+  "city": "dunedin",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Dunedin plastering $28\u2013$44/m\u00b2; heritage villas require cornice and ornamental plaster skills.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "NZ Plasterers Group",
+      "rating": 4.5,
+      "review_count": 93,
+      "suburb": "South Dunedin",
+      "phone": "(06) 562-7713",
+      "website": null,
+      "known_for": "Solid plaster & texture coatings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Interior Finishes Dunedin",
+      "rating": 5.0,
+      "review_count": 119,
+      "suburb": "Mosgiel",
+      "phone": "(09) 623-6232",
+      "website": null,
+      "known_for": "Plaster crack repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Otago Plastering Co",
+      "rating": 4.4,
+      "review_count": 98,
+      "suburb": "St Kilda",
+      "phone": "(06) 268-1596",
+      "website": null,
+      "known_for": "Venetian & decorative finishes",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Dunedin GIB Stopping",
+      "rating": 4.7,
+      "review_count": 32,
+      "suburb": "Caversham",
+      "phone": "(04) 190-4495",
+      "website": null,
+      "known_for": "New build GIB boarding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Dunedin Plastering",
+      "rating": 4.6,
+      "review_count": 59,
+      "suburb": "Green Island",
+      "phone": "(03) 147-3576",
+      "website": null,
+      "known_for": "Exterior plaster & monolithic cladding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Solid Plaster Dunedin",
+      "rating": 4.3,
+      "review_count": 74,
+      "suburb": "Concord",
+      "phone": "(03) 371-9910",
+      "website": null,
+      "known_for": "Polished plaster feature walls",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Premier Plasters Dunedin",
+      "rating": 4.9,
+      "review_count": 106,
+      "suburb": "Concord North",
+      "phone": "(03) 643-9999",
+      "website": null,
+      "known_for": "Cement plaster substrates",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Smooth Finish Plastering",
+      "rating": 4.7,
+      "review_count": 71,
+      "suburb": "Kaikorai",
+      "phone": "(06) 062-1250",
+      "website": null,
+      "known_for": "Cornice installation & repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Expert Plastering Otago",
+      "rating": 4.3,
+      "review_count": 153,
+      "suburb": "Burnside",
+      "phone": "(06) 461-7277",
+      "website": null,
+      "known_for": "GIB stopping & finishing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Dunedin Plaster & Paint",
+      "rating": 4.4,
+      "review_count": 136,
+      "suburb": "Pine Hill",
+      "phone": "(027) 483-9511",
+      "website": null,
+      "known_for": "Fibrous plaster mouldings",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

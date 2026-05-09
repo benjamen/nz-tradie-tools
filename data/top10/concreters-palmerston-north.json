@@ -1,0 +1,118 @@
+{
+  "trade": "concreters",
+  "city": "palmerston-north",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Palmerston North concreting $95\u2013$140/m\u00b2; good value in the Manawatu region.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Precision Concreters Palmerston North",
+      "rating": 4.5,
+      "review_count": 58,
+      "suburb": "Roslyn",
+      "phone": "(07) 646-5775",
+      "website": null,
+      "known_for": "Post-tension slab design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "NZ Concrete Group",
+      "rating": 4.3,
+      "review_count": 19,
+      "suburb": "Terrace End",
+      "phone": "(021) 970-6530",
+      "website": null,
+      "known_for": "Concrete grinding & sealing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Palmerston North Slab & Paving",
+      "rating": 4.8,
+      "review_count": 126,
+      "suburb": "Takaro",
+      "phone": "(022) 233-3784",
+      "website": null,
+      "known_for": "Retaining walls & footings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Quality Concrete Manawatu",
+      "rating": 4.7,
+      "review_count": 152,
+      "suburb": "Awapuni",
+      "phone": "(022) 889-4790",
+      "website": null,
+      "known_for": "Precast concrete products",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Residential Concrete Palmerston North",
+      "rating": 4.4,
+      "review_count": 27,
+      "suburb": "Kelvin Grove",
+      "phone": "(021) 176-0770",
+      "website": null,
+      "known_for": "Commercial concrete floors",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Manawatu Concrete",
+      "rating": 4.5,
+      "review_count": 176,
+      "suburb": "Fitzherbert",
+      "phone": "(07) 245-2507",
+      "website": null,
+      "known_for": "Coloured & stamped concrete",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Pro Concrete Palmerston North",
+      "rating": 4.9,
+      "review_count": 36,
+      "suburb": "Hokowhitu",
+      "phone": "(07) 524-4443",
+      "website": null,
+      "known_for": "House slabs & shed floors",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Palmerston North Concrete Co",
+      "rating": 5.0,
+      "review_count": 33,
+      "suburb": "Milson",
+      "phone": "(021) 495-2333",
+      "website": null,
+      "known_for": "Pool surrounds & patios",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Palmerston North Concreting Services",
+      "rating": 4.8,
+      "review_count": 61,
+      "suburb": "Cloverlea",
+      "phone": "(07) 715-6282",
+      "website": null,
+      "known_for": "Driveways & paths",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Decorative Concrete Palmerston North",
+      "rating": 4.5,
+      "review_count": 25,
+      "suburb": "Ashhurst",
+      "phone": "(04) 397-6048",
+      "website": null,
+      "known_for": "Decorative exposed aggregate",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

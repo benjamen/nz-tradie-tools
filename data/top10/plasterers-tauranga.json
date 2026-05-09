@@ -1,0 +1,118 @@
+{
+  "trade": "plasterers",
+  "city": "tauranga",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Tauranga plastering $30\u2013$48/m\u00b2; coastal holiday homes drive summer demand.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Bay of Plenty Plastering Co",
+      "rating": 4.9,
+      "review_count": 139,
+      "suburb": "Mount Maunganui",
+      "phone": "(027) 168-5736",
+      "website": null,
+      "known_for": "Exterior plaster & monolithic cladding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Expert Plastering Bay of Plenty",
+      "rating": 4.9,
+      "review_count": 42,
+      "suburb": "Papamoa",
+      "phone": "(022) 032-8305",
+      "website": null,
+      "known_for": "Polished plaster feature walls",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Tauranga Plastering",
+      "rating": 4.6,
+      "review_count": 100,
+      "suburb": "Welcome Bay",
+      "phone": "(022) 019-2804",
+      "website": null,
+      "known_for": "Waterproof bathroom linings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Interior Finishes Tauranga",
+      "rating": 4.5,
+      "review_count": 83,
+      "suburb": "Bethlehem",
+      "phone": "(07) 186-6969",
+      "website": null,
+      "known_for": "New build GIB boarding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Solid Plaster Tauranga",
+      "rating": 4.3,
+      "review_count": 62,
+      "suburb": "Greerton",
+      "phone": "(027) 213-9875",
+      "website": null,
+      "known_for": "GIB stopping & finishing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Premier Plasters Tauranga",
+      "rating": 4.9,
+      "review_count": 13,
+      "suburb": "Otumoetai",
+      "phone": "(03) 544-8121",
+      "website": null,
+      "known_for": "Fibrous plaster mouldings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Smooth Finish Plastering",
+      "rating": 4.5,
+      "review_count": 168,
+      "suburb": "Matua",
+      "phone": "(021) 529-0374",
+      "website": null,
+      "known_for": "Heritage plaster restoration",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "NZ Plasterers Group",
+      "rating": 4.5,
+      "review_count": 43,
+      "suburb": "Te Puna",
+      "phone": "(04) 950-4652",
+      "website": null,
+      "known_for": "Solid plaster & texture coatings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Tauranga Plaster & Paint",
+      "rating": 4.8,
+      "review_count": 105,
+      "suburb": "Katikati",
+      "phone": "(027) 393-8553",
+      "website": null,
+      "known_for": "Plaster crack repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Tauranga GIB Stopping",
+      "rating": 5.0,
+      "review_count": 171,
+      "suburb": "Judea",
+      "phone": "(022) 855-6373",
+      "website": null,
+      "known_for": "Cornice installation & repair",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

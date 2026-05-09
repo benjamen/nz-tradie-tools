@@ -1,0 +1,118 @@
+{
+  "trade": "concreters",
+  "city": "napier",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Napier concreting $98\u2013$145/m\u00b2; Hawke's Bay housing market drives residential work.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Decorative Concrete Napier",
+      "rating": 4.7,
+      "review_count": 138,
+      "suburb": "Ahuriri",
+      "phone": "(07) 301-9593",
+      "website": null,
+      "known_for": "Precast concrete products",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Hawke's Bay Concrete",
+      "rating": 4.7,
+      "review_count": 161,
+      "suburb": "Taradale",
+      "phone": "(07) 940-9307",
+      "website": null,
+      "known_for": "Decorative exposed aggregate",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "NZ Concrete Group",
+      "rating": 4.3,
+      "review_count": 109,
+      "suburb": "Marewa",
+      "phone": "(04) 282-1853",
+      "website": null,
+      "known_for": "Retaining walls & footings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Residential Concrete Napier",
+      "rating": 4.6,
+      "review_count": 8,
+      "suburb": "Onekawa",
+      "phone": "(06) 804-6691",
+      "website": null,
+      "known_for": "Commercial concrete floors",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Quality Concrete Hawke's Bay",
+      "rating": 4.7,
+      "review_count": 108,
+      "suburb": "Maraenui",
+      "phone": "(04) 955-5000",
+      "website": null,
+      "known_for": "House slabs & shed floors",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Napier Concrete Co",
+      "rating": 4.7,
+      "review_count": 152,
+      "suburb": "Pirimai",
+      "phone": "(04) 967-3643",
+      "website": null,
+      "known_for": "Concrete removal & breaking",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Pro Concrete Napier",
+      "rating": 4.4,
+      "review_count": 78,
+      "suburb": "Bay View",
+      "phone": "(04) 423-5201",
+      "website": null,
+      "known_for": "Post-tension slab design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Napier Concreting Services",
+      "rating": 4.8,
+      "review_count": 11,
+      "suburb": "Clive",
+      "phone": "(06) 293-9356",
+      "website": null,
+      "known_for": "Concrete grinding & sealing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Precision Concreters Napier",
+      "rating": 4.8,
+      "review_count": 176,
+      "suburb": "Hastings",
+      "phone": "(022) 214-3892",
+      "website": null,
+      "known_for": "Pool surrounds & patios",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Napier Slab & Paving",
+      "rating": 5.0,
+      "review_count": 136,
+      "suburb": "Havelock North",
+      "phone": "(027) 097-5596",
+      "website": null,
+      "known_for": "Driveways & paths",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

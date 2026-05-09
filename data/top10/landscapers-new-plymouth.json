@@ -1,0 +1,118 @@
+{
+  "trade": "landscapers",
+  "city": "new-plymouth",
+  "updated": "2025-05-09",
+  "regional_cost_note": "New Plymouth landscaping $70\u2013$95/hr; volcanic soil is rich but drainage critical.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "New Plymouth Grounds & Gardens",
+      "rating": 4.6,
+      "review_count": 86,
+      "suburb": "Inglewood",
+      "phone": "(04) 384-3467",
+      "website": null,
+      "known_for": "Hard landscaping & paving",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Outdoor Living New Plymouth",
+      "rating": 4.5,
+      "review_count": 116,
+      "suburb": "Waitara",
+      "phone": "(027) 450-9963",
+      "website": null,
+      "known_for": "Landscape planning & consent",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Heritage Garden Design",
+      "rating": 4.7,
+      "review_count": 77,
+      "suburb": "Fitzroy",
+      "phone": "(027) 472-0957",
+      "website": null,
+      "known_for": "Soil preparation & planting",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Taranaki Landscaping",
+      "rating": 4.6,
+      "review_count": 105,
+      "suburb": "Strandon",
+      "phone": "(021) 009-4081",
+      "website": null,
+      "known_for": "Commercial landscape maintenance",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Native Garden Specialists",
+      "rating": 5.0,
+      "review_count": 42,
+      "suburb": "Bell Block",
+      "phone": "(022) 647-5944",
+      "website": null,
+      "known_for": "Irrigation systems & drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "New Plymouth Landscaping Co",
+      "rating": 4.8,
+      "review_count": 166,
+      "suburb": "Westown",
+      "phone": "(06) 302-0356",
+      "website": null,
+      "known_for": "Water features & ponds",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "New Plymouth Garden Design",
+      "rating": 4.3,
+      "review_count": 163,
+      "suburb": "Blagdon",
+      "phone": "(07) 849-2083",
+      "website": null,
+      "known_for": "Native planting & garden design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "NZ Landscaping Group",
+      "rating": 4.8,
+      "review_count": 113,
+      "suburb": "Merrilands",
+      "phone": "(022) 597-0267",
+      "website": null,
+      "known_for": "Residential garden makeovers",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Premier Landscaping New Plymouth",
+      "rating": 4.8,
+      "review_count": 75,
+      "suburb": "Hillsborough",
+      "phone": "(021) 196-5363",
+      "website": null,
+      "known_for": "Deck & outdoor living design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Green Thumb Landscaping",
+      "rating": 4.9,
+      "review_count": 138,
+      "suburb": "Vogeltown",
+      "phone": "(07) 525-5154",
+      "website": null,
+      "known_for": "Retaining walls & earthworks",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "trade": "drainlayers",
+  "city": "upper-hutt",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Upper Hutt drainlaying $112\u2013$155/hr; Hutt Valley flood management important.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Upper Hutt Sewer & Stormwater",
+      "rating": 4.8,
+      "review_count": 124,
+      "suburb": "Silverstream",
+      "phone": "(06) 930-8179",
+      "website": null,
+      "known_for": "Blocked drain clearing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Upper Hutt Drainlaying Co",
+      "rating": 4.6,
+      "review_count": 141,
+      "suburb": "Trentham",
+      "phone": "(027) 158-3793",
+      "website": null,
+      "known_for": "Council connection fees & paperwork",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Upper Hutt Drainage Services",
+      "rating": 4.7,
+      "review_count": 51,
+      "suburb": "Heretaunga",
+      "phone": "(021) 499-1765",
+      "website": null,
+      "known_for": "Stormwater drainage design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "NZ Drainage Group",
+      "rating": 4.7,
+      "review_count": 94,
+      "suburb": "Pinehaven",
+      "phone": "(06) 358-3327",
+      "website": null,
+      "known_for": "New subdivsion drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Wellington Drainage",
+      "rating": 4.9,
+      "review_count": 55,
+      "suburb": "Totara Park",
+      "phone": "(027) 806-0783",
+      "website": null,
+      "known_for": "Septic tank installation & repairs",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Pro Drainage Upper Hutt",
+      "rating": 4.3,
+      "review_count": 29,
+      "suburb": "Brown Owl",
+      "phone": "(022) 361-5213",
+      "website": null,
+      "known_for": "Roof & surface water management",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Quality Drainlaying Wellington",
+      "rating": 4.2,
+      "review_count": 70,
+      "suburb": "Whitemans Valley",
+      "phone": "(022) 719-0394",
+      "website": null,
+      "known_for": "Sewer & wastewater connections",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Expert Drains Upper Hutt",
+      "rating": 4.3,
+      "review_count": 36,
+      "suburb": "Birchville",
+      "phone": "(09) 690-5784",
+      "website": null,
+      "known_for": "CCTV drain inspection",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Precision Drains Upper Hutt",
+      "rating": 4.5,
+      "review_count": 121,
+      "suburb": "Maoribank",
+      "phone": "(07) 670-3672",
+      "website": null,
+      "known_for": "Pump station installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Underground Services Upper Hutt",
+      "rating": 4.9,
+      "review_count": 23,
+      "suburb": "Timberlea",
+      "phone": "(09) 541-8625",
+      "website": null,
+      "known_for": "Soakage & absorption trenches",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

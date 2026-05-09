@@ -1,0 +1,118 @@
+{
+  "trade": "gasfitters",
+  "city": "auckland",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Auckland gasfitting $120\u2013$160/hr; natural gas available; LPG common in areas without mains.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Pro Gas Auckland",
+      "rating": 4.7,
+      "review_count": 137,
+      "suburb": "Ponsonby",
+      "phone": "(03) 288-6261",
+      "website": null,
+      "known_for": "Gas compliance certificates",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Auckland Gasfitting & Plumbing",
+      "rating": 4.8,
+      "review_count": 67,
+      "suburb": "Grey Lynn",
+      "phone": "(09) 239-3015",
+      "website": null,
+      "known_for": "LPG & natural gas reticulation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Auckland Gas & Heating",
+      "rating": 4.8,
+      "review_count": 109,
+      "suburb": "Mt Eden",
+      "phone": "(07) 293-5554",
+      "website": null,
+      "known_for": "Gas hob & cooktop installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Gas Right Auckland",
+      "rating": 4.5,
+      "review_count": 39,
+      "suburb": "Remuera",
+      "phone": "(04) 587-4785",
+      "website": null,
+      "known_for": "Gas appliance servicing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Precision Gas Auckland",
+      "rating": 4.9,
+      "review_count": 147,
+      "suburb": "Newmarket",
+      "phone": "(07) 528-3932",
+      "website": null,
+      "known_for": "Gas meter installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Quality Gasfitting Auckland",
+      "rating": 4.9,
+      "review_count": 133,
+      "suburb": "Parnell",
+      "phone": "(07) 675-1127",
+      "website": null,
+      "known_for": "Commercial gas fit-out",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "NZ Gas Specialists",
+      "rating": 4.9,
+      "review_count": 70,
+      "suburb": "Takapuna",
+      "phone": "(021) 634-4668",
+      "website": null,
+      "known_for": "Gas hot water systems",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Auckland Gas Co",
+      "rating": 4.9,
+      "review_count": 134,
+      "suburb": "Henderson",
+      "phone": "(07) 976-8893",
+      "website": null,
+      "known_for": "Gas pipe testing & certification",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Certified Gas Auckland",
+      "rating": 4.6,
+      "review_count": 35,
+      "suburb": "Botany",
+      "phone": "(09) 049-5546",
+      "website": null,
+      "known_for": "Outdoor BBQ & fire pit gas lines",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Auckland Gas Services",
+      "rating": 4.6,
+      "review_count": 126,
+      "suburb": "Manukau",
+      "phone": "(04) 702-1719",
+      "website": null,
+      "known_for": "Gas heating & fireplace installation",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

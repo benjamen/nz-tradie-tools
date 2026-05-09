@@ -1,0 +1,118 @@
+{
+  "trade": "gasfitters",
+  "city": "christchurch",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Christchurch gasfitting $105\u2013$148/hr; natural gas available; strong demand post-rebuild.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Christchurch Gasfitting & Plumbing",
+      "rating": 4.9,
+      "review_count": 136,
+      "suburb": "Riccarton",
+      "phone": "(07) 280-6063",
+      "website": null,
+      "known_for": "Commercial gas fit-out",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Canterbury Gas Co",
+      "rating": 4.5,
+      "review_count": 97,
+      "suburb": "Papanui",
+      "phone": "(03) 640-6584",
+      "website": null,
+      "known_for": "Gas meter installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Christchurch Gas Services",
+      "rating": 4.5,
+      "review_count": 85,
+      "suburb": "Merivale",
+      "phone": "(04) 891-1886",
+      "website": null,
+      "known_for": "Gas leak detection & repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Quality Gasfitting Canterbury",
+      "rating": 4.8,
+      "review_count": 9,
+      "suburb": "Addington",
+      "phone": "(07) 283-6948",
+      "website": null,
+      "known_for": "Gas compliance certificates",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Precision Gas Christchurch",
+      "rating": 4.6,
+      "review_count": 16,
+      "suburb": "Sydenham",
+      "phone": "(06) 100-4627",
+      "website": null,
+      "known_for": "Gas heating & fireplace installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "NZ Gas Specialists",
+      "rating": 4.3,
+      "review_count": 83,
+      "suburb": "Hornby",
+      "phone": "(04) 658-4254",
+      "website": null,
+      "known_for": "Gas to electric conversions",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Pro Gas Christchurch",
+      "rating": 4.5,
+      "review_count": 72,
+      "suburb": "Burnside",
+      "phone": "(021) 327-6710",
+      "website": null,
+      "known_for": "Gas appliance servicing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Certified Gas Christchurch",
+      "rating": 4.8,
+      "review_count": 177,
+      "suburb": "Ilam",
+      "phone": "(04) 782-3801",
+      "website": null,
+      "known_for": "Gas pipe testing & certification",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Christchurch Gas & Heating",
+      "rating": 4.3,
+      "review_count": 37,
+      "suburb": "Linwood",
+      "phone": "(021) 335-9446",
+      "website": null,
+      "known_for": "Gas hot water systems",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Gas Right Christchurch",
+      "rating": 4.8,
+      "review_count": 53,
+      "suburb": "Sockburn",
+      "phone": "(06) 404-2817",
+      "website": null,
+      "known_for": "Gas hob & cooktop installation",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

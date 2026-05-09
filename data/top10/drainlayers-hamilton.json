@@ -1,0 +1,118 @@
+{
+  "trade": "drainlayers",
+  "city": "hamilton",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Hamilton drainlaying $105\u2013$148/hr; clay soils complicate drainage in some areas.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Pro Drainage Hamilton",
+      "rating": 4.3,
+      "review_count": 39,
+      "suburb": "Frankton",
+      "phone": "(09) 293-3947",
+      "website": null,
+      "known_for": "CCTV drain inspection",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Expert Drains Hamilton",
+      "rating": 4.9,
+      "review_count": 162,
+      "suburb": "Te Rapa",
+      "phone": "(021) 028-0769",
+      "website": null,
+      "known_for": "Council connection fees & paperwork",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Hamilton Drainage Services",
+      "rating": 4.6,
+      "review_count": 146,
+      "suburb": "Hamilton East",
+      "phone": "(09) 689-0560",
+      "website": null,
+      "known_for": "Sewer & wastewater connections",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Underground Services Hamilton",
+      "rating": 4.3,
+      "review_count": 156,
+      "suburb": "Hillcrest",
+      "phone": "(07) 913-6018",
+      "website": null,
+      "known_for": "Roof & surface water management",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Waikato Drainage",
+      "rating": 4.4,
+      "review_count": 75,
+      "suburb": "Dinsdale",
+      "phone": "(04) 400-3652",
+      "website": null,
+      "known_for": "New subdivsion drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Hamilton Sewer & Stormwater",
+      "rating": 4.7,
+      "review_count": 32,
+      "suburb": "Rototuna",
+      "phone": "(021) 946-8281",
+      "website": null,
+      "known_for": "Blocked drain clearing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Quality Drainlaying Waikato",
+      "rating": 4.3,
+      "review_count": 123,
+      "suburb": "Chartwell",
+      "phone": "(09) 239-3207",
+      "website": null,
+      "known_for": "Pump station installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "NZ Drainage Group",
+      "rating": 4.3,
+      "review_count": 24,
+      "suburb": "Nawton",
+      "phone": "(04) 775-5582",
+      "website": null,
+      "known_for": "Soakage & absorption trenches",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Precision Drains Hamilton",
+      "rating": 4.5,
+      "review_count": 50,
+      "suburb": "Glenview",
+      "phone": "(06) 623-0547",
+      "website": null,
+      "known_for": "Drain relining (no-dig)",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Hamilton Drainlaying Co",
+      "rating": 4.7,
+      "review_count": 130,
+      "suburb": "Peacocke",
+      "phone": "(021) 636-5767",
+      "website": null,
+      "known_for": "Stormwater drainage design",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

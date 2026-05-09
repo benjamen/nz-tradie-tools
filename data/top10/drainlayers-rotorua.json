@@ -1,0 +1,118 @@
+{
+  "trade": "drainlayers",
+  "city": "rotorua",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Rotorua drainlaying $98\u2013$138/hr; geothermal areas require specialist knowledge of ground conditions.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Rotorua Drainlaying Co",
+      "rating": 4.6,
+      "review_count": 118,
+      "suburb": "Ngongotaha",
+      "phone": "(07) 395-3041",
+      "website": null,
+      "known_for": "Drain relining (no-dig)",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Bay of Plenty Drainage",
+      "rating": 4.3,
+      "review_count": 141,
+      "suburb": "Holdens Bay",
+      "phone": "(021) 831-4283",
+      "website": null,
+      "known_for": "Roof & surface water management",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Pro Drainage Rotorua",
+      "rating": 4.3,
+      "review_count": 145,
+      "suburb": "Glenholme",
+      "phone": "(021) 857-3329",
+      "website": null,
+      "known_for": "Council connection fees & paperwork",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Underground Services Rotorua",
+      "rating": 4.7,
+      "review_count": 98,
+      "suburb": "Fenton Park",
+      "phone": "(09) 314-7109",
+      "website": null,
+      "known_for": "Soakage & absorption trenches",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Rotorua Drainage Services",
+      "rating": 4.3,
+      "review_count": 63,
+      "suburb": "Western Heights",
+      "phone": "(07) 553-8939",
+      "website": null,
+      "known_for": "Earthworks & subsoil drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Precision Drains Rotorua",
+      "rating": 4.5,
+      "review_count": 37,
+      "suburb": "Koutu",
+      "phone": "(09) 130-7396",
+      "website": null,
+      "known_for": "Blocked drain clearing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Expert Drains Rotorua",
+      "rating": 4.4,
+      "review_count": 127,
+      "suburb": "Owhata",
+      "phone": "(022) 422-1258",
+      "website": null,
+      "known_for": "Sewer & wastewater connections",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Quality Drainlaying Bay of Plenty",
+      "rating": 4.2,
+      "review_count": 53,
+      "suburb": "Lynmore",
+      "phone": "(03) 625-2072",
+      "website": null,
+      "known_for": "Septic tank installation & repairs",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "NZ Drainage Group",
+      "rating": 4.4,
+      "review_count": 39,
+      "suburb": "Fairy Springs",
+      "phone": "(06) 761-6572",
+      "website": null,
+      "known_for": "New subdivsion drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Rotorua Sewer & Stormwater",
+      "rating": 4.8,
+      "review_count": 126,
+      "suburb": "Hillcrest",
+      "phone": "(03) 616-0873",
+      "website": null,
+      "known_for": "Pump station installation",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

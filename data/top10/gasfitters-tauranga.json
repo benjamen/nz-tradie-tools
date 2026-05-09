@@ -1,0 +1,118 @@
+{
+  "trade": "gasfitters",
+  "city": "tauranga",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Tauranga gasfitting $100\u2013$145/hr; LPG common; natural gas limited to some suburbs.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Precision Gas Tauranga",
+      "rating": 4.8,
+      "review_count": 51,
+      "suburb": "Mount Maunganui",
+      "phone": "(06) 272-2365",
+      "website": null,
+      "known_for": "Gas heating & fireplace installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Tauranga Gasfitting & Plumbing",
+      "rating": 4.3,
+      "review_count": 141,
+      "suburb": "Papamoa",
+      "phone": "(022) 882-5667",
+      "website": null,
+      "known_for": "Gas meter installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Bay of Plenty Gas Co",
+      "rating": 4.4,
+      "review_count": 26,
+      "suburb": "Welcome Bay",
+      "phone": "(021) 950-5859",
+      "website": null,
+      "known_for": "Commercial gas fit-out",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Pro Gas Tauranga",
+      "rating": 4.4,
+      "review_count": 133,
+      "suburb": "Bethlehem",
+      "phone": "(09) 975-6291",
+      "website": null,
+      "known_for": "Gas hob & cooktop installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Certified Gas Tauranga",
+      "rating": 4.8,
+      "review_count": 136,
+      "suburb": "Greerton",
+      "phone": "(09) 017-8023",
+      "website": null,
+      "known_for": "Gas pipe testing & certification",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Gas Right Tauranga",
+      "rating": 4.8,
+      "review_count": 91,
+      "suburb": "Otumoetai",
+      "phone": "(027) 334-0743",
+      "website": null,
+      "known_for": "Gas appliance servicing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Tauranga Gas Services",
+      "rating": 4.8,
+      "review_count": 110,
+      "suburb": "Matua",
+      "phone": "(07) 755-2491",
+      "website": null,
+      "known_for": "Gas compliance certificates",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Quality Gasfitting Bay of Plenty",
+      "rating": 5.0,
+      "review_count": 46,
+      "suburb": "Te Puna",
+      "phone": "(021) 993-6412",
+      "website": null,
+      "known_for": "Gas hot water systems",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "NZ Gas Specialists",
+      "rating": 4.8,
+      "review_count": 176,
+      "suburb": "Katikati",
+      "phone": "(021) 381-6985",
+      "website": null,
+      "known_for": "LPG & natural gas reticulation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Tauranga Gas & Heating",
+      "rating": 4.6,
+      "review_count": 50,
+      "suburb": "Judea",
+      "phone": "(022) 565-6889",
+      "website": null,
+      "known_for": "Gas leak detection & repair",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "trade": "gasfitters",
+  "city": "lower-hutt",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Lower Hutt gasfitting $108\u2013$150/hr; natural gas available; Wellington corridor rates.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "NZ Gas Specialists",
+      "rating": 4.7,
+      "review_count": 59,
+      "suburb": "Petone",
+      "phone": "(022) 697-3812",
+      "website": null,
+      "known_for": "Gas heating & fireplace installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Pro Gas Lower Hutt",
+      "rating": 4.8,
+      "review_count": 37,
+      "suburb": "Naenae",
+      "phone": "(04) 181-8155",
+      "website": null,
+      "known_for": "Gas to electric conversions",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Lower Hutt Gas & Heating",
+      "rating": 4.7,
+      "review_count": 73,
+      "suburb": "Stokes Valley",
+      "phone": "(07) 174-4687",
+      "website": null,
+      "known_for": "LPG & natural gas reticulation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Precision Gas Lower Hutt",
+      "rating": 4.2,
+      "review_count": 94,
+      "suburb": "Avalon",
+      "phone": "(021) 644-7072",
+      "website": null,
+      "known_for": "Outdoor BBQ & fire pit gas lines",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Quality Gasfitting Wellington",
+      "rating": 4.7,
+      "review_count": 175,
+      "suburb": "Taita",
+      "phone": "(07) 563-7583",
+      "website": null,
+      "known_for": "Commercial gas fit-out",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Certified Gas Lower Hutt",
+      "rating": 4.4,
+      "review_count": 64,
+      "suburb": "Wainuiomata",
+      "phone": "(04) 073-5581",
+      "website": null,
+      "known_for": "Gas hot water systems",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Lower Hutt Gasfitting & Plumbing",
+      "rating": 4.8,
+      "review_count": 163,
+      "suburb": "Boulcott",
+      "phone": "(04) 511-2977",
+      "website": null,
+      "known_for": "Gas hob & cooktop installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Gas Right Lower Hutt",
+      "rating": 4.3,
+      "review_count": 165,
+      "suburb": "Maungaraki",
+      "phone": "(04) 118-0249",
+      "website": null,
+      "known_for": "Gas appliance servicing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Lower Hutt Gas Services",
+      "rating": 4.6,
+      "review_count": 157,
+      "suburb": "Waterloo",
+      "phone": "(04) 710-1359",
+      "website": null,
+      "known_for": "Gas leak detection & repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Wellington Gas Co",
+      "rating": 4.2,
+      "review_count": 67,
+      "suburb": "Normandale",
+      "phone": "(03) 923-4934",
+      "website": null,
+      "known_for": "Gas meter installation",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

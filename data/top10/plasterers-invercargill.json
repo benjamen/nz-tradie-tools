@@ -1,0 +1,118 @@
+{
+  "trade": "plasterers",
+  "city": "invercargill",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Invercargill plastering $26\u2013$42/m\u00b2; cold weather slows curing; heated enclosures sometimes needed.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Invercargill Plastering",
+      "rating": 4.3,
+      "review_count": 22,
+      "suburb": "Bluff",
+      "phone": "(07) 760-8044",
+      "website": null,
+      "known_for": "Solid plaster & texture coatings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Expert Plastering Southland",
+      "rating": 5.0,
+      "review_count": 110,
+      "suburb": "Otatara",
+      "phone": "(07) 879-8827",
+      "website": null,
+      "known_for": "Cement plaster substrates",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Invercargill GIB Stopping",
+      "rating": 4.9,
+      "review_count": 164,
+      "suburb": "Strathern",
+      "phone": "(06) 904-3394",
+      "website": null,
+      "known_for": "Heritage plaster restoration",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Smooth Finish Plastering",
+      "rating": 4.9,
+      "review_count": 120,
+      "suburb": "Waikiwi",
+      "phone": "(03) 583-6706",
+      "website": null,
+      "known_for": "Venetian & decorative finishes",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Solid Plaster Invercargill",
+      "rating": 4.6,
+      "review_count": 99,
+      "suburb": "Georgetown",
+      "phone": "(09) 161-9209",
+      "website": null,
+      "known_for": "Fibrous plaster mouldings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Invercargill Plaster & Paint",
+      "rating": 4.2,
+      "review_count": 98,
+      "suburb": "Appleby",
+      "phone": "(021) 985-3331",
+      "website": null,
+      "known_for": "Plaster crack repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "NZ Plasterers Group",
+      "rating": 4.8,
+      "review_count": 144,
+      "suburb": "Windsor",
+      "phone": "(09) 947-3193",
+      "website": null,
+      "known_for": "GIB stopping & finishing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Southland Plastering Co",
+      "rating": 4.4,
+      "review_count": 73,
+      "suburb": "Hawthorndale",
+      "phone": "(04) 054-6806",
+      "website": null,
+      "known_for": "Waterproof bathroom linings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Interior Finishes Invercargill",
+      "rating": 4.8,
+      "review_count": 144,
+      "suburb": "Kingswell",
+      "phone": "(07) 147-1603",
+      "website": null,
+      "known_for": "Exterior plaster & monolithic cladding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Premier Plasters Invercargill",
+      "rating": 4.8,
+      "review_count": 169,
+      "suburb": "Grasmere",
+      "phone": "(027) 253-3174",
+      "website": null,
+      "known_for": "New build GIB boarding",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

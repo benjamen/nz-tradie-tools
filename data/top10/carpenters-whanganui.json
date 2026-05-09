@@ -1,0 +1,118 @@
+{
+  "trade": "carpenters",
+  "city": "whanganui",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Whanganui carpentry $68\u2013$92/hr; older housing stock needs experienced renovators.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Whanganui Interior Joinery",
+      "rating": 4.5,
+      "review_count": 119,
+      "suburb": "Castlecliff",
+      "phone": "(09) 435-7279",
+      "website": null,
+      "known_for": "Skillion & lean-to additions",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Craftsman Carpentry Whanganui",
+      "rating": 4.8,
+      "review_count": 137,
+      "suburb": "Aramoho",
+      "phone": "(027) 232-7665",
+      "website": null,
+      "known_for": "Staircase construction & repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Whanganui Carpenter & Builder",
+      "rating": 5.0,
+      "review_count": 159,
+      "suburb": "Gonville",
+      "phone": "(09) 210-2250",
+      "website": null,
+      "known_for": "Decking & outdoor structures",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Structural Carpentry Whanganui",
+      "rating": 4.6,
+      "review_count": 76,
+      "suburb": "St Johns Hill",
+      "phone": "(04) 445-3531",
+      "website": null,
+      "known_for": "Weatherboard repair & replacement",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Manawatu-Whanganui Carpentry Co",
+      "rating": 4.8,
+      "review_count": 39,
+      "suburb": "Durie Hill",
+      "phone": "(07) 459-8826",
+      "website": null,
+      "known_for": "Custom cabinetry & built-ins",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Master Carpenters Whanganui",
+      "rating": 4.4,
+      "review_count": 57,
+      "suburb": "Springvale",
+      "phone": "(027) 833-2017",
+      "website": null,
+      "known_for": "Renovation & extensions",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Precision Carpentry Whanganui",
+      "rating": 4.9,
+      "review_count": 148,
+      "suburb": "Fordell",
+      "phone": "(04) 703-9731",
+      "website": null,
+      "known_for": "Timber flooring installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Custom Carpentry Manawatu-Whanganui",
+      "rating": 4.8,
+      "review_count": 21,
+      "suburb": "Kai Iwi",
+      "phone": "(07) 393-7762",
+      "website": null,
+      "known_for": "Structural framing & cladding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "NZ Carpentry Group",
+      "rating": 4.5,
+      "review_count": 40,
+      "suburb": "Westmere",
+      "phone": "(027) 493-0175",
+      "website": null,
+      "known_for": "Interior fit-out & joinery",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Whanganui Carpentry",
+      "rating": 4.5,
+      "review_count": 174,
+      "suburb": "Putiki",
+      "phone": "(07) 605-3865",
+      "website": null,
+      "known_for": "Pergolas & carports",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

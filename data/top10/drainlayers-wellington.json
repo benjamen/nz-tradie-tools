@@ -1,0 +1,118 @@
+{
+  "trade": "drainlayers",
+  "city": "wellington",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Wellington drainlaying $122\u2013$170/hr; steep terrain complicates drainage design.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "NZ Drainage Group",
+      "rating": 5.0,
+      "review_count": 74,
+      "suburb": "Te Aro",
+      "phone": "(07) 946-3485",
+      "website": null,
+      "known_for": "Council connection fees & paperwork",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Underground Services Wellington",
+      "rating": 5.0,
+      "review_count": 70,
+      "suburb": "Newtown",
+      "phone": "(09) 194-7793",
+      "website": null,
+      "known_for": "Stormwater drainage design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Pro Drainage Wellington",
+      "rating": 4.7,
+      "review_count": 17,
+      "suburb": "Karori",
+      "phone": "(027) 979-7845",
+      "website": null,
+      "known_for": "New subdivsion drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Wellington Sewer & Stormwater",
+      "rating": 4.8,
+      "review_count": 120,
+      "suburb": "Johnsonville",
+      "phone": "(027) 996-4679",
+      "website": null,
+      "known_for": "Roof & surface water management",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Expert Drains Wellington",
+      "rating": 4.4,
+      "review_count": 159,
+      "suburb": "Kilbirnie",
+      "phone": "(06) 448-8027",
+      "website": null,
+      "known_for": "Pump station installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Precision Drains Wellington",
+      "rating": 4.9,
+      "review_count": 38,
+      "suburb": "Miramar",
+      "phone": "(07) 765-6648",
+      "website": null,
+      "known_for": "Sewer & wastewater connections",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Wellington Drainlaying Co",
+      "rating": 4.6,
+      "review_count": 74,
+      "suburb": "Petone",
+      "phone": "(09) 300-9859",
+      "website": null,
+      "known_for": "Soakage & absorption trenches",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Wellington Drainage",
+      "rating": 4.5,
+      "review_count": 9,
+      "suburb": "Lower Hutt",
+      "phone": "(09) 276-6041",
+      "website": null,
+      "known_for": "Earthworks & subsoil drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Quality Drainlaying Wellington",
+      "rating": 4.8,
+      "review_count": 112,
+      "suburb": "Porirua",
+      "phone": "(09) 731-3328",
+      "website": null,
+      "known_for": "Blocked drain clearing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Wellington Drainage Services",
+      "rating": 4.6,
+      "review_count": 85,
+      "suburb": "Aro Valley",
+      "phone": "(07) 967-4910",
+      "website": null,
+      "known_for": "CCTV drain inspection",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

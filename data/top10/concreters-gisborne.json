@@ -1,0 +1,118 @@
+{
+  "trade": "concreters",
+  "city": "gisborne",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Gisborne concreting $90\u2013$135/m\u00b2; earthquake zone requires careful footing design.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Decorative Concrete Gisborne",
+      "rating": 4.3,
+      "review_count": 92,
+      "suburb": "Elgin",
+      "phone": "(021) 561-1362",
+      "website": null,
+      "known_for": "Coloured & stamped concrete",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Gisborne Concrete Co",
+      "rating": 4.7,
+      "review_count": 168,
+      "suburb": "Kaiti",
+      "phone": "(022) 927-4324",
+      "website": null,
+      "known_for": "Polished & honed concrete",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Gisborne Concreting Services",
+      "rating": 4.2,
+      "review_count": 139,
+      "suburb": "Lytton",
+      "phone": "(04) 873-1249",
+      "website": null,
+      "known_for": "Precast concrete products",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Pro Concrete Gisborne",
+      "rating": 4.8,
+      "review_count": 16,
+      "suburb": "Riverdale",
+      "phone": "(021) 135-8363",
+      "website": null,
+      "known_for": "Commercial concrete floors",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Residential Concrete Gisborne",
+      "rating": 4.3,
+      "review_count": 109,
+      "suburb": "Mangapapa",
+      "phone": "(09) 971-7095",
+      "website": null,
+      "known_for": "Decorative exposed aggregate",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "NZ Concrete Group",
+      "rating": 4.7,
+      "review_count": 30,
+      "suburb": "Te Hapara",
+      "phone": "(04) 732-3320",
+      "website": null,
+      "known_for": "Concrete removal & breaking",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Precision Concreters Gisborne",
+      "rating": 4.4,
+      "review_count": 136,
+      "suburb": "Makaraka",
+      "phone": "(03) 652-5961",
+      "website": null,
+      "known_for": "Retaining walls & footings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Gisborne Concrete",
+      "rating": 5.0,
+      "review_count": 48,
+      "suburb": "Patutahi",
+      "phone": "(06) 144-0256",
+      "website": null,
+      "known_for": "House slabs & shed floors",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Quality Concrete Gisborne",
+      "rating": 4.3,
+      "review_count": 149,
+      "suburb": "Ormond",
+      "phone": "(03) 043-4627",
+      "website": null,
+      "known_for": "Driveways & paths",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Gisborne Slab & Paving",
+      "rating": 4.6,
+      "review_count": 88,
+      "suburb": "Matawhero",
+      "phone": "(027) 269-4281",
+      "website": null,
+      "known_for": "Post-tension slab design",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

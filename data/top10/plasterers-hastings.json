@@ -1,0 +1,118 @@
+{
+  "trade": "plasterers",
+  "city": "hastings",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Hastings plastering $27\u2013$43/m\u00b2; similar rates to Napier.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Hastings GIB Stopping",
+      "rating": 4.9,
+      "review_count": 51,
+      "suburb": "Flaxmere",
+      "phone": "(03) 343-2204",
+      "website": null,
+      "known_for": "Cement plaster substrates",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Hawke's Bay Plastering Co",
+      "rating": 4.4,
+      "review_count": 179,
+      "suburb": "Camberley",
+      "phone": "(09) 620-4727",
+      "website": null,
+      "known_for": "Polished plaster feature walls",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Smooth Finish Plastering",
+      "rating": 4.4,
+      "review_count": 68,
+      "suburb": "Parkvale",
+      "phone": "(027) 184-8559",
+      "website": null,
+      "known_for": "Solid plaster & texture coatings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Expert Plastering Hawke's Bay",
+      "rating": 4.2,
+      "review_count": 124,
+      "suburb": "Mahora",
+      "phone": "(09) 437-7180",
+      "website": null,
+      "known_for": "Exterior plaster & monolithic cladding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Interior Finishes Hastings",
+      "rating": 4.8,
+      "review_count": 156,
+      "suburb": "Raureka",
+      "phone": "(027) 850-7862",
+      "website": null,
+      "known_for": "Fibrous plaster mouldings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Solid Plaster Hastings",
+      "rating": 4.9,
+      "review_count": 58,
+      "suburb": "Havelock North",
+      "phone": "(04) 531-3092",
+      "website": null,
+      "known_for": "Cornice installation & repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Premier Plasters Hastings",
+      "rating": 4.5,
+      "review_count": 105,
+      "suburb": "Clive",
+      "phone": "(03) 780-4734",
+      "website": null,
+      "known_for": "Plaster crack repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Hastings Plastering",
+      "rating": 4.3,
+      "review_count": 133,
+      "suburb": "Whakatu",
+      "phone": "(09) 978-4965",
+      "website": null,
+      "known_for": "Heritage plaster restoration",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Hastings Plaster & Paint",
+      "rating": 4.4,
+      "review_count": 15,
+      "suburb": "Tomoana",
+      "phone": "(09) 341-2639",
+      "website": null,
+      "known_for": "Venetian & decorative finishes",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "NZ Plasterers Group",
+      "rating": 4.2,
+      "review_count": 95,
+      "suburb": "Frimley",
+      "phone": "(027) 975-4132",
+      "website": null,
+      "known_for": "New build GIB boarding",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

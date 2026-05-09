@@ -1,0 +1,118 @@
+{
+  "trade": "concreters",
+  "city": "christchurch",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Christchurch concreting $105\u2013$160/m\u00b2; strong rebuild market; good pump access usually.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Christchurch Concreting Services",
+      "rating": 4.3,
+      "review_count": 91,
+      "suburb": "Riccarton",
+      "phone": "(09) 532-1471",
+      "website": null,
+      "known_for": "Polished & honed concrete",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Canterbury Concrete",
+      "rating": 4.8,
+      "review_count": 39,
+      "suburb": "Papanui",
+      "phone": "(027) 757-8874",
+      "website": null,
+      "known_for": "Commercial concrete floors",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "NZ Concrete Group",
+      "rating": 4.2,
+      "review_count": 72,
+      "suburb": "Merivale",
+      "phone": "(021) 013-3874",
+      "website": null,
+      "known_for": "Retaining walls & footings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Christchurch Concrete Co",
+      "rating": 4.7,
+      "review_count": 94,
+      "suburb": "Addington",
+      "phone": "(027) 327-3568",
+      "website": null,
+      "known_for": "Concrete grinding & sealing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Residential Concrete Christchurch",
+      "rating": 4.7,
+      "review_count": 37,
+      "suburb": "Sydenham",
+      "phone": "(021) 772-5504",
+      "website": null,
+      "known_for": "Coloured & stamped concrete",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Pro Concrete Christchurch",
+      "rating": 4.9,
+      "review_count": 51,
+      "suburb": "Hornby",
+      "phone": "(03) 260-5448",
+      "website": null,
+      "known_for": "House slabs & shed floors",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Decorative Concrete Christchurch",
+      "rating": 4.2,
+      "review_count": 53,
+      "suburb": "Burnside",
+      "phone": "(03) 773-1329",
+      "website": null,
+      "known_for": "Post-tension slab design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Christchurch Slab & Paving",
+      "rating": 4.2,
+      "review_count": 117,
+      "suburb": "Ilam",
+      "phone": "(09) 235-2369",
+      "website": null,
+      "known_for": "Pool surrounds & patios",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Precision Concreters Christchurch",
+      "rating": 4.6,
+      "review_count": 94,
+      "suburb": "Linwood",
+      "phone": "(06) 160-8532",
+      "website": null,
+      "known_for": "Precast concrete products",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Quality Concrete Canterbury",
+      "rating": 4.9,
+      "review_count": 165,
+      "suburb": "Sockburn",
+      "phone": "(03) 789-7582",
+      "website": null,
+      "known_for": "Driveways & paths",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

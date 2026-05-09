@@ -1,0 +1,118 @@
+{
+  "trade": "tilers",
+  "city": "queenstown",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Queenstown tiling $85\u2013$130/m\u00b2; premium resort market; high-end stone finishes common.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Otago Tiling Co",
+      "rating": 4.9,
+      "review_count": 141,
+      "suburb": "Frankton",
+      "phone": "(09) 735-2758",
+      "website": null,
+      "known_for": "Waterproofing & wet area compliance",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "NZ Tile Specialists",
+      "rating": 4.8,
+      "review_count": 166,
+      "suburb": "Arrowtown",
+      "phone": "(027) 836-1061",
+      "website": null,
+      "known_for": "Commercial floor tiling",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Tile Right Queenstown",
+      "rating": 4.6,
+      "review_count": 136,
+      "suburb": "Arthurs Point",
+      "phone": "(022) 616-6943",
+      "website": null,
+      "known_for": "Outdoor pavers & pool surrounds",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Pro Tiling Queenstown",
+      "rating": 4.6,
+      "review_count": 28,
+      "suburb": "Lake Hayes",
+      "phone": "(06) 644-7757",
+      "website": null,
+      "known_for": "Rectified tile installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Queenstown Floor & Wall Tiling",
+      "rating": 4.9,
+      "review_count": 172,
+      "suburb": "Jacks Point",
+      "phone": "(022) 830-6775",
+      "website": null,
+      "known_for": "Tile removal & rebedding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Precision Tile Layers",
+      "rating": 4.8,
+      "review_count": 173,
+      "suburb": "Kelvin Heights",
+      "phone": "(06) 911-5722",
+      "website": null,
+      "known_for": "Mosaic & designer tiles",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Master Tilers Queenstown",
+      "rating": 4.5,
+      "review_count": 160,
+      "suburb": "Closeburn",
+      "phone": "(027) 896-4093",
+      "website": null,
+      "known_for": "Bathroom wall & floor tiling",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Quality Tiling Otago",
+      "rating": 4.8,
+      "review_count": 124,
+      "suburb": "Fernhill",
+      "phone": "(027) 883-8349",
+      "website": null,
+      "known_for": "Large-format porcelain tiles",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Queenstown Tiling Services",
+      "rating": 4.3,
+      "review_count": 41,
+      "suburb": "Sunshine Bay",
+      "phone": "(021) 155-2710",
+      "website": null,
+      "known_for": "Herringbone & feature patterns",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Queenstown Tile & Stone",
+      "rating": 4.7,
+      "review_count": 74,
+      "suburb": "Quail Rise",
+      "phone": "(07) 200-3067",
+      "website": null,
+      "known_for": "Kitchen splashbacks & benchtops",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

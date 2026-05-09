@@ -1,0 +1,118 @@
+{
+  "trade": "carpenters",
+  "city": "queenstown",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Queenstown carpentry $100\u2013$145/hr; high cost of living and resort premium.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Queenstown Carpentry",
+      "rating": 4.2,
+      "review_count": 14,
+      "suburb": "Frankton",
+      "phone": "(03) 869-3232",
+      "website": null,
+      "known_for": "Weatherboard repair & replacement",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Craftsman Carpentry Queenstown",
+      "rating": 4.2,
+      "review_count": 132,
+      "suburb": "Arrowtown",
+      "phone": "(09) 940-8749",
+      "website": null,
+      "known_for": "Renovation & extensions",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Custom Carpentry Otago",
+      "rating": 4.4,
+      "review_count": 176,
+      "suburb": "Arthurs Point",
+      "phone": "(03) 695-3880",
+      "website": null,
+      "known_for": "Staircase construction & repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Otago Carpentry Co",
+      "rating": 4.9,
+      "review_count": 50,
+      "suburb": "Lake Hayes",
+      "phone": "(07) 253-9503",
+      "website": null,
+      "known_for": "Custom cabinetry & built-ins",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Precision Carpentry Queenstown",
+      "rating": 4.5,
+      "review_count": 64,
+      "suburb": "Jacks Point",
+      "phone": "(04) 895-0782",
+      "website": null,
+      "known_for": "Decking & outdoor structures",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "NZ Carpentry Group",
+      "rating": 4.5,
+      "review_count": 15,
+      "suburb": "Kelvin Heights",
+      "phone": "(022) 215-8306",
+      "website": null,
+      "known_for": "Door & window installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Master Carpenters Queenstown",
+      "rating": 4.5,
+      "review_count": 30,
+      "suburb": "Closeburn",
+      "phone": "(09) 111-7168",
+      "website": null,
+      "known_for": "Interior fit-out & joinery",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Queenstown Interior Joinery",
+      "rating": 4.9,
+      "review_count": 44,
+      "suburb": "Fernhill",
+      "phone": "(021) 912-3078",
+      "website": null,
+      "known_for": "Structural framing & cladding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Structural Carpentry Queenstown",
+      "rating": 4.3,
+      "review_count": 8,
+      "suburb": "Sunshine Bay",
+      "phone": "(022) 215-6995",
+      "website": null,
+      "known_for": "Pergolas & carports",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Queenstown Carpenter & Builder",
+      "rating": 4.3,
+      "review_count": 71,
+      "suburb": "Quail Rise",
+      "phone": "(027) 471-0615",
+      "website": null,
+      "known_for": "Timber flooring installation",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

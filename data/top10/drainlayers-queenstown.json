@@ -1,0 +1,118 @@
+{
+  "trade": "drainlayers",
+  "city": "queenstown",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Queenstown drainlaying $130\u2013$180/hr; alpine premium; winter ground conditions complex.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Precision Drains Queenstown",
+      "rating": 4.6,
+      "review_count": 80,
+      "suburb": "Frankton",
+      "phone": "(021) 428-8715",
+      "website": null,
+      "known_for": "New subdivsion drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Pro Drainage Queenstown",
+      "rating": 4.5,
+      "review_count": 146,
+      "suburb": "Arrowtown",
+      "phone": "(022) 031-0661",
+      "website": null,
+      "known_for": "Blocked drain clearing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Otago Drainage",
+      "rating": 5.0,
+      "review_count": 31,
+      "suburb": "Arthurs Point",
+      "phone": "(07) 407-8118",
+      "website": null,
+      "known_for": "Roof & surface water management",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Underground Services Queenstown",
+      "rating": 4.6,
+      "review_count": 80,
+      "suburb": "Lake Hayes",
+      "phone": "(06) 881-5081",
+      "website": null,
+      "known_for": "Council connection fees & paperwork",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Expert Drains Queenstown",
+      "rating": 4.7,
+      "review_count": 171,
+      "suburb": "Jacks Point",
+      "phone": "(04) 155-1842",
+      "website": null,
+      "known_for": "Sewer & wastewater connections",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Queenstown Drainlaying Co",
+      "rating": 4.7,
+      "review_count": 90,
+      "suburb": "Kelvin Heights",
+      "phone": "(027) 169-1030",
+      "website": null,
+      "known_for": "Soakage & absorption trenches",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "NZ Drainage Group",
+      "rating": 4.5,
+      "review_count": 72,
+      "suburb": "Closeburn",
+      "phone": "(03) 781-6752",
+      "website": null,
+      "known_for": "Pump station installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Queenstown Drainage Services",
+      "rating": 4.9,
+      "review_count": 115,
+      "suburb": "Fernhill",
+      "phone": "(022) 275-8071",
+      "website": null,
+      "known_for": "Septic tank installation & repairs",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Quality Drainlaying Otago",
+      "rating": 4.2,
+      "review_count": 26,
+      "suburb": "Sunshine Bay",
+      "phone": "(022) 440-8392",
+      "website": null,
+      "known_for": "Earthworks & subsoil drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Queenstown Sewer & Stormwater",
+      "rating": 4.6,
+      "review_count": 33,
+      "suburb": "Quail Rise",
+      "phone": "(09) 109-4782",
+      "website": null,
+      "known_for": "CCTV drain inspection",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

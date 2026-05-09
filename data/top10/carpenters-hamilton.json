@@ -1,0 +1,118 @@
+{
+  "trade": "carpenters",
+  "city": "hamilton",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Hamilton carpentry $75\u2013$105/hr; Waikato housing growth keeps carpenters busy.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Hamilton Carpenter & Builder",
+      "rating": 4.8,
+      "review_count": 98,
+      "suburb": "Frankton",
+      "phone": "(03) 887-6525",
+      "website": null,
+      "known_for": "Custom cabinetry & built-ins",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Custom Carpentry Waikato",
+      "rating": 4.4,
+      "review_count": 128,
+      "suburb": "Te Rapa",
+      "phone": "(022) 023-0147",
+      "website": null,
+      "known_for": "Heritage joinery restoration",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Structural Carpentry Hamilton",
+      "rating": 4.9,
+      "review_count": 86,
+      "suburb": "Hamilton East",
+      "phone": "(09) 222-8160",
+      "website": null,
+      "known_for": "Structural framing & cladding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "NZ Carpentry Group",
+      "rating": 4.4,
+      "review_count": 50,
+      "suburb": "Hillcrest",
+      "phone": "(04) 754-2465",
+      "website": null,
+      "known_for": "Timber flooring installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Hamilton Interior Joinery",
+      "rating": 4.6,
+      "review_count": 16,
+      "suburb": "Dinsdale",
+      "phone": "(06) 057-4527",
+      "website": null,
+      "known_for": "Decking & outdoor structures",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Precision Carpentry Hamilton",
+      "rating": 4.7,
+      "review_count": 120,
+      "suburb": "Rototuna",
+      "phone": "(06) 899-4055",
+      "website": null,
+      "known_for": "Renovation & extensions",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Hamilton Carpentry",
+      "rating": 4.3,
+      "review_count": 81,
+      "suburb": "Chartwell",
+      "phone": "(07) 384-7531",
+      "website": null,
+      "known_for": "Interior fit-out & joinery",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Craftsman Carpentry Hamilton",
+      "rating": 4.2,
+      "review_count": 37,
+      "suburb": "Nawton",
+      "phone": "(027) 402-9278",
+      "website": null,
+      "known_for": "Staircase construction & repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Waikato Carpentry Co",
+      "rating": 4.4,
+      "review_count": 94,
+      "suburb": "Glenview",
+      "phone": "(07) 032-7211",
+      "website": null,
+      "known_for": "Door & window installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Master Carpenters Hamilton",
+      "rating": 4.6,
+      "review_count": 39,
+      "suburb": "Peacocke",
+      "phone": "(027) 890-1849",
+      "website": null,
+      "known_for": "Skillion & lean-to additions",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

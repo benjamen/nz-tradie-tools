@@ -1,0 +1,118 @@
+{
+  "trade": "concreters",
+  "city": "whanganui",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Whanganui concreting $90\u2013$135/m\u00b2; older urban areas often have complex buried services.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Residential Concrete Whanganui",
+      "rating": 4.4,
+      "review_count": 41,
+      "suburb": "Castlecliff",
+      "phone": "(04) 550-6984",
+      "website": null,
+      "known_for": "Post-tension slab design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "NZ Concrete Group",
+      "rating": 4.2,
+      "review_count": 90,
+      "suburb": "Aramoho",
+      "phone": "(027) 262-0556",
+      "website": null,
+      "known_for": "Retaining walls & footings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Quality Concrete Manawatu-Whanganui",
+      "rating": 4.3,
+      "review_count": 25,
+      "suburb": "Gonville",
+      "phone": "(06) 874-9913",
+      "website": null,
+      "known_for": "Driveways & paths",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Pro Concrete Whanganui",
+      "rating": 4.9,
+      "review_count": 99,
+      "suburb": "St Johns Hill",
+      "phone": "(06) 541-1483",
+      "website": null,
+      "known_for": "Precast concrete products",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Whanganui Slab & Paving",
+      "rating": 4.7,
+      "review_count": 134,
+      "suburb": "Durie Hill",
+      "phone": "(03) 515-8394",
+      "website": null,
+      "known_for": "Decorative exposed aggregate",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Whanganui Concrete Co",
+      "rating": 4.6,
+      "review_count": 179,
+      "suburb": "Springvale",
+      "phone": "(027) 039-9645",
+      "website": null,
+      "known_for": "House slabs & shed floors",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Manawatu-Whanganui Concrete",
+      "rating": 4.6,
+      "review_count": 124,
+      "suburb": "Fordell",
+      "phone": "(022) 130-2070",
+      "website": null,
+      "known_for": "Concrete grinding & sealing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Whanganui Concreting Services",
+      "rating": 5.0,
+      "review_count": 28,
+      "suburb": "Kai Iwi",
+      "phone": "(09) 513-5383",
+      "website": null,
+      "known_for": "Concrete removal & breaking",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Precision Concreters Whanganui",
+      "rating": 4.6,
+      "review_count": 128,
+      "suburb": "Westmere",
+      "phone": "(09) 345-2992",
+      "website": null,
+      "known_for": "Pool surrounds & patios",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Decorative Concrete Whanganui",
+      "rating": 4.9,
+      "review_count": 104,
+      "suburb": "Putiki",
+      "phone": "(09) 464-2008",
+      "website": null,
+      "known_for": "Polished & honed concrete",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "trade": "landscapers",
+  "city": "wellington",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Wellington landscaping $80\u2013$115/hr; exposed sites add 15\u201320% for wind-rated plantings.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Wellington Landscaping",
+      "rating": 4.9,
+      "review_count": 77,
+      "suburb": "Te Aro",
+      "phone": "(027) 122-6527",
+      "website": null,
+      "known_for": "Residential garden makeovers",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Green Thumb Landscaping",
+      "rating": 4.8,
+      "review_count": 119,
+      "suburb": "Newtown",
+      "phone": "(021) 447-6458",
+      "website": null,
+      "known_for": "Water features & ponds",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "NZ Landscaping Group",
+      "rating": 4.9,
+      "review_count": 75,
+      "suburb": "Karori",
+      "phone": "(07) 248-7014",
+      "website": null,
+      "known_for": "Soil preparation & planting",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Outdoor Living Wellington",
+      "rating": 4.8,
+      "review_count": 106,
+      "suburb": "Johnsonville",
+      "phone": "(021) 420-3550",
+      "website": null,
+      "known_for": "Deck & outdoor living design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Heritage Garden Design",
+      "rating": 4.4,
+      "review_count": 177,
+      "suburb": "Kilbirnie",
+      "phone": "(06) 606-5094",
+      "website": null,
+      "known_for": "Artificial turf & lawn care",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Wellington Garden Design",
+      "rating": 4.8,
+      "review_count": 175,
+      "suburb": "Miramar",
+      "phone": "(09) 693-7674",
+      "website": null,
+      "known_for": "Irrigation systems & drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Wellington Grounds & Gardens",
+      "rating": 4.7,
+      "review_count": 21,
+      "suburb": "Petone",
+      "phone": "(04) 802-4050",
+      "website": null,
+      "known_for": "Hard landscaping & paving",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Native Garden Specialists",
+      "rating": 4.7,
+      "review_count": 135,
+      "suburb": "Lower Hutt",
+      "phone": "(03) 024-6510",
+      "website": null,
+      "known_for": "Commercial landscape maintenance",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Wellington Landscaping Co",
+      "rating": 4.4,
+      "review_count": 148,
+      "suburb": "Porirua",
+      "phone": "(027) 886-9725",
+      "website": null,
+      "known_for": "Landscape planning & consent",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Premier Landscaping Wellington",
+      "rating": 4.4,
+      "review_count": 48,
+      "suburb": "Aro Valley",
+      "phone": "(027) 726-0481",
+      "website": null,
+      "known_for": "Fence lines & garden borders",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

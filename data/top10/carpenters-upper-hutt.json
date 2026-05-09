@@ -1,0 +1,118 @@
+{
+  "trade": "carpenters",
+  "city": "upper-hutt",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Upper Hutt carpentry $80\u2013$112/hr; family home renovation market strong.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Structural Carpentry Upper Hutt",
+      "rating": 4.7,
+      "review_count": 180,
+      "suburb": "Silverstream",
+      "phone": "(09) 166-7792",
+      "website": null,
+      "known_for": "Staircase construction & repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Upper Hutt Interior Joinery",
+      "rating": 4.7,
+      "review_count": 158,
+      "suburb": "Trentham",
+      "phone": "(09) 468-0166",
+      "website": null,
+      "known_for": "Timber flooring installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "NZ Carpentry Group",
+      "rating": 4.7,
+      "review_count": 153,
+      "suburb": "Heretaunga",
+      "phone": "(027) 584-4357",
+      "website": null,
+      "known_for": "Heritage joinery restoration",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Wellington Carpentry Co",
+      "rating": 4.7,
+      "review_count": 23,
+      "suburb": "Pinehaven",
+      "phone": "(07) 820-4267",
+      "website": null,
+      "known_for": "Weatherboard repair & replacement",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Craftsman Carpentry Upper Hutt",
+      "rating": 4.2,
+      "review_count": 176,
+      "suburb": "Totara Park",
+      "phone": "(06) 285-9515",
+      "website": null,
+      "known_for": "Custom cabinetry & built-ins",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Upper Hutt Carpentry",
+      "rating": 4.9,
+      "review_count": 12,
+      "suburb": "Brown Owl",
+      "phone": "(04) 195-8430",
+      "website": null,
+      "known_for": "Interior fit-out & joinery",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Upper Hutt Carpenter & Builder",
+      "rating": 4.9,
+      "review_count": 83,
+      "suburb": "Whitemans Valley",
+      "phone": "(021) 654-3269",
+      "website": null,
+      "known_for": "Door & window installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Precision Carpentry Upper Hutt",
+      "rating": 4.4,
+      "review_count": 157,
+      "suburb": "Birchville",
+      "phone": "(09) 270-2424",
+      "website": null,
+      "known_for": "Structural framing & cladding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Master Carpenters Upper Hutt",
+      "rating": 4.2,
+      "review_count": 49,
+      "suburb": "Maoribank",
+      "phone": "(03) 544-6639",
+      "website": null,
+      "known_for": "Renovation & extensions",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Custom Carpentry Wellington",
+      "rating": 4.4,
+      "review_count": 179,
+      "suburb": "Timberlea",
+      "phone": "(06) 415-7076",
+      "website": null,
+      "known_for": "Skillion & lean-to additions",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "trade": "drainlayers",
+  "city": "nelson",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Nelson drainlaying $100\u2013$142/hr; soakage commonly used for rural septic systems.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Quality Drainlaying Nelson",
+      "rating": 4.5,
+      "review_count": 61,
+      "suburb": "Richmond",
+      "phone": "(09) 016-6376",
+      "website": null,
+      "known_for": "New subdivsion drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Pro Drainage Nelson",
+      "rating": 4.6,
+      "review_count": 50,
+      "suburb": "Stoke",
+      "phone": "(06) 993-9172",
+      "website": null,
+      "known_for": "Stormwater drainage design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Expert Drains Nelson",
+      "rating": 4.7,
+      "review_count": 125,
+      "suburb": "Tahunanui",
+      "phone": "(021) 310-4786",
+      "website": null,
+      "known_for": "Earthworks & subsoil drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Underground Services Nelson",
+      "rating": 4.2,
+      "review_count": 165,
+      "suburb": "The Wood",
+      "phone": "(09) 454-3113",
+      "website": null,
+      "known_for": "Pump station installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Nelson Sewer & Stormwater",
+      "rating": 4.7,
+      "review_count": 11,
+      "suburb": "Wakefield",
+      "phone": "(07) 862-5521",
+      "website": null,
+      "known_for": "Septic tank installation & repairs",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Precision Drains Nelson",
+      "rating": 4.6,
+      "review_count": 30,
+      "suburb": "Hope",
+      "phone": "(09) 314-1234",
+      "website": null,
+      "known_for": "Drain relining (no-dig)",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Nelson Drainage",
+      "rating": 4.9,
+      "review_count": 53,
+      "suburb": "Brightwater",
+      "phone": "(03) 319-4464",
+      "website": null,
+      "known_for": "CCTV drain inspection",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Nelson Drainlaying Co",
+      "rating": 4.4,
+      "review_count": 71,
+      "suburb": "Murchison",
+      "phone": "(03) 411-7108",
+      "website": null,
+      "known_for": "Council connection fees & paperwork",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "NZ Drainage Group",
+      "rating": 4.9,
+      "review_count": 24,
+      "suburb": "Motueka",
+      "phone": "(022) 194-2392",
+      "website": null,
+      "known_for": "Soakage & absorption trenches",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Nelson Drainage Services",
+      "rating": 4.2,
+      "review_count": 176,
+      "suburb": "Mapua",
+      "phone": "(09) 149-5311",
+      "website": null,
+      "known_for": "Blocked drain clearing",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

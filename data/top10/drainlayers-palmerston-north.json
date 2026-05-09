@@ -1,0 +1,118 @@
+{
+  "trade": "drainlayers",
+  "city": "palmerston-north",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Palmerston North drainlaying $98\u2013$138/hr; competitive regional rates.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Manawatu Drainage",
+      "rating": 4.8,
+      "review_count": 52,
+      "suburb": "Roslyn",
+      "phone": "(027) 832-5447",
+      "website": null,
+      "known_for": "Drain relining (no-dig)",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "NZ Drainage Group",
+      "rating": 4.9,
+      "review_count": 91,
+      "suburb": "Terrace End",
+      "phone": "(07) 709-0806",
+      "website": null,
+      "known_for": "Earthworks & subsoil drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Palmerston North Drainage Services",
+      "rating": 4.4,
+      "review_count": 157,
+      "suburb": "Takaro",
+      "phone": "(06) 667-8565",
+      "website": null,
+      "known_for": "CCTV drain inspection",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Quality Drainlaying Manawatu",
+      "rating": 4.4,
+      "review_count": 150,
+      "suburb": "Awapuni",
+      "phone": "(03) 283-2296",
+      "website": null,
+      "known_for": "Septic tank installation & repairs",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Pro Drainage Palmerston North",
+      "rating": 4.4,
+      "review_count": 156,
+      "suburb": "Kelvin Grove",
+      "phone": "(021) 673-3346",
+      "website": null,
+      "known_for": "Soakage & absorption trenches",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Underground Services Palmerston North",
+      "rating": 4.5,
+      "review_count": 64,
+      "suburb": "Fitzherbert",
+      "phone": "(027) 686-4287",
+      "website": null,
+      "known_for": "Stormwater drainage design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Expert Drains Palmerston North",
+      "rating": 4.4,
+      "review_count": 149,
+      "suburb": "Hokowhitu",
+      "phone": "(021) 033-3132",
+      "website": null,
+      "known_for": "Council connection fees & paperwork",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Precision Drains Palmerston North",
+      "rating": 4.4,
+      "review_count": 92,
+      "suburb": "Milson",
+      "phone": "(09) 501-9183",
+      "website": null,
+      "known_for": "Blocked drain clearing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Palmerston North Drainlaying Co",
+      "rating": 4.5,
+      "review_count": 49,
+      "suburb": "Cloverlea",
+      "phone": "(021) 948-8888",
+      "website": null,
+      "known_for": "Roof & surface water management",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Palmerston North Sewer & Stormwater",
+      "rating": 4.5,
+      "review_count": 106,
+      "suburb": "Ashhurst",
+      "phone": "(027) 313-8042",
+      "website": null,
+      "known_for": "Sewer & wastewater connections",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

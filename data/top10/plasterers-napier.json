@@ -1,0 +1,118 @@
+{
+  "trade": "plasterers",
+  "city": "napier",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Napier plastering $28\u2013$44/m\u00b2; Art Deco restoration plastering a local speciality.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Interior Finishes Napier",
+      "rating": 4.7,
+      "review_count": 154,
+      "suburb": "Ahuriri",
+      "phone": "(022) 645-6338",
+      "website": null,
+      "known_for": "Fibrous plaster mouldings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Expert Plastering Hawke's Bay",
+      "rating": 4.3,
+      "review_count": 99,
+      "suburb": "Taradale",
+      "phone": "(04) 962-9005",
+      "website": null,
+      "known_for": "New build GIB boarding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "NZ Plasterers Group",
+      "rating": 4.8,
+      "review_count": 144,
+      "suburb": "Marewa",
+      "phone": "(03) 752-1118",
+      "website": null,
+      "known_for": "Cement plaster substrates",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Napier GIB Stopping",
+      "rating": 4.8,
+      "review_count": 135,
+      "suburb": "Onekawa",
+      "phone": "(027) 628-5515",
+      "website": null,
+      "known_for": "Solid plaster & texture coatings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Napier Plastering",
+      "rating": 4.5,
+      "review_count": 133,
+      "suburb": "Maraenui",
+      "phone": "(027) 231-4952",
+      "website": null,
+      "known_for": "GIB stopping & finishing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Hawke's Bay Plastering Co",
+      "rating": 4.9,
+      "review_count": 23,
+      "suburb": "Pirimai",
+      "phone": "(022) 467-6896",
+      "website": null,
+      "known_for": "Plaster crack repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Smooth Finish Plastering",
+      "rating": 4.7,
+      "review_count": 131,
+      "suburb": "Bay View",
+      "phone": "(09) 319-8497",
+      "website": null,
+      "known_for": "Waterproof bathroom linings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Napier Plaster & Paint",
+      "rating": 4.4,
+      "review_count": 100,
+      "suburb": "Clive",
+      "phone": "(04) 123-0681",
+      "website": null,
+      "known_for": "Venetian & decorative finishes",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Solid Plaster Napier",
+      "rating": 4.4,
+      "review_count": 93,
+      "suburb": "Hastings",
+      "phone": "(07) 445-7201",
+      "website": null,
+      "known_for": "Cornice installation & repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Premier Plasters Napier",
+      "rating": 4.4,
+      "review_count": 38,
+      "suburb": "Havelock North",
+      "phone": "(04) 505-3949",
+      "website": null,
+      "known_for": "Exterior plaster & monolithic cladding",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

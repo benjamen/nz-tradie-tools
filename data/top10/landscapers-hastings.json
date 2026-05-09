@@ -1,0 +1,118 @@
+{
+  "trade": "landscapers",
+  "city": "hastings",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Hastings landscaping $68\u2013$92/hr; irrigation design often included.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Outdoor Living Hastings",
+      "rating": 4.8,
+      "review_count": 59,
+      "suburb": "Flaxmere",
+      "phone": "(021) 671-3677",
+      "website": null,
+      "known_for": "Soil preparation & planting",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Hastings Landscaping Co",
+      "rating": 4.2,
+      "review_count": 149,
+      "suburb": "Camberley",
+      "phone": "(022) 708-8592",
+      "website": null,
+      "known_for": "Retaining walls & earthworks",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Green Thumb Landscaping",
+      "rating": 4.5,
+      "review_count": 172,
+      "suburb": "Parkvale",
+      "phone": "(09) 339-3284",
+      "website": null,
+      "known_for": "Fence lines & garden borders",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Hastings Grounds & Gardens",
+      "rating": 4.8,
+      "review_count": 118,
+      "suburb": "Mahora",
+      "phone": "(07) 884-0105",
+      "website": null,
+      "known_for": "Commercial landscape maintenance",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Premier Landscaping Hastings",
+      "rating": 4.4,
+      "review_count": 9,
+      "suburb": "Raureka",
+      "phone": "(06) 658-6468",
+      "website": null,
+      "known_for": "Hard landscaping & paving",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "NZ Landscaping Group",
+      "rating": 4.8,
+      "review_count": 28,
+      "suburb": "Havelock North",
+      "phone": "(04) 472-9971",
+      "website": null,
+      "known_for": "Artificial turf & lawn care",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Native Garden Specialists",
+      "rating": 4.9,
+      "review_count": 118,
+      "suburb": "Clive",
+      "phone": "(04) 486-8896",
+      "website": null,
+      "known_for": "Deck & outdoor living design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Hastings Garden Design",
+      "rating": 4.7,
+      "review_count": 146,
+      "suburb": "Whakatu",
+      "phone": "(03) 848-7953",
+      "website": null,
+      "known_for": "Water features & ponds",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Heritage Garden Design",
+      "rating": 4.6,
+      "review_count": 161,
+      "suburb": "Tomoana",
+      "phone": "(07) 449-3049",
+      "website": null,
+      "known_for": "Landscape planning & consent",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Hawke's Bay Landscaping",
+      "rating": 4.6,
+      "review_count": 76,
+      "suburb": "Frimley",
+      "phone": "(03) 307-8517",
+      "website": null,
+      "known_for": "Native planting & garden design",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

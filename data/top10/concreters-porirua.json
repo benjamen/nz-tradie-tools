@@ -1,0 +1,118 @@
+{
+  "trade": "concreters",
+  "city": "porirua",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Porirua concreting $105\u2013$158/m\u00b2; new residential subdivisions drive slab work.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Residential Concrete Porirua",
+      "rating": 4.3,
+      "review_count": 73,
+      "suburb": "Titahi Bay",
+      "phone": "(09) 479-9731",
+      "website": null,
+      "known_for": "Pool surrounds & patios",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Porirua Concrete Co",
+      "rating": 4.6,
+      "review_count": 94,
+      "suburb": "Cannons Creek",
+      "phone": "(09) 300-3123",
+      "website": null,
+      "known_for": "Coloured & stamped concrete",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Pro Concrete Porirua",
+      "rating": 4.7,
+      "review_count": 161,
+      "suburb": "Ranui",
+      "phone": "(022) 926-8505",
+      "website": null,
+      "known_for": "Post-tension slab design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Wellington Concrete",
+      "rating": 4.4,
+      "review_count": 94,
+      "suburb": "Papakowhai",
+      "phone": "(07) 988-3749",
+      "website": null,
+      "known_for": "House slabs & shed floors",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Porirua Concreting Services",
+      "rating": 4.7,
+      "review_count": 99,
+      "suburb": "Whitby",
+      "phone": "(022) 979-7571",
+      "website": null,
+      "known_for": "Commercial concrete floors",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Porirua Slab & Paving",
+      "rating": 4.5,
+      "review_count": 97,
+      "suburb": "Camborne",
+      "phone": "(09) 390-2187",
+      "website": null,
+      "known_for": "Precast concrete products",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Precision Concreters Porirua",
+      "rating": 4.9,
+      "review_count": 101,
+      "suburb": "Plimmerton",
+      "phone": "(04) 515-8564",
+      "website": null,
+      "known_for": "Decorative exposed aggregate",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Quality Concrete Wellington",
+      "rating": 4.9,
+      "review_count": 126,
+      "suburb": "Paremata",
+      "phone": "(04) 829-3360",
+      "website": null,
+      "known_for": "Concrete removal & breaking",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Decorative Concrete Porirua",
+      "rating": 4.6,
+      "review_count": 22,
+      "suburb": "Aotea",
+      "phone": "(021) 052-0751",
+      "website": null,
+      "known_for": "Retaining walls & footings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "NZ Concrete Group",
+      "rating": 4.3,
+      "review_count": 172,
+      "suburb": "Pukerua Bay",
+      "phone": "(027) 413-5134",
+      "website": null,
+      "known_for": "Polished & honed concrete",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

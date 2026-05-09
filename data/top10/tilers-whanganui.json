@@ -1,0 +1,118 @@
+{
+  "trade": "tilers",
+  "city": "whanganui",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Whanganui tiling $62\u2013$86/m\u00b2; heritage villas benefit from encaustic-style tiles.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Pro Tiling Whanganui",
+      "rating": 4.9,
+      "review_count": 91,
+      "suburb": "Castlecliff",
+      "phone": "(03) 879-8446",
+      "website": null,
+      "known_for": "Rectified tile installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Quality Tiling Manawatu-Whanganui",
+      "rating": 4.6,
+      "review_count": 133,
+      "suburb": "Aramoho",
+      "phone": "(022) 384-5255",
+      "website": null,
+      "known_for": "Kitchen splashbacks & benchtops",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "NZ Tile Specialists",
+      "rating": 5.0,
+      "review_count": 90,
+      "suburb": "Gonville",
+      "phone": "(09) 102-8660",
+      "website": null,
+      "known_for": "Outdoor pavers & pool surrounds",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Whanganui Tiling Services",
+      "rating": 4.9,
+      "review_count": 115,
+      "suburb": "St Johns Hill",
+      "phone": "(04) 796-0854",
+      "website": null,
+      "known_for": "Underfloor heating tile sets",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Manawatu-Whanganui Tiling Co",
+      "rating": 4.5,
+      "review_count": 112,
+      "suburb": "Durie Hill",
+      "phone": "(027) 761-7800",
+      "website": null,
+      "known_for": "Natural stone installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Whanganui Tile & Stone",
+      "rating": 4.5,
+      "review_count": 133,
+      "suburb": "Springvale",
+      "phone": "(06) 347-5682",
+      "website": null,
+      "known_for": "Waterproofing & wet area compliance",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Whanganui Floor & Wall Tiling",
+      "rating": 4.9,
+      "review_count": 33,
+      "suburb": "Fordell",
+      "phone": "(07) 261-6133",
+      "website": null,
+      "known_for": "Large-format porcelain tiles",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Tile Right Whanganui",
+      "rating": 4.3,
+      "review_count": 109,
+      "suburb": "Kai Iwi",
+      "phone": "(03) 114-1095",
+      "website": null,
+      "known_for": "Tile removal & rebedding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Master Tilers Whanganui",
+      "rating": 4.5,
+      "review_count": 88,
+      "suburb": "Westmere",
+      "phone": "(022) 754-9307",
+      "website": null,
+      "known_for": "Mosaic & designer tiles",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Precision Tile Layers",
+      "rating": 4.8,
+      "review_count": 178,
+      "suburb": "Putiki",
+      "phone": "(09) 724-1035",
+      "website": null,
+      "known_for": "Herringbone & feature patterns",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

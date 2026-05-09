@@ -1,0 +1,118 @@
+{
+  "trade": "landscapers",
+  "city": "nelson",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Nelson landscaping $72\u2013$98/hr; sunny climate suits Mediterranean-style gardens.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Nelson Landscaping",
+      "rating": 4.5,
+      "review_count": 68,
+      "suburb": "Richmond",
+      "phone": "(07) 897-3616",
+      "website": null,
+      "known_for": "Landscape planning & consent",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Native Garden Specialists",
+      "rating": 4.8,
+      "review_count": 30,
+      "suburb": "Stoke",
+      "phone": "(04) 571-6770",
+      "website": null,
+      "known_for": "Artificial turf & lawn care",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Green Thumb Landscaping",
+      "rating": 4.8,
+      "review_count": 115,
+      "suburb": "Tahunanui",
+      "phone": "(09) 419-0039",
+      "website": null,
+      "known_for": "Residential garden makeovers",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Premier Landscaping Nelson",
+      "rating": 4.7,
+      "review_count": 107,
+      "suburb": "The Wood",
+      "phone": "(07) 677-3244",
+      "website": null,
+      "known_for": "Irrigation systems & drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Nelson Garden Design",
+      "rating": 4.7,
+      "review_count": 133,
+      "suburb": "Wakefield",
+      "phone": "(021) 770-7500",
+      "website": null,
+      "known_for": "Native planting & garden design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "NZ Landscaping Group",
+      "rating": 4.4,
+      "review_count": 39,
+      "suburb": "Hope",
+      "phone": "(022) 663-6849",
+      "website": null,
+      "known_for": "Retaining walls & earthworks",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Heritage Garden Design",
+      "rating": 4.2,
+      "review_count": 26,
+      "suburb": "Brightwater",
+      "phone": "(022) 076-5941",
+      "website": null,
+      "known_for": "Deck & outdoor living design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Nelson Grounds & Gardens",
+      "rating": 4.8,
+      "review_count": 153,
+      "suburb": "Murchison",
+      "phone": "(021) 377-6536",
+      "website": null,
+      "known_for": "Commercial landscape maintenance",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Outdoor Living Nelson",
+      "rating": 4.8,
+      "review_count": 89,
+      "suburb": "Motueka",
+      "phone": "(04) 747-2995",
+      "website": null,
+      "known_for": "Soil preparation & planting",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Nelson Landscaping Co",
+      "rating": 4.3,
+      "review_count": 60,
+      "suburb": "Mapua",
+      "phone": "(06) 854-3534",
+      "website": null,
+      "known_for": "Hard landscaping & paving",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

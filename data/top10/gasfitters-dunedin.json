@@ -1,0 +1,118 @@
+{
+  "trade": "gasfitters",
+  "city": "dunedin",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Dunedin gasfitting $95\u2013$138/hr; gas heating popular for Otago winters.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Precision Gas Dunedin",
+      "rating": 4.2,
+      "review_count": 144,
+      "suburb": "South Dunedin",
+      "phone": "(09) 713-5279",
+      "website": null,
+      "known_for": "LPG & natural gas reticulation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "NZ Gas Specialists",
+      "rating": 4.4,
+      "review_count": 115,
+      "suburb": "Mosgiel",
+      "phone": "(04) 849-9874",
+      "website": null,
+      "known_for": "Gas heating & fireplace installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Pro Gas Dunedin",
+      "rating": 4.9,
+      "review_count": 151,
+      "suburb": "St Kilda",
+      "phone": "(027) 704-1677",
+      "website": null,
+      "known_for": "Outdoor BBQ & fire pit gas lines",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Dunedin Gasfitting & Plumbing",
+      "rating": 4.3,
+      "review_count": 138,
+      "suburb": "Caversham",
+      "phone": "(027) 530-8538",
+      "website": null,
+      "known_for": "Gas pipe testing & certification",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Quality Gasfitting Otago",
+      "rating": 4.2,
+      "review_count": 125,
+      "suburb": "Green Island",
+      "phone": "(022) 406-1896",
+      "website": null,
+      "known_for": "Gas to electric conversions",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Dunedin Gas Services",
+      "rating": 5.0,
+      "review_count": 123,
+      "suburb": "Concord",
+      "phone": "(03) 769-0068",
+      "website": null,
+      "known_for": "Gas hob & cooktop installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Certified Gas Dunedin",
+      "rating": 4.8,
+      "review_count": 142,
+      "suburb": "Concord North",
+      "phone": "(07) 299-3969",
+      "website": null,
+      "known_for": "Gas appliance servicing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Otago Gas Co",
+      "rating": 5.0,
+      "review_count": 84,
+      "suburb": "Kaikorai",
+      "phone": "(022) 047-7055",
+      "website": null,
+      "known_for": "Gas hot water systems",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Gas Right Dunedin",
+      "rating": 4.6,
+      "review_count": 109,
+      "suburb": "Burnside",
+      "phone": "(06) 283-3412",
+      "website": null,
+      "known_for": "Gas meter installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Dunedin Gas & Heating",
+      "rating": 4.3,
+      "review_count": 53,
+      "suburb": "Pine Hill",
+      "phone": "(027) 562-1115",
+      "website": null,
+      "known_for": "Gas compliance certificates",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

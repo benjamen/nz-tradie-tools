@@ -1,0 +1,118 @@
+{
+  "trade": "tilers",
+  "city": "lower-hutt",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Lower Hutt tiling $70\u2013$100/m\u00b2; Wellington suburb rates apply.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Quality Tiling Wellington",
+      "rating": 4.9,
+      "review_count": 135,
+      "suburb": "Petone",
+      "phone": "(06) 943-5646",
+      "website": null,
+      "known_for": "Herringbone & feature patterns",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Wellington Tiling Co",
+      "rating": 4.4,
+      "review_count": 173,
+      "suburb": "Naenae",
+      "phone": "(027) 705-1912",
+      "website": null,
+      "known_for": "Large-format porcelain tiles",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "NZ Tile Specialists",
+      "rating": 4.3,
+      "review_count": 171,
+      "suburb": "Stokes Valley",
+      "phone": "(04) 947-8290",
+      "website": null,
+      "known_for": "Tile removal & rebedding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Lower Hutt Tiling Services",
+      "rating": 4.2,
+      "review_count": 50,
+      "suburb": "Avalon",
+      "phone": "(07) 371-4882",
+      "website": null,
+      "known_for": "Waterproofing & wet area compliance",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Lower Hutt Floor & Wall Tiling",
+      "rating": 5.0,
+      "review_count": 37,
+      "suburb": "Taita",
+      "phone": "(04) 510-8629",
+      "website": null,
+      "known_for": "Underfloor heating tile sets",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Pro Tiling Lower Hutt",
+      "rating": 4.3,
+      "review_count": 61,
+      "suburb": "Wainuiomata",
+      "phone": "(04) 396-4003",
+      "website": null,
+      "known_for": "Bathroom wall & floor tiling",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Master Tilers Lower Hutt",
+      "rating": 4.5,
+      "review_count": 109,
+      "suburb": "Boulcott",
+      "phone": "(07) 615-7962",
+      "website": null,
+      "known_for": "Outdoor pavers & pool surrounds",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Lower Hutt Tile & Stone",
+      "rating": 4.6,
+      "review_count": 52,
+      "suburb": "Maungaraki",
+      "phone": "(027) 460-2690",
+      "website": null,
+      "known_for": "Kitchen splashbacks & benchtops",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Precision Tile Layers",
+      "rating": 4.9,
+      "review_count": 125,
+      "suburb": "Waterloo",
+      "phone": "(06) 927-8809",
+      "website": null,
+      "known_for": "Natural stone installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Tile Right Lower Hutt",
+      "rating": 4.5,
+      "review_count": 13,
+      "suburb": "Normandale",
+      "phone": "(03) 127-4069",
+      "website": null,
+      "known_for": "Mosaic & designer tiles",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

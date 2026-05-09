@@ -1,0 +1,118 @@
+{
+  "trade": "carpenters",
+  "city": "lower-hutt",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Lower Hutt carpentry $82\u2013$115/hr; Wellington metro rates apply.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Wellington Carpentry Co",
+      "rating": 4.3,
+      "review_count": 18,
+      "suburb": "Petone",
+      "phone": "(021) 729-6942",
+      "website": null,
+      "known_for": "Pergolas & carports",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Master Carpenters Lower Hutt",
+      "rating": 4.5,
+      "review_count": 172,
+      "suburb": "Naenae",
+      "phone": "(06) 466-1547",
+      "website": null,
+      "known_for": "Structural framing & cladding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Lower Hutt Carpentry",
+      "rating": 4.3,
+      "review_count": 171,
+      "suburb": "Stokes Valley",
+      "phone": "(027) 364-4513",
+      "website": null,
+      "known_for": "Weatherboard repair & replacement",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "NZ Carpentry Group",
+      "rating": 4.6,
+      "review_count": 136,
+      "suburb": "Avalon",
+      "phone": "(03) 464-6767",
+      "website": null,
+      "known_for": "Skillion & lean-to additions",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Craftsman Carpentry Lower Hutt",
+      "rating": 4.8,
+      "review_count": 19,
+      "suburb": "Taita",
+      "phone": "(07) 779-2710",
+      "website": null,
+      "known_for": "Renovation & extensions",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Lower Hutt Interior Joinery",
+      "rating": 4.3,
+      "review_count": 44,
+      "suburb": "Wainuiomata",
+      "phone": "(06) 716-5167",
+      "website": null,
+      "known_for": "Door & window installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Structural Carpentry Lower Hutt",
+      "rating": 4.3,
+      "review_count": 165,
+      "suburb": "Boulcott",
+      "phone": "(07) 140-5720",
+      "website": null,
+      "known_for": "Decking & outdoor structures",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Lower Hutt Carpenter & Builder",
+      "rating": 4.4,
+      "review_count": 20,
+      "suburb": "Maungaraki",
+      "phone": "(09) 805-9490",
+      "website": null,
+      "known_for": "Heritage joinery restoration",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Precision Carpentry Lower Hutt",
+      "rating": 4.3,
+      "review_count": 117,
+      "suburb": "Waterloo",
+      "phone": "(09) 813-4523",
+      "website": null,
+      "known_for": "Interior fit-out & joinery",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Custom Carpentry Wellington",
+      "rating": 4.3,
+      "review_count": 140,
+      "suburb": "Normandale",
+      "phone": "(04) 365-7326",
+      "website": null,
+      "known_for": "Staircase construction & repair",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

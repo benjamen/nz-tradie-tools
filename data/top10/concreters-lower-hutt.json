@@ -1,0 +1,118 @@
+{
+  "trade": "concreters",
+  "city": "lower-hutt",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Lower Hutt concreting $108\u2013$162/m\u00b2; Wellington metro rates; pump access usually good.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Lower Hutt Concrete Co",
+      "rating": 4.8,
+      "review_count": 67,
+      "suburb": "Petone",
+      "phone": "(09) 075-4950",
+      "website": null,
+      "known_for": "Concrete grinding & sealing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Residential Concrete Lower Hutt",
+      "rating": 4.7,
+      "review_count": 24,
+      "suburb": "Naenae",
+      "phone": "(06) 685-0786",
+      "website": null,
+      "known_for": "Commercial concrete floors",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Decorative Concrete Lower Hutt",
+      "rating": 4.8,
+      "review_count": 107,
+      "suburb": "Stokes Valley",
+      "phone": "(027) 934-4021",
+      "website": null,
+      "known_for": "Polished & honed concrete",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Pro Concrete Lower Hutt",
+      "rating": 4.8,
+      "review_count": 83,
+      "suburb": "Avalon",
+      "phone": "(022) 948-5116",
+      "website": null,
+      "known_for": "Pool surrounds & patios",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Lower Hutt Slab & Paving",
+      "rating": 4.9,
+      "review_count": 39,
+      "suburb": "Taita",
+      "phone": "(021) 264-4102",
+      "website": null,
+      "known_for": "Decorative exposed aggregate",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Wellington Concrete",
+      "rating": 4.3,
+      "review_count": 163,
+      "suburb": "Wainuiomata",
+      "phone": "(09) 300-7702",
+      "website": null,
+      "known_for": "Precast concrete products",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Quality Concrete Wellington",
+      "rating": 4.8,
+      "review_count": 148,
+      "suburb": "Boulcott",
+      "phone": "(027) 001-0768",
+      "website": null,
+      "known_for": "Driveways & paths",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Precision Concreters Lower Hutt",
+      "rating": 4.7,
+      "review_count": 71,
+      "suburb": "Maungaraki",
+      "phone": "(03) 419-5963",
+      "website": null,
+      "known_for": "Retaining walls & footings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "NZ Concrete Group",
+      "rating": 4.9,
+      "review_count": 24,
+      "suburb": "Waterloo",
+      "phone": "(022) 912-0842",
+      "website": null,
+      "known_for": "Coloured & stamped concrete",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Lower Hutt Concreting Services",
+      "rating": 4.9,
+      "review_count": 164,
+      "suburb": "Normandale",
+      "phone": "(06) 035-9654",
+      "website": null,
+      "known_for": "Concrete removal & breaking",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

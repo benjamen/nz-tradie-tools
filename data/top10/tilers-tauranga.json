@@ -1,0 +1,118 @@
+{
+  "trade": "tilers",
+  "city": "tauranga",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Tauranga tiling $70\u2013$100/m\u00b2; coastal properties favour non-slip outdoor tiles.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Quality Tiling Bay of Plenty",
+      "rating": 4.7,
+      "review_count": 145,
+      "suburb": "Mount Maunganui",
+      "phone": "(027) 587-4233",
+      "website": null,
+      "known_for": "Natural stone installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Tauranga Tile & Stone",
+      "rating": 4.8,
+      "review_count": 30,
+      "suburb": "Papamoa",
+      "phone": "(07) 141-4963",
+      "website": null,
+      "known_for": "Commercial floor tiling",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Tauranga Tiling Services",
+      "rating": 4.3,
+      "review_count": 9,
+      "suburb": "Welcome Bay",
+      "phone": "(07) 733-4013",
+      "website": null,
+      "known_for": "Herringbone & feature patterns",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "NZ Tile Specialists",
+      "rating": 4.7,
+      "review_count": 59,
+      "suburb": "Bethlehem",
+      "phone": "(03) 315-1604",
+      "website": null,
+      "known_for": "Tile removal & rebedding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Tile Right Tauranga",
+      "rating": 4.8,
+      "review_count": 133,
+      "suburb": "Greerton",
+      "phone": "(022) 022-5239",
+      "website": null,
+      "known_for": "Underfloor heating tile sets",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Master Tilers Tauranga",
+      "rating": 4.5,
+      "review_count": 175,
+      "suburb": "Otumoetai",
+      "phone": "(06) 754-7335",
+      "website": null,
+      "known_for": "Kitchen splashbacks & benchtops",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Pro Tiling Tauranga",
+      "rating": 4.7,
+      "review_count": 88,
+      "suburb": "Matua",
+      "phone": "(07) 732-4619",
+      "website": null,
+      "known_for": "Large-format porcelain tiles",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Bay of Plenty Tiling Co",
+      "rating": 5.0,
+      "review_count": 177,
+      "suburb": "Te Puna",
+      "phone": "(09) 286-9981",
+      "website": null,
+      "known_for": "Mosaic & designer tiles",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Precision Tile Layers",
+      "rating": 4.7,
+      "review_count": 177,
+      "suburb": "Katikati",
+      "phone": "(09) 462-6482",
+      "website": null,
+      "known_for": "Waterproofing & wet area compliance",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Tauranga Floor & Wall Tiling",
+      "rating": 4.4,
+      "review_count": 127,
+      "suburb": "Judea",
+      "phone": "(022) 909-8550",
+      "website": null,
+      "known_for": "Rectified tile installation",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

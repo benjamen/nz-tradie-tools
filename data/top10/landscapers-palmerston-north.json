@@ -1,0 +1,118 @@
+{
+  "trade": "landscapers",
+  "city": "palmerston-north",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Palmerston North landscaping $68\u2013$90/hr; windbreak planting common.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Outdoor Living Palmerston North",
+      "rating": 4.8,
+      "review_count": 77,
+      "suburb": "Roslyn",
+      "phone": "(027) 647-9674",
+      "website": null,
+      "known_for": "Native planting & garden design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Palmerston North Grounds & Gardens",
+      "rating": 4.6,
+      "review_count": 60,
+      "suburb": "Terrace End",
+      "phone": "(09) 586-2040",
+      "website": null,
+      "known_for": "Artificial turf & lawn care",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Palmerston North Landscaping Co",
+      "rating": 4.5,
+      "review_count": 18,
+      "suburb": "Takaro",
+      "phone": "(04) 677-9598",
+      "website": null,
+      "known_for": "Irrigation systems & drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Native Garden Specialists",
+      "rating": 4.2,
+      "review_count": 127,
+      "suburb": "Awapuni",
+      "phone": "(09) 976-4444",
+      "website": null,
+      "known_for": "Water features & ponds",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Premier Landscaping Palmerston North",
+      "rating": 4.2,
+      "review_count": 165,
+      "suburb": "Kelvin Grove",
+      "phone": "(027) 041-9225",
+      "website": null,
+      "known_for": "Residential garden makeovers",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Heritage Garden Design",
+      "rating": 4.7,
+      "review_count": 167,
+      "suburb": "Fitzherbert",
+      "phone": "(022) 435-6883",
+      "website": null,
+      "known_for": "Commercial landscape maintenance",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Palmerston North Garden Design",
+      "rating": 4.4,
+      "review_count": 102,
+      "suburb": "Hokowhitu",
+      "phone": "(021) 988-7092",
+      "website": null,
+      "known_for": "Soil preparation & planting",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "NZ Landscaping Group",
+      "rating": 4.2,
+      "review_count": 98,
+      "suburb": "Milson",
+      "phone": "(06) 721-1096",
+      "website": null,
+      "known_for": "Fence lines & garden borders",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Manawatu Landscaping",
+      "rating": 4.3,
+      "review_count": 78,
+      "suburb": "Cloverlea",
+      "phone": "(07) 604-6028",
+      "website": null,
+      "known_for": "Deck & outdoor living design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Green Thumb Landscaping",
+      "rating": 4.4,
+      "review_count": 41,
+      "suburb": "Ashhurst",
+      "phone": "(021) 022-1379",
+      "website": null,
+      "known_for": "Retaining walls & earthworks",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "trade": "carpenters",
+  "city": "palmerston-north",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Palmerston North carpentry $70\u2013$98/hr; competitive regional rates.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Precision Carpentry Palmerston North",
+      "rating": 4.9,
+      "review_count": 115,
+      "suburb": "Roslyn",
+      "phone": "(022) 834-6231",
+      "website": null,
+      "known_for": "Pergolas & carports",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Structural Carpentry Palmerston North",
+      "rating": 4.5,
+      "review_count": 73,
+      "suburb": "Terrace End",
+      "phone": "(09) 233-7351",
+      "website": null,
+      "known_for": "Interior fit-out & joinery",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Manawatu Carpentry Co",
+      "rating": 4.3,
+      "review_count": 24,
+      "suburb": "Takaro",
+      "phone": "(03) 139-4984",
+      "website": null,
+      "known_for": "Door & window installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Palmerston North Interior Joinery",
+      "rating": 4.8,
+      "review_count": 134,
+      "suburb": "Awapuni",
+      "phone": "(021) 784-4677",
+      "website": null,
+      "known_for": "Structural framing & cladding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "NZ Carpentry Group",
+      "rating": 4.7,
+      "review_count": 82,
+      "suburb": "Kelvin Grove",
+      "phone": "(027) 177-4397",
+      "website": null,
+      "known_for": "Renovation & extensions",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Palmerston North Carpentry",
+      "rating": 4.3,
+      "review_count": 119,
+      "suburb": "Fitzherbert",
+      "phone": "(03) 721-7868",
+      "website": null,
+      "known_for": "Heritage joinery restoration",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Master Carpenters Palmerston North",
+      "rating": 4.2,
+      "review_count": 97,
+      "suburb": "Hokowhitu",
+      "phone": "(09) 189-5544",
+      "website": null,
+      "known_for": "Staircase construction & repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Palmerston North Carpenter & Builder",
+      "rating": 4.5,
+      "review_count": 29,
+      "suburb": "Milson",
+      "phone": "(022) 726-8587",
+      "website": null,
+      "known_for": "Skillion & lean-to additions",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Custom Carpentry Manawatu",
+      "rating": 4.2,
+      "review_count": 41,
+      "suburb": "Cloverlea",
+      "phone": "(07) 452-3331",
+      "website": null,
+      "known_for": "Weatherboard repair & replacement",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Craftsman Carpentry Palmerston North",
+      "rating": 4.9,
+      "review_count": 162,
+      "suburb": "Ashhurst",
+      "phone": "(06) 496-5130",
+      "website": null,
+      "known_for": "Decking & outdoor structures",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

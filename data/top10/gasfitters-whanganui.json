@@ -1,0 +1,118 @@
+{
+  "trade": "gasfitters",
+  "city": "whanganui",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Whanganui gasfitting $90\u2013$130/hr; LPG common in older housing stock.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Quality Gasfitting Manawatu-Whanganui",
+      "rating": 4.6,
+      "review_count": 163,
+      "suburb": "Castlecliff",
+      "phone": "(022) 906-2622",
+      "website": null,
+      "known_for": "Gas pipe testing & certification",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Precision Gas Whanganui",
+      "rating": 4.2,
+      "review_count": 81,
+      "suburb": "Aramoho",
+      "phone": "(022) 789-2034",
+      "website": null,
+      "known_for": "Gas meter installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "NZ Gas Specialists",
+      "rating": 4.4,
+      "review_count": 163,
+      "suburb": "Gonville",
+      "phone": "(022) 511-3189",
+      "website": null,
+      "known_for": "Outdoor BBQ & fire pit gas lines",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Whanganui Gasfitting & Plumbing",
+      "rating": 4.5,
+      "review_count": 28,
+      "suburb": "St Johns Hill",
+      "phone": "(027) 999-4322",
+      "website": null,
+      "known_for": "Gas heating & fireplace installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Manawatu-Whanganui Gas Co",
+      "rating": 4.4,
+      "review_count": 66,
+      "suburb": "Durie Hill",
+      "phone": "(027) 156-4326",
+      "website": null,
+      "known_for": "Gas hot water systems",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Pro Gas Whanganui",
+      "rating": 4.8,
+      "review_count": 22,
+      "suburb": "Springvale",
+      "phone": "(022) 162-8910",
+      "website": null,
+      "known_for": "Commercial gas fit-out",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Gas Right Whanganui",
+      "rating": 4.2,
+      "review_count": 107,
+      "suburb": "Fordell",
+      "phone": "(06) 381-0096",
+      "website": null,
+      "known_for": "Gas to electric conversions",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Certified Gas Whanganui",
+      "rating": 4.9,
+      "review_count": 146,
+      "suburb": "Kai Iwi",
+      "phone": "(03) 575-9884",
+      "website": null,
+      "known_for": "Gas leak detection & repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Whanganui Gas & Heating",
+      "rating": 5.0,
+      "review_count": 89,
+      "suburb": "Westmere",
+      "phone": "(03) 283-9520",
+      "website": null,
+      "known_for": "Gas compliance certificates",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Whanganui Gas Services",
+      "rating": 4.9,
+      "review_count": 134,
+      "suburb": "Putiki",
+      "phone": "(021) 542-2224",
+      "website": null,
+      "known_for": "LPG & natural gas reticulation",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

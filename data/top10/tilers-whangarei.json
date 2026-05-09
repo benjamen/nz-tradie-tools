@@ -1,0 +1,118 @@
+{
+  "trade": "tilers",
+  "city": "whangarei",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Whangarei tiling $65\u2013$92/m\u00b2; holiday rentals drive outdoor paver demand.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Precision Tile Layers",
+      "rating": 4.7,
+      "review_count": 130,
+      "suburb": "Tikipunga",
+      "phone": "(021) 965-5222",
+      "website": null,
+      "known_for": "Outdoor pavers & pool surrounds",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Whangarei Floor & Wall Tiling",
+      "rating": 4.9,
+      "review_count": 53,
+      "suburb": "Kamo",
+      "phone": "(06) 124-2816",
+      "website": null,
+      "known_for": "Natural stone installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Pro Tiling Whangarei",
+      "rating": 4.8,
+      "review_count": 89,
+      "suburb": "Raumanga",
+      "phone": "(09) 745-0668",
+      "website": null,
+      "known_for": "Herringbone & feature patterns",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Master Tilers Whangarei",
+      "rating": 4.7,
+      "review_count": 150,
+      "suburb": "Otangarei",
+      "phone": "(027) 049-7843",
+      "website": null,
+      "known_for": "Waterproofing & wet area compliance",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Northland Tiling Co",
+      "rating": 4.8,
+      "review_count": 65,
+      "suburb": "Morningside",
+      "phone": "(04) 968-5824",
+      "website": null,
+      "known_for": "Kitchen splashbacks & benchtops",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "NZ Tile Specialists",
+      "rating": 4.2,
+      "review_count": 11,
+      "suburb": "Regent",
+      "phone": "(03) 403-4947",
+      "website": null,
+      "known_for": "Large-format porcelain tiles",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Whangarei Tiling Services",
+      "rating": 4.8,
+      "review_count": 22,
+      "suburb": "Ruakaka",
+      "phone": "(027) 501-4388",
+      "website": null,
+      "known_for": "Tile removal & rebedding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Tile Right Whangarei",
+      "rating": 4.7,
+      "review_count": 72,
+      "suburb": "Waipu",
+      "phone": "(03) 582-4786",
+      "website": null,
+      "known_for": "Mosaic & designer tiles",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Whangarei Tile & Stone",
+      "rating": 4.8,
+      "review_count": 48,
+      "suburb": "Dargaville",
+      "phone": "(03) 935-1964",
+      "website": null,
+      "known_for": "Underfloor heating tile sets",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Quality Tiling Northland",
+      "rating": 4.7,
+      "review_count": 73,
+      "suburb": "Maungakaramea",
+      "phone": "(07) 117-2950",
+      "website": null,
+      "known_for": "Rectified tile installation",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

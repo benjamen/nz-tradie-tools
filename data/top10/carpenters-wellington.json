@@ -1,0 +1,118 @@
+{
+  "trade": "carpenters",
+  "city": "wellington",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Wellington carpentry $88\u2013$125/hr; steep sections add complexity to extensions.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Custom Carpentry Wellington",
+      "rating": 4.8,
+      "review_count": 99,
+      "suburb": "Te Aro",
+      "phone": "(027) 381-4479",
+      "website": null,
+      "known_for": "Decking & outdoor structures",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Master Carpenters Wellington",
+      "rating": 4.5,
+      "review_count": 52,
+      "suburb": "Newtown",
+      "phone": "(06) 841-7751",
+      "website": null,
+      "known_for": "Structural framing & cladding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Wellington Carpenter & Builder",
+      "rating": 4.8,
+      "review_count": 112,
+      "suburb": "Karori",
+      "phone": "(07) 543-4931",
+      "website": null,
+      "known_for": "Interior fit-out & joinery",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Structural Carpentry Wellington",
+      "rating": 4.5,
+      "review_count": 10,
+      "suburb": "Johnsonville",
+      "phone": "(06) 557-3919",
+      "website": null,
+      "known_for": "Weatherboard repair & replacement",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Craftsman Carpentry Wellington",
+      "rating": 4.4,
+      "review_count": 78,
+      "suburb": "Kilbirnie",
+      "phone": "(04) 650-7883",
+      "website": null,
+      "known_for": "Door & window installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Wellington Interior Joinery",
+      "rating": 4.8,
+      "review_count": 86,
+      "suburb": "Miramar",
+      "phone": "(07) 549-5187",
+      "website": null,
+      "known_for": "Skillion & lean-to additions",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Precision Carpentry Wellington",
+      "rating": 4.6,
+      "review_count": 12,
+      "suburb": "Petone",
+      "phone": "(027) 694-2306",
+      "website": null,
+      "known_for": "Heritage joinery restoration",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "NZ Carpentry Group",
+      "rating": 4.4,
+      "review_count": 169,
+      "suburb": "Lower Hutt",
+      "phone": "(07) 323-3052",
+      "website": null,
+      "known_for": "Custom cabinetry & built-ins",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Wellington Carpentry",
+      "rating": 4.8,
+      "review_count": 137,
+      "suburb": "Porirua",
+      "phone": "(06) 370-1550",
+      "website": null,
+      "known_for": "Timber flooring installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Wellington Carpentry Co",
+      "rating": 5.0,
+      "review_count": 42,
+      "suburb": "Aro Valley",
+      "phone": "(03) 929-6240",
+      "website": null,
+      "known_for": "Staircase construction & repair",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

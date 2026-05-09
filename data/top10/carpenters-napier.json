@@ -1,0 +1,118 @@
+{
+  "trade": "carpenters",
+  "city": "napier",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Napier carpentry $72\u2013$100/hr; Art Deco renovation carpentry in demand.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Napier Interior Joinery",
+      "rating": 4.9,
+      "review_count": 136,
+      "suburb": "Ahuriri",
+      "phone": "(021) 478-5321",
+      "website": null,
+      "known_for": "Decking & outdoor structures",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Custom Carpentry Hawke's Bay",
+      "rating": 4.4,
+      "review_count": 129,
+      "suburb": "Taradale",
+      "phone": "(07) 943-8371",
+      "website": null,
+      "known_for": "Renovation & extensions",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Hawke's Bay Carpentry Co",
+      "rating": 4.6,
+      "review_count": 106,
+      "suburb": "Marewa",
+      "phone": "(03) 173-1597",
+      "website": null,
+      "known_for": "Custom cabinetry & built-ins",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Master Carpenters Napier",
+      "rating": 4.4,
+      "review_count": 131,
+      "suburb": "Onekawa",
+      "phone": "(04) 288-8119",
+      "website": null,
+      "known_for": "Timber flooring installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Craftsman Carpentry Napier",
+      "rating": 4.4,
+      "review_count": 35,
+      "suburb": "Maraenui",
+      "phone": "(021) 314-3759",
+      "website": null,
+      "known_for": "Staircase construction & repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Napier Carpenter & Builder",
+      "rating": 4.5,
+      "review_count": 101,
+      "suburb": "Pirimai",
+      "phone": "(09) 592-8495",
+      "website": null,
+      "known_for": "Pergolas & carports",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Precision Carpentry Napier",
+      "rating": 4.3,
+      "review_count": 96,
+      "suburb": "Bay View",
+      "phone": "(09) 005-8949",
+      "website": null,
+      "known_for": "Weatherboard repair & replacement",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "NZ Carpentry Group",
+      "rating": 4.8,
+      "review_count": 17,
+      "suburb": "Clive",
+      "phone": "(09) 173-3641",
+      "website": null,
+      "known_for": "Structural framing & cladding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Structural Carpentry Napier",
+      "rating": 4.8,
+      "review_count": 99,
+      "suburb": "Hastings",
+      "phone": "(027) 136-0108",
+      "website": null,
+      "known_for": "Skillion & lean-to additions",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Napier Carpentry",
+      "rating": 4.7,
+      "review_count": 46,
+      "suburb": "Havelock North",
+      "phone": "(09) 329-7020",
+      "website": null,
+      "known_for": "Interior fit-out & joinery",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

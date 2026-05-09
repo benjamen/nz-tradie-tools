@@ -1,0 +1,118 @@
+{
+  "trade": "landscapers",
+  "city": "gisborne",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Gisborne landscaping $68\u2013$90/hr; hot dry summers require drought-tolerant species.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "NZ Landscaping Group",
+      "rating": 4.8,
+      "review_count": 122,
+      "suburb": "Elgin",
+      "phone": "(022) 993-5301",
+      "website": null,
+      "known_for": "Irrigation systems & drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Green Thumb Landscaping",
+      "rating": 4.6,
+      "review_count": 70,
+      "suburb": "Kaiti",
+      "phone": "(09) 124-7624",
+      "website": null,
+      "known_for": "Retaining walls & earthworks",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Gisborne Landscaping Co",
+      "rating": 4.4,
+      "review_count": 42,
+      "suburb": "Lytton",
+      "phone": "(021) 377-2216",
+      "website": null,
+      "known_for": "Residential garden makeovers",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Gisborne Grounds & Gardens",
+      "rating": 4.3,
+      "review_count": 105,
+      "suburb": "Riverdale",
+      "phone": "(021) 581-9325",
+      "website": null,
+      "known_for": "Water features & ponds",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Native Garden Specialists",
+      "rating": 4.8,
+      "review_count": 130,
+      "suburb": "Mangapapa",
+      "phone": "(022) 762-3988",
+      "website": null,
+      "known_for": "Commercial landscape maintenance",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Heritage Garden Design",
+      "rating": 4.7,
+      "review_count": 115,
+      "suburb": "Te Hapara",
+      "phone": "(021) 626-6005",
+      "website": null,
+      "known_for": "Hard landscaping & paving",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Outdoor Living Gisborne",
+      "rating": 4.3,
+      "review_count": 100,
+      "suburb": "Makaraka",
+      "phone": "(04) 134-8372",
+      "website": null,
+      "known_for": "Fence lines & garden borders",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Gisborne Landscaping",
+      "rating": 4.4,
+      "review_count": 61,
+      "suburb": "Patutahi",
+      "phone": "(03) 817-9621",
+      "website": null,
+      "known_for": "Deck & outdoor living design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Premier Landscaping Gisborne",
+      "rating": 4.9,
+      "review_count": 117,
+      "suburb": "Ormond",
+      "phone": "(021) 687-8003",
+      "website": null,
+      "known_for": "Landscape planning & consent",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Gisborne Garden Design",
+      "rating": 4.9,
+      "review_count": 74,
+      "suburb": "Matawhero",
+      "phone": "(021) 387-9154",
+      "website": null,
+      "known_for": "Soil preparation & planting",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

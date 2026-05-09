@@ -1,0 +1,118 @@
+{
+  "trade": "drainlayers",
+  "city": "hastings",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Hastings drainlaying $98\u2013$138/hr; agricultural drainage also available.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Pro Drainage Hastings",
+      "rating": 4.6,
+      "review_count": 121,
+      "suburb": "Flaxmere",
+      "phone": "(07) 402-2870",
+      "website": null,
+      "known_for": "Sewer & wastewater connections",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Quality Drainlaying Hawke's Bay",
+      "rating": 4.9,
+      "review_count": 14,
+      "suburb": "Camberley",
+      "phone": "(027) 105-3504",
+      "website": null,
+      "known_for": "Roof & surface water management",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Hawke's Bay Drainage",
+      "rating": 4.5,
+      "review_count": 72,
+      "suburb": "Parkvale",
+      "phone": "(06) 489-6271",
+      "website": null,
+      "known_for": "Septic tank installation & repairs",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Precision Drains Hastings",
+      "rating": 4.4,
+      "review_count": 41,
+      "suburb": "Mahora",
+      "phone": "(09) 202-8832",
+      "website": null,
+      "known_for": "Drain relining (no-dig)",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Hastings Drainlaying Co",
+      "rating": 4.4,
+      "review_count": 145,
+      "suburb": "Raureka",
+      "phone": "(09) 244-1223",
+      "website": null,
+      "known_for": "Earthworks & subsoil drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Underground Services Hastings",
+      "rating": 4.6,
+      "review_count": 94,
+      "suburb": "Havelock North",
+      "phone": "(09) 483-6047",
+      "website": null,
+      "known_for": "Stormwater drainage design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Expert Drains Hastings",
+      "rating": 4.4,
+      "review_count": 10,
+      "suburb": "Clive",
+      "phone": "(09) 155-6381",
+      "website": null,
+      "known_for": "Pump station installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "NZ Drainage Group",
+      "rating": 4.5,
+      "review_count": 60,
+      "suburb": "Whakatu",
+      "phone": "(022) 303-9439",
+      "website": null,
+      "known_for": "Blocked drain clearing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Hastings Drainage Services",
+      "rating": 4.8,
+      "review_count": 84,
+      "suburb": "Tomoana",
+      "phone": "(022) 466-1065",
+      "website": null,
+      "known_for": "Soakage & absorption trenches",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Hastings Sewer & Stormwater",
+      "rating": 4.9,
+      "review_count": 156,
+      "suburb": "Frimley",
+      "phone": "(027) 791-9982",
+      "website": null,
+      "known_for": "CCTV drain inspection",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

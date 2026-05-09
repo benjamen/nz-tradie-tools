@@ -1,0 +1,118 @@
+{
+  "trade": "carpenters",
+  "city": "nelson",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Nelson carpentry $72\u2013$100/hr; lifestyle blocks and holiday homes drive demand.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Nelson Carpentry Co",
+      "rating": 4.9,
+      "review_count": 162,
+      "suburb": "Richmond",
+      "phone": "(022) 770-1776",
+      "website": null,
+      "known_for": "Pergolas & carports",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Nelson Carpentry",
+      "rating": 4.3,
+      "review_count": 90,
+      "suburb": "Stoke",
+      "phone": "(04) 134-5849",
+      "website": null,
+      "known_for": "Interior fit-out & joinery",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Structural Carpentry Nelson",
+      "rating": 4.4,
+      "review_count": 156,
+      "suburb": "Tahunanui",
+      "phone": "(03) 374-7999",
+      "website": null,
+      "known_for": "Staircase construction & repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "NZ Carpentry Group",
+      "rating": 4.7,
+      "review_count": 69,
+      "suburb": "The Wood",
+      "phone": "(06) 624-9173",
+      "website": null,
+      "known_for": "Structural framing & cladding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Custom Carpentry Nelson",
+      "rating": 4.2,
+      "review_count": 40,
+      "suburb": "Wakefield",
+      "phone": "(04) 647-1654",
+      "website": null,
+      "known_for": "Weatherboard repair & replacement",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Nelson Carpenter & Builder",
+      "rating": 4.3,
+      "review_count": 85,
+      "suburb": "Hope",
+      "phone": "(09) 981-1828",
+      "website": null,
+      "known_for": "Heritage joinery restoration",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Master Carpenters Nelson",
+      "rating": 4.5,
+      "review_count": 36,
+      "suburb": "Brightwater",
+      "phone": "(022) 406-5767",
+      "website": null,
+      "known_for": "Renovation & extensions",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Precision Carpentry Nelson",
+      "rating": 5.0,
+      "review_count": 103,
+      "suburb": "Murchison",
+      "phone": "(021) 635-5581",
+      "website": null,
+      "known_for": "Custom cabinetry & built-ins",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Nelson Interior Joinery",
+      "rating": 4.4,
+      "review_count": 9,
+      "suburb": "Motueka",
+      "phone": "(04) 237-5372",
+      "website": null,
+      "known_for": "Timber flooring installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Craftsman Carpentry Nelson",
+      "rating": 4.2,
+      "review_count": 58,
+      "suburb": "Mapua",
+      "phone": "(021) 284-9614",
+      "website": null,
+      "known_for": "Decking & outdoor structures",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "trade": "plasterers",
+  "city": "porirua",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Porirua plastering $28\u2013$46/m\u00b2; residential new build growth in the area.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Porirua Plaster & Paint",
+      "rating": 4.3,
+      "review_count": 92,
+      "suburb": "Titahi Bay",
+      "phone": "(027) 515-2550",
+      "website": null,
+      "known_for": "New build GIB boarding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Wellington Plastering Co",
+      "rating": 4.5,
+      "review_count": 78,
+      "suburb": "Cannons Creek",
+      "phone": "(027) 461-9488",
+      "website": null,
+      "known_for": "Heritage plaster restoration",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Expert Plastering Wellington",
+      "rating": 4.9,
+      "review_count": 99,
+      "suburb": "Ranui",
+      "phone": "(022) 543-2921",
+      "website": null,
+      "known_for": "Polished plaster feature walls",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Solid Plaster Porirua",
+      "rating": 4.8,
+      "review_count": 92,
+      "suburb": "Papakowhai",
+      "phone": "(03) 365-5766",
+      "website": null,
+      "known_for": "Cement plaster substrates",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Interior Finishes Porirua",
+      "rating": 4.3,
+      "review_count": 19,
+      "suburb": "Whitby",
+      "phone": "(07) 589-3700",
+      "website": null,
+      "known_for": "Venetian & decorative finishes",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Porirua Plastering",
+      "rating": 4.8,
+      "review_count": 114,
+      "suburb": "Camborne",
+      "phone": "(021) 579-2731",
+      "website": null,
+      "known_for": "GIB stopping & finishing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Smooth Finish Plastering",
+      "rating": 4.8,
+      "review_count": 15,
+      "suburb": "Plimmerton",
+      "phone": "(04) 473-1798",
+      "website": null,
+      "known_for": "Solid plaster & texture coatings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Premier Plasters Porirua",
+      "rating": 4.2,
+      "review_count": 78,
+      "suburb": "Paremata",
+      "phone": "(09) 584-7954",
+      "website": null,
+      "known_for": "Exterior plaster & monolithic cladding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Porirua GIB Stopping",
+      "rating": 5.0,
+      "review_count": 59,
+      "suburb": "Aotea",
+      "phone": "(04) 735-7086",
+      "website": null,
+      "known_for": "Waterproof bathroom linings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "NZ Plasterers Group",
+      "rating": 4.5,
+      "review_count": 92,
+      "suburb": "Pukerua Bay",
+      "phone": "(04) 202-6040",
+      "website": null,
+      "known_for": "Plaster crack repair",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

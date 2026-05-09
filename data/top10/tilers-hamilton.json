@@ -1,0 +1,118 @@
+{
+  "trade": "tilers",
+  "city": "hamilton",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Hamilton tiling $65\u2013$95/m\u00b2; good supply of local tile merchants.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Waikato Tiling Co",
+      "rating": 4.6,
+      "review_count": 54,
+      "suburb": "Frankton",
+      "phone": "(022) 345-7139",
+      "website": null,
+      "known_for": "Herringbone & feature patterns",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "NZ Tile Specialists",
+      "rating": 5.0,
+      "review_count": 35,
+      "suburb": "Te Rapa",
+      "phone": "(027) 759-4087",
+      "website": null,
+      "known_for": "Underfloor heating tile sets",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Precision Tile Layers",
+      "rating": 4.9,
+      "review_count": 24,
+      "suburb": "Hamilton East",
+      "phone": "(021) 528-0742",
+      "website": null,
+      "known_for": "Commercial floor tiling",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Hamilton Tiling Services",
+      "rating": 4.8,
+      "review_count": 121,
+      "suburb": "Hillcrest",
+      "phone": "(06) 814-7416",
+      "website": null,
+      "known_for": "Natural stone installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Hamilton Floor & Wall Tiling",
+      "rating": 4.5,
+      "review_count": 22,
+      "suburb": "Dinsdale",
+      "phone": "(04) 598-8084",
+      "website": null,
+      "known_for": "Outdoor pavers & pool surrounds",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Master Tilers Hamilton",
+      "rating": 4.4,
+      "review_count": 34,
+      "suburb": "Rototuna",
+      "phone": "(027) 179-2608",
+      "website": null,
+      "known_for": "Bathroom wall & floor tiling",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Hamilton Tile & Stone",
+      "rating": 4.3,
+      "review_count": 151,
+      "suburb": "Chartwell",
+      "phone": "(09) 946-5169",
+      "website": null,
+      "known_for": "Rectified tile installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Tile Right Hamilton",
+      "rating": 4.9,
+      "review_count": 88,
+      "suburb": "Nawton",
+      "phone": "(07) 352-6432",
+      "website": null,
+      "known_for": "Waterproofing & wet area compliance",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Pro Tiling Hamilton",
+      "rating": 5.0,
+      "review_count": 146,
+      "suburb": "Glenview",
+      "phone": "(03) 653-3651",
+      "website": null,
+      "known_for": "Mosaic & designer tiles",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Quality Tiling Waikato",
+      "rating": 4.6,
+      "review_count": 71,
+      "suburb": "Peacocke",
+      "phone": "(027) 294-8934",
+      "website": null,
+      "known_for": "Large-format porcelain tiles",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

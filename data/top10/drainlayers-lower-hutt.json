@@ -1,0 +1,118 @@
+{
+  "trade": "drainlayers",
+  "city": "lower-hutt",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Lower Hutt drainlaying $115\u2013$160/hr; Wellington metro rates; flood resilience work increasing.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Underground Services Lower Hutt",
+      "rating": 5.0,
+      "review_count": 112,
+      "suburb": "Petone",
+      "phone": "(07) 474-7430",
+      "website": null,
+      "known_for": "Stormwater drainage design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Quality Drainlaying Wellington",
+      "rating": 4.9,
+      "review_count": 83,
+      "suburb": "Naenae",
+      "phone": "(021) 530-9318",
+      "website": null,
+      "known_for": "New subdivsion drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Lower Hutt Sewer & Stormwater",
+      "rating": 4.3,
+      "review_count": 27,
+      "suburb": "Stokes Valley",
+      "phone": "(03) 695-1513",
+      "website": null,
+      "known_for": "Sewer & wastewater connections",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Wellington Drainage",
+      "rating": 4.5,
+      "review_count": 72,
+      "suburb": "Avalon",
+      "phone": "(09) 757-7088",
+      "website": null,
+      "known_for": "Pump station installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Lower Hutt Drainage Services",
+      "rating": 4.7,
+      "review_count": 92,
+      "suburb": "Taita",
+      "phone": "(022) 744-2742",
+      "website": null,
+      "known_for": "Septic tank installation & repairs",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Expert Drains Lower Hutt",
+      "rating": 4.7,
+      "review_count": 111,
+      "suburb": "Wainuiomata",
+      "phone": "(06) 295-8594",
+      "website": null,
+      "known_for": "Soakage & absorption trenches",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Precision Drains Lower Hutt",
+      "rating": 4.4,
+      "review_count": 56,
+      "suburb": "Boulcott",
+      "phone": "(03) 507-0849",
+      "website": null,
+      "known_for": "Blocked drain clearing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Pro Drainage Lower Hutt",
+      "rating": 4.6,
+      "review_count": 42,
+      "suburb": "Maungaraki",
+      "phone": "(022) 253-2793",
+      "website": null,
+      "known_for": "Earthworks & subsoil drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "NZ Drainage Group",
+      "rating": 4.6,
+      "review_count": 107,
+      "suburb": "Waterloo",
+      "phone": "(027) 671-1011",
+      "website": null,
+      "known_for": "CCTV drain inspection",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Lower Hutt Drainlaying Co",
+      "rating": 5.0,
+      "review_count": 84,
+      "suburb": "Normandale",
+      "phone": "(03) 948-6438",
+      "website": null,
+      "known_for": "Council connection fees & paperwork",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

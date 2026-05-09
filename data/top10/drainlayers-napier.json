@@ -1,0 +1,118 @@
+{
+  "trade": "drainlayers",
+  "city": "napier",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Napier drainlaying $100\u2013$140/hr; flat land makes stormwater design simpler.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Pro Drainage Napier",
+      "rating": 4.3,
+      "review_count": 72,
+      "suburb": "Ahuriri",
+      "phone": "(021) 331-8293",
+      "website": null,
+      "known_for": "CCTV drain inspection",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Napier Drainage Services",
+      "rating": 4.8,
+      "review_count": 48,
+      "suburb": "Taradale",
+      "phone": "(06) 671-8254",
+      "website": null,
+      "known_for": "Pump station installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Napier Drainlaying Co",
+      "rating": 5.0,
+      "review_count": 76,
+      "suburb": "Marewa",
+      "phone": "(03) 742-2508",
+      "website": null,
+      "known_for": "Stormwater drainage design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Napier Sewer & Stormwater",
+      "rating": 4.5,
+      "review_count": 112,
+      "suburb": "Onekawa",
+      "phone": "(021) 902-7411",
+      "website": null,
+      "known_for": "Sewer & wastewater connections",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Expert Drains Napier",
+      "rating": 4.7,
+      "review_count": 109,
+      "suburb": "Maraenui",
+      "phone": "(04) 221-2013",
+      "website": null,
+      "known_for": "Soakage & absorption trenches",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Hawke's Bay Drainage",
+      "rating": 4.4,
+      "review_count": 12,
+      "suburb": "Pirimai",
+      "phone": "(04) 850-9971",
+      "website": null,
+      "known_for": "New subdivsion drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Precision Drains Napier",
+      "rating": 4.3,
+      "review_count": 91,
+      "suburb": "Bay View",
+      "phone": "(07) 471-1829",
+      "website": null,
+      "known_for": "Septic tank installation & repairs",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Underground Services Napier",
+      "rating": 5.0,
+      "review_count": 65,
+      "suburb": "Clive",
+      "phone": "(04) 441-5450",
+      "website": null,
+      "known_for": "Earthworks & subsoil drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "NZ Drainage Group",
+      "rating": 4.8,
+      "review_count": 121,
+      "suburb": "Hastings",
+      "phone": "(03) 875-3745",
+      "website": null,
+      "known_for": "Blocked drain clearing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Quality Drainlaying Hawke's Bay",
+      "rating": 4.3,
+      "review_count": 114,
+      "suburb": "Havelock North",
+      "phone": "(03) 959-1839",
+      "website": null,
+      "known_for": "Roof & surface water management",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

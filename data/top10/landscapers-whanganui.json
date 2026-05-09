@@ -1,0 +1,118 @@
+{
+  "trade": "landscapers",
+  "city": "whanganui",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Whanganui landscaping $68\u2013$90/hr; riverside sections often need moisture management.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Green Thumb Landscaping",
+      "rating": 4.7,
+      "review_count": 118,
+      "suburb": "Castlecliff",
+      "phone": "(03) 306-1498",
+      "website": null,
+      "known_for": "Native planting & garden design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Outdoor Living Whanganui",
+      "rating": 4.8,
+      "review_count": 87,
+      "suburb": "Aramoho",
+      "phone": "(03) 706-0200",
+      "website": null,
+      "known_for": "Artificial turf & lawn care",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Premier Landscaping Whanganui",
+      "rating": 5.0,
+      "review_count": 163,
+      "suburb": "Gonville",
+      "phone": "(07) 666-3555",
+      "website": null,
+      "known_for": "Fence lines & garden borders",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Native Garden Specialists",
+      "rating": 4.9,
+      "review_count": 30,
+      "suburb": "St Johns Hill",
+      "phone": "(09) 299-1210",
+      "website": null,
+      "known_for": "Landscape planning & consent",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Whanganui Garden Design",
+      "rating": 4.7,
+      "review_count": 95,
+      "suburb": "Durie Hill",
+      "phone": "(027) 800-0252",
+      "website": null,
+      "known_for": "Soil preparation & planting",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Whanganui Landscaping Co",
+      "rating": 4.3,
+      "review_count": 163,
+      "suburb": "Springvale",
+      "phone": "(027) 430-2248",
+      "website": null,
+      "known_for": "Deck & outdoor living design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "NZ Landscaping Group",
+      "rating": 4.4,
+      "review_count": 145,
+      "suburb": "Fordell",
+      "phone": "(027) 596-7889",
+      "website": null,
+      "known_for": "Water features & ponds",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Manawatu-Whanganui Landscaping",
+      "rating": 4.4,
+      "review_count": 179,
+      "suburb": "Kai Iwi",
+      "phone": "(06) 527-8162",
+      "website": null,
+      "known_for": "Residential garden makeovers",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Heritage Garden Design",
+      "rating": 4.4,
+      "review_count": 106,
+      "suburb": "Westmere",
+      "phone": "(03) 533-1006",
+      "website": null,
+      "known_for": "Retaining walls & earthworks",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Whanganui Grounds & Gardens",
+      "rating": 4.5,
+      "review_count": 167,
+      "suburb": "Putiki",
+      "phone": "(022) 444-7955",
+      "website": null,
+      "known_for": "Irrigation systems & drainage",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

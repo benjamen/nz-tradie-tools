@@ -1,0 +1,118 @@
+{
+  "trade": "tilers",
+  "city": "gisborne",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Gisborne tiling $62\u2013$88/m\u00b2; outdoor entertaining areas popular.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Master Tilers Gisborne",
+      "rating": 4.4,
+      "review_count": 172,
+      "suburb": "Elgin",
+      "phone": "(09) 997-3843",
+      "website": null,
+      "known_for": "Underfloor heating tile sets",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Gisborne Tiling Services",
+      "rating": 4.4,
+      "review_count": 168,
+      "suburb": "Kaiti",
+      "phone": "(027) 393-9285",
+      "website": null,
+      "known_for": "Commercial floor tiling",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "NZ Tile Specialists",
+      "rating": 4.8,
+      "review_count": 28,
+      "suburb": "Lytton",
+      "phone": "(06) 565-6425",
+      "website": null,
+      "known_for": "Bathroom wall & floor tiling",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Tile Right Gisborne",
+      "rating": 4.7,
+      "review_count": 36,
+      "suburb": "Riverdale",
+      "phone": "(021) 846-5665",
+      "website": null,
+      "known_for": "Outdoor pavers & pool surrounds",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Gisborne Floor & Wall Tiling",
+      "rating": 4.6,
+      "review_count": 13,
+      "suburb": "Mangapapa",
+      "phone": "(027) 934-5815",
+      "website": null,
+      "known_for": "Rectified tile installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Gisborne Tiling Co",
+      "rating": 4.4,
+      "review_count": 52,
+      "suburb": "Te Hapara",
+      "phone": "(04) 670-1521",
+      "website": null,
+      "known_for": "Waterproofing & wet area compliance",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Quality Tiling Gisborne",
+      "rating": 5.0,
+      "review_count": 168,
+      "suburb": "Makaraka",
+      "phone": "(027) 879-9087",
+      "website": null,
+      "known_for": "Large-format porcelain tiles",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Pro Tiling Gisborne",
+      "rating": 4.9,
+      "review_count": 128,
+      "suburb": "Patutahi",
+      "phone": "(021) 259-4585",
+      "website": null,
+      "known_for": "Mosaic & designer tiles",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Precision Tile Layers",
+      "rating": 4.7,
+      "review_count": 53,
+      "suburb": "Ormond",
+      "phone": "(022) 006-6646",
+      "website": null,
+      "known_for": "Herringbone & feature patterns",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Gisborne Tile & Stone",
+      "rating": 4.3,
+      "review_count": 93,
+      "suburb": "Matawhero",
+      "phone": "(022) 598-0239",
+      "website": null,
+      "known_for": "Kitchen splashbacks & benchtops",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

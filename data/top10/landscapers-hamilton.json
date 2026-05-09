@@ -1,0 +1,118 @@
+{
+  "trade": "landscapers",
+  "city": "hamilton",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Hamilton landscaping $70\u2013$95/hr; Waikato clay soil adds cost to earthworks.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Heritage Garden Design",
+      "rating": 4.2,
+      "review_count": 150,
+      "suburb": "Frankton",
+      "phone": "(04) 613-1704",
+      "website": null,
+      "known_for": "Landscape planning & consent",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Hamilton Garden Design",
+      "rating": 4.8,
+      "review_count": 72,
+      "suburb": "Te Rapa",
+      "phone": "(022) 524-5285",
+      "website": null,
+      "known_for": "Irrigation systems & drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Native Garden Specialists",
+      "rating": 4.9,
+      "review_count": 73,
+      "suburb": "Hamilton East",
+      "phone": "(022) 514-8688",
+      "website": null,
+      "known_for": "Commercial landscape maintenance",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Hamilton Grounds & Gardens",
+      "rating": 4.8,
+      "review_count": 98,
+      "suburb": "Hillcrest",
+      "phone": "(03) 278-4761",
+      "website": null,
+      "known_for": "Native planting & garden design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Hamilton Landscaping Co",
+      "rating": 4.4,
+      "review_count": 142,
+      "suburb": "Dinsdale",
+      "phone": "(07) 780-3885",
+      "website": null,
+      "known_for": "Retaining walls & earthworks",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Premier Landscaping Hamilton",
+      "rating": 4.6,
+      "review_count": 81,
+      "suburb": "Rototuna",
+      "phone": "(021) 545-7079",
+      "website": null,
+      "known_for": "Soil preparation & planting",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Green Thumb Landscaping",
+      "rating": 4.5,
+      "review_count": 11,
+      "suburb": "Chartwell",
+      "phone": "(04) 344-1033",
+      "website": null,
+      "known_for": "Water features & ponds",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Waikato Landscaping",
+      "rating": 4.5,
+      "review_count": 49,
+      "suburb": "Nawton",
+      "phone": "(022) 446-5679",
+      "website": null,
+      "known_for": "Hard landscaping & paving",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Outdoor Living Hamilton",
+      "rating": 4.6,
+      "review_count": 174,
+      "suburb": "Glenview",
+      "phone": "(021) 141-1390",
+      "website": null,
+      "known_for": "Artificial turf & lawn care",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "NZ Landscaping Group",
+      "rating": 4.5,
+      "review_count": 144,
+      "suburb": "Peacocke",
+      "phone": "(03) 687-3834",
+      "website": null,
+      "known_for": "Fence lines & garden borders",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

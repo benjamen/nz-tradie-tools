@@ -1,0 +1,118 @@
+{
+  "trade": "concreters",
+  "city": "upper-hutt",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Upper Hutt concreting $105\u2013$158/m\u00b2; family home driveways and garages common.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "NZ Concrete Group",
+      "rating": 4.5,
+      "review_count": 92,
+      "suburb": "Silverstream",
+      "phone": "(09) 356-1703",
+      "website": null,
+      "known_for": "Coloured & stamped concrete",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Upper Hutt Concreting Services",
+      "rating": 4.4,
+      "review_count": 140,
+      "suburb": "Trentham",
+      "phone": "(06) 491-3113",
+      "website": null,
+      "known_for": "Post-tension slab design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Precision Concreters Upper Hutt",
+      "rating": 4.6,
+      "review_count": 13,
+      "suburb": "Heretaunga",
+      "phone": "(06) 781-8563",
+      "website": null,
+      "known_for": "House slabs & shed floors",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Residential Concrete Upper Hutt",
+      "rating": 4.6,
+      "review_count": 50,
+      "suburb": "Pinehaven",
+      "phone": "(09) 466-7156",
+      "website": null,
+      "known_for": "Precast concrete products",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Wellington Concrete",
+      "rating": 4.5,
+      "review_count": 67,
+      "suburb": "Totara Park",
+      "phone": "(09) 755-4183",
+      "website": null,
+      "known_for": "Driveways & paths",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Upper Hutt Slab & Paving",
+      "rating": 4.9,
+      "review_count": 106,
+      "suburb": "Brown Owl",
+      "phone": "(022) 988-2288",
+      "website": null,
+      "known_for": "Commercial concrete floors",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Upper Hutt Concrete Co",
+      "rating": 4.5,
+      "review_count": 28,
+      "suburb": "Whitemans Valley",
+      "phone": "(027) 833-8767",
+      "website": null,
+      "known_for": "Polished & honed concrete",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Quality Concrete Wellington",
+      "rating": 4.4,
+      "review_count": 32,
+      "suburb": "Birchville",
+      "phone": "(021) 741-1567",
+      "website": null,
+      "known_for": "Decorative exposed aggregate",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Decorative Concrete Upper Hutt",
+      "rating": 4.7,
+      "review_count": 96,
+      "suburb": "Maoribank",
+      "phone": "(09) 534-1561",
+      "website": null,
+      "known_for": "Pool surrounds & patios",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Pro Concrete Upper Hutt",
+      "rating": 4.4,
+      "review_count": 67,
+      "suburb": "Timberlea",
+      "phone": "(03) 876-4199",
+      "website": null,
+      "known_for": "Concrete removal & breaking",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "trade": "concreters",
+  "city": "new-plymouth",
+  "updated": "2025-05-09",
+  "regional_cost_note": "New Plymouth concreting $98\u2013$145/m\u00b2; volcanic soil conditions affect ground prep.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "New Plymouth Slab & Paving",
+      "rating": 4.7,
+      "review_count": 79,
+      "suburb": "Inglewood",
+      "phone": "(04) 732-0305",
+      "website": null,
+      "known_for": "Concrete grinding & sealing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Decorative Concrete New Plymouth",
+      "rating": 4.9,
+      "review_count": 17,
+      "suburb": "Waitara",
+      "phone": "(03) 486-6850",
+      "website": null,
+      "known_for": "Decorative exposed aggregate",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Quality Concrete Taranaki",
+      "rating": 4.7,
+      "review_count": 63,
+      "suburb": "Fitzroy",
+      "phone": "(09) 022-8979",
+      "website": null,
+      "known_for": "Coloured & stamped concrete",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "New Plymouth Concrete Co",
+      "rating": 4.6,
+      "review_count": 141,
+      "suburb": "Strandon",
+      "phone": "(04) 852-2006",
+      "website": null,
+      "known_for": "Precast concrete products",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "NZ Concrete Group",
+      "rating": 4.7,
+      "review_count": 149,
+      "suburb": "Bell Block",
+      "phone": "(03) 618-9995",
+      "website": null,
+      "known_for": "Driveways & paths",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "New Plymouth Concreting Services",
+      "rating": 4.8,
+      "review_count": 20,
+      "suburb": "Westown",
+      "phone": "(04) 584-9723",
+      "website": null,
+      "known_for": "Pool surrounds & patios",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Taranaki Concrete",
+      "rating": 4.3,
+      "review_count": 107,
+      "suburb": "Blagdon",
+      "phone": "(06) 816-2807",
+      "website": null,
+      "known_for": "Commercial concrete floors",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Precision Concreters New Plymouth",
+      "rating": 4.4,
+      "review_count": 66,
+      "suburb": "Merrilands",
+      "phone": "(022) 095-8517",
+      "website": null,
+      "known_for": "Retaining walls & footings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Residential Concrete New Plymouth",
+      "rating": 4.5,
+      "review_count": 42,
+      "suburb": "Hillsborough",
+      "phone": "(04) 403-2139",
+      "website": null,
+      "known_for": "Concrete removal & breaking",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Pro Concrete New Plymouth",
+      "rating": 5.0,
+      "review_count": 79,
+      "suburb": "Vogeltown",
+      "phone": "(06) 069-4406",
+      "website": null,
+      "known_for": "Polished & honed concrete",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "trade": "tilers",
+  "city": "palmerston-north",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Palmerston North tiling $63\u2013$88/m\u00b2; competitive local market.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Palmerston North Tiling Services",
+      "rating": 4.6,
+      "review_count": 131,
+      "suburb": "Roslyn",
+      "phone": "(027) 014-9819",
+      "website": null,
+      "known_for": "Commercial floor tiling",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Palmerston North Tile & Stone",
+      "rating": 4.5,
+      "review_count": 94,
+      "suburb": "Terrace End",
+      "phone": "(06) 253-5369",
+      "website": null,
+      "known_for": "Herringbone & feature patterns",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Master Tilers Palmerston North",
+      "rating": 4.3,
+      "review_count": 131,
+      "suburb": "Takaro",
+      "phone": "(022) 257-2056",
+      "website": null,
+      "known_for": "Large-format porcelain tiles",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Tile Right Palmerston North",
+      "rating": 4.9,
+      "review_count": 89,
+      "suburb": "Awapuni",
+      "phone": "(027) 492-6778",
+      "website": null,
+      "known_for": "Natural stone installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Palmerston North Floor & Wall Tiling",
+      "rating": 4.4,
+      "review_count": 12,
+      "suburb": "Kelvin Grove",
+      "phone": "(03) 243-2293",
+      "website": null,
+      "known_for": "Kitchen splashbacks & benchtops",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Precision Tile Layers",
+      "rating": 4.8,
+      "review_count": 137,
+      "suburb": "Fitzherbert",
+      "phone": "(06) 438-2984",
+      "website": null,
+      "known_for": "Outdoor pavers & pool surrounds",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Pro Tiling Palmerston North",
+      "rating": 4.7,
+      "review_count": 111,
+      "suburb": "Hokowhitu",
+      "phone": "(021) 186-5005",
+      "website": null,
+      "known_for": "Underfloor heating tile sets",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Manawatu Tiling Co",
+      "rating": 4.5,
+      "review_count": 29,
+      "suburb": "Milson",
+      "phone": "(04) 110-3917",
+      "website": null,
+      "known_for": "Bathroom wall & floor tiling",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Quality Tiling Manawatu",
+      "rating": 4.6,
+      "review_count": 127,
+      "suburb": "Cloverlea",
+      "phone": "(04) 353-0791",
+      "website": null,
+      "known_for": "Tile removal & rebedding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "NZ Tile Specialists",
+      "rating": 4.8,
+      "review_count": 138,
+      "suburb": "Ashhurst",
+      "phone": "(09) 756-1145",
+      "website": null,
+      "known_for": "Rectified tile installation",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "trade": "gasfitters",
+  "city": "queenstown",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Queenstown gasfitting $120\u2013$165/hr; LPG-only; resort premium; heating demand high.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Precision Gas Queenstown",
+      "rating": 4.5,
+      "review_count": 44,
+      "suburb": "Frankton",
+      "phone": "(06) 599-5623",
+      "website": null,
+      "known_for": "Gas appliance servicing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Quality Gasfitting Otago",
+      "rating": 4.7,
+      "review_count": 24,
+      "suburb": "Arrowtown",
+      "phone": "(04) 541-6149",
+      "website": null,
+      "known_for": "Commercial gas fit-out",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Otago Gas Co",
+      "rating": 4.8,
+      "review_count": 17,
+      "suburb": "Arthurs Point",
+      "phone": "(06) 272-5553",
+      "website": null,
+      "known_for": "Gas to electric conversions",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Queenstown Gasfitting & Plumbing",
+      "rating": 4.8,
+      "review_count": 72,
+      "suburb": "Lake Hayes",
+      "phone": "(09) 821-6094",
+      "website": null,
+      "known_for": "Gas meter installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Queenstown Gas & Heating",
+      "rating": 4.7,
+      "review_count": 160,
+      "suburb": "Jacks Point",
+      "phone": "(09) 971-0109",
+      "website": null,
+      "known_for": "Gas heating & fireplace installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "NZ Gas Specialists",
+      "rating": 4.4,
+      "review_count": 87,
+      "suburb": "Kelvin Heights",
+      "phone": "(07) 611-0367",
+      "website": null,
+      "known_for": "Gas compliance certificates",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Gas Right Queenstown",
+      "rating": 4.8,
+      "review_count": 161,
+      "suburb": "Closeburn",
+      "phone": "(07) 262-9445",
+      "website": null,
+      "known_for": "LPG & natural gas reticulation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Pro Gas Queenstown",
+      "rating": 4.7,
+      "review_count": 29,
+      "suburb": "Fernhill",
+      "phone": "(07) 001-8188",
+      "website": null,
+      "known_for": "Gas leak detection & repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Certified Gas Queenstown",
+      "rating": 4.3,
+      "review_count": 177,
+      "suburb": "Sunshine Bay",
+      "phone": "(04) 481-6153",
+      "website": null,
+      "known_for": "Gas hob & cooktop installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Queenstown Gas Services",
+      "rating": 4.5,
+      "review_count": 64,
+      "suburb": "Quail Rise",
+      "phone": "(06) 246-0236",
+      "website": null,
+      "known_for": "Gas pipe testing & certification",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

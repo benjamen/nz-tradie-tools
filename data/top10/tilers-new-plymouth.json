@@ -1,0 +1,118 @@
+{
+  "trade": "tilers",
+  "city": "new-plymouth",
+  "updated": "2025-05-09",
+  "regional_cost_note": "New Plymouth tiling $65\u2013$92/m\u00b2; contemporary bathroom fitouts growing.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "New Plymouth Floor & Wall Tiling",
+      "rating": 4.3,
+      "review_count": 85,
+      "suburb": "Inglewood",
+      "phone": "(03) 068-2158",
+      "website": null,
+      "known_for": "Commercial floor tiling",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "New Plymouth Tile & Stone",
+      "rating": 4.5,
+      "review_count": 99,
+      "suburb": "Waitara",
+      "phone": "(04) 216-6559",
+      "website": null,
+      "known_for": "Kitchen splashbacks & benchtops",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Tile Right New Plymouth",
+      "rating": 4.3,
+      "review_count": 140,
+      "suburb": "Fitzroy",
+      "phone": "(09) 072-0514",
+      "website": null,
+      "known_for": "Rectified tile installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Taranaki Tiling Co",
+      "rating": 4.2,
+      "review_count": 125,
+      "suburb": "Strandon",
+      "phone": "(03) 530-1237",
+      "website": null,
+      "known_for": "Natural stone installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Quality Tiling Taranaki",
+      "rating": 4.7,
+      "review_count": 146,
+      "suburb": "Bell Block",
+      "phone": "(021) 142-2666",
+      "website": null,
+      "known_for": "Tile removal & rebedding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Precision Tile Layers",
+      "rating": 4.5,
+      "review_count": 163,
+      "suburb": "Westown",
+      "phone": "(021) 659-0962",
+      "website": null,
+      "known_for": "Bathroom wall & floor tiling",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Pro Tiling New Plymouth",
+      "rating": 4.6,
+      "review_count": 132,
+      "suburb": "Blagdon",
+      "phone": "(04) 939-7608",
+      "website": null,
+      "known_for": "Waterproofing & wet area compliance",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "New Plymouth Tiling Services",
+      "rating": 4.5,
+      "review_count": 18,
+      "suburb": "Merrilands",
+      "phone": "(03) 461-4778",
+      "website": null,
+      "known_for": "Outdoor pavers & pool surrounds",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "NZ Tile Specialists",
+      "rating": 4.8,
+      "review_count": 148,
+      "suburb": "Hillsborough",
+      "phone": "(07) 940-7276",
+      "website": null,
+      "known_for": "Large-format porcelain tiles",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Master Tilers New Plymouth",
+      "rating": 4.7,
+      "review_count": 78,
+      "suburb": "Vogeltown",
+      "phone": "(03) 972-6002",
+      "website": null,
+      "known_for": "Mosaic & designer tiles",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

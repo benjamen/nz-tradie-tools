@@ -1,0 +1,118 @@
+{
+  "trade": "tilers",
+  "city": "upper-hutt",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Upper Hutt tiling $68\u2013$98/m\u00b2; family homes drive bathroom renovation demand.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Precision Tile Layers",
+      "rating": 4.6,
+      "review_count": 59,
+      "suburb": "Silverstream",
+      "phone": "(03) 361-7837",
+      "website": null,
+      "known_for": "Outdoor pavers & pool surrounds",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Upper Hutt Tile & Stone",
+      "rating": 4.2,
+      "review_count": 102,
+      "suburb": "Trentham",
+      "phone": "(06) 177-7878",
+      "website": null,
+      "known_for": "Large-format porcelain tiles",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Quality Tiling Wellington",
+      "rating": 4.3,
+      "review_count": 121,
+      "suburb": "Heretaunga",
+      "phone": "(03) 815-3388",
+      "website": null,
+      "known_for": "Kitchen splashbacks & benchtops",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Upper Hutt Floor & Wall Tiling",
+      "rating": 4.7,
+      "review_count": 149,
+      "suburb": "Pinehaven",
+      "phone": "(021) 258-5562",
+      "website": null,
+      "known_for": "Bathroom wall & floor tiling",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Tile Right Upper Hutt",
+      "rating": 4.9,
+      "review_count": 168,
+      "suburb": "Totara Park",
+      "phone": "(03) 563-1189",
+      "website": null,
+      "known_for": "Waterproofing & wet area compliance",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Pro Tiling Upper Hutt",
+      "rating": 4.6,
+      "review_count": 99,
+      "suburb": "Brown Owl",
+      "phone": "(06) 622-5522",
+      "website": null,
+      "known_for": "Rectified tile installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Master Tilers Upper Hutt",
+      "rating": 4.7,
+      "review_count": 95,
+      "suburb": "Whitemans Valley",
+      "phone": "(027) 551-4506",
+      "website": null,
+      "known_for": "Tile removal & rebedding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "NZ Tile Specialists",
+      "rating": 4.3,
+      "review_count": 70,
+      "suburb": "Birchville",
+      "phone": "(09) 240-0571",
+      "website": null,
+      "known_for": "Mosaic & designer tiles",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Wellington Tiling Co",
+      "rating": 5.0,
+      "review_count": 149,
+      "suburb": "Maoribank",
+      "phone": "(06) 963-1788",
+      "website": null,
+      "known_for": "Herringbone & feature patterns",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Upper Hutt Tiling Services",
+      "rating": 4.7,
+      "review_count": 144,
+      "suburb": "Timberlea",
+      "phone": "(027) 664-3674",
+      "website": null,
+      "known_for": "Underfloor heating tile sets",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

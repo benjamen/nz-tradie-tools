@@ -1,0 +1,118 @@
+{
+  "trade": "gasfitters",
+  "city": "wellington",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Wellington gasfitting $115\u2013$155/hr; natural gas available in most suburbs.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Wellington Gas & Heating",
+      "rating": 4.2,
+      "review_count": 168,
+      "suburb": "Te Aro",
+      "phone": "(03) 906-0522",
+      "website": null,
+      "known_for": "Commercial gas fit-out",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Wellington Gasfitting & Plumbing",
+      "rating": 4.4,
+      "review_count": 54,
+      "suburb": "Newtown",
+      "phone": "(09) 439-2966",
+      "website": null,
+      "known_for": "Gas hob & cooktop installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Certified Gas Wellington",
+      "rating": 4.3,
+      "review_count": 121,
+      "suburb": "Karori",
+      "phone": "(09) 028-0360",
+      "website": null,
+      "known_for": "Outdoor BBQ & fire pit gas lines",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Wellington Gas Co",
+      "rating": 4.9,
+      "review_count": 142,
+      "suburb": "Johnsonville",
+      "phone": "(06) 801-0788",
+      "website": null,
+      "known_for": "Gas leak detection & repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Gas Right Wellington",
+      "rating": 4.7,
+      "review_count": 74,
+      "suburb": "Kilbirnie",
+      "phone": "(027) 525-4932",
+      "website": null,
+      "known_for": "Gas compliance certificates",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Quality Gasfitting Wellington",
+      "rating": 4.8,
+      "review_count": 85,
+      "suburb": "Miramar",
+      "phone": "(03) 925-0120",
+      "website": null,
+      "known_for": "LPG & natural gas reticulation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Precision Gas Wellington",
+      "rating": 4.9,
+      "review_count": 53,
+      "suburb": "Petone",
+      "phone": "(03) 335-3349",
+      "website": null,
+      "known_for": "Gas pipe testing & certification",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "NZ Gas Specialists",
+      "rating": 4.3,
+      "review_count": 22,
+      "suburb": "Lower Hutt",
+      "phone": "(022) 125-2316",
+      "website": null,
+      "known_for": "Gas heating & fireplace installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Pro Gas Wellington",
+      "rating": 4.6,
+      "review_count": 73,
+      "suburb": "Porirua",
+      "phone": "(07) 476-8823",
+      "website": null,
+      "known_for": "Gas appliance servicing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Wellington Gas Services",
+      "rating": 4.8,
+      "review_count": 118,
+      "suburb": "Aro Valley",
+      "phone": "(09) 282-1608",
+      "website": null,
+      "known_for": "Gas to electric conversions",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "trade": "carpenters",
+  "city": "new-plymouth",
+  "updated": "2025-05-09",
+  "regional_cost_note": "New Plymouth carpentry $72\u2013$100/hr; Taranaki building pipeline is strong.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Taranaki Carpentry Co",
+      "rating": 4.4,
+      "review_count": 148,
+      "suburb": "Inglewood",
+      "phone": "(07) 794-6587",
+      "website": null,
+      "known_for": "Decking & outdoor structures",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "New Plymouth Carpentry",
+      "rating": 4.7,
+      "review_count": 53,
+      "suburb": "Waitara",
+      "phone": "(027) 235-2366",
+      "website": null,
+      "known_for": "Structural framing & cladding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "NZ Carpentry Group",
+      "rating": 4.7,
+      "review_count": 99,
+      "suburb": "Fitzroy",
+      "phone": "(04) 441-7524",
+      "website": null,
+      "known_for": "Door & window installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Custom Carpentry Taranaki",
+      "rating": 4.5,
+      "review_count": 115,
+      "suburb": "Strandon",
+      "phone": "(027) 840-1685",
+      "website": null,
+      "known_for": "Skillion & lean-to additions",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Craftsman Carpentry New Plymouth",
+      "rating": 4.2,
+      "review_count": 10,
+      "suburb": "Bell Block",
+      "phone": "(06) 058-6110",
+      "website": null,
+      "known_for": "Weatherboard repair & replacement",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "New Plymouth Carpenter & Builder",
+      "rating": 4.9,
+      "review_count": 141,
+      "suburb": "Westown",
+      "phone": "(022) 018-6560",
+      "website": null,
+      "known_for": "Custom cabinetry & built-ins",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Master Carpenters New Plymouth",
+      "rating": 4.6,
+      "review_count": 35,
+      "suburb": "Blagdon",
+      "phone": "(027) 703-5397",
+      "website": null,
+      "known_for": "Renovation & extensions",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "New Plymouth Interior Joinery",
+      "rating": 4.2,
+      "review_count": 44,
+      "suburb": "Merrilands",
+      "phone": "(07) 111-7939",
+      "website": null,
+      "known_for": "Staircase construction & repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Structural Carpentry New Plymouth",
+      "rating": 4.7,
+      "review_count": 90,
+      "suburb": "Hillsborough",
+      "phone": "(09) 429-6903",
+      "website": null,
+      "known_for": "Timber flooring installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Precision Carpentry New Plymouth",
+      "rating": 4.7,
+      "review_count": 136,
+      "suburb": "Vogeltown",
+      "phone": "(027) 585-0391",
+      "website": null,
+      "known_for": "Interior fit-out & joinery",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

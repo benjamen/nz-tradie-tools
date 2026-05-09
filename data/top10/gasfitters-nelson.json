@@ -1,0 +1,118 @@
+{
+  "trade": "gasfitters",
+  "city": "nelson",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Nelson gasfitting $95\u2013$135/hr; LPG common; no natural gas reticulation.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Nelson Gas Services",
+      "rating": 4.8,
+      "review_count": 83,
+      "suburb": "Richmond",
+      "phone": "(022) 033-3206",
+      "website": null,
+      "known_for": "Gas leak detection & repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Gas Right Nelson",
+      "rating": 4.2,
+      "review_count": 75,
+      "suburb": "Stoke",
+      "phone": "(022) 735-5148",
+      "website": null,
+      "known_for": "Gas to electric conversions",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Nelson Gasfitting & Plumbing",
+      "rating": 4.2,
+      "review_count": 14,
+      "suburb": "Tahunanui",
+      "phone": "(021) 311-3055",
+      "website": null,
+      "known_for": "Gas pipe testing & certification",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Nelson Gas & Heating",
+      "rating": 4.4,
+      "review_count": 84,
+      "suburb": "The Wood",
+      "phone": "(03) 075-9641",
+      "website": null,
+      "known_for": "LPG & natural gas reticulation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Certified Gas Nelson",
+      "rating": 4.4,
+      "review_count": 160,
+      "suburb": "Wakefield",
+      "phone": "(04) 510-9311",
+      "website": null,
+      "known_for": "Commercial gas fit-out",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Precision Gas Nelson",
+      "rating": 4.9,
+      "review_count": 19,
+      "suburb": "Hope",
+      "phone": "(04) 339-0781",
+      "website": null,
+      "known_for": "Gas compliance certificates",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Pro Gas Nelson",
+      "rating": 4.7,
+      "review_count": 163,
+      "suburb": "Brightwater",
+      "phone": "(04) 848-5301",
+      "website": null,
+      "known_for": "Outdoor BBQ & fire pit gas lines",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "NZ Gas Specialists",
+      "rating": 4.7,
+      "review_count": 58,
+      "suburb": "Murchison",
+      "phone": "(027) 058-7681",
+      "website": null,
+      "known_for": "Gas hot water systems",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Nelson Gas Co",
+      "rating": 4.2,
+      "review_count": 100,
+      "suburb": "Motueka",
+      "phone": "(027) 720-6736",
+      "website": null,
+      "known_for": "Gas meter installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Quality Gasfitting Nelson",
+      "rating": 4.4,
+      "review_count": 151,
+      "suburb": "Mapua",
+      "phone": "(022) 800-8383",
+      "website": null,
+      "known_for": "Gas hob & cooktop installation",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

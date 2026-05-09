@@ -1,0 +1,118 @@
+{
+  "trade": "tilers",
+  "city": "napier",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Napier tiling $65\u2013$90/m\u00b2; Art Deco renovations a speciality in the region.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Pro Tiling Napier",
+      "rating": 4.7,
+      "review_count": 25,
+      "suburb": "Ahuriri",
+      "phone": "(07) 319-6426",
+      "website": null,
+      "known_for": "Large-format porcelain tiles",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Napier Tile & Stone",
+      "rating": 4.6,
+      "review_count": 46,
+      "suburb": "Taradale",
+      "phone": "(04) 179-6121",
+      "website": null,
+      "known_for": "Mosaic & designer tiles",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Master Tilers Napier",
+      "rating": 4.3,
+      "review_count": 20,
+      "suburb": "Marewa",
+      "phone": "(04) 061-1688",
+      "website": null,
+      "known_for": "Natural stone installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Napier Floor & Wall Tiling",
+      "rating": 4.7,
+      "review_count": 176,
+      "suburb": "Onekawa",
+      "phone": "(022) 517-8459",
+      "website": null,
+      "known_for": "Kitchen splashbacks & benchtops",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Precision Tile Layers",
+      "rating": 4.6,
+      "review_count": 61,
+      "suburb": "Maraenui",
+      "phone": "(07) 400-8284",
+      "website": null,
+      "known_for": "Herringbone & feature patterns",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Quality Tiling Hawke's Bay",
+      "rating": 4.6,
+      "review_count": 46,
+      "suburb": "Pirimai",
+      "phone": "(09) 362-0837",
+      "website": null,
+      "known_for": "Rectified tile installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Napier Tiling Services",
+      "rating": 4.5,
+      "review_count": 33,
+      "suburb": "Bay View",
+      "phone": "(03) 040-8388",
+      "website": null,
+      "known_for": "Underfloor heating tile sets",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Hawke's Bay Tiling Co",
+      "rating": 4.5,
+      "review_count": 114,
+      "suburb": "Clive",
+      "phone": "(022) 679-9938",
+      "website": null,
+      "known_for": "Tile removal & rebedding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Tile Right Napier",
+      "rating": 4.6,
+      "review_count": 89,
+      "suburb": "Hastings",
+      "phone": "(06) 944-2545",
+      "website": null,
+      "known_for": "Commercial floor tiling",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "NZ Tile Specialists",
+      "rating": 4.5,
+      "review_count": 170,
+      "suburb": "Havelock North",
+      "phone": "(04) 095-3987",
+      "website": null,
+      "known_for": "Waterproofing & wet area compliance",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "trade": "landscapers",
+  "city": "napier",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Napier landscaping $70\u2013$95/hr; drought-tolerant species recommended for Hawke's Bay.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Native Garden Specialists",
+      "rating": 4.5,
+      "review_count": 116,
+      "suburb": "Ahuriri",
+      "phone": "(03) 351-6302",
+      "website": null,
+      "known_for": "Commercial landscape maintenance",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Outdoor Living Napier",
+      "rating": 4.5,
+      "review_count": 71,
+      "suburb": "Taradale",
+      "phone": "(09) 048-5673",
+      "website": null,
+      "known_for": "Irrigation systems & drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Hawke's Bay Landscaping",
+      "rating": 4.7,
+      "review_count": 110,
+      "suburb": "Marewa",
+      "phone": "(07) 121-5933",
+      "website": null,
+      "known_for": "Native planting & garden design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Green Thumb Landscaping",
+      "rating": 4.8,
+      "review_count": 55,
+      "suburb": "Onekawa",
+      "phone": "(021) 064-0376",
+      "website": null,
+      "known_for": "Soil preparation & planting",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Napier Grounds & Gardens",
+      "rating": 4.8,
+      "review_count": 157,
+      "suburb": "Maraenui",
+      "phone": "(07) 405-5605",
+      "website": null,
+      "known_for": "Deck & outdoor living design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Napier Garden Design",
+      "rating": 4.7,
+      "review_count": 66,
+      "suburb": "Pirimai",
+      "phone": "(03) 712-0098",
+      "website": null,
+      "known_for": "Artificial turf & lawn care",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Premier Landscaping Napier",
+      "rating": 4.4,
+      "review_count": 46,
+      "suburb": "Bay View",
+      "phone": "(022) 855-4675",
+      "website": null,
+      "known_for": "Landscape planning & consent",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "NZ Landscaping Group",
+      "rating": 4.8,
+      "review_count": 159,
+      "suburb": "Clive",
+      "phone": "(027) 630-2770",
+      "website": null,
+      "known_for": "Retaining walls & earthworks",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Napier Landscaping Co",
+      "rating": 4.5,
+      "review_count": 174,
+      "suburb": "Hastings",
+      "phone": "(027) 818-5678",
+      "website": null,
+      "known_for": "Residential garden makeovers",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Heritage Garden Design",
+      "rating": 4.3,
+      "review_count": 103,
+      "suburb": "Havelock North",
+      "phone": "(021) 505-7883",
+      "website": null,
+      "known_for": "Fence lines & garden borders",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

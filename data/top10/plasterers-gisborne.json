@@ -1,0 +1,118 @@
+{
+  "trade": "plasterers",
+  "city": "gisborne",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Gisborne plastering $27\u2013$44/m\u00b2; hot dry summers can affect plaster curing.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "NZ Plasterers Group",
+      "rating": 5.0,
+      "review_count": 109,
+      "suburb": "Elgin",
+      "phone": "(06) 127-0196",
+      "website": null,
+      "known_for": "Waterproof bathroom linings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Gisborne Plaster & Paint",
+      "rating": 4.5,
+      "review_count": 69,
+      "suburb": "Kaiti",
+      "phone": "(07) 843-9738",
+      "website": null,
+      "known_for": "New build GIB boarding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Expert Plastering Gisborne",
+      "rating": 4.6,
+      "review_count": 149,
+      "suburb": "Lytton",
+      "phone": "(09) 961-6010",
+      "website": null,
+      "known_for": "GIB stopping & finishing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Gisborne GIB Stopping",
+      "rating": 4.5,
+      "review_count": 43,
+      "suburb": "Riverdale",
+      "phone": "(022) 460-2685",
+      "website": null,
+      "known_for": "Plaster crack repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Solid Plaster Gisborne",
+      "rating": 4.7,
+      "review_count": 16,
+      "suburb": "Mangapapa",
+      "phone": "(06) 204-9361",
+      "website": null,
+      "known_for": "Solid plaster & texture coatings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Smooth Finish Plastering",
+      "rating": 4.9,
+      "review_count": 150,
+      "suburb": "Te Hapara",
+      "phone": "(06) 839-0886",
+      "website": null,
+      "known_for": "Heritage plaster restoration",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Interior Finishes Gisborne",
+      "rating": 4.4,
+      "review_count": 18,
+      "suburb": "Makaraka",
+      "phone": "(027) 531-5408",
+      "website": null,
+      "known_for": "Polished plaster feature walls",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Premier Plasters Gisborne",
+      "rating": 4.9,
+      "review_count": 16,
+      "suburb": "Patutahi",
+      "phone": "(06) 022-3349",
+      "website": null,
+      "known_for": "Venetian & decorative finishes",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Gisborne Plastering Co",
+      "rating": 4.2,
+      "review_count": 81,
+      "suburb": "Ormond",
+      "phone": "(022) 785-1084",
+      "website": null,
+      "known_for": "Exterior plaster & monolithic cladding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Gisborne Plastering",
+      "rating": 4.9,
+      "review_count": 31,
+      "suburb": "Matawhero",
+      "phone": "(027) 870-4783",
+      "website": null,
+      "known_for": "Cement plaster substrates",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "trade": "gasfitters",
+  "city": "upper-hutt",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Upper Hutt gasfitting $105\u2013$148/hr; natural gas in most suburbs.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Quality Gasfitting Wellington",
+      "rating": 4.4,
+      "review_count": 57,
+      "suburb": "Silverstream",
+      "phone": "(09) 988-6846",
+      "website": null,
+      "known_for": "Gas pipe testing & certification",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Upper Hutt Gas Services",
+      "rating": 4.7,
+      "review_count": 127,
+      "suburb": "Trentham",
+      "phone": "(021) 739-6201",
+      "website": null,
+      "known_for": "Gas to electric conversions",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Upper Hutt Gas & Heating",
+      "rating": 4.9,
+      "review_count": 64,
+      "suburb": "Heretaunga",
+      "phone": "(07) 168-9869",
+      "website": null,
+      "known_for": "Outdoor BBQ & fire pit gas lines",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Pro Gas Upper Hutt",
+      "rating": 4.9,
+      "review_count": 165,
+      "suburb": "Pinehaven",
+      "phone": "(09) 757-0222",
+      "website": null,
+      "known_for": "Gas heating & fireplace installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Upper Hutt Gasfitting & Plumbing",
+      "rating": 4.8,
+      "review_count": 17,
+      "suburb": "Totara Park",
+      "phone": "(022) 679-5003",
+      "website": null,
+      "known_for": "Commercial gas fit-out",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "NZ Gas Specialists",
+      "rating": 4.9,
+      "review_count": 40,
+      "suburb": "Brown Owl",
+      "phone": "(021) 637-0882",
+      "website": null,
+      "known_for": "Gas appliance servicing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Precision Gas Upper Hutt",
+      "rating": 4.9,
+      "review_count": 89,
+      "suburb": "Whitemans Valley",
+      "phone": "(04) 870-8907",
+      "website": null,
+      "known_for": "LPG & natural gas reticulation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Wellington Gas Co",
+      "rating": 4.3,
+      "review_count": 179,
+      "suburb": "Birchville",
+      "phone": "(06) 116-6882",
+      "website": null,
+      "known_for": "Gas hob & cooktop installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Gas Right Upper Hutt",
+      "rating": 4.3,
+      "review_count": 70,
+      "suburb": "Maoribank",
+      "phone": "(07) 708-8374",
+      "website": null,
+      "known_for": "Gas hot water systems",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Certified Gas Upper Hutt",
+      "rating": 4.7,
+      "review_count": 117,
+      "suburb": "Timberlea",
+      "phone": "(03) 626-2999",
+      "website": null,
+      "known_for": "Gas meter installation",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

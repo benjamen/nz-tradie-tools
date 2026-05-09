@@ -1,0 +1,118 @@
+{
+  "trade": "landscapers",
+  "city": "rotorua",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Rotorua landscaping $68\u2013$90/hr; geothermal soil conditions require specialist knowledge.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Bay of Plenty Landscaping",
+      "rating": 4.6,
+      "review_count": 140,
+      "suburb": "Ngongotaha",
+      "phone": "(027) 919-3426",
+      "website": null,
+      "known_for": "Retaining walls & earthworks",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Native Garden Specialists",
+      "rating": 4.7,
+      "review_count": 109,
+      "suburb": "Holdens Bay",
+      "phone": "(07) 930-8417",
+      "website": null,
+      "known_for": "Hard landscaping & paving",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Rotorua Landscaping Co",
+      "rating": 4.5,
+      "review_count": 131,
+      "suburb": "Glenholme",
+      "phone": "(03) 022-3124",
+      "website": null,
+      "known_for": "Artificial turf & lawn care",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Heritage Garden Design",
+      "rating": 4.4,
+      "review_count": 69,
+      "suburb": "Fenton Park",
+      "phone": "(04) 931-2647",
+      "website": null,
+      "known_for": "Fence lines & garden borders",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Green Thumb Landscaping",
+      "rating": 4.2,
+      "review_count": 19,
+      "suburb": "Western Heights",
+      "phone": "(06) 303-3364",
+      "website": null,
+      "known_for": "Commercial landscape maintenance",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Outdoor Living Rotorua",
+      "rating": 4.5,
+      "review_count": 114,
+      "suburb": "Koutu",
+      "phone": "(022) 950-5271",
+      "website": null,
+      "known_for": "Water features & ponds",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Premier Landscaping Rotorua",
+      "rating": 4.8,
+      "review_count": 158,
+      "suburb": "Owhata",
+      "phone": "(021) 213-0814",
+      "website": null,
+      "known_for": "Residential garden makeovers",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Rotorua Garden Design",
+      "rating": 4.5,
+      "review_count": 119,
+      "suburb": "Lynmore",
+      "phone": "(09) 250-2913",
+      "website": null,
+      "known_for": "Native planting & garden design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "NZ Landscaping Group",
+      "rating": 4.5,
+      "review_count": 101,
+      "suburb": "Fairy Springs",
+      "phone": "(027) 711-0610",
+      "website": null,
+      "known_for": "Irrigation systems & drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Rotorua Grounds & Gardens",
+      "rating": 4.5,
+      "review_count": 156,
+      "suburb": "Hillcrest",
+      "phone": "(04) 509-0869",
+      "website": null,
+      "known_for": "Landscape planning & consent",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

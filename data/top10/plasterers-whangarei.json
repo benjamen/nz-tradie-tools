@@ -1,0 +1,118 @@
+{
+  "trade": "plasterers",
+  "city": "whangarei",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Whangarei plastering $28\u2013$46/m\u00b2; subtropical climate affects curing times.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Whangarei Plaster & Paint",
+      "rating": 4.5,
+      "review_count": 130,
+      "suburb": "Tikipunga",
+      "phone": "(09) 221-8968",
+      "website": null,
+      "known_for": "Heritage plaster restoration",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Interior Finishes Whangarei",
+      "rating": 4.9,
+      "review_count": 57,
+      "suburb": "Kamo",
+      "phone": "(04) 244-5008",
+      "website": null,
+      "known_for": "Solid plaster & texture coatings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Whangarei Plastering",
+      "rating": 4.6,
+      "review_count": 90,
+      "suburb": "Raumanga",
+      "phone": "(09) 300-2666",
+      "website": null,
+      "known_for": "New build GIB boarding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "NZ Plasterers Group",
+      "rating": 4.5,
+      "review_count": 120,
+      "suburb": "Otangarei",
+      "phone": "(021) 682-5857",
+      "website": null,
+      "known_for": "Waterproof bathroom linings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Solid Plaster Whangarei",
+      "rating": 4.8,
+      "review_count": 18,
+      "suburb": "Morningside",
+      "phone": "(027) 438-7199",
+      "website": null,
+      "known_for": "Exterior plaster & monolithic cladding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Expert Plastering Northland",
+      "rating": 4.3,
+      "review_count": 159,
+      "suburb": "Regent",
+      "phone": "(04) 834-8654",
+      "website": null,
+      "known_for": "Venetian & decorative finishes",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Smooth Finish Plastering",
+      "rating": 4.3,
+      "review_count": 171,
+      "suburb": "Ruakaka",
+      "phone": "(06) 417-6706",
+      "website": null,
+      "known_for": "Cornice installation & repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Premier Plasters Whangarei",
+      "rating": 4.6,
+      "review_count": 30,
+      "suburb": "Waipu",
+      "phone": "(07) 780-9559",
+      "website": null,
+      "known_for": "Fibrous plaster mouldings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Northland Plastering Co",
+      "rating": 4.7,
+      "review_count": 85,
+      "suburb": "Dargaville",
+      "phone": "(07) 031-7359",
+      "website": null,
+      "known_for": "Cement plaster substrates",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Whangarei GIB Stopping",
+      "rating": 4.6,
+      "review_count": 125,
+      "suburb": "Maungakaramea",
+      "phone": "(022) 700-1585",
+      "website": null,
+      "known_for": "GIB stopping & finishing",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

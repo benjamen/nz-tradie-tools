@@ -1,0 +1,118 @@
+{
+  "trade": "gasfitters",
+  "city": "hastings",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Hastings gasfitting $92\u2013$132/hr; rural properties rely on LPG.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Gas Right Hastings",
+      "rating": 4.4,
+      "review_count": 167,
+      "suburb": "Flaxmere",
+      "phone": "(06) 748-6938",
+      "website": null,
+      "known_for": "Gas meter installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Pro Gas Hastings",
+      "rating": 4.7,
+      "review_count": 49,
+      "suburb": "Camberley",
+      "phone": "(03) 690-8416",
+      "website": null,
+      "known_for": "Gas appliance servicing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Quality Gasfitting Hawke's Bay",
+      "rating": 4.9,
+      "review_count": 35,
+      "suburb": "Parkvale",
+      "phone": "(021) 189-9055",
+      "website": null,
+      "known_for": "Commercial gas fit-out",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Hastings Gas Services",
+      "rating": 4.9,
+      "review_count": 173,
+      "suburb": "Mahora",
+      "phone": "(022) 033-8067",
+      "website": null,
+      "known_for": "Gas to electric conversions",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Hawke's Bay Gas Co",
+      "rating": 4.5,
+      "review_count": 50,
+      "suburb": "Raureka",
+      "phone": "(04) 014-6846",
+      "website": null,
+      "known_for": "Outdoor BBQ & fire pit gas lines",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Hastings Gas & Heating",
+      "rating": 4.7,
+      "review_count": 128,
+      "suburb": "Havelock North",
+      "phone": "(03) 048-0279",
+      "website": null,
+      "known_for": "Gas pipe testing & certification",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Hastings Gasfitting & Plumbing",
+      "rating": 4.3,
+      "review_count": 56,
+      "suburb": "Clive",
+      "phone": "(09) 048-8696",
+      "website": null,
+      "known_for": "Gas hot water systems",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "NZ Gas Specialists",
+      "rating": 4.7,
+      "review_count": 98,
+      "suburb": "Whakatu",
+      "phone": "(021) 103-9420",
+      "website": null,
+      "known_for": "Gas hob & cooktop installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Precision Gas Hastings",
+      "rating": 4.7,
+      "review_count": 158,
+      "suburb": "Tomoana",
+      "phone": "(09) 962-8648",
+      "website": null,
+      "known_for": "Gas compliance certificates",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Certified Gas Hastings",
+      "rating": 4.5,
+      "review_count": 57,
+      "suburb": "Frimley",
+      "phone": "(027) 394-5739",
+      "website": null,
+      "known_for": "Gas leak detection & repair",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

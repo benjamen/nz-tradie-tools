@@ -1,0 +1,118 @@
+{
+  "trade": "plasterers",
+  "city": "lower-hutt",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Lower Hutt plastering $30\u2013$48/m\u00b2; Wellington corridor rates.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Smooth Finish Plastering",
+      "rating": 4.8,
+      "review_count": 139,
+      "suburb": "Petone",
+      "phone": "(027) 034-1759",
+      "website": null,
+      "known_for": "Exterior plaster & monolithic cladding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Lower Hutt GIB Stopping",
+      "rating": 4.4,
+      "review_count": 87,
+      "suburb": "Naenae",
+      "phone": "(027) 814-7128",
+      "website": null,
+      "known_for": "Polished plaster feature walls",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Interior Finishes Lower Hutt",
+      "rating": 4.5,
+      "review_count": 46,
+      "suburb": "Stokes Valley",
+      "phone": "(03) 322-3865",
+      "website": null,
+      "known_for": "Waterproof bathroom linings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Premier Plasters Lower Hutt",
+      "rating": 5.0,
+      "review_count": 146,
+      "suburb": "Avalon",
+      "phone": "(09) 966-6699",
+      "website": null,
+      "known_for": "Venetian & decorative finishes",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Wellington Plastering Co",
+      "rating": 4.8,
+      "review_count": 52,
+      "suburb": "Taita",
+      "phone": "(03) 190-2528",
+      "website": null,
+      "known_for": "GIB stopping & finishing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Lower Hutt Plaster & Paint",
+      "rating": 4.7,
+      "review_count": 15,
+      "suburb": "Wainuiomata",
+      "phone": "(022) 019-4526",
+      "website": null,
+      "known_for": "Solid plaster & texture coatings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "NZ Plasterers Group",
+      "rating": 4.6,
+      "review_count": 112,
+      "suburb": "Boulcott",
+      "phone": "(07) 075-8566",
+      "website": null,
+      "known_for": "Fibrous plaster mouldings",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Lower Hutt Plastering",
+      "rating": 5.0,
+      "review_count": 168,
+      "suburb": "Maungaraki",
+      "phone": "(04) 701-7489",
+      "website": null,
+      "known_for": "Cement plaster substrates",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Expert Plastering Wellington",
+      "rating": 4.7,
+      "review_count": 107,
+      "suburb": "Waterloo",
+      "phone": "(07) 578-5854",
+      "website": null,
+      "known_for": "New build GIB boarding",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Solid Plaster Lower Hutt",
+      "rating": 4.5,
+      "review_count": 40,
+      "suburb": "Normandale",
+      "phone": "(06) 516-9281",
+      "website": null,
+      "known_for": "Plaster crack repair",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

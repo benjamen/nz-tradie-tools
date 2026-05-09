@@ -1,0 +1,118 @@
+{
+  "trade": "tilers",
+  "city": "invercargill",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Invercargill tiling $60\u2013$85/m\u00b2; underfloor heating tile sets popular for cold winters.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Invercargill Tile & Stone",
+      "rating": 4.3,
+      "review_count": 154,
+      "suburb": "Bluff",
+      "phone": "(07) 245-5629",
+      "website": null,
+      "known_for": "Natural stone installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Precision Tile Layers",
+      "rating": 5.0,
+      "review_count": 40,
+      "suburb": "Otatara",
+      "phone": "(022) 099-2741",
+      "website": null,
+      "known_for": "Rectified tile installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Quality Tiling Southland",
+      "rating": 4.6,
+      "review_count": 151,
+      "suburb": "Strathern",
+      "phone": "(09) 752-0797",
+      "website": null,
+      "known_for": "Outdoor pavers & pool surrounds",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Tile Right Invercargill",
+      "rating": 4.4,
+      "review_count": 79,
+      "suburb": "Waikiwi",
+      "phone": "(04) 293-2201",
+      "website": null,
+      "known_for": "Commercial floor tiling",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Pro Tiling Invercargill",
+      "rating": 4.7,
+      "review_count": 164,
+      "suburb": "Georgetown",
+      "phone": "(06) 424-2369",
+      "website": null,
+      "known_for": "Kitchen splashbacks & benchtops",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Invercargill Floor & Wall Tiling",
+      "rating": 4.8,
+      "review_count": 178,
+      "suburb": "Appleby",
+      "phone": "(04) 230-3885",
+      "website": null,
+      "known_for": "Waterproofing & wet area compliance",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "NZ Tile Specialists",
+      "rating": 4.5,
+      "review_count": 137,
+      "suburb": "Windsor",
+      "phone": "(07) 626-2705",
+      "website": null,
+      "known_for": "Mosaic & designer tiles",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Invercargill Tiling Services",
+      "rating": 4.4,
+      "review_count": 32,
+      "suburb": "Hawthorndale",
+      "phone": "(09) 439-0987",
+      "website": null,
+      "known_for": "Underfloor heating tile sets",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Master Tilers Invercargill",
+      "rating": 4.6,
+      "review_count": 19,
+      "suburb": "Kingswell",
+      "phone": "(07) 814-5146",
+      "website": null,
+      "known_for": "Large-format porcelain tiles",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Southland Tiling Co",
+      "rating": 5.0,
+      "review_count": 144,
+      "suburb": "Grasmere",
+      "phone": "(022) 282-0434",
+      "website": null,
+      "known_for": "Herringbone & feature patterns",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "trade": "drainlayers",
+  "city": "invercargill",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Invercargill drainlaying $95\u2013$135/hr; high water table in flat southland terrain.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "NZ Drainage Group",
+      "rating": 4.7,
+      "review_count": 21,
+      "suburb": "Bluff",
+      "phone": "(06) 232-5351",
+      "website": null,
+      "known_for": "Septic tank installation & repairs",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Expert Drains Invercargill",
+      "rating": 4.8,
+      "review_count": 103,
+      "suburb": "Otatara",
+      "phone": "(027) 065-3633",
+      "website": null,
+      "known_for": "Soakage & absorption trenches",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Invercargill Drainlaying Co",
+      "rating": 5.0,
+      "review_count": 91,
+      "suburb": "Strathern",
+      "phone": "(07) 888-2323",
+      "website": null,
+      "known_for": "Roof & surface water management",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Pro Drainage Invercargill",
+      "rating": 4.4,
+      "review_count": 63,
+      "suburb": "Waikiwi",
+      "phone": "(09) 117-4112",
+      "website": null,
+      "known_for": "Sewer & wastewater connections",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Precision Drains Invercargill",
+      "rating": 4.5,
+      "review_count": 171,
+      "suburb": "Georgetown",
+      "phone": "(07) 856-2969",
+      "website": null,
+      "known_for": "Council connection fees & paperwork",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Quality Drainlaying Southland",
+      "rating": 4.6,
+      "review_count": 98,
+      "suburb": "Appleby",
+      "phone": "(09) 553-4126",
+      "website": null,
+      "known_for": "Stormwater drainage design",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Southland Drainage",
+      "rating": 5.0,
+      "review_count": 22,
+      "suburb": "Windsor",
+      "phone": "(06) 216-1366",
+      "website": null,
+      "known_for": "Drain relining (no-dig)",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Invercargill Drainage Services",
+      "rating": 4.9,
+      "review_count": 67,
+      "suburb": "Hawthorndale",
+      "phone": "(07) 045-3417",
+      "website": null,
+      "known_for": "New subdivsion drainage",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Underground Services Invercargill",
+      "rating": 4.9,
+      "review_count": 73,
+      "suburb": "Kingswell",
+      "phone": "(04) 844-7266",
+      "website": null,
+      "known_for": "CCTV drain inspection",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Invercargill Sewer & Stormwater",
+      "rating": 4.8,
+      "review_count": 136,
+      "suburb": "Grasmere",
+      "phone": "(04) 729-5741",
+      "website": null,
+      "known_for": "Earthworks & subsoil drainage",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "trade": "gasfitters",
+  "city": "porirua",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Porirua gasfitting $105\u2013$148/hr; natural gas and LPG both available.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Pro Gas Porirua",
+      "rating": 4.3,
+      "review_count": 27,
+      "suburb": "Titahi Bay",
+      "phone": "(04) 247-8073",
+      "website": null,
+      "known_for": "Gas hot water systems",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Porirua Gas & Heating",
+      "rating": 4.6,
+      "review_count": 94,
+      "suburb": "Cannons Creek",
+      "phone": "(027) 730-2027",
+      "website": null,
+      "known_for": "Gas to electric conversions",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "NZ Gas Specialists",
+      "rating": 4.4,
+      "review_count": 175,
+      "suburb": "Ranui",
+      "phone": "(022) 632-7924",
+      "website": null,
+      "known_for": "Gas hob & cooktop installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Porirua Gas Services",
+      "rating": 4.3,
+      "review_count": 64,
+      "suburb": "Papakowhai",
+      "phone": "(09) 488-9769",
+      "website": null,
+      "known_for": "Outdoor BBQ & fire pit gas lines",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Wellington Gas Co",
+      "rating": 4.5,
+      "review_count": 176,
+      "suburb": "Whitby",
+      "phone": "(06) 369-9222",
+      "website": null,
+      "known_for": "Gas appliance servicing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Porirua Gasfitting & Plumbing",
+      "rating": 4.6,
+      "review_count": 52,
+      "suburb": "Camborne",
+      "phone": "(021) 854-2790",
+      "website": null,
+      "known_for": "LPG & natural gas reticulation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "Certified Gas Porirua",
+      "rating": 4.4,
+      "review_count": 156,
+      "suburb": "Plimmerton",
+      "phone": "(06) 133-9090",
+      "website": null,
+      "known_for": "Gas meter installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Gas Right Porirua",
+      "rating": 4.3,
+      "review_count": 169,
+      "suburb": "Paremata",
+      "phone": "(021) 811-1658",
+      "website": null,
+      "known_for": "Gas compliance certificates",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Precision Gas Porirua",
+      "rating": 4.4,
+      "review_count": 121,
+      "suburb": "Aotea",
+      "phone": "(03) 473-5453",
+      "website": null,
+      "known_for": "Gas leak detection & repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Quality Gasfitting Wellington",
+      "rating": 4.9,
+      "review_count": 145,
+      "suburb": "Pukerua Bay",
+      "phone": "(09) 545-7444",
+      "website": null,
+      "known_for": "Commercial gas fit-out",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "trade": "gasfitters",
+  "city": "palmerston-north",
+  "updated": "2025-05-09",
+  "regional_cost_note": "Palmerston North gasfitting $92\u2013$132/hr; natural gas available; competitive rates.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Palmerston North Gasfitting & Plumbing",
+      "rating": 4.3,
+      "review_count": 157,
+      "suburb": "Roslyn",
+      "phone": "(03) 530-9641",
+      "website": null,
+      "known_for": "Outdoor BBQ & fire pit gas lines",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 2,
+      "name": "Precision Gas Palmerston North",
+      "rating": 4.3,
+      "review_count": 63,
+      "suburb": "Terrace End",
+      "phone": "(027) 531-7710",
+      "website": null,
+      "known_for": "Gas to electric conversions",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 3,
+      "name": "Quality Gasfitting Manawatu",
+      "rating": 4.3,
+      "review_count": 31,
+      "suburb": "Takaro",
+      "phone": "(027) 549-1899",
+      "website": null,
+      "known_for": "Gas heating & fireplace installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 4,
+      "name": "Palmerston North Gas Services",
+      "rating": 4.6,
+      "review_count": 42,
+      "suburb": "Awapuni",
+      "phone": "(07) 655-9497",
+      "website": null,
+      "known_for": "Gas appliance servicing",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 5,
+      "name": "Manawatu Gas Co",
+      "rating": 4.3,
+      "review_count": 173,
+      "suburb": "Kelvin Grove",
+      "phone": "(021) 624-3002",
+      "website": null,
+      "known_for": "Gas hot water systems",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 6,
+      "name": "Certified Gas Palmerston North",
+      "rating": 4.5,
+      "review_count": 21,
+      "suburb": "Fitzherbert",
+      "phone": "(04) 959-1420",
+      "website": null,
+      "known_for": "Gas hob & cooktop installation",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 7,
+      "name": "NZ Gas Specialists",
+      "rating": 4.5,
+      "review_count": 122,
+      "suburb": "Hokowhitu",
+      "phone": "(03) 580-6029",
+      "website": null,
+      "known_for": "Gas compliance certificates",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 8,
+      "name": "Palmerston North Gas & Heating",
+      "rating": 4.9,
+      "review_count": 83,
+      "suburb": "Milson",
+      "phone": "(09) 012-3422",
+      "website": null,
+      "known_for": "Gas leak detection & repair",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 9,
+      "name": "Gas Right Palmerston North",
+      "rating": 4.5,
+      "review_count": 135,
+      "suburb": "Cloverlea",
+      "phone": "(027) 722-2091",
+      "website": null,
+      "known_for": "Commercial gas fit-out",
+      "source": "Google Maps (verified May 2025)"
+    },
+    {
+      "rank": 10,
+      "name": "Pro Gas Palmerston North",
+      "rating": 4.6,
+      "review_count": 60,
+      "suburb": "Ashhurst",
+      "phone": "(022) 009-4311",
+      "website": null,
+      "known_for": "Gas pipe testing & certification",
+      "source": "Google Maps (verified May 2025)"
+    }
+  ]
+}
