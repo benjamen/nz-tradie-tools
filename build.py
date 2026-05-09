@@ -111,6 +111,7 @@ def build():
     build_index(articles, calculators, config, env, nav, base_path)
     build_listing(articles, config, env, "articles", nav, base_path)
     build_listing(calculators, config, env, "calculators", nav, base_path)
+    build_calc_categories(calculators, config, env, nav, base_path)
     build_contact(config, env, nav, base_path)
     build_privacy(config, env, nav, base_path)
     build_glossary(config, env, nav, base_path)
@@ -603,6 +604,91 @@ def build_index(articles, calculators, config, env, nav, base_path):
         "year": datetime.now().year,
     }
     (PUBLIC_DIR / "index.html").write_text(template.render(**ctx), encoding="utf-8")
+
+
+CALC_CATEGORIES = [
+    {
+        "slug": "tax",
+        "title": "Tax & Finance Calculators",
+        "description": "Free NZ tax and finance calculators for tradies — GST, PAYE, provisional tax, ACC levy, depreciation, vehicle mileage and more.",
+        "slugs": [
+            "gst-calculator", "paye-employee-calculator", "provisional-tax-calculator",
+            "provisional-tax-topup-calculator", "subcontractor-tax-calculator",
+            "acc-levy-calculator", "depreciation-calculator", "vehicle-mileage-calculator",
+            "kiwisaver-employer-cost-calculator", "leave-entitlements-calculator",
+            "holiday-pay-calculator", "overtime-calculator",
+        ],
+    },
+    {
+        "slug": "business",
+        "title": "Business & Pricing Calculators",
+        "description": "Free NZ tradie business calculators — hourly rate, job costing, quote builder, breakeven, cash flow, markup vs margin and more.",
+        "slugs": [
+            "hourly-rate-calculator", "job-cost-calculator", "quote-builder-wizard",
+            "labour-cost-calculator", "breakeven-calculator", "cash-flow-forecast",
+            "markup-margin-calculator", "materials-escalation-calculator",
+            "equipment-finance-calculator", "retentions-calculator",
+            "apprentice-wage-calculator", "employee-total-cost-calculator",
+            "contractor-vs-employee-calculator",
+        ],
+    },
+    {
+        "slug": "trade-tools",
+        "title": "Trade Tools & Quantity Calculators",
+        "description": "Free NZ tradie quantity calculators — concrete, tiles, timber, paint, cable sizing, drainage, scaffolding, earthworks and more.",
+        "slugs": [
+            "concrete-calculator", "tile-calculator", "paint-calculator",
+            "brick-block-calculator", "timber-framing-calculator", "roof-area-calculator",
+            "decking-calculator", "fence-calculator", "staircase-calculator",
+            "cable-sizing-calculator", "voltage-drop-calculator", "drain-grade-calculator",
+            "stormwater-grade-calculator", "retaining-wall-calculator",
+            "retaining-wall-load-calculator", "earthworks-calculator",
+            "irrigation-calculator", "paving-calculator", "scaffolding-calculator",
+        ],
+    },
+    {
+        "slug": "estimators",
+        "title": "Project Cost Estimators",
+        "description": "Free NZ project cost estimators — bathroom, kitchen, insulation, heat pumps, solar, skip bins, scaffolding hire and more.",
+        "slugs": [
+            "bathroom-renovation-calculator", "kitchen-renovation-calculator",
+            "skip-bin-calculator", "scaffolding-hire-calculator",
+            "building-consent-fee-calculator", "h1-insulation-calculator",
+            "insulation-calculator", "healthy-homes-cost-estimator",
+            "heat-pump-sizing-calculator", "hot-water-cylinder-calculator",
+            "solar-savings-calculator", "pool-volume-calculator",
+            "carpet-flooring-calculator", "cladding-paint-calculator",
+            "waterproofing-calculator",
+        ],
+    },
+]
+
+
+def build_calc_categories(calculators, config, env, nav, base_path):
+    template = env.get_template("calc-category.html")
+    by_slug = {c["slug"]: c for c in calculators}
+    year = datetime.now().year
+
+    all_cats_meta = [
+        {"slug": cat["slug"], "title": cat["title"], "count": len(cat["slugs"])}
+        for cat in CALC_CATEGORIES
+    ]
+
+    for cat in CALC_CATEGORIES:
+        cat_calcs = [by_slug[s] for s in cat["slugs"] if s in by_slug]
+        out_dir = PUBLIC_DIR / "calculators" / cat["slug"]
+        out_dir.mkdir(parents=True, exist_ok=True)
+        ctx = {
+            **config,
+            "base_path": base_path,
+            "nav": nav,
+            "year": year,
+            "cat": cat,
+            "calcs": cat_calcs,
+            "all_categories": all_cats_meta,
+            "total_calcs": len(calculators),
+        }
+        (out_dir / "index.html").write_text(template.render(**ctx), encoding="utf-8")
 
 
 def build_listing(pages, config, env, section, nav, base_path):

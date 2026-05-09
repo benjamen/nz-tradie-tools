@@ -68,6 +68,24 @@
         <h1>{{ section_label }}</h1>
 
         {% if section == "calculators" %}
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin:0 0 2rem">
+            <a href="{{ base_path }}/calculators/tax/" style="display:block;padding:1rem 1.25rem;background:#e8f0fb;border:1px solid #c5d8f5;border-radius:6px;text-decoration:none;color:inherit">
+                <strong style="color:#0055a5">Tax &amp; Finance</strong>
+                <p style="font-size:.82rem;color:#555;margin:.3rem 0 0">GST, PAYE, provisional tax, ACC, depreciation and more</p>
+            </a>
+            <a href="{{ base_path }}/calculators/business/" style="display:block;padding:1rem 1.25rem;background:#e8f0fb;border:1px solid #c5d8f5;border-radius:6px;text-decoration:none;color:inherit">
+                <strong style="color:#0055a5">Business &amp; Pricing</strong>
+                <p style="font-size:.82rem;color:#555;margin:.3rem 0 0">Hourly rate, job cost, quote builder, cash flow and more</p>
+            </a>
+            <a href="{{ base_path }}/calculators/trade-tools/" style="display:block;padding:1rem 1.25rem;background:#e8f0fb;border:1px solid #c5d8f5;border-radius:6px;text-decoration:none;color:inherit">
+                <strong style="color:#0055a5">Trade Tools</strong>
+                <p style="font-size:.82rem;color:#555;margin:.3rem 0 0">Concrete, tiles, timber, cable sizing, drainage and more</p>
+            </a>
+            <a href="{{ base_path }}/calculators/estimators/" style="display:block;padding:1rem 1.25rem;background:#e8f0fb;border:1px solid #c5d8f5;border-radius:6px;text-decoration:none;color:inherit">
+                <strong style="color:#0055a5">Project Estimators</strong>
+                <p style="font-size:.82rem;color:#555;margin:.3rem 0 0">Bathroom, kitchen, insulation, heat pumps, solar and more</p>
+            </a>
+        </div>
         <div class="card-grid">
             {% for page in pages %}
             <a href="{{ page.url }}" class="card">

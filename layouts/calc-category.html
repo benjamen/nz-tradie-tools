@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ cat.title }} — NZ Tradie Tools</title>
+    <meta name="description" content="{{ cat.description }}">
+    <meta property="og:title" content="{{ cat.title }} — NZ Tradie Tools">
+    <meta property="og:description" content="{{ cat.description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ base_url }}/calculators/{{ cat.slug }}/">
+    <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta property="og:image" content="{{ base_url }}/static/img/social-card.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{{ base_url }}/static/img/social-card.svg">
+    <link rel="canonical" href="{{ base_url }}/calculators/{{ cat.slug }}/">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ItemList","name":{{ cat.title | tojson }},"description":{{ cat.description | tojson }},"url":{{ (base_url ~ "/calculators/" ~ cat.slug ~ "/") | tojson }},"numberOfItems":{{ calcs | length }},"itemListElement":[{% for c in calcs %}{"@type":"ListItem","position":{{ loop.index }},"name":{{ c.title | tojson }},"url":{{ (base_url ~ "/calculators/" ~ c.slug ~ ".html") | tojson }}}{% if not loop.last %},{% endif %}{% endfor %}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":{{ base_url | tojson }}},{"@type":"ListItem","position":2,"name":"Calculators","item":{{ (base_url ~ "/calculators/") | tojson }}},{"@type":"ListItem","position":3,"name":{{ cat.title | tojson }},"item":{{ (base_url ~ "/calculators/" ~ cat.slug ~ "/") | tojson }}}]}]}</script>
+    {% if adsense_id %}<meta name="google-adsense-account" content="{{ adsense_id }}">{% endif %}
+    <link rel="icon" href="{{ base_path }}/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="{{ base_path }}/static/css/style.css">
+    {% if adsense_id %}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client="{{ adsense_id }}" crossorigin="anonymous"></script>{% endif %}
+    {% if ga_id %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ ga_id }}"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{ ga_id }}');</script>
+    {% endif %}
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="{{ base_path }}/" class="logo">🔧 NZ Tradie Tools</a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                {% for item in nav %}<a href="{{ item.url }}">{{ item.label }}</a>{% endfor %}
+            </nav>
+            <script>
+            (function(){
+                var t=document.querySelector('.nav-toggle'),n=document.getElementById('main-nav');
+                if(!t||!n)return;
+                t.addEventListener('click',function(){
+                    var o=n.classList.toggle('is-open');
+                    t.setAttribute('aria-expanded',o);
+                });
+                document.addEventListener('click',function(e){
+                    if(!t.contains(e.target)&&!n.contains(e.target)){
+                        n.classList.remove('is-open');
+                        t.setAttribute('aria-expanded','false');
+                    }
+                });
+            })();
+            </script>
+        </div>
+    </header>
+
+    <section class="hero" style="padding:2.5rem 0">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb" style="color:rgba(255,255,255,.75);margin-bottom:.75rem">
+                <a href="{{ base_path }}/" style="color:rgba(255,255,255,.75)">Home</a> &rsaquo;
+                <a href="{{ base_path }}/calculators/" style="color:rgba(255,255,255,.75)">Calculators</a> &rsaquo;
+                <span>{{ cat.title }}</span>
+            </nav>
+            <h1>{{ cat.title }}</h1>
+            <p>{{ cat.description }}</p>
+        </div>
+    </section>
+
+    <div class="container">
+        {% if adsense_id %}
+        <ins class="adsbygoogle ad-banner" style="display:block" data-ad-client="{{ adsense_id }}" data-ad-slot="{{ adsense_slot_calc_top }}" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        {% endif %}
+
+        <section class="section">
+            <div class="card-grid">
+                {% for c in calcs %}
+                <a href="{{ base_path }}/calculators/{{ c.slug }}.html" class="card">
+                    <h3>{{ c.title }}</h3>
+                    <p>{{ c.description }}</p>
+                </a>
+                {% endfor %}
+            </div>
+        </section>
+
+        <section class="section" style="background:#f8f9fa;border-radius:8px;padding:1.5rem 2rem;margin:2rem 0">
+            <h2 style="margin-top:0">Browse Other Calculator Categories</h2>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-top:1rem">
+                {% for other in all_categories %}
+                {% if other.slug != cat.slug %}
+                <a href="{{ base_path }}/calculators/{{ other.slug }}/" style="display:block;padding:1rem 1.25rem;background:#fff;border:1px solid #dde3ec;border-radius:6px;text-decoration:none;color:inherit">
+                    <strong style="color:#0055a5">{{ other.title }}</strong>
+                    <p style="font-size:.83rem;color:#555;margin:.3rem 0 0">{{ other.count }} calculators</p>
+                </a>
+                {% endif %}
+                {% endfor %}
+            </div>
+            <p style="margin-top:1.5rem"><a href="{{ base_path }}/calculators/">← View all {{ total_calcs }} calculators</a></p>
+        </section>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">NZ Tradie Tools</p>
+                <p>Free calculators, templates and guides for New Zealand tradies.</p>
+                <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
+            </div>
+            <div style="text-align:right">
+                <p><a href="{{ base_path }}/glossary/">Tradie Glossary</a></p>
+                <p><a href="{{ base_path }}/privacy/">Privacy Policy</a></p>
+                <p><a href="{{ base_path }}/contact/">Contact</a></p>
+                <p style="margin-top:.5rem">&copy; {{ year }} NZ Tradie Tools</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
