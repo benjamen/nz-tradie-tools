@@ -5,13 +5,27 @@
     <link>https://tradietools.nz/</link>
     <description>Free calculators, templates and guides for New Zealand tradies.</description>
     <language>en-nz</language>
-    <lastBuildDate>Sun, 10 May 2026 10:04:25 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 May 2026 16:04:53 +0000</lastBuildDate>
     <atom:link href="https://tradietools.nz/rss.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Markup vs Margin: The NZ Tradie's Guide to Getting Your Numbers Right (2026)</title>
+    <link>https://tradietools.nz/articles/markup-vs-margin-nz-tradies-2026.html</link>
+    <guid isPermaLink="true">https://tradietools.nz/articles/markup-vs-margin-nz-tradies-2026.html</guid>
+    <description>Markup and margin are not the same thing. NZ tradies who confuse them quietly lose profit on every job. Here's the maths explained with real NZD examples.</description>
+    <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
+  </item>
   <item>
     <title>Why Flood Resilience Work Matters for NZ Construction in 2026</title>
     <link>https://tradietools.nz/articles/flood-resilience-nz-construction.html</link>
     <guid isPermaLink="true">https://tradietools.nz/articles/flood-resilience-nz-construction.html</guid>
     <description>With massive investment in flood resilience projects across NZ, learn about the opportunities and importance for local construction firms.</description>
+    <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Retention Money in NZ Construction: Your Rights and How to Get It Back</title>
+    <link>https://tradietools.nz/articles/retention-money-nz-construction.html</link>
+    <guid isPermaLink="true">https://tradietools.nz/articles/retention-money-nz-construction.html</guid>
+    <description>Retentions can tie up thousands of dollars of your money for months. Here's how NZ construction retentions work, what the law requires, and how to make sure you get paid.</description>
     <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
   </item>
   <item>
@@ -22,10 +36,17 @@
     <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
   </item>
   <item>
-    <title>TEST ARTICLE: NZ Tradie Infrastructure Update (May 10, 2026)</title>
-    <link>https://tradietools.nz/articles/test-article-2026-05-10.html</link>
-    <guid isPermaLink="true">https://tradietools.nz/articles/test-article-2026-05-10.html</guid>
-    <description>A test article for the daily content workflow.</description>
+    <title>Managing the Slow Season as an NZ Tradie: Cash Flow, Leads, and Mindset</title>
+    <link>https://tradietools.nz/articles/managing-slow-season-nz-tradie.html</link>
+    <guid isPermaLink="true">https://tradietools.nz/articles/managing-slow-season-nz-tradie.html</guid>
+    <description>Every NZ tradie faces slow periods — winter, post-Christmas, economic downturns. Here's how to protect your cash flow, keep leads coming in, and use the quiet time strategically.</description>
+    <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>KiwiSaver for Self-Employed NZ Tradies: What You're Missing Out On</title>
+    <link>https://tradietools.nz/articles/kiwisaver-self-employed-tradies-nz.html</link>
+    <guid isPermaLink="true">https://tradietools.nz/articles/kiwisaver-self-employed-tradies-nz.html</guid>
+    <description>Self-employed tradies don't get employer contributions to KiwiSaver — but there are still government top-ups worth $521 a year on the table. Here's how to claim them.</description>
     <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
   </item>
   <item>
@@ -124,27 +145,6 @@
     <link>https://tradietools.nz/articles/should-i-register-for-gst-nz-tradie.html</link>
     <guid isPermaLink="true">https://tradietools.nz/articles/should-i-register-for-gst-nz-tradie.html</guid>
     <description>If your annual turnover is heading toward $60,000, you need to understand GST registration — what it means, when it's compulsory, and whether registering early can actually save you money.</description>
-    <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-  </item>
-  <item>
-    <title>How to Chase an Unpaid Invoice in NZ — Your Legal Options as a Tradie</title>
-    <link>https://tradietools.nz/articles/unpaid-invoices-options-nz-tradies.html</link>
-    <guid isPermaLink="true">https://tradietools.nz/articles/unpaid-invoices-options-nz-tradies.html</guid>
-    <description>When a client won't pay, most tradies don't know what steps are available to them. Here's a practical guide to recovering unpaid invoices in New Zealand — from friendly reminder to court.</description>
-    <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-  </item>
-  <item>
-    <title>Provisional Tax for NZ Tradies: What It Is and How to Manage It</title>
-    <link>https://tradietools.nz/articles/provisional-tax-nz-tradies.html</link>
-    <guid isPermaLink="true">https://tradietools.nz/articles/provisional-tax-nz-tradies.html</guid>
-    <description>Provisional tax catches a lot of self-employed tradies off guard. Here's exactly how it works, when payments are due, and how to make sure you never get a nasty surprise from IRD.</description>
-    <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-  </item>
-  <item>
-    <title>The 20% Investment Boost: How NZ Tradies Can Claim It Before EOFY</title>
-    <link>https://tradietools.nz/articles/nz-tradie-investment-boost-deduction-2026.html</link>
-    <guid isPermaLink="true">https://tradietools.nz/articles/nz-tradie-investment-boost-deduction-2026.html</guid>
-    <description>IRD's 20% Investment Boost lets NZ tradies deduct an extra 20% on new assets bought from May 2025. Here's exactly how to claim it before your 2026 return is due.</description>
     <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
   </item>
   </channel>

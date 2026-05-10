@@ -5,7 +5,7 @@ HEARTBEAT: /home/ben/.openclaw/workspace/memory/heartbeat-state.json
 
 STEP 1 — Count site content:
 python3 -c "
-import pathlib, json, datetime
+import pathlib, json, datetime, re
 
 site = pathlib.Path('/home/ben/.openclaw/workspace/site')
 
@@ -14,21 +14,33 @@ calculators = list((site / 'content/calculators').glob('*.md'))
 templates = list((site / 'content/templates').glob('*.md'))
 top10_files = list((site / 'data/top10').glob('*.json'))
 
-# Count unique cities and trades with data
+# Count unique trades and cities correctly (split on FIRST hyphen only,
+# so 'builders-lower-hutt' → trade='builders', city='lower-hutt')
+trades_with_data = len(set(f.stem.split('-', 1)[0] for f in top10_files))
+cities_with_data = len(set(f.stem.split('-', 1)[1] for f in top10_files))
 combos = len(top10_files)
-trades_with_data = len(set(f.stem.rsplit('-', 1)[0] for f in top10_files))
-cities_with_data = len(set(f.stem.rsplit('-', 1)[1] for f in top10_files))
+total_possible = trades_with_data * cities_with_data
 
-# Most recent article
+# Most recent article — read title and date from frontmatter
 art_dates = []
 for a in articles:
     text = a.read_text()
+    title = None
+    date = None
+    in_front = False
     for line in text.splitlines():
-        if line.startswith('date:'):
-            art_dates.append((line.replace('date:', '').strip(), a.stem))
-            break
+        if line.strip() == '---':
+            in_front = not in_front
+            continue
+        if in_front:
+            if line.startswith('title:'):
+                title = line.replace('title:', '').strip().strip('\"')
+            elif line.startswith('date:'):
+                date = line.replace('date:', '').strip()
+    if date:
+        art_dates.append((date, title or a.stem.replace('-', ' ').title()))
 art_dates.sort(reverse=True)
-latest_title = art_dates[0][1].replace('-', ' ').title() if art_dates else 'unknown'
+latest_title = art_dates[0][1] if art_dates else 'unknown'
 latest_date = art_dates[0][0] if art_dates else 'unknown'
 
 # Heartbeat timestamps
@@ -41,12 +53,9 @@ def days_ago(ts):
         return 'never'
     d = datetime.datetime.fromtimestamp(ts).date()
     diff = (today - d).days
-    if diff == 0:
-        return 'today'
-    elif diff == 1:
-        return 'yesterday'
-    else:
-        return f'{diff}d ago'
+    if diff == 0: return 'today'
+    if diff == 1: return 'yesterday'
+    return f'{diff}d ago'
 
 article_ran = days_ago(state.get('nz_tradie_content', 0))
 location_ran = days_ago(state.get('nz_tradie_location', 0))
@@ -58,32 +67,48 @@ print(f'ARTICLES={len(articles)}')
 print(f'CALCULATORS={len(calculators)}')
 print(f'TEMPLATES={len(templates)}')
 print(f'TOP10_COMBOS={combos}')
+print(f'TOP10_TOTAL={total_possible}')
 print(f'LATEST_ARTICLE={latest_title}')
 print(f'LATEST_DATE={latest_date}')
 print(f'ARTICLE_STATUS={article_status} {article_ran}')
 print(f'LOCATION_STATUS={location_status} {location_ran}')
 "
 
-STEP 2 — Send the Telegram daily stats message:
+STEP 2 — Build and send the Telegram message.
+
+Use the values from STEP 1. Rules:
+- Omit the Templates line entirely if TEMPLATES_VAL is 0.
+- Show location combos as TOP10_COMBOS_VAL / TOP10_TOTAL_VAL (both from STEP 1, not hardcoded).
+
 python3 -c "
 import sys
 sys.path.insert(0, '/home/ben/polymarket-scanner')
 from telegram_bot import send_message
 
-# Replace the values below with what STEP 1 printed
-send_message('''📊 <b>NZ Tradie Tools — Daily Stats</b>
+# Fill in from STEP 1 output
+articles = ARTICLES_VAL
+calculators = CALCULATORS_VAL
+templates = TEMPLATES_VAL
+combos = TOP10_COMBOS_VAL
+total_possible = TOP10_TOTAL_VAL
+latest_article = 'LATEST_ARTICLE_VAL'
+latest_date = 'LATEST_DATE_VAL'
+article_status = 'ARTICLE_STATUS_VAL'
+location_status = 'LOCATION_STATUS_VAL'
 
-📝 Articles: ARTICLES_VAL
-🧮 Calculators: CALCULATORS_VAL
-📄 Templates: TEMPLATES_VAL
-📍 Location combos with data: TOP10_COMBOS_VAL / 120
+template_line = f'\n📄 Templates: {templates}' if templates > 0 else ''
 
-🆕 Latest article: LATEST_ARTICLE_VAL (LATEST_DATE_VAL)
+send_message(f'''📊 <b>NZ Tradie Tools — Daily Stats</b>
+
+📝 Articles: {articles}
+🧮 Calculators: {calculators}{template_line}
+📍 Location combos: {combos} / {total_possible}
+
+🆕 Latest article: {latest_article} ({latest_date})
 
 🤖 Automation:
-  Content: ARTICLE_STATUS_VAL
-  Location: LOCATION_STATUS_VAL
+  Content: {article_status}
+  Location: {location_status}
 
 🌐 <a href=\"https://tradietools.nz\">tradietools.nz</a>''')
 "
-Replace each _VAL placeholder with the actual value printed in STEP 1.
