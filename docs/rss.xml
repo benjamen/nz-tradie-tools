@@ -5,8 +5,15 @@
     <link>https://tradietools.nz/</link>
     <description>Free calculators, templates and guides for New Zealand tradies.</description>
     <language>en-nz</language>
-    <lastBuildDate>Thu, 14 May 2026 10:03:13 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 14 May 2026 16:04:27 +0000</lastBuildDate>
     <atom:link href="https://tradietools.nz/rss.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Fixed-Price vs Cost-Plus Contracts: Which Should NZ Tradies Use in 2026?</title>
+    <link>https://tradietools.nz/articles/fixed-price-vs-cost-plus-contracts-nz-tradies-2026.html</link>
+    <guid isPermaLink="true">https://tradietools.nz/articles/fixed-price-vs-cost-plus-contracts-nz-tradies-2026.html</guid>
+    <description>NZ tradies face rising material costs in 2026. Learn when to use fixed-price vs cost-plus contracts to protect your margins and avoid costly losses.</description>
+    <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+  </item>
   <item>
     <title>NZ Health &amp; Safety Law Is Changing in 2026: What Tradies Need to Know</title>
     <link>https://tradietools.nz/articles/hsaw-amendment-bill-2026-nz-tradies.html</link>
@@ -29,31 +36,10 @@
     <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
   </item>
   <item>
-    <title>TEST ARTICLE: NZ Tradie Workflow Check (May 12, 2026)</title>
-    <link>https://tradietools.nz/articles/test-article-2026-05-12.html</link>
-    <guid isPermaLink="true">https://tradietools.nz/articles/test-article-2026-05-12.html</guid>
-    <description>A test article for the daily content workflow.</description>
-    <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
-  </item>
-  <item>
-    <title>TEST ARTICLE: NZ Tradie Afternoon Workflow Check (May 11, 2026)</title>
-    <link>https://tradietools.nz/articles/test-article-2026-05-11-2.html</link>
-    <guid isPermaLink="true">https://tradietools.nz/articles/test-article-2026-05-11-2.html</guid>
-    <description>A secondary test article for the daily content workflow.</description>
-    <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
-  </item>
-  <item>
     <title>Why Industrial Construction is Leading the NZ Market in 2026</title>
     <link>https://tradietools.nz/articles/industrial-construction-nz-growth.html</link>
     <guid isPermaLink="true">https://tradietools.nz/articles/industrial-construction-nz-growth.html</guid>
     <description>With projects like Christchurch's Ryans Road development fast-tracked, industrial construction is a key growth area for NZ tradies.</description>
-    <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
-  </item>
-  <item>
-    <title>TEST ARTICLE: NZ Tradie Workflow Check (May 11, 2026)</title>
-    <link>https://tradietools.nz/articles/test-article-2026-05-11.html</link>
-    <guid isPermaLink="true">https://tradietools.nz/articles/test-article-2026-05-11.html</guid>
-    <description>A test article for the daily content workflow.</description>
     <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
   </item>
   <item>
@@ -145,6 +131,20 @@
     <link>https://tradietools.nz/articles/do-you-need-building-consent-nz.html</link>
     <guid isPermaLink="true">https://tradietools.nz/articles/do-you-need-building-consent-nz.html</guid>
     <description>Not every building job needs council consent — but getting it wrong costs serious money. Here's a clear guide to what needs consent, what's exempt, and how to check when you're not sure.</description>
+    <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Public Liability Insurance for NZ Tradies — What It Covers and What It Doesn't</title>
+    <link>https://tradietools.nz/articles/public-liability-insurance-nz-tradies.html</link>
+    <guid isPermaLink="true">https://tradietools.nz/articles/public-liability-insurance-nz-tradies.html</guid>
+    <description>Most commercial clients and principal contractors require it. One uninsured claim could cost you everything. Here's what public liability insurance covers, what it costs, and how to make sure you have the right amount.</description>
+    <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Going Self-Employed as a NZ Tradie — Your Complete Start-Up Checklist</title>
+    <link>https://tradietools.nz/articles/going-self-employed-nz-tradie-guide.html</link>
+    <guid isPermaLink="true">https://tradietools.nz/articles/going-self-employed-nz-tradie-guide.html</guid>
+    <description>Everything you need to do when going self-employed as a tradie in New Zealand — IRD registration, GST, ACC, insurance, contracts, and tax obligations explained step by step.</description>
     <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
   </item>
   </channel>
