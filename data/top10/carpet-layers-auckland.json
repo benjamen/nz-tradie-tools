@@ -1,0 +1,63 @@
+{
+  "trade": "carpet-layers",
+  "city": "auckland",
+  "updated": "2026-05-16",
+  "regional_cost_note": "Carpet laying in Auckland typically costs $30–$115/m² supply and installed (budget to mid-range), or $10–$20/m² labour only. Premium wool can reach $250/m². A small home (65–75 m²) runs $4,200–$11,150 all-in. Full carpet removal adds $5–$15/m². Most Auckland providers offer free measure and quote with no callout fee.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "United Flooring Ltd",
+      "rating": 5.0,
+      "review_count": 42,
+      "suburb": "Greenlane",
+      "phone": "027 615 0827",
+      "website": "",
+      "known_for": "Carpet, laminate, vinyl, SPC planks and carpet tiles using Feltex and Godfrey Hirst brands; consistently praised for communication, punctuality and neat finish.",
+      "source": "NoCowboys"
+    },
+    {
+      "rank": 2,
+      "name": "John Jarvis Carpet & Flooring",
+      "rating": 4.9,
+      "review_count": 50,
+      "suburb": "Penrose",
+      "phone": "09 634 6453",
+      "website": "https://johnjarviscarpets.co.nz",
+      "known_for": "Independent NZ-owned supply and installation specialists since 1985; wholesale pricing on carpet, vinyl, timber and laminate across greater Auckland.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 3,
+      "name": "Giles Carpets Ltd",
+      "rating": 4.7,
+      "review_count": 120,
+      "suburb": "Mount Roskill",
+      "phone": "09 625 5771",
+      "website": "https://gilescarpets.co.nz",
+      "known_for": "44+ years in business supplying premium pure wool and brand-name carpets at wholesale prices with knowledgeable staff and high-quality laying teams.",
+      "source": "Birdeye"
+    },
+    {
+      "rank": 4,
+      "name": "Harrisons Carpet & Flooring Auckland",
+      "rating": 4.7,
+      "review_count": 5146,
+      "suburb": "Multiple locations",
+      "phone": "0800 421 001",
+      "website": "https://www.harrisonscarpet.co.nz",
+      "known_for": "NZ's No.1 flooring retailer (Canstar Blue 2023); mobile in-home consultation model since 1962 covering North Shore, Howick and wider Auckland.",
+      "source": "reviews.io"
+    },
+    {
+      "rank": 5,
+      "name": "CarpetGo",
+      "rating": 4.1,
+      "review_count": 27,
+      "suburb": "Epsom",
+      "phone": "021 028 22241",
+      "website": "https://carpetgo.co.nz",
+      "known_for": "Supply and install one-stop-shop since 1991; budget-focused pricing with vinyl and carpet repair services also available.",
+      "source": "Builderscrack"
+    }
+  ]
+}

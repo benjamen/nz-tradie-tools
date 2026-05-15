@@ -1,0 +1,74 @@
+{
+  "trade": "carpet-layers",
+  "city": "wellington",
+  "updated": "2026-05-16",
+  "regional_cost_note": "Carpet laying in Wellington typically costs $50–$120/m² supply and installed (budget to mid-range), or $15–$30/m² labour only. A 3-bedroom home (~80 m²) runs $4,000–$12,000 all-in including standard underlay. Old carpet removal adds ~$25–$65/m² extra. Most Wellington providers offer free measure and quote.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Marson Flooring Ltd",
+      "rating": 4.9,
+      "review_count": 95,
+      "suburb": "Lower Hutt",
+      "phone": "04 589 3024",
+      "website": "https://www.marsonflooring.co.nz",
+      "known_for": "Long-running family-owned showroom (20+ years) supplying and installing carpet and vinyl across Greater Wellington; also does overlocking and mat making.",
+      "source": "NoCowboys"
+    },
+    {
+      "rank": 2,
+      "name": "Ray Kahui Carpet Installation",
+      "rating": 4.8,
+      "review_count": 87,
+      "suburb": "Wellington",
+      "phone": "",
+      "website": "https://www.goodnest.co.nz",
+      "known_for": "Individual carpet installer operating under SHARAY LIMITED; highest review volume of any individual Wellington carpet layer on Goodnest with consistently high ratings.",
+      "source": "Goodnest"
+    },
+    {
+      "rank": 3,
+      "name": "A-Z Flooring Wellington",
+      "rating": 4.7,
+      "review_count": 41,
+      "suburb": "Newtown",
+      "phone": "04 389 0473",
+      "website": "https://azflooring.co.nz",
+      "known_for": "Family-run business stocking Feltex, Belgotex, Godfrey Hirst and Karndean; competitive discounted pricing with in-home measure and quote and fast turnaround.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 4,
+      "name": "Harrisons Carpet & Flooring Porirua",
+      "rating": 4.7,
+      "review_count": 5146,
+      "suburb": "Papakowhai, Porirua",
+      "phone": "0800 421 001",
+      "website": "https://www.harrisonscarpet.co.nz",
+      "known_for": "Mobile service bringing samples to your home; three-time winner of Harrisons Top 5-Star Google Reviews Award; covers all Wellington suburbs and Kapiti Coast.",
+      "source": "reviews.io"
+    },
+    {
+      "rank": 5,
+      "name": "David & Maria's Carpet & Vinyl Warehouse",
+      "rating": 4.5,
+      "review_count": 40,
+      "suburb": "Strathmore Park",
+      "phone": "04 886 1949",
+      "website": "https://www.davidandmarias.co.nz",
+      "known_for": "One of Wellington's longest-established flooring retailers (40+ years); specialises in carpet, vinyl, laminate and cork with highly praised installation team.",
+      "source": "Google Maps"
+    },
+    {
+      "rank": 6,
+      "name": "HB Flooring",
+      "rating": 4.1,
+      "review_count": 51,
+      "suburb": "Newlands",
+      "phone": "",
+      "website": "",
+      "known_for": "Carpet tiles, laminate, vinyl, garage carpet and carpet repairs/stretching; 71 completed jobs on Builderscrack with reliable turnaround times.",
+      "source": "Builderscrack"
+    }
+  ]
+}
