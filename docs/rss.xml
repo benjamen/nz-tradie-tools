@@ -5,8 +5,15 @@
     <link>https://tradietools.nz/</link>
     <description>Free calculators, templates and guides for New Zealand tradies.</description>
     <language>en-nz</language>
-    <lastBuildDate>Fri, 15 May 2026 22:03:24 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2026 10:03:46 +0000</lastBuildDate>
     <atom:link href="https://tradietools.nz/rss.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Employers Liability Insurance NZ: What Tradies with Staff Must Know in 2026</title>
+    <link>https://tradietools.nz/articles/employers-liability-insurance-nz-tradies-2026.html</link>
+    <guid isPermaLink="true">https://tradietools.nz/articles/employers-liability-insurance-nz-tradies-2026.html</guid>
+    <description>NZ tradies with employees need employers liability insurance in 2026. Learn what it covers, what it costs, and how new WorkSafe rules affect you.</description>
+    <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
+  </item>
   <item>
     <title>NZ Winter Roofing Safety Guide 2026: Height Work, Wet Weather and WorkSafe Rules</title>
     <link>https://tradietools.nz/articles/nz-winter-roofing-safety-height-work-2026.html</link>
@@ -139,13 +146,6 @@
     <guid isPermaLink="true">https://tradietools.nz/articles/how-to-set-hourly-rate-nz-tradie-2026.html</guid>
     <description>A step-by-step guide to calculating the right charge-out rate for NZ tradies — covering overheads, tax, and profit margins with real NZD examples.</description>
     <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-  </item>
-  <item>
-    <title>How Much Do Builders Charge in NZ? 2026 Pricing Guide</title>
-    <link>https://tradietools.nz/articles/builder-pricing-guide-nz-2026.html</link>
-    <guid isPermaLink="true">https://tradietools.nz/articles/builder-pricing-guide-nz-2026.html</guid>
-    <description>Typical builder day rates, hourly rates, and project costs across NZ — what affects pricing, what to ask before hiring, and how quotes are structured.</description>
-    <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
   </item>
   </channel>
 </rss>
