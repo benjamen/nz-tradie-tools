@@ -5,13 +5,27 @@
     <link>https://tradietools.nz/</link>
     <description>Free calculators, templates and guides for New Zealand tradies.</description>
     <language>en-nz</language>
-    <lastBuildDate>Fri, 15 May 2026 10:04:28 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 15 May 2026 16:03:59 +0000</lastBuildDate>
     <atom:link href="https://tradietools.nz/rss.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>TEST ARTICLE: NZ Tradie Workflow Check (May 15, 2026)</title>
+    <link>https://tradietools.nz/articles/test-article-2026-05-15.html</link>
+    <guid isPermaLink="true">https://tradietools.nz/articles/test-article-2026-05-15.html</guid>
+    <description>A test article for the daily content workflow.</description>
+    <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
+  </item>
   <item>
     <title>Consumer Guarantees Act &amp; Fair Trading Act: NZ Tradie Guide 2026</title>
     <link>https://tradietools.nz/articles/consumer-guarantees-act-nz-tradies-guide.html</link>
     <guid isPermaLink="true">https://tradietools.nz/articles/consumer-guarantees-act-nz-tradies-guide.html</guid>
     <description>What New Zealand tradies need to know about the Consumer Guarantees Act and Fair Trading Act — warranties, disputes, and staying compliant.</description>
+    <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>The True Cost of Employing a Tradie in NZ: What to Build Into Your Rates (2026)</title>
+    <link>https://tradietools.nz/articles/true-cost-employing-tradie-nz-2026.html</link>
+    <guid isPermaLink="true">https://tradietools.nz/articles/true-cost-employing-tradie-nz-2026.html</guid>
+    <description>Beyond the hourly wage: KiwiSaver, ACC levies, leave, and overheads add 30–40% to NZ employee costs. Here's how to calculate and recover them.</description>
     <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
   </item>
   <item>
@@ -131,20 +145,6 @@
     <link>https://tradietools.nz/articles/builder-pricing-guide-nz-2026.html</link>
     <guid isPermaLink="true">https://tradietools.nz/articles/builder-pricing-guide-nz-2026.html</guid>
     <description>Typical builder day rates, hourly rates, and project costs across NZ — what affects pricing, what to ask before hiring, and how quotes are structured.</description>
-    <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-  </item>
-  <item>
-    <title>8 Common Tax Mistakes NZ Tradies Make (and How to Fix Them)</title>
-    <link>https://tradietools.nz/articles/common-tax-mistakes-nz-tradies.html</link>
-    <guid isPermaLink="true">https://tradietools.nz/articles/common-tax-mistakes-nz-tradies.html</guid>
-    <description>These eight tax mistakes cost NZ tradies thousands of dollars every year — in missed deductions, penalties, and interest. Here's how to spot them and fix them before they become a problem.</description>
-    <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-  </item>
-  <item>
-    <title>Do You Need Building Consent in NZ? A Tradie's Practical Guide</title>
-    <link>https://tradietools.nz/articles/do-you-need-building-consent-nz.html</link>
-    <guid isPermaLink="true">https://tradietools.nz/articles/do-you-need-building-consent-nz.html</guid>
-    <description>Not every building job needs council consent — but getting it wrong costs serious money. Here's a clear guide to what needs consent, what's exempt, and how to check when you're not sure.</description>
     <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
   </item>
   </channel>
