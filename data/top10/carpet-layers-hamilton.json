@@ -1,0 +1,64 @@
+{
+  "trade": "carpet-layers",
+  "city": "hamilton",
+  "updated": "2026-05-17",
+  "regional_cost_note": "Hamilton rates are moderate for the Waikato region. Carpet installation typically costs $18–$30/m² installed including underlay. Vinyl plank (LVP) runs $25–$42/m². Strong residential growth is keeping demand high but the local tradie pool is growing to match.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Michael Lynch Contracting Limited",
+      "rating": 5.0,
+      "review_count": 2,
+      "suburb": "Huntly",
+      "phone": "",
+      "website": "",
+      "known_for": "Carpet laying with 40+ years experience, specialising in rental property flooring and flood restoration using a power stretcher with all joins sealed.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/5ti3ljj0/michael-lynch-contracting-limited",
+      "verified": true,
+      "verified_date": "2026-05-17"
+    },
+    {
+      "rank": 2,
+      "name": "Agape Solutions Ltd",
+      "rating": 4.8,
+      "review_count": 70,
+      "suburb": "Waikato",
+      "phone": "",
+      "website": "",
+      "known_for": "Residential and commercial flooring including carpet, hardwood, laminate, and vinyl; serving Hamilton and the wider Waikato region since 2018.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/56bwxafw/agape-solutions-ltd",
+      "verified": true,
+      "verified_date": "2026-05-17"
+    },
+    {
+      "rank": 3,
+      "name": "The Floor Boyz Ltd.",
+      "rating": 4.7,
+      "review_count": 59,
+      "suburb": "Hamilton",
+      "phone": "",
+      "website": "",
+      "known_for": "Carpet and vinyl installation across Hamilton and Waikato, handling major renovations and smaller jobs with professional workmanship and on-budget delivery.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/3vl5lnz0/the-floor-boyz-ltd",
+      "verified": true,
+      "verified_date": "2026-05-17"
+    },
+    {
+      "rank": 4,
+      "name": "Square Feet Solutions",
+      "rating": 4.6,
+      "review_count": 55,
+      "suburb": "Dinsdale",
+      "phone": "",
+      "website": "https://sqsl.co.nz/",
+      "known_for": "All types of flooring including carpet installation, repairs, restretching, and vinyl flooring across Hamilton, Waipa, and South Waikato.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/3ez1arrw/square-feet-solutions",
+      "verified": true,
+      "verified_date": "2026-05-17"
+    }
+  ]
+}

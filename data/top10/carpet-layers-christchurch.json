@@ -1,0 +1,78 @@
+{
+  "trade": "carpet-layers",
+  "city": "christchurch",
+  "updated": "2026-05-17",
+  "regional_cost_note": "Christchurch rates are generally lower than Auckland. Expect $18–$28/m² for carpet installation including underlay. Vinyl plank (LVP) typically $22–$40/m² installed. Post-rebuild demand has kept a healthy local workforce with competitive pricing.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Floorarts",
+      "rating": 5.0,
+      "review_count": 44,
+      "suburb": "Christchurch",
+      "phone": "",
+      "website": "",
+      "known_for": "Expert supply and installation of carpet, carpet tiles, laminate, and vinyl flooring across Christchurch and the wider Canterbury region.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/3iiw4xjw/floorarts",
+      "verified": true,
+      "verified_date": "2026-05-17"
+    },
+    {
+      "rank": 2,
+      "name": "SMG FLOORING",
+      "rating": 5.0,
+      "review_count": 4,
+      "suburb": "Christchurch",
+      "phone": "",
+      "website": "",
+      "known_for": "Specialises in carpet installation, carpet stretching, vinyl plank flooring, and garage carpet across Christchurch and Canterbury.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/5b627qfw/smg-flooring",
+      "verified": true,
+      "verified_date": "2026-05-17"
+    },
+    {
+      "rank": 3,
+      "name": "Complete Carpet Installation Ltd",
+      "rating": 5.0,
+      "review_count": 3,
+      "suburb": "Christchurch",
+      "phone": "",
+      "website": "",
+      "known_for": "Carpet installation with 20+ years experience; offers free measure and quote and handles the full process from samples to completed install.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/5b1n8zx8/complete-carpet-installation-ltd",
+      "verified": true,
+      "verified_date": "2026-05-17"
+    },
+    {
+      "rank": 4,
+      "name": "GSK Brothers",
+      "rating": 4.5,
+      "review_count": 218,
+      "suburb": "Kaiapoi",
+      "phone": "",
+      "website": "",
+      "known_for": "Residential and commercial carpet, laminate, vinyl, and hybrid flooring across Christchurch and greater Canterbury, with 218 completed jobs.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/4exns9y4/gsk-brothers",
+      "verified": true,
+      "verified_date": "2026-05-17"
+    },
+    {
+      "rank": 5,
+      "name": "Carpets N More",
+      "rating": 4.5,
+      "review_count": 10,
+      "suburb": "Christchurch",
+      "phone": "",
+      "website": "",
+      "known_for": "Carpet wholesaler (domestic and overseas since 2018) offering supply and installation for renovations and smaller jobs at competitive prices.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/3k44q68s/carpets-n-more",
+      "verified": true,
+      "verified_date": "2026-05-17"
+    }
+  ]
+}
