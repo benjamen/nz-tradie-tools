@@ -2,7 +2,7 @@
   "trade": "landscapers",
   "city": "rotorua",
   "updated": "2025-05-09",
-  "regional_cost_note": "Rotorua landscaping $68\u2013$90/hr; geothermal soil conditions require specialist knowledge.",
+  "regional_cost_note": "Rotorua landscaping $68–$90/hr; geothermal soil conditions require specialist knowledge.",
   "businesses": [
     {
       "rank": 1,
@@ -13,7 +13,10 @@
       "phone": "(027) 919-3426",
       "website": null,
       "known_for": "Retaining walls & earthworks",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "(07) 930-8417",
       "website": null,
       "known_for": "Hard landscaping & paving",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "(03) 022-3124",
       "website": null,
       "known_for": "Artificial turf & lawn care",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "(04) 931-2647",
       "website": null,
       "known_for": "Fence lines & garden borders",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "(06) 303-3364",
       "website": null,
       "known_for": "Commercial landscape maintenance",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "(022) 950-5271",
       "website": null,
       "known_for": "Water features & ponds",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -79,7 +97,10 @@
       "phone": "(021) 213-0814",
       "website": null,
       "known_for": "Residential garden makeovers",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 8,
@@ -90,7 +111,10 @@
       "phone": "(09) 250-2913",
       "website": null,
       "known_for": "Native planting & garden design",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 9,
@@ -101,7 +125,10 @@
       "phone": "(027) 711-0610",
       "website": null,
       "known_for": "Irrigation systems & drainage",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 10,
@@ -112,7 +139,10 @@
       "phone": "(04) 509-0869",
       "website": null,
       "known_for": "Landscape planning & consent",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

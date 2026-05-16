@@ -13,7 +13,10 @@
       "phone": "06 388 3847",
       "website": "https://www.metalcraft.co.nz/whanganui",
       "known_for": "Long-run metal roofing, re-roofing, guttering",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "06 663 3450",
       "website": "https://www.whanganuiroofing.co.nz",
       "known_for": "Full residential and commercial roofing services",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "06 709 4352",
       "website": "https://www.thomsonroofing.co.nz",
       "known_for": "Re-roofing, repairs and spouting, Whanganui",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "06 338 1589",
       "website": "https://www.roofmasterwhanganui.co.nz",
       "known_for": "Metal roofing, tiles, membrane flat roofing",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "06 607 5455",
       "website": "https://www.flynnroof.co.nz",
       "known_for": "Residential roofing and gutter replacements",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "06 427 9822",
       "website": "https://www.whanganuimetalroofing.co.nz",
       "known_for": "Coloursteel, long-run and corrugated iron roofing",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -79,7 +97,10 @@
       "phone": "06 741 3935",
       "website": "https://www.apexroofwhanganui.co.nz",
       "known_for": "Full re-roofing, spouting and fascia replacement",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 8,
@@ -90,7 +111,10 @@
       "phone": "06 797 3658",
       "website": "https://www.webbsonsroof.co.nz",
       "known_for": "Family roofing business, residential specialists",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 9,
@@ -101,7 +125,10 @@
       "phone": "06 766 4350",
       "website": "https://www.skyhighwhanganui.co.nz",
       "known_for": "Commercial and residential roofing, urgent repairs",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 10,
@@ -112,7 +139,10 @@
       "phone": "06 347 5323",
       "website": "https://www.whanganuiroofrepairs.co.nz",
       "known_for": "Leak repairs, maintenance inspections, all roof types",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

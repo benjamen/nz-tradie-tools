@@ -13,7 +13,10 @@
       "phone": "027 555 2566",
       "website": "https://www.verveplumbing.co.nz",
       "known_for": "Owner-operator Carlin Lepper with 10+ years residential and light commercial experience; praised for responsiveness and meticulous workmanship.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "06 758 7747",
       "website": "https://www.hanoverplumbing.co.nz",
       "known_for": "Trusted Master Plumber serving Taranaki since 2015; 24/7 emergency service with CCTV drain cameras, hot water systems and gas appliance servicing.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "06 753 0023",
       "website": "https://www.arikiplumbing.co.nz",
       "known_for": "Family-owned plumbers, gasfitters and drainlayers; known for prompt communication, fair pricing and quality kitchen and bathroom work.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "",
       "website": "https://www.howgoodplumbing.co.nz",
       "known_for": "Small family-run team; lead plumber Isaac has 14+ years experience in shower and bath installs, gas conversions and blocked drain clearing.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "",
       "website": "https://www.savvygas.co.nz",
       "known_for": "Taranaki-wide specialists in plumbing, gasfitting, drainage and heating; retail showroom in Stratford for heating and hot water product selection.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "021 277 9565",
       "website": "https://www.cortinaplumbing.co.nz",
       "known_for": "Over 15 years serving New Plymouth; specialises in gas fitting, hot water system replacements, drainage and residential maintenance.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -79,7 +97,10 @@
       "phone": "",
       "website": "https://nakiplumbing.co.nz",
       "known_for": "Transparent published fee structure; local Taranaki specialists covering plumbing, gas fitting and drainlaying for residential clients.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 8,
@@ -90,7 +111,10 @@
       "phone": "",
       "website": "",
       "known_for": "20 years' industry experience covering plumbing, gas fitting, drain laying and roofing; well-reviewed on Builderscrack for professional and friendly service.",
-      "source": "Builderscrack"
+      "source": "Builderscrack",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 9,
@@ -101,7 +125,10 @@
       "phone": "06 758 5424",
       "website": "https://www.lasergroup.co.nz/m/laser-plumbing-new-plymouth",
       "known_for": "Part of the national Laser Plumbing franchise; 25+ years serving Taranaki after Gardiner Plumbing joined the Laser network in late 2024.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 10,
@@ -112,7 +139,10 @@
       "phone": "",
       "website": "",
       "known_for": "Established local New Plymouth plumbers serving residential and commercial clients across Taranaki.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

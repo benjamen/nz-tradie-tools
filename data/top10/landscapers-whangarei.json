@@ -2,7 +2,7 @@
   "trade": "landscapers",
   "city": "whangarei",
   "updated": "2025-05-09",
-  "regional_cost_note": "Whangarei landscaping $72\u2013$98/hr; subtropical climate allows wide plant selection.",
+  "regional_cost_note": "Whangarei landscaping $72–$98/hr; subtropical climate allows wide plant selection.",
   "businesses": [
     {
       "rank": 1,
@@ -13,7 +13,10 @@
       "phone": "(027) 051-8941",
       "website": null,
       "known_for": "Soil preparation & planting",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "(027) 119-0841",
       "website": null,
       "known_for": "Fence lines & garden borders",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "(027) 442-1421",
       "website": null,
       "known_for": "Commercial landscape maintenance",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "(022) 226-2346",
       "website": null,
       "known_for": "Retaining walls & earthworks",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "(03) 512-2641",
       "website": null,
       "known_for": "Hard landscaping & paving",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "(021) 998-8138",
       "website": null,
       "known_for": "Landscape planning & consent",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -79,7 +97,10 @@
       "phone": "(04) 568-9932",
       "website": null,
       "known_for": "Native planting & garden design",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 8,
@@ -90,7 +111,10 @@
       "phone": "(021) 438-8359",
       "website": null,
       "known_for": "Artificial turf & lawn care",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 9,
@@ -101,7 +125,10 @@
       "phone": "(07) 906-6545",
       "website": null,
       "known_for": "Deck & outdoor living design",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 10,
@@ -112,7 +139,10 @@
       "phone": "(021) 641-8689",
       "website": null,
       "known_for": "Residential garden makeovers",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

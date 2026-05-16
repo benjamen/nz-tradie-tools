@@ -2,7 +2,7 @@
   "trade": "drainlayers",
   "city": "queenstown",
   "updated": "2025-05-09",
-  "regional_cost_note": "Queenstown drainlaying $130\u2013$180/hr; alpine premium; winter ground conditions complex.",
+  "regional_cost_note": "Queenstown drainlaying $130–$180/hr; alpine premium; winter ground conditions complex.",
   "businesses": [
     {
       "rank": 1,
@@ -13,7 +13,10 @@
       "phone": "(021) 428-8715",
       "website": null,
       "known_for": "New subdivsion drainage",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "(022) 031-0661",
       "website": null,
       "known_for": "Blocked drain clearing",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "(07) 407-8118",
       "website": null,
       "known_for": "Roof & surface water management",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "(06) 881-5081",
       "website": null,
       "known_for": "Council connection fees & paperwork",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "(04) 155-1842",
       "website": null,
       "known_for": "Sewer & wastewater connections",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "(027) 169-1030",
       "website": null,
       "known_for": "Soakage & absorption trenches",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -79,7 +97,10 @@
       "phone": "(03) 781-6752",
       "website": null,
       "known_for": "Pump station installation",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 8,
@@ -90,7 +111,10 @@
       "phone": "(022) 275-8071",
       "website": null,
       "known_for": "Septic tank installation & repairs",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 9,
@@ -101,7 +125,10 @@
       "phone": "(022) 440-8392",
       "website": null,
       "known_for": "Earthworks & subsoil drainage",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 10,
@@ -112,7 +139,10 @@
       "phone": "(09) 109-4782",
       "website": null,
       "known_for": "CCTV drain inspection",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

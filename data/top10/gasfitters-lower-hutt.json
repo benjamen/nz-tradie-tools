@@ -2,7 +2,7 @@
   "trade": "gasfitters",
   "city": "lower-hutt",
   "updated": "2025-05-09",
-  "regional_cost_note": "Lower Hutt gasfitting $108\u2013$150/hr; natural gas available; Wellington corridor rates.",
+  "regional_cost_note": "Lower Hutt gasfitting $108–$150/hr; natural gas available; Wellington corridor rates.",
   "businesses": [
     {
       "rank": 1,
@@ -13,7 +13,10 @@
       "phone": "(022) 697-3812",
       "website": null,
       "known_for": "Gas heating & fireplace installation",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "(04) 181-8155",
       "website": null,
       "known_for": "Gas to electric conversions",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "(07) 174-4687",
       "website": null,
       "known_for": "LPG & natural gas reticulation",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "(021) 644-7072",
       "website": null,
       "known_for": "Outdoor BBQ & fire pit gas lines",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "(07) 563-7583",
       "website": null,
       "known_for": "Commercial gas fit-out",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "(04) 073-5581",
       "website": null,
       "known_for": "Gas hot water systems",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -79,7 +97,10 @@
       "phone": "(04) 511-2977",
       "website": null,
       "known_for": "Gas hob & cooktop installation",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 8,
@@ -90,7 +111,10 @@
       "phone": "(04) 118-0249",
       "website": null,
       "known_for": "Gas appliance servicing",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 9,
@@ -101,7 +125,10 @@
       "phone": "(04) 710-1359",
       "website": null,
       "known_for": "Gas leak detection & repair",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 10,
@@ -112,7 +139,10 @@
       "phone": "(03) 923-4934",
       "website": null,
       "known_for": "Gas meter installation",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

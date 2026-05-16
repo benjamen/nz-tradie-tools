@@ -2,7 +2,7 @@
   "trade": "plumbers",
   "city": "napier",
   "updated": "2026-04-28",
-  "regional_cost_note": "Plumbers in Napier and wider Hawke\u2019s Bay typically charge $90\u2013$120/hr plus GST. Call-out fees add $60\u2013$90. Emergency and after-hours callouts run $150\u2013$220/hr.",
+  "regional_cost_note": "Plumbers in Napier and wider Hawke’s Bay typically charge $90–$120/hr plus GST. Call-out fees add $60–$90. Emergency and after-hours callouts run $150–$220/hr.",
   "businesses": [
     {
       "rank": 1,
@@ -12,8 +12,11 @@
       "suburb": "Napier South",
       "phone": "027 334 5558",
       "website": "https://www.alchemyplumbing.nz",
-      "known_for": "Hawke\u2019s Bay\u2019s highest-rated plumbing company \u2014 family-run, specialising in plumbing, gasfitting, drainage, hot water and solar installations.",
-      "source": "Google Maps"
+      "known_for": "Hawke’s Bay’s highest-rated plumbing company — family-run, specialising in plumbing, gasfitting, drainage, hot water and solar installations.",
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "06 843 2474",
       "website": "https://napier.laserplumbingandelectrical.co.nz",
       "known_for": "National-franchise plumbing and electrical specialists offering 24/7 emergency response to domestic, commercial and industrial clients.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -34,8 +40,11 @@
       "suburb": "Te Awanga",
       "phone": "",
       "website": "https://capeplumbing.co.nz",
-      "known_for": "Master Plumbers with 20+ years in Hawke\u2019s Bay, specialising in plumbing, gasfitting, drainlaying and central heating installations.",
-      "source": "Google Maps"
+      "known_for": "Master Plumbers with 20+ years in Hawke’s Bay, specialising in plumbing, gasfitting, drainlaying and central heating installations.",
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "",
       "website": "https://thenapierplumber.co.nz",
       "known_for": "Owner-operator Mike with 25 years as a licensed plumber and gas fitter delivering reliable, competitively priced services across Napier.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -56,8 +68,11 @@
       "suburb": "Napier",
       "phone": "",
       "website": "https://yourplumberhb.com",
-      "known_for": "Family-run business with 40+ years experience, known for old-fashioned punctuality, reliability and value-for-money across all of Hawke\u2019s Bay.",
-      "source": "Google Maps"
+      "known_for": "Family-run business with 40+ years experience, known for old-fashioned punctuality, reliability and value-for-money across all of Hawke’s Bay.",
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "06 843 6150",
       "website": "https://bartholomewplumbing.co.nz",
       "known_for": "Trusted Napier institution since 1963, covering residential, commercial and industrial plumbing, gasfitting and drainlaying.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -79,7 +97,10 @@
       "phone": "",
       "website": "https://hoplumbing.com",
       "known_for": "Established in 1994, staffed by Master Plumbers with 150 years combined experience in plumbing, drainage, gasfitting and heating.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 8,
@@ -89,19 +110,25 @@
       "suburb": "Napier",
       "phone": "027 733 7717",
       "website": "https://baywideplumbing.co.nz",
-      "known_for": "Master Plumbers and Gas Fitters with 10+ years in Hawke\u2019s Bay, providing fast reliable plumbing with a dedicated after-hours emergency service.",
-      "source": "Google Maps"
+      "known_for": "Master Plumbers and Gas Fitters with 10+ years in Hawke’s Bay, providing fast reliable plumbing with a dedicated after-hours emergency service.",
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 9,
-      "name": "Hawke\u2019s Bay Plumbing & Gas",
+      "name": "Hawke’s Bay Plumbing & Gas",
       "rating": 4.7,
       "review_count": 11,
       "suburb": "Napier",
       "phone": "",
       "website": "https://hbpg.nz",
-      "known_for": "Local plumbing and gas fitting specialists covering residential and commercial work across the Napier and Hawke\u2019s Bay region.",
-      "source": "Google Maps"
+      "known_for": "Local plumbing and gas fitting specialists covering residential and commercial work across the Napier and Hawke’s Bay region.",
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 10,
@@ -111,8 +138,11 @@
       "suburb": "Hastings",
       "phone": "",
       "website": "https://plumbershb.co.nz",
-      "known_for": "Hawke\u2019s Bay-wide plumber covering Napier, Hastings and Central Hawke\u2019s Bay with transparent published rates and no surprise callout fees.",
-      "source": "Google Maps"
+      "known_for": "Hawke’s Bay-wide plumber covering Napier, Hastings and Central Hawke’s Bay with transparent published rates and no surprise callout fees.",
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

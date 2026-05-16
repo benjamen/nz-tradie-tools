@@ -2,7 +2,7 @@
   "trade": "drainlayers",
   "city": "porirua",
   "updated": "2025-05-09",
-  "regional_cost_note": "Porirua drainlaying $112\u2013$155/hr; coastal and hillside drainage challenges.",
+  "regional_cost_note": "Porirua drainlaying $112–$155/hr; coastal and hillside drainage challenges.",
   "businesses": [
     {
       "rank": 1,
@@ -13,7 +13,10 @@
       "phone": "(07) 426-5130",
       "website": null,
       "known_for": "New subdivsion drainage",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "(022) 513-1050",
       "website": null,
       "known_for": "CCTV drain inspection",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "(07) 173-5016",
       "website": null,
       "known_for": "Septic tank installation & repairs",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "(04) 844-5996",
       "website": null,
       "known_for": "Pump station installation",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "(022) 105-2029",
       "website": null,
       "known_for": "Stormwater drainage design",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "(027) 367-4183",
       "website": null,
       "known_for": "Council connection fees & paperwork",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -79,7 +97,10 @@
       "phone": "(09) 781-0389",
       "website": null,
       "known_for": "Sewer & wastewater connections",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 8,
@@ -90,7 +111,10 @@
       "phone": "(027) 446-1858",
       "website": null,
       "known_for": "Soakage & absorption trenches",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 9,
@@ -101,7 +125,10 @@
       "phone": "(03) 895-8096",
       "website": null,
       "known_for": "Roof & surface water management",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 10,
@@ -112,7 +139,10 @@
       "phone": "(07) 445-2874",
       "website": null,
       "known_for": "Drain relining (no-dig)",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

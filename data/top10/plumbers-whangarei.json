@@ -13,7 +13,10 @@
       "phone": "09 882 9671",
       "website": "https://www.ryanplumbing.co.nz",
       "known_for": "Residential plumbing and drainage, Whangārei",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "09 838 4028",
       "website": "https://www.whangāreiplumbing.co.nz",
       "known_for": "Full residential and commercial plumbing",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "09 298 6419",
       "website": "https://www.waterworkswhangārei.co.nz",
       "known_for": "Emergency plumbing, hot water systems, drainage",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "09 407 3561",
       "website": "https://www.duncanplumb.co.nz",
       "known_for": "Hot water, gas fitting, drain repairs",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "09 733 9200",
       "website": "https://www.flowmasterwhangārei.co.nz",
       "known_for": "Drain unblocking, leak detection, full plumbing",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "09 922 2394",
       "website": "https://www.reidgas.co.nz",
       "known_for": "Gasfitting and all residential plumbing",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -79,7 +97,10 @@
       "phone": "09 915 3441",
       "website": "https://www.whangāreidrain.co.nz",
       "known_for": "Drain relining, CCTV inspection, plumbing",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 8,
@@ -90,7 +111,10 @@
       "phone": "09 685 6844",
       "website": "https://www.rapidplumbwhangārei.co.nz",
       "known_for": "24/7 emergency plumbing and drain services",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 9,
@@ -101,7 +125,10 @@
       "phone": "09 223 1137",
       "website": "https://www.curransonplumb.co.nz",
       "known_for": "Family plumbing business with 20+ years experience",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 10,
@@ -112,7 +139,10 @@
       "phone": "09 611 9784",
       "website": "https://www.hydrofixwhangārei.co.nz",
       "known_for": "Hot water heat pumps, full residential plumbing",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

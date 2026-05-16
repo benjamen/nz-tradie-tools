@@ -13,7 +13,10 @@
       "phone": "",
       "website": "",
       "known_for": "Master Painter of the Year 2023 at NZ Master Painters Awards; 11 gold awards in a single evening — Wellington's most decorated painter.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "",
       "website": "",
       "known_for": "5.0 across 83 reviews; one of Wellington's most consistently high-rated decorators for interior residential work.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "",
       "website": "",
       "known_for": "Dulux Accredited Master Painter with 19+ years experience; thorough prep work and reliable project management.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "",
       "website": "",
       "known_for": "Locally owned; perfect 5-star rating across platforms, known for 'white glove' approach to interior painting.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "",
       "website": "",
       "known_for": "Registered Master Painters; full interior and exterior service including wallpaper removal and plaster repair.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

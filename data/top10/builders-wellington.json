@@ -13,7 +13,10 @@
       "phone": "04 569 1044",
       "website": "https://www.signaturehomes.com/wellington",
       "known_for": "New builds Wellington and Hutt Valley",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "04 237 9060",
       "website": "https://www.gjgardner.co.nz",
       "known_for": "Fixed-price new builds, Kapiti to Hutt Valley",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "04 389 4550",
       "website": "",
       "known_for": "Inner-city renovations, character home upgrades",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "04 568 1230",
       "website": "https://www.easybuild.co.nz",
       "known_for": "Extensions, alterations, new builds Hutt Valley",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "04 478 6100",
       "website": "https://www.jennian.co.nz",
       "known_for": "Design-and-build new homes Wellington region",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "04 476 2210",
       "website": "",
       "known_for": "Kitchen and bathroom renovations, extensions",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -79,7 +97,10 @@
       "phone": "04 526 3090",
       "website": "https://www.fowlerhomes.co.nz",
       "known_for": "New builds Upper Hutt and Kapiti Coast",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 8,
@@ -90,7 +111,10 @@
       "phone": "04 298 5600",
       "website": "",
       "known_for": "Kapiti Coast new builds and renovations",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 9,
@@ -101,7 +125,10 @@
       "phone": "04 388 9970",
       "website": "",
       "known_for": "South Wellington renovations and new builds",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 10,
@@ -112,7 +139,10 @@
       "phone": "04 472 3310",
       "website": "",
       "known_for": "Heritage and character home restoration, Villa renovations",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

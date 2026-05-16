@@ -13,7 +13,10 @@
       "phone": "",
       "website": "",
       "known_for": "5.0 Google rating; helpful, reliable, and committed to quality across residential and commercial work.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "",
       "website": "",
       "known_for": "5.0 Google rating; new homes, renovations, switchboard upgrades, EV chargers and solar; Lifetime workmanship warranty.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "03 338 8000",
       "website": "https://www.christchurchelectrical.co.nz",
       "known_for": "70+ year institution with 70+ qualified electricians; residential, commercial, industrial, solar and communications departments.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "",
       "website": "",
       "known_for": "Detailed quotes, clear explanations, efficient work with high-quality materials; NZ safety standards compliant.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "",
       "website": "",
       "known_for": "Top-rated Canterbury electrician with proven reviews and outstanding results across residential and commercial projects.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "",
       "website": "https://easyelectrical.co.nz",
       "known_for": "Friendly local team offering fixed-price residential electrical work across greater Christchurch.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

@@ -2,7 +2,7 @@
   "trade": "builders",
   "city": "napier",
   "updated": "2026-04-25",
-  "regional_cost_note": "Builders in Napier typically charge $80–$100/hr for labour. New builds run $2,800–$4,200/m\u00b2 depending on specifications. Heritage renovations on the city's Art Deco villas often command a premium due to specialist joinery and plasterwork. Always verify your builder's LBP licence at lbp.govt.nz before signing a contract.",
+  "regional_cost_note": "Builders in Napier typically charge $80–$100/hr for labour. New builds run $2,800–$4,200/m² depending on specifications. Heritage renovations on the city's Art Deco villas often command a premium due to specialist joinery and plasterwork. Always verify your builder's LBP licence at lbp.govt.nz before signing a contract.",
   "businesses": [
     {
       "rank": 1,
@@ -13,7 +13,10 @@
       "phone": "",
       "website": "https://www.totalrenohb.com",
       "known_for": "Transforming older villas and bungalows into modern homes; full project management from building consent through to completion.",
-      "source": "Builderscrack"
+      "source": "Builderscrack",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "",
       "website": "",
       "known_for": "Ground-up residential construction; specialises in sheds, decking, pergolas, and general builds from concrete to roofline.",
-      "source": "Builderscrack"
+      "source": "Builderscrack",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "",
       "website": "",
       "known_for": "General and civil construction covering residential builds, earthworks, concrete, foundations, and demolition across Napier and Hawke's Bay.",
-      "source": "Builderscrack"
+      "source": "Builderscrack",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "",
       "website": "",
       "known_for": "Passive House accredited builder focused on sustainable design, new builds, and high-performance renovations.",
-      "source": "Builderscrack"
+      "source": "Builderscrack",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "027 599 8159",
       "website": "https://www.douganhomes.co.nz",
       "known_for": "Locally owned since 2018; Master Builders member specialising in custom new homes, renovations, and eco-friendly builds with a personalised approach.",
-      "source": "Builderscrack"
+      "source": "Builderscrack",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

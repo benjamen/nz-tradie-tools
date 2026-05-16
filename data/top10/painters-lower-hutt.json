@@ -13,7 +13,10 @@
       "phone": "04 961 8507",
       "website": "https://www.hansonpainting.co.nz",
       "known_for": "Interior and exterior house painting, Lower Hutt",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "04 250 6319",
       "website": "https://www.lowerpainters.co.nz",
       "known_for": "Professional residential and commercial painting",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "04 350 5809",
       "website": "https://www.propaintlower.co.nz",
       "known_for": "Premium interior painting and wallpaper",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "04 222 9156",
       "website": "https://www.hardingdecorating.co.nz",
       "known_for": "Interior decorating, colour consulting, painting",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "04 769 1056",
       "website": "https://www.freshcoatlower.co.nz",
       "known_for": "Full interior and exterior repaints, fast turnaround",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "04 535 7258",
       "website": "https://www.ngatapaint.co.nz",
       "known_for": "Residential painting specialists",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -79,7 +97,10 @@
       "phone": "04 891 6546",
       "website": "https://www.certapaintlower.co.nz",
       "known_for": "Commercial painting, industrial coatings",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 8,
@@ -90,7 +111,10 @@
       "phone": "04 412 6966",
       "website": "https://www.lowercolourco.co.nz",
       "known_for": "Colour consulting, full interior repaint packages",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 9,
@@ -101,7 +125,10 @@
       "phone": "04 687 1895",
       "website": "https://www.sutherlandsonspaint.co.nz",
       "known_for": "Family-run painters, residential specialists",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 10,
@@ -112,7 +139,10 @@
       "phone": "04 828 1330",
       "website": "https://www.spotlesspaintlower.co.nz",
       "known_for": "New builds, renovations and repaint contracts",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

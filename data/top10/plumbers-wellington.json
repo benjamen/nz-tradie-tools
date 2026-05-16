@@ -13,7 +13,10 @@
       "phone": "04 389 7590",
       "website": "https://www.laserplumbing.co.nz",
       "known_for": "Wellington-wide residential and commercial plumbing",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "0800 476 688",
       "website": "https://www.mrrooter.co.nz",
       "known_for": "24/7 emergency plumbing, blocked drains, Hutt Valley",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "04 476 5500",
       "website": "https://www.capitalplumbing.co.nz",
       "known_for": "Central Wellington plumbing, gasfitting, hot water",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "04 383 7770",
       "website": "",
       "known_for": "South Wellington and Rongotai, bathroom renovations",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "04 566 3300",
       "website": "",
       "known_for": "Hutt Valley plumbing, drainage, new builds",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "04 298 4440",
       "website": "https://www.kapitiplumbing.co.nz",
       "known_for": "Kapiti Coast plumbing and gasfitting",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -79,7 +97,10 @@
       "phone": "04 232 4560",
       "website": "",
       "known_for": "North Wellington, Tawa and Porirua plumbing",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 8,
@@ -90,7 +111,10 @@
       "phone": "0800 726 337",
       "website": "https://www.samedaytrades.co.nz",
       "known_for": "Fast-response plumbing Wellington region",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 9,
@@ -101,7 +125,10 @@
       "phone": "04 388 5540",
       "website": "",
       "known_for": "Eastern suburbs and Miramar Peninsula",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 10,
@@ -112,7 +139,10 @@
       "phone": "04 528 7770",
       "website": "",
       "known_for": "Upper Hutt and Wainuiomata plumbing",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

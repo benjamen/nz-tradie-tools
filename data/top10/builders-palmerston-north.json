@@ -13,7 +13,10 @@
       "phone": "",
       "website": "https://www.longbuildingsolutions.co.nz",
       "known_for": "Family-owned local builder specialising in new builds, renovations, rural construction, and hard landscaping across Manawatu.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "",
       "website": "https://www.inhouseconstruction.co.nz",
       "known_for": "High-quality residential new builds and renovations; clients consistently praise quality and attention to detail.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "",
       "website": "https://www.premiumbuilders.co.nz",
       "known_for": "Custom homes and developments across Palmerston North since 2008, combining innovation with skilled craftsmanship.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "",
       "website": "https://www.supremebuild.co.nz",
       "known_for": "Full-range construction covering new homes, renovations, decks, and fencing for residential clients in the Manawatu.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "",
       "website": "",
       "known_for": "Residential construction specialists established in 2018; known for high-quality finishes and reliable project delivery.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "",
       "website": "https://buildtechnz.co.nz",
       "known_for": "Custom home specialists guaranteeing builds underway within 3 months of contract signing and completed within 6–8 months.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -79,7 +97,10 @@
       "phone": "",
       "website": "https://www.gatchworks.com",
       "known_for": "Trusted Manawatu builder since 2021 focused on quality residential builds and renovations with strong client relationships.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 8,
@@ -90,7 +111,10 @@
       "phone": "",
       "website": "",
       "known_for": "Certified builders offering new builds, carpentry, landscaping, and renovations; 98.7% satisfaction rating on NoCowboys.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 9,
@@ -101,7 +125,10 @@
       "phone": "",
       "website": "",
       "known_for": "Over 34 years building across the Manawatu region; a trusted local name for reliable residential construction.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 10,
@@ -112,7 +139,10 @@
       "phone": "",
       "website": "https://www.haydenhomes.co.nz",
       "known_for": "Quality home builders in Palmerston North with a strong track record across new builds and residential alterations.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

@@ -13,7 +13,10 @@
       "phone": "",
       "website": "",
       "known_for": "Hamilton's oldest painting company, founded 1950; Registered Master Painters member since 1969 — over 55 years of continuous membership.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "",
       "website": "",
       "known_for": "Backed by a 5-year quality workmanship guarantee; if their work fails within 5 years, they return and fix it at no cost.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "",
       "website": "",
       "known_for": "Experienced interior and exterior painters praised for project management; handles standard residential to large commercial.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "",
       "website": "",
       "known_for": "Family-owned; known for tidy workmanship, affordable pricing, and reliability — they show up when they say they will.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "",
       "website": "",
       "known_for": "Local painters covering greater Hamilton and Waikato; interior, exterior, and commercial repaints.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

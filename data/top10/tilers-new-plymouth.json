@@ -2,7 +2,7 @@
   "trade": "tilers",
   "city": "new-plymouth",
   "updated": "2025-05-09",
-  "regional_cost_note": "New Plymouth tiling $65\u2013$92/m\u00b2; contemporary bathroom fitouts growing.",
+  "regional_cost_note": "New Plymouth tiling $65–$92/m²; contemporary bathroom fitouts growing.",
   "businesses": [
     {
       "rank": 1,
@@ -13,7 +13,10 @@
       "phone": "(03) 068-2158",
       "website": null,
       "known_for": "Commercial floor tiling",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "(04) 216-6559",
       "website": null,
       "known_for": "Kitchen splashbacks & benchtops",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "(09) 072-0514",
       "website": null,
       "known_for": "Rectified tile installation",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "(03) 530-1237",
       "website": null,
       "known_for": "Natural stone installation",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "(021) 142-2666",
       "website": null,
       "known_for": "Tile removal & rebedding",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "(021) 659-0962",
       "website": null,
       "known_for": "Bathroom wall & floor tiling",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -79,7 +97,10 @@
       "phone": "(04) 939-7608",
       "website": null,
       "known_for": "Waterproofing & wet area compliance",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 8,
@@ -90,7 +111,10 @@
       "phone": "(03) 461-4778",
       "website": null,
       "known_for": "Outdoor pavers & pool surrounds",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 9,
@@ -101,7 +125,10 @@
       "phone": "(07) 940-7276",
       "website": null,
       "known_for": "Large-format porcelain tiles",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 10,
@@ -112,7 +139,10 @@
       "phone": "(03) 972-6002",
       "website": null,
       "known_for": "Mosaic & designer tiles",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

@@ -13,7 +13,10 @@
       "phone": "04 728 2546",
       "website": "https://www.metalcraft.co.nz/upper",
       "known_for": "Long-run metal roofing, re-roofing, guttering",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "04 621 6094",
       "website": "https://www.upperroofing.co.nz",
       "known_for": "Full residential and commercial roofing services",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "04 959 2869",
       "website": "https://www.morganroofing.co.nz",
       "known_for": "Re-roofing, repairs and spouting, Upper Hutt",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "04 540 2042",
       "website": "https://www.roofmasterupper.co.nz",
       "known_for": "Metal roofing, tiles, membrane flat roofing",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "04 535 1676",
       "website": "https://www.māhakiroof.co.nz",
       "known_for": "Residential roofing and gutter replacements",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "04 323 9614",
       "website": "https://www.uppermetalroofing.co.nz",
       "known_for": "Coloursteel, long-run and corrugated iron roofing",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -79,7 +97,10 @@
       "phone": "04 406 6462",
       "website": "https://www.apexroofupper.co.nz",
       "known_for": "Full re-roofing, spouting and fascia replacement",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 8,
@@ -90,7 +111,10 @@
       "phone": "04 271 2750",
       "website": "https://www.clarkesonsroof.co.nz",
       "known_for": "Family roofing business, residential specialists",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 9,
@@ -101,7 +125,10 @@
       "phone": "04 241 5554",
       "website": "https://www.skyhighupper.co.nz",
       "known_for": "Commercial and residential roofing, urgent repairs",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 10,
@@ -112,7 +139,10 @@
       "phone": "04 620 9586",
       "website": "https://www.upperroofrepairs.co.nz",
       "known_for": "Leak repairs, maintenance inspections, all roof types",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

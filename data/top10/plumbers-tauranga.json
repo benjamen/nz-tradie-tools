@@ -13,7 +13,10 @@
       "phone": "",
       "website": "",
       "known_for": "Family business since 1995 with 'on time or it's free' guarantee; perfect 100% NoCowboys score across all reviews.",
-      "source": "NoCowboys"
+      "source": "NoCowboys",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "",
       "website": "",
       "known_for": "NZ Master Plumber of the Year; 30+ years family-owned, 24/7 emergency, Super Gold Card discounts available.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "",
       "website": "",
       "known_for": "Full-service residential and commercial plumbing across Bay of Plenty; specialist in gas fitting and hot water heat pumps.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "",
       "website": "",
       "known_for": "Rapid-response local plumbers known for clear pricing, reliable scheduling, and quality workmanship.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "0800 454 646",
       "website": "https://laserplumbing.co.nz",
       "known_for": "Master Plumbers franchise with local team; residential, commercial, gas, and drain services.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

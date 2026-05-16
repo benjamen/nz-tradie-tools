@@ -2,7 +2,7 @@
   "trade": "plasterers",
   "city": "dunedin",
   "updated": "2025-05-09",
-  "regional_cost_note": "Dunedin plastering $28\u2013$44/m\u00b2; heritage villas require cornice and ornamental plaster skills.",
+  "regional_cost_note": "Dunedin plastering $28–$44/m²; heritage villas require cornice and ornamental plaster skills.",
   "businesses": [
     {
       "rank": 1,
@@ -13,7 +13,10 @@
       "phone": "(06) 562-7713",
       "website": null,
       "known_for": "Solid plaster & texture coatings",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "(09) 623-6232",
       "website": null,
       "known_for": "Plaster crack repair",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "(06) 268-1596",
       "website": null,
       "known_for": "Venetian & decorative finishes",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "(04) 190-4495",
       "website": null,
       "known_for": "New build GIB boarding",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "(03) 147-3576",
       "website": null,
       "known_for": "Exterior plaster & monolithic cladding",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "(03) 371-9910",
       "website": null,
       "known_for": "Polished plaster feature walls",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -79,7 +97,10 @@
       "phone": "(03) 643-9999",
       "website": null,
       "known_for": "Cement plaster substrates",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 8,
@@ -90,7 +111,10 @@
       "phone": "(06) 062-1250",
       "website": null,
       "known_for": "Cornice installation & repair",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 9,
@@ -101,7 +125,10 @@
       "phone": "(06) 461-7277",
       "website": null,
       "known_for": "GIB stopping & finishing",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 10,
@@ -112,7 +139,10 @@
       "phone": "(027) 483-9511",
       "website": null,
       "known_for": "Fibrous plaster mouldings",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

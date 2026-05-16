@@ -13,7 +13,10 @@
       "phone": "",
       "website": "",
       "known_for": "Bay of Plenty's leading re-roofing specialist; LBP and RANZ member; COLORSTEEL experts with manufacturer-backed warranties.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "",
       "website": "",
       "known_for": "Reliable, efficient, and professional; LBP licensed covering everything from minor leak repairs to full residential re-roofs.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "",
       "website": "",
       "known_for": "Family-operated; highly regarded for honest communication and competitive quotes without compromising on quality.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "",
       "website": "",
       "known_for": "Local roofers specialising in coastal-environment materials; marine-grade coatings and anti-corrosion products.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "",
       "website": "",
       "known_for": "RANZ members; residential re-roofing, spouting and fascia replacement across greater Bay of Plenty.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

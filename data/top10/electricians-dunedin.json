@@ -13,7 +13,10 @@
       "phone": "027 641 5352",
       "website": "https://samiamelectrical.co.nz",
       "known_for": "Owner-operated by Sam Katuszka with 18+ years experience; known for personal service, transparent communication, and tidy workmanship on residential and small commercial jobs.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "027 277 8316",
       "website": "https://honestelectrical.co.nz",
       "known_for": "Full-service domestic electrician covering wiring, switchboard upgrades, EV charger installation, data cabling, ventilation, and safety inspections with 15+ years in the trade.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "",
       "website": "",
       "known_for": "Specialists in heritage home electrical upgrades and renovations; deep experience handling the practical challenges of century-old Dunedin villas where other electricians struggle to quote.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "027 302 3864",
       "website": "https://www.whitburnelectrical.co.nz",
       "known_for": "24/7 availability for residential and commercial clients, specialising in insurance rewiring, heat pump installations, and electrical maintenance for rental properties.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "03 456 4087",
       "website": "",
       "known_for": "Covering the wider Dunedin region with 24/7 emergency availability for residential and commercial electrical repairs and new installations.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "03 455 1105",
       "website": "https://www.tansleyelectrical.co.nz",
       "known_for": "Award-winning firm with 60+ years of Dunedin history; handles large commercial, industrial, and heritage projects across Dunedin, Queenstown, and Invercargill.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -79,7 +97,10 @@
       "phone": "",
       "website": "https://www.mse.nz",
       "known_for": "Family-owned business established in 1977; expert in residential and commercial work including heat pumps, data cabling, appliance testing, and 24/7 emergency callouts.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 8,
@@ -90,7 +111,10 @@
       "phone": "03 453 0415",
       "website": "https://www.a1electrical.co.nz",
       "known_for": "Serving the wider Dunedin region since 2006 with professional domestic and commercial electrical services; praised for fast, professional service and sound advice.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 9,
@@ -101,7 +125,10 @@
       "phone": "022 313 0968",
       "website": "https://dunedinelectricians.nz",
       "known_for": "Swift residential and commercial electrical solutions across Otago, handling a broad range of installation, repair, and fault-finding work.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

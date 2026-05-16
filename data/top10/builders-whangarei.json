@@ -13,7 +13,10 @@
       "phone": "09 514 2227",
       "website": "https://www.gjgardner.co.nz/whangārei",
       "known_for": "New builds, design-and-build packages",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "09 776 4152",
       "website": "https://www.landmarkhomes.co.nz/whangārei",
       "known_for": "New homes, fixed-price contracts",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "09 720 4354",
       "website": "https://www.erueraconstruction.co.nz",
       "known_for": "Residential builds and renovations, Whangārei-wide",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "09 360 4929",
       "website": "https://www.whangāreibuildgroup.co.nz",
       "known_for": "New residential builds, light commercial",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "09 416 2955",
       "website": "https://www.bennettbuilders.co.nz",
       "known_for": "Quality renovations and new builds",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "09 906 6089",
       "website": "https://www.generationhomes.co.nz/whangārei",
       "known_for": "Affordable new home builds",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -79,7 +97,10 @@
       "phone": "09 984 3751",
       "website": "https://www.mackayhomes.co.nz",
       "known_for": "Custom home builds and alterations",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 8,
@@ -90,7 +111,10 @@
       "phone": "09 400 9771",
       "website": "https://www.whangāreirenovations.co.nz",
       "known_for": "Kitchen, bathroom and full home renovations",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 9,
@@ -101,7 +125,10 @@
       "phone": "09 374 1317",
       "website": "https://www.versatile.co.nz/whangārei",
       "known_for": "Kitset and relocatable homes, granny flats",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 10,
@@ -112,7 +139,10 @@
       "phone": "09 356 6101",
       "website": "https://www.morgansons.co.nz",
       "known_for": "Three-generation family building firm",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

@@ -13,7 +13,10 @@
       "phone": "",
       "website": "",
       "known_for": "Registered Master Painter and Gold Awards holder; free in-home colour consultation, Resene paints, 5-star workmanship guarantee.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "",
       "website": "",
       "known_for": "200+ five-star Google reviews; one of Auckland's most trusted painting teams for interior and exterior residential work.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "",
       "website": "",
       "known_for": "Consistently 5.0 across all reviews; North Shore specialists known for professionalism and reliability.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "",
       "website": "",
       "known_for": "Only five-star Google ratings; Dulux and Resene accredited painters with interior, exterior, and commercial expertise.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "",
       "website": "https://homeshieldpainters.co.nz",
       "known_for": "Professional interior and exterior painting since 1986; 30+ years combined experience, commercial and residential.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "",
       "website": "",
       "known_for": "Advanced paint-stripping with American-imported PaintShaver Pro; specialist in villa restoration and chemical-free prep.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

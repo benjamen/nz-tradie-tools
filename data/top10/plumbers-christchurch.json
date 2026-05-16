@@ -13,7 +13,10 @@
       "phone": "03 366 6006",
       "website": "https://www.waltonplumbing.co.nz",
       "known_for": "Canterbury's longest-running plumbing firm since 1931; 24-hour emergency service with 15-minute callback guarantee.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "03 366 7410",
       "website": "https://www.clyneandbennie.co.nz",
       "known_for": "65+ year firm with 75+ certified plumbers and gasfitters; NZ Master Plumber of the Year award winner.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "",
       "website": "",
       "known_for": "Led by Kerry with 30+ years experience; fast, reliable residential and commercial plumbing since 2012.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "",
       "website": "https://integrityplumbing.co.nz",
       "known_for": "Licensed and certified plumbers; transparent pricing and reliable scheduling for residential and commercial jobs.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "",
       "website": "",
       "known_for": "Specialists in hot water systems, bathroom renovations, and new builds across greater Christchurch.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

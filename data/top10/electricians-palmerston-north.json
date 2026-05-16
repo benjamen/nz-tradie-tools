@@ -13,7 +13,10 @@
       "phone": "027 442 1777",
       "website": "https://www.johnleader.nz",
       "known_for": "A cornerstone of the Palmerston North electrical industry for 40+ years; known for Healthy Homes compliance, switchboard upgrades, heat pump installation, and reliable residential service.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "06 357 0405",
       "website": "https://www.mcnae.co.nz",
       "known_for": "Full-service electrical contractor covering residential, commercial, and rural sectors; also offers heating, solar, and EV charging solutions under one roof.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "027 363 6190",
       "website": "https://www.lincelectrical.co.nz",
       "known_for": "Residential and commercial electrician with 24/7 emergency availability; covers new builds, renovations, fault finding, and switchboard upgrades across Palmerston North.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "06 355 5130",
       "website": "https://seselectrical.nz",
       "known_for": "Specialists in security cameras, heat pump installation, solar power, and home automation alongside standard residential and commercial electrical work.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "027 447 4874",
       "website": "https://www.hedleyelectrical.co.nz",
       "known_for": "Manawatu institution serving the region for 52+ years with a team of 7 electricians covering new builds, renovations, and service work of all sizes.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "",
       "website": "https://www.haydselectrical.com",
       "known_for": "Locally owned and operated since 2017, focused on quality domestic electrical services across the wider Manawatu with a strong reputation for reliability.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -79,7 +97,10 @@
       "phone": "",
       "website": "https://www.deansmithpillingelectrical.co.nz",
       "known_for": "Backed by 30+ years of experience delivering professional residential electrical services throughout the Manawatu; strong reputation for quality workmanship.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 8,
@@ -90,7 +111,10 @@
       "phone": "",
       "website": "https://www.tkrelectrical.co.nz",
       "known_for": "50 years of industry experience covering Palmerston North, Levin, and the wider Manawatū for residential and commercial electrical installations and repairs.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 9,
@@ -101,7 +125,10 @@
       "phone": "",
       "website": "https://www.electro.co.nz",
       "known_for": "Commercial and industrial electrical specialists serving the Manawatu with expertise in repairs, installation, and maintenance of large-scale electrical systems.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 10,
@@ -112,7 +139,10 @@
       "phone": "",
       "website": "https://nexusenergyltd.co.nz",
       "known_for": "Powerco-approved contractor offering expert electrical services including solar installations, EV chargers, and grid connections across the Manawatu region.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

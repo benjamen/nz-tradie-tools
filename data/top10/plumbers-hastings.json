@@ -13,7 +13,10 @@
       "phone": "06 826 2600",
       "website": "https://www.alchemyplumbing.nz",
       "known_for": "Hawke's Bay's highest-rated plumbing company; specialises in solar hot water, underfloor heating, gas fitting and 24/7 emergency callouts.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "020 4028 6986",
       "website": "https://jordysplumbing.co.nz",
       "known_for": "Voted #1 Best Plumber in Hastings; locally owned team with over 100 years combined experience, known for punctuality and first-visit fixes.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "0800 803 803",
       "website": "https://advancedplumbing.co.nz",
       "known_for": "Award-winning Hawke's Bay firm established 2009; 50+ skilled professionals covering residential, commercial, drainage and gas across the region.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "027 757 3372",
       "website": "https://www.aplusplumbingandgas.co.nz",
       "known_for": "Owner-operated since 2020 with a certified 8-person team; offers 24/7 emergency callouts across Hastings, Napier and Havelock North.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "021 544 882",
       "website": "https://plumbershb.co.nz",
       "known_for": "Team includes NZ Plumber, Drainlayer & Gasfitter of the Year 2021; full residential and commercial service across Hastings, Napier and Central Hawke's Bay.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "",
       "website": "https://www.eastcoastplumbingandgas.co.nz",
       "known_for": "30+ years' experience; certifying-level licensed Master Plumbers specialising in central heating, hot water solutions and drainage.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -79,7 +97,10 @@
       "phone": "",
       "website": "https://capeplumbing.co.nz",
       "known_for": "Registered Master Plumbers serving Hastings and Napier; praised for same-day response and transparent pricing on hot water and drainage jobs.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 8,
@@ -90,7 +111,10 @@
       "phone": "0800 182 182",
       "website": "https://turfrey.co.nz",
       "known_for": "40+ years in the industry; full-service plumbing, roofing, drainage and HVAC from a nationally recognised Master Plumbers franchise.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 9,
@@ -101,7 +125,10 @@
       "phone": "027 245 1129",
       "website": "https://www.warrenplumbing.co.nz",
       "known_for": "Certifying plumber and gasfitter with 20 years' experience; transparent $90/hr rate with no call-out fee during business hours.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 10,
@@ -112,7 +139,10 @@
       "phone": "",
       "website": "https://hbpg.nz",
       "known_for": "Local specialists in residential plumbing, gasfitting and drainlaying across the Hawke's Bay region.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

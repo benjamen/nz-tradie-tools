@@ -13,7 +13,10 @@
       "phone": "04 589 3024",
       "website": "https://www.marsonflooring.co.nz",
       "known_for": "Long-running family-owned showroom (20+ years) supplying and installing carpet and vinyl across Greater Wellington; also does overlocking and mat making.",
-      "source": "NoCowboys"
+      "source": "NoCowboys",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "",
       "website": "https://www.goodnest.co.nz",
       "known_for": "Individual carpet installer operating under SHARAY LIMITED; highest review volume of any individual Wellington carpet layer on Goodnest with consistently high ratings.",
-      "source": "Goodnest"
+      "source": "Goodnest",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "04 389 0473",
       "website": "https://azflooring.co.nz",
       "known_for": "Family-run business stocking Feltex, Belgotex, Godfrey Hirst and Karndean; competitive discounted pricing with in-home measure and quote and fast turnaround.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "0800 421 001",
       "website": "https://www.harrisonscarpet.co.nz",
       "known_for": "Mobile service bringing samples to your home; three-time winner of Harrisons Top 5-Star Google Reviews Award; covers all Wellington suburbs and Kapiti Coast.",
-      "source": "reviews.io"
+      "source": "reviews.io",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "04 886 1949",
       "website": "https://www.davidandmarias.co.nz",
       "known_for": "One of Wellington's longest-established flooring retailers (40+ years); specialises in carpet, vinyl, laminate and cork with highly praised installation team.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "",
       "website": "",
       "known_for": "Carpet tiles, laminate, vinyl, garage carpet and carpet repairs/stretching; 71 completed jobs on Builderscrack with reliable turnaround times.",
-      "source": "Builderscrack"
+      "source": "Builderscrack",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

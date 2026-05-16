@@ -13,7 +13,10 @@
       "phone": "03 296 1766",
       "website": "https://www.shawpainting.co.nz",
       "known_for": "Interior and exterior house painting, Nelson",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "03 351 7492",
       "website": "https://www.nelsonpainters.co.nz",
       "known_for": "Professional residential and commercial painting",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "03 648 6697",
       "website": "https://www.propaintnelson.co.nz",
       "known_for": "Premium interior painting and wallpaper",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "03 337 3416",
       "website": "https://www.caseydecorating.co.nz",
       "known_for": "Interior decorating, colour consulting, painting",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "03 440 3156",
       "website": "https://www.freshcoatnelson.co.nz",
       "known_for": "Full interior and exterior repaints, fast turnaround",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "03 969 1156",
       "website": "https://www.curranpaint.co.nz",
       "known_for": "Residential painting specialists",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -79,7 +97,10 @@
       "phone": "03 344 1539",
       "website": "https://www.certapaintnelson.co.nz",
       "known_for": "Commercial painting, industrial coatings",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 8,
@@ -90,7 +111,10 @@
       "phone": "03 885 2443",
       "website": "https://www.nelsoncolourco.co.nz",
       "known_for": "Colour consulting, full interior repaint packages",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 9,
@@ -101,7 +125,10 @@
       "phone": "03 694 4979",
       "website": "https://www.lawsonsonspaint.co.nz",
       "known_for": "Family-run painters, residential specialists",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 10,
@@ -112,7 +139,10 @@
       "phone": "03 395 3254",
       "website": "https://www.spotlesspaintnelson.co.nz",
       "known_for": "New builds, renovations and repaint contracts",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

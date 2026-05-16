@@ -13,7 +13,10 @@
       "phone": "03 632 4028",
       "website": "https://www.hardingelectrical.co.nz",
       "known_for": "Residential and commercial electrical, Invercargill",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "03 461 8449",
       "website": "https://www.invercargillelectrical.co.nz",
       "known_for": "Full residential and commercial electrical",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "03 255 3784",
       "website": "https://www.powerplusinvercargill.co.nz",
       "known_for": "Switchboard upgrades, rewiring, new builds",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "03 244 1947",
       "website": "https://www.barkerelectricians.co.nz",
       "known_for": "Certified electricians for all residential work",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "03 214 5625",
       "website": "https://www.voltageelectricalinvercargill.co.nz",
       "known_for": "Residential, commercial and industrial electrical",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "03 436 9804",
       "website": "https://www.invercargillpowersolutions.co.nz",
       "known_for": "Solar, EV charging, smart home and general electrical",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -79,7 +97,10 @@
       "phone": "03 765 1831",
       "website": "https://www.kennedyelec.co.nz",
       "known_for": "Commercial fit-outs and residential electrical",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 8,
@@ -90,7 +111,10 @@
       "phone": "03 487 5545",
       "website": "https://www.brightsparkinvercargill.co.nz",
       "known_for": "Fast response residential electrical services",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 9,
@@ -101,7 +125,10 @@
       "phone": "03 488 9056",
       "website": "https://www.doyleco.co.nz",
       "known_for": "Family-run electrical contractors since 2005",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 10,
@@ -112,7 +139,10 @@
       "phone": "03 532 2537",
       "website": "https://www.totalelectricalinvercargill.co.nz",
       "known_for": "All electrical work, solar panel installations",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

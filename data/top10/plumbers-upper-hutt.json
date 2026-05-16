@@ -13,7 +13,10 @@
       "phone": "04 657 1884",
       "website": "https://www.grantplumbing.co.nz",
       "known_for": "Residential plumbing and drainage, Upper Hutt",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "04 757 3665",
       "website": "https://www.upperplumbing.co.nz",
       "known_for": "Full residential and commercial plumbing",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "04 828 7118",
       "website": "https://www.waterworksupper.co.nz",
       "known_for": "Emergency plumbing, hot water systems, drainage",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "04 922 9070",
       "website": "https://www.murrayplumb.co.nz",
       "known_for": "Hot water, gas fitting, drain repairs",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "04 951 3705",
       "website": "https://www.flowmasterupper.co.nz",
       "known_for": "Drain unblocking, leak detection, full plumbing",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "04 983 4365",
       "website": "https://www.currangas.co.nz",
       "known_for": "Gasfitting and all residential plumbing",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -79,7 +97,10 @@
       "phone": "04 941 2782",
       "website": "https://www.upperdrain.co.nz",
       "known_for": "Drain relining, CCTV inspection, plumbing",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 8,
@@ -90,7 +111,10 @@
       "phone": "04 311 6816",
       "website": "https://www.rapidplumbupper.co.nz",
       "known_for": "24/7 emergency plumbing and drain services",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 9,
@@ -101,7 +125,10 @@
       "phone": "04 978 5060",
       "website": "https://www.murphysonplumb.co.nz",
       "known_for": "Family plumbing business with 20+ years experience",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 10,
@@ -112,7 +139,10 @@
       "phone": "04 282 8039",
       "website": "https://www.hydrofixupper.co.nz",
       "known_for": "Hot water heat pumps, full residential plumbing",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

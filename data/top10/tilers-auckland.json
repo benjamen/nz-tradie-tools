@@ -2,7 +2,7 @@
   "trade": "tilers",
   "city": "auckland",
   "updated": "2025-05-09",
-  "regional_cost_note": "Auckland tiling $80\u2013$120/m\u00b2; large-format tiles or complex patterns add 20\u201330%.",
+  "regional_cost_note": "Auckland tiling $80–$120/m²; large-format tiles or complex patterns add 20–30%.",
   "businesses": [
     {
       "rank": 1,
@@ -13,7 +13,10 @@
       "phone": "(06) 854-7364",
       "website": null,
       "known_for": "Kitchen splashbacks & benchtops",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "(09) 404-6566",
       "website": null,
       "known_for": "Mosaic & designer tiles",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "(03) 817-0288",
       "website": null,
       "known_for": "Rectified tile installation",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "(07) 635-6464",
       "website": null,
       "known_for": "Herringbone & feature patterns",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "(022) 162-4675",
       "website": null,
       "known_for": "Commercial floor tiling",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "(027) 324-5794",
       "website": null,
       "known_for": "Waterproofing & wet area compliance",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -79,7 +97,10 @@
       "phone": "(03) 450-5475",
       "website": null,
       "known_for": "Bathroom wall & floor tiling",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 8,
@@ -90,7 +111,10 @@
       "phone": "(03) 035-6783",
       "website": null,
       "known_for": "Underfloor heating tile sets",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 9,
@@ -101,7 +125,10 @@
       "phone": "(04) 006-2549",
       "website": null,
       "known_for": "Tile removal & rebedding",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 10,
@@ -112,7 +139,10 @@
       "phone": "(027) 944-7187",
       "website": null,
       "known_for": "Large-format porcelain tiles",
-      "source": "Google Maps (verified May 2025)"
+      "source": "Google Maps (verified May 2025)",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

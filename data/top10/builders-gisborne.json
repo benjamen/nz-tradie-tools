@@ -13,7 +13,10 @@
       "phone": "06 215 5301",
       "website": "https://www.gjgardner.co.nz/gisborne",
       "known_for": "New builds, design-and-build packages",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "06 328 2671",
       "website": "https://www.landmarkhomes.co.nz/gisborne",
       "known_for": "New homes, fixed-price contracts",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "06 562 6880",
       "website": "https://www.parataconstruction.co.nz",
       "known_for": "Residential builds and renovations, Gisborne-wide",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "06 642 3817",
       "website": "https://www.gisbornebuildgroup.co.nz",
       "known_for": "New residential builds, light commercial",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "06 476 4370",
       "website": "https://www.kennedybuilders.co.nz",
       "known_for": "Quality renovations and new builds",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "06 570 2731",
       "website": "https://www.generationhomes.co.nz/gisborne",
       "known_for": "Affordable new home builds",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -79,7 +97,10 @@
       "phone": "06 562 3410",
       "website": "https://www.taurimahomes.co.nz",
       "known_for": "Custom home builds and alterations",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 8,
@@ -90,7 +111,10 @@
       "phone": "06 775 4448",
       "website": "https://www.gisbornerenovations.co.nz",
       "known_for": "Kitchen, bathroom and full home renovations",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 9,
@@ -101,7 +125,10 @@
       "phone": "06 734 1069",
       "website": "https://www.versatile.co.nz/gisborne",
       "known_for": "Kitset and relocatable homes, granny flats",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 10,
@@ -112,7 +139,10 @@
       "phone": "06 426 1164",
       "website": "https://www.clarkesons.co.nz",
       "known_for": "Three-generation family building firm",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

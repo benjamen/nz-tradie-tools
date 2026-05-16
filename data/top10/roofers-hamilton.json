@@ -13,7 +13,10 @@
       "phone": "",
       "website": "",
       "known_for": "Longest-established dedicated roofer in Hamilton since 1988; founding RANZ member; re-roofing, repairs, painting and specialist membrane systems.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "",
       "website": "",
       "known_for": "Trusted Hamilton roofers; COLORSTEEL re-roofing specialists with strong partnerships with local suppliers.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "",
       "website": "",
       "known_for": "Full re-roofing and roof repair service across Hamilton and greater Waikato; competitive pricing.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "",
       "website": "",
       "known_for": "National franchise local team; residential re-roofing, leak repairs, and spouting replacement.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "",
       "website": "",
       "known_for": "LBP licensed roofers; new build roofing and re-roofing across Hamilton and Waikato region.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

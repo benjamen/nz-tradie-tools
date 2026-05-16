@@ -13,7 +13,10 @@
       "phone": "09 579 1530",
       "website": "https://www.grammarelectrical.co.nz",
       "known_for": "Auckland's largest electrical jobbing company; family-owned since 1948 with 51–200 staff, Safepower Assured status and $20k workmanship guarantee.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "",
       "website": "",
       "known_for": "Certified Master Electricians covering residential, commercial and retail across all of Auckland; North Shore to South Auckland.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "",
       "website": "",
       "known_for": "Family-owned; licensed electricians known for reliable service and clear communication across Auckland, Bay of Plenty, and Waikato.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "0800 268 328",
       "website": "https://www.aoteaelectric.co.nz",
       "known_for": "Major Auckland electrical contractor with 24/7 emergency response; EV charging, solar, and industrial work.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "0800 454 646",
       "website": "https://laserplumbing.co.nz",
       "known_for": "National franchise with strong Auckland presence; praised for professionalism and follow-through from initial call to job completion.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "",
       "website": "",
       "known_for": "Trusted North Auckland electricians specialising in new builds, renovations, and smart home automation.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -79,7 +97,10 @@
       "phone": "",
       "website": "",
       "known_for": "Residential and commercial electrical work with strong customer service and transparent quoting.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

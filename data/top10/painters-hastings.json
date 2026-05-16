@@ -13,7 +13,10 @@
       "phone": "06 963 4074",
       "website": "https://www.pearcepainting.co.nz",
       "known_for": "Interior and exterior house painting, Hastings",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "06 882 2561",
       "website": "https://www.hastingspainters.co.nz",
       "known_for": "Professional residential and commercial painting",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "06 889 6461",
       "website": "https://www.propainthastings.co.nz",
       "known_for": "Premium interior painting and wallpaper",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "06 999 4947",
       "website": "https://www.erueradecorating.co.nz",
       "known_for": "Interior decorating, colour consulting, painting",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "06 254 4325",
       "website": "https://www.freshcoathastings.co.nz",
       "known_for": "Full interior and exterior repaints, fast turnaround",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "06 361 7827",
       "website": "https://www.harawirapaint.co.nz",
       "known_for": "Residential painting specialists",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -79,7 +97,10 @@
       "phone": "06 572 9156",
       "website": "https://www.certapainthastings.co.nz",
       "known_for": "Commercial painting, industrial coatings",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 8,
@@ -90,7 +111,10 @@
       "phone": "06 781 3933",
       "website": "https://www.hastingscolourco.co.nz",
       "known_for": "Colour consulting, full interior repaint packages",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 9,
@@ -101,7 +125,10 @@
       "phone": "06 443 2159",
       "website": "https://www.morgansonspaint.co.nz",
       "known_for": "Family-run painters, residential specialists",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 10,
@@ -112,7 +139,10 @@
       "phone": "06 412 4449",
       "website": "https://www.spotlesspainthastings.co.nz",
       "known_for": "New builds, renovations and repaint contracts",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

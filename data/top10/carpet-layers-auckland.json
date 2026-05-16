@@ -13,7 +13,10 @@
       "phone": "027 615 0827",
       "website": "",
       "known_for": "Carpet, laminate, vinyl, SPC planks and carpet tiles using Feltex and Godfrey Hirst brands; consistently praised for communication, punctuality and neat finish.",
-      "source": "NoCowboys"
+      "source": "NoCowboys",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "09 634 6453",
       "website": "https://johnjarviscarpets.co.nz",
       "known_for": "Independent NZ-owned supply and installation specialists since 1985; wholesale pricing on carpet, vinyl, timber and laminate across greater Auckland.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "09 625 5771",
       "website": "https://gilescarpets.co.nz",
       "known_for": "44+ years in business supplying premium pure wool and brand-name carpets at wholesale prices with knowledgeable staff and high-quality laying teams.",
-      "source": "Birdeye"
+      "source": "Birdeye",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "0800 421 001",
       "website": "https://www.harrisonscarpet.co.nz",
       "known_for": "NZ's No.1 flooring retailer (Canstar Blue 2023); mobile in-home consultation model since 1962 covering North Shore, Howick and wider Auckland.",
-      "source": "reviews.io"
+      "source": "reviews.io",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "021 028 22241",
       "website": "https://carpetgo.co.nz",
       "known_for": "Supply and install one-stop-shop since 1991; budget-focused pricing with vinyl and carpet repair services also available.",
-      "source": "Builderscrack"
+      "source": "Builderscrack",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

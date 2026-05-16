@@ -13,7 +13,10 @@
       "phone": "04 377 3402",
       "website": "https://www.hansonpainting.co.nz",
       "known_for": "Interior and exterior house painting, Porirua",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "04 316 7919",
       "website": "https://www.poriruapainters.co.nz",
       "known_for": "Professional residential and commercial painting",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "04 224 5304",
       "website": "https://www.propaintporirua.co.nz",
       "known_for": "Premium interior painting and wallpaper",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "04 983 3794",
       "website": "https://www.morgandecorating.co.nz",
       "known_for": "Interior decorating, colour consulting, painting",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "04 961 2447",
       "website": "https://www.freshcoatporirua.co.nz",
       "known_for": "Full interior and exterior repaints, fast turnaround",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "04 960 6118",
       "website": "https://www.richardspaint.co.nz",
       "known_for": "Residential painting specialists",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -79,7 +97,10 @@
       "phone": "04 854 8970",
       "website": "https://www.certapaintporirua.co.nz",
       "known_for": "Commercial painting, industrial coatings",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 8,
@@ -90,7 +111,10 @@
       "phone": "04 341 4136",
       "website": "https://www.poriruacolourco.co.nz",
       "known_for": "Colour consulting, full interior repaint packages",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 9,
@@ -101,7 +125,10 @@
       "phone": "04 963 8072",
       "website": "https://www.tūhoesonspaint.co.nz",
       "known_for": "Family-run painters, residential specialists",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 10,
@@ -112,7 +139,10 @@
       "phone": "04 642 8588",
       "website": "https://www.spotlesspaintporirua.co.nz",
       "known_for": "New builds, renovations and repaint contracts",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

@@ -2,7 +2,7 @@
   "trade": "builders",
   "city": "christchurch",
   "updated": "2026-04-22",
-  "regional_cost_note": "Builders in Christchurch typically charge $75\u2013$110/hr for labour. New builds range $2,800\u2013$4,200/m\u00b2 depending on specification. Post-earthquake, many local firms have extensive renovation and repair expertise. Emergency callouts add $80\u2013$150.",
+  "regional_cost_note": "Builders in Christchurch typically charge $75–$110/hr for labour. New builds range $2,800–$4,200/m² depending on specification. Post-earthquake, many local firms have extensive renovation and repair expertise. Emergency callouts add $80–$150.",
   "businesses": [
     {
       "rank": 1,
@@ -13,7 +13,10 @@
       "phone": "",
       "website": "",
       "known_for": "New builds, decking and renovations; LBP licensed with 6+ years experience.",
-      "source": "Builderscrack"
+      "source": "Builderscrack",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "",
       "website": "",
       "known_for": "Architectural builds and multi-unit developments; family-run by two brothers.",
-      "source": "Builderscrack"
+      "source": "Builderscrack",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "",
       "website": "",
       "known_for": "LBP licensed; 10+ years experience across architectural and residential projects.",
-      "source": "Builderscrack"
+      "source": "Builderscrack",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "",
       "website": "",
       "known_for": "LBP licensed with 15+ years experience; comprehensive residential builds and renovations.",
-      "source": "Builderscrack"
+      "source": "Builderscrack",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "",
       "website": "",
       "known_for": "Residential building and as-is where-is property repairs; popular with first-home buyers.",
-      "source": "Builderscrack"
+      "source": "Builderscrack",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "",
       "website": "",
       "known_for": "Timber framing and hard landscaping; 20 years industry experience.",
-      "source": "Builderscrack"
+      "source": "Builderscrack",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -79,7 +97,10 @@
       "phone": "03 352 8547",
       "website": "https://www.trentbuilders.co.nz",
       "known_for": "Custom homes and renovations; Master Builders members with strong repeat client base.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 8,
@@ -90,7 +111,10 @@
       "phone": "",
       "website": "",
       "known_for": "Cost-effective residential builds; fully certified and Site Safe member.",
-      "source": "Builderscrack"
+      "source": "Builderscrack",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 9,
@@ -100,8 +124,11 @@
       "suburb": "Addington",
       "phone": "0800 900 888",
       "website": "https://www.mikegreerhomes.co.nz",
-      "known_for": "NZ\u2019s largest privately owned home builder; 30+ years, award-winning new builds and house-and-land packages.",
-      "source": "Google Maps"
+      "known_for": "NZ’s largest privately owned home builder; 30+ years, award-winning new builds and house-and-land packages.",
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 10,
@@ -112,7 +139,10 @@
       "phone": "",
       "website": "",
       "known_for": "Licensed Building Practitioner; 10+ years in carpentry, decking and renovations.",
-      "source": "Builderscrack"
+      "source": "Builderscrack",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

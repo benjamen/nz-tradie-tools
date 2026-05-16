@@ -13,7 +13,10 @@
       "phone": "04 406 9231",
       "website": "https://www.gjgardner.co.nz/upper",
       "known_for": "New builds, design-and-build packages",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "04 988 9769",
       "website": "https://www.landmarkhomes.co.nz/upper",
       "known_for": "New homes, fixed-price contracts",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "04 837 4734",
       "website": "https://www.dixonconstruction.co.nz",
       "known_for": "Residential builds and renovations, Upper Hutt-wide",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "04 697 9750",
       "website": "https://www.upperbuildgroup.co.nz",
       "known_for": "New residential builds, light commercial",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "04 666 1632",
       "website": "https://www.shawbuilders.co.nz",
       "known_for": "Quality renovations and new builds",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "04 311 9636",
       "website": "https://www.generationhomes.co.nz/upper",
       "known_for": "Affordable new home builds",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -79,7 +97,10 @@
       "phone": "04 795 2648",
       "website": "https://www.lawsonhomes.co.nz",
       "known_for": "Custom home builds and alterations",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 8,
@@ -90,7 +111,10 @@
       "phone": "04 379 9488",
       "website": "https://www.upperrenovations.co.nz",
       "known_for": "Kitchen, bathroom and full home renovations",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 9,
@@ -101,7 +125,10 @@
       "phone": "04 663 4539",
       "website": "https://www.versatile.co.nz/upper",
       "known_for": "Kitset and relocatable homes, granny flats",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 10,
@@ -112,7 +139,10 @@
       "phone": "04 707 7201",
       "website": "https://www.webbsons.co.nz",
       "known_for": "Three-generation family building firm",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

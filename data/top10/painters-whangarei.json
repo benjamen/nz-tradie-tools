@@ -13,7 +13,10 @@
       "phone": "09 906 1131",
       "website": "https://www.morganpainting.co.nz",
       "known_for": "Interior and exterior house painting, Whangārei",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "09 969 5072",
       "website": "https://www.whangāreipainters.co.nz",
       "known_for": "Professional residential and commercial painting",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "09 411 7895",
       "website": "https://www.propaintwhangārei.co.nz",
       "known_for": "Premium interior painting and wallpaper",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "09 991 4101",
       "website": "https://www.shawdecorating.co.nz",
       "known_for": "Interior decorating, colour consulting, painting",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "09 402 4261",
       "website": "https://www.freshcoatwhangārei.co.nz",
       "known_for": "Full interior and exterior repaints, fast turnaround",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "09 235 6961",
       "website": "https://www.sutherlandpaint.co.nz",
       "known_for": "Residential painting specialists",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -79,7 +97,10 @@
       "phone": "09 848 9185",
       "website": "https://www.certapaintwhangārei.co.nz",
       "known_for": "Commercial painting, industrial coatings",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 8,
@@ -90,7 +111,10 @@
       "phone": "09 865 4838",
       "website": "https://www.whangāreicolourco.co.nz",
       "known_for": "Colour consulting, full interior repaint packages",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 9,
@@ -101,7 +125,10 @@
       "phone": "09 584 4684",
       "website": "https://www.māhakisonspaint.co.nz",
       "known_for": "Family-run painters, residential specialists",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 10,
@@ -112,7 +139,10 @@
       "phone": "09 772 2368",
       "website": "https://www.spotlesspaintwhangārei.co.nz",
       "known_for": "New builds, renovations and repaint contracts",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

@@ -13,7 +13,10 @@
       "phone": "",
       "website": "",
       "known_for": "44 years in the plumbing trade, running his own business for 29 of those; perfect 5.0 across 181 Builderscrack reviews.",
-      "source": "Builderscrack"
+      "source": "Builderscrack",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "07 838 1234",
       "website": "",
       "known_for": "Established 1946; designs entire hydraulic systems bridging architecture and plumbing for complex new builds.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "0800 454 646",
       "website": "https://laserplumbing.co.nz",
       "known_for": "National franchise with local expertise; Master Plumbers member with full residential and commercial service.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "",
       "website": "",
       "known_for": "Residential plumbing, bathroom renovations and drainage across Hamilton and greater Waikato.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "",
       "website": "",
       "known_for": "Specialist drainage and stormwater; preferred contractor for new subdivisions across Waikato.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

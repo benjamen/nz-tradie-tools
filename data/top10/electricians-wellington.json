@@ -13,7 +13,10 @@
       "phone": "",
       "website": "",
       "known_for": "5.0 Google rating; 24/7 Wellington-wide service, Master Electricians $20k workmanship guarantee; specialists in EV charging and renovations.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "",
       "website": "",
       "known_for": "Reliable and trusted electrical services with consistently top-rated workmanship across Wellington.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "0800 454 646",
       "website": "https://laserplumbing.co.nz",
       "known_for": "National franchise local team; full residential and commercial electrical services with responsive scheduling.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "",
       "website": "",
       "known_for": "Commercial and residential electrical specialists; strong reputation for switchboard upgrades and EV charger installations.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "",
       "website": "",
       "known_for": "Established Wellington firm covering all residential electrical work, including solar and heat pump wiring.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

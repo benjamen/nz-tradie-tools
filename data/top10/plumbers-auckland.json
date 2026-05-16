@@ -13,7 +13,10 @@
       "phone": "0800 476 688",
       "website": "https://www.mrrooter.co.nz",
       "known_for": "24/7 callouts, drain unblocking, hot water cylinders",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "0800 726 337",
       "website": "https://www.samedaytrades.co.nz",
       "known_for": "Fast response, plumbing and gasfitting Auckland-wide",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "09 527 4700",
       "website": "https://www.laserplumbing.co.nz",
       "known_for": "Residential and commercial plumbing, East Auckland",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "09 415 8220",
       "website": "https://www.laserplumbing.co.nz",
       "known_for": "North Shore plumbing, gas fitting, heat pumps",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "09 378 7377",
       "website": "https://www.proplumbing.co.nz",
       "known_for": "Central Auckland plumbing, bathroom renovations",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "09 520 4230",
       "website": "https://www.plumbline.co.nz",
       "known_for": "Residential plumbing, hot water systems, central Auckland",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -79,7 +97,10 @@
       "phone": "09 836 2220",
       "website": "",
       "known_for": "West Auckland plumbing, new builds, gasfitting",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 8,
@@ -90,7 +111,10 @@
       "phone": "09 486 0050",
       "website": "https://www.heronplumbing.co.nz",
       "known_for": "North Shore plumbing, bathroom renovations",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 9,
@@ -101,7 +125,10 @@
       "phone": "09 262 2660",
       "website": "",
       "known_for": "South Auckland and Manukau, fast response",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 10,
@@ -112,7 +139,10 @@
       "phone": "09 535 4440",
       "website": "https://www.activeplumbing.co.nz",
       "known_for": "East Auckland plumbing and gasfitting, 24hr service",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

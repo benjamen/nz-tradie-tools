@@ -13,7 +13,10 @@
       "phone": "",
       "website": "",
       "known_for": "97.7% NoCowboys rating; exclusively uses NZ-made roofing products; full residential and commercial re-roofing.",
-      "source": "NoCowboys"
+      "source": "NoCowboys",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "",
       "website": "",
       "known_for": "Genuine 24/7 emergency response across Auckland from Orewa to Manukau; specialists in leak detection and urgent repairs.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "",
       "website": "",
       "known_for": "10-year workmanship warranty on all new installations plus NZ COLORSTEEL manufacturer warranty up to 50 years.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "",
       "website": "",
       "known_for": "Professional crew that shows up on time; praised for communication, tidy sites, and quality materials.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "",
       "website": "https://aucklandroofingsolutions.co.nz",
       "known_for": "Full residential roofing service; re-roofing, repairs, guttering and spouting across greater Auckland.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "",
       "website": "",
       "known_for": "Long-run iron specialists; competitive pricing for re-roofs across West and South Auckland.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

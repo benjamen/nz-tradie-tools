@@ -13,7 +13,10 @@
       "phone": "03 682 2070",
       "website": "https://www.gjgardner.co.nz/queenstown",
       "known_for": "New builds, design-and-build packages",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "03 645 4052",
       "website": "https://www.landmarkhomes.co.nz/queenstown",
       "known_for": "New homes, fixed-price contracts",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "03 988 9306",
       "website": "https://www.walshconstruction.co.nz",
       "known_for": "Residential builds and renovations, Queenstown-wide",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "03 827 1862",
       "website": "https://www.queenstownbuildgroup.co.nz",
       "known_for": "New residential builds, light commercial",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "03 497 8030",
       "website": "https://www.fullerbuilders.co.nz",
       "known_for": "Quality renovations and new builds",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "03 416 8790",
       "website": "https://www.generationhomes.co.nz/queenstown",
       "known_for": "Affordable new home builds",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -79,7 +97,10 @@
       "phone": "03 223 3489",
       "website": "https://www.morganhomes.co.nz",
       "known_for": "Custom home builds and alterations",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 8,
@@ -90,7 +111,10 @@
       "phone": "03 986 5975",
       "website": "https://www.queenstownrenovations.co.nz",
       "known_for": "Kitchen, bathroom and full home renovations",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 9,
@@ -101,7 +125,10 @@
       "phone": "03 596 1895",
       "website": "https://www.versatile.co.nz/queenstown",
       "known_for": "Kitset and relocatable homes, granny flats",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 10,
@@ -112,7 +139,10 @@
       "phone": "03 404 1012",
       "website": "https://www.paratasons.co.nz",
       "known_for": "Three-generation family building firm",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

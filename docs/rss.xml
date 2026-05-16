@@ -5,8 +5,15 @@
     <link>https://tradietools.nz/</link>
     <description>Free calculators, templates and guides for New Zealand tradies.</description>
     <language>en-nz</language>
-    <lastBuildDate>Sat, 16 May 2026 10:40:16 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2026 16:03:35 +0000</lastBuildDate>
     <atom:link href="https://tradietools.nz/rss.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Job Costing for NZ Tradies: How to Track Real Profit on Every Job</title>
+    <link>https://tradietools.nz/articles/job-costing-guide-nz-tradies-2026.html</link>
+    <guid isPermaLink="true">https://tradietools.nz/articles/job-costing-guide-nz-tradies-2026.html</guid>
+    <description>Learn how NZ tradies can use job costing to track actual profit per job, spot budget blowouts early, and price future work more accurately.</description>
+    <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
+  </item>
   <item>
     <title>Employers Liability Insurance NZ: What Tradies with Staff Must Know in 2026</title>
     <link>https://tradietools.nz/articles/employers-liability-insurance-nz-tradies-2026.html</link>
@@ -138,13 +145,6 @@
     <link>https://tradietools.nz/articles/acc-levies-nz-tradies-2026-guide.html</link>
     <guid isPermaLink="true">https://tradietools.nz/articles/acc-levies-nz-tradies-2026-guide.html</guid>
     <description>ACC levies are changing in 2026/27. Here's what NZ self-employed tradies need to know about rates, CoverPlus Extra, and how to reduce your bill.</description>
-    <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-  </item>
-  <item>
-    <title>How to Set Your Hourly Rate as a Self-Employed NZ Tradie in 2026</title>
-    <link>https://tradietools.nz/articles/how-to-set-hourly-rate-nz-tradie-2026.html</link>
-    <guid isPermaLink="true">https://tradietools.nz/articles/how-to-set-hourly-rate-nz-tradie-2026.html</guid>
-    <description>A step-by-step guide to calculating the right charge-out rate for NZ tradies — covering overheads, tax, and profit margins with real NZD examples.</description>
     <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
   </item>
   </channel>

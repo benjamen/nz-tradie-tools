@@ -13,7 +13,10 @@
       "phone": "",
       "website": "",
       "known_for": "Led by John Martin with 30+ years experience; villa renovation specialist and high-end exterior repaint expert.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "",
       "website": "",
       "known_for": "Licensed builder and Master Painter combined; interior and exterior painting for residential and commercial clients.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "",
       "website": "",
       "known_for": "650+ completed projects in greater Tauranga; reliable, experienced, and use only high-performance Resene and Dulux materials.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "",
       "website": "",
       "known_for": "Founded 2018 by Chris Young with 10+ years experience; interior, exterior, and wallpaper hanging using professional-grade products.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "",
       "website": "",
       "known_for": "Mount Maunganui-based painters known for coastal exterior paint expertise and reliable turnaround times.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

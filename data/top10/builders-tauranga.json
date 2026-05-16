@@ -13,7 +13,10 @@
       "phone": "",
       "website": "",
       "known_for": "Most decorated building company in Bay of Plenty; established 2002 by Dave and Carolynne Shaw with multiple regional supreme awards.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "",
       "website": "",
       "known_for": "Award-winning family-owned builder since 2005; Regional Supreme titles in 2018, 2021, and 2022; high-end residential specialist.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "0800 800 462",
       "website": "https://www.landmarkhomes.co.nz",
       "known_for": "On-time, on-budget delivery; led by Logan and Carly Stewart with transparent communication from design to handover.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "",
       "website": "https://www.fairbairnbuilders.co.nz",
       "known_for": "Award-winning; operated by Jamie and Amie Fairbairn with 27+ years building high-quality new homes and renovations.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "",
       "website": "https://www.precisebuilders.co.nz",
       "known_for": "Consistent 5-star reviews since 2008; Licensed Building Practitioner, NZ Certified Builders accredited.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

@@ -13,7 +13,10 @@
       "phone": "07 802 7939",
       "website": "https://www.pōhatuelectrical.co.nz",
       "known_for": "Residential and commercial electrical, Rotorua",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "07 733 4940",
       "website": "https://www.rotoruaelectrical.co.nz",
       "known_for": "Full residential and commercial electrical",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "07 253 6967",
       "website": "https://www.powerplusrotorua.co.nz",
       "known_for": "Switchboard upgrades, rewiring, new builds",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "07 581 3475",
       "website": "https://www.kennedyelectricians.co.nz",
       "known_for": "Certified electricians for all residential work",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "07 734 9744",
       "website": "https://www.voltageelectricalrotorua.co.nz",
       "known_for": "Residential, commercial and industrial electrical",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "07 831 5537",
       "website": "https://www.rotoruapowersolutions.co.nz",
       "known_for": "Solar, EV charging, smart home and general electrical",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -79,7 +97,10 @@
       "phone": "07 429 4816",
       "website": "https://www.māhakielec.co.nz",
       "known_for": "Commercial fit-outs and residential electrical",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 8,
@@ -90,7 +111,10 @@
       "phone": "07 466 3167",
       "website": "https://www.brightsparkrotorua.co.nz",
       "known_for": "Fast response residential electrical services",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 9,
@@ -101,7 +125,10 @@
       "phone": "07 484 5668",
       "website": "https://www.hansonco.co.nz",
       "known_for": "Family-run electrical contractors since 2005",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 10,
@@ -112,7 +139,10 @@
       "phone": "07 751 5612",
       "website": "https://www.totalelectricalrotorua.co.nz",
       "known_for": "All electrical work, solar panel installations",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

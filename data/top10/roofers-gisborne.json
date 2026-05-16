@@ -13,7 +13,10 @@
       "phone": "06 469 3195",
       "website": "https://www.metalcraft.co.nz/gisborne",
       "known_for": "Long-run metal roofing, re-roofing, guttering",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "06 858 9513",
       "website": "https://www.gisborneroofing.co.nz",
       "known_for": "Full residential and commercial roofing services",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "06 320 5418",
       "website": "https://www.duncanroofing.co.nz",
       "known_for": "Re-roofing, repairs and spouting, Gisborne",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "06 244 5909",
       "website": "https://www.roofmastergisborne.co.nz",
       "known_for": "Metal roofing, tiles, membrane flat roofing",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "06 653 2885",
       "website": "https://www.morganroof.co.nz",
       "known_for": "Residential roofing and gutter replacements",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "06 911 2013",
       "website": "https://www.gisbornemetalroofing.co.nz",
       "known_for": "Coloursteel, long-run and corrugated iron roofing",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -79,7 +97,10 @@
       "phone": "06 259 7845",
       "website": "https://www.apexroofgisborne.co.nz",
       "known_for": "Full re-roofing, spouting and fascia replacement",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 8,
@@ -90,7 +111,10 @@
       "phone": "06 528 7362",
       "website": "https://www.hansonsonsroof.co.nz",
       "known_for": "Family roofing business, residential specialists",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 9,
@@ -101,7 +125,10 @@
       "phone": "06 643 5103",
       "website": "https://www.skyhighgisborne.co.nz",
       "known_for": "Commercial and residential roofing, urgent repairs",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 10,
@@ -112,7 +139,10 @@
       "phone": "06 787 5479",
       "website": "https://www.gisborneroofrepairs.co.nz",
       "known_for": "Leak repairs, maintenance inspections, all roof types",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

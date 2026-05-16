@@ -2,7 +2,7 @@
   "trade": "painters",
   "city": "napier",
   "updated": "2026-05-09",
-  "regional_cost_note": "Painters in Napier typically charge $42\u2013$65/hr. Rates are elevated post-Cyclone Gabrielle due to high rebuild demand and tight painter supply. Art Deco and heritage properties cost 15\u201325% more due to specialist plaster repairs, decorative moulding work and heritage colour matching. Coastal suburbs like Ahuriri and Bluff Hill add prep costs for salt-air damage.",
+  "regional_cost_note": "Painters in Napier typically charge $42–$65/hr. Rates are elevated post-Cyclone Gabrielle due to high rebuild demand and tight painter supply. Art Deco and heritage properties cost 15–25% more due to specialist plaster repairs, decorative moulding work and heritage colour matching. Coastal suburbs like Ahuriri and Bluff Hill add prep costs for salt-air damage.",
   "businesses": [
     {
       "rank": 1,
@@ -12,8 +12,11 @@
       "suburb": "Napier Central",
       "phone": "06 843 3445",
       "website": "https://ericwiig.co.nz",
-      "known_for": "Hawke\u2019s Bay\u2019s most established painting firm \u2014 trading since 1948; Gold-level Nuplex contractor and Registered Master Painters specialising in painting, resin flooring and waterproofing.",
-      "source": "NoCowboys"
+      "known_for": "Hawke’s Bay’s most established painting firm — trading since 1948; Gold-level Nuplex contractor and Registered Master Painters specialising in painting, resin flooring and waterproofing.",
+      "source": "NoCowboys",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -23,8 +26,11 @@
       "suburb": "Onekawa",
       "phone": "06 842 0035",
       "website": "https://colourcraftna.co.nz",
-      "known_for": "30+ years as a leading residential and commercial contractor; Dulux-accredited and Master Painters member covering Napier, Hastings, Havelock North and greater Hawke\u2019s Bay.",
-      "source": "Google Maps"
+      "known_for": "30+ years as a leading residential and commercial contractor; Dulux-accredited and Master Painters member covering Napier, Hastings, Havelock North and greater Hawke’s Bay.",
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -34,8 +40,11 @@
       "suburb": "Onekawa",
       "phone": "06 843 6801",
       "website": "",
-      "known_for": "Locally owned and operated for 25+ years; experienced across residential, commercial and industrial painting throughout the Hawke\u2019s Bay region.",
-      "source": "Yellow NZ"
+      "known_for": "Locally owned and operated for 25+ years; experienced across residential, commercial and industrial painting throughout the Hawke’s Bay region.",
+      "source": "Yellow NZ",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "",
       "website": "",
       "known_for": "Specialises in interior decorating, painting, paperhanging and plastering; consistently high-rated across Napier and Taradale.",
-      "source": "Builderscrack"
+      "source": "Builderscrack",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -56,8 +68,11 @@
       "suburb": "Taradale",
       "phone": "021 573 663",
       "website": "",
-      "known_for": "Locally owned company covering the whole Hawke\u2019s Bay region; focuses on high-quality residential and commercial painting with guaranteed customer satisfaction.",
-      "source": "NoCowboys"
+      "known_for": "Locally owned company covering the whole Hawke’s Bay region; focuses on high-quality residential and commercial painting with guaranteed customer satisfaction.",
+      "source": "NoCowboys",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "",
       "website": "",
       "known_for": "9-year qualified painter delivering meticulous interior and exterior painting plus wallpapering; strong reputation for attention to detail on Napier residential projects.",
-      "source": "Builderscrack"
+      "source": "Builderscrack",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -78,19 +96,11 @@
       "suburb": "Napier South",
       "phone": "",
       "website": "",
-      "known_for": "Family-owned Hawke\u2019s Bay business providing painting, decorating and colour consultancy services with a focus on dependability and trust.",
-      "source": "Builderscrack"
-    },
-    {
-      "rank": 8,
-      "name": "NextLevel Painting",
-      "rating": 4.6,
-      "review_count": 10,
-      "suburb": "Ahuriri",
-      "phone": "",
-      "website": "https://www.nextlevelpainting.co.nz",
-      "known_for": "Small, friendly team delivering high-quality residential and commercial painting from Art Deco restorations to modern builds across Napier, Havelock North and Taradale.",
-      "source": "Google Maps"
+      "known_for": "Family-owned Hawke’s Bay business providing painting, decorating and colour consultancy services with a focus on dependability and trust.",
+      "source": "Builderscrack",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

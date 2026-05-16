@@ -2,7 +2,7 @@
   "trade": "painters",
   "city": "palmerston-north",
   "updated": "2026-05-09",
-  "regional_cost_note": "Painters in Palmerston North typically charge $40\u2013$62/hr for qualified work. Interior painting costs $22\u2013$45/m\u00b2, exterior $30\u2013$60/m\u00b2. Rates sit 10\u201315% below the national average due to lower business overheads, flat terrain reducing scaffolding costs, and good painter availability across the Manawat\u016b region.",
+  "regional_cost_note": "Painters in Palmerston North typically charge $40–$62/hr for qualified work. Interior painting costs $22–$45/m², exterior $30–$60/m². Rates sit 10–15% below the national average due to lower business overheads, flat terrain reducing scaffolding costs, and good painter availability across the Manawatū region.",
   "businesses": [
     {
       "rank": 1,
@@ -13,7 +13,10 @@
       "phone": "027 843 8609",
       "website": "https://completepainting.co.nz",
       "known_for": "Interior, exterior and roof painting with a Master Painters 5-year workmanship guarantee; covers airless spraying and wallpaper hanging across greater Palmerston North.",
-      "source": "Builderscrack"
+      "source": "Builderscrack",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -23,8 +26,11 @@
       "suburb": "Palmerston North Central",
       "phone": "027 847 4354",
       "website": "https://justus.co.nz",
-      "known_for": "40+ years industry experience; friendly residential painting, staining, water blasting, wallpapering and insurance repaints throughout the Manawat\u016b.",
-      "source": "Google Maps"
+      "known_for": "40+ years industry experience; friendly residential painting, staining, water blasting, wallpapering and insurance repaints throughout the Manawatū.",
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "06 374 6290",
       "website": "https://martinbeveridge.co.nz",
       "known_for": "Award-winning Master Painters since 1973; NZ Master Painters Gold & Silver Award winners specialising in residential, commercial and heritage painting plus wall coverings.",
-      "source": "NoCowboys"
+      "source": "NoCowboys",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "06 358 7603",
       "website": "https://www.dasslerdecorating.co.nz",
       "known_for": "Master Painters NZ member since 2010; 20+ years experience in quality residential and commercial painting for new builds and refurbishments.",
-      "source": "Yellow NZ"
+      "source": "Yellow NZ",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "027 4411 117",
       "website": "https://palypro.com",
       "known_for": "Painting and plastering specialists using premium Resene and Dulux products; also covers GIB repairs, water blasting and roof painting.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "021 406 394",
       "website": "",
       "known_for": "Residential and commercial painting across Palmerston North; praised for reliable communication and clean, tidy workmanship.",
-      "source": "Builderscrack"
+      "source": "Builderscrack",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -78,8 +96,11 @@
       "suburb": "Awapuni",
       "phone": "027 252 9424",
       "website": "",
-      "known_for": "Interior and exterior residential painting across the Manawat\u016b; competitive rates and strong local reputation among homeowners.",
-      "source": "Builderscrack"
+      "known_for": "Interior and exterior residential painting across the Manawatū; competitive rates and strong local reputation among homeowners.",
+      "source": "Builderscrack",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }

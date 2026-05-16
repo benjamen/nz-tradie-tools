@@ -2,7 +2,7 @@
   "trade": "builders",
   "city": "hamilton",
   "updated": "2026-04-22",
-  "regional_cost_note": "Builders in Hamilton typically charge $80\u2013$110/hr. New build costs range $2,500\u2013$3,800/m\u00b2. Waikato region rates are generally 10\u201315% lower than Auckland. Most local firms offer fixed-price contracts for new builds.",
+  "regional_cost_note": "Builders in Hamilton typically charge $80–$110/hr. New build costs range $2,500–$3,800/m². Waikato region rates are generally 10–15% lower than Auckland. Most local firms offer fixed-price contracts for new builds.",
   "businesses": [
     {
       "rank": 1,
@@ -12,8 +12,11 @@
       "suburb": "Hamilton Central",
       "phone": "0800 698 7226",
       "website": "https://urban.co.nz",
-      "known_for": "Hamilton\u2019s most award-winning master builders; new homes, house and land packages across Waikato.",
-      "source": "Google Maps"
+      "known_for": "Hamilton’s most award-winning master builders; new homes, house and land packages across Waikato.",
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 2,
@@ -24,7 +27,10 @@
       "phone": "0800 456 321",
       "website": "https://sentinelhomes.co.nz",
       "known_for": "Award-winning master builders; full project management, 10-year Master Build guarantee.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 3,
@@ -35,7 +41,10 @@
       "phone": "0800 746 946",
       "website": "https://waikatohomes.co.nz",
       "known_for": "Husband and wife team; first homes, luxury builds and renovations with genuinely personal service.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 4,
@@ -46,7 +55,10 @@
       "phone": "07 849 4602",
       "website": "https://mhbuilders.co.nz",
       "known_for": "Established 1987; home renovations and additions, high-quality work within budget.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 5,
@@ -57,7 +69,10 @@
       "phone": "",
       "website": "https://www.sjrbuilders.co.nz",
       "known_for": "30+ years providing high-quality building services across Hamilton and Waikato.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 6,
@@ -68,7 +83,10 @@
       "phone": "027 415 7059",
       "website": "https://gwbuilders.co.nz",
       "known_for": "Residential and commercial builds, renovations and ongoing maintenance work.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     },
     {
       "rank": 7,
@@ -79,7 +97,10 @@
       "phone": "",
       "website": "",
       "known_for": "Bathroom, kitchen and whole-home renovations; LBP licensed.",
-      "source": "Google Maps"
+      "source": "Google Maps",
+      "source_url": "",
+      "verified": false,
+      "verified_date": ""
     }
   ]
 }
