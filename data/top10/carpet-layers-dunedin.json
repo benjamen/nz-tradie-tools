@@ -1,0 +1,50 @@
+{
+  "trade": "carpet-layers",
+  "city": "dunedin",
+  "updated": "2026-05-18",
+  "regional_cost_note": "Carpet laying in Dunedin typically costs $18–$22/sqm for labour. Total supply and installation ranges $45–$85/sqm depending on carpet grade and floor prep required.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "GroutPro Dunedin and area",
+      "rating": 4.6,
+      "review_count": 19,
+      "suburb": "Waikouaiti",
+      "phone": "",
+      "website": "",
+      "known_for": "Flooring renovations including carpet installation, serving Dunedin and Otago from quick fixes to full-scale property transformations.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/4gvxj3bw/groutpro-dunedin-and-area",
+      "verified": true,
+      "verified_date": "2026-05-18"
+    },
+    {
+      "rank": 2,
+      "name": "Dunedin City Contracting",
+      "rating": 4.5,
+      "review_count": 245,
+      "suburb": "Dunedin Central",
+      "phone": "03 470 1423",
+      "website": "https://www.dunedincitycontracting.nz",
+      "known_for": "Large full-service building firm with in-house carpet laying alongside electrical, plumbing and landscaping trades throughout Otago.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/1cpcxw7w/dunedin-city-contracting",
+      "verified": true,
+      "verified_date": "2026-05-18"
+    },
+    {
+      "rank": 3,
+      "name": "McKenzie and Willis",
+      "rating": 4.7,
+      "review_count": 3,
+      "suburb": "Hanover St",
+      "phone": "03 345 9551",
+      "website": "",
+      "known_for": "Specialist carpet supply and installation at 266 Hanover St, Dunedin; known for competitive quotes and efficient professional laying.",
+      "source": "NoCowboys",
+      "source_url": "https://www.nocowboys.co.nz/businesses/mckenzie-and-willis-",
+      "verified": true,
+      "verified_date": "2026-05-18"
+    }
+  ]
+}

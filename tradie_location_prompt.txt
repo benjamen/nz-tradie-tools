@@ -28,7 +28,7 @@ top10_dir = '/home/ben/.openclaw/workspace/site/data/top10/'
 trades_data = json.load(open('/home/ben/.openclaw/workspace/site/data/trades.json'))
 cities_data = json.load(open('/home/ben/.openclaw/workspace/site/data/cities.json'))
 trades = [t['slug'] for t in trades_data[:12]]
-cities = [c['slug'] for c in cities_data[:10]]
+cities = [c['slug'] for c in cities_data]  # All 20 NZ cities
 today = datetime.date.today()
 missing = []
 stale = []  # verified=false or no source_url

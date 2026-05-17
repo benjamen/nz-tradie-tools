@@ -543,7 +543,7 @@ def build_rss(articles, config):
         return str(s).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
     items = []
-    for a in articles[:20]:
+    for a in articles:
         pub_date = a.get("date_iso", "")
         try:
             pub_date_rss = datetime.strptime(pub_date, "%Y-%m-%d").strftime("%a, %d %b %Y 00:00:00 +0000")

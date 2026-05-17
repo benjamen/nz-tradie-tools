@@ -1,0 +1,50 @@
+{
+  "trade": "carpet-layers",
+  "city": "tauranga",
+  "updated": "2026-05-18",
+  "regional_cost_note": "Carpet laying in Tauranga typically costs $20–$25/sqm for labour. Total supply and installation ranges $50–$90/sqm depending on carpet grade and floor prep required.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Richard Lewis",
+      "rating": 5.0,
+      "review_count": 247,
+      "suburb": "Whakatāne",
+      "phone": "",
+      "website": "",
+      "known_for": "Carpet and vinyl layer with 20+ years experience, supplies most carpet ranges at wholesale pricing and services Tauranga with no additional travel charges.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/23apymvw/richard-lewis",
+      "verified": true,
+      "verified_date": "2026-05-18"
+    },
+    {
+      "rank": 2,
+      "name": "Murrays Carpet Services",
+      "rating": 5.0,
+      "review_count": 24,
+      "suburb": "Aongatete",
+      "phone": "07 576 2160",
+      "website": "https://www.murrayscarpet.co.nz",
+      "known_for": "Family-owned since 1978, specialising in carpet and vinyl laying, cleaning and repairs throughout Tauranga and Western Bay of Plenty.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/54nwx0c/murrays-carpet-services",
+      "verified": true,
+      "verified_date": "2026-05-18"
+    },
+    {
+      "rank": 3,
+      "name": "Sunset Flooring",
+      "rating": 5.0,
+      "review_count": 24,
+      "suburb": "Welcome Bay",
+      "phone": "",
+      "website": "",
+      "known_for": "Carpet installation, repairs, restretching and vinyl work across the Bay of Plenty, run by sole trader Seamus Sadler with verified credentials.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/dwk5mxo/sunset-flooring",
+      "verified": true,
+      "verified_date": "2026-05-18"
+    }
+  ]
+}
