@@ -1,0 +1,50 @@
+{
+  "trade": "carpet-layers",
+  "city": "napier",
+  "updated": "2026-05-19",
+  "regional_cost_note": "Carpet installation in Napier typically costs $25–$45 per m², with wool and premium carpets at the higher end. Free measure and quote is standard practice among local installers.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Plush Carpet Fitting",
+      "rating": 4.8,
+      "review_count": 248,
+      "suburb": "Napier",
+      "phone": "",
+      "website": "",
+      "known_for": "Specialists in all methods of carpet fitting including wool, nylon, sisal, axminster, Persian rugs and marine carpets; promotes NZ-made products and also works with secondhand materials.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/1dh9xlcs/plush-carpet-fitting",
+      "verified": true,
+      "verified_date": "2026-05-19"
+    },
+    {
+      "rank": 2,
+      "name": "Kiwi Flooring Services Ltd",
+      "rating": 4.7,
+      "review_count": 20,
+      "suburb": "Havelock North",
+      "phone": "",
+      "website": "",
+      "known_for": "Two decades of carpet and vinyl flooring installation for new builds and renovations across Hawke's Bay, including carpet tiles, commercial vinyl, and all repair and restretching work.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/3orxzljw/kiwi-flooring-services-ltd",
+      "verified": true,
+      "verified_date": "2026-05-19"
+    },
+    {
+      "rank": 3,
+      "name": "Gorillafloors Ltd",
+      "rating": 4.0,
+      "review_count": 2,
+      "suburb": "Central Hawke's Bay",
+      "phone": "",
+      "website": "",
+      "known_for": "28 years of experience in vinyl and carpet flooring for residential and commercial properties across Hawke's Bay, including full floor preparation work.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/4rlwyuzg/gorillafloors-ltd",
+      "verified": true,
+      "verified_date": "2026-05-19"
+    }
+  ]
+}

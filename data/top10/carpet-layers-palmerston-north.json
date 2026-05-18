@@ -1,0 +1,78 @@
+{
+  "trade": "carpet-layers",
+  "city": "palmerston-north",
+  "updated": "2026-05-19",
+  "regional_cost_note": "Carpet installation in Palmerston North typically costs $25–$45 per m², depending on carpet type, underlay, and floor preparation required. Restretching and repairs start from around $80–$150 per job.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "T & C Drake Limited",
+      "rating": 5.0,
+      "review_count": 12,
+      "suburb": "Sanson",
+      "phone": "",
+      "website": "",
+      "known_for": "Domestic and commercial floor cover installation including carpet, vinyl and timber flooring across Rangitikei, Palmerston North, Manawatu, Horowhenua, Whanganui, and Tararua.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/zvy02fw/t-and-c-drake-limited",
+      "verified": true,
+      "verified_date": "2026-05-19"
+    },
+    {
+      "rank": 2,
+      "name": "Design Flooring Installations Limited",
+      "rating": 5.0,
+      "review_count": 6,
+      "suburb": "Rangitikei",
+      "phone": "",
+      "website": "",
+      "known_for": "High quality carpet, vinyl and substrate preparation work for residential and commercial projects across Rangitikei, Palmerston North, Manawatu, Horowhenua and Whanganui.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/7upaj30/design-flooring-installations-limited",
+      "verified": true,
+      "verified_date": "2026-05-19"
+    },
+    {
+      "rank": 3,
+      "name": "Kiwi Flooring Services Ltd",
+      "rating": 4.7,
+      "review_count": 20,
+      "suburb": "Havelock North",
+      "phone": "",
+      "website": "",
+      "known_for": "Two decades of carpet and vinyl flooring installation for new builds and renovations, including carpet tiles, commercial vinyl, carpet repairs and restretching across Hawke's Bay and Manawatu.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/3orxzljw/kiwi-flooring-services-ltd",
+      "verified": true,
+      "verified_date": "2026-05-19"
+    },
+    {
+      "rank": 4,
+      "name": "Floor Court",
+      "rating": 4.5,
+      "review_count": 26,
+      "suburb": "Porirua",
+      "phone": "",
+      "website": "",
+      "known_for": "Residential and commercial flooring solutions including carpet, timber and vinyl installation using quality NZ-made materials, serving the Manawatu and Wellington regions.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/2jopxp24/floor-court",
+      "verified": true,
+      "verified_date": "2026-05-19"
+    },
+    {
+      "rank": 5,
+      "name": "Gorillafloors Ltd",
+      "rating": 4.0,
+      "review_count": 2,
+      "suburb": "Central Hawke's Bay",
+      "phone": "",
+      "website": "",
+      "known_for": "28 years of experience in vinyl and carpet flooring for residential and commercial properties, including full floor preparation and concrete services.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/4rlwyuzg/gorillafloors-ltd",
+      "verified": true,
+      "verified_date": "2026-05-19"
+    }
+  ]
+}
