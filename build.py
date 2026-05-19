@@ -123,6 +123,7 @@ def build():
     trades_data = json.loads((DATA_DIR / "trades.json").read_text())
     job_pages = build_job_pages(config, env, nav, base_path)
     template_pages = build_templates(config, env, nav, base_path)
+    rate_rows = build_tradie_rates(config, nav, base_path)
     build_sitemap(articles, calculators, cities, trades_data, config, job_pages)
     build_robots(config)
     build_ads_txt(config)
@@ -130,7 +131,8 @@ def build():
 
     print(f"Built: {len(articles)} articles, {len(calculators)} calculators, "
           f"{trades_count} trade pages, {locations_count} location pages, "
-          f"{job_pages} job cost pages, {template_pages} template pages")
+          f"{job_pages} job cost pages, {template_pages} template pages, "
+          f"{rate_rows} trade rate rows")
     return articles, calculators
 
 
@@ -483,6 +485,7 @@ def build_sitemap(articles, calculators, cities, trades, config, job_pages_count
     urls = []
 
     urls.append({"loc": f"{base_url}/", "priority": "1.0", "changefreq": "daily", "lastmod": today})
+    urls.append({"loc": f"{base_url}/tradie-rates/", "priority": "0.9", "changefreq": "weekly", "lastmod": today})
     urls.append({"loc": f"{base_url}/glossary/", "priority": "0.7", "changefreq": "monthly", "lastmod": today})
     urls.append({"loc": f"{base_url}/faq/", "priority": "0.8", "changefreq": "monthly", "lastmod": today})
     for section, pri in [("articles", "0.6"), ("calculators", "0.8"), ("trades", "0.9"), ("jobs", "0.9")]:
@@ -760,6 +763,233 @@ def build_contact(config, env, nav, base_path):
     }
     (PUBLIC_DIR / "contact").mkdir(exist_ok=True)
     (PUBLIC_DIR / "contact" / "index.html").write_text(template.render(**ctx), encoding="utf-8")
+
+
+def build_tradie_rates(config, nav, base_path):
+    base_url = config.get("base_url", "").rstrip("/")
+    year = datetime.now().year
+    trades = json.loads((DATA_DIR / "trades.json").read_text())
+    cities = json.loads((DATA_DIR / "cities.json").read_text())
+    top10_dir = DATA_DIR / "top10"
+
+    # Extract rate range from regional_cost_note, e.g. "$75–$130/hr" or "$75-$130/hr"
+    def parse_rate(note):
+        m = re.search(r'\$(\d+)\s*[–\-—]+\s*\$?(\d+)/hr', note or "")
+        if m:
+            return f"${m.group(1)}–${m.group(2)}"
+        return None
+
+    # Build matrix: trade -> {city_slug: rate_str}
+    TRADE_ICONS = {
+        "builders": "🏗️", "plumbers": "🔧", "electricians": "⚡",
+        "painters": "🖌️", "roofers": "🏠", "landscapers": "🌿",
+        "carpenters": "🪚", "gasfitters": "🔥", "plasterers": "🪣",
+        "concreters": "🏛️", "drainlayers": "🚰", "tilers": "🔲",
+    }
+    rows = []
+    for trade in trades:
+        rate_by_city = {}
+        for city in cities:
+            f = top10_dir / f"{trade['slug']}-{city['slug']}.json"
+            if f.exists():
+                data = json.loads(f.read_text())
+                rate = parse_rate(data.get("regional_cost_note", ""))
+                if rate:
+                    rate_by_city[city["slug"]] = rate
+        if not rate_by_city:
+            continue
+        # NZ average: average the mid-points
+        mids = []
+        for r in rate_by_city.values():
+            parts = r.replace("$", "").split("–")
+            if len(parts) == 2:
+                try:
+                    mids.append((int(parts[0]) + int(parts[1])) / 2)
+                except ValueError:
+                    pass
+        if mids:
+            avg_mid = sum(mids) / len(mids)
+            lo_vals = []
+            hi_vals = []
+            for r in rate_by_city.values():
+                parts = r.replace("$", "").split("–")
+                if len(parts) == 2:
+                    try:
+                        lo_vals.append(int(parts[0]))
+                        hi_vals.append(int(parts[1]))
+                    except ValueError:
+                        pass
+            avg_rate = f"${round(sum(lo_vals)/len(lo_vals))}–${round(sum(hi_vals)/len(hi_vals))}" if lo_vals else "—"
+        else:
+            avg_rate = "—"
+        icon = TRADE_ICONS.get(trade["slug"], "🔨")
+        rows.append({"trade": trade, "icon": icon, "rates": rate_by_city, "avg": avg_rate})
+
+    # Build header cells
+    city_headers = "".join(
+        f'<th><a href="{base_url}/locations/{c["slug"]}/">{c["name"]}</a></th>'
+        for c in cities
+    )
+    # Build table rows
+    def rate_cell(r):
+        if r:
+            return f'<td class="rate">{r}</td>'
+        return '<td class="na">—</td>'
+
+    tbody_rows = ""
+    for row in rows:
+        cells = "".join(rate_cell(row["rates"].get(c["slug"])) for c in cities)
+        tbody_rows += (
+            f'<tr><th><a href="{base_url}/trades/{row["trade"]["slug"]}/">'
+            f'{row["icon"]} {row["trade"]["name"]}</a></th>'
+            f'{cells}<td class="rate national"><strong>{row["avg"]}</strong></td></tr>'
+        )
+
+    # City hub links
+    city_links = "".join(
+        f'<a href="{base_url}/locations/{c["slug"]}/" style="background:#f0f4fa;padding:.35rem .85rem;'
+        f'border-radius:20px;font-size:.85rem;color:#0055a5;text-decoration:none">{c["name"]}</a>'
+        for c in cities
+    )
+
+    ga_id = config.get("ga_id", "")
+    adsense_pub = config.get("adsense_pub", "")
+    adsense_script = ""
+    if adsense_pub:
+        adsense_script = (
+            f"<meta name='google-adsense-account' content='{adsense_pub}'>\n"
+            f"<script async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+            f"?client={adsense_pub}' crossorigin='anonymous'></script>"
+        )
+    ga_script = ""
+    if ga_id:
+        ga_script = (
+            f"<script async src='https://www.googletagmanager.com/gtag/js?id={ga_id}'></script>"
+            f"<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}"
+            f"gtag('js',new Date());gtag('config','{ga_id}');</script>"
+        )
+
+    html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NZ Tradie Hourly Rates {year} — All Trades, All Cities</title>
+<meta name="description" content="Compare NZ tradie hourly rates by trade and city for {year}. Builders, plumbers, electricians, painters and more — Auckland, Wellington, Christchurch and all major NZ cities.">
+<link rel="canonical" href="{base_url}/tradie-rates/">
+<meta property="og:title" content="NZ Tradie Hourly Rates {year} — All Trades, All Cities">
+<meta property="og:description" content="Compare NZ tradie hourly rates by trade and city. Updated {year}.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{base_url}/tradie-rates/">
+<meta property="og:site_name" content="{config.get('title', 'NZ Tradie Tools')}">
+<script type="application/ld+json">{{"@context":"https://schema.org","@type":"WebPage","name":"NZ Tradie Hourly Rates {year}","description":"Compare NZ tradie hourly rates by trade and city","url":"{base_url}/tradie-rates/"}}</script>
+{adsense_script}
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/static/css/style.css">
+{ga_script}
+<style>
+.rate-table-wrap {{ overflow-x: auto; margin: 1.5rem 0; }}
+.rate-table {{ border-collapse: collapse; width: 100%; font-size: .82rem; min-width: 900px; }}
+.rate-table th, .rate-table td {{ padding: .45rem .6rem; border: 1px solid #ddd; text-align: center; white-space: nowrap; }}
+.rate-table thead th {{ background: #0055a5; color: #fff; font-weight: 600; }}
+.rate-table thead th:first-child {{ text-align: left; }}
+.rate-table tbody tr:nth-child(even) {{ background: #f8f9fa; }}
+.rate-table tbody th {{ text-align: left; font-weight: 600; background: #f0f4fa; }}
+.rate-table tbody th a {{ color: #0055a5; text-decoration: none; }}
+td.rate {{ color: #1a1a1a; }}
+td.na {{ color: #bbb; }}
+td.national {{ background: #e8f0fe; font-weight: 600; }}
+.rate-note {{ background: #fff8e1; border: 1px solid #ffe082; border-radius: 6px; padding: 1rem 1.2rem; font-size: .88rem; margin: 1.5rem 0; }}
+.cta-box {{ background: #0055a5; color: #fff; border-radius: 8px; padding: 1.5rem; margin: 2rem 0; text-align: center; }}
+.cta-box a {{ color: #fff; font-weight: 600; text-decoration: underline; }}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+    <nav class="main-nav">
+      <a href="/">Home</a><a href="/trades/">Find a Tradie</a><a href="/calculators/">Calculators</a><a href="/articles/">Articles</a><a href="/templates/">Templates</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding:3rem 0">
+  <div class="container">
+    <h1>NZ Tradie Hourly Rates {year}</h1>
+    <p>Compare what tradies charge across all major NZ cities — updated {year}. Rates shown are typical labour-only hourly rates (ex GST unless noted).</p>
+  </div>
+</section>
+
+<div class="container" style="max-width:1200px">
+  <div class="rate-note">
+    ℹ️ <strong>About these rates:</strong> Compiled from local job data across Auckland, Wellington, Christchurch and 17 other NZ cities. Rates are labour-only and exclude GST unless stated. Emergency callouts, after-hours work, and specialist jobs typically add 30–80%. Always get 3 quotes. <a href="/calculators/hourly-rate-calculator.html">Calculate your own rate →</a>
+  </div>
+
+  <div class="rate-table-wrap">
+    <table class="rate-table">
+      <thead>
+        <tr>
+          <th>Trade</th>
+          {city_headers}
+          <th>NZ Average</th>
+        </tr>
+      </thead>
+      <tbody>
+        {tbody_rows}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="cta-box">
+    <p style="margin:0 0 .5rem;font-size:1.1rem;font-weight:700">Not sure if your quote is fair?</p>
+    <p style="margin:0 0 1rem;opacity:.9">Use our free job cost calculator to check any quote against typical NZ rates.</p>
+    <a href="/calculators/job-cost-calculator.html" style="background:#fff;color:#0055a5;padding:.65rem 1.4rem;border-radius:5px;display:inline-block">Check my quote →</a>
+  </div>
+
+  <div class="article-body">
+    <h2>Why Rates Vary by City</h2>
+    <p>Auckland consistently has the highest tradie rates in New Zealand, driven by higher overheads, longer travel times, and strong demand. Wellington rates are typically 5–15% below Auckland. Christchurch and Hamilton sit in the mid-range, while smaller cities like Invercargill, Gisborne, and Whanganui tend to have the lowest rates — though smaller contractor pools can mean less competitive quotes for specialist work.</p>
+
+    <h2>What's Included in These Rates</h2>
+    <ul>
+      <li><strong>Labour only</strong> — materials, consent fees, and site costs are additional</li>
+      <li><strong>Standard hours</strong> — after-hours and emergency rates are typically 50–100% higher</li>
+      <li><strong>Experienced tradespeople</strong> — apprentice rates are typically 30–50% lower</li>
+      <li><strong>Ex GST</strong> unless stated — add 15% for GST-registered tradies</li>
+    </ul>
+
+    <h2>How to Use These Rates</h2>
+    <p>Use this table as a sanity check on quotes, not as a fixed price guide. A quote significantly below the typical range may indicate a less experienced operator or one cutting corners on compliance. A quote well above range warrants asking for a breakdown.</p>
+    <p>For job-specific pricing (e.g. bathroom renovation, deck, re-roofing), use our <a href="/jobs/">job cost estimator</a> which applies city-specific multipliers to typical job costs.</p>
+
+    <h2>Find Top-Rated Tradies by City</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.75rem">
+      {city_links}
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">{config.get('title', 'NZ Tradie Tools')}</p>
+      <p>Free calculators, templates and guides for New Zealand tradies.</p>
+    </div>
+    <div style="text-align:right">
+      <p><a href="/privacy/">Privacy Policy</a></p>
+      <p><a href="/contact/">Contact</a></p>
+      <p style="margin-top:.5rem">&copy; {year} {config.get('title', 'NZ Tradie Tools')}</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>"""
+
+    out_dir = PUBLIC_DIR / "tradie-rates"
+    out_dir.mkdir(exist_ok=True)
+    (out_dir / "index.html").write_text(html, encoding="utf-8")
+    return len(rows)
 
 
 if __name__ == "__main__":
