@@ -35,3 +35,7 @@ The "reset" we are seeing in the construction industry in 2026 is all about disc
 Being a tradie who is safe, compliant, and professional is what will keep you in business while others fail. Stay safe, stay smart, and don't ignore the risks.
 
 *NZ Tradie Tools provides free calculators, templates and guides for New Zealand tradies. Visit tradietools.nz.*
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

@@ -149,6 +149,7 @@ faqs:
     a: 'Withholding tax is an advance payment toward annual income tax. At year end, the sub files an income tax return and reconciles — if withholding tax paid exceeds their annual liability, they receive a refund; if underpaid, they pay the balance.'
   - q: 'Can a NZ subcontractor avoid withholding tax?'
     a: 'Yes. If the subcontractor is GST-registered, they can provide a certificate to the payer and elect not to have tax withheld. They are then responsible for paying provisional tax directly to IRD. Apply through your tax agent or myIR.'
+related_articles: [subcontractor-vs-employee-gateway-test-nz-2026, nz-tradie-tax-guide-what-you-can-claim]
 ---
 
 ## Tax for NZ Subcontractors

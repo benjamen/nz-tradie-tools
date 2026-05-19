@@ -41,3 +41,7 @@ The deadline for this omnibus Bill to be introduced to parliament is the end of 
 The move to proportional liability is intended to bring greater discipline and accountability to the construction sector. By focusing on your own documentation and business practices, you’ll be ready for whatever the new regime brings.
 
 *NZ Tradie Tools provides free calculators, templates and guides for New Zealand tradies. Visit tradietools.nz.*
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

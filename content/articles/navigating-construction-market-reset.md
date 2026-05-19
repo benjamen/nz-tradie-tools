@@ -38,3 +38,7 @@ The market will eventually return to growth—forecasts show an upward trend unt
 Focus on being the tradie who is reliable, well-documented, and financially disciplined. In a market where others are failing, these traits will make you the partner of choice for clients, suppliers, and main contractors.
 
 *NZ Tradie Tools provides free calculators, templates and guides for New Zealand tradies. Visit tradietools.nz.*
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

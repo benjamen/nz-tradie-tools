@@ -149,3 +149,7 @@ To accept: Reply to this email with "Accepted" or call [phone].
 ---
 
 *About NZ Tradie Tools: Free calculators and practical business guides for New Zealand tradies.*
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

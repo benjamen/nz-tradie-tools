@@ -40,3 +40,7 @@ Increased project volume is great, but don't let your administrative processes l
 This regulatory shift is a positive step towards addressing New Zealand’s housing needs. By staying informed and efficient, you can help your clients build smarter and grow your own business in the process.
 
 *NZ Tradie Tools provides free calculators, templates and guides for New Zealand tradies. Visit tradietools.nz.*
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

@@ -74,6 +74,7 @@ faqs:
     a: 'A basic timber retaining wall in NZ costs $300–$500/lm (up to 1 m high). Concrete block walls run $500–$900/lm. For walls over 1.5 m requiring engineering, expect $1,000–$2,000+/lm depending on height, fill, and access.'
   - q: 'How deep do retaining wall posts need to be in NZ?'
     a: 'As a rule of thumb, treated timber posts should be embedded to at least 1/3 of the exposed height (minimum 600 mm in solid ground). Engineer design typically specifies depth and post size based on soil pressure calculations.'
+related_articles: [how-to-price-a-job-nz-tradie-guide]
 ---
 
 ## Retaining Wall Costs in NZ

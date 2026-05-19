@@ -38,3 +38,7 @@ As we head into mid-2026, keep your financial house in order. Don't forget to us
 Winter is an excellent time to reach out to existing clients to offer "winter prep" packages. It keeps your schedule full during the slower season and helps homeowners protect their biggest assets.
 
 *NZ Tradie Tools provides free calculators, templates and guides for New Zealand tradies. Visit tradietools.nz.*
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

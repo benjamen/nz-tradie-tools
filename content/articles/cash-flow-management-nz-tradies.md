@@ -114,3 +114,7 @@ Use our free [Job Cost Calculator](/calculators/job-cost-calculator.html) to tra
 ---
 
 *NZ Tradie Tools provides free calculators, templates, and guides for New Zealand tradies. For complex cash flow situations or business financial planning, consult a business accountant.*
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

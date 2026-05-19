@@ -108,3 +108,7 @@ This only makes sense once you're doing enough volume to justify the combined co
 If you're doing serious residential construction estimating in NZ, Buildxact pays for itself quickly. The time saved on takeoffs alone is worth the premium if you're quoting a new build every month or two.
 
 For everything else — maintenance, repairs, fit-outs, and small renovation work — Tradify is faster, cheaper, and simpler.
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

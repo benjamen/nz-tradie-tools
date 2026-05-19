@@ -103,6 +103,7 @@ faqs:
     a: 'NZS 3109 specifies minimum 17.5 MPa for concrete in contact with the ground, but 25 MPa is the standard residential specification in NZ. Driveways and heavier loads may require 30 MPa.'
   - q: 'Do I need reinforcing steel in a concrete slab in NZ?'
     a: 'Most NZ residential slabs require steel reinforcing mesh (usually H8 mesh at 200 mm centres) or steel fibre to control cracking and meet NZS 3604 or engineer-specific requirements.'
+related_articles: [how-to-price-a-job-nz-tradie-guide]
 ---
 
 ## Concrete Calculator for NZ Builders & Tradies

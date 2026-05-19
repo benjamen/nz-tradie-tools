@@ -70,3 +70,7 @@ For any job over about $500, it's worth getting at least two quotes. When you ca
 For help working out the true cost of a plumbing job including materials, labour, and margin, the [job cost calculator](/calculators/job-cost-calculator.html) is a useful tool whether you're a homeowner budgeting a renovation or a tradie checking your own numbers.
 
 Getting multiple quotes isn't about finding the cheapest plumber — it's about understanding what a fair price looks like for your specific job, and making sure the person you hire is properly licensed to do it.
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

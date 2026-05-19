@@ -38,3 +38,7 @@ Regulatory changes like this can be a headache, but they’re also a chance to s
 Staying ahead of building standards is just another part of being an expert tradie. Make sure your business processes are as high-quality as the plumbing you install.
 
 *NZ Tradie Tools provides free calculators, templates and guides for New Zealand tradies. Visit tradietools.nz.*
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

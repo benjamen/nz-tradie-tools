@@ -120,3 +120,7 @@ The MBIE public register lets anyone check whether a builder is licensed: [lbp.g
 ---
 
 *About NZ Tradie Tools: Practical guides for New Zealand tradies. See also our [NZ Tradie Tax Guide](/articles/nz-tradie-tax-guide-what-you-can-claim.html).*
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

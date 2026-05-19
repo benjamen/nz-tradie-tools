@@ -109,3 +109,7 @@ If you hold an LBP licence, ensuring your cover is adequate now — before requi
 Download our free NZ tradie templates at tradietools.nz/templates/ — including employment agreements, H&S site induction forms, and subcontractor agreements.
 
 *NZ Tradie Tools provides free calculators, templates and guides for New Zealand tradies. Visit tradietools.nz.*
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

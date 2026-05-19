@@ -121,3 +121,7 @@ Read our full guide on [How to Choose the Right Insurance for NZ Tradies](/artic
 ---
 
 *NZ Tradie Tools provides free calculators, templates, and guides for New Zealand tradies. Insurance products vary significantly — always read the Product Disclosure Statement and consider advice from a licensed insurance broker.*
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

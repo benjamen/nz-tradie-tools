@@ -106,3 +106,7 @@ The bottom line: more approved products means more competition, more choice, and
 Download our free NZ tradie templates at tradietools.nz/templates/ — including material cost trackers, supplier comparison sheets, and job file checklists.
 
 *NZ Tradie Tools provides free calculators, templates and guides for New Zealand tradies. Visit tradietools.nz.*
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

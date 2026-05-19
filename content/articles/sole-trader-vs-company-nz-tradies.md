@@ -107,3 +107,7 @@ Use our free [Hourly Rate Calculator](/calculators/hourly-rate-calculator.html) 
 ---
 
 *NZ Tradie Tools provides free calculators, templates, and guides for New Zealand tradies. This article is general information only — always get advice from a chartered accountant before changing your business structure.*
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

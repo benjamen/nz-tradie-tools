@@ -105,6 +105,7 @@ faqs:
     a: 'A rough rule is 1 bag of cement (20 kg) per 70–80 bricks. A standard mix is 1 part cement to 5–6 parts sand by volume. Always allow 10% extra for waste.'
   - q: 'Can I use brick calculators for a retaining wall?'
     a: 'Yes, but retaining walls need engineering sign-off for heights above 1.5 m in NZ (or lower if surcharge loads apply). The block count calculation is the same; the footing and reinforcing design is additional.'
+related_articles: [how-to-price-a-job-nz-tradie-guide]
 ---
 
 ## NZ Brick & Block Sizes

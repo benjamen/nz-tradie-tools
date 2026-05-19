@@ -107,3 +107,7 @@ Digital records are fine. IRD accepts photos of receipts, digital logbooks, and 
 *Use our [Vehicle Mileage Calculator](/calculators/vehicle-mileage-calculator.html) to estimate your deduction.*
 
 *About NZ Tradie Tools: Practical resources for New Zealand self-employed tradies.*
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

@@ -52,6 +52,7 @@ faqs:
     a: 'Decks less than 1.5 m above ground and under 20 m² are typically exempt from building consent. Decks attached to a dwelling, above 1.5 m, or over 20 m² generally require consent from your local council.'
   - q: 'What timber treatment is needed for NZ outdoor decking?'
     a: 'NZS 3602 requires H3.2 preservative-treated timber for decking in NZ (above ground, exposed). For areas in contact with ground or water, H4 or H5 treatment is required.'
+related_articles: [how-to-price-a-job-nz-tradie-guide, how-to-write-a-quote-that-wins-jobs-nz]
 ---
 
 ## Decking Calculator for NZ Builders

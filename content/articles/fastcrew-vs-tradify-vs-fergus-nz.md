@@ -104,3 +104,7 @@ For most NZ tradies — particularly the electricians, plumbers, builders, and l
 Fastcrew is being built to fill the gap: capable enough to run a proper trade business, simple enough to use from the van, priced so growth doesn't hurt.
 
 [Join the Fastcrew waitlist at fastcrew.nz →](https://fastcrew.nz)
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

@@ -95,3 +95,7 @@ Use our free [Job Cost Calculator](/calculators/job-cost-calculator.html) to che
 ---
 
 *NZ Tradie Tools provides free calculators, templates, and guides for New Zealand tradies. Always consult a registered tax agent or accountant for advice specific to your situation.*
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

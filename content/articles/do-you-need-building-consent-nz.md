@@ -133,3 +133,7 @@ See our full guide on [Getting Your LBP Licence in NZ](/articles/how-to-get-lbp-
 ---
 
 *NZ Tradie Tools provides free calculators, templates, and guides for New Zealand tradies. Building consent requirements vary by council and project — always confirm with your local BCA before proceeding.*
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

@@ -127,3 +127,7 @@ Choose Hnry if:
 - [ ] You hate tax admin and want it fully automated
 - [ ] You earn under ~$80k/yr (where the 1% fee is cost-effective)
 - [ ] You don't have employees or subcontractors
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

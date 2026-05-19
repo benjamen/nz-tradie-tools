@@ -146,6 +146,7 @@ faqs:
     a: 'Most councils require resource consent for earthworks exceeding certain thresholds — typically 200–500 m³ or more than 1 m depth, or if near waterways or steep slopes. Check your district plan.'
   - q: 'How do I convert earthworks between cubic metres and tonnes?'
     a: 'Average NZ soil weighs 1.4–1.8 tonnes/m³ (bulk). A common conversion is 1.6 t/m³. So 100 m³ of general fill = about 160 tonnes. Sandy soil is lighter; heavy clay is heavier.'
+related_articles: [how-to-price-a-job-nz-tradie-guide]
 ---
 
 ## Earthworks in NZ — What to Know

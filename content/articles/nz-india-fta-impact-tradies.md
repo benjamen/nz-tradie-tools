@@ -34,3 +34,7 @@ Regardless of long-term trade shifts, the day-to-day reality of running a constr
 The NZ-India FTA is a milestone for our country’s economic future. While its direct impacts may take time to filter down to the local hardware merchant, it’s a promising indicator of a growing, connected economy.
 
 *NZ Tradie Tools provides free calculators, templates and guides for New Zealand tradies. Visit tradietools.nz.*
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

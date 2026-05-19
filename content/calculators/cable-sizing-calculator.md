@@ -139,6 +139,7 @@ faqs:
     a: 'AS/NZS 3000:2018 allows a maximum of 5% voltage drop from the supply point to any point of use for lighting and power circuits in NZ installations.'
   - q: 'Do I need a licensed electrician to size cables in NZ?'
     a: 'All electrical work in NZ must be carried out and certified by a licensed electrical worker (LEW). Cable sizing is part of that design work and must comply with AS/NZS 3008 and the NZ Electrical Code of Practice.'
+related_articles: [electrician-pricing-guide-nz-2026]
 ---
 
 ## NZ Electrical Standards

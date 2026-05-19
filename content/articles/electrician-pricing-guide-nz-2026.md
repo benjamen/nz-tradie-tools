@@ -77,3 +77,7 @@ For anything beyond a simple one-off job, it's worth getting two or three quotes
 For electricians pricing their own work and working out sustainable rates, the [hourly rate calculator](/calculators/hourly-rate-calculator.html) helps you work backwards from your actual costs to a rate that keeps your business healthy.
 
 Electrical work is one area where the cheapest quote can genuinely be the most expensive outcome. A botched wiring job is a fire risk. Know what you're paying for, and make sure the sparky you hire is registered.
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

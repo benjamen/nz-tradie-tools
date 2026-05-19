@@ -125,3 +125,7 @@ Protect yourself before disputes arise with our free [Terms of Trade template](/
 ---
 
 *NZ Tradie Tools provides free calculators, templates, and guides for New Zealand tradies. This article is general information only — for specific legal advice, consult a construction lawyer or Citizens Advice Bureau.*
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

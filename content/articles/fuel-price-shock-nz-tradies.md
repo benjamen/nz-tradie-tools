@@ -44,3 +44,7 @@ While the construction industry is showing signs of recovery with increased buil
 Don't absorb the fuel shock—manage it.
 
 *NZ Tradie Tools provides free calculators, templates and guides for New Zealand tradies. Visit tradietools.nz.*
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

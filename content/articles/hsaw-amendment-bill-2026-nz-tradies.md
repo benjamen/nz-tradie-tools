@@ -81,3 +81,7 @@ Download our free NZ tradie templates at tradietools.nz/templates/ — including
 Want to manage your tradie business more efficiently? Check out [Fastcrew](https://fastcrew.nz) — a NZ-built app for scheduling crews, tracking jobs, and managing health and safety records in one place.
 
 *NZ Tradie Tools provides free calculators, templates and guides for New Zealand tradies. Visit tradietools.nz.*
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

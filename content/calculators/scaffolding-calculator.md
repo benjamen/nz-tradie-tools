@@ -75,6 +75,7 @@ faqs:
     a: 'Scaffolding hire in NZ typically costs $100–$200 per m² of access coverage per month for erected and dismantled scaffold. A standard residential job (40–60 m² of coverage) might cost $4,000–$10,000 for a 4–6 week hire period.'
   - q: 'What scaffolding standard applies in NZ?'
     a: 'NZ scaffold erection and use must comply with AS/NZS 4576:1995 (Guidelines for scaffolding) and the Health and Safety at Work Act 2015. Scaffolding over 5 m high is a ''notifiable work'' category under HSWA.'
+related_articles: [nz-winter-roofing-safety-height-work-2026, how-to-price-a-job-nz-tradie-guide]
 ---
 
 ## Scaffolding Costs in NZ

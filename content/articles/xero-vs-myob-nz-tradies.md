@@ -109,3 +109,7 @@ Both offer 30-day free trials, so try the one your accountant recommends first.
 *Also see: [Best Job Management Software for NZ Tradies](/articles/best-job-management-software-nz-tradies-2026.html)*
 
 *About NZ Tradie Tools: Practical guides and free calculators for New Zealand tradies.*
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

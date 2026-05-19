@@ -38,3 +38,7 @@ When material costs are up, examine where else you can trim the fat. Use our [GS
 The recovery is happening—dwelling consents are up—but the landscape is more complex than it was in previous years. By tightening your internal business processes, using efficient software like [Fastcrew](https://fastcrew.nz), and maintaining clear communication with your clients, you can ensure your business doesn't just survive this cycle but stays profitable through it.
 
 *NZ Tradie Tools provides free calculators, templates and guides for New Zealand tradies. Visit tradietools.nz.*
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

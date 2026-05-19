@@ -66,3 +66,7 @@ Fastcrew is currently in development. We're building it on the [Frappe Framework
 We're talking to tradies across Auckland, Wellington, and Christchurch to make sure we build the right things in the right order. If you want early access, join the waitlist at [fastcrew.nz](https://fastcrew.nz) — we'll be onboarding the first beta users soon.
 
 The tools you use every day shouldn't cost the earth. We're building something that proves it doesn't have to.
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

@@ -5,13 +5,6 @@
   "base_path": "",
   "author": "NZ Tradie Tools",
   "ga_id": "G-BJW7HLW8D8",
-  "adsense_id": "ca-pub-8059857496012230",
-  "adsense_slot_article_top": "",
-  "adsense_slot_article_bottom": "",
-  "adsense_slot_calc_top": "",
-  "adsense_slot_home_top": "",
-  "adsense_slot_templates_top": "",
-  "gsc_verification": "",
   "beehiiv_form_id": "d92f7937-70bc-4ea1-9aa5-ee36d6c80fb0",
   "formspree_endpoint": "https://formspree.io/f/xgorlloq",
   "contact_email": "instituteofbba@gmail.com",
@@ -24,14 +17,41 @@
     "buildxact": "https://www.buildxact.com/nz/"
   },
   "nav": [
-    {"label": "Home", "url": "/"},
-    {"label": "Find a Tradie", "url": "/trades/"},
-    {"label": "Job Costs", "url": "/jobs/"},
-    {"label": "Calculators", "url": "/calculators/"},
-    {"label": "Articles", "url": "/articles/"},
-    {"label": "Templates", "url": "/templates/"},
-    {"label": "FAQ", "url": "/faq/"},
-    {"label": "Glossary", "url": "/glossary/"},
-    {"label": "Contact", "url": "/contact/"}
+    {
+      "label": "Home",
+      "url": "/"
+    },
+    {
+      "label": "Find a Tradie",
+      "url": "/trades/"
+    },
+    {
+      "label": "Job Costs",
+      "url": "/jobs/"
+    },
+    {
+      "label": "Calculators",
+      "url": "/calculators/"
+    },
+    {
+      "label": "Articles",
+      "url": "/articles/"
+    },
+    {
+      "label": "Templates",
+      "url": "/templates/"
+    },
+    {
+      "label": "FAQ",
+      "url": "/faq/"
+    },
+    {
+      "label": "Glossary",
+      "url": "/glossary/"
+    },
+    {
+      "label": "Contact",
+      "url": "/contact/"
+    }
   ]
 }

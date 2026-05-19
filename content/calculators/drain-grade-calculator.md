@@ -120,6 +120,7 @@ faqs:
     a: 'A 150 mm stormwater pipe typically uses a minimum grade of 1:100 (1%) or 10 mm per metre. Check with your local council — some require steeper grades in areas with high sediment load.'
   - q: 'Can a drain be too steep in NZ?'
     a: 'Yes. Overly steep drains can allow water to run faster than solids, leaving blockages. As a general rule, grades steeper than 1:10 for wastewater require specialist design consideration.'
+related_articles: [plumber-pricing-guide-nz-2026]
 ---
 
 ## NZ Drainage Pipe Grade Requirements

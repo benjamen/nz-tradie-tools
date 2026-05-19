@@ -107,3 +107,7 @@ Do all of these and late payments become a rare exception rather than a monthly 
 ---
 
 *Use our free [tradie templates](/templates/) to put these systems in place — Variation Orders, Job Completion Certificates, Progress Claims, and more. All free, no sign-up required.*
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

@@ -588,11 +588,7 @@ def build_robots(config):
 
 
 def build_ads_txt(config):
-    adsense_id = config.get("adsense_id", "").strip()
-    if adsense_id:
-        publisher_id = adsense_id.replace("ca-pub-", "")
-        content = f"google.com, pub-{publisher_id}, DIRECT, f08c47fec0942fa0\n"
-        (PUBLIC_DIR / "ads.txt").write_text(content, encoding="utf-8")
+    pass
 
 
 def build_index(articles, calculators, config, env, nav, base_path):
@@ -853,14 +849,6 @@ def build_tradie_rates(config, nav, base_path):
     )
 
     ga_id = config.get("ga_id", "")
-    adsense_pub = config.get("adsense_pub", "")
-    adsense_script = ""
-    if adsense_pub:
-        adsense_script = (
-            f"<meta name='google-adsense-account' content='{adsense_pub}'>\n"
-            f"<script async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-            f"?client={adsense_pub}' crossorigin='anonymous'></script>"
-        )
     ga_script = ""
     if ga_id:
         ga_script = (
@@ -883,7 +871,6 @@ def build_tradie_rates(config, nav, base_path):
 <meta property="og:url" content="{base_url}/tradie-rates/">
 <meta property="og:site_name" content="{config.get('title', 'NZ Tradie Tools')}">
 <script type="application/ld+json">{{"@context":"https://schema.org","@type":"WebPage","name":"NZ Tradie Hourly Rates {year}","description":"Compare NZ tradie hourly rates by trade and city","url":"{base_url}/tradie-rates/"}}</script>
-{adsense_script}
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/static/css/style.css">
 {ga_script}

@@ -102,6 +102,7 @@ faqs:
     a: 'Steel roofing (Colorsteel, Zincalume) lasts 40–70 years in NZ. Concrete tiles last 50+ years. Corrugated iron without coating lasts 30–40 years in mild coastal climates; less in harsh salt air environments.'
   - q: 'Do I need a building consent to reroof in NZ?'
     a: 'A like-for-like reroof (same material, same pitch) is generally exempt from consent. Changing roofing material, pitch, or adding skylights/dormers requires a building consent from your local council.'
+related_articles: [roofer-pricing-guide-nz-2026, nz-winter-roofing-safety-height-work-2026]
 ---
 
 ## Roof Area Calculator for NZ Roofers & Builders

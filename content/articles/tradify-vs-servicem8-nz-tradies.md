@@ -95,3 +95,7 @@ Both offer free trials — test them with a real job before committing.
 - **Fergus** — stronger H&S, variation management, and compliance tools than both. Better for larger project-based teams. [See Fergus vs Tradify vs simPRO →](/articles/fergus-vs-tradify-vs-simpro-nz.html)
 - **FastCrew** — NZ-built, H&S-first. Includes SWMS generation, Xero + Stripe. From $39/mo.
 - **Simpro** — enterprise-grade for larger businesses (10+ staff). Much more complex and expensive.
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

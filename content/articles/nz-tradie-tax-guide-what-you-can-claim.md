@@ -134,3 +134,7 @@ Keep all receipts and invoices for **7 years**. IRD allows digital copies — ph
 *Use the [NZ GST Calculator](/calculators/gst-calculator.html) to quickly check your GST position.*
 
 *About NZ Tradie Tools: We help New Zealand tradies run smarter businesses with free calculators, practical guides, and honest software reviews.*
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

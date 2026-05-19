@@ -115,3 +115,7 @@ Investing in the right insurance isn’t just a compliance box‑tick—it’s a
 ---  
 
 *Keywords: NZ tradie insurance, public liability insurance NZ, professional indemnity for tradies, tools insurance, tradie risk management, 2026 insurance guide*
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

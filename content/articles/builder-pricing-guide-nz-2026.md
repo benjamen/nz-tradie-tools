@@ -81,3 +81,7 @@ Don't just look at the total. Line up quotes side by side and check:
 For ongoing help with structuring your own costs and comparing what builders charge, the [job cost calculator](/calculators/job-cost-calculator.html) is a good starting point. If you're a builder putting together your own quotes, the [quote template](/templates/quote-template.html) covers all the key sections. And for a broader guide to how pricing works across trades, [how to price a job as an NZ tradie](/articles/how-to-price-a-job-nz-tradie-guide.html) breaks it down in plain language.
 
 Getting the right builder at the right price takes a bit of homework — but understanding what you're paying for makes the whole process a lot less stressful.
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

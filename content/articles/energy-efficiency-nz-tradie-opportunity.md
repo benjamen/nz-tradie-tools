@@ -40,3 +40,7 @@ The construction industry is in a "reset." The days of easy volume are being rep
 Start looking at the energy-saving opportunities in your current client base today. It could be the difference between a slow season and a busy one.
 
 *NZ Tradie Tools provides free calculators, templates and guides for New Zealand tradies. Visit tradietools.nz.*
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

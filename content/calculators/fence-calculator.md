@@ -57,6 +57,7 @@ faqs:
     a: 'Fences up to 2 m high are generally permitted without resource consent. Fences on boundary or over 2 m often require neighbour agreement and council consent. Retaining fences over 1 m usually need a building consent.'
   - q: 'What timber treatment is needed for NZ fence posts?'
     a: 'Posts in-ground require H5 treatment (CCA-treated). Rails and battens above ground require H3.2. Using the correct hazard class is mandatory under NZS 3602.'
+related_articles: [how-to-price-a-job-nz-tradie-guide]
 ---
 
 ## Fence Calculator for NZ Builders & Fencers

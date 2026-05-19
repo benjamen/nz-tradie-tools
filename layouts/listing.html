@@ -18,12 +18,8 @@
     <link rel="canonical" href="{{ base_url }}/{{ section }}/">
     <link rel="alternate" type="application/rss+xml" title="NZ Tradie Tools — Articles" href="{{ base_url }}/rss.xml">
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","name":{{ page_title | tojson }},"description":{{ description | tojson }},"url":{{ (base_url ~ "/" ~ section ~ "/") | tojson }},"publisher":{"@type":"Organization","name":"NZ Tradie Tools","url":{{ base_url | tojson }}}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":{{ base_url | tojson }}},{"@type":"ListItem","position":2,"name":{{ section_label | tojson }},"item":{{ (base_url ~ "/" ~ section ~ "/") | tojson }}}]}]}</script>
-    {% if adsense_id %}<meta name="google-adsense-account" content="{{ adsense_id }}">{% endif %}
     <link rel="icon" href="{{ base_path }}/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="{{ base_path }}/static/css/style.css">
-    {% if adsense_id %}
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ adsense_id }}" crossorigin="anonymous"></script>
-    {% endif %}
     {% if ga_id %}
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ ga_id }}"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{ ga_id }}');</script>

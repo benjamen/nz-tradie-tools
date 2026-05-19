@@ -138,6 +138,7 @@ faqs:
     a: 'A standard bathroom renovation typically takes 1–3 weeks once materials are on site. Delays from council consent, tile lead times, or specialist trades (e.g. waterproofing inspections) can extend this.'
   - q: 'What is the biggest cost in a bathroom renovation?'
     a: 'Labour is typically the biggest single cost, often 40–50% of total budget. Tiling, plumbing, and waterproofing are the most labour-intensive parts. Premium fixtures and fittings can also push costs up quickly.'
+related_articles: [how-to-price-a-job-nz-tradie-guide, how-to-write-a-quote-that-wins-jobs-nz]
 ---
 
 ## Bathroom Renovation Costs in NZ

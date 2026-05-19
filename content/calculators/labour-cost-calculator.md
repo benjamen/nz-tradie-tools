@@ -131,6 +131,7 @@ faqs:
     a: 'NZ building labour charge-out rates in 2025 range from $85–$130/hr for a licensed builder, $95–$140/hr for a licensed electrician or plumber, and $70–$100/hr for experienced carpenters or labourers.'
   - q: 'Can I claim labour costs as a business expense in NZ?'
     a: 'Yes. All wages, including your own PAYE wages if you are an employee of your own company, are fully deductible. Subcontractor payments are also deductible provided you hold a valid tax invoice.'
+related_articles: [how-to-price-a-job-nz-tradie-guide, markup-vs-margin-nz-tradies-2026]
 ---
 
 ## Setting Your Labour Rate in NZ

@@ -135,3 +135,7 @@ One of the biggest barriers to proper H&S compliance for small trade businesses 
 H&S compliance doesn't have to be complicated. A site safety checklist, regular toolbox meetings, a proper incident register, and SWMS for high-risk tasks — done consistently, these simple practices protect your workers, protect your business, and keep WorkSafe satisfied.
 
 Use our free [H&S templates](/templates/) to make it easier.
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

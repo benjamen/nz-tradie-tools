@@ -76,6 +76,7 @@ faqs:
     a: 'The IRD depreciation rate for a light commercial vehicle (ute) is 30% DV or 21% SL. So a $40,000 ute depreciates by $12,000 DV in year 1, $8,400 in year 2, and so on.'
   - q: 'Do I claim depreciation on tools I also use personally?'
     a: 'You can only claim the business-use portion. If a tool is used 80% for work and 20% personally, you claim 80% of the depreciation. Keep a usage log if the split is likely to be questioned.'
+related_articles: [nz-tradie-investment-boost-deduction-2026, nz-tradie-tax-guide-what-you-can-claim]
 ---
 
 ## How Depreciation Works for NZ Tradies

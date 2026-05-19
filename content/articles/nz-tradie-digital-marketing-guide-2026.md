@@ -104,3 +104,7 @@ Start with your Google Business Profile, get a basic mobile-friendly website in 
 Download our free NZ tradie templates at tradietools.nz/templates/ — including quote templates, job sheets, and a basic marketing tracker to record where your enquiries are coming from.
 
 *NZ Tradie Tools provides free calculators, templates and guides for New Zealand tradies. Visit tradietools.nz.*
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

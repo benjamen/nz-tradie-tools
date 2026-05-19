@@ -181,3 +181,7 @@ Depending on your trade, you may need:
 **Templates:** [Quote](/templates/quote-template.html) · [Tax Invoice](/templates/tax-invoice-template.html) · [Variation Order](/templates/variation-order.html) · [Terms of Trade](/templates/terms-of-trade.html) · [SWMS](/templates/swms.html)
 
 **Essential Reading:** [Sole Trader vs Company](/articles/sole-trader-vs-company-nz-tradies.html) · [GST Registration Guide](/articles/should-i-register-for-gst-nz-tradie.html) · [Provisional Tax Guide](/articles/provisional-tax-nz-tradies.html) · [Tax Deductions Guide](/articles/nz-tradie-tax-guide-what-you-can-claim.html)
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

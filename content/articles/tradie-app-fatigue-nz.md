@@ -81,3 +81,7 @@ Even if you're not ready to switch platforms, there are things you can do today 
 **4. Calculate your real software cost.** Include your time at a realistic hourly rate. A system that costs $100/month but saves 4 hours of admin time per week at $80/hour is worth $1,380/month of your time. Do the maths.
 
 The NZ tradie software market is broken. But you don't have to wait for the incumbents to fix it.
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

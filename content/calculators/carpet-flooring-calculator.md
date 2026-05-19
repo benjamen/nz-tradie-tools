@@ -155,6 +155,7 @@ faqs:
     a: 'An 8–10 mm polyurethane or rubber crumb underlay (rated 150 kg/m³ or above) is standard for residential carpet in NZ. Thicker underlay (12 mm) adds comfort but is not always needed.'
   - q: 'How do I calculate staircase carpet in NZ?'
     a: 'Measure each step: tread depth + riser height × width, then multiply by number of steps. Add 15% wastage for cutting around spindles. A standard NZ staircase of 14 steps uses roughly 5–7 m² of carpet.'
+related_articles: [how-to-price-a-job-nz-tradie-guide]
 ---
 
 ## Flooring Costs in NZ (2025)

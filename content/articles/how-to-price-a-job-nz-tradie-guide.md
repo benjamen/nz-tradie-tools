@@ -133,3 +133,7 @@ If your gross margin is below 20%, you're not covering overhead and profit. Belo
 ---
 
 *About NZ Tradie Tools: Free calculators and guides for New Zealand tradies. No fluff, just practical help.*
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

@@ -129,3 +129,7 @@ Prices vary significantly by region — Auckland and Wellington are typically at
 ---
 
 *About NZ Tradie Tools: We build free calculators, guides, and resources for New Zealand tradies and the people who hire them. No signup, no cost — just useful tools. Visit [tradietools.nz](https://tradietools.nz).*
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

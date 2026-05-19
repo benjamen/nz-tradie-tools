@@ -79,3 +79,7 @@ For repair work, a single quote is usually fine — get a second if the repair c
 The [job cost calculator](/calculators/job-cost-calculator.html) is useful for building or checking your own roofing cost breakdown. And if you want to understand the LBP licensing framework that governs roofing and other restricted building work, the [LBP licence guide](/articles/how-to-get-lbp-licence-new-zealand.html) explains the categories, application process, and what the licence means in practice.
 
 Your roof is doing a job every single day. Getting the pricing right — and choosing someone qualified to do the work — is one of the most important decisions you'll make in maintaining your property.
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

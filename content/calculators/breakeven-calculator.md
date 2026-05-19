@@ -129,6 +129,7 @@ faqs:
     a: 'Most NZ tradie businesses target 35–55% gross margin (revenue minus direct job costs, before overheads). Electricians and plumbers typically achieve 40–50%; painters and decorators often see 30–40%.'
   - q: 'Why is knowing my breakeven important?'
     a: 'Knowing your breakeven tells you the minimum revenue you must generate to cover all costs. It helps you price jobs correctly, set sales targets, and know when you can safely hire another person.'
+related_articles: [overhead-rate-nz-tradie-guide-2026, how-to-set-hourly-rate-nz-tradie-2026]
 ---
 
 ## Why Tradies Need to Know Their Numbers

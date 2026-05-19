@@ -46,3 +46,7 @@ New Zealand is moving towards a more sustainable built environment. The transiti
 Start asking your clients about their energy efficiency goals today. You might be surprised at how much they’re willing to invest when they understand the long-term benefits.
 
 *NZ Tradie Tools provides free calculators, templates and guides for New Zealand tradies. Visit tradietools.nz.*
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

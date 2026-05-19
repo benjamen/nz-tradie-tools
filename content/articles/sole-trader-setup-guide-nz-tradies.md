@@ -132,3 +132,7 @@ Research your local market — ask around, look at what competitors charge, chec
 *Use our free [NZ GST Calculator](/calculators/gst-calculator.html) and [Hourly Rate Calculator](/calculators/hourly-rate-calculator.html) to get started.*
 
 *About NZ Tradie Tools: Practical setup guides and free tools for New Zealand tradies.*
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

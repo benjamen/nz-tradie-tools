@@ -112,3 +112,7 @@ The best trade businesses in NZ aren't the ones who are cheapest. They're the on
 These things are easier to maintain at scale if you have the systems in place. And they're the reason good trade businesses grow through referrals — which is the cheapest marketing there is.
 
 Grow steadily. Get paid on time. Build systems before you need them. That's the formula.
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.

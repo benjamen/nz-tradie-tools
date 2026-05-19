@@ -127,6 +127,7 @@ faqs:
     a: 'In most NZ climates, a polythene vapour barrier on the ground (0.25 mm minimum) is recommended under the building to reduce ground moisture entering the subfloor space, particularly in zones with high rainfall.'
   - q: 'Can I DIY insulation in NZ?'
     a: 'Glasswool and polyester ceiling batts can be installed by homeowners in NZ without a licensed contractor. Underfloor insulation installation (particularly polyester wrap systems) is also DIY-friendly. Spray foam insulation must be installed by a licensed applicator.'
+related_articles: [nz-h1-insulation-code-2026-builders-guide, energy-efficiency-nz-tradie-opportunity]
 ---
 
 ## NZ Insulation Requirements (H1 2023)

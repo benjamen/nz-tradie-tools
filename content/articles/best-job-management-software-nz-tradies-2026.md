@@ -163,3 +163,7 @@ Most offer a free trial — sign up for two or three and see which one feels rig
 ---
 
 *About NZ Tradie Tools: We help New Zealand tradies run smarter businesses with free calculators, honest software reviews, and practical guides. Some links in this article are affiliate links — we may earn a commission at no extra cost to you.*
+
+---
+
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
