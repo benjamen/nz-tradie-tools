@@ -1,0 +1,319 @@
+---
+title: "Is My Quote Fair? NZ Tradie Quote Checker"
+description: "Check if your tradie quote is fair for your city and job type. Enter your quote and we'll compare it against typical NZ rates for 29 job types across all major cities."
+tags: [quote checker, tradie quote, fair price, NZ, homeowner, consumer]
+author: "NZ Tradie Tools"
+date: 2026-05-19
+related_articles: [how-to-price-a-job-nz-tradie-guide, how-to-write-a-quote-that-wins-jobs-nz]
+layout: calculator
+calculator_html: |
+  <style>
+  .qc-form{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.25rem}
+  @media(max-width:600px){.qc-form{grid-template-columns:1fr}}
+  .qc-full{grid-column:1/-1}
+  .qc-amount-row{display:flex;gap:.5rem;align-items:flex-end}
+  .qc-amount-row input{flex:1}
+  .qc-gst-toggle{display:flex;gap:.25rem;border:1px solid #dde3ec;border-radius:5px;overflow:hidden}
+  .qc-gst-toggle button{flex:1;padding:.45rem .6rem;border:none;background:#fff;cursor:pointer;font-size:.8rem;color:#555;transition:.1s}
+  .qc-gst-toggle button.active{background:#0055a5;color:#fff;font-weight:600}
+  #qc-result{margin-top:1.25rem}
+  .qc-verdict{border-radius:8px;padding:1.25rem 1.5rem;margin-bottom:1rem}
+  .qc-verdict.great{background:#dcfce7;border:2px solid #86efac}
+  .qc-verdict.fair{background:#dbeafe;border:2px solid #93c5fd}
+  .qc-verdict.high{background:#fef3c7;border:2px solid #fcd34d}
+  .qc-verdict.very-high{background:#fee2e2;border:2px solid #fca5a5}
+  .qc-verdict.low{background:#fef9c3;border:2px solid #fde047}
+  .qc-verdict-icon{font-size:2rem;margin-bottom:.4rem}
+  .qc-verdict-label{font-size:1.2rem;font-weight:700;margin-bottom:.3rem}
+  .qc-verdict-sub{font-size:.9rem;opacity:.85}
+  .qc-range-bar{margin:1.25rem 0}
+  .qc-bar-track{position:relative;height:14px;background:#e5e7eb;border-radius:7px;margin:.5rem 0 .25rem}
+  .qc-bar-range{position:absolute;height:100%;background:#93c5fd;border-radius:7px}
+  .qc-bar-marker{position:absolute;top:-5px;width:4px;height:24px;background:#0055a5;border-radius:2px;transform:translateX(-50%)}
+  .qc-bar-labels{display:flex;justify-content:space-between;font-size:.75rem;color:#6b7280}
+  .qc-detail{background:#f8fafc;border:1px solid #e2e8f0;border-radius:6px;padding:1rem 1.2rem;font-size:.88rem}
+  .qc-detail table{width:100%;border-collapse:collapse}
+  .qc-detail td{padding:.3rem .4rem;vertical-align:top}
+  .qc-detail td:first-child{color:#64748b;width:40%}
+  .qc-detail td:last-child{font-weight:600;color:#1e293b}
+  .qc-tips{margin-top:1rem;font-size:.85rem;color:#374151}
+  .qc-tips li{margin-bottom:.3rem}
+  .qc-cta{margin-top:1.25rem;background:#0055a5;color:#fff;border-radius:8px;padding:1rem 1.25rem;font-size:.88rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+  .qc-cta a{color:#fff;font-weight:600;text-decoration:underline}
+  </style>
+
+  <div class="qc-form">
+    <div class="calc-group">
+      <label for="qc-job">Job type</label>
+      <select id="qc-job" onchange="qcUpdateScenarios()">
+        <option value="">— Select job —</option>
+      </select>
+    </div>
+    <div class="calc-group">
+      <label for="qc-scenario">Job size / scope</label>
+      <select id="qc-scenario" disabled>
+        <option value="">— Select job first —</option>
+      </select>
+    </div>
+    <div class="calc-group">
+      <label for="qc-city">Your city</label>
+      <select id="qc-city">
+        <option value="">— Select city —</option>
+        <option value="auckland">Auckland</option>
+        <option value="wellington">Wellington</option>
+        <option value="christchurch">Christchurch</option>
+        <option value="hamilton">Hamilton</option>
+        <option value="tauranga">Tauranga</option>
+        <option value="dunedin">Dunedin</option>
+        <option value="palmerston-north">Palmerston North</option>
+        <option value="napier">Napier</option>
+        <option value="hastings">Hastings</option>
+        <option value="new-plymouth">New Plymouth</option>
+        <option value="rotorua">Rotorua</option>
+        <option value="whangarei">Whangārei</option>
+        <option value="nelson">Nelson</option>
+        <option value="queenstown">Queenstown</option>
+        <option value="invercargill">Invercargill</option>
+        <option value="lower-hutt">Lower Hutt</option>
+        <option value="upper-hutt">Upper Hutt</option>
+        <option value="porirua">Porirua</option>
+        <option value="gisborne">Gisborne</option>
+        <option value="whanganui">Whanganui</option>
+      </select>
+    </div>
+    <div class="calc-group">
+      <label>Quoted amount</label>
+      <div class="qc-amount-row">
+        <input type="number" id="qc-amount" placeholder="e.g. 25000" min="0" oninput="qcCheck()">
+        <div class="qc-gst-toggle">
+          <button id="btn-exgst" class="active" onclick="qcSetGst('ex')">Ex GST</button>
+          <button id="btn-incgst" onclick="qcSetGst('inc')">Inc GST</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="qc-result" style="display:none"></div>
+
+  <script>
+  const QC_JOBS = {"bathroom-renovation": {"label": "Bathroom Renovation", "icon": "🚿", "scenarios": {"small": {"label": "Small bathroom (≤5m², budget fixtures)", "min": 8000, "max": 14000}, "medium": {"label": "Medium bathroom (6–10m², standard fixtures)", "min": 15000, "max": 28000}, "large": {"label": "Large bathroom (10m²+, premium fixtures)", "min": 30000, "max": 60000}}}, "kitchen-renovation": {"label": "Kitchen Renovation", "icon": "🍳", "scenarios": {"small": {"label": "Minor refresh (new benchtop/splashback only)", "min": 5000, "max": 12000}, "medium": {"label": "Full renovation (new cabinets, bench, appliances)", "min": 18000, "max": 40000}, "large": {"label": "Premium fit-out (stone bench, custom cabinetry)", "min": 45000, "max": 100000}}}, "decking": {"label": "Deck Building", "icon": "🪵", "scenarios": {"small": {"label": "Small deck (≤20m², treated pine)", "min": 6000, "max": 13000}, "medium": {"label": "Medium deck (20–40m², hardwood)", "min": 14000, "max": 30000}, "large": {"label": "Large deck (40m²+, composite/hardwood)", "min": 32000, "max": 65000}}}, "painting": {"label": "Interior & Exterior Painting", "icon": "🎨", "scenarios": {"small": {"label": "Small home interior (2–3 rooms)", "min": 2500, "max": 6000}, "medium": {"label": "Full home interior or exterior repaint", "min": 6000, "max": 14000}, "large": {"label": "Large home interior + exterior", "min": 15000, "max": 30000}}}, "roofing": {"label": "Roof Replacement", "icon": "🏠", "scenarios": {"small": {"label": "Small home roof (≤100m², iron/Colorsteel)", "min": 12000, "max": 22000}, "medium": {"label": "Average home roof (100–180m², Colorsteel)", "min": 22000, "max": 40000}, "large": {"label": "Large home roof (180m²+, Colorsteel/tile)", "min": 40000, "max": 75000}}}, "fencing-and-gates": {"label": "Fencing & Gates", "icon": "🚧", "scenarios": {"small": {"label": "Short fence run (≤25m, timber palings)", "min": 2500, "max": 5500}, "medium": {"label": "Medium fence run (25–60m, timber/Colorbond)", "min": 6000, "max": 13000}, "large": {"label": "Long fence run (60m+, timber/Colorbond)", "min": 13000, "max": 28000}}}, "flooring": {"label": "Flooring Installation", "icon": "🏢", "scenarios": {"small": {"label": "Small area (≤40m², vinyl plank/laminate)", "min": 2500, "max": 7000}, "medium": {"label": "Full home (80–120m², engineered timber)", "min": 9000, "max": 22000}, "large": {"label": "Large home (120m²+, hardwood timber)", "min": 22000, "max": 55000}}}, "insulation": {"label": "Insulation Installation", "icon": "🏡", "scenarios": {"small": {"label": "Ceiling only, small home (≤90m²)", "min": 1200, "max": 3000}, "medium": {"label": "Ceiling + underfloor (120–160m² home)", "min": 3500, "max": 7000}, "large": {"label": "Full home ceiling + underfloor + walls", "min": 7500, "max": 16000}}}, "driveway": {"label": "Driveway Construction", "icon": "🛣️", "scenarios": {"small": {"label": "Short driveway (≤40m², concrete)", "min": 5000, "max": 10000}, "medium": {"label": "Standard driveway (40–80m², concrete)", "min": 10000, "max": 20000}, "large": {"label": "Long driveway (80m²+, concrete/pavers)", "min": 20000, "max": 45000}}}, "landscaping-and-outdoors": {"label": "Landscaping", "icon": "🌿", "scenarios": {"small": {"label": "Small garden makeover (≤60m²)", "min": 3000, "max": 9000}, "medium": {"label": "Medium landscaping project (60–200m²)", "min": 10000, "max": 28000}, "large": {"label": "Full property landscaping (200m²+)", "min": 30000, "max": 80000}}}, "retaining-walls": {"label": "Retaining Walls", "icon": "🧱", "scenarios": {"small": {"label": "Short timber wall (≤6m, up to 1m high)", "min": 3000, "max": 7500}, "medium": {"label": "Medium block wall (6–20m, 1–1.5m high)", "min": 10000, "max": 25000}, "large": {"label": "Large engineered wall (20m+, 1.5m+ high)", "min": 28000, "max": 70000}}}, "plasterboard": {"label": "Plasterboard & Stopping", "icon": "🔲", "scenarios": {"small": {"label": "1–2 rooms repair/replacement (≤25m²)", "min": 1500, "max": 4500}, "medium": {"label": "Full home fit-out (80–120m²)", "min": 8000, "max": 20000}, "large": {"label": "Large home or commercial (150m²+)", "min": 20000, "max": 45000}}}, "guttering-and-drainage": {"label": "Guttering & Drainage", "icon": "🌧️", "scenarios": {"small": {"label": "Small home (≤25m of guttering)", "min": 1500, "max": 3500}, "medium": {"label": "Average home (25–60m of guttering)", "min": 3500, "max": 7500}, "large": {"label": "Large home (60m+ guttering + downpipes)", "min": 8000, "max": 16000}}}, "heating-ventilation-systems": {"label": "Heating & Ventilation", "icon": "🌡️", "scenarios": {"small": {"label": "Single heat pump (1 indoor unit)", "min": 2500, "max": 4500}, "medium": {"label": "Multi-split system (2–3 indoor units)", "min": 6000, "max": 12000}, "large": {"label": "Ducted system or 4+ units", "min": 15000, "max": 35000}}}, "lighting": {"label": "Lighting Installation", "icon": "💡", "scenarios": {"small": {"label": "Small job (5–10 downlights, 1 room)", "min": 600, "max": 2000}, "medium": {"label": "Full home lighting fit-out (20–30 lights)", "min": 2500, "max": 7000}, "large": {"label": "New build or major refit (40+ lights)", "min": 7000, "max": 18000}}}, "asbestos-removal": {"label": "Asbestos Removal", "icon": "⚠️", "scenarios": {"small": {"label": "Small area — tiles or eaves (≤10m²)", "min": 1500, "max": 5000}, "medium": {"label": "Medium area — wall linings or soffit (≤30m²)", "min": 6000, "max": 16000}, "large": {"label": "Large or whole-house removal (30m²+)", "min": 18000, "max": 45000}}}, "glass-replacement": {"label": "Glass & Glazing", "icon": "🪟", "scenarios": {"small": {"label": "1–3 standard pane replacements", "min": 400, "max": 1500}, "medium": {"label": "Double glaze retrofit (5–10 windows)", "min": 4000, "max": 10000}, "large": {"label": "Full home re-glaze to double glaze", "min": 12000, "max": 35000}}}, "cladding": {"label": "External Cladding", "icon": "🏗️", "scenarios": {"small": {"label": "One or two elevations (≤50m²)", "min": 9000, "max": 18000}, "medium": {"label": "Partial re-clad (50–130m², Linea/Hardie)", "min": 22000, "max": 45000}, "large": {"label": "Full home re-clad (130m²+)", "min": 50000, "max": 100000}}}, "structures": {"label": "Garages & Sleepouts", "icon": "🏙️", "scenarios": {"small": {"label": "Single garage or carport (≤25m²)", "min": 15000, "max": 30000}, "medium": {"label": "Double garage or sleepout (25–50m²)", "min": 30000, "max": 60000}, "large": {"label": "Large garage-workshop or studio (50m²+)", "min": 60000, "max": 110000}}}, "heat-pump-installation": {"label": "Heat Pump Installation", "icon": "❄️", "scenarios": {"small": {"label": "Single room heat pump (2–3kW)", "min": 1800, "max": 3200}, "medium": {"label": "Large room / open plan (5–7kW)", "min": 3000, "max": 5500}, "large": {"label": "Multi-unit or ducted system", "min": 8000, "max": 20000}}}, "solar-panel-installation": {"label": "Solar Panel Installation", "icon": "☀️", "scenarios": {"small": {"label": "Starter system (3kW, ~8 panels)", "min": 8000, "max": 12000}, "medium": {"label": "Mid-size system (6kW, ~16 panels)", "min": 13000, "max": 19000}, "large": {"label": "Large system (10kW+, with battery)", "min": 22000, "max": 40000}}}, "window-installation": {"label": "Window Replacement", "icon": "🪟", "scenarios": {"small": {"label": "1–3 windows (standard sizes)", "min": 1200, "max": 3500}, "medium": {"label": "5–8 windows (full room or house partial)", "min": 5000, "max": 12000}, "large": {"label": "Full house re-window (10–20+ windows)", "min": 15000, "max": 40000}}}, "tiling": {"label": "Tiling (Floor & Wall)", "icon": "🔲", "scenarios": {"small": {"label": "Bathroom floor only (≤8m²)", "min": 800, "max": 1800}, "medium": {"label": "Full bathroom floor + walls", "min": 2500, "max": 6000}, "large": {"label": "Open-plan living or large area (30m²+)", "min": 5000, "max": 15000}}}, "garage-and-shed": {"label": "Garage & Shed Building", "icon": "🏗️", "scenarios": {"small": {"label": "Single garage (3×6m, steel frame)", "min": 18000, "max": 32000}, "medium": {"label": "Double garage (6×6m, brick/weatherboard)", "min": 35000, "max": 60000}, "large": {"label": "Large workshop / triple garage", "min": 60000, "max": 120000}}}, "pool-installation": {"label": "Swimming Pool Installation", "icon": "🏊", "scenarios": {"small": {"label": "Plunge pool / spa pool (2×4m)", "min": 15000, "max": 28000}, "medium": {"label": "Fibreglass pool (4×8m, basic fence)", "min": 35000, "max": 60000}, "large": {"label": "Concrete pool (5×10m+, full surrounds)", "min": 65000, "max": 130000}}}, "demolition": {"label": "Demolition & Removal", "icon": "🔨", "scenarios": {"small": {"label": "Small structure (shed, deck, carport)", "min": 2500, "max": 7000}, "medium": {"label": "Garage or small outbuilding", "min": 6000, "max": 18000}, "large": {"label": "Full house demolition", "min": 25000, "max": 70000}}}, "scaffolding": {"label": "Scaffolding Hire & Erection", "icon": "🏗️", "scenarios": {"small": {"label": "Single-storey wall section (1–2 weeks)", "min": 600, "max": 1500}, "medium": {"label": "Full single-storey house (2–4 weeks)", "min": 2000, "max": 4500}, "large": {"label": "Two-storey or extended hire", "min": 4500, "max": 12000}}}, "security-system-installation": {"label": "Security System Installation", "icon": "🔒", "scenarios": {"small": {"label": "Basic alarm system (3–5 zones)", "min": 900, "max": 2000}, "medium": {"label": "Alarm + 4 cameras + smart access", "min": 2500, "max": 6000}, "large": {"label": "Full smart security + intercom + monitoring", "min": 6000, "max": 15000}}}, "pest-control": {"label": "Pest Control", "icon": "🐛", "scenarios": {"small": {"label": "Single treatment (ants, cockroaches, fleas)", "min": 150, "max": 400}, "medium": {"label": "Full property treatment + report", "min": 380, "max": 750}, "large": {"label": "Annual programme or commercial property", "min": 800, "max": 3000}}}};
+
+  const QC_MULTS = {"auckland": 1.15, "queenstown": 1.2, "wellington": 1.08, "tauranga": 1.02, "hamilton": 0.97, "christchurch": 0.98, "dunedin": 0.93, "napier": 0.95, "hastings": 0.95, "new-plymouth": 0.94, "rotorua": 0.93, "whangarei": 0.95, "nelson": 0.96, "invercargill": 0.9, "lower-hutt": 1.05, "upper-hutt": 1.03, "porirua": 1.04, "gisborne": 0.91, "whanganui": 0.9, "palmerston-north": 0.95};
+
+  let qcGstMode = 'ex';
+
+  // Populate job dropdown
+  (function(){
+    const sel = document.getElementById('qc-job');
+    const grouped = {};
+    // Sort by label
+    const entries = Object.entries(QC_JOBS).sort((a,b) => a[1].label.localeCompare(b[1].label));
+    entries.forEach(([slug, job]) => {
+      const opt = document.createElement('option');
+      opt.value = slug;
+      opt.textContent = job.icon + ' ' + job.label;
+      sel.appendChild(opt);
+    });
+  })();
+
+  function qcUpdateScenarios() {
+    const jobSlug = document.getElementById('qc-job').value;
+    const sel = document.getElementById('qc-scenario');
+    sel.innerHTML = '';
+    if (!jobSlug) {
+      sel.innerHTML = '<option value="">— Select job first —</option>';
+      sel.disabled = true;
+      qcCheck();
+      return;
+    }
+    const job = QC_JOBS[jobSlug];
+    const defOpt = document.createElement('option');
+    defOpt.value = '';
+    defOpt.textContent = '— Select size/scope —';
+    sel.appendChild(defOpt);
+    Object.entries(job.scenarios).forEach(([key, sc]) => {
+      const opt = document.createElement('option');
+      opt.value = key;
+      opt.textContent = sc.label;
+      sel.appendChild(opt);
+    });
+    sel.disabled = false;
+    sel.onchange = qcCheck;
+    qcCheck();
+  }
+
+  function qcSetGst(mode) {
+    qcGstMode = mode;
+    document.getElementById('btn-exgst').classList.toggle('active', mode === 'ex');
+    document.getElementById('btn-incgst').classList.toggle('active', mode === 'inc');
+    qcCheck();
+  }
+
+  function fmt(n) {
+    return '$' + Math.round(n).toLocaleString('en-NZ');
+  }
+
+  function qcCheck() {
+    const jobSlug = document.getElementById('qc-job').value;
+    const scKey = document.getElementById('qc-scenario').value;
+    const citySlug = document.getElementById('qc-city').value;
+    const raw = parseFloat(document.getElementById('qc-amount').value);
+    const out = document.getElementById('qc-result');
+
+    if (!jobSlug || !scKey || !citySlug || isNaN(raw) || raw <= 0) {
+      out.style.display = 'none';
+      return;
+    }
+
+    // Normalise to ex-GST
+    const amount = qcGstMode === 'inc' ? raw / 1.15 : raw;
+
+    const job = QC_JOBS[jobSlug];
+    const sc = job.scenarios[scKey];
+    const mult = QC_MULTS[citySlug] || 1.0;
+
+    const adjMin = Math.round(sc.min * mult);
+    const adjMax = Math.round(sc.max * mult);
+    const cityName = document.getElementById('qc-city').options[document.getElementById('qc-city').selectedIndex].text;
+
+    // Determine verdict
+    let verdict, vClass, icon, tips;
+    const pct = amount / adjMax;
+    const pctMin = amount / adjMin;
+
+    if (amount < adjMin * 0.75) {
+      verdict = 'Suspiciously low — ask what\'s not included';
+      vClass = 'low';
+      icon = '⚠️';
+      tips = [
+        'A quote this far below typical rates may exclude materials, consents, or compliance work.',
+        'Ask for a detailed line-item breakdown before accepting.',
+        'Check the tradie is licensed and insured for this work.',
+        'Low quotes sometimes lead to variation costs mid-job.'
+      ];
+    } else if (amount < adjMin) {
+      verdict = 'Below typical — good price, check what\'s included';
+      vClass = 'great';
+      icon = '✅';
+      tips = [
+        'This is a competitive quote for ' + cityName + '.',
+        'Confirm the quote includes all labour, materials, and compliance costs.',
+        'Check the tradie\'s reviews and licensing before proceeding.',
+        'Getting a second quote is always worthwhile for jobs over $10,000.'
+      ];
+    } else if (amount <= adjMax) {
+      verdict = 'Fair — within the typical range for ' + cityName;
+      vClass = 'fair';
+      icon = '👍';
+      tips = [
+        'This quote is within the typical price range for this job in ' + cityName + '.',
+        'Compare inclusions (materials spec, warranty, consent handling) across quotes.',
+        'Cheapest isn\'t always best — reviews and track record matter too.'
+      ];
+    } else if (amount <= adjMax * 1.3) {
+      verdict = 'Above typical — ask for a breakdown';
+      vClass = 'high';
+      icon = '🤔';
+      tips = [
+        'This quote is above the typical range for ' + cityName + ' — not necessarily wrong, but worth querying.',
+        'Ask for a line-item breakdown: labour, materials, consents, margins.',
+        'Premium materials, tight timeframes, or specialist compliance can justify higher prices.',
+        'Get at least one more quote to compare.'
+      ];
+    } else {
+      verdict = 'High — significantly above typical NZ rates';
+      vClass = 'very-high';
+      icon = '❌';
+      tips = [
+        'This quote is significantly above typical rates for ' + cityName + '.',
+        'Request a detailed written breakdown before proceeding.',
+        'Get 2–3 more quotes — the spread may reveal what\'s driving the price.',
+        'If the tradie is highly rated or has specialist skills, ask them to justify the premium.'
+      ];
+    }
+
+    // Bar position — clamp quote to 0%–150% of adjMax for display
+    const barPct = Math.min(Math.max(amount / (adjMax * 1.5), 0), 1) * 100;
+    const minPct = (adjMin / (adjMax * 1.5)) * 100;
+    const maxPct = (adjMax / (adjMax * 1.5)) * 100;
+
+    const incAmount = amount * 1.15;
+    const adjMinInc = adjMin * 1.15;
+    const adjMaxInc = adjMax * 1.15;
+
+    out.style.display = 'block';
+    out.innerHTML = `
+      <div class="qc-verdict ${vClass}">
+        <div class="qc-verdict-icon">${icon}</div>
+        <div class="qc-verdict-label">${verdict}</div>
+        <div class="qc-verdict-sub">Your quote: <strong>${fmt(amount)} ex GST</strong> (${fmt(incAmount)} inc GST) &nbsp;·&nbsp; Typical range: ${fmt(adjMin)}–${fmt(adjMax)} ex GST</div>
+      </div>
+
+      <div class="qc-range-bar">
+        <div style="font-size:.8rem;color:#64748b;margin-bottom:.3rem">Typical price range for ${cityName}</div>
+        <div class="qc-bar-track">
+          <div class="qc-bar-range" style="left:${minPct}%;width:${maxPct - minPct}%"></div>
+          <div class="qc-bar-marker" style="left:${barPct}%" title="Your quote"></div>
+        </div>
+        <div class="qc-bar-labels">
+          <span>${fmt(0)}</span>
+          <span>${fmt(adjMin)} (typical low)</span>
+          <span>${fmt(adjMax)} (typical high)</span>
+          <span>${fmt(adjMax * 1.5)}</span>
+        </div>
+      </div>
+
+      <div class="qc-detail">
+        <table>
+          <tr><td>Typical range (${cityName})</td><td>${fmt(adjMin)} – ${fmt(adjMax)} ex GST<br><small style="color:#64748b">${fmt(adjMinInc)} – ${fmt(adjMaxInc)} inc GST</small></td></tr>
+          <tr><td>Your quote</td><td>${fmt(amount)} ex GST &nbsp;(${fmt(incAmount)} inc GST)</td></tr>
+          <tr><td>vs. typical mid-point</td><td>${amount < (adjMin+adjMax)/2 ? (((adjMin+adjMax)/2 - amount)/(adjMin+adjMax)*2*100).toFixed(0) + '% below' : (( amount - (adjMin+adjMax)/2)/((adjMin+adjMax)/2)*100).toFixed(0) + '% above'} typical mid</td></tr>
+          <tr><td>City adjustment</td><td>${mult >= 1 ? '+' : ''}${((mult-1)*100).toFixed(0)}% vs. NZ average (${cityName})</td></tr>
+        </table>
+      </div>
+
+      <ul class="qc-tips">
+        ${tips.map(t => '<li>' + t + '</li>').join('')}
+      </ul>
+
+      <div class="qc-cta">
+        <span>Need to find a tradie for this job?</span>
+        <a href="/trades/">Browse top-rated NZ tradies →</a>
+      </div>
+    `;
+  }
+
+  document.getElementById('qc-city').onchange = qcCheck;
+  </script>
+
+---
+
+## How does this checker work?
+
+We compare your quote against the typical price range for that job type and city, based on NZ job cost research across 29 common trade jobs and 20 cities.
+
+Every city has a regional multiplier — Auckland is around 15% above the NZ average, Queenstown 20% above, while Invercargill, Gisborne and Whanganui are typically 9–10% below. Your quote is compared against the adjusted range for your specific city.
+
+### What counts as a "fair" quote?
+
+**Within the typical range** is our baseline. But fair also depends on:
+
+- **What's included** — a low quote that excludes materials or building consent isn't cheaper overall
+- **Materials spec** — budget vs. premium fixtures, timber, or paint significantly affect price
+- **Timing and availability** — busy tradies or urgent jobs often cost more
+- **Tradie experience and licensing** — a master electrician with 20 years experience may charge more than someone newly licensed
+
+### When to get more quotes
+
+Always get at least 3 quotes for jobs over $10,000. For jobs above $30,000, get 3 detailed written quotes with line-item breakdowns so you can compare apples with apples.
+
+### The quote is very low — should I be worried?
+
+A quote significantly below the typical range (more than 20–25% below the low end) can indicate:
+
+- Scope exclusions — materials, consents, or compliance items missing
+- Lower-quality materials being substituted
+- Operator without full licensing or insurance
+- Introductory pricing from a newer operator (can be fine, but verify their track record)
+
+Ask for a detailed written quote with line items. A reputable tradie will be happy to explain their pricing.
