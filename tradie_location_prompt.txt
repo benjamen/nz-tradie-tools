@@ -7,17 +7,12 @@ SITE DIR: /home/ben/.openclaw/workspace/site/
 TOP10 DIR: /home/ben/.openclaw/workspace/site/data/top10/
 HEARTBEAT: /home/ben/.openclaw/workspace/memory/heartbeat-state.json
 
-STEP 1 — Check if already ran today:
+STEP 1 — Check if ran in the last 2 hours:
 python3 -c "
-import json, datetime, time
+import json, time
 state = json.load(open('/home/ben/.openclaw/workspace/memory/heartbeat-state.json'))
 last = state.get('nz_tradie_location', 0)
-if not last:
-    print('RUN_NOW')
-else:
-    last_date = datetime.date.fromtimestamp(last)
-    today = datetime.date.today()
-    print('ALREADY_RAN' if last_date == today else 'RUN_NOW')
+print('ALREADY_RAN' if last and (time.time() - last) < 7200 else 'RUN_NOW')
 "
 If output is ALREADY_RAN → EXIT SILENTLY.
 
@@ -49,7 +44,7 @@ for t,c,f,reason in (missing + stale)[:6]:
     print(f'  {f} ({reason})')
 "
 
-STEP 3 — Pick the first 5 combos from the list (missing first, then stale) and research each:
+STEP 3 — Pick the first 10 combos from the list (missing first, then stale) and research each:
 
 For EACH combo:
 
