@@ -1,0 +1,50 @@
+{
+  "trade": "carpet-layers",
+  "city": "whanganui",
+  "updated": "2026-05-22",
+  "regional_cost_note": "Carpet layers in Whanganui typically charge $60–$80/hr. Supply-and-lay carpet is usually quoted per m²: expect $35–$58/m² for mid-range carpet installed.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Barry Flooring Ltd",
+      "rating": 5.0,
+      "review_count": 70,
+      "suburb": "Whanganui",
+      "phone": "",
+      "website": "",
+      "known_for": "Carpet installation, stretches, and repairs with over a decade of experience, servicing Whanganui and the wider lower North Island.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/2i9jujdo/barry-flooring-ltd",
+      "verified": true,
+      "verified_date": "2026-05-22"
+    },
+    {
+      "rank": 2,
+      "name": "T & C Drake Limited",
+      "rating": 5.0,
+      "review_count": 17,
+      "suburb": "Whanganui",
+      "phone": "",
+      "website": "",
+      "known_for": "Residential and commercial carpet and vinyl floor installation serving Whanganui and surrounding Rangitikei/Manawatu areas.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/zvy02fw/t-and-c-drake-limited",
+      "verified": true,
+      "verified_date": "2026-05-22"
+    },
+    {
+      "rank": 3,
+      "name": "Puroa",
+      "rating": 4.4,
+      "review_count": 24,
+      "suburb": "Whanganui",
+      "phone": "",
+      "website": "",
+      "known_for": "Carpet and vinyl flooring specialist for rental and residential properties across Whanganui and the lower North Island.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/4i5145zw/puroa",
+      "verified": true,
+      "verified_date": "2026-05-22"
+    }
+  ]
+}
