@@ -1,0 +1,50 @@
+{
+  "trade": "carpet-layers",
+  "city": "rotorua",
+  "updated": "2026-05-22",
+  "regional_cost_note": "Carpet layers in Rotorua typically charge $60–$85/hr. Supply-and-lay carpet is usually quoted per m²: expect $35–$60/m² for mid-range carpet installed.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Sunset Flooring",
+      "rating": 5.0,
+      "review_count": 24,
+      "suburb": "Rotorua",
+      "phone": "",
+      "website": "",
+      "known_for": "Sole trader specialising in carpet, vinyl, and timber flooring across Bay of Plenty including Rotorua.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/dwk5mxo/sunset-flooring",
+      "verified": true,
+      "verified_date": "2026-05-22"
+    },
+    {
+      "rank": 2,
+      "name": "Elite Carpet Solutions",
+      "rating": 4.8,
+      "review_count": 14,
+      "suburb": "Rotorua",
+      "phone": "",
+      "website": "",
+      "known_for": "Professional carpet flooring installation for residential and commercial properties across Waikato and Bay of Plenty.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/5742921o/elite-carpet-solutions",
+      "verified": true,
+      "verified_date": "2026-05-22"
+    },
+    {
+      "rank": 3,
+      "name": "The Floor Boyz Ltd",
+      "rating": 4.7,
+      "review_count": 59,
+      "suburb": "Rotorua",
+      "phone": "",
+      "website": "",
+      "known_for": "Experienced carpet and vinyl installer serving Rotorua and the wider Waikato and Bay of Plenty regions.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/3vl5lnz0/the-floor-boyz-ltd",
+      "verified": true,
+      "verified_date": "2026-05-22"
+    }
+  ]
+}

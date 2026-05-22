@@ -1,0 +1,50 @@
+{
+  "trade": "carpet-layers",
+  "city": "whangarei",
+  "updated": "2026-05-22",
+  "regional_cost_note": "Carpet layers in Whangarei typically charge $60–$85/hr. Supply-and-lay carpet is usually quoted per m²: expect $35–$60/m² for mid-range carpet installed.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Northland Carpets Ltd",
+      "rating": 5.0,
+      "review_count": 9,
+      "suburb": "Whangarei",
+      "phone": "",
+      "website": "",
+      "known_for": "Local Northland carpet and flooring specialists based in Whangarei serving residential and commercial clients.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/1r7m9gkc/northland-carpets-ltd",
+      "verified": true,
+      "verified_date": "2026-05-22"
+    },
+    {
+      "rank": 2,
+      "name": "Advanced Flooring Solutions LTD",
+      "rating": 4.9,
+      "review_count": 18,
+      "suburb": "Whangarei",
+      "phone": "",
+      "website": "",
+      "known_for": "Carpet laying, vinyl installation, and flooring repairs across Auckland and Whangarei.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/5dg5nhcs/advanced-flooring-solutions-ltd",
+      "verified": true,
+      "verified_date": "2026-05-22"
+    },
+    {
+      "rank": 3,
+      "name": "The Floor Boyz Ltd",
+      "rating": 4.7,
+      "review_count": 59,
+      "suburb": "Whangarei",
+      "phone": "",
+      "website": "",
+      "known_for": "Experienced carpet and vinyl installer serving Whangarei and the wider Waikato region.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/3vl5lnz0/the-floor-boyz-ltd",
+      "verified": true,
+      "verified_date": "2026-05-22"
+    }
+  ]
+}

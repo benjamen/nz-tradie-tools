@@ -1,0 +1,50 @@
+{
+  "trade": "carpet-layers",
+  "city": "hastings",
+  "updated": "2026-05-22",
+  "regional_cost_note": "Carpet layers in Hastings typically charge $60–$85/hr. Supply-and-lay carpet is usually quoted per m²: expect $35–$60/m² for mid-range carpet installed.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Plush Carpet Fitting",
+      "rating": 4.8,
+      "review_count": 248,
+      "suburb": "Hastings",
+      "phone": "",
+      "website": "",
+      "known_for": "Specialist carpet fitter with 10+ years' experience in residential and commercial carpet and vinyl flooring across Hawke's Bay.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/1dh9xlcs/plush-carpet-fitting",
+      "verified": true,
+      "verified_date": "2026-05-22"
+    },
+    {
+      "rank": 2,
+      "name": "Kiwi Flooring Services Ltd",
+      "rating": 4.7,
+      "review_count": 20,
+      "suburb": "Havelock North",
+      "phone": "",
+      "website": "",
+      "known_for": "Carpet and flooring services across Hawke's Bay including Hastings, Napier, and Central Hawke's Bay.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/3orxzljw/kiwi-flooring-services-ltd",
+      "verified": true,
+      "verified_date": "2026-05-22"
+    },
+    {
+      "rank": 3,
+      "name": "Gorillafloors Ltd",
+      "rating": 4.0,
+      "review_count": 2,
+      "suburb": "Hastings",
+      "phone": "",
+      "website": "",
+      "known_for": "Vinyl and carpet flooring specialist with 28 years' experience serving Hawke's Bay and wider North Island.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/4rlwyuzg/gorillafloors-ltd",
+      "verified": true,
+      "verified_date": "2026-05-22"
+    }
+  ]
+}

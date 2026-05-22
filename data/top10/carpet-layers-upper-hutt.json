@@ -1,0 +1,50 @@
+{
+  "trade": "carpet-layers",
+  "city": "upper-hutt",
+  "updated": "2026-05-22",
+  "regional_cost_note": "Carpet layers in Upper Hutt typically charge $65–$95/hr. Supply-and-lay carpet is usually quoted per m²: expect $38–$65/m² for mid-range carpet installed.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Barry Flooring Ltd",
+      "rating": 5.0,
+      "review_count": 70,
+      "suburb": "Korokoro",
+      "phone": "",
+      "website": "",
+      "known_for": "Carpet installation, stretches, and repairs with over a decade of experience, serving the Hutt Valley and broader Wellington region.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/2i9jujdo/barry-flooring-ltd",
+      "verified": true,
+      "verified_date": "2026-05-22"
+    },
+    {
+      "rank": 2,
+      "name": "Butler Flooring",
+      "rating": 5.0,
+      "review_count": 19,
+      "suburb": "Hutt Valley",
+      "phone": "",
+      "website": "",
+      "known_for": "High quality carpet and flooring services across Upper Hutt, Lower Hutt, and wider Wellington region.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/48fnu3oc/butler-flooring",
+      "verified": true,
+      "verified_date": "2026-05-22"
+    },
+    {
+      "rank": 3,
+      "name": "Floor Court",
+      "rating": 4.5,
+      "review_count": 26,
+      "suburb": "Porirua",
+      "phone": "",
+      "website": "",
+      "known_for": "Residential and commercial flooring solutions serving Upper Hutt, Lower Hutt, Wellington, Porirua, and Kapiti Coast.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/2jopxp24/floor-court",
+      "verified": true,
+      "verified_date": "2026-05-22"
+    }
+  ]
+}
