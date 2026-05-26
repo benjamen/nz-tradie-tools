@@ -116,6 +116,7 @@ def build():
     build_privacy(config, env, nav, base_path)
     build_glossary(config, env, nav, base_path)
     build_faq(config, env, nav, base_path)
+    build_tax_dates(config, env, nav, base_path)
 
     trades_count, locations_count = build_trades_and_locations(config, env, nav, base_path)
 
@@ -734,6 +735,18 @@ def build_faq(config, env, nav, base_path):
     }
     (PUBLIC_DIR / "faq").mkdir(exist_ok=True)
     (PUBLIC_DIR / "faq" / "index.html").write_text(template.render(**ctx), encoding="utf-8")
+
+
+def build_tax_dates(config, env, nav, base_path):
+    template = env.get_template("tax-dates.html")
+    ctx = {
+        **config,
+        "base_path": base_path,
+        "nav": nav,
+        "year": datetime.now().year,
+    }
+    (PUBLIC_DIR / "tax-dates").mkdir(exist_ok=True)
+    (PUBLIC_DIR / "tax-dates" / "index.html").write_text(template.render(**ctx), encoding="utf-8")
 
 
 def build_glossary(config, env, nav, base_path):
