@@ -1,0 +1,50 @@
+{
+  "trade": "carpet-layers",
+  "city": "nelson",
+  "updated": "2026-05-27",
+  "regional_cost_note": "Carpet layers in Nelson typically charge $35–$55/m² for supply and installation, with underlay included. Vinyl planks and LVT run $50–$80/m². Nelson's market is competitive; owner-operators often undercut showroom prices. Get at least two quotes.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Flatoutflooring Ltd",
+      "rating": 5.0,
+      "review_count": 9,
+      "suburb": "Tasman",
+      "phone": "",
+      "website": "",
+      "known_for": "Owner-operator with 18 years experience specialising in carpet laying across Nelson-Tasman; handles small repairs through to full house installs including garage carpet.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/4fglhllo/flatoutflooring-ltd",
+      "verified": true,
+      "verified_date": "2026-05-27"
+    },
+    {
+      "rank": 2,
+      "name": "Tony Haddon Builder",
+      "rating": 5.0,
+      "review_count": 5,
+      "suburb": "Nelson",
+      "phone": "",
+      "website": "",
+      "known_for": "Qualified carpenter with 30 years in the industry offering carpet and vinyl flooring installation alongside full carpentry and renovation services across Nelson.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/62ypxng/tony-haddon-builder",
+      "verified": true,
+      "verified_date": "2026-05-27"
+    },
+    {
+      "rank": 3,
+      "name": "PlanB",
+      "rating": 4.5,
+      "review_count": 5,
+      "suburb": "Tasman",
+      "phone": "",
+      "website": "",
+      "known_for": "Two-person team covering Nelson and Tasman for renovations, new builds, and carpet flooring installation with strong client feedback for quality and communication.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/91r1uqk/planb",
+      "verified": true,
+      "verified_date": "2026-05-27"
+    }
+  ]
+}
