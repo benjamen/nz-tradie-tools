@@ -5,8 +5,15 @@
     <link>https://tradietools.nz/</link>
     <description>Free calculators, templates and guides for New Zealand tradies.</description>
     <language>en-nz</language>
-    <lastBuildDate>Tue, 26 May 2026 21:22:47 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 22:03:02 +0000</lastBuildDate>
     <atom:link href="https://tradietools.nz/rss.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>NZ Tradie Tax Guide 2026: Every Deduction You Can Claim</title>
+    <link>https://tradietools.nz/articles/nz-tradie-tax-guide-what-you-can-claim.html</link>
+    <guid isPermaLink="true">https://tradietools.nz/articles/nz-tradie-tax-guide-what-you-can-claim.html</guid>
+    <description>A plain-English guide to tax deductions for New Zealand self-employed tradies — tools, vehicles, home office, ACC, and more. IRD-referenced and updated for 2025–26.</description>
+    <pubDate>Tue, 26 May 2026 00:00:00 +0000</pubDate>
+  </item>
   <item>
     <title>Schedular Payments &amp; Withholding Tax: What NZ Tradies Need to Know in 2026</title>
     <link>https://tradietools.nz/articles/schedular-payments-withholding-tax-nz-tradies-2026.html</link>
@@ -19,6 +26,20 @@
     <link>https://tradietools.nz/articles/materials-markup-strategy-nz-tradies-2026.html</link>
     <guid isPermaLink="true">https://tradietools.nz/articles/materials-markup-strategy-nz-tradies-2026.html</guid>
     <description>A practical guide for New Zealand tradies on marking up materials correctly — with real percentages, escalation clauses, and pricing strategies for 2026.</description>
+    <pubDate>Tue, 26 May 2026 00:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>NZ Tradie Mental Health: What the Construction Industry Isn't Talking About in 2026</title>
+    <link>https://tradietools.nz/articles/nz-tradie-mental-health-guide-2026.html</link>
+    <guid isPermaLink="true">https://tradietools.nz/articles/nz-tradie-mental-health-guide-2026.html</guid>
+    <description>Construction workers face a 25% higher suicide rate than other sectors. Here's what NZ tradies and bosses need to know — and do — in 2026.</description>
+    <pubDate>Tue, 26 May 2026 00:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>How to Price a Job: The Complete NZ Tradie Guide (2026)</title>
+    <link>https://tradietools.nz/articles/how-to-price-a-job-nz-tradie-guide.html</link>
+    <guid isPermaLink="true">https://tradietools.nz/articles/how-to-price-a-job-nz-tradie-guide.html</guid>
+    <description>Stop guessing and start making real profit. A step-by-step pricing guide for NZ tradies covering labour, materials, overhead, markup, and GST — with real NZD examples.</description>
     <pubDate>Tue, 26 May 2026 00:00:00 +0000</pubDate>
   </item>
   <item>
@@ -715,13 +736,6 @@
     <pubDate>Sun, 19 Apr 2026 00:00:00 +0000</pubDate>
   </item>
   <item>
-    <title>NZ Tradie Tax Guide 2025–26: What You Can Claim</title>
-    <link>https://tradietools.nz/articles/nz-tradie-tax-guide-what-you-can-claim.html</link>
-    <guid isPermaLink="true">https://tradietools.nz/articles/nz-tradie-tax-guide-what-you-can-claim.html</guid>
-    <description>A plain-English guide to tax deductions for New Zealand self-employed tradies — tools, vehicles, home office, ACC, and more. IRD-referenced.</description>
-    <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
-  </item>
-  <item>
     <title>NZ Tradie Health &amp; Safety Guide 2026 — HSWA Obligations for Small Trade Businesses</title>
     <link>https://tradietools.nz/articles/health-and-safety-guide-nz-tradies.html</link>
     <guid isPermaLink="true">https://tradietools.nz/articles/health-and-safety-guide-nz-tradies.html</guid>
@@ -740,13 +754,6 @@
     <link>https://tradietools.nz/articles/growing-tradie-business-nz.html</link>
     <guid isPermaLink="true">https://tradietools.nz/articles/growing-tradie-business-nz.html</guid>
     <description>Practical advice for NZ tradies ready to grow — when to hire, how to systemise, what software you need, and how to avoid the growth traps that kill small trade businesses.</description>
-    <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
-  </item>
-  <item>
-    <title>How to Price a Job: The Complete NZ Tradie Guide</title>
-    <link>https://tradietools.nz/articles/how-to-price-a-job-nz-tradie-guide.html</link>
-    <guid isPermaLink="true">https://tradietools.nz/articles/how-to-price-a-job-nz-tradie-guide.html</guid>
-    <description>Stop guessing and start making real profit. A step-by-step pricing guide for NZ tradies covering labour, materials, overhead, markup, and GST.</description>
     <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
   </item>
   <item>
