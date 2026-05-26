@@ -23,8 +23,31 @@ STATIC_DIR = SITE_ROOT / "static"
 DATA_DIR = SITE_ROOT / "data"
 PUBLIC_DIR = SITE_ROOT / "docs"
 CONFIG_FILE = SITE_ROOT / "site.json"
+CLAIMED_DIR = DATA_DIR / "claimed"
 
 MD = markdown.Markdown(extensions=["tables", "fenced_code", "toc", "attr_list"])
+
+
+def slugify(text):
+    """Convert business name to URL-safe slug."""
+    text = text.lower()
+    text = re.sub(r'[^\w\s-]', '', text)
+    text = re.sub(r'[\s_]+', '-', text)
+    text = re.sub(r'-+', '-', text)
+    return text.strip('-')
+
+
+def load_claimed_businesses():
+    """Return dict of slug -> claimed business data."""
+    claimed = {}
+    if CLAIMED_DIR.exists():
+        for f in CLAIMED_DIR.glob("*.json"):
+            try:
+                data = json.loads(f.read_text())
+                claimed[data["slug"]] = data
+            except Exception:
+                pass
+    return claimed
 
 
 def load_config():
@@ -117,6 +140,8 @@ def build():
     build_glossary(config, env, nav, base_path)
     build_faq(config, env, nav, base_path)
     build_tax_dates(config, env, nav, base_path)
+    profiles_count = build_business_profiles(config, env, nav, base_path)
+    build_claim_page(config, env, nav, base_path)
 
     trades_count, locations_count = build_trades_and_locations(config, env, nav, base_path)
 
@@ -133,7 +158,7 @@ def build():
     print(f"Built: {len(articles)} articles, {len(calculators)} calculators, "
           f"{trades_count} trade pages, {locations_count} location pages, "
           f"{job_pages} job cost pages, {template_pages} template pages, "
-          f"{rate_rows} trade rate rows")
+          f"{rate_rows} trade rate rows, {profiles_count} business profiles")
     return articles, calculators
 
 
@@ -216,6 +241,7 @@ def build_trades_and_locations(config, env, nav, base_path):
                "cities": cities, "trades": trades}
 
     top10_dir = DATA_DIR / "top10"
+    claimed = load_claimed_businesses()  # slug -> claimed data
     trades_count = 0
     locations_count = 0
 
@@ -250,11 +276,21 @@ def build_trades_and_locations(config, env, nav, base_path):
         for city in cities:
             data = city_data.get(city["slug"], {})
             other_cities = [c for c in cities if c["slug"] != city["slug"]]
+            # Annotate each business with profile_url if they have a claimed listing
+            businesses = []
+            for b in data.get("businesses", []):
+                b = dict(b)  # copy so we don't mutate the source data
+                biz_slug = slugify(b.get("name", ""))
+                if biz_slug in claimed:
+                    b["profile_url"] = f"/businesses/{biz_slug}/"
+                else:
+                    b["profile_url"] = None
+                businesses.append(b)
             ctx = {
                 **shared,
                 "trade": trade,
                 "city": city,
-                "businesses": data.get("businesses", []),
+                "businesses": businesses,
                 "regional_cost_note": data.get("regional_cost_note", ""),
                 "updated": data.get("updated", str(year)),
                 "other_cities": other_cities,
@@ -489,6 +525,12 @@ def build_sitemap(articles, calculators, cities, trades, config, job_pages_count
     urls.append({"loc": f"{base_url}/tradie-rates/", "priority": "0.9", "changefreq": "weekly", "lastmod": today})
     urls.append({"loc": f"{base_url}/glossary/", "priority": "0.7", "changefreq": "monthly", "lastmod": today})
     urls.append({"loc": f"{base_url}/faq/", "priority": "0.8", "changefreq": "monthly", "lastmod": today})
+    urls.append({"loc": f"{base_url}/tax-dates/", "priority": "0.8", "changefreq": "yearly", "lastmod": today})
+    urls.append({"loc": f"{base_url}/claim/", "priority": "0.6", "changefreq": "monthly", "lastmod": today})
+    # Business profiles
+    for slug in load_claimed_businesses():
+        urls.append({"loc": f"{base_url}/businesses/{slug}/", "priority": "0.8",
+                     "changefreq": "monthly", "lastmod": today})
     for section, pri in [("articles", "0.6"), ("calculators", "0.8"), ("trades", "0.9"), ("jobs", "0.9")]:
         urls.append({"loc": f"{base_url}/{section}/", "priority": pri, "changefreq": "weekly", "lastmod": today})
 
@@ -735,6 +777,41 @@ def build_faq(config, env, nav, base_path):
     }
     (PUBLIC_DIR / "faq").mkdir(exist_ok=True)
     (PUBLIC_DIR / "faq" / "index.html").write_text(template.render(**ctx), encoding="utf-8")
+
+
+def build_business_profiles(config, env, nav, base_path):
+    """Generate a profile page for each claimed business."""
+    claimed = load_claimed_businesses()
+    if not claimed:
+        return 0
+    template = env.get_template("business-profile.html")
+    biz_dir = PUBLIC_DIR / "businesses"
+    biz_dir.mkdir(exist_ok=True)
+    year = datetime.now().year
+    count = 0
+    for slug, business in claimed.items():
+        ctx = {
+            **config,
+            "base_path": base_path,
+            "nav": nav,
+            "year": year,
+            "business": business,
+        }
+        out_dir = biz_dir / slug
+        out_dir.mkdir(exist_ok=True)
+        (out_dir / "index.html").write_text(template.render(**ctx), encoding="utf-8")
+        count += 1
+    return count
+
+
+def build_claim_page(config, env, nav, base_path):
+    template = env.get_template("claim.html")
+    ctx = {**config, "base_path": base_path, "nav": nav, "year": datetime.now().year}
+    (PUBLIC_DIR / "claim").mkdir(exist_ok=True)
+    (PUBLIC_DIR / "claim" / "index.html").write_text(template.render(**ctx), encoding="utf-8")
+    # Simple thank-you page
+    thankyou_html = f"""<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="refresh" content="5;url={config.get('base_url','')}/claim/"><title>Thanks! — NZ Tradie Tools</title><link rel="stylesheet" href="{base_path}/static/css/style.css"></head><body><div class="container" style="padding:4rem 1rem;text-align:center"><h1>✅ Claim submitted!</h1><p style="font-size:1.1rem;color:#555">We'll review your listing and email you within 1 business day when your profile page is live.</p><p style="margin-top:1.5rem"><a href="{base_path}/" style="color:#0055a5">← Back to NZ Tradie Tools</a></p></div></body></html>"""
+    (PUBLIC_DIR / "claim" / "thankyou.html").write_text(thankyou_html, encoding="utf-8")
 
 
 def build_tax_dates(config, env, nav, base_path):

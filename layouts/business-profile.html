@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ business.business_name }} — {{ business.trade_name }} in {{ business.city_name }}, NZ</title>
+    <meta name="description" content="{{ business.tagline }}. Rated {{ business.rating }}/5 from {{ business.review_count }} reviews. Contact: {{ business.phone }}.">
+    <meta property="og:title" content="{{ business.business_name }} — {{ business.trade_name }} in {{ business.city_name }}">
+    <meta property="og:description" content="{{ business.tagline }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ base_url }}/businesses/{{ business.slug }}/">
+    <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="{{ base_url }}/static/img/social-card.svg">
+    <link rel="canonical" href="{{ base_url }}/businesses/{{ business.slug }}/">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "HomeAndConstructionBusiness",
+          "name": {{ business.business_name | tojson }},
+          "description": {{ business.description | tojson }},
+          "url": {{ business.website | tojson }},
+          "telephone": {{ business.phone | tojson }},
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": {{ business.suburb | tojson }},
+            "addressRegion": {{ business.city_name | tojson }},
+            "addressCountry": "NZ"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": {{ business.rating }},
+            "reviewCount": {{ business.review_count }},
+            "bestRating": 5
+          },
+          "areaServed": {{ business.areas_served | tojson }},
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Services",
+            "itemListElement": [{% for s in business.services %}{"@type":"Offer","itemOffered":{"@type":"Service","name":{{ s | tojson }}}}{% if not loop.last %},{% endif %}{% endfor %}]
+          }
+        },
+        {"@type":"BreadcrumbList","itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Home","item":{{ base_url | tojson }}},
+          {"@type":"ListItem","position":2,"name":"Find a Tradie","item":{{ (base_url ~ "/trades/") | tojson }}},
+          {"@type":"ListItem","position":3,"name":{{ business.trade_name | tojson }},"item":{{ (base_url ~ "/trades/" ~ business.trade ~ "/") | tojson }}},
+          {"@type":"ListItem","position":4,"name":{{ business.city_name | tojson }},"item":{{ (base_url ~ "/trades/" ~ business.trade ~ "/" ~ business.city ~ ".html") | tojson }}},
+          {"@type":"ListItem","position":5,"name":{{ business.business_name | tojson }}}
+        ]}
+      ]
+    }
+    </script>
+    <link rel="icon" href="{{ base_path }}/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="{{ base_path }}/static/css/style.css">
+    {% if ga_id %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ ga_id }}"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{ ga_id }}');</script>
+    {% endif %}
+    <style>
+    .profile-header{background:#f0f4f8;border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;border:1px solid #dde3ec}
+    .profile-name{font-size:1.5rem;font-weight:700;color:#1b2a4a;margin-bottom:.35rem}
+    .profile-trade{display:inline-block;background:#0055a5;color:#fff;font-size:.78rem;font-weight:700;padding:.2rem .65rem;border-radius:3px;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.75rem}
+    .profile-rating{display:flex;align-items:center;gap:.6rem;margin-bottom:.75rem}
+    .stars{color:#f59e0b;font-size:1.1rem}
+    .rating-num{font-size:1.1rem;font-weight:700;color:#1b2a4a}
+    .rating-count{color:#666;font-size:.9rem}
+    .badges{display:flex;flex-wrap:wrap;gap:.5rem;margin:.75rem 0}
+    .badge{display:inline-flex;align-items:center;gap:.3rem;font-size:.8rem;font-weight:600;padding:.25rem .6rem;border-radius:4px}
+    .badge-verified{background:#dcfce7;color:#166534}
+    .badge-lbp{background:#dbeafe;color:#1e40af}
+    .badge-insured{background:#ede9fe;color:#5b21b6}
+    .badge-claimed{background:#fef9c3;color:#854d0e}
+    .contact-buttons{display:flex;flex-wrap:wrap;gap:.65rem;margin:1rem 0}
+    .btn-phone{display:inline-flex;align-items:center;gap:.4rem;background:#0055a5;color:#fff;padding:.6rem 1.1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none}
+    .btn-website{display:inline-flex;align-items:center;gap:.4rem;background:#fff;color:#0055a5;padding:.6rem 1.1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none;border:2px solid #0055a5}
+    .btn-email{display:inline-flex;align-items:center;gap:.4rem;background:#f0f4f8;color:#1b2a4a;padding:.6rem 1.1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none;border:1px solid #dde3ec}
+    .section-title{font-size:1.05rem;font-weight:700;color:#1b2a4a;margin:1.25rem 0 .5rem;border-bottom:1px solid #e8ecf0;padding-bottom:.3rem}
+    .services-list{display:flex;flex-wrap:wrap;gap:.4rem;margin:.5rem 0}
+    .service-tag{background:#f0f4f8;border:1px solid #dde3ec;border-radius:4px;padding:.25rem .65rem;font-size:.85rem;color:#1b2a4a}
+    .areas-list{font-size:.9rem;color:#444;line-height:1.8}
+    .contact-form{background:#f0f4f8;border-radius:8px;padding:1.25rem;margin-top:1.5rem}
+    .contact-form h3{margin-top:0;color:#1b2a4a}
+    .contact-form input,.contact-form textarea,.contact-form select{width:100%;padding:.5rem .75rem;border:1px solid #ccc;border-radius:4px;font-size:.9rem;margin-bottom:.65rem;box-sizing:border-box;font-family:inherit}
+    .contact-form textarea{height:90px;resize:vertical}
+    .contact-form button{background:#0055a5;color:#fff;border:none;padding:.65rem 1.25rem;border-radius:4px;font-size:.9rem;font-weight:600;cursor:pointer;width:100%}
+    .contact-form button:hover{background:#003d7a}
+    .back-to-list{display:inline-flex;align-items:center;gap:.3rem;font-size:.88rem;color:#0055a5;margin-bottom:1rem}
+    .claim-cta{background:#fff8e1;border:1px solid #ffe082;border-radius:6px;padding:.85rem 1rem;margin-top:1.5rem;font-size:.85rem;color:#78350f}
+    .review-source{background:#fff;border:1px solid #dde3ec;border-radius:6px;padding:.85rem 1rem;margin-top:1rem;font-size:.88rem;display:flex;align-items:center;gap:.75rem}
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="{{ base_path }}/" class="logo">🔧 NZ Tradie Tools</a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                {% for item in nav %}<a href="{{ item.url }}">{{ item.label }}</a>{% endfor %}
+            </nav>
+            <script>
+            (function(){
+                var t=document.querySelector('.nav-toggle'),n=document.getElementById('main-nav');
+                if(!t||!n)return;
+                t.addEventListener('click',function(){var o=n.classList.toggle('is-open');t.setAttribute('aria-expanded',o);});
+                document.addEventListener('click',function(e){if(!t.contains(e.target)&&!n.contains(e.target)){n.classList.remove('is-open');t.setAttribute('aria-expanded','false');}});
+            })();
+            </script>
+        </div>
+    </header>
+
+    <div class="container page-layout" style="margin-top:1.5rem">
+        <main class="main-content">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="{{ base_path }}/">Home</a> &rsaquo;
+                <a href="{{ base_path }}/trades/{{ business.trade }}/">{{ business.trade_name }}</a> &rsaquo;
+                <a href="{{ base_path }}/trades/{{ business.trade }}/{{ business.city }}.html">{{ business.city_name }}</a> &rsaquo;
+                <span>{{ business.business_name }}</span>
+            </nav>
+
+            <!-- Profile header -->
+            <div class="profile-header">
+                <div class="profile-name">{{ business.business_name }}</div>
+                <div class="profile-trade">{{ business.trade_name }}</div>
+
+                <div class="profile-rating">
+                    <span class="stars">{% for i in range(business.rating|int) %}★{% endfor %}{% if business.rating % 1 >= 0.5 %}½{% endif %}</span>
+                    <span class="rating-num">{{ business.rating }}</span>
+                    <span class="rating-count">({{ business.review_count }} reviews)</span>
+                </div>
+
+                <div class="badges">
+                    {% if business.verified %}<span class="badge badge-verified">✅ Verified listing</span>{% endif %}
+                    {% if business.lbp %}<span class="badge badge-lbp">🏗️ LBP Licensed</span>{% endif %}
+                    {% if business.insured %}<span class="badge badge-insured">🛡️ Insured</span>{% endif %}
+                    <span class="badge badge-claimed">✓ Owner managed</span>
+                </div>
+
+                <p style="font-size:.9rem;color:#555;margin:.5rem 0">📍 {{ business.suburb }}, {{ business.city_name }}</p>
+
+                <div class="contact-buttons">
+                    {% if business.phone %}
+                    <a href="tel:{{ business.phone }}" class="btn-phone">📞 {{ business.phone }}</a>
+                    {% endif %}
+                    {% if business.website %}
+                    <a href="{{ business.website }}" rel="noopener" target="_blank" class="btn-website">🌐 Visit website</a>
+                    {% endif %}
+                    {% if business.email %}
+                    <a href="mailto:{{ business.email }}" class="btn-email">✉️ Send email</a>
+                    {% endif %}
+                </div>
+            </div>
+
+            <!-- About -->
+            <div class="section-title">About {{ business.business_name }}</div>
+            <p style="font-size:.95rem;line-height:1.7;color:#333">{{ business.description }}</p>
+
+            <!-- Services -->
+            {% if business.services %}
+            <div class="section-title">Services Offered</div>
+            <div class="services-list">
+                {% for service in business.services %}
+                <span class="service-tag">{{ service }}</span>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            <!-- Areas served -->
+            {% if business.areas_served %}
+            <div class="section-title">Areas Served</div>
+            <p class="areas-list">{{ business.areas_served | join(' · ') }}</p>
+            {% endif %}
+
+            <!-- Review source -->
+            <div class="review-source">
+                <span style="font-size:1.1rem">⭐</span>
+                <div>
+                    <strong>{{ business.rating }}/5</strong> from {{ business.review_count }} reviews on {{ business.source }}
+                    {% if business.source_url %}
+                    · <a href="{{ business.source_url }}" rel="noopener" target="_blank">View source reviews →</a>
+                    {% endif %}
+                </div>
+            </div>
+
+            <!-- Back to top10 list -->
+            <div style="margin-top:1.25rem">
+                <a href="{{ base_path }}/trades/{{ business.trade }}/{{ business.city }}.html" class="back-to-list">
+                    ← See all top-rated {{ business.trade_name }} in {{ business.city_name }}
+                </a>
+            </div>
+
+            <!-- Contact form -->
+            <div class="contact-form">
+                <h3>Send an enquiry to {{ business.business_name }}</h3>
+                <p style="font-size:.85rem;color:#555;margin-bottom:1rem">Your message goes directly to the business. NZ Tradie Tools is not involved in the conversation.</p>
+                <form action="{{ formspree_endpoint }}" method="POST">
+                    <input type="hidden" name="_subject" value="Enquiry for {{ business.business_name }} via NZ Tradie Tools">
+                    <input type="hidden" name="business" value="{{ business.business_name }}">
+                    <input type="hidden" name="business_email" value="{{ business.email }}">
+                    <input type="hidden" name="source" value="business-profile">
+                    <input type="text" name="name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <input type="tel" name="phone" placeholder="Your phone number">
+                    <input type="text" name="job" placeholder="What's the job? (e.g. bathroom reno, 2-bed new build)">
+                    <textarea name="message" placeholder="Tell them a bit more about your project, location, and timeframe..."></textarea>
+                    <button type="submit">Send enquiry →</button>
+                </form>
+            </div>
+
+            <!-- Update CTA -->
+            <div class="claim-cta">
+                <strong>Is this your business?</strong> This listing is owner-managed.
+                <a href="{{ base_path }}/claim/?business={{ business.slug }}&trade={{ business.trade }}&city={{ business.city }}&update=1" style="color:#92400e">Update your profile →</a>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:#0f172a;color:#fff;border:none">
+                <img src="https://fastcrew.nz/assets/fastcrew/images/Fastcrewlogo-light.png" alt="FastCrew" style="height:28px;margin-bottom:.75rem;display:block">
+                <p style="color:rgba(255,255,255,.88);font-size:.85rem;margin-bottom:.6rem">Job management built for NZ tradies.</p>
+                <ul style="color:rgba(255,255,255,.82);font-size:.82rem;margin:0 0 1rem;padding-left:1.1rem">
+                    <li>AI quoting &amp; invoicing</li>
+                    <li>H&amp;S compliance &amp; SWMS</li>
+                    <li>Jobs, scheduling &amp; Xero</li>
+                    <li>NZ-built · From $39/mo</li>
+                </ul>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#ea6325;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Start free trial →</a>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Similar {{ business.trade_name }} in {{ business.city_name }}</h3>
+                <p style="font-size:.85rem;color:#555">Compare top-rated options in your area.</p>
+                <a href="{{ base_path }}/trades/{{ business.trade }}/{{ business.city }}.html" style="display:block;background:#0055a5;color:#fff;text-align:center;padding:.5rem;border-radius:4px;font-size:.88rem;font-weight:600;text-decoration:none;margin-top:.5rem">View all top 10 →</a>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Useful Calculators</h3>
+                <ul>
+                    <li><a href="{{ base_path }}/calculators/job-cost-calculator.html">Job Cost Builder</a></li>
+                    <li><a href="{{ base_path }}/calculators/is-my-quote-fair.html">Is My Quote Fair?</a></li>
+                    <li><a href="{{ base_path }}/calculators/gst-calculator.html">GST Calculator</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Free Templates</h3>
+                <ul>
+                    <li><a href="{{ base_path }}/templates/quote-template.html">Quote Template</a></li>
+                    <li><a href="{{ base_path }}/templates/variation-order.html">Variation Order</a></li>
+                    <li><a href="{{ base_path }}/templates/">All templates →</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">NZ Tradie Tools</p>
+                <p>Free calculators, templates and guides for New Zealand tradies.</p>
+                <p class="disclosure">Business listings on NZ Tradie Tools are independently sourced. Contact information is provided by the business owner.</p>
+            </div>
+            <div style="text-align:right">
+                <p><a href="{{ base_path }}/claim/">Claim your listing</a></p>
+                <p><a href="{{ base_path }}/privacy/">Privacy Policy</a></p>
+                <p>&copy; {{ year }} NZ Tradie Tools</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
