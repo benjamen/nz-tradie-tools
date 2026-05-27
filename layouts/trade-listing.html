@@ -1,18 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-NZ">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find a Tradie in New Zealand — Top Rated by Trade</title>
+    <!-- NZ-local signals -->
+    <meta name="geo.region" content="NZ">
+    <meta name="geo.placename" content="New Zealand">
+    <meta name="ICBM" content="-41.2866, 174.7756">
+    <!-- Performance -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <title>Find a Tradie in New Zealand — Top Rated by Trade ({{ year }})</title>
     <meta name="description" content="Find top-rated NZ tradies by trade type and city. Builders, plumbers, electricians and painters — with Google ratings, pricing guides, and tips on finding a good one.">
+    <meta property="og:title" content="Find a Tradie in New Zealand — Top Rated by Trade">
+    <meta property="og:description" content="Find top-rated NZ tradies by trade type and city. Google ratings, pricing guides, and licensing info.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ base_url }}/trades/">
+    <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta property="og:image" content="{{ base_url }}/static/img/social-card.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Find a Tradie in New Zealand — Top Rated by Trade">
+    <meta name="twitter:description" content="Top-rated NZ tradies by trade and city — ratings, pricing guides, licensing info.">
+    <meta name="twitter:image" content="{{ base_url }}/static/img/social-card.svg">
+    <link rel="canonical" href="{{ base_url }}/trades/">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@graph":[
+      {"@type":"BreadcrumbList","itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Home","item":{{ base_url | tojson }}},
+        {"@type":"ListItem","position":2,"name":"Find a Tradie","item":{{ (base_url ~ "/trades/") | tojson }}}
+      ]},
+      {"@type":"ItemList",
+       "name":"Find a Tradie in New Zealand",
+       "description":"Top-rated NZ tradies by trade type and city",
+       "url":{{ (base_url ~ "/trades/") | tojson }},
+       "itemListElement":[
+         {% for trade in trades %}
+         {"@type":"ListItem","position":{{ loop.index }},"name":{{ trade.name | tojson }},"url":{{ (base_url ~ "/trades/" ~ trade.slug ~ "/") | tojson }}}{% if not loop.last %},{% endif %}
+         {% endfor %}
+       ]}
+    ]}
+    </script>
     <link rel="icon" href="{{ base_path }}/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="{{ base_path }}/static/css/style.css">
     {% if ga_id %}
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ ga_id }}"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{ ga_id }}');</script>
     {% endif %}
-    <meta property="og:image" content="{{ base_url }}/static/img/social-card.svg">
-    <meta name="twitter:image" content="{{ base_url }}/static/img/social-card.svg">
 </head>
 <body>
     <header class="site-header">

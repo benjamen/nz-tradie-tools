@@ -531,8 +531,14 @@ def build_sitemap(articles, calculators, cities, trades, config, job_pages_count
     for slug in load_claimed_businesses():
         urls.append({"loc": f"{base_url}/businesses/{slug}/", "priority": "0.8",
                      "changefreq": "monthly", "lastmod": today})
-    for section, pri in [("articles", "0.6"), ("calculators", "0.8"), ("trades", "0.9"), ("jobs", "0.9")]:
+    for section, pri in [("articles", "0.6"), ("calculators", "0.8"), ("trades", "0.9"),
+                          ("jobs", "0.9"), ("locations", "0.7")]:
         urls.append({"loc": f"{base_url}/{section}/", "priority": pri, "changefreq": "weekly", "lastmod": today})
+
+    # Calc category landing pages
+    for cat in CALC_CATEGORIES:
+        urls.append({"loc": f"{base_url}/calculators/{cat['slug']}/", "priority": "0.85",
+                     "changefreq": "monthly", "lastmod": today})
 
     for a in articles:
         urls.append({"loc": f"{base_url}/articles/{a['slug']}.html", "priority": "0.7",
@@ -545,10 +551,10 @@ def build_sitemap(articles, calculators, cities, trades, config, job_pages_count
                      "changefreq": "weekly", "lastmod": today})
         for city in cities:
             urls.append({"loc": f"{base_url}/trades/{trade['slug']}/{city['slug']}.html",
-                         "priority": "0.8", "changefreq": "weekly", "lastmod": today})
+                         "priority": "0.8", "changefreq": "monthly", "lastmod": today})
     for city in cities:
         urls.append({"loc": f"{base_url}/locations/{city['slug']}/", "priority": "0.7",
-                     "changefreq": "weekly", "lastmod": today})
+                     "changefreq": "monthly", "lastmod": today})
 
     estimates_file = DATA_DIR / "job_estimates.json"
     if estimates_file.exists():
