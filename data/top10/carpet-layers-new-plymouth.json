@@ -1,0 +1,50 @@
+{
+  "trade": "carpet-layers",
+  "city": "new-plymouth",
+  "updated": "2026-05-28",
+  "regional_cost_note": "Carpet layers in New Plymouth typically charge $25–$40/m² installed. Coastal Taranaki conditions mean wool and moisture-resistant synthetic carpets are popular choices for residential installs.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Brentley Carpet Layers",
+      "rating": 5.0,
+      "review_count": 7,
+      "suburb": "Franklin (serves New Plymouth)",
+      "phone": "",
+      "website": "",
+      "known_for": "Carpet layer specialising in floor preparation, supply and installation at competitive prices; services New Plymouth and South Taranaki.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/ubac4c/brentley-carpet-layers",
+      "verified": true,
+      "verified_date": "2026-05-28"
+    },
+    {
+      "rank": 2,
+      "name": "Oncore",
+      "rating": 5.0,
+      "review_count": 3,
+      "suburb": "New Plymouth",
+      "phone": "",
+      "website": "",
+      "known_for": "New Plymouth-based maintenance and repair specialist offering residential and commercial carpet laying and flooring services.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/3nruabz0/oncore",
+      "verified": true,
+      "verified_date": "2026-05-28"
+    },
+    {
+      "rank": 3,
+      "name": "TMT Building Ltd",
+      "rating": 5.0,
+      "review_count": 10,
+      "suburb": "Stratford (serves New Plymouth)",
+      "phone": "",
+      "website": "",
+      "known_for": "Qualified builder and carpet layer covering New Plymouth, Stratford and South Taranaki; 10 reviews for quality renovations and carpet flooring installations.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/g66btb0/tmt-building-ltd",
+      "verified": true,
+      "verified_date": "2026-05-28"
+    }
+  ]
+}

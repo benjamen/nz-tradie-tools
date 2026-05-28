@@ -1,0 +1,50 @@
+{
+  "trade": "carpet-layers",
+  "city": "invercargill",
+  "updated": "2026-05-28",
+  "regional_cost_note": "Carpet layers in Invercargill typically charge $20–$35/m² installed, one of the most affordable rates in New Zealand. Southland's cooler climate drives strong demand for warm wool carpets.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Camerons Flooring",
+      "rating": 5.0,
+      "review_count": 2,
+      "suburb": "Invercargill",
+      "phone": "",
+      "website": "",
+      "known_for": "Local Invercargill specialist supplying and installing carpet, vinyl, vinyl planks, timber and laminate flooring for residential and commercial clients in Southland.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/4lf5vg2k/camerons-flooring",
+      "verified": true,
+      "verified_date": "2026-05-28"
+    },
+    {
+      "rank": 2,
+      "name": "Thermalay",
+      "rating": 5.0,
+      "review_count": 31,
+      "suburb": "Central Otago",
+      "phone": "",
+      "website": "",
+      "known_for": "Wholesale flooring supplier and installer with 15+ years experience; uses professional power-stretching equipment for residential and commercial carpet laying across Otago and Southland.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/19swk3fg/thermalay",
+      "verified": true,
+      "verified_date": "2026-05-28"
+    },
+    {
+      "rank": 3,
+      "name": "GroutPro Dunedin and area",
+      "rating": 4.6,
+      "review_count": 19,
+      "suburb": "Waikouaiti, Dunedin",
+      "phone": "",
+      "website": "",
+      "known_for": "Flooring and renovation specialist serving Invercargill, Southland, and Otago; offers carpet, timber, and vinyl flooring alongside grout repair and tiling services.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/4gvxj3bw/groutpro-dunedin-and-area",
+      "verified": true,
+      "verified_date": "2026-05-28"
+    }
+  ]
+}

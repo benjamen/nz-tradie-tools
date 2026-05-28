@@ -1,0 +1,50 @@
+{
+  "trade": "carpet-layers",
+  "city": "queenstown",
+  "updated": "2026-05-28",
+  "regional_cost_note": "Carpet layers in Queenstown typically charge $35–$60/m² installed, reflecting the premium Otago Lakes market. Demand from new builds and holiday property upgrades keeps tradies busy year-round; book at least 4–6 weeks ahead.",
+  "businesses": [
+    {
+      "rank": 1,
+      "name": "Thermalay",
+      "rating": 5.0,
+      "review_count": 31,
+      "suburb": "Central Otago",
+      "phone": "",
+      "website": "",
+      "known_for": "Wholesale flooring supplier and installer with 15+ years experience in residential and commercial carpet laying across Otago and Southland; uses professional power-stretching equipment.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/19swk3fg/thermalay",
+      "verified": true,
+      "verified_date": "2026-05-28"
+    },
+    {
+      "rank": 2,
+      "name": "Charlie Collins",
+      "rating": 5.0,
+      "review_count": 5,
+      "suburb": "Queenstown Lakes",
+      "phone": "",
+      "website": "",
+      "known_for": "40 years self-employed carpet layer based in Queenstown Lakes; praised for old-fashioned values and completing jobs quickly to a high standard.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/2aivsws/charlie-collins",
+      "verified": true,
+      "verified_date": "2026-05-28"
+    },
+    {
+      "rank": 3,
+      "name": "Infinity Floors",
+      "rating": 5.0,
+      "review_count": 1,
+      "suburb": "Queenstown Lakes",
+      "phone": "",
+      "website": "",
+      "known_for": "Independent two-person flooring team based in Queenstown Lakes with 20 years combined experience in residential and commercial carpet and vinyl installation.",
+      "source": "Builderscrack",
+      "source_url": "https://builderscrack.co.nz/tradies/2wfl6roc/infinity-floors",
+      "verified": true,
+      "verified_date": "2026-05-28"
+    }
+  ]
+}
