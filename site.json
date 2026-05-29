@@ -8,6 +8,10 @@
   "beehiiv_form_id": "d92f7937-70bc-4ea1-9aa5-ee36d6c80fb0",
   "formspree_endpoint": "https://formspree.io/f/xgorlloq",
   "contact_email": "instituteofbba@gmail.com",
+  "same_as": [
+    "https://www.facebook.com/nztradietools",
+    "https://www.linkedin.com/company/nz-tradie-tools"
+  ],
   "affiliates": {
     "xero": "https://www.xero.com/nz/",
     "fergus": "https://www.fergus.com/",
