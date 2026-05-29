@@ -24,8 +24,8 @@
     <link rel="canonical" href="{{ base_url }}/">
     <script type="application/ld+json">
     [
-      {"@context":"https://schema.org","@type":"WebSite","name":"NZ Tradie Tools","url":{{ base_url | tojson }},"description":{{ description | tojson }},"inLanguage":"en-NZ","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":{{ (base_url ~ "/calculators/?q={search_term_string}") | tojson }}},"query-input":"required name=search_term_string"}},
-      {"@context":"https://schema.org","@type":"Organization","name":"NZ Tradie Tools","url":{{ base_url | tojson }},"logo":{"@type":"ImageObject","url":{{ (base_url ~ "/favicon.svg") | tojson }},"width":512,"height":512},"contactPoint":{"@type":"ContactPoint","email":{{ contact_email | tojson }},"contactType":"customer service"},"sameAs":["https://www.facebook.com/nztradietools","https://www.linkedin.com/company/nz-tradie-tools"]}
+      {"@context":"https://schema.org","@type":"WebSite","@id":{{ (base_url ~ "/#website") | tojson }},"name":"NZ Tradie Tools","url":{{ base_url | tojson }},"description":{{ description | tojson }},"inLanguage":"en-NZ","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":{{ (base_url ~ "/calculators/?q={search_term_string}") | tojson }}},"query-input":"required name=search_term_string"},"publisher":{"@id":{{ (base_url ~ "/#organization") | tojson }}}},
+      {"@context":"https://schema.org","@type":"Organization","@id":{{ (base_url ~ "/#organization") | tojson }},"name":"NZ Tradie Tools","url":{{ base_url | tojson }},"description":{{ description | tojson }},"logo":{"@type":"ImageObject","url":{{ (base_url ~ "/favicon.svg") | tojson }},"width":512,"height":512},"contactPoint":{"@type":"ContactPoint","email":{{ contact_email | tojson }},"contactType":"customer service"},"sameAs":["https://www.facebook.com/nztradietools","https://www.linkedin.com/company/nz-tradie-tools"]}
     ]
     </script>
     <link rel="icon" href="{{ base_path }}/favicon.svg" type="image/svg+xml">
