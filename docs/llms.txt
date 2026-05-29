@@ -1,0 +1,27 @@
+# NZ Tradie Tools
+
+Free calculators, guides, and tools for New Zealand tradies — builders, plumbers, electricians, painters and more.
+
+## What We Offer
+
+- 60+ free calculators: GST, hourly rate, job cost, vehicle mileage, depreciation, markup vs margin
+- 118+ articles: tax guides, quoting tips, H&S compliance, pricing strategies
+- Free invoice and quote templates (PDF and Word)
+- Trade rate comparisons: 47 trades × 20 NZ cities
+- Job cost estimates: builders, plumbers, electricians, painters, roofers and more
+- NZ tradie glossary (200+ terms)
+- Tax dates calendar for NZ tradespeople
+
+## Key Pages
+
+- All calculators: https://tradietools.nz/calculators/
+- Free templates: https://tradietools.nz/templates/
+- Tradie rates by trade: https://tradietools.nz/tradie-rates/
+- GST calculator: https://tradietools.nz/calculators/gst-calculator.html
+- Hourly rate calculator: https://tradietools.nz/calculators/hourly-rate-calculator.html
+- Job cost calculator: https://tradietools.nz/calculators/job-cost-calculator.html
+
+## About
+
+Free tools for NZ tradies — builders, plumbers, electricians, painters, and more. No login required.
+Contact: instituteofbba@gmail.com

@@ -631,8 +631,45 @@ def build_rss(articles, config):
 
 def build_robots(config):
     base_url = config.get("base_url", "").rstrip("/")
+    title = config.get("title", "NZ Tradie Tools")
+    description = config.get("description", "")
+    contact_email = config.get("contact_email", "")
     (PUBLIC_DIR / "robots.txt").write_text(
-        f"User-agent: *\nAllow: /\n\nSitemap: {base_url}/sitemap.xml\n", encoding="utf-8"
+        f"User-agent: *\nAllow: /\n\n"
+        "User-agent: GPTBot\nAllow: /\n\n"
+        "User-agent: ChatGPT-User\nAllow: /\n\n"
+        "User-agent: PerplexityBot\nAllow: /\n\n"
+        "User-agent: ClaudeBot\nAllow: /\n\n"
+        "User-agent: anthropic-ai\nAllow: /\n\n"
+        "User-agent: Google-Extended\nAllow: /\n\n"
+        "User-agent: Bingbot\nAllow: /\n\n"
+        "User-agent: CCBot\nDisallow: /\n\n"
+        f"Sitemap: {base_url}/sitemap.xml\n",
+        encoding="utf-8"
+    )
+    (PUBLIC_DIR / "llms.txt").write_text(
+        f"# {title}\n\n"
+        f"{description}\n\n"
+        "## What We Offer\n\n"
+        "- 60+ free calculators: GST, hourly rate, job cost, vehicle mileage, depreciation, markup vs margin\n"
+        "- 118+ articles: tax guides, quoting tips, H&S compliance, pricing strategies\n"
+        "- Free invoice and quote templates (PDF and Word)\n"
+        "- Trade rate comparisons: 47 trades × 20 NZ cities\n"
+        "- Job cost estimates: builders, plumbers, electricians, painters, roofers and more\n"
+        "- NZ tradie glossary (200+ terms)\n"
+        "- Tax dates calendar for NZ tradespeople\n\n"
+        "## Key Pages\n\n"
+        f"- All calculators: {base_url}/calculators/\n"
+        f"- Free templates: {base_url}/templates/\n"
+        f"- Tradie rates by trade: {base_url}/tradie-rates/\n"
+        f"- GST calculator: {base_url}/calculators/gst-calculator.html\n"
+        f"- Hourly rate calculator: {base_url}/calculators/hourly-rate-calculator.html\n"
+        f"- Job cost calculator: {base_url}/calculators/job-cost-calculator.html\n\n"
+        "## About\n\n"
+        "Free tools for NZ tradies — builders, plumbers, electricians, painters, and more. "
+        "No login required.\n"
+        f"Contact: {contact_email}\n",
+        encoding="utf-8"
     )
 
 
