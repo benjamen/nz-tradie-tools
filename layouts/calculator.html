@@ -24,6 +24,36 @@
     <link rel="canonical" href="{{ base_url }}/calculators/{{ slug }}.html">
     <link rel="alternate" type="application/rss+xml" title="NZ Tradie Tools — Articles" href="{{ base_url }}/rss.xml">
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":{{ page_title | tojson }},"description":{{ description | tojson }},"applicationCategory":"FinanceApplication","operatingSystem":"Web","url":{{ (base_url ~ "/calculators/" ~ slug ~ ".html") | tojson }},"offers":{"@type":"Offer","price":"0","priceCurrency":"NZD"},"author":{"@type":"Organization","name":"NZ Tradie Tools","url":{{ base_url | tojson }}}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":{{ base_url | tojson }}},{"@type":"ListItem","position":2,"name":"Calculators","item":{{ (base_url ~ "/calculators/") | tojson }}},{"@type":"ListItem","position":3,"name":{{ page_title | tojson }},"item":{{ (base_url ~ "/calculators/" ~ slug ~ ".html") | tojson }}}]}{% if faqs %},{"@type":"FAQPage","mainEntity":[{% for faq in faqs %}{"@type":"Question","name":{{ faq.q | tojson }},"acceptedAnswer":{"@type":"Answer","text":{{ faq.a | tojson }}}}{% if not loop.last %},{% endif %}{% endfor %}]}{% endif %}]}</script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": {{ ("How to use the " ~ page_title) | tojson }},
+      "description": {{ description | tojson }},
+      "totalTime": "PT1M",
+      "tool": [{"@type": "HowToTool", "name": "Web browser"}],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Enter your values",
+          "text": "Fill in the fields in the calculator with your project details. All fields accept New Zealand dollar amounts unless labelled otherwise."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Get your instant result",
+          "text": "The calculator updates automatically as you type — no button press needed. Results are shown in NZD and include any applicable GST or rates."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Use the result in your quote or plan",
+          "text": "Copy the result into your quote, job estimate, or budget. For a detailed breakdown by city or scope, see the related job cost guides on NZ Tradie Tools."
+        }
+      ]
+    }
+    </script>
     <link rel="icon" href="{{ base_path }}/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="{{ base_path }}/static/css/style.css">
     {% if ga_id %}
