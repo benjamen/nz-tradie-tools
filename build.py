@@ -294,6 +294,8 @@ def build_trades_and_locations(config, env, nav, base_path):
                 "regional_cost_note": data.get("regional_cost_note", ""),
                 "updated": data.get("updated", str(year)),
                 "other_cities": other_cities,
+                "seo_title": data.get("seo_title", ""),
+                "meta_description": data.get("meta_description", ""),
             }
             html = tpl_city.render(**ctx)
             (trade_dir / f"{city['slug']}.html").write_text(html, encoding="utf-8")

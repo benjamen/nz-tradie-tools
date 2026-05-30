@@ -9,8 +9,8 @@
     <meta name="ICBM" content="-41.2866, 174.7756">
     <!-- Performance -->
     <link rel="preconnect" href="https://www.googletagmanager.com">
-    <title>{{ job.label }} Cost NZ {{ year }} — Prices by City & Scope</title>
-    <meta name="description" content="How much does {{ job.label|lower }} cost in NZ? See {{ year }} price ranges for all 20 major cities — small, medium and large jobs. Compare quotes before you hire.">
+    <title>{{ job.seo_title if job.seo_title else job.label ~ ' Cost NZ ' ~ year ~ ' — Prices by City & Scope' }}</title>
+    <meta name="description" content="{{ job.meta_description if job.meta_description else 'How much does ' ~ job.label|lower ~ ' cost in NZ? See ' ~ year ~ ' price ranges for all 20 major cities — small, medium and large jobs. Compare quotes before you hire.' }}">
     <meta property="og:title" content="{{ job.label }} Cost NZ {{ year }} — All Cities">
     <meta property="og:description" content="Typical {{ job.label|lower }} costs for {{ year }} across NZ. {{ job.scenarios.small.label }}: ${{ '{:,}'.format(job.scenarios.small.min) }}–${{ '{:,}'.format(job.scenarios.small.max) }}. Get 3 quotes and compare.">
     <meta property="og:type" content="website">
