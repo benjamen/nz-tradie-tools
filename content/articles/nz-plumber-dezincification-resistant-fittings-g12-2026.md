@@ -1,5 +1,6 @@
 ---
 title: "NZ Plumbers: Dezincification-Resistant Fittings — What You Must Know After the G12/AS1 Deadline"
+seo_title: "NZ Plumbers: Dezincification-Resistant Fittings"
 description: "The 1 May 2026 G12/AS1 deadline has passed. NZ plumbers must now only install dezincification-resistant brass fittings or face compliance risk."
 date: 2026-05-18
 tags: [plumbing, compliance, building-code, G12, NZ]

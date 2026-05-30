@@ -1,5 +1,6 @@
 ---
 title: "Is It Worth Upgrading Your Insulation This Winter? NZ 2026 Guide"
+seo_title: "Is It Worth Upgrading Your Insulation This Winter? NZ"
 description: "Should you upgrade your NZ home insulation in 2026? Costs, payback periods, available grants, and whether ceiling vs underfloor insulation is the better investment."
 tags: [insulation, winter, home upgrade, NZ, H1, healthy homes, ceiling insulation, underfloor insulation]
 author: "NZ Tradie Tools"

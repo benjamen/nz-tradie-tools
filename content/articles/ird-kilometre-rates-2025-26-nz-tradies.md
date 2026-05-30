@@ -1,5 +1,6 @@
 ---
 title: "IRD Kilometre Rates 2025–26: NZ Tradie Vehicle Expense Claims Guide"
+seo_title: "IRD Kilometre Rates 2025–26 NZ"
 description: "Updated IRD kilometre rates for the 2025-26 income year. NZ tradies: claim more with Tier 1 and Tier 2 rates before your IR3 is due 7 July 2026."
 date: 2026-05-27
 tags: [tax, IRD, vehicle, deductions, NZ]

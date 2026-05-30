@@ -1,5 +1,6 @@
 ---
 title: "EOFY Checklist for NZ Tradies 2026 — What to Do Before 31 March"
+seo_title: "EOFY Checklist for NZ Tradies 2026"
 description: "A practical end-of-financial-year checklist for self-employed New Zealand tradies. Income, expenses, GST, vehicles, tools, and tax prep — all in one place."
 date: 2026-05-29
 tags: [EOFY, tax, checklist, deductions, GST, NZ, self-employed]

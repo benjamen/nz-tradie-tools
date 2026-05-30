@@ -1,5 +1,6 @@
 ---
 title: "Progress Billing and Milestone Invoicing: The NZ Tradie's Guide to Getting Paid on Long Jobs"
+seo_title: "Progress Billing & Milestone Invoicing NZ Guide"
 description: "How NZ tradies and contractors can use progress billing and milestone invoicing to protect cash flow on long jobs — with templates and legal tips."
 date: 2026-05-19
 tags: [invoicing, cash-flow, contracts, pricing, NZ]

@@ -1,5 +1,6 @@
 ---
 title: "NZ Tradie Pipeline Management: How to Quote, Schedule and Turn Down Work in 2026"
+seo_title: "NZ Tradie Pipeline Management 2026"
 description: "Learn how NZ tradies can manage their forward book, raise rates in a busy market, and turn down work professionally without burning bridges."
 date: 2026-05-24
 tags: [business, pricing, quoting, pipeline, NZ]

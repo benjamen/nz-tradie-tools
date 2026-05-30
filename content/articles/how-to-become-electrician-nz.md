@@ -1,5 +1,6 @@
 ---
 title: "How to Become an Electrician in NZ — Apprenticeships, Licensing, and Pay"
+seo_title: "How to Become an Electrician in NZ"
 description: "Step-by-step guide to becoming a registered electrician in New Zealand — apprenticeships, Electrical Workers Registration Board licensing, and what it pays."
 date: 2026-07-01
 tags: [careers, apprenticeships, electrical, qualifications, EWRB, NZ]

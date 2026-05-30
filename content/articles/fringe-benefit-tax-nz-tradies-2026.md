@@ -1,5 +1,6 @@
 ---
 title: "Fringe Benefit Tax for NZ Tradies: Company Vehicles, Tools and IRD 2026"
+seo_title: "Fringe Benefit Tax for NZ Tradies 2026"
 description: "IRD is targeting FBT non-compliance in the trades sector. Here's what NZ tradies running companies need to know about FBT on vehicles and tools in 2026."
 date: 2026-05-29
 tags: [FBT, tax, vehicles, compliance, NZ]

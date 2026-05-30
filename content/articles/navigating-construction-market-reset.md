@@ -1,5 +1,6 @@
 ---
 title: "Navigating the Current Construction Market: Stability Over Growth"
+seo_title: "Navigating the Current Construction Market"
 description: "With rising insolvencies and increased material costs, learn how to run a disciplined construction business in 2026."
 date: 2026-05-12
 tags: [Business, Insolvency, NZ, Construction]

@@ -1,5 +1,6 @@
 ---
 title: "Understanding Business Failure Trends: Protecting Your NZ Tradie Business in 2026"
+seo_title: "Understanding Business Failure Trends NZ 2026"
 description: "With construction insolvencies at record levels, learn how to assess the health of your clients and protect your cash flow in the current market."
 date: 2026-05-21
 tags: [Business, Insolvency, NZ, Construction]

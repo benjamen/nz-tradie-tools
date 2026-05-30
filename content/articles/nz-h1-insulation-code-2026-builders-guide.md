@@ -1,5 +1,6 @@
 ---
 title: "NZ H1 Insulation Code 2026: What Builders and Tradies Must Know Before November"
+seo_title: "NZ H1 Insulation Code 2026"
 description: "The new H1 AS1/AS2 editions are in a 12-month transition ending November 2026. NZ builders and insulation contractors need to act now."
 date: 2026-05-18
 tags: [insulation, building-code, compliance, H1, energy-efficiency, NZ]

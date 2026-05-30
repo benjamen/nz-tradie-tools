@@ -1,5 +1,6 @@
 ---
 title: "Maintenance Contracts for NZ Tradies: Build Recurring Revenue in 2026"
+seo_title: "Maintenance Contracts for NZ Tradies 2026"
 description: "How NZ tradies can set up maintenance service agreements to create predictable monthly income, reduce slow periods, and grow their business in 2026."
 date: 2026-05-22
 tags: [business, pricing, cash-flow, maintenance, NZ]

@@ -1,5 +1,6 @@
 ---
 title: "NZ Construction Site Drainage and Erosion Control: A Winter 2026 Guide for Tradies"
+seo_title: "NZ Construction Site Drainage and Erosion Control 2026"
 description: "How NZ builders and civil contractors can manage stormwater, erosion control and site drainage to stay compliant and keep projects moving in winter."
 date: 2026-05-30
 tags: [health-and-safety, compliance, civil, builders, NZ, winter]

@@ -1,5 +1,6 @@
 ---
 title: "How to Choose the Right Insurance for NZ Tradies: A 2026 Guide"
+seo_title: "How to Choose the Right Insurance for NZ Tradies 2026"
 description: "A comprehensive guide to selecting appropriate insurance covers for New Zealand tradespeople in 2026, including public liability, professional indemnity, and tool insurance."
 date: 2026-04-22
 tags: [insurance, NZ, tradie]

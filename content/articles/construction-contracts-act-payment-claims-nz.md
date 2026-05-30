@@ -1,5 +1,6 @@
 ---
 title: "NZ Construction Contracts Act: Payment Claims and Adjudication Guide for Tradies"
+seo_title: "NZ Construction Contracts Act"
 description: "How NZ tradies can use the Construction Contracts Act 2002 to enforce payment, issue valid payment claims, and win disputes fast through adjudication."
 date: 2026-05-30
 tags: [contracts, payment, legal, compliance, NZ]

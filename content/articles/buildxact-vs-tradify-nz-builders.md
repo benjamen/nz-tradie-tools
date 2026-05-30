@@ -1,5 +1,6 @@
 ---
 title: "Buildxact vs Tradify for NZ Builders (2026) — Which Is Right for You?"
+seo_title: "Buildxact vs Tradify for NZ Builders (2026)"
 description: "Buildxact vs Tradify compared for NZ builders and LBPs. Estimating, quoting, scheduling, and project management — which is better for residential construction in NZ?"
 tags: [Buildxact, Tradify, builders, LBP, estimating software, quoting, NZ, construction]
 author: "NZ Tradie Tools"

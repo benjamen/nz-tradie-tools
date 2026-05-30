@@ -1,5 +1,6 @@
 ---
 title: "Why Infrastructure Projects Are the New Gold Standard for NZ Tradies"
+seo_title: "Why Infrastructure Projects Are the New Gold Standard for…"
 description: "From bridges to major industrial hubs, major infrastructure projects are driving NZ construction. Here is how your tradie business can get involved."
 date: 2026-05-23
 tags: [Infrastructure, Civil, NZ, Construction]

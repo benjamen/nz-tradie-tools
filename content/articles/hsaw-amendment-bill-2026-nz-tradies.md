@@ -1,5 +1,6 @@
 ---
 title: "NZ Health & Safety Law Is Changing in 2026: What Tradies Need to Know"
+seo_title: "NZ Health & Safety Law Is Changing in 2026"
 description: "The Health and Safety at Work Amendment Bill 2026 introduces simpler rules for small NZ trade businesses. Here's what changes and what still applies."
 date: 2026-05-14
 tags: [health-and-safety, compliance, WorkSafe, regulation, NZ]

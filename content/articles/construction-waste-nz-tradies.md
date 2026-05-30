@@ -1,5 +1,6 @@
 ---
 title: "The Construction Waste Challenge: How to Modernize Your NZ Tradie Business"
+seo_title: "The Construction Waste Challenge NZ"
 description: "With new processing facilities like the one in Porirua coming online, reducing construction waste is now a business imperative. Here is how to adapt."
 date: 2026-05-22
 tags: [Sustainability, Waste, NZ, Construction]

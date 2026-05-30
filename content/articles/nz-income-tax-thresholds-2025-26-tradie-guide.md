@@ -1,5 +1,6 @@
 ---
 title: "NZ Income Tax Thresholds 2025–26: What Tradies Actually Take Home"
+seo_title: "NZ Income Tax Thresholds 2025–26"
 description: "How the updated NZ income tax brackets affect self-employed tradies in 2025–26, with worked examples at real tradie income levels."
 date: 2026-05-22
 tags: [tax, IRD, income-tax, self-employed, NZ]

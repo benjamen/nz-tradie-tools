@@ -208,6 +208,7 @@ def process_page(md_file, config, env, layout_name, section, nav, base_path, art
         **config,
         "base_path": base_path,
         "page_title": front.get("title"),
+        "seo_title": front.get("seo_title", ""),
         "title": front.get("title"),
         "description": front.get("description", front.get("title")),
         "date": date_str,

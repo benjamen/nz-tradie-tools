@@ -1,5 +1,6 @@
 ---
 title: "Opportunities in NZ Water Infrastructure: What Tradies Need to Know"
+seo_title: "Opportunities in NZ Water Infrastructure"
 description: "With over $13 billion in planned water infrastructure investment across NZ, discover how tradies can get involved in this growing sector."
 date: 2026-04-26
 tags: [Infrastructure, Water, NZ, Construction, Opportunities]

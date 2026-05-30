@@ -1,5 +1,6 @@
 ---
 title: "Cold Weather Concreting in NZ: A Builder's Practical Guide for Winter 2026"
+seo_title: "Cold Weather Concreting NZ: Winter Builder Guide"
 description: "How NZ builders and concreters can safely pour and cure concrete in cold winter conditions — temperatures, timing, costs, and code compliance."
 date: 2026-05-25
 tags: [concrete, builder, winter, NZ, WorkSafe, construction]

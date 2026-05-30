@@ -1,5 +1,6 @@
 ---
 title: "NZ Leave Entitlements Calculator — Annual Leave, Sick Leave & Public Holidays"
+seo_title: "NZ Leave Entitlements Calculator 2026"
 description: "Calculate the full value of statutory leave entitlements for NZ employees — annual leave, sick leave, public holidays, and bereavement leave."
 tags: [leave, annual leave, sick leave, employment, holidays, NZ]
 author: "NZ Tradie Tools"

@@ -9,7 +9,7 @@
     <meta name="ICBM" content="-41.2866, 174.7756">
     <!-- Performance -->
     <link rel="preconnect" href="https://www.googletagmanager.com">
-    <title>{{ cat.title }} — NZ Tradie Tools</title>
+    <title>{{ cat.title if cat.title|length > 52 else cat.title ~ ' | NZ Tradie Tools' }}</title>
     <meta name="description" content="{{ cat.description }}">
     <meta property="og:title" content="{{ cat.title }} — NZ Tradie Tools">
     <meta property="og:description" content="{{ cat.description }}">

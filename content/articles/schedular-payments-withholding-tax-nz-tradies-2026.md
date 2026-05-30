@@ -1,5 +1,6 @@
 ---
 title: "Schedular Payments & Withholding Tax: What NZ Tradies Need to Know in 2026"
+seo_title: "Schedular Payments & Withholding Tax NZ 2026"
 description: "IRD's schedular payment rules explained for NZ tradies who hire subcontractors — rates, registration, deadlines and how to avoid costly penalties."
 date: 2026-05-26
 tags: [tax, IRD, subcontractors, compliance, NZ]

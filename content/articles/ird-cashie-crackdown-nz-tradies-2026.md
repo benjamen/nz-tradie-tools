@@ -1,5 +1,6 @@
 ---
 title: "IRD's Cashie Crackdown 2026: What Every NZ Tradie Needs to Know"
+seo_title: "IRD Cashie Crackdown 2026: NZ Tradie Guide"
 description: "IRD has launched 3,600 audits in six months targeting cash jobs in the trades. Here's what NZ tradies need to know to stay compliant and avoid penalties."
 date: 2026-05-10
 tags: [tax, IRD, compliance, cash jobs, NZ]

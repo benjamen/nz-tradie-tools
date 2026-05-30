@@ -1,5 +1,6 @@
 ---
 title: "Where Did All the Tradies Go? NZ's Tradie Labour Shortage in 2026"
+seo_title: "NZ Tradie Labour Shortage 2026"
 description: "Building consents are up but capacity is tight. Here's why NZ's tradie labour gap is the industry's biggest challenge in 2026 — and what it means for your business."
 date: 2026-05-24
 tags: [labour, industry, market trends, NZ, construction]

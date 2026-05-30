@@ -1,5 +1,6 @@
 ---
 title: "Managing Rising Material Costs: A Guide for NZ Tradies in 2026"
+seo_title: "Managing Rising Material Costs NZ 2026"
 description: "With material costs increasing, here is how you can manage your margins and keep your NZ tradie business profitable."
 date: 2026-04-24
 tags: [Materials, Pricing, NZ, Business, Economics]

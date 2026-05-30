@@ -1,5 +1,6 @@
 ---
 title: "Markup vs Margin: The NZ Tradie's Guide to Getting Your Numbers Right (2026)"
+seo_title: "Markup vs Margin for NZ Tradies 2026"
 description: "Markup and margin are not the same thing. NZ tradies who confuse them quietly lose profit on every job. Here's the maths explained with real NZD examples."
 date: 2026-05-10
 tags: [pricing, business, quoting, markup, margin, NZ]

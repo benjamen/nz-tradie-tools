@@ -1,5 +1,6 @@
 ---
 title: "How to Handle Variation Orders as an NZ Tradie (and Stop Losing Money on Extra Work)"
+seo_title: "How to Handle Variation Orders as an NZ Tradie (and Stop…"
 description: "A practical guide to writing, pricing and getting sign-off on variation orders for NZ tradies — protect your margins when scope changes mid-job."
 date: 2026-05-23
 tags: [variations, contracts, pricing, cash flow, NZ]

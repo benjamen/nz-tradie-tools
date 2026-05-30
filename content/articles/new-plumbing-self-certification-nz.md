@@ -1,5 +1,6 @@
 ---
 title: "Understanding the New Plumbing Self-Certification Scheme for NZ Tradies"
+seo_title: "Understanding the New Plumbing Self-Certification Scheme…"
 description: "A look at the new plumbing self-certification rules in NZ and what they mean for your workflow and productivity."
 date: 2026-04-23
 tags: [Plumbing, NZ, Regulations, Productivity]

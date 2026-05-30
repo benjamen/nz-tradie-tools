@@ -1,5 +1,6 @@
 ---
 title: "Earthquake-Prone Buildings: What NZ Tradies Need to Know in 2026"
+seo_title: "Earthquake-Prone Buildings NZ 2026"
 description: "Councils are enforcing EPB deadlines across NZ in 2026. Here's how licensed tradies can find, price, and deliver earthquake-prone building remediation work."
 date: 2026-05-17
 tags: [compliance, LBP, building regulations, structural, NZ]

@@ -1,5 +1,6 @@
 ---
 title: "How NZ Tradies Should Price Jobs in the 2026 Construction Recovery"
+seo_title: "How NZ Tradies Should Price Jobs in the 2026 Construction…"
 description: "Consents are up 22.9% but margins are still thin. Here's how NZ tradies can price jobs strategically in the 2026 recovery market."
 date: 2026-05-18
 tags: [pricing, job costing, NZ, construction recovery, business]

@@ -1,5 +1,6 @@
 ---
 title: "NZ Private Building Consent Authorities: A Practical Guide for Builders in 2026"
+seo_title: "NZ Private Building Consent Authorities 2026"
 description: "NZ's first private BCAs are now registered. Here's what they mean for builders — faster consents, lower fees, and how to decide when to use one."
 date: 2026-05-28
 tags: [building consent, LBP, MBIE, building regulations, NZ]

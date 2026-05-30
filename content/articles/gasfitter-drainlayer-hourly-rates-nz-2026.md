@@ -1,5 +1,6 @@
 ---
 title: "NZ Gasfitter and Drainlayer Hourly Rates Explained (2026 Guide)"
+seo_title: "NZ Gasfitter and Drainlayer Hourly Rates Explained"
 description: "What gasfitters and drainlayers charge per hour in New Zealand in 2026, why licensed trades cost more, and how to structure your own rate."
 date: 2026-05-25
 tags: [gasfitter, drainlayer, pricing, hourly rate, NZ, PGDB]

@@ -1,5 +1,6 @@
 ---
 title: "Do You Need Building Consent in NZ? A Tradie's Practical Guide"
+seo_title: "Do You Need Building Consent in NZ?"
 description: "Not every building job needs council consent — but getting it wrong costs serious money. Here's a clear guide to what needs consent, what's exempt, and how to check when you're not sure."
 date: 2026-05-08
 tags: [building consent, building code, BCA, council, compliance]

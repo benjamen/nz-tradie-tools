@@ -1,5 +1,6 @@
 ---
 title: "Tradie App Fatigue: Why NZ Tradies Are Paying Too Much for Too Many Tools"
+seo_title: "Tradie App Fatigue NZ"
 description: "Most NZ tradies juggle 4–5 different software subscriptions. We break down the real cost and what to do about it."
 date: 2026-04-20
 author: "NZ Tradie Tools"

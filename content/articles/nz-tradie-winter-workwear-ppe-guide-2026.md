@@ -1,5 +1,6 @@
 ---
 title: "NZ Tradie Winter Workwear Guide 2026: PPE, Layering and High-Vis for Cold Job Sites"
+seo_title: "NZ Tradie Winter Workwear Guide 2026"
 description: "A practical guide to winter workwear and PPE for NZ tradies in 2026 — real NZD prices, WorkSafe requirements, layering tips and what to buy."
 date: 2026-05-22
 tags: [workwear, PPE, winter, health-and-safety, NZ]

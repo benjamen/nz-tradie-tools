@@ -1,5 +1,6 @@
 ---
 title: "NZ Employment Relations Amendment Act 2026: What Trade Business Owners Must Know About Contractor Agreements"
+seo_title: "NZ Employment Relations Amendment Act 2026"
 description: "The Employment Relations Amendment Act 2026 created a new 'specified contractor' category. NZ trade business owners must update contracts or face legal risk."
 date: 2026-05-25
 tags: [employment law, contractors, compliance, NZ, IRD]

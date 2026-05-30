@@ -1,5 +1,6 @@
 ---
 title: "NZ Construction Recovery 2026: What Every Tradie Needs to Know"
+seo_title: "NZ Construction Recovery 2026"
 description: "Building consents are up 22.9% — but cost pressures are rising too. Here's what the NZ construction industry recovery means for your business."
 date: 2026-04-22
 tags: [construction, building, NZ, industry news, 2026]

@@ -1,5 +1,6 @@
 ---
 title: "WorkSafe Reminder: Asbestos is Still a Major Construction Risk in 2026"
+seo_title: "WorkSafe Reminder 2026"
 description: "WorkSafe has issued a timely reminder that asbestos remains a live risk in older buildings. Here’s what you need to know to keep your site safe."
 date: 2026-05-19
 tags: [Safety, Asbestos, Regulations, NZ, Construction]

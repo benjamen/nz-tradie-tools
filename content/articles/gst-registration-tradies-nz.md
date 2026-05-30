@@ -1,5 +1,6 @@
 ---
 title: "GST Registration for Tradies NZ — When to Register, How It Works, and What Changes"
+seo_title: "GST Registration for Tradies NZ"
 description: "Should you register for GST as a New Zealand tradie? This guide covers the $60k threshold, how to register, what changes when you do, and how to file your returns."
 date: 2026-05-29
 tags: [GST, registration, tax, sole-trader, NZ, self-employed]
