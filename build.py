@@ -530,6 +530,8 @@ def build_sitemap(articles, calculators, cities, trades, config, job_pages_count
     urls.append({"loc": f"{base_url}/faq/", "priority": "0.8", "changefreq": "monthly", "lastmod": today})
     urls.append({"loc": f"{base_url}/tax-dates/", "priority": "0.8", "changefreq": "yearly", "lastmod": today})
     urls.append({"loc": f"{base_url}/claim/", "priority": "0.6", "changefreq": "monthly", "lastmod": today})
+    urls.append({"loc": f"{base_url}/contact/", "priority": "0.5", "changefreq": "yearly", "lastmod": today})
+    urls.append({"loc": f"{base_url}/privacy/", "priority": "0.3", "changefreq": "yearly", "lastmod": today})
     # Business profiles
     for slug in load_claimed_businesses():
         urls.append({"loc": f"{base_url}/businesses/{slug}/", "priority": "0.8",
