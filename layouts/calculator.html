@@ -9,7 +9,7 @@
     <meta name="ICBM" content="-41.2866, 174.7756">
     <!-- Performance -->
     <link rel="preconnect" href="https://www.googletagmanager.com">
-    <title>{{ page_title }} — NZ Tradie Tools</title>
+    <title>{{ page_title if page_title|length > 42 else page_title ~ ' — NZ Tradie Tools' }}</title>
     <meta name="description" content="{{ description }}">
     <meta property="og:title" content="{{ page_title }} — NZ Tradie Tools">
     <meta property="og:description" content="{{ description }}">

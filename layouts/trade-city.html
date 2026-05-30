@@ -9,7 +9,8 @@
     <meta name="ICBM" content="-41.2866, 174.7756">
     <!-- Performance -->
     <link rel="preconnect" href="https://www.googletagmanager.com">
-    <title>{{ seo_title if seo_title else 'Best ' ~ trade.name ~ ' in ' ~ city.name ~ ' ' ~ year ~ ' — Rated & Reviewed' }}</title>
+    {%- set _t = seo_title if seo_title else 'Best ' ~ trade.name ~ ' in ' ~ city.name ~ ' ' ~ year ~ ' — Rated & Reviewed' -%}
+    <title>{{ _t if _t|length <= 60 else trade.name ~ ' in ' ~ city.name ~ ' NZ | Top Rated ' ~ year }}</title>
     <meta name="description" content="{{ meta_description if meta_description else 'Find trusted ' ~ trade.plural ~ ' in ' ~ city.name ~ ' — ' ~ year ~ ' ratings from Google Maps & NoCowboys. Compare prices, reviews & get free quotes ✓' }}">
     <meta property="og:title" content="Top 10 {{ trade.name }} in {{ city.name }} {{ year }} — Rated &amp; Reviewed">
     <meta property="og:description" content="The top-rated {{ trade.plural }} in {{ city.name }}, NZ — ratings sourced from Google Maps, NoCowboys, and Builderscrack. Local pricing and hiring tips.">
