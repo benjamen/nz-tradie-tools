@@ -1,0 +1,61 @@
+NZ Tradie Tools — Directory Submissions Research
+Date: 2026-06-01 (Week 1 of June)
+
+== SUBMISSION NOTE (for both directories) ==
+"NZ Tradie Tools (tradietools.nz) — Free NZ-specific calculators for tradies including GST
+calculator, hourly rate calculator, job cost builder, and free quote/invoice templates. Also
+lists top-rated tradespeople by city. Built for NZ tradies."
+
+== 1. NoCowboys.co.nz ==
+Submission URL: https://www.nocowboys.co.nz/register/business
+Type: Paid subscription tradie directory ($999/year)
+Notes:
+  - This is designed for tradie businesses to list themselves, not resource/tool sites.
+  - No obvious free "resources" or external link submission page found.
+  - ACTION: Skip direct submission — not appropriate for a tool/calculator site.
+  - ALTERNATIVE: Consider reaching out via their contact page to ask if they feature
+    useful tradie resources or tools for their members.
+
+== 2. Builderscrack.co.nz ==
+Submission URL: https://builderscrack.co.nz/sign-up/trade
+Contact: support@builderscrack.co.nz (Mon–Fri 9am–5pm)
+Type: Paid lead-gen platform for tradies (free profile, paid for leads)
+Notes:
+  - Again, designed for tradie business listings rather than tool/resource sites.
+  - Contact page: https://builderscrack.co.nz/contact
+  - ACTION: Send email to support@builderscrack.co.nz asking if they feature useful tools
+    or resources for their tradie members. Pitch tradietools.nz as a free complementary resource.
+
+== SUGGESTED EMAIL TO BUILDERSCRACK ==
+To: support@builderscrack.co.nz
+Subject: Free NZ tradie resource — tradietools.nz
+
+Hi Builderscrack team,
+
+I've built a free resource for NZ tradies at tradietools.nz. It includes a GST calculator,
+hourly rate calculator, job cost builder, and free quote/invoice templates — all NZ-specific.
+The site also lists top-rated tradespeople by city.
+
+I wondered if you feature useful tools or resources for your tradie members, or if there's
+a way to mention tradietools.nz to your audience. Happy to chat.
+
+— Ben
+
+== ADDITIONAL NZ DIRECTORIES TO CONSIDER ==
+These may be more suitable for listing a resource/tool website:
+  - nzpages.co.nz — free NZ business directory
+  - finda.co.nz — NZ local directory
+  - yellowpages.co.nz — free basic listing available
+  - nzbizbuysell.co.nz — NZ business directory
+  - hotfrog.co.nz — free NZ business directory
+
+For these, use the submission note at the top of this file.
+Category: "Business Tools & Resources" or "Construction & Trades"
+
+== STATUS ==
+[ ] NoCowboys — skip/contact for resource feature
+[ ] Builderscrack — email support@builderscrack.co.nz
+[ ] nzpages.co.nz — submit
+[ ] finda.co.nz — submit
+[ ] yellowpages.co.nz — submit
+[ ] hotfrog.co.nz — submit
