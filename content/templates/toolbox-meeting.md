@@ -1,6 +1,6 @@
 ---
 title: "Free Toolbox Meeting Template NZ"
-description: "Free toolbox meeting record template for NZ tradies. Log weekly H&S meetings with attendees and topics covered. Download as PDF."
+description: "Free NZ toolbox meeting template — log attendees, topics & actions for Worksafe compliance. Instant download, PDF-ready. ✓"
 layout: template-page
 draft: false
 ---

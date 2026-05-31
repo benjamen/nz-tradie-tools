@@ -5,47 +5,14 @@
 
 ## Critical Blockers (Fix This Week)
 
-### 1. Fix 588 title tags > 70 chars (31% of 1,863 pages)
-**File:** `layouts/base.html` (or equivalent title template)
-**Problem:** " — NZ Tradie Tools" suffix pushes most titles over 70 chars. All truncated in SERPs.
-**Fix:** Strip suffix to just brand initial on non-homepage pages:
-- Homepage: `NZ Tradie Tools — Find & Compare NZ Tradies`
-- Inner pages: `[Primary Keyword]` or `[Primary Keyword] | NZ Tradie Tools`
-- Max 60–65 chars total
-**Impact:** Fixes 588 pages in 1 template change; immediate SERP CTR improvement.
+### ✅ 1. Fix 588 title tags > 70 chars (31% of 1,863 pages)
+**DONE 2026-05-30** — Fixed conditional title logic in `layouts/base.html`, `calculator.html`, `trade-city.html`, `trade-hub.html`, `location-hub.html`, `calc-category.html`. Verified 0 titles > 70 chars after fix.
 
-### 2. Add `Article`/`BlogPosting` schema to article layout (139 articles)
-**File:** `layouts/article.html`
-**Add to JSON-LD:**
-```json
-{
-  "@type": "Article",
-  "headline": "{{ article.title }}",
-  "description": "{{ article.description }}",
-  "datePublished": "{{ article.date }}",
-  "dateModified": "{{ article.updated | default(article.date) }}",
-  "author": {"@type": "Organization", "name": "NZ Tradie Tools"},
-  "publisher": {"@id": "{{ base_url }}/#organization"},
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "{{ article.url }}"}
-}
-```
-**Impact:** Makes 139 articles eligible for Article rich results in Google Search.
+### ✅ 2. Add `Article`/`BlogPosting` schema to article layout (139 articles)
+**DONE 2026-05-30** — `Article` schema already present in `layouts/base.html` (article template) within `@graph`. Confirmed via read; no change needed.
 
-### 3. Add `HowTo` schema to calculator pages
-**File:** `layouts/calculator.html`
-**Add:**
-```json
-{
-  "@type": "HowTo",
-  "name": "How to use the {{ calculator.name }}",
-  "step": [
-    {"@type": "HowToStep", "text": "Enter your project details"},
-    {"@type": "HowToStep", "text": "Select your region / trade type"},
-    {"@type": "HowToStep", "text": "View your estimated cost breakdown"}
-  ]
-}
-```
-**Impact:** Calculator pages become eligible for HowTo rich results.
+### ✅ 3. Add `HowTo` schema to calculator pages
+**DONE 2026-05-30** — `HowTo` schema (3-step) already present in `layouts/calculator.html`. Confirmed; no change needed.
 
 ---
 
@@ -60,22 +27,17 @@
 - Real NZ pricing data (2025–2026)
 **Target:** 2,500 words minimum per article before publishing new ones.
 
-### 5. Increase internal links in trade articles (1–3 → 3–5 per article)
-**Problem:** Trade articles link to only 1–3 trade pages; should link to 3–5 to reinforce topical clusters.
-**Fix:** Add contextual links:
-- Link to 2–3 related trade pages
-- Link to the city's top10 page if it exists
-- Link to relevant calculator
+### ✅ 5. Increase internal links in trade articles (1–3 → 3–5 per article)
+**DONE 2026-05-31** — Added "Related Guides & Tools" box to `layouts/base.html` (article template) between article body and CTA. Dynamically links to tag-matched trade pages + key calculators + trade directory.
 
-### 6. Fix sitemap gap — 9 pages not in sitemap
-**Problem:** 1,854 URLs in sitemap vs 1,863 built pages.
-**Fix:** Check `build.py` sitemap generation logic — identify which 9 page types are skipped.
+### ✅ 6. Fix sitemap gap — 9 pages not in sitemap
+**DONE 2026-05-30** — Added `contact/` and `privacy/` to sitemap in `build.py`. Remaining 7 gaps are non-indexable (test articles deleted, static assets, thank-you pages).
 
 ---
 
-## Biggest Growth Lever — Fill 681 Missing Trade×City Pages
+## ✅ Biggest Growth Lever — Fill 681 Missing Trade×City Pages
 
-**Scope:** 47 trades × 20 cities = 940 combos. Only 259 done (27%). **681 missing.**
+**DONE 2026-05-31** — All 940 trade×city combos now have top10 data files and built HTML pages (47 trades × 20 cities). Deployed to GitHub Pages.
 
 ### Priority Order (fill by city, highest search volume first):
 
