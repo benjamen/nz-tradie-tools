@@ -537,7 +537,7 @@ def build_sitemap(articles, calculators, cities, trades, config, job_pages_count
         urls.append({"loc": f"{base_url}/businesses/{slug}/", "priority": "0.8",
                      "changefreq": "monthly", "lastmod": today})
     for section, pri in [("articles", "0.6"), ("calculators", "0.8"), ("trades", "0.9"),
-                          ("jobs", "0.9"), ("locations", "0.7")]:
+                          ("jobs", "0.9")]:
         urls.append({"loc": f"{base_url}/{section}/", "priority": pri, "changefreq": "weekly", "lastmod": today})
 
     # Calc category landing pages
