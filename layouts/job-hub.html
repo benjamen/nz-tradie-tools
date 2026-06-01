@@ -259,9 +259,50 @@
                     <li>Check the tradie's licence on the <a href="https://www.building.govt.nz/building-officials/licensing-and-registration/" rel="noopener" target="_blank">MBIE register</a> before signing anything.</li>
                 </ul>
 
+                {% if job.system_types %}
+                <!-- System types comparison table -->
+                <h2>{{ job.label }} — Types &amp; Cost Comparison</h2>
+                <div class="price-matrix">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>System type</th>
+                                <th>Zones</th>
+                                <th>Cameras</th>
+                                <th>Smart</th>
+                                <th>Monthly monitoring</th>
+                                <th>Install cost</th>
+                                <th>Best for</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for s in job.system_types %}
+                            <tr>
+                                <td><strong>{{ s.type }}</strong></td>
+                                <td>{{ s.zones }}</td>
+                                <td>{{ s.cameras }}</td>
+                                <td>{{ s.smart }}</td>
+                                <td>{{ s.monitoring }}</td>
+                                <td>{{ s.install_cost }}</td>
+                                <td>{{ s.best_for }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                {% endif %}
+
                 <!-- FAQ -->
                 <h2>Frequently Asked Questions</h2>
                 <div class="faq-section">
+                    {% if job.faqs %}
+                    {% for faq in job.faqs %}
+                    <details>
+                        <summary>{{ faq.q }}</summary>
+                        <p>{{ faq.a }}</p>
+                    </details>
+                    {% endfor %}
+                    {% endif %}
                     <details>
                         <summary>How much does {{ job.label|lower }} cost in NZ?</summary>
                         <p>{{ job.label }} in NZ typically costs ${{ '{:,}'.format(job.scenarios.small.min) }}–${{ '{:,}'.format(job.scenarios.large.max) }} depending on scope and city. A {{ job.scenarios.small.label|lower }} starts around ${{ '{:,}'.format(job.scenarios.small.min) }}–${{ '{:,}'.format(job.scenarios.small.max) }}. A {{ job.scenarios.large.label|lower }} can reach ${{ '{:,}'.format(job.scenarios.large.min) }}–${{ '{:,}'.format(job.scenarios.large.max) }}. Auckland and Queenstown are 15–20% above these baselines.</p>
