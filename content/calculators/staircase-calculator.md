@@ -1,7 +1,7 @@
 ---
 title: "Staircase Calculator — NZ (Rise, Run & Dimensions)"
-seo_title: "NZ Stair Calculator 2026 — Steps, Rise & Run (Free)"
-description: "Free NZ stair calculator — enter floor height to instantly get compliant step count, rise, going, and total run per NZ Building Code. ✓"
+seo_title: "Stair Calculator NZ 2026 — Step Count, Rise & Run (Free)"
+description: "Free NZ staircase calculator — enter floor height to get step count, rise, going, and total run compliant with NZ Building Code. Instant results."
 tags: [staircase, stairs, calculator, NZ, building code]
 author: "NZ Tradie Tools"
 layout: calculator

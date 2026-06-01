@@ -1001,7 +1001,7 @@ def build_tradie_rates(config, nav, base_path):
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NZ Tradie Hourly Rates {year} — All Trades, All Cities</title>
-<meta name="description" content="Compare NZ tradie hourly rates by trade and city for {year}. Builders, plumbers, electricians, painters and more — Auckland, Wellington, Christchurch and all major NZ cities.">
+<meta name="description" content="Compare NZ tradie hourly rates by trade and city for {year}. Builders, plumbers, electricians, painters — Auckland, Wellington, Christchurch and beyond.">
 <link rel="canonical" href="{base_url}/tradie-rates/">
 <meta property="og:title" content="NZ Tradie Hourly Rates {year} — All Trades, All Cities">
 <meta property="og:description" content="Compare NZ tradie hourly rates by trade and city. Updated {year}.">
