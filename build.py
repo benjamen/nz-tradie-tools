@@ -546,16 +546,16 @@ def build_sitemap(articles, calculators, cities, trades, config, job_pages_count
                      "changefreq": "monthly", "lastmod": today})
 
     for a in articles:
-        urls.append({"loc": f"{base_url}/articles/{a['slug']}.html", "priority": "0.7",
+        urls.append({"loc": f"{base_url}/articles/{a['slug']}", "priority": "0.7",
                      "changefreq": "monthly", "lastmod": a.get("date_iso", today)})
     for c in calculators:
-        urls.append({"loc": f"{base_url}/calculators/{c['slug']}.html", "priority": "0.8",
+        urls.append({"loc": f"{base_url}/calculators/{c['slug']}", "priority": "0.8",
                      "changefreq": "monthly", "lastmod": today})
     for trade in trades:
         urls.append({"loc": f"{base_url}/trades/{trade['slug']}/", "priority": "0.9",
                      "changefreq": "weekly", "lastmod": today})
         for city in cities:
-            urls.append({"loc": f"{base_url}/trades/{trade['slug']}/{city['slug']}.html",
+            urls.append({"loc": f"{base_url}/trades/{trade['slug']}/{city['slug']}",
                          "priority": "0.8", "changefreq": "monthly", "lastmod": today})
     for city in cities:
         urls.append({"loc": f"{base_url}/locations/{city['slug']}/", "priority": "0.7",
@@ -568,7 +568,7 @@ def build_sitemap(articles, calculators, cities, trades, config, job_pages_count
             urls.append({"loc": f"{base_url}/jobs/{job_slug}/", "priority": "0.9",
                          "changefreq": "monthly", "lastmod": today})
             for city in cities:
-                urls.append({"loc": f"{base_url}/jobs/{job_slug}/{city['slug']}.html",
+                urls.append({"loc": f"{base_url}/jobs/{job_slug}/{city['slug']}",
                              "priority": "0.85", "changefreq": "monthly", "lastmod": today})
 
     templates_file = DATA_DIR / "templates.json"
@@ -577,7 +577,7 @@ def build_sitemap(articles, calculators, cities, trades, config, job_pages_count
         urls.append({"loc": f"{base_url}/templates/", "priority": "0.9",
                      "changefreq": "monthly", "lastmod": today})
         for t in tmpl_data:
-            urls.append({"loc": f"{base_url}/templates/{t['slug']}.html",
+            urls.append({"loc": f"{base_url}/templates/{t['slug']}",
                          "priority": "0.85", "changefreq": "monthly", "lastmod": today})
 
     lines = ['<?xml version="1.0" encoding="UTF-8"?>',
