@@ -138,14 +138,16 @@ calculator_html: |
   }
   </script>
 faqs:
-  - q: 'How much does earthworks cost per cubic metre in NZ?'
-    a: 'General earthworks in NZ costs $25–$80/m³ cut and fill, depending on soil type, access, and distance to disposal. Rocky ground can reach $150–$250/m³. Offsite disposal adds tip fees of $80–$120/m³.'
-  - q: 'What is swell factor in earthworks?'
-    a: 'When soil is excavated, it expands in volume (swell). Clay expands by 20–35%, gravel by 10–15%. So 100 m³ of in-situ clay becomes approximately 125–135 m³ of loose material for trucking.'
-  - q: 'Do I need a resource consent for earthworks in NZ?'
-    a: 'Most councils require resource consent for earthworks exceeding certain thresholds — typically 200–500 m³ or more than 1 m depth, or if near waterways or steep slopes. Check your district plan.'
-  - q: 'How do I convert earthworks between cubic metres and tonnes?'
-    a: 'Average NZ soil weighs 1.4–1.8 tonnes/m³ (bulk). A common conversion is 1.6 t/m³. So 100 m³ of general fill = about 160 tonnes. Sandy soil is lighter; heavy clay is heavier.'
+  - q: 'How much does earthworks typically cost per cubic metre in NZ?'
+    a: 'General excavation and fill costs $30–$80/m³ in NZ (bulk). Rocky or contaminated soil reaches $150–$250/m³. Trucking and offsite disposal adds $80–$150/m³. Prices vary by location (Auckland/Wellington cost 10–20% more) and site access. Always get multiple quotes.'
+  - q: 'What is swell factor and why does it matter for earthworks?'
+    a: 'Swell factor is the volume increase when soil is excavated. In-situ clay expands by 25–35% when dug; rock by 50–80%. So 100 m³ of compacted clay becomes ~130 m³ loose. Trucks are paid by volume delivered, not compacted volume — understanding swell saves money on fill orders.'
+  - q: 'Do I need resource consent for earthworks on my property in NZ?'
+    a: 'Most councils require consent for earthworks >200–500 m³, or if >1 m deep, or near waterways, wetlands, or steep slopes. Even smaller jobs need consent if they affect neighbours or stormwater. Check your district plan or ask your council before starting.'
+  - q: 'How do I calculate fill weight from volume?'
+    a: 'Multiply cubic metres by soil density (typically 1.4–1.8 t/m³). General fill ≈ 1.6 t/m³, so 100 m³ = 160 tonnes. Dry sand is lighter (~1.5 t/m³), clay heavier (~1.7–1.8 t/m³). Use this calculator to convert volume to weight for ordering by the tonne.'
+  - q: 'What types of fill are acceptable in NZ for building sites?'
+    a: 'Clean fill (sand, gravel, rock) is standard. Contaminated fill requires assessment. Topsoil is for landscaping, not structural fill. Council may require fill testing (compaction, contaminant analysis) depending on location and building type. Always ask your contractor what fill type they''re supplying.'
 related_articles: [how-to-price-a-job-nz-tradie-guide]
 ---
 

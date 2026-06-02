@@ -93,6 +93,7 @@ faqs:
     a: 'Use a semi-gloss or gloss finish waterborne paint specifically rated for wet areas or bathrooms. Products with anti-mould or moisture-resistant formulation are recommended for high-humidity NZ bathrooms.'
   - q: 'How much does it cost to paint a house interior in NZ?'
     a: 'Professional interior painting in NZ costs approximately $20–$40/m² for walls and ceilings (2 coats, walls only). A typical 3-bedroom home with 250–300 m² of paintable surface costs $5,000–$12,000 fully painted.'
+related_articles: [painter-pricing-guide-nz-2026, how-to-price-a-job-nz-tradie-guide, how-to-write-a-quote-that-wins-jobs-nz]
 ---
 
 ## Paint Calculator for NZ Painters & Homeowners

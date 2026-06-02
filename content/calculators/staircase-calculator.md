@@ -69,14 +69,17 @@ calculator_html: |
   calcStair();
   </script>
 faqs:
-  - q: 'What are the code requirements for stair dimensions in NZ?'
-    a: 'NZS 3604 and the NZ Building Code (Clause D1) require: maximum riser height 220 mm, minimum tread depth 250 mm, riser-to-tread formula: 2R + G = 600–700 mm. Handrails are required on all stairs over 4 risers.'
-  - q: 'How many steps do I need for a 2.4 m floor-to-floor height?'
-    a: 'At a comfortable 175 mm riser height: 2400 ÷ 175 = 13.7, round to 14 risers (steps). Tread depth would be 600 − (2 × 175) = 250 mm (minimum). Total stair run = 14 × 250 mm = 3,500 mm horizontal.'
-  - q: 'Do stairs need a building consent in NZ?'
-    a: 'Internal stair replacements that are like-for-like are exempt from consent. New stairs, stairs serving a new level, or stairs outside NZS 3604 parameters require a building consent.'
-  - q: 'What timber is used for stairs in NZ?'
-    a: 'Interior stairs use H1.2 or H3.1 treated pine or laminated timber for structural stringers. Treads are typically 44 mm dressed pine, hardwood, or engineered timber flooring glued and screwed. Hardwood treads are preferred for durability.'
+  - q: 'What are the NZ Building Code requirements for staircase dimensions?'
+    a: 'NZ Building Code Clause D1 requires: riser height 150–220 mm, tread depth (going) 220–355 mm, and the comfort formula 2R + G = 550–700 mm. Handrails are mandatory on stairs with 4+ risers, positioned 900–1,000 mm above the stairline. All dimensions must comply unless specific exemptions apply.'
+  - q: 'How do I calculate the number of steps needed for my floor height?'
+    a: 'Divide your floor-to-floor height (mm) by your preferred riser height (typically 175 mm). For example, 2,700 mm ÷ 175 = 15.4 risers, so round to 15 or 16. The actual riser becomes 2,700 ÷ 15 = 180 mm per step. Use this calculator to adjust dimensions until you achieve the ideal 2R + G formula.'
+  - q: 'Does a staircase replacement require a building consent in NZ?'
+    a: 'Like-for-like internal stair replacements (same location, dimensions, materials) are typically exempt. However, new stairs, stairs serving a new level, or stairs outside NZS 3604 parameters REQUIRE a building consent. Check with your local council or an LBP-licensed builder before starting.'
+  - q: 'What timber and materials are used for NZ residential stairs?'
+    a: 'Stringers use H1.2 treated pine, H3.1 hardwood, or engineered laminated beam. Treads are 44 mm dressed pine, native hardwood (rimu, matai), oak, or engineered timber flooring. Handrails are typically 45 mm diameter hardwood or stainless steel. Always use licensed timber graded for structural use.'
+  - q: 'How much does a staircase cost in NZ?'
+    a: 'Straight timber staircases cost $3,500–$6,000 (supply + install). Hardwood or curved stairs range $6,000–$15,000. Floating or architectural stairs cost $15,000–$35,000+. Costs vary by builder experience, material selection, and whether building consent is required. Get 3 quotes with detailed line items.'
+related_articles: [carpenter-pricing-guide-nz-2026, how-to-get-lbp-licence-new-zealand, how-to-price-a-job-nz-tradie-guide]
 ---
 
 ## NZ Building Code Staircase Requirements

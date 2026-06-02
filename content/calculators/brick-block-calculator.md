@@ -97,14 +97,16 @@ calculator_html: |
   }
   </script>
 faqs:
-  - q: 'How many bricks do I need per square metre in NZ?'
-    a: 'Standard NZ metric bricks (230×110×76 mm) laid in a single-skin stretcher bond require approximately 50 bricks per m². Add 5–10% for cuts and wastage.'
-  - q: 'How many concrete blocks per square metre?'
-    a: 'Standard 390×190×190 mm hollow concrete blocks require approximately 12.5 blocks per m² of single-skin wall. Add 5% wastage for cuts.'
-  - q: 'How much mortar do I need for bricklaying?'
-    a: 'A rough rule is 1 bag of cement (20 kg) per 70–80 bricks. A standard mix is 1 part cement to 5–6 parts sand by volume. Always allow 10% extra for waste.'
-  - q: 'Can I use brick calculators for a retaining wall?'
-    a: 'Yes, but retaining walls need engineering sign-off for heights above 1.5 m in NZ (or lower if surcharge loads apply). The block count calculation is the same; the footing and reinforcing design is additional.'
+  - q: 'How many bricks are needed per square metre in NZ?'
+    a: 'Standard NZ metric bricks (230×110×76 mm) in single-skin stretcher bond require ~50 bricks/m². Double-skin (cavity) walls need ~100 bricks/m² (50 per skin). Always add 5–10% for cuts, broken units, and wastage. Use this calculator to estimate quantities for quotation.'
+  - q: 'How many concrete blocks do I need per square metre?'
+    a: 'Standard 390×190×190 mm hollow concrete blocks require ~12.5 blocks/m² for single-skin walls. For double-skin cavity construction, calculate ~25 blocks/m². Lighter blocks (230mm wide) need ~21 blocks/m². Add 5% for cuts and waste.'
+  - q: 'How much mortar is needed for bricklaying in NZ?'
+    a: 'Typical NZ rule: 1 × 20 kg cement bag per 70–80 bricks (10–12 litre mix). Standard mix: 1 cement : 5–6 sand by volume. For 1,000 bricks, order approximately 13–15 bags cement plus 60–80 m³ sand. Allow 10% extra for waste and site variations.'
+  - q: 'Does a brick veneer wall need building consent in NZ?'
+    a: 'Single-skin brick veneer facing timber stud walls is common in NZ residential work and may be exempt if like-for-like replacement. New brick veneer work or cavity walls typically require building consent. Check with your council and hire an LBP-licensed bricklayer.'
+  - q: 'How much does bricklaying cost per square metre in NZ?'
+    a: 'Labour for bricklaying in NZ typically costs $120–$200/m² (brick + mortar + labour). Single-skin veneer is faster (~$100–$140/m²), while cavity walls cost more (~$180–$250/m²). Material costs (bricks + mortar) add $60–$100/m². Get quotes from 2–3 local masons.'
 related_articles: [how-to-price-a-job-nz-tradie-guide]
 ---
 

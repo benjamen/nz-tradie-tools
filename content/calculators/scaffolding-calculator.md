@@ -67,14 +67,16 @@ calculator_html: |
   }
   </script>
 faqs:
-  - q: 'How much scaffolding do I need for a typical NZ house?'
-    a: 'A standard NZ single-storey 200 m² house perimeter (say 60 lm) needs approximately 4–6 bays of scaffolding per side for roof or cladding work. Two-storey houses require additional lift height. Scaffold calculators use lift height × bay width to determine material quantity.'
-  - q: 'When is scaffolding required by law in NZ?'
-    a: 'NZ WorkSafe requires fall protection (scaffolding, edge protection, or safety harness) for work at heights above 1.5 m on construction sites. For work at 3 m+ on residential buildings, edge protection is generally mandated on the eave line.'
-  - q: 'How much does scaffolding hire cost in NZ?'
-    a: 'Scaffolding hire in NZ typically costs $100–$200 per m² of access coverage per month for erected and dismantled scaffold. A standard residential job (40–60 m² of coverage) might cost $4,000–$10,000 for a 4–6 week hire period.'
-  - q: 'What scaffolding standard applies in NZ?'
-    a: 'NZ scaffold erection and use must comply with AS/NZS 4576:1995 (Guidelines for scaffolding) and the Health and Safety at Work Act 2015. Scaffolding over 5 m high is a ''notifiable work'' category under HSWA.'
+  - q: 'How much scaffolding do I need for my house or building project?'
+    a: 'Calculate based on: (1) lift height (metres from ground to eave or roof peak), (2) perimeter length, (3) bay width (typically 1.8 m). Example: 8 m high × 60 m perimeter ÷ 1.8 m bay width = ~267 m² of coverage. This calculator estimates quantity for labour and hire quotes.'
+  - q: 'When is scaffolding required by WorkSafe NZ law?'
+    a: 'WorkSafe requires fall protection for work >1.5 m high. Scaffolding must comply with AS/NZS 4576. Notifiable work includes: scaffolding >5 m, work near live power lines, or work on confined spaces. Failure to scaffold correctly can result in fines up to $300,000+ and criminal liability.'
+  - q: 'How much does scaffolding hire and erection cost in NZ?'
+    a: 'Hire typically costs $120–$180 per m² of coverage for a 4–6 week job. Erection/dismantling adds $15–$25 per m². A 40 m² single-storey residential scaffold might cost $5,000–$8,000 total. Prices vary by region (Auckland 20% higher). Get quotes from 2–3 local erectors.'
+  - q: 'How is scaffolding priced — by square metre or by item?'
+    a: 'Most NZ scaffolders charge per m² of horizontal coverage, calculated as height × perimeter. Some charge per week or per month. Frame, guard rails, toe boards, and ladders are usually included. Confirm with your quoter whether erection/dismantling and safety equipment are included.'
+  - q: 'Can I use cheaper alternatives like ladders, platforms, or harnesses?'
+    a: 'Depends on the job. For short-term, low-level work (<2 m), a ladder may suffice. For complex multi-week jobs, permanent edge protection, or high-risk sites, scaffolding is usually required. A certified scaffolder will advise based on the site, task, and WorkSafe guidelines.'
 related_articles: [nz-winter-roofing-safety-height-work-2026, how-to-price-a-job-nz-tradie-guide]
 ---
 

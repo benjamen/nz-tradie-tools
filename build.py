@@ -142,6 +142,7 @@ def build():
     build_tax_dates(config, env, nav, base_path)
     profiles_count = build_business_profiles(config, env, nav, base_path)
     build_claim_page(config, env, nav, base_path)
+    build_list_your_business(config, env, nav, base_path)
 
     trades_count, locations_count = build_trades_and_locations(config, env, nav, base_path)
 
@@ -860,6 +861,38 @@ def build_claim_page(config, env, nav, base_path):
     # Simple thank-you page
     thankyou_html = f"""<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="refresh" content="5;url={config.get('base_url','')}/claim/"><title>Thanks! — NZ Tradie Tools</title><link rel="stylesheet" href="{base_path}/static/css/style.css"></head><body><div class="container" style="padding:4rem 1rem;text-align:center"><h1>✅ Claim submitted!</h1><p style="font-size:1.1rem;color:#555">We'll review your listing and email you within 1 business day when your profile page is live.</p><p style="margin-top:1.5rem"><a href="{base_path}/" style="color:#0055a5">← Back to NZ Tradie Tools</a></p></div></body></html>"""
     (PUBLIC_DIR / "claim" / "thankyou.html").write_text(thankyou_html, encoding="utf-8")
+
+
+def build_list_your_business(config, env, nav, base_path):
+    """Build the /list-your-business/ page with pricing & signup form."""
+    trades = json.loads((DATA_DIR / "trades.json").read_text())
+    cities = json.loads((DATA_DIR / "cities.json").read_text())
+
+    template = env.get_template("list-your-business.html")
+    ctx = {
+        **config,
+        "base_path": base_path,
+        "nav": nav,
+        "year": datetime.now().year,
+        "trades": trades,
+        "cities": cities,
+    }
+    (PUBLIC_DIR / "list-your-business").mkdir(exist_ok=True)
+    (PUBLIC_DIR / "list-your-business" / "index.html").write_text(template.render(**ctx), encoding="utf-8")
+
+    # Success page
+    success_template = env.get_template("list-your-business-success.html")
+    (PUBLIC_DIR / "list-your-business" / "success").mkdir(exist_ok=True)
+    (PUBLIC_DIR / "list-your-business" / "success" / "index.html").write_text(
+        success_template.render(**ctx), encoding="utf-8"
+    )
+
+    # Cancel page
+    cancel_template = env.get_template("list-your-business-cancel.html")
+    (PUBLIC_DIR / "list-your-business" / "cancel").mkdir(exist_ok=True)
+    (PUBLIC_DIR / "list-your-business" / "cancel" / "index.html").write_text(
+        cancel_template.render(**ctx), encoding="utf-8"
+    )
 
 
 def build_tax_dates(config, env, nav, base_path):

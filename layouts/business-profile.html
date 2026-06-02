@@ -35,12 +35,12 @@
             "addressRegion": {{ business.city_name | tojson }},
             "addressCountry": "NZ"
           },
-          "aggregateRating": {
+          {% if business.rating and business.rating >= 1 and business.rating <= 5 and business.review_count and business.review_count > 0 %}"aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": {{ business.rating }},
             "reviewCount": {{ business.review_count }},
             "bestRating": 5
-          },
+          },{% endif %}
           "areaServed": {{ business.areas_served | tojson }},
           "hasOfferCatalog": {
             "@type": "OfferCatalog",

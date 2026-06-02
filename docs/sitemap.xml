@@ -169,6 +169,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://tradietools.nz/articles/nz-material-prices-by-region-2026</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/scope-creep-change-orders-nz-tradies</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://tradietools.nz/articles/trade-account-supplier-tactics-nz-tradies-2026</loc>
     <lastmod>2026-06-01</lastmod>
     <changefreq>monthly</changefreq>
@@ -1058,6 +1070,12 @@
   </url>
   <url>
     <loc>https://tradietools.nz/calculators/fence-calculator</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/calculators/gib-plasterboard-calculator</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

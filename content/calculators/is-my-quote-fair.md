@@ -285,7 +285,15 @@ calculator_html: |
 
   document.getElementById('qc-city').onchange = qcCheck;
   </script>
-
+faqs:
+  - q: 'How much should a bathroom renovation cost in NZ?'
+    a: 'A small bathroom renovation (≤5m², budget fixtures) typically costs $8,000–$14,000, while a medium bathroom (6–10m², standard fixtures) costs $15,000–$28,000. Large, premium bathrooms can reach $30,000–$60,000+. Costs vary by 10–20% depending on your city and chosen finishes.'
+  - q: 'Are high quotes always bad?'
+    a: 'Not necessarily. Higher quotes may reflect premium materials, specialist compliance expertise (asbestos removal, structural work), or tight timeframes. Ask for a detailed line-item breakdown and compare what''s included across quotes. A cheap quote that excludes consent handling or materials costs is not actually cheaper.'
+  - q: 'What should I ask a tradie when I get a quote?'
+    a: 'Ask: (1) What''s included — materials, labour, consents, compliance? (2) Timeline and availability; (3) Warranty period; (4) Payment schedule; (5) Who handles building consent? (6) Contact details of recent clients for references. A reputable tradie will answer all these clearly.'
+  - q: 'Why do quotes vary so much between different tradies?'
+    a: 'Quotes vary due to: (1) Scope differences — some include materials, others don''t; (2) Material quality — budget vs. premium finishes; (3) Experience and reputation; (4) Specialisation — a master electrician costs more than a general electrician; (5) Workload — busy tradies charge more. Get 3 quotes with detailed line items to compare fairly.'
 ---
 
 ## How does this checker work?

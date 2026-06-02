@@ -112,14 +112,16 @@ calculator_html: |
   }
   </script>
 faqs:
-  - q: 'What is the minimum fall for a drain in NZ?'
-    a: 'NZS 3114 and the NZ Building Code require a minimum grade of 1:60 (1.67%) for 100 mm wastewater drains. Larger drains (150 mm+) may use 1:100, while very small drains (75 mm) should be 1:40 or steeper.'
-  - q: 'How do I calculate drain fall in millimetres?'
-    a: 'Multiply run length by the grade fraction. For 10 m of drain at 1:60: 10,000 mm ÷ 60 = 167 mm fall. The downstream invert should be 167 mm lower than the upstream invert.'
-  - q: 'What pipe slope is needed for a 150 mm stormwater drain?'
-    a: 'A 150 mm stormwater pipe typically uses a minimum grade of 1:100 (1%) or 10 mm per metre. Check with your local council — some require steeper grades in areas with high sediment load.'
-  - q: 'Can a drain be too steep in NZ?'
-    a: 'Yes. Overly steep drains can allow water to run faster than solids, leaving blockages. As a general rule, grades steeper than 1:10 for wastewater require specialist design consideration.'
+  - q: 'What is the minimum drain grade required by NZ Building Code?'
+    a: 'AS/NZS 3500 requires: 40–75mm pipes use 1:40 minimum grade (25 mm/m), 100mm pipes use 1:60 minimum (16.7 mm/m), and 150mm+ pipes use 1:80 to 1:100. Stormwater drains are typically 1:100. The actual grade depends on pipe diameter and discharge type.'
+  - q: 'How do I calculate the fall (drop) needed for my drain run?'
+    a: 'Multiply the run length in metres by the grade denominator, then divide by 1,000. Example: 15 m at 1:60 grade = (15 × 1,000) ÷ 60 = 250 mm total fall. Use this calculator to verify your excavation depth at the downstream end.'
+  - q: 'What happens if a drain is too steep?'
+    a: 'Steeper than 1:10 causes velocity scouring and self-siphonage — water runs faster than solids, leaving blockages. The drain breaks the water seal on fixtures, causing bad smells. Most councils require steeper gradients (>1:20) to have specialist approval.'
+  - q: 'What happens if a drain is too flat?'
+    a: 'Flatter than the minimum grade (e.g., 1:100 for a 100mm drain) results in poor drainage and standing water. Solids accumulate, blockages form, and the system fails to meet NZ Building Code. Remedial work requires excavation and re-laying.'
+  - q: 'Do I need to notify my plumber or council about drainage work?'
+    a: 'Internal waste pipes may not require notification. However, external drains, connections to sewers, or any work affecting building drainage require council approval and may need a licensed plumber (LBP) to sign off. Check with your local council before starting.'
 related_articles: [plumber-pricing-guide-nz-2026]
 ---
 

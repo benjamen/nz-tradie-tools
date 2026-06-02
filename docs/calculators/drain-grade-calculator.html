@@ -23,7 +23,7 @@
     <meta name="twitter:image" content="https://tradietools.nz/static/img/social-card.svg">
     <link rel="canonical" href="https://tradietools.nz/calculators/drain-grade-calculator">
     <link rel="alternate" type="application/rss+xml" title="NZ Tradie Tools — Articles" href="https://tradietools.nz/rss.xml">
-    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"Drain Grade \u0026 Pipe Slope Calculator \u2014 NZ","description":"Calculate pipe gradient, fall, and minimum grade for drainage pipes to NZ plumbing code requirements.","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://tradietools.nz/calculators/drain-grade-calculator.html","offers":{"@type":"Offer","price":"0","priceCurrency":"NZD"},"author":{"@type":"Organization","name":"NZ Tradie Tools","url":"https://tradietools.nz"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tradietools.nz"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://tradietools.nz/calculators/"},{"@type":"ListItem","position":3,"name":"Drain Grade \u0026 Pipe Slope Calculator \u2014 NZ","item":"https://tradietools.nz/calculators/drain-grade-calculator.html"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the minimum fall for a drain in NZ?","acceptedAnswer":{"@type":"Answer","text":"NZS 3114 and the NZ Building Code require a minimum grade of 1:60 (1.67%) for 100 mm wastewater drains. Larger drains (150 mm+) may use 1:100, while very small drains (75 mm) should be 1:40 or steeper."}},{"@type":"Question","name":"How do I calculate drain fall in millimetres?","acceptedAnswer":{"@type":"Answer","text":"Multiply run length by the grade fraction. For 10 m of drain at 1:60: 10,000 mm \u00f7 60 = 167 mm fall. The downstream invert should be 167 mm lower than the upstream invert."}},{"@type":"Question","name":"What pipe slope is needed for a 150 mm stormwater drain?","acceptedAnswer":{"@type":"Answer","text":"A 150 mm stormwater pipe typically uses a minimum grade of 1:100 (1%) or 10 mm per metre. Check with your local council \u2014 some require steeper grades in areas with high sediment load."}},{"@type":"Question","name":"Can a drain be too steep in NZ?","acceptedAnswer":{"@type":"Answer","text":"Yes. Overly steep drains can allow water to run faster than solids, leaving blockages. As a general rule, grades steeper than 1:10 for wastewater require specialist design consideration."}}]}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"Drain Grade \u0026 Pipe Slope Calculator \u2014 NZ","description":"Calculate pipe gradient, fall, and minimum grade for drainage pipes to NZ plumbing code requirements.","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://tradietools.nz/calculators/drain-grade-calculator.html","offers":{"@type":"Offer","price":"0","priceCurrency":"NZD"},"author":{"@type":"Organization","name":"NZ Tradie Tools","url":"https://tradietools.nz"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tradietools.nz"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://tradietools.nz/calculators/"},{"@type":"ListItem","position":3,"name":"Drain Grade \u0026 Pipe Slope Calculator \u2014 NZ","item":"https://tradietools.nz/calculators/drain-grade-calculator.html"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the minimum drain grade required by NZ Building Code?","acceptedAnswer":{"@type":"Answer","text":"AS/NZS 3500 requires: 40\u201375mm pipes use 1:40 minimum grade (25 mm/m), 100mm pipes use 1:60 minimum (16.7 mm/m), and 150mm+ pipes use 1:80 to 1:100. Stormwater drains are typically 1:100. The actual grade depends on pipe diameter and discharge type."}},{"@type":"Question","name":"How do I calculate the fall (drop) needed for my drain run?","acceptedAnswer":{"@type":"Answer","text":"Multiply the run length in metres by the grade denominator, then divide by 1,000. Example: 15 m at 1:60 grade = (15 \u00d7 1,000) \u00f7 60 = 250 mm total fall. Use this calculator to verify your excavation depth at the downstream end."}},{"@type":"Question","name":"What happens if a drain is too steep?","acceptedAnswer":{"@type":"Answer","text":"Steeper than 1:10 causes velocity scouring and self-siphonage \u2014 water runs faster than solids, leaving blockages. The drain breaks the water seal on fixtures, causing bad smells. Most councils require steeper gradients (\u003e1:20) to have specialist approval."}},{"@type":"Question","name":"What happens if a drain is too flat?","acceptedAnswer":{"@type":"Answer","text":"Flatter than the minimum grade (e.g., 1:100 for a 100mm drain) results in poor drainage and standing water. Solids accumulate, blockages form, and the system fails to meet NZ Building Code. Remedial work requires excavation and re-laying."}},{"@type":"Question","name":"Do I need to notify my plumber or council about drainage work?","acceptedAnswer":{"@type":"Answer","text":"Internal waste pipes may not require notification. However, external drains, connections to sewers, or any work affecting building drainage require council approval and may need a licensed plumber (LBP) to sign off. Check with your local council before starting."}}]}]}</script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -93,6 +93,8 @@
                 <a href="/glossary/">Glossary</a>
                 
                 <a href="/contact/">Contact</a>
+                
+                <a href="/list-your-business/">List Your Business</a>
                 
             </nav>
             <script>
@@ -320,23 +322,28 @@ function calcPipeSize(){
                 <div class="faq-list">
                     
                     <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">What is the minimum fall for a drain in NZ?</button>
-                        <div class="faq-answer" hidden><p>NZS 3114 and the NZ Building Code require a minimum grade of 1:60 (1.67%) for 100 mm wastewater drains. Larger drains (150 mm+) may use 1:100, while very small drains (75 mm) should be 1:40 or steeper.</p></div>
+                        <button class="faq-question" aria-expanded="false">What is the minimum drain grade required by NZ Building Code?</button>
+                        <div class="faq-answer" hidden><p>AS/NZS 3500 requires: 40–75mm pipes use 1:40 minimum grade (25 mm/m), 100mm pipes use 1:60 minimum (16.7 mm/m), and 150mm+ pipes use 1:80 to 1:100. Stormwater drains are typically 1:100. The actual grade depends on pipe diameter and discharge type.</p></div>
                     </div>
                     
                     <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">How do I calculate drain fall in millimetres?</button>
-                        <div class="faq-answer" hidden><p>Multiply run length by the grade fraction. For 10 m of drain at 1:60: 10,000 mm ÷ 60 = 167 mm fall. The downstream invert should be 167 mm lower than the upstream invert.</p></div>
+                        <button class="faq-question" aria-expanded="false">How do I calculate the fall (drop) needed for my drain run?</button>
+                        <div class="faq-answer" hidden><p>Multiply the run length in metres by the grade denominator, then divide by 1,000. Example: 15 m at 1:60 grade = (15 × 1,000) ÷ 60 = 250 mm total fall. Use this calculator to verify your excavation depth at the downstream end.</p></div>
                     </div>
                     
                     <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">What pipe slope is needed for a 150 mm stormwater drain?</button>
-                        <div class="faq-answer" hidden><p>A 150 mm stormwater pipe typically uses a minimum grade of 1:100 (1%) or 10 mm per metre. Check with your local council — some require steeper grades in areas with high sediment load.</p></div>
+                        <button class="faq-question" aria-expanded="false">What happens if a drain is too steep?</button>
+                        <div class="faq-answer" hidden><p>Steeper than 1:10 causes velocity scouring and self-siphonage — water runs faster than solids, leaving blockages. The drain breaks the water seal on fixtures, causing bad smells. Most councils require steeper gradients (>1:20) to have specialist approval.</p></div>
                     </div>
                     
                     <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">Can a drain be too steep in NZ?</button>
-                        <div class="faq-answer" hidden><p>Yes. Overly steep drains can allow water to run faster than solids, leaving blockages. As a general rule, grades steeper than 1:10 for wastewater require specialist design consideration.</p></div>
+                        <button class="faq-question" aria-expanded="false">What happens if a drain is too flat?</button>
+                        <div class="faq-answer" hidden><p>Flatter than the minimum grade (e.g., 1:100 for a 100mm drain) results in poor drainage and standing water. Solids accumulate, blockages form, and the system fails to meet NZ Building Code. Remedial work requires excavation and re-laying.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">Do I need to notify my plumber or council about drainage work?</button>
+                        <div class="faq-answer" hidden><p>Internal waste pipes may not require notification. However, external drains, connections to sewers, or any work affecting building drainage require council approval and may need a licensed plumber (LBP) to sign off. Check with your local council before starting.</p></div>
                     </div>
                     
                 </div>
