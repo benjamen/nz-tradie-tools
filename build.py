@@ -190,7 +190,7 @@ def process_page(md_file, config, env, layout_name, section, nav, base_path, art
 
     date_val = front.get("date", "")
     if hasattr(date_val, "strftime"):
-        date_str = date_val.strftime("%-d %B %Y")
+        date_str = f"{date_val.day} {date_val.strftime('%B %Y')}"
         date_iso = date_val.strftime("%Y-%m-%d")
     else:
         date_str = str(date_val)
@@ -804,12 +804,13 @@ def build_listing(pages, config, env, section, nav, base_path):
 
 
 def build_privacy(config, env, nav, base_path):
+    now = datetime.now()
     template = env.get_template("privacy.html")
     ctx = {
         **config,
         "base_path": base_path,
         "nav": nav,
-        "date": datetime.now().strftime("%-d %B %Y"),
+        "date": f"{now.day} {now.strftime('%B %Y')}",
         "year": datetime.now().year,
     }
     (PUBLIC_DIR / "privacy").mkdir(exist_ok=True)
