@@ -124,3 +124,14 @@ The MBIE public register lets anyone check whether a builder is licensed: [lbp.g
 ---
 
 **Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+
+
+---
+
+## Want a smarter way to manage your tradie business?
+
+**[FastCrew](https://fastcrew.nz)** is a new NZ-built job management app for tradies — quotes, jobs, invoices, and team scheduling in one place.
+
+We're looking for **3 NZ tradies to join our beta programme** — free access in exchange for feedback.
+
+**[Apply for FastCrew Beta →](https://fastcrew.nz/beta)**

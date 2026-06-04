@@ -129,3 +129,14 @@ Key factors beyond trade and experience:
 - **Self-employment efficiency**: charge-out rate × billable hours minus overhead determines take-home
 - **Region**: Auckland premium is consistent across all trades
 - **Business skills**: quoting accuracy, payment chasing, managing overhead — determine self-employed profitability more than tools ability
+
+
+---
+
+## Want a smarter way to manage your tradie business?
+
+**[FastCrew](https://fastcrew.nz)** is a new NZ-built job management app for tradies — quotes, jobs, invoices, and team scheduling in one place.
+
+We're looking for **3 NZ tradies to join our beta programme** — free access in exchange for feedback.
+
+**[Apply for FastCrew Beta →](https://fastcrew.nz/beta)**

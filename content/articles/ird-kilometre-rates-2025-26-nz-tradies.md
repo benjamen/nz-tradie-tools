@@ -132,3 +132,14 @@ If you're self-filing and haven't started your IR3 yet, you have around six week
 Download our free NZ tradie templates at tradietools.nz/templates/ — including a vehicle logbook template, job costing spreadsheet, and IR3 checklist for sole traders.
 
 *NZ Tradie Tools provides free calculators, templates and guides for New Zealand tradies. Visit tradietools.nz.*
+
+
+---
+
+## Want a smarter way to manage your tradie business?
+
+**[FastCrew](https://fastcrew.nz)** is a new NZ-built job management app for tradies — quotes, jobs, invoices, and team scheduling in one place.
+
+We're looking for **3 NZ tradies to join our beta programme** — free access in exchange for feedback.
+
+**[Apply for FastCrew Beta →](https://fastcrew.nz/beta)**
