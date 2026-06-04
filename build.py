@@ -142,7 +142,6 @@ def build():
     build_tax_dates(config, env, nav, base_path)
     profiles_count = build_business_profiles(config, env, nav, base_path)
     build_claim_page(config, env, nav, base_path)
-    build_list_your_business(config, env, nav, base_path)
 
     trades_count, locations_count = build_trades_and_locations(config, env, nav, base_path)
 
