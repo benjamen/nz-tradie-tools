@@ -109,12 +109,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/red-flags-tradie-quote-nz</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://tradietools.nz/articles/how-to-hire-a-builder-nz</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
@@ -127,8 +121,26 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://tradietools.nz/articles/red-flags-tradie-quote-nz</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://tradietools.nz/articles/how-much-do-tradies-earn-nz</loc>
     <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/how-to-become-plumber-nz</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/nz-apprenticeship-guide-2026</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -199,7 +211,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/nz-electrical-wiring-rules-amendment-2026</loc>
+    <loc>https://tradietools.nz/articles/trade-account-supplier-tactics-nz-tradies-2026</loc>
     <lastmod>2026-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -211,19 +223,19 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/trade-account-supplier-tactics-nz-tradies-2026</loc>
+    <loc>https://tradietools.nz/articles/nz-electrical-wiring-rules-amendment-2026</loc>
     <lastmod>2026-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/nz-tradie-winter-cash-flow-gap-2026</loc>
+    <loc>https://tradietools.nz/articles/nz-tradie-raising-rates-recovery-2026</loc>
     <lastmod>2026-05-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/nz-tradie-raising-rates-recovery-2026</loc>
+    <loc>https://tradietools.nz/articles/nz-tradie-winter-cash-flow-gap-2026</loc>
     <lastmod>2026-05-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -235,13 +247,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/construction-contracts-act-payment-claims-nz</loc>
+    <loc>https://tradietools.nz/articles/nz-site-drainage-stormwater-erosion-control-2026</loc>
     <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/nz-site-drainage-stormwater-erosion-control-2026</loc>
+    <loc>https://tradietools.nz/articles/construction-contracts-act-payment-claims-nz</loc>
     <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -253,19 +265,13 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://tradietools.nz/articles/fringe-benefit-tax-nz-tradies-2026</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://tradietools.nz/articles/tiler-pricing-guide-nz-2026</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tradietools.nz/articles/eofy-checklist-nz-tradies-2026</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tradietools.nz/articles/electric-utes-evs-nz-tradies-2026</loc>
     <lastmod>2026-05-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -277,13 +283,19 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/fringe-benefit-tax-nz-tradies-2026</loc>
+    <loc>https://tradietools.nz/articles/electric-utes-evs-nz-tradies-2026</loc>
     <lastmod>2026-05-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tradietools.nz/articles/nz-tradie-tax-guide-2026</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/eofy-checklist-nz-tradies-2026</loc>
     <lastmod>2026-05-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -313,19 +325,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/how-to-price-a-job-nz-tradie-guide</loc>
-    <lastmod>2026-05-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://tradietools.nz/articles/materials-markup-strategy-nz-tradies-2026</loc>
-    <lastmod>2026-05-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tradietools.nz/articles/how-to-write-a-quote-that-wins-jobs-nz</loc>
     <lastmod>2026-05-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -337,13 +337,25 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/gasfitter-drainlayer-hourly-rates-nz-2026</loc>
-    <lastmod>2026-05-25</lastmod>
+    <loc>https://tradietools.nz/articles/how-to-price-a-job-nz-tradie-guide</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/how-to-write-a-quote-that-wins-jobs-nz</loc>
+    <lastmod>2026-05-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tradietools.nz/articles/employment-relations-act-2026-nz-contractor-guide</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/gasfitter-drainlayer-hourly-rates-nz-2026</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -355,7 +367,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/mandatory-home-warranty-insurance-nz-builders-2026</loc>
+    <loc>https://tradietools.nz/articles/nz-tradie-pipeline-management-2026</loc>
     <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -367,19 +379,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/nz-tradie-pipeline-management-2026</loc>
+    <loc>https://tradietools.nz/articles/mandatory-home-warranty-insurance-nz-builders-2026</loc>
     <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/nz-silica-dust-regulations-tradies-2026</loc>
-    <lastmod>2026-05-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tradietools.nz/articles/variation-orders-nz-tradies-2026</loc>
+    <loc>https://tradietools.nz/articles/nz-building-material-prices-winter-2026</loc>
     <lastmod>2026-05-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -391,7 +397,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/nz-building-material-prices-winter-2026</loc>
+    <loc>https://tradietools.nz/articles/nz-silica-dust-regulations-tradies-2026</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/variation-orders-nz-tradies-2026</loc>
     <lastmod>2026-05-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -421,13 +433,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/worksafe-notifiable-events-nz-tradies-2026</loc>
+    <loc>https://tradietools.nz/articles/carpenter-pricing-guide-nz-2026</loc>
     <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/protecting-nz-tradie-business-insolvency-2026</loc>
+    <loc>https://tradietools.nz/articles/worksafe-notifiable-events-nz-tradies-2026</loc>
     <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -439,25 +451,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/carpenter-pricing-guide-nz-2026</loc>
+    <loc>https://tradietools.nz/articles/protecting-nz-tradie-business-insolvency-2026</loc>
     <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/new-nz-consenting-reforms-builders</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://tradietools.nz/articles/lbp-cpd-compliance-renewal-nz-2026</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tradietools.nz/articles/ai-tools-nz-tradies-2026</loc>
     <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -469,37 +469,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://tradietools.nz/articles/new-nz-consenting-reforms-builders</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/ai-tools-nz-tradies-2026</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://tradietools.nz/articles/ir3-tax-return-guide-nz-tradies-2026</loc>
-    <lastmod>2026-05-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tradietools.nz/articles/tradify-vs-servicem8-nz-tradies</loc>
-    <lastmod>2026-05-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tradietools.nz/articles/buildxact-vs-tradify-nz-builders</loc>
-    <lastmod>2026-05-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tradietools.nz/articles/winter-heat-pump-buying-guide-nz-2026</loc>
-    <lastmod>2026-05-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tradietools.nz/articles/worksafe-asbestos-reminder-2026</loc>
-    <lastmod>2026-05-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tradietools.nz/articles/winter-insulation-upgrade-nz-2026</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -511,13 +493,43 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/xero-vs-myob-vs-hnry-nz-tradies</loc>
+    <loc>https://tradietools.nz/articles/buildxact-vs-tradify-nz-builders</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/worksafe-asbestos-reminder-2026</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tradietools.nz/articles/winter-home-maintenance-checklist-nz-2026</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/xero-vs-myob-vs-hnry-nz-tradies</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/winter-heat-pump-buying-guide-nz-2026</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/winter-insulation-upgrade-nz-2026</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/tradify-vs-servicem8-nz-tradies</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -553,12 +565,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/nz-tradie-earnings-vs-university-2026</loc>
-    <lastmod>2026-05-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://tradietools.nz/articles/managing-construction-insolvency-risks</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
@@ -566,6 +572,12 @@
   </url>
   <url>
     <loc>https://tradietools.nz/articles/overhead-rate-nz-tradie-guide-2026</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/nz-tradie-earnings-vs-university-2026</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -583,13 +595,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/employers-liability-insurance-nz-tradies-2026</loc>
+    <loc>https://tradietools.nz/articles/job-costing-guide-nz-tradies-2026</loc>
     <lastmod>2026-05-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/job-costing-guide-nz-tradies-2026</loc>
+    <loc>https://tradietools.nz/articles/employers-liability-insurance-nz-tradies-2026</loc>
     <lastmod>2026-05-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -613,12 +625,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/energy-efficiency-nz-tradie-opportunity</loc>
-    <lastmod>2026-05-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://tradietools.nz/articles/fixed-price-vs-cost-plus-contracts-nz-tradies-2026</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
@@ -626,6 +632,12 @@
   </url>
   <url>
     <loc>https://tradietools.nz/articles/hsaw-amendment-bill-2026-nz-tradies</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/energy-efficiency-nz-tradie-opportunity</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -649,19 +661,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/ird-cashie-crackdown-nz-tradies-2026</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://tradietools.nz/articles/markup-vs-margin-nz-tradies-2026</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tradietools.nz/articles/managing-slow-season-nz-tradie</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -679,25 +679,25 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://tradietools.nz/articles/ird-cashie-crackdown-nz-tradies-2026</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/managing-slow-season-nz-tradie</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://tradietools.nz/articles/kiwisaver-self-employed-tradies-nz</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/how-to-set-hourly-rate-nz-tradie-2026</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://tradietools.nz/articles/new-lead-free-plumbing-standards-nz</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tradietools.nz/articles/acc-levies-nz-tradies-2026-guide</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -709,85 +709,19 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/nz-tradie-investment-boost-deduction-2026</loc>
-    <lastmod>2026-05-08</lastmod>
+    <loc>https://tradietools.nz/articles/acc-levies-nz-tradies-2026-guide</loc>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/income-protection-insurance-nz-tradies</loc>
-    <lastmod>2026-05-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tradietools.nz/articles/sole-trader-vs-company-nz-tradies</loc>
-    <lastmod>2026-05-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tradietools.nz/articles/roofer-pricing-guide-nz-2026</loc>
-    <lastmod>2026-05-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tradietools.nz/articles/going-self-employed-nz-tradie-guide</loc>
-    <lastmod>2026-05-08</lastmod>
+    <loc>https://tradietools.nz/articles/how-to-set-hourly-rate-nz-tradie-2026</loc>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tradietools.nz/articles/builder-pricing-guide-nz-2026</loc>
-    <lastmod>2026-05-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tradietools.nz/articles/do-you-need-building-consent-nz</loc>
-    <lastmod>2026-05-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tradietools.nz/articles/tradie-contract-guide-nz</loc>
-    <lastmod>2026-05-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tradietools.nz/articles/provisional-tax-nz-tradies</loc>
-    <lastmod>2026-05-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tradietools.nz/articles/should-i-register-for-gst-nz-tradie</loc>
-    <lastmod>2026-05-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tradietools.nz/articles/public-liability-insurance-nz-tradies</loc>
-    <lastmod>2026-05-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tradietools.nz/articles/electrician-pricing-guide-nz-2026</loc>
-    <lastmod>2026-05-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tradietools.nz/articles/plumber-pricing-guide-nz-2026</loc>
-    <lastmod>2026-05-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tradietools.nz/articles/unpaid-invoices-options-nz-tradies</loc>
     <lastmod>2026-05-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -799,13 +733,91 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/painter-pricing-guide-nz-2026</loc>
+    <loc>https://tradietools.nz/articles/do-you-need-building-consent-nz</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/public-liability-insurance-nz-tradies</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/going-self-employed-nz-tradie-guide</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/income-protection-insurance-nz-tradies</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/tradie-contract-guide-nz</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/sole-trader-vs-company-nz-tradies</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/electrician-pricing-guide-nz-2026</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/should-i-register-for-gst-nz-tradie</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/unpaid-invoices-options-nz-tradies</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/provisional-tax-nz-tradies</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/nz-tradie-investment-boost-deduction-2026</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/roofer-pricing-guide-nz-2026</loc>
     <lastmod>2026-05-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tradietools.nz/articles/cash-flow-management-nz-tradies</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/plumber-pricing-guide-nz-2026</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tradietools.nz/articles/painter-pricing-guide-nz-2026</loc>
     <lastmod>2026-05-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -829,6 +841,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://tradietools.nz/articles/minimum-wage-increase-april-2026-tradie-costs</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://tradietools.nz/articles/nz-india-fta-impact-tradies</loc>
     <lastmod>2026-04-28</lastmod>
     <changefreq>monthly</changefreq>
@@ -841,19 +859,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/minimum-wage-increase-april-2026-tradie-costs</loc>
-    <lastmod>2026-04-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tradietools.nz/articles/building-consent-reform-nz-2026-tradies-guide</loc>
+    <loc>https://tradietools.nz/articles/opportunities-in-nz-water-infrastructure</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/subcontractor-vs-employee-gateway-test-nz-2026</loc>
+    <loc>https://tradietools.nz/articles/building-consent-reform-nz-2026-tradies-guide</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -865,19 +877,19 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/opportunities-in-nz-water-infrastructure</loc>
+    <loc>https://tradietools.nz/articles/subcontractor-vs-employee-gateway-test-nz-2026</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/mobile-invoicing-construction</loc>
+    <loc>https://tradietools.nz/articles/preparing-for-winter-maintenance-checklist-nz</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tradietools.nz/articles/preparing-for-winter-maintenance-checklist-nz</loc>
+    <loc>https://tradietools.nz/articles/mobile-invoicing-construction</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
