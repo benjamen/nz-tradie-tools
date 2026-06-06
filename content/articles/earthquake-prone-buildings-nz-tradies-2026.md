@@ -122,3 +122,14 @@ If you hold the right licences, have experience with structural or masonry work,
 ---
 
 **Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+---
+
+## Recommended Resources
+
+**Xero Accounting Software** — Cloud-based accounting built for tradies. Free 30-day trial.
+[Learn More](https://www.xero.com/nz/?utm_source=tradietools)
+
+**ServiceM8 Job Management** — Track jobs, invoicing, and team scheduling. Used by 50,000+ tradies.
+[Learn More](https://www.servicem8.com/)
+
+*Disclosure: These are affiliate links. We earn a small commission when you sign up through our links, at no cost to you. This helps us keep TradieTools free.*

@@ -138,5 +138,14 @@ Download our free NZ tradie contract templates and invoice checklists at **tradi
 For guidance on pricing jobs so you're not left out of pocket from the start, see our [job costing guide for NZ tradies](/articles/job-costing-guide-nz-tradies-2026.html).
 
 ---
+---
 
-*NZ Tradie Tools provides free calculators, templates and guides for New Zealand tradies. Visit tradietools.nz.*
+## Recommended Resources
+
+**Xero Accounting Software** — Cloud-based accounting built for tradies. Free 30-day trial.
+[Learn More](https://www.xero.com/nz/?utm_source=tradietools)
+
+**ServiceM8 Job Management** — Track jobs, invoicing, and team scheduling. Used by 50,000+ tradies.
+[Learn More](https://www.servicem8.com/)
+
+*Disclosure: These are affiliate links. We earn a small commission when you sign up through our links, at no cost to you. This helps us keep TradieTools free.*

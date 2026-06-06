@@ -114,5 +114,14 @@ Download our free NZ tradie templates at tradietools.nz/templates/ — includes 
 If you are unsure whether your current rates cover your actual costs, run your numbers through the [hourly rate calculator](/calculators/hourly-rate-calculator.html) and the [job cost calculator](/calculators/job-cost-calculator.html) before your next quote.
 
 ---
+---
 
-*NZ Tradie Tools provides free calculators, templates and guides for New Zealand tradies. Visit tradietools.nz.*
+## Recommended Resources
+
+**Xero Accounting Software** — Cloud-based accounting built for tradies. Free 30-day trial.
+[Learn More](https://www.xero.com/nz/?utm_source=tradietools)
+
+**ServiceM8 Job Management** — Track jobs, invoicing, and team scheduling. Used by 50,000+ tradies.
+[Learn More](https://www.servicem8.com/)
+
+*Disclosure: These are affiliate links. We earn a small commission when you sign up through our links, at no cost to you. This helps us keep TradieTools free.*

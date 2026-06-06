@@ -45,5 +45,14 @@ Waste management is a variable cost that can easily spiral out of control.
 The construction industry is in a "reset" phase. The days of casual wastefulness are coming to an end. Businesses that embrace efficiency, prioritize recycling, and manage their disposal costs intelligently are going to be the ones that stay profitable while others struggle.
 
 Think of waste management as a profit-saving strategy, not an environmental burden.
+---
 
-*NZ Tradie Tools provides free calculators, templates and guides for New Zealand tradies. Visit tradietools.nz.*
+## Recommended Resources
+
+**Xero Accounting Software** — Cloud-based accounting built for tradies. Free 30-day trial.
+[Learn More](https://www.xero.com/nz/?utm_source=tradietools)
+
+**ServiceM8 Job Management** — Track jobs, invoicing, and team scheduling. Used by 50,000+ tradies.
+[Learn More](https://www.servicem8.com/)
+
+*Disclosure: These are affiliate links. We earn a small commission when you sign up through our links, at no cost to you. This helps us keep TradieTools free.*

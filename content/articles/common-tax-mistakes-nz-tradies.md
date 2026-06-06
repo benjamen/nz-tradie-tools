@@ -101,3 +101,14 @@ Our free [Vehicle Log Book template](/templates/vehicle-log-book.html) is IRD-co
 ---
 
 **Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+---
+
+## Recommended Resources
+
+**Xero Accounting Software** — Cloud-based accounting built for tradies. Free 30-day trial.
+[Learn More](https://www.xero.com/nz/?utm_source=tradietools)
+
+**Receipt Bank Expense Tracking** — Automate expense tracking from receipts. Integrates with Xero & MYOB.
+[Learn More](https://www.receipt-bank.com/nz)
+
+*Disclosure: These are affiliate links. We earn a small commission when you sign up through our links, at no cost to you. This helps us keep TradieTools free.*

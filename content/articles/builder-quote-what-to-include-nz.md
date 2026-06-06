@@ -152,3 +152,14 @@ Under the Consumer Guarantees Act, builders must also meet guarantees regardless
 Ask the builder to address the missing elements before you accept. A professional builder will do this willingly — they want a well-defined scope too, since it protects them from scope creep arguments as much as it protects you.
 
 If a builder is resistant to providing detail, or insists the quote is "complete" when it clearly isn't, treat that as a red flag about how the project will be managed.
+---
+
+## Recommended Resources
+
+**Xero Accounting Software** — Cloud-based accounting built for tradies. Free 30-day trial.
+[Learn More](https://www.xero.com/nz/?utm_source=tradietools)
+
+**ServiceM8 Job Management** — Track jobs, invoicing, and team scheduling. Used by 50,000+ tradies.
+[Learn More](https://www.servicem8.com/)
+
+*Disclosure: These are affiliate links. We earn a small commission when you sign up through our links, at no cost to you. This helps us keep TradieTools free.*
