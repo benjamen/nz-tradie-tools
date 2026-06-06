@@ -506,7 +506,7 @@ body {{
                          "--no-pdf-header-footer",
                          f"--print-to-pdf={tmp_pdf}",
                          f"file://{tmp_html}"],
-                        capture_output=True, timeout=30
+                        capture_output=True, timeout=60
                     )
                     if tmp_pdf.exists():
                         zf.write(tmp_pdf, f"nz-tradie-templates/{tmpl['slug']}.pdf")
