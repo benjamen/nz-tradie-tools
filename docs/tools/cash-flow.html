@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Flow Forecaster — 12-Month Prediction</title>
+    <meta name="description" content="Predict your cash position 12 months ahead. Know when you'll run short. Free cash flow forecasting for NZ tradies.">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <style>
+        .cashflow-tool { max-width: 1000px; margin: 0 auto; padding: 2rem 1rem; }
+        .tool-header { margin-bottom: 2rem; }
+        .tool-header h1 { margin: 0; color: #0055a5; font-size: 2em; }
+        .form-section { margin-bottom: 2rem; }
+        .form-group { margin-bottom: 1rem; }
+        .form-group label { display: block; font-weight: 600; margin-bottom: 0.5rem; }
+        .form-group input { width: 100%; padding: 0.6rem; border: 1px solid #ccc; border-radius: 4px; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+        @media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } }
+        .btn-primary { background: #0055a5; color: white; padding: 0.75rem 1.5rem; border: none; border-radius: 4px; cursor: pointer; font-weight: 600; }
+        .btn-primary:hover { background: #003d7a; }
+        #results { display: none; margin-top: 2rem; }
+        .chart-container { position: relative; height: 400px; margin: 2rem 0; }
+        .danger-zone { background: #fee; padding: 1rem; border-radius: 6px; margin: 1.5rem 0; border-left: 4px solid #c00; }
+        .danger-zone h3 { margin: 0 0 0.5rem; color: #c00; }
+        .forecast-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; }
+        .forecast-table th { background: #0055a5; color: white; padding: 0.75rem; text-align: left; }
+        .forecast-table td { padding: 0.75rem; border-bottom: 1px solid #ddd; }
+        .forecast-table tr.danger { background: #ffe8e8; }
+        .upsell-box { background: #fff3cd; padding: 1.5rem; border-radius: 8px; margin-top: 2rem; border-left: 4px solid #ffc107; }
+        .btn-premium { background: #28a745; color: white; padding: 0.7rem 1.4rem; margin-top: 1rem; border: none; border-radius: 4px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="cashflow-tool">
+            <div class="tool-header">
+                <h1>12-Month Cash Flow Forecaster</h1>
+                <p>Know when your cash will run short. Plan 12 months ahead.</p>
+            </div>
+
+            <form id="forecastForm">
+                <div class="form-section">
+                    <h3 style="color: #0055a5;">Your Business Details</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="companyName">Company Name</label>
+                            <input type="text" id="companyName" placeholder="Smith Plumbing" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="trade">Trade</label>
+                            <select id="trade" style="width: 100%; padding: 0.6rem;">
+                                <option value="builder">Builder</option>
+                                <option value="plumber" selected>Plumber</option>
+                                <option value="electrician">Electrician</option>
+                                <option value="painter">Painter</option>
+                                <option value="carpenter">Carpenter</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3 style="color: #0055a5;">Financial Details</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="startingCash">Starting Cash ($)</label>
+                            <input type="number" id="startingCash" placeholder="15000" step="100" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="monthlyRevenue">Monthly Revenue (Average)</label>
+                            <input type="number" id="monthlyRevenue" placeholder="8000" step="100" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fixedCosts">Fixed Costs (rent, insurance, etc)</label>
+                            <input type="number" id="fixedCosts" placeholder="2500" step="50" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="variableCosts">Variable Costs (% of revenue)</label>
+                            <input type="number" id="variableCosts" placeholder="35" step="5" value="35">
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-primary">Generate Forecast →</button>
+            </form>
+
+            <div id="results">
+                <div style="background: white; padding: 2rem; border-radius: 8px; border: 1px solid #ddd;">
+                    <h2 style="margin: 0 0 1rem; color: #0055a5;">Your 12-Month Cash Flow</h2>
+
+                    <div class="chart-container">
+                        <canvas id="cashFlowChart"></canvas>
+                    </div>
+
+                    <div id="dangerZones"></div>
+
+                    <h3 style="color: #0055a5; margin-top: 2rem;">Month-by-Month Breakdown</h3>
+                    <table class="forecast-table">
+                        <thead>
+                            <tr>
+                                <th>Month</th>
+                                <th>Revenue</th>
+                                <th>Costs</th>
+                                <th>Cash Balance</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="forecastBody"></tbody>
+                    </table>
+
+                    <div class="upsell-box">
+                        <h3 style="margin: 0 0 0.5rem;">💼 Premium Features</h3>
+                        <p style="margin: 0 0 1rem;">Email alerts, monthly adjustments, detailed analysis.</p>
+                        <button type="button" class="btn-premium" onclick="alert('Coming soon!')">Unlock Premium — $14.99/month</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = "http://localhost:8003";
+        let currentChart = null;
+
+        document.getElementById("forecastForm").addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            const data = {
+                user_id: "user_" + Math.random().toString(36).substr(2, 9),
+                company_name: document.getElementById("companyName").value,
+                starting_cash: parseFloat(document.getElementById("startingCash").value),
+                monthly_revenue_avg: parseFloat(document.getElementById("monthlyRevenue").value),
+                fixed_costs_monthly: parseFloat(document.getElementById("fixedCosts").value),
+                variable_cost_ratio: parseFloat(document.getElementById("variableCosts").value),
+                trade: document.getElementById("trade").value
+            };
+
+            try {
+                const res = await fetch(`${API_BASE}/api/cashflow/create`, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(data)
+                });
+
+                const forecast = await res.json();
+                displayForecast(forecast);
+                document.getElementById("results").style.display = "block";
+                window.scrollTo({ top: document.getElementById("results").offsetTop - 50 });
+            } catch (err) {
+                alert("❌ " + err.message);
+            }
+        });
+
+        function displayForecast(forecast) {
+            const { months, danger_months, recommendations } = forecast;
+
+            // Build forecast table
+            const tbody = document.getElementById("forecastBody");
+            tbody.innerHTML = "";
+            months.forEach(m => {
+                const row = document.createElement("tr");
+                row.className = danger_months.includes(m.month) ? "danger" : "";
+                row.innerHTML = `
+                    <td>${["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][m.month - 1]}</td>
+                    <td>$${m.revenue.toLocaleString()}</td>
+                    <td>$${m.costs.toLocaleString()}</td>
+                    <td>$${m.cash_at_end.toLocaleString()}</td>
+                    <td>${m.health === "healthy" ? "🟢 Healthy" : m.health === "caution" ? "🟡 Caution" : "🔴 Danger"}</td>
+                `;
+                tbody.appendChild(row);
+            });
+
+            // Danger zones
+            if (danger_months.length > 0) {
+                const dangerDiv = document.getElementById("dangerZones");
+                dangerDiv.innerHTML = `
+                    <div class="danger-zone">
+                        <h3>⚠️ Cash Danger Alert</h3>
+                        <p>Your cash will drop below $2,000 in: ${["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"].filter((m, i) => danger_months.includes(i + 1)).join(", ")}</p>
+                        <p style="margin-bottom: 0;"><strong>Quick actions:</strong></p>
+                        <ul style="margin: 0.5rem 0 0;">
+                            ${recommendations.map(r => `<li>${r}</li>`).join("")}
+                        </ul>
+                    </div>
+                `;
+            }
+
+            // Chart
+            drawChart(months);
+        }
+
+        function drawChart(months) {
+            const ctx = document.getElementById("cashFlowChart").getContext("2d");
+            if (currentChart) currentChart.destroy();
+
+            const monthLabels = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+            const cashData = months.map(m => m.cash_at_end);
+            const colors = months.map(m => m.health === "healthy" ? "#28a745" : m.health === "caution" ? "#ffc107" : "#dc3545");
+
+            currentChart = new Chart(ctx, {
+                type: "line",
+                data: {
+                    labels: monthLabels,
+                    datasets: [{
+                        label: "Cash Balance",
+                        data: cashData,
+                        borderColor: "#0055a5",
+                        backgroundColor: "rgba(0, 85, 165, 0.1)",
+                        tension: 0.4,
+                        fill: true,
+                        pointBackgroundColor: colors,
+                        pointRadius: 6,
+                        pointBorderColor: "#0055a5"
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: true } },
+                    scales: { y: { beginAtZero: true } }
+                }
+            });
+        }
+    </script>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 NZ Tradie Tools</p>
+        </div>
+    </footer>
+</body>
+</html>

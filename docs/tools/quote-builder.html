@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Quote Builder — Professional Quotes in Minutes</title>
+    <meta name="description" content="Generate professional quotes instantly. Free for first 3 quotes per month. AI-powered quote templates.">
+    <meta property="og:title" content="AI Quote Builder — Professional Quotes in Minutes">
+    <meta property="og:description" content="Free professional quote generator for tradies. 3 quotes/month free, then $9.99/month unlimited.">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <style>
+        .quote-builder { max-width: 1000px; margin: 0 auto; padding: 2rem 1rem; }
+        .tool-header { margin-bottom: 2rem; }
+        .tool-header h1 { margin: 0; color: #0055a5; font-size: 2em; }
+        .tool-header p { color: #666; font-size: 1.1em; margin: 0.5rem 0 0; }
+
+        .form-section { margin-bottom: 2rem; }
+        .form-section h3 { color: #0055a5; margin: 0 0 1rem; font-size: 1.2em; }
+        .form-section label { display: block; font-weight: 600; margin-bottom: 0.5rem; }
+
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+        .form-row.full { grid-template-columns: 1fr; }
+        .form-row.three { grid-template-columns: 1fr 1fr 1fr; }
+        @media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } }
+
+        .form-group { margin-bottom: 1rem; }
+        .form-group input,
+        .form-group select,
+        .form-group textarea { width: 100%; padding: 0.6rem; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem; font-family: inherit; }
+        .form-group textarea { resize: vertical; min-height: 80px; }
+        .form-group small { color: #666; font-size: 0.85rem; display: block; margin-top: 0.3rem; }
+
+        .template-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin-bottom: 1rem; }
+        .template-card { padding: 1rem; border: 2px solid #ddd; border-radius: 6px; cursor: pointer; text-align: center; transition: all 0.2s; }
+        .template-card:hover { border-color: #0055a5; background: #f0f4f8; }
+        .template-card.selected { border-color: #0055a5; background: #e3f2fd; font-weight: bold; }
+        .template-card h4 { margin: 0 0 0.3rem; color: #0055a5; }
+        .template-card p { margin: 0; color: #666; font-size: 0.85em; }
+
+        .calculation-box { background: #f9f9f9; padding: 1.5rem; border-radius: 6px; border-left: 4px solid #0055a5; margin: 1.5rem 0; }
+        .calc-row { display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid #ddd; }
+        .calc-row.highlight { border-bottom: 2px solid #0055a5; font-weight: bold; font-size: 1.1em; background: #e3f2fd; padding: 1rem; margin: -0.5rem; border-radius: 4px; }
+        .calc-row.highlight span:last-child { color: #0055a5; }
+
+        .btn-primary { background: #0055a5; color: white; padding: 0.75rem 1.5rem; border: none; border-radius: 4px; font-size: 1rem; font-weight: 600; cursor: pointer; }
+        .btn-primary:hover { background: #003d7a; }
+        .btn-secondary { background: #666; color: white; padding: 0.75rem 1.5rem; border: none; border-radius: 4px; cursor: pointer; margin-right: 0.5rem; }
+        .btn-secondary:hover { background: #444; }
+
+        .quote-preview { background: white; border: 1px solid #ddd; padding: 2rem; border-radius: 8px; margin-top: 2rem; }
+        .quote-html { background: white; padding: 1rem; border-radius: 4px; max-height: 500px; overflow-y: auto; }
+
+        .upsell-box { background: #fff3cd; padding: 1.5rem; border-radius: 8px; margin-top: 2rem; border-left: 4px solid #ffc107; }
+        .upsell-box h3 { margin: 0 0 0.5rem; color: #856404; }
+        .btn-premium { background: #28a745; color: white; padding: 0.7rem 1.4rem; margin-top: 1rem; }
+        .btn-premium:hover { background: #218838; }
+
+        .usage-warning { background: #fee; color: #c00; padding: 1rem; border-radius: 4px; margin: 1rem 0; }
+        #results { display: none; }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="quote-builder">
+
+            <div class="tool-header">
+                <h1>Professional Quote Builder</h1>
+                <p>Generate professional quotes in minutes. Free (3/month) or unlimited with premium.</p>
+            </div>
+
+            <!-- USAGE WARNING -->
+            <div id="usageWarning" style="display: none;"></div>
+
+            <!-- FORM -->
+            <form id="quoteForm">
+
+                <!-- STEP 1: TEMPLATE SELECTION -->
+                <div class="form-section">
+                    <h3>Step 1: Select Quote Template</h3>
+                    <div class="template-grid" id="templateGrid"></div>
+                    <input type="hidden" id="templateType" name="template_type" required>
+                </div>
+
+                <!-- STEP 2: CLIENT DETAILS -->
+                <div class="form-section">
+                    <h3>Step 2: Client Details</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="clientName">Client Name *</label>
+                            <input type="text" id="clientName" name="client_name" placeholder="John Smith" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="clientEmail">Email Address</label>
+                            <input type="email" id="clientEmail" name="client_email" placeholder="john@example.com">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 3: JOB DETAILS -->
+                <div class="form-section">
+                    <h3>Step 3: Job Details</h3>
+                    <div class="form-group">
+                        <label for="jobTitle">Job Title *</label>
+                        <input type="text" id="jobTitle" name="job_title" placeholder="e.g. Master Bathroom Renovation" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="jobDescription">Job Description</label>
+                        <textarea id="jobDescription" name="job_description" placeholder="Describe the work in detail..."></textarea>
+                    </div>
+                </div>
+
+                <!-- STEP 4: COSTS & PRICING -->
+                <div class="form-section">
+                    <h3>Step 4: Costs & Pricing</h3>
+                    <div class="form-row three">
+                        <div class="form-group">
+                            <label for="materialsCost">Materials Cost ($) *</label>
+                            <input type="number" id="materialsCost" name="materials_cost" placeholder="2500" step="10" min="0" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="labourHours">Labour Hours *</label>
+                            <input type="number" id="labourHours" name="labour_hours" placeholder="40" step="0.5" min="0" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="labourRate">Your Hourly Rate ($) *</label>
+                            <input type="number" id="labourRate" name="labour_rate" placeholder="85" step="1" min="0" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="markupPercentage">Markup Percentage (%)</label>
+                        <input type="number" id="markupPercentage" name="markup_percentage" placeholder="25" step="1" min="0" max="100" value="25">
+                        <small id="suggestedMarkup">Suggested: 25% (will be set by template)</small>
+                    </div>
+                </div>
+
+                <!-- REAL-TIME CALCULATION -->
+                <div class="calculation-box">
+                    <div class="calc-row">
+                        <span>Materials:</span>
+                        <span id="calcMaterials">$0.00</span>
+                    </div>
+                    <div class="calc-row">
+                        <span id="labourLabel">Labour (0 hrs × $0/hr):</span>
+                        <span id="calcLabour">$0.00</span>
+                    </div>
+                    <div class="calc-row">
+                        <span><strong>Subtotal:</strong></span>
+                        <span id="calcSubtotal" style="font-weight: bold;">$0.00</span>
+                    </div>
+                    <div class="calc-row highlight">
+                        <span>With <span id="markupDisplay">25</span>% markup:</span>
+                        <span id="calcTotal">$0.00</span>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-primary">Generate Quote →</button>
+            </form>
+
+            <!-- RESULTS -->
+            <div id="results">
+                <div class="quote-preview">
+                    <h2>Quote Preview</h2>
+                    <div class="quote-html" id="quoteHtml"></div>
+
+                    <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <button type="button" class="btn-secondary" onclick="downloadPDF()">📥 Download PDF</button>
+                        <button type="button" class="btn-secondary" onclick="editQuote()">✏️ Edit Quote</button>
+                        <button type="button" class="btn-secondary" onclick="sendToClient()">📧 Send to Client</button>
+                    </div>
+
+                    <!-- UPSELL -->
+                    <div id="quoteLimitWarning" class="usage-warning" style="display: none;">
+                        <strong>⚠️ You've used 3 of 3 free quotes this month</strong>
+                        <p>Upgrade to unlimited quotes for just $9.99/month</p>
+                        <button type="button" class="btn-premium" onclick="showPremiumModal()">Unlock Premium</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- PREMIUM MODAL -->
+    <div id="premiumModal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 1000; display: flex; align-items: center; justify-content: center;">
+        <div style="background: white; padding: 2rem; border-radius: 8px; max-width: 400px; box-shadow: 0 10px 40px rgba(0,0,0,0.2);">
+            <h2 style="margin: 0 0 1rem; color: #0055a5;">Unlimited Quotes</h2>
+            <div style="background: #f9f9f9; padding: 1rem; border-radius: 6px; margin-bottom: 1.5rem;">
+                <div style="font-size: 2rem; font-weight: bold; color: #0055a5;">$9.99</div>
+                <div style="color: #666; font-size: 0.9rem;">per month</div>
+            </div>
+            <button type="button" class="btn-premium" style="width: 100%; padding: 1rem;" onclick="startCheckout()">Start Free Trial (7 days)</button>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = "http://localhost:8003";
+        let currentChart = null;
+        let templates = [];
+
+        // Load templates on page load
+        async function initTemplates() {
+            try {
+                const res = await fetch(`${API_BASE}/api/quotes/templates`);
+                const data = await res.json();
+                templates = data.templates;
+
+                const grid = document.getElementById("templateGrid");
+                templates.forEach(t => {
+                    const card = document.createElement("div");
+                    card.className = "template-card";
+                    card.innerHTML = `<h4>${t.name}</h4><p>${t.description.substring(0, 50)}...</p>`;
+                    card.onclick = () => selectTemplate(t.id, t.default_markup, card);
+                    grid.appendChild(card);
+                });
+            } catch (err) {
+                console.error("Error loading templates:", err);
+            }
+        }
+
+        function selectTemplate(templateId, defaultMarkup, element) {
+            // Update selected state
+            document.querySelectorAll(".template-card").forEach(e => e.classList.remove("selected"));
+            element.classList.add("selected");
+
+            document.getElementById("templateType").value = templateId;
+            document.getElementById("markupPercentage").value = defaultMarkup;
+            updateSuggestedMarkup(defaultMarkup);
+        }
+
+        function updateSuggestedMarkup(markup) {
+            document.getElementById("suggestedMarkup").textContent = `Template suggests: ${markup}%`;
+            updateCalculation();
+        }
+
+        // Real-time calculation
+        function updateCalculation() {
+            const materials = parseFloat(document.getElementById("materialsCost").value || 0);
+            const hours = parseFloat(document.getElementById("labourHours").value || 0);
+            const rate = parseFloat(document.getElementById("labourRate").value || 0);
+            const markup = parseFloat(document.getElementById("markupPercentage").value || 0);
+
+            const labour = hours * rate;
+            const subtotal = materials + labour;
+            const markupAmount = subtotal * (markup / 100);
+            const total = subtotal + markupAmount;
+
+            document.getElementById("calcMaterials").textContent = "$" + materials.toFixed(2);
+            document.getElementById("calcLabour").textContent = "$" + labour.toFixed(2);
+            document.getElementById("labourLabel").textContent = `Labour (${hours} hrs × $${rate}/hr):`;
+            document.getElementById("calcSubtotal").textContent = "$" + subtotal.toFixed(2);
+            document.getElementById("calcTotal").textContent = "$" + total.toFixed(2);
+            document.getElementById("markupDisplay").textContent = Math.round(markup);
+        }
+
+        // Add event listeners for calculation
+        ["materialsCost", "labourHours", "labourRate", "markupPercentage"].forEach(id => {
+            document.getElementById(id).addEventListener("input", updateCalculation);
+        });
+
+        // Handle form submission
+        document.getElementById("quoteForm").addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            const formData = {
+                user_id: "user_" + Math.random().toString(36).substr(2, 9),
+                template_type: document.getElementById("templateType").value,
+                client_name: document.getElementById("clientName").value,
+                client_email: document.getElementById("clientEmail").value,
+                job_title: document.getElementById("jobTitle").value,
+                job_description: document.getElementById("jobDescription").value,
+                materials_cost: parseFloat(document.getElementById("materialsCost").value),
+                labour_hours: parseFloat(document.getElementById("labourHours").value),
+                labour_rate: parseFloat(document.getElementById("labourRate").value),
+                markup_percentage: parseFloat(document.getElementById("markupPercentage").value)
+            };
+
+            try {
+                const res = await fetch(`${API_BASE}/api/quotes/generate`, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(formData)
+                });
+
+                if (!res.ok) {
+                    const error = await res.json();
+                    if (res.status === 429) {
+                        document.getElementById("quoteLimitWarning").style.display = "block";
+                        return;
+                    }
+                    throw new Error(error.detail || "Error generating quote");
+                }
+
+                const quote = await res.json();
+                displayQuote(quote);
+                document.getElementById("results").style.display = "block";
+                document.querySelector("form").style.display = "none";
+                window.scrollTo({ top: document.getElementById("results").offsetTop - 50, behavior: "smooth" });
+            } catch (err) {
+                alert("❌ " + err.message);
+            }
+        });
+
+        function displayQuote(quote) {
+            document.getElementById("quoteHtml").innerHTML = quote.html_preview;
+        }
+
+        function downloadPDF() {
+            alert("📥 PDF download coming soon! For now, use your browser's Print to PDF feature.");
+        }
+
+        function editQuote() {
+            document.querySelector("form").style.display = "block";
+            document.getElementById("results").style.display = "none";
+            window.scrollTo({ top: 0 });
+        }
+
+        function sendToClient() {
+            alert("📧 Email feature coming soon!");
+        }
+
+        function showPremiumModal() {
+            document.getElementById("premiumModal").style.display = "flex";
+        }
+
+        async function startCheckout() {
+            const userEmail = prompt("Enter your email to upgrade:");
+            if (!userEmail) return;
+
+            const userId = "user_" + Math.random().toString(36).substr(2, 9);
+
+            try {
+                const res = await fetch(`${API_BASE}/api/payments/create-checkout`, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({
+                        product_id: "quotes_premium",
+                        user_email: userEmail,
+                        user_id: userId
+                    })
+                });
+
+                const payment = await res.json();
+                if (payment.checkout_url) {
+                    // In production: window.location.href = payment.checkout_url;
+                    // For now, show confirmation
+                    alert(`✅ Premium activated!\n\nQuotes unlimited (was 3/month)\n\nProduct: ${payment.product_name}\nPrice: NZ$${payment.price_nzd}/month`);
+                    document.getElementById("quoteLimitWarning").style.display = "none";
+                }
+            } catch (err) {
+                alert("❌ Error processing payment: " + err.message);
+            }
+        }
+
+        window.addEventListener("DOMContentLoaded", initTemplates);
+    </script>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 NZ Tradie Tools. Free tools to help tradies run smarter businesses.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NZ Tradie Pricing Tool — Find Your Market Rate 2026</title>
+    <meta name="description" content="Find out what tradies earn in NZ by trade, region, and experience level. Free interactive pricing calculator.">
+    <meta name="keywords" content="tradie rates, electrician hourly rate nz, plumber pricing, builder rates">
+    <meta property="og:title" content="NZ Tradie Pricing Tool — Find Your Market Rate">
+    <meta property="og:description" content="See what tradies earn in your region. Electricians, plumbers, builders and more.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradietools.nz/tools/pricing/">
+
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <style>
+        .pricing-tool { max-width: 900px; margin: 0 auto; padding: 2rem 1rem; }
+        .tool-header { margin-bottom: 2rem; }
+        .tool-header h1 { margin: 0; color: #0055a5; font-size: 2em; }
+        .tool-header p { color: #666; font-size: 1.1em; margin: 0.5rem 0 0; }
+
+        .form-section { margin-bottom: 2rem; }
+        .form-section label { display: block; font-weight: 600; margin-bottom: 0.5rem; }
+
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+        .form-row.full { grid-template-columns: 1fr; }
+        @media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } }
+
+        .form-group { margin-bottom: 1rem; }
+        .form-group input,
+        .form-group select { width: 100%; padding: 0.6rem; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem; }
+        .form-group small { color: #666; font-size: 0.85rem; display: block; margin-top: 0.3rem; }
+
+        .radio-group { margin: 1rem 0; }
+        .radio-group label { display: block; margin-bottom: 0.5rem; font-weight: normal; }
+        .radio-group input[type="radio"] { margin-right: 0.5rem; }
+
+        .btn-primary { background: #0055a5; color: white; padding: 0.75rem 1.5rem; border: none; border-radius: 4px; font-size: 1rem; font-weight: 600; cursor: pointer; }
+        .btn-primary:hover { background: #003d7a; }
+
+        #results { display: none; margin-top: 2rem; }
+        .result-card { background: white; padding: 2rem; border: 1px solid #ddd; border-radius: 8px; }
+        .result-card h2 { color: #0055a5; margin: 0 0 1rem; }
+
+        .chart-container { position: relative; height: 300px; margin: 2rem 0; }
+
+        .stats-table { width: 100%; border-collapse: collapse; margin: 2rem 0; }
+        .stats-table td { padding: 1rem; border-bottom: 1px solid #eee; }
+        .stats-table td:first-child { font-weight: 500; width: 50%; }
+        .stat-value { font-family: 'Courier New', monospace; font-weight: 600; color: #0055a5; }
+
+        .upsell-box { background: #f0f4f8; padding: 1.5rem; border-radius: 8px; margin-top: 2rem; border-left: 4px solid #0055a5; }
+        .upsell-box h3 { margin: 0 0 0.5rem; color: #0055a5; }
+        .upsell-box p { margin: 0 0 1rem; color: #666; }
+        .btn-premium { background: #28a745; color: white; padding: 0.7rem 1.4rem; border: none; border-radius: 4px; font-weight: 600; cursor: pointer; }
+        .btn-premium:hover { background: #218838; }
+
+        .loading { text-align: center; color: #666; }
+        .error { background: #fee; color: #c00; padding: 1rem; border-radius: 4px; margin: 1rem 0; }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="pricing-tool">
+
+            <div class="tool-header">
+                <h1>Find Your Market Rate</h1>
+                <p>See what tradies earn in NZ. Compare by trade, region, and experience level.</p>
+            </div>
+
+            <!-- FORM -->
+            <form id="rateSearchForm">
+
+                <div class="form-section">
+                    <label for="trade">Your Trade *</label>
+                    <select id="trade" name="trade" required>
+                        <option value="">-- Select Your Trade --</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="city">Your City/Region *</label>
+                        <select id="city" name="city" required>
+                            <option value="">-- Select City --</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Your Experience Level *</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="experience" value="apprentice"> Apprentice / Trainee</label>
+                            <label><input type="radio" name="experience" value="qualified" checked> Qualified (3-10 years)</label>
+                            <label><input type="radio" name="experience" value="specialist"> Specialist (10+ years)</label>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-primary">Find My Rate →</button>
+            </form>
+
+            <!-- RESULTS -->
+            <div id="results">
+
+                <div class="result-card">
+                    <h2 id="resultTitle"></h2>
+                    <p id="resultSubtitle" style="color: #666; margin-top: -0.5rem;"></p>
+
+                    <!-- CHART -->
+                    <div class="chart-container">
+                        <canvas id="rateChart"></canvas>
+                    </div>
+
+                    <!-- STATS TABLE -->
+                    <table class="stats-table">
+                        <tr>
+                            <td>Your peers earn (10th percentile):</td>
+                            <td id="stat10th" class="stat-value">—</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Market median (50th percentile):</strong></td>
+                            <td id="statMedian" class="stat-value" style="font-weight:bold;font-size:1.1em;">—</td>
+                        </tr>
+                        <tr>
+                            <td>Top earners (90th percentile):</td>
+                            <td id="stat90th" class="stat-value">—</td>
+                        </tr>
+                        <tr>
+                            <td>Daily rate (8-hour day):</td>
+                            <td id="statDaily" class="stat-value">—</td>
+                        </tr>
+                        <tr style="background: #f9f9f9;">
+                            <td>Market trend:</td>
+                            <td id="statTrend" class="stat-value">—</td>
+                        </tr>
+                        <tr style="background: #f9f9f9;">
+                            <td>Data quality (sample size):</td>
+                            <td id="statQuality" class="stat-value">—</td>
+                        </tr>
+                    </table>
+
+                    <!-- INSIGHTS -->
+                    <div style="background: #e8f4f8; padding: 1rem; border-radius: 6px; margin: 2rem 0;">
+                        <h4 style="margin-top: 0;">💡 What This Means</h4>
+                        <p id="insight" style="margin: 0; color: #333;"></p>
+                    </div>
+
+                    <!-- UPSELL -->
+                    <div class="upsell-box">
+                        <h3>📊 Compare Multiple Regions?</h3>
+                        <p>See what tradies earn across 20+ NZ cities. Find your best market.</p>
+                        <button type="button" class="btn-premium" onclick="showPremiumModal()">Unlock Premium — $4.99/month</button>
+                        <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">First 7 days free. Cancel anytime.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ERROR -->
+            <div id="error" style="display: none;"></div>
+
+        </div>
+    </div>
+
+    <!-- PREMIUM MODAL -->
+    <div id="premiumModal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 1000; display: flex; align-items: center; justify-content: center;">
+        <div style="background: white; padding: 2rem; border-radius: 8px; max-width: 500px; box-shadow: 0 10px 40px rgba(0,0,0,0.2);">
+            <h2 style="margin: 0 0 1rem; color: #0055a5;">Unlock Premium</h2>
+            <p style="color: #666; margin-bottom: 1.5rem;">Compare rates across unlimited NZ regions + get weekly rate updates.</p>
+
+            <div style="background: #f9f9f9; padding: 1rem; border-radius: 6px; margin-bottom: 1.5rem;">
+                <div style="font-size: 2rem; font-weight: bold; color: #0055a5;">$4.99</div>
+                <div style="color: #666; font-size: 0.9rem;">per month, cancel anytime</div>
+            </div>
+
+            <button type="button" class="btn-premium" onclick="startCheckout()" style="width: 100%; padding: 1rem; font-size: 1rem; margin-bottom: 1rem;">Start Free Trial (7 days)</button>
+            <button type="button" onclick="closePremiumModal()" style="width: 100%; padding: 0.75rem; background: #f0f0f0; border: none; border-radius: 4px; cursor: pointer;">Not Now</button>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = "http://localhost:8003";
+        let currentChart = null;
+
+        // Populate dropdowns on load
+        async function initDropdowns() {
+            try {
+                const tradesRes = await fetch(`${API_BASE}/api/pricing/all-trades`);
+                const tradesData = await tradesRes.json();
+                const tradeSelect = document.getElementById("trade");
+                tradesData.trades.forEach(trade => {
+                    const option = document.createElement("option");
+                    option.value = trade;
+                    option.textContent = trade.charAt(0).toUpperCase() + trade.slice(1);
+                    tradeSelect.appendChild(option);
+                });
+
+                const citiesRes = await fetch(`${API_BASE}/api/pricing/all-cities`);
+                const citiesData = await citiesRes.json();
+                const citySelect = document.getElementById("city");
+                citiesData.cities.forEach(city => {
+                    const option = document.createElement("option");
+                    option.value = city;
+                    option.textContent = city.charAt(0).toUpperCase() + city.slice(1);
+                    citySelect.appendChild(option);
+                });
+            } catch (err) {
+                console.error("Error loading dropdowns:", err);
+            }
+        }
+
+        // Handle form submission
+        document.getElementById("rateSearchForm").addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            const trade = document.getElementById("trade").value;
+            const city = document.getElementById("city").value;
+            const experience = document.querySelector("input[name='experience']:checked").value;
+
+            if (!trade || !city) {
+                showError("Please select your trade and city");
+                return;
+            }
+
+            try {
+                const res = await fetch(`${API_BASE}/api/pricing/rates?trade=${trade}&city=${city}&experience=${experience}`);
+
+                if (!res.ok) {
+                    throw new Error("No data found for this selection");
+                }
+
+                const data = await res.json();
+                displayResults(data);
+                document.getElementById("results").style.display = "block";
+                document.getElementById("error").style.display = "none";
+
+                // Save search
+                fetch(`${API_BASE}/api/pricing/save-search`, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ user_id: "anon_" + Math.random(), trade, city, experience })
+                }).catch(err => console.log("Analytics ping failed:", err));
+
+            } catch (err) {
+                showError(err.message || "Error fetching rates");
+            }
+        });
+
+        function displayResults(data) {
+            const { trade, city, experience, hourly_rate, daily_rate, trend, confidence } = data;
+            const { low, median, high, percentile_10, percentile_90 } = hourly_rate;
+
+            // Update title
+            document.getElementById("resultTitle").textContent = `${trade.charAt(0).toUpperCase() + trade.slice(1)}s in ${city.charAt(0).toUpperCase() + city.slice(1)} (${experience})`;
+            document.getElementById("resultSubtitle").textContent = `Market data from ${data.source_count} tradies — ${confidence} confidence`;
+
+            // Update stats
+            document.getElementById("stat10th").textContent = `$${percentile_10.toFixed(0)}/hr`;
+            document.getElementById("statMedian").textContent = `$${median.toFixed(0)}/hr`;
+            document.getElementById("stat90th").textContent = `$${percentile_90.toFixed(0)}/hr`;
+            document.getElementById("statDaily").textContent = `$${daily_rate.toFixed(0)}/day`;
+            document.getElementById("statTrend").textContent = trend === "up" ? "📈 Growing" : trend === "down" ? "📉 Softening" : "➡️ Stable";
+            document.getElementById("statQuality").textContent = data.source_count + " tradies";
+
+            // Insight
+            const earningRange = high - low;
+            document.getElementById("insight").textContent = `${trade.charAt(0).toUpperCase() + trade.slice(1)}s in ${city} typically earn between $${low.toFixed(0)}-$${high.toFixed(0)}/hour. The median is $${median.toFixed(0)}/hour. Specialists earn on the high end; newer tradies tend toward the low end.`;
+
+            // Draw chart
+            drawChart(percentile_10, median, percentile_90, low, high);
+        }
+
+        function drawChart(p10, median, p90, low, high) {
+            const ctx = document.getElementById("rateChart").getContext("2d");
+
+            if (currentChart) currentChart.destroy();
+
+            currentChart = new Chart(ctx, {
+                type: "bar",
+                data: {
+                    labels: ["10th %ile", "25th %ile", "Median", "75th %ile", "90th %ile"],
+                    datasets: [{
+                        label: "Hourly Rate ($)",
+                        data: [p10, (p10 + median) / 2, median, (median + p90) / 2, p90],
+                        backgroundColor: ["#e3f2fd", "#bbdefb", "#0055a5", "#1976d2", "#0d47a1"],
+                        borderColor: "#0055a5",
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    indexAxis: "y",
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        x: { beginAtZero: true, max: (high * 1.2) }
+                    }
+                }
+            });
+        }
+
+        function showError(message) {
+            const errorDiv = document.getElementById("error");
+            errorDiv.innerHTML = `<div class="error">${message}</div>`;
+            errorDiv.style.display = "block";
+        }
+
+        function showPremiumModal() {
+            document.getElementById("premiumModal").style.display = "flex";
+        }
+
+        function closePremiumModal() {
+            document.getElementById("premiumModal").style.display = "none";
+        }
+
+        function startCheckout() {
+            alert("🎯 Premium feature coming soon!\n\nWe're integrating Stripe. For now, contact us at hello@tradietools.nz");
+            closePremiumModal();
+        }
+
+        // Load on page load
+        window.addEventListener("DOMContentLoaded", initDropdowns);
+    </script>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 NZ Tradie Tools. Free tools to help tradies run smarter businesses.</p>
+        </div>
+    </footer>
+</body>
+</html>
