@@ -2,7 +2,7 @@
 title: "NZ Trades Apprenticeship Guide 2026 — Everything You Need to Know"
 seo_title: "NZ Trades Apprenticeship Guide 2026"
 description: "Complete guide to NZ trade apprenticeships in 2026. How to find an employer, funding, pay rates, qualifications, and what to expect across building, plumbing, electrical, and other trades."
-date: 2026-07-01
+date: 2026-06-06
 tags: [careers, apprenticeships, qualifications, funding, NZ]
 author: "NZ Tradie Tools"
 draft: false

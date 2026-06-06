@@ -2,7 +2,7 @@
 title: "How to Hire a Builder in NZ — A Step-by-Step Guide for Homeowners"
 seo_title: "How to Hire a Builder in NZ"
 description: "How to hire a builder in New Zealand — checking LBP licences, getting quotes, understanding contracts, and protecting yourself from problems. Updated 2026."
-date: 2026-10-01
+date: 2026-06-06
 tags: [hiring, builders, LBP, contracts, homeowners, NZ]
 author: "NZ Tradie Tools"
 draft: false

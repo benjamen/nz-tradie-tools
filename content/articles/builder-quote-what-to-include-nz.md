@@ -1,7 +1,7 @@
 ---
 title: "What Should a Builder's Quote Include? — NZ Guide 2026"
 description: "What a builder's quote should include in NZ — scope, materials, payment schedule, variations, and what's missing from most quotes homeowners accept."
-date: 2026-10-01
+date: 2026-06-06
 tags: [quotes, builders, contracts, homeowners, NZ]
 author: "NZ Tradie Tools"
 draft: false

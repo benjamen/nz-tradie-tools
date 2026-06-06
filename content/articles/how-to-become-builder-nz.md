@@ -2,7 +2,7 @@
 title: "How to Become a Builder in NZ — Qualifications, Apprenticeships, and LBP"
 seo_title: "How to Become a Builder in NZ"
 description: "Step-by-step guide to becoming a licensed builder in New Zealand — apprenticeships, BCITO training, LBP registration, timeframes, and what it pays."
-date: 2026-07-01
+date: 2026-06-06
 tags: [careers, apprenticeships, LBP, building, qualifications, NZ]
 author: "NZ Tradie Tools"
 draft: false
