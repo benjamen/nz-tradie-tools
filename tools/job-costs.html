@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NZ Job Costing Database — What Should Jobs Cost?</title>
+    <meta name="description" content="Real job costs from 1,000+ NZ tradies. See what bathroom renos, driveways, and other jobs actually cost by region.">
+    <meta property="og:title" content="NZ Job Costing Database — Real Costs from Tradies">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <style>
+        .costs-tool { max-width: 900px; margin: 0 auto; padding: 2rem 1rem; }
+        .tool-header { margin-bottom: 2rem; }
+        .tool-header h1 { margin: 0; color: #0055a5; font-size: 2em; }
+        .tool-header p { color: #666; font-size: 1.1em; margin: 0.5rem 0 0; }
+
+        .form-section { margin-bottom: 2rem; }
+        .form-group { margin-bottom: 1rem; }
+        .form-group label { display: block; font-weight: 600; margin-bottom: 0.5rem; }
+        .form-group select { width: 100%; padding: 0.6rem; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem; }
+
+        .form-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+        @media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } }
+
+        .btn-primary { background: #0055a5; color: white; padding: 0.75rem 1.5rem; border: none; border-radius: 4px; font-size: 1rem; font-weight: 600; cursor: pointer; }
+        .btn-primary:hover { background: #003d7a; }
+
+        #results { display: none; margin-top: 2rem; }
+        .result-card { background: white; padding: 2rem; border: 1px solid #ddd; border-radius: 8px; }
+        .result-card h2 { color: #0055a5; margin: 0 0 1rem; }
+
+        .cost-range { background: #f0f4f8; padding: 1.5rem; border-radius: 6px; margin: 1.5rem 0; border-left: 4px solid #0055a5; }
+        .cost-range h3 { margin: 0 0 1rem; color: #0055a5; }
+
+        .cost-display { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+        .cost-item { background: white; padding: 1rem; border-radius: 4px; text-align: center; border: 1px solid #ddd; }
+        .cost-label { color: #666; font-size: 0.9em; margin-bottom: 0.3rem; }
+        .cost-value { font-size: 1.5em; font-weight: bold; color: #0055a5; }
+
+        .stats-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; }
+        .stats-table td { padding: 0.75rem; border-bottom: 1px solid #eee; }
+        .stats-table td:first-child { width: 50%; font-weight: 500; }
+
+        .similar-jobs { margin-top: 2rem; }
+        .similar-jobs h3 { color: #0055a5; margin-bottom: 1rem; }
+        .job-list { display: grid; gap: 0.75rem; }
+        .job-item { background: #f9f9f9; padding: 1rem; border-radius: 4px; border-left: 3px solid #0055a5; }
+        .job-item-cost { font-weight: bold; color: #0055a5; }
+
+        .upsell-box { background: #fff3cd; padding: 1.5rem; border-radius: 8px; margin-top: 2rem; border-left: 4px solid #ffc107; }
+        .upsell-box h3 { margin: 0 0 0.5rem; }
+        .btn-premium { background: #28a745; color: white; padding: 0.7rem 1.4rem; margin-top: 1rem; border: none; border-radius: 4px; cursor: pointer; }
+        .btn-premium:hover { background: #218838; }
+
+        .error { background: #fee; color: #c00; padding: 1rem; border-radius: 4px; margin: 1rem 0; }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="costs-tool">
+
+            <div class="tool-header">
+                <h1>Job Costing Database</h1>
+                <p>Real costs from 1,000+ completed NZ tradie jobs. Find what similar work should cost in your region.</p>
+            </div>
+
+            <!-- FORM -->
+            <form id="costSearchForm">
+
+                <div class="form-section">
+                    <h3 style="color: #0055a5; margin: 0 0 1rem;">Search Job Costs</h3>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="trade">Your Trade *</label>
+                            <select id="trade" name="trade" required>
+                                <option value="">-- Select Trade --</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="jobType">Job Type *</label>
+                            <select id="jobType" name="job_type" required>
+                                <option value="">-- Select Job Type --</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="region">Region *</label>
+                            <select id="region" name="region" required>
+                                <option value="">-- Select Region --</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row" style="grid-template-columns: 1fr 1fr;">
+                        <div class="form-group">
+                            <label for="scope">Job Size</label>
+                            <select id="scope" name="scope">
+                                <option value="small">Small (&lt;$5k)</option>
+                                <option value="medium" selected>Medium ($5-15k)</option>
+                                <option value="large">Large (&gt;$15k)</option>
+                            </select>
+                        </div>
+                        <div></div>
+                    </div>
+
+                    <button type="submit" class="btn-primary">Get Cost Estimate →</button>
+                </div>
+
+            </form>
+
+            <!-- RESULTS -->
+            <div id="results">
+
+                <div class="result-card">
+                    <h2 id="resultTitle"></h2>
+                    <p id="resultSubtitle" style="color: #666; margin: 0;"></p>
+
+                    <!-- COST RANGE -->
+                    <div class="cost-range">
+                        <h3>Typical Cost Range</h3>
+                        <div class="cost-display">
+                            <div class="cost-item">
+                                <div class="cost-label">Low (10th %ile)</div>
+                                <div class="cost-value" id="costLow">—</div>
+                            </div>
+                            <div class="cost-item" style="background: #e3f2fd; border-color: #0055a5;">
+                                <div class="cost-label"><strong>Market Median</strong></div>
+                                <div class="cost-value" id="costMid">—</div>
+                            </div>
+                            <div class="cost-item">
+                                <div class="cost-label">High (90th %ile)</div>
+                                <div class="cost-value" id="costHigh">—</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BREAKDOWN -->
+                    <table class="stats-table">
+                        <tr>
+                            <td>Typical labour ratio:</td>
+                            <td id="labourRatio">—</td>
+                        </tr>
+                        <tr>
+                            <td>Typical materials ratio:</td>
+                            <td id="materialsRatio">—</td>
+                        </tr>
+                        <tr>
+                            <td>Estimated job duration:</td>
+                            <td id="duration">—</td>
+                        </tr>
+                        <tr>
+                            <td>Data quality (sample size):</td>
+                            <td id="sampleSize">—</td>
+                        </tr>
+                    </table>
+
+                    <!-- INSIGHT -->
+                    <div style="background: #e8f4f8; padding: 1rem; border-radius: 6px; margin: 1.5rem 0;">
+                        <h4 style="margin-top: 0;">💡 What This Means</h4>
+                        <p id="insight" style="margin: 0; color: #333;"></p>
+                    </div>
+
+                    <!-- SIMILAR JOBS -->
+                    <div class="similar-jobs" id="similarJobsSection" style="display: none;">
+                        <h3>Similar Jobs from Our Database</h3>
+                        <div class="job-list" id="similarJobsList"></div>
+                    </div>
+
+                    <!-- UPSELL -->
+                    <div class="upsell-box">
+                        <h3>💼 Compare Across All Regions?</h3>
+                        <p>Premium members can search all 20+ NZ regions and submit their own job costs to help other tradies.</p>
+                        <button type="button" class="btn-premium" onclick="showPremiumModal()">Unlock Premium — $12/month</button>
+                        <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">First 7 days free. Help other tradies earn fair prices.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ERROR -->
+            <div id="error" style="display: none;"></div>
+
+        </div>
+    </div>
+
+    <!-- PREMIUM MODAL -->
+    <div id="premiumModal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 1000; display: flex; align-items: center; justify-content: center;">
+        <div style="background: white; padding: 2rem; border-radius: 8px; max-width: 400px; box-shadow: 0 10px 40px rgba(0,0,0,0.2);">
+            <h2 style="margin: 0 0 1rem; color: #0055a5;">Premium Access</h2>
+            <p style="color: #666; margin: 0 0 1rem;">Unlock detailed cost data and help the tradie community.</p>
+            <div style="background: #f9f9f9; padding: 1rem; border-radius: 6px; margin-bottom: 1.5rem;">
+                <div style="font-size: 2rem; font-weight: bold; color: #0055a5;">$12</div>
+                <div style="color: #666; font-size: 0.9rem;">per month</div>
+            </div>
+            <button type="button" class="btn-premium" style="width: 100%; padding: 1rem;" onclick="startCheckout()">Start Free Trial (7 days)</button>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = "http://localhost:8003";
+        let allTrades = [];
+        let allJobTypes = [];
+        let allRegions = [];
+
+        // Load dropdowns
+        async function initDropdowns() {
+            try {
+                // Load trades
+                let res = await fetch(`${API_BASE}/api/costs/trades`);
+                let data = await res.json();
+                allTrades = data.trades;
+                const tradeSelect = document.getElementById("trade");
+                data.trades.forEach(t => {
+                    const option = document.createElement("option");
+                    option.value = t;
+                    option.textContent = t.charAt(0).toUpperCase() + t.slice(1);
+                    tradeSelect.appendChild(option);
+                });
+
+                // Load job types
+                res = await fetch(`${API_BASE}/api/costs/job-types`);
+                data = await res.json();
+                allJobTypes = data.job_types;
+                const jobSelect = document.getElementById("jobType");
+                data.job_types.forEach(t => {
+                    const option = document.createElement("option");
+                    option.value = t;
+                    option.textContent = t.replace(/_/g, " ").replace(/\b\w/g, l => l.toUpperCase());
+                    jobSelect.appendChild(option);
+                });
+
+                // Load regions
+                res = await fetch(`${API_BASE}/api/costs/regions`);
+                data = await res.json();
+                allRegions = data.regions;
+                const regionSelect = document.getElementById("region");
+                data.regions.forEach(r => {
+                    const option = document.createElement("option");
+                    option.value = r;
+                    option.textContent = r.charAt(0).toUpperCase() + r.slice(1);
+                    regionSelect.appendChild(option);
+                });
+            } catch (err) {
+                console.error("Error loading dropdowns:", err);
+            }
+        }
+
+        // Handle form submission
+        document.getElementById("costSearchForm").addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            const trade = document.getElementById("trade").value;
+            const jobType = document.getElementById("jobType").value;
+            const region = document.getElementById("region").value;
+            const scope = document.getElementById("scope").value;
+
+            if (!trade || !jobType || !region) {
+                showError("Please select trade, job type, and region");
+                return;
+            }
+
+            try {
+                const res = await fetch(
+                    `${API_BASE}/api/costs/estimate?trade=${trade}&job_type=${jobType}&region=${region}&scope=${scope}`
+                );
+
+                if (!res.ok) {
+                    throw new Error("No cost data for this selection");
+                }
+
+                const data = await res.json();
+                displayResults(data);
+                document.getElementById("results").style.display = "block";
+                document.getElementById("error").style.display = "none";
+
+                // Load similar jobs
+                loadSimilarJobs(trade, jobType);
+
+            } catch (err) {
+                showError(err.message);
+            }
+        });
+
+        function displayResults(data) {
+            const { trade, job_type, region, cost, labour, materials, sample_size, insight } = data;
+
+            document.getElementById("resultTitle").textContent =
+                `${job_type.replace(/_/g, " ").toUpperCase()} in ${region.toUpperCase()}`;
+            document.getElementById("resultSubtitle").textContent =
+                `Based on ${sample_size} real NZ tradie jobs`;
+
+            document.getElementById("costLow").textContent = `$${cost.low.toLocaleString()}`;
+            document.getElementById("costMid").textContent = `$${cost.median.toLocaleString()}`;
+            document.getElementById("costHigh").textContent = `$${cost.high.toLocaleString()}`;
+
+            document.getElementById("labourRatio").textContent = `${labour.ratio_average}%`;
+            document.getElementById("materialsRatio").textContent = `${materials.ratio_average}%`;
+            document.getElementById("duration").textContent = `${data.estimated_duration_days} days`;
+            document.getElementById("sampleSize").textContent = `${sample_size} jobs`;
+
+            document.getElementById("insight").textContent = insight;
+        }
+
+        async function loadSimilarJobs(trade, jobType) {
+            try {
+                const res = await fetch(`${API_BASE}/api/costs/similar-jobs?trade=${trade}&limit=10`);
+                const data = await res.json();
+
+                if (data.similar_jobs.length > 0) {
+                    const section = document.getElementById("similarJobsSection");
+                    const list = document.getElementById("similarJobsList");
+                    list.innerHTML = "";
+
+                    data.similar_jobs.slice(0, 5).forEach(job => {
+                        const item = document.createElement("div");
+                        item.className = "job-item";
+                        item.innerHTML = `
+                            <div>
+                                <strong>${job.job_type.replace(/_/g, " ")}</strong>
+                                <span style="color: #666; font-size: 0.9em;"> — ${job.region} (${job.year})</span>
+                            </div>
+                            <div class="job-item-cost">$${job.cost.toLocaleString()}</div>
+                            <div style="font-size: 0.85em; color: #666;">Labour: ${job.labour_ratio}% | ${job.scope}</div>
+                        `;
+                        list.appendChild(item);
+                    });
+
+                    section.style.display = "block";
+                }
+            } catch (err) {
+                console.error("Error loading similar jobs:", err);
+            }
+        }
+
+        function showError(message) {
+            const errorDiv = document.getElementById("error");
+            errorDiv.innerHTML = `<div class="error">${message}</div>`;
+            errorDiv.style.display = "block";
+        }
+
+        function showPremiumModal() {
+            document.getElementById("premiumModal").style.display = "flex";
+        }
+
+        function startCheckout() {
+            alert("🎯 Premium checkout coming soon!");
+        }
+
+        window.addEventListener("DOMContentLoaded", initDropdowns);
+    </script>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 NZ Tradie Tools. Free tools to help tradies run smarter businesses.</p>
+        </div>
+    </footer>
+</body>
+</html>
