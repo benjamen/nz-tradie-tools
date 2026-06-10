@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find a Tradie Near You — TradieTools NZ</title>
+  <meta name="description" content="Search and contact verified NZ tradies by trade and region. Electricians, plumbers, builders, painters and more — listed free on TradieTools.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-534097657"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-534097657');</script>
+  <style>
+    /* Search bar */
+    .find-hero { background: var(--navy); color: var(--white); padding: 3rem 0 2.5rem; border-bottom: 4px solid var(--blue); }
+    .find-hero h1 { color: var(--white); font-size: 2rem; margin-bottom: .5rem; }
+    .find-hero p { opacity: .85; font-size: 1.05rem; margin-bottom: 1.5rem; max-width: 600px; }
+
+    .search-row { display: flex; gap: 0; max-width: 680px; border: 2px solid var(--blue); background: var(--white); }
+    .search-input { flex: 1; border: none; padding: .7rem 1rem; font-size: 1rem; font-family: var(--font); outline: none; color: var(--text); min-width: 0; }
+    .search-btn { background: var(--blue); color: var(--white); border: none; padding: .7rem 1.4rem; font-size: .95rem; font-weight: 700; cursor: pointer; font-family: var(--font); white-space: nowrap; }
+    .search-btn:hover { background: var(--blue-dark); }
+
+    /* Filter bar */
+    .filter-bar { background: var(--bg); border-bottom: 1px solid var(--border); padding: .75rem 0; }
+    .filter-inner { display: flex; gap: .75rem; flex-wrap: wrap; align-items: center; }
+    .filter-label { font-size: .85rem; font-weight: 600; color: var(--muted); white-space: nowrap; }
+    .filter-select { border: 1px solid var(--border); background: var(--white); padding: .4rem .75rem; font-size: .88rem; font-family: var(--font); color: var(--text); cursor: pointer; outline: none; }
+    .filter-select:focus { border-color: var(--blue); }
+    .filter-clear { margin-left: auto; font-size: .85rem; color: var(--blue); background: none; border: none; cursor: pointer; font-family: var(--font); display: none; text-decoration: underline; }
+    .filter-clear.show { display: block; }
+
+    /* Results */
+    .results-bar { display: flex; align-items: center; justify-content: space-between; padding: 1rem 0 .75rem; flex-wrap: wrap; gap: .5rem; }
+    .results-count { font-size: .9rem; color: var(--muted); }
+    .results-count strong { color: var(--text); }
+    .sort-select { border: 1px solid var(--border); background: var(--white); padding: .35rem .75rem; font-size: .85rem; font-family: var(--font); color: var(--muted); cursor: pointer; }
+
+    /* Tradie cards — extends .card-grid */
+    .tradie-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border); }
+    .tradie-card { background: var(--white); padding: 1.25rem; display: flex; flex-direction: column; gap: .75rem; border-left: 4px solid transparent; transition: border-color .15s, background .15s; }
+    .tradie-card:hover { background: var(--blue-light); border-left-color: var(--blue); }
+    .tradie-card.is-premium { border-left-color: var(--orange); }
+
+    .tc-top { display: flex; align-items: flex-start; gap: .75rem; }
+    .tc-avatar { width: 44px; height: 44px; background: var(--navy); color: var(--white); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1rem; flex-shrink: 0; letter-spacing: -.01em; }
+    .tc-info { flex: 1; min-width: 0; }
+    .tc-name { font-weight: 700; font-size: .98rem; color: var(--text); display: flex; align-items: center; gap: .4rem; flex-wrap: wrap; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .tc-trade { font-size: .85rem; color: var(--blue); font-weight: 600; margin-top: .15rem; }
+    .tc-region { font-size: .82rem; color: var(--muted); margin-top: .1rem; }
+
+    .badge-verified { background: var(--blue); color: var(--white); font-size: .7rem; font-weight: 700; padding: .15rem .5rem; letter-spacing: .02em; white-space: nowrap; }
+    .badge-premium { background: var(--orange); color: var(--white); font-size: .7rem; font-weight: 700; padding: .15rem .5rem; }
+
+    .tc-meta { display: flex; gap: .75rem; flex-wrap: wrap; align-items: center; font-size: .82rem; color: var(--muted); }
+    .tc-stars { color: #b45309; letter-spacing: 1px; }
+    .tc-rate { font-weight: 700; color: var(--text); }
+
+    .tc-actions { display: flex; gap: .5rem; margin-top: .25rem; }
+    .btn-call { flex: 1; background: var(--blue); color: var(--white); border: none; padding: .55rem; font-size: .88rem; font-weight: 700; cursor: pointer; font-family: var(--font); text-align: center; text-decoration: none; }
+    .btn-call:hover { background: var(--blue-dark); color: var(--white); }
+    .btn-email { flex: 1; background: var(--white); color: var(--blue); border: 2px solid var(--blue); padding: .55rem; font-size: .88rem; font-weight: 700; cursor: pointer; font-family: var(--font); text-align: center; text-decoration: none; }
+    .btn-email:hover { background: var(--blue-light); }
+
+    /* States */
+    .state-empty { padding: 3rem 1rem; text-align: center; color: var(--muted); border: 1px solid var(--border); background: var(--white); }
+    .state-empty h3 { font-size: 1.1rem; margin-bottom: .4rem; color: var(--text); }
+
+    .empty-cta-box { background: var(--bg-stripe); border: 1px solid var(--border); border-left: 4px solid var(--orange); padding: 1.5rem; margin-top: 1.5rem; }
+    .empty-cta-box h3 { font-size: 1rem; margin-bottom: .35rem; }
+    .empty-cta-box p { font-size: .9rem; color: var(--muted); margin-bottom: .75rem; }
+
+    .spinner { display: flex; justify-content: center; align-items: center; padding: 4rem; }
+    .spinner::after { content: ''; width: 32px; height: 32px; border: 3px solid var(--border); border-top-color: var(--blue); border-radius: 50%; animation: spin .7s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* Pagination */
+    .pagination { display: flex; gap: 0; justify-content: center; margin-top: 2rem; border: 1px solid var(--border); width: fit-content; margin-left: auto; margin-right: auto; }
+    .page-btn { padding: .5rem .85rem; font-size: .88rem; font-family: var(--font); background: var(--white); color: var(--blue); border: none; border-right: 1px solid var(--border); cursor: pointer; }
+    .page-btn:last-child { border-right: none; }
+    .page-btn:hover { background: var(--blue-light); }
+    .page-btn.active { background: var(--blue); color: var(--white); font-weight: 700; }
+    .page-btn:disabled { color: var(--muted); cursor: not-allowed; background: var(--bg); }
+
+    /* CTA strip */
+    .cta-strip { background: var(--navy); color: var(--white); padding: 2rem 0; margin-top: 3rem; border-top: 3px solid var(--blue); text-align: center; }
+    .cta-strip h2 { color: var(--white); font-size: 1.3rem; border: none; margin: 0 0 .4rem; }
+    .cta-strip p { opacity: .8; font-size: .95rem; margin-bottom: 1rem; }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="logo">🔧 NZ Tradie Tools</a>
+    <nav class="main-nav">
+      <a href="/trades/">Find a Tradie</a>
+      <a href="/jobs/">Job Costs</a>
+      <a href="/calculators/">Calculators</a>
+      <a href="/find/" style="color:var(--white);font-weight:700">Live Directory</a>
+    </nav>
+  </div>
+</header>
+
+<div class="find-hero">
+  <div class="container">
+    <h1>Find a Tradie Near You</h1>
+    <p>Browse verified NZ tradespeople — search by name, trade or region and contact them directly.</p>
+    <div class="search-row">
+      <input type="text" class="search-input" id="searchInput" placeholder="e.g. electrician, plumber, Auckland…" autocomplete="off">
+      <button class="search-btn" onclick="applyFilters()">Search</button>
+    </div>
+  </div>
+</div>
+
+<div class="filter-bar">
+  <div class="container">
+    <div class="filter-inner">
+      <span class="filter-label">Filter:</span>
+      <select class="filter-select" id="tradeFilter" onchange="applyFilters()">
+        <option value="">All Trades</option>
+        <option value="electrician">Electricians</option>
+        <option value="plumber">Plumbers</option>
+        <option value="builder">Builders / LBPs</option>
+        <option value="painter">Painters</option>
+        <option value="roofer">Roofers</option>
+        <option value="landscaper">Landscapers</option>
+        <option value="tiler">Tilers</option>
+        <option value="plasterer">Plasterers</option>
+        <option value="flooring">Flooring Specialists</option>
+        <option value="concreter">Concreters</option>
+        <option value="gasfitter">Gasfitters</option>
+        <option value="hvac">HVAC / Heat Pump</option>
+        <option value="other">Other</option>
+      </select>
+      <select class="filter-select" id="regionFilter" onchange="applyFilters()">
+        <option value="">All Regions</option>
+        <option value="Auckland">Auckland</option>
+        <option value="Wellington">Wellington</option>
+        <option value="Canterbury">Canterbury</option>
+        <option value="Waikato">Waikato</option>
+        <option value="Bay of Plenty">Bay of Plenty</option>
+        <option value="Otago">Otago</option>
+        <option value="Northland">Northland</option>
+        <option value="Manawatu-Whanganui">Manawatu-Whanganui</option>
+        <option value="Taranaki">Taranaki</option>
+        <option value="Hawke's Bay">Hawke's Bay</option>
+        <option value="Nelson-Marlborough">Nelson-Marlborough</option>
+        <option value="Southland">Southland</option>
+        <option value="Gisborne">Gisborne</option>
+        <option value="West Coast">West Coast</option>
+      </select>
+      <select class="filter-select" id="premiumFilter" onchange="applyFilters()">
+        <option value="">All Members</option>
+        <option value="verified">Verified Only</option>
+        <option value="premium">Premium Only</option>
+      </select>
+      <button class="filter-clear" id="clearBtn" onclick="clearFilters()">Clear filters</button>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="results-bar">
+    <span class="results-count" id="resultsCount">Loading…</span>
+    <select class="sort-select" id="sortSelect" onchange="applyFilters()">
+      <option value="newest">Newest first</option>
+      <option value="name">Name A–Z</option>
+      <option value="rating">Highest rated</option>
+    </select>
+  </div>
+  <div id="listingArea"><div class="spinner"></div></div>
+  <div id="pagination"></div>
+</div>
+
+<div class="cta-strip">
+  <div class="container">
+    <h2>Are you a tradie?</h2>
+    <p>List your business free — get discovered by customers across New Zealand.</p>
+    <a href="https://tradietools.optified.nz/signup" class="btn-primary">Create Free Listing</a>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">NZ Tradie Tools</p>
+      <p>Free calculators, templates and guides for New Zealand tradies.</p>
+    </div>
+    <div style="text-align:right">
+      <p><a href="/privacy/">Privacy Policy</a></p>
+      <p><a href="/contact/">Contact</a></p>
+      <p style="margin-top:.5rem">&copy; 2026 NZ Tradie Tools</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const API = 'https://tradietools.optified.nz/api/method/tradietools.api.get_directory';
+const PAGE_SIZE = 15;
+const TRADE_LABELS = {
+  electrician:'Electrician',plumber:'Plumber',builder:'Builder / LBP',
+  painter:'Painter',roofer:'Roofer',landscaper:'Landscaper',tiler:'Tiler',
+  plasterer:'Plasterer',flooring:'Flooring Specialist',concreter:'Concreter',
+  gasfitter:'Gasfitter',hvac:'HVAC / Heat Pump',other:'Tradie'
+};
+
+let all = [], filtered = [], page = 1;
+
+async function load() {
+  try {
+    const url = new URL(location.href);
+    const t = url.searchParams.get('trade'), r = url.searchParams.get('region'), q = url.searchParams.get('q');
+    if (t) document.getElementById('tradeFilter').value = t;
+    if (r) document.getElementById('regionFilter').value = r;
+    if (q) document.getElementById('searchInput').value = q;
+
+    const res = await fetch(API + '?limit=500');
+    const data = await res.json();
+    all = data.message?.listings || [];
+    applyFilters();
+  } catch(e) {
+    document.getElementById('listingArea').innerHTML =
+      '<div class="state-empty"><h3>Could not load listings</h3><p>Please refresh to try again.</p></div>';
+  }
+}
+
+function applyFilters() {
+  const q = document.getElementById('searchInput').value.toLowerCase().trim();
+  const trade = document.getElementById('tradeFilter').value;
+  const region = document.getElementById('regionFilter').value;
+  const prem = document.getElementById('premiumFilter').value;
+  const sort = document.getElementById('sortSelect').value;
+
+  filtered = all.filter(t => {
+    if (q && !`${t.name} ${t.trade} ${t.region}`.toLowerCase().includes(q)) return false;
+    if (trade && t.trade !== trade) return false;
+    if (region && t.region !== region) return false;
+    if (prem === 'verified' && !t.is_verified) return false;
+    if (prem === 'premium' && !t.is_premium) return false;
+    return true;
+  });
+
+  if (sort === 'name') filtered.sort((a,b) => (a.name||'').localeCompare(b.name||''));
+  else if (sort === 'rating') filtered.sort((a,b) => (b.avg_rating||0) - (a.avg_rating||0));
+
+  page = 1;
+  const hasFilters = q || trade || region || prem;
+  document.getElementById('clearBtn').classList.toggle('show', !!hasFilters);
+
+  const url = new URL(location.href);
+  q ? url.searchParams.set('q',q) : url.searchParams.delete('q');
+  trade ? url.searchParams.set('trade',trade) : url.searchParams.delete('trade');
+  region ? url.searchParams.set('region',region) : url.searchParams.delete('region');
+  history.replaceState(null,'',url);
+
+  render();
+}
+
+function clearFilters() {
+  ['searchInput'].forEach(id => document.getElementById(id).value='');
+  ['tradeFilter','regionFilter','premiumFilter'].forEach(id => document.getElementById(id).value='');
+  applyFilters();
+}
+
+document.getElementById('searchInput').addEventListener('keydown', e => { if(e.key==='Enter') applyFilters(); });
+
+function initials(n) { return (n||'?').trim().split(/\s+/).map(w=>w[0]).join('').slice(0,2).toUpperCase(); }
+function esc(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function stars(r) { const n=Math.round(r||0); return '<span class="tc-stars">'+'★'.repeat(n)+'☆'.repeat(5-n)+'</span>'; }
+
+function cardHTML(t) {
+  const label = TRADE_LABELS[t.trade] || t.trade || 'Tradie';
+  const rate  = t.hourly_rate ? `$${t.hourly_rate}/hr` : '';
+  const exp   = t.experience_years ? `${t.experience_years}yrs exp` : '';
+  const rat   = parseFloat(t.avg_rating||0);
+  const phone = t.phone||'', email = t.contact_email||'';
+
+  return `<div class="tradie-card${t.is_premium?' is-premium':''}">
+    <div class="tc-top">
+      <div class="tc-avatar">${initials(t.name)}</div>
+      <div class="tc-info">
+        <div class="tc-name">
+          ${esc(t.name||'Unknown')}
+          ${t.is_verified?'<span class="badge-verified">✓ VERIFIED</span>':''}
+          ${t.is_premium&&!t.is_verified?'<span class="badge-premium">PREMIUM</span>':''}
+        </div>
+        <div class="tc-trade">${esc(label)}</div>
+        <div class="tc-region">${esc(t.region||'New Zealand')}</div>
+      </div>
+    </div>
+    <div class="tc-meta">
+      ${rat>0 ? `${stars(rat)}<span>${rat.toFixed(1)} (${t.review_count||0})</span>` : ''}
+      ${exp ? `<span>${esc(exp)}</span>` : ''}
+      ${rate ? `<span class="tc-rate">${esc(rate)}</span>` : ''}
+    </div>
+    <div class="tc-actions">
+      ${phone
+        ? `<a class="btn-call" href="tel:${esc(phone)}">Call</a>`
+        : `<span class="btn-call" style="opacity:.35;cursor:default">No phone</span>`}
+      ${email
+        ? `<a class="btn-email" href="mailto:${esc(email)}">Email</a>`
+        : `<span class="btn-email" style="opacity:.35;cursor:default">No email</span>`}
+    </div>
+  </div>`;
+}
+
+function render() {
+  const total = filtered.length;
+  const start = (page-1)*PAGE_SIZE;
+  const slice = filtered.slice(start, start+PAGE_SIZE);
+  const countEl = document.getElementById('resultsCount');
+
+  countEl.innerHTML = `<strong>${total}</strong> tradie${total!==1?'s':''} found`;
+
+  const area = document.getElementById('listingArea');
+  if (total === 0) {
+    area.innerHTML = all.length === 0
+      ? `<div class="empty-cta-box">
+           <h3>No tradies listed yet — be the first!</h3>
+           <p>Create your free listing and get discovered by customers across NZ.</p>
+           <a href="https://tradietools.optified.nz/signup" class="btn-primary">List My Business Free</a>
+         </div>`
+      : `<div class="state-empty"><h3>No results for those filters</h3><p><button onclick="clearFilters()" style="background:none;border:none;color:var(--blue);cursor:pointer;font-size:1rem;text-decoration:underline;font-family:var(--font)">Clear filters</button> to see all tradies.</p></div>`;
+    document.getElementById('pagination').innerHTML='';
+    return;
+  }
+
+  area.innerHTML = `<div class="tradie-grid">${slice.map(cardHTML).join('')}</div>`;
+
+  const pages = Math.ceil(total/PAGE_SIZE);
+  if (pages<=1) { document.getElementById('pagination').innerHTML=''; return; }
+  let pg = `<button class="page-btn" onclick="goPage(${page-1})" ${page===1?'disabled':''}>‹</button>`;
+  for(let i=1;i<=pages;i++){
+    if(pages>7 && Math.abs(i-page)>2 && i!==1 && i!==pages) continue;
+    pg += `<button class="page-btn ${i===page?'active':''}" onclick="goPage(${i})">${i}</button>`;
+  }
+  pg += `<button class="page-btn" onclick="goPage(${page+1})" ${page===pages?'disabled':''}>›</button>`;
+  document.getElementById('pagination').innerHTML = pg;
+}
+
+function goPage(p) { page=p; render(); window.scrollTo({top:0,behavior:'smooth'}); }
+
+load();
+</script>
+</body>
+</html>
