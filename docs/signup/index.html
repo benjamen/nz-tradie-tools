@@ -122,23 +122,23 @@
             </select>
           </div>
           <div class="field">
-            <label for="region">Region</label>
+            <label for="region">City</label>
             <select id="region" required>
-              <option value="">Select region</option>
+              <option value="">Select city</option>
               <option value="Auckland">Auckland</option>
               <option value="Wellington">Wellington</option>
-              <option value="Canterbury">Canterbury</option>
-              <option value="Waikato">Waikato</option>
-              <option value="Bay of Plenty">Bay of Plenty</option>
-              <option value="Otago">Otago</option>
-              <option value="Manawatu-Whanganui">Manawatu-Whanganui</option>
-              <option value="Northland">Northland</option>
-              <option value="Taranaki">Taranaki</option>
-              <option value="Hawke's Bay">Hawke's Bay</option>
-              <option value="Nelson-Marlborough">Nelson-Marlborough</option>
-              <option value="Southland">Southland</option>
-              <option value="Gisborne">Gisborne</option>
-              <option value="West Coast">West Coast</option>
+              <option value="Christchurch">Christchurch</option>
+              <option value="Hamilton">Hamilton</option>
+              <option value="Tauranga">Tauranga</option>
+              <option value="Dunedin">Dunedin</option>
+              <option value="Palmerston North">Palmerston North</option>
+              <option value="Napier">Napier</option>
+              <option value="New Plymouth">New Plymouth</option>
+              <option value="Whangarei">Whangarei</option>
+              <option value="Nelson">Nelson</option>
+              <option value="Rotorua">Rotorua</option>
+              <option value="Invercargill">Invercargill</option>
+              <option value="Queenstown">Queenstown</option>
             </select>
           </div>
         </div>
@@ -225,7 +225,7 @@ document.getElementById('signup-form').addEventListener('submit', async function
   btn.textContent = 'Creating listing…';
 
   try {
-    const body = { full_name: name, contact_phone: phone, contact_email: email, trade, region };
+    const body = { name, phone, email, trade, region };
     if (experience_years) body.experience_years = parseInt(experience_years);
     if (hourly_rate) body.hourly_rate = parseInt(hourly_rate);
 
