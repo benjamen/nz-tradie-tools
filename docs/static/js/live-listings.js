@@ -5,7 +5,7 @@
  */
 (function () {
   const API = 'https://tradietools.optified.nz/api/method/tradietools.api.get_directory';
-  const SIGNUP = 'https://tradietools.optified.nz/signup';
+  const SIGNUP = '/signup';
 
   const TRADE_MAP = {
     electricians: 'electrician', plumbers: 'plumber', builders: 'builder',
