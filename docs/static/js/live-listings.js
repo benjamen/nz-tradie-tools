@@ -1,11 +1,13 @@
 /**
  * live-listings.js — injects self-listed TradieTools members into city+trade pages
- * Works by parsing the URL path: /trades/{trade-slug}/{city-slug}.html
- * Zero build-system dependency.
+ * Parses URL path: /trades/{trade-slug}/{city-slug}.html
+ * Shows a "Show more businesses" button after the static top-10.
+ * On click, loads live API results with prev/next pagination (5 per page).
  */
 (function () {
-  const API = 'https://tradietools.optified.nz/api/method/tradietools.api.get_directory';
+  const API    = 'https://tradietools.optified.nz/api/method/tradietools.api.get_directory';
   const SIGNUP = '/signup';
+  const PAGE_SIZE = 5;
 
   const TRADE_MAP = {
     electricians: 'electrician', plumbers: 'plumber', builders: 'builder',
@@ -33,16 +35,17 @@
 
   const CITY_MAP = {
     auckland: 'Auckland', wellington: 'Wellington',
-    christchurch: 'Canterbury', hamilton: 'Waikato',
-    tauranga: 'Bay of Plenty', dunedin: 'Otago',
-    'palmerston-north': 'Manawatu-Whanganui', whanganui: 'Manawatu-Whanganui',
-    napier: "Hawke's Bay", hastings: "Hawke's Bay",
-    nelson: 'Nelson-Marlborough', 'new-plymouth': 'Taranaki',
-    invercargill: 'Southland', queenstown: 'Otago',
-    rotorua: 'Bay of Plenty', gisborne: 'Gisborne',
+    christchurch: 'Christchurch', hamilton: 'Hamilton',
+    tauranga: 'Tauranga', dunedin: 'Dunedin',
+    'palmerston-north': 'Palmerston North', whanganui: 'Whanganui',
+    napier: 'Napier', hastings: 'Napier',
+    nelson: 'Nelson', 'new-plymouth': 'New Plymouth',
+    invercargill: 'Invercargill', queenstown: 'Queenstown',
+    rotorua: 'Rotorua', gisborne: 'Gisborne',
     'lower-hutt': 'Wellington', 'upper-hutt': 'Wellington',
-    porirua: 'Wellington', blenheim: 'Nelson-Marlborough',
-    timaru: 'Canterbury', 'kapiti-coast': 'Wellington',
+    porirua: 'Wellington', blenheim: 'Nelson',
+    timaru: 'Christchurch', 'kapiti-coast': 'Wellington',
+    whangarei: 'Whangarei',
   };
 
   const TRADE_LABEL = {
@@ -55,16 +58,15 @@
 
   function parsePath() {
     const parts = location.pathname.replace(/\.html$/, '').split('/').filter(Boolean);
-    // Expect: ['trades', '{trade-slug}', '{city-slug}']
     if (parts.length !== 3 || parts[0] !== 'trades') return null;
-    const trade = TRADE_MAP[parts[1]];
+    const trade  = TRADE_MAP[parts[1]];
     const region = CITY_MAP[parts[2]];
     if (!trade || !region) return null;
     return { trade, region, tradeSlug: parts[1], citySlug: parts[2] };
   }
 
   function esc(s) {
-    return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
   }
 
   function stars(r) {
@@ -80,8 +82,8 @@
     const label = TRADE_LABEL[t.trade] || 'Tradie';
     const phone = t.phone || '';
     const email = t.contact_email || '';
-    const rate = t.hourly_rate ? `$${t.hourly_rate}/hr` : '';
-    const exp = t.experience_years ? `${t.experience_years}yrs exp` : '';
+    const rate  = t.hourly_rate ? `$${t.hourly_rate}/hr` : '';
+    const exp   = t.experience_years ? `${t.experience_years}yrs exp` : '';
     const rating = parseFloat(t.avg_rating || 0);
 
     return `<div style="background:#fff;padding:1.1rem 1.25rem;border-left:4px solid ${t.is_premium ? 'var(--orange,#c05600)' : 'var(--blue,#005ea2)'};border-bottom:1px solid var(--border-lt,#dcdcdc);display:flex;flex-direction:column;gap:.6rem">
@@ -106,31 +108,77 @@
     </div>`;
   }
 
-  function inject(ctx, listings) {
-    const tradeLabel = TRADE_LABEL[ctx.trade] || ctx.trade;
-    const cityName = ctx.region.replace('-', ' ').replace(/\b\w/g, c => c.toUpperCase());
+  function paginationHTML(page, totalPages) {
+    const prev = page > 1
+      ? `<button onclick="ttPage(${page - 1})" style="background:var(--navy,#1b2a4a);color:#fff;border:none;padding:.45rem 1rem;font-size:.85rem;font-weight:700;cursor:pointer;font-family:inherit">← Previous</button>`
+      : `<button disabled style="opacity:.3;background:var(--navy,#1b2a4a);color:#fff;border:none;padding:.45rem 1rem;font-size:.85rem;font-weight:700;font-family:inherit;cursor:default">← Previous</button>`;
+    const next = page < totalPages
+      ? `<button onclick="ttPage(${page + 1})" style="background:var(--navy,#1b2a4a);color:#fff;border:none;padding:.45rem 1rem;font-size:.85rem;font-weight:700;cursor:pointer;font-family:inherit">Next →</button>`
+      : `<button disabled style="opacity:.3;background:var(--navy,#1b2a4a);color:#fff;border:none;padding:.45rem 1rem;font-size:.85rem;font-weight:700;font-family:inherit;cursor:default">Next →</button>`;
+    return `<div style="display:flex;justify-content:space-between;align-items:center;padding:.75rem 0;font-size:.82rem;color:var(--muted,#5a5a5a)">
+      ${prev}
+      <span>Page ${page} of ${totalPages}</span>
+      ${next}
+    </div>`;
+  }
 
-    let html;
-    if (listings.length > 0) {
-      html = `<div id="tt-live-section" style="margin-top:2rem">
-        <h2 style="font-size:1.2rem;margin:0 0 .25rem;color:var(--navy,#1b2a4a)">Self-Listed ${tradeLabel}s in ${cityName}</h2>
-        <p style="font-size:.85rem;color:var(--muted,#5a5a5a);margin-bottom:.75rem">These ${tradeLabel.toLowerCase()}s have listed directly on TradieTools. <a href="${SIGNUP}" style="color:var(--blue,#005ea2)">Add your business free →</a></p>
-        <div style="border:1px solid var(--border,#b8b8b8)">
-          ${listings.map(cardHTML).join('')}
-        </div>
-      </div>`;
+  let _ctx = null;
+  let _total = 0;
+
+  window.ttPage = async function(page) {
+    if (!_ctx) return;
+    const section = document.getElementById('tt-live-section');
+    if (!section) return;
+
+    const listDiv = section.querySelector('#tt-list');
+    const pagDiv  = section.querySelector('#tt-pagination');
+    if (listDiv) listDiv.innerHTML = '<div style="padding:1rem;color:var(--muted,#5a5a5a);font-size:.88rem">Loading…</div>';
+
+    const offset = (page - 1) * PAGE_SIZE;
+    try {
+      const r = await fetch(`${API}?trade=${encodeURIComponent(_ctx.trade)}&region=${encodeURIComponent(_ctx.region)}&limit=${PAGE_SIZE}&offset=${offset}`);
+      if (!r.ok) return;
+      const data = await r.json();
+      const listings = data.message?.listings || [];
+      _total = data.message?.total || _total;
+      const totalPages = Math.ceil(_total / PAGE_SIZE);
+
+      if (listDiv) listDiv.innerHTML = listings.length
+        ? listings.map(cardHTML).join('')
+        : '<div style="padding:1rem;color:var(--muted,#5a5a5a);font-size:.88rem">No more results.</div>';
+
+      if (pagDiv) pagDiv.innerHTML = paginationHTML(page, totalPages);
+
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } catch(e) { /* fail silently */ }
+  };
+
+  function injectShowMore(ctx, total, firstPageListings) {
+    const tradeLabel  = TRADE_LABEL[ctx.trade] || ctx.trade;
+    const totalPages  = Math.ceil(total / PAGE_SIZE);
+    _ctx   = ctx;
+    _total = total;
+
+    const listingsHTML = firstPageListings.map(cardHTML).join('');
+
+    const html = `<div id="tt-live-section" style="margin-top:2rem">
+      <h2 style="font-size:1.2rem;margin:0 0 .25rem;color:var(--navy,#1b2a4a)">More ${tradeLabel}s in ${ctx.region}</h2>
+      <p style="font-size:.85rem;color:var(--muted,#5a5a5a);margin-bottom:.75rem">${total} business${total !== 1 ? 'es' : ''} listed directly on TradieTools. <a href="${SIGNUP}" style="color:var(--blue,#005ea2)">Add your business free →</a></p>
+      <div id="tt-list" style="border:1px solid var(--border,#b8b8b8)">${listingsHTML}</div>
+      <div id="tt-pagination">${totalPages > 1 ? paginationHTML(1, totalPages) : ''}</div>
+    </div>`;
+
+    const cta = document.getElementById('tt-get-listed-cta');
+    if (cta) {
+      cta.insertAdjacentHTML('beforebegin', html);
     } else {
-      html = `<div id="tt-live-section" style="margin-top:2rem;background:var(--bg,#f6f6f6);border-left:4px solid var(--orange,#c05600);padding:1rem 1.25rem">
-        <strong>Are you a ${tradeLabel.toLowerCase()} in ${cityName}?</strong>
-        List your business free on TradieTools and appear on this page.
-        <a href="${SIGNUP}" style="display:inline-block;margin-top:.5rem;color:var(--blue,#005ea2);font-weight:600">Create free listing →</a>
-      </div>`;
+      const main = document.querySelector('main');
+      if (main) main.insertAdjacentHTML('beforeend', html);
     }
+  }
 
-    const main = document.querySelector('main');
-    if (main) {
-      main.insertAdjacentHTML('beforeend', html);
-    }
+  function injectCTA(ctx) {
+    // No results — the template CTA already handles "get listed free", nothing extra needed
   }
 
   async function run() {
@@ -138,15 +186,15 @@
     if (!ctx) return;
 
     try {
-      const url = `${API}?trade=${encodeURIComponent(ctx.trade)}&region=${encodeURIComponent(ctx.region)}&limit=10`;
+      const url = `${API}?trade=${encodeURIComponent(ctx.trade)}&region=${encodeURIComponent(ctx.region)}&limit=${PAGE_SIZE}&offset=0`;
       const r = await fetch(url);
       if (!r.ok) return;
       const data = await r.json();
       const listings = data.message?.listings || [];
-      inject(ctx, listings);
-    } catch (e) {
-      // Fail silently — never break the static page
-    }
+      const total    = data.message?.total    || 0;
+      if (total > 0) injectShowMore(ctx, total, listings);
+      // if 0 results, the template "Get listed free" CTA is already on the page
+    } catch(e) { /* fail silently */ }
   }
 
   if (document.readyState === 'loading') {
