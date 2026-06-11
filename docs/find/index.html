@@ -295,7 +295,7 @@ function cardHTML(t) {
     </div>
     <div class="tc-actions">
       ${phone
-        ? `<a class="btn-call" href="tel:${esc(phone)}">Call</a>`
+        ? `<button class="btn-call" data-phone="${esc(phone)}" onclick="revealPhone(this)">Show number</button>`
         : `<span class="btn-call" style="opacity:.35;cursor:default">No phone</span>`}
       ${email
         ? `<a class="btn-email" href="mailto:${esc(email)}">Email</a>`
@@ -339,6 +339,11 @@ function render() {
 }
 
 function goPage(p) { page=p; render(); window.scrollTo({top:0,behavior:'smooth'}); }
+
+function revealPhone(btn) {
+  const ph = btn.dataset.phone;
+  btn.outerHTML = `<a class="btn-call" href="tel:${ph}">${ph}</a>`;
+}
 
 load();
 </script>

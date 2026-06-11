@@ -99,7 +99,7 @@
         </div>
       </div>
       <div style="display:flex;gap:.5rem">
-        ${phone ? `<a href="tel:${esc(phone)}" style="flex:1;background:var(--blue,#005ea2);color:#fff;padding:.5rem;font-size:.85rem;font-weight:700;text-align:center;text-decoration:none">Call</a>` : ''}
+        ${phone ? `<button onclick="this.outerHTML='<a href=\\'tel:${esc(phone)}\\'style=\\'flex:1;background:var(--blue,#005ea2);color:#fff;padding:.5rem;font-size:.85rem;font-weight:700;text-align:center;text-decoration:none\\'>${esc(phone)}</a>'" style="flex:1;background:var(--blue,#005ea2);color:#fff;border:none;padding:.5rem;font-size:.85rem;font-weight:700;cursor:pointer;font-family:inherit;text-align:center">Show number</button>` : ''}
         ${email ? `<a href="mailto:${esc(email)}" style="flex:1;background:#fff;color:var(--blue,#005ea2);border:2px solid var(--blue,#005ea2);padding:.5rem;font-size:.85rem;font-weight:700;text-align:center;text-decoration:none">Email</a>` : ''}
         ${!phone && !email ? `<span style="font-size:.82rem;color:var(--muted,#5a5a5a);align-self:center">Contact details private</span>` : ''}
       </div>
