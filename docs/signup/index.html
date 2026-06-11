@@ -323,6 +323,35 @@ let tradieEmail = null;
   }
 })();
 
+// ── Turn raw Frappe/server errors into plain English ──
+function friendlyError(raw) {
+  // Strip "frappe.exceptions.SomeError: " prefix
+  const msg = String(raw).replace(/^[\w.]+Exception:\s*/i, '').replace(/^frappe\.\w+\.\w+:\s*/i, '').trim();
+
+  const MAP = {
+    'email already has a listing':   'This email is already registered. Each email can only have one listing.',
+    'invalid trade type':             'Please select a valid trade from the dropdown.',
+    'invalid region':                 'Please select a valid city from the dropdown.',
+    'phone is required':              'Please enter your phone number.',
+    'name is required':               'Please enter your full name.',
+    'email is required':              'Please enter your email address.',
+    'missing required':               'Please fill in all required fields.',
+    'duplicate':                      'This email is already registered. Each email can only have one listing.',
+  };
+
+  const lower = msg.toLowerCase();
+  for (const [key, friendly] of Object.entries(MAP)) {
+    if (lower.includes(key)) return friendly;
+  }
+
+  // If it still looks like a technical string, return generic
+  if (msg.includes('frappe') || msg.includes('Traceback') || msg.includes('Error:')) {
+    return 'Something went wrong on our end. Please try again in a moment.';
+  }
+
+  return msg;
+}
+
 // ── Form submit: create free listing → show upgrade offer ──
 document.getElementById('signup-form').addEventListener('submit', async function(e) {
   e.preventDefault();
@@ -375,7 +404,8 @@ document.getElementById('signup-form').addEventListener('submit', async function
       document.getElementById('form-area').style.display = 'none';
       document.getElementById('upgrade-state').style.display = 'block';
     } else {
-      throw new Error(msg.exception || msg.message || 'Submission failed');
+      const raw = msg.exception || msg.message || 'Submission failed';
+      throw new Error(friendlyError(raw));
     }
   } catch(err) {
     alert.className = 'alert error';
