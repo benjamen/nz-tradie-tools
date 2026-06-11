@@ -58,8 +58,8 @@
     .tc-actions { display: flex; gap: .5rem; margin-top: .25rem; }
     .btn-call { flex: 1; background: var(--blue); color: var(--white); border: none; padding: .55rem; font-size: .88rem; font-weight: 700; cursor: pointer; font-family: var(--font); text-align: center; text-decoration: none; }
     .btn-call:hover { background: var(--blue-dark); color: var(--white); }
-    .btn-email { flex: 1; background: var(--white); color: var(--blue); border: 2px solid var(--blue); padding: .55rem; font-size: .88rem; font-weight: 700; cursor: pointer; font-family: var(--font); text-align: center; text-decoration: none; }
-    .btn-email:hover { background: var(--blue-light); }
+    .btn-quote { flex: 1; background: var(--navy); color: var(--white); border: none; padding: .55rem; font-size: .88rem; font-weight: 700; cursor: pointer; font-family: var(--font); text-align: center; }
+    .btn-quote:hover { background: var(--blue); }
 
     /* States */
     .state-empty { padding: 3rem 1rem; text-align: center; color: var(--muted); border: 1px solid var(--border); background: var(--white); }
@@ -86,6 +86,7 @@
     .cta-strip h2 { color: var(--white); font-size: 1.3rem; border: none; margin: 0 0 .4rem; }
     .cta-strip p { opacity: .8; font-size: .95rem; margin-bottom: 1rem; }
   </style>
+  <script src="/static/js/quote-form.js" defer></script>
 </head>
 <body>
 
@@ -294,12 +295,10 @@ function cardHTML(t) {
       ${rate ? `<span class="tc-rate">${esc(rate)}</span>` : ''}
     </div>
     <div class="tc-actions">
-      ${phone
+      ${(t.is_verified || t.is_premium) && phone
         ? `<button class="btn-call" data-phone="${esc(phone)}" onclick="revealPhone(this)">Show number</button>`
-        : `<span class="btn-call" style="opacity:.35;cursor:default">No phone</span>`}
-      ${email
-        ? `<a class="btn-email" href="mailto:${esc(email)}">Email</a>`
-        : `<span class="btn-email" style="opacity:.35;cursor:default">No email</span>`}
+        : ''}
+      <button class="btn-quote" onclick="ttQuote('${esc(String(t.id||''))}','${esc(t.name||'')}','${esc(label)}','${esc(t.region||'')}')">Get a Quote</button>
     </div>
   </div>`;
 }
