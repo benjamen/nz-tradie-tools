@@ -9,6 +9,10 @@
     <meta name="ICBM" content="-41.2866, 174.7756">
     <!-- Performance -->
     <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://tradietools.optified.nz">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap">
     <title>NZ Tradie Tools — Free Calculators &amp; Guides for NZ Tradies</title>
     <meta name="description" content="{{ description }}">
     <meta property="og:title" content="NZ Tradie Tools — Free Calculators &amp; Guides for NZ Tradies">
@@ -77,9 +81,23 @@
         <div class="container">
             <h1>Free Tools &amp; Guides for NZ Tradies</h1>
             <p>GST calculators, hourly rate tools, job costing, tax guides — everything a New Zealand tradie needs to run a smarter business.</p>
-            <a href="{{ base_path }}/calculators/" class="btn-primary">Browse Free Calculators →</a>
+            <div style="display:flex;gap:.75rem;flex-wrap:wrap;align-items:center">
+                <a href="/signup/" style="background:var(--orange);color:var(--white);padding:.75rem 1.75rem;font-weight:700;font-size:1rem;text-decoration:none;display:inline-block">List Your Business Free →</a>
+                <a href="{{ base_path }}/calculators/" class="btn-primary" style="background:transparent;border:2px solid rgba(255,255,255,.55);color:var(--white)">Browse Calculators</a>
+            </div>
         </div>
     </section>
+
+    <div style="background:var(--navy);border-top:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.82);padding:.65rem 0;text-align:center;font-size:.88rem">
+        <div class="container"><span id="hp-listing-count">NZ tradies</span> listed free &nbsp;·&nbsp; 20+ cities &nbsp;·&nbsp; No credit card needed</div>
+    </div>
+    <script>
+    fetch('https://tradietools.optified.nz/api/method/tradietools.api.get_directory?limit=1')
+      .then(function(r){return r.json();}).then(function(d){
+        var t=d.message&&d.message.total;
+        if(t>0){var el=document.getElementById('hp-listing-count');if(el)el.textContent=t+' NZ tradies';}
+      }).catch(function(){});
+    </script>
 
     <div class="container">
 

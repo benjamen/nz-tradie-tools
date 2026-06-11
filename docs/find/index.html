@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Find a Tradie Near You — TradieTools NZ</title>
   <meta name="description" content="Search and contact verified NZ tradies by trade and region. Electricians, plumbers, builders, painters and more — listed free on TradieTools.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://tradietools.optified.nz">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/static/css/style.css">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-534097657"></script>
@@ -40,6 +44,7 @@
     .tradie-card { background: var(--white); padding: 1.25rem; display: flex; flex-direction: column; gap: .75rem; border-left: 4px solid transparent; transition: border-color .15s, background .15s; }
     .tradie-card:hover { background: var(--blue-light); border-left-color: var(--blue); }
     .tradie-card.is-premium { border-left-color: var(--orange); }
+    .tradie-card.tt-highlighted { background: #fffbeb; border-left-color: var(--orange); box-shadow: 0 0 0 2px var(--orange); }
 
     .tc-top { display: flex; align-items: flex-start; gap: .75rem; }
     .tc-avatar { width: 44px; height: 44px; background: var(--navy); color: var(--white); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1rem; flex-shrink: 0; letter-spacing: -.01em; }
@@ -219,12 +224,13 @@ const TRADE_LABELS = {
   gasfitter:'Gasfitter',hvac:'HVAC / Heat Pump',other:'Tradie'
 };
 
-let all = [], filtered = [], page = 1;
+let all = [], filtered = [], page = 1, highlightId = '';
 
 async function load() {
   try {
     const url = new URL(location.href);
     const t = url.searchParams.get('trade'), r = url.searchParams.get('region'), q = url.searchParams.get('q');
+    highlightId = url.searchParams.get('highlight') || '';
     if (t) document.getElementById('tradeFilter').value = t;
     if (r) document.getElementById('regionFilter').value = r;
     if (q) document.getElementById('searchInput').value = q;
@@ -290,7 +296,8 @@ function cardHTML(t) {
   const rat   = parseFloat(t.avg_rating||0);
   const phone = t.phone||'', email = t.contact_email||'';
 
-  return `<div class="tradie-card${t.is_premium?' is-premium':''}">
+  const isHighlighted = highlightId && String(t.id) === highlightId;
+  return `<div class="tradie-card${t.is_premium?' is-premium':''}${isHighlighted?' tt-highlighted':''}">
     <div class="tc-top">
       <div class="tc-avatar">${initials(t.name)}</div>
       <div class="tc-info">
@@ -339,6 +346,11 @@ function render() {
   }
 
   area.innerHTML = `<div class="tradie-grid">${slice.map(cardHTML).join('')}</div>`;
+
+  if (highlightId) {
+    const el = area.querySelector('.tt-highlighted');
+    if (el) setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'center' }), 200);
+  }
 
   const pages = Math.ceil(total/PAGE_SIZE);
   if (pages<=1) { document.getElementById('pagination').innerHTML=''; return; }

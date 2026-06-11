@@ -9,6 +9,10 @@
     <meta name="ICBM" content="-41.2866, 174.7756">
     <!-- Performance -->
     <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://tradietools.optified.nz">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap">
     <title>{{ trade.name }} in NZ {{ year }} | Top Rated by City</title>
     <meta name="description" content="Find top-rated {{ trade.plural }} in every NZ city. Google ratings, pricing guides, licensing info, and what to look for when hiring a {{ trade.singular }}.">
     <meta property="og:title" content="Find the Best {{ trade.name }} in New Zealand — Top Rated by City">
@@ -96,14 +100,22 @@
                 {% for city in cities %}
                 <a href="{{ base_path }}/trades/{{ trade.slug }}/{{ city.slug }}.html" class="card">
                     <h3>{{ city.name }}</h3>
-                    <p style="font-size:.85rem;color:#666">{{ city.region }}{% if city_data[city.slug] %} · {{ city_data[city.slug].businesses|length }} businesses rated{% endif %}</p>
+                    <p style="font-size:.85rem;color:var(--muted)">{{ city.region }}{% if city_data[city.slug] %} · {{ city_data[city.slug].businesses|length }} businesses rated{% endif %}</p>
                     {% if city_data[city.slug] %}
-                    <p style="color:#0055a5;font-size:.85rem;margin-top:.4rem">View top 10 →</p>
+                    <p style="color:var(--blue);font-size:.85rem;margin-top:.4rem">View top 10 →</p>
                     {% else %}
-                    <p style="color:#999;font-size:.85rem;margin-top:.4rem">Coming soon</p>
+                    <p style="color:var(--muted);font-size:.85rem;margin-top:.4rem">Coming soon</p>
                     {% endif %}
                 </a>
                 {% endfor %}
+            </div>
+
+            <div style="margin:2rem 0;padding:1.5rem 2rem;background:var(--navy);color:var(--white);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem">
+                <div>
+                    <strong style="font-size:1rem">Are you a {{ trade.singular|title }}?</strong>
+                    <p style="margin:.25rem 0 0;font-size:.88rem;opacity:.82">Get a free listing — appear in search results for customers in your city. No credit card required.</p>
+                </div>
+                <a href="/signup/" style="background:var(--orange);color:var(--white);padding:.65rem 1.5rem;font-weight:700;text-decoration:none;white-space:nowrap;font-size:.9rem">List Free →</a>
             </div>
 
             <div class="article-body" style="margin-top:2.5rem">

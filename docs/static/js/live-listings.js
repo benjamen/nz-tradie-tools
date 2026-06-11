@@ -151,7 +151,9 @@
       if (pagDiv) pagDiv.innerHTML = paginationHTML(page, totalPages);
 
       section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    } catch(e) { /* fail silently */ }
+    } catch(e) {
+      if (listDiv) listDiv.innerHTML = '<div style="padding:1rem;color:#dc2626;font-size:.88rem">Could not load results — please try again.</div>';
+    }
   };
 
   function injectShowMore(ctx, total, firstPageListings) {
