@@ -93,13 +93,27 @@
 <header class="site-header">
   <div class="container">
     <a href="/" class="logo">🔧 NZ Tradie Tools</a>
-    <nav class="main-nav">
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span></button>
+    <nav class="main-nav" id="main-nav">
       <a href="/trades/">Find a Tradie</a>
       <a href="/jobs/">Job Costs</a>
       <a href="/calculators/">Calculators</a>
       <a href="/find/" style="color:var(--white);font-weight:700">Live Directory</a>
+      <a id="nav-my-listing" href="/find/" class="nav-my-listing" style="display:none">My Listing</a>
+      <a href="/signup/" class="nav-cta">Free Listing →</a>
     </nav>
   </div>
+  <script>
+  (function(){
+    var t=document.querySelector('.nav-toggle'),n=document.getElementById('main-nav');
+    if(t&&n){
+      t.addEventListener('click',function(){var o=n.classList.toggle('is-open');t.setAttribute('aria-expanded',o);});
+      document.addEventListener('click',function(e){if(!t.contains(e.target)&&!n.contains(e.target)){n.classList.remove('is-open');t.setAttribute('aria-expanded','false');}});
+    }
+    var id=localStorage.getItem('tradieId');
+    if(id){var ml=document.getElementById('nav-my-listing');if(ml){ml.style.display='';ml.href='/find/?highlight='+encodeURIComponent(id);}}
+  })();
+  </script>
 </header>
 
 <div class="find-hero">

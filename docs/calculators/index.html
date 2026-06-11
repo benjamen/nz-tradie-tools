@@ -201,6 +201,8 @@
                 
                 <a href="/contact/">Contact</a>
                 
+                <a id="nav-my-listing" href="/find/" class="nav-my-listing" style="display:none">My Listing</a>
+                <a href="/signup/" class="nav-cta">Free Listing →</a>
             </nav>
             <script>
             (function(){
@@ -216,6 +218,8 @@
                         t.setAttribute('aria-expanded','false');
                     }
                 });
+                var id=localStorage.getItem('tradieId');
+                if(id){var ml=document.getElementById('nav-my-listing');if(ml){ml.style.display='';ml.href='/find/?highlight='+encodeURIComponent(id);}}
             })();
             </script>
         </div>
