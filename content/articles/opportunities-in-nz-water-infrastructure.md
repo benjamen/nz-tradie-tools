@@ -34,9 +34,9 @@ To be a preferred subcontractor on these high-stakes projects, your documentatio
 Use [Fastcrew](https://fastcrew.nz) to keep track of your team's compliance certifications, daily site photos, and completed project milestones. Having a digital trail of high-quality work is your best resume for securing these types of contracts.
 
 ## Keeping Your Business Competitive
-Infrastructure contracts can have long payment cycles compared to residential work. Keep your cash flow healthy by staying on top of your GST filings. Use our [GST Calculator](/calculators/gst-calculator.html) to manage your tax obligations accurately. 
+Infrastructure contracts can have long payment cycles compared to residential work. Keep your cash flow healthy by staying on top of your GST filings. Use our [GST Calculator](/calculators/gst-calculator) to manage your tax obligations accurately. 
 
-Furthermore, as you scale your business to handle larger projects, refer to our [guide on job pricing](/calculators/job-pricing-guide.html) to ensure you are accurately factoring in the overheads of larger infrastructure sites, including equipment rental and specialized safety equipment.
+Furthermore, as you scale your business to handle larger projects, refer to our [guide on job pricing](/calculators/job-pricing-guide) to ensure you are accurately factoring in the overheads of larger infrastructure sites, including equipment rental and specialized safety equipment.
 
 The infrastructure boom is a major opportunity for those willing to meet the higher standards required. Is your business ready to take on the challenge?
 

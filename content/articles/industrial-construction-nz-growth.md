@@ -31,7 +31,7 @@ To enter the industrial construction space, your business needs to be "industria
 
 - **Safety is Paramount:** Industrial sites are high-risk. Your health and safety record is your most important asset. Keep it immaculate and readily accessible. Use [Fastcrew](https://fastcrew.nz) to manage safety documentation, site inductions, and daily safety logs so they are always ready for audit.
 - **Documentation:** Industrial clients demand rigorous reporting. Ensure your project management tools provide clear, time-stamped proof of work at every stage.
-- **Financial Pro-activeness:** Large projects have specific payment structures. Keep your own house in order by staying ahead of your GST reporting—use our [GST Calculator](/calculators/gst-calculator.html) to stay precise. When quoting, ensure you use accurate labour rate projections—our [job pricing guide](/calculators/job-pricing-guide.html) can help you set a baseline for these larger, more complex projects.
+- **Financial Pro-activeness:** Large projects have specific payment structures. Keep your own house in order by staying ahead of your GST reporting—use our [GST Calculator](/calculators/gst-calculator) to stay precise. When quoting, ensure you use accurate labour rate projections—our [job pricing guide](/calculators/job-pricing-guide) can help you set a baseline for these larger, more complex projects.
 
 ## The Outlook
 The NZ construction market is becoming more selective. The growth in industrial development is a bright spot, but it rewards those who are disciplined, efficient, and professional. 

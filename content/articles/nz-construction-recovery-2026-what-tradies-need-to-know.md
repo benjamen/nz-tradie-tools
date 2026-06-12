@@ -56,9 +56,9 @@ Despite the job losses of 2022–2024, skilled labour shortages haven't fully re
 
 With material costs rising and labour demand increasing in many regions, this is a good time to review your rates. If you haven't revisited your hourly rate in the last 12 months, you're likely undercharging — especially if you're absorbing higher material and fuel costs.
 
-Use our [NZ Hourly Rate Calculator](/calculators/hourly-rate-calculator.html) to recalculate what you need to charge to hit your target income, factoring in ACC levies, vehicle costs, insurance, and non-billable hours. It's updated with current NZ figures.
+Use our [NZ Hourly Rate Calculator](/calculators/hourly-rate-calculator) to recalculate what you need to charge to hit your target income, factoring in ACC levies, vehicle costs, insurance, and non-billable hours. It's updated with current NZ figures.
 
-If you're pricing a job that involves materials, the [NZ Job Cost Builder](/calculators/job-cost-builder.html) lets you build a full cost breakdown and add your margin before presenting a quote — so you're not guessing at profitability.
+If you're pricing a job that involves materials, the [NZ Job Cost Builder](/calculators/job-cost-builder) lets you build a full cost breakdown and add your margin before presenting a quote — so you're not guessing at profitability.
 
 ---
 
@@ -66,7 +66,7 @@ If you're pricing a job that involves materials, the [NZ Job Cost Builder](/calc
 
 With more work coming in, some sole traders who stayed under the GST threshold during the slow years may find themselves crossing $60,000 in turnover in 2026. Once you hit that threshold, you **must register for GST** — Inland Revenue (IRD) takes this seriously, and backdating can get expensive.
 
-If you're close to the line, run your numbers through our [GST Calculator](/calculators/gst-calculator.html). It's set up for NZ rates (15%) and can help you model what registration will mean for your invoicing and cash flow.
+If you're close to the line, run your numbers through our [GST Calculator](/calculators/gst-calculator). It's set up for NZ rates (15%) and can help you model what registration will mean for your invoicing and cash flow.
 
 ---
 
@@ -76,7 +76,7 @@ With consent numbers up **70% in a single month**, Canterbury is the standout re
 
 If you're based in Canterbury or thinking of relocating, the pipeline is real. Residential builds, townhouse developments, and commercial work are all picking up simultaneously. The challenge will be managing capacity and avoiding overextension.
 
-For clients in Canterbury, our [Christchurch builders directory](/trades/builders/christchurch.html) lists the top-rated builders in the region by Google review score.
+For clients in Canterbury, our [Christchurch builders directory](/trades/builders/christchurch) lists the top-rated builders in the region by Google review score.
 
 ---
 
@@ -94,11 +94,11 @@ MBIE (Ministry of Business, Innovation and Employment) continues to support appr
 
 When work picks up fast, business admin can fall behind — and that's when cash flow problems sneak in. A few things worth getting right now:
 
-**Quote quickly and professionally.** In a hot market, the first solid quote often wins. Download our [free NZ tradie quote template](/templates/quote-template.html) — it's pre-formatted for NZ use with GST line items, IRD number fields, and your business details. Fill it in, save it as a PDF, and send it same day.
+**Quote quickly and professionally.** In a hot market, the first solid quote often wins. Download our [free NZ tradie quote template](/templates/quote-template) — it's pre-formatted for NZ use with GST line items, IRD number fields, and your business details. Fill it in, save it as a PDF, and send it same day.
 
 **Track your jobs properly.** Apps like [Fastcrew](https://fastcrew.nz) are built for NZ tradies and handle job scheduling, quoting, invoicing, and team management in one place — without the enterprise price tag of overseas software.
 
-**Invoice promptly and follow up.** Late payments kill cash flow faster than slow work. Get your [tax invoice template](/templates/tax-invoice-template.html) sorted, set up payment terms (14 or 30 days), and follow up within a week of the due date.
+**Invoice promptly and follow up.** Late payments kill cash flow faster than slow work. Get your [tax invoice template](/templates/tax-invoice-template) sorted, set up payment terms (14 or 30 days), and follow up within a week of the due date.
 
 ---
 
@@ -134,4 +134,4 @@ Download our free NZ tradie templates at [tradietools.nz/templates/](/templates/
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

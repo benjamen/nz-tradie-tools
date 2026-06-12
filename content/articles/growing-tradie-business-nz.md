@@ -50,7 +50,7 @@ When you hire your first employee in NZ, there are several non-negotiable requir
 
 **ACC levies:** As an employer you pay ACC work levy. This is calculated as part of your tax return.
 
-**Employee induction:** Use a structured induction to cover H&S, company policies, emergency procedures, and role expectations. Download our free [Employee Induction Checklist](/templates/employee-induction.html).
+**Employee induction:** Use a structured induction to cover H&S, company policies, emergency procedures, and role expectations. Download our free [Employee Induction Checklist](/templates/employee-induction).
 
 ## Pricing When You Have Staff
 
@@ -60,7 +60,7 @@ A rule of thumb: an employee costs roughly 1.3–1.4x their hourly wage once you
 
 If you're paying someone $35/hour, they're costing you roughly $45–$50/hour all-in. Your charge-out rate needs to reflect this — and your overhead (tools, vehicle, insurance, software, accounting) still sits on top.
 
-Use our [Hourly Rate Calculator](/calculators/hourly-rate-calculator.html) to recalculate your rates whenever your cost structure changes.
+Use our [Hourly Rate Calculator](/calculators/hourly-rate-calculator) to recalculate your rates whenever your cost structure changes.
 
 ## Systems Before Scale
 
@@ -116,4 +116,4 @@ Grow steadily. Get paid on time. Build systems before you need them. That's the 
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

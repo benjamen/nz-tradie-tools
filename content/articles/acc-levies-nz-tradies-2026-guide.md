@@ -46,7 +46,7 @@ Both are based on your liable earnings (your net profit or agreed cover amount).
 | Working Safer levy | $0.08 per $100 | $68 |
 | **Total** | | **~$3,086** |
 
-Use our [ACC levy calculator](/calculators/acc-levy-calculator.html) to run your own numbers based on your income and trade type.
+Use our [ACC levy calculator](/calculators/acc-levy-calculator) to run your own numbers based on your income and trade type.
 
 ---
 
@@ -97,9 +97,9 @@ If you genuinely don't need cover up to your full income (e.g. you have savings,
 Your Work levy rate is set by your CU code, which corresponds to your industry. If ACC has you in the wrong code — for example, classified as a roofer when you mainly do interior finishing — you may be overpaying. Contact ACC to review your classification.
 
 **3. Combine ACC with income protection insurance**
-ACC covers work and non-work injuries, but it doesn't cover illness (heart attack, cancer, mental health). A private income protection policy fills that gap. Some tradies find that setting their CPX amount at a lower level and taking a top-up income protection policy gives better overall coverage at a similar total cost. See our article on [income protection insurance for NZ tradies](/articles/income-protection-insurance-nz-tradies.html) for more detail.
+ACC covers work and non-work injuries, but it doesn't cover illness (heart attack, cancer, mental health). A private income protection policy fills that gap. Some tradies find that setting their CPX amount at a lower level and taking a top-up income protection policy gives better overall coverage at a similar total cost. See our article on [income protection insurance for NZ tradies](/articles/income-protection-insurance-nz-tradies) for more detail.
 
-**4. Use your [hourly rate calculator](/calculators/hourly-rate-calculator.html) to build levies into your charge-out rate**
+**4. Use your [hourly rate calculator](/calculators/hourly-rate-calculator) to build levies into your charge-out rate**
 ACC levies are a real cost of being self-employed. Make sure you're pricing them into your jobs — not absorbing them out of profit. A sole-trader builder paying $3,000+ per year in ACC levies needs to factor that into their hourly rate.
 
 ---
@@ -149,7 +149,7 @@ Download our free NZ tradie templates at tradietools.nz/templates/ — including
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.
 ---
 
 ## Recommended Resources

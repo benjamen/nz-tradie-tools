@@ -105,4 +105,4 @@ All retaining walls need drainage to prevent hydrostatic pressure buildup — th
 - Geotextile filter fabric
 - Ag-pipe at the base with outlets every 3–4m
 
-Use our [Earthworks Calculator](/calculators/earthworks-calculator.html) to estimate excavation volumes.
+Use our [Earthworks Calculator](/calculators/earthworks-calculator) to estimate excavation volumes.

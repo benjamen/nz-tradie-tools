@@ -181,4 +181,4 @@ As a self-employed tradie, **set aside 25–30% of every payment** for tax and G
 
 If you owe more than **$5,000 residual income tax** in any year, you must pay provisional tax the following year. The standard method is 105% of the previous year's tax, paid in 3 instalments.
 
-See our [GST Calculator](/calculators/gst-calculator.html) for quick invoice calculations.
+See our [GST Calculator](/calculators/gst-calculator) for quick invoice calculations.

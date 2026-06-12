@@ -77,7 +77,7 @@ There's nothing wrong with accepting cash — it's still legal tender and a legi
 
 **Keep records for seven years.** Under the Tax Administration Act 1994, you're required to keep business records (invoices, receipts, bank statements) for at least seven years. IRD audits aren't limited to the last financial year.
 
-Use our [Job Cost Calculator](/calculators/job-cost-calculator.html) to make sure every job you price includes the right allowances for tax, GST, and overhead — so there's no temptation to take a cash shortcut just to cover costs.
+Use our [Job Cost Calculator](/calculators/job-cost-calculator) to make sure every job you price includes the right allowances for tax, GST, and overhead — so there's no temptation to take a cash shortcut just to cover costs.
 
 ## GST and the Cashie Problem
 
@@ -85,9 +85,9 @@ If you're GST-registered (required once your turnover exceeds $60,000 per year),
 
 IRD cross-checks GST returns against income tax returns, and any discrepancy triggers scrutiny. If you're GST-registered and regularly underreporting income, you're essentially running two errors simultaneously.
 
-Check out our [GST Calculator](/calculators/gst-calculator.html) to quickly work out the GST component on any job — and make sure your pricing accounts for it from the start.
+Check out our [GST Calculator](/calculators/gst-calculator) to quickly work out the GST component on any job — and make sure your pricing accounts for it from the start.
 
-For a broader overview of tax obligations, our guide to [provisional tax for NZ tradies](/articles/provisional-tax-nz-tradies.html) explains how IRD expects you to pay income tax through the year, rather than as a lump sum at the end.
+For a broader overview of tax obligations, our guide to [provisional tax for NZ tradies](/articles/provisional-tax-nz-tradies) explains how IRD expects you to pay income tax through the year, rather than as a lump sum at the end.
 
 ## What IRD's "Tax Toolbox for Tradies" Includes
 
@@ -123,4 +123,4 @@ If any of these are a "no" or "not sure," address them now — before IRD does.
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

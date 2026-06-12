@@ -11,6 +11,6 @@ draft: false
 
 Welcome to June. As the year progresses, the NZ construction sector continues to focus on discipline and selective project participation.
 
-Remember to use our [GST Calculator](/calculators/gst-calculator.html) and stay tuned for more updates.
+Remember to use our [GST Calculator](/calculators/gst-calculator) and stay tuned for more updates.
 
 *NZ Tradie Tools provides free calculators, templates and guides for New Zealand tradies. Visit tradietools.nz.*

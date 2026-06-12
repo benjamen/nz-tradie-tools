@@ -117,7 +117,7 @@ Failing to notify promptly or admitting liability without insurer consent can be
 
 ---
 
-Read our full guide on [How to Choose the Right Insurance for NZ Tradies](/articles/how-to-choose-right-insurance-nz-tradies.html) for a complete picture of all the cover types worth holding.
+Read our full guide on [How to Choose the Right Insurance for NZ Tradies](/articles/how-to-choose-right-insurance-nz-tradies) for a complete picture of all the cover types worth holding.
 
 ---
 
@@ -125,4 +125,4 @@ Read our full guide on [How to Choose the Right Insurance for NZ Tradies](/artic
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

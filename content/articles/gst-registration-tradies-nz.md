@@ -115,7 +115,7 @@ If you paid more GST on expenses than you collected (common if you've just bough
 | **2-monthly** | Most tradies | 28th after end of period |
 | **6-monthly** | Turnover under $500K | Twice a year |
 
-Most tradies use **2-monthly** filing — it balances simplicity with not having too much GST build up. Use our [GST calculator](/calculators/gst-calculator.html) to keep track of what you owe each period.
+Most tradies use **2-monthly** filing — it balances simplicity with not having too much GST build up. Use our [GST calculator](/calculators/gst-calculator) to keep track of what you owe each period.
 
 ---
 
@@ -139,7 +139,7 @@ You absorb the GST within your existing price. That $2,000 job now means you kee
 
 ### The Right Approach
 
-Review your [hourly rate](/calculators/hourly-rate-calculator.html) and ensure it accounts for the fact that you now need to collect and remit GST as a business. Your rate should be based on what you want to take home — build backwards from there, including tax, ACC, and overhead.
+Review your [hourly rate](/calculators/hourly-rate-calculator) and ensure it accounts for the fact that you now need to collect and remit GST as a business. Your rate should be based on what you want to take home — build backwards from there, including tax, ACC, and overhead.
 
 ---
 
@@ -189,18 +189,18 @@ Cancellation is done through myIR. Don't cancel just because a single period was
 
 ## Free Tools
 
-- [GST Calculator](/calculators/gst-calculator.html) — add or remove GST from any amount
+- [GST Calculator](/calculators/gst-calculator) — add or remove GST from any amount
 - [Invoice Templates](/templates/) — free, IRD-compliant invoice and quote templates with GST fields
-- [Hourly Rate Calculator](/calculators/hourly-rate-calculator.html) — set a rate that accounts for GST, tax, and overhead
-- [Markup / Margin Calculator](/calculators/markup-margin-calculator.html) — price materials correctly
+- [Hourly Rate Calculator](/calculators/hourly-rate-calculator) — set a rate that accounts for GST, tax, and overhead
+- [Markup / Margin Calculator](/calculators/markup-margin-calculator) — price materials correctly
 
 ---
 
 ## Related Articles
 
-- [NZ Tradie Tax Guide 2026 — Complete Overview](/articles/nz-tradie-tax-guide-2026.html)
-- [EOFY Checklist for NZ Tradies 2026](/articles/eofy-checklist-nz-tradies-2026.html)
-- [How to Set Your Hourly Rate as a Tradie](/articles/how-to-set-hourly-rate-tradie-nz.html)
+- [NZ Tradie Tax Guide 2026 — Complete Overview](/articles/nz-tradie-tax-guide-2026)
+- [EOFY Checklist for NZ Tradies 2026](/articles/eofy-checklist-nz-tradies-2026)
+- [How to Set Your Hourly Rate as a Tradie](/articles/how-to-set-hourly-rate-tradie-nz)
 
 ---
 

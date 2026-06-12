@@ -158,7 +158,7 @@ Most offer a free trial — sign up for two or three and see which one feels rig
 
 ---
 
-*Also read: [How to Write a Quote That Wins Jobs](/articles/how-to-write-a-quote-that-wins-jobs-nz.html) | [NZ Tradie Tax Guide](/articles/nz-tradie-tax-guide-what-you-can-claim.html)*
+*Also read: [How to Write a Quote That Wins Jobs](/articles/how-to-write-a-quote-that-wins-jobs-nz) | [NZ Tradie Tax Guide](/articles/nz-tradie-tax-guide-what-you-can-claim)*
 
 ---
 
@@ -166,4 +166,4 @@ Most offer a free trial — sign up for two or three and see which one feels rig
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

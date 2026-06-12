@@ -29,7 +29,7 @@ Material price volatility is real. According to industry data, Q1 2026 saw incre
 - Add a materials escalation clause — if materials rise more than 5–10%, you have the right to adjust the contract price
 - Buy materials as soon as the contract is signed, locking in today's prices
 - Quote with a shorter validity period — 14 or 21 days instead of 30–60 days
-- Use our [Materials Escalation Calculator](/calculators/materials-escalation-calculator.html) to stress-test your quote against potential price increases before you sign
+- Use our [Materials Escalation Calculator](/calculators/materials-escalation-calculator) to stress-test your quote against potential price increases before you sign
 
 ## What Is a Cost-Plus Contract?
 
@@ -79,7 +79,7 @@ Before you sign any contract in 2026, run through this:
 3. **Have you included a materials escalation clause on anything over $30,000?**
 4. **Do you have a clear scope of works document?** Scope creep is the silent margin killer.
 5. **Is your payment schedule tied to milestones?** Never do more than 10–15% of a job's work before your next payment.
-6. **Have you factored in your overhead and profit?** Use our [Labour Cost Calculator](/calculators/labour-cost-calculator.html) to make sure your rates actually cover your business costs.
+6. **Have you factored in your overhead and profit?** Use our [Labour Cost Calculator](/calculators/labour-cost-calculator) to make sure your rates actually cover your business costs.
 
 ## Quoting Strategy for 2026
 
@@ -90,7 +90,7 @@ Given the current environment, here's what many experienced NZ tradies are doing
 - Keeping quote validity to 14 days for any job involving significant materials
 - Buying materials on contract signature rather than waiting until the work starts
 
-Use our [Quote Builder Wizard](/calculators/quote-builder-wizard.html) to structure your next quote with the right margin, GST treatment, and payment milestone schedule built in.
+Use our [Quote Builder Wizard](/calculators/quote-builder-wizard) to structure your next quote with the right margin, GST treatment, and payment milestone schedule built in.
 
 ## Should You Talk to Your Accountant or Solicitor?
 
@@ -110,4 +110,4 @@ For help finding work, tracking your crew, and managing your jobs from your phon
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

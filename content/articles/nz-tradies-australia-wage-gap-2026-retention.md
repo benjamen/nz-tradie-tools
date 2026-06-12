@@ -86,7 +86,7 @@ If you're an NZ employer, the Australia wage gap is a headwind you can't elimina
 ### 1. **Review Your Base Rate**
 If your senior carpenter is earning $80,000 in NZ when they could earn $105,000 in Australia, a $5,000–$10,000 raise is cheaper than hiring and training a replacement. A well-paid employee is less likely to check Seek.com.au or LinkedIn job posts.
 
-Use our [guide to setting your hourly rate as an NZ tradie](/articles/how-to-set-hourly-rate-nz-tradie-2026.html) to benchmark yourself. If you haven't reviewed wages since 2023, your rates are underwater.
+Use our [guide to setting your hourly rate as an NZ tradie](/articles/how-to-set-hourly-rate-nz-tradie-2026) to benchmark yourself. If you haven't reviewed wages since 2023, your rates are underwater.
 
 ### 2. **Offer Stability & Full-Time Hours**
 Australia's appeal includes steady work, FIFO contracts that lock in income for months, and zero uncertainty. In NZ's recovery, you can compete on the same front: offer permanent, full-time roles with guaranteed hours, project pipelines out 6+ months, and no threats of stand-downs.
@@ -128,7 +128,7 @@ What you *can* do is:
 
 If you employ tradies or run a subbies operation:
 
-- **Audit your wage costs** against Australian benchmarks. Use our [builder pricing guide](/articles/builder-pricing-guide-nz-2026.html) to see whether your rates support competitive salaries.
+- **Audit your wage costs** against Australian benchmarks. Use our [builder pricing guide](/articles/builder-pricing-guide-nz-2026) to see whether your rates support competitive salaries.
 - **Have honest conversations with your team**. Ask: *What would make you stay in NZ? What's pulling you toward Australia?* It may not be just money — it could be hours, respect, or career clarity.
 - **Check the Apprenticeship Boost eligibility** for your business. If you're not using $15,000/year in training funding, you're leaving money on the table.
 - **Register for the Skilled Migration visa** if you're currently recruiting. The 1,100 places from July 1 are a real resource — and early applications get priority.

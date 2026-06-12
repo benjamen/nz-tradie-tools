@@ -218,7 +218,7 @@
                 <h3>Other {{ trade.name }} Pages</h3>
                 <div style="display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.5rem">
                     {% for c in other_cities %}
-                    <a href="{{ base_path }}/trades/{{ trade.slug }}/{{ c.slug }}.html" style="background:#f0f0f0;padding:.3rem .8rem;border-radius:20px;font-size:.85rem">{{ c.name }}</a>
+                    <a href="{{ base_path }}/trades/{{ trade.slug }}/{{ c.slug }}" style="background:#f0f0f0;padding:.3rem .8rem;border-radius:20px;font-size:.85rem">{{ c.name }}</a>
                     {% endfor %}
                 </div>
             </div>
@@ -241,16 +241,16 @@
                 <h3>{{ city.name }} Trades</h3>
                 <ul>
                     {% for t in trades %}
-                    <li><a href="{{ base_path }}/trades/{{ t.slug }}/{{ city.slug }}.html">{{ t.icon }} {{ t.name }}</a></li>
+                    <li><a href="{{ base_path }}/trades/{{ t.slug }}/{{ city.slug }}">{{ t.icon }} {{ t.name }}</a></li>
                     {% endfor %}
                 </ul>
             </div>
             <div class="sidebar-widget">
                 <h3>Free Calculators</h3>
                 <ul>
-                    <li><a href="{{ base_path }}/calculators/gst-calculator.html">GST Calculator</a></li>
-                    <li><a href="{{ base_path }}/calculators/job-cost-calculator.html">Job Cost Builder</a></li>
-                    <li><a href="{{ base_path }}/calculators/hourly-rate-calculator.html">Hourly Rate</a></li>
+                    <li><a href="{{ base_path }}/calculators/gst-calculator">GST Calculator</a></li>
+                    <li><a href="{{ base_path }}/calculators/job-cost-calculator">Job Cost Builder</a></li>
+                    <li><a href="{{ base_path }}/calculators/hourly-rate-calculator">Hourly Rate</a></li>
                 </ul>
             </div>
             <div class="sidebar-widget">

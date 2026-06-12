@@ -123,7 +123,7 @@ Most tradespeople finance at least some of their equipment — a work ute, a new
 
 ### The Investment Boost Deduction
 
-From 22 August 2023, the NZ government introduced the **Investment Boost** deduction — an immediate 20% tax deduction on the cost of new assets (on top of normal depreciation) for the first year. This significantly improves the after-tax cost of new equipment purchases. See our [Investment Boost article](/articles/nz-tradie-investment-boost-deduction-2026.html) for details.
+From 22 August 2023, the NZ government introduced the **Investment Boost** deduction — an immediate 20% tax deduction on the cost of new assets (on top of normal depreciation) for the first year. This significantly improves the after-tax cost of new equipment purchases. See our [Investment Boost article](/articles/nz-tradie-investment-boost-deduction-2026) for details.
 
 ### Should You Buy or Finance?
 

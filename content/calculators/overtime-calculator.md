@@ -152,4 +152,4 @@ All NZ employees are entitled to **at least 4 weeks** paid annual leave after 12
 - Their ordinary weekly rate × 4 weeks, or
 - 8% of gross annual earnings
 
-Use our [PAYE Employee Cost Calculator](/calculators/paye-employee-calculator.html) to see total cost to employer.
+Use our [PAYE Employee Cost Calculator](/calculators/paye-employee-calculator) to see total cost to employer.

@@ -104,7 +104,7 @@ Landlords need documentation to prove compliance. If you provide a proper compli
 
 ## Pricing the Work
 
-Use our [Job Cost Calculator](/calculators/job-cost-calculator.html) to build accurate quotes. Typical Healthy Homes job costs:
+Use our [Job Cost Calculator](/calculators/job-cost-calculator) to build accurate quotes. Typical Healthy Homes job costs:
 
 | Job | Typical NZ cost range |
 |---|---|
@@ -117,7 +117,7 @@ Use our [Job Cost Calculator](/calculators/job-cost-calculator.html) to build ac
 | Ground moisture barrier install | $600 – $1,500 |
 | Draught-stopping remediation | $300 – $1,000 |
 
-Prices vary significantly by region — Auckland and Wellington are typically at the upper end. Use the [Hourly Rate Calculator](/calculators/hourly-rate-calculator.html) to check your rates cover your true costs.
+Prices vary significantly by region — Auckland and Wellington are typically at the upper end. Use the [Hourly Rate Calculator](/calculators/hourly-rate-calculator) to check your rates cover your true costs.
 
 ---
 
@@ -133,4 +133,4 @@ Prices vary significantly by region — Auckland and Wellington are typically at
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

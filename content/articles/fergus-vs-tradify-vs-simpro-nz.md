@@ -143,10 +143,10 @@ All three offer free trials. Start with the one that fits your size, try it for 
 
 ---
 
-*Also see: [Best Job Management Software for NZ Tradies 2026](/articles/best-job-management-software-nz-tradies-2026.html)*
+*Also see: [Best Job Management Software for NZ Tradies 2026](/articles/best-job-management-software-nz-tradies-2026)*
 
 *About NZ Tradie Tools: Honest reviews and free tools for NZ tradies. We earn affiliate commissions if you sign up through our links — at no cost to you.*
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

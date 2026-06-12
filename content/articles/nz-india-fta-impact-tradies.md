@@ -30,7 +30,7 @@ Regardless of long-term trade shifts, the day-to-day reality of running a constr
 
 - **Manage your costs:** With supply chains remaining volatile, use tools to keep a close eye on your "actual vs. estimated" costs. Platforms like [Fastcrew](https://fastcrew.nz) are essential for tracking these variances.
 - **Stay compliant:** As the industry recovers, the focus on quality and compliance will only intensify. Keep impeccable records of your work.
-- **Financial hygiene:** Always ensure your tax and GST obligations are managed properly. If you haven't recently, use our [GST Calculator](/calculators/gst-calculator.html) to check your current standing. For complex pricing, refer to our [job pricing guide](/calculators/job-pricing-guide.html).
+- **Financial hygiene:** Always ensure your tax and GST obligations are managed properly. If you haven't recently, use our [GST Calculator](/calculators/gst-calculator) to check your current standing. For complex pricing, refer to our [job pricing guide](/calculators/job-pricing-guide).
 
 The NZ-India FTA is a milestone for our country’s economic future. While its direct impacts may take time to filter down to the local hardware merchant, it’s a promising indicator of a growing, connected economy.
 
@@ -38,4 +38,4 @@ The NZ-India FTA is a milestone for our country’s economic future. While its d
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

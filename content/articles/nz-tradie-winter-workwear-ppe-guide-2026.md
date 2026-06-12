@@ -101,7 +101,7 @@ Workwear is a legitimate business expense — most of it is fully deductible und
 
 That might sound like a lot, but spread over two seasons it's $200–$350 per year, or roughly $4–$7 per week. If you're not including this kind of equipment overhead in your hourly rate, you're eating it out of profit.
 
-Use our [hourly rate calculator](/calculators/hourly-rate-calculator.html) to make sure gear and consumables are properly accounted for, and check our [job costing guide](/articles/job-costing-guide-nz-tradies-2026.html) for a full breakdown of overhead categories.
+Use our [hourly rate calculator](/calculators/hourly-rate-calculator) to make sure gear and consumables are properly accounted for, and check our [job costing guide](/articles/job-costing-guide-nz-tradies-2026) for a full breakdown of overhead categories.
 
 To track job expenses including equipment, gear, and materials in real time, [Fastcrew](https://fastcrew.nz) is a purpose-built tradie app that makes it easy to log costs against jobs on your phone — handy when you're buying gear at the trade store and want to assign it to the right job or overhead category.
 
@@ -141,7 +141,7 @@ Buy ahead of winter if you can — popular sizes in quality gear sell out fast i
 
 Download our free NZ tradie templates at tradietools.nz/templates/ — including equipment expense trackers, PPE checklists, and site safety induction forms that you can customise for your business.
 
-Also see our [NZ health and safety guide for tradies](/articles/health-and-safety-guide-nz-tradies.html) for a full overview of your HSWA obligations as a self-employed tradie or small business owner.
+Also see our [NZ health and safety guide for tradies](/articles/health-and-safety-guide-nz-tradies) for a full overview of your HSWA obligations as a self-employed tradie or small business owner.
 
 ---
 

@@ -111,4 +111,4 @@ Limit your quote validity to 14–30 days for material-heavy jobs. This forces a
 - 2024–2025: 3–6% per year (stabilising)
 - 2026 estimate: 4–7% (ongoing supply pressures, shipping costs)
 
-Always check current prices with your supplier before quoting on large projects. Use our [Job Cost Calculator](/calculators/job-cost-calculator.html) to build accurate job estimates from the ground up.
+Always check current prices with your supplier before quoting on large projects. Use our [Job Cost Calculator](/calculators/job-cost-calculator) to build accurate job estimates from the ground up.

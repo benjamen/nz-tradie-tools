@@ -32,7 +32,7 @@ These rates sit noticeably higher than general plumber rates, which average $95�
 
 ## Why These Trades Cost More: The Regulatory Reality
 
-Both gasfitting and drainlaying are controlled under the [Plumbers, Gasfitters, and Drainlayers Act 2006](https://www.legislation.govt.nz/act/public/2006/0107/latest/DLM397993.html), which sits under the **Plumbers, Gasfitters and Drainlayers Board (PGDB)** — a government-appointed licensing authority. Unlike many trades, it is illegal to carry out gasfitting or drainlaying work in New Zealand without the appropriate licence or registration.
+Both gasfitting and drainlaying are controlled under the [Plumbers, Gasfitters, and Drainlayers Act 2006](https://www.legislation.govt.nz/act/public/2006/0107/latest/DLM397993), which sits under the **Plumbers, Gasfitters and Drainlayers Board (PGDB)** — a government-appointed licensing authority. Unlike many trades, it is illegal to carry out gasfitting or drainlaying work in New Zealand without the appropriate licence or registration.
 
 That licensing structure creates ongoing compliance costs that every practitioner must absorb:
 
@@ -67,9 +67,9 @@ A common mistake is calculating an hourly rate based on a target annual income, 
 - ACC levies (gasfitters fall into a higher levy category)
 - Public liability and professional indemnity insurance
 
-Use our [Hourly Rate Calculator](/calculators/hourly-rate-calculator.html) to model your rate properly. Most gasfitters find they need to charge at least 30–40% more than their simple "target income ÷ hours worked" calculation to actually break even on costs.
+Use our [Hourly Rate Calculator](/calculators/hourly-rate-calculator) to model your rate properly. Most gasfitters find they need to charge at least 30–40% more than their simple "target income ÷ hours worked" calculation to actually break even on costs.
 
-You should also review your [overhead rate](/articles/overhead-rate-nz-tradie-guide-2026.html) separately from your labour margin — confusing these two is one of the most common pricing mistakes in small trade businesses.
+You should also review your [overhead rate](/articles/overhead-rate-nz-tradie-guide-2026) separately from your labour margin — confusing these two is one of the most common pricing mistakes in small trade businesses.
 
 ### Sample Rate Calculation
 
@@ -93,7 +93,7 @@ If that tradie bills 1,000 hours/year (realistic for a sole trader with quoting,
 
 All of the rates above are exclusive of GST. If you're GST-registered (which is compulsory once your turnover exceeds $60,000/year), add 15% on top of your rate before presenting it to clients.
 
-On a $140/hr rate, that means invoicing at $161/hr and making clear in your quote that GST is added. Use our [GST Calculator](/calculators/gst-calculator.html) to check your invoice totals.
+On a $140/hr rate, that means invoicing at $161/hr and making clear in your quote that GST is added. Use our [GST Calculator](/calculators/gst-calculator) to check your invoice totals.
 
 If you're earning close to the $60,000 threshold, it's worth reading up on when and why to register — the timing affects your cash flow significantly in the first year.
 
@@ -109,7 +109,7 @@ Apps like [Fastcrew](https://fastcrew.nz) are popular with smaller gas and drain
 - Higher rates than general plumbing are justified by PGDB fees, mandatory CoCs, CPD requirements, and higher insurance costs
 - PGDB registration fees increased in April 2026 — factor the updated amounts into your pricing
 - Calculate your rate from a full cost base, not just your income target
-- Use the [Hourly Rate Calculator](/calculators/hourly-rate-calculator.html) to run your own numbers
+- Use the [Hourly Rate Calculator](/calculators/hourly-rate-calculator) to run your own numbers
 
 Download our free NZ tradie templates at tradietools.nz/templates/ — including a job cost worksheet and quote template you can customise for your trade.
 

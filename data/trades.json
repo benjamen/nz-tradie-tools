@@ -22,7 +22,7 @@
       "Asks for full payment upfront",
       "Can't provide references"
     ],
-    "calculator_link": "/calculators/job-cost-calculator.html",
+    "calculator_link": "/calculators/job-cost-calculator",
     "related_article": "/articles/builder-pricing-guide-nz-2026.html"
   },
   {
@@ -48,7 +48,7 @@
       "No insurance",
       "Doesn't provide a written invoice"
     ],
-    "calculator_link": "/calculators/hourly-rate-calculator.html",
+    "calculator_link": "/calculators/hourly-rate-calculator",
     "related_article": "/articles/plumber-pricing-guide-nz-2026.html"
   },
   {
@@ -74,7 +74,7 @@
       "Quotes for work without seeing the site",
       "No insurance certificate"
     ],
-    "calculator_link": "/calculators/cable-sizing-calculator.html",
+    "calculator_link": "/calculators/cable-sizing-calculator",
     "related_article": "/articles/electrician-pricing-guide-nz-2026.html"
   },
   {
@@ -100,7 +100,7 @@
       "No references",
       "Asks for most payment upfront"
     ],
-    "calculator_link": "/calculators/paint-calculator.html",
+    "calculator_link": "/calculators/paint-calculator",
     "related_article": "/articles/painter-pricing-guide-nz-2026.html"
   },
   {
@@ -126,7 +126,7 @@
       "No written quote with specifications",
       "Won't provide a workmanship guarantee"
     ],
-    "calculator_link": "/calculators/roof-area-calculator.html",
+    "calculator_link": "/calculators/roof-area-calculator",
     "related_article": "/articles/roofer-pricing-guide-nz-2026.html"
   },
   {
@@ -152,7 +152,7 @@
       "No soil preparation included in quote",
       "No aftercare advice"
     ],
-    "calculator_link": "/calculators/irrigation-calculator.html",
+    "calculator_link": "/calculators/irrigation-calculator",
     "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
   },
   {
@@ -178,7 +178,7 @@
       "Quote per m² only — no detail on prep",
       "Won't do a layout plan"
     ],
-    "calculator_link": "/calculators/tile-calculator.html",
+    "calculator_link": "/calculators/tile-calculator",
     "related_article": "/articles/how-to-write-a-quote-that-wins-jobs-nz.html"
   },
   {
@@ -204,7 +204,7 @@
       "Won't provide a written quote",
       "No references"
     ],
-    "calculator_link": "/calculators/job-cost-calculator.html",
+    "calculator_link": "/calculators/job-cost-calculator",
     "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
   },
   {
@@ -230,7 +230,7 @@
       "Per m² quote only with no detail",
       "Can't show installation photos"
     ],
-    "calculator_link": "/calculators/carpet-flooring-calculator.html",
+    "calculator_link": "/calculators/carpet-flooring-calculator",
     "related_article": "/articles/how-to-write-a-quote-that-wins-jobs-nz.html"
   },
   {
@@ -256,7 +256,7 @@
       "No reinforcement mentioned",
       "Won't give per m² rate"
     ],
-    "calculator_link": "/calculators/concrete-calculator.html",
+    "calculator_link": "/calculators/concrete-calculator",
     "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
   },
   {
@@ -282,7 +282,7 @@
       "No photos of finished work",
       "Vague quote without specifications"
     ],
-    "calculator_link": "/calculators/timber-framing-calculator.html",
+    "calculator_link": "/calculators/timber-framing-calculator",
     "related_article": "/articles/how-to-get-lbp-licence-new-zealand.html"
   },
   {
@@ -308,7 +308,7 @@
       "Quotes very low for gas line work",
       "No insurance"
     ],
-    "calculator_link": "/calculators/job-cost-calculator.html",
+    "calculator_link": "/calculators/job-cost-calculator",
     "related_article": "/articles/how-to-write-a-quote-that-wins-jobs-nz.html"
   },
   {
@@ -334,7 +334,7 @@
       "Won't camera inspect existing drains",
       "Can't provide licence number"
     ],
-    "calculator_link": "/calculators/drain-grade-calculator.html",
+    "calculator_link": "/calculators/drain-grade-calculator",
     "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
   },
   {
@@ -360,7 +360,7 @@
       "No mention of building code compliance",
       "Won't warranty their work"
     ],
-    "calculator_link": "/calculators/job-cost-calculator.html",
+    "calculator_link": "/calculators/job-cost-calculator",
     "related_article": "/articles/how-to-write-a-quote-that-wins-jobs-nz.html"
   },
   {
@@ -386,7 +386,7 @@
       "Won't specify post depth",
       "No pool fence compliance for pool enclosures"
     ],
-    "calculator_link": "/calculators/fence-calculator.html",
+    "calculator_link": "/calculators/fence-calculator",
     "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
   },
   {
@@ -412,7 +412,7 @@
       "No manufacturer warranty",
       "Experience only with residential (not your commercial job type)"
     ],
-    "calculator_link": "/calculators/waterproofing-calculator.html",
+    "calculator_link": "/calculators/waterproofing-calculator",
     "related_article": "/articles/how-to-write-a-quote-that-wins-jobs-nz.html"
   },
   {
@@ -438,7 +438,7 @@
       "No mention of grant eligibility",
       "No post-installation check"
     ],
-    "calculator_link": "/calculators/insulation-calculator.html",
+    "calculator_link": "/calculators/insulation-calculator",
     "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
   },
   {
@@ -464,7 +464,7 @@
       "No warranty on installation",
       "Using non-brand-approved parts"
     ],
-    "calculator_link": "/calculators/heat-pump-sizing-calculator.html",
+    "calculator_link": "/calculators/heat-pump-sizing-calculator",
     "related_article": "/articles/best-job-management-software-nz-tradies-2026.html"
   },
   {
@@ -490,7 +490,7 @@
       "Not SEANZ registered",
       "Won't handle grid connection documentation"
     ],
-    "calculator_link": "/calculators/solar-savings-calculator.html",
+    "calculator_link": "/calculators/solar-savings-calculator",
     "related_article": "/articles/best-job-management-software-nz-tradies-2026.html"
   },
   {
@@ -516,7 +516,7 @@
       "Won't certify the scaffold before use",
       "No edge protection on steep roofs"
     ],
-    "calculator_link": "/calculators/scaffolding-calculator.html",
+    "calculator_link": "/calculators/scaffolding-calculator",
     "related_article": "/articles/health-and-safety-guide-nz-tradies.html"
   },
   {
@@ -542,7 +542,7 @@
       "Suspiciously cheap quote (skipping asbestos process)",
       "No waste manifest documentation"
     ],
-    "calculator_link": "/calculators/earthworks-calculator.html",
+    "calculator_link": "/calculators/earthworks-calculator",
     "related_article": "/articles/health-and-safety-guide-nz-tradies.html"
   },
   {
@@ -568,7 +568,7 @@
       "Quote includes felling but not removal",
       "Not NZAA certified for complex work"
     ],
-    "calculator_link": "/calculators/job-cost-calculator.html",
+    "calculator_link": "/calculators/job-cost-calculator",
     "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
   },
   {
@@ -594,7 +594,7 @@
       "Doesn't coordinate plumbing and electrical",
       "Large upfront deposit (over 30%)"
     ],
-    "calculator_link": "/calculators/kitchen-renovation-calculator.html",
+    "calculator_link": "/calculators/kitchen-renovation-calculator",
     "related_article": "/articles/how-to-write-a-quote-that-wins-jobs-nz.html"
   },
   {
@@ -620,7 +620,7 @@
       "No fixture allowance detail",
       "Very large upfront deposit"
     ],
-    "calculator_link": "/calculators/bathroom-renovation-calculator.html",
+    "calculator_link": "/calculators/bathroom-renovation-calculator",
     "related_article": "/articles/how-to-write-a-quote-that-wins-jobs-nz.html"
   },
   {
@@ -646,7 +646,7 @@
       "No re-treatment guarantee",
       "Very cheap quote using generic products"
     ],
-    "calculator_link": "/calculators/job-cost-calculator.html",
+    "calculator_link": "/calculators/job-cost-calculator",
     "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
   },
   {
@@ -672,7 +672,7 @@
       "Won't provide monitoring response times",
       "Monthly fees not clearly disclosed upfront"
     ],
-    "calculator_link": "/calculators/job-cost-calculator.html",
+    "calculator_link": "/calculators/job-cost-calculator",
     "related_article": "/articles/best-job-management-software-nz-tradies-2026.html"
   },
   {
@@ -698,7 +698,7 @@
       "No commissioning report",
       "No maintenance plan"
     ],
-    "calculator_link": "/calculators/heat-pump-sizing-calculator.html",
+    "calculator_link": "/calculators/heat-pump-sizing-calculator",
     "related_article": "/articles/best-job-management-software-nz-tradies-2026.html"
   },
   {
@@ -724,7 +724,7 @@
       "No professional indemnity insurance",
       "No portfolio of similar work"
     ],
-    "calculator_link": "/calculators/job-cost-calculator.html",
+    "calculator_link": "/calculators/job-cost-calculator",
     "related_article": "/articles/how-to-get-lbp-licence-new-zealand.html"
   },
   {
@@ -750,7 +750,7 @@
       "Can't do compaction testing",
       "No resource consent check for large volumes"
     ],
-    "calculator_link": "/calculators/earthworks-calculator.html",
+    "calculator_link": "/calculators/earthworks-calculator",
     "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
   },
   {
@@ -776,7 +776,7 @@
       "No engineer approval for structural members",
       "No coating specification"
     ],
-    "calculator_link": "/calculators/job-cost-calculator.html",
+    "calculator_link": "/calculators/job-cost-calculator",
     "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
   },
   {
@@ -802,7 +802,7 @@
       "No drawings before manufacturing",
       "Quote significantly below comparable custom makers"
     ],
-    "calculator_link": "/calculators/job-cost-calculator.html",
+    "calculator_link": "/calculators/job-cost-calculator",
     "related_article": "/articles/how-to-write-a-quote-that-wins-jobs-nz.html"
   },
   {
@@ -828,7 +828,7 @@
       "No safety edge",
       "Won't specify panel insulation value"
     ],
-    "calculator_link": "/calculators/job-cost-calculator.html",
+    "calculator_link": "/calculators/job-cost-calculator",
     "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
   },
   {
@@ -854,7 +854,7 @@
       "Can't provide lock grade information",
       "Extremely high after-hours charges without disclosure"
     ],
-    "calculator_link": "/calculators/job-cost-calculator.html",
+    "calculator_link": "/calculators/job-cost-calculator",
     "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
   },
   {
@@ -880,7 +880,7 @@
       "No movement joints in long walls",
       "Can't provide LBP for structural work"
     ],
-    "calculator_link": "/calculators/brick-block-calculator.html",
+    "calculator_link": "/calculators/brick-block-calculator",
     "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
   },
   {
@@ -906,7 +906,7 @@
       "No flashing detail in quote",
       "Unknown or imported joinery brand"
     ],
-    "calculator_link": "/calculators/job-cost-calculator.html",
+    "calculator_link": "/calculators/job-cost-calculator",
     "related_article": "/articles/how-to-get-lbp-licence-new-zealand.html"
   },
   {
@@ -932,7 +932,7 @@
       "Single zone for large areas (inefficient)",
       "No smart controller option"
     ],
-    "calculator_link": "/calculators/irrigation-calculator.html",
+    "calculator_link": "/calculators/irrigation-calculator",
     "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
   },
   {
@@ -958,7 +958,7 @@
       "No soil assessment for in-ground pool",
       "Very low quote without specification"
     ],
-    "calculator_link": "/calculators/pool-volume-calculator.html",
+    "calculator_link": "/calculators/pool-volume-calculator",
     "related_article": "/articles/how-to-write-a-quote-that-wins-jobs-nz.html"
   },
   {
@@ -984,7 +984,7 @@
       "No drainage design",
       "Very cheap quote (thin asphalt, no base)"
     ],
-    "calculator_link": "/calculators/paving-calculator.html",
+    "calculator_link": "/calculators/paving-calculator",
     "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
   },
   {
@@ -1010,7 +1010,7 @@
       "Can't provide 3D visualisation",
       "No trade pricing access"
     ],
-    "calculator_link": "/calculators/job-cost-calculator.html",
+    "calculator_link": "/calculators/job-cost-calculator",
     "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
   },
   {
@@ -1036,7 +1036,7 @@
       "Using GPS only without total station for precise work",
       "No NZIS membership"
     ],
-    "calculator_link": "/calculators/job-cost-calculator.html",
+    "calculator_link": "/calculators/job-cost-calculator",
     "related_article": "/articles/how-to-get-lbp-licence-new-zealand.html"
   },
   {
@@ -1062,7 +1062,7 @@
       "No LBP for structural walls",
       "No drainage detail for retaining walls"
     ],
-    "calculator_link": "/calculators/retaining-wall-calculator.html",
+    "calculator_link": "/calculators/retaining-wall-calculator",
     "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
   },
   {
@@ -1088,7 +1088,7 @@
       "No acclimatisation period for solid timber",
       "Unknown timber source or species"
     ],
-    "calculator_link": "/calculators/carpet-flooring-calculator.html",
+    "calculator_link": "/calculators/carpet-flooring-calculator",
     "related_article": "/articles/how-to-write-a-quote-that-wins-jobs-nz.html"
   },
   {
@@ -1114,7 +1114,7 @@
       "Can't do CCTV inspection",
       "No maintenance access points"
     ],
-    "calculator_link": "/calculators/drain-grade-calculator.html",
+    "calculator_link": "/calculators/drain-grade-calculator",
     "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
   },
   {
@@ -1140,7 +1140,7 @@
       "Unknown cladding brand without warranty",
       "No cavity system on weathertight cladding"
     ],
-    "calculator_link": "/calculators/job-cost-calculator.html",
+    "calculator_link": "/calculators/job-cost-calculator",
     "related_article": "/articles/how-to-get-lbp-licence-new-zealand.html"
   },
   {
@@ -1166,7 +1166,7 @@
       "No lux design for commercial",
       "Smart system incompatible with your existing platform"
     ],
-    "calculator_link": "/calculators/cable-sizing-calculator.html",
+    "calculator_link": "/calculators/cable-sizing-calculator",
     "related_article": "/articles/best-job-management-software-nz-tradies-2026.html"
   },
   {
@@ -1192,7 +1192,7 @@
       "No police vetting process for keyholders",
       "Extremely low price (corners cut)"
     ],
-    "calculator_link": "/calculators/job-cost-calculator.html",
+    "calculator_link": "/calculators/job-cost-calculator",
     "related_article": "/articles/how-to-price-a-job-nz-tradie-guide.html"
   },
   {
@@ -1218,7 +1218,7 @@
       "No professional indemnity insurance",
       "Vague scope of services"
     ],
-    "calculator_link": "/calculators/job-cost-calculator.html",
+    "calculator_link": "/calculators/job-cost-calculator",
     "related_article": "/articles/how-to-get-lbp-licence-new-zealand.html"
   }
 ]

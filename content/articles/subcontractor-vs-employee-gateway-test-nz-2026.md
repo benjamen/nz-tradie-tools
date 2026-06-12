@@ -79,7 +79,7 @@ The same test applies from the other side. If you're genuinely contracting — m
 
 If you're treated like an employee in practice (exclusive arrangement, directed hours, can't delegate), you may have grounds to claim employee status and the entitlements that come with it: paid leave, minimum wage protections, etc.
 
-Use our [Subcontractor Tax Calculator](/calculators/subcontractor-tax-calculator.html) to estimate your tax obligations based on your contracting income.
+Use our [Subcontractor Tax Calculator](/calculators/subcontractor-tax-calculator) to estimate your tax obligations based on your contracting income.
 
 ---
 
@@ -158,7 +158,7 @@ Using proper job management software like [Fergus](https://www.fergus.com/) or [
 - **Employment New Zealand:** employment.govt.nz — plain-English guidance on the contractor vs employee distinction
 - **IRD:** ird.govt.nz/roles/employees/self-employed-or-employee — tax obligations for both
 - **IRD Interpretation Guideline IG0009** — the detailed technical reference
-- [Subcontractor Tax Calculator](/calculators/subcontractor-tax-calculator.html) — estimate your schedular payment obligations
+- [Subcontractor Tax Calculator](/calculators/subcontractor-tax-calculator) — estimate your schedular payment obligations
 
 If you're unsure about your specific situation, talk to an accountant or employment lawyer. The Gateway Test makes the analysis more straightforward, but individual arrangements can still have edge cases worth professional advice.
 
@@ -168,4 +168,4 @@ If you're unsure about your specific situation, talk to an accountant or employm
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

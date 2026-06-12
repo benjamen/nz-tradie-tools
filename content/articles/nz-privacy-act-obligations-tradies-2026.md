@@ -58,7 +58,7 @@ Under **IPP 5**, you must take reasonable steps to protect personal information 
 - Wiping old phones before disposing of them
 - Using strong, unique passwords for your accounting software
 
-Cloud platforms like Xero or MYOB generally handle security well. The risk is usually your own device or how you share files. See our [Xero vs MYOB NZ guide](/articles/xero-vs-myob-nz-tradies.html) for more on choosing secure accounting software.
+Cloud platforms like Xero or MYOB generally handle security well. The risk is usually your own device or how you share files. See our [Xero vs MYOB NZ guide](/articles/xero-vs-myob-nz-tradies) for more on choosing secure accounting software.
 
 ### 4. Give Customers Access to Their Data If They Ask
 
@@ -108,7 +108,7 @@ Employee information is sensitive personal information. Under the Privacy Act, y
 
 Health information about workers — injuries, medical clearances, drug test results — is classified as **sensitive information** under the Act and must be held with extra care. WorkSafe recommends keeping injury records as part of your health and safety documentation.
 
-For guidance on employee records and PAYE obligations, see our [guide to employing staff](/articles/true-cost-employing-tradie-nz-2026.html).
+For guidance on employee records and PAYE obligations, see our [guide to employing staff](/articles/true-cost-employing-tradie-nz-2026).
 
 ---
 
@@ -139,7 +139,7 @@ Use this checklist to ensure your business is covered:
 
 **Download our free NZ tradie templates at tradietools.nz/templates/** — including a privacy notice for quotes, a customer data consent form, and a terms of trade template that covers your Privacy Act obligations.
 
-You can also use our [GST calculator](/calculators/gst-calculator.html) and [hourly rate calculator](/calculators/hourly-rate-calculator.html) while you review your business compliance settings.
+You can also use our [GST calculator](/calculators/gst-calculator) and [hourly rate calculator](/calculators/hourly-rate-calculator) while you review your business compliance settings.
 
 ---
 

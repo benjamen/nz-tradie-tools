@@ -45,7 +45,7 @@ Many tradies underestimate their overhead because they only count direct wages a
 - **Accounting and software** — Xero, Fergus, Tradify all add up
 - **Unpaid admin time** — quoting, invoicing, compliance — often 10–15% of your working hours
 
-Use our [Hourly Rate Calculator](/calculators/hourly-rate-calculator.html) to work out what you need to charge just to break even before profit — most tradies are surprised how high the number is.
+Use our [Hourly Rate Calculator](/calculators/hourly-rate-calculator) to work out what you need to charge just to break even before profit — most tradies are surprised how high the number is.
 
 ---
 
@@ -59,7 +59,7 @@ Once you have your breakeven figure, add a profit margin. Industry guidance sugg
 
 If your current rate is below these ranges, you're almost certainly running at breakeven or a loss once real overheads are factored in.
 
-See our [Job Cost Calculator](/calculators/job-cost-calculator.html) to model how different hourly rates affect profit per job.
+See our [Job Cost Calculator](/calculators/job-cost-calculator) to model how different hourly rates affect profit per job.
 
 ---
 
@@ -99,7 +99,7 @@ A higher rate means higher income — and a higher tax bill if you're not prepar
 
 **Provisional tax:** If you expect to pay more than $5,000 in residual income tax this year, you'll be on provisional tax instalments. IRD charges Use of Money Interest (UOMI) at **10.91% per annum** on underpaid tax. Plan ahead — don't let a good income year become a cash flow problem in April.
 
-**GST:** If you're not GST-registered and your revenue looks like it will exceed $60,000 for the year, register now. Quoting exclusive of GST to a GST-registered client can make your rates look cheaper to them anyway. Our [markup vs margin article](/articles/markup-vs-margin-nz-tradies-2026.html) explains why this distinction matters when quoting.
+**GST:** If you're not GST-registered and your revenue looks like it will exceed $60,000 for the year, register now. Quoting exclusive of GST to a GST-registered client can make your rates look cheaper to them anyway. Our [markup vs margin article](/articles/markup-vs-margin-nz-tradies-2026) explains why this distinction matters when quoting.
 
 **Investment in gear:** The Investment Boost deduction (20% first-year bonus on new depreciable assets from May 2025) means new equipment bought now gets a better tax write-off. Worth timing any tool or vehicle purchases before 31 March 2027.
 

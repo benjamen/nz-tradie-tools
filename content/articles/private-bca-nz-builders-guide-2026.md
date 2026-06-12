@@ -37,7 +37,7 @@ The key differences are speed, specialisation, and service model.
 
 **Specialisation:** Private BCAs can choose what types of work they accredit for. Both current registered private BCAs are accredited for commercial and multi-unit residential work, not general single-house consents. That may change as more private BCAs enter the market.
 
-**Fee structure:** Private BCAs set their own fees. Current indications are that processing fees are comparable to council fees — roughly $1,500–$4,000 for a standard residential consent — but without the cross-subsidy delays that come with running a large territorial authority. Use our [building consent fee calculator](/calculators/building-consent-fee-calculator.html) to estimate consent costs for your next project.
+**Fee structure:** Private BCAs set their own fees. Current indications are that processing fees are comparable to council fees — roughly $1,500–$4,000 for a standard residential consent — but without the cross-subsidy delays that come with running a large territorial authority. Use our [building consent fee calculator](/calculators/building-consent-fee-calculator) to estimate consent costs for your next project.
 
 **Repeat-client relationships:** Unlike councils, private BCAs can build ongoing business relationships with volume builders and developers. If you're doing multiple similar projects, a private BCA may offer faster turnaround by understanding your standard specs and documentation upfront.
 
@@ -64,7 +64,7 @@ Where private BCAs make sense right now:
 - **Prefab and modular builders** where consent processing speed directly affects factory scheduling
 - **Projects where council BCA delays are causing holding costs** — a faster private BCA approval can save weeks of finance charges on a large development
 
-For context on how the broader consent reform affects your day-to-day workflow, see our full article on [NZ building consent reforms for tradies in 2026](/articles/building-consent-reform-nz-2026-tradies-guide.html).
+For context on how the broader consent reform affects your day-to-day workflow, see our full article on [NZ building consent reforms for tradies in 2026](/articles/building-consent-reform-nz-2026-tradies-guide).
 
 ## The Insurance and Liability Angle
 
@@ -72,7 +72,7 @@ The Building (Liability) Amendment Bill currently before Parliament introduces p
 
 This reform is linked to new mandatory home warranty insurance requirements that will cover structural defects for 10 years on new residential builds. If you're doing restricted building work, understanding where your liability sits within the new framework matters — especially as private BCAs come online and the consent process becomes more competitive.
 
-For more on this, see our guide to [mandatory home warranty insurance for NZ builders](/articles/mandatory-home-warranty-insurance-nz-builders-2026.html).
+For more on this, see our guide to [mandatory home warranty insurance for NZ builders](/articles/mandatory-home-warranty-insurance-nz-builders-2026).
 
 ## LBP Considerations
 

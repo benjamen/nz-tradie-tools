@@ -63,7 +63,7 @@ This model is clean, predictable, and easy to administer. It works best when you
 
 The client commits to letting you do the scheduled work, but you invoice after each visit at the agreed rate. Less cash-flow-friendly for you, but easier for clients to accept.
 
-Use our [Hourly Rate Calculator](/calculators/hourly-rate-calculator.html) to make sure your maintenance rate actually covers your costs, including travel time to recurring sites. And run the numbers through the [Job Cost Calculator](/calculators/job-cost-calculator.html) to confirm each visit is profitable after materials.
+Use our [Hourly Rate Calculator](/calculators/hourly-rate-calculator) to make sure your maintenance rate actually covers your costs, including travel time to recurring sites. And run the numbers through the [Job Cost Calculator](/calculators/job-cost-calculator) to confirm each visit is profitable after materials.
 
 When pricing maintenance work, remember: you're not just pricing the labour hours on site. You're pricing reliability. Clients value having a trusted tradie who shows up on schedule without them having to chase quotes. That has real worth — price accordingly.
 
@@ -77,7 +77,7 @@ However, many small tradies use cash accounting (income when received, expenses 
 
 Talk to your accountant about which method suits you — especially if you're going to scale up your maintenance book significantly. MBIE and IRD both publish guidance on small business accounting methods. IRD's "Running a small business" section at ird.govt.nz is a useful starting point.
 
-For managing cash flow as your maintenance book grows, read our [guide to cash flow management for NZ tradies](/articles/cash-flow-management-nz-tradies.html).
+For managing cash flow as your maintenance book grows, read our [guide to cash flow management for NZ tradies](/articles/cash-flow-management-nz-tradies).
 
 ## Selling Maintenance Plans to Existing Clients
 

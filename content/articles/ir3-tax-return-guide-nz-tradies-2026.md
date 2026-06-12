@@ -72,7 +72,7 @@ Each rate only applies to the slice of income within that band. A tradie earning
 
 ## Key Deductions for 2025–26
 
-Already familiar with the main claims? See our full guide on [NZ tradie tax deductions](/articles/nz-tradie-tax-guide-what-you-can-claim.html). For this year's return, don't miss these:
+Already familiar with the main claims? See our full guide on [NZ tradie tax deductions](/articles/nz-tradie-tax-guide-what-you-can-claim). For this year's return, don't miss these:
 
 **Investment Boost deduction**
 From 22 May 2025, businesses can claim a 20% first-year deduction on new depreciable assets — on top of normal depreciation. If you bought a new work trailer, scaffolding, laser level, or similar after that date, you're entitled to this bonus write-off. IRD confirmed it applies to the 2025–26 and future tax years, so review any new asset purchases carefully.
@@ -95,11 +95,11 @@ Once IRD processes your IR3, they'll calculate your **residual income tax (RIT)*
 
 Provisional tax is paid in three instalments throughout the year so you're not hit with a large bill at the end. The standard uplift method charges 105% of your 2025–26 RIT, split across three dates (typically 28 August 2026, 15 January 2027, and 7 May 2027).
 
-Use the [provisional tax calculator](/calculators/provisional-tax-calculator.html) to estimate your 2026–27 instalments and plan your cash flow now, before the first due date arrives.
+Use the [provisional tax calculator](/calculators/provisional-tax-calculator) to estimate your 2026–27 instalments and plan your cash flow now, before the first due date arrives.
 
 ## GST: A Reminder
 
-If your annual turnover exceeds $60,000, you must be registered for GST. A common cash-flow trap: spending the GST component of your invoice income before the return period is due. The fix is simple — transfer 13% (approximately the net GST amount after purchases) of every invoice to a separate account as you go. Use the [GST calculator](/calculators/gst-calculator.html) to stay on top of your position throughout the year.
+If your annual turnover exceeds $60,000, you must be registered for GST. A common cash-flow trap: spending the GST component of your invoice income before the return period is due. The fix is simple — transfer 13% (approximately the net GST amount after purchases) of every invoice to a separate account as you go. Use the [GST calculator](/calculators/gst-calculator) to stay on top of your position throughout the year.
 
 ## Should You Use a Tax Agent?
 
@@ -139,4 +139,4 @@ The hardest part of tax time is usually finding paperwork from 12 months ago. Do
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

@@ -106,7 +106,7 @@ Health monitoring typically includes:
 
 WorkSafe does not mandate health monitoring for all workers in all situations, but failing to provide it for high-exposure workers creates significant PCBU liability. Speak to an occupational health provider about a monitoring programme appropriate for your team.
 
-For accurate budgeting of your health and safety spend, use the [NZ Tradie Job Costing Calculator](/calculators/job-costing-calculator.html) to include compliance costs in your project quotes.
+For accurate budgeting of your health and safety spend, use the [NZ Tradie Job Costing Calculator](/calculators/job-costing-calculator) to include compliance costs in your project quotes.
 
 ---
 
@@ -137,7 +137,7 @@ Beyond fines, WorkSafe can issue **Improvement Notices** requiring immediate act
 
 The reputational and financial damage of a WorkSafe prosecution — or worse, a silicosis claim from a former worker — far outweighs the cost of proper controls.
 
-For more on your WorkSafe obligations, read our [NZ WorkSafe Notifiable Events Guide](/articles/worksafe-notifiable-events-nz-tradies-2026.html) and our [Health and Safety Guide for NZ Tradies](/articles/health-and-safety-guide-nz-tradies.html).
+For more on your WorkSafe obligations, read our [NZ WorkSafe Notifiable Events Guide](/articles/worksafe-notifiable-events-nz-tradies-2026) and our [Health and Safety Guide for NZ Tradies](/articles/health-and-safety-guide-nz-tradies).
 
 ---
 

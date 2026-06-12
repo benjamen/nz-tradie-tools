@@ -66,7 +66,7 @@ Treating all 11 as non-billable days: 88 hours ÷ 2,080 = 4.23%
 
 > At $35/hr: **4.23% = $1.48/hr**
 
-Use our [Holiday Pay Calculator](/calculators/holiday-pay-calculator.html) to see exactly what public holidays cost in your situation.
+Use our [Holiday Pay Calculator](/calculators/holiday-pay-calculator) to see exactly what public holidays cost in your situation.
 
 ---
 
@@ -85,7 +85,7 @@ Use our [Holiday Pay Calculator](/calculators/holiday-pay-calculator.html) to se
 
 So before you've paid for a single tool, vehicle kilometre, or training course, your $35/hr employee already costs you **$42.56 per productive hour** — a **21.6% increase** on the base rate.
 
-Run your own numbers with our [Employee Total Cost Calculator](/calculators/employee-total-cost-calculator.html).
+Run your own numbers with our [Employee Total Cost Calculator](/calculators/employee-total-cost-calculator).
 
 ---
 
@@ -134,7 +134,7 @@ A common rule of thumb in the NZ trades industry is to charge out employees at *
 
 That might sound high, but once you've accounted for the true cost ($46–$50/hr) and added your overhead and margin, a charge-out rate below $70 is often a loss-maker.
 
-Use our [Hourly Rate Calculator](/calculators/hourly-rate-calculator.html) to model your specific situation.
+Use our [Hourly Rate Calculator](/calculators/hourly-rate-calculator) to model your specific situation.
 
 ---
 
@@ -175,4 +175,4 @@ Do the maths before you commit to your next hire. If the charge-out rate your ma
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

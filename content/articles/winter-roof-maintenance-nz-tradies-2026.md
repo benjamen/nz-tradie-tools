@@ -124,7 +124,7 @@ Winter is when homeowners become aware of roof problems. Use this to your advant
 
 ## Free NZ Tools to Support Your Winter Work
 
-Use **[NZ Tradie Tools' job costing calculator](/calculators/job-costing-calculator.html)** to estimate labour and materials for complex roofing jobs. The [GST calculator](/calculators/gst-calculator.html) helps you invoice quickly when jobs run across multiple days.
+Use **[NZ Tradie Tools' job costing calculator](/calculators/job-costing-calculator)** to estimate labour and materials for complex roofing jobs. The [GST calculator](/calculators/gst-calculator) helps you invoice quickly when jobs run across multiple days.
 
 For team coordination, check out **Fastcrew** (https://fastcrew.nz) — a NZ-built app that makes it easy to assign jobs, track weather delays, and message your crew when conditions change.
 

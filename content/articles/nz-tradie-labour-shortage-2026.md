@@ -43,11 +43,11 @@ The 2023 downturn hit fast. When building consent volumes dropped sharply and se
 
 ## What This Means for Your Tradie Business in 2026
 
-**If you're a sole trader or small contractor**, the labour shortage creates real opportunity if you're positioned correctly. Clients who can't find anyone will pay a premium for a tradie who shows up, communicates well, and delivers on time. This is not the time to compete on price alone. If you haven't reviewed your hourly rate recently, now is the moment — see our [guide to setting your hourly rate as an NZ tradie](/articles/how-to-set-hourly-rate-nz-tradie-2026.html) for a worked example.
+**If you're a sole trader or small contractor**, the labour shortage creates real opportunity if you're positioned correctly. Clients who can't find anyone will pay a premium for a tradie who shows up, communicates well, and delivers on time. This is not the time to compete on price alone. If you haven't reviewed your hourly rate recently, now is the moment — see our [guide to setting your hourly rate as an NZ tradie](/articles/how-to-set-hourly-rate-nz-tradie-2026) for a worked example.
 
 **If you employ staff**, retention is your most important lever. Losing a qualified employee to a competitor or to Australia costs you $15,000–$30,000 when you factor in recruitment, downtime, and ramp-up time for a replacement. Think about what you're doing beyond the base hourly rate: flexibility, regular hours, tools provided, training support, and a clear career path all matter.
 
-Consider formalising your hiring process if you haven't already. Our [guide to hiring an apprentice in NZ](/articles/hiring-an-apprentice-nz-tradie-guide-2026.html) covers Apprenticeship Boost, Mana in Mahi funding, and how to structure a training arrangement that benefits both parties.
+Consider formalising your hiring process if you haven't already. Our [guide to hiring an apprentice in NZ](/articles/hiring-an-apprentice-nz-tradie-guide-2026) covers Apprenticeship Boost, Mana in Mahi funding, and how to structure a training arrangement that benefits both parties.
 
 **If you're quoting larger projects**, build labour cost escalation into your pricing assumptions. Subcontractor rates that made sense when you won a job six months ago may have moved by the time you're on site. Fixed-price contracts that don't account for subcontractor market rates are a common source of losses in the current environment.
 
@@ -63,7 +63,7 @@ MBIE is also watching the subcontractor vs. employee classification question car
 
 2. **Use software to get more from fewer people.** Tools like [Fastcrew](https://fastcrew.nz) help small teams manage scheduling, timesheets, and crew communication without administrative overhead — especially useful when you're running lean.
 
-3. **Price labour tightly and revisit your rates quarterly.** With subcontractor rates shifting, a quarterly review of your job costing assumptions is not overkill. See our [job costing guide](/articles/job-costing-guide-nz-tradies-2026.html) for a framework.
+3. **Price labour tightly and revisit your rates quarterly.** With subcontractor rates shifting, a quarterly review of your job costing assumptions is not overkill. See our [job costing guide](/articles/job-costing-guide-nz-tradies-2026) for a framework.
 
 4. **Talk to your existing team.** Find out what would keep them. Often it's smaller things — predictable hours, good gear, being asked their opinion — rather than pure pay.
 

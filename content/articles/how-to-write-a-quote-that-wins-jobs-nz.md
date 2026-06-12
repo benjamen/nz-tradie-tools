@@ -149,7 +149,7 @@ You don't need to show your hourly rate if you don't want to — "labour to comp
 
 For commercial jobs, a more detailed breakdown is often expected or contractually required.
 
-Use our free [Job Cost Calculator](/calculators/job-cost-calculator.html) to build this breakdown from your actual costs.
+Use our free [Job Cost Calculator](/calculators/job-cost-calculator) to build this breakdown from your actual costs.
 
 ### 8. Variations Clause
 
@@ -262,7 +262,7 @@ The right tool depends on your trade and job complexity — but any of these wil
 
 ## Download the Free NZ Tradie Quote Template
 
-You don't need software to produce a professional quote. Our free [NZ Tradie Quote Template](/templates/quote-template.html) gives you a pre-formatted Word and PDF template with all the sections above already included — just fill in the details for each job.
+You don't need software to produce a professional quote. Our free [NZ Tradie Quote Template](/templates/quote-template) gives you a pre-formatted Word and PDF template with all the sections above already included — just fill in the details for each job.
 
 The template includes:
 - Header with logo placeholder and GST number field
@@ -308,4 +308,4 @@ Not legally required, but strongly recommended above $30,000–$50,000. Standard
 
 ---
 
-*NZ Tradie Tools provides free calculators, templates, and guides for New Zealand tradies. Use our [Job Cost Calculator](/calculators/job-cost-calculator.html) to build accurate quotes from your real costs, and download our free [NZ Tradie Quote Template](/templates/quote-template.html) to have every element pre-formatted and ready to go.*
+*NZ Tradie Tools provides free calculators, templates, and guides for New Zealand tradies. Use our [Job Cost Calculator](/calculators/job-cost-calculator) to build accurate quotes from your real costs, and download our free [NZ Tradie Quote Template](/templates/quote-template) to have every element pre-formatted and ready to go.*

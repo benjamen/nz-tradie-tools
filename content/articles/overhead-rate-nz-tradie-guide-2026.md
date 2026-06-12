@@ -80,7 +80,7 @@ If you pay yourself $45/hour as a base rate:
 
 This means your overhead adds roughly 29% to your base labour cost. When quoting, you need to recover at least $45 + $12.92 = **$57.92/hour** just to break even on labour before profit.
 
-Use our [hourly rate calculator](/calculators/hourly-rate-calculator.html) to factor in overhead alongside your target profit margin — it handles this calculation automatically.
+Use our [hourly rate calculator](/calculators/hourly-rate-calculator) to factor in overhead alongside your target profit margin — it handles this calculation automatically.
 
 ## Recovering Overhead in Your Quotes
 
@@ -88,7 +88,7 @@ There are two practical ways to recover overhead in your pricing:
 
 **Method 1 — Bake it into your hourly rate.** Add your overhead cost per hour to your base rate, then add your profit margin on top. Simple, consistent, and hard to forget.
 
-**Method 2 — Apply it as a percentage to total job cost.** Useful on larger jobs where labour is a smaller proportion. Apply your overhead rate (e.g. 29%) to your direct costs before adding margin. This method works well alongside a [job cost calculator](/calculators/job-cost-calculator.html) where you're tracking materials, subcontractors, and labour separately.
+**Method 2 — Apply it as a percentage to total job cost.** Useful on larger jobs where labour is a smaller proportion. Apply your overhead rate (e.g. 29%) to your direct costs before adding margin. This method works well alongside a [job cost calculator](/calculators/job-cost-calculator) where you're tracking materials, subcontractors, and labour separately.
 
 Most experienced tradies use Method 1 for small-to-mid jobs and Method 2 for larger builds or fit-outs.
 
@@ -102,7 +102,7 @@ Overhead as a percentage of direct costs typically falls in these ranges:
 
 The bigger your team, the more non-billable time and infrastructure you carry (HR, safety admin, depot costs, management time), so overhead rates climb steeply with headcount. This is why growing your business without reviewing your pricing is a fast way to lose money.
 
-If your overhead rate is creeping up but your rates aren't, use the [breakeven calculator](/calculators/breakeven-calculator.html) to see how many billable hours you need to at least cover costs each month.
+If your overhead rate is creeping up but your rates aren't, use the [breakeven calculator](/calculators/breakeven-calculator) to see how many billable hours you need to at least cover costs each month.
 
 ## Tips for Keeping Overhead Under Control
 
@@ -124,4 +124,4 @@ Download our free NZ tradie templates at tradietools.nz/templates/ — including
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

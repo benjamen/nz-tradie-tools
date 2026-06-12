@@ -199,12 +199,12 @@ Book materials 4–6 weeks ahead; suppliers often offer better pricing for confi
 
 We've built calculators for the most common tradie jobs. These use regional pricing data to give real estimates:
 
-- **[Staircase Calculator](/calculators/staircase-calculator.html)** — timber, fixings, balustrade costs
-- **[Earthworks & Excavation Calculator](/calculators/earthworks-calculator.html)** — fill, concrete base, compaction
-- **[Concrete Calculator](/calculators/concrete-calculator.html)** — m³ and cost by region
-- **[Fence Calculator](/calculators/fence-calculator.html)** — posts, rails, palings — wood vs wire
-- **[Deck Calculator](/calculators/deck-calculator.html)** — framing, decking, waterproofing
-- **[Interior Painting Calculator](/calculators/paint-calculator.html)** — coverage and cost by room
+- **[Staircase Calculator](/calculators/staircase-calculator)** — timber, fixings, balustrade costs
+- **[Earthworks & Excavation Calculator](/calculators/earthworks-calculator)** — fill, concrete base, compaction
+- **[Concrete Calculator](/calculators/concrete-calculator)** — m³ and cost by region
+- **[Fence Calculator](/calculators/fence-calculator)** — posts, rails, palings — wood vs wire
+- **[Deck Calculator](/calculators/deck-calculator)** — framing, decking, waterproofing
+- **[Interior Painting Calculator](/calculators/paint-calculator)** — coverage and cost by room
 
 Each calculator auto-fills regional pricing and gives you an instant material cost estimate for your project.
 
@@ -248,12 +248,12 @@ We track material pricing quarterly and update this page every month. Subscribe 
 
 ## Related Calculators & Resources
 
-- [Staircase Cost Calculator](/calculators/staircase-calculator.html) — timber, labour
-- [Concrete Calculator by Region](/calculators/concrete-calculator.html) — m³ and cost
-- [Fence Calculator — Wood vs Wire](/calculators/fence-calculator.html)
-- [Deck Build Calculator](/calculators/deck-calculator.html)
-- [Interior Paint Calculator](/calculators/paint-calculator.html)
-- [Earthworks & Excavation Costs](/calculators/earthworks-calculator.html)
+- [Staircase Cost Calculator](/calculators/staircase-calculator) — timber, labour
+- [Concrete Calculator by Region](/calculators/concrete-calculator) — m³ and cost
+- [Fence Calculator — Wood vs Wire](/calculators/fence-calculator)
+- [Deck Build Calculator](/calculators/deck-calculator)
+- [Interior Paint Calculator](/calculators/paint-calculator)
+- [Earthworks & Excavation Costs](/calculators/earthworks-calculator)
 
 ---
 

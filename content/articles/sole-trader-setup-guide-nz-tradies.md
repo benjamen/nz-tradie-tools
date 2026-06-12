@@ -104,7 +104,7 @@ Don't let admin eat your evenings. Set up:
 
 ## Step 8: Set Your Rates
 
-Before your first job, know what you're charging. Use the [Hourly Rate Calculator](/calculators/hourly-rate-calculator.html) to work out what you need to charge to hit your income target after overhead and tax.
+Before your first job, know what you're charging. Use the [Hourly Rate Calculator](/calculators/hourly-rate-calculator) to work out what you need to charge to hit your income target after overhead and tax.
 
 Research your local market — ask around, look at what competitors charge, check trade directory listings. Don't underprice yourself trying to win work — it's the fastest way to go broke.
 
@@ -129,10 +129,10 @@ Research your local market — ask around, look at what competitors charge, chec
 
 ---
 
-*Use our free [NZ GST Calculator](/calculators/gst-calculator.html) and [Hourly Rate Calculator](/calculators/hourly-rate-calculator.html) to get started.*
+*Use our free [NZ GST Calculator](/calculators/gst-calculator) and [Hourly Rate Calculator](/calculators/hourly-rate-calculator) to get started.*
 
 *About NZ Tradie Tools: Practical setup guides and free tools for New Zealand tradies.*
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

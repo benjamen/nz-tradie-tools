@@ -98,7 +98,7 @@
             <h2>Browse {{ trade.name }} by City</h2>
             <div class="card-grid">
                 {% for city in cities %}
-                <a href="{{ base_path }}/trades/{{ trade.slug }}/{{ city.slug }}.html" class="card">
+                <a href="{{ base_path }}/trades/{{ trade.slug }}/{{ city.slug }}" class="card">
                     <h3>{{ city.name }}</h3>
                     <p style="font-size:.85rem;color:var(--muted)">{{ city.region }}{% if city_data[city.slug] %} · {{ city_data[city.slug].businesses|length }} businesses rated{% endif %}</p>
                     {% if city_data[city.slug] %}
@@ -151,20 +151,20 @@
                     <div>
                         <h3 style="font-size:.85rem;text-transform:uppercase;letter-spacing:.05em;color:#777;margin:0 0 .6rem">Calculators</h3>
                         <ul style="margin:0;padding-left:1.1rem;font-size:.88rem">
-                            <li><a href="{{ base_path }}/calculators/job-cost-calculator.html">Job Cost Calculator</a></li>
-                            <li><a href="{{ base_path }}/calculators/hourly-rate-calculator.html">Hourly Rate Calculator</a></li>
-                            <li><a href="{{ base_path }}/calculators/gst-calculator.html">GST Calculator</a></li>
-                            <li><a href="{{ base_path }}/calculators/labour-cost-calculator.html">Labour Cost Calculator</a></li>
+                            <li><a href="{{ base_path }}/calculators/job-cost-calculator">Job Cost Calculator</a></li>
+                            <li><a href="{{ base_path }}/calculators/hourly-rate-calculator">Hourly Rate Calculator</a></li>
+                            <li><a href="{{ base_path }}/calculators/gst-calculator">GST Calculator</a></li>
+                            <li><a href="{{ base_path }}/calculators/labour-cost-calculator">Labour Cost Calculator</a></li>
                             {% if trade.calculator_link %}<li><a href="{{ trade.calculator_link }}">{{ trade.name }} Cost Estimator</a></li>{% endif %}
                         </ul>
                     </div>
                     <div>
                         <h3 style="font-size:.85rem;text-transform:uppercase;letter-spacing:.05em;color:#777;margin:0 0 .6rem">Templates</h3>
                         <ul style="margin:0;padding-left:1.1rem;font-size:.88rem">
-                            <li><a href="{{ base_path }}/templates/quote-template.html">Job Quote Template</a></li>
-                            <li><a href="{{ base_path }}/templates/tax-invoice-template.html">GST Tax Invoice</a></li>
-                            <li><a href="{{ base_path }}/templates/variation-order.html">Variation Order</a></li>
-                            <li><a href="{{ base_path }}/templates/swms.html">Safe Work Method Statement</a></li>
+                            <li><a href="{{ base_path }}/templates/quote-template">Job Quote Template</a></li>
+                            <li><a href="{{ base_path }}/templates/tax-invoice-template">GST Tax Invoice</a></li>
+                            <li><a href="{{ base_path }}/templates/variation-order">Variation Order</a></li>
+                            <li><a href="{{ base_path }}/templates/swms">Safe Work Method Statement</a></li>
                             <li><a href="{{ base_path }}/templates/">All 28 free templates →</a></li>
                         </ul>
                     </div>
@@ -199,9 +199,9 @@
             <div class="sidebar-widget">
                 <h3>Free Calculators</h3>
                 <ul>
-                    <li><a href="{{ base_path }}/calculators/gst-calculator.html">GST Calculator</a></li>
-                    <li><a href="{{ base_path }}/calculators/job-cost-calculator.html">Job Cost Builder</a></li>
-                    <li><a href="{{ base_path }}/calculators/hourly-rate-calculator.html">Hourly Rate</a></li>
+                    <li><a href="{{ base_path }}/calculators/gst-calculator">GST Calculator</a></li>
+                    <li><a href="{{ base_path }}/calculators/job-cost-calculator">Job Cost Builder</a></li>
+                    <li><a href="{{ base_path }}/calculators/hourly-rate-calculator">Hourly Rate</a></li>
                 </ul>
             </div>
             <div class="sidebar-widget">

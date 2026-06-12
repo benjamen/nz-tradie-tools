@@ -38,8 +38,8 @@ You can't manage what you don't measure.
 
 ## Financial Hygiene is Still King
 Waste management is a variable cost that can easily spiral out of control. 
-- **Update Your Pricing:** Ensure your quotes factor in current disposal rates. Use our [job pricing guide](/calculators/job-pricing-guide.html) as a baseline, but add your own waste management factor that reflects your site-specific strategy.
-- **GST and Tax:** Keep your financial reporting exact. Use our [GST Calculator](/calculators/gst-calculator.html) to manage your tax obligations, ensuring you aren't paying more than you need to—especially when you’re investing in more efficient waste practices.
+- **Update Your Pricing:** Ensure your quotes factor in current disposal rates. Use our [job pricing guide](/calculators/job-pricing-guide) as a baseline, but add your own waste management factor that reflects your site-specific strategy.
+- **GST and Tax:** Keep your financial reporting exact. Use our [GST Calculator](/calculators/gst-calculator) to manage your tax obligations, ensuring you aren't paying more than you need to—especially when you’re investing in more efficient waste practices.
 
 ## The Outlook
 The construction industry is in a "reset" phase. The days of casual wastefulness are coming to an end. Businesses that embrace efficiency, prioritize recycling, and manage their disposal costs intelligently are going to be the ones that stay profitable while others struggle.

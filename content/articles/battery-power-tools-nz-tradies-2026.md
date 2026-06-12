@@ -73,11 +73,11 @@ Don't bin damaged batteries in normal rubbish — take them to a Battery Recycli
 
 ## The Buy vs. Hire Calculation
 
-Before you invest in a full new platform, run the numbers on whether certain tools are worth buying at all. A concrete saw or rotary hammer you use twice a year might cost more in maintenance and storage than the hire cost. Use our [Equipment Buy vs Lease vs Hire Calculator](/articles/nz-tradie-equipment-buy-lease-hire-2026.html) to work through the economics before committing.
+Before you invest in a full new platform, run the numbers on whether certain tools are worth buying at all. A concrete saw or rotary hammer you use twice a year might cost more in maintenance and storage than the hire cost. Use our [Equipment Buy vs Lease vs Hire Calculator](/articles/nz-tradie-equipment-buy-lease-hire-2026) to work through the economics before committing.
 
-For the tools you use every day, owning your own platform makes obvious sense — and the costs are fully deductible as a business expense. Make sure you're pricing those costs into your jobs. Our [How to Price a Job guide](/articles/how-to-price-a-job-nz-tradie-guide.html) walks through tool depreciation and overhead recovery in your rates.
+For the tools you use every day, owning your own platform makes obvious sense — and the costs are fully deductible as a business expense. Make sure you're pricing those costs into your jobs. Our [How to Price a Job guide](/articles/how-to-price-a-job-nz-tradie-guide) walks through tool depreciation and overhead recovery in your rates.
 
-Remember: all tool purchases over $1,000 (excl. GST) need to be capitalised and depreciated rather than immediately expensed, unless you're using the low-value asset write-off threshold. Check with your accountant about IRD's current thresholds. Use our [GST Calculator](/calculators/gst-calculator.html) to quickly check GST-exclusive tool prices before you buy.
+Remember: all tool purchases over $1,000 (excl. GST) need to be capitalised and depreciated rather than immediately expensed, unless you're using the low-value asset write-off threshold. Check with your accountant about IRD's current thresholds. Use our [GST Calculator](/calculators/gst-calculator) to quickly check GST-exclusive tool prices before you buy.
 
 ---
 

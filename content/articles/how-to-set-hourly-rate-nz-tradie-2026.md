@@ -58,7 +58,7 @@ List every cost of running your business for the year. Here's a realistic exampl
 | Sundry (stationery, bank fees, etc.) | $300 |
 | **Total overheads** | **$21,300** |
 
-Use our [job costing calculator](/calculators/job-cost-calculator.html) to model your own overhead profile — it lets you enter fixed and variable costs and see how they affect your rate.
+Use our [job costing calculator](/calculators/job-cost-calculator) to model your own overhead profile — it lets you enter fixed and variable costs and see how they affect your rate.
 
 ---
 
@@ -109,13 +109,13 @@ For comparison, [MBIE's construction sector data](https://www.mbie.govt.nz/busin
 
 ## Step 6: Factor in GST
 
-If you're registered for GST (mandatory above $60,000 turnover — see our [GST registration guide](/articles/should-i-register-for-gst-nz-tradie.html)), your charge-out rate is **exclusive of GST**. You'll add 15% on top when invoicing.
+If you're registered for GST (mandatory above $60,000 turnover — see our [GST registration guide](/articles/should-i-register-for-gst-nz-tradie)), your charge-out rate is **exclusive of GST**. You'll add 15% on top when invoicing.
 
 So $105/hour + GST = **$120.75/hour on the invoice**.
 
 Clients often ask for an "all-in" rate including GST. That's fine — just make sure it's clear on the invoice that the rate is GST-inclusive, so you can correctly remit $15.75 of every $120.75 to IRD.
 
-Use our [GST calculator](/calculators/gst-calculator.html) to quickly check what's owed on any invoice.
+Use our [GST calculator](/calculators/gst-calculator) to quickly check what's owed on any invoice.
 
 ---
 
@@ -128,7 +128,7 @@ Once you've set your rate, don't forget to revisit it at least once a year — i
 - **Wage benchmarks** — if employment wages in your trade are rising, your charge-out rate needs to rise too or you'll start losing workers to employment
 - **New overhead costs** — apprentices, a second vehicle, new insurance requirements
 
-See our article on [managing rising material costs in NZ](/articles/managing-rising-material-costs-nz-2026.html) for strategies to protect your margin when input costs spike.
+See our article on [managing rising material costs in NZ](/articles/managing-rising-material-costs-nz-2026) for strategies to protect your margin when input costs spike.
 
 ---
 
@@ -159,4 +159,4 @@ Download our free NZ tradie templates at tradietools.nz/templates/ — including
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

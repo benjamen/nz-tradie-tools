@@ -92,7 +92,7 @@ Compare at least two providers before committing. Southern Cross, Fidelity Life,
 
 ---
 
-Read our guide on [Choosing the Right Insurance for NZ Tradies](/articles/how-to-choose-right-insurance-nz-tradies.html) for a full picture of all the cover types worth considering.
+Read our guide on [Choosing the Right Insurance for NZ Tradies](/articles/how-to-choose-right-insurance-nz-tradies) for a full picture of all the cover types worth considering.
 
 ---
 
@@ -100,4 +100,4 @@ Read our guide on [Choosing the Right Insurance for NZ Tradies](/articles/how-to
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

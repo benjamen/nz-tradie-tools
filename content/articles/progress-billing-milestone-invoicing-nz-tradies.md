@@ -42,7 +42,7 @@ Progress billing solves this directly. Each milestone payment funds the next sta
 
 The Contract and Commercial Law Act 2017 (CCLA) governs most commercial contracts in New Zealand. It doesn't mandate progress billing, but it does provide clear rules around contractual payment terms — meaning whatever you agree in writing is enforceable.
 
-For residential work, the [Building Act 2004](https://legislation.govt.nz/act/public/2004/0072/latest/whole.html) applies. Under the Act:
+For residential work, the [Building Act 2004](https://legislation.govt.nz/act/public/2004/0072/latest/whole) applies. Under the Act:
 
 - All residential building contracts over $30,000 (including GST) must be in writing.
 - The contract must specify the price (or how it will be calculated) and the payment schedule.
@@ -76,7 +76,7 @@ A good milestone payment clause in a quote looks like this:
 >
 > All amounts include GST. Payment is due within 7 days of invoice unless otherwise agreed in writing.
 
-You can use our [Job Cost Calculator](/calculators/job-cost-calculator.html) to work out your total job cost first, then break it into milestone amounts that cover your material outlays at each stage.
+You can use our [Job Cost Calculator](/calculators/job-cost-calculator) to work out your total job cost first, then break it into milestone amounts that cover your material outlays at each stage.
 
 ---
 
@@ -95,7 +95,7 @@ Don't wait until the end of the week. The moment you hit the milestone, the invo
 Apps like Fastcrew ([fastcrew.nz](https://fastcrew.nz)) are built for tradies and let you create progress payment schedules linked to a job, send invoices from your phone on-site, and track which milestones have been paid. That's a big step up from a spreadsheet or paper invoice.
 
 **5. Include GST on each progress invoice**
-Each milestone invoice is a separate tax event. You must include GST on each one if you are GST registered. Use our [GST Calculator](/calculators/gst-calculator.html) if you need to check the breakdown on a specific amount.
+Each milestone invoice is a separate tax event. You must include GST on each one if you are GST registered. Use our [GST Calculator](/calculators/gst-calculator) if you need to check the breakdown on a specific amount.
 
 **6. Know when to stop work**
 Under the Construction Contracts Act, if a client misses a progress payment and doesn't issue a payment schedule, you have the right to suspend work after giving proper notice. This is not a move to make lightly, but it's in the Act for a reason. Use it when a client is stringing you along.
@@ -113,7 +113,7 @@ A verbal agreement to progress billing terms is very hard to enforce. The contra
 **Confusing retention with the final milestone**
 Retention (a percentage held back until a defects period expires) is different from your final progress payment. If you're doing commercial work with retention clauses, make sure your cash flow plan accounts for potentially waiting 6–12 months for that last 5–10%.
 
-For more on managing cash flow across a job, see our guide on [cash flow management for NZ tradies](/articles/cash-flow-management-nz-tradies.html).
+For more on managing cash flow across a job, see our guide on [cash flow management for NZ tradies](/articles/cash-flow-management-nz-tradies).
 
 ---
 
@@ -144,4 +144,4 @@ Download our free NZ tradie templates at [tradietools.nz/templates/](https://tra
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

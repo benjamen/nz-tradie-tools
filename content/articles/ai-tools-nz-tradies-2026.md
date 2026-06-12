@@ -27,7 +27,7 @@ Several tools now use AI to help build faster, more accurate quotes:
 
 **Fergus and Tradify** both have AI-assisted quoting that pulls from your previous job history. If you've done similar work before, the AI suggests line items based on past quotes — handy for plumbers, electricians, and painters who do lots of repeat-style work.
 
-If you're not using job management software yet, our [Quote Builder Wizard](/calculators/quote-builder-wizard.html) is a free starting point for structuring your quotes before you invest in a paid platform.
+If you're not using job management software yet, our [Quote Builder Wizard](/calculators/quote-builder-wizard) is a free starting point for structuring your quotes before you invest in a paid platform.
 
 ## 2. AI for Documents, Contracts, and Scope of Works
 
@@ -48,7 +48,7 @@ One Northland builder made headlines earlier in 2026 after building an AI-powere
 
 The principle is sound: most tradies only spot overruns at the end of a job. AI tools that flag issues mid-job let you adjust before the damage is done.
 
-For smaller operators, a practical approach is to use a job costing template and AI chat tools to analyse where margin is being lost. Our [Breakeven Calculator](/calculators/breakeven-calculator.html) can help you understand your minimum charge-out rate before you dive into per-job numbers.
+For smaller operators, a practical approach is to use a job costing template and AI chat tools to analyse where margin is being lost. Our [Breakeven Calculator](/calculators/breakeven-calculator) can help you understand your minimum charge-out rate before you dive into per-job numbers.
 
 ## 4. Scheduling, Customer Comms, and Lead Response
 
@@ -64,7 +64,7 @@ Some tradies are using AI tools for tax admin — categorising expenses, prepari
 
 **IRD has been clear that you are responsible for the accuracy of your returns, regardless of what software generated them.** AI tools don't know your specific situation, and they can miss NZ-specific rules. The rules around claiming vehicle expenses, home office deductions, and depreciation all have particular IRD requirements that a generic AI tool may get wrong.
 
-Use AI to help you understand your options, then verify with a tax agent before filing. IRD's plain-language guides for sole traders are at ird.govt.nz. See also our guide on [common tax mistakes NZ tradies make](/articles/common-tax-mistakes-nz-tradies.html) before filing this year.
+Use AI to help you understand your options, then verify with a tax agent before filing. IRD's plain-language guides for sole traders are at ird.govt.nz. See also our guide on [common tax mistakes NZ tradies make](/articles/common-tax-mistakes-nz-tradies) before filing this year.
 
 ## What to Ignore (For Now)
 
@@ -87,8 +87,8 @@ Download our free NZ tradie templates at tradietools.nz/templates/ — including
 
 **Read next:**
 
-- [Best Job Management Software for NZ Tradies in 2026](/articles/best-job-management-software-nz-tradies-2026.html)
-- [How to Price a Job: NZ Tradie Guide](/articles/how-to-price-a-job-nz-tradie-guide.html)
+- [Best Job Management Software for NZ Tradies in 2026](/articles/best-job-management-software-nz-tradies-2026)
+- [How to Price a Job: NZ Tradie Guide](/articles/how-to-price-a-job-nz-tradie-guide)
 ---
 
 ## Recommended Resources

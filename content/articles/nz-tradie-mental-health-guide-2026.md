@@ -18,7 +18,7 @@ The downturn of 2024–2025 hit many NZ tradies hard. Rising material costs, thi
 
 Construction work carries unique mental health stressors that office-based workers rarely face:
 
-**Financial volatility** is a constant pressure. If you price a job wrong, absorb a cost blowout, or carry unpaid invoices for months, the financial fallout is immediate and personal. For sole traders and small builders, there's no buffer between the business and the household budget. See our [job costing guide](/articles/job-costing-guide-nz-tradies-2026.html) and [provisional tax explainer](/articles/provisional-tax-nz-tradies.html) for tools to reduce financial stress through better planning.
+**Financial volatility** is a constant pressure. If you price a job wrong, absorb a cost blowout, or carry unpaid invoices for months, the financial fallout is immediate and personal. For sole traders and small builders, there's no buffer between the business and the household budget. See our [job costing guide](/articles/job-costing-guide-nz-tradies-2026) and [provisional tax explainer](/articles/provisional-tax-nz-tradies) for tools to reduce financial stress through better planning.
 
 **Isolation on the tools** is common — especially for sole traders or those running small crews. Long hours on-site, often away from family, with limited peer connection can create loneliness even when surrounded by other workers.
 
@@ -26,7 +26,7 @@ Construction work carries unique mental health stressors that office-based worke
 
 **Macho culture** remains real in many trades. Asking for help, admitting to stress, or talking about a rough patch can feel weak when the norm is to push through. This silence is where the real danger sits.
 
-**Seasonal pressure** is also a factor. Winter in New Zealand slows some trades — particularly exterior painting, roofing, and landscaping — compressing income into fewer months and stretching cash flow into the gap. Managing this proactively is key (see [managing the slow season](/articles/managing-slow-season-nz-tradie.html)).
+**Seasonal pressure** is also a factor. Winter in New Zealand slows some trades — particularly exterior painting, roofing, and landscaping — compressing income into fewer months and stretching cash flow into the gap. Managing this proactively is key (see [managing the slow season](/articles/managing-slow-season-nz-tradie)).
 
 ## What WorkSafe Says
 

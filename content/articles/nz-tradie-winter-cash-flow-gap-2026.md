@@ -40,7 +40,7 @@ The single most effective thing you can do is build a 12-week cash flow forecast
 
 If you can see a $4,000 shortfall coming in week 7, you have time to act — line up a maintenance job, chase an overdue invoice, or talk to your bank. If you wait until week 7, your options shrink.
 
-Use our free [NZ Cash Flow Forecast Calculator](/calculators/cash-flow-forecast.html) to map your next three months.
+Use our free [NZ Cash Flow Forecast Calculator](/calculators/cash-flow-forecast) to map your next three months.
 
 ---
 
@@ -92,9 +92,9 @@ One of the most common reasons tradies get into financial trouble in winter is l
 
 If you're in a tight winter, talk to a tax agent about the **Standard Uplift method** vs the **Estimation method**. If your 2025–26 income is down significantly from 2024–25, you may be able to reduce your May instalment using a lower estimate. This is legal and straightforward — IRD's guidance is at [ird.govt.nz/income-tax/provisional-tax](https://www.ird.govt.nz/income-tax/provisional-tax).
 
-You can also spread your GST timing to avoid large bi-monthly lump sums. See our [GST Calculator](/calculators/gst-calculator.html) to model your quarterly or monthly GST commitments.
+You can also spread your GST timing to avoid large bi-monthly lump sums. See our [GST Calculator](/calculators/gst-calculator) to model your quarterly or monthly GST commitments.
 
-For a full breakdown of provisional tax strategy, read our [Provisional Tax Guide for NZ Tradies](/articles/provisional-tax-nz-tradies.html).
+For a full breakdown of provisional tax strategy, read our [Provisional Tax Guide for NZ Tradies](/articles/provisional-tax-nz-tradies).
 
 ---
 

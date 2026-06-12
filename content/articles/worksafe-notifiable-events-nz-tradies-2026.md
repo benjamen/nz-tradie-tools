@@ -88,7 +88,7 @@ Failure to notify WorkSafe of a notifiable event is a criminal offence under the
 | Disturbing a notifiable scene without authorisation | $10,000 |
 | Failure to keep required records | $2,000 |
 
-WorkSafe doesn't always prosecute for a first offence if you've acted in good faith. But if there's a pattern of non-compliance, negligence played a role, or the event resulted in death, prosecution is very likely. The 2026 amendments to HSWA have also increased WorkSafe's enforcement resources — inspectors are more active on construction sites than they were two years ago. For a full breakdown of recent legislative changes, see our [2026 HSWA Amendment Bill guide for NZ tradies](/articles/hsaw-amendment-bill-2026-nz-tradies.html).
+WorkSafe doesn't always prosecute for a first offence if you've acted in good faith. But if there's a pattern of non-compliance, negligence played a role, or the event resulted in death, prosecution is very likely. The 2026 amendments to HSWA have also increased WorkSafe's enforcement resources — inspectors are more active on construction sites than they were two years ago. For a full breakdown of recent legislative changes, see our [2026 HSWA Amendment Bill guide for NZ tradies](/articles/hsaw-amendment-bill-2026-nz-tradies).
 
 ## Record-Keeping Requirements
 
@@ -111,7 +111,7 @@ Once you report, WorkSafe may:
 3. **Send an inspector to site** — especially for deaths, hospitalisations, or incidents involving falls from height
 4. **Launch a formal investigation** — with access to your health and safety documentation, site records, subcontractor agreements, and worker interviews
 
-Having your H&S documentation in order before anything goes wrong is essential. That means risk assessments, toolbox talk records, induction sign-offs, PPE logs, and site hazard registers. See our [NZ Health & Safety Guide for Tradies](/articles/health-and-safety-guide-nz-tradies.html) for a full breakdown of what you should maintain on every job.
+Having your H&S documentation in order before anything goes wrong is essential. That means risk assessments, toolbox talk records, induction sign-offs, PPE logs, and site hazard registers. See our [NZ Health & Safety Guide for Tradies](/articles/health-and-safety-guide-nz-tradies) for a full breakdown of what you should maintain on every job.
 
 ## Near Misses: Not Required, But Recommended
 
@@ -123,7 +123,7 @@ Every near miss is a warning. Log it, investigate what caused it, and act on it.
 
 If you're working on someone else's site as a subcontractor, you're still a PCBU — and you share overlapping duties with the principal contractor. In practice, the principal usually leads the WorkSafe notification. But if they fail to notify and you're aware of the incident, you can still be liable.
 
-Always confirm that notification has been made, and keep your own record. For more on how contractor arrangements affect your legal responsibilities, see our [subcontractor vs employee gateway test guide](/articles/subcontractor-vs-employee-gateway-test-nz-2026.html).
+Always confirm that notification has been made, and keep your own record. For more on how contractor arrangements affect your legal responsibilities, see our [subcontractor vs employee gateway test guide](/articles/subcontractor-vs-employee-gateway-test-nz-2026).
 
 ## Quick Reference Checklist
 

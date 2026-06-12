@@ -17,7 +17,7 @@ Get it wrong and you're either bleeding cash on gear you barely use, or throwing
 
 ### 1. Buying Outright (Cash or HP)
 
-You own the asset. You claim depreciation each year through IRD, and if you bought the item after 22 May 2025, you may qualify for the **20% Investment Boost** — an accelerated first-year deduction that lets you write off a larger chunk up front. See our article on [the NZ Investment Boost deduction](/articles/nz-tradie-investment-boost-deduction-2026.html) for the full breakdown.
+You own the asset. You claim depreciation each year through IRD, and if you bought the item after 22 May 2025, you may qualify for the **20% Investment Boost** — an accelerated first-year deduction that lets you write off a larger chunk up front. See our article on [the NZ Investment Boost deduction](/articles/nz-tradie-investment-boost-deduction-2026) for the full breakdown.
 
 **Best for:** Equipment you use daily (hand tools, trailers, work vehicles, compressors, power tools). Anything with a working life of 5+ years where daily hire rates would stack up fast.
 
@@ -64,7 +64,7 @@ You rent what you need, when you need it, from a hire company. No ongoing commit
 
 ## Running the Numbers: A Decision Framework
 
-Use our [equipment finance calculator](/calculators/equipment-finance-calculator.html) to model different scenarios side by side. But as a rule of thumb:
+Use our [equipment finance calculator](/calculators/equipment-finance-calculator) to model different scenarios side by side. But as a rule of thumb:
 
 | Scenario | Best Option |
 |---|---|
@@ -85,7 +85,7 @@ IRD publishes depreciation rates for most equipment categories. As a guide:
 - Hand tools (power tools under $1,000): often fully expensed as low-value assets
 - Trailers: 13.5% diminishing value per year
 - Excavators and earthmoving plant: 15–20% diminishing value
-- Vehicles: see our full guide to [NZ tradie vehicle expenses and IRD rules](/articles/vehicle-expenses-nz-tradies-ird.html)
+- Vehicles: see our full guide to [NZ tradie vehicle expenses and IRD rules](/articles/vehicle-expenses-nz-tradies-ird)
 
 For assets bought after 22 May 2025, the Investment Boost effectively doubles your first-year deduction — a meaningful advantage if you're looking at a large purchase before 31 March 2027.
 
@@ -131,7 +131,7 @@ For trade credit and equipment finance over $50,000, MBIE encourages businesses 
 
 The right answer depends on your trade, your cash position, and how often you'll actually use the gear. Daily users should almost always buy (especially with the Investment Boost available). Occasional users hire. Consistent-but-not-daily users lease.
 
-Use our free [equipment finance calculator](/calculators/equipment-finance-calculator.html) to model the real cost difference before you commit.
+Use our free [equipment finance calculator](/calculators/equipment-finance-calculator) to model the real cost difference before you commit.
 
 **Download our free NZ tradie templates at tradietools.nz/templates/** — including equipment purchase comparison spreadsheets and hire-vs-buy worksheets.
 

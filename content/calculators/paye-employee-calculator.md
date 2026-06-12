@@ -111,4 +111,4 @@ ACC levies are updated annually. Check the [ACC website](https://www.acc.co.nz/f
 
 Budget **20–30% on top of gross salary** for the true employer cost. A $65,000/yr employee typically costs **$78,000–$85,000** all-in.
 
-See our [Overtime Calculator](/calculators/overtime-calculator.html) for weekly pay breakdowns.
+See our [Overtime Calculator](/calculators/overtime-calculator) for weekly pay breakdowns.

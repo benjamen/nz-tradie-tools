@@ -69,7 +69,7 @@ Underclaiming is just as expensive as overclaiming — you just give the money t
 - **Tools under $1,000** (can be immediately expensed rather than depreciated)
 - **The 20% Investment Boost** (currently available on eligible depreciable assets — check if your recent tool purchases qualify)
 
-**Fix:** Review our [NZ Tradie Tax Deductions Guide](/articles/nz-tradie-tax-guide-what-you-can-claim.html) and take the list to your accountant every year. Good accountants ask about new assets and expenses — but they can only claim what you tell them about.
+**Fix:** Review our [NZ Tradie Tax Deductions Guide](/articles/nz-tradie-tax-guide-what-you-can-claim) and take the list to your accountant every year. Good accountants ask about new assets and expenses — but they can only claim what you tell them about.
 
 ## Mistake 8: Having No Professional Tax Advice
 
@@ -92,7 +92,7 @@ A good accountant typically costs $1,000–$2,500/year for a sole trader tradie.
 
 ---
 
-Our free [Vehicle Log Book template](/templates/vehicle-log-book.html) is IRD-compliant and ready to print. And use our [GST Calculator](/calculators/gst-calculator.html) to keep on top of what you're collecting and what you owe.
+Our free [Vehicle Log Book template](/templates/vehicle-log-book) is IRD-compliant and ready to print. And use our [GST Calculator](/calculators/gst-calculator) to keep on top of what you're collecting and what you owe.
 
 ---
 
@@ -100,7 +100,7 @@ Our free [Vehicle Log Book template](/templates/vehicle-log-book.html) is IRD-co
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.
 ---
 
 ## Recommended Resources

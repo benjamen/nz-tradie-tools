@@ -40,7 +40,7 @@ If an agreement doesn't meet the new statutory requirements, the arrangement doe
 
 The Employment Relations Authority has already signalled it will look carefully at whether agreements genuinely reflect the new requirements, not just whether they include the right buzzwords.
 
-If you use subbies — whether you're a building company, an electrical contractor, a plumbing business, or a painting firm — it's worth reviewing your standard subcontractor agreement against the new criteria. Not sure whether your current arrangements are at risk? Our [Contractor vs Employee Calculator](/calculators/contractor-vs-employee-calculator.html) can help you assess where your arrangements sit before you speak to a lawyer.
+If you use subbies — whether you're a building company, an electrical contractor, a plumbing business, or a painting firm — it's worth reviewing your standard subcontractor agreement against the new criteria. Not sure whether your current arrangements are at risk? Our [Contractor vs Employee Calculator](/calculators/contractor-vs-employee-calculator) can help you assess where your arrangements sit before you speak to a lawyer.
 
 ---
 
@@ -75,9 +75,9 @@ Here's what you should do if you use subbies:
 
 **3. Get new agreements signed.** For ongoing relationships where the old agreement doesn't meet the new requirements, issue updated agreements as soon as possible. Under the 2026 Act, a worker who has been performing work under a non-compliant agreement can still apply to the ERA if a dispute arises before a compliant agreement is signed.
 
-**4. Don't confuse the legal classification with the tax obligation.** Even if your subbies are correctly classified as contractors under employment law, IRD still applies its own tests to determine whether PAYE should be deducted. These are separate frameworks. A "specified contractor" may still be a "schedular payment" earner under the Income Tax Act, requiring you to deduct withholding tax. For a refresher on what you can claim and how contractor tax works, see our [NZ Tradie Tax Guide](/articles/nz-tradie-tax-guide-what-you-can-claim.html) and the previous [Gateway Test explainer](/articles/subcontractor-vs-employee-gateway-test-nz-2026.html).
+**4. Don't confuse the legal classification with the tax obligation.** Even if your subbies are correctly classified as contractors under employment law, IRD still applies its own tests to determine whether PAYE should be deducted. These are separate frameworks. A "specified contractor" may still be a "schedular payment" earner under the Income Tax Act, requiring you to deduct withholding tax. For a refresher on what you can claim and how contractor tax works, see our [NZ Tradie Tax Guide](/articles/nz-tradie-tax-guide-what-you-can-claim) and the previous [Gateway Test explainer](/articles/subcontractor-vs-employee-gateway-test-nz-2026).
 
-**5. Use the right tools to track rates.** One downstream benefit of proper contractor classification is that you can negotiate and manage contractor rates more flexibly. Our [Hourly Rate Calculator](/calculators/hourly-rate-calculator.html) is useful for working out what you need to charge (or pay) to cover your actual costs.
+**5. Use the right tools to track rates.** One downstream benefit of proper contractor classification is that you can negotiate and manage contractor rates more flexibly. Our [Hourly Rate Calculator](/calculators/hourly-rate-calculator) is useful for working out what you need to charge (or pay) to cover your actual costs.
 
 ---
 

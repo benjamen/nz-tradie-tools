@@ -162,4 +162,4 @@ A bathroom renovation is one of the most popular home improvements in New Zealan
 
 ### Always Get 3 Quotes
 
-Bathroom quotes vary enormously. Use our [Job Cost Calculator](/calculators/job-cost-calculator.html) to sanity-check any quote before signing.
+Bathroom quotes vary enormously. Use our [Job Cost Calculator](/calculators/job-cost-calculator) to sanity-check any quote before signing.

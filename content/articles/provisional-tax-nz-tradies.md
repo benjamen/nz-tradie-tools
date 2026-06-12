@@ -91,7 +91,7 @@ You pay little when business is slow and more when it's good. For tradies with s
 
 ---
 
-Use our free [Job Cost Calculator](/calculators/job-cost-calculator.html) to check your actual margins, and read our [NZ Tradie Tax Guide](/articles/nz-tradie-tax-guide-what-you-can-claim.html) for a full breakdown of deductions available to you.
+Use our free [Job Cost Calculator](/calculators/job-cost-calculator) to check your actual margins, and read our [NZ Tradie Tax Guide](/articles/nz-tradie-tax-guide-what-you-can-claim) for a full breakdown of deductions available to you.
 
 ---
 
@@ -99,4 +99,4 @@ Use our free [Job Cost Calculator](/calculators/job-cost-calculator.html) to che
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

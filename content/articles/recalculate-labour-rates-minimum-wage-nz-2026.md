@@ -41,7 +41,7 @@ The wage is only half the story. Your total employment cost includes:
 
 Not $23.95. That 17% buffer is the difference between a competitive quote and a loss-making one.
 
-Check your own figures with our [**Labour Cost Calculator**](/calculators/labour-cost-calculator.html) — it accounts for your specific ACC classification and contribution rates.
+Check your own figures with our [**Labour Cost Calculator**](/calculators/labour-cost-calculator) — it accounts for your specific ACC classification and contribution rates.
 
 ## Step 2: Add Your Overhead and Profit Margin
 
@@ -63,7 +63,7 @@ A typical overhead rate for tradie businesses is **30–50%** of labour cost. Us
 - Desired profit margin (25%): $9.73/hr
 - **Charge-out rate: $48.64/hr**
 
-Our [**Job Costing Calculator**](/calculators/job-costing-guide.html) lets you input your exact overheads and target margin to see your rate in real time.
+Our [**Job Costing Calculator**](/calculators/job-costing-guide) lets you input your exact overheads and target margin to see your rate in real time.
 
 ## Step 3: Audit Your Current Quote Templates
 
@@ -122,9 +122,9 @@ If they don't, adjust. Your business depends on it.
 
 ## Tools and Resources
 
-- **[Labour Cost Calculator](/calculators/labour-cost-calculator.html)** — Input your wage, ACC classification, and KiwiSaver to calculate all-in cost
-- **[Job Costing Guide](/calculators/job-costing-guide.html)** — Plug in overhead rate and profit target to see your exact charge-out rate
-- **[Markup vs. Margin Calculator](/calculators/markup-margin.html)** — Avoid the classic 42% markup = 42% margin mistake
+- **[Labour Cost Calculator](/calculators/labour-cost-calculator)** — Input your wage, ACC classification, and KiwiSaver to calculate all-in cost
+- **[Job Costing Guide](/calculators/job-costing-guide)** — Plug in overhead rate and profit target to see your exact charge-out rate
+- **[Markup vs. Margin Calculator](/calculators/markup-margin)** — Avoid the classic 42% markup = 42% margin mistake
 - **[ACC.co.nz](https://www.acc.co.nz)** — Verify your exact ACC levy rate
 - **[IRD Employment Guides](https://www.ird.govt.nz)** — Employer obligations and withholding tax rates
 

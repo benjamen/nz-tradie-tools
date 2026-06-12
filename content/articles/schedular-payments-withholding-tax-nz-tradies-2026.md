@@ -18,7 +18,7 @@ Here's everything NZ tradies need to know.
 
 A schedular payment is a payment made to a contractor or subcontractor for services that fall within IRD's defined schedular activity list. Labour in the construction industry — including carpentry, plumbing, electrical, painting, roofing and general building work — is explicitly included.
 
-The key difference from wages is that the worker is *not* your employee. If they pass the [gateway test for subcontractors](/articles/subcontractor-vs-employee-gateway-test-nz-2026.html) and you're engaging them as an independent contractor, schedular payment rules likely apply.
+The key difference from wages is that the worker is *not* your employee. If they pass the [gateway test for subcontractors](/articles/subcontractor-vs-employee-gateway-test-nz-2026) and you're engaging them as an independent contractor, schedular payment rules likely apply.
 
 IRD originally called these "withholding payments" — you may still see that term in older IRD publications. The rules are governed by the Income Tax Act 2007 and updated guidance is published on the [IRD website](https://www.ird.govt.nz/income-tax/withholding-taxes/schedular-payments).
 
@@ -92,13 +92,13 @@ You can also use **[Fastcrew](https://fastcrew.nz)** to manage your subcontracto
 
 **Mixing up materials and labour.** If a subbi invoices you $8,000 for "supply and install" and $6,000 of that is materials, withholding tax only applies to the labour component ($2,000 in this case). Ask subcontractors to itemise their invoices clearly.
 
-**Forgetting the 20th deadline.** IRD charges [use-of-money interest](/articles/provisional-tax-nz-tradies.html) on late payments. With the UOMI rate sitting at 10.91% per annum in 2026, even a few months of late payment adds up. Set a calendar reminder for the 19th of each month to process your schedular payment return.
+**Forgetting the 20th deadline.** IRD charges [use-of-money interest](/articles/provisional-tax-nz-tradies) on late payments. With the UOMI rate sitting at 10.91% per annum in 2026, even a few months of late payment adds up. Set a calendar reminder for the 19th of each month to process your schedular payment return.
 
 ---
 
 ## GST and Schedular Payments
 
-Withholding tax is calculated on the **GST-exclusive** amount of the payment. If your subbi is GST-registered and invoices you $5,000 + $750 GST = $5,750, you apply the withholding rate to $5,000 only. You pay the full $750 GST component as normal through your [GST return](/calculators/gst-calculator.html).
+Withholding tax is calculated on the **GST-exclusive** amount of the payment. If your subbi is GST-registered and invoices you $5,000 + $750 GST = $5,750, you apply the withholding rate to $5,000 only. You pay the full $750 GST component as normal through your [GST return](/calculators/gst-calculator).
 
 ---
 

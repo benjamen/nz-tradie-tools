@@ -72,11 +72,11 @@ Stop quoting materials at ballpark rates. Call your supplier, get a written pric
 
 ### Use Job Costing to Track Material Margins
 
-It's not enough to win the job — you need to know whether you made money on materials. The [NZ Job Cost Calculator](/calculators/job-cost-calculator.html) lets you separate your materials margin from your labour margin, so you can see exactly where any shortfall came from and fix it on the next quote.
+It's not enough to win the job — you need to know whether you made money on materials. The [NZ Job Cost Calculator](/calculators/job-cost-calculator) lets you separate your materials margin from your labour margin, so you can see exactly where any shortfall came from and fix it on the next quote.
 
 ### Build a Materials Allowance Into Your Overhead Rate
 
-If you're regularly absorbing small material cost blowouts — a bit extra on fixings, a mid-project price increase on timber — these need to be captured in your overhead rate, not swallowed as lost margin. Use the [Quote Builder Wizard](/calculators/quote-builder-wizard.html) to build quotes that account for your overhead rate, materials markup, and labour rate together.
+If you're regularly absorbing small material cost blowouts — a bit extra on fixings, a mid-project price increase on timber — these need to be captured in your overhead rate, not swallowed as lost margin. Use the [Quote Builder Wizard](/calculators/quote-builder-wizard) to build quotes that account for your overhead rate, materials markup, and labour rate together.
 
 ### Consider Buying Ahead on High-Movement Items
 
@@ -92,7 +92,7 @@ If timber is up 5.2% and you have confirmed work lined up, consider buying frami
 
 **Painters** — Finishing material costs are up modestly. Tighten your material quantities to avoid over-ordering, and don't underestimate coverage rates on new products.
 
-For a broader strategy on managing cost pressures across a full project, see our guide to [managing rising material costs as an NZ tradie](/articles/managing-rising-material-costs-nz-2026.html).
+For a broader strategy on managing cost pressures across a full project, see our guide to [managing rising material costs as an NZ tradie](/articles/managing-rising-material-costs-nz-2026).
 
 ## Winter Pricing Strategy
 

@@ -27,7 +27,7 @@ Tiler rates in NZ vary by experience, region, and job complexity. Based on curre
 
 **Auckland and Wellington** tend to run 10–15% above national averages. **Southland and West Coast** sit slightly below. Factor your local market into your baseline rate.
 
-Use the [NZ Hourly Rate Calculator](/calculators/hourly-rate-calculator.html) if you want to double-check your rate covers your actual costs — many tilers underprice when they don't account for travel, downtime between jobs, and vehicle expenses.
+Use the [NZ Hourly Rate Calculator](/calculators/hourly-rate-calculator) if you want to double-check your rate covers your actual costs — many tilers underprice when they don't account for travel, downtime between jobs, and vehicle expenses.
 
 ---
 
@@ -62,7 +62,7 @@ Here are ballpark totals for common tiling projects in 2026:
 
 These are starting points. Always price by the specific job — a 5 sqm bathroom with niches, underfloor heating, and complex cuts will take three times as long as a simple laundry.
 
-Use the [NZ Tile Calculator](/calculators/tile-calculator.html) to calculate tile quantities, waste factors, and material costs before you quote.
+Use the [NZ Tile Calculator](/calculators/tile-calculator) to calculate tile quantities, waste factors, and material costs before you quote.
 
 ---
 
@@ -86,7 +86,7 @@ Always allow **10–15% tile wastage** in your material calculations (more for d
 
 ### 1. Separate labour from materials
 
-Quote materials at cost-plus a markup (typically 15–25% on tiling supplies is reasonable). This protects you if prices shift between quote and purchase. See [Materials Markup Strategy for NZ Tradies](/articles/materials-markup-strategy-nz-tradies-2026.html) for guidance on what's defensible.
+Quote materials at cost-plus a markup (typically 15–25% on tiling supplies is reasonable). This protects you if prices shift between quote and purchase. See [Materials Markup Strategy for NZ Tradies](/articles/materials-markup-strategy-nz-tradies-2026) for guidance on what's defensible.
 
 ### 2. Price prep work separately
 
@@ -102,13 +102,13 @@ Simple square rooms with standard 400x400 tiles are fast. Diagonal layouts, mosa
 
 ### 5. Apply your actual overhead, not a guess
 
-Many tilers use a ballpark "1.5x labour" rule for quoting, but this doesn't account for your actual vehicle costs, ACC levies, insurance, and admin time. Use the [NZ Job Cost Calculator](/calculators/job-cost-calculator.html) to build quotes from real numbers.
+Many tilers use a ballpark "1.5x labour" rule for quoting, but this doesn't account for your actual vehicle costs, ACC levies, insurance, and admin time. Use the [NZ Job Cost Calculator](/calculators/job-cost-calculator) to build quotes from real numbers.
 
 ---
 
 ## What IRD Expects from Tiling Contractors
 
-If you're self-employed or running a tiling business, IRD treats materials differently from labour for GST purposes — but the end result is the same: you charge GST on the total invoice (labour + materials + markup) once your turnover exceeds $60,000/year. If you're close to that threshold, see [Should I Register for GST?](/articles/should-i-register-for-gst-nz-tradie.html) to understand your obligations.
+If you're self-employed or running a tiling business, IRD treats materials differently from labour for GST purposes — but the end result is the same: you charge GST on the total invoice (labour + materials + markup) once your turnover exceeds $60,000/year. If you're close to that threshold, see [Should I Register for GST?](/articles/should-i-register-for-gst-nz-tradie) to understand your obligations.
 
 For business expenses, tiling tools are depreciable assets under IRD's schedule. The Investment Boost deduction — introduced in May 2025 — allows a 20% one-off deduction on new eligible assets, so major tile saw, grinder, or mixer purchases made since then may qualify for accelerated write-off.
 

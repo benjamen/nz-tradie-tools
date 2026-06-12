@@ -51,7 +51,7 @@ Larger tools and equipment must be depreciated over their useful life using IRD'
 | Mobile phones | 48% |
 | Cameras and measuring equipment | 30% |
 
-Use our [Depreciation Calculator](/calculators/depreciation-calculator.html) to calculate your exact deduction each year.
+Use our [Depreciation Calculator](/calculators/depreciation-calculator) to calculate your exact deduction each year.
 
 **Tip:** Pool your assets. If you buy multiple items of equipment throughout the year, each one under $1,000 can be written off immediately. If you're buying something just over $1,000, it's worth considering whether you genuinely need that exact item or whether a functionally equivalent item under $1,000 would do the job.
 
@@ -80,7 +80,7 @@ Most trades vehicles that travel to job sites are 70–85% business use. At 80%,
 - Loan interest (on the vehicle purchase loan)
 - Depreciation (20% DV for cars and utes)
 
-**Alternatively, use IRD's kilometre rates** — you multiply business kilometres by the Tier 1 rate (73 cents/km for the first 14,000 business km in 2024–25, then 21 cents/km above that). This method is simpler but usually results in a smaller deduction for high-mileage tradies. Use our [Vehicle Mileage Calculator](/calculators/vehicle-mileage-calculator.html) to compare both methods.
+**Alternatively, use IRD's kilometre rates** — you multiply business kilometres by the Tier 1 rate (73 cents/km for the first 14,000 business km in 2024–25, then 21 cents/km above that). This method is simpler but usually results in a smaller deduction for high-mileage tradies. Use our [Vehicle Mileage Calculator](/calculators/vehicle-mileage-calculator) to compare both methods.
 
 ### Dedicated Work Vehicle
 
@@ -273,4 +273,4 @@ Use software like [Fastcrew](https://fastcrew.nz) to keep your job costs and inc
 
 ---
 
-*NZ Tradie Tools provides free calculators, templates, and guides for New Zealand tradies. Download our free [Vehicle Log Book template](/templates/vehicle-log-book.html), use the [Depreciation Calculator](/calculators/depreciation-calculator.html), and keep all your deduction records organised through the year. For definitive guidance, refer to [ird.govt.nz](https://www.ird.govt.nz) or consult a registered tax agent.*
+*NZ Tradie Tools provides free calculators, templates, and guides for New Zealand tradies. Download our free [Vehicle Log Book template](/templates/vehicle-log-book), use the [Depreciation Calculator](/calculators/depreciation-calculator), and keep all your deduction records organised through the year. For definitive guidance, refer to [ird.govt.nz](https://www.ird.govt.nz) or consult a registered tax agent.*

@@ -194,7 +194,7 @@ As a rough guide:
 - **$70,000–$100,000:** The case is starting to build, especially if you can retain profits and have liability concerns.
 - **Over $100,000 consistently:** Talk to your accountant seriously. The tax saving is real.
 
-Use our [Hourly Rate Calculator](/calculators/hourly-rate-calculator.html) to accurately calculate your net profit before making this decision, and consider [Fastcrew](https://fastcrew.nz) for tracking job profitability so you always know where your business actually sits.
+Use our [Hourly Rate Calculator](/calculators/hourly-rate-calculator) to accurately calculate your net profit before making this decision, and consider [Fastcrew](https://fastcrew.nz) for tracking job profitability so you always know where your business actually sits.
 
 ---
 

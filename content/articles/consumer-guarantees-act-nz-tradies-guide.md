@@ -56,7 +56,7 @@ The best defence against a consumer law dispute is a clear, written quote or con
 
 **1. Specify the scope precisely.** A vague scope ("renovate bathroom") is an invitation for disputes. List what's included and what isn't — tile supply, removal of existing fittings, compliance certificates, painting, making good around new fixtures.
 
-**2. Price clearly, including GST.** If you're GST-registered, your quote must show the GST-inclusive price, or clearly state it's GST-exclusive with the GST amount shown separately. Our [GST calculator](/calculators/gst-calculator.html) can help you break it down correctly on every quote.
+**2. Price clearly, including GST.** If you're GST-registered, your quote must show the GST-inclusive price, or clearly state it's GST-exclusive with the GST amount shown separately. Our [GST calculator](/calculators/gst-calculator) can help you break it down correctly on every quote.
 
 **3. Reference the standard you're working to.** Citing NZ Standards, the Building Code, or manufacturer installation guidelines in your quote makes it far easier to demonstrate reasonable care and skill if a dispute arises later.
 
@@ -64,7 +64,7 @@ The best defence against a consumer law dispute is a clear, written quote or con
 
 **5. State when the CGA doesn't apply.** For genuine commercial contracts, you can include a clause limiting your liability. Get legal advice if you're unsure — a standard tradie contract template from a NZ solicitor typically costs $300–$500 and is worth every cent.
 
-See our [guide to writing quotes that win jobs](/articles/how-to-write-a-quote-that-wins-jobs-nz.html) and our [NZ tradie contract guide](/articles/tradie-contract-guide-nz.html) for practical templates and clause examples.
+See our [guide to writing quotes that win jobs](/articles/how-to-write-a-quote-that-wins-jobs-nz) and our [NZ tradie contract guide](/articles/tradie-contract-guide-nz) for practical templates and clause examples.
 
 ## Disputes: What Actually Happens
 
@@ -103,7 +103,7 @@ Download our free NZ tradie templates at tradietools.nz/templates/ — including
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.
 ---
 
 ## Recommended Resources

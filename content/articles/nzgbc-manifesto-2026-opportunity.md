@@ -37,8 +37,8 @@ Energy-efficient work requires a higher standard of technical and administrative
 
 - **Stay Updated:** Keep track of the NZGBC manifesto developments. If rebates or loans are introduced, your clients will want to know how they can access them.
 - **Perfect Your Documentation:** Energy-efficient work often comes with strict certification and performance requirements. Use tools like [Fastcrew](https://fastcrew.nz) to maintain clear records of product specifications, installation standards, and energy performance metrics for every job.
-- **Optimize Your Pricing:** Energy-efficient materials and systems can be expensive. Ensure your quotes accurately reflect the cost of these premium components and the specialized time required for installation. Use our [job pricing guide](/calculators/job-pricing-guide.html) as a baseline, but tailor your pricing to the specific demands of these projects.
-- **Financial Health:** As you invest in new equipment or training, keep your cash flow strong. Use our [GST Calculator](/calculators/gst-calculator.html) to maintain absolute precision in your tax reporting.
+- **Optimize Your Pricing:** Energy-efficient materials and systems can be expensive. Ensure your quotes accurately reflect the cost of these premium components and the specialized time required for installation. Use our [job pricing guide](/calculators/job-pricing-guide) as a baseline, but tailor your pricing to the specific demands of these projects.
+- **Financial Health:** As you invest in new equipment or training, keep your cash flow strong. Use our [GST Calculator](/calculators/gst-calculator) to maintain absolute precision in your tax reporting.
 
 ## The Outlook
 New Zealand is moving towards a more sustainable built environment. The transition won't happen overnight, but it is inevitable. The tradies who embrace this shift—focusing on quality, efficiency, and expert knowledge—will find themselves in high demand, regardless of what the broader economic conditions look like.
@@ -49,4 +49,4 @@ Start asking your clients about their energy efficiency goals today. You might b
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

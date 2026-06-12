@@ -326,8 +326,8 @@ Work through the four steps to build a complete, print-ready quote:
 ### After the Quote is Accepted
 
 Once your client signs the quote:
-- Issue a **deposit invoice** if required (use our [Tax Invoice Template](/templates/tax-invoice-template.html))
-- For any scope changes, issue a **variation order** before doing the extra work ([Variation Order template](/templates/variation-order.html))
+- Issue a **deposit invoice** if required (use our [Tax Invoice Template](/templates/tax-invoice-template))
+- For any scope changes, issue a **variation order** before doing the extra work ([Variation Order template](/templates/variation-order))
 - At completion, issue the **final invoice** referencing the original quote number
 
-Use our [Job Cost Calculator](/calculators/job-cost-calculator.html) to check your margins after the job is done.
+Use our [Job Cost Calculator](/calculators/job-cost-calculator) to check your margins after the job is done.

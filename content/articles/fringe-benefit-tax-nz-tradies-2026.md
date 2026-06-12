@@ -18,7 +18,7 @@ Here's what you need to know.
 
 Fringe Benefit Tax is a tax paid by **employers** on non-cash benefits they provide to employees. If you're a sole trader, FBT doesn't apply — but if you're a company director and shareholder who draws a wage (even $0), your company is the employer and you're the employee. That means company-provided vehicles, tools, phones, and fuel cards can all trigger FBT.
 
-FBT is governed by the Income Tax Act 2007 and administered by Inland Revenue (ird.govt.nz). It's not a new tax, but it catches many tradies off-guard when they first move from sole trader to company structure. If you're still weighing that decision, see our [sole trader vs company guide](/articles/sole-trader-vs-company-nz-tradies.html) for the full breakdown.
+FBT is governed by the Income Tax Act 2007 and administered by Inland Revenue (ird.govt.nz). It's not a new tax, but it catches many tradies off-guard when they first move from sole trader to company structure. If you're still weighing that decision, see our [sole trader vs company guide](/articles/sole-trader-vs-company-nz-tradies) for the full breakdown.
 
 ## The Company Vehicle Problem
 
@@ -69,7 +69,7 @@ Vehicles aren't the only FBT trigger. Other common tradie benefits include:
 
 **Mobile phones**: A single phone provided to an employee for business use is FBT-exempt. Problems arise if the company pays for a personal upgrade or the family plan. Keep it to one business phone per employee and retain records showing business use.
 
-**Fuel cards**: If your company issues a fuel card, fuel used for private travel is a fringe benefit. Many tradie companies avoid this by reimbursing actual business fuel costs rather than issuing an open-ended card. See our [vehicle expenses guide](/articles/vehicle-expenses-nz-tradies-ird.html) for how IRD expects you to split private and business costs.
+**Fuel cards**: If your company issues a fuel card, fuel used for private travel is a fringe benefit. Many tradie companies avoid this by reimbursing actual business fuel costs rather than issuing an open-ended card. See our [vehicle expenses guide](/articles/vehicle-expenses-nz-tradies-ird) for how IRD expects you to split private and business costs.
 
 **Low-value benefits exemption**: IRD allows a de minimis exemption — benefits under **$300 per quarter per employee** (up to $1,200 per year) are FBT-exempt. This covers the occasional safety gear purchase or staff shout without triggering FBT paperwork.
 
@@ -104,7 +104,7 @@ For keeping your admin tight day-to-day, **[Fastcrew](https://fastcrew.nz)** is 
 
 ## Getting Your Numbers Right
 
-If you're unsure about your FBT exposure, start by modelling your overall tax position using the [GST calculator at tradietools.nz](/calculators/gst-calculator.html). Then make sure your job pricing accounts for the real cost of running a company vehicle — our [hourly rate calculator](/articles/how-to-set-hourly-rate-nz-tradie-2026.html) includes a section on vehicle running costs that you can adjust to include FBT.
+If you're unsure about your FBT exposure, start by modelling your overall tax position using the [GST calculator at tradietools.nz](/calculators/gst-calculator). Then make sure your job pricing accounts for the real cost of running a company vehicle — our [hourly rate calculator](/articles/how-to-set-hourly-rate-nz-tradie-2026) includes a section on vehicle running costs that you can adjust to include FBT.
 
 Most tradie accountants can run a free FBT health check. It's worth a 30-minute call before IRD makes contact — the cost of sorting it out proactively is a fraction of the penalties and back-tax if you're caught out.
 

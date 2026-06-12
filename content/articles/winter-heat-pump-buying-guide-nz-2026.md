@@ -109,8 +109,8 @@ If you want installation before the worst of winter, book now. If you're flexibl
 
 → [Find heat pump installers near you](/trades/electricians/)
 
-→ [Check heat pump installation quotes](/calculators/is-my-quote-fair.html)
+→ [Check heat pump installation quotes](/calculators/is-my-quote-fair)
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

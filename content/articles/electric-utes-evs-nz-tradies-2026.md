@@ -44,7 +44,7 @@ Fuel is one of the biggest variable costs for tradespeople. Here's a quick compa
 
 Servicing costs also drop significantly. Electric drivetrains have fewer moving parts — no oil changes, no timing belt, no exhaust maintenance. Many tradies are saving a further $1,000–$2,000/year in servicing once they switch.
 
-Use the [Vehicle Mileage Calculator](/calculators/vehicle-mileage-calculator.html) to model your own costs based on actual kilometres driven.
+Use the [Vehicle Mileage Calculator](/calculators/vehicle-mileage-calculator) to model your own costs based on actual kilometres driven.
 
 ---
 
@@ -66,7 +66,7 @@ If you run your ute through a company and it's available for private use, you're
 
 IRD has also simplified logbook requirements under the new rules, reducing compliance costs alongside the tax saving.
 
-For a full breakdown of how FBT applies to your business vehicle, see [FBT for NZ Tradies 2026](/articles/fringe-benefit-tax-nz-tradies-2026.html).
+For a full breakdown of how FBT applies to your business vehicle, see [FBT for NZ Tradies 2026](/articles/fringe-benefit-tax-nz-tradies-2026).
 
 ---
 
@@ -90,9 +90,9 @@ Instant torque from an electric motor makes EVs excellent towing vehicles within
 
 The purchase price of EV utes is higher upfront than comparable diesel models, but this gap is closing. Running cost savings mean the total cost of ownership often favours the EV over a 5-year period.
 
-Under the **Investment Boost deduction** introduced in 2025, eligible business assets — including vehicles used for business purposes — can be deducted at an accelerated rate, improving first-year cash flow when you purchase outright. Use the [Depreciation Calculator](/calculators/depreciation-calculator.html) to estimate your annual write-down.
+Under the **Investment Boost deduction** introduced in 2025, eligible business assets — including vehicles used for business purposes — can be deducted at an accelerated rate, improving first-year cash flow when you purchase outright. Use the [Depreciation Calculator](/calculators/depreciation-calculator) to estimate your annual write-down.
 
-For tradies who prefer to preserve working capital, equipment finance on an EV ute is widely available. See the full breakdown of options in [Buy vs Lease vs Hire for NZ Tradies](/articles/nz-tradie-equipment-buy-lease-hire-2026.html).
+For tradies who prefer to preserve working capital, equipment finance on an EV ute is widely available. See the full breakdown of options in [Buy vs Lease vs Hire for NZ Tradies](/articles/nz-tradie-equipment-buy-lease-hire-2026).
 
 ---
 

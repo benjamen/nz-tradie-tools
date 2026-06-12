@@ -1531,7 +1531,7 @@ If payment is not received by [date — 7 days from this letter], we will have n
                     <h3>Other Templates</h3>
                     <ul>
                         {% for t in other_templates %}
-                        <li><a href="{{ base_path }}/templates/{{ t.slug }}.html">{{ t.icon }} {{ t.title }}</a></li>
+                        <li><a href="{{ base_path }}/templates/{{ t.slug }}">{{ t.icon }} {{ t.title }}</a></li>
                         {% endfor %}
                     </ul>
                 </div>
@@ -1541,15 +1541,15 @@ If payment is not received by [date — 7 days from this letter], we will have n
         <section style="margin:2rem 0 1rem" class="no-print">
             <h2>More Free Tools for NZ Tradies</h2>
             <div style="display:flex;flex-wrap:wrap;gap:.75rem">
-                <a href="{{ base_path }}/calculators/job-cost-calculator.html" class="card" style="flex:1;min-width:200px;padding:1rem">
+                <a href="{{ base_path }}/calculators/job-cost-calculator" class="card" style="flex:1;min-width:200px;padding:1rem">
                     <strong>Job Cost Calculator</strong>
                     <p style="font-size:.85rem;margin:.3rem 0 0;color:#555">Calculate labour, materials and GST</p>
                 </a>
-                <a href="{{ base_path }}/calculators/gst-calculator.html" class="card" style="flex:1;min-width:200px;padding:1rem">
+                <a href="{{ base_path }}/calculators/gst-calculator" class="card" style="flex:1;min-width:200px;padding:1rem">
                     <strong>GST Calculator</strong>
                     <p style="font-size:.85rem;margin:.3rem 0 0;color:#555">Add or remove 15% GST instantly</p>
                 </a>
-                <a href="{{ base_path }}/calculators/hourly-rate-calculator.html" class="card" style="flex:1;min-width:200px;padding:1rem">
+                <a href="{{ base_path }}/calculators/hourly-rate-calculator" class="card" style="flex:1;min-width:200px;padding:1rem">
                     <strong>Hourly Rate Calculator</strong>
                     <p style="font-size:.85rem;margin:.3rem 0 0;color:#555">Work out what you should be charging</p>
                 </a>

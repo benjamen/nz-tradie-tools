@@ -41,13 +41,13 @@ Electricians, plumbers, and gasfitters are similarly licensed through the [Elect
 
 Any tradie earning over $60,000 per year must be registered for GST. If you're registered, include your GST number on every invoice. Customers can cross-check it at the IRD. A scammer operating cash-in-hand has no GST number to show.
 
-Even if you're under the $60,000 threshold and GST registration is voluntary, being registered and displaying your number adds credibility. Use our [GST calculator](/calculators/gst-calculator.html) to understand when registration makes sense for your situation.
+Even if you're under the $60,000 threshold and GST registration is voluntary, being registered and displaying your number adds credibility. Use our [GST calculator](/calculators/gst-calculator) to understand when registration makes sense for your situation.
 
 ### 3. Use a proper contract — every time
 
 A written contract is the single biggest differentiator between a legitimate tradie and a fraudster. It protects you legally and reassures customers that you stand behind your work.
 
-Your contract should cover scope of work, payment terms, variations process, and dispute resolution. For a practical guide, see our article on [writing tradie contracts in New Zealand](/articles/tradie-contract-guide-nz.html). And for getting paid on time once the work is done, read our guide on [how to get paid faster as an NZ tradie](/articles/how-to-get-paid-faster-nz-tradie.html).
+Your contract should cover scope of work, payment terms, variations process, and dispute resolution. For a practical guide, see our article on [writing tradie contracts in New Zealand](/articles/tradie-contract-guide-nz). And for getting paid on time once the work is done, read our guide on [how to get paid faster as an NZ tradie](/articles/how-to-get-paid-faster-nz-tradie).
 
 ### 4. Limit upfront deposits
 

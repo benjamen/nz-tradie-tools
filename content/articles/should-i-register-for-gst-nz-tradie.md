@@ -164,7 +164,7 @@ Once registered, GST applies from your nominated registration date. IRD issues y
 - Total amount, with GST shown separately (or a statement that GST is included at 15%)
 - Customer name and address (for invoices over $1,000)
 
-Download our free [GST Tax Invoice Template](/templates/tax-invoice-template.html) to make sure every invoice is compliant from day one.
+Download our free [GST Tax Invoice Template](/templates/tax-invoice-template) to make sure every invoice is compliant from day one.
 
 ---
 
@@ -212,7 +212,7 @@ Most tradies use the invoice basis — GST is reported when you invoice, not whe
 - The GST you collect belongs to IRD — don't spend it
 - Use two-monthly filing unless your accountant recommends otherwise
 
-Use our free [GST Calculator](/calculators/gst-calculator.html) to check amounts before invoicing, and our [GST Tax Invoice Template](/templates/tax-invoice-template.html) to make sure every invoice is compliant.
+Use our free [GST Calculator](/calculators/gst-calculator) to check amounts before invoicing, and our [GST Tax Invoice Template](/templates/tax-invoice-template) to make sure every invoice is compliant.
 
 If you're running your jobs through [Fastcrew](https://fastcrew.nz), GST is calculated and displayed automatically on every quote and invoice — so you're always billing correctly without doing the mental arithmetic.
 

@@ -81,7 +81,7 @@
             <h2>Trades in {{ city.name }}</h2>
             <div class="card-grid">
                 {% for trade in trades %}
-                <a href="{{ base_path }}/trades/{{ trade.slug }}/{{ city.slug }}.html" class="card">
+                <a href="{{ base_path }}/trades/{{ trade.slug }}/{{ city.slug }}" class="card">
                     <h3>{{ trade.icon }} {{ trade.name }}</h3>
                     <p>{{ trade.description }}</p>
                     <p style="margin-top:.5rem;font-size:.85rem;color:#0055a5">
@@ -124,10 +124,10 @@
             <div class="sidebar-widget">
                 <h3>Free Calculators</h3>
                 <ul>
-                    <li><a href="{{ base_path }}/calculators/gst-calculator.html">GST Calculator</a></li>
-                    <li><a href="{{ base_path }}/calculators/job-cost-calculator.html">Job Cost Builder</a></li>
-                    <li><a href="{{ base_path }}/calculators/hourly-rate-calculator.html">Hourly Rate</a></li>
-                    <li><a href="{{ base_path }}/calculators/vehicle-mileage-calculator.html">Mileage Claim</a></li>
+                    <li><a href="{{ base_path }}/calculators/gst-calculator">GST Calculator</a></li>
+                    <li><a href="{{ base_path }}/calculators/job-cost-calculator">Job Cost Builder</a></li>
+                    <li><a href="{{ base_path }}/calculators/hourly-rate-calculator">Hourly Rate</a></li>
+                    <li><a href="{{ base_path }}/calculators/vehicle-mileage-calculator">Mileage Claim</a></li>
                 </ul>
             </div>
             <div class="sidebar-widget">

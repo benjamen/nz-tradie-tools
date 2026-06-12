@@ -35,7 +35,7 @@ Expect more granny flat enquiries. Homeowners who previously found the consent p
 
 The flip side: because there's no consent inspector reviewing the work, **your liability as the LBP is higher**. You're certifying the work is code-compliant. Document everything carefully.
 
-Use our [Job Cost Calculator](/calculators/job-cost-calculator.html) to estimate a granny flat build and set your quote appropriately.
+Use our [Job Cost Calculator](/calculators/job-cost-calculator) to estimate a granny flat build and set your quote appropriately.
 
 ---
 
@@ -157,7 +157,7 @@ For your day-to-day admin, make sure your job management software is keeping cle
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.
 ---
 
 ## Recommended Resources

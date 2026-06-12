@@ -58,7 +58,7 @@ This checklist covers everything you should do in the lead-up to 31 March (and t
 - [ ] **Review the March/April GST return** — if you're on 2-monthly filing, your March/April period is due 28 May. Get the data ready now.
 - [ ] **Check GST on expenses** — if you're GST-registered, make sure you're claiming input tax on all business purchases. Easy ones to miss: fuel receipts, small tool purchases, subscriptions.
 
-Use our [GST calculator](/calculators/gst-calculator.html) to check amounts.
+Use our [GST calculator](/calculators/gst-calculator) to check amounts.
 
 ---
 
@@ -92,7 +92,7 @@ Use our [GST calculator](/calculators/gst-calculator.html) to check amounts.
 - [ ] **IR3 filing** — due 7 July if filing yourself, or later if you're on a tax agent's extension list (often November).
 - [ ] **Terminal tax** — if you owe tax after provisional payments, it's due 7 February the following year (or 7 April if you have a tax agent).
 - [ ] **Review your structure** — is sole trader still the right setup? If profit is consistently over $70–80k, a company structure may save tax. Talk to an accountant.
-- [ ] **Update your charge-out rate** — rates should reflect actual costs including tax, ACC, and overheads. Use our [hourly rate calculator](/calculators/hourly-rate-calculator.html) to check if your current rate covers everything.
+- [ ] **Update your charge-out rate** — rates should reflect actual costs including tax, ACC, and overheads. Use our [hourly rate calculator](/calculators/hourly-rate-calculator) to check if your current rate covers everything.
 
 ---
 
@@ -100,20 +100,20 @@ Use our [GST calculator](/calculators/gst-calculator.html) to check amounts.
 
 | Tool | What It Does |
 |---|---|
-| [GST Calculator](/calculators/gst-calculator.html) | Work out GST on any amount |
-| [ACC Levy Calculator](/calculators/acc-levy-calculator.html) | Estimate your annual ACC bill |
-| [Hourly Rate Calculator](/calculators/hourly-rate-calculator.html) | Build tax and overheads into your rate |
-| [Markup / Margin Calculator](/calculators/markup-margin-calculator.html) | Price materials correctly |
+| [GST Calculator](/calculators/gst-calculator) | Work out GST on any amount |
+| [ACC Levy Calculator](/calculators/acc-levy-calculator) | Estimate your annual ACC bill |
+| [Hourly Rate Calculator](/calculators/hourly-rate-calculator) | Build tax and overheads into your rate |
+| [Markup / Margin Calculator](/calculators/markup-margin-calculator) | Price materials correctly |
 | [Invoice Templates](/templates/) | IRD-compliant invoice and quote templates |
 
 ---
 
 ## Related Articles
 
-- [NZ Tradie Tax Guide 2026 — Complete Overview](/articles/nz-tradie-tax-guide-2026.html) — the full picture on income tax, GST, deductions, and provisional tax
-- [GST Registration for Tradies NZ](/articles/gst-registration-tradies-nz.html) — when to register, how to do it, and what changes
-- [ACC Levies for NZ Tradies 2026/27](/articles/acc-levies-nz-tradies-2026-guide.html) — levy rates, CoverPlus Extra, and how to reduce your bill
-- [How to Set Your Hourly Rate as a Tradie](/articles/how-to-set-hourly-rate-tradie-nz.html) — include all your costs so your rate actually covers your overhead
+- [NZ Tradie Tax Guide 2026 — Complete Overview](/articles/nz-tradie-tax-guide-2026) — the full picture on income tax, GST, deductions, and provisional tax
+- [GST Registration for Tradies NZ](/articles/gst-registration-tradies-nz) — when to register, how to do it, and what changes
+- [ACC Levies for NZ Tradies 2026/27](/articles/acc-levies-nz-tradies-2026-guide) — levy rates, CoverPlus Extra, and how to reduce your bill
+- [How to Set Your Hourly Rate as a Tradie](/articles/how-to-set-hourly-rate-tradie-nz) — include all your costs so your rate actually covers your overhead
 
 ---
 

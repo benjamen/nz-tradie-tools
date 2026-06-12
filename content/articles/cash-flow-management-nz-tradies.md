@@ -33,7 +33,7 @@ What this does:
 
 A simple clause in your quote: *"A 30% deposit is required to secure this booking and order materials. Work commences upon receipt of deposit."*
 
-Our [Quote Template](/templates/quote-template.html) has space for payment terms including deposits.
+Our [Quote Template](/templates/quote-template) has space for payment terms including deposits.
 
 ## Strategy 2: Invoice the Moment the Work Is Done
 
@@ -41,7 +41,7 @@ The most common invoicing mistake: doing the job on Monday, sending the invoice 
 
 You've just given the client an extra 2–3 weeks to pay before the clock even starts. If your terms are 14 days from invoice, and you invoice three weeks late, you're waiting five weeks to be paid.
 
-**Invoice the day the work is complete** — or the same evening. Most job management apps (Tradify, Fergus, NextMinute) let you create an invoice from your phone on-site. If you don't have one, email a PDF invoice from your phone using our free [Tax Invoice Template](/templates/tax-invoice-template.html).
+**Invoice the day the work is complete** — or the same evening. Most job management apps (Tradify, Fergus, NextMinute) let you create an invoice from your phone on-site. If you don't have one, email a PDF invoice from your phone using our free [Tax Invoice Template](/templates/tax-invoice-template).
 
 ## Strategy 3: Shorten Your Payment Terms
 
@@ -67,7 +67,7 @@ For any job running longer than 3–4 weeks or worth more than $20,000–$30,000
 
 This keeps cash flowing throughout the job rather than having one large invoice at the end that takes another month to be paid.
 
-Our [Progress Claim Template](/templates/progress-claim.html) and [CCA Payment Claim Template](/templates/cca-payment-claim.html) are formatted for this structure.
+Our [Progress Claim Template](/templates/progress-claim) and [CCA Payment Claim Template](/templates/cca-payment-claim) are formatted for this structure.
 
 ## Strategy 5: Separate Your Tax Money
 
@@ -110,7 +110,7 @@ In the meantime, that GST is sitting in your account. It looks like your money. 
 
 ---
 
-Use our free [Job Cost Calculator](/calculators/job-cost-calculator.html) to track margins and our [Progress Claim template](/templates/progress-claim.html) for stage invoicing on larger contracts.
+Use our free [Job Cost Calculator](/calculators/job-cost-calculator) to track margins and our [Progress Claim template](/templates/progress-claim) for stage invoicing on larger contracts.
 
 ---
 
@@ -118,7 +118,7 @@ Use our free [Job Cost Calculator](/calculators/job-cost-calculator.html) to tra
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.
 ---
 
 ## Recommended Resources

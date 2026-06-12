@@ -45,9 +45,9 @@ Here's the risk in a recovering market: tradies who were burned by the downturn 
 
 The Hubexo 2026 outlook specifically flags **"labour, capital, and delivery capacity as binding constraints"** — not demand. In plain English: there's going to be more work than there are good tradies to do it. That's pricing power if you use it.
 
-Before you fill your calendar for the next three months, revisit your numbers. Use our [markup and margin calculator](/calculators/markup-margin-calculator.html) to check whether your current rates actually cover your overheads at 2026 material and fuel costs — or whether you're inadvertently working at a loss on the thinner jobs.
+Before you fill your calendar for the next three months, revisit your numbers. Use our [markup and margin calculator](/calculators/markup-margin-calculator) to check whether your current rates actually cover your overheads at 2026 material and fuel costs — or whether you're inadvertently working at a loss on the thinner jobs.
 
-Also worth running through the [job cost calculator](/calculators/job-cost-calculator.html) on any larger tenders you're pricing right now. Concrete, structural steel, and aluminium joinery all saw price increases in Q1 2026 that haven't fully flowed through to most tradies' standard rate cards.
+Also worth running through the [job cost calculator](/calculators/job-cost-calculator) on any larger tenders you're pricing right now. Concrete, structural steel, and aluminium joinery all saw price increases in Q1 2026 that haven't fully flowed through to most tradies' standard rate cards.
 
 ---
 
@@ -60,7 +60,7 @@ The consent recovery doesn't mean materials have got cheaper. BCI Central's Q1 2
 - **Aluminium joinery**: up around 8–10% in manufactured window and door prices
 - **Glass**: supply-side constraints continuing from 2025
 
-The practical implication: any job you quoted 6+ months ago and haven't started yet should be repriced before you commit resources. Most residential construction contracts in NZ allow for material cost variations if documented correctly — see our guide on [how to price a job as an NZ tradie](/articles/how-to-price-a-job-nz-tradie-guide.html) for the correct way to structure this in your quotes.
+The practical implication: any job you quoted 6+ months ago and haven't started yet should be repriced before you commit resources. Most residential construction contracts in NZ allow for material cost variations if documented correctly — see our guide on [how to price a job as an NZ tradie](/articles/how-to-price-a-job-nz-tradie-guide) for the correct way to structure this in your quotes.
 
 ---
 

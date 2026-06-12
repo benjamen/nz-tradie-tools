@@ -27,7 +27,7 @@ Auckland and Wellington rates sit at the top of these ranges. Christchurch and H
 
 If you bill clients an all-inclusive day rate, most sole-trader carpenters charge **$480–$750 per day** in 2026, with larger crew-based operations charging $600–$900+ per day including a small markup on labour.
 
-To work out your own sustainable rate, use the [hourly rate calculator](/calculators/hourly-rate-calculator.html) — it accounts for your ACC levies, insurance, vehicle costs and the non-billable time that every carpenter spends on admin, quoting and travel.
+To work out your own sustainable rate, use the [hourly rate calculator](/calculators/hourly-rate-calculator) — it accounts for your ACC levies, insurance, vehicle costs and the non-billable time that every carpenter spends on admin, quoting and travel.
 
 ## Common Carpentry Job Rates (Labour Only, Ex GST)
 
@@ -39,7 +39,7 @@ Decking is one of the most quoted jobs in residential carpentry. Labour-only rat
 - Raised or multi-level deck: **$70–$110 per m²**
 - Hardwood or composite decking: **$90–$140 per m² labour** (materials on top)
 
-A typical 20 m² deck comes to **$900–$2,800 in labour** depending on complexity. Use the [decking calculator](/calculators/decking-calculator.html) to estimate materials before putting a quote together — it saves time and helps you avoid underquoting on timber volumes.
+A typical 20 m² deck comes to **$900–$2,800 in labour** depending on complexity. Use the [decking calculator](/calculators/decking-calculator) to estimate materials before putting a quote together — it saves time and helps you avoid underquoting on timber volumes.
 
 ### Timber Framing
 
@@ -49,7 +49,7 @@ New-build framing is typically quoted per square metre of floor area:
 - Two-storey framing: **$38–$58 per m²**
 - Complex rooflines, vaulted ceilings: $60–$90 per m²
 
-Check your numbers with the [timber framing calculator](/calculators/timber-framing-calculator.html) to make sure your material take-off lines up with your quoted scope.
+Check your numbers with the [timber framing calculator](/calculators/timber-framing-calculator) to make sure your material take-off lines up with your quoted scope.
 
 ### Interior Fit-Out and Finishing
 
@@ -66,7 +66,7 @@ Stairs are a premium carpentry speciality. In 2026, labour rates for a standard 
 - L-shaped or winder stair: **$2,800–$5,500**
 - Balustrade installation (per linear metre): **$180–$350**
 
-Use the [staircase calculator](/calculators/staircase-calculator.html) to calculate riser heights and tread counts before quoting — getting this wrong can cause costly rework on site.
+Use the [staircase calculator](/calculators/staircase-calculator) to calculate riser heights and tread counts before quoting — getting this wrong can cause costly rework on site.
 
 ### Fencing
 
@@ -111,7 +111,7 @@ Download our free NZ tradie templates at tradietools.nz/templates/ — includes 
 - Material markup: **15–25%** is standard practice
 - GST threshold: $60,000 turnover — register before you hit it
 
-If you are unsure whether your current rates cover your actual costs, run your numbers through the [hourly rate calculator](/calculators/hourly-rate-calculator.html) and the [job cost calculator](/calculators/job-cost-calculator.html) before your next quote.
+If you are unsure whether your current rates cover your actual costs, run your numbers through the [hourly rate calculator](/calculators/hourly-rate-calculator) and the [job cost calculator](/calculators/job-cost-calculator) before your next quote.
 
 ---
 ---

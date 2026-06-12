@@ -49,7 +49,7 @@ $115,000 target income ÷ 1,380 billable hours = **$83.33/hr**
 
 This is just your labour component — before overhead and before margin.
 
-Use the [Hourly Rate Calculator](/calculators/hourly-rate-calculator.html) to run these numbers for your specific situation.
+Use the [Hourly Rate Calculator](/calculators/hourly-rate-calculator) to run these numbers for your specific situation.
 
 ---
 
@@ -152,7 +152,7 @@ If you're GST-registered, add 15% to your subtotal after all other components:
 
 The $840 GST is collected on IRD's behalf — it's not your income.
 
-Use the [Job Cost Calculator](/calculators/job-cost-calculator.html) to build this automatically.
+Use the [Job Cost Calculator](/calculators/job-cost-calculator) to build this automatically.
 
 ---
 
@@ -174,7 +174,7 @@ The quote document itself is part of the sale. A professional, detailed quote bu
 10. GST breakdown (excl. GST, GST amount, total inc. GST)
 11. Your variation clause: "Any work not described above will be quoted separately and approved in writing before proceeding"
 
-Download our free [NZ Tradie Quote Template](/templates/quote-template.html) to have all of this pre-formatted.
+Download our free [NZ Tradie Quote Template](/templates/quote-template) to have all of this pre-formatted.
 
 Tools like [Fastcrew](https://fastcrew.nz) let you build quotes on your phone on-site, pull through previous job costs, and send them immediately — so the client gets a professional quote while you're still at the property.
 
@@ -229,7 +229,7 @@ Review your last 10 jobs. If half of them went over on time or materials, your e
 2. **Forgetting travel time** — if you're driving 45 minutes each way, that's 90 minutes per day that has to be covered somewhere.
 3. **Not marking up materials** — materials have a real cost to manage; give them away at cost and you're funding the client's project with your time and risk.
 4. **No contingency** — something always goes wrong. Build it in.
-5. **Confusing markup with margin** — see the [Markup vs Margin Calculator](/calculators/markup-margin-calculator.html).
+5. **Confusing markup with margin** — see the [Markup vs Margin Calculator](/calculators/markup-margin-calculator).
 6. **Not reviewing past jobs** — if you're not tracking actuals against quotes, you're flying blind.
 7. **Underpricing to build relationships** — clients who got a below-market price last time will expect it next time. You've set the anchor.
 
@@ -251,4 +251,4 @@ A fixed price quote is binding — you complete the work for that amount regardl
 
 ---
 
-*NZ Tradie Tools provides free calculators, templates, and guides for New Zealand tradies. Use our [Job Cost Calculator](/calculators/job-cost-calculator.html), [Hourly Rate Calculator](/calculators/hourly-rate-calculator.html), and [free Quote Template](/templates/quote-template.html) to price every job with confidence.*
+*NZ Tradie Tools provides free calculators, templates, and guides for New Zealand tradies. Use our [Job Cost Calculator](/calculators/job-cost-calculator), [Hourly Rate Calculator](/calculators/hourly-rate-calculator), and [free Quote Template](/templates/quote-template) to price every job with confidence.*

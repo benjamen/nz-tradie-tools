@@ -88,7 +88,7 @@ This alone deters late payments. Clients will suddenly find the money to pay on 
 
 ## Use Job Costing to Set Rates
 
-Before you can invoice confidently, you need to know what your time is worth. Use our [free NZ tradie markup calculator](/calculators/markup-calculator.html) to ensure you're charging enough to cover labour, materials, and overhead.
+Before you can invoice confidently, you need to know what your time is worth. Use our [free NZ tradie markup calculator](/calculators/markup-calculator) to ensure you're charging enough to cover labour, materials, and overhead.
 
 A common mistake is underpricing jobs to win the contract, then losing money when invoicing time comes. Lock in your rates upfront so invoicing becomes straightforward.
 

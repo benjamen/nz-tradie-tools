@@ -58,7 +58,7 @@ This changes the picture significantly. If your company pays you a salary and yo
 
 In short: if you're paying yourself a wage through a company, set up KiwiSaver properly on your payroll. The employer contribution is essentially the company giving you retirement savings that reduce taxable profit.
 
-Use our [KiwiSaver Employer Cost Calculator](/calculators/kiwisaver-employer-cost-calculator.html) to see exactly what 3% employer contributions add to your total wage cost.
+Use our [KiwiSaver Employer Cost Calculator](/calculators/kiwisaver-employer-cost-calculator) to see exactly what 3% employer contributions add to your total wage cost.
 
 ## What Happens If You Stop Contributing
 
@@ -99,7 +99,7 @@ If you're not contributing anything, the first step is simple: set up a $20/week
 
 If you're operating through a company, talk to your accountant about properly setting up KiwiSaver payroll deductions — the employer contribution is a deductible expense and a straightforward win.
 
-For a broader overview of self-employment taxes, see our [NZ tradie tax guide](/articles/nz-tradie-tax-guide-what-you-can-claim.html).
+For a broader overview of self-employment taxes, see our [NZ tradie tax guide](/articles/nz-tradie-tax-guide-what-you-can-claim).
 
 ---
 
@@ -107,4 +107,4 @@ For a broader overview of self-employment taxes, see our [NZ tradie tax guide](/
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

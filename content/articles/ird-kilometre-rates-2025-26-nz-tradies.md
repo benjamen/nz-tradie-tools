@@ -39,7 +39,7 @@ For most NZ tradies who drive a work ute or van, the Tier 1 rate at $1.04/km is 
 
 ## How Much Can You Actually Claim?
 
-Use the [Vehicle Mileage Calculator](/calculators/vehicle-mileage-calculator.html) to work out your exact deduction, but here's a quick example:
+Use the [Vehicle Mileage Calculator](/calculators/vehicle-mileage-calculator) to work out your exact deduction, but here's a quick example:
 
 **Scenario:** You're a self-employed plumber in Auckland. Over the 2025–26 year you drove 18,500 km for business.
 
@@ -84,7 +84,7 @@ The kilometre rate method is convenient, but it's not always the highest deducti
 **Use actual costs if:**
 - You drive a high-value ute or van that's depreciating quickly
 - You have a high business-use percentage and significant expenses
-- You want to maximise your claim using the [Depreciation Calculator](/calculators/depreciation-calculator.html)
+- You want to maximise your claim using the [Depreciation Calculator](/calculators/depreciation-calculator)
 
 You can only pick one method per vehicle per year — you can't mix and match.
 
@@ -106,7 +106,7 @@ If you're registered for GST, there's a separate layer to think about. The kilom
 - Claim GST on the business-use portion only
 - Apportion based on a logbook or estimated business percentage
 
-Use the [GST Calculator](/calculators/gst-calculator.html) to check your GST position, and make sure you're not double-counting.
+Use the [GST Calculator](/calculators/gst-calculator) to check your GST position, and make sure you're not double-counting.
 
 ## Common IRD Audit Triggers for Vehicle Claims
 

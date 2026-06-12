@@ -127,4 +127,4 @@ When budgeting for an apprentice, remember to include:
 - **Tool allowance** — many employers contribute toward personal tools
 - **Supervision time** — experienced tradies spend time mentoring
 
-Use our [PAYE Employee Cost Calculator](/calculators/paye-employee-calculator.html) for a full employer cost breakdown.
+Use our [PAYE Employee Cost Calculator](/calculators/paye-employee-calculator) for a full employer cost breakdown.

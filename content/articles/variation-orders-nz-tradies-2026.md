@@ -27,9 +27,9 @@ The key principle: if it wasn't in your original quote, it's a variation. Full s
 
 The most common trap is doing the extra work first and raising the invoice later. At that point, the client has already got what they wanted — and now they're questioning your price. Without a signed variation, you have very limited legal standing.
 
-Under the [Construction Contracts Act 2002](https://www.legislation.govt.nz/act/public/2002/0046/latest/whole.html), a variation that isn't documented and agreed to in writing can be genuinely difficult to recover. If a dispute ends up at adjudication, a verbal "yeah, just do it" from the client rarely holds up.
+Under the [Construction Contracts Act 2002](https://www.legislation.govt.nz/act/public/2002/0046/latest/whole), a variation that isn't documented and agreed to in writing can be genuinely difficult to recover. If a dispute ends up at adjudication, a verbal "yeah, just do it" from the client rarely holds up.
 
-The second trap is under-pricing variations. When a client asks for a quick change mid-job, it's tempting to give them a rough ballpark. But variations often carry hidden costs: remobilising labour, reordering materials at short notice, breaking and redoing finished work, and extending your overall programme. Use our [Job Cost Calculator](/calculators/job-cost-calculator.html) to price variations properly before you agree to anything.
+The second trap is under-pricing variations. When a client asks for a quick change mid-job, it's tempting to give them a rough ballpark. But variations often carry hidden costs: remobilising labour, reordering materials at short notice, breaking and redoing finished work, and extending your overall programme. Use our [Job Cost Calculator](/calculators/job-cost-calculator) to price variations properly before you agree to anything.
 
 ## The Right Way to Handle a Variation
 
@@ -53,7 +53,7 @@ A variation order doesn't need to be fancy — even a clear email or PDF with th
 - **Impact on programme** (extra days or weeks if applicable)
 - **Acceptance field** — a space for the client to sign and date
 
-You can build a clean variation document quickly using our [Quote Builder Wizard](/calculators/quote-builder-wizard.html), which handles the GST calculations automatically.
+You can build a clean variation document quickly using our [Quote Builder Wizard](/calculators/quote-builder-wizard), which handles the GST calculations automatically.
 
 ### 3. Get sign-off before you start
 
@@ -69,7 +69,7 @@ Don't price variations at the same rate as your original quote, especially if:
 - The variation requires short-notice orders or express delivery
 - You're mobilising a team back to site for a small scope of work
 
-A fair approach is to price variations using your standard charge-out rate plus a materials markup (typically 15–25% for NZ tradies to cover procurement, storage and warranty risk). Use our [Markup & Margin Calculator](/calculators/markup-margin-calculator.html) to make sure you're hitting your target gross margin.
+A fair approach is to price variations using your standard charge-out rate plus a materials markup (typically 15–25% for NZ tradies to cover procurement, storage and warranty risk). Use our [Markup & Margin Calculator](/calculators/markup-margin-calculator) to make sure you're hitting your target gross margin.
 
 ## What to Include in Your Original Contract
 

@@ -34,7 +34,7 @@ The risk right now is pricing as if you're still in the downturn. You don't need
 
 ## Step 1: Know Your Real Break-Even Before You Quote
 
-Most tradies who underprice aren't lazy — they just don't have a clear picture of what a job actually needs to return before it makes money. Use our [job cost calculator](/calculators/job-cost-calculator.html) to model each job before you quote, factoring in:
+Most tradies who underprice aren't lazy — they just don't have a clear picture of what a job actually needs to return before it makes money. Use our [job cost calculator](/calculators/job-cost-calculator) to model each job before you quote, factoring in:
 
 - **Labour**: Your time and any staff or subbies you'll use
 - **Materials**: At current supplier prices, not last year's
@@ -44,7 +44,7 @@ Most tradies who underprice aren't lazy — they just don't have a clear picture
 
 Once you know your floor, you add margin. In the current market, a healthy gross margin for most trade businesses is 25–40% depending on trade type and job size. If you're consistently under 20%, you're working too hard for too little.
 
-Run our [break-even calculator](/calculators/breakeven-calculator.html) quarterly to make sure your overheads haven't crept up without your rates following.
+Run our [break-even calculator](/calculators/breakeven-calculator) quarterly to make sure your overheads haven't crept up without your rates following.
 
 ---
 
@@ -61,7 +61,7 @@ Run our [break-even calculator](/calculators/breakeven-calculator.html) quarterl
 | Tiler | $500–$680 |
 | Roofer | $550–$720 |
 
-These are indicative 2026 ranges for self-employed operators in metropolitan areas. Regional rates may be 10–15% lower. Use our [hourly rate calculator](/calculators/hourly-rate-calculator.html) to work out what your specific situation requires — what you need to earn, not just what the market pays.
+These are indicative 2026 ranges for self-employed operators in metropolitan areas. Regional rates may be 10–15% lower. Use our [hourly rate calculator](/calculators/hourly-rate-calculator) to work out what your specific situation requires — what you need to earn, not just what the market pays.
 
 The key insight here: in a recovering market, there are clients who want quality and will pay for it, and clients who want cheap and will regret it. You want to attract the first group and let the second group go to your least-prepared competitor.
 
@@ -89,7 +89,7 @@ When a client asks for a discount on a larger job, resist the instinct to simply
 
 Bundling protects your margin while giving the client something tangible. Straight discounting trains clients to expect it and devalues your work.
 
-See our article on [fixed-price vs cost-plus contracts](/articles/fixed-price-vs-cost-plus-contracts-nz-tradies-2026.html) for more on structuring agreements that protect you on larger jobs.
+See our article on [fixed-price vs cost-plus contracts](/articles/fixed-price-vs-cost-plus-contracts-nz-tradies-2026) for more on structuring agreements that protect you on larger jobs.
 
 ---
 
@@ -115,7 +115,7 @@ Keep a simple log of every quote you send: date, value, trade type, outcome (won
 
 A healthy win rate for most trade businesses is 50–70%. This means you're competitive without giving work away.
 
-See our article on [markup vs margin for NZ tradies](/articles/markup-vs-margin-nz-tradies-2026.html) for the maths behind why the two are not the same — and why confusing them is one of the most common ways tradies leave money on the table.
+See our article on [markup vs margin for NZ tradies](/articles/markup-vs-margin-nz-tradies-2026) for the maths behind why the two are not the same — and why confusing them is one of the most common ways tradies leave money on the table.
 
 ---
 
@@ -135,4 +135,4 @@ Don't price as if it's still 2024. The market has moved.
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

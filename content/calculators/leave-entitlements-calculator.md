@@ -170,4 +170,4 @@ NZ has **12 public holidays** per year. Employees who work on a public holiday r
 
 ### What This Means for Job Pricing
 
-Leave entitlements add approximately **17–22%** on top of base hourly wages when factored into true employment cost. Use our [Labour Cost Calculator](/calculators/labour-cost-calculator.html) and [PAYE Employee Cost Calculator](/calculators/paye-employee-calculator.html) to see the full picture.
+Leave entitlements add approximately **17–22%** on top of base hourly wages when factored into true employment cost. Use our [Labour Cost Calculator](/calculators/labour-cost-calculator) and [PAYE Employee Cost Calculator](/calculators/paye-employee-calculator) to see the full picture.

@@ -120,4 +120,4 @@ The salary on the employment agreement is just the starting point. By the time y
 
 The adult minimum wage from 1 April 2026 is **$23.50/hour** ($48,880/year for 40 hours). Starting-out and training wages are 80% of this ($18.80/hour).
 
-See our [apprentice wage calculator](/calculators/apprentice-wage-calculator.html) for trade-specific apprenticeship rates.
+See our [apprentice wage calculator](/calculators/apprentice-wage-calculator) for trade-specific apprenticeship rates.

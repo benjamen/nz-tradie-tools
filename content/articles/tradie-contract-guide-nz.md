@@ -45,7 +45,7 @@ This is crucial. When the client asks you to change, add to, or remove something
 
 *"Any variations to the agreed scope must be submitted in writing using a Variation Order and approved by the client before work commences. Verbal instructions to vary the scope may be charged at the contractor's standard rates."*
 
-Our free [Variation Order Template](/templates/variation-order.html) gives you the format to document these properly.
+Our free [Variation Order Template](/templates/variation-order) gives you the format to document these properly.
 
 ### Timeline
 State expected start and completion dates, and note any conditions (e.g., "subject to weather," "dependent on council consent timing," "subject to material availability").
@@ -72,7 +72,7 @@ Under the CCA:
 
 The practical implication: if you do construction work, your invoices are payment claims under the CCA by default. The client's obligation to respond (or pay) is triggered on receipt. Make sure your contracts and invoices reference this — it gives you legal standing to recover unpaid amounts faster.
 
-Our [CCA Payment Claim Template](/templates/cca-payment-claim.html) is formatted for exactly this purpose.
+Our [CCA Payment Claim Template](/templates/cca-payment-claim) is formatted for exactly this purpose.
 
 ## Written vs Verbal Contracts
 
@@ -94,7 +94,7 @@ Get a legal review when:
 - There are unusual risk allocations (e.g., you're responsible for delays caused by others)
 - You're entering a long-term maintenance or service contract
 
-Our free [Terms of Trade template](/templates/terms-of-trade.html) covers the essentials for everyday jobs. For complex commercial work, spend $300–$500 on a one-hour legal review — it's cheap insurance.
+Our free [Terms of Trade template](/templates/terms-of-trade) covers the essentials for everyday jobs. For complex commercial work, spend $300–$500 on a one-hour legal review — it's cheap insurance.
 
 ## Key Takeaways
 
@@ -107,7 +107,7 @@ Our free [Terms of Trade template](/templates/terms-of-trade.html) covers the es
 
 ---
 
-Download our free [Terms of Trade template](/templates/terms-of-trade.html) and [Variation Order template](/templates/variation-order.html) — both are ready to fill in and download as PDF.
+Download our free [Terms of Trade template](/templates/terms-of-trade) and [Variation Order template](/templates/variation-order) — both are ready to fill in and download as PDF.
 
 ---
 
@@ -115,4 +115,4 @@ Download our free [Terms of Trade template](/templates/terms-of-trade.html) and 
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

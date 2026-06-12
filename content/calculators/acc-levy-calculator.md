@@ -108,7 +108,7 @@ ACC sends:
 
 ### Is ACC Enough?
 
-ACC only covers **accident-related** injury. It doesn't cover illness, gradual onset conditions (like back problems from years of heavy work), or mental health conditions. Read our article on [Income Protection Insurance](/articles/income-protection-insurance-nz-tradies.html) for the full picture.
+ACC only covers **accident-related** injury. It doesn't cover illness, gradual onset conditions (like back problems from years of heavy work), or mental health conditions. Read our article on [Income Protection Insurance](/articles/income-protection-insurance-nz-tradies) for the full picture.
 
 ### Reducing Your ACC Levies
 

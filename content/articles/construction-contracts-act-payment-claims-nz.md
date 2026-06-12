@@ -48,7 +48,7 @@ Under section 20 of the CCA, a valid payment claim must:
 
 That last point is critical. If you don't state it's a CCA payment claim, the other party doesn't have to respond as though it is one. A simple line at the bottom of your invoice — *"This is a payment claim made under the Construction Contracts Act 2002"* — is all it takes.
 
-Use the [/calculators/invoice-calculator.html](/calculators/invoice-calculator.html) on this site to calculate your totals including GST before issuing your claim.
+Use the [/calculators/invoice-calculator.html](/calculators/invoice-calculator) on this site to calculate your totals including GST before issuing your claim.
 
 ### When Should You Issue Payment Claims?
 
@@ -104,7 +104,7 @@ MBIE publishes a list of authorised nominating authorities at mbie.govt.nz.
 
 Yes — you can also suspend work if you haven't been paid. Under section 23 of the CCA, if a payment is overdue by at least 10 working days, you can suspend work after giving 5 working days' written notice. This is a powerful tool, especially on ongoing projects.
 
-See our guide to [fixed-price vs cost-plus contracts](/articles/fixed-price-vs-cost-plus-contracts-nz-tradies-2026.html) for tips on structuring contracts to reduce payment risk from the start.
+See our guide to [fixed-price vs cost-plus contracts](/articles/fixed-price-vs-cost-plus-contracts-nz-tradies-2026) for tips on structuring contracts to reduce payment risk from the start.
 
 ## Practical Tips for NZ Tradies
 
@@ -135,7 +135,7 @@ Too many NZ tradies write off unpaid invoices because they think legal action is
 
 Download our free NZ tradie contract templates and invoice checklists at **tradietools.nz/templates/** — including a payment claim template that meets CCA requirements.
 
-For guidance on pricing jobs so you're not left out of pocket from the start, see our [job costing guide for NZ tradies](/articles/job-costing-guide-nz-tradies-2026.html).
+For guidance on pricing jobs so you're not left out of pocket from the start, see our [job costing guide for NZ tradies](/articles/job-costing-guide-nz-tradies-2026).
 
 ---
 ---

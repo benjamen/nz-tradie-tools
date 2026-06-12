@@ -32,7 +32,7 @@ Tracking inventory and project costs manually is prone to error and time-consumi
 Transparency builds trust. If you notice a specific material price spike that could impact a client's quote, tell them early. They are more likely to understand price adjustments if you are proactive rather than presenting a surprise invoice at the end of the project.
 
 ### 4. Review Your Overhead
-When material costs are up, examine where else you can trim the fat. Use our [GST Calculator](/calculators/gst-calculator.html) to stay on top of your tax obligations and ensure you aren't paying more than you need to. You can also use our [job pricing guide](/calculators/job-pricing-guide.html) to ensure your labour rates properly account for current economic conditions.
+When material costs are up, examine where else you can trim the fat. Use our [GST Calculator](/calculators/gst-calculator) to stay on top of your tax obligations and ensure you aren't paying more than you need to. You can also use our [job pricing guide](/calculators/job-pricing-guide) to ensure your labour rates properly account for current economic conditions.
 
 ## Staying Resilient
 
@@ -42,4 +42,4 @@ The recovery is happening—dwelling consents are up—but the landscape is more
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

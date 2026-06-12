@@ -218,7 +218,7 @@ def process_page(md_file, config, env, layout_name, section, nav, base_path, art
         "content": html_body,
         "slug": slug,
         "section": section,
-        "url": f"{base_path}/{section}/{slug}.html",
+        "url": f"{base_path}/{section}/{slug}",
         "draft": front.get("draft", False),
         "calculator_html": front.get("calculator_html", ""),
         "faqs": front.get("faqs", []),
@@ -606,7 +606,7 @@ def build_rss(articles, config):
             pub_date_rss = datetime.strptime(pub_date, "%Y-%m-%d").strftime("%a, %d %b %Y 00:00:00 +0000")
         except Exception:
             pub_date_rss = build_date
-        link = f"{base_url}/articles/{a['slug']}.html"
+        link = f"{base_url}/articles/{a['slug']}"
         items.append(
             f"  <item>\n"
             f"    <title>{esc(a.get('page_title', ''))}</title>\n"
@@ -1081,7 +1081,7 @@ td.national {{ background: #e8f0fe; font-weight: 600; }}
 
 <div class="container" style="max-width:1200px">
   <div class="rate-note">
-    ℹ️ <strong>About these rates:</strong> Compiled from local job data across Auckland, Wellington, Christchurch and 17 other NZ cities. Rates are labour-only and exclude GST unless stated. Emergency callouts, after-hours work, and specialist jobs typically add 30–80%. Always get 3 quotes. <a href="/calculators/hourly-rate-calculator.html">Calculate your own rate →</a>
+    ℹ️ <strong>About these rates:</strong> Compiled from local job data across Auckland, Wellington, Christchurch and 17 other NZ cities. Rates are labour-only and exclude GST unless stated. Emergency callouts, after-hours work, and specialist jobs typically add 30–80%. Always get 3 quotes. <a href="/calculators/hourly-rate-calculator">Calculate your own rate →</a>
   </div>
 
   <div class="rate-table-wrap">
@@ -1102,7 +1102,7 @@ td.national {{ background: #e8f0fe; font-weight: 600; }}
   <div class="cta-box">
     <p style="margin:0 0 .5rem;font-size:1.1rem;font-weight:700">Not sure if your quote is fair?</p>
     <p style="margin:0 0 1rem;opacity:.9">Use our free job cost calculator to check any quote against typical NZ rates.</p>
-    <a href="/calculators/job-cost-calculator.html" style="background:#fff;color:#0055a5;padding:.65rem 1.4rem;border-radius:5px;display:inline-block">Check my quote →</a>
+    <a href="/calculators/job-cost-calculator" style="background:#fff;color:#0055a5;padding:.65rem 1.4rem;border-radius:5px;display:inline-block">Check my quote →</a>
   </div>
 
   <div class="article-body">

@@ -32,7 +32,7 @@ If the friendly approach hasn't worked, it's time for a more formal written remi
 
 Keep the tone firm but professional. You're creating a paper trail that will matter if you escalate further.
 
-Our free [Payment Reminder template](/templates/payment-reminder.html) has a "first reminder" and "final notice" version ready to download.
+Our free [Payment Reminder template](/templates/payment-reminder) has a "first reminder" and "final notice" version ready to download.
 
 ## Step 3: Disputes Register — A Powerful NZ Tool (Often Overlooked)
 
@@ -121,7 +121,7 @@ For tax purposes, a bad debt can be written off and the GST component can be cla
 
 ---
 
-Protect yourself before disputes arise with our free [Terms of Trade template](/templates/terms-of-trade.html), [CCA Payment Claim template](/templates/cca-payment-claim.html), and [Payment Reminder letter](/templates/payment-reminder.html).
+Protect yourself before disputes arise with our free [Terms of Trade template](/templates/terms-of-trade), [CCA Payment Claim template](/templates/cca-payment-claim), and [Payment Reminder letter](/templates/payment-reminder).
 
 ---
 
@@ -129,4 +129,4 @@ Protect yourself before disputes arise with our free [Terms of Trade template](/
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

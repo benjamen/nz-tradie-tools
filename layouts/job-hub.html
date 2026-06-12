@@ -163,7 +163,7 @@
             <h2>{{ job.label }} Costs by City</h2>
             <div class="card-grid">
                 {% for city in cities %}
-                <a href="{{ base_path }}/jobs/{{ job.slug }}/{{ city.slug }}.html" class="card">
+                <a href="{{ base_path }}/jobs/{{ job.slug }}/{{ city.slug }}" class="card">
                     <h3>{{ city.name }}</h3>
                     <p style="font-size:.82rem;color:#666">{{ city.region }}</p>
                     <p style="color:#0055a5;font-size:.85rem;margin-top:.4rem">${{ '{:,}'.format((job.scenarios.small.min * regional_multipliers.get(city.slug, 1.0))|int) }}–${{ '{:,}'.format((job.scenarios.large.max * regional_multipliers.get(city.slug, 1.0))|int) }} →</p>
@@ -186,7 +186,7 @@
                             {% for city in cities %}
                             {% set m = regional_multipliers.get(city.slug, 1.0) %}
                             <tr>
-                                <td><a href="{{ base_path }}/jobs/{{ job.slug }}/{{ city.slug }}.html">{{ city.name }}</a></td>
+                                <td><a href="{{ base_path }}/jobs/{{ job.slug }}/{{ city.slug }}">{{ city.name }}</a></td>
                                 {% for key, sc in job.scenarios.items() %}
                                 <td>${{ '{:,}'.format((sc.min * m)|int) }}–${{ '{:,}'.format((sc.max * m)|int) }}</td>
                                 {% endfor %}
@@ -211,7 +211,7 @@
                         <h3>Got a quote? Check if it's fair.</h3>
                         <p>Enter your quote amount and we'll compare it against typical NZ rates for your city and job scope.</p>
                     </div>
-                    <a href="{{ base_path }}/calculators/is-my-quote-fair.html" class="btn">Check my quote →</a>
+                    <a href="{{ base_path }}/calculators/is-my-quote-fair" class="btn">Check my quote →</a>
                 </div>
 
                 <!-- What's included -->
@@ -329,7 +329,7 @@
                     </details>
                     <details>
                         <summary>Why is my quote higher than these prices?</summary>
-                        <p>These are typical ranges — your specific job may be higher due to access issues, premium materials, urgent timeline, council requirements, or local demand. Use our <a href="{{ base_path }}/calculators/is-my-quote-fair.html">quote checker</a> to compare your price against the typical range for your city and scope.</p>
+                        <p>These are typical ranges — your specific job may be higher due to access issues, premium materials, urgent timeline, council requirements, or local demand. Use our <a href="{{ base_path }}/calculators/is-my-quote-fair">quote checker</a> to compare your price against the typical range for your city and scope.</p>
                     </details>
                 </div>
             </div>
@@ -374,10 +374,10 @@
             <div class="sidebar-widget">
                 <h3>Quick Tools</h3>
                 <ul>
-                    <li><a href="{{ base_path }}/calculators/is-my-quote-fair.html">Is My Quote Fair?</a></li>
-                    <li><a href="{{ base_path }}/calculators/job-cost-calculator.html">Job Cost & Quote Builder</a></li>
-                    <li><a href="{{ base_path }}/calculators/gst-calculator.html">GST Calculator</a></li>
-                    <li><a href="{{ base_path }}/calculators/hourly-rate-calculator.html">Hourly Rate Calculator</a></li>
+                    <li><a href="{{ base_path }}/calculators/is-my-quote-fair">Is My Quote Fair?</a></li>
+                    <li><a href="{{ base_path }}/calculators/job-cost-calculator">Job Cost & Quote Builder</a></li>
+                    <li><a href="{{ base_path }}/calculators/gst-calculator">GST Calculator</a></li>
+                    <li><a href="{{ base_path }}/calculators/hourly-rate-calculator">Hourly Rate Calculator</a></li>
                 </ul>
             </div>
             {% if job.related_trade %}

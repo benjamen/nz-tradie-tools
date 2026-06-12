@@ -88,7 +88,7 @@ Apprentices get faster. By year two a good one can handle a full day's work with
 
 Compare that to hiring a qualified tradie on $35–$50/hour who still needs time to learn how your business works.
 
-Use our [Labour Cost Calculator](/calculators/labour-cost-calculator.html) to model the difference between apprentice and qualified hire costs for your specific situation.
+Use our [Labour Cost Calculator](/calculators/labour-cost-calculator) to model the difference between apprentice and qualified hire costs for your specific situation.
 
 ---
 
@@ -152,7 +152,7 @@ With one apprentice, you're mainly adding a junior to your team. With a pipeline
 
 This is how larger trade businesses maintain quality and control costs. It takes a few years to set up but the payoff is substantial.
 
-Use our [Hourly Rate Calculator](/calculators/hourly-rate-calculator.html) to see how apprentice wages affect your overall job costings as your team composition changes.
+Use our [Hourly Rate Calculator](/calculators/hourly-rate-calculator) to see how apprentice wages affect your overall job costings as your team composition changes.
 
 ---
 
@@ -182,8 +182,8 @@ If you've been on the fence, 2026 is a reasonable year to make the call.
 - Apprenticeship Boost: workandincome.govt.nz/employers/subsidies-training-and-other-help/apprenticeship-boost
 - BCITO registration: bcito.org.nz
 - BCITO Tools Grant: bcito.org.nz/scholarships/bcito-tools-grant
-- [Labour Cost Calculator](/calculators/labour-cost-calculator.html) — model your apprentice vs. qualified hire costs
-- [Hourly Rate Calculator](/calculators/hourly-rate-calculator.html) — factor apprentice wages into your job pricing
+- [Labour Cost Calculator](/calculators/labour-cost-calculator) — model your apprentice vs. qualified hire costs
+- [Hourly Rate Calculator](/calculators/hourly-rate-calculator) — factor apprentice wages into your job pricing
 
 ---
 
@@ -191,4 +191,4 @@ If you've been on the fence, 2026 is a reasonable year to make the call.
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

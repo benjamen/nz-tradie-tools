@@ -28,7 +28,7 @@ Concreter rates vary by region, job complexity, and access. Here's what's typica
 
 Labour-only rates sit lower — typically $55–$90/hr — when you're brought in by a builder who supplies the concrete. If you're supplying and placing, factor in concrete costs, hire of formwork, reinforcing steel, and your markup on materials.
 
-Use our [hourly rate calculator](/calculators/hourly-rate-calculator.html) to work out your true minimum charge-out rate based on your overheads and target income.
+Use our [hourly rate calculator](/calculators/hourly-rate-calculator) to work out your true minimum charge-out rate based on your overheads and target income.
 
 ### Per Square Metre Rates
 
@@ -61,7 +61,7 @@ Removing and disposing of old concrete is a significant cost that many homeowner
 
 Good job costing for concreting means working from the ground up, not guessing from past quotes.
 
-**Step 1 — Calculate concrete volume.** Use our [concrete calculator](/calculators/concrete-calculator.html) to get an accurate m³ figure. Add 10% waste to your order.
+**Step 1 — Calculate concrete volume.** Use our [concrete calculator](/calculators/concrete-calculator) to get an accurate m³ figure. Add 10% waste to your order.
 
 **Step 2 — Get a concrete quote.** Ready-mix concrete from providers like Firth or Allied Concrete runs approximately $280–$360/m³ delivered in 2026, depending on grade (17.5, 25, 30 MPa) and your region. Pump hire adds $600–$1,000 for a half-day.
 
@@ -69,7 +69,7 @@ Good job costing for concreting means working from the ground up, not guessing f
 
 **Step 4 — Add materials.** Reinforcing mesh (SL72 or SL82), chairs, edge boards, tie wire, release agent if using formwork. For a standard driveway, budget $10–$18/m² for steel and sundries.
 
-**Step 5 — Apply your markup.** You need to cover overheads (vehicle, insurance, ACC, equipment) and profit. A gross margin of 30–40% is a reasonable target for supply-and-lay work. Use our [job cost calculator](/calculators/job-cost-calculator.html) to check your numbers before quoting.
+**Step 5 — Apply your markup.** You need to cover overheads (vehicle, insurance, ACC, equipment) and profit. A gross margin of 30–40% is a reasonable target for supply-and-lay work. Use our [job cost calculator](/calculators/job-cost-calculator) to check your numbers before quoting.
 
 ---
 

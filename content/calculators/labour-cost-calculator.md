@@ -167,4 +167,4 @@ For a tradesperson earning $50/hr actual cost, with 25% overhead and 75% billabl
 | Painter | $55–$85/hr |
 | Landscaper | $65–$95/hr |
 
-Use our [Hourly Rate Calculator](/calculators/hourly-rate-calculator.html) to calculate your minimum viable rate.
+Use our [Hourly Rate Calculator](/calculators/hourly-rate-calculator) to calculate your minimum viable rate.

@@ -136,4 +136,4 @@ As a PAYE employee, you pay the ACC **earners' levy only** (1.60%). As a sole tr
 
 ### The Gateway Test
 
-IRD uses the [Contractor Gateway Test](https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/contractors/determining-whether-a-worker-is-an-employee-or-contractor) to determine whether a worker is truly self-employed. Getting this wrong can result in back-taxes and penalties. See our [Gateway Test article](/articles/subcontractor-vs-employee-gateway-test-nz-2026.html) for details.
+IRD uses the [Contractor Gateway Test](https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/contractors/determining-whether-a-worker-is-an-employee-or-contractor) to determine whether a worker is truly self-employed. Getting this wrong can result in back-taxes and penalties. See our [Gateway Test article](/articles/subcontractor-vs-employee-gateway-test-nz-2026) for details.

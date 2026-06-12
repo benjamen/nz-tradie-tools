@@ -22,7 +22,7 @@ The Ministry for the Environment (MfE) and regional councils publish the **NZS 9
 
 Most building consents for earthworks exceeding **500 m²** — or within 100 m of a waterway — will require an **Erosion and Sediment Control Plan (ESCP)** as a condition of consent. Larger civil projects may need a more detailed Site-Specific Stormwater Management Plan.
 
-Even if your consent doesn't explicitly require it, regional councils can request an ESCP at any time during construction. Having one ready protects you if things go wrong. If you're unsure whether [your project needs building consent](/articles/do-you-need-building-consent-nz.html), check our guide first — consent conditions vary significantly by region.
+Even if your consent doesn't explicitly require it, regional councils can request an ESCP at any time during construction. Having one ready protects you if things go wrong. If you're unsure whether [your project needs building consent](/articles/do-you-need-building-consent-nz), check our guide first — consent conditions vary significantly by region.
 
 Key elements of a basic ESCP include:
 - Site boundary and drainage flow paths
@@ -54,7 +54,7 @@ For any slopes that will be left exposed for more than two weeks, temporary seed
 
 ### 5. Sediment Retention Ponds
 
-On earthworks over 3,000 m², most regional councils will require a **sediment retention pond (SRP)** to capture runoff before it leaves site. SRPs are designed using council-specific calculation methods — typically based on 2-year and 10-year storm events. If you're tendering for larger civil work, factor $5,000–$25,000+ for SRP construction into your [job costing](/articles/job-costing-guide-nz-tradies-2026.html).
+On earthworks over 3,000 m², most regional councils will require a **sediment retention pond (SRP)** to capture runoff before it leaves site. SRPs are designed using council-specific calculation methods — typically based on 2-year and 10-year storm events. If you're tendering for larger civil work, factor $5,000–$25,000+ for SRP construction into your [job costing](/articles/job-costing-guide-nz-tradies-2026).
 
 ## Regional Differences You Need to Know
 
@@ -86,7 +86,7 @@ In winter 2026, many NZ regions are forecast for above-average rainfall (NIWA se
 2. Secure any loose materials and cover exposed soil before predicted rain events
 3. Inspect silt fences and sediment controls within 24 hours of any significant rain
 4. Photograph the site condition and controls after each major rain event — documentation protects you if a complaint is made
-5. Designate a responsible person on-site for stormwater compliance (the Health and Safety Act requires this under your [site health and safety plan](/articles/health-and-safety-guide-nz-tradies-nz.html))
+5. Designate a responsible person on-site for stormwater compliance (the Health and Safety Act requires this under your [site health and safety plan](/articles/health-and-safety-guide-nz-tradies-nz))
 
 ## Costs and Who Pays
 

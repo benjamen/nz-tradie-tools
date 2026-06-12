@@ -201,7 +201,7 @@
                 {% endif %}
 
                 <h3>How do I find a reliable tradie for {{ job.label|lower }} in {{ city.name }}?</h3>
-                <p>Start with our <a href="{{ base_path }}{{ job.related_trade }}{{ city.slug }}.html">top-rated {{ job.trade }} in {{ city.name }}</a> list, then cross-check on <a href="https://www.nocowboys.co.nz" rel="noopener" target="_blank">No Cowboys</a>. Always verify licences and get a written quote before work starts.</p>
+                <p>Start with our <a href="{{ base_path }}{{ job.related_trade }}{{ city.slug }}">top-rated {{ job.trade }} in {{ city.name }}</a> list, then cross-check on <a href="https://www.nocowboys.co.nz" rel="noopener" target="_blank">No Cowboys</a>. Always verify licences and get a written quote before work starts.</p>
             </div>
 
                         <div class="cta-box">
@@ -213,14 +213,14 @@
             <h3 style="margin-top:1.5rem">Other Cities — {{ job.label }} Costs</h3>
             <div style="display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.5rem">
                 {% for c in other_cities %}
-                <a href="{{ base_path }}/jobs/{{ job.slug }}/{{ c.slug }}.html" style="background:#f0f0f0;padding:.3rem .8rem;border-radius:20px;font-size:.85rem">{{ c.name }}</a>
+                <a href="{{ base_path }}/jobs/{{ job.slug }}/{{ c.slug }}" style="background:#f0f0f0;padding:.3rem .8rem;border-radius:20px;font-size:.85rem">{{ c.name }}</a>
                 {% endfor %}
             </div>
 
             <h3 style="margin-top:1.5rem">Other Job Costs in {{ city.name }}</h3>
             <div style="display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.5rem">
                 {% for j in other_jobs %}
-                <a href="{{ base_path }}/jobs/{{ j.slug }}/{{ city.slug }}.html" style="background:#f0f0f0;padding:.3rem .8rem;border-radius:20px;font-size:.85rem">{{ j.icon }} {{ j.label }}</a>
+                <a href="{{ base_path }}/jobs/{{ j.slug }}/{{ city.slug }}" style="background:#f0f0f0;padding:.3rem .8rem;border-radius:20px;font-size:.85rem">{{ j.icon }} {{ j.label }}</a>
                 {% endfor %}
             </div>
         </main>
@@ -241,16 +241,16 @@
             <div class="sidebar-widget">
                 <h3>Free Calculators</h3>
                 <ul>
-                    <li><a href="{{ base_path }}/calculators/job-cost-calculator.html">Job Cost & Quote Builder</a></li>
-                    <li><a href="{{ base_path }}/calculators/gst-calculator.html">GST Calculator</a></li>
-                    <li><a href="{{ base_path }}/calculators/hourly-rate-calculator.html">Hourly Rate</a></li>
+                    <li><a href="{{ base_path }}/calculators/job-cost-calculator">Job Cost & Quote Builder</a></li>
+                    <li><a href="{{ base_path }}/calculators/gst-calculator">GST Calculator</a></li>
+                    <li><a href="{{ base_path }}/calculators/hourly-rate-calculator">Hourly Rate</a></li>
                 </ul>
             </div>
             <div class="sidebar-widget">
                 <h3>Find Local Tradies</h3>
                 <ul>
                     {% for trade in trades %}
-                    <li><a href="{{ base_path }}/trades/{{ trade.slug }}/{{ city.slug }}.html">{{ trade.icon }} {{ trade.name }} in {{ city.name }}</a></li>
+                    <li><a href="{{ base_path }}/trades/{{ trade.slug }}/{{ city.slug }}">{{ trade.icon }} {{ trade.name }} in {{ city.name }}</a></li>
                     {% endfor %}
                 </ul>
             </div>

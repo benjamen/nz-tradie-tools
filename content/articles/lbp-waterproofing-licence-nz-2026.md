@@ -51,7 +51,7 @@ For most existing LBPs, the immediate impact of these reforms is awareness rathe
 - The application process will likely involve demonstrating competency — either through assessment, work history, or both (the exact process is yet to be confirmed)
 - There may be a **transition period** allowing existing practitioners to continue while they apply, similar to how the LBP scheme was originally phased in
 
-Check your annual CPD requirements are up to date in the meantime. You must complete **at least one skills maintenance activity per year** and record it in your LBP profile. Our guide to [LBP CPD compliance and renewal](/articles/lbp-cpd-compliance-renewal-nz-2026.html) explains how to stay on track.
+Check your annual CPD requirements are up to date in the meantime. You must complete **at least one skills maintenance activity per year** and record it in your LBP profile. Our guide to [LBP CPD compliance and renewal](/articles/lbp-cpd-compliance-renewal-nz-2026) explains how to stay on track.
 
 ## Why This Matters Beyond Licensing
 
@@ -77,7 +77,7 @@ Make sure your address, contact details, and CPD log are current at [lbp.govt.nz
 
 **4. Price waterproofing work correctly**
 
-Waterproofing materials and labour are separate costs that many tradies underquote. Membrane products, primer, tapes, and corners add up. Use our [hourly rate calculator](/calculators/hourly-rate-calculator.html) to make sure your labour rate covers the time spent properly preparing and applying membrane — not just the tiling on top.
+Waterproofing materials and labour are separate costs that many tradies underquote. Membrane products, primer, tapes, and corners add up. Use our [hourly rate calculator](/calculators/hourly-rate-calculator) to make sure your labour rate covers the time spent properly preparing and applying membrane — not just the tiling on top.
 
 **5. Keep up with the announcement**
 
@@ -85,7 +85,7 @@ MBIE and Building Performance typically give several months' notice before major
 
 ## The Bigger Picture
 
-The new waterproofing licence class is part of a broader effort to raise the quality bar in NZ residential construction. Combined with the [granny flat consent exemption](/articles/new-nz-granny-flat-rules-builders.html) — which requires all regulated work to be done by licensed tradespeople — the government is effectively tightening who can do what without increasing red tape for consumers.
+The new waterproofing licence class is part of a broader effort to raise the quality bar in NZ residential construction. Combined with the [granny flat consent exemption](/articles/new-nz-granny-flat-rules-builders) — which requires all regulated work to be done by licensed tradespeople — the government is effectively tightening who can do what without increasing red tape for consumers.
 
 For skilled tradies who are already doing this work properly, getting licensed is a competitive advantage. It signals quality, reduces your liability exposure, and positions you ahead of unlicensed operators who won't be able to legally carry out this work once the rules land.
 

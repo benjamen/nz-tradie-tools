@@ -36,8 +36,8 @@ Could your fleet be used more efficiently?
 ## Leverage Digital Tools to Manage Costs
 In a volatile market, data is your best friend.
 - **Track Actuals:** Use [Fastcrew](https://fastcrew.nz) to track the exact fuel and travel costs associated with each project. You can't fix a problem if you don't have accurate data on how much money is being lost.
-- **GST and Tax:** With profit margins tighter due to these external pressures, it is more important than ever to stay on top of your financial obligations. Use our [GST Calculator](/calculators/gst-calculator.html) regularly to ensure your tax reporting is accurate.
-- **Pricing Strategy:** Use our [job pricing guide](/calculators/job-pricing-guide.html) as a baseline, but apply your own "fuel adjustment factor" to ensure your labour rates properly account for the current reality.
+- **GST and Tax:** With profit margins tighter due to these external pressures, it is more important than ever to stay on top of your financial obligations. Use our [GST Calculator](/calculators/gst-calculator) regularly to ensure your tax reporting is accurate.
+- **Pricing Strategy:** Use our [job pricing guide](/calculators/job-pricing-guide) as a baseline, but apply your own "fuel adjustment factor" to ensure your labour rates properly account for the current reality.
 
 ## The Road Ahead
 While the construction industry is showing signs of recovery with increased building consents, the reality is a "reset rather than a rebound." The businesses that succeed in 2026 will be the ones that are disciplined, data-driven, and proactive about managing their margins.
@@ -48,4 +48,4 @@ Don't absorb the fuel shock—manage it.
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

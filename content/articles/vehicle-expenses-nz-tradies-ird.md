@@ -19,7 +19,7 @@ You claim a set rate per kilometre driven for business. No need to track actual 
 - Petrol/diesel: $0.95/km (first 14,000 km), $0.35/km (over 14,000 km)
 - Electric: $0.09/km
 
-Use the [Vehicle Mileage Calculator](/calculators/vehicle-mileage-calculator.html) to calculate your claim.
+Use the [Vehicle Mileage Calculator](/calculators/vehicle-mileage-calculator) to calculate your claim.
 
 **Best for:** Tradies who use their vehicle mostly for private use and want simple records.
 
@@ -104,10 +104,10 @@ Digital records are fine. IRD accepts photos of receipts, digital logbooks, and 
 
 ---
 
-*Use our [Vehicle Mileage Calculator](/calculators/vehicle-mileage-calculator.html) to estimate your deduction.*
+*Use our [Vehicle Mileage Calculator](/calculators/vehicle-mileage-calculator) to estimate your deduction.*
 
 *About NZ Tradie Tools: Practical resources for New Zealand self-employed tradies.*
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

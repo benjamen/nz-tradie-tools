@@ -132,6 +132,6 @@ All private rentals must now comply — the deadline has passed. Landlords who h
 
 ### Quoting Healthy Homes Work
 
-When quoting for landlords, assess all five standards together — it saves the client multiple visit fees and positions you as the complete solution. Use our [H1 Insulation Calculator](/calculators/h1-insulation-calculator.html) to check ceiling and underfloor R-value requirements by zone.
+When quoting for landlords, assess all five standards together — it saves the client multiple visit fees and positions you as the complete solution. Use our [H1 Insulation Calculator](/calculators/h1-insulation-calculator) to check ceiling and underfloor R-value requirements by zone.
 
 [MBIE's Healthy Homes guidance](https://www.tenancy.govt.nz/healthy-homes/) has the full technical standards.

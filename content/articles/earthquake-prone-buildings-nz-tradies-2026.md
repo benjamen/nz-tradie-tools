@@ -55,7 +55,7 @@ The main licence classes relevant to EPB remediation are:
 - **Design** — for engineers and designers preparing strengthening plans
 - **Site** — for those managing the overall project
 
-If you're considering LBP licensing to open up EPB work opportunities, read our full guide on [how to get an LBP licence in New Zealand](/articles/how-to-get-lbp-licence-new-zealand.html) — it covers the application process, competency requirements, and typical timeframes.
+If you're considering LBP licensing to open up EPB work opportunities, read our full guide on [how to get an LBP licence in New Zealand](/articles/how-to-get-lbp-licence-new-zealand) — it covers the application process, competency requirements, and typical timeframes.
 
 ## Contracts and Liability on EPB Jobs
 
@@ -68,7 +68,7 @@ Key provisions to address in your contracts before work starts:
 - **Sign-off chain** — confirm who provides producer statements (PS3 and PS4) and at which construction stages.
 - **Completion definition** — be explicit about whether "practical completion" includes council sign-off or just physical completion of the works.
 
-Our [NZ tradie contract guide](/articles/tradie-contract-guide-nz.html) covers the clauses you should include on any commercial construction job — most apply equally to EPB remediation work.
+Our [NZ tradie contract guide](/articles/tradie-contract-guide-nz) covers the clauses you should include on any commercial construction job — most apply equally to EPB remediation work.
 
 ## Pricing EPB Remediation
 
@@ -80,7 +80,7 @@ As a rough guide, structural seismic remediation in New Zealand currently runs a
 - URM wall strengthening per lineal metre: **$2,500–$6,000+**
 - Full seismic reline of a commercial building: **$500,000–$5M+**
 
-These are GST-exclusive figures. Use our [free GST calculator](/calculators/gst-calculator.html) to work out GST-inclusive totals when preparing quotes for clients.
+These are GST-exclusive figures. Use our [free GST calculator](/calculators/gst-calculator) to work out GST-inclusive totals when preparing quotes for clients.
 
 Margins on EPB work tend to be stronger than standard residential — the specialist nature, regulatory risk, and documentation burden justify it. Don't undercut yourself against a perceived shortage of work; the clients who own EPBs have a legal obligation to remediate and cannot simply choose not to proceed.
 
@@ -121,7 +121,7 @@ If you hold the right licences, have experience with structural or masonry work,
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.
 ---
 
 ## Recommended Resources

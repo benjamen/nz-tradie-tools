@@ -64,7 +64,7 @@ At this income level, the saving is over $1,000 — enough to cover the annual p
 
 For most self-employed tradies, income tax doesn't come out of each invoice like PAYE does for employees. You pay it in advance via **provisional tax**, usually in three instalments across the year (August, January, May). Your provisional tax is calculated based on the prior year's residual income tax, so the bracket changes flow through with a slight lag.
 
-If your net income grew significantly in 2024–25, your 2025–26 provisional tax instalments may be set too low — and you'll face a catch-up bill plus use-of-money interest from IRD. Use our [provisional tax calculator](/calculators/provisional-tax-calculator.html) to check whether your current instalments are tracking correctly before the May instalment date.
+If your net income grew significantly in 2024–25, your 2025–26 provisional tax instalments may be set too low — and you'll face a catch-up bill plus use-of-money interest from IRD. Use our [provisional tax calculator](/calculators/provisional-tax-calculator) to check whether your current instalments are tracking correctly before the May instalment date.
 
 The standard safe harbour threshold is $5,000 residual income tax. If you owe less than that after all tax credits, you don't pay provisional tax at all — you just pay your end-of-year bill when you file. Many one-person tradie operations with low net income fall into this category.
 
@@ -78,7 +78,7 @@ Check the [IRD tax codes and rates page](https://www.ird.govt.nz/income-tax/inco
 
 Knowing your real tax bill helps you set your hourly rate accurately. Many tradies underprice because they mentally subtract "about 30%" for tax, when their actual effective rate at $60–80k net income is closer to 21–23% under the new brackets.
 
-Our [hourly rate calculator](/calculators/hourly-rate-calculator.html) lets you plug in your target net income, expected billable hours, and tax rate to find the minimum charge-out rate that keeps your business viable. Getting this right is especially important if you've recently gone fully self-employed and are no longer topping up a PAYE salary.
+Our [hourly rate calculator](/calculators/hourly-rate-calculator) lets you plug in your target net income, expected billable hours, and tax rate to find the minimum charge-out rate that keeps your business viable. Getting this right is especially important if you've recently gone fully self-employed and are no longer topping up a PAYE salary.
 
 ## Business Tools That Help
 

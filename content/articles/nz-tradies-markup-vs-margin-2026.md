@@ -102,7 +102,7 @@ If you're hitting 25% margin and your overheads are 18%, you're left with 7% for
 
 ## Track Your Actual Margins
 
-The best way to stop margin leaks is to track actual job profitability. Use job management software like [Tradify](https://tradietools.nz/articles/best-job-management-software-nz-tradies-2026.html) or Fastcrew (https://fastcrew.nz) to record actual labour hours and material costs against quoted jobs. This reveals where you're underestimating.
+The best way to stop margin leaks is to track actual job profitability. Use job management software like [Tradify](https://tradietools.nz/articles/best-job-management-software-nz-tradies-2026) or Fastcrew (https://fastcrew.nz) to record actual labour hours and material costs against quoted jobs. This reveals where you're underestimating.
 
 Many NZ tradies find they're consistently 5–15% off on labour estimates. Once you know your patterns, you can adjust future quotes and protect your margin.
 
@@ -120,7 +120,7 @@ Ask yourself:
 
 If you've been using guesswork markup and haven't checked your actual margins in 6 months, you're almost certainly underpricing. Spend an afternoon with a spreadsheet, work out your target margin for your trade, and recalculate your pricing.
 
-For help with [job costing and quoting](/articles/builder-quote-what-to-include-nz.html), check out our guide on what to include in a quote. And if you're tracking cash flow, our [cash flow management guide](/articles/cash-flow-management-nz-tradies.html) walks you through the full picture.
+For help with [job costing and quoting](/articles/builder-quote-what-to-include-nz), check out our guide on what to include in a quote. And if you're tracking cash flow, our [cash flow management guide](/articles/cash-flow-management-nz-tradies) walks you through the full picture.
 
 Download our free NZ tradie templates at tradietools.nz/templates/ — including a markup/margin calculator that does all this math for you.
 

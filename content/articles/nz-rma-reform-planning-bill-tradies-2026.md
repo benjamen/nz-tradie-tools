@@ -176,7 +176,7 @@ Now is the time to:
 
 The tradies who prepare now will be positioned to move faster and win more work in the reformed system. Those who ignore it will face consent delays and compliance issues.
 
-For templates and guides to help document your site practices, download our free NZ tradie templates at tradietools.nz/templates/. We also have resources on [job costing](/calculators/job-costing-guide/) and [contract management](/articles/tradie-contract-guide-nz.html) that align with the new framework.
+For templates and guides to help document your site practices, download our free NZ tradie templates at tradietools.nz/templates/. We also have resources on [job costing](/calculators/job-costing-guide/) and [contract management](/articles/tradie-contract-guide-nz) that align with the new framework.
 
 ---
 

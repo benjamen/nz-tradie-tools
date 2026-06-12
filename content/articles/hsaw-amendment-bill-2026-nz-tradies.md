@@ -47,13 +47,13 @@ The simplified rules for small PCBUs **do not remove** your core obligations. Th
 
 If you work as a subcontractor, remember that your principal/PCBU also owes you duties — and you owe duties to them. Those overlapping responsibilities remain in place.
 
-For a full breakdown of your current obligations, see our [NZ Tradies Health & Safety Guide](/articles/health-and-safety-guide-nz-tradies.html).
+For a full breakdown of your current obligations, see our [NZ Tradies Health & Safety Guide](/articles/health-and-safety-guide-nz-tradies).
 
 ## How This Affects ACC Levies
 
 One question tradies often ask is whether a change in H&S law affects their ACC levies. The short answer: **not directly**. ACC levies are based on your industry risk classification and claims history, not on your specific H&S compliance status. However, better H&S practices do reduce injury rates, which over time can lower levy costs across an industry classification.
 
-You can check your current ACC levy classification and estimate your annual costs using our [ACC Levy Calculator](/calculators/acc-levy-calculator.html).
+You can check your current ACC levy classification and estimate your annual costs using our [ACC Levy Calculator](/calculators/acc-levy-calculator).
 
 ## What Should You Do Now?
 
@@ -85,4 +85,4 @@ Want to manage your tradie business more efficiently? Check out [Fastcrew](https
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

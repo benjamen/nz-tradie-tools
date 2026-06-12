@@ -52,7 +52,7 @@ Roof anchor points must comply with **AS/NZS 1891.4** (Industrial Fall Arrest Sy
 
 ### Wet Iron Roofing
 
-Never step directly onto wet corrugated iron or tray decking without roof brackets (also called chicken ladders or roof hooks). These hook over the ridge and distribute your weight across multiple sheets. A pair of good-quality aluminium roof ladders costs around **$200–$350** and is tax-deductible as a tool of trade — see [how to claim vehicle and equipment expenses as a NZ tradie](/articles/vehicle-expenses-nz-tradies-ird.html).
+Never step directly onto wet corrugated iron or tray decking without roof brackets (also called chicken ladders or roof hooks). These hook over the ridge and distribute your weight across multiple sheets. A pair of good-quality aluminium roof ladders costs around **$200–$350** and is tax-deductible as a tool of trade — see [how to claim vehicle and equipment expenses as a NZ tradie](/articles/vehicle-expenses-nz-tradies-ird).
 
 Rubber-soled footwear (specifically designed for roofing) provides significantly better grip than standard steel-capped boots on wet iron. This is equipment you can legitimately charge to the job.
 
@@ -60,7 +60,7 @@ Rubber-soled footwear (specifically designed for roofing) provides significantly
 
 WorkSafe expects you to have a documented **wind threshold** in your site safety plan beyond which work on the roof stops. A widely used industry benchmark is suspending roof work when sustained wind speeds exceed **40 km/h** or gusts exceed **60 km/h**. Check MetService forecasts before mobilising to a roofing job; the hourly forecast for most NZ locations is free at metservice.com.
 
-When wind causes a delay, notify the client promptly and document it. If you're working under a fixed-price contract, wet weather delay provisions matter — see [fixed-price vs cost-plus contracts for NZ tradies](/articles/fixed-price-vs-cost-plus-contracts-nz-tradies-2026.html) for how to build weather contingencies into your quotes.
+When wind causes a delay, notify the client promptly and document it. If you're working under a fixed-price contract, wet weather delay provisions matter — see [fixed-price vs cost-plus contracts for NZ tradies](/articles/fixed-price-vs-cost-plus-contracts-nz-tradies-2026) for how to build weather contingencies into your quotes.
 
 ### Low Light Conditions
 
@@ -75,7 +75,7 @@ Winter roofing jobs cost more to do safely. This is not optional padding — it 
 - **Anchor hire or purchase:** If you don't own roof anchors, hire them. If you're doing regular roofing work, owning your own set and amortising the cost across jobs is more efficient.
 - **Weather contingency:** Add a 5–10% weather contingency allowance to fixed-price roofing quotes and make it clear in writing. Clients appreciate the transparency.
 
-Use our [roofer pricing guide for NZ 2026](/articles/roofer-pricing-guide-nz-2026.html) as a starting point for labour rate benchmarks by region.
+Use our [roofer pricing guide for NZ 2026](/articles/roofer-pricing-guide-nz-2026) as a starting point for labour rate benchmarks by region.
 
 ## Documentation WorkSafe Expects
 
@@ -96,7 +96,7 @@ WorkSafe NZ can issue improvement notices, prohibition notices (stopping work on
 
 Beyond fines, an at-fault injury may void your professional indemnity and public liability insurance — check your policy wording carefully. Most NZ tradie insurers require you to have "complied with all relevant legislation" for coverage to apply.
 
-ACC levies for roofers are already among the highest in the trades sector (see our [ACC levies guide for NZ tradies](/articles/acc-levies-nz-tradies-2026-guide.html)). An at-fault serious harm claim can result in an experience-rated levy increase that follows your business for years.
+ACC levies for roofers are already among the highest in the trades sector (see our [ACC levies guide for NZ tradies](/articles/acc-levies-nz-tradies-2026-guide)). An at-fault serious harm claim can result in an experience-rated levy increase that follows your business for years.
 
 ## Practical Winter Roofing Checklist
 
@@ -119,4 +119,4 @@ Before each roofing job this winter:
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

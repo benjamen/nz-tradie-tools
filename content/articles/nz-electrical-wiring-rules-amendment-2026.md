@@ -69,7 +69,7 @@ From 12 November 2026, WorkSafe can take action against electricians completing 
 
 Recent WorkSafe activity shows the regulator is actively monitoring the sector. In May 2026, Citywide Electrical Limited entered an enforceable undertaking with WorkSafe following an arc flash incident — a reminder that electrical safety failures carry real consequences.
 
-For more on your general health and safety obligations, see our [NZ Tradie Health and Safety Guide](/articles/health-and-safety-guide-nz-tradies.html).
+For more on your general health and safety obligations, see our [NZ Tradie Health and Safety Guide](/articles/health-and-safety-guide-nz-tradies).
 
 ## Business Checklist for NZ Electricians
 
@@ -89,7 +89,7 @@ The updated standards don't dramatically change what most residential jobs invol
 - Jobs requiring arc fault detection devices will see an **additional $80–$180 per circuit** for the AFDD hardware plus installation time
 - Updated documentation and verification for larger installations may add **1–2 hours of admin time** to quotes ($120–$180 + GST at typical NZ electrician rates of $120–$150/hr)
 
-If you're updating your quote templates to reflect these changes, see our [Electrician Pricing Guide for NZ 2026](/articles/electrician-pricing-guide-nz-2026.html) for current benchmark rates across different job types.
+If you're updating your quote templates to reflect these changes, see our [Electrician Pricing Guide for NZ 2026](/articles/electrician-pricing-guide-nz-2026) for current benchmark rates across different job types.
 
 ## Managing Your Electrical Business Through the Transition
 
@@ -106,7 +106,7 @@ Keeping clear job records now will also make any future EWRB or WorkSafe audit s
 | **12 November 2026** | **Hard deadline — new standards mandatory for all work** |
 | Post-November 2026 | WorkSafe enforcement on non-compliant installations |
 
-For a breakdown of how your electrical business income is taxed and what you can claim, see our [NZ Tradie Tax Guide 2026](/articles/nz-tradie-tax-guide-2026.html).
+For a breakdown of how your electrical business income is taxed and what you can claim, see our [NZ Tradie Tax Guide 2026](/articles/nz-tradie-tax-guide-2026).
 
 ---
 

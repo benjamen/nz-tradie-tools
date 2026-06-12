@@ -64,7 +64,7 @@ This is non-negotiable in New Zealand: **all electrical work must be carried out
 
 Once the work is done, your electrician must issue a **Certificate of Compliance (CoC)**. Always ask for this — it's your proof that the work was done correctly and inspected. Keep it with your property records.
 
-If you're a tradie considering getting into electrical work or want to understand the licensing pathway, the [LBP licence guide](/articles/how-to-get-lbp-licence-new-zealand.html) covers related licensing context for the building trades.
+If you're a tradie considering getting into electrical work or want to understand the licensing pathway, the [LBP licence guide](/articles/how-to-get-lbp-licence-new-zealand) covers related licensing context for the building trades.
 
 ## Getting an Accurate Quote
 
@@ -75,10 +75,10 @@ For anything beyond a simple one-off job, it's worth getting two or three quotes
 - Ask whether the callout fee applies to the quote visit or only if you proceed.
 - Ask about their CoC process and timing — you want the compliance paperwork promptly.
 
-For electricians pricing their own work and working out sustainable rates, the [hourly rate calculator](/calculators/hourly-rate-calculator.html) helps you work backwards from your actual costs to a rate that keeps your business healthy.
+For electricians pricing their own work and working out sustainable rates, the [hourly rate calculator](/calculators/hourly-rate-calculator) helps you work backwards from your actual costs to a rate that keeps your business healthy.
 
 Electrical work is one area where the cheapest quote can genuinely be the most expensive outcome. A botched wiring job is a fire risk. Know what you're paying for, and make sure the sparky you hire is registered.
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

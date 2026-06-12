@@ -44,7 +44,7 @@ Alongside the warranty reform, **the maximum fines and suspension periods for Li
 
 Currently, LBPs can be fined up to $10,000 and suspended for up to 12 months for disciplinary matters. Under the new regime, those maximums will increase significantly.
 
-If your LBP licence is central to your work — and for most residential builders, it is — this is not the time to let your continuing professional development (CPD) lapse or to cut corners on Records of Work. If you need a refresher on maintaining your LBP licence, see our guide: [How to Get and Keep Your LBP Licence in NZ](/articles/how-to-get-lbp-licence-new-zealand.html).
+If your LBP licence is central to your work — and for most residential builders, it is — this is not the time to let your continuing professional development (CPD) lapse or to cut corners on Records of Work. If you need a refresher on maintaining your LBP licence, see our guide: [How to Get and Keep Your LBP Licence in NZ](/articles/how-to-get-lbp-licence-new-zealand).
 
 ## What Will Home Warranty Insurance Cost?
 
@@ -55,7 +55,7 @@ Definitive premiums will depend on the insurer, project value, and your claims h
 
 For a $450,000 new build, that could mean $2,250–$5,400 in warranty insurance costs. This is a legitimate project cost that should be included in your quote from day one. Leaving it out and absorbing it later will erode your margin.
 
-When pricing jobs, add home warranty insurance as a line item — just as you would public liability insurance or ACC levies. For a primer on structuring your insurance costs into pricing, see [Public Liability Insurance for NZ Tradies](/articles/public-liability-insurance-nz-tradies.html) and our [ACC Levies Guide for NZ Tradies 2026](/articles/acc-levies-nz-tradies-2026-guide.html).
+When pricing jobs, add home warranty insurance as a line item — just as you would public liability insurance or ACC levies. For a primer on structuring your insurance costs into pricing, see [Public Liability Insurance for NZ Tradies](/articles/public-liability-insurance-nz-tradies) and our [ACC Levies Guide for NZ Tradies 2026](/articles/acc-levies-nz-tradies-2026-guide).
 
 ## How Does This Interact With Proportionate Liability?
 

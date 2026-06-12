@@ -131,4 +131,4 @@ Kitchens are the most value-adding renovation in any NZ home — and the most co
 
 ### LBP Requirement
 
-If your kitchen renovation involves structural changes (removing walls), you need an [LBP-licensed builder](/trades/builders/). Check our [quotes guide](/articles/how-to-write-a-quote-that-wins-jobs-nz.html) before signing anything.
+If your kitchen renovation involves structural changes (removing walls), you need an [LBP-licensed builder](/trades/builders/). Check our [quotes guide](/articles/how-to-write-a-quote-that-wins-jobs-nz) before signing anything.

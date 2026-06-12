@@ -52,7 +52,7 @@ Plumbing materials are already down 1.5% — partly because of the influx of Aus
 
 For tradies, the near-term opportunity is to review your regular supplier relationships and get quotes from alternative suppliers now that the product range has expanded. You're not locked in to your current supplier's pricing anymore.
 
-For a deeper look at how to manage rising material costs on existing jobs, see our guide on [managing rising material costs in NZ 2026](/articles/managing-rising-material-costs-nz-2026.html).
+For a deeper look at how to manage rising material costs on existing jobs, see our guide on [managing rising material costs in NZ 2026](/articles/managing-rising-material-costs-nz-2026).
 
 ## Checking Product Compliance on Site
 
@@ -84,9 +84,9 @@ This winter, tradies who can offer genuine cost savings through smart material s
 
 The expanded product range also has implications for tax. If you're buying new tools or equipment to work with new product categories — a different drill bit set for a new composite decking system, updated crimping tools for new plumbing fittings — those purchases are fully deductible.
 
-IRD's low-value asset threshold means tools and equipment costing $1,000 or less (excluding GST) can be written off in full in the year of purchase. For larger items, the Investment Boost introduced in May 2025 lets you claim a one-off 20% deduction on top of normal depreciation for qualifying new assets. See our full guide on the [NZ Investment Boost deduction](/articles/nz-tradie-investment-boost-deduction-2026.html) for details.
+IRD's low-value asset threshold means tools and equipment costing $1,000 or less (excluding GST) can be written off in full in the year of purchase. For larger items, the Investment Boost introduced in May 2025 lets you claim a one-off 20% deduction on top of normal depreciation for qualifying new assets. See our full guide on the [NZ Investment Boost deduction](/articles/nz-tradie-investment-boost-deduction-2026) for details.
 
-If you're registered for GST, remember to use your net (ex-GST) cost when calculating the $1,000 threshold. Use our [GST calculator](/calculators/gst-calculator.html) to quickly split GST from any purchase total.
+If you're registered for GST, remember to use your net (ex-GST) cost when calculating the $1,000 threshold. Use our [GST calculator](/calculators/gst-calculator) to quickly split GST from any purchase total.
 
 For job management and keeping track of which products you're using on which jobs — especially useful now that you may be sourcing from new suppliers — [Fastcrew](https://fastcrew.nz) is worth a look. It's built specifically for NZ tradies and handles job tracking, invoicing, and supplier notes in one place.
 
@@ -110,4 +110,4 @@ Download our free NZ tradie templates at tradietools.nz/templates/ — including
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

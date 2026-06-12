@@ -92,7 +92,7 @@ However, be careful:
 - **Mixing trade and personal spend** on an account makes GST claims messy at tax time
 - **Credit limit creep** — as suppliers increase your limit, it's easy to run a higher balance than is healthy for your cash flow
 
-Use the trade account strategically for project materials you know will be covered by client invoices. Keep a separate log or use accounting software (Xero or MYOB work well) to reconcile what's on account vs what's been invoiced. Our [GST calculator](/calculators/gst-calculator.html) can help you track the GST component of supplier invoices quickly at month end.
+Use the trade account strategically for project materials you know will be covered by client invoices. Keep a separate log or use accounting software (Xero or MYOB work well) to reconcile what's on account vs what's been invoiced. Our [GST calculator](/calculators/gst-calculator) can help you track the GST component of supplier invoices quickly at month end.
 
 ---
 
@@ -110,7 +110,7 @@ More than three accounts gets complicated. You lose volume leverage at each one 
 
 Once you've negotiated your best trade prices, you still need to charge appropriately for materials on client quotes. The industry standard markup on materials in NZ is 15–30% depending on trade and job type — this covers your time to source, freight costs, wastage, and the risk of price changes between quote and purchase.
 
-If you're unsure how to calculate your materials markup correctly, our [job costing guide](/articles/job-costing-guide-nz-tradies-2026.html) walks through the full calculation including margin vs markup, and how to avoid the common mistake of confusing the two.
+If you're unsure how to calculate your materials markup correctly, our [job costing guide](/articles/job-costing-guide-nz-tradies-2026) walks through the full calculation including margin vs markup, and how to avoid the common mistake of confusing the two.
 
 ---
 

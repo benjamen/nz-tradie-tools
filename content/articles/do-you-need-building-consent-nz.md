@@ -129,7 +129,7 @@ Building work done without required consent is **illegal**. Consequences include
 
 ---
 
-See our full guide on [Getting Your LBP Licence in NZ](/articles/how-to-get-lbp-licence-new-zealand.html) if you're working towards restricted building work qualification.
+See our full guide on [Getting Your LBP Licence in NZ](/articles/how-to-get-lbp-licence-new-zealand) if you're working towards restricted building work qualification.
 
 ---
 
@@ -137,7 +137,7 @@ See our full guide on [Getting Your LBP Licence in NZ](/articles/how-to-get-lbp-
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.
 ---
 
 ## Recommended Resources

@@ -33,8 +33,8 @@ When a business enters liquidation, the administrator will only pay out for work
 
 ## 4. Keep Your Business Healthy
 Protecting yourself against others' failure starts with ensuring you aren't leaving yourself vulnerable.
-- **Financial Reporting:** Use our [GST Calculator](/calculators/gst-calculator.html) to stay on top of your tax obligations. Unexpected tax bills when cash flow is already tight can push a healthy business into a crisis.
-- **Pricing:** Use our [job pricing guide](/calculators/job-pricing-guide.html) to ensure you are charging enough to cover not just your direct costs, but also the risks of doing business in a volatile market.
+- **Financial Reporting:** Use our [GST Calculator](/calculators/gst-calculator) to stay on top of your tax obligations. Unexpected tax bills when cash flow is already tight can push a healthy business into a crisis.
+- **Pricing:** Use our [job pricing guide](/calculators/job-pricing-guide) to ensure you are charging enough to cover not just your direct costs, but also the risks of doing business in a volatile market.
 
 ## The Takeaway
 The "reset" in the construction market is forcing everyone to become more professional, more disciplined, and more risk-aware. By treating your business with this level of seriousness, you’re not just protecting your livelihood—you’re building a stronger, more resilient company that will be well-placed to lead when the market returns to growth.

@@ -43,7 +43,7 @@ Both routes typically take three to four years from school-leaving age. But the 
 
 Apprentices are employed during their training, often starting around $20–$25 per hour in year one and progressing as they gain skills and NZQA unit standards. Under the Apprenticeship Boost scheme (administered through MBIE and Tertiary Education Commission), employers receive up to $500 per month in year one and $250 per month in year two for each eligible apprentice — reducing the cost of training significantly.
 
-Use the [apprentice wage calculator](/calculators/apprentice-wage-calculator.html) to model what it costs to bring on an apprentice at different stages of their training.
+Use the [apprentice wage calculator](/calculators/apprentice-wage-calculator) to model what it costs to bring on an apprentice at different stages of their training.
 
 ## Why the Skills Shortage Is Pushing Tradie Pay Up
 
@@ -61,7 +61,7 @@ An employed electrician earning $85,000 is doing well. But an electrician runnin
 
 Of course, self-employment brings risk. You're responsible for finding work, managing cash flow, handling GST and provisional tax, and covering your own ACC levies. But those are learnable skills — and the upside is real.
 
-Use the [hourly rate calculator](/calculators/hourly-rate-calculator.html) to work out what you need to charge to hit your income target as a self-employed tradie in New Zealand.
+Use the [hourly rate calculator](/calculators/hourly-rate-calculator) to work out what you need to charge to hit your income target as a self-employed tradie in New Zealand.
 
 ## Making the Numbers Work: Tax and IRD
 
@@ -98,4 +98,4 @@ Download our free NZ tradie templates at tradietools.nz/templates/ — including
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

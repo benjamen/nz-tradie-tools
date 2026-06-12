@@ -47,7 +47,7 @@ These are realistic ranges used by established NZ trade businesses:
 
 Higher markups are justified when materials are highly specialised, hard to source, or require significant time to procure. Plumbers and electricians typically sit at the higher end because fittings and components are highly variable and require expert specification.
 
-If you're unsure where your rates sit, use the [Job Cost Calculator](/calculators/job-cost-calculator.html) to model your actual cost recovery across recent jobs.
+If you're unsure where your rates sit, use the [Job Cost Calculator](/calculators/job-cost-calculator) to model your actual cost recovery across recent jobs.
 
 ---
 
@@ -60,7 +60,7 @@ A 25% markup does **not** give you a 25% margin. This is the most common maths m
 
 If your accountant or business coach talks about gross margin targets (usually 35–50% for a healthy trade business), make sure you're converting that into the right markup percentage when you quote.
 
-For a more detailed walkthrough, see our guide on [markup vs margin for NZ tradies](/articles/markup-vs-margin-nz-tradies-2026.html).
+For a more detailed walkthrough, see our guide on [markup vs margin for NZ tradies](/articles/markup-vs-margin-nz-tradies-2026).
 
 ---
 
@@ -98,7 +98,7 @@ A simple escalation clause might read:
 
 > *"This quote is based on current supplier pricing as at [date]. If material costs increase by more than 5% prior to delivery, the variation will be charged to the client at cost."*
 
-Most residential clients will accept this if you explain it upfront, especially on larger jobs. It's increasingly standard in commercial and infrastructure work. You can include this as a standard term in your quote template — use our [Quote Builder Wizard](/calculators/quote-builder-wizard.html) to build a professional template with supporting terms.
+Most residential clients will accept this if you explain it upfront, especially on larger jobs. It's increasingly standard in commercial and infrastructure work. You can include this as a standard term in your quote template — use our [Quote Builder Wizard](/calculators/quote-builder-wizard) to build a professional template with supporting terms.
 
 ---
 
@@ -113,7 +113,7 @@ Example:
 - You claim back $75 GST on your purchase
 - Net GST payable to IRD: $22.50
 
-Use the [GST Calculator](/calculators/gst-calculator.html) to check your figures before sending invoices.
+Use the [GST Calculator](/calculators/gst-calculator) to check your figures before sending invoices.
 
 ---
 

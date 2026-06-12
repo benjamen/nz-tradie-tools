@@ -29,7 +29,7 @@ Restricted building work covers work that is critical to the structural integrit
 
 If you are doing any of this work on residential buildings that require a building consent, you need an LBP licence. Doing RBW without a licence is an offence under the Building Act and can result in fines of up to $20,000.
 
-For a full overview of how to obtain your LBP licence, see our guide: [How to Get Your LBP Licence in New Zealand](/articles/how-to-get-lbp-licence-new-zealand.html).
+For a full overview of how to obtain your LBP licence, see our guide: [How to Get Your LBP Licence in New Zealand](/articles/how-to-get-lbp-licence-new-zealand).
 
 ---
 
@@ -92,7 +92,7 @@ As of 2026, the LBP renewal fee is **$200 + GST ($230 incl. GST)** for a single 
 
 If your licence lapses — even by a day — you must stop carrying out restricted building work until it is renewed. Continuing to work without a current licence is an offence regardless of how long you have held it.
 
-Use our [Hourly Rate Calculator](/calculators/hourly-rate-calculator.html) to make sure your pricing accounts for the cost of licence renewals, CPD training, and other professional obligations across the year.
+Use our [Hourly Rate Calculator](/calculators/hourly-rate-calculator) to make sure your pricing accounts for the cost of licence renewals, CPD training, and other professional obligations across the year.
 
 ---
 
@@ -121,7 +121,7 @@ Staying compliant doesn't need to be stressful if you have good systems in place
 
 If you manage a team of LBPs, tools like [Fastcrew](https://fastcrew.nz) can help you track which team members hold current licences, making it easier to assign the right person to restricted building work.
 
-Use our [Job Cost Calculator](/calculators/job-cost-calculator.html) to factor compliance costs — insurance, CPD, licensing — into your overhead when pricing jobs. Underpricing because you forgot to include your professional obligations is one of the most common financial mistakes LBP-licensed tradies make.
+Use our [Job Cost Calculator](/calculators/job-cost-calculator) to factor compliance costs — insurance, CPD, licensing — into your overhead when pricing jobs. Underpricing because you forgot to include your professional obligations is one of the most common financial mistakes LBP-licensed tradies make.
 
 ---
 

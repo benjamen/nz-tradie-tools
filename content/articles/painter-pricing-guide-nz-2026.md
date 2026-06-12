@@ -76,10 +76,10 @@ Getting three quotes for any paint job over $2,000 is sensible. When you line th
 - Does the quote mention how many coats are included?
 - Is there a warranty? Reputable painters often back their exterior work with a 5-year workmanship warranty.
 
-For help with your own cost calculations — whether you're budgeting a project or quoting work yourself — the [job cost calculator](/calculators/job-cost-calculator.html) breaks down labour, materials, and margin clearly. And if you're a painter looking to sharpen up your own quote documents, the [quote template](/templates/quote-template.html) gives you a professional starting point.
+For help with your own cost calculations — whether you're budgeting a project or quoting work yourself — the [job cost calculator](/calculators/job-cost-calculator) breaks down labour, materials, and margin clearly. And if you're a painter looking to sharpen up your own quote documents, the [quote template](/templates/quote-template) gives you a professional starting point.
 
 A good paint job is one of the best returns on investment in home maintenance. Getting the pricing right — and choosing a painter who's genuinely thorough — pays off for years.
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

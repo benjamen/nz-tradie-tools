@@ -152,4 +152,4 @@ If you want $80k take-home and bill 1,600 hours/year: minimum charge rate = $80,
 | Material + labour (builders, concreters) | 25–40% |
 | Maintenance / service work | 50–70% |
 
-Under 20% gross margin = your business is working hard for very little. Use our [Hourly Rate Calculator](/calculators/hourly-rate-calculator.html) to set the right rate.
+Under 20% gross margin = your business is working hard for very little. Use our [Hourly Rate Calculator](/calculators/hourly-rate-calculator) to set the right rate.

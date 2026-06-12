@@ -64,7 +64,7 @@ Retentions don't automatically come back to you. You need to actively claim them
 
 **4. Issue a payment schedule dispute if needed.** If the payer disputes your claim, they must issue a payment schedule within the response timeframe set in the contract (or 20 working days if nothing is specified). If they don't, you can apply to enforce the amount owed through the court or adjudication under the CCA.
 
-Use our [Retentions Calculator](/calculators/retentions-calculator.html) to track what's held and when it's due back.
+Use our [Retentions Calculator](/calculators/retentions-calculator) to track what's held and when it's due back.
 
 ## Negotiating Retentions Out of Your Contract
 
@@ -103,10 +103,10 @@ If the funds weren't held separately, your claim may end up as an unsecured cred
 
 ## Related Resources
 
-- [Retentions Calculator](/calculators/retentions-calculator.html) — track what's held across active projects
-- [Job Cost Calculator](/calculators/job-cost-calculator.html) — factor retention into your cash flow projections
-- [Unpaid invoices: your options as an NZ tradie](/articles/unpaid-invoices-options-nz-tradies.html)
-- [Tradie contract guide](/articles/tradie-contract-guide-nz.html)
+- [Retentions Calculator](/calculators/retentions-calculator) — track what's held across active projects
+- [Job Cost Calculator](/calculators/job-cost-calculator) — factor retention into your cash flow projections
+- [Unpaid invoices: your options as an NZ tradie](/articles/unpaid-invoices-options-nz-tradies)
+- [Tradie contract guide](/articles/tradie-contract-guide-nz)
 
 ---
 
@@ -114,4 +114,4 @@ If the funds weren't held separately, your claim may end up as an unsecured cred
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

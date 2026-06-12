@@ -77,7 +77,7 @@ The IRD can ask for invoices, receipts, and records for up to **7 years**. If yo
 - Receipts for tools, vehicle, materials, and business expenses
 - Mileage logs for vehicle claims
 
-[See our GST calculator guide for more on record-keeping](/calculators/gst-calculator.html).
+[See our GST calculator guide for more on record-keeping](/calculators/gst-calculator).
 
 ## What You Can Claim as Deductions
 
@@ -88,7 +88,7 @@ Lowering your provisional tax starts with claiming all eligible deductions. Comm
 | Tool purchases (under $5,000) | ✅ Yes | Keep receipts; $5,000+ must be depreciated |
 | Vehicle running costs | ✅ Yes | Only work-related; no commute to home |
 | Phone and internet | ✅ Yes | Work portion only (e.g., 40% if used part-time) |
-| Vehicle depreciation | ✅ Yes | Complex; use [our vehicle claim calculator](/calculators/vehicle-depreciation-nz.html) |
+| Vehicle depreciation | ✅ Yes | Complex; use [our vehicle claim calculator](/calculators/vehicle-depreciation-nz) |
 | Home office | ✅ Yes | Rates, power, internet (work-use only) |
 | Apprentice wages | ✅ Yes | If you hire; PAYE must be paid |
 | Training and certifications | ✅ Yes | LBP renewals, safety courses, etc. |
@@ -105,7 +105,7 @@ If you employ staff, you **must** pay ACC levies (as employer). This is separate
 - **ACC contribution rate** (2026): ~1.4% of payroll (varies by industry)
 - **WorkSafe** fees: Depending on your business size, you may pay an annual fee (~$350–$500 for small builders)
 
-These are **deductible** against your income tax, so they lower your provisional tax liability. [See our ACC levy guide](/calculators/acc-calculator-nz.html) for exact rates.
+These are **deductible** against your income tax, so they lower your provisional tax liability. [See our ACC levy guide](/calculators/acc-calculator-nz) for exact rates.
 
 ## If You're in Dispute
 

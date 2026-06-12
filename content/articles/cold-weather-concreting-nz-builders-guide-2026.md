@@ -72,7 +72,7 @@ If you're quoting slab or footing work for winter delivery, make sure your price
 - **Extended cure monitoring visits:** At least 2–3 site visits over the curing period to check temperatures and adjust protection
 - **Programme contingency:** Build a 5–10 day weather delay buffer into your Gantt chart
 
-Use the [NZ Tradie Job Costing Calculator](/calculators/job-cost-calculator.html) to factor these extras into your quote before you submit, and check your overall margins with the [Markup vs Margin Calculator](/calculators/markup-margin-calculator.html).
+Use the [NZ Tradie Job Costing Calculator](/calculators/job-cost-calculator) to factor these extras into your quote before you submit, and check your overall margins with the [Markup vs Margin Calculator](/calculators/markup-margin-calculator).
 
 ## Documentation and Compliance
 

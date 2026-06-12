@@ -36,7 +36,7 @@ For a first-year apprentice working 40 hours per week, that's an increase of $36
 
 Beyond the minimum, most apprentices in trades like building, electrical, and plumbing are typically paid above minimum wage even in year one. The real wage pressure is usually in years 2–4 when their productivity has increased and they expect their pay to reflect it.
 
-Use the [Labour Cost Calculator](/calculators/labour-cost-calculator.html) to model the full employment cost including KiwiSaver (3% employer contribution), ACC levies, and leave entitlements. The total cost of an employee is typically 20–25% above their gross wage.
+Use the [Labour Cost Calculator](/calculators/labour-cost-calculator) to model the full employment cost including KiwiSaver (3% employer contribution), ACC levies, and leave entitlements. The total cost of an employee is typically 20–25% above their gross wage.
 
 ---
 
@@ -60,7 +60,7 @@ For a sole trader this doesn't directly apply (you set your own rate), but for b
 
 ## Updating Your Hourly Rate
 
-The [Hourly Rate Calculator](/calculators/hourly-rate-calculator.html) lets you input your actual wage costs and desired margin to calculate what you should be charging per hour. Key inputs to update:
+The [Hourly Rate Calculator](/calculators/hourly-rate-calculator) lets you input your actual wage costs and desired margin to calculate what you should be charging per hour. Key inputs to update:
 
 - **Gross wage (your employees):** Check against the new minimums
 - **Employer KiwiSaver:** 3% of gross wage
@@ -79,7 +79,7 @@ If your team earns $30–$40/hr, this change doesn't directly affect your payrol
 
 **Labour availability.** The construction industry runs on wage competition for skilled workers. A minimum wage rise tends to compress the gap between unskilled and semi-skilled rates, which can trigger wage drift across the board as workers seek rates that reflect the relative premium of their skills. Don't be surprised if journeyman tradies start asking for rate reviews.
 
-**Apprentice cost floor.** The training wage increase raises the floor cost of taking on a first-year apprentice. In combination with the [Apprenticeship Boost](/articles/hiring-an-apprentice-nz-tradie-guide-2026.html) ($500/month for year-one apprentices in targeted trades), the economics still work — but it's worth re-running your numbers.
+**Apprentice cost floor.** The training wage increase raises the floor cost of taking on a first-year apprentice. In combination with the [Apprenticeship Boost](/articles/hiring-an-apprentice-nz-tradie-guide-2026) ($500/month for year-one apprentices in targeted trades), the economics still work — but it's worth re-running your numbers.
 
 ---
 
@@ -104,7 +104,7 @@ A practical approach: review your standard quote templates and the labour rate y
 
 For most well-priced tradie businesses, a 2% wage increase on the minimum wage won't be the thing that breaks a quote. But in tight-margin work — particularly in competitive tender environments — every dollar matters.
 
-Use the [Job Cost Calculator](/calculators/job-cost-calculator.html) to rebuild your standard job cost template with updated inputs and confirm your margins are where you need them.
+Use the [Job Cost Calculator](/calculators/job-cost-calculator) to rebuild your standard job cost template with updated inputs and confirm your margins are where you need them.
 
 ---
 
@@ -119,4 +119,4 @@ Use the [Job Cost Calculator](/calculators/job-cost-calculator.html) to rebuild 
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

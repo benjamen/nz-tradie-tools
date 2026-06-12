@@ -116,4 +116,4 @@ The **Construction Contracts Act 2002** governs payment in NZ construction. Key 
 
 If a head contractor won't release retentions after the DLP ends, you can apply for adjudication under the Construction Contracts Act. This is faster and cheaper than litigation and is specifically designed for payment disputes in construction.
 
-See our [unpaid invoices guide](/articles/unpaid-invoices-options-nz-tradies.html) for the full process.
+See our [unpaid invoices guide](/articles/unpaid-invoices-options-nz-tradies) for the full process.

@@ -37,7 +37,7 @@ Under a proportional liability regime, the "proof" becomes everything. If you ar
 The deadline for this omnibus Bill to be introduced to parliament is the end of May 2026. This is a fast-moving space.
 
 - **Stay Informed:** Keep an eye on updates from your industry association, such as the Master Builders or Master Plumbers.
-- **Manage Your Cash Flow:** As always, the best way to handle legal and insurance uncertainty is to keep your business financial health in top shape. Use our [GST Calculator](/calculators/gst-calculator.html) to stay on top of your reporting, and refer to our [job pricing guide](/calculators/job-pricing-guide.html) to ensure you are pricing your services appropriately for a risk-aware market.
+- **Manage Your Cash Flow:** As always, the best way to handle legal and insurance uncertainty is to keep your business financial health in top shape. Use our [GST Calculator](/calculators/gst-calculator) to stay on top of your reporting, and refer to our [job pricing guide](/calculators/job-pricing-guide) to ensure you are pricing your services appropriately for a risk-aware market.
 
 The move to proportional liability is intended to bring greater discipline and accountability to the construction sector. By focusing on your own documentation and business practices, you’ll be ready for whatever the new regime brings.
 
@@ -45,4 +45,4 @@ The move to proportional liability is intended to bring greater discipline and a
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

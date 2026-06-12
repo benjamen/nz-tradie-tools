@@ -32,7 +32,7 @@ The most common mistake tradies make during slow periods is treating them as a s
 
 **Build a cash reserve equal to 2–3 months of fixed costs.** This is your slow-season buffer. If your fixed costs are $4,000/month, you want $8,000–$12,000 sitting somewhere accessible (a savings account, not invested) before winter hits.
 
-**Adjust tax payments proactively.** If you're on provisional tax and you're heading into a lean period, you can apply to IRD to adjust your provisional tax instalments downward. Don't overpay tax in a slow quarter and then scramble for cash. See our [Provisional Tax Calculator](/calculators/provisional-tax-calculator.html) to model your payments.
+**Adjust tax payments proactively.** If you're on provisional tax and you're heading into a lean period, you can apply to IRD to adjust your provisional tax instalments downward. Don't overpay tax in a slow quarter and then scramble for cash. See our [Provisional Tax Calculator](/calculators/provisional-tax-calculator) to model your payments.
 
 **Chase outstanding invoices hard before the slow period.** In the weeks before you expect work to slow down, get on the phone and email about any unpaid claims. Cash in hand is better than cash owed when volume drops.
 
@@ -62,7 +62,7 @@ A slow patch is one of the best opportunities to do work on your business that y
 
 **Build or improve your quote templates.** Slow periods often reveal that your quoting process is clunky. Set up a proper quote template in your job management app. A well-presented quote that arrives quickly wins more jobs.
 
-**Update your pricing.** Many tradies avoid the uncomfortable task of raising rates — slow periods are a good time to review whether your current pricing actually covers your costs plus a reasonable profit. Run the numbers in our [Hourly Rate Calculator](/calculators/hourly-rate-calculator.html).
+**Update your pricing.** Many tradies avoid the uncomfortable task of raising rates — slow periods are a good time to review whether your current pricing actually covers your costs plus a reasonable profit. Run the numbers in our [Hourly Rate Calculator](/calculators/hourly-rate-calculator).
 
 ## Adjusting Your Business Model for Resilience
 
@@ -86,7 +86,7 @@ The slow period panic is real and it's common — but it's also almost always te
 
 The ones who handle it best treat slow periods as expected, plan for them financially, and use the time productively.
 
-If you're in a genuine slump and want to stress-test your numbers, run your costs and revenue through our [Breakeven Calculator](/calculators/breakeven-calculator.html) — it'll tell you exactly what work volume you need to cover costs and at what point you start generating profit.
+If you're in a genuine slump and want to stress-test your numbers, run your costs and revenue through our [Breakeven Calculator](/calculators/breakeven-calculator) — it'll tell you exactly what work volume you need to cover costs and at what point you start generating profit.
 
 ---
 
@@ -94,4 +94,4 @@ If you're in a genuine slump and want to stress-test your numbers, run your cost
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

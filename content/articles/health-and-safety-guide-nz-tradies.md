@@ -32,7 +32,7 @@ Key hazards to consider on most trade jobs:
 - Hazardous substances (chemicals, solvents, asbestos)
 - Plant and equipment (power tools, machinery)
 
-Use our free [Site Safety Checklist template](/templates/site-safety-checklist.html) to document your hazard assessment on each job.
+Use our free [Site Safety Checklist template](/templates/site-safety-checklist) to document your hazard assessment on each job.
 
 ### 2. Safe Work Method Statements (SWMS)
 
@@ -47,7 +47,7 @@ For **high-risk construction work**, you must have a written SWMS before work st
 
 A SWMS documents each step of the task, the hazards at each step, and the controls in place to manage them. Workers must read and sign it before starting.
 
-Download our free [SWMS template](/templates/swms.html).
+Download our free [SWMS template](/templates/swms).
 
 ### 3. Toolbox Meetings
 
@@ -60,7 +60,7 @@ Regular toolbox meetings are one of the most cost-effective H&S practices you ca
 
 Keep a written record — if WorkSafe ever investigates an incident, being able to show a pattern of regular H&S engagement makes a significant difference.
 
-Download our free [Toolbox Meeting Record template](/templates/toolbox-meeting.html).
+Download our free [Toolbox Meeting Record template](/templates/toolbox-meeting).
 
 ### 4. Incident Reporting
 
@@ -76,7 +76,7 @@ The WorkSafe NZ notifiable event hotline is **0800 030 040** — available 24/7.
 
 For all incidents and near misses, complete an Incident Report and keep it on file for at least 7 years.
 
-Download our free [Incident Report template](/templates/incident-report.html).
+Download our free [Incident Report template](/templates/incident-report).
 
 ### 5. PPE
 
@@ -97,7 +97,7 @@ Falls are the leading cause of serious injury and death in the NZ construction i
 - **Over 3m:** fall protection is required — scaffolding, guardrails, or a harness with a properly rated anchor point
 - **Scaffolding over 5m** must be designed by a chartered professional engineer
 
-Check our free [Site Safety Checklist](/templates/site-safety-checklist.html) for a working at heights section.
+Check our free [Site Safety Checklist](/templates/site-safety-checklist) for a working at heights section.
 
 ## Asbestos: A Special Case
 
@@ -119,7 +119,7 @@ When you hire subcontractors, your PCBU duty of care extends to their workers. Y
 - Conduct a site induction for all subcontractors before they start
 - Coordinate H&S responsibilities where multiple PCBUs are working on the same site
 
-Use our free [Contractor Site Induction template](/templates/contractor-induction.html) to formalise sign-in and safety briefings.
+Use our free [Contractor Site Induction template](/templates/contractor-induction) to formalise sign-in and safety briefings.
 
 ## Software That Makes H&S Easier
 
@@ -139,4 +139,4 @@ Use our free [H&S templates](/templates/) to make it easier.
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

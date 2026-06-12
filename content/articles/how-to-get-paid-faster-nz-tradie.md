@@ -43,7 +43,7 @@ For larger projects — builds, renovations, commercial fitouts — don't wait u
 
 This protects you from the worst-case scenario: completing most of a large job and then having a client dispute or default on the final payment, leaving you carrying all the labour and materials cost.
 
-Download our free [Progress Claim template](/templates/progress-claim.html) to formalise this process.
+Download our free [Progress Claim template](/templates/progress-claim) to formalise this process.
 
 ## 5. Get Customer Sign-Off Before the Final Invoice
 
@@ -53,7 +53,7 @@ Before you invoice the final amount, get the customer to sign a **Job Completion
 
 If a dispute arises later, this document is worth its weight in gold.
 
-Download our free [Job Completion Certificate template](/templates/job-completion-certificate.html).
+Download our free [Job Completion Certificate template](/templates/job-completion-certificate).
 
 ## 6. Accept Card Payments On-Site
 
@@ -87,7 +87,7 @@ Key points:
 - **Commercial work:** standard adjudication process applies
 - **Never waive your rights** without getting legal advice first
 
-The CCA is a powerful tool that most tradies don't use. Our free [Progress Claim template](/templates/progress-claim.html) is designed to serve as a valid CCA payment claim.
+The CCA is a powerful tool that most tradies don't use. Our free [Progress Claim template](/templates/progress-claim) is designed to serve as a valid CCA payment claim.
 
 ## The Cash Flow Formula
 
@@ -110,4 +110,4 @@ Do all of these and late payments become a rare exception rather than a monthly 
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

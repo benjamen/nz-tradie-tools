@@ -79,7 +79,7 @@ Your gross margin on this job: ($320 + $285) ÷ $1,405 = **43%** — before over
 
 If you accidentally calculated your 40% markup on the *GST-inclusive* material cost ($920), you'd have come up short by around $48 on that one job. Multiply that across 200 jobs a year and it's nearly $10,000 in lost revenue.
 
-Use the [GST Calculator](/calculators/gst-calculator.html) to keep your ex-GST and inc-GST figures straight.
+Use the [GST Calculator](/calculators/gst-calculator) to keep your ex-GST and inc-GST figures straight.
 
 ## What Gross Margin Should NZ Tradies Target?
 
@@ -96,7 +96,7 @@ Your target margin must cover:
 3. ACC levies, insurance, tool replacement
 4. Tax — including provisional tax if your residual income tax exceeds $5,000 (IRD guidance at [ird.govt.nz](https://www.ird.govt.nz))
 
-Use the [Hourly Rate Calculator](/calculators/hourly-rate-calculator.html) to work out the true cost of your own labour before you set your charge-out rate.
+Use the [Hourly Rate Calculator](/calculators/hourly-rate-calculator) to work out the true cost of your own labour before you set your charge-out rate.
 
 ## Real NZD Examples by Trade
 
@@ -120,7 +120,7 @@ Use the [Hourly Rate Calculator](/calculators/hourly-rate-calculator.html) to wo
 - GST: $379.95
 - **Quote total: $2,912.95**
 
-Use the [Job Cost Calculator](/calculators/job-cost-calculator.html) to run these numbers for your own jobs with your actual costs and target margin.
+Use the [Job Cost Calculator](/calculators/job-cost-calculator) to run these numbers for your own jobs with your actual costs and target margin.
 
 ## Where Tradies Go Wrong
 
@@ -134,7 +134,7 @@ Use the [Job Cost Calculator](/calculators/job-cost-calculator.html) to run thes
 
 [Fastcrew](https://fastcrew.nz) is a NZ-built tradie app that lets you build quotes with materials and labour, set your markup or margin target, and generate professional invoices — all from your phone on-site. It's particularly useful for keeping markup consistent across similar jobs rather than calculating from scratch each time.
 
-The [Markup and Margin Calculator](/calculators/markup-margin-calculator.html) on this site converts between markup and margin instantly and shows you the GST-inclusive quote total.
+The [Markup and Margin Calculator](/calculators/markup-margin-calculator) on this site converts between markup and margin instantly and shows you the GST-inclusive quote total.
 
 ---
 
@@ -146,4 +146,4 @@ Download our free NZ tradie quoting templates — including a job cost sheet wit
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

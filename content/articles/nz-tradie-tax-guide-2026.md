@@ -25,7 +25,7 @@ This guide covers the complete picture: income tax, GST, deductions, provisional
 | Provisional tax instalment 3 | 7 May |
 | PAYE (if you have employees) | 20th of following month |
 
-Use our free [GST calculator](/calculators/gst-calculator.html) and [tax calculators](/calculators/) to run your own numbers.
+Use our free [GST calculator](/calculators/gst-calculator) and [tax calculators](/calculators/) to run your own numbers.
 
 ---
 
@@ -52,7 +52,7 @@ These are **marginal rates** — you only pay the higher rate on the portion of 
 - 33% on $70,001–$95,000 = $8,250
 - **Total income tax: ~$22,270**
 
-This doesn't include ACC levies. Use our [ACC levy calculator](/calculators/acc-levy-calculator.html) to factor those in.
+This doesn't include ACC levies. Use our [ACC levy calculator](/calculators/acc-levy-calculator) to factor those in.
 
 ### Sole Trader vs Company Tax
 
@@ -92,7 +92,7 @@ Most tradies quote prices **inclusive of GST** or add it on top. Always make it 
 
 Most tradies use 2-monthly filing. Your first period starts from when you registered.
 
-Use our [GST calculator](/calculators/gst-calculator.html) to work out the GST component on any amount.
+Use our [GST calculator](/calculators/gst-calculator) to work out the GST component on any amount.
 
 ---
 
@@ -180,7 +180,7 @@ Complete these tasks before or just after 31 March to ensure accurate filing and
 - [ ] Organise receipts and invoices (digital is fine — IRD accepts scans)
 - [ ] If you owe provisional tax, ensure payment is made on time
 
-Download our free [EOFY checklist for NZ tradies](/articles/eofy-checklist-nz-tradies-2026.html) for a printable version.
+Download our free [EOFY checklist for NZ tradies](/articles/eofy-checklist-nz-tradies-2026) for a printable version.
 
 ---
 
@@ -241,10 +241,10 @@ The standard withholding rate for contractors in the building and construction i
 
 ## Free Tools at TradieTools.nz
 
-- [GST Calculator](/calculators/gst-calculator.html) — work out GST on any amount
-- [ACC Levy Calculator](/calculators/acc-levy-calculator.html) — estimate your ACC bill
-- [Hourly Rate Calculator](/calculators/hourly-rate-calculator.html) — build tax into your charge-out rate
-- [Markup / Margin Calculator](/calculators/markup-margin-calculator.html)
+- [GST Calculator](/calculators/gst-calculator) — work out GST on any amount
+- [ACC Levy Calculator](/calculators/acc-levy-calculator) — estimate your ACC bill
+- [Hourly Rate Calculator](/calculators/hourly-rate-calculator) — build tax into your charge-out rate
+- [Markup / Margin Calculator](/calculators/markup-margin-calculator)
 - [Invoice Templates](/templates/) — IRD-compliant, free download
 
 ---

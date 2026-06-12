@@ -71,7 +71,7 @@ One area seeing a significant rise in employer liability claims is **respirable 
 
 WorkSafe NZ updated its guidance on RCS in 2025, requiring PCBUs to implement a **Silica Management Plan** if workers may be exposed above action levels. If you haven't provided proper RPE (respiratory protective equipment) and adopted wet-cutting methods for your team, you face both WorkSafe enforcement *and* a future EL claim.
 
-See our [Health and Safety Guide for NZ Tradies](/articles/health-and-safety-guide-nz-tradies.html) for the full breakdown of your HSWA obligations and what WorkSafe inspectors look for on-site.
+See our [Health and Safety Guide for NZ Tradies](/articles/health-and-safety-guide-nz-tradies) for the full breakdown of your HSWA obligations and what WorkSafe inspectors look for on-site.
 
 ## The Real Cost of Going Without Cover
 
@@ -81,7 +81,7 @@ Consider a realistic scenario: a labourer on your crew develops anxiety after a 
 - You pay the award if the employee wins
 - Your business faces serious financial risk for years
 
-That's why the [true cost of employing a tradie in NZ](/articles/true-cost-employing-tradie-nz-2026.html) must include adequate insurance in your charge-out rate calculations — not just wages, ACC levies, and KiwiSaver.
+That's why the [true cost of employing a tradie in NZ](/articles/true-cost-employing-tradie-nz-2026) must include adequate insurance in your charge-out rate calculations — not just wages, ACC levies, and KiwiSaver.
 
 ## How to Get Covered
 
@@ -95,7 +95,7 @@ That's why the [true cost of employing a tradie in NZ](/articles/true-cost-emplo
 
 ## Factor Insurance Into Your Hourly Rate
 
-Once you have the right cover in place, use the [NZ Hourly Rate Calculator](/calculators/hourly-rate-calculator.html) to factor EL premiums into your total overhead cost per hour — ensuring your charge-out rate actually covers all your business obligations, not just wages and materials.
+Once you have the right cover in place, use the [NZ Hourly Rate Calculator](/calculators/hourly-rate-calculator) to factor EL premiums into your total overhead cost per hour — ensuring your charge-out rate actually covers all your business obligations, not just wages and materials.
 
 Managing your team's timesheets and H&S compliance is easier with [Fastcrew](https://fastcrew.nz), which tracks employee hours, jobsite attendance, and site inductions — exactly the kind of records you need to demonstrate your duty of care to WorkSafe or an insurer.
 
@@ -113,4 +113,4 @@ Download our free NZ tradie templates at tradietools.nz/templates/ — including
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

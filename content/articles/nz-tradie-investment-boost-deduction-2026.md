@@ -120,7 +120,7 @@ Without the Investment Boost, the Year 1 deduction would have been just $13,920.
 
 At a 33% tax rate (a sole trader earning over $70,000), that's roughly **$2,144 back in your pocket** for Year 1 — money that would otherwise sit with IRD until you slowly depreciate the ute over 7+ years.
 
-You can use our [depreciation calculator](/calculators/depreciation-calculator.html) to run these numbers for your own assets with the correct IRD depreciation rates.
+You can use our [depreciation calculator](/calculators/depreciation-calculator) to run these numbers for your own assets with the correct IRD depreciation rates.
 
 ---
 
@@ -161,7 +161,7 @@ This means:
 - You claim GST back on your next GST return (every 1, 2, or 6 months depending on your filing frequency)
 - You claim the Investment Boost and normal depreciation on the ex-GST cost in your income tax return
 
-Don't double-dip — the $58,000 ute example above is already ex-GST. The GST ($8,700 at 15%) is claimed separately and doesn't factor into the depreciation calculation. Use our [GST calculator](/calculators/gst-calculator.html) if you need to quickly separate GST from quoted prices.
+Don't double-dip — the $58,000 ute example above is already ex-GST. The GST ($8,700 at 15%) is claimed separately and doesn't factor into the depreciation calculation. Use our [GST calculator](/calculators/gst-calculator) if you need to quickly separate GST from quoted prices.
 
 ---
 
@@ -194,7 +194,7 @@ However, if you're **planning a major purchase** — a new trailer, a new piece 
 
 The Investment Boost stacks on top of all other legitimate business deductions. A few combinations worth knowing:
 
-**Vehicle mileage vs. actual costs:** If you claim vehicle expenses on a mileage basis (using IRD's approved rates), you generally cannot also claim depreciation on the vehicle. The Investment Boost only applies if you're using the **actual cost method**. Most tradies with business-only or predominantly business-use vehicles are better off on actual costs — use our [vehicle mileage calculator](/calculators/vehicle-mileage-calculator.html) to compare.
+**Vehicle mileage vs. actual costs:** If you claim vehicle expenses on a mileage basis (using IRD's approved rates), you generally cannot also claim depreciation on the vehicle. The Investment Boost only applies if you're using the **actual cost method**. Most tradies with business-only or predominantly business-use vehicles are better off on actual costs — use our [vehicle mileage calculator](/calculators/vehicle-mileage-calculator) to compare.
 
 **Lease vs. buy:** The Investment Boost only applies to assets you **own**. If you lease equipment, your deduction is the lease payments, not depreciation. With the boost available, the maths on buying vs. leasing has shifted further toward buying for many tradies.
 
@@ -290,4 +290,4 @@ With 2026 returns due from July, there's still time to get this right.
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

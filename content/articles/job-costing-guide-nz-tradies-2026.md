@@ -32,7 +32,7 @@ A complete job cost has four components:
 **1. Direct Labour**
 This is the time you and any employees spend on the job, priced at your true hourly cost — not just wages, but the full loaded rate including employer ACC levies, KiwiSaver contributions, annual leave, and a share of overhead. For most NZ trade businesses, the loaded cost of an employee earning $30/hr is closer to $38–$42/hr once you include on-costs.
 
-Use our [Hourly Rate Calculator](/calculators/hourly-rate-calculator.html) to work out what your time actually costs to deliver.
+Use our [Hourly Rate Calculator](/calculators/hourly-rate-calculator) to work out what your time actually costs to deliver.
 
 **2. Direct Materials**
 Every item of material, consumable, and hardware purchased for the job. This means keeping purchase receipts separate by job — either physically or in your accounting software. Don't average materials across jobs. Track them individually or you'll consistently undercharge.
@@ -62,7 +62,7 @@ You don't need expensive software to start job costing. A spreadsheet works fine
 
 Once you've done ten or twenty jobs, you'll start to see patterns: which job types are consistently profitable, which clients or project types run over budget, and whether your quoting is systematically off.
 
-Our [Job Cost Calculator](/calculators/job-cost-calculator.html) lets you plug in all four cost components and instantly see your margin — useful both for pre-job estimates and post-job reviews.
+Our [Job Cost Calculator](/calculators/job-cost-calculator) lets you plug in all four cost components and instantly see your margin — useful both for pre-job estimates and post-job reviews.
 
 ## What Margins Should You Be Targeting?
 
@@ -85,7 +85,7 @@ The discipline is in the review. After each job is invoiced and paid, compare ac
 
 - **Labour over by more than 10%?** Your time estimate was wrong, or you had rework. Either adjust future quotes or fix the process causing rework.
 - **Materials over by more than 5%?** Wastage is higher than expected, or you're not accounting for off-cuts and consumables. Add a waste factor to your material estimates.
-- **Margin consistently lower than expected?** Your overhead rate may need to be recalculated, or your markup isn't covering all costs. Use our [Breakeven Calculator](/calculators/breakeven-calculator.html) to see what revenue you need to cover your full cost base.
+- **Margin consistently lower than expected?** Your overhead rate may need to be recalculated, or your markup isn't covering all costs. Use our [Breakeven Calculator](/calculators/breakeven-calculator) to see what revenue you need to cover your full cost base.
 
 Do this review monthly — not just at year end. By the time your accountant runs the annual P&L, it's too late to fix the jobs that eroded your margin in March.
 
@@ -119,4 +119,4 @@ Download our free NZ tradie templates at tradietools.nz/templates/ — including
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

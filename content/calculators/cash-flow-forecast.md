@@ -137,4 +137,4 @@ Enter your expected weekly income and regular expenses. Red rows show weeks wher
 
 Aim for a minimum **4-week buffer** in your business account (4 × total weekly expenses). This absorbs a bad week, a slow client, or an unexpected cost without causing a crisis.
 
-Use our [Job Cost Calculator](/calculators/job-cost-calculator.html) to check whether individual jobs are contributing enough margin to fund this buffer.
+Use our [Job Cost Calculator](/calculators/job-cost-calculator) to check whether individual jobs are contributing enough margin to fund this buffer.

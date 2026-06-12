@@ -63,7 +63,7 @@ The demand for ceiling and underfloor insulation upgrades is strong heading into
 - **Energy costs** remain elevated, and homeowners are motivated to cut bills.
 - **The new H1 requirements** are prompting renovators to upgrade insulation in older homes as part of broader works, especially before BCAs shift fully to the new standard in November.
 
-If you're pricing retrofit insulation jobs this winter, remember to factor in scaffolding or access costs for ceiling work, and disposal of old fibreglass batts if you're replacing them. For guidance on building your job cost, see our [job costing guide for NZ tradies](/articles/job-costing-guide-nz-tradies-2026.html).
+If you're pricing retrofit insulation jobs this winter, remember to factor in scaffolding or access costs for ceiling work, and disposal of old fibreglass batts if you're replacing them. For guidance on building your job cost, see our [job costing guide for NZ tradies](/articles/job-costing-guide-nz-tradies-2026).
 
 ## Pricing and Claiming H1 Insulation Work
 
@@ -71,9 +71,9 @@ For tax purposes, insulation installed as part of a new build is a standard trad
 
 The general rule: if you're upgrading insulation in an existing structure (not replacing like-for-like), it's likely capital and claimed via depreciation rather than as an immediate deduction. However, the 20% Investment Boost deduction introduced in May 2025 may apply if the work meets MBIE's criteria for energy efficiency improvements. Always confirm with your accountant.
 
-GST-registered businesses claim the GST back on materials in the usual way. If you're not sure whether you should be GST registered, use our [GST calculator](/calculators/gst-calculator.html) to check your turnover against the $60,000 threshold.
+GST-registered businesses claim the GST back on materials in the usual way. If you're not sure whether you should be GST registered, use our [GST calculator](/calculators/gst-calculator) to check your turnover against the $60,000 threshold.
 
-For a broader look at how energy efficiency work creates tradie business opportunities, see our article on [NZ's energy efficiency opportunity for tradies](/articles/energy-efficiency-nz-tradie-opportunity.html).
+For a broader look at how energy efficiency work creates tradie business opportunities, see our article on [NZ's energy efficiency opportunity for tradies](/articles/energy-efficiency-nz-tradie-opportunity).
 
 ## Quick Reference: H1 Checklist for Builders
 
@@ -96,4 +96,4 @@ With the November 2026 hard cutover six months away, now is the right time to up
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

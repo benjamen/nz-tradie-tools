@@ -49,19 +49,19 @@ Non-DR fittings often look identical to DR versions. The only way to be certain 
 
 **Site audits and consent sign-offs.** Building consent authorities (BCAs) and MBIE's building inspectors are increasingly checking product compliance at inspection stage. If a fitting can't be confirmed as DR-compliant at inspection, the inspector may require replacement — which means opening walls after the fact. That cost falls on you if the fitting choice was the licensed plumber's call.
 
-**Warranty and insurance implications.** Your professional liability insurer may take a dim view of claims arising from non-DR fittings installed after 1 May 2026. If you're unsure how your policy handles Building Code non-compliance, it's worth a call to your broker. For a guide on the types of insurance NZ plumbers should hold, see our article on [public liability insurance for NZ tradies](/articles/public-liability-insurance-nz-tradies.html).
+**Warranty and insurance implications.** Your professional liability insurer may take a dim view of claims arising from non-DR fittings installed after 1 May 2026. If you're unsure how your policy handles Building Code non-compliance, it's worth a call to your broker. For a guide on the types of insurance NZ plumbers should hold, see our article on [public liability insurance for NZ tradies](/articles/public-liability-insurance-nz-tradies).
 
 ## IRD and MBIE: The Compliance Double-Up
 
 One angle plumbers sometimes miss: if a building is inspected and non-compliant work is identified, the BCA may notify MBIE. MBIE has powers under the Building Act to refer matters involving Licensed Building Practitioners — and while plumbers are licensed under their own regime, the principle of compliance with the Building Code as a condition of licence holds.
 
-Separately, IRD's construction sector compliance focus in 2026 means your business records are more likely to be scrutinised. Keeping accurate records of the products you install — including batch numbers for fittings on larger jobs — is not just good practice, it's evidence that you took compliance seriously if a question ever arises. Our [NZ tradie tax guide](/articles/nz-tradie-tax-guide-what-you-can-claim.html) covers the kind of business records that help at both tax time and in disputes.
+Separately, IRD's construction sector compliance focus in 2026 means your business records are more likely to be scrutinised. Keeping accurate records of the products you install — including batch numbers for fittings on larger jobs — is not just good practice, it's evidence that you took compliance seriously if a question ever arises. Our [NZ tradie tax guide](/articles/nz-tradie-tax-guide-what-you-can-claim) covers the kind of business records that help at both tax time and in disputes.
 
 ## Pricing the Compliance Cost
 
 DR fittings carry a small price premium over standard brass — typically **5–15% more** depending on the fitting type and supplier. On an average bathroom renovation or hot water installation, the difference across all fittings is usually **$20–$80 NZD** in materials. That's a trivial cost compared to a warranty callback or a failed inspection.
 
-If you're quoting jobs and want to make sure your materials cost is accurate, the [plumber pricing guide for NZ 2026](/articles/plumber-pricing-guide-nz-2026.html) has updated materials cost benchmarks across common residential job types.
+If you're quoting jobs and want to make sure your materials cost is accurate, the [plumber pricing guide for NZ 2026](/articles/plumber-pricing-guide-nz-2026) has updated materials cost benchmarks across common residential job types.
 
 Build DR compliance into your quote template as standard — don't offer non-DR as a "cost-saving option." It isn't a saving if it creates liability.
 
@@ -91,4 +91,4 @@ Download our free NZ tradie templates at tradietools.nz/templates/ — including
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

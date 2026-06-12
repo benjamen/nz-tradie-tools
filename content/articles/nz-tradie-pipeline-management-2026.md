@@ -41,7 +41,7 @@ Most tradies feel busy before they're actually at capacity — and most hit the 
 - Customer satisfaction is slipping — callbacks, complaints, or late-stage scope changes that catch you off guard
 - You've stopped chasing overdue invoices because you don't have time
 
-Use our [Job Cost Calculator](/calculators/job-cost-calculator.html) to track actual hours vs quoted hours across jobs. If you're consistently going over on time, that's a signal your capacity model is off — either your quoting is too tight or you're simply taking on too much.
+Use our [Job Cost Calculator](/calculators/job-cost-calculator) to track actual hours vs quoted hours across jobs. If you're consistently going over on time, that's a signal your capacity model is off — either your quoting is too tight or you're simply taking on too much.
 
 ## How to Raise Your Rates When Demand Is Strong
 
@@ -59,7 +59,7 @@ Journeyman rates in New Zealand vary by trade and region. As of mid-2026, typica
 
 Auckland and Wellington typically sit at the top of these ranges; provincial and rural areas vary. If you're below the lower end of your trade's range, you're almost certainly undercharging.
 
-Use our [Hourly Rate Calculator](/calculators/hourly-rate-calculator.html) to build your rate from the ground up — covering overhead, tools, vehicle, insurance, ACC levies, and the profit margin you actually need to grow.
+Use our [Hourly Rate Calculator](/calculators/hourly-rate-calculator) to build your rate from the ground up — covering overhead, tools, vehicle, insurance, ACC levies, and the profit margin you actually need to grow.
 
 **2. Raise rates on new quotes, not existing commitments**
 
@@ -96,7 +96,7 @@ A well-managed forward book gives you a clear view of the next 4–8 weeks. You 
 
 Tools like Fastcrew ([fastcrew.nz](https://fastcrew.nz)) are designed for exactly this — letting NZ tradies schedule jobs, assign crew, and see their forward capacity at a glance. It integrates with your quoting and invoicing so you can see in real time whether you have room to take on more, or whether the next enquiry should go to next month.
 
-Our [Quote Builder Wizard](/calculators/quote-builder-wizard.html) can help you build quotes faster and more consistently, so you spend less time on admin and more time on the tools.
+Our [Quote Builder Wizard](/calculators/quote-builder-wizard) can help you build quotes faster and more consistently, so you spend less time on admin and more time on the tools.
 
 ## The Cash Flow Reality of a Full Pipeline
 

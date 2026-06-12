@@ -101,8 +101,8 @@ Get 3 quotes. Insulation pricing varies more than most people expect — we've s
 
 → [See insulation costs by city and scope](/jobs/insulation/)
 
-→ [Check if your insulation quote is fair](/calculators/is-my-quote-fair.html)
+→ [Check if your insulation quote is fair](/calculators/is-my-quote-fair)
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.

@@ -33,8 +33,8 @@ Compliance starts with product selection.
 Regulatory changes like this can be a headache, but they’re also a chance to show your clients you’re a professional who cares about long-term quality.
 
 - **Communicate with clients:** Explain why you’ve selected specific materials. Educating clients on *why* these materials are safer and more durable adds value to your service.
-- **Financial management:** These high-quality, lead-free products might carry a higher price tag than older alternatives. Ensure your quotes accurately reflect these material costs. Our [job pricing guide](/calculators/job-pricing-guide.html) can help you factor these changes into your pricing strategy.
-- **Tax and GST:** With potential changes to your material costs, don't let your financial reporting slip. Use our [GST Calculator](/calculators/gst-calculator.html) regularly to ensure your tax obligations are accounted for.
+- **Financial management:** These high-quality, lead-free products might carry a higher price tag than older alternatives. Ensure your quotes accurately reflect these material costs. Our [job pricing guide](/calculators/job-pricing-guide) can help you factor these changes into your pricing strategy.
+- **Tax and GST:** With potential changes to your material costs, don't let your financial reporting slip. Use our [GST Calculator](/calculators/gst-calculator) regularly to ensure your tax obligations are accounted for.
 
 Staying ahead of building standards is just another part of being an expert tradie. Make sure your business processes are as high-quality as the plumbing you install.
 
@@ -42,4 +42,4 @@ Staying ahead of building standards is just another part of being an expert trad
 
 ---
 
-**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair.html) to compare any quote against typical rates for your city and job type.
+**Not sure if your quote is fair?** Use our free [NZ tradie quote checker](/calculators/is-my-quote-fair) to compare any quote against typical rates for your city and job type.
