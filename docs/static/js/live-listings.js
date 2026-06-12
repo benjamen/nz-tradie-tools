@@ -98,6 +98,7 @@
           <div style="font-size:.82rem;color:var(--blue,#005ea2);font-weight:600;margin-top:.1rem">${esc(label)}</div>
           ${rating > 0 ? `<div style="font-size:.82rem;color:#b45309;margin-top:.1rem">${stars(rating)} <span style="color:var(--muted,#5a5a5a)">${rating.toFixed(1)} (${t.review_count || 0} reviews)</span></div>` : ''}
           ${rate || exp ? `<div style="font-size:.8rem;color:var(--muted,#5a5a5a);margin-top:.1rem">${[exp, rate].filter(Boolean).join(' · ')}</div>` : ''}
+          ${t.weekly_views > 0 ? `<div style="font-size:.75rem;color:var(--muted,#5a5a5a);margin-top:.15rem">👁 Viewed ${t.weekly_views} time${t.weekly_views === 1 ? '' : 's'} this week</div>` : ''}
         </div>
       </div>
       <div style="display:flex;gap:.5rem">
