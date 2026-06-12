@@ -88,14 +88,16 @@
 
     return `<div style="background:#fff;padding:1.1rem 1.25rem;border-left:4px solid ${t.is_premium ? 'var(--orange,#c05600)' : 'var(--blue,#005ea2)'};border-bottom:1px solid var(--border-lt,#dcdcdc);display:flex;flex-direction:column;gap:.6rem">
       <div style="display:flex;align-items:flex-start;gap:.75rem">
-        <div style="width:40px;height:40px;background:var(--navy,#1b2a4a);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.9rem;flex-shrink:0">${esc(initials(t.name))}</div>
+        ${t.profile_photo_url
+          ? `<img src="https://tradietools.optified.nz${esc(t.profile_photo_url)}" alt="${esc(t.name)}" style="width:40px;height:40px;object-fit:cover;border-radius:4px;flex-shrink:0">`
+          : `<div style="width:40px;height:40px;background:var(--navy,#1b2a4a);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.9rem;flex-shrink:0">${esc(initials(t.name))}</div>`}
         <div style="flex:1;min-width:0">
           <div style="font-weight:700;font-size:.95rem;display:flex;align-items:center;gap:.4rem;flex-wrap:wrap">
             ${esc(t.name || 'Unknown')}
             ${t.is_verified ? '<span style="background:var(--blue,#005ea2);color:#fff;font-size:.68rem;font-weight:700;padding:.12rem .45rem;letter-spacing:.02em">✓ VERIFIED</span>' : ''}
             ${t.is_premium && !t.is_verified ? '<span style="background:var(--orange,#c05600);color:#fff;font-size:.68rem;font-weight:700;padding:.12rem .45rem">PREMIUM</span>' : ''}
           </div>
-          <div style="font-size:.82rem;color:var(--blue,#005ea2);font-weight:600;margin-top:.1rem">${esc(label)}</div>
+          <div style="font-size:.82rem;color:var(--blue,#005ea2);font-weight:600;margin-top:.1rem">${esc(label)}${t.trade2 ? ` · ${esc(TRADE_LABEL[t.trade2] || t.trade2)}` : ''}${t.trade3 ? ` · ${esc(TRADE_LABEL[t.trade3] || t.trade3)}` : ''}</div>
           ${rating > 0 ? `<div style="font-size:.82rem;color:#b45309;margin-top:.1rem">${stars(rating)} <span style="color:var(--muted,#5a5a5a)">${rating.toFixed(1)} (${t.review_count || 0} reviews)</span></div>` : ''}
           ${rate || exp ? `<div style="font-size:.8rem;color:var(--muted,#5a5a5a);margin-top:.1rem">${[exp, rate].filter(Boolean).join(' · ')}</div>` : ''}
           ${t.weekly_views > 0 ? `<div style="font-size:.75rem;color:var(--muted,#5a5a5a);margin-top:.15rem">👁 Viewed ${t.weekly_views} time${t.weekly_views === 1 ? '' : 's'} this week</div>` : ''}
