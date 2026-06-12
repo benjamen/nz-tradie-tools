@@ -25,10 +25,6 @@
   },
   "nav": [
     {
-      "label": "Home",
-      "url": "/"
-    },
-    {
       "label": "Find a Tradie",
       "url": "/trades/"
     },
@@ -41,24 +37,12 @@
       "url": "/calculators/"
     },
     {
-      "label": "Articles",
-      "url": "/articles/"
-    },
-    {
       "label": "Templates",
       "url": "/templates/"
     },
     {
-      "label": "Tax Dates",
-      "url": "/tax-dates/"
-    },
-    {
-      "label": "FAQ",
-      "url": "/faq/"
-    },
-    {
-      "label": "Glossary",
-      "url": "/glossary/"
+      "label": "Articles",
+      "url": "/articles/"
     },
     {
       "label": "Contact",
