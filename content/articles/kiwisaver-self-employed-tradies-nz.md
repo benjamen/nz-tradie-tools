@@ -1,7 +1,7 @@
 ---
 title: "KiwiSaver for Self-Employed NZ Tradies: What You're Missing Out On"
 seo_title: "KiwiSaver for Self-Employed NZ Tradies"
-description: "Self-employed tradies don't get employer contributions to KiwiSaver — but there are still government top-ups worth $521 a year on the table. Here's how to claim them."
+description: "Self-employed tradies don't get employer contributions to KiwiSaver — but there are still government top-ups worth $521 a year on the table."
 date: 2026-05-10
 tags: [KiwiSaver, retirement, self-employed, tax, NZ]
 author: "NZ Tradie Tools"

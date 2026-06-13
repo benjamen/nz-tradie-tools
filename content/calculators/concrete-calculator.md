@@ -1,6 +1,6 @@
 ---
 title: "Concrete Calculator — NZ"
-description: "Calculate how much concrete you need in m³ and 20kg bags. Covers slabs, footings, posts, and pathways."
+description: "Free NZ concrete calculator — work out how much concrete you need in cubic metres and 20kg bags for slabs, footings, post holes, paths and driveways."
 tags: [concrete, calculator, NZ, building]
 author: "NZ Tradie Tools"
 layout: calculator

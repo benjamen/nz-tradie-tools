@@ -1,5 +1,6 @@
 ---
 title: "Materials Price Escalation Calculator — Budget for Rising Costs NZ"
+seo_title: "Materials Escalation Calculator NZ"
 description: "Calculate the impact of materials price inflation on your construction quote — ensure your estimate accounts for rising costs over the project duration."
 tags: [materials, cost escalation, inflation, construction, quoting, NZ]
 author: "NZ Tradie Tools"

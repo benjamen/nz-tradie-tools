@@ -1,7 +1,7 @@
 ---
 title: "Subcontractor or Employee? NZ's New Gateway Test Explained (2026)"
 seo_title: "Subcontractor or Employee? NZ Gateway Test 2026"
-description: "The Gateway Test became law on 21 February 2026 and changes how NZ businesses determine if a worker is a contractor or employee. Here's what tradies need to know."
+description: "The Gateway Test became law on 21 February 2026 and changes how NZ businesses determine if a worker is a contractor or employee."
 date: 2026-04-26
 tags: [tax, IRD, subcontractor, NZ, legal]
 author: "NZ Tradie Tools"

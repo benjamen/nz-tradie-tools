@@ -1,5 +1,6 @@
 ---
 title: "NZ RMA Reform & Planning Bill 2026: What Tradies Need to Know"
+seo_title: "NZ RMA Reform & Planning Bill 2026 for Tradies"
 description: "The Resource Management Act is being replaced mid-2026. Here's what the new Planning and Natural Environment Bills mean for your business."
 date: 2026-06-03
 tags: [compliance, planning, regulations, building consent, NZ]

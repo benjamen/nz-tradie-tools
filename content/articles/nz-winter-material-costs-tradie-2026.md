@@ -1,6 +1,7 @@
 ---
 title: "Winter Material Costs for NZ Tradies: 2026 Cost Management Guide"
-description: "Manage material inflation in 2026. Timber +3%, gib +5%, concrete up. Strategies for winter project costing."
+seo_title: "Winter Material Costs for NZ Tradies 2026"
+description: "Manage building material inflation in winter 2026 — timber up 3%, gib up 5%, concrete rising. Pricing strategies to protect margins on NZ tradie projects."
 date: 2026-06-03
 tags: [pricing, materials, winter, 2026, NZ]
 author: "NZ Tradie Tools"

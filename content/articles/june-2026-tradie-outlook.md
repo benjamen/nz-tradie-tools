@@ -1,6 +1,6 @@
 ---
 title: "NZ Tradie Outlook: June 2026"
-description: "As we enter June 2026, here is what you need to know about navigating the construction sector this month."
+description: "Your June 2026 outlook for the NZ construction sector — consents, demand, pricing pressure, and practical moves to keep your tradie business profitable."
 date: 2026-06-01
 tags: [Outlook, NZ, Construction]
 author: "NZ Tradie Tools"

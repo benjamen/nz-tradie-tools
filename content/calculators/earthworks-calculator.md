@@ -1,6 +1,6 @@
 ---
 title: "Earthworks & Excavation Calculator — NZ"
-description: "Calculate excavation volumes, soil disposal costs, and fill requirements for NZ building sites."
+description: "Free NZ earthworks calculator — estimate excavation volumes, soil disposal costs and fill requirements for building sites, driveways, footings and foundations."
 tags: [earthworks, excavation, calculator, NZ]
 author: "NZ Tradie Tools"
 layout: calculator

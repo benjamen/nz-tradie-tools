@@ -1,6 +1,6 @@
 ---
 title: "Is My Quote Fair? NZ Tradie Quote Checker"
-description: "Check if your tradie quote is fair for your city and job type. Enter your quote and we'll compare it against typical NZ rates for 29 job types across all major cities."
+description: "Check if your tradie quote is fair for your city and job type. Enter your quote and we'll compare it against typical NZ rates for 29 job types across all."
 tags: [quote checker, tradie quote, fair price, NZ, homeowner, consumer]
 author: "NZ Tradie Tools"
 date: 2026-05-19

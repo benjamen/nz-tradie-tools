@@ -1,6 +1,6 @@
 ---
 title: "Gib & Plasterboard Calculator NZ — Sheets, Stopping & Labour Cost"
-seo_title: "Gib Calculator NZ 2026 — Sheets, Stopping Coats & Cost Estimate"
+seo_title: "Gib Calculator NZ 2026 — Sheets & Cost"
 description: "Free NZ gib board calculator — enter your room dimensions to get sheet count, stopping coats, scrim, materials and installed cost estimate. Includes NZ pricing."
 tags: [gib, plasterboard, stopping, calculator, NZ, building]
 author: "NZ Tradie Tools"

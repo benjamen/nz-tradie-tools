@@ -1,6 +1,6 @@
 ---
 title: "Business Breakeven Calculator — NZ Tradies"
-description: "Calculate your breakeven point, minimum revenue, and profit margin as an NZ tradie or small business."
+description: "Free NZ breakeven calculator for tradies — work out your breakeven point, minimum monthly revenue and profit margin so you know exactly what you must bill."
 tags: [breakeven, profit, business, calculator, NZ]
 author: "NZ Tradie Tools"
 layout: calculator

@@ -1,7 +1,7 @@
 ---
 title: "Cash Flow Management for NZ Tradies — Getting Paid and Staying Solvent"
 seo_title: "Cash Flow Management for NZ Tradies"
-description: "Profit doesn't pay your bills — cash does. Most tradie businesses that fail are actually profitable on paper. Here's how to manage cash flow so you're never scrambling to cover wages, materials, or IRD."
+description: "Profit doesn't pay your bills — cash does. Many profitable tradie businesses still fail. Here's how to manage cash flow so you never run dry."
 date: 2026-05-08
 tags: [cash flow, invoicing, payment, business, sole trader]
 author: "NZ Tradie Tools"

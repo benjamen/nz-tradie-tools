@@ -1,5 +1,6 @@
 ---
 title: "New LBP Waterproofing Licence Class: What NZ Builders and Tilers Must Know in 2026"
+seo_title: "New LBP Waterproofing Licence Class NZ 2026"
 description: "A new LBP waterproofing licence class is coming, with disciplinary fines doubling to $20,000. Here's what NZ tradies doing bathroom work need to know."
 date: 2026-06-02
 tags: [LBP, waterproofing, licensing, compliance, NZ]

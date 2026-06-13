@@ -1,6 +1,6 @@
 ---
 title: "NZ Vehicle Mileage Claim Calculator"
-description: "Calculate your IRD mileage reimbursement or tax deduction using the 2024-25 NZ mileage rates."
+description: "Free NZ vehicle mileage claim calculator — work out your IRD mileage reimbursement or tax deduction using the current 2024–25 kilometre rates for tradies."
 tags: [vehicle, mileage, IRD, tax, calculator, NZ]
 author: "NZ Tradie Tools"
 layout: calculator

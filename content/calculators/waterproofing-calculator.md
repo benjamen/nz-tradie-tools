@@ -1,6 +1,6 @@
 ---
 title: "Waterproofing Calculator — NZ (Bathrooms & Decks)"
-description: "Calculate waterproofing membrane, primer, and tape quantities for NZ bathrooms, showers, and decks."
+description: "Free NZ waterproofing calculator — estimate membrane, primer and tape quantities for bathrooms, showers, wet areas and decks to meet NZ building code coverage."
 tags: [waterproofing, bathroom, deck, calculator, NZ]
 author: "NZ Tradie Tools"
 layout: calculator

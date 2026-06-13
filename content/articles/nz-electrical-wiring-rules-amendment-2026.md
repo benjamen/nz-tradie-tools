@@ -1,5 +1,6 @@
 ---
 title: "NZ Electricians: New Electrical Wiring Rules Compliance Deadline — November 2026"
+seo_title: "NZ Electrical Wiring Rules Deadline Nov 2026"
 description: "The Electricity (Safety) Amendment Regulations 2025 take full effect on 12 November 2026. Here's what NZ electricians must do before the deadline."
 date: 2026-06-01
 tags: [electricians, compliance, WorkSafe, regulations, NZ]

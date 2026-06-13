@@ -1,5 +1,6 @@
 ---
 title: "NZ Tradie Winter Cash Flow Gap 2026: How to Survive June–August"
+seo_title: "NZ Tradie Winter Cash Flow Gap 2026"
 description: "Exterior trades lose 20–40% of revenue in winter. Here's how NZ tradies can close the cash flow gap in 2026 without cutting corners or burning out."
 date: 2026-05-31
 tags: [cash flow, winter, seasonal, business, NZ]

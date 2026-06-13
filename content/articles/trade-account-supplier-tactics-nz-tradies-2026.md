@@ -1,5 +1,6 @@
 ---
 title: "Trade Account Tactics: How NZ Tradies Can Get Better Deals from Suppliers in 2026"
+seo_title: "Trade Account Tactics for NZ Tradies 2026"
 description: "Practical guide to opening trade accounts, negotiating discounts, and cutting material costs at NZ suppliers like Placemakers, Mico, and Mitre 10 Trade."
 date: 2026-06-01
 tags: [business, pricing, materials, suppliers, NZ]

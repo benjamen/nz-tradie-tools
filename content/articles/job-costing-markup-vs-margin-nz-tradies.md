@@ -1,5 +1,6 @@
 ---
 title: "Job Costing for NZ Tradies: Markup vs Margin + Labour Budget Secrets"
+seo_title: "Job Costing for NZ Tradies: Markup vs Margin"
 description: "Learn the difference between markup and margin, calculate true job costs with labour, and price jobs profitably with NZ tradie examples."
 date: 2026-06-07
 tags: [pricing, job-costing, profit-margins, NZ]

@@ -1,6 +1,6 @@
 ---
 title: "NZ Heat Pump Buying Guide 2026 — What to Know Before You Buy"
-description: "Everything NZ homeowners need to know about buying a heat pump in 2026 — sizing, brands, installation costs by city, running costs, and what questions to ask your installer."
+description: "Everything NZ homeowners need to know about buying a heat pump in 2026 — sizing, brands, installation costs by city, running costs."
 tags: [heat pump, heating, NZ, winter, buying guide, installation cost, HVAC]
 author: "NZ Tradie Tools"
 date: 2026-05-19

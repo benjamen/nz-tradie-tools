@@ -1,5 +1,6 @@
 ---
 title: "NZ Building Consents Up 11% in April 2026: What Tradies Should Do Now"
+seo_title: "NZ Building Consents Up 11% — April 2026"
 description: "NZ building consents rose 11% in April 2026, continuing a strong recovery trend. Here's what the data means for tradie pricing, workload, and planning."
 date: 2026-06-04
 tags: [construction, market trends, building consents, NZ, business]

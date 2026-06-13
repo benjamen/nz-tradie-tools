@@ -1,6 +1,6 @@
 ---
 title: "Scaffolding Cost Calculator — NZ"
-description: "Estimate scaffolding hire costs for NZ building projects — residential, commercial, and roof access."
+description: "Free NZ scaffolding cost calculator — estimate hire costs for residential, commercial and roof-access jobs, with rates by area, height and hire duration."
 tags: [scaffolding, hire, calculator, NZ, construction]
 author: "NZ Tradie Tools"
 layout: calculator

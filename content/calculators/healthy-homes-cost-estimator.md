@@ -1,6 +1,6 @@
 ---
 title: "NZ Healthy Homes Cost Estimator"
-description: "Estimate the cost to bring a rental property to Healthy Homes Standards — covering all 5 standards: heating, insulation, ventilation, moisture and draught-stopping."
+description: "Estimate the cost to bring a rental property to Healthy Homes Standards — covering all 5 standards: heating, insulation, ventilation."
 tags: [Healthy Homes, rental, compliance, insulation, heating, NZ]
 author: "NZ Tradie Tools"
 related_articles: [healthy-homes-compliance-work-nz-tradies-2026, h1-insulation-calculator, heat-pump-sizing-calculator]

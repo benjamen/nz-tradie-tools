@@ -1,7 +1,7 @@
 ---
 title: "Managing the Slow Season as an NZ Tradie: Cash Flow, Leads, and Mindset"
 seo_title: "Managing the Slow Season as an NZ Tradie"
-description: "Every NZ tradie faces slow periods — winter, post-Christmas, economic downturns. Here's how to protect your cash flow, keep leads coming in, and use the quiet time strategically."
+description: "How NZ tradies can survive the slow season — protect your cash flow, keep leads coming in, and set up for a strong return to work."
 date: 2026-05-10
 tags: [cash flow, business planning, seasonality, marketing, NZ]
 author: "NZ Tradie Tools"

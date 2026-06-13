@@ -1,5 +1,6 @@
 ---
 title: "NZ Privacy Act 2020: What Every Tradie Must Know About Customer Data"
+seo_title: "NZ Privacy Act 2020: A Tradie's Guide"
 description: "The Privacy Act 2020 applies to every NZ tradie business. Learn your obligations around customer data, job photos, staff records and privacy breaches."
 date: 2026-05-31
 tags: [Privacy, Compliance, Regulations, NZ, IRD, Business]

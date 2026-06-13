@@ -1,5 +1,6 @@
 ---
 title: "ACC No Claims Discount Ending: What NZ Tradies Need to Know in 2026"
+seo_title: "ACC No Claims Discount Ending 2026 — NZ Tradies"
 description: "The ACC No Claims Discount programme is ending from 2027. Here's how it affects your levies, timeline, and what to expect."
 date: 2026-06-05
 tags: [ACC, levies, compliance, tax, 2026, NZ]

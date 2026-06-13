@@ -1,6 +1,6 @@
 ---
 title: "Kitchen Renovation Cost Calculator — NZ"
-description: "Estimate kitchen renovation costs in New Zealand — cabinetry, benchtops, appliances, plumbing, and labour."
+description: "Free NZ kitchen renovation cost calculator — estimate your budget for cabinetry, benchtops, appliances, plumbing, electrical and labour across NZ price ranges."
 tags: [kitchen, renovation, calculator, NZ]
 author: "NZ Tradie Tools"
 layout: calculator

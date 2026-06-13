@@ -1,7 +1,7 @@
 ---
 title: "How to Chase an Unpaid Invoice in NZ — Your Legal Options as a Tradie"
 seo_title: "How to Chase an Unpaid Invoice in NZ"
-description: "When a client won't pay, most tradies don't know what steps are available to them. Here's a practical guide to recovering unpaid invoices in New Zealand — from friendly reminder to court."
+description: "When a client won't pay, most tradies don't know what steps are available to them. Here's a practical guide to recovering unpaid invoices in New Zealand."
 date: 2026-05-08
 tags: [unpaid invoices, payment, legal, disputes, cash flow]
 author: "NZ Tradie Tools"

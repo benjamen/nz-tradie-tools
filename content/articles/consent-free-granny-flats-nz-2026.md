@@ -1,6 +1,6 @@
 ---
 title: "Consent-Free Granny Flats NZ 2026: Builder and Tradie Guide"
-description: "New Zealand's expanded granny flat exemption rules for 2026. What tradies need to know about consent-free builds."
+description: "NZ's expanded granny flat exemption rules for 2026 — what tradies and builders need to know about consent-free minor dwellings, limits, and the work pipeline."
 date: 2026-06-07
 tags: [building, regulations, granny-flats, MBIE, builders, NZ]
 author: "NZ Tradie Tools"

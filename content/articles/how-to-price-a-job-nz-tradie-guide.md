@@ -1,6 +1,6 @@
 ---
 title: "How to Price a Job: The Complete NZ Tradie Guide (2026)"
-description: "Stop guessing and start making real profit. A step-by-step pricing guide for NZ tradies covering labour, materials, overhead, markup, and GST — with real NZD examples."
+description: "Stop guessing and start making real profit. A step-by-step pricing guide for NZ tradies covering labour, materials, overhead, markup, and GST."
 date: 2026-05-26
 tags: [pricing, quoting, markup, NZ, business]
 author: "NZ Tradie Tools"

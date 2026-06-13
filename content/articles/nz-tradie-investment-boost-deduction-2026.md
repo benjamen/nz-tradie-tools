@@ -1,7 +1,7 @@
 ---
 title: "The 20% Investment Boost: How NZ Tradies Can Claim It Before EOFY"
 seo_title: "The 20% Investment Boost NZ"
-description: "IRD's 20% Investment Boost lets NZ tradies deduct an extra 20% on new assets bought from May 2025. Here's exactly how to claim it before your 2026 return is due."
+description: "The Investment Boost deduction lets NZ tradies write off new asset costs faster. Here's exactly how to claim it on your 2026 return."
 date: 2026-05-08
 tags: [tax, IRD, depreciation, EOFY, NZ]
 author: "NZ Tradie Tools"

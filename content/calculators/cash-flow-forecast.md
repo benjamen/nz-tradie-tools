@@ -1,5 +1,6 @@
 ---
 title: "Cash Flow Forecast Calculator — 12-Week Tradie Business Planner"
+seo_title: "Cash Flow Forecast Calculator — NZ Tradie"
 description: "Plan your tradie business cash flow 12 weeks ahead — track expected income, expenses, tax reserve, and running balance to spot cash gaps before they hit."
 tags: [cash flow, forecast, business, planning, NZ, tradie]
 author: "NZ Tradie Tools"

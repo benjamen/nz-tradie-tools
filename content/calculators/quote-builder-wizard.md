@@ -1,5 +1,6 @@
 ---
 title: "Quote Builder Wizard — Build a Professional NZ Tradie Quote Step by Step"
+seo_title: "Quote Builder Wizard — NZ Tradie Quotes"
 description: "Build a complete, professional quote for any NZ trade job in 4 steps — labour, materials, markup, GST, and a printable summary your client can sign."
 tags: [quoting, job pricing, GST, labour, materials, NZ, tradie]
 author: "NZ Tradie Tools"

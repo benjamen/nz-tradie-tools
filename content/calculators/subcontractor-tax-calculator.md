@@ -1,6 +1,6 @@
 ---
 title: "Subcontractor Tax & GST Calculator — NZ"
-description: "Calculate GST, income tax, and net earnings for NZ subcontractors and self-employed tradies."
+description: "Free NZ subcontractor tax calculator — work out GST, income tax, withholding tax and net earnings for self-employed tradies and subbies on schedular payments."
 tags: [subcontractor, GST, tax, calculator, NZ, self-employed]
 author: "NZ Tradie Tools"
 layout: calculator

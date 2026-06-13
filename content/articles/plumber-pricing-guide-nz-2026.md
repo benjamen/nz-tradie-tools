@@ -1,7 +1,7 @@
 ---
 title: "How Much Do Plumbers Charge in NZ? 2026 Callout Fees & Job Costs"
 seo_title: "How Much Do Plumbers Charge in NZ? 2026 Callout Fees &…"
-description: "NZ plumber callout fees, hourly rates, and typical job prices in 2026 — what to expect before you hire."
+description: "NZ plumber callout fees, hourly rates and typical job prices in 2026 — what to charge, what to expect before you hire, and how to quote with confidence."
 date: 2026-05-08
 tags: [plumbers, pricing, callout fees, NZ, 2026]
 author: "NZ Tradie Tools"

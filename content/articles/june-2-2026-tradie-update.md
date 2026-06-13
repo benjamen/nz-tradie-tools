@@ -1,6 +1,6 @@
 ---
 title: "NZ Tradie Market Update: June 2, 2026"
-description: "Latest insights for the NZ construction market in June 2026."
+description: "NZ construction market update for 2 June 2026 — building consents, material costs, labour demand, and what the numbers mean for your tradie business."
 date: 2026-06-02
 tags: [News, NZ, Construction]
 author: "NZ Tradie Tools"

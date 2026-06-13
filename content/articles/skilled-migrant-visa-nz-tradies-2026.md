@@ -1,5 +1,6 @@
 ---
 title: "NZ Skilled Migrant Visa Changes for Tradies 2026: What You Need to Know"
+seo_title: "NZ Skilled Migrant Visa Changes for Tradies 2026"
 description: "New trades visa pathways coming August 2026. Learn how to sponsor skilled workers and what qualifications are required."
 date: 2026-06-04
 tags: [immigration, visa, employment, regulations, NZ]
