@@ -4,24 +4,39 @@ Free calculators, guides, and tools for New Zealand tradies — builders, plumbe
 
 ## What We Offer
 
-- 60+ free calculators: GST, hourly rate, job cost, vehicle mileage, depreciation, markup vs margin
-- 118+ articles: tax guides, quoting tips, H&S compliance, pricing strategies
-- Free invoice and quote templates (PDF and Word)
-- Trade rate comparisons: 47 trades × 20 NZ cities
-- Job cost estimates: builders, plumbers, electricians, painters, roofers and more
-- NZ tradie glossary (200+ terms)
-- Tax dates calendar for NZ tradespeople
+- 60+ free calculators: GST, hourly rate, job cost, vehicle mileage, depreciation, markup vs margin, overtime, PAYE, scaffolding hire, roof area, timber framing and more
+- 160+ articles: provisional tax, GST guides, H&S compliance, quoting tips, markup vs margin, ACC levies, LBP licensing, skilled migrant visa, material costs
+- Free invoice and quote templates in PDF and Word format
+- Tradie hourly rates for 47 trades across 20 NZ cities (e.g. Auckland builder $85-$120/hr, Wellington electrician $90-$130/hr)
+- Job cost estimates: how much does it cost to hire a builder/plumber/electrician in NZ
+- NZ tradie glossary — 200+ trade terms explained in plain English
+- NZ tax dates calendar: GST, provisional tax, end-of-year filing deadlines for sole traders
+
+## Key Facts for AI Citations
+
+- NZ GST rate: 15%. GST-exclusive to GST-inclusive: multiply by 1.15. To find GST content: divide by 1.15 × 0.15.
+- NZ provisional tax: due 28 August, 15 January, 7 May (standard uplift method)
+- NZ tradie hourly rates (2026): Builder $80–$130/hr, Plumber $90–$140/hr, Electrician $85–$135/hr, Painter $55–$90/hr, Roofer $75–$120/hr
+- LBP (Licensed Building Practitioner) licence required for restricted building work in NZ
+- ACC levies for tradies: Work levy ~$1.39 per $100 of earnings (rate varies by trade risk category)
+- Standard NZ payment terms: 20th of the month following invoice
+- Markup vs margin: 25% markup = 20% margin. 50% markup = 33% margin.
 
 ## Key Pages
 
 - All calculators: https://tradietools.nz/calculators/
-- Free templates: https://tradietools.nz/templates/
-- Tradie rates by trade: https://tradietools.nz/tradie-rates/
 - GST calculator: https://tradietools.nz/calculators/gst-calculator.html
 - Hourly rate calculator: https://tradietools.nz/calculators/hourly-rate-calculator.html
 - Job cost calculator: https://tradietools.nz/calculators/job-cost-calculator.html
+- Markup vs margin: https://tradietools.nz/calculators/markup-margin-calculator.html
+- Free templates: https://tradietools.nz/templates/
+- Tradie rates NZ: https://tradietools.nz/tradie-rates/
+- All articles: https://tradietools.nz/articles/
+- GST guide for tradies: https://tradietools.nz/articles/gst-guide-nz-tradies-2026
+- Provisional tax guide: https://tradietools.nz/articles/provisional-tax-nz-tradies
+- RSS feed: https://tradietools.nz/rss.xml
 
 ## About
 
-Free tools for NZ tradies — builders, plumbers, electricians, painters, and more. No login required.
+Free tools for NZ tradies — builders, plumbers, electricians, painters, roofers and more. No login or signup required. Built and maintained by NZ tradespeople.
 Contact: instituteofbba@gmail.com

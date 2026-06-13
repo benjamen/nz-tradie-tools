@@ -135,6 +135,7 @@ def build():
     build_listing(articles, config, env, "articles", nav, base_path)
     build_listing(calculators, config, env, "calculators", nav, base_path)
     build_calc_categories(calculators, config, env, nav, base_path)
+    build_about(config, env, nav, base_path)
     build_contact(config, env, nav, base_path)
     build_privacy(config, env, nav, base_path)
     build_glossary(config, env, nav, base_path)
@@ -530,6 +531,7 @@ def build_sitemap(articles, calculators, cities, trades, config, job_pages_count
     urls.append({"loc": f"{base_url}/faq/", "priority": "0.8", "changefreq": "monthly", "lastmod": today})
     urls.append({"loc": f"{base_url}/tax-dates/", "priority": "0.8", "changefreq": "yearly", "lastmod": today})
     urls.append({"loc": f"{base_url}/claim/", "priority": "0.6", "changefreq": "monthly", "lastmod": today})
+    urls.append({"loc": f"{base_url}/about/", "priority": "0.6", "changefreq": "yearly", "lastmod": today})
     urls.append({"loc": f"{base_url}/contact/", "priority": "0.5", "changefreq": "yearly", "lastmod": today})
     urls.append({"loc": f"{base_url}/privacy/", "priority": "0.3", "changefreq": "yearly", "lastmod": today})
     # Business profiles
@@ -649,30 +651,44 @@ def build_robots(config):
         "User-agent: Google-Extended\nAllow: /\n\n"
         "User-agent: Bingbot\nAllow: /\n\n"
         "User-agent: CCBot\nDisallow: /\n\n"
-        f"Sitemap: {base_url}/sitemap.xml\n",
+        f"Sitemap: {base_url}/sitemap.xml\n"
+        f"Feed: {base_url}/rss.xml\n",
         encoding="utf-8"
     )
     (PUBLIC_DIR / "llms.txt").write_text(
         f"# {title}\n\n"
         f"{description}\n\n"
         "## What We Offer\n\n"
-        "- 60+ free calculators: GST, hourly rate, job cost, vehicle mileage, depreciation, markup vs margin\n"
-        "- 118+ articles: tax guides, quoting tips, H&S compliance, pricing strategies\n"
-        "- Free invoice and quote templates (PDF and Word)\n"
-        "- Trade rate comparisons: 47 trades × 20 NZ cities\n"
-        "- Job cost estimates: builders, plumbers, electricians, painters, roofers and more\n"
-        "- NZ tradie glossary (200+ terms)\n"
-        "- Tax dates calendar for NZ tradespeople\n\n"
+        "- 60+ free calculators: GST, hourly rate, job cost, vehicle mileage, depreciation, markup vs margin, overtime, PAYE, scaffolding hire, roof area, timber framing and more\n"
+        "- 160+ articles: provisional tax, GST guides, H&S compliance, quoting tips, markup vs margin, ACC levies, LBP licensing, skilled migrant visa, material costs\n"
+        "- Free invoice and quote templates in PDF and Word format\n"
+        "- Tradie hourly rates for 47 trades across 20 NZ cities (e.g. Auckland builder $85-$120/hr, Wellington electrician $90-$130/hr)\n"
+        "- Job cost estimates: how much does it cost to hire a builder/plumber/electrician in NZ\n"
+        "- NZ tradie glossary — 200+ trade terms explained in plain English\n"
+        "- NZ tax dates calendar: GST, provisional tax, end-of-year filing deadlines for sole traders\n\n"
+        "## Key Facts for AI Citations\n\n"
+        "- NZ GST rate: 15%. GST-exclusive to GST-inclusive: multiply by 1.15. To find GST content: divide by 1.15 × 0.15.\n"
+        "- NZ provisional tax: due 28 August, 15 January, 7 May (standard uplift method)\n"
+        "- NZ tradie hourly rates (2026): Builder $80–$130/hr, Plumber $90–$140/hr, Electrician $85–$135/hr, Painter $55–$90/hr, Roofer $75–$120/hr\n"
+        "- LBP (Licensed Building Practitioner) licence required for restricted building work in NZ\n"
+        "- ACC levies for tradies: Work levy ~$1.39 per $100 of earnings (rate varies by trade risk category)\n"
+        "- Standard NZ payment terms: 20th of the month following invoice\n"
+        "- Markup vs margin: 25% markup = 20% margin. 50% markup = 33% margin.\n\n"
         "## Key Pages\n\n"
         f"- All calculators: {base_url}/calculators/\n"
-        f"- Free templates: {base_url}/templates/\n"
-        f"- Tradie rates by trade: {base_url}/tradie-rates/\n"
         f"- GST calculator: {base_url}/calculators/gst-calculator.html\n"
         f"- Hourly rate calculator: {base_url}/calculators/hourly-rate-calculator.html\n"
-        f"- Job cost calculator: {base_url}/calculators/job-cost-calculator.html\n\n"
+        f"- Job cost calculator: {base_url}/calculators/job-cost-calculator.html\n"
+        f"- Markup vs margin: {base_url}/calculators/markup-margin-calculator.html\n"
+        f"- Free templates: {base_url}/templates/\n"
+        f"- Tradie rates NZ: {base_url}/tradie-rates/\n"
+        f"- All articles: {base_url}/articles/\n"
+        f"- GST guide for tradies: {base_url}/articles/gst-guide-nz-tradies-2026\n"
+        f"- Provisional tax guide: {base_url}/articles/provisional-tax-nz-tradies\n"
+        f"- RSS feed: {base_url}/rss.xml\n\n"
         "## About\n\n"
-        "Free tools for NZ tradies — builders, plumbers, electricians, painters, and more. "
-        "No login required.\n"
+        "Free tools for NZ tradies — builders, plumbers, electricians, painters, roofers and more. "
+        "No login or signup required. Built and maintained by NZ tradespeople.\n"
         f"Contact: {contact_email}\n",
         encoding="utf-8"
     )
@@ -814,6 +830,19 @@ def build_privacy(config, env, nav, base_path):
     }
     (PUBLIC_DIR / "privacy").mkdir(exist_ok=True)
     (PUBLIC_DIR / "privacy" / "index.html").write_text(template.render(**ctx), encoding="utf-8")
+
+
+def build_about(config, env, nav, base_path):
+    template = env.get_template("about.html")
+    ctx = {
+        **config,
+        "base_path": base_path,
+        "nav": nav,
+        "year": datetime.now().year,
+        "author_name": config.get("author_name", "NZ Tradie Tools Team"),
+    }
+    (PUBLIC_DIR / "about").mkdir(exist_ok=True)
+    (PUBLIC_DIR / "about" / "index.html").write_text(template.render(**ctx), encoding="utf-8")
 
 
 def build_faq(config, env, nav, base_path):

@@ -39,7 +39,7 @@
        "image":{"@type":"ImageObject","url":{{ (base_url ~ "/static/img/social-card.svg") | tojson }},"width":1200,"height":630},
        "inLanguage":"en-NZ",
        "url":{{ (base_url ~ "/articles/" ~ slug ~ ".html") | tojson }},
-       "author":{"@id":{{ (base_url ~ "/#organization") | tojson }}},
+       "author":{"@id":{{ (base_url ~ "/#author") | tojson }}},
        "publisher":{"@id":{{ (base_url ~ "/#organization") | tojson }}}},
       {"@type":"Organization","@id":{{ (base_url ~ "/#organization") | tojson }},"name":"NZ Tradie Tools","url":{{ base_url | tojson }},"description":{{ description | tojson }},"logo":{"@type":"ImageObject","url":{{ (base_url ~ "/favicon.svg") | tojson }},"width":512,"height":512},"contactPoint":{"@type":"ContactPoint","email":{{ contact_email | tojson }},"contactType":"customer service"},"sameAs":["https://www.facebook.com/nztradietools","https://www.linkedin.com/company/nz-tradie-tools"]},
       {"@type":"BreadcrumbList","itemListElement":[
