@@ -26,3 +26,4 @@ User-agent: CCBot
 Disallow: /
 
 Sitemap: https://tradietools.nz/sitemap.xml
+Feed: https://tradietools.nz/rss.xml
