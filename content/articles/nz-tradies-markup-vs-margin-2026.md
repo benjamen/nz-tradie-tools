@@ -1,6 +1,6 @@
 ---
 title: "NZ Tradies Markup vs Margin: The Profit Leak You're Missing"
-description: "Learn the critical difference between markup and margin. One wrong calculation could be costing you thousands annually."
+description: Learn the critical difference between markup and margin for NZ tradies. One wrong calculation could be costing your business thousands every year.
 date: 2026-06-05
 tags: [pricing, profit, business, NZ]
 author: "NZ Tradie Tools"

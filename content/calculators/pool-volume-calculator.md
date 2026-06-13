@@ -1,6 +1,6 @@
 ---
 title: "Pool Volume & Chemical Calculator — NZ"
-description: "Calculate your pool volume in litres, chemical doses, filter run times, and ongoing costs for NZ swimming pools."
+description: Calculate your pool volume in litres, chemical doses, filter run times, and ongoing maintenance costs for NZ swimming pools and spas.
 tags: [pool, volume, chemicals, calculator, NZ]
 author: "NZ Tradie Tools"
 layout: calculator

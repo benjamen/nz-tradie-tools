@@ -1,6 +1,6 @@
 ---
 title: "PAYE Employee Cost Calculator — NZ"
-description: "Calculate the true cost of employing someone in NZ — PAYE, ACC, KiwiSaver, holiday pay, and total employer cost."
+description: Calculate the true cost of employing someone in NZ — PAYE, ACC, KiwiSaver, holiday pay, and total employer cost per hour and per year.
 tags: [PAYE, employee, wages, calculator, NZ, tax]
 author: "NZ Tradie Tools"
 layout: calculator

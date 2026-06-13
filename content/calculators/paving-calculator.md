@@ -1,6 +1,6 @@
 ---
 title: "Paving Calculator — NZ (Pavers, Base & Sand)"
-description: "Calculate how many pavers, base course, and sand you need for a NZ paving project. Includes cost estimates."
+description: Calculate how many pavers, base course, and sand you need for a NZ paving project. Includes material and labour cost estimates per square metre.
 tags: [paving, pavers, calculator, NZ, landscaping]
 author: "NZ Tradie Tools"
 layout: calculator

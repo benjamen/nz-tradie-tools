@@ -1,6 +1,6 @@
 ---
 title: "Labour Cost Calculator — NZ Tradies"
-description: "Calculate total labour cost for a job, team, or project. Includes on-costs, overhead, and profitability check."
+description: Calculate total labour cost for a job, team, or project in NZ. Includes on-costs, overhead loading, and a profitability check for your quote.
 tags: [labour cost, wages, calculator, NZ, quoting]
 author: "NZ Tradie Tools"
 layout: calculator

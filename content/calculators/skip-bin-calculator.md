@@ -1,6 +1,6 @@
 ---
 title: "NZ Skip Bin Size & Cost Estimator"
-description: "Estimate skip bin size and waste disposal cost for NZ construction jobs — including the NZ waste levy per tonne."
+description: Estimate skip bin size and waste disposal cost for NZ construction jobs — including the NZ waste levy per tonne and recycling deductions.
 tags: [waste, skip bin, demolition, disposal, NZ]
 author: "NZ Tradie Tools"
 related_articles: [how-to-price-a-job-nz-tradie-guide, managing-rising-material-costs-nz-2026, builder-pricing-guide-nz-2026]

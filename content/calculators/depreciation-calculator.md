@@ -1,6 +1,6 @@
 ---
 title: "NZ Tool & Equipment Depreciation Calculator"
-description: "Calculate the annual depreciation deduction for your tools and equipment using the IRD diminishing value method."
+description: Calculate the annual depreciation deduction for your tools and equipment using the IRD diminishing value method. Updated for NZ 2026 tax rules.
 tags: [depreciation, tools, tax, IRD, calculator, NZ]
 author: "NZ Tradie Tools"
 layout: calculator

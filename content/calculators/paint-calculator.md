@@ -1,6 +1,6 @@
 ---
 title: "Paint Calculator — NZ"
-description: "Calculate how many litres of paint you need for walls, ceilings, and exteriors. Works for any NZ room or house."
+description: Calculate how many litres of paint you need for walls, ceilings, and exteriors. Works for any NZ room or house size with a wastage allowance.
 tags: [paint, calculator, NZ, painting, decorator]
 author: "NZ Tradie Tools"
 layout: calculator

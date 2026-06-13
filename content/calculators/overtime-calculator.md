@@ -1,6 +1,6 @@
 ---
 title: "Overtime & Holiday Pay Calculator — NZ"
-description: "Calculate overtime pay, time-and-a-half, double time, and public holiday rates for NZ employees and contractors."
+description: Calculate overtime pay, time-and-a-half, double time, and public holiday rates for NZ employees and contractors. Based on current employment law.
 tags: [overtime, holiday pay, wages, calculator, NZ, employment]
 author: "NZ Tradie Tools"
 layout: calculator

@@ -1,6 +1,6 @@
 ---
 title: "Apprentice Wage Calculator — NZ Training Rates 2026"
-description: "Calculate minimum and typical apprentice wages for NZ trades — by year of training, trade type, and hours worked."
+description: Calculate minimum and typical apprentice wages for NZ trades — by year of training, trade type, and hours worked. Updated for 2026 minimum wage.
 tags: [apprentice, wages, training, employment, NZ, BCITO]
 author: "NZ Tradie Tools"
 layout: calculator

@@ -1,6 +1,6 @@
 ---
 title: "How to Get Paid Faster: NZ Tradie Invoice Guide"
-description: "Master invoice best practices, payment terms, and automated reminders to improve cash flow for your NZ tradie business."
+description: Master invoice best practices, payment terms, and automated reminders to improve cash flow and get paid faster in your NZ tradie business.
 date: 2026-06-08
 tags: [invoicing, cash flow, payment, business, NZ]
 author: "NZ Tradie Tools"

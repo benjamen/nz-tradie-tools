@@ -1,6 +1,6 @@
 ---
 title: "Solar Panel Savings Calculator — NZ"
-description: "Estimate how much solar panels will save you in NZ — system size, annual generation, payback period, and ROI."
+description: Estimate how much solar panels will save you in NZ — system size, annual generation, payback period, and ROI based on your region and usage.
 tags: [solar, panels, savings, calculator, NZ]
 author: "NZ Tradie Tools"
 layout: calculator
