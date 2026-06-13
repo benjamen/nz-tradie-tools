@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="geo.region" content="NZ">
+    <meta name="geo.placename" content="New Zealand">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap">
+    <title>About NZ Tradie Tools — How We Build Our Guides &amp; Calculators</title>
+    <meta name="description" content="NZ Tradie Tools is built by tradespeople for tradespeople. Learn how we research rates, verify tax information, and keep our calculators accurate for NZ tradies.">
+    <link rel="canonical" href="{{ base_url }}/about/">
+    <link rel="alternate" type="application/rss+xml" title="NZ Tradie Tools — Articles" href="{{ base_url }}/rss.xml">
+    <link rel="icon" href="{{ base_path }}/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="{{ base_path }}/static/css/style.css">
+    <meta property="og:title" content="About NZ Tradie Tools — How We Build Our Guides & Calculators">
+    <meta property="og:description" content="NZ Tradie Tools is built by tradespeople for tradespeople. Learn how we research rates, verify tax information, and keep our calculators accurate.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ base_url }}/about/">
+    <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta property="og:image" content="{{ base_url }}/static/img/social-card.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    {% if ga_id %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ ga_id }}"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{ ga_id }}');</script>
+    {% endif %}
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@graph":[
+      {"@type":"AboutPage",
+       "name":"About NZ Tradie Tools",
+       "description":"NZ Tradie Tools is built by tradespeople for tradespeople — free calculators, guides, and tools for NZ builders, plumbers, electricians and more.",
+       "url":"{{ base_url }}/about/",
+       "breadcrumb":{"@type":"BreadcrumbList","itemListElement":[
+         {"@type":"ListItem","position":1,"name":"Home","item":"{{ base_url }}/"},
+         {"@type":"ListItem","position":2,"name":"About","item":"{{ base_url }}/about/"}
+       ]}},
+      {"@type":"Person",
+       "@id":"{{ base_url }}/#author",
+       "name":"{{ author_name }}",
+       "jobTitle":"Founder, NZ Tradie Tools",
+       "description":"NZ-based tradie and small business owner. Built NZ Tradie Tools to solve the problems he faced running a trade business — confusing GST calculations, unclear rates, and a lack of practical NZ-specific tools.",
+       "url":"{{ base_url }}/about/",
+       "email":"{{ contact_email }}",
+       "knowsAbout":["New Zealand tax for tradies","GST","Provisional tax","NZ building regulations","Trade business pricing","NZ Employment Relations Act","Health & Safety at Work Act NZ"],
+       "worksFor":{"@id":"{{ base_url }}/#organization"}},
+      {"@type":"Organization",
+       "@id":"{{ base_url }}/#organization",
+       "name":"NZ Tradie Tools",
+       "url":"{{ base_url }}",
+       "logo":{"@type":"ImageObject","url":"{{ base_url }}/favicon.svg","width":512,"height":512},
+       "contactPoint":{"@type":"ContactPoint","email":"{{ contact_email }}","contactType":"customer service"},
+       "founder":{"@id":"{{ base_url }}/#author"}}
+    ]}
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="{{ base_path }}/" class="logo">NZ Tradie Tools</a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                {% for item in nav %}
+                <a href="{{ item.url }}">{{ item.label }}</a>
+                {% endfor %}
+                <a href="/signup/" class="nav-cta">Free Listing →</a>
+            </nav>
+            <script>
+            (function(){
+                var t=document.querySelector('.nav-toggle'),n=document.getElementById('main-nav');
+                if(!t||!n)return;
+                t.addEventListener('click',function(){var o=n.classList.toggle('is-open');t.setAttribute('aria-expanded',o);});
+                document.addEventListener('click',function(e){if(!t.contains(e.target)&&!n.contains(e.target)){n.classList.remove('is-open');t.setAttribute('aria-expanded','false');}});
+            })();
+            </script>
+        </div>
+    </header>
+
+    <div class="container" style="max-width:780px;padding-top:2rem;padding-bottom:4rem">
+
+        <nav aria-label="breadcrumb" style="font-size:.85rem;color:#6b7280;margin-bottom:1.5rem">
+            <a href="/" style="color:#6b7280">Home</a> › About
+        </nav>
+
+        <h1 style="font-size:2rem;font-weight:700;margin-bottom:.5rem">About NZ Tradie Tools</h1>
+        <p style="font-size:1.1rem;color:#4b5563;margin-bottom:2.5rem">Free calculators, guides, and tools built by NZ tradespeople — for NZ tradespeople.</p>
+
+        <h2 style="font-size:1.3rem;font-weight:600;margin:2rem 0 .75rem">Who built this?</h2>
+        <p style="margin-bottom:1rem">NZ Tradie Tools was founded by <strong>{{ author_name }}</strong>, an Auckland-based trade business owner who got frustrated with the lack of practical, NZ-specific tools for running a trade business. Every calculator, rate table, and tax guide on this site solves a problem we actually faced.</p>
+        <p style="margin-bottom:1rem">We are not accountants, lawyers, or tax advisors — but we have spent years navigating NZ's GST rules, provisional tax cycles, ACC levies, and quoting practices. Our guides are written to explain things in plain English, not to replace professional advice for complex situations.</p>
+
+        <h2 style="font-size:1.3rem;font-weight:600;margin:2rem 0 .75rem">How we research</h2>
+        <ul style="line-height:2;margin-bottom:1.5rem">
+            <li><strong>Rate data</strong> — tradie hourly rates are compiled from job listings, trade forums, subcontractor agreements, and direct input from NZ tradespeople across 20 cities</li>
+            <li><strong>Tax information</strong> — verified against IRD's official guidance. We flag when rules changed and update pages when IRD releases new rates or thresholds</li>
+            <li><strong>Calculators</strong> — formulas are based on NZ legislation (GST Act 1985, Income Tax Act 2007) and cross-checked against IRD calculators where they exist</li>
+            <li><strong>H&S content</strong> — referenced against WorkSafe NZ guidelines and the Health and Safety at Work Act 2015</li>
+            <li><strong>Community review</strong> — active in NZ trade Facebook groups; real-world feedback from tradies is incorporated into guides regularly</li>
+        </ul>
+
+        <div style="background:#fef3c7;border-radius:8px;padding:1.25rem 1.5rem;margin-bottom:2rem;border-left:4px solid #f59e0b">
+            <strong>Disclaimer:</strong> NZ Tradie Tools provides general information only. For tax advice specific to your situation, consult a registered NZ tax agent or accountant. For legal advice, contact a solicitor. IRD tax rates, thresholds, and deadlines change — always confirm current figures at <a href="https://www.ird.govt.nz" style="color:#92400e">ird.govt.nz</a>.
+        </div>
+
+        <h2 style="font-size:1.3rem;font-weight:600;margin:2rem 0 .75rem">Affiliate disclosure</h2>
+        <p style="margin-bottom:1.5rem">Some links on NZ Tradie Tools are affiliate links — if you click through and make a purchase, we earn a small commission at no extra cost to you. This never affects which tools, software, or services we recommend. We only link to products we would use ourselves.</p>
+
+        <h2 style="font-size:1.3rem;font-weight:600;margin:2rem 0 .75rem">What we cover</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;margin-bottom:2rem">
+            <a href="/calculators/" style="display:block;background:#f8fafc;border-radius:8px;padding:1rem;text-decoration:none;color:inherit;border:1px solid #e2e8f0">
+                <strong style="display:block;margin-bottom:.25rem">Calculators</strong>
+                <span style="font-size:.875rem;color:#64748b">60+ free tools — GST, hourly rate, job cost, markup, PAYE and more</span>
+            </a>
+            <a href="/articles/" style="display:block;background:#f8fafc;border-radius:8px;padding:1rem;text-decoration:none;color:inherit;border:1px solid #e2e8f0">
+                <strong style="display:block;margin-bottom:.25rem">Guides</strong>
+                <span style="font-size:.875rem;color:#64748b">160+ articles on tax, quoting, H&S, pricing strategy, and employment</span>
+            </a>
+            <a href="/tradie-rates/" style="display:block;background:#f8fafc;border-radius:8px;padding:1rem;text-decoration:none;color:inherit;border:1px solid #e2e8f0">
+                <strong style="display:block;margin-bottom:.25rem">Trade Rates</strong>
+                <span style="font-size:.875rem;color:#64748b">Hourly rates for 47 trades across 20 NZ cities — updated regularly</span>
+            </a>
+            <a href="/templates/" style="display:block;background:#f8fafc;border-radius:8px;padding:1rem;text-decoration:none;color:inherit;border:1px solid #e2e8f0">
+                <strong style="display:block;margin-bottom:.25rem">Templates</strong>
+                <span style="font-size:.875rem;color:#64748b">Free invoice and quote templates in PDF and Word — no signup needed</span>
+            </a>
+        </div>
+
+        <h2 style="font-size:1.3rem;font-weight:600;margin:2rem 0 .75rem">Contact</h2>
+        <p>Corrections, rate updates, or suggestions: <a href="mailto:{{ contact_email }}">{{ contact_email }}</a></p>
+        <p style="margin-top:.5rem;color:#6b7280;font-size:.9rem">If you spot a calculator formula error or an outdated IRD figure, please let us know — accuracy matters when your tax bill is on the line.</p>
+
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">NZ Tradie Tools</p>
+                <p>Free calculators, templates and guides for New Zealand tradies.</p>
+                <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
+            </div>
+            <div style="text-align:right">
+                <p><a href="{{ base_path }}/about/">About</a></p>
+                <p><a href="{{ base_path }}/privacy/">Privacy Policy</a></p>
+                <p><a href="{{ base_path }}/contact/">Contact</a></p>
+                <p style="margin-top:.5rem">&copy; {{ year }} NZ Tradie Tools</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

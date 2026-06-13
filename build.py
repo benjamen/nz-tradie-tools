@@ -135,6 +135,7 @@ def build():
     build_listing(articles, config, env, "articles", nav, base_path)
     build_listing(calculators, config, env, "calculators", nav, base_path)
     build_calc_categories(calculators, config, env, nav, base_path)
+    build_about(config, env, nav, base_path)
     build_contact(config, env, nav, base_path)
     build_privacy(config, env, nav, base_path)
     build_glossary(config, env, nav, base_path)
@@ -530,6 +531,7 @@ def build_sitemap(articles, calculators, cities, trades, config, job_pages_count
     urls.append({"loc": f"{base_url}/faq/", "priority": "0.8", "changefreq": "monthly", "lastmod": today})
     urls.append({"loc": f"{base_url}/tax-dates/", "priority": "0.8", "changefreq": "yearly", "lastmod": today})
     urls.append({"loc": f"{base_url}/claim/", "priority": "0.6", "changefreq": "monthly", "lastmod": today})
+    urls.append({"loc": f"{base_url}/about/", "priority": "0.6", "changefreq": "yearly", "lastmod": today})
     urls.append({"loc": f"{base_url}/contact/", "priority": "0.5", "changefreq": "yearly", "lastmod": today})
     urls.append({"loc": f"{base_url}/privacy/", "priority": "0.3", "changefreq": "yearly", "lastmod": today})
     # Business profiles
@@ -828,6 +830,19 @@ def build_privacy(config, env, nav, base_path):
     }
     (PUBLIC_DIR / "privacy").mkdir(exist_ok=True)
     (PUBLIC_DIR / "privacy" / "index.html").write_text(template.render(**ctx), encoding="utf-8")
+
+
+def build_about(config, env, nav, base_path):
+    template = env.get_template("about.html")
+    ctx = {
+        **config,
+        "base_path": base_path,
+        "nav": nav,
+        "year": datetime.now().year,
+        "author_name": config.get("author_name", "NZ Tradie Tools Team"),
+    }
+    (PUBLIC_DIR / "about").mkdir(exist_ok=True)
+    (PUBLIC_DIR / "about" / "index.html").write_text(template.render(**ctx), encoding="utf-8")
 
 
 def build_faq(config, env, nav, base_path):
