@@ -1,6 +1,6 @@
 ---
 title: "Roof Area Calculator — NZ"
-description: "Calculate actual roof area from your house footprint and roof pitch. Works for gable, hip, and skillion roofs."
+description: Calculate actual roof area from your house footprint and roof pitch in NZ. Works for gable, hip, and skillion roofs with material takeoff output.
 tags: [roofing, calculator, NZ, roof area, builder]
 author: "NZ Tradie Tools"
 layout: calculator

@@ -1,6 +1,6 @@
 ---
 title: "Decking Calculator — NZ"
-description: "Calculate how many deck boards, joists, posts and screws you need for any NZ deck. Covers timber and composite."
+description: Calculate how many deck boards, joists, posts and screws you need for any NZ deck. Covers both timber and composite decking with cost estimates.
 tags: [decking, calculator, NZ, builder, outdoor]
 author: "NZ Tradie Tools"
 layout: calculator

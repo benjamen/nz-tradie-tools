@@ -1,6 +1,6 @@
 ---
 title: "Tile Calculator — NZ"
-description: "Calculate how many tiles you need for floors, walls, or splashbacks. Includes wastage and grout estimates."
+description: Calculate how many tiles you need for floors, walls, or splashbacks in NZ. Includes wastage percentage, grout quantity, and adhesive estimates.
 tags: [tiles, calculator, NZ, tiling, flooring]
 author: "NZ Tradie Tools"
 layout: calculator

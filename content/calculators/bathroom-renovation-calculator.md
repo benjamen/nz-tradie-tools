@@ -1,6 +1,6 @@
 ---
 title: "Bathroom Renovation Cost Calculator — NZ"
-description: "Estimate your bathroom renovation cost in New Zealand. Covers tiling, plumbing, waterproofing, fixtures, and labour."
+description: Estimate your bathroom renovation cost in New Zealand. Covers tiling, plumbing, waterproofing, fixtures, and labour for a full or partial reno.
 tags: [bathroom, renovation, calculator, NZ]
 author: "NZ Tradie Tools"
 layout: calculator

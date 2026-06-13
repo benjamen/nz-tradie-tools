@@ -1,6 +1,6 @@
 ---
 title: "Carpet & Flooring Calculator — NZ"
-description: "Calculate carpet, vinyl, and floating floor quantities and costs for NZ homes. Includes underlay and installation."
+description: Calculate carpet, vinyl, and floating floor quantities and costs for NZ homes. Includes underlay, installation, and waste factor estimates.
 tags: [carpet, flooring, vinyl, calculator, NZ]
 author: "NZ Tradie Tools"
 layout: calculator

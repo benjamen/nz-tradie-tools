@@ -1,6 +1,6 @@
 ---
 title: "Irrigation System Calculator — NZ"
-description: "Calculate irrigation pipe lengths, sprinkler head spacing, flow rates, and system cost for NZ gardens and lawns."
+description: Calculate irrigation pipe lengths, sprinkler head spacing, flow rates, and total system cost for NZ gardens, lawns, and lifestyle blocks.
 tags: [irrigation, sprinkler, calculator, NZ, landscaping]
 author: "NZ Tradie Tools"
 layout: calculator

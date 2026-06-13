@@ -1,6 +1,6 @@
 ---
 title: "Timber Framing Calculator — NZ (Studs, Plates & Lintels)"
-description: "Calculate timber framing quantities for NZ wall, floor, and roof framing — studs, top plates, nogs, and lintels."
+description: Calculate timber framing quantities for NZ wall, floor, and roof framing — studs, top plates, nogs, lintels, and total lineal metre estimates.
 tags: [timber, framing, studs, calculator, NZ, building]
 author: "NZ Tradie Tools"
 layout: calculator

@@ -1,6 +1,6 @@
 ---
 title: "Retaining Wall Calculator — NZ"
-description: "Estimate retaining wall materials and costs for NZ — concrete blocks, timber, or keystone. Includes drainage aggregate."
+description: Estimate retaining wall materials and costs for NZ — concrete blocks, timber, or keystone. Includes drainage aggregate, consent thresholds, and labour.
 tags: [retaining wall, landscaping, calculator, NZ]
 author: "NZ Tradie Tools"
 layout: calculator

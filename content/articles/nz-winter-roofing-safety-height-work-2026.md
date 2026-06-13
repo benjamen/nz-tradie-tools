@@ -1,7 +1,7 @@
 ---
 title: "NZ Winter Roofing Safety Guide 2026: Height Work, Wet Weather and WorkSafe Rules"
 seo_title: "NZ Winter Roofing Safety Guide 2026"
-description: "Essential WorkSafe height safety requirements for NZ roofers and builders working through winter 2026 — wet iron, wind."
+description: Essential WorkSafe height safety requirements for NZ roofers and builders working through winter 2026 — wet iron, wind loadings, and harness rules.
 date: 2026-05-15
 tags: [roofing, safety, WorkSafe, height work, winter, NZ]
 author: "NZ Tradie Tools"

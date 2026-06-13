@@ -1,6 +1,6 @@
 ---
 title: "NZ Scaffolding Hire vs Buy Calculator"
-description: "Compare the cost of hiring vs buying scaffolding for NZ tradies — roofing, painting, cladding and maintenance jobs."
+description: Compare the cost of hiring vs buying scaffolding for NZ tradies — roofing, painting, cladding and maintenance jobs. Includes daily and weekly rates.
 tags: [scaffolding, hire, WorkSafe, roofing, painting, NZ]
 author: "NZ Tradie Tools"
 related_articles: [health-and-safety-guide-nz-tradies, roofer-pricing-guide-nz-2026, painter-pricing-guide-nz-2026]
