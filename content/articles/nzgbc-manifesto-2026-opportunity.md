@@ -37,7 +37,7 @@ Energy-efficient work requires a higher standard of technical and administrative
 
 - **Stay Updated:** Keep track of the NZGBC manifesto developments. If rebates or loans are introduced, your clients will want to know how they can access them.
 - **Perfect Your Documentation:** Energy-efficient work often comes with strict certification and performance requirements. Use tools like [Fastcrew](https://fastcrew.nz) to maintain clear records of product specifications, installation standards, and energy performance metrics for every job.
-- **Optimize Your Pricing:** Energy-efficient materials and systems can be expensive. Ensure your quotes accurately reflect the cost of these premium components and the specialized time required for installation. Use our [job pricing guide](/calculators/job-pricing-guide) as a baseline, but tailor your pricing to the specific demands of these projects.
+- **Optimize Your Pricing:** Energy-efficient materials and systems can be expensive. Ensure your quotes accurately reflect the cost of these premium components and the specialized time required for installation. Use our [job pricing guide](/calculators/job-cost-calculator) as a baseline, but tailor your pricing to the specific demands of these projects.
 - **Financial Health:** As you invest in new equipment or training, keep your cash flow strong. Use our [GST Calculator](/calculators/gst-calculator) to maintain absolute precision in your tax reporting.
 
 ## The Outlook

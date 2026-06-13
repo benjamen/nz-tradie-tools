@@ -86,7 +86,7 @@ This documentation protects both you and the homeowner if any future issues aris
 
 If you're registered for GST, granny flat construction work is **not GST-exempt**—you'll charge the full 15% GST on your labour and materials unless the homeowner is also GST-registered.
 
-For pricing, use our [Job Costing Calculator](/calculators/job-costing-calculator) to ensure you're factoring in all costs (labour, materials, transport, crane hire, etc.).
+For pricing, use our [Job Costing Calculator](/calculators/job-cost-calculator) to ensure you're factoring in all costs (labour, materials, transport, crane hire, etc.).
 
 If the homeowner is paying more than $60,000 for the project and they later decide to rent out the granny flat, they may face tax implications. Recommend they speak with an accountant about rental income disclosure requirements to the IRD.
 

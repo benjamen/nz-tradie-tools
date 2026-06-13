@@ -144,7 +144,7 @@ If a customer balks at the higher margin, that's information — it suggests the
 This creates an audit trail that protects you if disputes arise.
 
 Internal links to related NZ tradie calculators and guides:
-- [How to Price a Job: NZ Tradie Guide](/calculators/job-pricing-calculator)
+- [How to Price a Job: NZ Tradie Guide](/calculators/job-cost-calculator)
 - [Job Costing Guide for NZ Tradies](/articles/job-costing-guide-nz-tradies-2026)
 - [Markup vs Margin: NZ Tradies 2026](/articles/markup-vs-margin-nz-tradies-2026)
 - [How to Set Your Hourly Rate: NZ Tradie 2026](/articles/how-to-set-hourly-rate-nz-tradie-2026)

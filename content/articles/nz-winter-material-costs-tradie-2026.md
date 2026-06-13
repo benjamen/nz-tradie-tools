@@ -55,7 +55,7 @@ Contact your key suppliers (PlaceMakers, Bunnings, local steel suppliers) in May
 If you have secure storage, order commonly used materials (gib, fasteners, sealants, timber sizes) in bulk during slower mid-winter weeks (July–August) when demand dips. You'll negotiate better rates and reduce site waste.
 
 ### 3. **Use Your Quoting Calculator**
-Our [NZ tradie job costing calculator](/calculators/job-costing-calculator) helps you factor in material escalation clauses. Always quote with a **±5% material escalation clause** for jobs over 4 weeks to protect your margin if prices spike. Check our [pricing guide for your trade](/calculators/tradie-pricing-calculator) to benchmark your rates.
+Our [NZ tradie job costing calculator](/calculators/job-cost-calculator) helps you factor in material escalation clauses. Always quote with a **±5% material escalation clause** for jobs over 4 weeks to protect your margin if prices spike. Check our [pricing guide for your trade](/calculators/job-cost-calculator) to benchmark your rates.
 
 ### 4. **Schedule Around Fuel Cycles**
 With diesel down significantly, this is an optimal time for bulk deliveries and multi-site days. Plan your winter jobs to maximize delivery efficiency—group 3–4 sites per run where possible.

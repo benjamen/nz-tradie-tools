@@ -106,7 +106,7 @@ Health monitoring typically includes:
 
 WorkSafe does not mandate health monitoring for all workers in all situations, but failing to provide it for high-exposure workers creates significant PCBU liability. Speak to an occupational health provider about a monitoring programme appropriate for your team.
 
-For accurate budgeting of your health and safety spend, use the [NZ Tradie Job Costing Calculator](/calculators/job-costing-calculator) to include compliance costs in your project quotes.
+For accurate budgeting of your health and safety spend, use the [NZ Tradie Job Costing Calculator](/calculators/job-cost-calculator) to include compliance costs in your project quotes.
 
 ---
 

@@ -200,7 +200,7 @@ Cancellation is done through myIR. Don't cancel just because a single period was
 
 - [NZ Tradie Tax Guide 2026 — Complete Overview](/articles/nz-tradie-tax-guide-2026)
 - [EOFY Checklist for NZ Tradies 2026](/articles/eofy-checklist-nz-tradies-2026)
-- [How to Set Your Hourly Rate as a Tradie](/articles/how-to-set-hourly-rate-tradie-nz)
+- [How to Set Your Hourly Rate as a Tradie](/articles/how-to-set-hourly-rate-nz-tradie-2026)
 
 ---
 

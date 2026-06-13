@@ -32,7 +32,7 @@ Energy efficiency projects often require specialized materials and technical com
 Energy-efficient projects can sometimes be complex, with longer material sourcing times and potential price fluctuations. Ensure your quotes are robust:
 - **Use Real-Time Costs:** Don't guess material prices. Ensure your quotes reflect current market rates.
 - **Accurate Reporting:** Use our [GST Calculator](/calculators/gst-calculator) to keep your financial reporting clean.
-- **Set Realistic Baselines:** Our [job pricing guide](/calculators/job-pricing-guide) is a great tool for establishing a solid foundation for your pricing, even as you pivot into new, specialized work.
+- **Set Realistic Baselines:** Our [job pricing guide](/calculators/job-cost-calculator) is a great tool for establishing a solid foundation for your pricing, even as you pivot into new, specialized work.
 
 ## The Road Ahead
 The construction industry is in a "reset." The days of easy volume are being replaced by a more selective, value-driven market. Energy efficiency isn't just about saving the planet—it’s about saving your clients money, which makes you the go-to tradie in their eyes. 

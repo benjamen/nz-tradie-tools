@@ -33,7 +33,7 @@ Whatever maintenance work you take on this winter, staying organized is key to p
 - Keep photos of "before and after" work for your records—this is invaluable for providing peace of mind to clients and proving work quality.
 
 ## Managing Your Business
-As we head into mid-2026, keep your financial house in order. Don't forget to use our [GST Calculator](/calculators/gst-calculator) to calculate your liabilities accurately, and refer to our [job pricing guide](/calculators/job-pricing-guide) to ensure you are factoring in any seasonal price adjustments for materials or travel time.
+As we head into mid-2026, keep your financial house in order. Don't forget to use our [GST Calculator](/calculators/gst-calculator) to calculate your liabilities accurately, and refer to our [job pricing guide](/calculators/job-cost-calculator) to ensure you are factoring in any seasonal price adjustments for materials or travel time.
 
 Winter is an excellent time to reach out to existing clients to offer "winter prep" packages. It keeps your schedule full during the slower season and helps homeowners protect their biggest assets.
 

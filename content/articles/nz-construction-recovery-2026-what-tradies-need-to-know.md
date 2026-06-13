@@ -58,7 +58,7 @@ With material costs rising and labour demand increasing in many regions, this is
 
 Use our [NZ Hourly Rate Calculator](/calculators/hourly-rate-calculator) to recalculate what you need to charge to hit your target income, factoring in ACC levies, vehicle costs, insurance, and non-billable hours. It's updated with current NZ figures.
 
-If you're pricing a job that involves materials, the [NZ Job Cost Builder](/calculators/job-cost-builder) lets you build a full cost breakdown and add your margin before presenting a quote — so you're not guessing at profitability.
+If you're pricing a job that involves materials, the [NZ Job Cost Builder](/calculators/job-cost-calculator) lets you build a full cost breakdown and add your margin before presenting a quote — so you're not guessing at profitability.
 
 ---
 

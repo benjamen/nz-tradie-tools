@@ -74,7 +74,7 @@ If you're thinking about sponsoring a migrant worker, start planning now:
 
 Don't forget that sponsoring and employing migrant workers doesn't exempt you from standard employment law. You'll still need to:
 
-- Comply with the [Construction Contracts Act 2002](/calculators/payment-claim-calculator) for payment terms
+- Comply with the [Construction Contracts Act 2002](/templates/) for payment terms
 - Meet all WorkSafe and health and safety requirements
 - Pay correct tax and ACC levies through Inland Revenue
 - Provide appropriate induction and training

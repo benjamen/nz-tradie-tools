@@ -27,7 +27,7 @@ Safety shouldn't be a box-ticking exercise; it’s the most important part of yo
 
 1. **Safety First Culture:** Make asbestos awareness part of your daily site induction. If a new team member joins your site, ensure they know how to spot potential hazards.
 2. **Use Digital Tools for Compliance:** Managing site safety is complex. Use [Fastcrew](https://fastcrew.nz) to keep track of site inductions, health and safety records, and asbestos management plans for every project. A digital, time-stamped record is your best evidence of a strong safety culture in the event of an audit.
-3. **Budget for Safety:** Asbestos testing and removal can be expensive. Factor these potential costs into your project quotes early. Use our [job pricing guide](/calculators/job-pricing-guide) as a baseline, but always add a contingency budget for safety-related risks.
+3. **Budget for Safety:** Asbestos testing and removal can be expensive. Factor these potential costs into your project quotes early. Use our [job pricing guide](/calculators/job-cost-calculator) as a baseline, but always add a contingency budget for safety-related risks.
 4. **Financial Accuracy:** When safety costs rise, your margins get squeezed. Ensure you are tracking all your costs against your budget in real-time. Use our [GST Calculator](/calculators/gst-calculator) to keep your reporting accurate and avoid financial stress.
 
 ## The Takeaway

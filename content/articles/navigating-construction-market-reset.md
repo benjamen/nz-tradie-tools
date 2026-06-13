@@ -28,7 +28,7 @@ If your strategy has been to take on as much work as possible, it’s time to re
 Disputes over quality or progress can be fatal to your cash flow. Keep a perfect, timestamped record of every stage of a project. Using digital tools like [Fastcrew](https://fastcrew.nz) to document work progress, site photos, and milestones is your best defense against claims and ensures you are paid for the work you do.
 
 ### 2. Sharpen Your Pricing
-Old pricing guides are dangerous in a volatile market. Use our [job pricing guide](/calculators/job-pricing-guide) as a base, but add your own markup based on real-time costs from your suppliers. If you’re unsure if you’re covering your overhead, use our [GST Calculator](/calculators/gst-calculator) to check your financial reporting. 
+Old pricing guides are dangerous in a volatile market. Use our [job pricing guide](/calculators/job-cost-calculator) as a base, but add your own markup based on real-time costs from your suppliers. If you’re unsure if you’re covering your overhead, use our [GST Calculator](/calculators/gst-calculator) to check your financial reporting. 
 
 ### 3. Communicate Early
 If material costs spike, tell your client immediately. Proactive, transparent communication prevents surprises at the end of a project.

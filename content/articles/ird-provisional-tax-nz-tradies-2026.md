@@ -89,7 +89,7 @@ Lowering your provisional tax starts with claiming all eligible deductions. Comm
 | Tool purchases (under $5,000) | ✅ Yes | Keep receipts; $5,000+ must be depreciated |
 | Vehicle running costs | ✅ Yes | Only work-related; no commute to home |
 | Phone and internet | ✅ Yes | Work portion only (e.g., 40% if used part-time) |
-| Vehicle depreciation | ✅ Yes | Complex; use [our vehicle claim calculator](/calculators/vehicle-depreciation-nz) |
+| Vehicle depreciation | ✅ Yes | Complex; use [our vehicle claim calculator](/calculators/vehicle-mileage-calculator) |
 | Home office | ✅ Yes | Rates, power, internet (work-use only) |
 | Apprentice wages | ✅ Yes | If you hire; PAYE must be paid |
 | Training and certifications | ✅ Yes | LBP renewals, safety courses, etc. |
@@ -106,7 +106,7 @@ If you employ staff, you **must** pay ACC levies (as employer). This is separate
 - **ACC contribution rate** (2026): ~1.4% of payroll (varies by industry)
 - **WorkSafe** fees: Depending on your business size, you may pay an annual fee (~$350–$500 for small builders)
 
-These are **deductible** against your income tax, so they lower your provisional tax liability. [See our ACC levy guide](/calculators/acc-calculator-nz) for exact rates.
+These are **deductible** against your income tax, so they lower your provisional tax liability. [See our ACC levy guide](/calculators/acc-levy-calculator) for exact rates.
 
 ## If You're in Dispute
 

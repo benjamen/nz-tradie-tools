@@ -35,7 +35,7 @@ These changes aren't just for homeowners—they’re a business opportunity for 
 Increased project volume is great, but don't let your administrative processes lag behind.
 
 - **Document Everything:** Even if you are working under an exemption, maintain professional documentation for every stage of the build. This is essential for your client's peace of mind and your own professional reputation. Use [Fastcrew](https://fastcrew.nz) to keep track of site photos, milestones, and project compliance.
-- **Check Your Pricing:** New methods (like prefabricated SIPs) have different cost structures than traditional framing. Don't fall back on outdated pricing guides. Use our [job pricing guide](/calculators/job-pricing-guide) as a baseline and adapt it for the specific efficiencies these new methods offer.
+- **Check Your Pricing:** New methods (like prefabricated SIPs) have different cost structures than traditional framing. Don't fall back on outdated pricing guides. Use our [job pricing guide](/calculators/job-cost-calculator) as a baseline and adapt it for the specific efficiencies these new methods offer.
 - **Tax Accuracy:** As your business potentially scales with this demand, ensure your tax obligations are managed flawlessly. Use our [GST Calculator](/calculators/gst-calculator) regularly to maintain accurate reporting.
 
 This regulatory shift is a positive step towards addressing New Zealand’s housing needs. By staying informed and efficient, you can help your clients build smarter and grow your own business in the process.
