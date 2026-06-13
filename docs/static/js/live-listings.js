@@ -94,6 +94,7 @@
         <div style="flex:1;min-width:0">
           <div style="font-weight:700;font-size:.95rem;display:flex;align-items:center;gap:.4rem;flex-wrap:wrap">
             ${esc(t.name || 'Unknown')}
+            ${t.top_tradie_badge ? '<span style="background:#7c3aed;color:#fff;font-size:.65rem;font-weight:700;padding:.12rem .45rem;letter-spacing:.02em">🏆 TOP TRADIE</span>' : ''}
             ${t.is_verified ? '<span style="background:var(--blue,#005ea2);color:#fff;font-size:.68rem;font-weight:700;padding:.12rem .45rem;letter-spacing:.02em">✓ VERIFIED</span>' : ''}
             ${t.is_premium && !t.is_verified ? '<span style="background:var(--orange,#c05600);color:#fff;font-size:.68rem;font-weight:700;padding:.12rem .45rem">PREMIUM</span>' : ''}
           </div>
