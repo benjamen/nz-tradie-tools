@@ -27,6 +27,12 @@ CLAIMED_DIR = DATA_DIR / "claimed"
 
 MD = markdown.Markdown(extensions=["tables", "fenced_code", "toc", "attr_list"])
 
+# Valid trade slugs — only these produce real /trades/{slug}/ pages
+_VALID_TRADE_SLUGS = {
+    t["slug"]
+    for t in json.loads((DATA_DIR / "trades.json").read_text())
+}
+
 
 def slugify(text):
     """Convert business name to URL-safe slug."""
@@ -199,6 +205,8 @@ def process_page(md_file, config, env, layout_name, section, nav, base_path, art
     tags = front.get("tags", [])
     if isinstance(tags, str):
         tags = [t.strip() for t in tags.split(",")]
+    # Only tags that map to a real /trades/{slug}/ page
+    trade_tags = [t for t in tags if str(t).lower().replace(" ", "-") in _VALID_TRADE_SLUGS]
 
     related_slugs = front.get("related_articles", [])
     if isinstance(related_slugs, str):
@@ -216,6 +224,7 @@ def process_page(md_file, config, env, layout_name, section, nav, base_path, art
         "date_iso": date_iso,
         "author": front.get("author", config.get("author", "")),
         "tags": tags,
+        "trade_tags": trade_tags,
         "content": html_body,
         "slug": slug,
         "section": section,

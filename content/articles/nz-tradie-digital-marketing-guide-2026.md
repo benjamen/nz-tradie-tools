@@ -84,7 +84,7 @@ A realistic starting budget for a NZ tradie is $150–$300 per month. Run ads on
 
 Winning more jobs online only works if your admin can keep up. Use an app like [Fastcrew](https://fastcrew.nz) to manage quotes, job scheduling, and invoicing in one place — so nothing falls through the cracks when enquiries pick up.
 
-Before you quote any job, use our [job costing calculator](/calculators/job-costing-calculator) to confirm your margins are correct. And if you're not sure whether your hourly rate reflects your real costs, our [hourly rate calculator](/calculators/hourly-rate-calculator) will help you set a rate that keeps your business profitable. For a broader look at how to structure quotes, see our guide on [how to write a quote that wins jobs](/articles/how-to-write-a-quote-that-wins-jobs-nz).
+Before you quote any job, use our [job costing calculator](/calculators/job-cost-calculator) to confirm your margins are correct. And if you're not sure whether your hourly rate reflects your real costs, our [hourly rate calculator](/calculators/hourly-rate-calculator) will help you set a rate that keeps your business profitable. For a broader look at how to structure quotes, see our guide on [how to write a quote that wins jobs](/articles/how-to-write-a-quote-that-wins-jobs-nz).
 
 ## How Much Should a Tradie Spend on Marketing?
 

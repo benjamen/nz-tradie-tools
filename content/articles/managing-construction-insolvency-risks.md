@@ -33,7 +33,7 @@ If a contractor or client enters insolvency, your only hope of getting paid is h
 ## 4. Keep Your Own House in Order
 Professionalism builds trust and makes you a preferred partner for main contractors who are also trying to manage their risk.
 - **Financial Reporting:** Use our [GST Calculator](/calculators/gst-calculator) to keep your tax reporting accurate and up to date. You don't want to get hit with unexpected tax bills when cash flow is already tight.
-- **Pricing:** Use our [job pricing guide](/calculators/job-pricing-guide) to ensure you are accurately pricing your work to account for your overheads and a healthy margin.
+- **Pricing:** Use our [job pricing guide](/calculators/job-cost-calculator) to ensure you are accurately pricing your work to account for your overheads and a healthy margin.
 
 ## The Outlook
 The current "reset" in the construction market is difficult, but it is also forcing the industry to become more disciplined. By focusing on your cash flow, being selective about your clients, and maintaining perfect records, you position your business as a safe, reliable partner. 

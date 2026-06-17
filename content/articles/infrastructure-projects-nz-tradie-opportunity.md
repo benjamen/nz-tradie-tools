@@ -38,7 +38,7 @@ To be a reliable partner for these projects, your business must be organized.
 - **Financial Accuracy:** When working on large-scale projects, cash flow is everything. Keep your GST and tax reporting in perfect order using our [GST Calculator](/calculators/gst-calculator).
 
 ### 3. Pricing for Infrastructure
-Infrastructure work is different from residential jobs. The requirements for specialized safety gear, compliance reporting, and long-term site management add overhead. Use our [job pricing guide](/calculators/job-pricing-guide) as a baseline, but always add a factor for the specific overheads of infrastructure sites.
+Infrastructure work is different from residential jobs. The requirements for specialized safety gear, compliance reporting, and long-term site management add overhead. Use our [job pricing guide](/calculators/job-cost-calculator) as a baseline, but always add a factor for the specific overheads of infrastructure sites.
 
 ## The Outlook
 The NZ construction industry is in a "reset" phase. The firms that succeed in this new environment are those that are disciplined, professional, and ready to take on the work that our country *needs*—not just the work that is easiest to find.

@@ -36,7 +36,7 @@ The new regulations will likely penalize builders with poor compliance records w
 
 ## Staying Prepared
 - **Stay Informed:** Keep an eye on updates from your industry body (e.g., Master Builders) regarding the transitional system updates starting mid-2026.
-- **Review Your Pricing:** If you are adopting new, pre-certified building methods, your costs and timelines will change. Use our [job pricing guide](/calculators/job-pricing-guide) as a baseline, but tailor it to the efficiencies these new methods offer.
+- **Review Your Pricing:** If you are adopting new, pre-certified building methods, your costs and timelines will change. Use our [job pricing guide](/calculators/job-cost-calculator) as a baseline, but tailor it to the efficiencies these new methods offer.
 - **Financial Hygiene:** Even as regulations change, financial management remains constant. Keep your tax reporting accurate and up to date by using our [GST Calculator](/calculators/gst-calculator).
 
 The future of NZ construction is about being faster, more digital, and more compliant. By starting your preparation now, you’ll be ready to thrive in the new regulatory landscape rather than just scrambling to catch up.

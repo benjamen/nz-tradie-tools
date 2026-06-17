@@ -48,7 +48,7 @@ Under section 20 of the CCA, a valid payment claim must:
 
 That last point is critical. If you don't state it's a CCA payment claim, the other party doesn't have to respond as though it is one. A simple line at the bottom of your invoice — *"This is a payment claim made under the Construction Contracts Act 2002"* — is all it takes.
 
-Use the [/calculators/invoice-calculator.html](/calculators/invoice-calculator) on this site to calculate your totals including GST before issuing your claim.
+Use the [/calculators/job-cost-calculator.html](/calculators/job-cost-calculator) on this site to calculate your totals including GST before issuing your claim.
 
 ### When Should You Issue Payment Claims?
 

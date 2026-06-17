@@ -106,7 +106,7 @@ A clean claims history still saves you money under Experience Rating.
 
 **4. Update Your Tax Planning**
 
-Your ACC work levy is fully tax-deductible. Work with your accountant to ensure these changing levies are claimed correctly on your [tax return](/articles/ir3-tax-guide-nz-tradies) each year. You can also deduct your provisional tax and use accounting software like [Xero or MYOB](/articles/xero-vs-myob-nz-tradies) to track these expenses automatically.
+Your ACC work levy is fully tax-deductible. Work with your accountant to ensure these changing levies are claimed correctly on your [tax return](/articles/ir3-tax-return-guide-nz-tradies-2026) each year. You can also deduct your provisional tax and use accounting software like [Xero or MYOB](/articles/xero-vs-myob-nz-tradies) to track these expenses automatically.
 
 **5. Use Fastcrew to Track Costs**
 

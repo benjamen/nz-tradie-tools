@@ -86,7 +86,7 @@ In winter 2026, many NZ regions are forecast for above-average rainfall (NIWA se
 2. Secure any loose materials and cover exposed soil before predicted rain events
 3. Inspect silt fences and sediment controls within 24 hours of any significant rain
 4. Photograph the site condition and controls after each major rain event — documentation protects you if a complaint is made
-5. Designate a responsible person on-site for stormwater compliance (the Health and Safety Act requires this under your [site health and safety plan](/articles/health-and-safety-guide-nz-tradies-nz))
+5. Designate a responsible person on-site for stormwater compliance (the Health and Safety Act requires this under your [site health and safety plan](/articles/health-and-safety-guide-nz-tradies))
 
 ## Costs and Who Pays
 

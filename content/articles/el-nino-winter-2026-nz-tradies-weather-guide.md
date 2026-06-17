@@ -33,13 +33,13 @@ Windy conditions are a legitimate safety concern. The Health and Safety at Work 
 Below-normal groundwater recharge means lower water tables, especially in the North Island and east of the South Island. If you install rainwater harvesting, greywater systems, or bore work, your clients will have less water available. Plan ahead: suggest water storage solutions now, and adjust depth expectations for bore drilling jobs.
 
 **Concreting and exterior finishes:**
-Temperature swings make curing unpredictable. Cold snaps followed by warmer days can cause cracking, especially in concrete and plaster work. If you're quoting external finishes (render, paint, weatherproofing), factor in longer drying times and suggest protection measures during temperature swings. Your [job costing guide](/calculators/job-costing-guide) should include contingency for weather-related rework.
+Temperature swings make curing unpredictable. Cold snaps followed by warmer days can cause cracking, especially in concrete and plaster work. If you're quoting external finishes (render, paint, weatherproofing), factor in longer drying times and suggest protection measures during temperature swings. Your [job costing guide](/calculators/job-cost-calculator) should include contingency for weather-related rework.
 
 **Timber frame and carpentry:**
 Temperature variability affects timber movement. Frames installed in cold conditions and then exposed to warmth can develop gaps or warping. Store timber indoors longer during winter 2026, and brief your crews on the need for slower, more careful framing work.
 
 **Electricians and infrastructure:**
-Windy conditions increase the risk of power outages and safety hazards on site. Ensure your [health and safety checklist](/calculators/health-and-safety-guide) includes wind event protocols, and consider scheduling critical electrical work for calmer days.
+Windy conditions increase the risk of power outages and safety hazards on site. Ensure your [health and safety checklist](/articles/health-and-safety-guide-nz-tradies) includes wind event protocols, and consider scheduling critical electrical work for calmer days.
 
 ## Practical Job Planning for El Niño Winter
 
@@ -94,7 +94,7 @@ Winter is always tighter for tradies. El Niño adds unpredictability. Plan ahead
 - Prepare crews for rework if temperature swings cause issues
 - Use the buffer days to tackle admin: quoting, invoicing, crew upskilling
 
-If winter cash flow is always a squeeze, review your [pricing strategy](/calculators/how-to-set-hourly-rate-nz-tradie-2026) to see if you're charging enough to weather seasonal variability.
+If winter cash flow is always a squeeze, review your [pricing strategy](/articles/how-to-set-hourly-rate-nz-tradie-2026) to see if you're charging enough to weather seasonal variability.
 
 ## Bottom Line
 

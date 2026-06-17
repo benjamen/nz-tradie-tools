@@ -113,7 +113,7 @@ Use our [GST calculator](/calculators/gst-calculator) to check amounts.
 - [NZ Tradie Tax Guide 2026 — Complete Overview](/articles/nz-tradie-tax-guide-2026) — the full picture on income tax, GST, deductions, and provisional tax
 - [GST Registration for Tradies NZ](/articles/gst-registration-tradies-nz) — when to register, how to do it, and what changes
 - [ACC Levies for NZ Tradies 2026/27](/articles/acc-levies-nz-tradies-2026-guide) — levy rates, CoverPlus Extra, and how to reduce your bill
-- [How to Set Your Hourly Rate as a Tradie](/articles/how-to-set-hourly-rate-tradie-nz) — include all your costs so your rate actually covers your overhead
+- [How to Set Your Hourly Rate as a Tradie](/articles/how-to-set-hourly-rate-nz-tradie-2026) — include all your costs so your rate actually covers your overhead
 
 ---
 

@@ -125,8 +125,8 @@
             <div class="related-links-box" style="background:#f6f8fb;border:1px solid #dde3ec;border-radius:8px;padding:1.25rem 1.5rem;margin:2rem 0">
                 <h3 style="margin-top:0;font-size:1rem;color:#0055a5">Related Guides &amp; Tools</h3>
                 <ul style="margin:0;padding-left:1.2rem;line-height:1.9">
-                    {% if tags %}
-                    {% for tag in tags[:2] %}
+                    {% if trade_tags %}
+                    {% for tag in trade_tags[:2] %}
                     <li><a href="{{ base_path }}/trades/{{ tag | lower | replace(' ', '-') }}/">Find {{ tag }} Contractors in NZ</a></li>
                     {% endfor %}
                     {% endif %}

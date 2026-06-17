@@ -44,6 +44,6 @@ Transitioning to a self-certification workflow requires tighter record-keeping a
 - **Check your eligibility:** Keep an eye on MBIE updates for details on what constitutes a "proven track record" for the approval process.
 - **Stay informed:** Changes to [New Zealand's construction industry](https://www.mbie.govt.nz) regulations can evolve. Make sure you are subscribed to updates from official government bodies.
 
-For more resources on managing your tradie business, check out our [NZ GST Calculator](/calculators/gst-calculator) and our [guide on job pricing](/calculators/job-pricing-guide).
+For more resources on managing your tradie business, check out our [NZ GST Calculator](/calculators/gst-calculator) and our [guide on job pricing](/calculators/job-cost-calculator).
 
 *NZ Tradie Tools provides free calculators, templates and guides for New Zealand tradies. Visit tradietools.nz.*

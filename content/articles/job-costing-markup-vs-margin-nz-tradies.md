@@ -114,7 +114,7 @@ This keeps price-conscious clients engaged while showing the full value of what 
 
 - Use our [**GST Calculator**](/calculators/gst-calculator) to ensure you're quoting correctly with GST included
 - Check the [**Labour Cost Calculator**](/calculators/labour-cost-calculator) to find your true all-in hourly cost
-- See the [**Profit Margin Calculator**](/calculators/profit-margin-calculator) to verify margin vs markup
+- See the [**Profit Margin Calculator**](/calculators/markup-margin-calculator) to verify margin vs markup
 
 ## Key Takeaways
 
