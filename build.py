@@ -148,6 +148,7 @@ def build():
     build_faq(config, env, nav, base_path)
     build_tax_dates(config, env, nav, base_path)
     profiles_count = build_business_profiles(config, env, nav, base_path)
+    build_claimed_lookup()
     build_claim_page(config, env, nav, base_path)
 
     trades_count, locations_count = build_trades_and_locations(config, env, nav, base_path)
@@ -889,6 +890,38 @@ def build_business_profiles(config, env, nav, base_path):
         (out_dir / "index.html").write_text(template.render(**ctx), encoding="utf-8")
         count += 1
     return count
+
+
+def build_claimed_lookup():
+    """Generate /static/data/claimed-businesses.json for /find page enrichment."""
+    lookup = {}
+    for f in CLAIMED_DIR.glob("*.json"):
+        try:
+            b = json.loads(f.read_text(encoding="utf-8"))
+            key = (b.get("business_name") or "").lower().strip()
+            if key:
+                lookup[key] = {
+                    "slug":          b.get("slug", ""),
+                    "tagline":       b.get("tagline", ""),
+                    "description":   b.get("description", ""),
+                    "website":       b.get("website", ""),
+                    "source":        b.get("source", ""),
+                    "source_url":    b.get("source_url", ""),
+                    "verified_date": b.get("claimed_date", ""),
+                    "suburb":        b.get("suburb", ""),
+                    "phone":         b.get("phone", ""),
+                    "services":      b.get("services", []),
+                    "areas_served":  b.get("areas_served", []),
+                    "hourly_rate":   b.get("hourly_rate", None),
+                    "experience_years": b.get("experience_years", None),
+                    "review_count":  b.get("review_count", None),
+                    "avg_rating":    b.get("rating", None),
+                }
+        except Exception:
+            pass
+    out = PUBLIC_DIR / "static" / "data"
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "claimed-businesses.json").write_text(json.dumps(lookup), encoding="utf-8")
 
 
 def build_claim_page(config, env, nav, base_path):
