@@ -85,8 +85,33 @@
                 </select>
             </div>
             <div class="calc-group" style="display:flex;flex-direction:column;gap:.3rem">
-                <label for="suburb">NZ suburb / city *</label>
-                <input type="text" id="suburb" name="suburb" required autocomplete="address-level2">
+                <label for="city">Your city *</label>
+                <select id="city" name="city" required>
+                    <option value="" disabled selected>Select your city…</option>
+                    <option>Auckland</option>
+                    <option>Wellington</option>
+                    <option>Christchurch</option>
+                    <option>Hamilton</option>
+                    <option>Tauranga</option>
+                    <option>Dunedin</option>
+                    <option>Palmerston North</option>
+                    <option>Napier</option>
+                    <option>Hastings</option>
+                    <option>New Plymouth</option>
+                    <option>Rotorua</option>
+                    <option>Whangarei</option>
+                    <option>Nelson</option>
+                    <option>Queenstown</option>
+                    <option>Invercargill</option>
+                    <option>Lower Hutt</option>
+                    <option>Upper Hutt</option>
+                    <option>Gisborne</option>
+                    <option>Whanganui</option>
+                </select>
+            </div>
+            <div class="calc-group" style="display:flex;flex-direction:column;gap:.3rem">
+                <label for="suburb">Suburb <span style="font-weight:400;color:#666">(optional)</span></label>
+                <input type="text" id="suburb" name="suburb" placeholder="e.g. Ponsonby, Newtown, Fendalton" autocomplete="address-level3">
             </div>
             <div class="calc-group" style="display:flex;flex-direction:column;gap:.3rem">
                 <label for="job_description">Job description * (min 20 characters)</label>
@@ -124,13 +149,12 @@
 
     <script>
     (function(){
-        var BREVO_API_KEY = "";
         var form = document.getElementById('quotes-form');
-        var msg = document.getElementById('quotes-message');
-        var btn = document.getElementById('quotes-submit');
+        var msg  = document.getElementById('quotes-message');
+        var btn  = document.getElementById('quotes-submit');
         var trades = ["Electrician","Plumber","Builder","Painter","Drainlayer","Roofer","Concreter","Fencer","Plasterer","Tiler","Carpenter","Other"];
 
-        // Pre-fill trade from ?trade= URL param (matches by slug or name, case-insensitive)
+        // Pre-fill trade from ?trade= URL param
         try {
             var param = new URLSearchParams(window.location.search).get('trade');
             if (param) {
@@ -141,22 +165,21 @@
                 });
                 if (match) document.getElementById('trade_type').value = match;
             }
-        } catch (e) {}
-
-        function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+        } catch(e) {}
 
         form.addEventListener('submit', function(e){
             e.preventDefault();
             if (!form.checkValidity()) { form.reportValidity(); return; }
 
             var data = {
-                first_name: form.first_name.value.trim(),
-                email: form.email.value.trim(),
-                phone: form.phone.value.trim(),
-                trade_type: form.trade_type.value,
-                suburb: form.suburb.value.trim(),
+                first_name:      form.first_name.value.trim(),
+                email:           form.email.value.trim(),
+                phone:           form.phone.value.trim(),
+                trade_type:      form.trade_type.value,
+                city:            form.city.value,
+                suburb:          form.suburb.value.trim(),
                 job_description: form.job_description.value.trim(),
-                timeframe: form.timeframe.value
+                timeframe:       form.timeframe.value
             };
 
             btn.disabled = true;
@@ -164,39 +187,27 @@
             msg.textContent = '';
             msg.style.color = '';
 
-            var html = '<h2>New Quote Request</h2>'
-                + '<p><strong>Name:</strong> ' + esc(data.first_name) + '</p>'
-                + '<p><strong>Email:</strong> ' + esc(data.email) + '</p>'
-                + '<p><strong>Phone:</strong> ' + esc(data.phone) + '</p>'
-                + '<p><strong>Trade:</strong> ' + esc(data.trade_type) + '</p>'
-                + '<p><strong>Suburb/City:</strong> ' + esc(data.suburb) + '</p>'
-                + '<p><strong>Timeframe:</strong> ' + esc(data.timeframe) + '</p>'
-                + '<p><strong>Job description:</strong><br>' + esc(data.job_description).replace(/\n/g,'<br>') + '</p>';
-
-            fetch('https://api.brevo.com/v3/smtp/email', {
+            fetch('https://tradietools.optified.nz/api/method/tradietools.api.create_quote_request', {
                 method: 'POST',
-                headers: {
-                    'api-key': BREVO_API_KEY,
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                },
-                body: JSON.stringify({
-                    sender: { name: 'TradieTools Leads', email: 'instituteofbba@gmail.com' },
-                    to: [{ email: 'instituteofbba@gmail.com', name: 'Ben' }],
-                    replyTo: { email: data.email, name: data.first_name },
-                    subject: 'New Quote Request — ' + data.trade_type + ' in ' + data.suburb,
-                    htmlContent: html
-                })
-            }).then(function(res){
-                if (!res.ok) throw new Error('Brevo returned ' + res.status);
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify(data)
+            })
+            .then(function(res){ return res.json(); })
+            .then(function(json){
+                var d = json.message || json;
+                if (d.success === false) throw new Error(d.error || 'Error');
+                var n = d.tradies_emailed || d.tradies_matched || 0;
                 form.style.display = 'none';
                 msg.style.color = '#1a7a3a';
-                msg.textContent = "We've received your request! Local " + data.trade_type + "s will contact you within 24 hours.";
-            }).catch(function(){
+                msg.innerHTML = n > 0
+                    ? '<strong>Request sent!</strong> We\'ve contacted ' + n + ' local ' + data.trade_type + (n > 1 ? 's' : '') + ' in ' + data.city + '. They\'ll be in touch within 24 hours.'
+                    : '<strong>Request received!</strong> We\'ll match you with a local ' + data.trade_type + ' and follow up shortly.';
+            })
+            .catch(function(){
                 btn.disabled = false;
                 btn.textContent = 'Get 3 Free Quotes →';
                 msg.style.color = '#b00020';
-                msg.textContent = 'Something went wrong — please email us at tradietools.nz@gmail.com';
+                msg.textContent = 'Something went wrong — please try again or email tradietools.nz@gmail.com';
             });
         });
     })();
