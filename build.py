@@ -88,6 +88,7 @@ def build_nav(config):
 def build_articles(env, config, nav, base_path):
     logging.info("Building articles")
     articles_dir = CONTENT_DIR / "articles"
+    base_url = config.get("base_url", "").rstrip("/")
     for article_path in articles_dir.glob("*.md"):
         front, body = parse_frontmatter(article_path.read_text())
         html_body = render_markdown(body)
@@ -95,7 +96,11 @@ def build_articles(env, config, nav, base_path):
         template = env.get_template(front.get("layout", "article.html"))
         output_path = PUBLIC_DIR / article_path.with_suffix(".html").relative_to(CONTENT_DIR)
         output_path.parent.mkdir(parents=True, exist_ok=True)
-        output_path.write_text(template.render(**front, content=html_body, nav=nav))
+        date_val = front.get("date", "")
+        date_iso = date_val.strftime("%Y-%m-%d") if hasattr(date_val, "strftime") else str(date_val)
+        ctx = {**front, "content": html_body, "nav": nav,
+               "base_url": base_url, "slug": article_path.stem, "date": date_iso}
+        output_path.write_text(template.render(**ctx))
         logging.info(f"Article built: {output_path}")
 
 

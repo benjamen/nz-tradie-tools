@@ -57,6 +57,16 @@ faqs:
     a: 'Fences up to 2 m high are generally permitted without resource consent. Fences on boundary or over 2 m often require neighbour agreement and council consent. Retaining fences over 1 m usually need a building consent.'
   - q: 'What timber treatment is needed for NZ fence posts?'
     a: 'Posts in-ground require H5 treatment (CCA-treated). Rails and battens above ground require H3.2. Using the correct hazard class is mandatory under NZS 3602.'
+  - q: 'Who pays for a boundary fence in NZ?'
+    a: 'Under the Fencing Act 1978, neighbours generally share the cost of an adequate boundary fence equally. If you want a more expensive fence than your neighbour agrees to, you usually cover the extra. Serve a written Fencing Notice to formalise the cost split before starting.'
+  - q: 'What are the boundary fence rules in NZ?'
+    a: 'The Fencing Act 1978 governs shared boundary fences: neighbours can be required to contribute to a reasonable fence, with disputes resolved via the Disputes Tribunal. The Act doesn''t set a height — local council district plans and the Building Act cover height and consent limits.'
+  - q: 'How much does fencing cost in NZ?'
+    a: 'A standard 1.8 m timber paling fence runs $90–$180 per lineal metre supplied and installed. Lifestyle post-and-rail is $100–$200/lm, while structural retaining fences can reach $300–$500/lm. Site access, ground conditions and post type are the biggest cost drivers.'
+  - q: 'Timber vs concrete fence posts — which is better?'
+    a: 'H5-treated timber posts are cheaper and easier to work with but can rot or move over decades. Concrete posts cost more upfront but resist rot, borer and fire, and hold palings dead straight long-term. Concrete is popular for exposed or coastal sites; timber suits budget and standard residential jobs.'
+  - q: 'How do I read the results from this fence calculator?'
+    a: 'Enter your total fence length and post spacing. The calculator estimates the number of posts, rails, palings and fixings, plus an indicative cost range. Treat materials counts as a buy list and the cost as a planning guide — get a quote for the final supply-and-install price.'
 related_articles: [how-to-price-a-job-nz-tradie-guide]
 ---
 

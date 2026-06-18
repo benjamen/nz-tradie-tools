@@ -137,6 +137,16 @@ faqs:
     a: 'A NZ sole trader working 46 weeks (52 minus 4 weeks leave and 2 weeks public holidays) with 8-hour days has around 1,840 potential hours. After travel, quoting, admin and downtime, realistic billable hours are 1,200–1,500/year.'
   - q: 'Should I charge GST on top of my hourly rate?'
     a: 'If you are GST-registered, yes — you add 15% GST on top of your rate when invoicing. Your quoted rate may be shown ex-GST or inc-GST; be clear with clients which you are quoting.'
+  - q: 'What is a sustainable hourly rate for a NZ tradie?'
+    a: 'A sustainable rate covers your wage, all business overheads, ACC, tools, vehicle and a profit margin — not just what a competitor charges. If your rate only covers wages, the business can''t absorb a quiet month, a bad debt or new equipment. Price from your real costs upward.'
+  - q: 'How do I account for downtime in my hourly rate?'
+    a: 'Spread non-billable time across your billable hours. If you work 1,840 paid hours a year but only bill 1,300 of them, divide your total annual costs by 1,300 — not 1,840. That way travel, quoting, admin and gaps between jobs are already built into the rate clients pay.'
+  - q: 'How does the ACC levy affect my hourly rate?'
+    a: 'As a self-employed tradie you pay ACC CoverPlus levies based on your income and your classification unit (riskier trades pay more). It''s a real annual cost, so include your estimated ACC levy in the total you divide across billable hours.'
+  - q: 'Should I charge the same rate for every job?'
+    a: 'Your base rate should always cover costs and profit, but you can adjust for job risk, travel, urgency and complexity. Many tradies hold a firm minimum rate and add loadings for after-hours work, difficult access or specialist work rather than discounting below break-even.'
+  - q: 'Why is my rate higher than my employee wage was?'
+    a: 'As a sole trader your rate must fund things an employer used to cover — holidays, sick days, ACC, insurance, tools, vehicle, admin time and KiwiSaver. A $35/hr employee wage often needs a charge-out rate of $90–$120/hr just to match the same take-home once those costs are paid.'
 ---
 
 ## How to Set Your Hourly Rate as a NZ Tradie

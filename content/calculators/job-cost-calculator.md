@@ -159,6 +159,16 @@ faqs:
     a: 'A valid NZ job quote should include: scope of work, inclusions and exclusions, materials specification, labour hours or fixed price, GST status (+ GST or GST inclusive), payment terms, and expiry date of quote.'
   - q: 'How do I handle variation costs on a quoted job?'
     a: 'Issue a written variation order before doing extra work, outlining additional scope, cost, and effect on timeline. Under NZ contract law, variations not documented in writing are difficult to enforce as additional charges.'
+  - q: 'What''s the difference between cost-plus and fixed-price pricing?'
+    a: 'Cost-plus means you charge for actual time and materials plus an agreed margin — the final figure isn''t fixed, so the client carries the risk of overruns. Fixed-price means you commit to one total upfront, so you carry the risk. Use fixed price for well-defined jobs and cost-plus where scope is uncertain.'
+  - q: 'How much margin should I add to a job?'
+    a: 'Add enough to cover overheads and leave net profit. A gross margin of 35–45% is common for NZ trades, translating to a markup of roughly 50–80% on direct costs. Higher-risk or specialist jobs justify more; never quote at break-even just to win work.'
+  - q: 'What''s the difference between a quote and an estimate in NZ?'
+    a: 'Under the Consumer Guarantees Act, a quote is a fixed price you''re bound to (unless the scope changes), while an estimate is only a best-guess that the final price can reasonably differ from. Always label which one you''re giving so the client knows what they''re agreeing to.'
+  - q: 'How do I handle price variations under NZ Consumer Law?'
+    a: 'If you gave a fixed quote, you generally can''t charge more unless the client agreed to extra work in writing. If you gave an estimate, the final price must still be reasonable. Document every change as a signed variation to stay compliant and avoid disputes.'
+  - q: 'How do I read the results from this job cost calculator?'
+    a: 'Enter your labour hours and rate, materials, subcontractor costs and overhead, then your target margin. The calculator totals your direct costs and applies the margin to show a recommended quote price. Use it as your floor — never quote below the figure it produces.'
 ---
 
 ## How to Build an Accurate Job Quote

@@ -139,6 +139,16 @@ faqs:
     a: 'AS/NZS 3000:2018 allows a maximum of 5% voltage drop from the supply point to any point of use for lighting and power circuits in NZ installations.'
   - q: 'Do I need a licensed electrician to size cables in NZ?'
     a: 'All electrical work in NZ must be carried out and certified by a licensed electrical worker (LEW). Cable sizing is part of that design work and must comply with AS/NZS 3008 and the NZ Electrical Code of Practice.'
+  - q: 'What does mm² mean on electrical cable?'
+    a: 'mm² is the cross-sectional area of the copper conductor inside the cable — not the overall diameter. A larger mm² figure carries more current with less heat and voltage drop. Common NZ residential sizes are 1.5 mm² (lighting), 2.5 mm² (power points) and 4–6 mm² (ovens, hobs and longer runs).'
+  - q: 'What happens if I use an undersized cable?'
+    a: 'An undersized cable overheats under load, which degrades the insulation, increases voltage drop, and creates a fire risk. It can also cause nuisance tripping or, worse, run hot without tripping. Always size for the load plus a safety margin.'
+  - q: 'What cable size do I need for an oven or hob in NZ?'
+    a: 'A typical electric oven or cooktop circuit (around 32 A) uses 6 mm² cable, while smaller appliances on a 20 A circuit may use 4 mm². The exact size depends on the appliance rating, run length and installation method — your electrician will confirm.'
+  - q: 'How do I read the results from this cable sizing calculator?'
+    a: 'Enter the load in watts, the voltage and the cable run length. The calculator estimates the current draw, the recommended minimum cable size, and the expected voltage drop. Treat the result as a planning guide — the final design must be confirmed by a licensed electrician against AS/NZS 3008.'
+  - q: 'Does cable run length affect the size I need?'
+    a: 'Yes. The longer the run, the greater the voltage drop, so long runs often need a larger cable than the load alone would suggest to stay within the 5% NZ voltage-drop limit. This calculator factors run length into its recommendation.'
 related_articles: [electrician-pricing-guide-nz-2026]
 ---
 

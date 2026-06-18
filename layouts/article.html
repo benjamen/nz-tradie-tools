@@ -19,6 +19,51 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5434832603957432"
          crossorigin="anonymous"></script>
 {% include '_entity_schema.html' %}
+<link rel="canonical" href="{{ base_url }}/articles/{{ slug }}/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "{{ base_url }}/articles/{{ slug }}/#article",
+  "headline": "{{ title }}",
+  "description": "{{ description }}",
+  "datePublished": "{{ date }}",
+  "dateModified": "{{ date }}",
+  "author": {
+    "@type": "Organization",
+    "name": "NZ Tradie Tools",
+    "@id": "{{ base_url }}/#organization"
+  },
+  "publisher": {
+    "@id": "{{ base_url }}/#organization"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ base_url }}/articles/{{ slug }}/"
+  },
+  "inLanguage": "en-NZ"
+}
+</script>
+{% if faqs %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for faq in faqs %}
+    {
+      "@type": "Question",
+      "name": "{{ faq.q | replace('"', '\\"') }}",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{{ faq.a | replace('"', '\\"') }}"
+      }
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+}
+</script>
+{% endif %}
 </head>
 <body>
     <header>

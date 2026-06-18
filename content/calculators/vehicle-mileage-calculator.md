@@ -57,6 +57,16 @@ faqs:
     a: 'To claim actual vehicle expenses on a mixed-use vehicle, you need a logbook for 3 months every 3 years to establish the business vs private use percentage. The mileage rate method requires a record of business trips only.'
   - q: 'What vehicles qualify for the IRD mileage rate in NZ?'
     a: 'The IRD kilometre rate method applies to motor vehicles (including utes and vans). It is most suitable for low-km business use. Vehicles used predominantly for work (over 75% business) are often better treated as fully deductible business assets.'
+  - q: 'What are the IRD kilometre rates for 2025–26?'
+    a: 'IRD publishes its kilometre rates each year after the tax year ends. As a guide, the Tier 1 rate has sat around 73c/km for petrol/diesel for the first 14,000 km, with a Tier 2 rate near 21c/km above that. Always confirm the current year''s figures on the IRD website before filing, as rates are updated annually.'
+  - q: 'What records do I need to claim mileage in NZ?'
+    a: 'For the kilometre-rate method, keep a record of each business trip: date, distance, destination and purpose. For the actual-cost method you also need receipts for fuel, servicing, WOF, registration and insurance, plus a logbook to establish your business-use percentage.'
+  - q: 'Can I claim mileage on a ute?'
+    a: 'Yes. A ute used for business is treated like any other vehicle — you can use the kilometre-rate method or claim actual running costs by business-use percentage. If the ute is a genuine work vehicle that''s not available for private use, it may also be exempt from fringe benefit tax.'
+  - q: 'What''s the difference between the mileage and logbook methods?'
+    a: 'The mileage (kilometre-rate) method multiplies your business kilometres by IRD''s set rate — simple, but capped at lower rates above 14,000 km. The logbook (actual-cost) method claims a percentage of all real running costs, which usually suits higher-km or more expensive vehicles.'
+  - q: 'When should I use each method?'
+    a: 'Use the kilometre-rate method if you do relatively low business km and want simple record-keeping. Use the actual-cost/logbook method if you drive a lot for work or run a more expensive vehicle, as the deduction is generally larger. You must apply your chosen method consistently.'
 ---
 
 ## IRD Mileage Rates for NZ Tradies (2024–25)
