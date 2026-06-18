@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="geo.region" content="NZ">
+    <meta name="geo.placename" content="New Zealand">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap">
+    <title>Get 3 Free Quotes from Local NZ Tradies | NZ Tradie Tools</title>
+    <meta name="description" content="Tell us about your job and we'll connect you with up to 3 vetted local NZ tradies within 24 hours. Free, no obligation.">
+    <meta property="og:title" content="Get 3 Free Quotes from Local NZ Tradies">
+    <meta property="og:description" content="Tell us about your job and we'll connect you with up to 3 vetted local NZ tradies within 24 hours.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradietools.nz/trades/get-quotes/">
+    <meta name="robots" content="noindex,follow">
+    <link rel="canonical" href="https://tradietools.nz/trades/get-quotes/">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJW7HLW8D8"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BJW7HLW8D8');</script>
+    
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">NZ Tradie Tools</a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                <a href="/trades/">Find a Tradie</a><a href="/jobs/">Job Costs</a><a href="/calculators/">Calculators</a><a href="/templates/">Templates</a><a href="/articles/">Articles</a><a href="/contact/">Contact</a>
+                <a href="/signup/" class="nav-cta">Free Listing →</a>
+            </nav>
+            <script>
+            (function(){
+                var t=document.querySelector('.nav-toggle'),n=document.getElementById('main-nav');
+                if(!t||!n)return;
+                t.addEventListener('click',function(){var o=n.classList.toggle('is-open');t.setAttribute('aria-expanded',o);});
+                document.addEventListener('click',function(e){if(!t.contains(e.target)&&!n.contains(e.target)){n.classList.remove('is-open');t.setAttribute('aria-expanded','false');}});
+            })();
+            </script>
+        </div>
+    </header>
+
+    <section class="hero" style="padding:3rem 0">
+        <div class="container">
+            <h1>Get 3 Free Quotes from Local NZ Tradies</h1>
+            <p>Tell us about your job and we'll connect you with up to 3 vetted local tradies in your area within 24 hours. It's free, with no obligation.</p>
+        </div>
+    </section>
+
+    <div class="container" style="max-width:640px;padding-top:2rem;padding-bottom:3rem">
+        <form id="quotes-form" class="lead-form" style="max-width:none" novalidate>
+            <div class="calc-group" style="display:flex;flex-direction:column;gap:.3rem">
+                <label for="first_name">First name *</label>
+                <input type="text" id="first_name" name="first_name" required autocomplete="given-name">
+            </div>
+            <div class="calc-group" style="display:flex;flex-direction:column;gap:.3rem">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required autocomplete="email">
+            </div>
+            <div class="calc-group" style="display:flex;flex-direction:column;gap:.3rem">
+                <label for="phone">Phone *</label>
+                <input type="tel" id="phone" name="phone" required autocomplete="tel">
+            </div>
+            <div class="calc-group" style="display:flex;flex-direction:column;gap:.3rem">
+                <label for="trade_type">Trade type *</label>
+                <select id="trade_type" name="trade_type" required>
+                    <option value="" disabled selected>Select a trade…</option>
+                    <option value="Electrician">Electrician</option>
+                    <option value="Plumber">Plumber</option>
+                    <option value="Builder">Builder</option>
+                    <option value="Painter">Painter</option>
+                    <option value="Drainlayer">Drainlayer</option>
+                    <option value="Roofer">Roofer</option>
+                    <option value="Concreter">Concreter</option>
+                    <option value="Fencer">Fencer</option>
+                    <option value="Plasterer">Plasterer</option>
+                    <option value="Tiler">Tiler</option>
+                    <option value="Carpenter">Carpenter</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="calc-group" style="display:flex;flex-direction:column;gap:.3rem">
+                <label for="suburb">NZ suburb / city *</label>
+                <input type="text" id="suburb" name="suburb" required autocomplete="address-level2">
+            </div>
+            <div class="calc-group" style="display:flex;flex-direction:column;gap:.3rem">
+                <label for="job_description">Job description * (min 20 characters)</label>
+                <textarea id="job_description" name="job_description" rows="4" required minlength="20"></textarea>
+            </div>
+            <div class="calc-group" style="display:flex;flex-direction:column;gap:.3rem">
+                <label for="timeframe">When do you need the work done? *</label>
+                <select id="timeframe" name="timeframe" required>
+                    <option value="" disabled selected>Select a timeframe…</option>
+                    <option value="ASAP">ASAP</option>
+                    <option value="Within 1 month">Within 1 month</option>
+                    <option value="Within 3 months">Within 3 months</option>
+                    <option value="Just planning">Just planning</option>
+                </select>
+            </div>
+            <button type="submit" id="quotes-submit">Get 3 Free Quotes →</button>
+        </form>
+
+        <div id="quotes-message" role="status" aria-live="polite" style="margin-top:1.25rem;font-weight:600"></div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">NZ Tradie Tools</p>
+                <p>Free calculators, templates and guides for New Zealand tradies.</p>
+            </div>
+            <div style="text-align:right">
+                <p><a href="/privacy/">Privacy Policy</a></p>
+                <p><a href="/contact/">Contact</a></p>
+                <p style="margin-top:.5rem">&copy; 2026 NZ Tradie Tools</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    (function(){
+        var BREVO_API_KEY = "";
+        var form = document.getElementById('quotes-form');
+        var msg = document.getElementById('quotes-message');
+        var btn = document.getElementById('quotes-submit');
+        var trades = ["Electrician","Plumber","Builder","Painter","Drainlayer","Roofer","Concreter","Fencer","Plasterer","Tiler","Carpenter","Other"];
+
+        // Pre-fill trade from ?trade= URL param (matches by slug or name, case-insensitive)
+        try {
+            var param = new URLSearchParams(window.location.search).get('trade');
+            if (param) {
+                var norm = param.toLowerCase().replace(/s$/, '');
+                var match = trades.find(function(t){
+                    var tn = t.toLowerCase();
+                    return tn === param.toLowerCase() || tn === norm || norm.indexOf(tn) === 0 || tn.indexOf(norm) === 0;
+                });
+                if (match) document.getElementById('trade_type').value = match;
+            }
+        } catch (e) {}
+
+        function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+        form.addEventListener('submit', function(e){
+            e.preventDefault();
+            if (!form.checkValidity()) { form.reportValidity(); return; }
+
+            var data = {
+                first_name: form.first_name.value.trim(),
+                email: form.email.value.trim(),
+                phone: form.phone.value.trim(),
+                trade_type: form.trade_type.value,
+                suburb: form.suburb.value.trim(),
+                job_description: form.job_description.value.trim(),
+                timeframe: form.timeframe.value
+            };
+
+            btn.disabled = true;
+            btn.textContent = 'Sending…';
+            msg.textContent = '';
+            msg.style.color = '';
+
+            var html = '<h2>New Quote Request</h2>'
+                + '<p><strong>Name:</strong> ' + esc(data.first_name) + '</p>'
+                + '<p><strong>Email:</strong> ' + esc(data.email) + '</p>'
+                + '<p><strong>Phone:</strong> ' + esc(data.phone) + '</p>'
+                + '<p><strong>Trade:</strong> ' + esc(data.trade_type) + '</p>'
+                + '<p><strong>Suburb/City:</strong> ' + esc(data.suburb) + '</p>'
+                + '<p><strong>Timeframe:</strong> ' + esc(data.timeframe) + '</p>'
+                + '<p><strong>Job description:</strong><br>' + esc(data.job_description).replace(/\n/g,'<br>') + '</p>';
+
+            fetch('https://api.brevo.com/v3/smtp/email', {
+                method: 'POST',
+                headers: {
+                    'api-key': BREVO_API_KEY,
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    sender: { name: 'TradieTools Leads', email: 'instituteofbba@gmail.com' },
+                    to: [{ email: 'instituteofbba@gmail.com', name: 'Ben' }],
+                    replyTo: { email: data.email, name: data.first_name },
+                    subject: 'New Quote Request — ' + data.trade_type + ' in ' + data.suburb,
+                    htmlContent: html
+                })
+            }).then(function(res){
+                if (!res.ok) throw new Error('Brevo returned ' + res.status);
+                form.style.display = 'none';
+                msg.style.color = '#1a7a3a';
+                msg.textContent = "We've received your request! Local " + data.trade_type + "s will contact you within 24 hours.";
+            }).catch(function(){
+                btn.disabled = false;
+                btn.textContent = 'Get 3 Free Quotes →';
+                msg.style.color = '#b00020';
+                msg.textContent = 'Something went wrong — please email us at tradietools.nz@gmail.com';
+            });
+        });
+    })();
+    </script>
+</body>
+</html>
