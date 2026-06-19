@@ -290,6 +290,7 @@
 
 <script>
 const API = 'https://tradietools.optified.nz/api/method/tradietools.api.get_directory';
+const FEATURED_API = 'https://tradietools.optified.nz/api/method/tradietools.api.get_featured_listings';
 const CLAIMED_JSON = '/static/data/claimed-businesses.json';
 const PAGE_SIZE = 15;
 const TRADE_LABELS = {
@@ -488,6 +489,25 @@ function proCard(t, rank) {
   </div>`;
 }
 
+function featuredCard(t) {
+  const stars = t.avg_rating ? '★'.repeat(Math.floor(t.avg_rating)) + (t.avg_rating%1>=0.5?'½':'') : '';
+  return `<div class="tradie-card is-pro" style="border-left:4px solid #7c3aed;background:#faf5ff">
+    <span style="position:absolute;top:.6rem;right:.75rem;background:#7c3aed;color:#fff;font-size:.7rem;font-weight:700;padding:.1rem .45rem;border-radius:3px;letter-spacing:.05em">SPONSORED</span>
+    <div class="card-name">${t.name||'Unnamed'}</div>
+    <div class="card-meta">
+      ${t.trade?`<span>${TRADE_LABELS[t.trade]||t.trade}</span>`:''}
+      ${t.region?`<span>📍 ${t.suburb?t.suburb+', ':''}${t.region}</span>`:''}
+      ${stars?`<span style="color:#f59e0b">${stars}</span> <span>${t.avg_rating}/5 (${t.review_count||0} reviews)</span>`:''}
+      ${t.response_time_label?`<span>⚡ ${t.response_time_label}</span>`:''}
+    </div>
+    ${t.description?`<p style="font-size:.83rem;color:#555;margin:0">${t.description.slice(0,120)}${t.description.length>120?'…':''}</p>`:''}
+    <div class="card-actions">
+      ${t.phone?`<a href="tel:${t.phone}" class="btn-call">📞 Call</a>`:''}
+      ${t.profile_url?`<a href="${t.profile_url}" class="btn-profile">View profile →</a>`:''}
+    </div>
+  </div>`;
+}
+
 function cardHTML(t, rank) {
   if (t.is_premium)  return proCard(t, rank);
   if (t.is_verified) return verifiedCard(t, rank);
@@ -515,7 +535,31 @@ function render() {
     return;
   }
 
-  area.innerHTML = `<div class="tradie-grid">${slice.map((t, i) => cardHTML(t, start+i+1)).join('')}</div>`;
+  // Inject sponsored cards on page 1 only
+  let featuredHTML = '';
+  if (page === 1) {
+    const tradeFilter = document.getElementById('tradeFilter')?.value || '';
+    const regionFilter = document.getElementById('regionFilter')?.value || '';
+    const cacheKey = 'ft_' + tradeFilter + '_' + regionFilter;
+    const cached = sessionStorage.getItem(cacheKey);
+    if (cached) {
+      const fl = JSON.parse(cached);
+      if (fl.length) featuredHTML = `<div style="margin-bottom:1px"><div style="font-size:.72rem;color:#94a3b8;padding:.35rem .75rem;background:#faf5ff;border-bottom:1px solid #ede9fe">Sponsored listings</div><div class="tradie-grid">${fl.map(f=>featuredCard(f)).join('')}</div><div style="font-size:.72rem;color:#94a3b8;padding:.3rem .75rem;background:#f8fafc;border-top:1px solid #e2e8f0">Organic results</div></div>`;
+    } else {
+      fetch(FEATURED_API + '?trade=' + encodeURIComponent(tradeFilter) + '&region=' + encodeURIComponent(regionFilter) + '&limit=3')
+        .then(r => r.json()).then(d => {
+          const fl = (d.message || d).featured || [];
+          sessionStorage.setItem(cacheKey, JSON.stringify(fl));
+          if (fl.length) {
+            const box = document.createElement('div');
+            box.style.marginBottom = '1px';
+            box.innerHTML = `<div style="font-size:.72rem;color:#94a3b8;padding:.35rem .75rem;background:#faf5ff;border-bottom:1px solid #ede9fe">Sponsored listings</div><div class="tradie-grid">${fl.map(f=>featuredCard(f)).join('')}</div><div style="font-size:.72rem;color:#94a3b8;padding:.3rem .75rem;background:#f8fafc;border-top:1px solid #e2e8f0">Organic results</div>`;
+            area.insertBefore(box, area.firstChild);
+          }
+        }).catch(() => {});
+    }
+  }
+  area.innerHTML = featuredHTML + `<div class="tradie-grid">${slice.map((t, i) => cardHTML(t, start+i+1)).join('')}</div>`;
 
   if (highlightId) {
     const el = area.querySelector('.tt-highlighted');
