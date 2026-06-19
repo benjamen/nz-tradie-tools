@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Jobs | Find Tradie Work Near You | NZ Tradie Tools</title>
+    <meta name="description" content="Browse homeowner-posted jobs looking for local NZ tradies. Filter by trade and city, then apply directly.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <style>
+        .hero { background: #0f172a; color:#fff; padding:2rem 0 1.75rem; }
+        .hero h1 { margin:0 0 .4rem; font-size:1.6rem; }
+        .hero p { color:rgba(255,255,255,.75); margin:0; font-size:.95rem; }
+        .filters { background:#fff; border-bottom:1px solid #e2e8f0; padding:.85rem 0; position:sticky; top:0; z-index:10; }
+        .filter-row { display:flex; gap:.6rem; flex-wrap:wrap; align-items:center; }
+        .filter-row select { padding:.45rem .7rem; border:1.5px solid #cbd5e1; border-radius:6px; font-size:.875rem; font-family:inherit; }
+        .btn-filter { background:#0055a5; color:#fff; border:none; border-radius:6px; padding:.45rem .9rem; font-size:.875rem; font-weight:600; cursor:pointer; font-family:inherit; }
+        .wrap { max-width:860px; margin:0 auto; padding:1.5rem 1rem 4rem; }
+        .jobs-grid { display:flex; flex-direction:column; gap:1rem; }
+        .job-card { background:#fff; border-radius:10px; padding:1.25rem 1.5rem; box-shadow:0 1px 6px rgba(0,0,0,.08); }
+        .job-card:hover { box-shadow:0 3px 14px rgba(0,0,0,.12); }
+        .job-top { display:flex; align-items:flex-start; gap:1rem; flex-wrap:wrap; }
+        .job-trade { background:#dbeafe; color:#1d4ed8; border-radius:20px; padding:.2rem .75rem; font-size:.78rem; font-weight:700; white-space:nowrap; }
+        .job-title { font-weight:700; font-size:1rem; color:#0f172a; flex:1; margin:0; }
+        .job-loc { color:#64748b; font-size:.85rem; margin:.2rem 0 0; }
+        .job-desc { color:#475569; font-size:.875rem; margin:.65rem 0; line-height:1.6; }
+        .job-meta { display:flex; gap:1rem; flex-wrap:wrap; font-size:.8rem; color:#64748b; margin-top:.5rem; }
+        .btn-apply { background:#0055a5; color:#fff; border:none; border-radius:6px; padding:.5rem 1.1rem; font-size:.875rem; font-weight:600; cursor:pointer; font-family:inherit; margin-top:.85rem; }
+        .btn-apply:hover { background:#003d7a; }
+        .empty { text-align:center; color:#94a3b8; padding:3rem 0; }
+        .post-cta { background:linear-gradient(135deg,#0f172a,#1e3a5f); color:#fff; border-radius:10px; padding:1.5rem; text-align:center; margin-bottom:1.5rem; }
+        .post-cta h3 { margin:0 0 .4rem; }
+        .post-cta p { margin:0 0 1rem; color:rgba(255,255,255,.75); font-size:.9rem; }
+        .post-cta a { background:#fff; color:#0055a5; border-radius:6px; padding:.55rem 1.2rem; font-weight:700; text-decoration:none; font-size:.9rem; }
+        .modal-bg { position:fixed; inset:0; background:rgba(0,0,0,.45); z-index:100; display:flex; align-items:center; justify-content:center; padding:1rem; }
+        .modal { background:#fff; border-radius:12px; padding:1.5rem; width:100%; max-width:460px; box-shadow:0 8px 40px rgba(0,0,0,.2); }
+        .modal h3 { margin:0 0 1rem; font-size:1rem; }
+        .modal label { display:block; font-size:.82rem; font-weight:600; margin-bottom:.2rem; color:#374151; }
+        .modal input, .modal textarea { width:100%; box-sizing:border-box; padding:.55rem .75rem; border:1.5px solid #cbd5e1; border-radius:6px; font-size:.875rem; font-family:inherit; margin-bottom:.75rem; }
+        .modal textarea { height:90px; resize:vertical; }
+        .modal-actions { display:flex; gap:.5rem; justify-content:flex-end; }
+        .btn-cancel { background:#f1f5f9; border:none; border-radius:6px; padding:.55rem 1rem; cursor:pointer; font-family:inherit; }
+        .btn-send { background:#0055a5; color:#fff; border:none; border-radius:6px; padding:.55rem 1.1rem; cursor:pointer; font-family:inherit; font-weight:600; }
+        #apply-feedback { margin-top:.5rem; font-size:.875rem; font-weight:600; }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">NZ Tradie Tools</a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                <a href="/find/">Find a Tradie</a>
+                <a href="/trades/get-quotes/">Get Quotes</a>
+                <a href="/post-job/">Post a Job</a>
+                <a href="/signup/" class="nav-cta">Free Listing →</a>
+            </nav>
+            <script>(function(){var t=document.querySelector('.nav-toggle'),n=document.getElementById('main-nav');if(!t||!n)return;t.addEventListener('click',function(){var o=n.classList.toggle('is-open');t.setAttribute('aria-expanded',o);});document.addEventListener('click',function(e){if(!t.contains(e.target)&&!n.contains(e.target)){n.classList.remove('is-open');t.setAttribute('aria-expanded','false');}});})();</script>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Jobs looking for tradies</h1>
+            <p>Homeowners post jobs here — apply and they'll contact you directly.</p>
+        </div>
+    </section>
+
+    <div class="filters">
+        <div class="container">
+            <div class="filter-row">
+                <select id="f-trade">
+                    <option value="">All trades</option>
+                    <option>Electrician</option><option>Plumber</option><option>Builder</option>
+                    <option>Painter</option><option>Drainlayer</option><option>Roofer</option>
+                    <option>Concreter</option><option>Fencer</option><option>Plasterer</option>
+                    <option>Tiler</option><option>Carpenter</option><option>Heat Pump</option>
+                    <option>Landscaper</option><option>Other</option>
+                </select>
+                <select id="f-city">
+                    <option value="">All cities</option>
+                    <option>Auckland</option><option>Wellington</option><option>Christchurch</option>
+                    <option>Hamilton</option><option>Tauranga</option><option>Dunedin</option>
+                    <option>Palmerston North</option><option>Napier</option><option>New Plymouth</option>
+                    <option>Rotorua</option><option>Whangarei</option><option>Nelson</option>
+                    <option>Queenstown</option><option>Invercargill</option>
+                </select>
+                <button class="btn-filter" onclick="loadJobs()">Filter</button>
+                <span id="job-count" style="font-size:.85rem;color:#64748b;margin-left:.25rem"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <div class="post-cta">
+            <h3>Are you a homeowner?</h3>
+            <p>Post your job for free and let local tradies apply to you.</p>
+            <a href="/post-job/">Post a job →</a>
+        </div>
+        <div id="jobs-list" class="jobs-grid"><p class="empty">Loading jobs…</p></div>
+        <div style="text-align:center;margin-top:1.5rem">
+            <button id="load-more" class="btn-filter" style="display:none;background:#f1f5f9;color:#374151;border:1px solid #cbd5e1" onclick="loadMore()">Load more</button>
+        </div>
+    </div>
+
+    <div id="modal-bg" class="modal-bg" style="display:none" onclick="if(event.target===this)closeApply()">
+        <div class="modal">
+            <h3 id="modal-job-title">Apply for job</h3>
+            <input type="hidden" id="apply-job-id">
+            <label>Your message to the homeowner</label>
+            <textarea id="apply-msg-text" placeholder="Introduce yourself and explain how you'd approach this job…"></textarea>
+            <label>Quote estimate (NZD, optional)</label>
+            <input type="number" id="apply-quote" placeholder="e.g. 2500" min="0" step="100">
+            <div class="modal-actions">
+                <button class="btn-cancel" onclick="closeApply()">Cancel</button>
+                <button class="btn-send" id="apply-send-btn" onclick="submitApply()">Send application →</button>
+            </div>
+            <div id="apply-feedback"></div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div><p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">NZ Tradie Tools</p><p>Free calculators, templates and guides for New Zealand tradies.</p></div>
+            <div style="text-align:right"><p><a href="/privacy/">Privacy Policy</a></p><p><a href="/contact/">Contact</a></p><p style="margin-top:.5rem">&copy; 2025 NZ Tradie Tools</p></div>
+        </div>
+    </footer>
+
+<script>
+var API = 'https://tradietools.optified.nz/api/method/tradietools.api.';
+var TOKEN = new URLSearchParams(window.location.search).get('token') || localStorage.getItem('tt_lead_token') || '';
+if (TOKEN) localStorage.setItem('tt_lead_token', TOKEN);
+
+var offset = 0;
+var pageSize = 10;
+var totalJobs = 0;
+
+function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+function fmtBudget(min, max) {
+    if (!min && !max) return '';
+    if (min && max) return 'Budget: $' + Number(min).toLocaleString('en-NZ') + '–$' + Number(max).toLocaleString('en-NZ');
+    if (min) return 'Budget: from $' + Number(min).toLocaleString('en-NZ');
+    return 'Budget: up to $' + Number(max).toLocaleString('en-NZ');
+}
+
+function timeAgo(dt) {
+    if (!dt) return '';
+    var d = new Date(dt);
+    var diff = Math.floor((new Date() - d) / 86400000);
+    if (diff === 0) return 'Today';
+    if (diff === 1) return 'Yesterday';
+    return diff + ' days ago';
+}
+
+function jobCardHTML(j) {
+    var budget = fmtBudget(j.budget_min, j.budget_max);
+    var titleJson = JSON.stringify(j.title||'').replace(/</g,'\\u003c').replace(/>/g,'\\u003e').replace(/&/g,'\\u0026');
+    return '<div class="job-card">'
+        + '<div class="job-top">'
+        + '<span class="job-trade">' + esc(j.trade_type) + '</span>'
+        + '<h2 class="job-title">' + esc(j.title) + '</h2>'
+        + '</div>'
+        + '<p class="job-loc">📍 ' + esc([j.suburb, j.city].filter(Boolean).join(', ')) + '</p>'
+        + '<p class="job-desc">' + esc((j.description||'').slice(0,220)) + (j.description&&j.description.length>220?'…':'') + '</p>'
+        + '<div class="job-meta">'
+        + (j.timeframe ? '<span>⏱ ' + esc(j.timeframe) + '</span>' : '')
+        + (budget ? '<span>💰 ' + esc(budget) + '</span>' : '')
+        + '<span>🕐 ' + timeAgo(j.created_at) + '</span>'
+        + '</div>'
+        + '<button class="btn-apply" onclick="openApply(' + j.id + ',' + titleJson + ')">'
+        + (TOKEN ? 'Apply for this job →' : 'Log in to apply →')
+        + '</button>'
+        + '</div>';
+}
+
+function loadJobs(reset) {
+    if (reset !== false) offset = 0;
+    var trade = document.getElementById('f-trade').value;
+    var city  = document.getElementById('f-city').value;
+    var url = API + 'list_homeowner_jobs?limit=' + pageSize + '&offset=' + offset;
+    if (trade) url += '&trade_type=' + encodeURIComponent(trade);
+    if (city)  url += '&city=' + encodeURIComponent(city);
+
+    if (offset === 0) document.getElementById('jobs-list').innerHTML = '<p class="empty">Loading…</p>';
+
+    fetch(url)
+    .then(function(r){ return r.json(); })
+    .then(function(j){
+        var d = j.message||j;
+        if (!d.success) { document.getElementById('jobs-list').innerHTML = '<p class="empty">Could not load jobs.</p>'; return; }
+        totalJobs = d.total || 0;
+        document.getElementById('job-count').textContent = totalJobs + ' job' + (totalJobs===1?'':'s') + ' found';
+        var jobs = d.jobs || [];
+        if (offset === 0) {
+            document.getElementById('jobs-list').innerHTML = jobs.length
+                ? jobs.map(jobCardHTML).join('')
+                : '<p class="empty">No jobs posted yet in this area. <a href="/post-job/">Be the first to post one →</a></p>';
+        } else {
+            document.getElementById('jobs-list').innerHTML += jobs.map(jobCardHTML).join('');
+        }
+        offset += jobs.length;
+        document.getElementById('load-more').style.display = offset < totalJobs ? '' : 'none';
+    })
+    .catch(function(){ document.getElementById('jobs-list').innerHTML='<p class="empty">Network error — please refresh.</p>'; });
+}
+
+function loadMore() { loadJobs(false); }
+
+function openApply(jobId, jobTitle) {
+    if (!TOKEN) { window.location = '/signup/?next=/browse-jobs/'; return; }
+    document.getElementById('apply-job-id').value = jobId;
+    document.getElementById('modal-job-title').textContent = 'Apply: ' + jobTitle;
+    document.getElementById('apply-msg-text').value = '';
+    document.getElementById('apply-quote').value = '';
+    document.getElementById('apply-feedback').textContent = '';
+    document.getElementById('modal-bg').style.display = 'flex';
+}
+
+function closeApply() { document.getElementById('modal-bg').style.display = 'none'; }
+
+function submitApply() {
+    var jobId = document.getElementById('apply-job-id').value;
+    var fb = document.getElementById('apply-feedback');
+    var btn = document.getElementById('apply-send-btn');
+    fb.style.color = ''; fb.textContent = 'Sending…';
+    btn.disabled = true;
+
+    fetch(API + 'apply_to_job', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+            lead_token: TOKEN,
+            job_id: jobId,
+            message: document.getElementById('apply-msg-text').value.trim(),
+            quote_amount: document.getElementById('apply-quote').value || null
+        })
+    })
+    .then(function(r){ return r.json(); })
+    .then(function(j){
+        var d = j.message||j;
+        btn.disabled = false;
+        if (d.success) {
+            fb.style.color = '#16a34a';
+            fb.textContent = d.message || 'Application sent!';
+            setTimeout(closeApply, 2000);
+        } else {
+            fb.style.color = '#b00020';
+            fb.textContent = d.error || 'Error — please try again.';
+        }
+    })
+    .catch(function(){ btn.disabled=false; fb.style.color='#b00020'; fb.textContent='Network error.'; });
+}
+
+(function(){
+    var p = new URLSearchParams(window.location.search);
+    if (p.get('trade')) document.getElementById('f-trade').value = p.get('trade');
+    if (p.get('city'))  document.getElementById('f-city').value  = p.get('city');
+    var applyId = p.get('apply');
+    if (applyId && TOKEN) {
+        setTimeout(function(){ openApply(applyId, 'this job'); }, 800);
+    }
+})();
+
+loadJobs();
+</script>
+</body>
+</html>
