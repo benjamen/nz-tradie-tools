@@ -418,7 +418,7 @@
     if(!token) return;
     var box = document.getElementById('tt-profile-score');
     if(!box) return;
-    fetch(API+'get_profile_score?listing_slug='+SLUG+'&lead_token='+encodeURIComponent(token))
+    fetch(API+'get_profile_score?lead_token='+encodeURIComponent(token))
       .then(function(r){return r.json();})
       .then(function(d){
         var m=d.message||d;
