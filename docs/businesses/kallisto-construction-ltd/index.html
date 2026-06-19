@@ -366,9 +366,53 @@
       .catch(function(){ document.getElementById('tt-review-list').innerHTML=''; });
   }
 
+  function loadDynamicBadges(){
+    fetch(API+'get_listing_badges?listing_slug='+SLUG)
+      .then(function(r){return r.json();})
+      .then(function(d){
+        var m=d.message||d;
+        if(!m.success||!m.badges) return;
+        var container=document.querySelector('.badges');
+        if(!container) return;
+        var b=m.badges;
+        if(b.lbp && !document.querySelector('.badge-lbp')){
+          var el=document.createElement('a');
+          el.href='https://www.lbp.govt.nz/lbp-register/'; el.rel='noopener'; el.target='_blank';
+          el.className='badge badge-lbp';
+          el.title='Licensed Building Practitioner';
+          el.textContent='🏗️ LBP Licensed'+(b.lbp.number?' · '+b.lbp.number:'');
+          container.appendChild(el);
+        }
+        if(b.ewrb && !document.querySelector('.badge-ewrb')){
+          var el=document.createElement('a');
+          el.href='https://www.ewrb.govt.nz/find-a-worker/'; el.rel='noopener'; el.target='_blank';
+          el.className='badge badge-ewrb'; el.style.cssText='background:#d1fae5;color:#065f46';
+          el.title='Registered Electrician (EWRB)';
+          el.textContent='⚡ EWRB Registered'+(b.ewrb.number?' · '+b.ewrb.number:'');
+          container.appendChild(el);
+        }
+        if(b.pgd && !document.querySelector('.badge-pgd')){
+          var el=document.createElement('a');
+          el.href='https://www.pgdb.co.nz/public-search/'; el.rel='noopener'; el.target='_blank';
+          el.className='badge badge-pgd'; el.style.cssText='background:#fce7f3;color:#9d174d';
+          el.title='Licensed Plumber/Gasfitter/Drainlayer (PGD)';
+          el.textContent='🔧 PGD Licensed'+(b.pgd.number?' · '+b.pgd.number:'');
+          container.appendChild(el);
+        }
+        if(b.insurance && !document.querySelector('.badge-insured')){
+          var el=document.createElement('span');
+          el.className='badge badge-insured';
+          el.title='Business holds current public liability insurance'+(b.insurance.insurer?' with '+b.insurance.insurer:'');
+          el.textContent='🛡️ Insured'+(b.insurance.insurer?' · '+b.insurance.insurer:'');
+          container.appendChild(el);
+        }
+      }).catch(function(){});
+  }
+
   // Star picker
   document.addEventListener('DOMContentLoaded', function(){
     loadReviews();
+    loadDynamicBadges();
     var picker = document.getElementById('tt-star-picker');
     if(!picker) return;
     var spans = picker.querySelectorAll('span');
