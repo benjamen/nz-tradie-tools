@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account | NZ Tradie Tools</title>
+    <meta name="description" content="View your quote requests and saved tradies on NZ Tradie Tools.">
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <style>
+        .acct-wrap { max-width: 820px; margin: 0 auto; padding: 2rem 1rem 4rem; }
+        .acct-hero { background: #0f172a; color: #fff; padding: 2.5rem 0 2rem; }
+        .acct-hero .container { max-width: 820px; margin: 0 auto; padding: 0 1rem; }
+        .acct-hero h1 { margin: 0 0 .25rem; font-size: 1.6rem; }
+        .acct-hero p { margin: 0; color: rgba(255,255,255,.7); font-size: .95rem; }
+        .login-box { max-width: 440px; margin: 3rem auto; background: #fff; border-radius: 10px; box-shadow: 0 2px 16px rgba(0,0,0,.1); padding: 2rem; }
+        .login-box h2 { margin: 0 0 .5rem; font-size: 1.25rem; }
+        .login-box p { color: #64748b; margin: 0 0 1.25rem; font-size: .9rem; }
+        .login-box input[type=email] { width: 100%; box-sizing: border-box; padding: .65rem .85rem; border: 1.5px solid #cbd5e1; border-radius: 6px; font-size: 1rem; font-family: inherit; }
+        .login-box button { width: 100%; margin-top: .75rem; background: #0055a5; color: #fff; border: none; border-radius: 6px; padding: .75rem; font-size: 1rem; font-weight: 600; cursor: pointer; font-family: inherit; }
+        .login-box button:disabled { opacity: .6; cursor: default; }
+        #login-msg { margin-top: .75rem; font-size: .9rem; font-weight: 600; }
+        .section-card { background: #fff; border-radius: 10px; box-shadow: 0 1px 8px rgba(0,0,0,.08); padding: 1.5rem; margin-bottom: 1.5rem; }
+        .section-card h2 { margin: 0 0 1rem; font-size: 1.1rem; color: #0f172a; border-bottom: 1px solid #e2e8f0; padding-bottom: .6rem; }
+        .quote-row { padding: .65rem 0; border-bottom: 1px solid #f1f5f9; display: flex; flex-wrap: wrap; gap: .35rem; align-items: flex-start; }
+        .quote-row:last-child { border-bottom: none; }
+        .quote-trade { font-weight: 600; color: #0055a5; min-width: 110px; }
+        .quote-loc { color: #475569; font-size: .875rem; }
+        .quote-desc { flex: 1 1 100%; font-size: .85rem; color: #64748b; margin-top: .2rem; }
+        .quote-status { font-size: .75rem; padding: .2rem .55rem; border-radius: 20px; font-weight: 600; }
+        .status-new { background: #dbeafe; color: #1d4ed8; }
+        .status-matched { background: #d1fae5; color: #065f46; }
+        .status-closed { background: #f1f5f9; color: #64748b; }
+        .tradie-card { display: flex; align-items: center; gap: 1rem; padding: .75rem 0; border-bottom: 1px solid #f1f5f9; }
+        .tradie-card:last-child { border-bottom: none; }
+        .tradie-info { flex: 1; }
+        .tradie-name { font-weight: 600; color: #0f172a; }
+        .tradie-meta { font-size: .85rem; color: #64748b; margin-top: .15rem; }
+        .tradie-rating { font-size: .85rem; color: #d97706; font-weight: 600; }
+        .btn-unsave { background: none; border: 1px solid #e2e8f0; border-radius: 5px; padding: .35rem .75rem; font-size: .8rem; cursor: pointer; color: #64748b; font-family: inherit; }
+        .btn-unsave:hover { border-color: #ef4444; color: #ef4444; }
+        .btn-view { background: #0055a5; color: #fff; border: none; border-radius: 5px; padding: .35rem .75rem; font-size: .8rem; cursor: pointer; text-decoration: none; font-family: inherit; display: inline-block; }
+        .empty-state { text-align: center; color: #94a3b8; padding: 1.5rem 0; font-size: .9rem; }
+        .logout-btn { background: none; border: none; color: #ef4444; cursor: pointer; font-size: .85rem; font-family: inherit; padding: 0; text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">NZ Tradie Tools</a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                <a href="/find/">Find a Tradie</a>
+                <a href="/trades/get-quotes/">Get Quotes</a>
+                <a href="/articles/">Articles</a>
+                <a href="/signup/" class="nav-cta">Free Listing →</a>
+            </nav>
+            <script>
+            (function(){
+                var t=document.querySelector('.nav-toggle'),n=document.getElementById('main-nav');
+                if(!t||!n)return;
+                t.addEventListener('click',function(){var o=n.classList.toggle('is-open');t.setAttribute('aria-expanded',o);});
+                document.addEventListener('click',function(e){if(!t.contains(e.target)&&!n.contains(e.target)){n.classList.remove('is-open');t.setAttribute('aria-expanded','false');}});
+            })();
+            </script>
+        </div>
+    </header>
+
+    <div id="acct-hero-wrap" style="display:none">
+        <div class="acct-hero">
+            <div class="container">
+                <h1 id="hero-greeting">My Account</h1>
+                <p id="hero-email"></p>
+                <button class="logout-btn" onclick="doLogout()" style="margin-top:.5rem">Log out</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login form — shown when not authenticated -->
+    <div id="login-wrap">
+        <div class="login-box">
+            <h2>Log in to your account</h2>
+            <p>Enter your email and we'll send you a magic login link — no password needed.</p>
+            <input type="email" id="login-email" placeholder="your@email.com" autocomplete="email">
+            <button id="login-btn" onclick="sendLoginLink()">Send login link →</button>
+            <div id="login-msg"></div>
+        </div>
+    </div>
+
+    <!-- Dashboard — shown when authenticated -->
+    <div id="dashboard-wrap" style="display:none">
+        <div class="acct-wrap">
+            <div class="section-card" id="quotes-section">
+                <h2>Your quote requests</h2>
+                <div id="quotes-list"><div class="empty-state">Loading…</div></div>
+            </div>
+            <div class="section-card" id="saved-section">
+                <h2>Saved tradies</h2>
+                <div id="saved-list"><div class="empty-state">Loading…</div></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">NZ Tradie Tools</p>
+                <p>Free calculators, templates and guides for New Zealand tradies.</p>
+            </div>
+            <div style="text-align:right">
+                <p><a href="/privacy/">Privacy Policy</a></p>
+                <p><a href="/contact/">Contact</a></p>
+                <p style="margin-top:.5rem">&copy; 2025 NZ Tradie Tools</p>
+            </div>
+        </div>
+    </footer>
+
+<script>
+const API = 'https://tradietools.optified.nz/api/method/tradietools.api.';
+const LS_ID    = 'tt_ho_id';
+const LS_EMAIL = 'tt_ho_email';
+const LS_NAME  = 'tt_ho_name';
+
+function getSession() {
+    var id = localStorage.getItem(LS_ID);
+    var em = localStorage.getItem(LS_EMAIL);
+    return (id && em) ? {id, email: em, name: localStorage.getItem(LS_NAME) || ''} : null;
+}
+
+function doLogout() {
+    localStorage.removeItem(LS_ID);
+    localStorage.removeItem(LS_EMAIL);
+    localStorage.removeItem(LS_NAME);
+    document.getElementById('dashboard-wrap').style.display = 'none';
+    document.getElementById('acct-hero-wrap').style.display = 'none';
+    document.getElementById('login-wrap').style.display = '';
+}
+
+function sendLoginLink() {
+    var email = document.getElementById('login-email').value.trim();
+    var btn   = document.getElementById('login-btn');
+    var msg   = document.getElementById('login-msg');
+    if (!email || !email.includes('@')) { msg.style.color='#b00020'; msg.textContent='Please enter a valid email.'; return; }
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
+    msg.textContent = '';
+    fetch(API + 'homeowner_login', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({email})
+    })
+    .then(r => r.json())
+    .then(j => {
+        var d = j.message || j;
+        if (d.success === false) throw new Error(d.error || 'Error');
+        msg.style.color = '#1a7a3a';
+        msg.textContent = d.message || 'Login link sent — check your email.';
+        btn.textContent = 'Link sent ✓';
+    })
+    .catch(err => {
+        btn.disabled = false;
+        btn.textContent = 'Send login link →';
+        msg.style.color = '#b00020';
+        msg.textContent = err.message || 'Something went wrong. Please try again.';
+    });
+}
+
+function loadDashboard(session) {
+    document.getElementById('login-wrap').style.display = 'none';
+    document.getElementById('acct-hero-wrap').style.display = '';
+    document.getElementById('dashboard-wrap').style.display = '';
+    document.getElementById('hero-greeting').textContent = session.name ? 'Hi, ' + session.name : 'My Account';
+    document.getElementById('hero-email').textContent = session.email;
+
+    fetch(API + 'get_homeowner_dashboard?homeowner_id=' + encodeURIComponent(session.id) + '&email=' + encodeURIComponent(session.email))
+    .then(r => r.json())
+    .then(j => {
+        var d = j.message || j;
+        if (d.success === false) { doLogout(); return; }
+        if (d.first_name && !localStorage.getItem(LS_NAME)) {
+            localStorage.setItem(LS_NAME, d.first_name);
+            document.getElementById('hero-greeting').textContent = 'Hi, ' + d.first_name;
+        }
+        renderQuotes(d.quotes || []);
+        renderSaved(d.saved_tradies || [], session);
+    })
+    .catch(() => {
+        document.getElementById('quotes-list').innerHTML = '<div class="empty-state">Could not load data. Please refresh.</div>';
+    });
+}
+
+function renderQuotes(quotes) {
+    var el = document.getElementById('quotes-list');
+    if (!quotes.length) { el.innerHTML = '<div class="empty-state">No quote requests yet. <a href="/trades/get-quotes/">Get your first quotes →</a></div>'; return; }
+    el.innerHTML = quotes.map(q => {
+        var statusClass = q.status === 'matched' ? 'status-matched' : q.status === 'closed' ? 'status-closed' : 'status-new';
+        var date = q.creation ? new Date(q.creation).toLocaleDateString('en-NZ', {day:'numeric',month:'short',year:'numeric'}) : '';
+        var loc = [q.suburb, q.city].filter(Boolean).join(', ');
+        return '<div class="quote-row">'
+            + '<span class="quote-trade">' + esc(q.trade_type || 'Trade') + '</span>'
+            + '<span class="quote-loc">' + esc(loc) + '</span>'
+            + (date ? '<span style="font-size:.8rem;color:#94a3b8;margin-left:auto">' + date + '</span>' : '')
+            + '<span class="quote-status ' + statusClass + '">' + esc(q.status || 'new') + '</span>'
+            + (q.job_description ? '<span class="quote-desc">' + esc(q.job_description.slice(0, 120)) + (q.job_description.length > 120 ? '…' : '') + '</span>' : '')
+            + '</div>';
+    }).join('');
+}
+
+function renderSaved(tradies, session) {
+    var el = document.getElementById('saved-list');
+    if (!tradies.length) { el.innerHTML = '<div class="empty-state">No saved tradies yet. <a href="/find/">Browse tradies →</a></div>'; return; }
+    el.innerHTML = tradies.map(t => {
+        var rating = t.avg_rating ? '⭐ ' + parseFloat(t.avg_rating).toFixed(1) + ' (' + (t.review_count || 0) + ')' : '';
+        var profileUrl = t.listing_slug ? '/tradie/' + t.listing_slug + '/' : '#';
+        return '<div class="tradie-card" id="save-' + t.save_id + '">'
+            + '<div class="tradie-info">'
+            + '<div class="tradie-name">' + esc(t.tradie_name || 'Tradie') + '</div>'
+            + '<div class="tradie-meta">' + esc([t.trade, t.region].filter(Boolean).join(' · '))
+            + (rating ? ' &nbsp;·&nbsp; <span class="tradie-rating">' + rating + '</span>' : '') + '</div>'
+            + '</div>'
+            + '<a class="btn-view" href="' + esc(profileUrl) + '">View profile</a>'
+            + '<button class="btn-unsave" onclick="unsave(' + t.save_id + ',' + (t.tradie_id||'null') + ')" title="Remove">✕</button>'
+            + '</div>';
+    }).join('');
+}
+
+function unsave(saveId, tradieId) {
+    var session = getSession();
+    if (!session) return;
+    fetch(API + 'save_tradie', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({homeowner_id: session.id, email: session.email, tradie_id: tradieId})
+    })
+    .then(r => r.json())
+    .then(j => {
+        var d = j.message || j;
+        if (d.success && d.saved === false) {
+            var el = document.getElementById('save-' + saveId);
+            if (el) el.remove();
+        }
+    });
+}
+
+function esc(s) {
+    return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// --- Boot ---
+(function() {
+    // Check for magic token in URL (from email link)
+    var urlToken = new URLSearchParams(window.location.search).get('token');
+    if (urlToken) {
+        fetch(API + 'homeowner_auth', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({token: urlToken})
+        })
+        .then(r => r.json())
+        .then(j => {
+            var d = j.message || j;
+            if (d.success && d.homeowner_id) {
+                localStorage.setItem(LS_ID, d.homeowner_id);
+                localStorage.setItem(LS_EMAIL, d.email);
+                if (d.first_name) localStorage.setItem(LS_NAME, d.first_name);
+                // Clean token from URL
+                history.replaceState(null, '', '/my-account/');
+                loadDashboard({id: d.homeowner_id, email: d.email, name: d.first_name || ''});
+            } else {
+                document.getElementById('login-msg').style.color = '#b00020';
+                document.getElementById('login-msg').textContent = 'That login link has expired. Enter your email to get a new one.';
+            }
+        })
+        .catch(() => {});
+        return;
+    }
+
+    // Check existing session
+    var session = getSession();
+    if (session) {
+        loadDashboard(session);
+    }
+    // Otherwise login form is already visible
+})();
+</script>
+</body>
+</html>
