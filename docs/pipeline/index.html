@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Pipeline | NZ Tradie Tools</title>
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <style>
+        body { background: #f1f5f9; }
+        .pipe-header { background: #0f172a; color: #fff; padding: 1.25rem 1.5rem; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+        .pipe-header h1 { margin: 0; font-size: 1.2rem; flex: 1; }
+        .pipe-header a { color: rgba(255,255,255,.7); font-size: .85rem; text-decoration: none; }
+        .pipe-header a:hover { color: #fff; }
+        .btn-add { background: #0055a5; color: #fff; border: none; border-radius: 6px; padding: .5rem 1rem; font-size: .875rem; font-weight: 600; cursor: pointer; font-family: inherit; }
+        .btn-add:hover { background: #003d7a; }
+
+        /* Board */
+        .board { display: flex; gap: 1rem; padding: 1.25rem 1.5rem; overflow-x: auto; min-height: calc(100vh - 120px); align-items: flex-start; }
+        .column { background: #e2e8f0; border-radius: 10px; min-width: 260px; width: 260px; flex-shrink: 0; display: flex; flex-direction: column; }
+        .col-header { padding: .75rem 1rem; display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid rgba(0,0,0,.08); }
+        .col-title { font-weight: 700; font-size: .875rem; text-transform: uppercase; letter-spacing: .04em; }
+        .col-count { background: rgba(0,0,0,.15); color: inherit; border-radius: 20px; padding: .1rem .5rem; font-size: .75rem; font-weight: 600; }
+        .col-body { padding: .75rem; display: flex; flex-direction: column; gap: .6rem; flex: 1; min-height: 80px; }
+
+        /* Column colour bars */
+        .col-lead .col-header { color: #1d4ed8; background: #dbeafe; border-radius: 10px 10px 0 0; }
+        .col-quoted .col-header { color: #92400e; background: #fef3c7; border-radius: 10px 10px 0 0; }
+        .col-accepted .col-header { color: #065f46; background: #d1fae5; border-radius: 10px 10px 0 0; }
+        .col-invoiced .col-header { color: #5b21b6; background: #ede9fe; border-radius: 10px 10px 0 0; }
+        .col-completed .col-header { color: #1f2937; background: #d1d5db; border-radius: 10px 10px 0 0; }
+        .col-lost .col-header { color: #b91c1c; background: #fee2e2; border-radius: 10px 10px 0 0; }
+
+        /* Cards */
+        .job-card { background: #fff; border-radius: 7px; padding: .85rem; box-shadow: 0 1px 4px rgba(0,0,0,.08); cursor: pointer; position: relative; }
+        .job-card:hover { box-shadow: 0 3px 10px rgba(0,0,0,.12); }
+        .card-title { font-weight: 600; font-size: .9rem; color: #0f172a; margin-bottom: .3rem; }
+        .card-customer { font-size: .8rem; color: #475569; }
+        .card-value { font-size: .85rem; font-weight: 600; color: #16a34a; margin-top: .4rem; }
+        .card-meta { font-size: .75rem; color: #94a3b8; margin-top: .3rem; }
+        .card-actions { display: flex; gap: .35rem; margin-top: .6rem; flex-wrap: wrap; }
+        .btn-stage { background: #f1f5f9; border: none; border-radius: 4px; padding: .25rem .5rem; font-size: .75rem; cursor: pointer; font-family: inherit; color: #374151; }
+        .btn-stage:hover { background: #e2e8f0; }
+        .btn-del { background: none; border: none; color: #ef4444; font-size: .75rem; cursor: pointer; font-family: inherit; margin-left: auto; }
+        .btn-del:hover { text-decoration: underline; }
+
+        /* Modal */
+        .modal-bg { position: fixed; inset: 0; background: rgba(0,0,0,.45); z-index: 100; display: flex; align-items: center; justify-content: center; padding: 1rem; }
+        .modal { background: #fff; border-radius: 12px; padding: 1.5rem; width: 100%; max-width: 480px; box-shadow: 0 8px 40px rgba(0,0,0,.2); }
+        .modal h2 { margin: 0 0 1rem; font-size: 1.1rem; }
+        .modal label { display: block; font-size: .85rem; font-weight: 600; margin-bottom: .2rem; color: #374151; }
+        .modal input, .modal textarea, .modal select { width: 100%; box-sizing: border-box; padding: .55rem .75rem; border: 1.5px solid #cbd5e1; border-radius: 6px; font-size: .9rem; font-family: inherit; margin-bottom: .75rem; }
+        .modal textarea { height: 80px; resize: vertical; }
+        .modal-actions { display: flex; gap: .5rem; justify-content: flex-end; margin-top: .25rem; }
+        .btn-cancel { background: #f1f5f9; border: none; border-radius: 6px; padding: .55rem 1rem; cursor: pointer; font-family: inherit; font-size: .875rem; }
+        .btn-save { background: #0055a5; color: #fff; border: none; border-radius: 6px; padding: .55rem 1.1rem; cursor: pointer; font-family: inherit; font-size: .875rem; font-weight: 600; }
+
+        .empty-col { text-align: center; color: #94a3b8; font-size: .8rem; padding: .5rem 0; }
+        #error-banner { background: #fee2e2; color: #b91c1c; padding: .75rem 1.5rem; font-size: .9rem; display: none; }
+    </style>
+</head>
+<body>
+    <div class="pipe-header">
+        <h1>📋 Job Pipeline</h1>
+        <a href="/dashboard/">← Dashboard</a>
+        <button class="btn-add" onclick="openModal()">+ Add job</button>
+    </div>
+    <div id="error-banner"></div>
+    <div id="board" class="board"><p style="color:#64748b;padding:2rem">Loading…</p></div>
+
+    <!-- Add / Edit Modal -->
+    <div id="modal-bg" class="modal-bg" style="display:none" onclick="if(event.target===this)closeModal()">
+        <div class="modal">
+            <h2 id="modal-title">Add job</h2>
+            <input type="hidden" id="edit-id">
+            <label>Job title *</label>
+            <input type="text" id="f-title" placeholder="e.g. Bathroom reno — 14 Smith St">
+            <label>Stage</label>
+            <select id="f-stage">
+                <option value="lead">Lead</option>
+                <option value="quoted">Quoted</option>
+                <option value="accepted">Accepted</option>
+                <option value="invoiced">Invoiced</option>
+                <option value="completed">Completed</option>
+                <option value="lost">Lost</option>
+            </select>
+            <label>Customer name</label>
+            <input type="text" id="f-name" placeholder="e.g. Jane Smith">
+            <label>Customer phone</label>
+            <input type="tel" id="f-phone" placeholder="e.g. 021 123 4567">
+            <label>Customer email</label>
+            <input type="email" id="f-email">
+            <label>Job value (NZD)</label>
+            <input type="number" id="f-value" placeholder="e.g. 5500" min="0" step="0.01">
+            <label>Quote / ref number</label>
+            <input type="text" id="f-quote-ref" placeholder="e.g. QT-2026-042">
+            <label>Notes</label>
+            <textarea id="f-notes" placeholder="Any details, scope, or follow-up reminders…"></textarea>
+            <div class="modal-actions">
+                <button class="btn-cancel" onclick="closeModal()">Cancel</button>
+                <button class="btn-save" onclick="saveJob()">Save</button>
+            </div>
+        </div>
+    </div>
+
+<script>
+var API = 'https://tradietools.optified.nz/api/method/tradietools.api.';
+var TOKEN = new URLSearchParams(window.location.search).get('token') || localStorage.getItem('tt_lead_token') || '';
+
+var STAGES = [
+    {key:'lead',      label:'Lead'},
+    {key:'quoted',    label:'Quoted'},
+    {key:'accepted',  label:'Accepted'},
+    {key:'invoiced',  label:'Invoiced'},
+    {key:'completed', label:'Completed'},
+    {key:'lost',      label:'Lost'}
+];
+var NEXT_STAGE = {lead:'quoted', quoted:'accepted', accepted:'invoiced', invoiced:'completed'};
+
+if (TOKEN) localStorage.setItem('tt_lead_token', TOKEN);
+
+function showError(msg) {
+    var b = document.getElementById('error-banner');
+    b.textContent = msg;
+    b.style.display = msg ? '' : 'none';
+}
+
+function esc(s) {
+    return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function fmtVal(v) {
+    if (v == null) return '';
+    return '$' + Number(v).toLocaleString('en-NZ', {minimumFractionDigits:0, maximumFractionDigits:0});
+}
+
+function renderBoard(pipeline) {
+    var board = document.getElementById('board');
+    board.innerHTML = '';
+    STAGES.forEach(function(s) {
+        var jobs = pipeline[s.key] || [];
+        var col = document.createElement('div');
+        col.className = 'column col-' + s.key;
+        col.innerHTML =
+            '<div class="col-header">'
+            + '<span class="col-title">' + s.label + '</span>'
+            + '<span class="col-count">' + jobs.length + '</span>'
+            + '</div>'
+            + '<div class="col-body" id="col-' + s.key + '">'
+            + (jobs.length ? jobs.map(cardHTML).join('') : '<div class="empty-col">Drop jobs here</div>')
+            + '</div>';
+        board.appendChild(col);
+    });
+}
+
+function cardHTML(j) {
+    var next = NEXT_STAGE[j.stage];
+    return '<div class="job-card" id="card-' + j.id + '">'
+        + '<div class="card-title">' + esc(j.job_title) + '</div>'
+        + (j.customer_name ? '<div class="card-customer">👤 ' + esc(j.customer_name) + '</div>' : '')
+        + (j.customer_phone ? '<div class="card-customer">📞 ' + esc(j.customer_phone) + '</div>' : '')
+        + (j.job_value ? '<div class="card-value">' + fmtVal(j.job_value) + '</div>' : '')
+        + (j.quote_ref ? '<div class="card-meta">Ref: ' + esc(j.quote_ref) + '</div>' : '')
+        + (j.job_notes ? '<div class="card-meta">' + esc(j.job_notes.slice(0,60)) + (j.job_notes.length>60?'…':'') + '</div>' : '')
+        + '<div class="card-actions">'
+        + '<button class="btn-stage" onclick="openEditModal(' + JSON.stringify(j).replace(/"/g,'&quot;') + ')">✏️ Edit</button>'
+        + (next ? '<button class="btn-stage" onclick="moveStage(' + j.id + ',\'' + next + '\')">→ ' + next.charAt(0).toUpperCase()+next.slice(1) + '</button>' : '')
+        + '<button class="btn-del" onclick="deleteJob(' + j.id + ')">✕ Delete</button>'
+        + '</div>'
+        + '</div>';
+}
+
+function loadPipeline() {
+    if (!TOKEN) { showError('No magic link token — open this page from your magic link email.'); document.getElementById('board').innerHTML=''; return; }
+    fetch(API + 'get_pipeline?lead_token=' + encodeURIComponent(TOKEN))
+    .then(function(r){ return r.json(); })
+    .then(function(j){
+        var d = j.message || j;
+        if (!d.success) { showError(d.error || 'Failed to load pipeline'); return; }
+        renderBoard(d.pipeline);
+    })
+    .catch(function(){ showError('Could not connect to server. Please refresh.'); });
+}
+
+function openModal(stage) {
+    document.getElementById('modal-title').textContent = 'Add job';
+    document.getElementById('edit-id').value = '';
+    document.getElementById('f-title').value = '';
+    document.getElementById('f-stage').value = stage || 'lead';
+    document.getElementById('f-name').value = '';
+    document.getElementById('f-phone').value = '';
+    document.getElementById('f-email').value = '';
+    document.getElementById('f-value').value = '';
+    document.getElementById('f-quote-ref').value = '';
+    document.getElementById('f-notes').value = '';
+    document.getElementById('modal-bg').style.display = 'flex';
+    document.getElementById('f-title').focus();
+}
+
+function openEditModal(j) {
+    document.getElementById('modal-title').textContent = 'Edit job';
+    document.getElementById('edit-id').value = j.id;
+    document.getElementById('f-title').value = j.job_title || '';
+    document.getElementById('f-stage').value = j.stage || 'lead';
+    document.getElementById('f-name').value = j.customer_name || '';
+    document.getElementById('f-phone').value = j.customer_phone || '';
+    document.getElementById('f-email').value = j.customer_email || '';
+    document.getElementById('f-value').value = j.job_value != null ? j.job_value : '';
+    document.getElementById('f-quote-ref').value = j.quote_ref || '';
+    document.getElementById('f-notes').value = j.job_notes || '';
+    document.getElementById('modal-bg').style.display = 'flex';
+}
+
+function closeModal() {
+    document.getElementById('modal-bg').style.display = 'none';
+}
+
+function saveJob() {
+    var title = document.getElementById('f-title').value.trim();
+    if (!title) { alert('Job title is required'); return; }
+
+    var editId = document.getElementById('edit-id').value;
+    var payload = {
+        lead_token: TOKEN,
+        job_title: title,
+        stage: document.getElementById('f-stage').value,
+        customer_name: document.getElementById('f-name').value.trim(),
+        customer_phone: document.getElementById('f-phone').value.trim(),
+        customer_email: document.getElementById('f-email').value.trim(),
+        job_value: document.getElementById('f-value').value || null,
+        quote_ref: document.getElementById('f-quote-ref').value.trim(),
+        job_notes: document.getElementById('f-notes').value.trim()
+    };
+
+    var endpoint = editId ? 'update_pipeline_job' : 'create_pipeline_job';
+    if (editId) payload.job_id = parseInt(editId);
+
+    fetch(API + endpoint, {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(payload)
+    })
+    .then(function(r){ return r.json(); })
+    .then(function(j){
+        var d = j.message || j;
+        if (!d.success) { alert(d.error || 'Save failed'); return; }
+        closeModal();
+        loadPipeline();
+    })
+    .catch(function(){ alert('Network error — please try again'); });
+}
+
+function moveStage(jobId, newStage) {
+    fetch(API + 'update_pipeline_job', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({lead_token: TOKEN, job_id: jobId, stage: newStage})
+    })
+    .then(function(r){ return r.json(); })
+    .then(function(j){
+        var d = j.message || j;
+        if (d.success) loadPipeline();
+        else alert(d.error || 'Update failed');
+    });
+}
+
+function deleteJob(jobId) {
+    if (!confirm('Delete this job card?')) return;
+    fetch(API + 'delete_pipeline_job', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({lead_token: TOKEN, job_id: jobId})
+    })
+    .then(function(r){ return r.json(); })
+    .then(function(j){
+        var d = j.message || j;
+        if (d.success) loadPipeline();
+        else alert(d.error || 'Delete failed');
+    });
+}
+
+loadPipeline();
+</script>
+</body>
+</html>
