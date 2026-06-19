@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="geo.region" content="NZ-AUK">
+    <meta name="geo.placename" content="{{ suburb.name }}, Auckland, New Zealand">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://tradietools.optified.nz">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap">
+    <title>Best {{ trade.name }} in {{ suburb.name }}, Auckland {{ year }} — Free Quotes</title>
+    <meta name="description" content="Find trusted {{ trade.plural }} in {{ suburb.name }}, Auckland. Compare top-rated local {{ trade.plural }}, read reviews and get 3 free quotes. {{ suburb.demand }}">
+    <meta property="og:title" content="{{ trade.name }} in {{ suburb.name }}, Auckland {{ year }}">
+    <meta property="og:description" content="Top-rated {{ trade.plural }} serving {{ suburb.name }} and surrounding Auckland suburbs. Free quotes, verified ratings.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ base_url }}/trades/{{ trade.slug }}/auckland-{{ suburb.slug }}/">
+    <meta property="og:site_name" content="NZ Tradie Tools">
+    <link rel="canonical" href="{{ base_url }}/trades/{{ trade.slug }}/auckland-{{ suburb.slug }}/">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[
+    {"@type":"BreadcrumbList","itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Home","item":{{ base_url | tojson }}},
+        {"@type":"ListItem","position":2,"name":"Find a Tradie","item":{{ (base_url ~ "/trades/") | tojson }}},
+        {"@type":"ListItem","position":3,"name":{{ trade.name | tojson }},"item":{{ (base_url ~ "/trades/" ~ trade.slug ~ "/") | tojson }}},
+        {"@type":"ListItem","position":4,"name":"Auckland","item":{{ (base_url ~ "/trades/" ~ trade.slug ~ "/auckland/") | tojson }}},
+        {"@type":"ListItem","position":5,"name":{{ suburb.name | tojson }},"item":{{ (base_url ~ "/trades/" ~ trade.slug ~ "/auckland-" ~ suburb.slug ~ "/") | tojson }}}
+    ]},
+    {"@type":"FAQPage","mainEntity":[
+        {"@type":"Question","name":{{ ("How much do " ~ trade.plural ~ " cost in " ~ suburb.name ~ ", Auckland?") | tojson }},
+         "acceptedAnswer":{"@type":"Answer","text":{{ trade.avg_cost_nz | tojson }}}},
+        {"@type":"Question","name":{{ ("How do I find a reliable " ~ trade.singular ~ " in " ~ suburb.name ~ "?") | tojson }},
+         "acceptedAnswer":{"@type":"Answer","text":"Check ratings on NoCowboys and Google Maps, verify their licence on the relevant NZ register, and always get at least 3 written quotes before committing."}}
+    ]}
+    ]}</script>
+    <link rel="icon" href="{{ base_path }}/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="{{ base_path }}/static/css/style.css">
+    <style>
+        .top10-list { display:flex; flex-direction:column; gap:1.25rem; margin:1.5rem 0; }
+        .business-card { background:var(--bg,#f8f9fa); border:1px solid var(--border,#ddd); border-radius:var(--radius,4px); padding:1.25rem; position:relative; transition:background .15s; }
+        .business-card:hover { background:var(--blue-light,#dbe8f5); }
+        .business-card .rank { position:absolute; top:1rem; right:1rem; background:var(--blue,#005ea2); color:var(--white,#fff); border-radius:50%; width:2rem; height:2rem; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:.9rem; }
+        .business-name { font-size:1.1rem; font-weight:700; color:var(--blue,#005ea2); margin-bottom:.3rem; }
+        .business-meta { display:flex; flex-wrap:wrap; gap:.75rem; font-size:.88rem; color:var(--muted,#5a5a5a); margin-bottom:.5rem; }
+        .stars { color:#f59e0b; }
+        .known-for { font-size:.9rem; color:var(--text,#1b1b1b); margin-top:.4rem; }
+        .business-links { display:flex; gap:1rem; margin-top:.6rem; flex-wrap:wrap; }
+        .business-links a { font-size:.85rem; color:var(--blue,#005ea2); }
+        .profile-link { display:inline-block; font-size:.82rem; font-weight:600; color:#166534; background:#dcfce7; border:1px solid #86efac; border-radius:var(--radius,4px); padding:.15rem .55rem; text-decoration:none; }
+        .claim-link { display:inline-block; font-size:.78rem; color:#92400e; background:#fef9c3; border:1px solid #fde047; border-radius:var(--radius,4px); padding:.1rem .5rem; margin-top:.4rem; text-decoration:none; }
+        .suburb-note { background:#f0f7ff; border-left:4px solid #0055a5; padding:.85rem 1rem; border-radius:0 6px 6px 0; margin-bottom:1.25rem; font-size:.9rem; color:#1e3a5f; }
+    </style>
+    {% if ga_id %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ ga_id }}"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{ ga_id }}');</script>
+    {% endif %}
+{% include '_entity_schema.html' %}
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="{{ base_path }}/" class="logo">NZ Tradie Tools</a>
+            <nav class="main-nav">
+                {% for item in nav %}
+                <a href="{{ base_path }}{{ item.url }}"{% if item.active %} class="active"{% endif %}>{{ item.label }}</a>
+                {% endfor %}
+            </nav>
+        </div>
+    </header>
+
+    <nav class="breadcrumb container" aria-label="Breadcrumb">
+        <a href="{{ base_path }}/">Home</a> &rsaquo;
+        <a href="{{ base_path }}/trades/">Find Tradie</a> &rsaquo;
+        <a href="{{ base_path }}/trades/{{ trade.slug }}/">{{ trade.name }}</a> &rsaquo;
+        <a href="{{ base_path }}/trades/{{ trade.slug }}/auckland/">Auckland</a> &rsaquo;
+        {{ suburb.name }}
+    </nav>
+
+    <div class="container layout-with-sidebar">
+        <main class="main-content">
+            <h1>{{ trade.name }} in {{ suburb.name }}, Auckland ({{ year }})</h1>
+            <div class="tag-row" style="display:flex;flex-wrap:wrap;gap:.5rem;margin:.5rem 0 1rem">
+                <span class="tag">{{ suburb.name }}, Auckland</span>
+                <span class="tag">{{ trade.name }}</span>
+                <span class="tag">Free Quotes</span>
+            </div>
+
+            <div class="suburb-note">
+                <strong>{{ suburb.name }}:</strong> {{ suburb.blurb }}
+            </div>
+
+            <p>These {{ trade.plural }} service {{ suburb.name }} and surrounding Auckland suburbs. All ratings sourced from Google Maps and NoCowboys — sorted by rating and review count.</p>
+
+            {% if businesses %}
+            <div class="top10-list">
+                {% for b in businesses %}
+                <div class="business-card">
+                    <div class="rank">{{ loop.index }}</div>
+                    <div class="business-name">{{ b.name }}</div>
+                    <div class="business-meta">
+                        <span>📍 {{ b.suburb }}{% if b.suburb and b.suburb.lower() != 'auckland' %}, Auckland{% endif %}</span>
+                        {% if b.rating %}
+                        <span><span class="stars">{% for i in range(b.rating|int) %}★{% endfor %}{% if b.rating % 1 >= 0.5 %}½{% endif %}</span> {{ b.rating }}/5 ({{ b.review_count }} reviews)</span>
+                        {% endif %}
+                        {% if b.phone %}<span>📞 {{ b.phone }}</span>{% endif %}
+                    </div>
+                    {% if b.known_for %}<p class="known-for">{{ b.known_for }}</p>{% endif %}
+                    <div class="business-links">
+                        {% if b.profile_url %}
+                        <a href="{{ base_path }}{{ b.profile_url }}" class="profile-link">✅ View full profile →</a>
+                        {% endif %}
+                        <a href="https://www.google.com/maps/search/{{ b.name|urlencode }}+{{ suburb.name }}+Auckland+NZ" rel="noopener" target="_blank">Search on Google Maps →</a>
+                        <a href="{{ base_path }}/claim/?business={{ b.name|urlencode }}&trade={{ trade.slug }}&city=auckland" class="claim-link">Is this your business? Claim listing →</a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% else %}
+            <div class="no-data-notice" style="background:#fff8e1;border:1px solid #ffe082;border-radius:4px;padding:1.5rem;margin:1.5rem 0">
+                <strong>We're building this list.</strong> Our team is researching the top-rated {{ trade.plural }} serving {{ suburb.name }}. Check back soon — or <a href="{{ base_path }}/trades/{{ trade.slug }}/auckland/">see all Auckland {{ trade.plural }}</a>.
+            </div>
+            {% endif %}
+
+            <div style="background:#f0f7ff;border-left:4px solid #005ea2;padding:1rem 1.25rem;margin:1.5rem 0;display:flex;flex-wrap:wrap;align-items:center;gap:.75rem 1.5rem">
+                <div>
+                    <strong>Get 3 free quotes from {{ suburb.name }} {{ trade.plural }}</strong>
+                    <span style="color:#444;font-size:.92rem"> — takes 60 seconds.</span>
+                </div>
+                <a href="{{ base_path }}/get-quotes/?trade={{ trade.slug }}&suburb={{ suburb.name|urlencode }}&city=Auckland" style="white-space:nowrap;background:#005ea2;color:#fff;padding:.55rem 1.2rem;font-weight:700;font-size:.9rem;text-decoration:none">Get free quotes →</a>
+            </div>
+
+            <div class="article-body">
+                <h2>{{ trade.name }} Costs in {{ suburb.name }}</h2>
+                <p>{{ trade.avg_cost_nz }} {{ suburb.demand }} Always get at least 3 written quotes for any job over $500.</p>
+                <p>Use our free <a href="{{ base_path }}{{ trade.calculator_link }}">Job Cost Calculator</a> to check if a quote is reasonable for your job in {{ suburb.name }}.</p>
+
+                <h2>How to Choose a {{ trade.singular|title }} in {{ suburb.name }}</h2>
+                <ul>
+                    {% for tip in trade.what_to_look_for %}
+                    <li>{{ tip }}</li>
+                    {% endfor %}
+                </ul>
+
+                {% if trade.licensing %}
+                <h2>Licensing Requirements</h2>
+                <p>{{ trade.licensing }} <a href="{{ trade.licence_check_url }}" rel="noopener" target="_blank">Verify a licence →</a></p>
+                {% endif %}
+
+                <h2>Frequently Asked Questions</h2>
+                <h3>How much do {{ trade.plural }} cost in {{ suburb.name }}?</h3>
+                <p>{{ trade.avg_cost_nz }} Prices in {{ suburb.name }} may vary depending on access, parking, and the age of your home. Always get 3 quotes.</p>
+
+                <h3>How do I find a reliable {{ trade.singular }} in {{ suburb.name }}, Auckland?</h3>
+                <p>Check NoCowboys and Google Maps for verified NZ reviews, confirm their licence on the relevant register, and ask for a written quote before work begins. Tradies serving {{ suburb.name }} should be familiar with {{ suburb.blurb | truncate(80, True, '…') }}</p>
+
+                {% if trade.licensing %}
+                <h3>Do {{ trade.plural }} need a licence in NZ?</h3>
+                <p>{{ trade.licensing }} <a href="{{ trade.licence_check_url }}" rel="noopener" target="_blank">Check the register →</a></p>
+                {% endif %}
+            </div>
+
+            <div style="margin-top:1.5rem">
+                <h3>Other Auckland Suburbs</h3>
+                <div style="display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.5rem">
+                    {% for s in other_suburbs %}
+                    <a href="{{ base_path }}/trades/{{ trade.slug }}/auckland-{{ s.slug }}/" style="background:#f0f0f0;padding:.3rem .8rem;border-radius:20px;font-size:.85rem">{{ s.name }}</a>
+                    {% endfor %}
+                </div>
+                <p style="margin-top:.75rem;font-size:.9rem"><a href="{{ base_path }}/trades/{{ trade.slug }}/auckland/">← See all Auckland {{ trade.plural }}</a></p>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:#0f172a;color:#fff;border:none">
+                <p style="font-weight:700;font-size:.95rem;margin-bottom:.4rem;color:#fff">Get 3 Free Quotes</p>
+                <p style="color:rgba(255,255,255,.82);font-size:.85rem;margin-bottom:.75rem">Tell us your job — we'll match you with top {{ trade.plural }} in {{ suburb.name }}.</p>
+                <a href="{{ base_path }}/get-quotes/?trade={{ trade.slug }}&suburb={{ suburb.name|urlencode }}&city=Auckland" style="display:block;background:#ea6325;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Get free quotes →</a>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Auckland {{ trade.name }}</h3>
+                <ul>
+                    {% for s in other_suburbs[:6] %}
+                    <li><a href="{{ base_path }}/trades/{{ trade.slug }}/auckland-{{ s.slug }}/">{{ trade.icon }} {{ s.name }}</a></li>
+                    {% endfor %}
+                </ul>
+                <a href="{{ base_path }}/trades/{{ trade.slug }}/auckland/" style="font-size:.85rem">All Auckland {{ trade.plural }} →</a>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Free Calculators</h3>
+                <ul>
+                    <li><a href="{{ base_path }}/calculators/gst-calculator">GST Calculator</a></li>
+                    <li><a href="{{ base_path }}/calculators/job-cost-calculator">Job Cost Builder</a></li>
+                    <li><a href="{{ base_path }}/calculators/hourly-rate-calculator">Hourly Rate</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Other Trades in {{ suburb.name }}</h3>
+                <ul>
+                    {% for t in trades[:8] %}
+                    <li><a href="{{ base_path }}/trades/{{ t.slug }}/auckland-{{ suburb.slug }}/">{{ t.icon }} {{ t.name }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">NZ Tradie Tools</p>
+                <p>Free calculators, templates and guides for New Zealand tradies and homeowners.</p>
+                <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
+            </div>
+            <div style="text-align:right">
+                <p><a href="{{ base_path }}/privacy/">Privacy Policy</a></p>
+                <p><a href="{{ base_path }}/contact/">Contact</a></p>
+                <p style="margin-top:.5rem">&copy; {{ year }} NZ Tradie Tools</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

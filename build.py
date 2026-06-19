@@ -160,6 +160,7 @@ def build():
     build_get_quotes(config, env, nav, base_path)
 
     trades_count, locations_count = build_trades_and_locations(config, env, nav, base_path)
+    suburb_pages = build_auckland_suburb_pages(config, env, nav, base_path)
 
     cities = json.loads((DATA_DIR / "cities.json").read_text())
     trades_data = json.loads((DATA_DIR / "trades.json").read_text())
@@ -174,7 +175,8 @@ def build():
     print(f"Built: {len(articles)} articles, {len(calculators)} calculators, "
           f"{trades_count} trade pages, {locations_count} location pages, "
           f"{job_pages} job cost pages, {template_pages} template pages, "
-          f"{rate_rows} trade rate rows, {profiles_count} business profiles")
+          f"{rate_rows} trade rate rows, {profiles_count} business profiles, "
+          f"{suburb_pages} Auckland suburb pages")
     return articles, calculators
 
 
@@ -1257,6 +1259,56 @@ td.national {{ background: #e8f0fe; font-weight: 600; }}
     out_dir.mkdir(exist_ok=True)
     (out_dir / "index.html").write_text(html, encoding="utf-8")
     return len(rows)
+
+
+def build_auckland_suburb_pages(config, env, nav, base_path):
+    """Generate /trades/{trade}/auckland-{suburb}/ pages for top 5 trades × 12 suburbs."""
+    suburbs_file = DATA_DIR / "auckland-suburbs.json"
+    if not suburbs_file.exists():
+        return 0
+    suburbs = json.loads(suburbs_file.read_text())
+    trades_data = json.loads((DATA_DIR / "trades.json").read_text())
+    # Top 5 trades for Auckland suburb pages
+    target_slugs = {"plumbers", "electricians", "builders", "painters", "landscapers"}
+    target_trades = [t for t in trades_data if t["slug"] in target_slugs]
+
+    template = env.get_template("trade-suburb.html")
+    claimed = load_claimed_businesses()
+    count = 0
+
+    for trade in target_trades:
+        # Load Auckland top10 data for this trade
+        auckland_json = DATA_DIR / "top10" / f"{trade['slug']}-auckland.json"
+        auck_data = json.loads(auckland_json.read_text()) if auckland_json.exists() else {}
+        raw_businesses = auck_data.get("businesses", [])
+
+        # Annotate with claimed profile URLs
+        businesses = []
+        for b in raw_businesses:
+            b = dict(b)
+            biz_slug = slugify(b.get("name", ""))
+            b["profile_url"] = f"/businesses/{biz_slug}/" if biz_slug in claimed else None
+            businesses.append(b)
+
+        for suburb in suburbs:
+            other_suburbs = [s for s in suburbs if s["slug"] != suburb["slug"]]
+            ctx = {
+                **config,
+                "base_path": base_path,
+                "nav": nav,
+                "year": datetime.now().year,
+                "trade": trade,
+                "suburb": suburb,
+                "businesses": businesses,
+                "other_suburbs": other_suburbs,
+                "trades": trades_data,
+            }
+            out_dir = PUBLIC_DIR / "trades" / trade["slug"] / f"auckland-{suburb['slug']}"
+            out_dir.mkdir(parents=True, exist_ok=True)
+            (out_dir / "index.html").write_text(template.render(**ctx), encoding="utf-8")
+            count += 1
+
+    return count
 
 
 if __name__ == "__main__":
