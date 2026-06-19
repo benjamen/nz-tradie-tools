@@ -203,6 +203,9 @@
             </div>
 
             <!-- TradieTools Reviews -->
+            <!-- Profile completeness score — only shown to the listing owner via ?token= -->
+            <div id="tt-profile-score" style="display:none;margin:1.5rem 0;background:#f0f7ff;border:1px solid #bfdbfe;border-radius:8px;padding:1.25rem 1.5rem"></div>
+
             <div id="tt-reviews" style="margin-top:1.75rem">
                 <h3 style="font-size:1.05rem;font-weight:700;margin-bottom:.75rem;color:#1e293b">
                     Reviews <span id="tt-review-count" style="font-weight:400;color:#64748b;font-size:.9rem"></span>
@@ -400,10 +403,42 @@
       }).catch(function(){});
   }
 
+  function loadProfileScore(){
+    var params = new URLSearchParams(window.location.search);
+    var token = params.get('token');
+    if(!token) return;
+    var box = document.getElementById('tt-profile-score');
+    if(!box) return;
+    fetch(API+'get_profile_score?listing_slug='+SLUG+'&lead_token='+encodeURIComponent(token))
+      .then(function(r){return r.json();})
+      .then(function(d){
+        var m=d.message||d;
+        if(!m.success) return;
+        var pct=m.score;
+        var colour=pct>=90?'#16a34a':pct>=70?'#0055a5':pct>=50?'#d97706':'#dc2626';
+        var tips=(m.missing||[]).slice(0,4).map(function(t){
+          return '<li style="margin:.3rem 0;font-size:.88rem">'+t.action+' <span style="color:#64748b;font-size:.8rem">(+'+t.points+' pts)</span></li>';
+        }).join('');
+        box.style.display='block';
+        box.innerHTML=(
+          '<div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem">'
+          +'<h3 style="margin:0;font-size:1rem;color:#1e3a5f">Your Profile Score</h3>'
+          +'<span style="font-size:1.6rem;font-weight:800;color:'+colour+'">'+pct+'/100</span>'
+          +'</div>'
+          +'<div style="background:#e2e8f0;border-radius:999px;height:8px;margin:.6rem 0">'
+          +'<div style="background:'+colour+';width:'+pct+'%;height:8px;border-radius:999px;transition:width .4s"></div>'
+          +'</div>'
+          +(tips?'<p style="font-size:.85rem;font-weight:600;color:#475569;margin:.5rem 0 .3rem">To improve your ranking:</p><ul style="margin:0;padding-left:1.2rem">'+tips+'</ul>':'<p style="color:#16a34a;font-size:.9rem;font-weight:600">&#10003; Profile is complete!</p>')
+          +'<p style="margin:.75rem 0 0;font-size:.78rem;color:#94a3b8">Score updates within 24h of changes. <a href="/signup/" style="color:#0055a5">Upgrade tier →</a></p>'
+        );
+      }).catch(function(){});
+  }
+
   // Star picker
   document.addEventListener('DOMContentLoaded', function(){
     loadReviews();
     loadDynamicBadges();
+    loadProfileScore();
     var picker = document.getElementById('tt-star-picker');
     if(!picker) return;
     var spans = picker.querySelectorAll('span');
