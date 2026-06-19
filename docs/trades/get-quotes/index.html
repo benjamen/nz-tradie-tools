@@ -127,6 +127,12 @@
                     <option value="Just planning">Just planning</option>
                 </select>
             </div>
+            <div style="margin:.75rem 0;display:flex;align-items:flex-start;gap:.5rem">
+                <input type="checkbox" id="drip_opted_in" name="drip_opted_in" value="1" style="margin-top:3px;flex-shrink:0">
+                <label for="drip_opted_in" style="font-size:.85rem;color:#475569;line-height:1.4">
+                    Send me seasonal maintenance reminders — things like checking your hot water cylinder before winter, gutter cleans before autumn rains, and heat pump servicing. Unsubscribe any time.
+                </label>
+            </div>
             <button type="submit" id="quotes-submit">Get 3 Free Quotes →</button>
         </form>
 
@@ -179,7 +185,8 @@
                 city:            form.city.value,
                 suburb:          form.suburb.value.trim(),
                 job_description: form.job_description.value.trim(),
-                timeframe:       form.timeframe.value
+                timeframe:       form.timeframe.value,
+                drip_opted_in:   form.drip_opted_in.checked ? 1 : 0
             };
 
             btn.disabled = true;
