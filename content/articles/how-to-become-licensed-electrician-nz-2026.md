@@ -429,3 +429,72 @@ Becoming a licensed electrician in New Zealand can provide a rewarding and chall
 If you are considering a career as an electrician, we recommend that you visit the TradieTools.nz website, which provides a range of resources and information for tradespeople, including an apprentice wage calculator. This can help you to determine your potential earnings and plan your career path.
 
 Remember, becoming a licensed electrician requires hard work and dedication, but it can provide a rewarding and challenging career, with opportunities for career progression and advancement. With the right training and experience, you can build a successful and fulfilling career as an electrician in New Zealand.
+
+## EWRB Exam — What to Expect
+
+The Electrical Workers Registration Board (EWRB) exam is a critical step in becoming a licensed electrician in New Zealand. The exam is designed to test your knowledge and skills in electrical theory, NZ wiring rules, and health and safety. The exam consists of two parts: a written component and a practical component. The written component assesses your knowledge of electrical theory, circuit design, and safety protocols, while the practical component evaluates your ability to apply this knowledge in a real-world setting.
+
+To prepare for the exam, it's essential to thoroughly review the EWRB's study guide and practice questions. You can also take advantage of study groups and online resources, such as practice exams and video tutorials. The EWRB recommends that candidates have at least 18 months of experience working under the supervision of a licensed electrician before attempting the exam.
+
+The typical pass rate for the EWRB exam is around 65%, so it's crucial to be well-prepared. The exam fee is approximately $350, and you can sit the exam at various locations throughout New Zealand, including Auckland, Wellington, and Christchurch. It's essential to check the EWRB website for the most up-to-date information on exam dates, fees, and locations.
+
+The EWRB exam covers a wide range of topics, including electrical theory, NZ wiring rules, and health and safety. Some of the specific topics you can expect to be tested on include:
+
+* Electrical circuits and circuit design
+* Safety protocols and hazard identification
+* NZ wiring rules and standards
+* Electrical testing and measurement
+* Installation and maintenance of electrical systems
+
+By thoroughly preparing for the exam and having a solid understanding of electrical theory and practice, you can increase your chances of passing and becoming a licensed electrician in New Zealand.
+
+## Wages and Career Progression
+
+As an electrician in New Zealand, you can expect to earn a competitive salary, with rates varying depending on your level of experience and qualifications. The following table outlines typical hourly rates and annual salary estimates for electricians at different stages of their careers:
+
+| Stage | Typical Hourly Rate | Annual Salary Estimate |
+| --- | --- | --- |
+| Year 1 apprentice | $14-18/hr | $28,000 - $36,000 |
+| Year 2 apprentice | $16-21/hr | $32,000 - $42,000 |
+| Year 3 apprentice | $18-24/hr | $36,000 - $48,000 |
+| Year 4 apprentice | $21-28/hr | $42,000 - $56,000 |
+| Newly registered electrician | $32-45/hr | $64,000 - $90,000 |
+| Experienced registered | $40-55/hr | $80,000 - $110,000 |
+| Certifying electrician (employee) | $55-75/hr | $110,000 - $150,000 |
+| Self-employed certifying | $85-150/hr (charge-out) | $170,000 - $300,000 |
+
+As you progress in your career, you'll have the opportunity to specialise in different areas, such as commercial or residential electrical work. You may also choose to work for an employer or go self-employed, which can offer more flexibility and autonomy. Some electricians may also move into project management or estimating roles, where they can oversee large-scale electrical projects and manage teams of electricians.
+
+Working for an employer can provide a sense of security and stability, with a regular income and benefits. However, going self-employed can offer more flexibility and the potential for higher earnings. Specialising in commercial electrical work can also provide opportunities for higher pay and more complex projects, while residential electrical work can offer a sense of satisfaction and variety.
+
+Ultimately, the career path you choose will depend on your individual goals and preferences. With experience and qualifications, you can progress to more senior roles and increase your earning potential.
+
+## FAQ
+
+Here are some frequently asked questions about becoming a licensed electrician in New Zealand:
+
+1. **Can I do any electrical work without a licence in NZ?**
+
+No, in New Zealand, it is illegal to perform electrical work without a licence, unless you are working under the direct supervision of a licensed electrician. The EWRB is responsible for regulating the electrical industry and ensuring that all electrical work is performed safely and competently.
+
+2. **What is the difference between a registered electrician and a certifying electrician?**
+
+A registered electrician is licensed to perform electrical work, but may not be qualified to certify that the work meets the requirements of the NZ wiring rules. A certifying electrician, on the other hand, has undergone additional training and has the authority to certify that electrical work meets the required standards. Certifying electricians are typically more experienced and have a higher level of expertise.
+
+3. **How do I find an electrical apprenticeship in NZ?**
+
+To find an electrical apprenticeship in New Zealand, you can start by contacting local electrical contractors or companies that offer apprenticeships. You can also search online for apprenticeship opportunities or check with the EWRB for a list of approved training providers. Many polytechnics and training institutions also offer pre-apprenticeship courses that can help you get started in the trade.
+
+4. **Can overseas electricians work in NZ?**
+
+Yes, overseas electricians can work in New Zealand, but they must meet the requirements of the EWRB and obtain a New Zealand licence. This may involve undergoing additional training or assessment to ensure that their qualifications and experience meet the New Zealand standards. The EWRB has a process for recognising overseas qualifications, and electricians can apply for a licence through the EWRB website.
+
+5. **How often do I need to renew my electrical licence?**
+
+In New Zealand, electrical licences must be renewed every two years. To renew your licence, you'll need to complete a certain number of hours of continuing professional development (CPD) and pay the required fee. The EWRB will send you a reminder when your licence is due for renewal, and you can renew online or by mail.
+
+## Conclusion
+
+Becoming a licensed electrician in New Zealand can be a rewarding and challenging career path. With the demand for electricians expected to grow in the coming years, driven by the increasing adoption of electric vehicles, solar power, and new building developments, the career outlook is strong. If you're considering a career as an electrician, we recommend checking out the TradieTools.nz apprentice wage calculator to get an idea of the salary ranges and career progression opportunities.
+
+By following the steps outlined in this article, you can set yourself on the path to becoming a licensed electrician and starting a successful and rewarding career. Remember to stay up-to-date with the latest developments in the industry and to always follow safe working practices. With hard work and dedication, you can achieve your goals and become a skilled and competent electrician in New Zealand.
