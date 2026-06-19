@@ -238,6 +238,16 @@
         <option value="verified">Verified Only</option>
         <option value="premium">Pro Only</option>
       </select>
+      <select class="filter-select" id="ratingFilter" onchange="applyFilters()">
+        <option value="">Any Rating</option>
+        <option value="4">4+ Stars</option>
+        <option value="3">3+ Stars</option>
+      </select>
+      <select class="filter-select" id="availFilter" onchange="applyFilters()">
+        <option value="">Any Availability</option>
+        <option value="1">Taking work now</option>
+      </select>
+      <input type="text" class="filter-select" id="suburbFilter" oninput="applyFilters()" placeholder="Suburb…" style="width:120px">
       <button class="filter-clear" id="clearBtn" onclick="clearFilters()">Clear filters</button>
     </div>
   </div>
@@ -319,11 +329,14 @@ async function load() {
 }
 
 function applyFilters() {
-  const q = document.getElementById('searchInput').value.toLowerCase().trim();
-  const trade = document.getElementById('tradeFilter').value;
+  const q      = document.getElementById('searchInput').value.toLowerCase().trim();
+  const trade  = document.getElementById('tradeFilter').value;
   const region = document.getElementById('regionFilter').value;
-  const prem = document.getElementById('premiumFilter').value;
-  const sort = document.getElementById('sortSelect').value;
+  const prem   = document.getElementById('premiumFilter').value;
+  const minRat = parseFloat(document.getElementById('ratingFilter').value) || 0;
+  const avail  = document.getElementById('availFilter').value;
+  const suburb = document.getElementById('suburbFilter').value.toLowerCase().trim();
+  const sort   = document.getElementById('sortSelect').value;
 
   filtered = all.filter(t => {
     if (q && !`${t.name} ${t.trade} ${t.region} ${t.suburb||''}`.toLowerCase().includes(q)) return false;
@@ -331,6 +344,9 @@ function applyFilters() {
     if (region && t.region !== region) return false;
     if (prem === 'verified' && !t.is_verified) return false;
     if (prem === 'premium' && !t.is_premium) return false;
+    if (minRat && (parseFloat(t.avg_rating)||0) < minRat) return false;
+    if (avail === '1' && t.taking_work === 0) return false;
+    if (suburb && !(t.suburb||'').toLowerCase().includes(suburb)) return false;
     return true;
   });
 
@@ -338,7 +354,7 @@ function applyFilters() {
   else if (sort === 'rating') filtered.sort((a,b) => (b.avg_rating||0) - (a.avg_rating||0));
 
   page = 1;
-  const hasFilters = q || trade || region || prem;
+  const hasFilters = q || trade || region || prem || minRat || avail || suburb;
   document.getElementById('clearBtn').classList.toggle('show', !!hasFilters);
 
   const url = new URL(location.href);
@@ -351,8 +367,8 @@ function applyFilters() {
 }
 
 function clearFilters() {
-  ['searchInput'].forEach(id => document.getElementById(id).value='');
-  ['tradeFilter','regionFilter','premiumFilter'].forEach(id => document.getElementById(id).value='');
+  ['searchInput','suburbFilter'].forEach(id => document.getElementById(id).value='');
+  ['tradeFilter','regionFilter','premiumFilter','ratingFilter','availFilter'].forEach(id => document.getElementById(id).value='');
   applyFilters();
 }
 
