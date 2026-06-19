@@ -147,7 +147,7 @@
     <div id="lead-banner" style="display:none;background:#fefce8;border:1px solid #fbbf24;border-radius:8px;padding:14px 16px;margin-bottom:20px">
       <p style="margin:0;font-size:14px;color:#92400e">
         <strong>🎉 You received a lead!</strong> A homeowner is looking for your services.
-        Claim your free listing below — <strong>your first month Pro or Verified is free</strong>.
+        Claim your free listing below — <strong>your first month Pro or Email Verified is free</strong>.
       </p>
     </div>
 
@@ -243,7 +243,7 @@
       <div class="upgrade-header">
         <div class="tick">✓</div>
         <h2 id="upgrade-title">You're listed! Want more leads?</h2>
-        <p id="upgrade-sub">Your free listing is live. Upgrade now to get verified, show up first, and receive lead alerts.</p>
+        <p id="upgrade-sub">Your free listing is live. Upgrade to confirm your email, show up higher, and receive lead alerts.</p>
       </div>
 
       <!-- Lead ref: free trial callout -->
@@ -262,7 +262,7 @@
           <ul class="tier-features">
             <li>Listed in directory</li>
             <li>Customers can call/email</li>
-            <li class="dim">No verified badge</li>
+            <li class="dim">No email verified badge</li>
             <li class="dim">No lead alerts</li>
             <li class="dim">No analytics</li>
           </ul>
@@ -272,17 +272,17 @@
         <!-- Verified -->
         <div class="tier-card recommended">
           <div class="tier-badge">MOST POPULAR</div>
-          <div class="tier-name">Verified</div>
+          <div class="tier-name">Email Verified</div>
           <div class="tier-price" id="verified-price">$29 <span>/ mo</span></div>
           <div id="verified-trial-note" style="display:none;color:#16a34a;font-size:12px;font-weight:600;margin-bottom:6px">FREE for 30 days</div>
           <ul class="tier-features">
             <li>Listed in directory</li>
             <li>Customers can call/email</li>
-            <li>Verified badge</li>
+            <li>Email Verified badge</li>
             <li>Profile analytics</li>
             <li class="dim">No lead alerts</li>
           </ul>
-          <button class="tier-btn verified-btn" id="upgrade-verified-btn">Get Verified →</button>
+          <button class="tier-btn verified-btn" id="upgrade-verified-btn">Get Email Verified →</button>
         </div>
 
         <!-- Pro -->
@@ -294,7 +294,7 @@
           <ul class="tier-features">
             <li>Listed in directory</li>
             <li>Customers can call/email</li>
-            <li>Verified badge</li>
+            <li>Email Verified badge</li>
             <li>Profile analytics</li>
             <li>Lead match alerts</li>
           </ul>
@@ -380,8 +380,8 @@ if (isLeadRef) {
     const s = document.getElementById('success-state');
     s.style.display = 'block';
     document.getElementById('success-msg').textContent = fromLead
-      ? 'Your ' + (tier === 'pro' ? 'Pro' : 'Verified') + ' listing is live and your 30-day free trial has started. No charge until next month.'
-      : 'Your ' + (tier === 'pro' ? 'Pro' : 'Verified') + ' listing is live. You\'ll receive an email confirmation from Stripe shortly.';
+      ? 'Your ' + (tier === 'pro' ? 'Pro' : 'Email Verified') + ' listing is live and your 30-day free trial has started. No charge until next month.'
+      : 'Your ' + (tier === 'pro' ? 'Pro' : 'Email Verified') + ' listing is live. You\'ll receive an email confirmation from Stripe shortly.';
     history.replaceState(null, '', '/signup/');
   } else if (p.get('cancelled') === '1') {
     history.replaceState(null, '', '/signup/');
@@ -521,7 +521,7 @@ async function startCheckout(tier, btn) {
     window.location.href = url;
   } catch(err) {
     btn.disabled = false;
-    btn.textContent = tier === 'pro' ? 'Go Pro →' : 'Get Verified →';
+    btn.textContent = tier === 'pro' ? 'Go Pro →' : 'Get Email Verified →';
     alert('Could not start checkout: ' + err.message);
   }
 }
