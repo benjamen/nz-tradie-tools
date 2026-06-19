@@ -149,8 +149,10 @@
 
                 <div class="badges">
                     {% if business.verified %}<span class="badge badge-verified" title="Listing data has been spot-checked against the original source by NZ Tradie Tools. This does not confirm trade licences or insurance — see badges below for those.">✅ Data Verified</span>{% endif %}
-                    {% if business.lbp %}<span class="badge badge-lbp">🏗️ LBP Licensed</span>{% endif %}
-                    {% if business.insured %}<span class="badge badge-insured">🛡️ Insured</span>{% endif %}
+                    {% if business.lbp %}<a href="https://www.lbp.govt.nz/lbp-register/" rel="noopener" target="_blank" class="badge badge-lbp" title="Licensed Building Practitioner — regulated under the Building Act 2004. Click to verify on MBIE register.">🏗️ LBP Licensed{% if business.lbp_number %} · {{ business.lbp_number }}{% endif %}</a>{% endif %}
+                    {% if business.ewrb %}<a href="https://www.ewrb.govt.nz/find-a-worker/" rel="noopener" target="_blank" class="badge" style="background:#d1fae5;color:#065f46" title="Registered Electrician — regulated by the Electrical Workers Registration Board. Click to verify.">⚡ EWRB Registered{% if business.ewrb_number %} · {{ business.ewrb_number }}{% endif %}</a>{% endif %}
+                    {% if business.pgd %}<a href="https://www.pgdb.co.nz/public-search/" rel="noopener" target="_blank" class="badge" style="background:#fce7f3;color:#9d174d" title="Licensed Plumber/Gasfitter/Drainlayer — regulated by the PGD Board. Click to verify.">🔧 PGD Licensed{% if business.pgd_number %} · {{ business.pgd_number }}{% endif %}</a>{% endif %}
+                    {% if business.insured %}<span class="badge badge-insured" title="Business has confirmed they hold current public liability insurance.">🛡️ Insured</span>{% endif %}
                     <span class="badge badge-claimed">✓ Owner managed</span>
                 </div>
 
