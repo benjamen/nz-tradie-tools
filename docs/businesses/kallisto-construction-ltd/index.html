@@ -209,8 +209,42 @@
                 </div>
             </div>
 
+            <!-- TradieTools Reviews -->
+            <div id="tt-reviews" style="margin-top:1.75rem">
+                <h3 style="font-size:1.05rem;font-weight:700;margin-bottom:.75rem;color:#1e293b">
+                    Reviews <span id="tt-review-count" style="font-weight:400;color:#64748b;font-size:.9rem"></span>
+                </h3>
+                <div id="tt-review-list">
+                    <p style="color:#64748b;font-size:.9rem">Loading reviews…</p>
+                </div>
+                <button id="tt-write-review-btn" onclick="document.getElementById('tt-review-form').style.display='block';this.style.display='none'"
+                    style="margin-top:1rem;padding:.5rem 1.1rem;background:#0055a5;color:#fff;border:none;border-radius:4px;font-size:.9rem;font-weight:600;cursor:pointer">
+                    Write a review
+                </button>
+                <form id="tt-review-form" style="display:none;margin-top:1rem;background:#f8fafc;border:1px solid #dde3ec;border-radius:6px;padding:1rem">
+                    <h4 style="margin:0 0 .75rem;font-size:.95rem">Your review of Kallisto Construction Ltd</h4>
+                    <label style="display:block;font-size:.85rem;font-weight:600;margin-bottom:.3rem">Rating *</label>
+                    <div id="tt-star-picker" style="font-size:1.6rem;cursor:pointer;margin-bottom:.75rem;letter-spacing:.1rem">
+                        <span data-v="1">☆</span><span data-v="2">☆</span><span data-v="3">☆</span><span data-v="4">☆</span><span data-v="5">☆</span>
+                    </div>
+                    <input type="hidden" id="tt-rating-val" value="">
+                    <label style="display:block;font-size:.85rem;font-weight:600;margin-bottom:.3rem">Your name *</label>
+                    <input id="tt-r-name" type="text" placeholder="e.g. Sarah T." style="width:100%;padding:.45rem .6rem;border:1px solid #cbd5e1;border-radius:4px;font-size:.9rem;margin-bottom:.65rem;box-sizing:border-box">
+                    <label style="display:block;font-size:.85rem;font-weight:600;margin-bottom:.3rem">Your email * <span style="font-weight:400;color:#64748b">(not published)</span></label>
+                    <input id="tt-r-email" type="email" placeholder="you@example.com" style="width:100%;padding:.45rem .6rem;border:1px solid #cbd5e1;border-radius:4px;font-size:.9rem;margin-bottom:.65rem;box-sizing:border-box">
+                    <label style="display:block;font-size:.85rem;font-weight:600;margin-bottom:.3rem">What type of job? <span style="font-weight:400;color:#64748b">(optional)</span></label>
+                    <input id="tt-r-jobtype" type="text" placeholder="e.g. Bathroom renovation" style="width:100%;padding:.45rem .6rem;border:1px solid #cbd5e1;border-radius:4px;font-size:.9rem;margin-bottom:.65rem;box-sizing:border-box">
+                    <label style="display:block;font-size:.85rem;font-weight:600;margin-bottom:.3rem">Your review *</label>
+                    <textarea id="tt-r-body" rows="4" placeholder="What was the quality of work like? Would you recommend them?" style="width:100%;padding:.45rem .6rem;border:1px solid #cbd5e1;border-radius:4px;font-size:.9rem;margin-bottom:.75rem;box-sizing:border-box;resize:vertical"></textarea>
+                    <p id="tt-review-msg" style="display:none;margin-bottom:.5rem;font-size:.88rem"></p>
+                    <button onclick="ttSubmitReview(event)" style="padding:.5rem 1.2rem;background:#16a34a;color:#fff;border:none;border-radius:4px;font-size:.9rem;font-weight:600;cursor:pointer">Submit review</button>
+                    <button onclick="document.getElementById('tt-review-form').style.display='none';document.getElementById('tt-write-review-btn').style.display='inline-block'" type="button"
+                        style="margin-left:.5rem;padding:.5rem .9rem;background:#e2e8f0;color:#334155;border:none;border-radius:4px;font-size:.9rem;cursor:pointer">Cancel</button>
+                </form>
+            </div>
+
             <!-- Back to top10 list -->
-            <div style="margin-top:1.25rem">
+            <div style="margin-top:1.75rem">
                 <a href="/trades/builders/auckland" class="back-to-list">
                     ← See all top-rated Builders & LBPs in Auckland
                 </a>
@@ -291,5 +325,95 @@
             </div>
         </div>
     </footer>
+<script>
+(function(){
+  var SLUG = 'kallisto-construction-ltd';
+  var API  = 'https://tradietools.optified.nz/api/method/tradietools.api.';
+
+  function stars(n){
+    var s='';
+    for(var i=1;i<=5;i++) s += i<=n ? '★' : '☆';
+    return '<span style="color:#f59e0b">'+s+'</span>';
+  }
+
+  function loadReviews(){
+    fetch(API+'get_reviews?listing_slug='+SLUG+'&limit=10')
+      .then(function(r){return r.json();})
+      .then(function(d){
+        var m = d.message || d;
+        var list = document.getElementById('tt-review-list');
+        var cnt  = document.getElementById('tt-review-count');
+        if(!m.success || !m.reviews.length){
+          list.innerHTML = '<p style="color:#64748b;font-size:.9rem">No reviews yet — be the first!</p>';
+          return;
+        }
+        cnt.textContent = '('+m.total+')';
+        list.innerHTML = m.reviews.map(function(r){
+          var d = new Date(r.created_at).toLocaleDateString('en-NZ',{year:'numeric',month:'short'});
+          return '<div style="border-bottom:1px solid #e2e8f0;padding:.85rem 0">'+
+            '<div style="display:flex;align-items:center;gap:.6rem;margin-bottom:.25rem">'+
+            stars(r.rating)+
+            '<span style="font-weight:600;font-size:.9rem">'+r.reviewer_name+'</span>'+
+            (r.job_type ? '<span style="font-size:.8rem;color:#64748b;background:#f1f5f9;padding:.1rem .45rem;border-radius:3px">'+r.job_type+'</span>' : '')+
+            '<span style="font-size:.8rem;color:#94a3b8;margin-left:auto">'+d+'</span>'+
+            '</div>'+
+            '<p style="margin:0;font-size:.9rem;color:#334155;line-height:1.6">'+r.review_body.replace(/</g,'&lt;')+'</p>'+
+            '</div>';
+        }).join('');
+      })
+      .catch(function(){ document.getElementById('tt-review-list').innerHTML=''; });
+  }
+
+  // Star picker
+  document.addEventListener('DOMContentLoaded', function(){
+    loadReviews();
+    var picker = document.getElementById('tt-star-picker');
+    if(!picker) return;
+    var spans = picker.querySelectorAll('span');
+    function paint(v){
+      spans.forEach(function(s,i){ s.textContent = i<v ? '★' : '☆'; s.style.color = i<v ? '#f59e0b' : '#94a3b8'; });
+    }
+    spans.forEach(function(s){
+      s.addEventListener('mouseover', function(){ paint(+s.dataset.v); });
+      s.addEventListener('mouseout',  function(){ paint(+document.getElementById('tt-rating-val').value||0); });
+      s.addEventListener('click',     function(){ document.getElementById('tt-rating-val').value=s.dataset.v; paint(+s.dataset.v); });
+    });
+  });
+
+  window.ttSubmitReview = function(e){
+    e.preventDefault();
+    var rating = document.getElementById('tt-rating-val').value;
+    var name   = document.getElementById('tt-r-name').value.trim();
+    var email  = document.getElementById('tt-r-email').value.trim();
+    var body   = document.getElementById('tt-r-body').value.trim();
+    var job    = document.getElementById('tt-r-jobtype').value.trim();
+    var msg    = document.getElementById('tt-review-msg');
+    msg.style.display='block';
+    if(!rating){ msg.style.color='#dc2626'; msg.textContent='Please select a star rating.'; return; }
+    if(!name||!email||!body){ msg.style.color='#dc2626'; msg.textContent='Name, email and review text are required.'; return; }
+    msg.style.color='#555'; msg.textContent='Submitting…';
+    fetch(API+'submit_review',{
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({listing_slug:SLUG,reviewer_name:name,reviewer_email:email,
+                           rating:+rating,review_body:body,job_type:job})
+    }).then(function(r){return r.json();})
+    .then(function(d){
+      var m=d.message||d;
+      if(m.success){
+        msg.style.color='#16a34a';
+        msg.textContent='Thank you! Your review is awaiting moderation and will appear within 24 hours.';
+        document.getElementById('tt-r-name').value='';
+        document.getElementById('tt-r-email').value='';
+        document.getElementById('tt-r-body').value='';
+        document.getElementById('tt-r-jobtype').value='';
+        document.getElementById('tt-rating-val').value='';
+      } else {
+        msg.style.color='#dc2626';
+        msg.textContent=m.error||'Submission failed. Please try again.';
+      }
+    }).catch(function(){ msg.style.color='#dc2626'; msg.textContent='Network error. Please try again.'; });
+  };
+})();
+</script>
 </body>
 </html>
