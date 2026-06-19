@@ -170,6 +170,7 @@
                     <a href="http://kallistoconstruction.nz/" rel="noopener" target="_blank" class="btn-website">🌐 Visit website</a>
                     
                     
+                    <button id="save-tradie-btn" onclick="toggleSaveTradie()" style="display:none;background:#fff;border:1.5px solid #0055a5;color:#0055a5;padding:.6rem 1.1rem;border-radius:6px;font-weight:600;font-size:.9rem;cursor:pointer;font-family:inherit">🔖 Save tradie</button>
                 </div>
             </div>
 
@@ -559,11 +560,47 @@
   }
 
   // Star picker
+  // Save-tradie button for logged-in homeowners
+  var TT_TRADIE_ID = null;
+  var TT_TRADIE_SLUG = "kallisto-construction-ltd";
+
+  function initSaveButton(){
+    var hoId    = localStorage.getItem('tt_ho_id');
+    var hoEmail = localStorage.getItem('tt_ho_email');
+    var btn     = document.getElementById('save-tradie-btn');
+    if(!hoId || !hoEmail || !btn) return;
+    btn.style.display = '';
+  }
+
+  window.toggleSaveTradie = function(){
+    var hoId    = localStorage.getItem('tt_ho_id');
+    var hoEmail = localStorage.getItem('tt_ho_email');
+    var btn     = document.getElementById('save-tradie-btn');
+    if(!hoId || !hoEmail) { window.location = '/my-account/'; return; }
+    btn.disabled = true;
+    fetch('https://tradietools.optified.nz/api/method/tradietools.api.save_tradie', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({homeowner_id: hoId, email: hoEmail, tradie_id: TT_TRADIE_ID, listing_slug: TT_TRADIE_SLUG})
+    })
+    .then(function(r){ return r.json(); })
+    .then(function(j){
+      var d = j.message || j;
+      btn.disabled = false;
+      if(d.success){
+        btn.textContent = d.saved ? '🔖 Saved ✓' : '🔖 Save tradie';
+        btn.style.background = d.saved ? '#dbeafe' : '#fff';
+      }
+    })
+    .catch(function(){ btn.disabled = false; });
+  };
+
   document.addEventListener('DOMContentLoaded', function(){
     loadReviews();
     loadDynamicBadges();
     loadPhotos();
     loadProfileScore();
+    initSaveButton();
     var picker = document.getElementById('tt-star-picker');
     if(!picker) return;
     var spans = picker.querySelectorAll('span');
