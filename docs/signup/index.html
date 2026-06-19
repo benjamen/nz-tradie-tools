@@ -141,10 +141,18 @@
 <div class="signup-layout">
   <div class="form-card">
 
+    <!-- Lead referral banner (shown when ?ref=lead) -->
+    <div id="lead-banner" style="display:none;background:#fefce8;border:1px solid #fbbf24;border-radius:8px;padding:14px 16px;margin-bottom:20px">
+      <p style="margin:0;font-size:14px;color:#92400e">
+        <strong>🎉 You received a lead!</strong> A homeowner is looking for your services.
+        Claim your free listing below — <strong>your first month Pro or Verified is free</strong>.
+      </p>
+    </div>
+
     <!-- STATE 1: Signup form -->
     <div id="form-area">
-      <h1>List Your Business Free</h1>
-      <p class="sub">Get discovered by customers across New Zealand. Takes 2 minutes.</p>
+      <h1 id="form-title">List Your Business Free</h1>
+      <p class="sub" id="form-sub">Get discovered by customers across New Zealand. Takes 2 minutes.</p>
 
       <div class="alert" id="alert"></div>
 
@@ -232,8 +240,15 @@
     <div id="upgrade-state">
       <div class="upgrade-header">
         <div class="tick">✓</div>
-        <h2>You're listed! Want more leads?</h2>
-        <p>Your free listing is live. Upgrade now to get verified, show up first, and receive lead alerts.</p>
+        <h2 id="upgrade-title">You're listed! Want more leads?</h2>
+        <p id="upgrade-sub">Your free listing is live. Upgrade now to get verified, show up first, and receive lead alerts.</p>
+      </div>
+
+      <!-- Lead ref: free trial callout -->
+      <div id="trial-banner" style="display:none;background:#f0fdf4;border:1px solid #86efac;border-radius:8px;padding:12px 16px;margin-bottom:16px;text-align:center">
+        <p style="margin:0;font-size:14px;color:#166534">
+          🎁 <strong>Your first 30 days are free</strong> — no charge until your trial ends. Cancel anytime.
+        </p>
       </div>
 
       <div class="tier-grid">
@@ -256,7 +271,8 @@
         <div class="tier-card recommended">
           <div class="tier-badge">MOST POPULAR</div>
           <div class="tier-name">Verified</div>
-          <div class="tier-price">$29 <span>/ mo</span></div>
+          <div class="tier-price" id="verified-price">$29 <span>/ mo</span></div>
+          <div id="verified-trial-note" style="display:none;color:#16a34a;font-size:12px;font-weight:600;margin-bottom:6px">FREE for 30 days</div>
           <ul class="tier-features">
             <li>Listed in directory</li>
             <li>Customers can call/email</li>
@@ -271,7 +287,8 @@
         <div class="tier-card">
           <div class="tier-badge" style="background:var(--muted,#5a5a5a)">MOST FEATURES</div>
           <div class="tier-name">Pro</div>
-          <div class="tier-price">$59 <span>/ mo</span></div>
+          <div class="tier-price" id="pro-price">$59 <span>/ mo</span></div>
+          <div id="pro-trial-note" style="display:none;color:#16a34a;font-size:12px;font-weight:600;margin-bottom:6px">FREE for 30 days</div>
           <ul class="tier-features">
             <li>Listed in directory</li>
             <li>Customers can call/email</li>
@@ -322,22 +339,34 @@
 const API_LIST    = 'https://tradietools.optified.nz/api/method/tradietools.api.create_listing';
 const API_CHECKOUT = 'https://tradietools.optified.nz/api/method/tradietools.api.create_checkout_session';
 
-let tradieId = null;
+let tradieId    = null;
 let tradieEmail = null;
+const _params   = new URLSearchParams(location.search);
+const isLeadRef = _params.get('ref') === 'lead';
+const bizSlug   = _params.get('business') || '';
+
+// ── Lead referral: show banner + customise copy ──
+if (isLeadRef) {
+  document.getElementById('lead-banner').style.display = 'block';
+  document.getElementById('form-title').textContent = 'Claim Your Free Listing';
+  document.getElementById('form-sub').textContent =
+    'A homeowner needs your help. Claim your listing to respond — and get your first month free.';
+}
 
 // ── Check if returning from Stripe (upgraded=1 or cancelled=1) ──
 (function() {
-  const p = new URLSearchParams(location.search);
+  const p = _params;
   if (p.get('upgraded') === '1') {
-    const tier = p.get('tier') || 'verified';
+    const tier    = p.get('tier') || 'verified';
+    const fromLead = p.get('ref') === 'lead';
     document.getElementById('form-area').style.display = 'none';
     const s = document.getElementById('success-state');
     s.style.display = 'block';
-    document.getElementById('success-msg').textContent =
-      'Your ' + (tier === 'pro' ? 'Pro' : 'Verified') + ' listing is live. You\'ll receive an email confirmation from Stripe shortly.';
+    document.getElementById('success-msg').textContent = fromLead
+      ? 'Your ' + (tier === 'pro' ? 'Pro' : 'Verified') + ' listing is live and your 30-day free trial has started. No charge until next month.'
+      : 'Your ' + (tier === 'pro' ? 'Pro' : 'Verified') + ' listing is live. You\'ll receive an email confirmation from Stripe shortly.';
     history.replaceState(null, '', '/signup/');
   } else if (p.get('cancelled') === '1') {
-    // Stay on form, do nothing
     history.replaceState(null, '', '/signup/');
   }
 })();
@@ -422,6 +451,18 @@ document.getElementById('signup-form').addEventListener('submit', async function
       // Transition to upgrade offer
       document.getElementById('form-area').style.display = 'none';
       document.getElementById('upgrade-state').style.display = 'block';
+
+      // Lead ref: show free trial UI
+      if (isLeadRef) {
+        document.getElementById('trial-banner').style.display = 'block';
+        document.getElementById('verified-trial-note').style.display = 'block';
+        document.getElementById('pro-trial-note').style.display = 'block';
+        document.getElementById('upgrade-title').textContent = 'Start your free month!';
+        document.getElementById('upgrade-sub').textContent =
+          'Your listing is live. Activate your free 30-day trial — no charge until it ends.';
+        document.getElementById('upgrade-verified-btn').textContent = 'Start Free Trial →';
+        document.getElementById('upgrade-pro-btn').textContent = 'Start Free Trial →';
+      }
     } else {
       const raw = msg.exception || msg.message || 'Submission failed';
       throw new Error(friendlyError(raw));
@@ -449,10 +490,12 @@ async function startCheckout(tier, btn) {
   const email = tradieEmail || localStorage.getItem('tradieEmail') || '';
 
   try {
+    const checkoutBody = { tier, tradie_id: id, tradie_email: email };
+    if (isLeadRef) checkoutBody.ref = 'lead';
     const r    = await fetch(API_CHECKOUT, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'X-Frappe-CSRF-Token': 'fetch' },
-      body: JSON.stringify({ tier, tradie_id: id, tradie_email: email })
+      body: JSON.stringify(checkoutBody)
     });
     const data = await r.json();
     const url  = data.message?.url;
