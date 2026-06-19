@@ -204,6 +204,10 @@
 
             <!-- TradieTools Reviews -->
             <!-- Profile completeness score — only shown to the listing owner via ?token= -->
+            <!-- Portfolio photo gallery -->
+            <div id="tt-photos" style="margin:1.5rem 0"></div>
+
+            <!-- Profile completeness score — only shown to the listing owner via ?token= -->
             <div id="tt-profile-score" style="display:none;margin:1.5rem 0;background:#f0f7ff;border:1px solid #bfdbfe;border-radius:8px;padding:1.25rem 1.5rem"></div>
 
             <div id="tt-reviews" style="margin-top:1.75rem">
@@ -403,6 +407,78 @@
       }).catch(function(){});
   }
 
+  function loadPhotos(){
+    var params = new URLSearchParams(window.location.search);
+    var token = params.get('token');
+    fetch(API+'get_photos?listing_slug='+SLUG)
+      .then(function(r){return r.json();})
+      .then(function(d){
+        var m=d.message||d;
+        var photos=(m.photos||[]);
+        var box=document.getElementById('tt-photos');
+        if(!box) return;
+        var galleryHTML='';
+        if(photos.length){
+          galleryHTML='<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:.5rem;margin-bottom:.5rem">'
+            +photos.map(function(p){
+              return '<div style="position:relative">'
+                +'<img src="'+p.url+'" alt="'+(p.caption||'Portfolio photo')+'" loading="lazy" '
+                +'style="width:100%;height:120px;object-fit:cover;border-radius:6px;border:1px solid #e2e8f0">'
+                +(p.caption?'<p style="font-size:.75rem;color:#64748b;margin:.2rem 0 0">'+p.caption+'</p>':'')
+                +(token?'<button onclick="ttDeletePhoto('+p.id+')" style="position:absolute;top:4px;right:4px;background:rgba(0,0,0,.55);color:#fff;border:none;border-radius:50%;width:22px;height:22px;font-size:.75rem;cursor:pointer;line-height:1">×</button>':'')
+                +'</div>';
+            }).join('')
+            +'</div>';
+        }
+        if(token){
+          galleryHTML+='<div style="margin-top:.75rem">'
+            +'<p style="font-size:.85rem;font-weight:600;color:#1e3a5f;margin:0 0 .4rem">Add a photo (paste image URL)</p>'
+            +'<div style="display:flex;gap:.5rem;flex-wrap:wrap">'
+            +'<input id="photo-url-input" type="url" placeholder="https://..." '
+            +'style="flex:1;min-width:200px;padding:.4rem .65rem;border:1px solid #cbd5e1;border-radius:4px;font-size:.85rem">'
+            +'<input id="photo-caption-input" type="text" placeholder="Caption (optional)" '
+            +'style="flex:1;min-width:160px;padding:.4rem .65rem;border:1px solid #cbd5e1;border-radius:4px;font-size:.85rem">'
+            +'<button onclick="ttAddPhoto()" style="background:#0055a5;color:#fff;border:none;border-radius:4px;padding:.4rem .9rem;font-size:.85rem;font-weight:600;cursor:pointer">Add photo</button>'
+            +'</div>'
+            +'<p id="photo-msg" style="font-size:.8rem;margin:.3rem 0 0"></p>'
+            +'</div>';
+        }
+        if(photos.length||token){
+          if(photos.length) box.innerHTML='<h3 style="font-size:1rem;color:#1e3a5f;margin:0 0 .65rem">Portfolio</h3>'+galleryHTML;
+          else if(token) box.innerHTML='<h3 style="font-size:1rem;color:#1e3a5f;margin:0 0 .65rem">Portfolio</h3>'+galleryHTML;
+        }
+      }).catch(function(){});
+  }
+
+  window.ttAddPhoto = function(){
+    var params=new URLSearchParams(window.location.search);
+    var token=params.get('token');
+    var tid=new URLSearchParams(window.location.search).get('tradie_id')||'';
+    var url=(document.getElementById('photo-url-input')||{}).value||'';
+    var cap=(document.getElementById('photo-caption-input')||{}).value||'';
+    var msg=document.getElementById('photo-msg');
+    if(!url){if(msg){msg.style.color='#dc2626';msg.textContent='Please enter an image URL';}return;}
+    fetch(API+'upload_photo',{method:'POST',headers:{'Content-Type':'application/json','X-Frappe-CSRF-Token':'fetch'},
+      body:JSON.stringify({tradie_id:tid,lead_token:token,url:url,caption:cap})})
+      .then(function(r){return r.json();})
+      .then(function(d){
+        var m=d.message||d;
+        if(m.success){if(msg){msg.style.color='#16a34a';msg.textContent='Photo added!';}loadPhotos();}
+        else{if(msg){msg.style.color='#dc2626';msg.textContent=m.error||'Failed';}}
+      }).catch(function(){if(msg){msg.style.color='#dc2626';msg.textContent='Network error';}});
+  };
+
+  window.ttDeletePhoto = function(photoId){
+    var params=new URLSearchParams(window.location.search);
+    var token=params.get('token');
+    if(!confirm('Remove this photo?')) return;
+    fetch(API+'delete_photo',{method:'POST',headers:{'Content-Type':'application/json','X-Frappe-CSRF-Token':'fetch'},
+      body:JSON.stringify({photo_id:photoId,lead_token:token})})
+      .then(function(r){return r.json();})
+      .then(function(d){var m=d.message||d;if(m.success)loadPhotos();})
+      .catch(function(){});
+  };
+
   function loadProfileScore(){
     var params = new URLSearchParams(window.location.search);
     var token = params.get('token');
@@ -438,6 +514,7 @@
   document.addEventListener('DOMContentLoaded', function(){
     loadReviews();
     loadDynamicBadges();
+    loadPhotos();
     loadProfileScore();
     var picker = document.getElementById('tt-star-picker');
     if(!picker) return;
