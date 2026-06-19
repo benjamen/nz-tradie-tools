@@ -199,8 +199,9 @@
                 var n = d.tradies_emailed || d.tradies_matched || 0;
                 form.style.display = 'none';
                 msg.style.color = '#1a7a3a';
+                var loc = (form.suburb && form.suburb.value.trim()) ? form.suburb.value.trim() + ', ' + data.city : data.city;
                 msg.innerHTML = n > 0
-                    ? '<strong>Request sent!</strong> We\'ve contacted ' + n + ' local ' + data.trade_type + (n > 1 ? 's' : '') + ' in ' + data.city + '. They\'ll be in touch within 24 hours.'
+                    ? '<strong>Request sent!</strong> We\'ve contacted ' + n + ' local ' + data.trade_type + (n > 1 ? 's' : '') + ' in ' + loc + '. They\'ll be in touch within 24 hours.'
                     : '<strong>Request received!</strong> We\'ll match you with a local ' + data.trade_type + ' and follow up shortly.';
             })
             .catch(function(){
