@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- NZ-local signals -->
     <meta name="geo.region" content="NZ">
     <meta name="geo.placename" content="New Zealand">
     <meta name="ICBM" content="-41.2866, 174.7756">
-    <!-- Performance -->
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://tradietools.optified.nz">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap">
     <title>Privacy Policy — NZ Tradie Tools</title>
-    <meta name="description" content="Privacy policy for NZ Tradie Tools — how we collect and use data.">
+    <meta name="description" content="Privacy policy for NZ Tradie Tools — what data we collect, how we use it, and your rights under the NZ Privacy Act 2020.">
     <link rel="canonical" href="https://tradietools.nz/privacy/">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="/static/css/style.css">
@@ -45,16 +43,8 @@
             (function(){
                 var t=document.querySelector('.nav-toggle'),n=document.getElementById('main-nav');
                 if(!t||!n)return;
-                t.addEventListener('click',function(){
-                    var o=n.classList.toggle('is-open');
-                    t.setAttribute('aria-expanded',o);
-                });
-                document.addEventListener('click',function(e){
-                    if(!t.contains(e.target)&&!n.contains(e.target)){
-                        n.classList.remove('is-open');
-                        t.setAttribute('aria-expanded','false');
-                    }
-                });
+                t.addEventListener('click',function(){var o=n.classList.toggle('is-open');t.setAttribute('aria-expanded',o);});
+                document.addEventListener('click',function(e){if(!t.contains(e.target)&&!n.contains(e.target)){n.classList.remove('is-open');t.setAttribute('aria-expanded','false');}});
                 var id=localStorage.getItem('tradieId');
                 if(id){var ml=document.getElementById('nav-my-listing');if(ml){ml.style.display='';ml.href='/find/?highlight='+encodeURIComponent(id);}}
             })();
@@ -67,33 +57,102 @@
         <p><em>Last updated: 19 June 2026</em></p>
 
         <div class="article-body">
-            <h2>Who We Are</h2>
-            <p>NZ Tradie Tools (<a href="https://tradietools.nz">tradietools.nz</a>) provides free calculators, guides, and tradie directories for the New Zealand trades industry.</p>
 
-            <h2>What Data We Collect</h2>
-            <h3>Forms (Formspree)</h3>
-            <p>When you submit a form on this site (e.g. to request free templates), your name and email address are collected via <a href="https://formspree.io" rel="noopener" target="_blank">Formspree</a>. We use this only to send you the requested resource and occasional relevant updates. We do not sell your data.</p>
+            <h2>Who We Are</h2>
+            <p>NZ Tradie Tools (<a href="https://tradietools.nz">tradietools.nz</a>) provides free calculators, guides, tradie directories, and business tools for the New Zealand trades industry. We are based in New Zealand and this policy is governed by the <strong>NZ Privacy Act 2020</strong>.</p>
+            <p>Questions about this policy? Email <a href="mailto:instituteofbba@gmail.com">instituteofbba@gmail.com</a>.</p>
+
+            <h2>What Personal Information We Collect and Why</h2>
+
+            <h3>Tradie listings</h3>
+            <p>When a tradie creates or claims a listing, we collect: business name, contact name, email address, phone number, physical address, trade type, hourly rates, business description, photos, and optionally NZBN and licence numbers. This information is used to display the listing in our directory, route quote requests to relevant tradies, and (for paid tiers) provide analytics and lead management tools.</p>
+
+            <h3>Quote requests (homeowners)</h3>
+            <p>When you submit a quote request via our <a href="https://tradietools.nz/get-quotes/">/get-quotes/</a> page, we collect: your name, email address, phone number, suburb, job description, budget, and timeline. This is used solely to match and route your request to relevant listed tradies. We do not sell this information. Homeowner details from quote requests are deleted after 12 months unless you have created an account.</p>
+
+            <h3>Contact forms</h3>
+            <p>When you submit a contact or enquiry form, your name and email are collected so we can respond to you.</p>
 
             <h3>Analytics</h3>
-            <p>We may use Google Analytics to understand how visitors use this site (pages visited, time on site, general location). This data is anonymised and aggregated. You can opt out via your browser's privacy settings or a browser extension.</p>
+            <p>We use <strong>Google Analytics 4</strong> to understand how visitors use this site (pages visited, time on site, general geographic region, device type). This data is aggregated and used to improve the site. Google Analytics uses cookies and may transfer data to the United States — see the cross-border disclosure section below.</p>
+            <p>You can opt out of Google Analytics tracking at <a href="https://tools.google.com/dlpage/gaoptout" rel="noopener" target="_blank">tools.google.com/dlpage/gaoptout</a> or via your browser's privacy settings.</p>
 
             <h3>Advertising</h3>
-            <p>This site may display Google AdSense advertisements. Google uses cookies to serve ads based on your visits to this and other websites. You can opt out of personalised advertising at <a href="https://www.google.com/settings/ads" rel="noopener" target="_blank">Google Ad Settings</a>.</p>
+            <p>This site may display <strong>Google AdSense</strong> advertisements. Google uses cookies to serve ads based on your visits to this and other websites. You can opt out of personalised advertising at <a href="https://www.google.com/settings/ads" rel="noopener" target="_blank">Google Ad Settings</a> or via the <a href="https://www.networkadvertising.org/choices/" rel="noopener" target="_blank">NAI opt-out tool</a>.</p>
 
-            <h2>Affiliate Links</h2>
-            <p>Some links on this site are affiliate links — if you click through and make a purchase, we may earn a commission at no extra cost to you. We only recommend tools and services we believe are genuinely useful to NZ tradies.</p>
+            <h3>Payment processing</h3>
+            <p>Payments for paid listing tiers are processed by <strong>Stripe</strong> (Stripe Inc, USA). We do not store your card details — these are held by Stripe under PCI-DSS compliance. Stripe's privacy policy is at <a href="https://stripe.com/nz/privacy" rel="noopener" target="_blank">stripe.com/nz/privacy</a>.</p>
 
             <h2>Cookies</h2>
-            <p>This site uses cookies for analytics and advertising purposes. By continuing to use the site you consent to this. You can disable cookies in your browser settings, though some features may not work correctly.</p>
+            <p>This site uses cookies for the following purposes:</p>
+            <ul>
+                <li><strong>Analytics cookies</strong> (Google Analytics) — understand how visitors use the site. These are set on first visit.</li>
+                <li><strong>Advertising cookies</strong> (Google AdSense) — serve relevant ads. These may be set by Google when ad content loads.</li>
+                <li><strong>Functional cookies</strong> — remember your session if you are a logged-in tradie (subscription management).</li>
+            </ul>
+            <p>You can disable cookies in your browser settings. Analytics and advertising features may not work correctly without cookies, but core directory and calculator features remain available.</p>
+
+            <h2>Data Processors (Third Parties We Share Data With)</h2>
+            <p>We use the following third-party services that may process personal information:</p>
+            <table style="width:100%;border-collapse:collapse;font-size:.9rem;margin:1rem 0">
+                <thead>
+                    <tr style="background:#f1f5f9">
+                        <th style="text-align:left;padding:.5rem .75rem;border:1px solid #e2e8f0">Service</th>
+                        <th style="text-align:left;padding:.5rem .75rem;border:1px solid #e2e8f0">Purpose</th>
+                        <th style="text-align:left;padding:.5rem .75rem;border:1px solid #e2e8f0">Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td style="padding:.5rem .75rem;border:1px solid #e2e8f0">Google Analytics 4</td><td style="padding:.5rem .75rem;border:1px solid #e2e8f0">Site usage analytics</td><td style="padding:.5rem .75rem;border:1px solid #e2e8f0">USA</td></tr>
+                    <tr style="background:#f8fafc"><td style="padding:.5rem .75rem;border:1px solid #e2e8f0">Google AdSense</td><td style="padding:.5rem .75rem;border:1px solid #e2e8f0">Advertising</td><td style="padding:.5rem .75rem;border:1px solid #e2e8f0">USA</td></tr>
+                    <tr><td style="padding:.5rem .75rem;border:1px solid #e2e8f0">Stripe</td><td style="padding:.5rem .75rem;border:1px solid #e2e8f0">Payment processing</td><td style="padding:.5rem .75rem;border:1px solid #e2e8f0">USA</td></tr>
+                    <tr style="background:#f8fafc"><td style="padding:.5rem .75rem;border:1px solid #e2e8f0">Brevo (Sendinblue)</td><td style="padding:.5rem .75rem;border:1px solid #e2e8f0">Transactional email (lead notifications)</td><td style="padding:.5rem .75rem;border:1px solid #e2e8f0">EU / France</td></tr>
+                    <tr><td style="padding:.5rem .75rem;border:1px solid #e2e8f0">GitHub Pages</td><td style="padding:.5rem .75rem;border:1px solid #e2e8f0">Website hosting</td><td style="padding:.5rem .75rem;border:1px solid #e2e8f0">USA</td></tr>
+                </tbody>
+            </table>
+
+            <h2>Cross-Border Disclosure (NZ Privacy Act 2020 — Information Privacy Principle 12)</h2>
+            <p>Some personal information we collect is transferred to service providers based outside New Zealand, primarily in the United States and the European Union (see table above). We only transfer personal information to overseas recipients who we are satisfied have privacy protections comparable to the NZ Privacy Act 2020, or where the transfer is authorised by law.</p>
+
+            <h2>Affiliate Links</h2>
+            <p>Some links on this site are affiliate links. If you click through and make a purchase, we may earn a commission at no extra cost to you. We only recommend tools and services we believe are genuinely useful to NZ tradies. Affiliate relationships do not influence our editorial content or directory rankings.</p>
+
+            <h2>Data Retention</h2>
+            <ul>
+                <li><strong>Homeowner quote request data:</strong> Personal details (name, email, phone, address) deleted after 12 months unless an account has been created.</li>
+                <li><strong>Tradie listing data:</strong> Retained while the account is active. Deleted within 30 days of account closure on request, except where retention is required for legal or tax purposes (7 years for financial records).</li>
+                <li><strong>Payment records:</strong> Retained for 7 years to meet NZ tax obligations.</li>
+                <li><strong>Analytics data:</strong> Governed by Google Analytics data retention settings (default 14 months).</li>
+            </ul>
+
+            <h2>Your Rights Under the NZ Privacy Act 2020</h2>
+            <p>You have the following rights regarding personal information we hold about you:</p>
+            <ul>
+                <li><strong>Right of access:</strong> Request a copy of the personal information we hold about you. We will respond within 20 working days.</li>
+                <li><strong>Right of correction:</strong> Request that we correct any personal information that is inaccurate, out of date, incomplete, or misleading. Tradie account holders can update most information directly via their dashboard.</li>
+                <li><strong>Right to request deletion:</strong> Request that we delete your personal information. We will comply unless retention is required by law (e.g., financial records). To request deletion, email <a href="mailto:instituteofbba@gmail.com">instituteofbba@gmail.com</a> with the subject line "Data Deletion Request".</li>
+                <li><strong>Right to complain:</strong> If you believe we have breached the Privacy Act 2020, you can complain to the <a href="https://www.privacy.org.nz/about-us/contact/" rel="noopener" target="_blank">Office of the Privacy Commissioner</a>. We encourage you to contact us first so we can address your concern directly.</li>
+            </ul>
+            <p>To exercise any of these rights, contact us at <a href="mailto:instituteofbba@gmail.com">instituteofbba@gmail.com</a>.</p>
+
+            <h2>Data Breach Response</h2>
+            <p>In the event of a privacy breach that is likely to cause serious harm, we will notify the Office of the Privacy Commissioner and affected individuals within 72 hours of becoming aware of the breach, in accordance with the NZ Privacy Act 2020 (mandatory breach notification requirements, effective December 2020).</p>
+
+            <h2>Security</h2>
+            <p>We take reasonable steps to protect personal information from loss, unauthorised access, use, modification, or disclosure. These include HTTPS encryption for all data in transit, access controls for internal systems, and regular security reviews. No internet transmission is completely secure — if you have concerns about specific data, contact us.</p>
 
             <h2>Third-Party Sites</h2>
-            <p>This site links to external websites (Google Maps, No Cowboys, trade directories, software providers). We are not responsible for the privacy practices of those sites.</p>
+            <p>This site links to external websites (Google Maps, No Cowboys, trade directories, software providers, regulatory bodies). We are not responsible for the privacy practices of those sites and encourage you to read their privacy policies.</p>
 
-            <h2>Your Rights (NZ Privacy Act 2020)</h2>
-            <p>Under the NZ Privacy Act 2020, you have the right to access and correct personal information we hold about you. To make a request, contact us at <a href="mailto:instituteofbba@gmail.com">instituteofbba@gmail.com</a>.</p>
+            <h2>Changes to This Policy</h2>
+            <p>We may update this policy from time to time. The "Last updated" date at the top of this page will reflect the most recent revision. Material changes will be notified to registered tradie account holders by email.</p>
 
             <h2>Contact</h2>
-            <p>Questions about this policy? Email us at <a href="mailto:instituteofbba@gmail.com">instituteofbba@gmail.com</a>.</p>
+            <p>Questions or requests regarding this privacy policy should be directed to:</p>
+            <p><strong>NZ Tradie Tools</strong><br>
+            Email: <a href="mailto:instituteofbba@gmail.com">instituteofbba@gmail.com</a><br>
+            Website: <a href="https://tradietools.nz">https://tradietools.nz</a></p>
+
         </div>
     </div>
 
@@ -106,6 +165,7 @@
             </div>
             <div style="text-align:right">
                 <p><a href="/privacy/">Privacy Policy</a></p>
+                <p><a href="/help/dispute/">Dispute Process</a></p>
                 <p><a href="/contact/">Contact</a></p>
                 <p style="margin-top:.5rem">&copy; 2026 NZ Tradie Tools</p>
             </div>
