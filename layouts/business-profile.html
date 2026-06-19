@@ -153,6 +153,7 @@
                     {% if business.ewrb %}<a href="https://www.ewrb.govt.nz/find-a-worker/" rel="noopener" target="_blank" class="badge" style="background:#d1fae5;color:#065f46" title="Registered Electrician — regulated by the Electrical Workers Registration Board. Click to verify.">⚡ EWRB Registered{% if business.ewrb_number %} · {{ business.ewrb_number }}{% endif %}</a>{% endif %}
                     {% if business.pgd %}<a href="https://www.pgdb.co.nz/public-search/" rel="noopener" target="_blank" class="badge" style="background:#fce7f3;color:#9d174d" title="Licensed Plumber/Gasfitter/Drainlayer — regulated by the PGD Board. Click to verify.">🔧 PGD Licensed{% if business.pgd_number %} · {{ business.pgd_number }}{% endif %}</a>{% endif %}
                     {% if business.insured %}<span class="badge badge-insured" title="Business has confirmed they hold current public liability insurance.">🛡️ Insured</span>{% endif %}
+                    {% if business.nzbn_verified %}<a href="https://www.nzbn.govt.nz/mynzbn/nzbn/{{ business.nzbn }}" rel="noopener" target="_blank" class="badge" style="background:#e0f2fe;color:#0369a1" title="NZ Registered Business — verified on the NZ Business Register.">🏢 NZ Registered</a>{% endif %}
                     <span class="badge badge-claimed">✓ Owner managed</span>
                 </div>
 
@@ -404,6 +405,14 @@
           el.textContent='🛡️ Insured'+(b.insurance.insurer?' · '+b.insurance.insurer:'');
           container.appendChild(el);
         }
+        if(b.nzbn && !document.querySelector('.badge-nzbn')){
+          var el=document.createElement('a');
+          el.href='https://www.nzbn.govt.nz/mynzbn/nzbn/'+b.nzbn.nzbn; el.rel='noopener'; el.target='_blank';
+          el.className='badge badge-nzbn'; el.style.cssText='background:#e0f2fe;color:#0369a1';
+          el.title='NZ Registered Business — verified on the NZ Business Register';
+          el.textContent='🏢 NZ Registered'+(b.nzbn.entity_name?' · '+b.nzbn.entity_name:'');
+          container.appendChild(el);
+        }
       }).catch(function(){});
   }
 
@@ -468,6 +477,27 @@
       }).catch(function(){if(msg){msg.style.color='#dc2626';msg.textContent='Network error';}});
   };
 
+  window.ttVerifyNZBN = function(){
+    var params=new URLSearchParams(window.location.search);
+    var token=params.get('token');
+    var tid=params.get('tradie_id')||'';
+    var nzbn=(document.getElementById('nzbn-input')||{}).value||'';
+    var msg=document.getElementById('nzbn-msg');
+    if(!nzbn||nzbn.replace(/\D/g,'').length!==13){if(msg){msg.style.color='#dc2626';msg.textContent='Enter your 13-digit NZBN';}return;}
+    if(msg){msg.style.color='#94a3b8';msg.textContent='Verifying…';}
+    fetch(API+'verify_nzbn',{method:'POST',headers:{'Content-Type':'application/json','X-Frappe-CSRF-Token':'fetch'},
+      body:JSON.stringify({tradie_id:tid,lead_token:token,nzbn:nzbn})})
+      .then(function(r){return r.json();})
+      .then(function(d){
+        var m=d.message||d;
+        if(msg){
+          msg.style.color=m.success?'#16a34a':'#dc2626';
+          msg.textContent=m.message||m.error||'Unknown result';
+        }
+        if(m.success&&!m.pending) loadDynamicBadges();
+      }).catch(function(){if(msg){msg.style.color='#dc2626';msg.textContent='Network error';}});
+  };
+
   window.ttDeletePhoto = function(photoId){
     var params=new URLSearchParams(window.location.search);
     var token=params.get('token');
@@ -505,6 +535,15 @@
           +'<div style="background:'+colour+';width:'+pct+'%;height:8px;border-radius:999px;transition:width .4s"></div>'
           +'</div>'
           +(tips?'<p style="font-size:.85rem;font-weight:600;color:#475569;margin:.5rem 0 .3rem">To improve your ranking:</p><ul style="margin:0;padding-left:1.2rem">'+tips+'</ul>':'<p style="color:#16a34a;font-size:.9rem;font-weight:600">&#10003; Profile is complete!</p>')
+          +'<div style="margin-top:.75rem;padding-top:.75rem;border-top:1px solid #bfdbfe">'
+          +'<p style="font-size:.83rem;font-weight:600;color:#1e3a5f;margin:0 0 .35rem">Verify your NZ Business Number (NZBN)</p>'
+          +'<div style="display:flex;gap:.5rem;flex-wrap:wrap">'
+          +'<input id="nzbn-input" type="text" placeholder="13-digit NZBN" maxlength="13" '
+          +'style="flex:1;min-width:160px;padding:.4rem .65rem;border:1px solid #93c5fd;border-radius:4px;font-size:.85rem">'
+          +'<button onclick="ttVerifyNZBN()" style="background:#0369a1;color:#fff;border:none;border-radius:4px;padding:.4rem .9rem;font-size:.85rem;font-weight:600;cursor:pointer">Verify NZBN</button>'
+          +'</div>'
+          +'<p id="nzbn-msg" style="font-size:.8rem;margin:.3rem 0 0"></p>'
+          +'</div>'
           +'<p style="margin:.75rem 0 0;font-size:.78rem;color:#94a3b8">Score updates within 24h of changes. <a href="/signup/" style="color:#0055a5">Upgrade tier →</a></p>'
         );
       }).catch(function(){});
