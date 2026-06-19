@@ -163,6 +163,7 @@ def build():
 
     trades_count, locations_count = build_trades_and_locations(config, env, nav, base_path)
     suburb_pages = build_auckland_suburb_pages(config, env, nav, base_path)
+    build_for_tradies_hub(config, env, nav, base_path, articles)
 
     cities = json.loads((DATA_DIR / "cities.json").read_text())
     trades_data = json.loads((DATA_DIR / "trades.json").read_text())
@@ -1311,6 +1312,66 @@ def build_auckland_suburb_pages(config, env, nav, base_path):
             count += 1
 
     return count
+
+
+def build_for_tradies_hub(config, env, nav, base_path, articles):
+    """Generate /for-tradies/ education hub page categorised by topic."""
+    tradie_keywords = [
+        'tradie', 'tradies', 'licence', 'licensing', 'lbp', 'ewrb', 'gst', 'tax',
+        'invoice', 'quote', 'builder', 'plumber', 'electrician', 'contractor',
+        'apprentice', 'cash flow', 'pricing', 'markup', 'rate', 'acc levy',
+        'job management', 'accounting', 'tool',
+    ]
+    cat_keywords = {
+        'tax_finance':      ['tax', 'gst', 'acc levy', 'cash flow', 'accounting', 'invoice', 'eofy', 'markup', 'rate calculator', 'profit', 'overhead', 'ir3', 'fringe benefit', 'ird', 'payroll'],
+        'legal_compliance': ['lbp', 'ewrb', 'building consent', 'construction contracts', 'consumer guarantees', 'employment', 'licence', 'licensing', 'pgd', 'contractor guide'],
+        'tools_tech':       ['software', 'accounting software', 'job management', 'tradify', 'fergus', 'buildxact', 'ai tools', 'battery', 'electric ute', 'fastcrew', 'simpro'],
+        'insurance':        ['insurance', 'acc levy', 'acc no claims', 'liability', 'warranty insurance', 'income protection'],
+        'health_safety':    ['health', 'safety', 'mental health', 'weather', 'waste', 'apprentice', 'apprenticeship'],
+        'business_growth':  ['get more leads', 'pricing guide', 'quote', 'marketing', 'grow', 'win more', 'team', 'hire', 'employee'],
+    }
+
+    def categorise(slug, title):
+        combined = (slug + ' ' + title).lower()
+        for cat, kws in cat_keywords.items():
+            if any(kw in combined for kw in kws):
+                return cat
+        return 'business_growth'
+
+    sections = {k: [] for k in cat_keywords}
+    total = 0
+    for a in articles:
+        slug = a.get('slug', '')
+        title = a.get('title', '')
+        combined = (slug + ' ' + title).lower()
+        is_tradie = any(kw in combined for kw in tradie_keywords)
+        if not is_tradie:
+            continue
+        total += 1
+        cat = categorise(slug, title)
+        sections[cat].append({
+            'slug': slug,
+            'title': title,
+            'description': a.get('description', ''),
+        })
+
+    # Cap each section to 6 articles
+    for k in sections:
+        sections[k] = sections[k][:6]
+
+    template = env.get_template("for-tradies.html")
+    ctx = {
+        **config,
+        "base_path": base_path,
+        "nav": nav,
+        "year": datetime.now().year,
+        "sections": sections,
+        "total_articles": total,
+    }
+    out_dir = PUBLIC_DIR / "for-tradies"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    (out_dir / "index.html").write_text(template.render(**ctx), encoding="utf-8")
+    return 1
 
 
 if __name__ == "__main__":

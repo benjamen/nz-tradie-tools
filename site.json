@@ -1,6 +1,6 @@
 {
   "title": "NZ Tradie Tools",
-  "description": "Free calculators, guides, and tools for New Zealand tradies — builders, plumbers, electricians, painters and more.",
+  "description": "Free calculators, guides, and tools for New Zealand tradies \u2014 builders, plumbers, electricians, painters and more.",
   "base_url": "https://tradietools.nz",
   "base_path": "",
   "author": "NZ Tradie Tools",
@@ -45,6 +45,10 @@
     {
       "label": "Templates",
       "url": "/templates/"
+    },
+    {
+      "label": "For Tradies",
+      "url": "/for-tradies/"
     },
     {
       "label": "Articles",
