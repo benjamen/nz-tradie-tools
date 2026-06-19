@@ -1,6 +1,6 @@
 {
   "title": "NZ Tradie Tools",
-  "description": "Free calculators, guides, and tools for New Zealand tradies \u2014 builders, plumbers, electricians, painters and more.",
+  "description": "Free calculators, guides, and tools for New Zealand tradies — builders, plumbers, electricians, painters and more.",
   "base_url": "https://tradietools.nz",
   "base_path": "",
   "author": "NZ Tradie Tools",
@@ -22,7 +22,12 @@
     "buildxact": "https://www.buildxact.com/nz/",
     "builderscrack": "https://www.builderscrack.co.nz/?ref=tradietools",
     "serviceseeking": "https://www.serviceseeking.com.au/nz/?ref=tradietools",
-    "servicefinder": "https://www.servicefinder.co.nz/?ref=tradietools"
+    "servicefinder": "https://www.servicefinder.co.nz/?ref=tradietools",
+    "mitre10": "https://www.mitre10.co.nz/",
+    "placemakers": "https://www.placemakers.co.nz/",
+    "bunnings": "https://www.bunnings.co.nz/",
+    "tool_shed": "https://www.thetoolshed.co.nz/",
+    "nz_safety": "https://www.nzsafetyblackwoods.co.nz/"
   },
   "nav": [
     {

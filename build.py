@@ -100,7 +100,9 @@ def build_articles(env, config, nav, base_path):
         date_val = front.get("date", "")
         date_iso = date_val.strftime("%Y-%m-%d") if hasattr(date_val, "strftime") else str(date_val)
         ctx = {**front, "content": html_body, "nav": nav,
-               "base_url": base_url, "slug": article_path.stem, "date": date_iso}
+               "base_url": base_url, "slug": article_path.stem, "date": date_iso,
+               "affiliates": config.get("affiliates", {}),
+               "year": datetime.now().year}
         output_path.write_text(template.render(**ctx))
         logging.info(f"Article built: {output_path}")
 

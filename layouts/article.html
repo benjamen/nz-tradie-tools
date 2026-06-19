@@ -81,9 +81,28 @@
                 {{ content|safe }}
             </div>
         </article>
+
+        <aside style="max-width:800px;margin:2rem auto;padding:0 1rem">
+            <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:1.25rem 1.5rem">
+                <p style="font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#64748b;margin:0 0 .75rem">NZ Trade Supplies</p>
+                <div style="display:flex;flex-wrap:wrap;gap:.5rem .75rem;align-items:center">
+                    <a href="{{ affiliates.mitre10 }}" rel="sponsored noopener" target="_blank"
+                       style="font-size:.85rem;color:#0055a5;border:1px solid #dde3ec;border-radius:4px;padding:.3rem .75rem;text-decoration:none;background:#fff">Mitre 10 NZ</a>
+                    <a href="{{ affiliates.placemakers }}" rel="sponsored noopener" target="_blank"
+                       style="font-size:.85rem;color:#0055a5;border:1px solid #dde3ec;border-radius:4px;padding:.3rem .75rem;text-decoration:none;background:#fff">Placemakers</a>
+                    <a href="{{ affiliates.bunnings }}" rel="sponsored noopener" target="_blank"
+                       style="font-size:.85rem;color:#0055a5;border:1px solid #dde3ec;border-radius:4px;padding:.3rem .75rem;text-decoration:none;background:#fff">Bunnings NZ</a>
+                    <a href="{{ affiliates.tool_shed }}" rel="sponsored noopener" target="_blank"
+                       style="font-size:.85rem;color:#0055a5;border:1px solid #dde3ec;border-radius:4px;padding:.3rem .75rem;text-decoration:none;background:#fff">The Tool Shed</a>
+                    <a href="{{ affiliates.nz_safety }}" rel="sponsored noopener" target="_blank"
+                       style="font-size:.85rem;color:#0055a5;border:1px solid #dde3ec;border-radius:4px;padding:.3rem .75rem;text-decoration:none;background:#fff">NZ Safety Blackwoods</a>
+                </div>
+                <p style="font-size:.72rem;color:#94a3b8;margin:.6rem 0 0">Some links may be affiliate links — we may earn a small commission at no extra cost to you.</p>
+            </div>
+        </aside>
     </main>
     <footer>
-        <p>&copy; 2026 NZ Tradie Tools</p>
+        <p>&copy; {{ year }} NZ Tradie Tools</p>
     </footer>
 </body>
 </html>
