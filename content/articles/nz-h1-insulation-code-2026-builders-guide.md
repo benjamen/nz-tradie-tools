@@ -813,3 +813,79 @@ The H1 requirements are a floor, not a ceiling, for energy efficiency in New Zea
 For more information and resources, visit tradietools.nz, which provides calculators and tools for insulation and build cost estimates. By using these resources and following the H1 requirements, builders can create warmer, healthier, and more energy-efficient homes for New Zealanders.
 
 In conclusion, the updated H1 requirements provide a framework for builders and designers to create energy-efficient buildings that meet the needs of New Zealand's diverse climate zones. By choosing the right method, designing smarter, and avoiding common mistakes, builders can create high-performance builds that exceed the code and provide long-term benefits for homeowners.
+
+## H1 Compliance — The Calculation Method vs the Schedule Method
+
+As of 2026, the New Zealand building code requires all new builds to meet the H1 insulation standard, which aims to reduce heat loss and improve the overall energy efficiency of homes. To achieve compliance, builders and designers can choose from three methods: the Schedule Method, the Calculation Method, and the Modelling Method. Each method has its own advantages and disadvantages, and the choice of method depends on the specific project requirements and goals.
+
+The Schedule Method is a simple lookup table that provides the minimum required R-values for different climate zones and construction types. This method is quick and easy to use, but it can be conservative, requiring more insulation than necessary. For example, according to the MBIE (Ministry of Business, Innovation and Employment) guidelines, the Schedule Method requires a minimum R-value of R3.6 for ceilings in Climate Zone 3 (Wellington). While this method is straightforward, it may not be the most cost-effective or efficient way to achieve compliance.
+
+In contrast, the Calculation Method uses software or manual calculations to prove compliance with the H1 standard. This method is more complex and requires a deeper understanding of the building's thermal performance, but it can be more accurate and cost-effective. The Calculation Method takes into account various factors, including the building's orientation, window size and type, and insulation levels, to determine the required R-values. For instance, using the NZS 4218:2009 software, a builder can demonstrate that a lower R-value is sufficient to meet the H1 standard, resulting in cost savings. This method is preferred for high-performance builds, where the goal is to exceed the minimum code requirements and achieve optimal energy efficiency.
+
+The Modelling Method is a more comprehensive approach that involves creating a full energy model of the building using NZS 4243. This method is typically used for large commercial buildings or complex residential projects, where a detailed analysis of the building's energy performance is required. The Modelling Method provides a detailed understanding of the building's energy usage and can help identify opportunities for energy savings and cost reductions.
+
+The following table compares the three methods by complexity, cost, and flexibility:
+
+| Method | Complexity | Cost | Flexibility |
+| --- | --- | --- | --- |
+| Schedule Method | Low | Low | Low |
+| Calculation Method | Medium | Medium | Medium |
+| Modelling Method | High | High | High |
+
+When to use each method:
+
+* Schedule Method: Suitable for simple, standard residential builds, where the goal is to meet the minimum code requirements.
+* Calculation Method: Preferred for high-performance builds, where the goal is to exceed the minimum code requirements and achieve optimal energy efficiency.
+* Modelling Method: Typically used for large commercial buildings or complex residential projects, where a detailed analysis of the building's energy performance is required.
+
+## Insulation R-values by Climate Zone (2026)
+
+The following table shows the required minimum R-values for residential buildings using the Schedule Method, across all 6 climate zones:
+
+| Climate Zone | Ceiling/Roof | Walls | Underfloor/Slab Edge |
+| --- | --- | --- | --- |
+| Zone 1: Northland/Auckland | R3.2 | R1.5 | R1.3 |
+| Zone 2: Bay of Plenty/Waikato | R3.4 | R1.8 | R1.5 |
+| Zone 3: Wellington | R3.6 | R2.0 | R1.8 |
+| Zone 4: Nelson/Marlborough | R4.0 | R2.2 | R2.0 |
+| Zone 5: Canterbury | R4.4 | R2.5 | R2.2 |
+| Zone 6: Queenstown/Central Otago/Southland | R6.6 | R3.5 | R3.0 |
+
+Note that Zone 6 requirements are significantly higher, with a minimum R-value of R6.6 for ceilings and R3.5 for walls. Additionally, double glazing is required for all windows in Zone 6.
+
+## Cost Impact for Builders
+
+The updated H1 requirements can add between $3,000 to $8,000 to the cost of a typical new build, depending on the climate zone and method used. However, this cost can be offset by smarter design choices, such as incorporating thermal mass and passive solar principles. For example, using concrete slab floors and north-facing windows can reduce the need for insulation and heating, resulting in cost savings.
+
+To explain the value of H1 compliance to clients, builders can highlight the benefits of lower power bills, warmer homes, and better resale values. According to the BRANZ (Building Research Association of New Zealand), a well-insulated home can save homeowners up to $500 per year on energy bills. Additionally, a study by the NZ Green Building Council found that homes with high energy efficiency ratings can sell for up to 10% more than similar homes without these features.
+
+The impact on build timeline will depend on the method used and the level of complexity. The Schedule Method is typically the quickest and easiest to implement, while the Calculation Method and Modelling Method may require more time and expertise.
+
+## Common Builder Mistakes with H1
+
+One of the most common mistakes builders make when it comes to H1 compliance is not accounting for thermal bridging in steel-framed walls. Thermal bridging occurs when there is a gap or weakness in the insulation, allowing heat to escape. This can be avoided by using thermal breaks or specialized insulation products.
+
+Another common mistake is leaving gaps in ceiling insulation, which can significantly reduce the overall R-value of the ceiling. Builders should ensure that all gaps and weaknesses are sealed and that the insulation is installed correctly.
+
+Using the wrong insulation product for underfloor applications can also lead to moisture issues and reduced R-values. Builders should choose insulation products that are specifically designed for underfloor use and follow the manufacturer's instructions for installation.
+
+Finally, not getting a compliance check before closing up walls can lead to costly rework and delays. Builders should ensure that all insulation is installed correctly and that the building meets the H1 requirements before proceeding with the build.
+
+## FAQ
+
+1. When did the new H1 requirements come into force?
+The new H1 requirements came into force in 2026, as part of the updated New Zealand building code.
+2. Do H1 changes apply to renovations and additions?
+Yes, the H1 changes apply to all new builds, including renovations and additions.
+3. What is the cheapest way to meet H1 in Climate Zone 3 (Wellington)?
+The cheapest way to meet H1 in Climate Zone 3 is to use the Schedule Method and install the minimum required R-values for ceilings, walls, and underfloor insulation.
+4. Can I use a different insulation brand as long as the R-value is met?
+Yes, as long as the R-value is met, builders can use different insulation brands. However, it's essential to ensure that the insulation product is specifically designed for the intended application and meets the relevant standards.
+5. Who checks H1 compliance — the council or a private certifier?
+H1 compliance can be checked by either the council or a private certifier, depending on the specific requirements of the project.
+
+## Conclusion
+
+In conclusion, the H1 insulation standard is a critical component of the New Zealand building code, and compliance is essential for all new builds. While the updated requirements may add cost and complexity to the build process, they can also provide significant benefits, including lower power bills, warmer homes, and better resale values. By understanding the different methods for achieving compliance and making smarter design choices, builders can offset the costs and create high-performance buildings that exceed the minimum code requirements.
+
+As the MBIE notes, "H1 is a floor, not a ceiling" — high-performance builds that exceed the code requirements can sell faster and for more money. To help builders and designers achieve this goal, tradietools.nz offers a range of calculators and tools for estimating insulation and build costs. By using these resources and staying up-to-date with the latest developments in building science and technology, builders can create homes that are not only compliant with the H1 standard but also comfortable, sustainable, and energy-efficient.
