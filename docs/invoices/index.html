@@ -117,7 +117,22 @@
                     <div><label>Job description</label><textarea id="inv-job-desc" placeholder="Brief description of work done"></textarea></div>
                 </div>
 
-                <h3 style="font-size:.9rem;margin:1.25rem 0 .5rem">Line items</h3>
+                <div style="display:flex;align-items:center;gap:.75rem;margin:1.25rem 0 .5rem;flex-wrap:wrap">
+                    <h3 style="font-size:.9rem;margin:0">Line items</h3>
+                    <select id="template-picker" onchange="applyTemplate(this.value)" style="font-size:.8rem;padding:.3rem .6rem;border:1px solid #cbd5e1;border-radius:5px;background:#f8fafc;cursor:pointer;max-width:220px">
+                        <option value="">Load template…</option>
+                        <option value="electrician">Electrician</option>
+                        <option value="plumber">Plumber</option>
+                        <option value="builder">Builder / LBP</option>
+                        <option value="painter">Painter</option>
+                        <option value="roofer">Roofer</option>
+                        <option value="landscaper">Landscaper</option>
+                        <option value="tiler">Tiler</option>
+                        <option value="plasterer">Plasterer</option>
+                        <option value="hvac">Heat Pump / HVAC</option>
+                        <option value="gasfitter">Gasfitter</option>
+                    </select>
+                </div>
                 <table class="line-items-table">
                     <thead><tr>
                         <th class="li-desc">Description</th>
@@ -371,6 +386,68 @@ function previewPrint() {
 }
 
 loadInvoices();
+
+var TRADE_TEMPLATES = {
+    electrician: [
+        {description:'Labour — electrician (per hour)', qty:2, unit_price:120},
+        {description:'Call-out fee', qty:1, unit_price:80},
+        {description:'Materials & components', qty:1, unit_price:0}
+    ],
+    plumber: [
+        {description:'Labour — plumber (per hour)', qty:2, unit_price:120},
+        {description:'Call-out fee', qty:1, unit_price:80},
+        {description:'Materials & fittings', qty:1, unit_price:0}
+    ],
+    builder: [
+        {description:'Labour — builder (per day)', qty:1, unit_price:600},
+        {description:'Materials & timber', qty:1, unit_price:0},
+        {description:'Skip bin / waste removal', qty:1, unit_price:0}
+    ],
+    painter: [
+        {description:'Labour — painting (per day)', qty:1, unit_price:500},
+        {description:'Paint & primers', qty:1, unit_price:0},
+        {description:'Preparation & masking', qty:1, unit_price:0}
+    ],
+    roofer: [
+        {description:'Roof inspection & report', qty:1, unit_price:150},
+        {description:'Labour — roofing (per day)', qty:1, unit_price:650},
+        {description:'Roofing materials', qty:1, unit_price:0}
+    ],
+    landscaper: [
+        {description:'Labour — landscaping (per day)', qty:1, unit_price:500},
+        {description:'Plants & materials', qty:1, unit_price:0},
+        {description:'Soil / bark / aggregate', qty:1, unit_price:0}
+    ],
+    tiler: [
+        {description:'Labour — tiling (per m²)', qty:10, unit_price:65},
+        {description:'Tiles & adhesive', qty:1, unit_price:0},
+        {description:'Grout & sealant', qty:1, unit_price:0}
+    ],
+    plasterer: [
+        {description:'Labour — plastering (per m²)', qty:20, unit_price:45},
+        {description:'Plasterboard & fixings', qty:1, unit_price:0},
+        {description:'Stopping & finishing compound', qty:1, unit_price:0}
+    ],
+    hvac: [
+        {description:'Heat pump supply & installation', qty:1, unit_price:0},
+        {description:'Labour — installation (hours)', qty:4, unit_price:120},
+        {description:'Electrical connection', qty:1, unit_price:200}
+    ],
+    gasfitter: [
+        {description:'Labour — gasfitter (per hour)', qty:2, unit_price:130},
+        {description:'Call-out fee', qty:1, unit_price:80},
+        {description:'Materials & fittings', qty:1, unit_price:0}
+    ]
+};
+
+function applyTemplate(trade) {
+    if (!trade || !TRADE_TEMPLATES[trade]) return;
+    var items = TRADE_TEMPLATES[trade];
+    lineItems = items.map(function(t){ return {description:t.description, qty:t.qty, unit_price:t.unit_price}; });
+    renderLineItems();
+    recalc();
+    document.getElementById('template-picker').value = '';
+}
 </script>
 </body>
 </html>
