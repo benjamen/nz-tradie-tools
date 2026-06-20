@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Invitation | NZ Tradie Tools</title>
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700;800&display=swap">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        *{box-sizing:border-box;margin:0;padding:0}
+        body{font-family:'Public Sans',sans-serif;background:#f1f5f9;color:#0f172a;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:1rem}
+        .card{background:#fff;border-radius:14px;box-shadow:0 4px 24px rgba(0,0,0,.10);max-width:440px;width:100%;overflow:hidden}
+        .card-top{background:#0f172a;color:#fff;padding:2rem;text-align:center}
+        .card-top .icon{font-size:2.5rem;margin-bottom:.5rem}
+        .card-top h1{font-size:1.3rem;font-weight:800;margin:0}
+        .card-top p{font-size:.875rem;opacity:.7;margin:.4rem 0 0}
+        .card-body{padding:2rem}
+        .biz-box{background:#f0f7ff;border:1.5px solid #bfdbfe;border-radius:8px;padding:1rem 1.25rem;margin-bottom:1.25rem;text-align:center}
+        .biz-box .label{font-size:.75rem;font-weight:700;color:#1d4ed8;text-transform:uppercase;letter-spacing:.06em}
+        .biz-box .name{font-size:1.15rem;font-weight:800;color:#0f172a;margin:.25rem 0 .1rem}
+        .biz-box .role{font-size:.85rem;color:#475569}
+        .info-row{display:flex;align-items:center;gap:.65rem;padding:.5rem 0;font-size:.875rem;color:#334155}
+        .info-row .dot{width:8px;height:8px;background:#16a34a;border-radius:50%;flex-shrink:0}
+        .btn-accept{background:#16a34a;color:#fff;border:none;border-radius:8px;padding:.75rem 1.5rem;font-size:1rem;font-weight:700;cursor:pointer;font-family:inherit;width:100%;margin-top:1.25rem}
+        .btn-accept:hover{background:#15803d}
+        .btn-accept:disabled{background:#94a3b8;cursor:not-allowed}
+        .state-accepted{text-align:center;padding:.5rem 0}
+        .state-accepted .tick{font-size:3rem;margin-bottom:.5rem}
+        .state-accepted h2{font-size:1.1rem;font-weight:800;color:#065f46;margin-bottom:.35rem}
+        .state-accepted p{font-size:.875rem;color:#475569}
+        .state-accepted a{display:inline-block;margin-top:1rem;color:#0055a5;font-weight:600;font-size:.9rem;text-decoration:none}
+        .err{background:#fee2e2;color:#991b1b;border-radius:7px;padding:1rem;text-align:center;font-size:.9rem}
+    </style>
+</head>
+<body>
+<div class="card">
+    <div class="card-top">
+        <div class="icon">🤝</div>
+        <h1>Team Invitation</h1>
+        <p>You've been invited to join a business on NZ Tradie Tools</p>
+    </div>
+    <div class="card-body" id="card-body">
+        <p style="color:#94a3b8;text-align:center;padding:1.5rem 0">Loading invitation…</p>
+    </div>
+</div>
+
+<script>
+var API = 'https://tradietools.optified.nz/api/method/tradietools.api.';
+var TOKEN = new URLSearchParams(window.location.search).get('token') || '';
+
+function render(state, data){
+    var body = document.getElementById('card-body');
+    if(state === 'error'){
+        body.innerHTML = '<div class="err">'+data+'</div>';
+        return;
+    }
+    if(state === 'accepted'){
+        body.innerHTML = '<div class="state-accepted">'
+            +'<div class="tick">✅</div>'
+            +'<h2>You\'re in!</h2>'
+            +'<p>You\'re now a <strong>'+esc(data.role||'member')+'</strong> of <strong>'+esc(data.business||'the business')+'</strong>.</p>'
+            +'<p style="margin-top:.5rem;font-size:.82rem;color:#64748b">The business owner will share your login link with you.</p>'
+            +'<a href="/">Go to NZ Tradie Tools →</a>'
+            +'</div>';
+        return;
+    }
+    if(state === 'already'){
+        body.innerHTML = '<div class="state-accepted">'
+            +'<div class="tick">✅</div>'
+            +'<h2>Already accepted</h2>'
+            +'<p>This invitation has already been used.</p>'
+            +'<a href="/">Go to NZ Tradie Tools →</a>'
+            +'</div>';
+        return;
+    }
+    // pending state
+    body.innerHTML = '<div class="biz-box">'
+        +'<div class="label">Invited to</div>'
+        +'<div class="name">'+esc(data.business||'Business')+'</div>'
+        +'<div class="role">Role: <strong>'+esc(data.role||'member')+'</strong></div>'
+        +'</div>'
+        +'<div class="info-row"><div class="dot"></div><span>Access to shared lead inbox</span></div>'
+        +'<div class="info-row"><div class="dot"></div><span>View and respond to leads</span></div>'
+        +'<div class="info-row"><div class="dot"></div><span>Manage quotes and proposals</span></div>'
+        +'<button class="btn-accept" id="btn-accept" onclick="accept()">Accept invitation →</button>'
+        +'<p style="font-size:.75rem;color:#94a3b8;text-align:center;margin-top:.75rem">This invitation expires 72 hours after it was sent.</p>';
+}
+
+function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+function accept(){
+    var btn = document.getElementById('btn-accept');
+    if(btn){ btn.disabled=true; btn.textContent='Accepting…'; }
+    fetch(API+'accept_team_invite', {
+        method:'POST',
+        headers:{'Content-Type':'application/json','X-Frappe-CSRF-Token':'fetch'},
+        body: JSON.stringify({token: TOKEN})
+    })
+    .then(function(r){ return r.json(); })
+    .then(function(j){
+        var d = j.message || j;
+        if(d.success){
+            render('accepted', d);
+        } else {
+            if(btn){ btn.disabled=false; btn.textContent='Accept invitation →'; }
+            alert(d.error || 'Error — please try again.');
+        }
+    })
+    .catch(function(){
+        if(btn){ btn.disabled=false; btn.textContent='Accept invitation →'; }
+        alert('Network error — please try again.');
+    });
+}
+
+if(!TOKEN){
+    render('error', 'No invitation token found — check your email link.');
+} else {
+    fetch(API+'peek_team_invite?token='+encodeURIComponent(TOKEN))
+    .then(function(r){ return r.json(); })
+    .then(function(j){
+        var d = j.message || j;
+        if(d.already_accepted){ render('already', d); return; }
+        if(!d.success){ render('error', d.error || 'Invalid or expired invitation link.'); return; }
+        render('pending', d);
+    })
+    .catch(function(){ render('error', 'Network error — please refresh.'); });
+}
+</script>
+</body>
+</html>
