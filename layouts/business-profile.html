@@ -216,9 +216,11 @@
                 <h3 style="font-size:1.05rem;font-weight:700;margin-bottom:.75rem;color:#1e293b">
                     Reviews <span id="tt-review-count" style="font-weight:400;color:#64748b;font-size:.9rem"></span>
                 </h3>
+                <div id="tt-rating-bar"></div>
                 <div id="tt-review-list">
                     <p style="color:#64748b;font-size:.9rem">Loading reviews…</p>
                 </div>
+                <button id="tt-load-more-reviews" onclick="loadReviews(false)" style="display:none;margin-top:.75rem;background:#f1f5f9;border:1px solid #cbd5e1;border-radius:6px;padding:.45rem 1rem;font-size:.85rem;cursor:pointer;font-family:inherit">Load more reviews</button>
                 <button id="tt-write-review-btn" onclick="document.getElementById('tt-review-form').style.display='block';this.style.display='none'"
                     style="margin-top:1rem;padding:.5rem 1.1rem;background:#0055a5;color:#fff;border:none;border-radius:4px;font-size:.9rem;font-weight:600;cursor:pointer">
                     Write a review
@@ -338,33 +340,127 @@
     return '<span style="color:#f59e0b">'+s+'</span>';
   }
 
-  function loadReviews(){
-    fetch(API+'get_reviews?listing_slug='+SLUG+'&limit=10')
+  var reviewPage = 1;
+  var reviewTotal = 0;
+
+  function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+  function reviewCard(r){
+    var dt = new Date(r.created_at).toLocaleDateString('en-NZ',{year:'numeric',month:'short'});
+    var TOKEN_PARAM = new URLSearchParams(window.location.search).get('token') || '';
+    return '<div id="rev-'+r.id+'" style="border-bottom:1px solid #e2e8f0;padding:.9rem 0">'+
+      '<div style="display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin-bottom:.3rem">'+
+      stars(r.rating)+
+      '<span style="font-weight:600;font-size:.9rem">'+esc(r.reviewer_name)+'</span>'+
+      (r.verified_lead ? '<span style="font-size:.75rem;background:#d1fae5;color:#065f46;padding:.1rem .45rem;border-radius:3px;font-weight:600">✓ Verified lead</span>' : '')+
+      (r.job_type ? '<span style="font-size:.78rem;color:#64748b;background:#f1f5f9;padding:.1rem .45rem;border-radius:3px">'+esc(r.job_type)+'</span>' : '')+
+      '<span style="font-size:.8rem;color:#94a3b8;margin-left:auto">'+dt+'</span>'+
+      '</div>'+
+      '<p style="margin:0 0 .4rem;font-size:.9rem;color:#334155;line-height:1.6">'+esc(r.review_body)+'</p>'+
+      (r.tradie_response ?
+        '<div style="margin-top:.5rem;padding:.6rem .75rem;background:#f0f4f8;border-left:3px solid #0055a5;border-radius:0 4px 4px 0">'+
+        '<p style="margin:0 0 .15rem;font-size:.78rem;font-weight:700;color:#0055a5">Response from the business:</p>'+
+        '<p style="margin:0;font-size:.875rem;color:#334155;line-height:1.55">'+esc(r.tradie_response)+'</p>'+
+        '</div>' : '')+
+      (TOKEN_PARAM && !r.tradie_response ?
+        '<div style="margin-top:.4rem">'+
+        '<button onclick="openResponseForm('+r.id+')" style="font-size:.78rem;color:#0055a5;background:none;border:none;cursor:pointer;text-decoration:underline;padding:0">Respond to this review</button>'+
+        '</div>' : '')+
+      '<button onclick="flagRev('+r.id+')" style="font-size:.75rem;color:#94a3b8;background:none;border:none;cursor:pointer;padding:0;margin-top:.2rem">Flag as inappropriate</button>'+
+      '</div>';
+  }
+
+  function loadReviews(reset){
+    if(reset) reviewPage = 1;
+    fetch(API+'get_reviews?listing_slug='+SLUG+'&page='+reviewPage+'&page_size=10')
       .then(function(r){return r.json();})
       .then(function(d){
         var m = d.message || d;
         var list = document.getElementById('tt-review-list');
         var cnt  = document.getElementById('tt-review-count');
         if(!m.success || !m.reviews.length){
-          list.innerHTML = '<p style="color:#64748b;font-size:.9rem">No reviews yet — be the first!</p>';
+          if(reviewPage===1) list.innerHTML = '<p style="color:#64748b;font-size:.9rem">No reviews yet — be the first!</p>';
+          document.getElementById('tt-load-more-reviews').style.display='none';
           return;
         }
-        cnt.textContent = '('+m.total+')';
-        list.innerHTML = m.reviews.map(function(r){
-          var d = new Date(r.created_at).toLocaleDateString('en-NZ',{year:'numeric',month:'short'});
-          return '<div style="border-bottom:1px solid #e2e8f0;padding:.85rem 0">'+
-            '<div style="display:flex;align-items:center;gap:.6rem;margin-bottom:.25rem">'+
-            stars(r.rating)+
-            '<span style="font-weight:600;font-size:.9rem">'+r.reviewer_name+'</span>'+
-            (r.job_type ? '<span style="font-size:.8rem;color:#64748b;background:#f1f5f9;padding:.1rem .45rem;border-radius:3px">'+r.job_type+'</span>' : '')+
-            '<span style="font-size:.8rem;color:#94a3b8;margin-left:auto">'+d+'</span>'+
-            '</div>'+
-            '<p style="margin:0;font-size:.9rem;color:#334155;line-height:1.6">'+r.review_body.replace(/</g,'&lt;')+'</p>'+
-            '</div>';
-        }).join('');
+        reviewTotal = m.total || 0;
+        cnt.textContent = '('+reviewTotal+')';
+
+        // Rating distribution bar (first page only)
+        if(reviewPage===1 && m.avg_rating && document.getElementById('tt-rating-bar')){
+          var dist = m.distribution || {};
+          var barHtml = '<div style="display:flex;align-items:center;gap:.5rem;margin-bottom:1rem;flex-wrap:wrap">'+
+            '<span style="font-size:2rem;font-weight:700;color:#0f172a">'+m.avg_rating+'</span>'+
+            '<div>'+stars(Math.round(m.avg_rating))+
+            '<div style="font-size:.8rem;color:#64748b">'+reviewTotal+' review'+(reviewTotal===1?'':'s')+'</div></div>'+
+            '<div style="flex:1;min-width:140px">';
+          for(var i=5;i>=1;i--){
+            var c=parseInt(dist[i]||0);
+            var pct=reviewTotal>0?Math.round(c/reviewTotal*100):0;
+            barHtml+='<div style="display:flex;align-items:center;gap:.4rem;font-size:.75rem;margin-bottom:.15rem">'+
+              '<span style="width:10px;text-align:right">'+i+'★</span>'+
+              '<div style="flex:1;height:6px;background:#e2e8f0;border-radius:3px">'+
+              '<div style="width:'+pct+'%;height:100%;background:#f59e0b;border-radius:3px"></div></div>'+
+              '<span style="width:24px;color:#64748b">'+c+'</span></div>';
+          }
+          barHtml += '</div></div>';
+          document.getElementById('tt-rating-bar').innerHTML = barHtml;
+        }
+
+        if(reviewPage===1){
+          list.innerHTML = m.reviews.map(reviewCard).join('');
+        } else {
+          list.innerHTML += m.reviews.map(reviewCard).join('');
+        }
+        var shown = (reviewPage-1)*10 + m.reviews.length;
+        var lm = document.getElementById('tt-load-more-reviews');
+        if(shown < reviewTotal){ lm.style.display=''; } else { lm.style.display='none'; }
+        reviewPage++;
       })
       .catch(function(){ document.getElementById('tt-review-list').innerHTML=''; });
   }
+
+  window.flagRev = function(id){
+    if(!confirm('Flag this review for moderator attention?')) return;
+    fetch(API+'flag_review',{method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({review_id:id})})
+    .then(function(r){return r.json();})
+    .then(function(d){ var m=d.message||d; if(m.success) alert('Flagged — our team will review it within 48 hours.'); });
+  };
+
+  window.openResponseForm = function(reviewId){
+    var existing = document.getElementById('resp-form-'+reviewId);
+    if(existing){ existing.style.display='block'; return; }
+    var TOKEN_PARAM = new URLSearchParams(window.location.search).get('token') || '';
+    var card = document.getElementById('rev-'+reviewId);
+    var form = document.createElement('div');
+    form.id = 'resp-form-'+reviewId;
+    form.style.cssText = 'margin-top:.5rem;padding:.75rem;background:#f8fafc;border-radius:6px;border:1px solid #e2e8f0';
+    form.innerHTML = '<p style="margin:0 0 .4rem;font-size:.82rem;font-weight:600;color:#374151">Your response (max 500 chars)</p>'+
+      '<textarea id="resp-text-'+reviewId+'" rows="3" style="width:100%;box-sizing:border-box;padding:.45rem .6rem;border:1.5px solid #cbd5e1;border-radius:5px;font-size:.875rem;font-family:inherit;resize:vertical" maxlength="500"></textarea>'+
+      '<div style="display:flex;gap:.5rem;margin-top:.4rem">'+
+      '<button onclick="submitResponse('+reviewId+',\''+TOKEN_PARAM+'\')" style="background:#0055a5;color:#fff;border:none;border-radius:5px;padding:.4rem .9rem;font-size:.82rem;font-weight:600;cursor:pointer;font-family:inherit">Post response</button>'+
+      '<button onclick="document.getElementById(\'resp-form-'+reviewId+'\').style.display=\'none\'" style="background:#f1f5f9;border:none;border-radius:5px;padding:.4rem .75rem;font-size:.82rem;cursor:pointer;font-family:inherit">Cancel</button>'+
+      '</div><p id="resp-msg-'+reviewId+'" style="font-size:.82rem;margin:.3rem 0 0"></p>';
+    card.appendChild(form);
+  };
+
+  window.submitResponse = function(reviewId, token){
+    var text = (document.getElementById('resp-text-'+reviewId).value||'').trim();
+    var msg  = document.getElementById('resp-msg-'+reviewId);
+    if(!text){ msg.style.color='#dc2626'; msg.textContent='Response cannot be empty.'; return; }
+    msg.style.color='#555'; msg.textContent='Posting…';
+    fetch(API+'respond_to_review',{method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({lead_token:token,review_id:reviewId,response:text})})
+    .then(function(r){return r.json();})
+    .then(function(d){
+      var m=d.message||d;
+      if(m.success){
+        msg.style.color='#16a34a'; msg.textContent='Response posted!';
+        setTimeout(function(){ loadReviews(true); },1000);
+      } else { msg.style.color='#dc2626'; msg.textContent=m.error||'Error'; }
+    });
+  };
 
   function loadDynamicBadges(){
     fetch(API+'get_listing_badges?listing_slug='+SLUG)
