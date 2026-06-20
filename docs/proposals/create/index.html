@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Proposal | NZ Tradie Tools</title>
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <style>
+        body{background:#f1f5f9}
+        .page-header{background:#0f172a;color:#fff;padding:1.25rem 1.5rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+        .page-header h1{margin:0;font-size:1.2rem;flex:1}
+        .page-header a{color:rgba(255,255,255,.7);font-size:.85rem;text-decoration:none}
+        .wrap{max-width:720px;margin:0 auto;padding:1.5rem 1rem 4rem}
+        .card{background:#fff;border-radius:10px;padding:1.4rem 1.5rem;box-shadow:0 1px 6px rgba(0,0,0,.07);margin-bottom:1rem}
+        .field-group{margin-bottom:1rem}
+        .field-group label{display:block;font-size:.85rem;font-weight:600;color:#374151;margin-bottom:.35rem}
+        .field-group input,.field-group textarea,.field-group select{width:100%;padding:.5rem .75rem;border:1.5px solid #d1d5db;border-radius:6px;font-family:inherit;font-size:.9rem;box-sizing:border-box;color:#0f172a}
+        .field-group input:focus,.field-group textarea:focus,.field-group select:focus{outline:none;border-color:#0055a5}
+        .cols-2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+        @media(max-width:500px){.cols-2{grid-template-columns:1fr}}
+        .li-table{width:100%;border-collapse:collapse;font-size:.875rem}
+        .li-table th{text-align:left;font-size:.78rem;color:#64748b;font-weight:600;padding:.3rem .4rem;border-bottom:2px solid #e2e8f0}
+        .li-table td{padding:.3rem .4rem;vertical-align:middle}
+        .li-table input{border:1px solid #e2e8f0;border-radius:4px;padding:.3rem .5rem;font-family:inherit;font-size:.85rem;width:100%}
+        .li-table .li-total{text-align:right;color:#0f172a;font-weight:600;white-space:nowrap}
+        .li-del{background:none;border:none;color:#94a3b8;cursor:pointer;font-size:1rem;padding:.2rem .4rem}
+        .li-del:hover{color:#ef4444}
+        .btn-add-line{background:#f1f5f9;border:1px solid #cbd5e1;border-radius:5px;padding:.4rem .85rem;font-size:.82rem;cursor:pointer;font-family:inherit;color:#475569;margin-top:.5rem}
+        .totals-row{display:flex;justify-content:flex-end;margin-top:.75rem}
+        .totals-box{font-size:.875rem;min-width:220px}
+        .totals-box .row{display:flex;justify-content:space-between;padding:.2rem 0;color:#475569}
+        .totals-box .row.total{font-weight:700;font-size:1rem;color:#0f172a;border-top:2px solid #e2e8f0;padding-top:.5rem;margin-top:.25rem}
+        .btn-primary{background:#0055a5;color:#fff;border:none;border-radius:6px;padding:.65rem 1.4rem;font-size:.95rem;font-weight:700;cursor:pointer;font-family:inherit}
+        .btn-secondary{background:#f1f5f9;color:#334155;border:1px solid #cbd5e1;border-radius:6px;padding:.65rem 1.2rem;font-size:.95rem;font-weight:600;cursor:pointer;font-family:inherit}
+        .btn-primary:hover{background:#004494}
+        .status-msg{padding:.75rem 1rem;border-radius:6px;margin-top:1rem;font-size:.9rem;display:none}
+        .proposals-list{margin-top:.5rem}
+        .prop-row{display:flex;align-items:center;gap:.75rem;padding:.65rem 0;border-bottom:1px solid #f1f5f9;flex-wrap:wrap}
+        .prop-status{font-size:.75rem;font-weight:700;padding:.15rem .5rem;border-radius:20px}
+        .s-draft{background:#f1f5f9;color:#64748b}
+        .s-sent{background:#dbeafe;color:#1d4ed8}
+        .s-accepted{background:#d1fae5;color:#065f46}
+        .s-declined{background:#fee2e2;color:#991b1b}
+    </style>
+</head>
+<body>
+<div class="page-header">
+    <h1>📄 Proposals</h1>
+    <a href="/pipeline/">Pipeline</a>
+    <a href="/invoices/">Invoices</a>
+    <a href="/lead-inbox/">Lead Inbox</a>
+</div>
+
+<div class="wrap">
+    <div class="card" id="proposals-panel">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.75rem">
+            <h2 style="margin:0;font-size:1rem">Your Proposals</h2>
+            <button class="btn-primary" onclick="showBuilder()" style="font-size:.82rem;padding:.4rem .9rem">+ New Proposal</button>
+        </div>
+        <div id="proposals-list"><p style="color:#94a3b8;font-size:.9rem">Loading…</p></div>
+    </div>
+
+    <div class="card" id="builder-panel" style="display:none">
+        <h2 style="margin:0 0 1.25rem;font-size:1.05rem">New Proposal</h2>
+
+        <div class="cols-2">
+            <div class="field-group"><label>Customer name</label><input type="text" id="cust-name" placeholder="e.g. Sarah Johnson"></div>
+            <div class="field-group"><label>Customer email</label><input type="email" id="cust-email" placeholder="sarah@email.com"></div>
+        </div>
+        <div class="field-group"><label>Project title</label><input type="text" id="proj-title" placeholder="e.g. Bathroom renovation — 3 Elm St, Remuera"></div>
+        <div class="field-group"><label>Scope of work</label><textarea id="scope" rows="4" placeholder="Describe the work to be carried out, materials, inclusions and exclusions…"></textarea></div>
+        <div class="cols-2">
+            <div class="field-group"><label>Proposed timeline</label><input type="text" id="timeline" placeholder="e.g. 2–3 weeks, starting early July"></div>
+            <div class="field-group"><label>Valid for (days)</label><input type="number" id="valid-days" value="30" min="7" max="90"></div>
+        </div>
+
+        <h3 style="font-size:.9rem;margin:1.25rem 0 .5rem">Pricing</h3>
+        <table class="li-table">
+            <thead><tr><th style="width:50%">Description</th><th style="width:12%">Qty</th><th style="width:18%">Unit price</th><th style="width:15%;text-align:right">Total</th><th></th></tr></thead>
+            <tbody id="li-body"></tbody>
+        </table>
+        <button class="btn-add-line" onclick="addLine()">+ Add line</button>
+        <div class="totals-row">
+            <div class="totals-box">
+                <div class="row"><span>Subtotal (excl. GST)</span><span id="t-sub">$0.00</span></div>
+                <div class="row"><span>GST (15%)</span><span id="t-gst">$0.00</span></div>
+                <div class="row total"><span>Total (incl. GST)</span><span id="t-total">$0.00</span></div>
+            </div>
+        </div>
+
+        <div class="field-group" style="margin-top:1.25rem"><label>Terms &amp; conditions <span style="font-weight:400;color:#94a3b8">(optional)</span></label><textarea id="terms" rows="3" placeholder="e.g. 50% deposit required before work commences. Balance due on completion. Pricing valid for 30 days."></textarea></div>
+
+        <div id="status-msg" class="status-msg"></div>
+        <div style="display:flex;gap:.75rem;margin-top:1rem;flex-wrap:wrap">
+            <button class="btn-secondary" onclick="saveProposal(false)">Save as draft</button>
+            <button class="btn-primary" onclick="saveProposal(true)">Send to customer →</button>
+            <button class="btn-secondary" onclick="hideBuilder()">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<script>
+var API = 'https://tradietools.optified.nz/api/method/tradietools.api.';
+var TOKEN = new URLSearchParams(window.location.search).get('token') || localStorage.getItem('tt_lead_token') || '';
+if(TOKEN) localStorage.setItem('tt_lead_token', TOKEN);
+
+var lineItems = [{description:'',qty:1,unit_price:0}];
+
+function fmt(n){ return '$'+(+n||0).toLocaleString('en-NZ',{minimumFractionDigits:2,maximumFractionDigits:2}); }
+function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+function renderLines(){
+    document.getElementById('li-body').innerHTML = lineItems.map(function(li,i){
+        return '<tr>'
+            +'<td><input type="text" value="'+esc(li.description)+'" placeholder="Description" oninput="lineItems['+i+'].description=this.value"></td>'
+            +'<td><input type="number" min="0" step="0.01" value="'+li.qty+'" oninput="lineItems['+i+'].qty=parseFloat(this.value)||0;recalc()" style="text-align:right"></td>'
+            +'<td><input type="number" min="0" step="0.01" value="'+(li.unit_price||'')+'" placeholder="0.00" oninput="lineItems['+i+'].unit_price=parseFloat(this.value)||0;recalc()" style="text-align:right"></td>'
+            +'<td class="li-total" id="li-t-'+i+'">'+fmt((li.qty||0)*(li.unit_price||0))+'</td>'
+            +'<td><button class="li-del" onclick="removeLine('+i+')">✕</button></td>'
+            +'</tr>';
+    }).join('');
+    recalc();
+}
+function recalc(){
+    lineItems.forEach(function(li,i){ var el=document.getElementById('li-t-'+i); if(el) el.textContent=fmt((li.qty||0)*(li.unit_price||0)); });
+    var sub=lineItems.reduce(function(a,li){return a+(li.qty||0)*(li.unit_price||0);},0);
+    var gst=sub*0.15;
+    document.getElementById('t-sub').textContent=fmt(sub);
+    document.getElementById('t-gst').textContent=fmt(gst);
+    document.getElementById('t-total').textContent=fmt(sub+gst);
+}
+function addLine(){ lineItems.push({description:'',qty:1,unit_price:0}); renderLines(); }
+function removeLine(i){ lineItems.splice(i,1); if(!lineItems.length) lineItems=[{description:'',qty:1,unit_price:0}]; renderLines(); }
+
+function showBuilder(){ document.getElementById('builder-panel').style.display='block'; document.getElementById('proposals-panel').style.display='none'; renderLines(); }
+function hideBuilder(){ document.getElementById('builder-panel').style.display='none'; document.getElementById('proposals-panel').style.display='block'; }
+
+function saveProposal(send){
+    if(!TOKEN){ alert('No token — open from your magic link email.'); return; }
+    var msg=document.getElementById('status-msg');
+    msg.style.display='none';
+    var body={
+        lead_token:TOKEN,
+        customer_name:document.getElementById('cust-name').value.trim(),
+        customer_email:document.getElementById('cust-email').value.trim(),
+        project_title:document.getElementById('proj-title').value.trim(),
+        scope:document.getElementById('scope').value.trim(),
+        timeline:document.getElementById('timeline').value.trim(),
+        valid_days:parseInt(document.getElementById('valid-days').value)||30,
+        line_items:lineItems.filter(function(li){return li.description||li.unit_price;}),
+        terms:document.getElementById('terms').value.trim(),
+        send_now:send?1:0
+    };
+    fetch(API+'create_proposal',{method:'POST',headers:{'Content-Type':'application/json','X-Frappe-CSRF-Token':'fetch'},body:JSON.stringify(body)})
+    .then(function(r){return r.json();})
+    .then(function(j){
+        var d=j.message||j;
+        if(d.success){
+            msg.style.cssText='display:block;background:#d1fae5;color:#065f46;padding:.75rem 1rem;border-radius:6px;margin-top:1rem';
+            msg.innerHTML=send
+                ?'✅ Proposal sent! <a href="'+d.view_url+'" target="_blank" style="color:#065f46">Preview →</a> &nbsp; <button onclick="copyLink(\''+d.view_url+'\')" style="background:none;border:1px solid #065f46;border-radius:4px;padding:.2rem .5rem;cursor:pointer;font-size:.8rem;color:#065f46">Copy link</button>'
+                :'✅ Saved as draft. <a href="'+d.view_url+'" target="_blank" style="color:#065f46">Preview →</a>';
+            lineItems=[{description:'',qty:1,unit_price:0}];
+            loadProposals();
+        } else {
+            msg.style.cssText='display:block;background:#fee2e2;color:#991b1b;padding:.75rem 1rem;border-radius:6px;margin-top:1rem';
+            msg.textContent=d.error||'Error saving proposal.';
+        }
+    })
+    .catch(function(){ msg.style.cssText='display:block;background:#fee2e2;color:#991b1b;padding:.75rem 1rem;border-radius:6px;margin-top:1rem'; msg.textContent='Network error.'; });
+}
+
+function copyLink(url){ navigator.clipboard&&navigator.clipboard.writeText(url).then(function(){alert('Link copied!');}); }
+
+function loadProposals(){
+    if(!TOKEN){ document.getElementById('proposals-list').innerHTML='<p style="color:#94a3b8;font-size:.9rem">No token — open from your magic link email.</p>'; return; }
+    fetch(API+'get_proposals?lead_token='+encodeURIComponent(TOKEN))
+    .then(function(r){return r.json();})
+    .then(function(j){
+        var d=j.message||j;
+        if(!d.success||!d.proposals.length){
+            document.getElementById('proposals-list').innerHTML='<p style="color:#94a3b8;font-size:.9rem">No proposals yet. Click "New Proposal" to create your first one.</p>';
+            return;
+        }
+        document.getElementById('proposals-list').innerHTML=d.proposals.map(function(p){
+            var sc={draft:'s-draft',sent:'s-sent',accepted:'s-accepted',declined:'s-declined'}[p.status]||'s-draft';
+            var viewUrl='/proposals/view/?token='+p.proposal_token;
+            return '<div class="prop-row">'
+                +'<span class="prop-status '+sc+'">'+p.status+'</span>'
+                +'<span style="flex:1;font-weight:600;font-size:.9rem">'+esc(p.project_title||'Untitled proposal')+'</span>'
+                +(p.customer_name?'<span style="font-size:.82rem;color:#64748b">'+esc(p.customer_name)+'</span>':'')
+                +'<span style="font-size:.85rem;font-weight:600;color:#0f172a">$'+Number(p.total||0).toLocaleString('en-NZ',{minimumFractionDigits:2})+'</span>'
+                +'<a href="'+viewUrl+'" target="_blank" style="font-size:.8rem;color:#0055a5;text-decoration:none;font-weight:600">View →</a>'
+                +'</div>';
+        }).join('');
+    })
+    .catch(function(){ document.getElementById('proposals-list').innerHTML='<p style="color:#b00020">Network error.</p>'; });
+}
+
+loadProposals();
+</script>
+</body>
+</html>

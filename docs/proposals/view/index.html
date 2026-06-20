@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Proposal | NZ Tradie Tools</title>
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        *{box-sizing:border-box;margin:0;padding:0}
+        body{font-family:'Public Sans',sans-serif;background:#f1f5f9;color:#0f172a;font-size:16px}
+        .proposal-wrap{max-width:680px;margin:2rem auto;padding:0 1rem 4rem}
+        .proposal-doc{background:#fff;border-radius:12px;box-shadow:0 2px 16px rgba(0,0,0,.09);overflow:hidden}
+        .doc-header{background:#0f172a;color:#fff;padding:2rem 2.5rem}
+        .doc-header h1{font-size:1.4rem;font-weight:800;margin:0 0 .3rem}
+        .doc-header .meta{font-size:.85rem;opacity:.7}
+        .doc-body{padding:2rem 2.5rem}
+        .section{margin-bottom:1.75rem}
+        .section h3{font-size:.78rem;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.65rem}
+        .section p{font-size:.95rem;color:#334155;line-height:1.65;white-space:pre-wrap}
+        .li-table{width:100%;border-collapse:collapse;font-size:.875rem;margin-top:.5rem}
+        .li-table th{text-align:left;font-size:.75rem;color:#94a3b8;font-weight:700;padding:.4rem .5rem;border-bottom:2px solid #f1f5f9;text-transform:uppercase;letter-spacing:.05em}
+        .li-table td{padding:.55rem .5rem;border-bottom:1px solid #f8fafc;vertical-align:top}
+        .li-table .li-right{text-align:right}
+        .totals-block{margin-top:1rem;display:flex;justify-content:flex-end}
+        .totals-inner{min-width:220px;font-size:.875rem}
+        .totals-inner .row{display:flex;justify-content:space-between;padding:.25rem 0;color:#64748b}
+        .totals-inner .row.grand{font-weight:800;font-size:1.1rem;color:#0f172a;border-top:2px solid #e2e8f0;padding-top:.6rem;margin-top:.2rem}
+        .validity{font-size:.8rem;color:#94a3b8;margin-top:1rem;font-style:italic}
+        .terms-box{background:#f8fafc;border-radius:6px;padding:.85rem 1rem;font-size:.82rem;color:#475569;line-height:1.55;white-space:pre-wrap}
+        .tradie-card{display:flex;align-items:center;gap:.85rem;padding:.85rem 1rem;background:#f0f7ff;border-radius:8px}
+        .tradie-icon{width:44px;height:44px;background:#dbeafe;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.25rem;flex-shrink:0}
+        .action-bar{padding:1.5rem 2.5rem;border-top:1px solid #f1f5f9;background:#f8fafc;display:flex;gap:.85rem;flex-wrap:wrap;align-items:center}
+        .btn-accept{background:#16a34a;color:#fff;border:none;border-radius:7px;padding:.65rem 1.4rem;font-size:.95rem;font-weight:700;cursor:pointer;font-family:inherit}
+        .btn-decline{background:#fff;color:#64748b;border:1.5px solid #e2e8f0;border-radius:7px;padding:.65rem 1.2rem;font-size:.95rem;font-weight:600;cursor:pointer;font-family:inherit}
+        .btn-accept:hover{background:#15803d}
+        .btn-decline:hover{background:#f1f5f9}
+        .status-banner{padding:1rem 2.5rem;font-size:.95rem;font-weight:700}
+        .status-accepted{background:#d1fae5;color:#065f46}
+        .status-declined{background:#fee2e2;color:#991b1b}
+        @media print{.action-bar{display:none}.proposal-wrap{margin:0;padding:0}.proposal-doc{box-shadow:none;border-radius:0}}
+        @media(max-width:500px){.doc-header,.doc-body,.action-bar,.status-banner{padding-left:1.25rem;padding-right:1.25rem}}
+    </style>
+</head>
+<body>
+<div class="proposal-wrap">
+    <div id="loading" style="text-align:center;padding:3rem;color:#94a3b8">Loading proposal…</div>
+    <div class="proposal-doc" id="proposal-doc" style="display:none">
+        <div class="doc-header">
+            <div class="meta" id="doc-from"></div>
+            <h1 id="doc-title">Project Proposal</h1>
+            <div class="meta" id="doc-to"></div>
+        </div>
+
+        <div id="status-banner" style="display:none"></div>
+
+        <div class="doc-body">
+            <div class="section" id="tradie-section"></div>
+            <div class="section" id="scope-section" style="display:none">
+                <h3>Scope of Work</h3>
+                <p id="doc-scope"></p>
+            </div>
+            <div class="section" id="timeline-section" style="display:none">
+                <h3>Timeline</h3>
+                <p id="doc-timeline"></p>
+            </div>
+            <div class="section" id="pricing-section">
+                <h3>Pricing</h3>
+                <table class="li-table">
+                    <thead><tr><th>Description</th><th class="li-right">Qty</th><th class="li-right">Unit</th><th class="li-right">Total</th></tr></thead>
+                    <tbody id="doc-lines"></tbody>
+                </table>
+                <div class="totals-block">
+                    <div class="totals-inner">
+                        <div class="row"><span>Subtotal (excl. GST)</span><span id="doc-sub"></span></div>
+                        <div class="row"><span>GST (15%)</span><span id="doc-gst"></span></div>
+                        <div class="row grand"><span>Total (incl. GST)</span><span id="doc-total"></span></div>
+                    </div>
+                </div>
+                <p class="validity" id="doc-valid"></p>
+            </div>
+            <div class="section" id="terms-section" style="display:none">
+                <h3>Terms &amp; Conditions</h3>
+                <div class="terms-box" id="doc-terms"></div>
+            </div>
+        </div>
+
+        <div class="action-bar" id="action-bar">
+            <button class="btn-accept" onclick="respond('accepted')">✓ Accept proposal</button>
+            <button class="btn-decline" onclick="respond('declined')">✕ Decline</button>
+            <button onclick="window.print()" style="background:none;border:none;color:#94a3b8;font-size:.85rem;cursor:pointer;font-family:inherit;margin-left:auto">🖨 Print / Save PDF</button>
+        </div>
+    </div>
+    <div id="error-state" style="display:none;text-align:center;padding:3rem;color:#b00020"></div>
+</div>
+
+<script>
+var API = 'https://tradietools.optified.nz/api/method/tradietools.api.';
+var TOKEN = new URLSearchParams(window.location.search).get('token') || '';
+var PROP;
+
+function fmt(n){ return '$'+(+n||0).toLocaleString('en-NZ',{minimumFractionDigits:2,maximumFractionDigits:2}); }
+function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+function loadProposal(){
+    if(!TOKEN){
+        document.getElementById('loading').style.display='none';
+        document.getElementById('error-state').style.display='block';
+        document.getElementById('error-state').textContent='No proposal token — check your link.';
+        return;
+    }
+    fetch(API+'get_proposal?token='+encodeURIComponent(TOKEN))
+    .then(function(r){return r.json();})
+    .then(function(j){
+        var d=j.message||j;
+        document.getElementById('loading').style.display='none';
+        if(!d.success){
+            document.getElementById('error-state').style.display='block';
+            document.getElementById('error-state').textContent=d.error||'Proposal not found.';
+            return;
+        }
+        PROP=d.proposal;
+        renderProposal(PROP);
+        document.getElementById('proposal-doc').style.display='block';
+    })
+    .catch(function(){
+        document.getElementById('loading').style.display='none';
+        document.getElementById('error-state').style.display='block';
+        document.getElementById('error-state').textContent='Network error — please refresh.';
+    });
+}
+
+function renderProposal(p){
+    document.title=(p.project_title||'Proposal')+' | NZ Tradie Tools';
+    document.getElementById('doc-from').textContent='Prepared by '+esc(p.tradie_name||'Your tradie');
+    document.getElementById('doc-title').textContent=esc(p.project_title||'Project Proposal');
+    if(p.customer_name) document.getElementById('doc-to').textContent='Prepared for: '+esc(p.customer_name);
+
+    // Status banner
+    if(p.status==='accepted'||p.status==='declined'){
+        var banner=document.getElementById('status-banner');
+        banner.style.display='block';
+        banner.className='status-banner status-'+p.status;
+        banner.textContent=p.status==='accepted'?'✅ You accepted this proposal':'✕ You declined this proposal';
+        document.getElementById('action-bar').style.display='none';
+    }
+
+    // Tradie card
+    var tc=document.getElementById('tradie-section');
+    tc.innerHTML='<h3>From</h3><div class="tradie-card"><div class="tradie-icon">🔧</div><div>'
+        +'<div style="font-weight:700">'+esc(p.tradie_name||'')+'</div>'
+        +(p.tradie_phone?'<div style="font-size:.85rem;color:#475569">📞 '+esc(p.tradie_phone)+'</div>':'')
+        +(p.tradie_email?'<div style="font-size:.85rem;color:#475569">✉️ '+esc(p.tradie_email)+'</div>':'')
+        +(p.listing_slug?'<div style="font-size:.82rem;margin-top:.25rem"><a href="/businesses/'+esc(p.listing_slug)+'/" style="color:#0055a5">View profile →</a></div>':'')
+        +'</div></div>';
+
+    if(p.scope){ document.getElementById('scope-section').style.display='block'; document.getElementById('doc-scope').textContent=p.scope; }
+    if(p.timeline){ document.getElementById('timeline-section').style.display='block'; document.getElementById('doc-timeline').textContent=p.timeline; }
+
+    // Line items
+    var lines=p.line_items||[];
+    document.getElementById('doc-lines').innerHTML=lines.map(function(li){
+        return '<tr><td>'+esc(li.description||'')+'</td>'
+            +'<td class="li-right" style="white-space:nowrap">'+Number(li.qty||0).toLocaleString('en-NZ')+'</td>'
+            +'<td class="li-right" style="white-space:nowrap">'+fmt(li.unit_price||0)+'</td>'
+            +'<td class="li-right" style="white-space:nowrap;font-weight:600">'+fmt((li.qty||0)*(li.unit_price||0))+'</td>'
+            +'</tr>';
+    }).join('');
+    document.getElementById('doc-sub').textContent=fmt(p.subtotal||0);
+    document.getElementById('doc-gst').textContent=fmt(p.gst_amount||0);
+    document.getElementById('doc-total').textContent=fmt(p.total||0);
+    if(p.valid_days) document.getElementById('doc-valid').textContent='This proposal is valid for '+p.valid_days+' days from the date issued.';
+    if(p.terms){ document.getElementById('terms-section').style.display='block'; document.getElementById('doc-terms').textContent=p.terms; }
+}
+
+function respond(status){
+    var btn=document.querySelector(status==='accepted'?'.btn-accept':'.btn-decline');
+    if(btn){btn.disabled=true; btn.textContent=status==='accepted'?'Accepting…':'Declining…';}
+    fetch(API+'update_proposal_status',{
+        method:'POST',
+        headers:{'Content-Type':'application/json','X-Frappe-CSRF-Token':'fetch'},
+        body:JSON.stringify({token:TOKEN,status:status})
+    })
+    .then(function(r){return r.json();})
+    .then(function(j){
+        var d=j.message||j;
+        if(d.success){
+            document.getElementById('action-bar').style.display='none';
+            var banner=document.getElementById('status-banner');
+            banner.style.display='block';
+            banner.className='status-banner status-'+status;
+            banner.textContent=status==='accepted'
+                ?'✅ Proposal accepted — your tradie has been notified and will be in touch.'
+                :'✕ Proposal declined — your tradie has been notified.';
+        } else {
+            if(btn){btn.disabled=false; btn.textContent=status==='accepted'?'✓ Accept proposal':'✕ Decline';}
+            alert(d.error||'Error — please try again.');
+        }
+    })
+    .catch(function(){
+        if(btn){btn.disabled=false; btn.textContent=status==='accepted'?'✓ Accept proposal':'✕ Decline';}
+        alert('Network error.');
+    });
+}
+
+loadProposal();
+</script>
+</body>
+</html>

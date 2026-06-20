@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upgrade to Business | NZ Tradie Tools</title>
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        *{box-sizing:border-box;margin:0;padding:0}
+        body{font-family:'Public Sans',sans-serif;background:#f1f5f9;color:#0f172a;font-size:16px}
+        .top-bar{background:#0f172a;color:#fff;padding:1rem 1.5rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+        .top-bar h1{font-size:1.1rem;font-weight:700;flex:1}
+        .top-bar a{color:rgba(255,255,255,.7);font-size:.85rem;text-decoration:none}
+        .wrap{max-width:780px;margin:0 auto;padding:1.5rem 1rem 4rem}
+        .card{background:#fff;border-radius:10px;box-shadow:0 1px 6px rgba(0,0,0,.07);overflow:hidden;margin-bottom:1.25rem}
+        .card-head{padding:1.25rem 1.5rem;border-bottom:1px solid #f1f5f9;display:flex;align-items:center;gap:.75rem}
+        .card-body{padding:1.25rem 1.5rem}
+        .tier-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+        @media(max-width:540px){.tier-grid{grid-template-columns:1fr}}
+        .tier-card{border:2px solid #e2e8f0;border-radius:8px;padding:1.1rem;position:relative}
+        .tier-card.current{border-color:#0055a5;background:#f0f7ff}
+        .tier-card.highlight{border-color:#5b21b6;background:#faf5ff}
+        .tier-badge{font-size:.72rem;font-weight:800;padding:.2rem .5rem;border-radius:20px;display:inline-block;margin-bottom:.5rem}
+        .badge-free{background:#f1f5f9;color:#64748b}
+        .badge-pro{background:#dbeafe;color:#1d4ed8}
+        .badge-business{background:#ede9fe;color:#5b21b6}
+        .tier-price{font-size:1.6rem;font-weight:800;color:#0f172a;margin:.3rem 0}
+        .tier-price span{font-size:.85rem;font-weight:400;color:#64748b}
+        .tier-features{list-style:none;margin:.75rem 0;font-size:.875rem;color:#334155}
+        .tier-features li{padding:.25rem 0;padding-left:1.25rem;position:relative}
+        .tier-features li::before{content:'✓';position:absolute;left:0;color:#16a34a;font-weight:700}
+        .btn-upgrade{background:#5b21b6;color:#fff;border:none;border-radius:7px;padding:.65rem 1.4rem;font-size:.95rem;font-weight:700;cursor:pointer;font-family:inherit;width:100%;margin-top:.75rem}
+        .btn-upgrade:hover{background:#4c1d95}
+        .btn-upgrade:disabled{background:#94a3b8;cursor:not-allowed}
+        .current-label{font-size:.8rem;color:#0055a5;font-weight:700;margin-top:.75rem;text-align:center}
+        .field-group{margin-bottom:.85rem}
+        .field-group label{display:block;font-size:.85rem;font-weight:600;color:#374151;margin-bottom:.3rem}
+        .field-group input,.field-group select{width:100%;padding:.5rem .75rem;border:1.5px solid #d1d5db;border-radius:6px;font-family:inherit;font-size:.9rem;color:#0f172a}
+        .field-group input:focus,.field-group select:focus{outline:none;border-color:#5b21b6}
+        .btn-primary{background:#0055a5;color:#fff;border:none;border-radius:6px;padding:.55rem 1.2rem;font-size:.9rem;font-weight:700;cursor:pointer;font-family:inherit}
+        .btn-secondary{background:#f1f5f9;color:#334155;border:1px solid #cbd5e1;border-radius:6px;padding:.55rem 1rem;font-size:.9rem;font-weight:600;cursor:pointer;font-family:inherit}
+        .seat-row{display:flex;align-items:center;gap:.75rem;padding:.6rem 0;border-bottom:1px solid #f8fafc;flex-wrap:wrap}
+        .seat-status{font-size:.75rem;font-weight:700;padding:.15rem .5rem;border-radius:20px}
+        .s-active{background:#d1fae5;color:#065f46}
+        .s-pending{background:#fef3c7;color:#92400e}
+        .msg{padding:.6rem .85rem;border-radius:5px;font-size:.875rem;margin-top:.65rem}
+        .msg-ok{background:#d1fae5;color:#065f46}
+        .msg-err{background:#fee2e2;color:#991b1b}
+    </style>
+</head>
+<body>
+<div class="top-bar">
+    <h1>⚡ Upgrade &amp; Team</h1>
+    <a href="/pipeline/">Pipeline</a>
+    <a href="/lead-inbox/">Lead Inbox</a>
+    <a href="/proposals/create/">Proposals</a>
+</div>
+
+<div class="wrap">
+    <!-- Current status -->
+    <div class="card" id="status-card">
+        <div class="card-body" style="text-align:center;color:#94a3b8;padding:2rem">Loading…</div>
+    </div>
+
+    <!-- Tier picker -->
+    <div class="card">
+        <div class="card-head"><h2 style="font-size:1rem;font-weight:700">Plans</h2></div>
+        <div class="card-body">
+            <div class="tier-grid">
+                <div class="tier-card" id="card-free">
+                    <span class="tier-badge badge-free">Free</span>
+                    <div class="tier-price">$0 <span>/month</span></div>
+                    <ul class="tier-features">
+                        <li>Basic listing</li>
+                        <li>Lead inbox (limited)</li>
+                        <li>Invoice tool</li>
+                    </ul>
+                </div>
+                <div class="tier-card" id="card-pro">
+                    <span class="tier-badge badge-pro">Pro</span>
+                    <div class="tier-price">$29 <span>/month</span></div>
+                    <ul class="tier-features">
+                        <li>Priority in search</li>
+                        <li>Unlimited leads</li>
+                        <li>Proposal builder</li>
+                        <li>ROI dashboard</li>
+                        <li>Review requests</li>
+                    </ul>
+                    <button class="btn-upgrade" id="btn-pro" onclick="upgradeTier('pro')">Upgrade to Pro →</button>
+                </div>
+            </div>
+            <div class="tier-grid" style="margin-top:1rem">
+                <div class="tier-card highlight" id="card-business">
+                    <span class="tier-badge badge-business">Business</span>
+                    <div class="tier-price">$59 <span>/month</span></div>
+                    <ul class="tier-features">
+                        <li>Everything in Pro</li>
+                        <li>Up to 3 team members</li>
+                        <li>Shared lead inbox</li>
+                        <li>Team invitation management</li>
+                        <li>Business profile badge</li>
+                        <li>Priority support</li>
+                    </ul>
+                    <button class="btn-upgrade" id="btn-business" onclick="upgradeTier('business')">Upgrade to Business →</button>
+                </div>
+            </div>
+            <div id="tier-msg"></div>
+        </div>
+    </div>
+
+    <!-- Team seats (business only) -->
+    <div class="card" id="team-card" style="display:none">
+        <div class="card-head">
+            <h2 style="font-size:1rem;font-weight:700">👥 Team members</h2>
+        </div>
+        <div class="card-body">
+            <div id="seats-list"><p style="color:#94a3b8;font-size:.9rem">Loading…</p></div>
+
+            <div style="margin-top:1.25rem;padding-top:1rem;border-top:1px solid #f1f5f9">
+                <h3 style="font-size:.9rem;margin-bottom:.75rem">Invite a team member</h3>
+                <div style="display:flex;gap:.75rem;flex-wrap:wrap;align-items:flex-end">
+                    <div class="field-group" style="flex:1;min-width:200px;margin:0">
+                        <label>Name</label>
+                        <input type="text" id="invite-name" placeholder="e.g. Dave Smith">
+                    </div>
+                    <div class="field-group" style="flex:1;min-width:200px;margin:0">
+                        <label>Email</label>
+                        <input type="email" id="invite-email" placeholder="dave@example.com">
+                    </div>
+                    <button class="btn-primary" onclick="inviteMember()">Send invite →</button>
+                </div>
+                <div id="invite-msg"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+var API = 'https://tradietools.optified.nz/api/method/tradietools.api.';
+var TOKEN = new URLSearchParams(window.location.search).get('token') || localStorage.getItem('tt_lead_token') || '';
+if(TOKEN) localStorage.setItem('tt_lead_token', TOKEN);
+
+var currentTier = 'free';
+
+function showMsg(elId, text, ok){
+    var el=document.getElementById(elId);
+    if(!el) return;
+    el.className='msg '+(ok?'msg-ok':'msg-err');
+    el.textContent=text;
+    el.style.display='block';
+}
+
+function loadStatus(){
+    if(!TOKEN){
+        document.getElementById('status-card').querySelector('.card-body').innerHTML=
+            '<p style="color:#b00020">No token — open from your magic link.</p>';
+        return;
+    }
+    fetch(API+'get_team_seats?lead_token='+encodeURIComponent(TOKEN))
+    .then(function(r){return r.json();})
+    .then(function(j){
+        var d=j.message||j;
+        if(!d.success){
+            document.getElementById('status-card').querySelector('.card-body').innerHTML=
+                '<p style="color:#b00020">'+(d.error||'Error loading status')+'</p>';
+            return;
+        }
+        currentTier = d.tier || 'free';
+        renderStatus(d);
+        updateButtons(d.tier);
+        if(d.tier === 'business'){
+            document.getElementById('team-card').style.display='block';
+            renderSeats(d.seats || []);
+        }
+    })
+    .catch(function(){
+        document.getElementById('status-card').querySelector('.card-body').innerHTML=
+            '<p style="color:#b00020">Network error — please refresh.</p>';
+    });
+}
+
+function renderStatus(d){
+    var tierLabel = {free:'Free',pro:'Pro ($29/mo)',business:'Business ($59/mo)'}[d.tier]||d.tier;
+    var tierColor = {free:'#64748b',pro:'#1d4ed8',business:'#5b21b6'}[d.tier]||'#64748b';
+    document.getElementById('status-card').querySelector('.card-body').innerHTML=
+        '<div style="display:flex;align-items:center;gap:.75rem;flex-wrap:wrap">'
+        +'<div style="font-size:2rem">⚡</div>'
+        +'<div><div style="font-size:.8rem;color:#94a3b8;font-weight:600">CURRENT PLAN</div>'
+        +'<div style="font-size:1.3rem;font-weight:800;color:'+tierColor+'">'+tierLabel+'</div>'
+        +(d.tier==='business' && d.seats
+            ?'<div style="font-size:.85rem;color:#475569;margin-top:.1rem">'+d.seats.filter(function(s){return s.status==='active';}).length+' of '+(d.max_seats||3)+' seats used</div>'
+            :'')
+        +'</div></div>';
+}
+
+function updateButtons(tier){
+    var tiers=['free','pro','business'];
+    tiers.forEach(function(t){
+        var btn=document.getElementById('btn-'+t);
+        var card=document.getElementById('card-'+t);
+        if(!btn&&!card) return;
+        if(t===tier){
+            if(btn) btn.remove();
+            if(card){
+                card.classList.add('current');
+                var lbl=document.createElement('p');
+                lbl.className='current-label';
+                lbl.textContent='✓ Current plan';
+                card.appendChild(lbl);
+            }
+        }
+    });
+}
+
+function upgradeTier(tier){
+    if(!TOKEN){ alert('No token — open from your magic link.'); return; }
+    var btn=document.getElementById('btn-'+tier);
+    if(btn){btn.disabled=true; btn.textContent='Upgrading…';}
+    fetch(API+'set_business_tier',{
+        method:'POST',
+        headers:{'Content-Type':'application/json','X-Frappe-CSRF-Token':'fetch'},
+        body:JSON.stringify({lead_token:TOKEN,tier:tier})
+    })
+    .then(function(r){return r.json();})
+    .then(function(j){
+        var d=j.message||j;
+        if(d.success){
+            showMsg('tier-msg','✅ Plan updated to '+tier+'! Refreshing…',true);
+            setTimeout(function(){ window.location.reload(); },1500);
+        } else {
+            if(btn){btn.disabled=false; btn.textContent='Upgrade to '+tier[0].toUpperCase()+tier.slice(1)+' →';}
+            showMsg('tier-msg',d.error||'Error upgrading plan',false);
+        }
+    })
+    .catch(function(){
+        if(btn){btn.disabled=false; btn.textContent='Upgrade to '+tier[0].toUpperCase()+tier.slice(1)+' →';}
+        showMsg('tier-msg','Network error — please try again',false);
+    });
+}
+
+function renderSeats(seats){
+    if(!seats.length){
+        document.getElementById('seats-list').innerHTML='<p style="color:#94a3b8;font-size:.9rem">No team members yet. Invite someone below.</p>';
+        return;
+    }
+    document.getElementById('seats-list').innerHTML=seats.map(function(s){
+        var sc=s.status==='active'?'s-active':'s-pending';
+        return '<div class="seat-row">'
+            +'<span class="seat-status '+sc+'">'+s.status+'</span>'
+            +'<span style="flex:1;font-weight:600;font-size:.9rem">'+(s.member_name||'—')+'</span>'
+            +'<span style="font-size:.85rem;color:#64748b">'+(s.member_email||'')+'</span>'
+            +'</div>';
+    }).join('');
+}
+
+function inviteMember(){
+    var name=document.getElementById('invite-name').value.trim();
+    var email=document.getElementById('invite-email').value.trim();
+    if(!name||!email){ showMsg('invite-msg','Name and email are required',false); return; }
+    if(!TOKEN){ showMsg('invite-msg','No token',false); return; }
+    fetch(API+'invite_team_member',{
+        method:'POST',
+        headers:{'Content-Type':'application/json','X-Frappe-CSRF-Token':'fetch'},
+        body:JSON.stringify({lead_token:TOKEN,member_name:name,member_email:email})
+    })
+    .then(function(r){return r.json();})
+    .then(function(j){
+        var d=j.message||j;
+        if(d.success){
+            document.getElementById('invite-name').value='';
+            document.getElementById('invite-email').value='';
+            showMsg('invite-msg','✅ Invite sent to '+email,true);
+            loadStatus();
+        } else {
+            showMsg('invite-msg',d.error||'Error sending invite',false);
+        }
+    })
+    .catch(function(){ showMsg('invite-msg','Network error',false); });
+}
+
+loadStatus();
+</script>
+</body>
+</html>
