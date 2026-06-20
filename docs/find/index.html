@@ -235,7 +235,7 @@
       </select>
       <select class="filter-select" id="premiumFilter" onchange="applyFilters()">
         <option value="">All Members</option>
-        <option value="verified">Verified Only</option>
+        <option value="verified">Listing Verified Only</option>
         <option value="premium">Pro Only</option>
       </select>
       <select class="filter-select" id="ratingFilter" onchange="applyFilters()">
@@ -416,14 +416,14 @@ function verifiedCard(t) {
     ? `<a href="/businesses/${esc(t.slug)}/">${esc(t.name||'Unknown')}</a>`
     : esc(t.name||'Unknown');
   const verifiedLine = t.source
-    ? `✅ Verified · ${esc(t.source)}${t.verified_date ? ` (${esc(t.verified_date)})` : ''}`
-    : '✅ Verified';
+    ? `✅ Listing verified · ${esc(t.source)}${t.verified_date ? ` (${esc(t.verified_date)})` : ''}`
+    : '✅ Listing verified';
   const services = (t.services||[]).slice(0,3);
   return `<div class="tradie-card is-verified${isHighlighted?' tt-highlighted':''}">
     <div class="tc-top">
       <div class="tc-avatar ${tradeColour(t.trade)}">${initials(t.name)}</div>
       <div class="tc-info">
-        <div class="tc-name">${nameEl}<span class="badge-verified">✓ VERIFIED</span></div>
+        <div class="tc-name">${nameEl}<span class="badge-verified" title="Listing verified: email address confirmed and contact details spot-checked by TradieTools. Does not confirm trade licences or insurance.">✓ LISTING VERIFIED</span></div>
         <div class="tc-trade">${esc(label)}</div>
         <div class="tc-location">${esc(location)}</div>
       </div>
