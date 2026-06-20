@@ -133,7 +133,6 @@
                     Send me seasonal maintenance reminders — things like checking your hot water cylinder before winter, gutter cleans before autumn rains, and heat pump servicing. Unsubscribe any time.
                 </label>
             </div>
-            <input type="text" name="website_url" id="website_url" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" aria-hidden="true">
             <button type="submit" id="quotes-submit">Get 3 Free Quotes →</button>
         </form>
 
@@ -174,13 +173,9 @@
             }
         } catch(e) {}
 
-        var _loadedAt = Date.now();
-
         form.addEventListener('submit', function(e){
             e.preventDefault();
             if (!form.checkValidity()) { form.reportValidity(); return; }
-            if (document.getElementById('website_url').value) return;
-            if (Date.now() - _loadedAt < 3000) return;
 
             var data = {
                 first_name:      form.first_name.value.trim(),
