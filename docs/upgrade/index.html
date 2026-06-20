@@ -74,6 +74,9 @@
         <div class="card-body" id="status-body">
             <div class="status-box"><div class="status-icon">⚡</div><div><div class="status-label">Current plan</div><div class="status-tier">Loading…</div></div></div>
         </div>
+        <div id="manage-bar" style="display:none;padding:.75rem 1.5rem;border-top:1px solid #f1f5f9;background:#f8fafc">
+            <button onclick="openBillingPortal()" style="background:none;border:none;color:#64748b;font-size:.85rem;cursor:pointer;font-family:inherit;text-decoration:underline;padding:0">Manage or cancel subscription →</button>
+        </div>
     </div>
 
     <!-- Upgrade banner if came back from Stripe success -->
@@ -190,6 +193,7 @@ function loadStatus(){
         CURRENT_TIER = d.tier || 'free';
         renderStatus(d);
         markCurrentTier(CURRENT_TIER);
+        if(CURRENT_TIER !== 'free') document.getElementById('manage-bar').style.display='block';
         if(CURRENT_TIER==='business'){
             document.getElementById('team-card').style.display='block';
             renderSeats(d.members||[], d.seat_limit||3);
@@ -300,6 +304,25 @@ function inviteMember(){
 }
 
 function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+function openBillingPortal(){
+    if(!TOKEN){ alert('No token.'); return; }
+    var btn = event.target;
+    btn.textContent = 'Opening…';
+    btn.disabled = true;
+    fetch(API+'create_billing_portal_session',{
+        method:'POST',
+        headers:{'Content-Type':'application/json','X-Frappe-CSRF-Token':'fetch'},
+        body:JSON.stringify({lead_token:TOKEN})
+    })
+    .then(function(r){return r.json();})
+    .then(function(j){
+        var d=j.message||j;
+        if(d.success && d.portal_url){ window.location.href=d.portal_url; }
+        else{ btn.textContent='Manage or cancel subscription →'; btn.disabled=false; alert(d.error||'Could not open billing portal.'); }
+    })
+    .catch(function(){ btn.textContent='Manage or cancel subscription →'; btn.disabled=false; alert('Network error.'); });
+}
 
 loadStatus();
 </script>
