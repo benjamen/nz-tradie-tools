@@ -211,6 +211,7 @@
 
             <!-- Profile completeness score — only shown to the listing owner via ?token= -->
             <div id="tt-profile-score" style="display:none;margin:1.5rem 0;background:#f0f7ff;border:1px solid #bfdbfe;border-radius:8px;padding:1.25rem 1.5rem"></div>
+            <div id="tt-roi-panel" style="display:none;margin:1rem 0"></div>
 
             <div id="tt-reviews" style="margin-top:1.75rem">
                 <h3 style="font-size:1.05rem;font-weight:700;margin-bottom:.75rem;color:#1e293b">
@@ -682,6 +683,47 @@
       }).catch(function(){});
   }
 
+  function loadROI(){
+    var token = new URLSearchParams(window.location.search).get('token');
+    if(!token) return;
+    var panel = document.getElementById('tt-roi-panel');
+    if(!panel) return;
+    fetch(API+'get_roi_summary?lead_token='+encodeURIComponent(token))
+      .then(function(r){return r.json();})
+      .then(function(d){
+        var m=d.message||d;
+        if(!m.success) return;
+        var fmt=function(n){ return n!=null?'$'+Number(n).toLocaleString('en-NZ'):'—'; };
+        var compRows='';
+        (m.competitors_above||[]).forEach(function(c,i){
+          var stars=''; for(var s=0;s<5;s++) stars+=s<Math.round(c.rating||0)?'★':'☆';
+          compRows+='<tr>'
+            +'<td style="padding:.3rem .5rem;color:#64748b;font-size:.82rem">#'+(i+1)+'</td>'
+            +'<td style="padding:.3rem .5rem;font-size:.85rem;font-weight:600">'+c.name+'</td>'
+            +'<td style="padding:.3rem .5rem;font-size:.82rem;color:#f59e0b">'+stars+'</td>'
+            +'<td style="padding:.3rem .5rem;font-size:.82rem;color:#64748b">'+c.reviews+' reviews</td>'
+            +'</tr>';
+        });
+
+        panel.style.display='block';
+        panel.innerHTML=
+          '<div style="background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:1.25rem 1.4rem;margin-bottom:.75rem">'
+          +'<h3 style="font-size:1rem;color:#0f172a;margin:0 0 1rem">📊 Your TradieTools Performance</h3>'
+          +'<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:.75rem;margin-bottom:1rem">'
+          +'<div style="background:#f0fdf4;border-radius:7px;padding:.7rem .9rem;text-align:center"><div style="font-size:1.4rem;font-weight:800;color:#16a34a">'+(m.leads_last_30_days||0)+'</div><div style="font-size:.75rem;color:#64748b">Leads (30 days)</div></div>'
+          +'<div style="background:#eff6ff;border-radius:7px;padding:.7rem .9rem;text-align:center"><div style="font-size:1.4rem;font-weight:800;color:#1d4ed8">'+(m.accepted_last_30_days||0)+'</div><div style="font-size:.75rem;color:#64748b">Accepted</div></div>'
+          +'<div style="background:#fef9c3;border-radius:7px;padding:.7rem .9rem;text-align:center"><div style="font-size:1.4rem;font-weight:800;color:#92400e">'+fmt(m.est_revenue_30d_nzd)+'</div><div style="font-size:.75rem;color:#64748b">Est. value/month</div></div>'
+          +'<div style="background:#f0fdf4;border-radius:7px;padding:.7rem .9rem;text-align:center"><div style="font-size:1.4rem;font-weight:800;color:#16a34a">'+(m.roi_label||'—')+'</div><div style="font-size:.75rem;color:#64748b">ROI on subscription</div></div>'
+          +'</div>'
+          +(m.rank_label?'<p style="font-size:.88rem;color:#334155;margin:.25rem 0"><strong>📍 Ranking:</strong> '+m.rank_label+'</p>':'')
+          +(m.benchmark_note?'<p style="font-size:.85rem;color:#0055a5;margin:.2rem 0 .75rem">'+m.benchmark_note+'</p>':'')
+          +(compRows?'<details style="margin-top:.5rem"><summary style="font-size:.85rem;font-weight:600;cursor:pointer;color:#475569">Tradies ranked above you</summary>'
+            +'<table style="width:100%;border-collapse:collapse;margin-top:.5rem">'+compRows+'</table></details>':'')
+          +(m.upsell_message?'<p style="font-size:.82rem;background:#fef3c7;border-radius:5px;padding:.5rem .75rem;margin-top:.75rem;color:#92400e">'+m.upsell_message+'</p>':'')
+          +'</div>';
+      }).catch(function(){});
+  }
+
   // Star picker
   // Save-tradie button for logged-in homeowners
   var TT_TRADIE_ID = null;
@@ -723,6 +765,7 @@
     loadDynamicBadges();
     loadPhotos();
     loadProfileScore();
+    loadROI();
     initSaveButton();
     var picker = document.getElementById('tt-star-picker');
     if(!picker) return;
