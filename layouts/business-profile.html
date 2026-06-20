@@ -510,7 +510,43 @@
           el.textContent='🏢 NZ Registered'+(b.nzbn.entity_name?' · '+b.nzbn.entity_name:'');
           container.appendChild(el);
         }
+        // Show "Get featured" CTA to owner when not already featured
+        var ownerToken = new URLSearchParams(window.location.search).get('token') || '';
+        if(ownerToken && !m.is_featured && !document.getElementById('tt-featured-cta')){
+          var cta=document.createElement('div');
+          cta.id='tt-featured-cta';
+          cta.style.cssText='margin-top:.85rem;background:#faf5ff;border:1px solid #ddd6fe;border-radius:7px;padding:.75rem 1rem;font-size:.85rem;';
+          cta.innerHTML='<strong style="color:#5b21b6">⭐ Get featured</strong> — Appear at the top of search results in your trade &amp; city. '
+            +'<button onclick="purchaseFeatured()" style="background:#5b21b6;color:#fff;border:none;border-radius:5px;padding:.3rem .8rem;font-size:.8rem;font-weight:600;cursor:pointer;margin-left:.5rem;font-family:inherit">$49/week →</button>';
+          document.querySelector('.profile-header').appendChild(cta);
+        }
+        // Show "Featured" indicator if already featured
+        if(m.is_featured && !document.getElementById('tt-featured-active')){
+          var fi=document.createElement('div');
+          fi.id='tt-featured-active';
+          fi.style.cssText='display:inline-flex;align-items:center;gap:.3rem;background:#faf5ff;color:#5b21b6;border:1px solid #ddd6fe;border-radius:4px;padding:.2rem .6rem;font-size:.78rem;font-weight:700;margin-top:.5rem';
+          fi.textContent='⭐ Featured listing';
+          document.querySelector('.badges').appendChild(fi);
+        }
       }).catch(function(){});
+  }
+
+  function purchaseFeatured(){
+    var token = new URLSearchParams(window.location.search).get('token') || localStorage.getItem('tt_lead_token') || '';
+    var btn = document.querySelector('#tt-featured-cta button');
+    if(btn){ btn.disabled=true; btn.textContent='Loading…'; }
+    fetch(API+'purchase_featured_spot', {
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({lead_token:token, weeks:4})
+    })
+    .then(function(r){return r.json();})
+    .then(function(j){
+      var d=j.message||j;
+      if(d.success && d.checkout_url){ window.location.href=d.checkout_url; }
+      else{ alert(d.error||'Error — please contact support.'); if(btn){btn.disabled=false;btn.textContent='$49/week →';} }
+    })
+    .catch(function(){ alert('Network error.'); if(btn){btn.disabled=false;btn.textContent='$49/week →';} });
   }
 
   function loadPhotos(){
