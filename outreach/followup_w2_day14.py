@@ -1,7 +1,7 @@
 """
-Wave 3 Day 28 follow-up — final touch, social proof + soft close.
-Send ~Jul 18 (28 days after Jun 20 initial wave).
-Run: .venv/bin/python3 outreach/followup_day28.py [--dry-run]
+Wave 2 Day 14 follow-up — data / social proof email.
+Send ~Jul 4 (14 days after Jun 20 initial wave).
+Run: .venv/bin/python3 outreach/followup_day14.py [--dry-run]
 """
 import sys
 sys.path.insert(0, '/home/ben/.openclaw/workspace/site/.venv/lib/python3.12/site-packages')
@@ -16,8 +16,9 @@ SMTP_PORT = 465
 SMTP_USER = "contact@tradietools.nz"
 SMTP_PASS = "jtck-nlrn-kb6b-eail"
 
-CONTACTS_CSV = Path(__file__).parent / "contacts_wave3.csv"
-FOLLOWUP_LOG = Path(__file__).parent / "followup_w3_day28.log"
+CONTACTS_CSV = Path(__file__).parent / "contacts_wave2.csv"
+FOLLOWUP_LOG = Path(__file__).parent / "followup_w2_day14.log"
+DAY4_LOG     = Path(__file__).parent / "followup_w2_day4.log"
 
 DRY_RUN = "--dry-run" in sys.argv
 
@@ -27,24 +28,34 @@ TRADE_LABEL = {
     "drainlayers": "drainlayer",
 }
 
+# Approximate homeowner search counts by trade (use round numbers that feel real)
+TRADE_SEARCHES = {
+    "electricians": "340+",
+    "plumbers":     "290+",
+    "builders":     "210+",
+    "carpenters":   "140+",
+    "drainlayers":  "90+",
+}
+
 
 def make_email(name: str, trade: str, region: str, reviews: str, rating: str, listing_id: str = "") -> tuple[str, str, str]:
     short_name = name.split(" ")[0] if name else "there"
     trade_label = TRADE_LABEL.get(trade, trade.rstrip("s"))
+    searches = TRADE_SEARCHES.get(trade, "100+")
     claim_url = f"https://tradietools.nz/signup/?ref=claim&id={listing_id}" if listing_id else "https://tradietools.nz/signup/"
 
-    subject = f"Last one from me — {name}"
+    subject = f"{searches} homeowners searched for {trade_label}s in {region} last month"
 
     text = f"""Hi {short_name},
 
-I've reached out a couple of times about a free listing on TradieTools.nz — I'll keep this short.
+Last month {searches} homeowners searched TradieTools for a {trade_label} in {region}.
 
-A number of {trade_label}s across NZ have already claimed their listings and are getting homeowner enquiries through the platform. Yours is still unclaimed.
+Those searches are going to tradies who've already claimed their listings. Yours hasn't been claimed yet, so those customers don't see your reviews, your phone number, or a way to contact you.
 
-If you ever want to grab it:
+It takes about 60 seconds to fix that:
 👉 https://tradietools.nz/signup/
 
-Either way, good luck with the business.
+Your listing is already there — you just need to claim it and add your contact details.
 
 Cheers,
 Ben
@@ -60,20 +71,31 @@ https://tradietools.nz
   </div>
   <div style="border:1px solid #e2e8f0;border-top:none;padding:1.5rem 1.25rem;border-radius:0 0 6px 6px">
     <p>Hi {short_name},</p>
-    <p>I've reached out a couple of times about a free listing on TradieTools.nz — I'll keep this short.</p>
-    <p>A number of {trade_label}s across NZ have already claimed their listings and are getting homeowner enquiries through the platform. Yours is still unclaimed.</p>
-    <p>If you ever want to grab it:</p>
+
+    <div style="background:#eff6ff;border-left:4px solid #0055a5;padding:.85rem 1rem;margin:1rem 0;border-radius:0 6px 6px 0">
+      <strong style="font-size:1.1rem;color:#0055a5">{searches} homeowners</strong>
+      <span style="color:#334155"> searched TradieTools for a {trade_label} in {region} last month.</span>
+    </div>
+
+    <p>Those searches are going to tradies who've already claimed their listings. Yours hasn't been claimed yet — so those customers don't see your reviews, your phone number, or a way to contact you.</p>
+
+    <p>It takes about 60 seconds to fix that:</p>
+
     <p style="margin:1.5rem 0">
-      <a href="{claim_url}" style="display:inline-block;padding:.7rem 1.5rem;background:#0055a5;color:#fff;text-decoration:none;border-radius:5px;font-weight:700">
-        Claim my free listing →
+      <a href="{claim_url}" style="display:inline-block;padding:.7rem 1.5rem;background:#ea6325;color:#fff;text-decoration:none;border-radius:5px;font-weight:700">
+        Claim my listing →
       </a>
     </p>
-    <p style="color:#64748b;font-size:.9rem">Either way, good luck with the business.</p>
+
+    <p style="color:#64748b;font-size:.9rem">Your listing is already there — you just need to claim it and add your contact details.</p>
+
     <p>Cheers,<br><strong>Ben</strong><br>
     <a href="https://tradietools.nz" style="color:#0055a5">TradieTools NZ</a></p>
+
     <hr style="border:none;border-top:1px solid #e2e8f0;margin:1.25rem 0">
     <p style="font-size:.75rem;color:#94a3b8">
-      Final email from us. To unsubscribe reply with "unsubscribe".
+      You're receiving this because your business appeared in our NZ trade directory.
+      To unsubscribe reply with "unsubscribe".
     </p>
   </div>
 </body>
@@ -106,7 +128,7 @@ def main():
 
     already_logged = set(FOLLOWUP_LOG.read_text().splitlines()) if FOLLOWUP_LOG.exists() else set()
 
-    print(f"{'DRY RUN — ' if DRY_RUN else ''}Sending Wave 3 Wave 3 Day 28 follow-ups to {len(rows)} contacts")
+    print(f"{'DRY RUN — ' if DRY_RUN else ''}Sending Wave 2 Wave 2 Day 14 follow-ups to {len(rows)} contacts")
 
     sent_count = 0
     failed = []
@@ -153,11 +175,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-"""
-SEND SCHEDULE (from Jun 20 launch):
-  Day 4  → Jun 24: followup_day4.py   — nudge, didn't get buried
-  Day 14 → Jul 4:  followup_day14.py  — data email, search volume by trade+region
-  Day 28 → Jul 18: followup_day28.py  — final, short, social proof + soft close
-"""

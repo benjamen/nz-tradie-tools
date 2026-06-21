@@ -1,12 +1,13 @@
 """
-Wave 3 Day 28 follow-up — final touch, social proof + soft close.
-Send ~Jul 18 (28 days after Jun 20 initial wave).
-Run: .venv/bin/python3 outreach/followup_day28.py [--dry-run]
+Day 4 follow-up to the 77 initial outreach contacts.
+Sent ~Jun 24 (4 days after the Jun 20 initial wave).
+Run: .venv/bin/python3 outreach/followup_day4.py [--dry-run]
 """
 import sys
 sys.path.insert(0, '/home/ben/.openclaw/workspace/site/.venv/lib/python3.12/site-packages')
 
-import csv, smtplib, time, random
+import csv, smtplib, time, random, sys
+import daily_limit
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from pathlib import Path
@@ -16,8 +17,8 @@ SMTP_PORT = 465
 SMTP_USER = "contact@tradietools.nz"
 SMTP_PASS = "jtck-nlrn-kb6b-eail"
 
-CONTACTS_CSV = Path(__file__).parent / "contacts_wave3.csv"
-FOLLOWUP_LOG = Path(__file__).parent / "followup_w3_day28.log"
+CONTACTS_CSV  = Path(__file__).parent / "contacts_found.csv"
+FOLLOWUP_LOG  = Path(__file__).parent / "followup_day4.log"
 
 DRY_RUN = "--dry-run" in sys.argv
 
@@ -32,19 +33,22 @@ def make_email(name: str, trade: str, region: str, reviews: str, rating: str, li
     short_name = name.split(" ")[0] if name else "there"
     trade_label = TRADE_LABEL.get(trade, trade.rstrip("s"))
     claim_url = f"https://tradietools.nz/signup/?ref=claim&id={listing_id}" if listing_id else "https://tradietools.nz/signup/"
+    review_line = ""
+    if reviews and reviews != "0":
+        review_line = f"\nI noticed you have {reviews} Google reviews at {rating} stars — that's great social proof we showcase on your listing.\n"
 
-    subject = f"Last one from me — {name}"
+    subject = f"Quick follow-up — your free {trade_label} listing on TradieTools"
 
     text = f"""Hi {short_name},
 
-I've reached out a couple of times about a free listing on TradieTools.nz — I'll keep this short.
+I reached out a few days ago about a free listing on TradieTools.nz — just wanted to make sure this didn't get buried.
+{review_line}
+We list verified NZ tradies so homeowners can find and contact local pros directly. No fees, no commissions — free to list and free for homeowners.
 
-A number of {trade_label}s across NZ have already claimed their listings and are getting homeowner enquiries through the platform. Yours is still unclaimed.
+It takes about 60 seconds to claim your spot:
+👉 {claim_url}
 
-If you ever want to grab it:
-👉 https://tradietools.nz/signup/
-
-Either way, good luck with the business.
+If you're not taking on new work right now, no worries — happy to hear from you when things slow down.
 
 Cheers,
 Ben
@@ -60,20 +64,21 @@ https://tradietools.nz
   </div>
   <div style="border:1px solid #e2e8f0;border-top:none;padding:1.5rem 1.25rem;border-radius:0 0 6px 6px">
     <p>Hi {short_name},</p>
-    <p>I've reached out a couple of times about a free listing on TradieTools.nz — I'll keep this short.</p>
-    <p>A number of {trade_label}s across NZ have already claimed their listings and are getting homeowner enquiries through the platform. Yours is still unclaimed.</p>
-    <p>If you ever want to grab it:</p>
+    <p>I reached out a few days ago about a free listing on TradieTools.nz — just wanted to make sure this didn't get buried.</p>
+    {"<p>" + review_line.strip() + "</p>" if review_line else ""}
+    <p>We list verified NZ tradies so homeowners can find and contact local pros directly. No fees, no commissions — free to list and free for homeowners.</p>
     <p style="margin:1.5rem 0">
-      <a href="{claim_url}" style="display:inline-block;padding:.7rem 1.5rem;background:#0055a5;color:#fff;text-decoration:none;border-radius:5px;font-weight:700">
-        Claim my free listing →
+      <a href="{claim_url}" style="display:inline-block;padding:.7rem 1.5rem;background:#ea6325;color:#fff;text-decoration:none;border-radius:5px;font-weight:700">
+        Claim your free listing →
       </a>
     </p>
-    <p style="color:#64748b;font-size:.9rem">Either way, good luck with the business.</p>
+    <p style="color:#64748b;font-size:.9rem">If you're not taking on new work right now, no worries — happy to hear from you when things slow down.</p>
     <p>Cheers,<br><strong>Ben</strong><br>
     <a href="https://tradietools.nz" style="color:#0055a5">TradieTools NZ</a></p>
     <hr style="border:none;border-top:1px solid #e2e8f0;margin:1.25rem 0">
     <p style="font-size:.75rem;color:#94a3b8">
-      Final email from us. To unsubscribe reply with "unsubscribe".
+      You're receiving this because your business appeared in our NZ trade directory.
+      To unsubscribe reply with "unsubscribe".
     </p>
   </div>
 </body>
@@ -104,17 +109,20 @@ def main():
     with open(CONTACTS_CSV) as f:
         rows = [r for r in csv.DictReader(f) if r.get("status") == "sent"]
 
-    already_logged = set(FOLLOWUP_LOG.read_text().splitlines()) if FOLLOWUP_LOG.exists() else set()
-
-    print(f"{'DRY RUN — ' if DRY_RUN else ''}Sending Wave 3 Wave 3 Day 28 follow-ups to {len(rows)} contacts")
+    print(f"{'DRY RUN — ' if DRY_RUN else ''}Sending Day 4 follow-ups to {len(rows)} contacts")
 
     sent_count = 0
     failed = []
+    already_logged = set()
+
+    # Check who already got a follow-up
+    if FOLLOWUP_LOG.exists():
+        already_logged = set(FOLLOWUP_LOG.read_text().splitlines())
 
     for row in rows:
-        email  = row.get("email", "").strip()
-        name   = row.get("name", "").strip()
-        trade  = row.get("trade", "").strip()
+        email = row.get("email", "").strip()
+        name  = row.get("name", "").strip()
+        trade = row.get("trade", "").strip()
         region = row.get("region", "").strip()
         reviews = row.get("reviews", "0").strip()
         rating  = row.get("rating", "0").strip()
@@ -153,11 +161,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-"""
-SEND SCHEDULE (from Jun 20 launch):
-  Day 4  → Jun 24: followup_day4.py   — nudge, didn't get buried
-  Day 14 → Jul 4:  followup_day14.py  — data email, search volume by trade+region
-  Day 28 → Jul 18: followup_day28.py  — final, short, social proof + soft close
-"""

@@ -13,6 +13,7 @@ from email.mime.text import MIMEText
 from pathlib import Path
 from urllib.parse import urlparse
 from playwright.sync_api import sync_playwright
+import daily_limit
 
 SMTP_HOST = "smtp.hostinger.com"
 SMTP_PORT = 465
@@ -219,11 +220,16 @@ def main():
             })
 
             if email:
+                if not daily_limit.under_limit():
+                    log(f"  ⏸ daily limit ({daily_limit.LIMIT}) reached — stopping")
+                    results[-1]["status"] = "deferred"
+                    break
                 try:
                     send(email, name, trade, region, str(lst.get("id", "")))
                     log(f"  ✓ SENT → {email}")
                     with open(SENT_LOG, "a") as f:
                         f.write(name + "\n")
+                    daily_limit.record_send()
                     emailed += 1
                     time.sleep(random.uniform(8, 15))
                 except Exception as e:

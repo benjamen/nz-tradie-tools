@@ -7,6 +7,7 @@ import sys
 sys.path.insert(0, '/home/ben/.openclaw/workspace/site/.venv/lib/python3.12/site-packages')
 
 import csv, smtplib, time, random, sys
+import daily_limit
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from pathlib import Path
@@ -137,11 +138,15 @@ def main():
             sent_count += 1
             continue
 
+        if not daily_limit.under_limit():
+            print(f"  ⏸ daily limit ({daily_limit.LIMIT}) reached — stopping")
+            break
         ok = send_email(email, subject, text, html)
         if ok:
             print(f"  ✓ {name} <{email}>")
             with open(FOLLOWUP_LOG, "a") as lf:
                 lf.write(email + "\n")
+            daily_limit.record_send()
             sent_count += 1
         else:
             print(f"  ✗ {name} <{email}>")

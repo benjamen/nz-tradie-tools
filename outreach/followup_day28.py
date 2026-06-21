@@ -1,5 +1,5 @@
 """
-Wave 3 Day 28 follow-up — final touch, social proof + soft close.
+Day 28 follow-up — final touch, social proof + soft close.
 Send ~Jul 18 (28 days after Jun 20 initial wave).
 Run: .venv/bin/python3 outreach/followup_day28.py [--dry-run]
 """
@@ -16,8 +16,8 @@ SMTP_PORT = 465
 SMTP_USER = "contact@tradietools.nz"
 SMTP_PASS = "jtck-nlrn-kb6b-eail"
 
-CONTACTS_CSV = Path(__file__).parent / "contacts_wave3.csv"
-FOLLOWUP_LOG = Path(__file__).parent / "followup_w3_day28.log"
+CONTACTS_CSV = Path(__file__).parent / "contacts_found.csv"
+FOLLOWUP_LOG = Path(__file__).parent / "followup_day28.log"
 
 DRY_RUN = "--dry-run" in sys.argv
 
@@ -106,7 +106,7 @@ def main():
 
     already_logged = set(FOLLOWUP_LOG.read_text().splitlines()) if FOLLOWUP_LOG.exists() else set()
 
-    print(f"{'DRY RUN — ' if DRY_RUN else ''}Sending Wave 3 Wave 3 Day 28 follow-ups to {len(rows)} contacts")
+    print(f"{'DRY RUN — ' if DRY_RUN else ''}Sending Day 28 follow-ups to {len(rows)} contacts")
 
     sent_count = 0
     failed = []

@@ -6,6 +6,7 @@ import csv, smtplib, time, random, sys
 from pathlib import Path
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+import daily_limit
 
 SMTP_HOST = "smtp.hostinger.com"
 SMTP_PORT = 465
@@ -74,9 +75,13 @@ def retry_csv(csv_path, wave_label):
         region     = r.get('region', 'NZ')
         email      = r['email']
         listing_id = r.get('listing_id', '')
+        if not daily_limit.under_limit():
+            print(f"  ⏸ daily limit ({daily_limit.LIMIT}) reached — stopping")
+            break
         try:
             send(email, name, trade, region, listing_id)
             r['status'] = 'sent'
+            daily_limit.record_send()
             retried += 1
             print(f"  ✓ sent: {name} ({email})")
         except Exception as e:
