@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dashboard | TradieTools NZ</title>
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; }
+        :root {
+            --navy: #0f172a;
+            --blue: #0055a5;
+            --orange: #ea6325;
+            --green: #16a34a;
+            --muted: #64748b;
+            --border: #e2e8f0;
+            --bg: #f8fafc;
+            --font: 'Public Sans', system-ui, sans-serif;
+        }
+        body { font-family: var(--font); margin: 0; background: var(--bg); color: #1e293b; min-height: 100vh; }
+
+        /* Header */
+        .site-header { background: var(--navy); padding: .9rem 1.5rem; display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; }
+        .site-header a { color: rgba(255,255,255,.6); text-decoration: none; font-size: .85rem; }
+        .site-header a:hover { color: #fff; }
+        .site-header h1 { margin: 0; font-size: 1.1rem; color: #fff; flex: 1; }
+        .site-header .logo { color: #fff; font-weight: 700; font-size: 1rem; text-decoration: none; }
+
+        /* Layout */
+        .main { max-width: 900px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+
+        /* State cards */
+        #loading-state { text-align: center; padding: 4rem 1rem; color: var(--muted); }
+        #error-state { display: none; background: #fee2e2; color: #991b1b; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+
+        /* Profile card */
+        .profile-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.25rem;
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: flex-start;
+            gap: 1.25rem;
+        }
+        .profile-avatar {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background: var(--blue);
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+        .profile-avatar img { width: 100%; height: 100%; object-fit: cover; }
+        .profile-info { flex: 1; min-width: 0; }
+        .profile-name { font-size: 1.25rem; font-weight: 700; margin: 0 0 .2rem; }
+        .profile-sub { color: var(--muted); font-size: .9rem; margin: 0 0 .6rem; }
+        .badge { display: inline-flex; align-items: center; gap: .3rem; font-size: .75rem; font-weight: 600; padding: .2rem .6rem; border-radius: 20px; }
+        .badge-free { background: #f1f5f9; color: #475569; }
+        .badge-verified { background: #dbeafe; color: #1d4ed8; }
+        .badge-pro { background: #fef3c7; color: #92400e; }
+        .badge-active { background: #dcfce7; color: #15803d; }
+
+        /* Stats grid */
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; margin-bottom: 1.25rem; }
+        .stat-card { background: #fff; border-radius: 10px; padding: 1.1rem 1.25rem; border: 1px solid var(--border); }
+        .stat-num { font-size: 2rem; font-weight: 700; color: var(--navy); line-height: 1; }
+        .stat-label { font-size: .78rem; color: var(--muted); margin-top: .3rem; font-weight: 500; text-transform: uppercase; letter-spacing: .04em; }
+        .stat-card.highlight { border-color: var(--blue); }
+        .stat-num.green { color: var(--green); }
+        .stat-num.orange { color: var(--orange); }
+
+        /* Action cards */
+        .actions-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-bottom: 1.25rem; }
+        .action-card { background: #fff; border-radius: 10px; padding: 1.25rem; border: 1px solid var(--border); text-decoration: none; color: inherit; display: flex; align-items: center; gap: 1rem; transition: box-shadow .15s, border-color .15s; }
+        .action-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.1); border-color: var(--blue); }
+        .action-icon { font-size: 1.75rem; flex-shrink: 0; }
+        .action-title { font-weight: 700; font-size: .95rem; margin-bottom: .15rem; }
+        .action-sub { font-size: .8rem; color: var(--muted); }
+
+        /* Upgrade banner */
+        .upgrade-banner { background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%); color: #fff; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.25rem; display: flex; align-items: center; gap: 1.25rem; flex-wrap: wrap; }
+        .upgrade-banner .ub-text { flex: 1; min-width: 200px; }
+        .upgrade-banner h3 { margin: 0 0 .4rem; font-size: 1.1rem; }
+        .upgrade-banner p { margin: 0; font-size: .87rem; opacity: .85; line-height: 1.5; }
+        .upgrade-banner .ub-btns { display: flex; gap: .75rem; flex-wrap: wrap; }
+        .btn-upgrade { background: var(--orange); color: #fff; border: none; border-radius: 6px; padding: .65rem 1.25rem; font-size: .9rem; font-weight: 700; cursor: pointer; font-family: inherit; text-decoration: none; display: inline-block; transition: opacity .15s; }
+        .btn-upgrade:hover { opacity: .9; }
+        .btn-upgrade-ghost { background: rgba(255,255,255,.15); color: #fff; border: 1.5px solid rgba(255,255,255,.4); border-radius: 6px; padding: .65rem 1.25rem; font-size: .9rem; font-weight: 700; cursor: pointer; font-family: inherit; text-decoration: none; display: inline-block; transition: background .15s; }
+        .btn-upgrade-ghost:hover { background: rgba(255,255,255,.25); }
+
+        /* Edit listing section */
+        .section-card { background: #fff; border-radius: 10px; border: 1px solid var(--border); margin-bottom: 1.25rem; overflow: hidden; }
+        .section-head { padding: .9rem 1.25rem; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border); }
+        .section-head h2 { margin: 0; font-size: 1rem; font-weight: 700; }
+        .section-body { padding: 1.25rem; }
+        .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; margin-bottom: .75rem; }
+        .field-row.full { grid-template-columns: 1fr; }
+        .field-group label { display: block; font-size: .8rem; font-weight: 600; color: #475569; margin-bottom: .3rem; }
+        .field-group input, .field-group select { width: 100%; border: 1.5px solid var(--border); border-radius: 6px; padding: .55rem .75rem; font-size: .9rem; font-family: inherit; transition: border-color .15s; }
+        .field-group input:focus, .field-group select:focus { outline: none; border-color: var(--blue); }
+        .btn-save { background: var(--blue); color: #fff; border: none; border-radius: 6px; padding: .65rem 1.5rem; font-size: .9rem; font-weight: 700; cursor: pointer; font-family: inherit; }
+        .btn-save:disabled { opacity: .6; cursor: default; }
+        .save-msg { font-size: .85rem; color: var(--green); display: none; margin-left: .75rem; }
+
+        /* Responsive */
+        @media (max-width: 540px) {
+            .field-row { grid-template-columns: 1fr; }
+            .profile-card { flex-direction: column; }
+        }
+
+        /* Hidden */
+        #content { display: none; }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo" href="/">TradieTools NZ</a>
+        <h1>My Dashboard</h1>
+        <a href="/find/">Browse directory →</a>
+    </header>
+
+    <div class="main">
+        <div id="loading-state">Loading your dashboard…</div>
+        <div id="error-state"></div>
+
+        <div id="content">
+            <!-- Profile -->
+            <div class="profile-card">
+                <div class="profile-avatar" id="avatar">?</div>
+                <div class="profile-info">
+                    <p class="profile-name" id="biz-name">—</p>
+                    <p class="profile-sub" id="biz-sub">—</p>
+                    <span class="badge badge-free" id="tier-badge">Free</span>
+                    <span class="badge badge-active" id="active-badge" style="display:none;margin-left:.35rem">Active</span>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats-grid">
+                <div class="stat-card highlight">
+                    <div class="stat-num green" id="stat-leads">0</div>
+                    <div class="stat-label">Total Leads</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num" id="stat-pipeline">0</div>
+                    <div class="stat-label">Jobs in Pipeline</div>
+                </div>
+                <div class="stat-card" id="views-card" style="display:none">
+                    <div class="stat-num orange" id="stat-views">0</div>
+                    <div class="stat-label">Profile Views (30d)</div>
+                </div>
+                <div class="stat-card" id="rating-card" style="display:none">
+                    <div class="stat-num" id="stat-rating">—</div>
+                    <div class="stat-label">Google Rating</div>
+                </div>
+            </div>
+
+            <!-- Quick actions -->
+            <div class="actions-row">
+                <a class="action-card" id="pipeline-link" href="/pipeline/">
+                    <div class="action-icon">📋</div>
+                    <div>
+                        <div class="action-title">Job Pipeline</div>
+                        <div class="action-sub">Track leads → quotes → invoices</div>
+                    </div>
+                </a>
+                <a class="action-card" id="listing-link" href="/find/">
+                    <div class="action-icon">🔍</div>
+                    <div>
+                        <div class="action-title">My Public Listing</div>
+                        <div class="action-sub">View how you appear in the directory</div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Upgrade banner (free only) -->
+            <div class="upgrade-banner" id="upgrade-banner" style="display:none">
+                <div class="ub-text">
+                    <h3>Upgrade to get more leads</h3>
+                    <p>Verified badge boosts trust. Pro tier unlocks priority placement, unlimited leads, and full analytics.</p>
+                </div>
+                <div class="ub-btns">
+                    <a class="btn-upgrade" id="btn-go-verified" href="#">Verified — $29/mo</a>
+                    <a class="btn-upgrade-ghost" id="btn-go-pro" href="#">Pro — $59/mo</a>
+                </div>
+            </div>
+
+            <!-- Edit listing -->
+            <div class="section-card">
+                <div class="section-head">
+                    <h2>Your Listing Details</h2>
+                    <span style="font-size:.8rem;color:var(--muted)" id="listing-id-label"></span>
+                </div>
+                <div class="section-body">
+                    <div class="field-row">
+                        <div class="field-group">
+                            <label>Business / Full Name</label>
+                            <input type="text" id="f-name" placeholder="e.g. Auckland Electrical Ltd">
+                        </div>
+                        <div class="field-group">
+                            <label>Phone</label>
+                            <input type="tel" id="f-phone" placeholder="027 123 4567">
+                        </div>
+                    </div>
+                    <div class="field-row">
+                        <div class="field-group">
+                            <label>Hourly rate (NZD)</label>
+                            <input type="number" id="f-hourly" placeholder="e.g. 95" min="0">
+                        </div>
+                        <div class="field-group">
+                            <label>Years experience</label>
+                            <input type="number" id="f-exp" placeholder="e.g. 8" min="0" max="60">
+                        </div>
+                    </div>
+                    <div class="field-row">
+                        <div class="field-group">
+                            <label>Response time</label>
+                            <select id="f-response">
+                                <option value="">— select —</option>
+                                <option value="Within 1 hour">Within 1 hour</option>
+                                <option value="Within 2 hours">Within 2 hours</option>
+                                <option value="Within 4 hours">Within 4 hours</option>
+                                <option value="Same day">Same day</option>
+                                <option value="Next business day">Next business day</option>
+                            </select>
+                        </div>
+                        <div class="field-group">
+                            <label>Email</label>
+                            <input type="email" id="f-email" placeholder="you@example.com">
+                        </div>
+                    </div>
+                    <div style="display:flex;align-items:center;gap:.5rem;flex-wrap:wrap">
+                        <button class="btn-save" id="btn-save-listing" onclick="saveListing()">Save changes</button>
+                        <span class="save-msg" id="save-msg">Saved!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+var API  = 'https://tradietools.optified.nz/api/method/tradietools.api.';
+var TOKEN = new URLSearchParams(window.location.search).get('token') || localStorage.getItem('tt_lead_token') || '';
+var TRADIE_ID = '';
+var TRADIE_EMAIL = '';
+
+if (TOKEN) localStorage.setItem('tt_lead_token', TOKEN);
+
+function showError(msg) {
+    document.getElementById('loading-state').style.display = 'none';
+    var el = document.getElementById('error-state');
+    el.textContent = msg;
+    el.style.display = 'block';
+}
+
+function esc(s) {
+    return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+function loadDashboard() {
+    if (!TOKEN) {
+        showError('No token found — open this page from your magic link email or pipeline link.');
+        return;
+    }
+    fetch(API + 'get_tradie_home?lead_token=' + encodeURIComponent(TOKEN))
+    .then(function(r){ return r.json(); })
+    .then(function(data) {
+        var d = data.message || data;
+        if (!d || d.status === 'not_found') {
+            showError('Token not recognised. Check your email for the correct link.');
+            return;
+        }
+        renderDashboard(d);
+    })
+    .catch(function() {
+        showError('Could not load dashboard. Please try again.');
+    });
+}
+
+function renderDashboard(d) {
+    document.getElementById('loading-state').style.display = 'none';
+    document.getElementById('content').style.display = 'block';
+
+    TRADIE_ID   = d.id || '';
+    TRADIE_EMAIL = d.email || '';
+
+    // Avatar
+    var av = document.getElementById('avatar');
+    if (d.profile_photo_url) {
+        av.innerHTML = '<img src="' + esc(d.profile_photo_url) + '" alt="">';
+    } else {
+        av.textContent = (d.name || 'T').charAt(0).toUpperCase();
+    }
+
+    // Profile header
+    document.getElementById('biz-name').textContent = d.name || 'Your Listing';
+    document.getElementById('biz-sub').textContent =
+        [d.trade, d.region].filter(Boolean).join(' · ') || '';
+
+    // Tier badge
+    var tb = document.getElementById('tier-badge');
+    tb.className = 'badge badge-' + (d.tier === 'pro' ? 'pro' : d.tier === 'verified' ? 'verified' : 'free');
+    var tierLabels = {free:'Free Listing', verified:'Verified ✓', pro:'Pro ⭐'};
+    tb.textContent = tierLabels[d.tier] || 'Free Listing';
+
+    if (d.is_active) {
+        document.getElementById('active-badge').style.display = 'inline-flex';
+    }
+
+    // Stats
+    document.getElementById('stat-leads').textContent    = d.leads_total || 0;
+    document.getElementById('stat-pipeline').textContent = d.pipeline_total || 0;
+
+    if (d.is_premium && d.views_30d !== undefined) {
+        document.getElementById('views-card').style.display = 'block';
+        document.getElementById('stat-views').textContent   = d.views_30d || 0;
+    }
+    if (d.review_count > 0) {
+        document.getElementById('rating-card').style.display = 'block';
+        document.getElementById('stat-rating').textContent   = (d.avg_rating || 0).toFixed(1) + ' ★';
+    }
+
+    // Pipeline link (pass token)
+    document.getElementById('pipeline-link').href = '/pipeline/?token=' + encodeURIComponent(TOKEN);
+
+    // Listing ID
+    document.getElementById('listing-id-label').textContent = 'Listing #' + TRADIE_ID;
+
+    // Upgrade banner — show only on free tier
+    if (!d.is_premium) {
+        document.getElementById('upgrade-banner').style.display = 'flex';
+        document.getElementById('btn-go-verified').href =
+            'https://tradietools.optified.nz/api/method/tradietools.api.create_checkout_session?tier=verified&tradie_id=' + TRADIE_ID + '&tradie_email=' + encodeURIComponent(TRADIE_EMAIL) + '&billing_interval=monthly&ref=dashboard';
+        document.getElementById('btn-go-pro').href =
+            'https://tradietools.optified.nz/api/method/tradietools.api.create_checkout_session?tier=pro&tradie_id=' + TRADIE_ID + '&tradie_email=' + encodeURIComponent(TRADIE_EMAIL) + '&billing_interval=monthly&ref=dashboard';
+    }
+
+    // Pre-fill edit form
+    document.getElementById('f-name').value     = d.name || '';
+    document.getElementById('f-phone').value    = d.phone || '';
+    document.getElementById('f-email').value    = d.email || '';
+    document.getElementById('f-hourly').value   = d.hourly_rate || '';
+    document.getElementById('f-exp').value      = d.experience_years || '';
+    if (d.response_time_label) {
+        document.getElementById('f-response').value = d.response_time_label;
+    }
+}
+
+function saveListing() {
+    var btn = document.getElementById('btn-save-listing');
+    var msg = document.getElementById('save-msg');
+    btn.disabled = true;
+    btn.textContent = 'Saving…';
+    msg.style.display = 'none';
+
+    var body = {
+        tradie_id: TRADIE_ID,
+        email: TRADIE_EMAIL,
+        name: document.getElementById('f-name').value.trim(),
+        phone: document.getElementById('f-phone').value.trim(),
+        hourly_rate: document.getElementById('f-hourly').value || null,
+        experience_years: document.getElementById('f-exp').value || null,
+        response_time_label: document.getElementById('f-response').value || null,
+    };
+
+    fetch(API + 'update_my_listing', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(body)
+    })
+    .then(function(r){ return r.json(); })
+    .then(function(data) {
+        btn.disabled = false;
+        btn.textContent = 'Save changes';
+        var d = data.message || data;
+        if (d && d.status === 'updated') {
+            msg.style.display = 'inline';
+            setTimeout(function(){ msg.style.display = 'none'; }, 3000);
+        } else {
+            alert('Save failed. Please try again.');
+        }
+    })
+    .catch(function() {
+        btn.disabled = false;
+        btn.textContent = 'Save changes';
+        alert('Save failed. Please try again.');
+    });
+}
+
+loadDashboard();
+</script>
+</body>
+</html>
