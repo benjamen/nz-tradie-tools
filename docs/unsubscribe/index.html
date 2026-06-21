@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsubscribe — NZ Tradie Tools</title>
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">NZ Tradie Tools</a>
+        </div>
+    </header>
+
+    <div class="container" style="max-width:560px;padding:4rem 1rem;text-align:center;min-height:60vh;display:flex;flex-direction:column;justify-content:center">
+        <div id="state-loading">
+            <div style="font-size:2rem;margin-bottom:1rem">⏳</div>
+            <p style="color:#64748b">Unsubscribing…</p>
+        </div>
+
+        <div id="state-success" style="display:none">
+            <div style="font-size:3rem;margin-bottom:1rem">✅</div>
+            <h1 style="font-size:1.6rem;color:#0f172a;margin-bottom:.5rem">You're unsubscribed</h1>
+            <p style="color:#64748b;margin-bottom:.25rem">We've removed <strong id="unsub-email"></strong> from Weekly Tradie Tips.</p>
+            <p style="color:#94a3b8;font-size:.88rem;margin-bottom:2rem">No more emails from us. The tools and guides at tradietools.nz are still free any time.</p>
+            <a href="/" style="display:inline-block;background:#0055a5;color:#fff;padding:.7rem 1.75rem;font-weight:700;text-decoration:none;border-radius:4px">Back to NZ Tradie Tools →</a>
+        </div>
+
+        <div id="state-already" style="display:none">
+            <div style="font-size:3rem;margin-bottom:1rem">👍</div>
+            <h1 style="font-size:1.6rem;color:#0f172a;margin-bottom:.5rem">Already unsubscribed</h1>
+            <p style="color:#64748b;margin-bottom:2rem"><strong id="already-email"></strong> is not on our list.</p>
+            <a href="/" style="display:inline-block;background:#0055a5;color:#fff;padding:.7rem 1.75rem;font-weight:700;text-decoration:none;border-radius:4px">Back to NZ Tradie Tools →</a>
+        </div>
+
+        <div id="state-error" style="display:none">
+            <div style="font-size:3rem;margin-bottom:1rem">❌</div>
+            <h1 style="font-size:1.6rem;color:#0f172a;margin-bottom:.5rem">Link expired or invalid</h1>
+            <p style="color:#64748b;margin-bottom:2rem">This unsubscribe link didn't work. If you're still receiving emails, contact us at <a href="mailto:contact@tradietools.nz" style="color:#0055a5">contact@tradietools.nz</a> and we'll remove you manually.</p>
+            <a href="/" style="display:inline-block;background:#64748b;color:#fff;padding:.7rem 1.75rem;font-weight:700;text-decoration:none;border-radius:4px">Back to NZ Tradie Tools</a>
+        </div>
+    </div>
+
+    <script>
+    (function(){
+        var params = new URLSearchParams(window.location.search);
+        var token = params.get('token');
+
+        function show(id) {
+            ['state-loading','state-success','state-already','state-error'].forEach(function(s){
+                document.getElementById(s).style.display = s === id ? '' : 'none';
+            });
+        }
+
+        if (!token) { show('state-error'); return; }
+
+        fetch('https://tradietools.optified.nz/api/method/tradietools.api.unsubscribe_newsletter?token=' + encodeURIComponent(token), {
+            method: 'POST',
+            headers: { Accept: 'application/json' }
+        })
+        .then(function(r) { return r.json(); })
+        .then(function(d) {
+            var msg = d.message || {};
+            if (msg.ok && msg.already_unsubscribed) {
+                document.getElementById('already-email').textContent = msg.email || '';
+                show('state-already');
+            } else if (msg.ok) {
+                document.getElementById('unsub-email').textContent = msg.email || '';
+                show('state-success');
+            } else {
+                show('state-error');
+            }
+        })
+        .catch(function() { show('state-error'); });
+    })();
+    </script>
+</body>
+</html>
