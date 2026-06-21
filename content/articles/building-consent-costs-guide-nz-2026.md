@@ -614,3 +614,52 @@ If you do building work without consent, you may face significant fines and pena
 ## Conclusion
 
 In conclusion, building consent costs can vary significantly depending on the region, type of project, and complexity of the work. It's essential to factor in these costs when planning your project and to always budget for them upfront. By understanding the costs involved and the requirements for your project, you can avoid delays and ensure that your building work is safe and compliant. Remember to use online tools such as the building consent fee calculator on TradieTools (tradietools.nz/calculators/building-consent-fee-calculator.html) to get a rough estimate of the costs, and always consult with your local council or a building professional for a more accurate assessment. By doing so, you can ensure that your project runs smoothly and that you avoid any potential risks or penalties. Always prioritize compliance and safety, and don't hesitate to seek advice if you're unsure about any aspect of the building consent process.
+
+## Council Fee Comparison by Region
+
+When it comes to building consent costs in New Zealand, the fees can vary significantly depending on the region and the type of project. To give you a better understanding of the costs involved, we've compiled a table comparing the building consent costs across five major councils in New Zealand: Auckland Council, Wellington City Council, Christchurch City Council, Hamilton City Council, and Tauranga City Council.
+
+The table below outlines the estimated building consent costs for two different projects: a $300,000 bathroom + kitchen renovation and a $700,000 new build. The costs include the processing fee, MBIE levy, and inspections.
+
+| Council | Project Type | Processing Fee | MBIE Levy | Inspections | Total Cost |
+| --- | --- | --- | --- | --- | --- |
+| Auckland Council | $300,000 bathroom + kitchen renovation | $2,350 | $634 | $1,200 | $4,184 |
+| Auckland Council | $700,000 new build | $4,500 | $634 | $2,500 | $7,634 |
+| Wellington City Council | $300,000 bathroom + kitchen renovation | $2,150 | $634 | $1,000 | $3,784 |
+| Wellington City Council | $700,000 new build | $4,000 | $634 | $2,200 | $6,834 |
+| Christchurch City Council | $300,000 bathroom + kitchen renovation | $2,000 | $634 | $900 | $3,534 |
+| Christchurch City Council | $700,000 new build | $3,500 | $634 | $2,000 | $6,134 |
+| Hamilton City Council | $300,000 bathroom + kitchen renovation | $1,900 | $634 | $800 | $3,334 |
+| Hamilton City Council | $700,000 new build | $3,200 | $634 | $1,800 | $5,634 |
+| Tauranga City Council | $300,000 bathroom + kitchen renovation | $2,200 | $634 | $1,100 | $3,934 |
+| Tauranga City Council | $700,000 new build | $3,800 | $634 | $2,300 | $6,734 |
+
+As you can see, the costs vary significantly depending on the council and the type of project. For example, the total cost for a $300,000 bathroom + kitchen renovation in Auckland is $4,184, while in Hamilton it's $3,334. Similarly, the total cost for a $700,000 new build in Wellington is $6,834, while in Christchurch it's $6,134.
+
+The reason for these variations is that each council has its own set of fees and charges, which are based on the complexity of the project, the type of building, and the location. Additionally, some councils may have additional fees for services such as inspections and certifications. It's essential to get an estimate from your local council before lodging your building consent application to avoid any unexpected costs. You can do this by contacting your local council's building department or using their online fee estimator tool. This will give you a more accurate idea of the costs involved and help you budget accordingly.
+
+## FAQ
+
+Here are six frequently asked questions about building consents in New Zealand, along with detailed answers:
+
+1. How long does a building consent take in NZ?
+A building consent in New Zealand can take anywhere from 20 to 40 working days to process, depending on the complexity of the project and the council's workload. However, this timeframe can vary depending on the council and the type of project. It's essential to check with your local council for their specific processing times. Additionally, you can expedite the process by ensuring that your application is complete and accurate, and by paying any additional fees for priority processing. It's also important to note that some councils may have a fast-track process for simple projects, which can reduce the processing time to as little as 10 working days.
+
+2. How much does a consent cost for a house extension?
+The cost of a building consent for a house extension in New Zealand can vary depending on the size and complexity of the project. On average, the cost of a building consent for a house extension can range from $2,000 to $5,000, depending on the council and the type of extension. For example, a simple single-story extension may cost around $2,000, while a more complex two-story extension may cost around $4,000. It's essential to get an estimate from your local council before lodging your building consent application to get a more accurate idea of the costs involved.
+
+3. Can I do building work without consent and get it approved retrospectively?
+While it's possible to apply for a retrospective building consent, it's not recommended. Building work done without consent can be a serious offense, and you may face fines or even have to demolish the work. Additionally, retrospective consents can be more expensive than applying for a consent before starting the work. If you've done building work without consent, it's essential to contact your local council as soon as possible to discuss your options. They may require you to provide additional documentation, such as plans and specifications, and may also require you to pay additional fees for the retrospective consent.
+
+4. What is a Project Information Memorandum (PIM) and when do I need one?
+A Project Information Memorandum (PIM) is a document that provides information about the proposed building project, including any potential risks or issues. You'll need a PIM if your project involves building work that requires a building consent, and you're unsure about the potential risks or issues associated with the site. A PIM can help you identify any potential problems before you start the project, and can also help you avoid any costly surprises down the track. You can apply for a PIM through your local council, and the cost will depend on the complexity of the project and the council's fees.
+
+5. Do decks need building consent in NZ?
+In New Zealand, decks that are more than 1.5 meters above the ground or have a floor area of more than 20 square meters require a building consent. However, if your deck is smaller or lower to the ground, you may not need a consent. It's essential to check with your local council to determine if your deck requires a building consent. Additionally, even if your deck doesn't require a consent, it's still important to ensure that it's built to the correct standards and codes to ensure safety and durability.
+
+6. What happens if I do building work without consent?
+If you do building work without consent, you may face serious consequences, including fines of up to $200,000. You may also be required to demolish the work or make significant changes to bring it up to code. Additionally, you may have difficulty selling your property in the future if the work was done without consent. It's essential to always obtain a building consent before starting any building work, and to ensure that the work is done to the correct standards and codes. If you've done building work without consent, it's essential to contact your local council as soon as possible to discuss your options and avoid any further consequences.
+
+## Conclusion
+
+In conclusion, building consent costs in New Zealand can vary significantly depending on the region and the type of project. It's essential to always budget for consent costs upfront and to get an estimate from your local council before lodging your building consent application. By doing so, you can avoid any unexpected costs and ensure that your project is completed on time and within budget. Remember to use online resources, such as the building consent fee calculator on tradietools.nz/calculators/building-consent-fee-calculator.html, to get a more accurate estimate of the costs involved. Additionally, always ensure that you obtain a building consent before starting any building work, and that the work is done to the correct standards and codes to avoid any serious consequences. By following these tips, you can ensure that your building project is a success and that you avoid any costly surprises down the track.
