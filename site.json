@@ -35,6 +35,10 @@
       "url": "/find/"
     },
     {
+      "label": "Post a Job",
+      "url": "/post-job/"
+    },
+    {
       "label": "Job Costs",
       "url": "/jobs/"
     },
