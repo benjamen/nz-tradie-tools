@@ -329,6 +329,30 @@ async function load() {
   }
 }
 
+/* Geographic alias map — searching a city returns its satellite cities too */
+const GEO_ALIASES = {
+  'wellington': ['wellington','lower hutt','upper hutt','porirua','kapiti','hutt valley','hutt city','petone','eastbourne'],
+  'auckland':   ['auckland','manukau','north shore','waitakere','papakura','pukekohe','henderson','albany','takapuna','botany','howick','east auckland','west auckland','south auckland','north auckland','franklin','rodney'],
+  'christchurch':['christchurch','canterbury','selwyn','waimakariri','rangiora','rolleston','lincoln','hornby','riccarton','burnside'],
+  'hamilton':   ['hamilton','waikato','te awamutu','ngaruawahia','cambridge'],
+  'tauranga':   ['tauranga','bay of plenty','mount maunganui','papamoa','te puke'],
+  'dunedin':    ['dunedin','otago','mosgiel','port chalmers'],
+  'nelson':     ['nelson','marlborough','richmond','stoke','blenheim'],
+  'palmerston north':['palmerston north','manawatu','feilding'],
+};
+function geoExpand(q) {
+  for (const [key, terms] of Object.entries(GEO_ALIASES)) {
+    if (key === q || terms.includes(q)) return terms;
+  }
+  return null;
+}
+function regionMatches(listingRegion, filterRegion) {
+  const lr = (listingRegion||'').toLowerCase();
+  const fr = filterRegion.toLowerCase();
+  const expanded = geoExpand(fr);
+  return expanded ? expanded.some(t => lr.includes(t)) : lr === fr;
+}
+
 function applyFilters() {
   const q      = document.getElementById('searchInput').value.toLowerCase().trim();
   const trade  = document.getElementById('tradeFilter').value;
@@ -340,9 +364,16 @@ function applyFilters() {
   const sort   = document.getElementById('sortSelect').value;
 
   filtered = all.filter(t => {
-    if (q && !`${t.name} ${t.trade} ${t.region} ${t.suburb||''}`.toLowerCase().includes(q)) return false;
+    if (q) {
+      const haystack = `${t.name} ${t.trade} ${t.region} ${t.suburb||''}`.toLowerCase();
+      const geoTerms = geoExpand(q);
+      const match = geoTerms
+        ? geoTerms.some(term => haystack.includes(term))
+        : haystack.includes(q);
+      if (!match) return false;
+    }
     if (trade && t.trade !== trade) return false;
-    if (region && t.region !== region) return false;
+    if (region && !regionMatches(t.region, region)) return false;
     if (prem === 'verified' && !t.is_verified) return false;
     if (prem === 'premium' && !t.is_premium) return false;
     if (minRat && (parseFloat(t.avg_rating)||0) < minRat) return false;
