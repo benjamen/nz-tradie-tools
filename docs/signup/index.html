@@ -104,6 +104,16 @@
 
     .founding-note { text-align: center; font-size: .78rem; color: var(--muted); margin-top: .25rem; }
 
+    /* ── Verify email state ── */
+    #verify-state { display: none; text-align: center; padding: 2rem 1rem; }
+    .verify-icon { width: 56px; height: 56px; background: #eff6ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.6rem; }
+    #verify-state h2 { font-size: 1.35rem; color: var(--navy); margin-bottom: .4rem; }
+    #verify-state .verify-email-addr { font-weight: 700; color: var(--navy); }
+    #verify-state .verify-hint { color: var(--muted); font-size: .88rem; margin: .75rem 0 1.25rem; line-height: 1.5; }
+    .resend-btn { background: none; border: 1.5px solid var(--border); padding: .55rem 1.1rem; font-size: .88rem; font-family: var(--font); cursor: pointer; color: var(--text); border-radius: 4px; }
+    .resend-btn:hover { border-color: var(--blue); color: var(--blue); }
+    #resend-msg { font-size: .85rem; color: #16a34a; margin-top: .6rem; display: none; }
+
     /* ── Final success ── */
     #success-state { display: none; text-align: center; padding: 2.5rem 1rem; }
     #success-state h2 { font-size: 1.4rem; margin-bottom: .4rem; color: var(--navy); }
@@ -238,7 +248,17 @@
       </div>
     </div>
 
-    <!-- STATE 2: Upgrade offer -->
+    <!-- STATE 2: Verify email -->
+    <div id="verify-state">
+      <div class="verify-icon">📧</div>
+      <h2>Check your email</h2>
+      <p>We've sent a verification link to <span class="verify-email-addr" id="verify-email-display">your email</span></p>
+      <p class="verify-hint">Click the link to activate your listing on TradieTools.nz.<br>It expires in 48 hours — check your spam folder too.</p>
+      <button class="resend-btn" id="resend-btn">Didn't get it? Resend →</button>
+      <p id="resend-msg">&#10003; Sent! Check your inbox (and spam folder).</p>
+    </div>
+
+    <!-- STATE 3: Upgrade offer (shown after email verified, via /verify/ redirect) -->
     <div id="upgrade-state">
       <div class="upgrade-header">
         <div class="tick">✓</div>
@@ -356,10 +376,15 @@
 const API_LIST    = 'https://tradietools.optified.nz/api/method/tradietools.api.create_listing';
 const API_CHECKOUT = 'https://tradietools.optified.nz/api/method/tradietools.api.create_checkout_session';
 
+const API_VERIFY  = 'https://tradietools.optified.nz/api/method/tradietools.api.verify_listing';
+const API_RESEND  = 'https://tradietools.optified.nz/api/method/tradietools.api.resend_verification';
+
 let tradieId    = null;
 let tradieEmail = null;
 const _params   = new URLSearchParams(location.search);
 const isLeadRef = _params.get('ref') === 'lead';
+const isClaimRef = _params.get('ref') === 'claim';
+const claimId   = isClaimRef ? (_params.get('id') || null) : null;
 const bizSlug   = _params.get('business') || '';
 
 // ── Lead referral: show banner + customise copy ──
@@ -368,6 +393,13 @@ if (isLeadRef) {
   document.getElementById('form-title').textContent = 'Claim Your Free Listing';
   document.getElementById('form-sub').textContent =
     'A homeowner needs your help. Claim your listing to respond — and get your first month free.';
+}
+
+// ── Claim flow: customise copy when ?ref=claim&id=X ──
+if (isClaimRef) {
+  document.getElementById('form-title').textContent = 'Claim Your Listing';
+  document.getElementById('form-sub').textContent =
+    'Enter your contact details to claim this listing. We\'ll send a verification link to confirm you own this business.';
 }
 
 // ── Check if returning from Stripe (upgraded=1 or cancelled=1) ──
@@ -447,6 +479,7 @@ document.getElementById('signup-form').addEventListener('submit', async function
     const body = { name, phone, email, trade, region };
     if (experience_years) body.experience_years = parseInt(experience_years);
     if (hourly_rate)      body.hourly_rate = parseInt(hourly_rate);
+    if (claimId)          body.claim_id = claimId;
 
     const r    = await fetch(API_LIST, {
       method: 'POST',
@@ -456,29 +489,50 @@ document.getElementById('signup-form').addEventListener('submit', async function
     const data = await r.json();
     const msg  = data.message || data;
 
-    if (r.ok && (msg.status === 'created' || msg.id)) {
+    if (r.ok && (msg.status === 'verify_email' || msg.status === 'created' || msg.id)) {
       tradieId    = msg.id || null;
       tradieEmail = email;
       localStorage.setItem('tradieEmail', email);
       localStorage.setItem('tradieName', name);
-      localStorage.setItem('tradieId', tradieId || '');
+      if (tradieId) localStorage.setItem('tradieId', tradieId);
 
       if (typeof gtag !== 'undefined') gtag('event', 'signup_complete', { trade, region });
 
-      // Transition to upgrade offer
-      document.getElementById('form-area').style.display = 'none';
-      document.getElementById('upgrade-state').style.display = 'block';
+      if (msg.status === 'verify_email') {
+        // Show "check your email" state — listing is pending verification
+        document.getElementById('form-area').style.display = 'none';
+        document.getElementById('verify-state').style.display = 'block';
+        document.getElementById('verify-email-display').textContent = email;
 
-      // Lead ref: show free trial UI
-      if (isLeadRef) {
-        document.getElementById('trial-banner').style.display = 'block';
-        document.getElementById('verified-trial-note').style.display = 'block';
-        document.getElementById('pro-trial-note').style.display = 'block';
-        document.getElementById('upgrade-title').textContent = 'Start your free month!';
-        document.getElementById('upgrade-sub').textContent =
-          'Your listing is live. Activate your free 30-day trial — no charge until it ends.';
-        document.getElementById('upgrade-verified-btn').textContent = 'Start Free Trial →';
-        document.getElementById('upgrade-pro-btn').textContent = 'Start Free Trial →';
+        // Wire up resend button
+        document.getElementById('resend-btn').addEventListener('click', async function() {
+          if (!tradieId) return;
+          this.disabled = true;
+          try {
+            await fetch(API_RESEND, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json', 'X-Frappe-CSRF-Token': 'fetch' },
+              body: JSON.stringify({ tradie_id: tradieId })
+            });
+          } catch(e) {}
+          document.getElementById('resend-msg').style.display = 'block';
+          setTimeout(() => { this.disabled = false; }, 30000);
+        });
+      } else {
+        // Legacy: listing was already active (shouldn't happen with new API)
+        document.getElementById('form-area').style.display = 'none';
+        document.getElementById('upgrade-state').style.display = 'block';
+
+        if (isLeadRef) {
+          document.getElementById('trial-banner').style.display = 'block';
+          document.getElementById('verified-trial-note').style.display = 'block';
+          document.getElementById('pro-trial-note').style.display = 'block';
+          document.getElementById('upgrade-title').textContent = 'Start your free month!';
+          document.getElementById('upgrade-sub').textContent =
+            'Your listing is live. Activate your free 30-day trial — no charge until it ends.';
+          document.getElementById('upgrade-verified-btn').textContent = 'Start Free Trial →';
+          document.getElementById('upgrade-pro-btn').textContent = 'Start Free Trial →';
+        }
       }
     } else {
       const raw = msg.exception || msg.message || 'Submission failed';

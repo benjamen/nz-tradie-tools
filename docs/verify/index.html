@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verify Your Listing — TradieTools NZ</title>
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy: #0055a5; --orange: #ea6325; --text: #1e293b; --muted: #64748b;
+      --border: #e2e8f0; --font: 'Public Sans', sans-serif;
+    }
+    body { font-family: var(--font); color: var(--text); background: #f8f9fa; min-height: 100vh; display: flex; flex-direction: column; }
+    header { background: #fff; border-bottom: 1px solid var(--border); padding: .9rem 1.25rem; }
+    header a { color: var(--navy); font-weight: 700; font-size: 1.05rem; text-decoration: none; }
+    main { flex: 1; display: flex; align-items: center; justify-content: center; padding: 2rem 1rem; }
+    .card { background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 2.5rem 2rem; max-width: 480px; width: 100%; text-align: center; box-shadow: 0 2px 16px rgba(0,0,0,.06); }
+    .icon { width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; font-size: 1.75rem; }
+    .icon-loading { background: #eff6ff; }
+    .icon-success { background: #f0fdf4; }
+    .icon-error   { background: #fff7ed; }
+    h1 { font-size: 1.4rem; color: var(--navy); margin-bottom: .4rem; }
+    p  { font-size: .92rem; color: var(--muted); line-height: 1.6; margin-top: .5rem; }
+    .btn { display: inline-block; margin-top: 1.5rem; padding: .75rem 1.75rem; background: var(--navy); color: #fff; text-decoration: none; border-radius: 5px; font-weight: 700; font-size: .95rem; font-family: var(--font); border: none; cursor: pointer; }
+    .btn-orange { background: var(--orange); }
+    .btn:hover { opacity: .9; }
+    .resend-btn { background: none; border: 1.5px solid var(--border); padding: .55rem 1.1rem; font-size: .88rem; font-family: var(--font); cursor: pointer; color: var(--text); border-radius: 4px; margin-top: 1rem; display: inline-block; }
+    .resend-btn:hover { border-color: var(--navy); color: var(--navy); }
+    #resend-msg { font-size: .85rem; color: #16a34a; margin-top: .6rem; display: none; }
+    .upgrade-box { margin-top: 2rem; border-top: 1px solid var(--border); padding-top: 1.5rem; text-align: left; }
+    .upgrade-box h2 { font-size: 1.15rem; color: var(--navy); margin-bottom: .75rem; text-align: center; }
+    .tier { border: 1.5px solid var(--border); border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: .85rem; }
+    .tier.featured { border-color: var(--navy); background: #eff6ff; }
+    .tier-name { font-weight: 700; font-size: .95rem; color: var(--text); }
+    .tier-price { font-size: 1.2rem; font-weight: 700; color: var(--navy); margin: .2rem 0 .5rem; }
+    .tier-price span { font-size: .85rem; font-weight: 400; color: var(--muted); }
+    .tier ul { font-size: .85rem; color: #334155; padding-left: 1.25rem; line-height: 1.75; }
+    .tier-btn { display: block; text-align: center; padding: .6rem; background: var(--navy); color: #fff; text-decoration: none; border-radius: 5px; font-weight: 700; font-size: .9rem; margin-top: .85rem; cursor: pointer; border: none; font-family: var(--font); width: 100%; }
+    .tier-btn.free { background: #fff; color: var(--navy); border: 1.5px solid var(--navy); }
+    .tier-btn:hover { opacity: .9; }
+    footer { text-align: center; padding: 1.25rem; font-size: .82rem; color: var(--muted); border-top: 1px solid var(--border); background: #fff; }
+
+    /* Spinner */
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .spinner { width: 28px; height: 28px; border: 3px solid #dbeafe; border-top-color: var(--navy); border-radius: 50%; animation: spin .7s linear infinite; margin: 0 auto; }
+
+    /* Hidden state classes */
+    .state { display: none; }
+    .state.active { display: block; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="/">TradieTools NZ</a>
+  </header>
+
+  <main>
+    <div class="card">
+
+      <!-- Loading -->
+      <div id="state-loading" class="state active">
+        <div class="icon icon-loading"><div class="spinner"></div></div>
+        <h1>Verifying your listing&hellip;</h1>
+        <p>This will only take a moment.</p>
+      </div>
+
+      <!-- Success -->
+      <div id="state-success" class="state">
+        <div class="icon icon-success">&#10003;</div>
+        <h1>Your listing is live!</h1>
+        <p>Your email is confirmed and your listing is now visible on TradieTools.nz.<br>
+           Want more leads? Upgrade to Verified or Pro below — or skip and use your free listing.</p>
+
+        <div class="upgrade-box">
+          <h2>Upgrade for more leads (optional)</h2>
+
+          <div class="tier featured">
+            <div class="tier-name">Verified</div>
+            <div class="tier-price">$29<span>/mo + GST</span></div>
+            <ul>
+              <li>Verified badge — ranks higher in search</li>
+              <li>Email &amp; SMS lead alerts</li>
+              <li>Priority listing in your trade &amp; region</li>
+            </ul>
+            <button class="tier-btn" id="btn-verified">Upgrade to Verified →</button>
+          </div>
+
+          <div class="tier">
+            <div class="tier-name">Pro</div>
+            <div class="tier-price">$59<span>/mo + GST</span></div>
+            <ul>
+              <li>Everything in Verified</li>
+              <li>AI quote matching — get matched to homeowner jobs</li>
+              <li>Customer review collection &amp; showcase</li>
+            </ul>
+            <button class="tier-btn" id="btn-pro">Upgrade to Pro →</button>
+          </div>
+
+          <div class="tier">
+            <div class="tier-name">Free listing</div>
+            <div class="tier-price">$0<span>/mo</span></div>
+            <ul>
+              <li>Listed in the NZ Tradie Directory</li>
+              <li>Customers can get a quote via your listing</li>
+            </ul>
+            <a href="/find/" class="tier-btn free">View my listing →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Expired -->
+      <div id="state-expired" class="state">
+        <div class="icon icon-error">&#8987;</div>
+        <h1>Link expired</h1>
+        <p>Your verification link was valid for 48 hours and has now expired.<br>
+           Click below to get a fresh link sent to your email.</p>
+        <button class="resend-btn" id="resend-btn-expired">Send new link →</button>
+        <p id="resend-msg-expired" style="display:none;font-size:.85rem;color:#16a34a;margin-top:.6rem">
+          &#10003; Sent! Check your inbox (and spam folder).
+        </p>
+      </div>
+
+      <!-- Invalid -->
+      <div id="state-invalid" class="state">
+        <div class="icon icon-error">&#9888;</div>
+        <h1>Link not recognised</h1>
+        <p>This link may have already been used or is invalid. If you're having trouble, contact us at
+          <a href="mailto:contact@tradietools.nz" style="color:var(--navy)">contact@tradietools.nz</a>.</p>
+        <a href="/signup/" class="btn" style="margin-top:1.25rem">Sign up again →</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>TradieTools NZ &mdash; <a href="/" style="color:var(--navy)">tradietools.nz</a></footer>
+
+  <script>
+  (function(){
+    var API_VERIFY   = 'https://tradietools.optified.nz/api/method/tradietools.api.verify_listing';
+    var API_RESEND   = 'https://tradietools.optified.nz/api/method/tradietools.api.resend_verification';
+    var API_CHECKOUT = 'https://tradietools.optified.nz/api/method/tradietools.api.create_checkout_session';
+    var PRICE_V = 'prod_Ud6cwW0qgkC1w1';
+    var PRICE_P = 'prod_Ud6cXc6JwI8pc9';
+
+    var params = new URLSearchParams(location.search);
+    var token  = params.get('token');
+    var tradieId = null;
+
+    function show(id) {
+      document.querySelectorAll('.state').forEach(function(el){ el.classList.remove('active'); });
+      document.getElementById(id).classList.add('active');
+    }
+
+    async function doCheckout(priceId) {
+      if (!tradieId) return;
+      var email = localStorage.getItem('tradieEmail') || '';
+      try {
+        var r = await fetch(API_CHECKOUT, {
+          method: 'POST',
+          headers: {'Content-Type':'application/json','X-Frappe-CSRF-Token':'fetch'},
+          body: JSON.stringify({tradie_id: tradieId, price_id: priceId, email: email})
+        });
+        var d = await r.json();
+        var url = (d.message || d).url || (d.message || d).checkout_url;
+        if (url) { location.href = url; }
+      } catch(e) {}
+    }
+
+    if (!token) {
+      show('state-invalid');
+      return;
+    }
+
+    fetch(API_VERIFY, {
+      method: 'POST',
+      headers: {'Content-Type':'application/json','X-Frappe-CSRF-Token':'fetch'},
+      body: JSON.stringify({token: token})
+    })
+    .then(function(r){ return r.json(); })
+    .then(function(data){
+      var msg = data.message || data;
+
+      if (msg.status === 'verified') {
+        tradieId = msg.id;
+        if (tradieId) localStorage.setItem('tradieId', tradieId);
+        if (msg.lead_token) localStorage.setItem('leadToken', msg.lead_token);
+        show('state-success');
+
+        document.getElementById('btn-verified').addEventListener('click', function(){ doCheckout(PRICE_V); });
+        document.getElementById('btn-pro').addEventListener('click', function(){ doCheckout(PRICE_P); });
+
+      } else if (msg.status === 'expired') {
+        tradieId = msg.id;
+        show('state-expired');
+
+        document.getElementById('resend-btn-expired').addEventListener('click', async function(){
+          if (!tradieId) return;
+          this.disabled = true;
+          try {
+            await fetch(API_RESEND, {
+              method: 'POST',
+              headers: {'Content-Type':'application/json','X-Frappe-CSRF-Token':'fetch'},
+              body: JSON.stringify({tradie_id: tradieId})
+            });
+          } catch(e) {}
+          document.getElementById('resend-msg-expired').style.display = 'block';
+        });
+
+      } else {
+        show('state-invalid');
+      }
+    })
+    .catch(function(){
+      show('state-invalid');
+    });
+  })();
+  </script>
+</body>
+</html>
