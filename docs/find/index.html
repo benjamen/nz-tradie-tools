@@ -143,12 +143,13 @@
     @keyframes spin { to { transform: rotate(360deg); } }
 
     /* Pagination */
-    .pagination { display: flex; gap: 0; justify-content: center; margin-top: 2rem; border: 1px solid var(--border); width: fit-content; margin-left: auto; margin-right: auto; }
-    .page-btn { padding: .5rem .85rem; font-size: .88rem; font-family: var(--font); background: var(--white); color: var(--blue); border: none; border-right: 1px solid var(--border); cursor: pointer; }
-    .page-btn:last-child { border-right: none; }
-    .page-btn:hover { background: var(--blue-light); }
-    .page-btn.active { background: var(--blue); color: var(--white); font-weight: 700; }
-    .page-btn:disabled { color: var(--muted); cursor: not-allowed; background: var(--bg); }
+    .pagination { display: flex; gap: .35rem; justify-content: center; align-items: center; margin-top: 2.25rem; flex-wrap: wrap; }
+    .page-btn { min-width: 36px; height: 36px; padding: 0 .6rem; font-size: .875rem; font-family: var(--font); background: var(--white); color: var(--navy); border: 1.5px solid var(--border); border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; font-weight: 500; transition: background .12s, border-color .12s, color .12s; }
+    .page-btn:hover:not(:disabled) { background: var(--blue-light); border-color: var(--blue); color: var(--blue); }
+    .page-btn.active { background: var(--blue); color: #fff; border-color: var(--blue); font-weight: 700; pointer-events: none; }
+    .page-btn:disabled { color: var(--muted); cursor: not-allowed; opacity: .45; }
+    .page-btn.prev-next { font-size: 1rem; font-weight: 700; }
+    .page-dots { color: var(--muted); font-size: .875rem; padding: 0 .25rem; line-height: 36px; }
 
     /* CTA strip */
     .cta-strip { background: var(--navy); color: var(--white); padding: 2rem 0; margin-top: 3rem; border-top: 3px solid var(--blue); text-align: center; }
@@ -294,11 +295,52 @@ const FEATURED_API = 'https://tradietools.optified.nz/api/method/tradietools.api
 const CLAIMED_JSON = '/static/data/claimed-businesses.json';
 const PAGE_SIZE = 15;
 const TRADE_LABELS = {
+  /* singular legacy slugs */
   electrician:'Electrician',plumber:'Plumber',builder:'Builder / LBP',
   painter:'Painter',roofer:'Roofer',landscaper:'Landscaper',tiler:'Tiler',
   plasterer:'Plasterer',flooring:'Flooring Specialist',concreter:'Concreter',
-  gasfitter:'Gasfitter',hvac:'HVAC / Heat Pump',other:'Tradie'
+  gasfitter:'Gasfitter',hvac:'HVAC / Heat Pump',other:'Tradie',
+  carpenter:'Carpenter',drainlayer:'Drainlayer',glazier:'Glazier',
+  fencer:'Fencer',scaffolder:'Scaffolder',waterproofer:'Waterproofer',
+  /* plural / hyphenated slugs */
+  electricians:'Electrician',plumbers:'Plumber',builders:'Builder / LBP',
+  painters:'Painter',roofers:'Roofer',landscapers:'Landscaper',tilers:'Tiler',
+  plasterers:'Plasterer','carpet-layers':'Carpet Layer',concreters:'Concreter',
+  carpenters:'Carpenter',gasfitters:'Gasfitter',drainlayers:'Drainlayer',
+  glaziers:'Glazier',fencers:'Fencer',waterproofers:'Waterproofer',
+  scaffolders:'Scaffolder',
+  'kitchen-renovators':'Kitchen Renovator',
+  'bathroom-renovators':'Bathroom Renovator',
+  'heat-pump-installers':'Heat Pump Installer',
+  'solar-installers':'Solar Installer',
+  'insulation-installers':'Insulation Installer',
+  'security-system-installers':'Security Installer',
+  'garage-door-installers':'Garage Door Installer',
+  'window-installers':'Window Installer',
+  'pest-controllers':'Pest Controller',
+  'hvac-engineers':'HVAC Engineer',
+  'cabinet-makers':'Cabinet Maker',
+  'steel-fabricators':'Steel Fabricator',
+  'drainage-specialists':'Drainage Specialist',
+  'irrigation-specialists':'Irrigation Specialist',
+  'lighting-specialists':'Lighting Specialist',
+  'asphalt-contractors':'Asphalt Contractor',
+  'demolition-contractors':'Demolition Contractor',
+  'commercial-cleaners':'Commercial Cleaner',
+  'cladding-installers':'Cladding Installer',
+  'timber-floor-specialists':'Timber Floor Specialist',
+  'pool-builders':'Pool Builder',
+  'quantity-surveyors':'Quantity Surveyor',
+  'interior-designers':'Interior Designer',
+  arborists:'Arborist',architects:'Architect',excavators:'Excavator',
+  surveyors:'Land Surveyor',stonemasons:'Stonemason',bricklayers:'Bricklayer',
+  locksmiths:'Locksmith','carpet':'Carpet Layer',
 };
+function tradeLabel(slug) {
+  if (!slug) return 'Tradie';
+  return TRADE_LABELS[slug] ||
+    slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+}
 
 let all = [], filtered = [], page = 1, highlightId = '';
 
@@ -384,6 +426,9 @@ function applyFilters() {
 
   if (sort === 'name') filtered.sort((a,b) => (a.name||'').localeCompare(b.name||''));
   else if (sort === 'rating') filtered.sort((a,b) => (b.avg_rating||0) - (a.avg_rating||0));
+  // Always float premium → verified → free within the active sort
+  const tier = t => t.is_premium ? 0 : (t.is_verified ? 1 : 2);
+  filtered.sort((a,b) => tier(a) - tier(b));
 
   page = 1;
   const hasFilters = q || trade || region || prem || minRat || avail || suburb;
@@ -414,7 +459,7 @@ const TRADE_COLOURS = { electrician:'trade-electrician', plumber:'trade-plumber'
 function tradeColour(trade) { return TRADE_COLOURS[(trade||'').toLowerCase()] || ''; }
 
 function freeCard(t) {
-  const label = TRADE_LABELS[t.trade] || t.trade || 'Tradie';
+  const label = tradeLabel(t.trade);
   const rat = parseFloat(t.avg_rating||0);
   const rate = t.hourly_rate ? `$${t.hourly_rate}/hr` : '';
   const exp  = t.experience_years ? `${t.experience_years}yrs exp` : '';
@@ -449,7 +494,7 @@ function freeCard(t) {
 }
 
 function verifiedCard(t) {
-  const label = TRADE_LABELS[t.trade] || t.trade || 'Tradie';
+  const label = tradeLabel(t.trade);
   const rat = parseFloat(t.avg_rating||0);
   const phone = t.phone||'';
   const rate = t.hourly_rate ? `$${t.hourly_rate}/hr` : '';
@@ -487,7 +532,7 @@ function verifiedCard(t) {
 }
 
 function proCard(t, rank) {
-  const label = TRADE_LABELS[t.trade] || t.trade || 'Tradie';
+  const label = tradeLabel(t.trade);
   const rat = parseFloat(t.avg_rating||0);
   const phone = t.phone||'';
   const rate = t.hourly_rate ? `$${t.hourly_rate}/hr` : '';
@@ -538,7 +583,7 @@ function featuredCard(t) {
     <span style="position:absolute;top:.6rem;right:.75rem;background:#7c3aed;color:#fff;font-size:.7rem;font-weight:700;padding:.1rem .45rem;border-radius:3px;letter-spacing:.05em">SPONSORED</span>
     <div class="card-name">${t.name||'Unnamed'}</div>
     <div class="card-meta">
-      ${t.trade?`<span>${TRADE_LABELS[t.trade]||t.trade}</span>`:''}
+      ${t.trade?`<span>${tradeLabel(t.trade)}</span>`:''}
       ${t.region?`<span>📍 ${t.suburb?t.suburb+', ':''}${t.region}</span>`:''}
       ${stars?`<span style="color:#f59e0b">${stars}</span> <span>${t.avg_rating}/5 (${t.review_count||0} reviews)</span>`:''}
       ${t.response_time_label?`<span>⚡ ${t.response_time_label}</span>`:''}
@@ -611,13 +656,21 @@ function render() {
 
   const pages = Math.ceil(total/PAGE_SIZE);
   if (pages<=1) { document.getElementById('pagination').innerHTML=''; return; }
-  let pg = `<button class="page-btn" onclick="goPage(${page-1})" ${page===1?'disabled':''}>‹</button>`;
-  for(let i=1;i<=pages;i++){
-    if(pages>7 && Math.abs(i-page)>2 && i!==1 && i!==pages) continue;
-    pg += `<button class="page-btn ${i===page?'active':''}" onclick="goPage(${i})">${i}</button>`;
+
+  // Page numbers to show: always first, last, current ±2; rest become ellipsis
+  const show = new Set([1, pages]);
+  for (let i=Math.max(1,page-2); i<=Math.min(pages,page+2); i++) show.add(i);
+  const nums = Array.from(show).sort((a,b)=>a-b);
+
+  let parts = [`<button class="page-btn prev-next" onclick="goPage(${page-1})" ${page===1?'disabled':''} aria-label="Prev">&#8592;</button>`];
+  let prev = 0;
+  for (const n of nums) {
+    if (n - prev > 1) parts.push(`<span class="page-dots">…</span>`);
+    parts.push(`<button class="page-btn${n===page?' active':''}" onclick="goPage(${n})">${n}</button>`);
+    prev = n;
   }
-  pg += `<button class="page-btn" onclick="goPage(${page+1})" ${page===pages?'disabled':''}>›</button>`;
-  document.getElementById('pagination').innerHTML = pg;
+  parts.push(`<button class="page-btn prev-next" onclick="goPage(${page+1})" ${page===pages?'disabled':''} aria-label="Next">&#8594;</button>`);
+  document.getElementById('pagination').innerHTML = parts.join('');
 }
 
 function goPage(p) { page=p; render(); window.scrollTo({top:0,behavior:'smooth'}); }
