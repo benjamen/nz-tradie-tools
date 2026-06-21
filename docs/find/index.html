@@ -438,11 +438,13 @@ function freeCard(t) {
     ${isUnclaimed ? `<div style="font-size:.82rem;color:#6b7280;margin:.2rem 0">
       <a href="${mapsUrl}" target="_blank" rel="noopener" style="color:#0055a5;font-weight:600;text-decoration:none">View on Google Maps →</a>
     </div>` : ''}
-    ${t.phone ? `<div class="tc-locked-phone">🔒 Phone hidden · <a href="/signup/?upgrade=verified">Show number from $29/mo →</a></div>` : ''}
-    <div style="display:flex;gap:.5rem;flex-wrap:wrap">
+    ${!isUnclaimed && t.phone ? `<div class="tc-locked-phone">🔒 Phone hidden · <a href="/signup/?upgrade=verified">Show number from $29/mo →</a></div>` : ''}
+    ${isUnclaimed ? `<div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.4rem">
+      <a href="/post-job/" style="flex:1;display:inline-block;text-align:center;background:#0055a5;color:#fff;padding:.6rem .5rem;font-size:.82rem;font-weight:700;text-decoration:none;border-radius:2px;white-space:nowrap">📋 Post a Job</a>
+      <a href="${claimUrl}" style="flex:1;display:inline-block;text-align:center;background:#fff7ed;border:1.5px solid #f97316;color:#c2410c;padding:.6rem .5rem;font-size:.82rem;font-weight:700;text-decoration:none;border-radius:2px;white-space:nowrap">Claim listing →</a>
+    </div>` : `<div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.4rem">
       <button class="btn-quote-full" style="flex:1" onclick="ttQuote('${esc(String(t.id||''))}','${esc(t.name||'')}','${esc(label)}','${esc(t.region||'')}')">Get a Quote</button>
-      ${isUnclaimed ? `<a href="${claimUrl}" style="flex:1;display:inline-block;text-align:center;background:#fff7ed;border:1.5px solid #f97316;color:#c2410c;padding:.6rem .5rem;font-size:.82rem;font-weight:700;text-decoration:none;border-radius:2px;white-space:nowrap">Claim free →</a>` : ''}
-    </div>
+    </div>`}
   </div>`;
 }
 
