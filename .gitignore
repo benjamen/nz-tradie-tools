@@ -1,5 +1,8 @@
 venv/
+.venv/
 __pycache__/
 *.pyc
 *.pyo
 .DS_Store
+outreach/.env
+outreach/sent_*.count

@@ -8,10 +8,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import daily_limit
 
-SMTP_HOST = "smtp.hostinger.com"
-SMTP_PORT = 465
-SMTP_USER = "contact@tradietools.nz"
-SMTP_PASS = "jtck-nlrn-kb6b-eail"
+from config import SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS
 SITE_URL  = "https://tradietools.nz"
 
 DIR = Path(__file__).parent

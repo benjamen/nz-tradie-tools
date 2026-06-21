@@ -15,11 +15,7 @@ from urllib.parse import urlparse
 from playwright.sync_api import sync_playwright
 import daily_limit
 
-SMTP_HOST = "smtp.hostinger.com"
-SMTP_PORT = 465
-SMTP_USER = "contact@tradietools.nz"
-SMTP_PASS = "jtck-nlrn-kb6b-eail"
-
+from config import SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS
 OUTPUT   = Path(__file__).parent / "contacts_wave3.csv"
 SENT_LOG = Path(__file__).parent / "sent_wave3.log"
 LOG_FILE = Path(__file__).parent / "run_outreach_wave3.log"

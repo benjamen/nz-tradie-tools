@@ -11,11 +11,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from pathlib import Path
 
-SMTP_HOST = "smtp.hostinger.com"
-SMTP_PORT = 465
-SMTP_USER = "contact@tradietools.nz"
-SMTP_PASS = "jtck-nlrn-kb6b-eail"
-
+from config import SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS
 CONTACTS_CSV = Path(__file__).parent / "contacts_wave3.csv"
 FOLLOWUP_LOG = Path(__file__).parent / "followup_w3_day14.log"
 DAY4_LOG     = Path(__file__).parent / "followup_w2_day4.log"
