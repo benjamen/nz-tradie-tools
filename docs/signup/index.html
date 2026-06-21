@@ -166,6 +166,12 @@
       <h1 id="form-title">List Your Business Free</h1>
       <p class="sub" id="form-sub">Get discovered by customers across New Zealand. Takes 2 minutes.</p>
 
+      <!-- Claim banner — shown when pre-filling from a specific listing -->
+      <div id="claim-banner" style="display:none;background:#eff6ff;border:1.5px solid #bfdbfe;border-radius:8px;padding:.9rem 1.1rem;margin-bottom:1.25rem;font-size:.9rem;color:#1e40af">
+        <strong id="claim-biz-name"></strong><span id="claim-biz-meta"></span>
+        <div style="font-size:.8rem;color:#3b82f6;margin-top:.25rem">We'll update this listing with your contact details after you verify your email.</div>
+      </div>
+
       <div class="alert" id="alert"></div>
 
       <form id="signup-form" novalidate>
@@ -395,11 +401,44 @@ if (isLeadRef) {
     'A homeowner needs your help. Claim your listing to respond — and get your first month free.';
 }
 
-// ── Claim flow: customise copy when ?ref=claim&id=X ──
+// ── Claim flow: customise copy + pre-fill form when ?ref=claim&id=X ──
 if (isClaimRef) {
   document.getElementById('form-title').textContent = 'Claim Your Listing';
   document.getElementById('form-sub').textContent =
     'Enter your contact details to claim this listing. We\'ll send a verification link to confirm you own this business.';
+}
+
+const API_LISTING_PUBLIC = 'https://tradietools.optified.nz/api/method/tradietools.api.get_listing_public';
+
+if (claimId) {
+  fetch(API_LISTING_PUBLIC + '?listing_id=' + encodeURIComponent(claimId))
+    .then(function(r){ return r.json(); })
+    .then(function(data){
+      var msg = data.message || data;
+      if (msg.status !== 'ok') return;
+
+      // Pre-fill trade and region dropdowns
+      var tradeEl  = document.getElementById('trade');
+      var regionEl = document.getElementById('region');
+      if (tradeEl  && msg.trade)  tradeEl.value  = msg.trade;
+      if (regionEl && msg.region) regionEl.value = msg.region;
+
+      // Show claim banner
+      var banner = document.getElementById('claim-banner');
+      var bizName = document.getElementById('claim-biz-name');
+      var bizMeta = document.getElementById('claim-biz-meta');
+      if (banner && msg.name) {
+        bizName.textContent = 'Claiming: ' + msg.name;
+        var meta = '';
+        if (msg.reviews && msg.reviews > 0) {
+          meta = ' · ' + msg.reviews + ' Google review' + (msg.reviews !== 1 ? 's' : '');
+          if (msg.rating) meta += ' ⭐ ' + parseFloat(msg.rating).toFixed(1);
+        }
+        bizMeta.textContent = meta;
+        banner.style.display = 'block';
+      }
+    })
+    .catch(function(){});
 }
 
 // ── Check if returning from Stripe (upgraded=1 or cancelled=1) ──
