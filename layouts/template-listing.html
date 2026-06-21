@@ -25,6 +25,51 @@
     <link rel="icon" href="{{ base_path }}/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="{{ base_path }}/static/css/style.css">
     <link rel="stylesheet" href="{{ base_path }}/static/css/templates.css">
+    <script>
+    /* Gate: set data-tt-unlocked before paint to avoid flash */
+    (function(){
+      var u = localStorage.getItem('tradieId') || localStorage.getItem('ttSubscribed');
+      document.documentElement.dataset.ttUnlocked = u ? '1' : '0';
+    })();
+    </script>
+    <style>
+    /* Locked state: blur cards after first 6 */
+    html[data-tt-unlocked="0"] .template-grid .template-card:nth-child(n+7) {
+      filter: blur(4px);
+      pointer-events: none;
+      user-select: none;
+    }
+    /* Gate overlay sits between card 6 and the blurred cards */
+    #tt-template-gate {
+      background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, #fff 40%);
+      text-align: center;
+      padding: 3rem 1rem 1.5rem;
+      margin-top: -4rem;
+      position: relative;
+      z-index: 10;
+    }
+    html[data-tt-unlocked="1"] #tt-template-gate { display: none; }
+    html[data-tt-unlocked="1"] .template-grid .template-card { filter: none; pointer-events: auto; user-select: auto; }
+    .tt-gate-box {
+      background: #fff;
+      border: 2px solid #0055a5;
+      border-radius: 10px;
+      padding: 1.75rem 2rem;
+      max-width: 520px;
+      margin: 0 auto;
+      box-shadow: 0 4px 24px rgba(0,85,165,.13);
+    }
+    .tt-gate-box h3 { margin: 0 0 .4rem; font-size: 1.2rem; color: #0055a5; }
+    .tt-gate-box p { margin: 0 0 1rem; font-size: .92rem; color: #444; }
+    .tt-gate-form { display: flex; gap: .5rem; flex-wrap: wrap; }
+    .tt-gate-form input[type=email] { flex: 1; min-width: 200px; padding: .6rem .85rem; border: 1.5px solid #ccc; border-radius: 5px; font-size: .95rem; font-family: inherit; }
+    .tt-gate-form button { background: #ea6325; color: #fff; border: none; padding: .6rem 1.1rem; border-radius: 5px; font-weight: 700; font-size: .95rem; cursor: pointer; font-family: inherit; white-space: nowrap; }
+    .tt-gate-form button:hover { background: #c94f1a; }
+    .tt-gate-member { font-size: .82rem; margin-top: .75rem; color: #555; }
+    .tt-gate-member a { color: #0055a5; font-weight: 600; }
+    .tt-unlocked-banner { background: #f0fdf4; border: 1.5px solid #86efac; border-radius: 8px; padding: .75rem 1.25rem; margin-bottom: 1.5rem; font-size: .9rem; color: #166534; display: none; }
+    html[data-tt-unlocked="1"] .tt-unlocked-banner { display: block; }
+    </style>
     {% if ga_id %}
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ ga_id }}"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{ ga_id }}');</script>
@@ -75,28 +120,55 @@
 
     <div class="container">
 
-        <section style="background:linear-gradient(135deg,#0055a5 0%,#003d7a 100%);border-radius:10px;padding:2rem 2.25rem;margin:0 0 2rem;color:#fff">
+        <div class="tt-unlocked-banner">
+            ✅ <strong>All {{ templates|length }} templates unlocked</strong> — you're a TradieTools member. Download any template below for free.
+        </div>
+
+        <section style="background:linear-gradient(135deg,#0055a5 0%,#003d7a 100%);border-radius:10px;padding:2rem 2.25rem;margin:0 0 2rem;color:#fff" id="tt-subscribe-block">
             <div style="display:flex;align-items:flex-start;gap:1.5rem;flex-wrap:wrap">
                 <div style="flex:1;min-width:240px">
-                    <p style="font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:rgba(255,255,255,.7);margin:0 0 .4rem">Free for subscribers</p>
-                    <h2 style="color:#fff;margin:0 0 .6rem;font-size:1.35rem">Get all {{ templates|length }} templates as a weekly digest</h2>
+                    <p style="font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:rgba(255,255,255,.7);margin:0 0 .4rem">Free for TradieTools members &amp; subscribers</p>
+                    <h2 style="color:#fff;margin:0 0 .6rem;font-size:1.35rem">Unlock all {{ templates|length }} templates free</h2>
                     <p style="color:rgba(255,255,255,.88);font-size:.9rem;margin:0 0 .3rem">Subscribe to <strong>NZ Tradie Tips</strong> — our free weekly newsletter — and get every template, pricing guide update, and tax reminder straight to your inbox.</p>
-                    <p style="color:rgba(255,255,255,.65);font-size:.8rem;margin:0">Unsubscribe anytime. No spam. Just useful NZ tradie content.</p>
+                    <p style="color:rgba(255,255,255,.65);font-size:.8rem;margin:0">Unsubscribe anytime. No spam. Already listed on TradieTools? Templates are already unlocked for you.</p>
                 </div>
                 <div style="min-width:260px;flex:1">
-                    {% if beehiiv_form_id %}
-                    <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="{{ beehiiv_form_id }}"></script>
-                    {% else %}
-                    <form action="{{ formspree_endpoint }}" method="POST" style="display:flex;flex-direction:column;gap:.5rem">
-                        <input type="hidden" name="_subject" value="NZ Tradie Tools — Templates Bundle Signup">
-                        <input type="hidden" name="source" value="templates-listing-bundle">
-                        <input type="email" name="email" placeholder="Your email address" required style="padding:.6rem .8rem;border:none;border-radius:5px;font-size:.9rem;width:100%;box-sizing:border-box">
-                        <button type="submit" style="background:#ea6325;color:#fff;border:none;padding:.6rem 1rem;border-radius:5px;font-size:.9rem;font-weight:600;cursor:pointer;width:100%">Subscribe &amp; Get All Templates →</button>
+                    <form id="tt-subscribe-form" style="display:flex;flex-direction:column;gap:.5rem">
+                        <input type="email" id="tt-sub-email" placeholder="Your email address" required style="padding:.6rem .8rem;border:none;border-radius:5px;font-size:.9rem;width:100%;box-sizing:border-box;font-family:inherit">
+                        <button type="submit" style="background:#ea6325;color:#fff;border:none;padding:.6rem 1rem;border-radius:5px;font-size:.9rem;font-weight:600;cursor:pointer;width:100%;font-family:inherit">Subscribe &amp; Unlock All Templates →</button>
                     </form>
-                    {% endif %}
+                    <p id="tt-sub-success" style="display:none;color:#fff;background:rgba(255,255,255,.15);padding:.65rem .9rem;border-radius:5px;font-size:.9rem;margin:.5rem 0 0">🎉 You're in! All {{ templates|length }} templates are now unlocked below.</p>
                 </div>
             </div>
         </section>
+        <script>
+        (function(){
+          var form = document.getElementById('tt-subscribe-form');
+          if (!form) return;
+          /* Hide subscribe block entirely if already unlocked */
+          if (document.documentElement.dataset.ttUnlocked === '1') {
+            var block = document.getElementById('tt-subscribe-block');
+            if (block) block.style.display = 'none';
+          }
+          form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            var email = document.getElementById('tt-sub-email').value.trim();
+            if (!email) return;
+            /* Send to Formspree */
+            fetch('{{ formspree_endpoint }}', {
+              method: 'POST',
+              headers: {'Content-Type':'application/json','Accept':'application/json'},
+              body: JSON.stringify({email: email, source: 'templates-unlock', _subject: 'NZ Tradie Tips — Template Unlock'})
+            }).catch(function(){});
+            /* Unlock immediately client-side */
+            localStorage.setItem('ttSubscribed', '1');
+            document.documentElement.dataset.ttUnlocked = '1';
+            /* Show success */
+            form.style.display = 'none';
+            document.getElementById('tt-sub-success').style.display = 'block';
+          });
+        })();
+        </script>
 
         <section class="section">
             <h2>Browse All Templates</h2>
@@ -111,6 +183,44 @@
                 </a>
                 {% endfor %}
             </div>
+
+            <!-- Gate overlay — hidden when unlocked via CSS -->
+            <div id="tt-template-gate">
+                <div class="tt-gate-box">
+                    <h3>🔓 Unlock all {{ templates|length }} templates — free</h3>
+                    <p>Enter your email to get instant access. TradieTools members are already unlocked.</p>
+                    <form class="tt-gate-form" id="tt-gate-form">
+                        <input type="email" id="tt-gate-email" placeholder="Your email address" required>
+                        <button type="submit">Unlock free →</button>
+                    </form>
+                    <p class="tt-gate-member">Already listed on TradieTools? <a href="/signup/">Sign in / claim your listing →</a></p>
+                </div>
+            </div>
+            <script>
+            (function(){
+              var gf = document.getElementById('tt-gate-form');
+              if (!gf) return;
+              gf.addEventListener('submit', function(e) {
+                e.preventDefault();
+                var email = document.getElementById('tt-gate-email').value.trim();
+                if (!email) return;
+                fetch('{{ formspree_endpoint }}', {
+                  method: 'POST',
+                  headers: {'Content-Type':'application/json','Accept':'application/json'},
+                  body: JSON.stringify({email: email, source: 'templates-gate', _subject: 'NZ Tradie Tips — Template Gate Unlock'})
+                }).catch(function(){});
+                localStorage.setItem('ttSubscribed', '1');
+                document.documentElement.dataset.ttUnlocked = '1';
+                var gate = document.getElementById('tt-template-gate');
+                if (gate) gate.style.display = 'none';
+                var sub = document.getElementById('tt-subscribe-block');
+                if (sub) sub.style.display = 'none';
+                var banner = document.querySelector('.tt-unlocked-banner');
+                if (banner) banner.style.display = 'block';
+              });
+            })();
+            </script>
+
         </section>
 
         <section class="section" style="background:#f8f9fa;border-radius:8px;padding:1.5rem 2rem;margin:2rem 0">
@@ -129,8 +239,8 @@
                     <p style="font-size:.88rem;color:#555;margin:.3rem 0 0">Built for NZ tradies with IRD numbers, GST rates, and local legislation in mind.</p>
                 </div>
                 <div>
-                    <strong>Completely Free</strong>
-                    <p style="font-size:.88rem;color:#555;margin:.3rem 0 0">No subscription, no watermarks, no email required. Just download and use.</p>
+                    <strong>Free for Members</strong>
+                    <p style="font-size:.88rem;color:#555;margin:.3rem 0 0">Free for TradieTools members and newsletter subscribers. Subscribe above to unlock all {{ templates|length }} templates instantly.</p>
                 </div>
             </div>
         </section>

@@ -30,6 +30,33 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="/static/css/style.css">
     <link rel="stylesheet" href="/static/css/templates.css">
+    <script>
+    (function(){
+      var u = localStorage.getItem('tradieId') || localStorage.getItem('ttSubscribed');
+      document.documentElement.dataset.ttUnlocked = u ? '1' : '0';
+    })();
+    </script>
+    <style>
+    #tt-page-gate {
+      position: fixed; inset: 0; z-index: 999;
+      background: rgba(0,0,0,.55);
+      display: flex; align-items: center; justify-content: center;
+      padding: 1rem;
+    }
+    html[data-tt-unlocked="1"] #tt-page-gate { display: none; }
+    .tt-page-gate-box {
+      background: #fff; border-radius: 10px; padding: 2rem 2.25rem;
+      max-width: 460px; width: 100%; text-align: center;
+      box-shadow: 0 8px 40px rgba(0,0,0,.25);
+    }
+    .tt-page-gate-box h2 { margin: 0 0 .5rem; font-size: 1.3rem; color: #0055a5; }
+    .tt-page-gate-box p { margin: 0 0 1.1rem; font-size: .92rem; color: #444; }
+    .tt-page-gate-box input[type=email] { width: 100%; padding: .65rem .9rem; border: 1.5px solid #ccc; border-radius: 5px; font-size: .95rem; font-family: inherit; box-sizing: border-box; margin-bottom: .5rem; }
+    .tt-page-gate-box button { width: 100%; background: #ea6325; color: #fff; border: none; padding: .7rem 1rem; border-radius: 5px; font-weight: 700; font-size: .95rem; cursor: pointer; font-family: inherit; }
+    .tt-page-gate-box button:hover { background: #c94f1a; }
+    .tt-page-gate-box .tt-or { font-size: .83rem; color: #888; margin: .75rem 0 .5rem; }
+    .tt-page-gate-box .tt-member-link { font-size: .85rem; color: #0055a5; font-weight: 600; text-decoration: none; }
+    </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" crossorigin="anonymous"></script>
     
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJW7HLW8D8"></script>
@@ -41,6 +68,41 @@
 </script>
 </head>
 <body>
+
+    <!-- Gate modal — hidden by CSS when data-tt-unlocked="1" -->
+    <div id="tt-page-gate" class="no-print">
+        <div class="tt-page-gate-box">
+            <div style="font-size:2rem;margin-bottom:.5rem">🔓</div>
+            <h2>Free for TradieTools members</h2>
+            <p>Subscribe to <strong>NZ Tradie Tips</strong> to unlock this template and all 28 others — free, no card needed.</p>
+            <form id="tt-page-gate-form">
+                <input type="email" id="tt-page-gate-email" placeholder="Your email address" required>
+                <button type="submit">Unlock template free →</button>
+            </form>
+            <p class="tt-or">— or —</p>
+            <a href="/signup/" class="tt-member-link">Already listed on TradieTools? Sign in →</a>
+        </div>
+    </div>
+    <script>
+    (function(){
+      var form = document.getElementById('tt-page-gate-form');
+      if (!form) return;
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var email = document.getElementById('tt-page-gate-email').value.trim();
+        if (!email) return;
+        fetch('https://formspree.io/f/xgorlloq', {
+          method: 'POST',
+          headers: {'Content-Type':'application/json','Accept':'application/json'},
+          body: JSON.stringify({email: email, source: 'template-page-gate', template: 'employee-induction', _subject: 'NZ Tradie Tips — Template Unlock'})
+        }).catch(function(){});
+        localStorage.setItem('ttSubscribed', '1');
+        document.documentElement.dataset.ttUnlocked = '1';
+        document.getElementById('tt-page-gate').style.display = 'none';
+      });
+    })();
+    </script>
+
     <header class="site-header no-print">
         <div class="container">
             <a href="/" class="logo">NZ Tradie Tools</a>
