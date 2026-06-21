@@ -389,19 +389,29 @@ function freeCard(t) {
   const exp  = t.experience_years ? `${t.experience_years}yrs exp` : '';
   const location = [t.suburb, t.region].filter(Boolean).join(' · ') || 'New Zealand';
   const isHighlighted = highlightId && String(t.id) === highlightId;
+  const isUnclaimed = !t.contact_email || t.contact_email.includes('noemail');
+  const mapsQ = encodeURIComponent(`${t.name} ${t.region||''} New Zealand`);
+  const mapsUrl = `https://www.google.com/maps/search/${mapsQ}`;
+  const claimUrl = `/signup/?ref=claim&id=${esc(String(t.id||''))}&name=${encodeURIComponent(t.name||'')}`;
   return `<div class="tradie-card${isHighlighted?' tt-highlighted':''}">
     <div class="tc-top">
       <div class="tc-avatar ${tradeColour(t.trade)}">${initials(t.name)}</div>
       <div class="tc-info">
-        <div class="tc-name">${esc(t.name||'Unknown')}</div>
+        <div class="tc-name">${esc(t.name||'Unknown')}${isUnclaimed?'<span style="font-size:.7rem;font-weight:400;color:#92400e;background:#fef9c3;border:1px solid #fde047;padding:.1rem .4rem;margin-left:.4rem;border-radius:2px">Unclaimed</span>':''}</div>
         <div class="tc-trade">${esc(label)}</div>
         <div class="tc-location">${esc(location)}</div>
       </div>
     </div>
     ${(rate||exp) ? `<div class="tc-meta">${exp?`<span class="tc-exp">${esc(exp)}</span>`:''}${rate?`<span class="tc-rate">${esc(rate)}</span>`:''}</div>` : ''}
-    ${rat>0 ? `<div class="tc-meta">${stars(rat)}<span>${rat.toFixed(1)} (${t.review_count||0} reviews)</span></div>` : ''}
+    ${rat>0 ? `<div class="tc-meta">${stars(rat)}<span style="font-weight:600">${rat.toFixed(1)}</span><span style="color:#6b7280">(${t.review_count||0} Google reviews)</span></div>` : ''}
+    ${isUnclaimed ? `<div style="font-size:.82rem;color:#6b7280;margin:.2rem 0">
+      <a href="${mapsUrl}" target="_blank" rel="noopener" style="color:#0055a5;font-weight:600;text-decoration:none">View on Google Maps →</a>
+    </div>` : ''}
     ${t.phone ? `<div class="tc-locked-phone">🔒 Phone hidden · <a href="/signup/?upgrade=verified">Show number from $29/mo →</a></div>` : ''}
-    <button class="btn-quote-full" onclick="ttQuote('${esc(String(t.id||''))}','${esc(t.name||'')}','${esc(label)}','${esc(t.region||'')}')">Get a Quote</button>
+    <div style="display:flex;gap:.5rem;flex-wrap:wrap">
+      <button class="btn-quote-full" style="flex:1" onclick="ttQuote('${esc(String(t.id||''))}','${esc(t.name||'')}','${esc(label)}','${esc(t.region||'')}')">Get a Quote</button>
+      ${isUnclaimed ? `<a href="${claimUrl}" style="flex:1;display:inline-block;text-align:center;background:#fff7ed;border:1.5px solid #f97316;color:#c2410c;padding:.6rem .5rem;font-size:.82rem;font-weight:700;text-decoration:none;border-radius:2px;white-space:nowrap">Claim free →</a>` : ''}
+    </div>
   </div>`;
 }
 

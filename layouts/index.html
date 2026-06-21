@@ -77,25 +77,51 @@
         </div>
     </header>
 
-    <section class="hero">
-        <div class="container">
-            <h1>Free Tools &amp; Guides for NZ Tradies</h1>
-            <p>GST calculators, hourly rate tools, job costing, tax guides — everything a New Zealand tradie needs to run a smarter business.</p>
-            <div style="display:flex;gap:.75rem;flex-wrap:wrap;align-items:center">
-                <a href="/signup/" style="background:var(--orange);color:var(--white);padding:.75rem 1.75rem;font-weight:700;font-size:1rem;text-decoration:none;display:inline-block">List Your Business Free →</a>
-                <a href="{{ base_path }}/calculators/" class="btn-primary" style="background:transparent;border:2px solid rgba(255,255,255,.55);color:var(--white)">Browse Calculators</a>
+    <section class="hero" style="padding-bottom:0">
+        <div class="container" style="padding-bottom:2rem">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start">
+                <div>
+                    <div style="font-size:.82rem;font-weight:700;letter-spacing:.08em;color:rgba(255,255,255,.6);text-transform:uppercase;margin-bottom:.5rem">For Homeowners</div>
+                    <h1 style="font-size:2rem;margin-bottom:.65rem">Find a Trusted NZ Tradie</h1>
+                    <p style="color:rgba(255,255,255,.88);margin-bottom:1rem">Search <span id="hp-listing-count">500+</span> rated electricians, plumbers, builders and more — by city, with Google ratings.</p>
+                    <form action="/find/" method="get" style="display:flex;gap:0;max-width:420px;border:2px solid var(--orange)">
+                        <input type="text" name="q" placeholder="e.g. plumber Auckland…" style="flex:1;border:none;padding:.65rem .9rem;font-size:.95rem;background:#fff;color:#1b1b1b;font-family:inherit;outline:none;min-width:0">
+                        <button type="submit" style="background:var(--orange);color:#fff;border:none;padding:.65rem 1.1rem;font-weight:700;font-size:.95rem;cursor:pointer;white-space:nowrap;font-family:inherit">Search →</button>
+                    </form>
+                    <div style="margin-top:.75rem;display:flex;gap:1rem;flex-wrap:wrap">
+                        <a href="/find/?trade=electrician" style="font-size:.82rem;color:rgba(255,255,255,.7);text-decoration:none">⚡ Electricians</a>
+                        <a href="/find/?trade=plumber" style="font-size:.82rem;color:rgba(255,255,255,.7);text-decoration:none">🔧 Plumbers</a>
+                        <a href="/find/?trade=builder" style="font-size:.82rem;color:rgba(255,255,255,.7);text-decoration:none">🏗️ Builders</a>
+                        <a href="/find/?trade=painter" style="font-size:.82rem;color:rgba(255,255,255,.7);text-decoration:none">🖌️ Painters</a>
+                    </div>
+                </div>
+                <div style="border-left:1px solid rgba(255,255,255,.15);padding-left:2.5rem">
+                    <div style="font-size:.82rem;font-weight:700;letter-spacing:.08em;color:rgba(255,255,255,.6);text-transform:uppercase;margin-bottom:.5rem">For Tradies</div>
+                    <h2 style="font-size:1.4rem;color:#fff;margin-bottom:.6rem;border:none">Get found by homeowners — free</h2>
+                    <p style="color:rgba(255,255,255,.75);font-size:.92rem;margin-bottom:1rem">Your business is already listed. Claim it in 5 minutes to show your phone number and start getting enquiries.</p>
+                    <a href="/signup/" style="background:var(--orange);color:#fff;padding:.65rem 1.5rem;font-weight:700;font-size:.95rem;text-decoration:none;display:inline-block">Claim your free listing →</a>
+                    <p style="color:rgba(255,255,255,.5);font-size:.8rem;margin-top:.6rem">No credit card · Verified from $29/mo · Pro from $59/mo</p>
+                </div>
             </div>
         </div>
+        <style>
+        @media(max-width:680px){
+            .hero-grid{grid-template-columns:1fr!important}
+            .hero-tradie-col{border-left:none!important;padding-left:0!important;border-top:1px solid rgba(255,255,255,.15);padding-top:1.5rem!important}
+        }
+        </style>
     </section>
 
     <div style="background:var(--navy);border-top:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.82);padding:.65rem 0;text-align:center;font-size:.88rem">
-        <div class="container"><span id="hp-listing-count">NZ tradies</span> listed free &nbsp;·&nbsp; 20+ cities &nbsp;·&nbsp; No credit card needed</div>
+        <div class="container"><span id="hp-trust-count">500+</span> NZ tradies listed &nbsp;·&nbsp; 20+ cities &nbsp;·&nbsp; Google ratings verified &nbsp;·&nbsp; No credit card needed</div>
     </div>
     <script>
     fetch('https://tradietools.optified.nz/api/method/tradietools.api.get_directory?limit=1')
       .then(function(r){return r.json();}).then(function(d){
-        var t=d.message&&d.message.total;
-        if(t>0){var el=document.getElementById('hp-listing-count');if(el)el.textContent=t+' NZ tradies';}
+        var t=d.message&&(d.message.total||500);
+        ['hp-listing-count','hp-trust-count'].forEach(function(id){
+          var el=document.getElementById(id);if(el)el.textContent=t+'+';
+        });
       }).catch(function(){});
     </script>
 
