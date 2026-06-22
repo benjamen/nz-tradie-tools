@@ -7,6 +7,7 @@ from pathlib import Path
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import daily_limit
+import unsubscribe
 
 from config import SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS
 SITE_URL  = "https://tradietools.nz"

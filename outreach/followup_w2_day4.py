@@ -8,6 +8,7 @@ sys.path.insert(0, '/home/ben/.openclaw/workspace/site/.venv/lib/python3.12/site
 
 import csv, smtplib, time, random, sys
 import daily_limit
+import unsubscribe
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from pathlib import Path
@@ -124,6 +125,9 @@ def main():
         rating  = row.get("rating", "0").strip()
 
         if not email or email in already_logged:
+            continue
+        if unsubscribe.is_unsubscribed(email):
+            print(f'  -> unsubscribed, skip')
             continue
 
         listing_id = row.get("listing_id", "").strip()

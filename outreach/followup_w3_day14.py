@@ -12,6 +12,7 @@ from email.mime.text import MIMEText
 from pathlib import Path
 
 from config import SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS
+import unsubscribe
 CONTACTS_CSV = Path(__file__).parent / "contacts_wave3.csv"
 FOLLOWUP_LOG = Path(__file__).parent / "followup_w3_day14.log"
 DAY4_LOG     = Path(__file__).parent / "followup_w2_day4.log"
@@ -138,6 +139,9 @@ def main():
         rating  = row.get("rating", "0").strip()
 
         if not email or email in already_logged:
+            continue
+        if unsubscribe.is_unsubscribed(email):
+            print(f'  -> unsubscribed, skip')
             continue
 
         listing_id = row.get("listing_id", "").strip()

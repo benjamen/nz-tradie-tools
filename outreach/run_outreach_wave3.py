@@ -14,6 +14,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 from playwright.sync_api import sync_playwright
 import daily_limit
+import unsubscribe
 
 from config import SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS
 OUTPUT   = Path(__file__).parent / "contacts_wave3.csv"
@@ -216,6 +217,10 @@ def main():
             })
 
             if email:
+                if unsubscribe.is_unsubscribed(email):
+                    log(f"  → unsubscribed, skip")
+                    results[-1]["status"] = "unsubscribed"
+                    continue
                 if not daily_limit.under_limit():
                     log(f"  ⏸ daily limit ({daily_limit.LIMIT}) reached — stopping")
                     results[-1]["status"] = "deferred"
