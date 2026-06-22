@@ -26,7 +26,7 @@ TRADE_LABEL = {
 }
 
 
-def make_email(name: str, trade: str, region: str, reviews: str, rating: str, listing_id: str = "") -> tuple[str, str, str]:
+def make_email(name: str, trade: str, region: str, reviews: str, rating: str, listing_id: str = "", slug: str = "") -> tuple[str, str, str]:
     short_name = name.split(" ")[0] if name else "there"
     trade_label = TRADE_LABEL.get(trade, trade.rstrip("s"))
     claim_url = f"https://tradietools.nz/signup/?ref=claim&id={listing_id}" if listing_id else "https://tradietools.nz/signup/"
@@ -44,6 +44,9 @@ We list verified NZ tradies so homeowners can find and contact local pros direct
 
 It takes about 60 seconds to claim your spot:
 👉 {claim_url}
+
+You can also view your live profile:
+https://tradietools.nz/businesses/{slug}/
 
 If you're not taking on new work right now, no worries — happy to hear from you when things slow down.
 
@@ -131,7 +134,7 @@ def main():
             continue
 
         listing_id = row.get("listing_id", "").strip()
-        subject, text, html = make_email(name, trade, region, reviews, rating, listing_id)
+        subject, text, html = make_email(name, trade, region, reviews, rating, listing_id, row.get("listing_slug", ""))
 
         if DRY_RUN:
             print(f"  [DRY] {name} <{email}> — {subject}")

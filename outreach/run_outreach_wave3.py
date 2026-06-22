@@ -53,6 +53,7 @@ HTML_BODY = """\
 body{{font-family:Arial,sans-serif;max-width:600px;margin:0 auto;color:#334155;font-size:15px;line-height:1.6}}
 .btn{{display:inline-block;background:#ea6325;color:#fff!important;padding:12px 24px;
 border-radius:6px;text-decoration:none;font-weight:700;margin:16px 0;font-size:15px}}
+.profile-box{{background:#f8fafc;border:1px solid #e2e8f0;border-radius:6px;padding:12px 16px;margin:14px 0;font-size:13px;color:#475569}}
 .footer{{margin-top:32px;font-size:12px;color:#999;border-top:1px solid #eee;padding-top:14px}}
 </style></head><body>
 <p>Hi there,</p>
@@ -61,6 +62,8 @@ border-radius:6px;text-decoration:none;font-weight:700;margin:16px 0;font-size:1
 connecting homeowners with local tradespeople across NZ.</p>
 <p>Your listing is live but unclaimed, so homeowners in {region}
 searching for a {label} can't see your phone number or get in touch through the platform.</p>
+<p>You can view it here:</p>
+<div class=\"profile-box\">🔗 <a href=\"https://tradietools.nz/businesses/{slug}/\">{name} — your live profile</a></div>
 <p><strong>Claiming your free listing takes about 60 seconds:</strong></p>
 <ul>
   <li>Add your contact details so homeowners can reach you directly</li>
@@ -157,14 +160,14 @@ def find_email(page, url):
     return None
 
 
-def send(to_email, name, trade, region, listing_id=""):
+def send(to_email, name, trade, region, listing_id="", slug=""):
     label = TRADE_LABEL.get(trade, trade.replace("-", " ").rstrip("s"))
     msg = MIMEMultipart("alternative")
     msg["Subject"] = f"Your {label} business is listed on TradieTools — claim it free"
     msg["From"]    = "Ben @ TradieTools <contact@tradietools.nz>"
     msg["To"]      = to_email
     msg.attach(MIMEText(
-        HTML_BODY.format(name=name, region=region, label=label, listing_id=listing_id),
+        HTML_BODY.format(name=name, region=region, label=label, listing_id=listing_id, slug=slug),
         "html"
     ))
     with smtplib.SMTP_SSL(SMTP_HOST, SMTP_PORT) as s:

@@ -116,6 +116,7 @@ max-width:560px;margin:0 auto;padding:24px;font-size:15px;line-height:1.65}}
 a{{color:#e85d26}}
 .btn{{display:inline-block;background:#e85d26;color:#fff!important;padding:11px 22px;
 border-radius:6px;text-decoration:none;font-weight:600;margin:14px 0}}
+.profile-box{{background:#f8fafc;border:1px solid #e2e8f0;border-radius:6px;padding:12px 16px;margin:14px 0;font-size:13px;color:#475569}}
 .footer{{margin-top:32px;font-size:12px;color:#999;border-top:1px solid #eee;padding-top:14px}}
 </style></head><body>
 <p>Hi there,</p>
@@ -124,6 +125,8 @@ border-radius:6px;text-decoration:none;font-weight:600;margin:14px 0}}
 connecting homeowners with local tradespeople.</p>
 <p>Your listing is live but unclaimed, so homeowners in {region}
 searching for a {label} can't see your phone number or get in touch through the platform.</p>
+<p>You can view it here:</p>
+<div class=\"profile-box\">🔗 <a href=\"https://tradietools.nz/businesses/{slug}/\">{name} — your live profile</a></div>
 <p><strong>Claiming your free listing takes about 60 seconds:</strong></p>
 <ul>
   <li>Add your contact details so homeowners can reach you</li>
@@ -142,13 +145,13 @@ Reply "unsubscribe" to be removed immediately.
 </div></body></html>"""
 
 
-def send(to_email, name, trade, region, listing_id=""):
+def send(to_email, name, trade, region, listing_id="", slug=""):
     label = TRADE_LABEL.get(trade, trade.rstrip("s"))
     msg = MIMEMultipart("alternative")
     msg["Subject"] = f"Your {label} business is listed on TradieTools — claim it free"
     msg["From"]    = "Ben @ TradieTools <contact@tradietools.nz>"
     msg["To"]      = to_email
-    msg.attach(MIMEText(HTML_BODY.format(name=name, region=region, label=label, listing_id=listing_id), "html"))
+    msg.attach(MIMEText(HTML_BODY.format(name=name, region=region, label=label, listing_id=listing_id, slug=slug), "html"))
     with smtplib.SMTP_SSL(SMTP_HOST, SMTP_PORT) as s:
         s.login(SMTP_USER, SMTP_PASS)
         s.sendmail(SMTP_USER, to_email, msg.as_string())
@@ -200,7 +203,7 @@ def main():
                     results[-1]["status"] = "deferred"
                     break
                 try:
-                    send(email, name, trade, region, lst.get("id",""))
+                    send(email, name, trade, region, lst.get("id",""), lst.get("listing_slug",""))
                     log(f"  ✓ SENT → {email}")
                     with open(SENT_LOG, "a") as f:
                         f.write(name + "\n")

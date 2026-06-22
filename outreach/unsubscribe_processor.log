@@ -1,0 +1,14 @@
+[2026-06-22 14:00:22] Connecting to IMAP...
+[2026-06-22 14:00:24] Found 9 unread message(s)
+[2026-06-22 14:00:25] Not an unsubscribe — from mailer-daemon@mailchannels.net: 'Undelivered Mail Returned to Sender'
+[2026-06-22 14:00:25] Not an unsubscribe — from mailer-daemon@mailchannels.net: 'Undelivered Mail Returned to Sender'
+[2026-06-22 14:00:25] Not an unsubscribe — from mailer-daemon@mailchannels.net: 'Undelivered Mail Returned to Sender'
+[2026-06-22 14:00:26] Not an unsubscribe — from mailer-daemon@fr-int-smtpout29.hostinger: 'Undelivered Mail Returned to Sender'
+[2026-06-22 14:00:26] Not an unsubscribe — from postmaster@choicesflooring.com: '\r\n =?Windows-1252?Q?Undeliverable:_Your_carpet_layer_business_is_listed_on_T?=\r\n =?Windows-1252?Q?radieTools_=97_claim_it_free?='
+[2026-06-22 14:00:26] Not an unsubscribe — from mailer-daemon@fr-int-smtpout29.hostinger: 'Undelivered Mail Returned to Sender'
+[2026-06-22 14:00:27] Not an unsubscribe — from team@user.hostinger: 'Email sending limits reached'
+[2026-06-22 14:00:27] Unsubscribe request from: info@betterbuilding.co (subject: '=?UTF-8?Q?Re=3A_Your_builder_business_is_listed_on_TradieTools_?=\r\n\t=?UTF-8?Q?=E2=80=94_claim_it_free?=')
+[2026-06-22 14:00:30]   Confirmation sent to info@betterbuilding.co
+[2026-06-22 14:00:30] Unsubscribe request from: websites@managemy.co (subject: '=?UTF-8?Q?Re=3A_Your_glazier_business_is_listed_on_TradieTools_?=\r\n\t=?UTF-8?Q?=E2=80=94_claim_it_free?=')
+[2026-06-22 14:00:33]   Confirmation sent to websites@managemy.co
+[2026-06-22 14:00:34] Done. Processed 2 unsubscribe request(s).

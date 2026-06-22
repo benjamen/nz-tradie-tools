@@ -35,7 +35,7 @@ TRADE_SEARCHES = {
 }
 
 
-def make_email(name: str, trade: str, region: str, reviews: str, rating: str, listing_id: str = "") -> tuple[str, str, str]:
+def make_email(name: str, trade: str, region: str, reviews: str, rating: str, listing_id: str = "", slug: str = "") -> tuple[str, str, str]:
     short_name = name.split(" ")[0] if name else "there"
     trade_label = TRADE_LABEL.get(trade, trade.rstrip("s"))
     searches = TRADE_SEARCHES.get(trade, "100+")
@@ -78,6 +78,10 @@ https://tradietools.nz
 
     <p>It takes about 60 seconds to fix that:</p>
 
+        <p>Here's your live profile on TradieTools:</p>
+    <p style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:6px;padding:.75rem 1rem;font-size:.88rem">
+      🔗 <a href="https://tradietools.nz/businesses/{slug}/" style="color:#0055a5">{name} — view your profile</a>
+    </p>
     <p style="margin:1.5rem 0">
       <a href="{claim_url}" style="display:inline-block;padding:.7rem 1.5rem;background:#ea6325;color:#fff;text-decoration:none;border-radius:5px;font-weight:700">
         Claim my listing →
@@ -145,7 +149,7 @@ def main():
             continue
 
         listing_id = row.get("listing_id", "").strip()
-        subject, text, html = make_email(name, trade, region, reviews, rating, listing_id)
+        subject, text, html = make_email(name, trade, region, reviews, rating, listing_id, row.get("listing_slug", ""))
 
         if DRY_RUN:
             print(f"  [DRY] {name} <{email}> — {subject}")

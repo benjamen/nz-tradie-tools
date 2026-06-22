@@ -1,0 +1,19 @@
+
+=== Wave 2 — contacts_wave2.csv ===
+  13 send_failed contacts
+  ✓ sent: Fe Roofing Limited (kiaora@feroofing.co.nz)
+  ✗ failed again: Storm Tech Roofing — (451, b'4.7.1 Ratelimit "hostinger_out_ratelimit" exceeded for key "RLuut3mom4be455xgkqnadrjzi"')
+  ✗ failed again: R.J.S Roofing Services — (451, b'4.7.1 Ratelimit "hostinger_out_ratelimit" exceeded for key "RLuut3mom4be455xgkqnadrjzi"')
+  ✗ failed again: Peak Painting & Decorating — (451, b'4.7.1 Ratelimit "hostinger_out_ratelimit" exceeded for key "RLuut3mom4be455xgkqnadrjzi"')
+  ✗ failed again: Northzone Tiling — (451, b'4.7.1 Ratelimit "hostinger_out_ratelimit" exceeded for key "RLuut3mom4be455xgkqnadrjzi"')
+  ✗ failed again: Roll With It Painting & Decorating Queenstown — (451, b'4.7.1 Ratelimit "hostinger_out_ratelimit" exceeded for key "RLuut3mom4be455xgkqnadrjzi"')
+  ✗ failed again: Home Shield - Auckland House Painters — (451, b'4.7.1 Ratelimit "hostinger_out_ratelimit" exceeded for key "RLuut3mom4be455xgkqnadrjzi"')
+  ✗ failed again: Dangelina Tiling Ltd — (451, b'4.7.1 Ratelimit "hostinger_out_ratelimit" exceeded for key "RLuut3mom4be455xgkqnadrjzi"')
+  ✗ failed again: Tasman Roofing Nelson — (451, b'4.7.1 Ratelimit "hostinger_out_ratelimit" exceeded for key "RLuut3mom4be455xgkqnadrjzi"')
+  ✓ sent: Cornerstone Tiling (office@cstone.co.nz)
+  ✗ failed again: Premium Quality Roofing Limited — (451, b'4.7.1 Ratelimit "hostinger_out_ratelimit" exceeded for key "RLuut3mom4be455xgkqnadrjzi"')
+  ✗ failed again: Best Value Roof Painting — (451, b'4.7.1 Ratelimit "hostinger_out_ratelimit" exceeded for key "RLuut3mom4be455xgkqnadrjzi"')
+  ✗ failed again: P & T Painting — (451, b'4.7.1 Ratelimit "hostinger_out_ratelimit" exceeded for key "RLuut3mom4be455xgkqnadrjzi"')
+  Updated contacts_wave2.csv (2 rows → sent)
+
+Done. Retried 2 contacts.

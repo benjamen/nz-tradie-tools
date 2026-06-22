@@ -1,0 +1,115 @@
+=== TradieTools contact scraper ===
+
+[electrician / Auckland]
+  Finda: https://www.finda.co.nz/search/electrician/auckland
+  GET failed https://www.finda.co.nz/search/electrician/auckland: HTTPSConnectionPool(host='www.finda.co.nz', port=443): Max retries exceeded with url: /search/electrician/auckland (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))
+  Found 0 listings
+  Yellow: https://www.yellow.co.nz/search/electrician/auckland
+  GET failed https://www.yellow.co.nz/search/electrician/auckland: 403 Client Error: Forbidden for url: https://www.yellow.co.nz/search/electrician/auckland
+  Found 0 listings
+
+[electrician / Wellington]
+  Finda: https://www.finda.co.nz/search/electrician/wellington
+  GET failed https://www.finda.co.nz/search/electrician/wellington: HTTPSConnectionPool(host='www.finda.co.nz', port=443): Max retries exceeded with url: /search/electrician/wellington (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))
+  Found 0 listings
+  Yellow: https://www.yellow.co.nz/search/electrician/wellington
+  GET failed https://www.yellow.co.nz/search/electrician/wellington: 403 Client Error: Forbidden for url: https://www.yellow.co.nz/search/electrician/wellington
+  Found 0 listings
+
+[electrician / Christchurch]
+  Finda: https://www.finda.co.nz/search/electrician/christchurch
+  GET failed https://www.finda.co.nz/search/electrician/christchurch: HTTPSConnectionPool(host='www.finda.co.nz', port=443): Max retries exceeded with url: /search/electrician/christchurch (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))
+  Found 0 listings
+  Yellow: https://www.yellow.co.nz/search/electrician/christchurch
+  GET failed https://www.yellow.co.nz/search/electrician/christchurch: 403 Client Error: Forbidden for url: https://www.yellow.co.nz/search/electrician/christchurch
+  Found 0 listings
+
+[plumber / Auckland]
+  Finda: https://www.finda.co.nz/search/plumber/auckland
+  GET failed https://www.finda.co.nz/search/plumber/auckland: HTTPSConnectionPool(host='www.finda.co.nz', port=443): Max retries exceeded with url: /search/plumber/auckland (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))
+  Found 0 listings
+  Yellow: https://www.yellow.co.nz/search/plumber/auckland
+  GET failed https://www.yellow.co.nz/search/plumber/auckland: 403 Client Error: Forbidden for url: https://www.yellow.co.nz/search/plumber/auckland
+  Found 0 listings
+
+[plumber / Wellington]
+  Finda: https://www.finda.co.nz/search/plumber/wellington
+  GET failed https://www.finda.co.nz/search/plumber/wellington: HTTPSConnectionPool(host='www.finda.co.nz', port=443): Max retries exceeded with url: /search/plumber/wellington (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))
+  Found 0 listings
+  Yellow: https://www.yellow.co.nz/search/plumber/wellington
+  GET failed https://www.yellow.co.nz/search/plumber/wellington: 403 Client Error: Forbidden for url: https://www.yellow.co.nz/search/plumber/wellington
+  Found 0 listings
+
+[plumber / Christchurch]
+  Finda: https://www.finda.co.nz/search/plumber/christchurch
+  GET failed https://www.finda.co.nz/search/plumber/christchurch: HTTPSConnectionPool(host='www.finda.co.nz', port=443): Max retries exceeded with url: /search/plumber/christchurch (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))
+  Found 0 listings
+  Yellow: https://www.yellow.co.nz/search/plumber/christchurch
+  GET failed https://www.yellow.co.nz/search/plumber/christchurch: 403 Client Error: Forbidden for url: https://www.yellow.co.nz/search/plumber/christchurch
+  Found 0 listings
+
+[builder / Auckland]
+  Finda: https://www.finda.co.nz/search/builder/auckland
+  GET failed https://www.finda.co.nz/search/builder/auckland: HTTPSConnectionPool(host='www.finda.co.nz', port=443): Max retries exceeded with url: /search/builder/auckland (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))
+  Found 0 listings
+  Yellow: https://www.yellow.co.nz/search/builder/auckland
+  GET failed https://www.yellow.co.nz/search/builder/auckland: 403 Client Error: Forbidden for url: https://www.yellow.co.nz/search/builder/auckland
+  Found 0 listings
+
+[builder / Wellington]
+  Finda: https://www.finda.co.nz/search/builder/wellington
+  GET failed https://www.finda.co.nz/search/builder/wellington: HTTPSConnectionPool(host='www.finda.co.nz', port=443): Max retries exceeded with url: /search/builder/wellington (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))
+  Found 0 listings
+  Yellow: https://www.yellow.co.nz/search/builder/wellington
+  GET failed https://www.yellow.co.nz/search/builder/wellington: 403 Client Error: Forbidden for url: https://www.yellow.co.nz/search/builder/wellington
+  Found 0 listings
+
+[builder / Christchurch]
+  Finda: https://www.finda.co.nz/search/builder/christchurch
+  GET failed https://www.finda.co.nz/search/builder/christchurch: HTTPSConnectionPool(host='www.finda.co.nz', port=443): Max retries exceeded with url: /search/builder/christchurch (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))
+  Found 0 listings
+  Yellow: https://www.yellow.co.nz/search/builder/christchurch
+  GET failed https://www.yellow.co.nz/search/builder/christchurch: 403 Client Error: Forbidden for url: https://www.yellow.co.nz/search/builder/christchurch
+  Found 0 listings
+
+[electrician / Hamilton]
+  Finda: https://www.finda.co.nz/search/electrician/hamilton
+  GET failed https://www.finda.co.nz/search/electrician/hamilton: HTTPSConnectionPool(host='www.finda.co.nz', port=443): Max retries exceeded with url: /search/electrician/hamilton (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))
+  Found 0 listings
+  Yellow: https://www.yellow.co.nz/search/electrician/hamilton
+  GET failed https://www.yellow.co.nz/search/electrician/hamilton: 403 Client Error: Forbidden for url: https://www.yellow.co.nz/search/electrician/hamilton
+  Found 0 listings
+
+[plumber / Hamilton]
+  Finda: https://www.finda.co.nz/search/plumber/hamilton
+  GET failed https://www.finda.co.nz/search/plumber/hamilton: HTTPSConnectionPool(host='www.finda.co.nz', port=443): Max retries exceeded with url: /search/plumber/hamilton (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))
+  Found 0 listings
+  Yellow: https://www.yellow.co.nz/search/plumber/hamilton
+  GET failed https://www.yellow.co.nz/search/plumber/hamilton: 403 Client Error: Forbidden for url: https://www.yellow.co.nz/search/plumber/hamilton
+  Found 0 listings
+
+[electrician / Tauranga]
+  Finda: https://www.finda.co.nz/search/electrician/tauranga
+  GET failed https://www.finda.co.nz/search/electrician/tauranga: HTTPSConnectionPool(host='www.finda.co.nz', port=443): Max retries exceeded with url: /search/electrician/tauranga (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))
+  Found 0 listings
+  Yellow: https://www.yellow.co.nz/search/electrician/tauranga
+  GET failed https://www.yellow.co.nz/search/electrician/tauranga: 403 Client Error: Forbidden for url: https://www.yellow.co.nz/search/electrician/tauranga
+  Found 0 listings
+
+[plumber / Tauranga]
+  Finda: https://www.finda.co.nz/search/plumber/tauranga
+  GET failed https://www.finda.co.nz/search/plumber/tauranga: HTTPSConnectionPool(host='www.finda.co.nz', port=443): Max retries exceeded with url: /search/plumber/tauranga (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))
+  Found 0 listings
+  Yellow: https://www.yellow.co.nz/search/plumber/tauranga
+  GET failed https://www.yellow.co.nz/search/plumber/tauranga: 403 Client Error: Forbidden for url: https://www.yellow.co.nz/search/plumber/tauranga
+  Found 0 listings
+
+Total unique contacts before email enrichment: 0
+
+=== Email enrichment ===
+
+Emails found: 0/0
+
+Saved to /home/ben/.openclaw/workspace/site/outreach/contacts.csv
+Contacts with email: 0
+Contacts with phone only: 0

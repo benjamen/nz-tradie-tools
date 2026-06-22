@@ -81,7 +81,7 @@ listing_id,name,trade,region,website,email,status,reviews,rating
 3097,Inspire Tiling,tilers,Napier,http://schema.org/Place,,no_email,23,4.9
 2961,Just Us Painting and Decorating Limited,painters,Palmerston North,https://justus.co.nz/,,no_email,22,5.0
 4091,Top Notch Roof Repairs,roofers,Lower Hutt,http://www.topnotchroofrepairs.co.nz/,,no_email,21,5.0
-3447,Fe Roofing Limited,roofers,Rotorua,https://feroofing.co.nz/,kiaora@feroofing.co.nz,send_failed,21,5.0
+3447,Fe Roofing Limited,roofers,Rotorua,https://feroofing.co.nz/,kiaora@feroofing.co.nz,sent,21,5.0
 3092,Storm Tech Roofing,roofers,Napier,https://stormtechroofingnz.com/,laurence@stormtechroofingnz.com,send_failed,21,5.0
 2685,Master Concrete Cutters,concreters,Tauranga,https://www.masterconcretecutters.com/,,no_email,21,5.0
 2962,R.J.S Roofing Services,roofers,Palmerston North,http://www.rjsroofing.co/,reece@rjsroofing.co.nz,send_failed,20,5.0
@@ -95,7 +95,7 @@ listing_id,name,trade,region,website,email,status,reviews,rating
 4086,Hutt City Painters Ltd,painters,Lower Hutt,https://huttcitypainters.co.nz/,,no_email,18,5.0
 3712,Tasman Roofing Nelson,roofers,Nelson,http://www.tasmanroofing.nz/,admin@roofingtasman.co.nz,send_failed,17,5.0
 3466,Kiwi Concrete Works Ltd,concreters,Rotorua,http://schema.org/Place,,no_email,17,5.0
-2669,Cornerstone Tiling,tilers,Tauranga,https://www.cornerstonetiling.co.nz/,office@cstone.co.nz,send_failed,17,5.0
+2669,Cornerstone Tiling,tilers,Tauranga,https://www.cornerstonetiling.co.nz/,office@cstone.co.nz,sent,17,5.0
 4090,Premium Quality Roofing Limited,roofers,Lower Hutt,https://premiumqualityroofing.co.nz/,pqrlimitednz@gmail.com,send_failed,16,5.0
 2314,Best Value Roof Painting,roofers,Christchurch,http://bestvalueroofpainting.co.nz/,info@bestvalueroofpainting.co.nz,send_failed,16,5.0
 4271,P & T Painting,painters,Porirua,https://ptpainting.nz/,paul@ptpainting.nz,send_failed,16,5.0
