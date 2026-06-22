@@ -110,3 +110,60 @@ The comfort formula **2 × Rise + Going = 550–700mm** ensures a natural walkin
 | Floating/open tread (architectural) | $15,000–$35,000+ |
 
 All staircase work requiring building consent needs an [LBP-licensed builder](/trades/builders/).
+
+## How to Use This Stair Calculator
+
+Enter your **floor-to-floor height** (the vertical distance from finished floor to finished floor, in mm). A standard NZ storey is typically 2,550–2,700mm.
+
+Adjust the **preferred rise** until you find a combination that satisfies the 2R+G formula (550–700mm) and fits your available floor run. The calculator flags any NZ Building Code Clause D1 violations in red.
+
+**Typical inputs for a standard NZ house:**
+- Floor height: 2,700mm
+- Rise: 175mm → 15 risers, actual rise 180mm
+- Going: 255mm → 2R+G = 2(180)+255 = 615mm ✓
+- Total run: 14 treads × 255mm = 3,570mm (about 3.6m of floor space)
+
+## Common NZ Staircase Configurations
+
+### Straight Staircase
+The simplest and most common. One uninterrupted flight from bottom to top. Requires continuous floor space of approximately 3.2–4.0m depending on floor height. Easiest to build, lowest cost.
+
+### L-Shaped (Quarter Turn)
+Changes direction 90° at a landing or winder steps. Useful when floor space doesn't allow a straight run. The landing interrupts the climb — often more comfortable for elderly users.
+
+### U-Shaped (Half Turn / Switchback)
+Changes direction 180° — the staircase goes up, turns, and comes back the other way. Common in two-storey NZ homes where the stair must fit within a compact stair well.
+
+### Winder Stairs
+Triangular or trapezoidal steps that allow a turn without a landing. More complex to build, require careful calculation to ensure the 2R+G formula is met on the walking line (typically measured 270mm from the narrow end per NZS 3604).
+
+### Spiral Staircase
+A central pole with radiating treads. NZ Building Code allows spiral stairs as secondary access (e.g., to a loft or mezzanine) but they cannot serve as the sole means of escape. Minimum going at the walking line (not the narrow end) must still comply.
+
+## Do You Need Building Consent for a Staircase in NZ?
+
+| Scenario | Consent required? |
+|---|---|
+| Replace existing stair like-for-like (same location, same dimensions) | Generally no |
+| New stair in an existing opening | Yes |
+| Stair to a new floor or loft | Yes |
+| Deck stair (under 1.5m deck height, Schedule 1) | Generally no |
+| Change stair configuration (straight to L-shape) | Yes |
+| Stair that doesn't comply with NZS 3604 | Yes — engineering required |
+
+When in doubt, call your council's duty planner — it's a free 10-minute call and gives you certainty before you start.
+
+## Staircase DIY vs Licensed Builder
+
+Under the Building Act 2004, stair work that requires a building consent is **restricted building work** — it must be done by or under the supervision of a [Licensed Building Practitioner (LBP)](/trades/builders/).
+
+What you CAN DIY:
+- Like-for-like replacement of treads or handrails on an existing compliant stair (maintenance)
+- Painting or finishing an existing staircase
+- External deck stairs under Schedule 1 exemption heights
+
+What requires an LBP:
+- Any consented stair work (new stair, new configuration)
+- Structural elements (stringers, structural landing)
+
+**Find LBP builders near you:** [Builders NZ](/trades/builders/) | [Post a Staircase Job Free](/post-job/)

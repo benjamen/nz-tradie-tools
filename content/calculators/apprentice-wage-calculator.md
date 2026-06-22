@@ -128,3 +128,38 @@ When budgeting for an apprentice, remember to include:
 - **Supervision time** — experienced tradies spend time mentoring
 
 Use our [PAYE Employee Cost Calculator](/calculators/paye-employee-calculator) for a full employer cost breakdown.
+
+## NZ Apprentice Pay Guide by Year (2026)
+
+Typical market rates — not legal minimums. Actual pay depends on trade, employer, region, and the apprentice's progress.
+
+| Year | % of qualified rate | Typical hourly (2026) |
+|---|---|---|
+| Year 1 | 45–55% | $22–$28/hr |
+| Year 2 | 55–65% | $27–$33/hr |
+| Year 3 | 65–75% | $32–$38/hr |
+| Year 4 | 75–85% | $37–$43/hr |
+| Completed | 100% | $45–$65/hr |
+
+*Qualified tradie rates vary by trade. Regional NZ runs 10–15% below Auckland/Wellington.*
+
+## Apprentice Wage NZ — Common Questions
+
+**What is the apprentice minimum wage in NZ 2026?**
+The training minimum wage is **$19.16/hr** for apprentices 20+ with an active ITO agreement of 60+ credits/year. In practice, most NZ employers pay $22–$28/hr in Year 1 — well above the legal floor.
+
+**Do apprentices get the adult minimum wage?**
+Not automatically. Apprentices in a formal ITO training agreement can be paid the training minimum ($19.16/hr). Apprentices without an ITO agreement must receive the full adult minimum ($23.95/hr from April 2026).
+
+**How much should I pay a first-year apprentice in NZ?**
+Industry guides suggest 45–55% of a qualified tradesperson's rate. In 2026 NZ, that's approximately $22–$28/hr in main centres. Paying at the legal minimum risks losing apprentices to higher-paying competitors.
+
+**Can I pay a 16-year-old apprentice less?**
+Workers aged 16–17 may receive the starting-out wage ($19.16/hr) for the first 200 hours or 3 months. After that, at least the adult or training minimum applies regardless of age.
+
+## Related Tools
+
+- [PAYE Employee Cost Calculator](/calculators/paye-employee-calculator) — full employer cost including KiwiSaver and ACC
+- [Hourly Rate Calculator](/calculators/hourly-rate-calculator) — what to charge as a self-employed tradie
+- [Overtime Calculator](/calculators/overtime-calculator) — time-and-a-half and double-time calculations
+- [Hiring an Apprentice NZ Guide](/articles/hiring-an-apprentice-nz-tradie-guide-2026/)
