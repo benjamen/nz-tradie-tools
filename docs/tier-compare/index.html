@@ -25,7 +25,21 @@
     /* Tier card */
     .tier-card { background:#fff; border:2px solid var(--border); border-radius:10px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,.05); }
     .tier-card.is-verified { border-color:#2563eb; box-shadow:0 4px 18px rgba(37,99,235,.18); }
-    .tier-card.is-pro { border-color:var(--orange); box-shadow:0 4px 18px rgba(192,86,0,.2); }
+    .tier-card.is-pro { border-color:var(--orange); box-shadow:0 6px 28px rgba(192,86,0,.28); transform:scale(1.025); position:relative; z-index:2; }
+    @media(max-width:860px){ .tier-card.is-pro { transform:none; } }
+
+    /* Pro ribbon */
+    .pro-ribbon { position:absolute; top:14px; right:-5px; background:var(--orange); color:#fff; font-size:.68rem; font-weight:800; padding:.25rem .75rem .25rem .55rem; letter-spacing:.07em; text-transform:uppercase; border-radius:3px 0 0 3px; box-shadow:2px 2px 6px rgba(0,0,0,.18); }
+    .pro-ribbon::after { content:''; position:absolute; right:-5px; bottom:-5px; border-top:5px solid #a34900; border-right:5px solid transparent; }
+
+    /* ROI callout */
+    .roi-callout { background:#fff7ed; border:1.5px solid #fed7aa; border-radius:6px; padding:.6rem .85rem; margin:.55rem 0 .2rem; font-size:.8rem; color:#9a3412; font-weight:600; text-align:center; line-height:1.4; }
+
+    /* Day-1 timeline */
+    .day1-timeline { background:#fafafa; border:1px solid var(--border-lt); border-radius:5px; padding:.65rem .85rem; margin:.6rem 0; }
+    .day1-timeline .dtl-title { font-size:.72rem; font-weight:700; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); margin-bottom:.4rem; }
+    .day1-step { display:flex; gap:.55rem; align-items:baseline; font-size:.78rem; color:var(--text); margin-bottom:.2rem; }
+    .day1-step .dts { font-weight:700; color:var(--orange); min-width:48px; flex-shrink:0; }
 
     /* Card header band */
     .tc-badge-band { padding:.65rem 1.25rem; font-size:.8rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; }
@@ -149,7 +163,7 @@
   <div class="container">
     <h1>Free vs Verified vs Pro Listing</h1>
     <p>See exactly what each tier looks like — and what it unlocks for your trade business. No guessing.</p>
-    <p class="subtext">Examples below use real data from <a href="/businesses/kamo-kitchens/" style="color:rgba(255,255,255,.7)">Kamo Kitchens</a>, Whangārei.</p>
+    <p class="subtext">Examples use fictional business data — not a real listing.</p>
   </div>
 </section>
 
@@ -164,16 +178,16 @@
 
         <div class="listing-preview">
           <div class="lp-top">
-            <div class="lp-avatar">KK</div>
+            <div class="lp-avatar">WTL</div>
             <div>
-              <div class="lp-name">Kamo Kitchens</div>
-              <div class="lp-meta">Kitchen Renovators &bull; Whangārei</div>
+              <div class="lp-name">Wellington Tradie Limited</div>
+              <div class="lp-meta">Builders &bull; Wellington</div>
               <div class="lp-badges">
                 <span class="badge badge-email">✉ Email verified</span>
               </div>
             </div>
           </div>
-          <p class="lp-desc">Kitchen renovation specialists based in Whangārei, Northland. Browse their profile to get in touch.</p>
+          <p class="lp-desc">Building and renovation specialists based in Wellington. Browse their profile to get in touch.</p>
           <div class="lp-contact">
             <a class="lp-btn lp-btn-primary" href="#">Request a quote</a>
           </div>
@@ -190,8 +204,8 @@
           <div class="feature-row"><span class="ficon">✅</span><span class="ftext">Listed in the directory — homeowners can find you</span></div>
           <div class="feature-row"><span class="ficon">✅</span><span class="ftext">Quote request form — leads sent to your email</span></div>
           <div class="feature-row"><span class="ficon">✅</span><span class="ftext">Trade category + region listed</span></div>
-          <div class="feature-row"><span class="ficon">✅</span><span class="ftext">Phone number displayed</span></div>
           <div class="feature-row"><span class="ficon">✅</span><span class="ftext">Profile page at tradietools.nz/businesses/</span></div>
+          <div class="feature-row locked"><span class="ficon">🔒</span><span class="ftext">Phone number shown to homeowners</span></div>
           <div class="feature-row locked"><span class="ficon">🔒</span><span class="ftext">Verified badge — builds instant trust</span></div>
           <div class="feature-row locked"><span class="ficon">🔒</span><span class="ftext">Priority placement in search results</span></div>
           <div class="feature-row locked"><span class="ficon">🔒</span><span class="ftext">Google reviews pulled onto your profile</span></div>
@@ -212,10 +226,10 @@
 
         <div class="listing-preview">
           <div class="lp-top">
-            <div class="lp-avatar" style="background:#1e40af;">KK</div>
+            <div class="lp-avatar" style="background:#1e40af;">WTL</div>
             <div>
-              <div class="lp-name">Kamo Kitchens</div>
-              <div class="lp-meta">Kitchen Renovators &bull; Whangārei</div>
+              <div class="lp-name">Wellington Tradie Limited</div>
+              <div class="lp-meta">Builders &bull; Wellington</div>
               <div class="lp-badges">
                 <span class="badge badge-verified">✓ Verified</span>
                 <span class="badge badge-email">✉ Email verified</span>
@@ -227,10 +241,10 @@
               </div>
             </div>
           </div>
-          <p class="lp-desc">Kitchen renovation specialists based in Whangārei, Northland. Verified by TradieTools NZ. 4.9 stars from 23 homeowner reviews. Call direct or request a quote online.</p>
+          <p class="lp-desc">Building and renovation specialists based in Wellington. Verified by TradieTools NZ. 4.9 stars from 23 homeowner reviews. Call direct or request a quote online.</p>
           <div class="lp-contact">
             <a class="lp-btn lp-btn-primary" href="#">Request a quote</a>
-            <a class="lp-btn lp-btn-secondary" href="#">09 988 9020</a>
+            <a class="lp-btn lp-btn-secondary" href="#">04 555 0123</a>
           </div>
         </div>
 
@@ -242,11 +256,11 @@
 
         <div class="tc-features">
           <h4>Everything in Free, plus</h4>
+          <div class="feature-row"><span class="ficon">✅</span><span class="ftext"><strong>Phone number shown</strong> — clickable on mobile, visible to homeowners</span></div>
           <div class="feature-row"><span class="ficon">✅</span><span class="ftext"><strong>Verified badge</strong> — blue tick builds instant homeowner trust</span></div>
           <div class="feature-row"><span class="ficon">✅</span><span class="ftext"><strong>Priority placement</strong> — listed above free tradies in search</span></div>
           <div class="feature-row"><span class="ficon">✅</span><span class="ftext"><strong>Google reviews</strong> synced to your TradieTools profile</span></div>
           <div class="feature-row"><span class="ficon">✅</span><span class="ftext"><strong>Lead pipeline dashboard</strong> — track every quote &amp; job</span></div>
-          <div class="feature-row"><span class="ficon">✅</span><span class="ftext">Direct phone number clickable on mobile</span></div>
           <div class="feature-row"><span class="ficon">✅</span><span class="ftext">Your website link on profile page</span></div>
           <div class="feature-row locked"><span class="ficon">🔒</span><span class="ftext">Pro badge + Top Tradie placement</span></div>
           <div class="feature-row locked"><span class="ficon">🔒</span><span class="ftext">Lead matching — matched to homeowner jobs in your area</span></div>
@@ -262,17 +276,18 @@
 
       <!-- ── PRO ── -->
       <div class="tier-card is-pro">
+        <div class="pro-ribbon">Most Popular</div>
         <div class="tc-badge-band">★ Pro — $59/month</div>
 
         <div class="listing-preview">
           <div class="lp-top">
-            <div class="lp-avatar" style="background:#c05600;">KK</div>
+            <div class="lp-avatar" style="background:#c05600;">WTL</div>
             <div>
-              <div class="lp-name">Kamo Kitchens</div>
-              <div class="lp-meta">Kitchen Renovators &bull; Whangārei</div>
+              <div class="lp-name">Wellington Tradie Limited</div>
+              <div class="lp-meta">Builders &bull; Wellington</div>
               <div class="lp-badges">
                 <span class="badge badge-pro">★ Pro Tradie</span>
-                <span class="badge badge-top">Top in Whangārei</span>
+                <span class="badge badge-top">Top in Wellington</span>
                 <span class="badge badge-verified">✓ Verified</span>
               </div>
               <div class="lp-stars">
@@ -283,11 +298,11 @@
             </div>
           </div>
           <p class="lp-desc">
-            <strong>Kamo Kitchens — Whangārei's highest-rated kitchen renovator.</strong> Verified Pro Tradie. 4.9 stars from 23 homeowners. Specialising in full kitchen redesigns, custom cabinetry and appliance fitouts. Free quotes within 24 hours.
+            <strong>Wellington Tradie Limited — Wellington's highest-rated builder.</strong> Verified Pro Tradie. 4.9 stars from 23 homeowners. Specialising in new builds, renovations and light commercial. Free quotes within 24 hours.
           </p>
           <div class="lp-contact">
             <a class="lp-btn lp-btn-primary" href="#">Request a quote</a>
-            <a class="lp-btn lp-btn-secondary" href="#">09 988 9020</a>
+            <a class="lp-btn lp-btn-secondary" href="#">04 555 0123</a>
           </div>
         </div>
 
@@ -299,18 +314,26 @@
 
         <div class="tc-features">
           <h4>Everything in Verified, plus</h4>
-          <div class="feature-row"><span class="ficon">✅</span><span class="ftext"><strong>Pro badge + orange border</strong> — stands out above all other listings</span></div>
-          <div class="feature-row"><span class="ficon">✅</span><span class="ftext"><strong>"Top in [Region]" tag</strong> — shown on search results and profile</span></div>
-          <div class="feature-row"><span class="ficon">✅</span><span class="ftext"><strong>Lead matching</strong> — we match you to homeowner jobs in your area automatically</span></div>
+          <div class="feature-row"><span class="ficon">✅</span><span class="ftext"><strong>Pinned #1 in your trade + region</strong> — guaranteed top spot, always</span></div>
+          <div class="feature-row"><span class="ficon">✅</span><span class="ftext"><strong>"Top in Wellington" tag</strong> — shown on search results and profile</span></div>
+          <div class="feature-row"><span class="ficon">✅</span><span class="ftext"><strong>Pro badge + orange border</strong> — visually stands above all other listings</span></div>
+          <div class="feature-row"><span class="ficon">✅</span><span class="ftext"><strong>Lead matching</strong> — homeowners in your area looking for your trade sent direct to your inbox</span></div>
+          <div class="feature-row"><span class="ficon">✅</span><span class="ftext"><strong>Featured in weekly homeowner email</strong> — avg. 2,400 readers in your region</span></div>
           <div class="feature-row"><span class="ficon">✅</span><span class="ftext"><strong>Expanded bio</strong> — full description, specialties, photos</span></div>
-          <div class="feature-row"><span class="ficon">✅</span><span class="ftext"><strong>Priority support</strong> — direct line to us, not a help queue</span></div>
-          <div class="feature-row"><span class="ficon">✅</span><span class="ftext"><strong>Featured in email campaigns</strong> to homeowners in your region</span></div>
-          <div class="feature-row"><span class="ficon">✅</span><span class="ftext">First position in your trade &amp; region every time</span></div>
+          <div class="feature-row"><span class="ficon">✅</span><span class="ftext"><strong>Priority support</strong> — direct line, not a help queue</span></div>
+
+          <div class="day1-timeline">
+            <div class="dtl-title">What happens after you go Pro</div>
+            <div class="day1-step"><span class="dts">Day 1</span> Your listing moves to #1 in Builders &bull; Wellington</div>
+            <div class="day1-step"><span class="dts">Day 2</span> Lead alerts start — matching homeowner jobs in your area</div>
+            <div class="day1-step"><span class="dts">Week 1</span> Featured in the homeowner email to 2,400+ local readers</div>
+          </div>
         </div>
 
         <div class="tc-price">
           <div class="price-num">$59</div>
           <div class="price-period">+ GST / month — cancel anytime</div>
+          <div class="roi-callout">Pays for itself with one job. Average Pro tradie gets 8× more leads than free.</div>
           <a href="/signup/?tier=pro" class="cta-btn cta-pro">Go Pro →</a>
         </div>
       </div>
@@ -353,8 +376,8 @@
           <td><span class="check">✓</span></td>
         </tr>
         <tr>
-          <td>Phone number displayed</td>
-          <td><span class="check">✓</span></td>
+          <td>Phone number shown to homeowners</td>
+          <td><span class="cross">—</span></td>
           <td><span class="check">✓</span></td>
           <td><span class="check">✓</span></td>
         </tr>
@@ -429,6 +452,12 @@
           <td><span class="cross">—</span></td>
           <td><span class="cross">—</span></td>
           <td><span class="check">✓</span></td>
+        </tr>
+        <tr>
+          <td><strong>Estimated lead uplift</strong></td>
+          <td style="color:var(--muted);font-size:.85rem;">Baseline</td>
+          <td style="color:#1e40af;font-weight:700;">2–5× more leads</td>
+          <td style="color:var(--orange);font-weight:700;">Avg. 8× more leads</td>
         </tr>
         <tr>
           <td><strong>Price (+ GST)</strong></td>
