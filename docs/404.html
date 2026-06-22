@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page not found | NZ Tradie Tools</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <style>
+    .error-wrap { max-width: 520px; margin: 4rem auto; padding: 0 1.25rem; text-align: center; }
+    .error-code { font-size: 5rem; font-weight: 800; color: #e2e8f0; line-height: 1; }
+    h1 { font-size: 1.5rem; color: #1b2a4a; margin: .5rem 0 .75rem; }
+    p { color: #64748b; margin-bottom: 1.75rem; }
+    .links { display: flex; flex-wrap: wrap; gap: .75rem; justify-content: center; }
+    .btn { display: inline-block; padding: .65rem 1.25rem; border-radius: 6px; font-weight: 600; font-size: .9rem; text-decoration: none; }
+    .btn-primary { background: #0055a5; color: #fff; }
+    .btn-secondary { background: #f1f5f9; color: #334155; }
+    .btn:hover { opacity: .88; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="/" class="logo">NZ Tradie Tools</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav">
+        <a href="/find/">Find a Tradie</a>
+        <a href="/trades/get-quotes/">Get Quotes</a>
+        <a href="/jobs/">Browse Jobs</a>
+        <a href="/signup/" class="nav-cta">Free Listing →</a>
+      </nav>
+      <script>
+      (function(){var t=document.querySelector('.nav-toggle'),n=document.getElementById('main-nav');if(!t||!n)return;t.addEventListener('click',function(){var o=n.classList.toggle('is-open');t.setAttribute('aria-expanded',o);});document.addEventListener('click',function(e){if(!t.contains(e.target)&&!n.contains(e.target)){n.classList.remove('is-open');t.setAttribute('aria-expanded','false');}});})();
+      </script>
+    </div>
+  </header>
+
+  <div class="error-wrap">
+    <div class="error-code">404</div>
+    <h1>Page not found</h1>
+    <p>This page doesn't exist or has been moved. Try one of the links below.</p>
+    <div class="links">
+      <a href="/" class="btn btn-primary">Home</a>
+      <a href="/find/" class="btn btn-secondary">Find a Tradie</a>
+      <a href="/jobs/" class="btn btn-secondary">Cost Guides</a>
+      <a href="/signup/" class="btn btn-secondary">List your business</a>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div><p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">NZ Tradie Tools</p><p>Free calculators, templates and guides for New Zealand tradies.</p></div>
+      <div style="text-align:right"><p><a href="/privacy/">Privacy Policy</a></p><p><a href="/contact/">Contact</a></p><p style="margin-top:.5rem">&copy; 2025 NZ Tradie Tools</p></div>
+    </div>
+  </footer>
+</body>
+</html>

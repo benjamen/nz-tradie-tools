@@ -142,9 +142,6 @@
     var API_VERIFY   = 'https://tradietools.optified.nz/api/method/tradietools.api.verify_listing';
     var API_RESEND   = 'https://tradietools.optified.nz/api/method/tradietools.api.resend_verification';
     var API_CHECKOUT = 'https://tradietools.optified.nz/api/method/tradietools.api.create_checkout_session';
-    var PRICE_V = 'prod_Ud6cwW0qgkC1w1';
-    var PRICE_P = 'prod_Ud6cXc6JwI8pc9';
-
     var params = new URLSearchParams(location.search);
     var token  = params.get('token');
     var tradieId = null;
@@ -154,14 +151,14 @@
       document.getElementById(id).classList.add('active');
     }
 
-    async function doCheckout(priceId) {
+    async function doCheckout(tier) {
       if (!tradieId) return;
       var email = localStorage.getItem('tradieEmail') || '';
       try {
         var r = await fetch(API_CHECKOUT, {
           method: 'POST',
           headers: {'Content-Type':'application/json','X-Frappe-CSRF-Token':'fetch'},
-          body: JSON.stringify({tradie_id: tradieId, price_id: priceId, email: email})
+          body: JSON.stringify({tradie_id: tradieId, tier: tier, tradie_email: email})
         });
         var d = await r.json();
         var url = (d.message || d).url || (d.message || d).checkout_url;
@@ -189,8 +186,8 @@
         if (msg.lead_token) localStorage.setItem('leadToken', msg.lead_token);
         show('state-success');
 
-        document.getElementById('btn-verified').addEventListener('click', function(){ doCheckout(PRICE_V); });
-        document.getElementById('btn-pro').addEventListener('click', function(){ doCheckout(PRICE_P); });
+        document.getElementById('btn-verified').addEventListener('click', function(){ doCheckout('verified'); });
+        document.getElementById('btn-pro').addEventListener('click', function(){ doCheckout('pro'); });
 
       } else if (msg.status === 'expired') {
         tradieId = msg.id;
