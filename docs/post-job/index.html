@@ -87,8 +87,13 @@
                             <option>Electrician</option><option>Plumber</option><option>Builder</option>
                             <option>Painter</option><option>Drainlayer</option><option>Roofer</option>
                             <option>Concreter</option><option>Fencer</option><option>Plasterer</option>
-                            <option>Tiler</option><option>Carpenter</option><option>Heat Pump</option>
-                            <option>Landscaper</option><option>Other</option>
+                            <option>Tiler</option><option>Carpenter</option><option>Heat Pump Installer</option>
+                            <option>Landscaper</option><option>Kitchen Renovator</option>
+                            <option>Bathroom Renovator</option><option>Flooring Installer</option>
+                            <option>Insulation Installer</option><option>Solar Installer</option>
+                            <option>Window Installer</option><option>Glazier</option>
+                            <option>Pest Controller</option><option>Scaffolder</option>
+                            <option>Demolition Contractor</option><option>Other</option>
                         </select>
                     </div>
                 </div>
@@ -99,6 +104,12 @@
                             <option value="" disabled selected>Select your city…</option>
                             <option>Auckland</option><option>Wellington</option><option>Christchurch</option>
                             <option>Hamilton</option><option>Tauranga</option><option>Dunedin</option>
+                            <option>Queenstown</option><option>Nelson</option><option>New Plymouth</option>
+                            <option>Napier</option><option>Hastings</option><option>Rotorua</option>
+                            <option>Whangarei</option><option>Palmerston North</option>
+                            <option>Invercargill</option><option>Gisborne</option><option>Whanganui</option>
+                            <option>Upper Hutt</option><option>Lower Hutt</option><option>Porirua</option>
+                            <option>Kapiti</option>
                             <option>Palmerston North</option><option>Napier</option><option>Hastings</option>
                             <option>New Plymouth</option><option>Rotorua</option><option>Whangarei</option>
                             <option>Nelson</option><option>Queenstown</option><option>Invercargill</option>
@@ -189,15 +200,26 @@ document.getElementById('post-form').addEventListener('submit', function(e){
     .then(function(j){
         var d = j.message||j;
         if (d.success === false) throw new Error(d.error || 'Error');
-        document.getElementById('form-card').innerHTML =
-            '<div style="text-align:center;padding:2rem">'
-            + '<div style="font-size:3rem">✅</div>'
-            + '<h2 style="color:#0f172a;margin:.75rem 0 .5rem">Job posted!</h2>'
-            + '<p style="color:#475569">Your job has been shared with local ' + data.trade_type + 's in ' + data.city + '. '
-            + (d.tradies_notified > 0 ? d.tradies_notified + ' tradie' + (d.tradies_notified>1?'s were':' was') + ' notified. ' : '')
-            + 'They\'ll contact you directly when they apply.</p>'
-            + '<p style="margin-top:1.5rem"><a href="/browse-jobs/" class="btn-submit" style="display:inline-block;text-decoration:none;padding:.75rem 1.5rem;border-radius:8px">Browse all jobs →</a></p>'
-            + '</div>';
+        var notified = (d.tradies_notified || 0);
+        var successHtml;
+        if (notified > 0) {
+            successHtml = '<div style="text-align:center;padding:2rem">'
+                + '<div style="font-size:3rem">✅</div>'
+                + '<h2 style="color:#0f172a;margin:.75rem 0 .5rem">Job posted!</h2>'
+                + '<p style="color:#475569">' + notified + ' local ' + d.trade_type + (notified > 1 ? 's were' : ' was') + ' notified and will contact you directly with a quote.</p>'
+                + '<p style="color:#64748b;font-size:.88rem;margin-top:.5rem">Check your inbox — they may reply within a few hours.</p>'
+                + '<p style="margin-top:1.5rem"><a href="/browse-jobs/" class="btn-submit" style="display:inline-block;text-decoration:none;padding:.75rem 1.5rem;border-radius:8px">Browse all jobs →</a></p>'
+                + '</div>';
+        } else {
+            successHtml = '<div style="text-align:center;padding:2rem">'
+                + '<div style="font-size:3rem">📋</div>'
+                + '<h2 style="color:#0f172a;margin:.75rem 0 .5rem">Job saved — we\'re on it</h2>'
+                + '<p style="color:#475569">We don\'t have a ' + (d.trade_type || 'tradie') + ' in ' + (d.city || 'your area') + ' ready right now, but your job is saved and we\'ll email you as soon as one becomes available.</p>'
+                + '<p style="color:#64748b;font-size:.88rem;margin-top:.5rem">In the meantime, you can browse the directory to find someone directly.</p>'
+                + '<p style="margin-top:1.5rem"><a href="/find/" class="btn-submit" style="display:inline-block;text-decoration:none;padding:.75rem 1.5rem;border-radius:8px">Find a tradie now →</a></p>'
+                + '</div>';
+        }
+        document.getElementById('form-card').innerHTML = successHtml;
     })
     .catch(function(err){
         btn.disabled = false; btn.textContent = 'Post my job — it\'s free →';
