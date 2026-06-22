@@ -565,6 +565,18 @@ def build_sitemap(articles, calculators, cities, trades, config, job_pages_count
                           ("jobs", "0.9")]:
         urls.append({"loc": f"{base_url}/{section}/", "priority": pri, "changefreq": "weekly", "lastmod": today})
 
+    # DIY hub and sub-pages
+    urls.append({"loc": f"{base_url}/diy/", "priority": "0.9", "changefreq": "monthly", "lastmod": today})
+    for slug in ["electrical-work-i-can-do-myself-nz", "plumbing-i-can-do-myself-nz",
+                 "building-work-without-consent-nz", "can-i-be-my-own-builder-nz"]:
+        urls.append({"loc": f"{base_url}/diy/{slug}/", "priority": "0.9", "changefreq": "monthly", "lastmod": today})
+
+    # Planning hub and sub-pages
+    urls.append({"loc": f"{base_url}/planning/", "priority": "0.9", "changefreq": "monthly", "lastmod": today})
+    for slug in ["order-of-trades-nz", "bathroom-renovation-planning-nz",
+                 "kitchen-renovation-planning-nz", "house-extension-planning-nz"]:
+        urls.append({"loc": f"{base_url}/planning/{slug}/", "priority": "0.9", "changefreq": "monthly", "lastmod": today})
+
     # Calc category landing pages
     for cat in CALC_CATEGORIES:
         urls.append({"loc": f"{base_url}/calculators/{cat['slug']}/", "priority": "0.85",
