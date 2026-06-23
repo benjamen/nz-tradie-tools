@@ -619,3 +619,45 @@ When researching potential installers, it's also a good idea to read reviews on 
 In conclusion, the cost of a heat pump installation in NZ can vary depending on several factors, including the type and size of the heat pump, installation costs, and additional features or services. On average, a single-room heat pump installation can cost between $2,000 to $4,000, while a multi-room installation can cost between $4,000 to $10,000 or more. However, with the help of the EECA Warmer Kiwi Homes grant, eligible homeowners can receive a subsidy of up to $3,000 towards the cost of a heat pump installation.
 
 To get started with your heat pump installation, it's essential to choose the right installer and ensure that the system is sized correctly for your home. Our Heat Pump Sizing Calculator, available at tradietools.nz/calculators/heat-pump-sizing-calculator.html, can help you determine the correct size of the heat pump for your home. Additionally, our hourly rate calculator for HVAC tradies can help you estimate the cost of installation. By using these tools and choosing a reputable installer, you can ensure that your heat pump installation is done correctly and efficiently, providing you with a warm and comfortable home for years to come. So why wait? Click the link to get started with your heat pump installation today and take the first step towards a warmer and more energy-efficient home.
+
+## FAQ
+
+When it comes to heat pump installation in New Zealand, homeowners and tradies often have several questions in mind. Here are six detailed FAQ questions and answers that can provide clarity on the process:
+
+1. What is the cheapest heat pump I can get installed in NZ?
+The cheapest heat pump installation in NZ can cost around $2,000 to $3,000, including the unit and installation. However, it's essential to note that the cheapest option may not always be the most energy-efficient or suitable for your home. A basic 6-kW heat pump unit from a reputable brand like Mitsubishi or Panasonic can cost between $1,200 to $1,800. Additionally, you may need to consider the cost of any necessary electrical or ducting work, which can add another $500 to $1,000 to the total cost. For example, a recent installation in Auckland cost $2,500 for a 6-kW unit, including installation and electrical work.
+
+2. Can I install a heat pump myself in NZ?
+While it's technically possible to install a heat pump yourself in NZ, it's not recommended. Heat pump installation requires specialized knowledge and skills to ensure the unit is installed correctly and safely. Improper installation can lead to reduced efficiency, increased energy bills, and even safety hazards. A professional installer will typically charge between $800 to $1,200 for labour, depending on the complexity of the job. Furthermore, many manufacturers require professional installation to validate the warranty, so it's best to leave it to the experts. For instance, a DIY installation gone wrong in Wellington resulted in a $1,500 repair bill to fix the issues.
+
+3. Does a heat pump installation require building consent?
+In most cases, a heat pump installation does not require building consent in NZ. However, if the installation involves significant modifications to your home's structure, such as installing ducting or making changes to the exterior, you may need to obtain consent from your local council. It's always best to check with your local council or a professional installer to determine if consent is required. The cost of obtaining building consent can range from $500 to $2,000, depending on the scope of the work. A recent example in Christchurch involved a homeowner who needed to obtain consent for a ducted heat pump system, which added $1,200 to the overall cost.
+
+4. How long does a heat pump installation take?
+The time it takes to install a heat pump can vary depending on the complexity of the job and the number of units being installed. On average, a standard heat pump installation can take around 2-4 hours for a single unit, while a more complex installation, such as a ducted system, can take several days. The cost of installation will also depend on the time required, with most installers charging an hourly rate of $100 to $150 per hour. For example, a recent installation in Queenstown took 3 days to complete, with a total labour cost of $2,400.
+
+5. What warranty should I expect on a heat pump in NZ?
+Most heat pump manufacturers in NZ offer a warranty of 5-7 years on parts and labour. However, some premium brands may offer extended warranties of up to 10 years. It's essential to check the warranty terms and conditions before purchasing a heat pump, as some manufacturers may require regular maintenance or servicing to validate the warranty. The cost of extended warranties can range from $200 to $500, depending on the manufacturer and the length of the warranty. For instance, a homeowner in Auckland purchased a heat pump with a 7-year warranty for $2,800, which included a $300 extended warranty option.
+
+6. Which heat pump brand is most reliable in NZ?
+While there are several reliable heat pump brands available in NZ, some of the most popular and highly-rated brands include Mitsubishi, Panasonic, and Daikin. These brands are known for their high-quality products, energy efficiency, and reliable performance. However, the most reliable brand for your specific needs will depend on your home's size, insulation, and climate. It's essential to research and compare different brands, read reviews, and consult with a professional installer to determine the best option for your home. For example, a recent survey of NZ homeowners found that 80% of respondents were satisfied with their Mitsubishi heat pumps, which cost between $1,500 to $3,000, depending on the model and features.
+
+## Choosing the Right Installer
+
+Choosing the right installer for your heat pump installation is crucial to ensure a safe, efficient, and cost-effective job. Here are some tips to help you find the right installer:
+
+To get started, it's recommended to get at least three quotes from different installers. This will give you a chance to compare prices, services, and warranties. A good quote should include a site visit to assess your home's specific needs, a heat loss calculation to determine the required heat pump size, and a written quote outlining the scope of work, costs, and warranty terms. Be wary of installers who provide quotes over the phone or without visiting your site, as this can lead to inaccurate assessments and potential issues down the line.
+
+It's also essential to check if the installer is registered with the Electrical Workers Registration Board (EWRB) and the Energy Efficiency and Conservation Authority (EECA). You can verify an installer's registration on the ECANZ website. Additionally, read reviews on platforms like Google or Builderscrack to get an idea of the installer's reputation and customer satisfaction.
+
+When evaluating quotes, be cautious of red flags such as unusually low prices, pushy sales tactics, or installers who are unwilling to provide a written quote or warranty. A reputable installer will provide a clear and transparent quote, explain the installation process, and offer a comprehensive warranty. For example, a homeowner in Wellington was quoted $1,800 for a heat pump installation, but the installer was unwilling to provide a written quote or warranty, which raised suspicions about their legitimacy.
+
+## Conclusion
+
+In conclusion, the cost of heat pump installation in NZ can vary depending on several factors, including the type and size of the unit, installation complexity, and location. On average, a standard heat pump installation can cost between $2,000 to $5,000, including the unit and installation. However, with the EECA Warmer Kiwi Homes grant, eligible homeowners can receive a subsidy of up to $3,000 towards the cost of a heat pump installation.
+
+To get started with your heat pump installation, it's essential to choose the right installer and ensure you're getting the best value for your money. Don't forget to check if you're eligible for the EECA Warmer Kiwi Homes grant, which can help offset the cost of your heat pump installation.
+
+For more information on heat pump sizing and installation costs, visit our Heat Pump Sizing Calculator at [tradietools.nz/calculators/heat-pump-sizing-calculator.html](http://tradietools.nz/calculators/heat-pump-sizing-calculator.html). This tool can help you determine the required heat pump size for your home and provide an estimate of the installation costs. Additionally, our hourly rate calculator for HVAC tradies can help you estimate the labour costs for your heat pump installation.
+
+By doing your research, choosing the right installer, and taking advantage of available subsidies, you can enjoy a warm and comfortable home while saving on energy bills. So why wait? Start your heat pump installation journey today and take the first step towards a warmer, more energy-efficient home.

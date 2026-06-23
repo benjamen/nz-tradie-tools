@@ -1,92 +1,98 @@
 ---
 title: "How to Paint a Room NZ — Step-by-Step Guide"
 description: "How to paint a room in NZ — prep, primer, cutting in, and rolling for a professional finish. Tools, paint types, and common mistakes to avoid."
-date: 2026-06-23
+date: 2026-06-24
 tags: ["painting", "DIY", "homeowner", "NZ", "2026"]
 author: "NZ Tradie Tools"
 draft: false
 ---
 
 ## Introduction
-Painting a room is one of the most rewarding and cost-effective DIY jobs for New Zealand homeowners. Not only can it completely transform the look and feel of a space, but it's also a great way to add value to your property. With the right tools, materials, and a bit of patience, you can achieve professional-looking results without breaking the bank. In this comprehensive guide, we'll take you through the step-by-step process of painting a room in NZ, covering everything from preparation to finishing touches. By the end of this article, you'll be equipped with the knowledge and confidence to tackle your next painting project with ease.
+Painting a room is one of the most rewarding and cost-effective DIY jobs for New Zealand homeowners. Not only can it completely transform the look and feel of a space, but it can also increase the value of your property. With the right tools, materials, and a bit of patience, anyone can achieve professional-looking results. In this article, we'll take you through a step-by-step guide on how to paint a room in NZ, covering everything from preparation to completion. By the end of this guide, you'll be equipped with the knowledge and confidence to tackle your next painting project.
 
 ## What You'll Need
-Before you start painting, it's essential to gather all the necessary tools and materials. Here's a list of what you'll need:
-* Roller and extension pole ($20-$50)
-* Paint tray ($10-$20)
-* Brushes (2.5" angled sash) ($10-$20)
-* Drop cloths ($20-$50)
-* Masking tape ($5-$10)
-* Filler (Polyfilla or equivalent) ($10-$20)
-* Sandpaper ($5-$10)
-* Sugar soap ($10-$20)
-* Paint (water-based or oil-based) ($35-$80 per litre)
+Before you start painting, it's essential to have the right tools and materials. Here's a list of what you'll need:
+* A roller and extension pole (approximately $20-$50)
+* A paint tray (around $10-$20)
+* Angled sash brushes (2.5") for cutting in (around $10-$20 each)
+* Drop cloths to protect your floors (approximately $20-$50)
+* Masking tape for skirting boards and architraves (around $5-$10)
+* Filler (such as Polyfilla) for holes and cracks (around $10-$20)
+* Sandpaper for smoothing out surfaces (approximately $5-$10)
+* Sugar soap for cleaning walls (around $10-$20)
+* Paint (water-based or oil-based) in your chosen colour (approximately $35-$80 per litre)
 
-When it comes to choosing the right paint, there are several factors to consider. Water-based paints are generally easier to clean up and dry faster, while oil-based paints provide a harder, more durable finish. In NZ, popular paint brands include Resene, Dulux, and Wattyl. Resene's water-based paints, for example, are priced around $45-$60 per litre, while Dulux's oil-based paints can range from $50-$80 per litre.
+When it comes to paint, you'll need to decide between water-based and oil-based. Water-based paints are generally easier to clean up and dry faster, while oil-based paints provide a harder, more durable finish. Some popular paint brands in NZ include Resene, Dulux, and Wattyl. Finish types also vary, with options including flat, low-sheen, semi-gloss, and gloss.
 
-To calculate how much paint you'll need, you'll need to consider the surface area of the walls, ceiling, and trim. A general rule of thumb is to allow for 1 litre of paint to cover around 12-16 square metres of surface area, depending on the type of paint and the surface being painted. For a typical bedroom, you can expect to need around 2-3 litres of paint, costing between $150-$300.
+To calculate how much paint you'll need, you'll need to measure the surface area of your walls and ceiling. A general rule of thumb is to allow for 1 litre of paint to cover around 12-16 square metres, depending on the surface and finish. However, it's always better to have a bit extra, so consider adding 10-20% to your total.
 
-## Prep (The Key to a Good Result)
-Preparation is key to achieving a professional-looking finish. Here are the steps to follow:
-* Wash the walls with sugar soap to remove grease, old smoke residue, and dirt. This will ensure a strong bond between the paint and the surface.
-* Fill any holes or cracks with Polyfilla or equivalent. Allow the filler to dry completely before sanding back to a smooth finish.
-* Sand back any rough patches or areas where the filler has been applied. This will help create a smooth surface for painting.
-* Mask up skirting boards, architraves, and power points using masking tape. Apply the tape carefully to ensure a sharp, clean edge.
-* Protect floors with drop cloths. This will prevent any paint spills or splatters from damaging your flooring.
-* Prime new GIB or repaired patches. If you're painting over a dark colour or bold pattern, it's essential to prime the surface first to ensure an even finish. Different colour showing through is a common mistake that can be avoided by applying a primer.
+### Paint Quantity Calculator
+| Surface Type | Coverage per Litre |
+| --- | --- |
+| Smooth Ceiling | 16m² |
+| Smooth Walls | 14m² |
+| Rough Ceiling | 12m² |
+| Rough Walls | 10m² |
+
+## Prep: The Key to a Good Result
+Preparation is the most crucial step in achieving a professional-looking paint job. Here's what you need to do:
+* Wash your walls with sugar soap to remove any grease, grime, or old smoke residue. This will ensure a strong bond between the paint and the surface.
+* Fill any holes or cracks with filler, such as Polyfilla. Allow the filler to dry completely before sanding it back to a smooth finish.
+* Sand any rough patches or areas where the filler has been applied. This will help create a smooth surface for painting.
+* Mask up your skirting boards, architraves, and power points using masking tape. This will prevent any paint from getting on these areas.
+* Protect your floors with drop cloths. This will prevent any paint spills or drips from damaging your flooring.
+* Prime any new GIB or repaired patches. This is especially important if the new surface is a different colour to the surrounding area. Skipping primer can lead to a patchy, uneven finish.
 
 ## Order of Painting
-When it comes to painting a room, it's essential to follow the correct order to avoid lap marks and ensure a smooth finish. Here's the order to follow:
-* Ceiling first: Start by painting the ceiling, working in sections to maintain a wet edge.
-* Walls next: Once the ceiling is complete, move on to the walls. Work in sections, using a roller to cover large areas and a brush to cut in around edges and corners.
-* Trim last: Finally, paint the trim, including skirting boards, architraves, and doors. Use a brush to apply a smooth, even coat.
+The order in which you paint your room is important to achieve a professional-looking finish. Here's the recommended order:
+1. Ceiling: Start by painting the ceiling, working from the centre outwards. This will prevent any paint from dripping onto the walls.
+2. Walls: Once the ceiling is complete, move on to the walls. Work in sections, using a roller to cover large areas and a brush to cut in around edges.
+3. Trim: Finally, paint the trim, including skirting boards, architraves, and doors.
+
+To avoid lap marks, make sure to work in small sections and maintain a wet edge. This means applying paint to the next section before the previous one has a chance to dry.
 
 ## Cutting In
-Cutting in is the process of painting the edges and corners of a room, where the walls meet the ceiling, trim, and floors. Here's how to do it:
-* Use an angled brush (2.5" sash) to cut in around edges and corners.
-* Apply the 3-wet-edge technique: paint the edge, then the corner, and finally the adjacent surface. This will help prevent lap marks and ensure a smooth finish.
-* Take your time: rushing cutting in is the biggest amateur mistake. Work slowly and carefully to ensure a sharp, clean edge.
+Cutting in is the process of painting the edges of your walls, ceiling, and trim using a brush. Here's how to do it:
+* Use an angled sash brush (2.5") to cut in around edges.
+* Work in small sections, using the 3-wet-edge technique. This involves applying paint to the edge, then working it into the main area, and finally feathering it out to create a seamless blend.
+* Take your time and don't rush the cutting in process. This is the most critical part of the painting process, and rushing it can lead to uneven lines and a poor finish.
 
 ## Rolling
-Rolling is the process of applying paint to large areas of the wall using a roller. Here's how to do it:
-* Use a W-pattern to roll the paint onto the wall, working in sections to maintain a wet edge.
-* Keep a wet edge: this means maintaining a continuous, wet edge of paint as you work. This will help prevent lap marks and ensure a smooth finish.
-* Avoid roller marks: use a high-quality roller cover and work in a consistent, even pattern to avoid leaving roller marks on the wall.
-* Apply the second coat: once the first coat is touch dry (not bone dry), apply a second coat to achieve a smooth, even finish.
+Rolling is the process of applying paint to large areas using a roller. Here's how to do it:
+* Use a W-pattern to apply paint to the wall, working in small sections.
+* Keep a wet edge by maintaining a consistent pace and applying paint to the next section before the previous one has a chance to dry.
+* Avoid applying too much pressure, which can create roller marks. Instead, use a light touch and let the roller do the work.
+* Apply a second coat once the first coat is touch dry, not bone dry. This will help prevent any unevenness or patchiness.
 
 ## Trim and Skirting
-When it comes to painting trim and skirting, it's essential to use the right brush and technique. Here's how to do it:
-* Use a high-quality brush (2.5" sash) to apply a smooth, even coat.
-* Choose the right paint: oil-based paints are often preferred for trim and skirting, as they provide a harder, more durable finish.
-* Work slowly and carefully: take your time to ensure a sharp, clean edge and a smooth finish.
+When it comes to painting trim and skirting, you'll need to decide between oil-based and water-based paint. Oil-based paint is generally recommended for trim, as it provides a harder, more durable finish. However, water-based paint can also be used, especially if you're looking for a lower-VOC option.
+
+To paint trim and skirting, use a brush to apply paint in small sections. Work slowly and carefully, using a steady hand to create sharp lines.
 
 ## Drying Times and Second Coats
-Drying times and second coats are critical to achieving a professional-looking finish. Here's what you need to know:
-* Resene and Dulux recommend recoat times of 2-4 hours, depending on the type of paint and the surface being painted.
-* Humidity can impact drying times: in humid conditions, it's essential to wait longer between coats to ensure a smooth finish.
-* Wait for the paint to be touch dry (not bone dry) before applying a second coat. This will help prevent lap marks and ensure a smooth finish.
+The drying time for paint will depend on the type and brand you're using. Resene and Dulux recommend waiting at least 2 hours before applying a second coat, although this can vary depending on the conditions.
+
+It's also important to consider the humidity levels in your area. High humidity can slow down the drying process, so be patient and don't rush the process.
 
 ## Common Mistakes and How to Avoid Them
 Here are some common mistakes to avoid when painting a room:
-* Skipping primer: failing to prime new GIB or repaired patches can result in a poor finish.
-* Painting over dusty or dirty surfaces: always clean the surface before painting to ensure a strong bond between the paint and the surface.
-* Using the wrong roller nap: choose a roller cover with the right nap length for the surface being painted.
-* Painting in direct sunlight: avoid painting in direct sunlight, as this can cause the paint to dry too quickly and result in a poor finish.
+* Skipping primer: Primer is essential for creating a strong bond between the paint and the surface. Skipping it can lead to a patchy, uneven finish.
+* Painting over dusty or dirty surfaces: Make sure to clean your walls and ceiling before painting to ensure a strong bond and a smooth finish.
+* Using the wrong roller nap: Choose a roller nap that's suitable for your surface. A smooth surface requires a shorter nap, while a rough surface requires a longer nap.
+* Painting in direct sunlight: Direct sunlight can cause the paint to dry too quickly, leading to an uneven finish. Try to paint in the shade or use a sunscreen to filter the light.
 
 ## FAQ
 Here are some frequently asked questions about painting a room:
 * Q: How long does it take to paint a room?
-A: The time it takes to paint a room depends on the size of the room, the number of coats, and the level of preparation required. On average, it can take around 2-5 days to paint a room.
+A: The time it takes to paint a room will depend on the size of the room and the number of coats you're applying. On average, it can take around 2-4 hours to paint a small room.
 * Q: How much paint do I need for a standard bedroom?
-A: For a standard bedroom (around 12-16 square metres), you'll need around 2-3 litres of paint, costing between $150-$300.
+A: A standard bedroom is around 12-15 square metres. Based on the coverage rates above, you'll need around 1-2 litres of paint, depending on the surface and finish.
 * Q: Can I paint over mould?
-A: No, it's not recommended to paint over mould. Instead, remove the mould and clean the surface before painting.
+A: No, it's not recommended to paint over mould. Mould can continue to grow under the paint, causing it to peel and flake. Instead, remove the mould using a mould-killing solution and prime the area before painting.
 * Q: What's the best paint for NZ kitchens and bathrooms?
-A: For kitchens and bathrooms, it's recommended to use a water-based paint with a high level of durability and moisture resistance. Resene's water-based paints are a popular choice for these areas.
+A: For kitchens and bathrooms, it's recommended to use a paint that's resistant to moisture and humidity. Look for a paint that's specifically designed for these areas, such as a semi-gloss or gloss finish.
 * Q: How do I calculate the cost of painting a room?
-A: To calculate the cost of painting a room, consider the cost of paint, tools, and materials, as well as any labour costs if you're hiring a professional. You can use online calculators, such as those found on tradietools.nz, to help estimate the cost.
+A: To calculate the cost of painting a room, you'll need to consider the cost of paint, tools, and materials. On average, the cost of painting a room can range from $150-$300, depending on the size of the room and the materials you're using.
 
 ## Conclusion
-Painting a room can be a rewarding and cost-effective DIY project, but it requires careful preparation, attention to detail, and the right tools and materials. By following the steps outlined in this guide, you can achieve a professional-looking finish and add value to your property. If you're not confident in your ability to paint a room, consider hiring a professional. For more information and resources, including a paint calculator, visit tradietools.nz/trades/painters/. With the right tools and knowledge, you can achieve a beautiful, long-lasting finish that will enhance your home for years to come. 
-
-To make your job management and invoicing easier, consider using tools like Xero, Fergus, or Tradify. These tools can help you streamline your workflow, manage your finances, and provide a professional service to your clients. Whether you're a seasoned painter or a DIY enthusiast, tradietools.nz is a valuable resource that can help you achieve your goals. So why not get started today and transform your space with a fresh new coat of paint? Visit tradietools.nz/trades/painters/ to find a painter or learn more about painting a room in NZ.
+Painting a room can be a rewarding and cost-effective DIY project, but it requires patience, preparation, and the right tools and materials. By following the steps outlined in this guide, you can achieve a professional-looking finish that will last for years to come. If you're not feeling confident in your abilities or don't have the time to paint yourself, consider hiring a professional painter. You can find a painter in your area by visiting [tradietools.nz/trades/painters/](http://tradietools.nz/trades/painters/). Additionally, you can use tools like Xero to manage your finances, Fergus to streamline your job management, or Tradify to simplify your invoicing and quoting process. Remember to always follow safety guidelines and best practices when painting, and don't hesitate to seek advice if you're unsure about any aspect of the process. Happy painting!
