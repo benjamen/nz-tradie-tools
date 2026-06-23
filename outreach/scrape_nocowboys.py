@@ -181,7 +181,7 @@ def main():
 
                 new = 0
                 for r in results:
-                    key = slugify(r["name"])
+                    key = f"{slugify(r['name'])}|{r['region'].lower()}"
                     if key in seen_names:
                         continue
                     seen_names.add(key)
