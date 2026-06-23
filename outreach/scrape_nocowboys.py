@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
 Scrape NoCowboys directory for unclaimed listing candidates.
-Targets 5 trades x 3 cities = 15 combos, up to 40 listings each → ~600 candidates.
+Targets 10 NZ cities × 3 pages = ~300 raw results → ~280 unique after dedup.
+Trade is parsed from the card itself (NoCowboys trade query doesn't filter results).
 Outputs: outreach/listings_to_seed.csv
 
 Run: cd outreach && python scrape_nocowboys.py
@@ -13,37 +14,57 @@ from playwright.sync_api import sync_playwright
 OUTPUT = Path(__file__).parent / "listings_to_seed.csv"
 LOG    = Path(__file__).parent / "scrape_nocowboys.log"
 
-TRADES = [
-    ("builders",        "builders"),
-    ("plumbers",        "plumbers"),
-    ("electricians",    "electricians"),
-    ("painters",        "painters"),
-    ("roofers",         "roofers"),
-]
-
+# 10 NZ cities — NoCowboys uses lowercase slugs
 REGIONS = [
-    ("auckland",        "Auckland"),
-    ("wellington",      "Wellington"),
-    ("christchurch",    "Christchurch"),
+    ("auckland",          "Auckland"),
+    ("wellington",        "Wellington"),
+    ("christchurch",      "Christchurch"),
+    ("hamilton",          "Hamilton"),
+    ("tauranga",          "Tauranga"),
+    ("dunedin",           "Dunedin"),
+    ("palmerston-north",  "Palmerston North"),
+    ("nelson",            "Nelson"),
+    ("napier",            "Napier"),
+    ("whangarei",         "Whangarei"),
 ]
 
-# Map our trade slugs to NoCowboys category slugs
-NC_TRADE_MAP = {
-    "builders":      "builders",
-    "plumbers":      "plumbers",
-    "electricians":  "electricians",
-    "painters":      "painters-decorators",
-    "roofers":       "roofers",
-}
-
-NC_REGION_MAP = {
-    "auckland":      "auckland",
-    "wellington":    "wellington",
-    "christchurch":  "christchurch",
-}
+PAGES_PER_REGION = 3   # 10 results per page → up to 30 per city
 
 BASE = "https://www.nocowboys.co.nz"
-PER_PAGE = 40
+
+# Map NoCowboys trade strings → our trade slugs
+TRADE_MAP = {
+    "builder":       "builders",
+    "construction":  "builders",
+    "plumber":       "plumbers",
+    "drain":         "plumbers",
+    "electric":      "electricians",
+    "paint":         "painters",
+    "decorator":     "painters",
+    "roof":          "roofers",
+    "glazier":       "glaziers",
+    "landscape":     "landscapers",
+    "fence":         "fencers",
+    "carpet":        "carpet-layers",
+    "heat pump":     "heat-pump-installers",
+    "solar":         "solar-installers",
+    "scaffold":      "scaffolders",
+    "waterproof":    "waterproofers",
+    "plaster":       "plasterers",
+    "tiler":         "tilers",
+    "tiling":        "tilers",
+    "concret":       "concreters",
+    "excavat":       "excavators",
+    "arborist":      "arborists",
+    "tree":          "arborists",
+    "insul":         "insulators",
+    "alarm":         "security",
+    "security":      "security",
+    "clean":         "cleaners",
+    "gas":           "gasfitters",
+    "drain":         "drainlayers",
+    "drainlay":      "drainlayers",
+}
 
 
 def log(msg):
@@ -56,70 +77,71 @@ def slugify(s):
     return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
 
 
-def scrape_page(page, trade_slug, region_slug, offset=0):
-    """Scrape one page of NoCowboys results. Returns list of dicts."""
-    nc_trade  = NC_TRADE_MAP.get(trade_slug, trade_slug)
-    nc_region = NC_REGION_MAP.get(region_slug, region_slug)
-    url = f"{BASE}/search?q={nc_trade}&location={nc_region}&page={offset // PER_PAGE + 1}"
+def parse_trade(summary_text):
+    """Extract trade slug from NoCowboys rating-summary text.
+    Format: '100% from N ratings – Located in Suburb (Xkm) – Trade Name / Sub-trade'
+    """
+    # Get the part after the last " – "
+    parts = re.split(r"\s*[–-]\s*", summary_text)
+    trade_raw = parts[-1].strip().lower() if parts else ""
+    for keyword, slug in TRADE_MAP.items():
+        if keyword in trade_raw:
+            return slug
+    # Fallback: use first word of trade string, slugified
+    first_word = re.sub(r"[^a-z0-9]+", "-", trade_raw.split("/")[0].strip()).strip("-")
+    return first_word or "other"
+
+
+def scrape_page(page, region_slug, region_label, page_num):
+    """Scrape one page of NoCowboys results for a city. Returns list of dicts."""
+    url = f"{BASE}/search?location={region_slug}&page={page_num}"
 
     try:
         page.goto(url, timeout=25000, wait_until="networkidle")
-        time.sleep(random.uniform(2.0, 3.5))
+        time.sleep(random.uniform(1.8, 3.0))
     except Exception as e:
         log(f"  Page load error: {e}")
         return []
 
-    results = []
-
-    # NoCowboys uses a CSS typo: "businsess-search-business" (confirmed Jun 2026)
     cards = page.query_selector_all(".businsess-search-business")
+    log(f"  Page {page_num}: {len(cards)} cards")
 
-    log(f"  Found {len(cards)} cards on page")
-
+    results = []
     for card in cards:
         try:
-            # Business name + profile URL
             name_el = card.query_selector("h3 a, h2 a")
             if not name_el:
                 continue
             name = name_el.inner_text().strip()
             if not name:
                 continue
+
             href = name_el.get_attribute("href") or ""
-            # Strip UTM params, build absolute URL
             href = re.sub(r"\?.*$", "", href)
             nc_url = href if href.startswith("http") else BASE + href
 
-            # Rating + review count from ".rating-summary" text
-            # Format: "100% from 25 ratings – Located in ..."
             rating = 0.0
             review_count = 0
+            trade = "other"
             summary_el = card.query_selector(".rating-summary")
             if summary_el:
                 txt = summary_el.inner_text()
                 pct_m = re.search(r"(\d+)%", txt)
                 rev_m = re.search(r"from (\d+) rating", txt)
                 if pct_m:
-                    rating = round(float(pct_m.group(1)) / 20, 1)  # 100% → 5.0
+                    rating = round(float(pct_m.group(1)) / 20, 1)
                 if rev_m:
                     review_count = int(rev_m.group(1))
-
-            # Location text from rating-summary (after "Located in")
-            location_text = ""
-            if summary_el:
-                loc_m = re.search(r"Located in ([^–\n]+)", summary_el.inner_text())
-                if loc_m:
-                    location_text = loc_m.group(1).strip()
+                trade = parse_trade(txt)
 
             results.append({
                 "name":          name,
-                "trade":         trade_slug,
-                "region":        REGIONS[[r[0] for r in REGIONS].index(region_slug)][1],
+                "trade":         trade,
+                "region":        region_label,
                 "phone":         "",
                 "nocowboys_url": nc_url,
                 "avg_rating":    rating,
                 "review_count":  review_count,
-                "location_raw":  location_text,
             })
 
         except Exception as e:
@@ -129,42 +151,10 @@ def scrape_page(page, trade_slug, region_slug, offset=0):
     return results
 
 
-def scrape_detail(page, nc_url):
-    """Visit a NoCowboys profile page to get extra detail (phone, rating)."""
-    if not nc_url:
-        return {}
-    try:
-        page.goto(nc_url, timeout=15000, wait_until="domcontentloaded")
-        time.sleep(random.uniform(1.0, 2.0))
-
-        phone = ""
-        phone_el = page.query_selector("[class*='phone'], [href^='tel:']")
-        if phone_el:
-            phone = (phone_el.get_attribute("href") or phone_el.inner_text() or "").replace("tel:", "").strip()
-
-        rating = 0.0
-        rating_el = page.query_selector("[class*='rating-value'], [class*='score-value'], [itemprop='ratingValue']")
-        if rating_el:
-            m = re.search(r"[\d.]+", rating_el.inner_text())
-            if m:
-                rating = float(m.group())
-
-        review_count = 0
-        review_el = page.query_selector("[class*='review-count'], [itemprop='reviewCount']")
-        if review_el:
-            m = re.search(r"\d+", review_el.inner_text())
-            if m:
-                review_count = int(m.group())
-
-        return {"phone": phone, "avg_rating": rating, "review_count": review_count}
-    except Exception:
-        return {}
-
-
 def main():
-    LOG.write_text("")  # clear log
+    LOG.write_text("")
     all_rows = []
-    seen_names = set()
+    seen = set()  # name|region
 
     with sync_playwright() as pw:
         browser = pw.chromium.launch(headless=True)
@@ -174,37 +164,48 @@ def main():
         )
         page = ctx.new_page()
 
-        for trade_slug, trade_label in TRADES:
-            for region_slug, region_label in REGIONS:
-                log(f"\n[{trade_label} / {region_label}]")
-                results = scrape_page(page, trade_slug, region_slug)
-
+        for region_slug, region_label in REGIONS:
+            log(f"\n=== {region_label} ===")
+            region_new = 0
+            for page_num in range(1, PAGES_PER_REGION + 1):
+                results = scrape_page(page, region_slug, region_label, page_num)
                 new = 0
                 for r in results:
-                    key = f"{slugify(r['name'])}|{r['region'].lower()}"
-                    if key in seen_names:
+                    key = f"{slugify(r['name'])}|{region_label.lower()}"
+                    if key in seen:
                         continue
-                    seen_names.add(key)
+                    seen.add(key)
                     all_rows.append(r)
                     new += 1
+                region_new += new
+                log(f"  → {new} new (running total: {len(all_rows)})")
+                if len(results) < 8:
+                    log(f"  Short page — stopping pagination for {region_label}")
+                    break
+                time.sleep(random.uniform(2.0, 3.5))
 
-                log(f"  → {new} new listings (total so far: {len(all_rows)})")
-                time.sleep(random.uniform(2.0, 4.0))
+            log(f"  {region_label} total: {region_new} new listings")
+            time.sleep(random.uniform(1.5, 3.0))
 
         browser.close()
 
     if not all_rows:
-        log("\nNo listings scraped — NoCowboys may have changed their HTML. Check selectors.")
+        log("\nNo listings scraped — check selectors.")
         return
 
-    # Write CSV
-    fields = ["name", "trade", "region", "phone", "nocowboys_url", "avg_rating", "review_count", "location_raw"]
+    fields = ["name", "trade", "region", "phone", "nocowboys_url", "avg_rating", "review_count"]
     with OUTPUT.open("w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=fields)
         w.writeheader()
         w.writerows(all_rows)
 
+    # Summary by region and trade
+    from collections import Counter
+    by_region = Counter(r["region"] for r in all_rows)
+    by_trade  = Counter(r["trade"]  for r in all_rows)
     log(f"\nDone. {len(all_rows)} listings saved to {OUTPUT}")
+    log("By region: " + ", ".join(f"{k}={v}" for k, v in by_region.most_common()))
+    log("By trade:  " + ", ".join(f"{k}={v}" for k, v in by_trade.most_common(10)))
 
 
 if __name__ == "__main__":
