@@ -63,73 +63,63 @@ def scrape_page(page, trade_slug, region_slug, offset=0):
     url = f"{BASE}/search?q={nc_trade}&location={nc_region}&page={offset // PER_PAGE + 1}"
 
     try:
-        page.goto(url, timeout=20000, wait_until="domcontentloaded")
-        time.sleep(random.uniform(1.5, 3.0))
+        page.goto(url, timeout=25000, wait_until="networkidle")
+        time.sleep(random.uniform(2.0, 3.5))
     except Exception as e:
         log(f"  Page load error: {e}")
         return []
 
     results = []
 
-    # NoCowboys business cards — selector may need tuning
-    cards = page.query_selector_all(".search-result, .business-card, [data-testid='business-card'], .listing-card")
-    if not cards:
-        # Fallback: try broader selectors
-        cards = page.query_selector_all("article, .result-item, .contractor-item")
+    # NoCowboys uses a CSS typo: "businsess-search-business" (confirmed Jun 2026)
+    cards = page.query_selector_all(".businsess-search-business")
 
     log(f"  Found {len(cards)} cards on page")
 
     for card in cards:
         try:
-            # Business name
-            name_el = card.query_selector("h2, h3, .business-name, .name, a[href*='/contractors/']")
-            name = name_el.inner_text().strip() if name_el else ""
+            # Business name + profile URL
+            name_el = card.query_selector("h3 a, h2 a")
+            if not name_el:
+                continue
+            name = name_el.inner_text().strip()
             if not name:
                 continue
+            href = name_el.get_attribute("href") or ""
+            # Strip UTM params, build absolute URL
+            href = re.sub(r"\?.*$", "", href)
+            nc_url = href if href.startswith("http") else BASE + href
 
-            # NoCowboys profile URL
-            link_el = card.query_selector("a[href*='/contractors/'], a[href*='/businesses/']")
-            nc_url = ""
-            if link_el:
-                href = link_el.get_attribute("href") or ""
-                nc_url = href if href.startswith("http") else BASE + href
-
-            # Phone (often hidden behind "show number")
-            phone_el = card.query_selector(".phone, [data-phone], .contact-phone")
-            phone = phone_el.inner_text().strip() if phone_el else ""
-            phone = re.sub(r"[^\d\s+()-]", "", phone).strip()
-
-            # Rating
+            # Rating + review count from ".rating-summary" text
+            # Format: "100% from 25 ratings – Located in ..."
             rating = 0.0
-            rating_el = card.query_selector(".rating, .stars, [class*='rating'], [class*='score']")
-            if rating_el:
-                txt = rating_el.get_attribute("data-rating") or rating_el.inner_text()
-                m = re.search(r"[\d.]+", txt)
-                if m:
-                    rating = float(m.group())
-
-            # Review count
             review_count = 0
-            review_el = card.query_selector(".review-count, .reviews, [class*='review']")
-            if review_el:
-                txt = review_el.inner_text()
-                m = re.search(r"\d+", txt)
-                if m:
-                    review_count = int(m.group())
+            summary_el = card.query_selector(".rating-summary")
+            if summary_el:
+                txt = summary_el.inner_text()
+                pct_m = re.search(r"(\d+)%", txt)
+                rev_m = re.search(r"from (\d+) rating", txt)
+                if pct_m:
+                    rating = round(float(pct_m.group(1)) / 20, 1)  # 100% → 5.0
+                if rev_m:
+                    review_count = int(rev_m.group(1))
 
-            # Region text
-            location_el = card.query_selector(".location, .area, [class*='location']")
-            location_text = location_el.inner_text().strip() if location_el else ""
+            # Location text from rating-summary (after "Located in")
+            location_text = ""
+            if summary_el:
+                loc_m = re.search(r"Located in ([^–\n]+)", summary_el.inner_text())
+                if loc_m:
+                    location_text = loc_m.group(1).strip()
 
             results.append({
-                "name":         name,
-                "trade":        trade_slug,
-                "region":       REGIONS[[r[0] for r in REGIONS].index(region_slug)][1],
-                "phone":        phone,
+                "name":          name,
+                "trade":         trade_slug,
+                "region":        REGIONS[[r[0] for r in REGIONS].index(region_slug)][1],
+                "phone":         "",
                 "nocowboys_url": nc_url,
-                "avg_rating":   rating,
-                "review_count": review_count,
-                "location_raw": location_text,
+                "avg_rating":    rating,
+                "review_count":  review_count,
+                "location_raw":  location_text,
             })
 
         except Exception as e:
