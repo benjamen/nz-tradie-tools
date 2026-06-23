@@ -13,9 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://tradietools.optified.nz">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap">
-    <title>{{ business.business_name }} — {{ business.trade_name }} in {{ business.city_name }}, NZ</title>
-    <meta name="description" content="{{ business.tagline }}. Rated {{ business.rating }}/5 from {{ business.review_count }} reviews. Contact: {{ business.phone }}.">
-    <meta property="og:title" content="{{ business.business_name }} — {{ business.trade_name }} in {{ business.city_name }}">
+    <title>{{ business.business_name }} — {{ business.trade_name }} {% if business.national %}NZ-wide{% else %}in {{ business.city_name }}, NZ{% endif %}</title>
+    <meta name="description" content="{{ business.tagline }}. {% if business.review_count %}Rated {{ business.rating }}/5 from {{ business.review_count }} reviews. {% endif %}{% if business.phone %}Contact: {{ business.phone }}.{% endif %}">
+    <meta property="og:title" content="{{ business.business_name }} — {{ business.trade_name }} {% if business.national %}NZ-wide{% else %}in {{ business.city_name }}{% endif %}">
     <meta property="og:description" content="{{ business.tagline }}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ base_url }}/businesses/{{ business.slug }}/">
@@ -157,7 +157,7 @@
                     <span class="badge badge-claimed">✓ Owner managed</span>
                 </div>
 
-                <p style="font-size:.9rem;color:#555;margin:.5rem 0">📍 {{ business.suburb }}, {{ business.city_name }}</p>
+                <p style="font-size:.9rem;color:#555;margin:.5rem 0">📍 {% if business.national %}NZ-wide ({{ business.areas_served | join(', ') }}){% else %}{{ business.suburb }}{% if business.suburb and business.city_name %}, {% endif %}{{ business.city_name }}{% endif %}</p>
 
                 <div class="contact-buttons">
                     {% if business.phone %}

@@ -297,6 +297,12 @@ def build_trades_and_locations(config, env, nav, base_path):
         (trade_dir / "index.html").write_text(hub_html, encoding="utf-8")
         trades_count += 1
 
+        # Collect national/multi-city claimed businesses for this trade
+        national_claimed = [
+            b for b in claimed.values()
+            if b.get("trade") == trade["slug"] and b.get("national")
+        ]
+
         # City pages for this trade
         for city in cities:
             data = city_data.get(city["slug"], {})
@@ -311,11 +317,32 @@ def build_trades_and_locations(config, env, nav, base_path):
                 else:
                     b["profile_url"] = None
                 businesses.append(b)
+            # Inject national claimed businesses that serve this city
+            featured_businesses = []
+            for fb in national_claimed:
+                areas = [a.lower() for a in fb.get("areas_served", [])]
+                if not areas or city["name"].lower() in areas or city["slug"] in areas:
+                    featured_businesses.append({
+                        **fb,
+                        "profile_url": f"/businesses/{fb['slug']}/",
+                    })
+            # Also inject city-specific claimed businesses not already in top10
+            top10_slugs = {slugify(b.get("name", "")) for b in data.get("businesses", [])}
+            for fb in claimed.values():
+                if (fb.get("trade") == trade["slug"]
+                        and fb.get("city") == city["slug"]
+                        and not fb.get("national")
+                        and fb["slug"] not in top10_slugs):
+                    featured_businesses.append({
+                        **fb,
+                        "profile_url": f"/businesses/{fb['slug']}/",
+                    })
             ctx = {
                 **shared,
                 "trade": trade,
                 "city": city,
                 "businesses": businesses,
+                "featured_businesses": featured_businesses,
                 "regional_cost_note": data.get("regional_cost_note", ""),
                 "updated": data.get("updated", str(year)),
                 "other_cities": other_cities,

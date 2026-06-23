@@ -114,6 +114,28 @@
             {% endif %}
 
 
+            {% if featured_businesses %}
+            <div style="margin-bottom:1.5rem">
+                <h2 style="font-size:1.05rem;color:#5b21b6;font-weight:700;margin:0 0 .75rem;text-transform:uppercase;letter-spacing:.04em">✅ Verified Listings</h2>
+                {% for fb in featured_businesses %}
+                <div class="business-card" style="border-left:4px solid #5b21b6;background:#faf5ff">
+                    <div class="business-name">{{ fb.business_name }}</div>
+                    <div class="business-meta">
+                        {% if fb.phone %}<span>📞 {{ fb.phone }}</span>{% endif %}
+                        {% if fb.suburb %}<span>📍 {{ fb.suburb }}</span>{% endif %}
+                        <span style="color:#5b21b6;font-weight:600">✅ Verified {% if fb.national %}· NZ-wide{% else %}· Local{% endif %}</span>
+                    </div>
+                    <div class="known-for">{{ fb.known_for }}</div>
+                    {% if fb.areas_served %}<div style="font-size:.82rem;color:#666;margin-top:.35rem">📍 Serves: {{ fb.areas_served | join(' · ') }}</div>{% endif %}
+                    <div style="margin-top:.6rem;display:flex;gap:.5rem;flex-wrap:wrap">
+                        {% if fb.profile_url %}<a href="{{ fb.profile_url }}" class="btn-profile">View profile →</a>{% endif %}
+                        {% if fb.website %}<a href="{{ fb.website }}" target="_blank" rel="noopener nofollow" style="font-size:.82rem;color:#0055a5">Visit website ↗</a>{% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+
             {% if businesses %}
             <div class="top10-list">
                 {% for b in businesses %}
