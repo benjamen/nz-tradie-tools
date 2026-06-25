@@ -682,3 +682,53 @@ In conclusion, the market for seismic strengthening in New Zealand is growing ra
 For building owners and managers, it's essential to understand the costs and benefits of seismic strengthening, as well as the potential risks and penalties of non-compliance. By working with experienced contractors and engineers, building owners can ensure that their buildings are safe, compliant, and resilient in the face of earthquakes and other natural disasters.
 
 To learn more about the costs and benefits of seismic strengthening, and to get a better understanding of the market opportunities and challenges, we recommend visiting our website at tradietools.nz/calculators/. Here, you can find a range of tools and resources, including calculators and estimators, to help you plan and budget for your seismic strengthening project. With the right skills, expertise, and resources, you can ensure that your building is safe, resilient, and compliant with the latest building standards.
+
+## Grants and Funding for Earthquake Strengthening
+
+Earthquake strengthening can be a costly process, but there are various grants and funding options available to help building owners mitigate the expenses. One such programme is the Heritage EQUIP programme, a government grant specifically designed for heritage buildings in Wellington and Christchurch. This programme provides financial assistance of up to $100,000 per project to help owners of heritage buildings strengthen their properties against earthquakes. The grant can cover up to 50% of the total strengthening costs, with the remaining amount to be funded by the building owner.
+
+In addition to government grants, bank finance options are also available for building owners who need to undertake earthquake strengthening work. Some banks offer specialized loans with competitive interest rates and flexible repayment terms, allowing building owners to spread the cost of strengthening over a longer period. For example, a $200,000 loan to cover earthquake strengthening costs could be repayable over 10 years at an interest rate of 6% per annum, resulting in monthly repayments of around $2,100.
+
+The Wellington City Council has also introduced an earthquake-prone building policy, which requires building owners to strengthen their properties within a 25-year timeframe. This policy aims to ensure that all earthquake-prone buildings in Wellington are strengthened to at least 34% of the New Building Standard (NBS) within the specified timeframe. Building owners who fail to comply with this policy may face significant fines and penalties.
+
+It's also important to note that insurance implications can be significant for buildings that are below 34% NBS. Many insurance companies are now requiring building owners to strengthen their properties to at least 34% NBS in order to maintain insurance coverage. Failure to do so could result in reduced or cancelled insurance coverage, leaving building owners exposed to significant financial risks in the event of an earthquake. For example, a building owner who fails to strengthen their property to 34% NBS may face an increase in insurance premiums of up to 20% per annum, or even a complete loss of insurance coverage.
+
+## For NZ Contractors — Business Opportunities
+
+The seismic strengthening market in New Zealand is a significant and growing industry, with an estimated $5-10 billion of work to be undertaken nationally over the next 20 years. This presents a substantial opportunity for contractors who specialize in seismic strengthening work, including structural engineers, concreters, steel fabricators, heritage restoration specialists, and scaffolders.
+
+To position your business for success in this market, it's essential to get on approved contractor lists for councils and other major clients. This can involve demonstrating your expertise and experience in seismic strengthening work, as well as meeting specific certification and accreditation requirements. Working with structural engineering firms as the hands-on contractor can also be a lucrative opportunity, as these firms often require skilled contractors to undertake the physical strengthening work.
+
+Certifications such as the Licensed Building Practitioner (LBP) in the Structural category can also be beneficial for contractors looking to work in the seismic strengthening market. This certification demonstrates a high level of competence and expertise in structural work, and can help to differentiate your business from competitors. Membership of professional organizations such as IPENZ (Institution of Professional Engineers New Zealand) can also be beneficial for engineers and other professionals working in the seismic strengthening industry.
+
+The market for seismic strengthening work differs significantly between Wellington, Christchurch, and Auckland. Wellington, for example, has a high concentration of heritage buildings that require specialized strengthening work, while Christchurch has a large number of buildings that were damaged in the 2011 earthquakes and require significant repair and strengthening work. Auckland, on the other hand, has a growing demand for seismic strengthening work due to its rapidly expanding population and economy. Contractors who can adapt to these different market conditions and requirements are likely to be most successful in the seismic strengthening industry.
+
+## FAQ
+
+1. **Does my residential home need earthquake strengthening in NZ?**
+
+Not all residential homes in New Zealand require earthquake strengthening, but it's essential to have your property assessed by a qualified structural engineer to determine its seismic resilience. If your home was built before 1976, it may not meet current building standards and could require strengthening work to ensure it can withstand earthquakes. The cost of earthquake strengthening for a residential home can range from $50,000 to $200,000 or more, depending on the size and type of property, as well as the extent of the strengthening work required.
+
+2. **Who pays for earthquake strengthening — the landlord or tenant?**
+
+In most cases, the landlord is responsible for paying for earthquake strengthening work, as it is their responsibility to ensure the building is safe and compliant with building regulations. However, the cost of strengthening work can be passed on to tenants through increased rent, provided the landlord can demonstrate that the work is necessary and reasonable. For example, if a landlord undertakes $100,000 of earthquake strengthening work, they may be able to increase the rent by $50-100 per week to recover the costs.
+
+3. **Can I do earthquake strengthening work without building consent?**
+
+No, earthquake strengthening work typically requires building consent, as it involves significant alterations to the building's structure. Building consent ensures that the work is undertaken to a high standard and meets current building regulations, including the New Building Standard (NBS). Failure to obtain building consent can result in significant fines and penalties, as well as potential safety risks for building occupants. The cost of obtaining building consent can range from $5,000 to $20,000 or more, depending on the complexity of the project and the local council's fees.
+
+4. **How long does seismic strengthening work take?**
+
+The duration of seismic strengthening work can vary significantly, depending on the scope and complexity of the project. Simple strengthening work, such as installing bracing systems, can take several weeks to complete, while more extensive work, such as replacing foundations or installing new structural elements, can take several months or even years to complete. For example, a small residential home may require 2-3 months of strengthening work, while a large commercial building may require 6-12 months or more.
+
+5. **What happens if I don't strengthen a building identified as earthquake prone?**
+
+If you fail to strengthen a building that has been identified as earthquake prone, you may face significant fines and penalties, as well as potential safety risks for building occupants. In extreme cases, the building may be deemed unsafe and ordered to be demolished. Additionally, insurance companies may refuse to provide coverage for the building, leaving you exposed to significant financial risks in the event of an earthquake. For example, a building owner who fails to strengthen a property in Wellington may face fines of up to $200,000, as well as potential legal action from tenants or other stakeholders.
+
+## Conclusion
+
+The seismic strengthening market in New Zealand is a growing and significant industry, with an estimated $5-10 billion of work to be undertaken over the next 20 years. This presents a substantial opportunity for contractors who specialize in seismic strengthening work, including structural engineers, concreters, steel fabricators, heritage restoration specialists, and scaffolders. To succeed in this market, contractors need to demonstrate their expertise and experience, as well as meet specific certification and accreditation requirements.
+
+For building owners, earthquake strengthening can be a costly and complex process, but it's essential to ensure the safety and resilience of their properties. With the right funding and support, including government grants and bank finance options, building owners can undertake the necessary strengthening work to protect their investments and occupants.
+
+To learn more about the costs and requirements of earthquake strengthening, visit our website at tradietools.nz/calculators/, where you can access a range of project estimators and other resources to help you plan and budget for your strengthening work. With the right expertise and resources, you can ensure that your building is safe, resilient, and compliant with current building regulations.
