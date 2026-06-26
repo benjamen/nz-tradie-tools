@@ -143,6 +143,14 @@
                     <p class="profile-sub" id="biz-sub">—</p>
                     <span class="badge badge-free" id="tier-badge">Free</span>
                     <span class="badge badge-active" id="active-badge" style="display:none;margin-left:.35rem">Active</span>
+                    <div style="margin-top:.6rem;display:flex;align-items:center;gap:.5rem">
+                        <label style="position:relative;display:inline-block;width:42px;height:24px;cursor:pointer">
+                            <input type="checkbox" id="toggle-taking-work" style="opacity:0;width:0;height:0" onchange="toggleAvailability(this.checked)">
+                            <span id="toggle-track" style="position:absolute;inset:0;background:#cbd5e1;border-radius:24px;transition:background .2s"></span>
+                            <span id="toggle-thumb" style="position:absolute;top:3px;left:3px;width:18px;height:18px;background:#fff;border-radius:50%;transition:transform .2s;box-shadow:0 1px 3px rgba(0,0,0,.3)"></span>
+                        </label>
+                        <span id="avail-label" style="font-size:.82rem;color:var(--muted)">Taking work</span>
+                    </div>
                 </div>
             </div>
 
@@ -378,6 +386,41 @@ function renderDashboard(d) {
     // Show photos section and load photos
     document.getElementById('photos-section').style.display = 'block';
     loadPhotos();
+
+    // Availability toggle initial state
+    var tw = d.taking_work !== undefined ? !!d.taking_work : true;
+    setToggleUI(tw);
+}
+
+function setToggleUI(on) {
+    var cb    = document.getElementById('toggle-taking-work');
+    var track = document.getElementById('toggle-track');
+    var thumb = document.getElementById('toggle-thumb');
+    var label = document.getElementById('avail-label');
+    if (!cb) return;
+    cb.checked = on;
+    track.style.background = on ? '#16a34a' : '#cbd5e1';
+    thumb.style.transform   = on ? 'translateX(18px)' : 'translateX(0)';
+    label.textContent = on ? 'Taking work' : 'Busy — leads paused';
+    label.style.color = on ? '#15803d' : '#dc2626';
+}
+
+function toggleAvailability(on) {
+    setToggleUI(on);
+    fetch(API + 'toggle_availability', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json', 'X-Frappe-CSRF-Token': 'fetch'},
+        body: JSON.stringify({tradie_id: TRADIE_ID, email: TRADIE_EMAIL, taking_work: on})
+    })
+    .then(function(r){ return r.json(); })
+    .then(function(json){
+        var d = json.message || json;
+        if (!d.success) {
+            setToggleUI(!on); // revert
+            alert('Could not update availability — please try again.');
+        }
+    })
+    .catch(function(){ setToggleUI(!on); });
 }
 
 function saveListing() {
