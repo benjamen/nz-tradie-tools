@@ -246,6 +246,25 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Portfolio Photos -->
+            <div class="section-card" id="photos-section" style="display:none">
+                <div class="section-head">
+                    <h2>Portfolio Photos</h2>
+                    <span style="font-size:.8rem;color:var(--muted)" id="photo-count-label">0 / 20</span>
+                </div>
+                <div class="section-body">
+                    <p style="font-size:.88rem;color:var(--muted);margin-bottom:1rem">Add photos of your work to showcase your quality to potential customers. Up to 20 photos, max 5 MB each (JPEG/PNG/WebP).</p>
+                    <div id="photo-gallery" style="display:flex;flex-wrap:wrap;gap:.75rem;margin-bottom:1.25rem"></div>
+                    <div style="display:flex;align-items:center;gap:.75rem;flex-wrap:wrap">
+                        <label for="photo-file-input" style="display:inline-flex;align-items:center;gap:.4rem;background:#0055a5;color:#fff;padding:.55rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;cursor:pointer">
+                            <span>+ Add photo</span>
+                        </label>
+                        <input type="file" id="photo-file-input" accept="image/jpeg,image/png,image/webp" style="display:none" onchange="handlePhotoSelect(event)">
+                        <span id="photo-upload-msg" style="font-size:.85rem;color:var(--muted)"></span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -355,6 +374,10 @@ function renderDashboard(d) {
     if (d.response_time_label) {
         document.getElementById('f-response').value = d.response_time_label;
     }
+
+    // Show photos section and load photos
+    document.getElementById('photos-section').style.display = 'block';
+    loadPhotos();
 }
 
 function saveListing() {
@@ -396,6 +419,90 @@ function saveListing() {
         btn.textContent = 'Save changes';
         alert('Save failed. Please try again.');
     });
+}
+
+// ── Portfolio photos ───────────────────────────────────────────────────────
+function loadPhotos() {
+    if (!TRADIE_ID) return;
+    fetch(API + 'get_photos?tradie_id=' + encodeURIComponent(TRADIE_ID))
+        .then(function(r){ return r.json(); })
+        .then(function(json){
+            var d = json.message || json;
+            renderPhotoGallery(d.photos || []);
+        })
+        .catch(function(){});
+}
+
+function renderPhotoGallery(photos) {
+    var gallery = document.getElementById('photo-gallery');
+    document.getElementById('photo-count-label').textContent = photos.length + ' / 20';
+    if (!photos.length) {
+        gallery.innerHTML = '<p style="font-size:.88rem;color:var(--muted);margin:0">No photos yet — add your first one below.</p>';
+        return;
+    }
+    gallery.innerHTML = photos.map(function(p) {
+        return '<div style="position:relative;width:110px;height:90px;border-radius:8px;overflow:hidden;border:1px solid var(--border)">'
+            + '<img src="' + esc(p.url) + '" style="width:100%;height:100%;object-fit:cover" loading="lazy" alt="' + esc(p.caption || '') + '">'
+            + '<button onclick="deletePhoto(' + p.id + ')" title="Delete photo" style="position:absolute;top:4px;right:4px;background:rgba(0,0,0,.6);color:#fff;border:none;border-radius:50%;width:22px;height:22px;font-size:12px;cursor:pointer;line-height:22px;text-align:center;padding:0">✕</button>'
+            + '</div>';
+    }).join('');
+}
+
+function handlePhotoSelect(event) {
+    var file = event.target.files[0];
+    if (!file) return;
+    var msgEl = document.getElementById('photo-upload-msg');
+    if (file.size > 5 * 1024 * 1024) {
+        msgEl.style.color = '#dc2626';
+        msgEl.textContent = 'File too large (max 5 MB)';
+        return;
+    }
+    msgEl.style.color = 'var(--muted)';
+    msgEl.textContent = 'Uploading…';
+    var reader = new FileReader();
+    reader.onload = function(e) {
+        var b64 = e.target.result; // full data URL
+        fetch(API + 'upload_portfolio_file', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json', 'X-Frappe-CSRF-Token': 'fetch'},
+            body: JSON.stringify({tradie_id: TRADIE_ID, lead_token: TOKEN, file_b64: b64, filename: file.name})
+        })
+        .then(function(r){ return r.json(); })
+        .then(function(json){
+            var d = json.message || json;
+            if (d.success) {
+                msgEl.style.color = '#16a34a';
+                msgEl.textContent = 'Photo added!';
+                loadPhotos();
+                setTimeout(function(){ msgEl.textContent = ''; }, 3000);
+            } else {
+                msgEl.style.color = '#dc2626';
+                msgEl.textContent = d.error || 'Upload failed';
+            }
+            event.target.value = '';
+        })
+        .catch(function(){
+            msgEl.style.color = '#dc2626';
+            msgEl.textContent = 'Upload failed — please try again';
+            event.target.value = '';
+        });
+    };
+    reader.readAsDataURL(file);
+}
+
+function deletePhoto(photoId) {
+    if (!confirm('Delete this photo?')) return;
+    fetch(API + 'delete_photo', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json', 'X-Frappe-CSRF-Token': 'fetch'},
+        body: JSON.stringify({photo_id: photoId, lead_token: TOKEN})
+    })
+    .then(function(r){ return r.json(); })
+    .then(function(json){
+        var d = json.message || json;
+        if (d.success) loadPhotos();
+    })
+    .catch(function(){});
 }
 
 loadDashboard();
