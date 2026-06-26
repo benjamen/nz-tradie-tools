@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Review Moderation — TradieTools Admin</title>
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background: #f1f5f9; color: #1e293b; }
+    .topbar { background: #0055a5; color: #fff; padding: .85rem 1.5rem; display: flex; align-items: center; gap: 1rem; }
+    .topbar h1 { font-size: 1rem; font-weight: 700; }
+    .topbar .badge { background: rgba(255,255,255,.2); border-radius: 999px; padding: .15rem .6rem; font-size: .8rem; }
+    .wrap { max-width: 860px; margin: 2rem auto; padding: 0 1rem 4rem; }
+    .login-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 2rem; max-width: 400px; margin: 4rem auto; }
+    .login-card h2 { margin-bottom: 1rem; font-size: 1.1rem; }
+    .login-card input { width: 100%; padding: .65rem .85rem; border: 1px solid #cbd5e1; border-radius: 6px; font-size: .95rem; margin-bottom: .75rem; }
+    .login-card button { width: 100%; padding: .7rem; background: #0055a5; color: #fff; border: none; border-radius: 6px; font-size: .95rem; font-weight: 700; cursor: pointer; }
+    #main { display: none; }
+    .stats-bar { display: flex; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
+    .stat { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: .75rem 1.25rem; flex: 1; min-width: 120px; }
+    .stat .n { font-size: 1.6rem; font-weight: 700; color: #0055a5; }
+    .stat .l { font-size: .8rem; color: #64748b; margin-top: .1rem; }
+    .review-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; }
+    .rc-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; flex-wrap: wrap; }
+    .rc-meta { font-size: .82rem; color: #64748b; margin: .3rem 0 .75rem; }
+    .rc-body { color: #334155; font-size: .92rem; line-height: 1.55; background: #f8fafc; border-radius: 6px; padding: .75rem 1rem; margin-bottom: .85rem; }
+    .rc-tradie { font-size: .82rem; color: #475569; margin-bottom: .75rem; }
+    .rc-tradie a { color: #0055a5; }
+    .actions { display: flex; gap: .5rem; }
+    .btn-approve { background: #16a34a; color: #fff; border: none; border-radius: 5px; padding: .45rem 1rem; font-size: .88rem; font-weight: 600; cursor: pointer; font-family: inherit; }
+    .btn-reject  { background: #dc2626; color: #fff; border: none; border-radius: 5px; padding: .45rem 1rem; font-size: .88rem; font-weight: 600; cursor: pointer; font-family: inherit; }
+    .btn-approve:hover { background: #15803d; }
+    .btn-reject:hover  { background: #b91c1c; }
+    .stars { color: #f59e0b; font-size: 1rem; letter-spacing: .05em; }
+    .empty { text-align: center; padding: 3rem; color: #64748b; }
+    .empty .icon { font-size: 3rem; margin-bottom: .75rem; }
+    .done-badge { display: inline-block; background: #dcfce7; color: #166534; font-size: .78rem; padding: .2rem .6rem; border-radius: 4px; font-weight: 600; margin-left: .5rem; vertical-align: middle; }
+    .rej-badge  { display: inline-block; background: #fee2e2; color: #991b1b; font-size: .78rem; padding: .2rem .6rem; border-radius: 4px; font-weight: 600; margin-left: .5rem; vertical-align: middle; }
+  </style>
+</head>
+<body>
+
+<div id="login-wrap">
+  <div class="login-card">
+    <h2>TradieTools — Review Moderation</h2>
+    <p style="font-size:.88rem;color:#64748b;margin-bottom:1rem">Enter the admin token to access pending reviews.</p>
+    <input type="password" id="token-input" placeholder="Admin token" autocomplete="off">
+    <button onclick="doLogin()">Access moderation queue →</button>
+    <p id="login-err" style="color:#dc2626;font-size:.85rem;margin-top:.5rem;display:none">Invalid token.</p>
+  </div>
+</div>
+
+<div id="main">
+  <div class="topbar">
+    <h1>TradieTools — Review Moderation</h1>
+    <span class="badge" id="pending-count-badge">Loading…</span>
+    <span style="margin-left:auto;font-size:.82rem;opacity:.8"><a href="/" style="color:#fff">← Back to site</a></span>
+  </div>
+  <div class="wrap">
+    <div class="stats-bar">
+      <div class="stat"><div class="n" id="stat-pending">—</div><div class="l">Pending</div></div>
+      <div class="stat"><div class="n" id="stat-approved">—</div><div class="l">Approved today</div></div>
+    </div>
+    <div id="review-list"></div>
+  </div>
+</div>
+
+<script>
+const API = 'https://tradietools.optified.nz/api/method/tradietools.api.';
+let ADMIN_TOKEN = '';
+
+function doLogin() {
+  const t = document.getElementById('token-input').value.trim();
+  if (!t) return;
+  // Test token by calling get_pending_reviews
+  fetch(API + 'get_pending_reviews?admin_token=' + encodeURIComponent(t))
+    .then(r => r.json())
+    .then(d => {
+      const m = d.message || d;
+      if (m.error || !m.success) {
+        document.getElementById('login-err').style.display = 'block';
+        return;
+      }
+      ADMIN_TOKEN = t;
+      localStorage.setItem('tt_admin_token', t);
+      document.getElementById('login-wrap').style.display = 'none';
+      document.getElementById('main').style.display = 'block';
+      renderReviews(m.pending || []);
+    })
+    .catch(() => { document.getElementById('login-err').style.display = 'block'; });
+}
+
+function renderReviews(reviews) {
+  const list = document.getElementById('review-list');
+  document.getElementById('stat-pending').textContent = reviews.length;
+  document.getElementById('pending-count-badge').textContent = reviews.length + ' pending';
+
+  if (!reviews.length) {
+    list.innerHTML = '<div class="empty"><div class="icon">✅</div><p>No pending reviews — queue is clear!</p></div>';
+    return;
+  }
+
+  list.innerHTML = reviews.map(r => {
+    const stars = '★'.repeat(r.rating) + '☆'.repeat(5 - r.rating);
+    const date = r.created_at ? new Date(r.created_at).toLocaleDateString('en-NZ') : '';
+    const profileUrl = r.listing_slug ? '/businesses/' + r.listing_slug + '/' : '#';
+    return `<div class="review-card" id="card-${r.id}">
+      <div class="rc-head">
+        <div>
+          <strong>${esc(r.reviewer_name)}</strong>
+          <span class="stars">${stars}</span>
+          <span style="font-size:.82rem;color:#64748b">${r.rating}/5</span>
+        </div>
+        <div class="actions">
+          <button class="btn-approve" onclick="moderate(${r.id},'approve')">✓ Approve</button>
+          <button class="btn-reject"  onclick="moderate(${r.id},'reject')">✗ Reject</button>
+        </div>
+      </div>
+      <div class="rc-meta">${date} · Review #${r.id}</div>
+      <div class="rc-tradie">Tradie: <a href="${profileUrl}" target="_blank">${esc(r.tradie_name || String(r.tradie_id))}</a></div>
+      <div class="rc-body">${esc(r.preview || '')}</div>
+    </div>`;
+  }).join('');
+}
+
+function moderate(reviewId, action) {
+  const card = document.getElementById('card-' + reviewId);
+  fetch(API + 'moderate_review', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'X-Frappe-CSRF-Token': 'fetch' },
+    body: JSON.stringify({ review_id: reviewId, action, admin_token: ADMIN_TOKEN })
+  })
+  .then(r => r.json())
+  .then(d => {
+    const m = d.message || d;
+    if (m.success) {
+      const badge = action === 'approve'
+        ? '<span class="done-badge">Approved ✓</span>'
+        : '<span class="rej-badge">Rejected ✗</span>';
+      card.querySelector('.actions').outerHTML = badge;
+      // Update pending count
+      const remaining = document.querySelectorAll('.btn-approve').length;
+      document.getElementById('stat-pending').textContent = remaining;
+      document.getElementById('pending-count-badge').textContent = remaining + ' pending';
+    } else {
+      alert('Error: ' + (m.error || 'Unknown'));
+    }
+  })
+  .catch(() => alert('Network error'));
+}
+
+function esc(s) {
+  return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// Auto-login if token saved
+window.addEventListener('DOMContentLoaded', () => {
+  const saved = localStorage.getItem('tt_admin_token');
+  if (saved) {
+    document.getElementById('token-input').value = saved;
+    doLogin();
+  }
+  document.getElementById('token-input').addEventListener('keydown', e => {
+    if (e.key === 'Enter') doLogin();
+  });
+});
+</script>
+</body>
+</html>
