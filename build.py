@@ -154,6 +154,67 @@ _TRADE_URL_MAP = {
     "Window Installer":    "builder",
 }
 
+_CALC_EMBED_MAP = [
+    ("heat-pump",               "heat-pump-sizing-calculator"),
+    ("air-condition",           "heat-pump-sizing-calculator"),
+    ("kitchen-renovation",      "kitchen-renovation-calculator"),
+    ("kitchen-benchtop",        "kitchen-renovation-calculator"),
+    ("kitchen-splashback",      "kitchen-renovation-calculator"),
+    ("bathroom-renovation",     "bathroom-renovation-calculator"),
+    ("bathroom-tiling",         "tile-calculator"),
+    ("bathroom-vanity",         "bathroom-renovation-calculator"),
+    ("deck-building",           "decking-calculator"),
+    ("deck-cost",               "decking-calculator"),
+    ("building-a-deck",         "decking-calculator"),
+    ("deck-repair",             "decking-calculator"),
+    ("concrete-driveway",       "concrete-calculator"),
+    ("concreter-pricing",       "concrete-calculator"),
+    ("concrete-cutting",        "concrete-calculator"),
+    ("paving",                  "paving-calculator"),
+    ("fence-installation",      "fence-calculator"),
+    ("how-to-build-a-fence",    "fence-calculator"),
+    ("fence-painting",          "paint-calculator"),
+    ("tile",                    "tile-calculator"),
+    ("insulation-installation", "insulation-calculator"),
+    ("home-insulation",         "insulation-calculator"),
+    ("winter-insulation",       "insulation-calculator"),
+    ("roof-replacement",        "roof-area-calculator"),
+    ("roof-painting",           "paint-calculator"),
+    ("roof-repair",             "roof-area-calculator"),
+    ("roofer-pricing",          "roof-area-calculator"),
+    ("solar-panel",             "solar-savings-calculator"),
+    ("solar-hot-water",         "solar-savings-calculator"),
+    ("hot-water-cylinder",      "hot-water-cylinder-calculator"),
+    ("pool-installation",       "pool-volume-calculator"),
+    ("pool-cost",               "pool-volume-calculator"),
+    ("exterior-house-painting", "paint-calculator"),
+    ("interior-painting",       "paint-calculator"),
+    ("painter-pricing",         "paint-calculator"),
+    ("how-to-paint-a-room",     "paint-calculator"),
+    ("waterproof",              "waterproofing-calculator"),
+    ("irrigation",              "irrigation-calculator"),
+    ("timber-flooring",         "carpet-flooring-calculator"),
+    ("home-renovation-budget",  "home-renovation-cost-calculator"),
+    ("home-renovation-check",   "home-renovation-cost-calculator"),
+    ("electrician-cost",        "job-cost-calculator"),
+    ("electrician-pricing",     "job-cost-calculator"),
+    ("plumber-pricing",         "job-cost-calculator"),
+    ("plumber-auckland",        "job-cost-calculator"),
+    ("staircase-renovation",    "staircase-calculator"),
+    ("retaining-wall",          "retaining-wall-calculator"),
+    ("scaffolding",             "scaffolding-calculator"),
+    ("gib",                     "gib-plasterboard-calculator"),
+    ("skip-bin",                "skip-bin-calculator"),
+]
+
+def _infer_calc_from_slug(slug):
+    s = slug.lower()
+    for kw, calc in _CALC_EMBED_MAP:
+        if kw in s:
+            return calc
+    return None
+
+
 def _infer_trade_from_slug(slug):
     s = slug.lower()
     for kw, display in _TRADE_SLUG_MAP:
@@ -307,6 +368,7 @@ def process_page(md_file, config, env, layout_name, section, nav, base_path, art
     related_articles_data = [articles_by_slug[s] for s in related_slugs if articles_by_slug and s in articles_by_slug]
 
     trade_display, trade_slug = _infer_trade_from_slug(slug)
+    embedded_calculator = _infer_calc_from_slug(slug)
     ctx = {
         **config,
         "base_path": base_path,
@@ -332,6 +394,7 @@ def process_page(md_file, config, env, layout_name, section, nav, base_path, art
         "related_articles_data": related_articles_data,
         "inferred_trade": trade_display,
         "inferred_trade_slug": trade_slug,
+        "embedded_calculator": embedded_calculator,
     }
 
     rendered = template.render(**ctx)
