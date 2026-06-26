@@ -1,10 +1,22 @@
 ---
 title: "IR3 Guide 2026 — NZ Tradie Tax Return: Deadline 7 July 2026"
-description: "IR3 guide 2026 for NZ tradies: file by 7 July 2026, key deductions, Investment Boost claims, provisional tax, and step-by-step myIR walkthrough."
+description: "IR3 guide 2026 for NZ tradies — file by 7 July 2026, key deductions, Investment Boost claims, provisional tax, and step-by-step myIR walkthrough."
 date: 2026-05-19
+updated: 2026-06-26
 tags: [tax, IRD, self-employed, compliance, NZ]
 author: "NZ Tradie Tools"
 draft: false
+faq:
+  - q: "When is the IR3 deadline for 2026?"
+    a: "The IR3 filing deadline for the 2025–26 tax year is 7 July 2026 if you file yourself via myIR. If you link with a registered tax agent before 31 January 2027, the deadline extends to 31 March 2027."
+  - q: "Who needs to file an IR3 in NZ?"
+    a: "You need to file an IR3 if you earned self-employment income in 2025–26 — sole traders, contractors, and anyone with income not taxed at source. Most tradies running their own business must file."
+  - q: "How do I get the IR3 form?"
+    a: "You file the IR3 online through myIR at ird.govt.nz — there's no paper form to download. Log in, go to Income tax → File a return → 2025–26. myIR pre-fills PAYE and bank interest; you enter your business income and expenses."
+  - q: "What is the IR-3B schedule?"
+    a: "The IR-3B (Business income schedule) is the section of the IR3 where you record your self-employment income and expenses. You complete it as part of your IR3 — it's not a separate form but a sub-schedule within the return."
+  - q: "What happens if I miss the IR3 deadline?"
+    a: "IRD charges a $50 late filing penalty immediately, then $250 if the return is still outstanding after 6 months. Interest also accrues on unpaid tax at around 10.91% per annum. Contact IRD before the deadline if you need more time — they're generally reasonable if you reach out proactively."
 ---
 
 The 2025–26 tax year ended on 31 March 2026. If you're a self-employed tradie — sole trader, contractor, or working in a partnership — you now need to file an IR3 individual income tax return with Inland Revenue (IRD). The clock is ticking: the self-filing deadline is **7 July 2026**. Here's everything you need to know to get it right.
@@ -113,11 +125,13 @@ Typical fees run $350–$700/year for a straightforward sole trader, and the fee
 
 ## Filing via myIR: Step by Step
 
+The IR3 is filed online — there's no paper form to download. Go to [ird.govt.nz](https://www.ird.govt.nz) and log in to myIR.
+
 1. Log in to IRD's **myIR** portal at ird.govt.nz
 2. Go to **Income tax → File a return → 2025–26**
-3. Enter your self-employment income (IRD won't know this — it's on you)
-4. Add your deductible expenses
-5. Review the summary and submit
+3. Complete the **IR-3B Business income schedule** — this is where you enter your self-employment income and expenses (it's a sub-section within the IR3, not a separate form)
+4. Review the pre-filled sections — employment income, bank interest, and KiwiSaver are auto-populated from third-party data
+5. Submit and note your confirmation number
 
 myIR pre-fills employment income, bank interest, and KiwiSaver data, but your invoiced trade income and expenses must be entered manually. Check every pre-filled figure — errors do occur.
 
