@@ -86,6 +86,82 @@ def build_nav(config):
     return config.get("nav", [])
 
 
+_TRADE_SLUG_MAP = [
+    ("electrician",  "Electrician"),
+    ("plumber",      "Plumber"),
+    ("builder",      "Builder"),
+    ("painter",      "Painter"),
+    ("roofer",       "Roofer"),
+    ("carpenter",    "Carpenter"),
+    ("plasterer",    "Plasterer"),
+    ("tiler",        "Tiler"),
+    ("concreter",    "Concreter"),
+    ("landscaper",   "Landscaper"),
+    ("landscaping",  "Landscaper"),
+    ("gasfitter",    "Gasfitter"),
+    ("locksmith",    "Locksmith"),
+    ("hvac",         "HVAC Technician"),
+    ("heat-pump",    "HVAC Technician"),
+    ("air-condition","HVAC Technician"),
+    ("flooring",     "Flooring Specialist"),
+    ("drainlayer",   "Drainlayer"),
+    ("arborist",     "Arborist"),
+    ("fencer",       "Fencer"),
+    ("fencing",      "Fencer"),
+    ("waterproof",   "Waterproofer"),
+    ("pool",         "Pool Specialist"),
+    ("solar",        "Solar Installer"),
+    ("insulation",   "Insulation Specialist"),
+    ("window",       "Window Installer"),
+    ("deck",         "Builder"),
+    ("bathroom",     "Builder"),
+    ("kitchen",      "Builder"),
+    ("renovation",   "Builder"),
+    ("roofing",      "Roofer"),
+    ("concrete",     "Concreter"),
+    ("paving",       "Concreter"),
+    ("plumbing",     "Plumber"),
+    ("electrical",   "Electrician"),
+    ("wiring",       "Electrician"),
+    ("painting",     "Painter"),
+    ("carpet",       "Flooring Specialist"),
+    ("tile",         "Tiler"),
+    ("drain",        "Drainlayer"),
+]
+
+_TRADE_URL_MAP = {
+    "Electrician":         "electrician",
+    "Plumber":             "plumber",
+    "Builder":             "builder",
+    "Painter":             "painter",
+    "Roofer":              "roofer",
+    "Carpenter":           "carpenter",
+    "Plasterer":           "plasterer",
+    "Tiler":               "tiler",
+    "Concreter":           "concreter",
+    "Landscaper":          "landscaper",
+    "Gasfitter":           "gasfitter",
+    "Locksmith":           "locksmith",
+    "HVAC Technician":     "hvac",
+    "Flooring Specialist": "flooring",
+    "Drainlayer":          "drainlayer",
+    "Arborist":            "landscaper",
+    "Fencer":              "other",
+    "Waterproofer":        "builder",
+    "Pool Specialist":     "other",
+    "Solar Installer":     "electrician",
+    "Insulation Specialist": "builder",
+    "Window Installer":    "builder",
+}
+
+def _infer_trade_from_slug(slug):
+    s = slug.lower()
+    for kw, display in _TRADE_SLUG_MAP:
+        if kw in s:
+            return display, _TRADE_URL_MAP.get(display, "other")
+    return None, None
+
+
 def build_articles(env, config, nav, base_path):
     logging.info("Building articles")
     articles_dir = CONTENT_DIR / "articles"
@@ -99,10 +175,13 @@ def build_articles(env, config, nav, base_path):
         output_path.parent.mkdir(parents=True, exist_ok=True)
         date_val = front.get("date", "")
         date_iso = date_val.strftime("%Y-%m-%d") if hasattr(date_val, "strftime") else str(date_val)
+        trade_display, trade_slug = _infer_trade_from_slug(article_path.stem)
         ctx = {**front, "content": html_body, "nav": nav,
                "base_url": base_url, "slug": article_path.stem, "date": date_iso,
                "affiliates": config.get("affiliates", {}),
-               "year": datetime.now().year}
+               "year": datetime.now().year,
+               "inferred_trade": trade_display,
+               "inferred_trade_slug": trade_slug}
         output_path.write_text(template.render(**ctx))
         logging.info(f"Article built: {output_path}")
 
@@ -227,6 +306,7 @@ def process_page(md_file, config, env, layout_name, section, nav, base_path, art
         related_slugs = [s.strip() for s in related_slugs.split(",")]
     related_articles_data = [articles_by_slug[s] for s in related_slugs if articles_by_slug and s in articles_by_slug]
 
+    trade_display, trade_slug = _infer_trade_from_slug(slug)
     ctx = {
         **config,
         "base_path": base_path,
@@ -250,6 +330,8 @@ def process_page(md_file, config, env, layout_name, section, nav, base_path, art
         "year": datetime.now().year,
         "recent_articles": (articles or [])[:3],
         "related_articles_data": related_articles_data,
+        "inferred_trade": trade_display,
+        "inferred_trade_slug": trade_slug,
     }
 
     rendered = template.render(**ctx)
