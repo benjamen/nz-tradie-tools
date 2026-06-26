@@ -1069,16 +1069,12 @@ def build_dispute(config, env, nav, base_path):
 
 
 def build_get_quotes(config, env, nav, base_path):
-    brevo_key = os.environ.get("BREVO_API_KEY", "")
-    if not brevo_key:
-        logging.warning("BREVO_API_KEY not set — get-quotes form will not send leads")
     template = env.get_template("get-quotes.html")
     ctx = {
         **config,
         "base_path": base_path,
         "nav": nav,
         "year": datetime.now().year,
-        "brevo_api_key": brevo_key,
     }
     out_dir = PUBLIC_DIR / "trades" / "get-quotes"
     out_dir.mkdir(parents=True, exist_ok=True)
