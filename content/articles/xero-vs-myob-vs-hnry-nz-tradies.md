@@ -5,7 +5,19 @@ description: "Xero vs MYOB vs Hnry compared for NZ tradies and sole traders. Rea
 tags: [Xero, MYOB, Hnry, accounting software, sole trader, NZ, comparison, GST]
 author: "NZ Tradie Tools"
 date: 2026-05-19
+updated: 2026-06-26
 related_articles: [sole-trader-vs-company-nz-tradies, kiwisaver-self-employed-tradies-nz, xero-vs-myob-nz-tradies]
+faq:
+  - q: "Hnry vs Xero — which is better for NZ tradies?"
+    a: "Hnry is better for simple sole traders who want everything handled automatically — it pays your tax, GST, ACC, and KiwiSaver as you earn. Xero is better for growing businesses, partnerships, and companies that need full accounting, payroll, and integrations with job management apps like Fergus or Tradify."
+  - q: "Is Hnry worth it for a tradie?"
+    a: "Yes, if you're a sole trader with straightforward income and want zero tax admin. Hnry charges 1% of income (capped at $1,500/year) and handles IRD filings automatically. If you earn over $150,000, Xero plus an accountant often works out cheaper and gives more flexibility."
+  - q: "What is the best accounting software for NZ tradies?"
+    a: "Xero is the most popular for NZ tradies with staff or complex finances. Hnry suits sole traders wanting automated tax. MYOB is a solid mid-range option. Most job management apps (Fergus, Tradify, simPRO) integrate best with Xero."
+  - q: "Does Hnry handle GST automatically?"
+    a: "Yes — Hnry automatically calculates and pays your GST each return period if you're GST-registered, and files the return with IRD on your behalf."
+  - q: "What are the best Hnry alternatives in NZ?"
+    a: "The main Hnry alternatives for NZ sole traders are Xero (more features, higher cost), MYOB Essentials (cheaper, less NZ-specific), and a spreadsheet with a good accountant. Hnry's 1% fee model is unique — no direct like-for-like alternative exists."
 ---
 
 Choosing the right accounting software matters more than most tradies realise. Get it wrong and you're overpaying your accountant, missing GST deadlines, or dealing with clunky integrations with your job management app. This comparison covers the three most common choices for NZ tradies in 2026.
