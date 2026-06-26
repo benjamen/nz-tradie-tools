@@ -73,9 +73,11 @@
     .profile-name{font-size:1.5rem;font-weight:700;color:#1b2a4a;margin-bottom:.35rem}
     .profile-trade{display:inline-block;background:#0055a5;color:#fff;font-size:.78rem;font-weight:700;padding:.2rem .65rem;border-radius:3px;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.75rem}
     .profile-rating{display:flex;align-items:center;gap:.6rem;margin-bottom:.75rem}
-    .stars{color:#f59e0b;font-size:1.1rem}
-    .rating-num{font-size:1.1rem;font-weight:700;color:#1b2a4a}
-    .rating-count{color:#666;font-size:.9rem}
+    .stars{color:#f59e0b;font-size:1.25rem;letter-spacing:.05em}
+    .rating-num{font-size:1.2rem;font-weight:700;color:#1b2a4a}
+    .rating-count{color:#555;font-size:.9rem}
+    .rating-sources{display:flex;flex-wrap:wrap;gap:.5rem;margin:.35rem 0}
+    .rating-chip{font-size:.78rem;padding:.2rem .55rem;border-radius:3px;font-weight:600;background:#fff3cd;color:#856404;border:1px solid #ffc107}
     .badges{display:flex;flex-wrap:wrap;gap:.5rem;margin:.75rem 0}
     .badge{display:inline-flex;align-items:center;gap:.3rem;font-size:.8rem;font-weight:600;padding:.25rem .6rem;border-radius:4px}
     .badge-verified{background:#dcfce7;color:#166534}
@@ -141,11 +143,18 @@
                 <div class="profile-name">{{ business.business_name }}</div>
                 <div class="profile-trade">{{ business.trade_name }}</div>
 
+                {% if business.rating and business.review_count %}
                 <div class="profile-rating">
-                    <span class="stars">{% for i in range(business.rating|int) %}★{% endfor %}{% if business.rating % 1 >= 0.5 %}½{% endif %}</span>
-                    <span class="rating-num">{{ business.rating }}</span>
-                    <span class="rating-count">({{ business.review_count }} reviews)</span>
+                    <span class="stars">{% for i in range(business.rating|int) %}★{% endfor %}{% if business.rating % 1 >= 0.5 %}½{% endif %}{% for i in range(5 - (business.rating|int) - (1 if business.rating % 1 >= 0.5 else 0)) %}☆{% endfor %}</span>
+                    <span class="rating-num">{{ business.rating }}/5</span>
+                    <span class="rating-count">· {{ business.review_count }} review{{ 's' if business.review_count != 1 else '' }}{% if business.source %} on {{ business.source }}{% endif %}</span>
                 </div>
+                <div class="rating-sources">
+                    {% if business.google_rating and business.google_reviews %}<span class="rating-chip">Google ★ {{ business.google_rating }} ({{ business.google_reviews }})</span>{% endif %}
+                    {% if business.nocowboys_rating and business.nocowboys_reviews %}<span class="rating-chip">NoCowboys ★ {{ business.nocowboys_rating }} ({{ business.nocowboys_reviews }})</span>{% endif %}
+                    {% if business.builderscrack_rating and business.builderscrack_reviews %}<span class="rating-chip">BuildersCrack ★ {{ business.builderscrack_rating }} ({{ business.builderscrack_reviews }})</span>{% endif %}
+                </div>
+                {% endif %}
 
                 <div class="badges">
                     {% if business.verified %}<span class="badge badge-verified" title="Listing data has been spot-checked against the original source by NZ Tradie Tools. This does not confirm trade licences or insurance — see badges below for those.">✅ Data Verified</span>{% endif %}
@@ -193,16 +202,15 @@
             <p class="areas-list">{{ business.areas_served | join(' · ') }}</p>
             {% endif %}
 
-            <!-- Review source -->
+            {% if business.source_url %}
             <div class="review-source">
                 <span style="font-size:1.1rem">⭐</span>
                 <div>
-                    <strong>{{ business.rating }}/5</strong> from {{ business.review_count }} reviews on {{ business.source }}
-                    {% if business.source_url %}
+                    <strong>{{ business.rating }}/5</strong> from {{ business.review_count }} review{{ 's' if business.review_count != 1 else '' }} on {{ business.source }}
                     · <a href="{{ business.source_url }}" rel="noopener" target="_blank">View source reviews →</a>
-                    {% endif %}
                 </div>
             </div>
+            {% endif %}
 
             <!-- TradieTools Reviews -->
             <!-- Profile completeness score — only shown to the listing owner via ?token= -->
@@ -256,21 +264,72 @@
             </div>
 
             <!-- Contact form -->
-            <div class="contact-form">
-                <h3>Send an enquiry to {{ business.business_name }}</h3>
-                <p style="font-size:.85rem;color:#555;margin-bottom:1rem">Your message goes directly to the business. NZ Tradie Tools is not involved in the conversation.</p>
-                <form action="{{ formspree_endpoint }}" method="POST">
-                    <input type="hidden" name="_subject" value="Enquiry for {{ business.business_name }} via NZ Tradie Tools">
-                    <input type="hidden" name="business" value="{{ business.business_name }}">
-                    <input type="hidden" name="business_email" value="{{ business.email }}">
-                    <input type="hidden" name="source" value="business-profile">
-                    <input type="text" name="name" placeholder="Your name" required>
-                    <input type="email" name="email" placeholder="Your email" required>
-                    <input type="tel" name="phone" placeholder="Your phone number">
-                    <input type="text" name="job" placeholder="What's the job? (e.g. bathroom reno, 2-bed new build)">
-                    <textarea name="message" placeholder="Tell them a bit more about your project, location, and timeframe..."></textarea>
-                    <button type="submit">Send enquiry →</button>
+            <div class="contact-form" id="enquiry-form-wrap">
+                <h3>📩 Request a quote from {{ business.business_name }}</h3>
+                <p style="font-size:.85rem;color:#555;margin-bottom:1rem">Your enquiry goes directly to the business — free, no obligation.</p>
+                <div id="enquiry-success" style="display:none;background:#dcfce7;border:1px solid #86efac;border-radius:6px;padding:.9rem 1rem;color:#166534;font-size:.9rem;margin-bottom:.75rem">
+                    ✅ <strong>Enquiry sent!</strong> {{ business.business_name }} will be in touch. Check your email for confirmation.
+                </div>
+                <form id="enquiry-form" novalidate>
+                    <input type="text" id="enq-name" placeholder="Your name *" required>
+                    <input type="email" id="enq-email" placeholder="Your email *" required>
+                    <input type="tel" id="enq-phone" placeholder="Your phone number">
+                    <select id="enq-timeline">
+                        <option value="getting_quotes">Just getting quotes</option>
+                        <option value="this_month">Ready this month</option>
+                        <option value="this_week">Ready this week</option>
+                        <option value="asap">ASAP</option>
+                    </select>
+                    <textarea id="enq-job" placeholder="Describe the job — what needs doing, location, any specific requirements..." required style="height:100px"></textarea>
+                    <div id="enq-error" style="display:none;color:#b00020;font-size:.85rem;margin-bottom:.5rem"></div>
+                    <button type="submit" id="enq-btn">Send enquiry →</button>
                 </form>
+                <script>
+                (function(){
+                    var BIZ_SLUG  = {{ business.slug | tojson }};
+                    var BIZ_EMAIL = {{ (business.email or '') | tojson }};
+                    var BIZ_NAME  = {{ business.business_name | tojson }};
+                    document.getElementById('enquiry-form').addEventListener('submit', function(e){
+                        e.preventDefault();
+                        var name = document.getElementById('enq-name').value.trim();
+                        var email = document.getElementById('enq-email').value.trim();
+                        var phone = document.getElementById('enq-phone').value.trim();
+                        var job   = document.getElementById('enq-job').value.trim();
+                        var tl    = document.getElementById('enq-timeline').value;
+                        var err   = document.getElementById('enq-error');
+                        err.style.display = 'none';
+                        if (!name || !email || !job) { err.textContent='Please fill in name, email and job description.'; err.style.display='block'; return; }
+                        var btn = document.getElementById('enq-btn');
+                        btn.disabled = true; btn.textContent = 'Sending…';
+                        fetch('https://tradietools.optified.nz/api/method/tradietools.api.submit_enquiry', {
+                            method: 'POST',
+                            headers: {'Content-Type':'application/json'},
+                            body: JSON.stringify({
+                                business_slug: BIZ_SLUG,
+                                business_email: BIZ_EMAIL,
+                                business_name: BIZ_NAME,
+                                customer_name: name,
+                                customer_email: email,
+                                customer_phone: phone,
+                                job_description: job,
+                                job_timeline: tl
+                            })
+                        })
+                        .then(function(r){ return r.json(); })
+                        .then(function(d){
+                            if (d.message && d.message.success) {
+                                document.getElementById('enquiry-form').style.display = 'none';
+                                document.getElementById('enquiry-success').style.display = 'block';
+                            } else {
+                                var msg = (d._server_messages && JSON.parse(d._server_messages)[0]?.message) || 'Something went wrong — please try again.';
+                                err.textContent = msg; err.style.display = 'block';
+                                btn.disabled = false; btn.textContent = 'Send enquiry →';
+                            }
+                        })
+                        .catch(function(){ err.textContent='Network error — please try again.'; err.style.display='block'; btn.disabled=false; btn.textContent='Send enquiry →'; });
+                    });
+                })();
+                </script>
             </div>
 
             <!-- Update CTA -->
