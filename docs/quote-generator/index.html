@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="geo.region" content="NZ">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap">
+  <title>AI Quote Generator for NZ Tradies — Free Instant Quote Builder</title>
+  <meta name="description" content="Generate a professional job quote in seconds. Describe the work, add your GST number, and our AI builds a ready-to-send NZ quote with accurate pricing. Free for TradieTools members.">
+  <link rel="canonical" href="https://tradietools.nz/quote-generator/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJW7HLW8D8"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BJW7HLW8D8');</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" crossorigin="anonymous"></script>
+  <style>
+    /* ── Layout ── */
+    .qg-wrap { display: grid; grid-template-columns: 420px 1fr; gap: 2rem; max-width: 1200px; margin: 2rem auto; padding: 0 1.5rem 4rem; align-items: start; }
+    @media(max-width:900px){ .qg-wrap { grid-template-columns: 1fr; } }
+
+    /* ── Form panel ── */
+    .qg-form-panel { background: #fff; border: 1px solid #dce3ec; border-radius: 8px; padding: 1.75rem; position: sticky; top: 1rem; }
+    .qg-form-panel h2 { font-size: 1.15rem; margin: 0 0 1.25rem; color: #1b2a4a; border: none; padding: 0; }
+    .qg-section-label { font-size: .72rem; font-weight: 700; letter-spacing: .08em; color: #5a6a7e; text-transform: uppercase; margin: 1.25rem 0 .5rem; }
+    .qg-form-panel label { display: block; font-size: .875rem; font-weight: 600; color: #1b2a4a; margin-bottom: .3rem; }
+    .qg-form-panel label span { font-weight: 400; color: #777; font-size: .8rem; }
+    .qg-form-panel input, .qg-form-panel textarea, .qg-form-panel select {
+      width: 100%; padding: .6rem .85rem; border: 1.5px solid #c8d3df; border-radius: 5px;
+      font-size: .9rem; font-family: inherit; color: #1b2a4a; background: #fff;
+      margin-bottom: .9rem; transition: border-color .15s;
+    }
+    .qg-form-panel input:focus, .qg-form-panel textarea:focus { outline: none; border-color: #005ea2; }
+    .qg-form-panel textarea { min-height: 100px; resize: vertical; }
+    .qg-gen-btn {
+      width: 100%; padding: .8rem 1rem; background: #ea6325; color: #fff;
+      border: none; border-radius: 6px; font-size: 1rem; font-weight: 700;
+      cursor: pointer; font-family: inherit; transition: background .15s; margin-top: .5rem;
+    }
+    .qg-gen-btn:hover:not(:disabled) { background: #c94f1a; }
+    .qg-gen-btn:disabled { opacity: .6; cursor: wait; }
+    .qg-error { background: #fff3f0; border: 1px solid #f5c6bb; border-radius: 5px; padding: .65rem .9rem; font-size: .875rem; color: #c0392b; margin-top: .75rem; display: none; }
+
+    /* ── Quote preview ── */
+    .qg-preview-panel { min-height: 400px; }
+    .qg-empty { background: #f6f8fb; border: 2px dashed #c8d3df; border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 360px; color: #8a9bb0; text-align: center; padding: 2rem; }
+    .qg-empty svg { margin-bottom: 1rem; opacity: .4; }
+    .qg-empty p { font-size: .95rem; max-width: 280px; }
+
+    /* ── Loading ── */
+    .qg-loading { display: none; flex-direction: column; align-items: center; justify-content: center; min-height: 360px; color: #5a6a7e; gap: 1rem; }
+    .qg-spinner { width: 40px; height: 40px; border: 3px solid #dce3ec; border-top-color: #005ea2; border-radius: 50%; animation: spin .8s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── Quote document ── */
+    .qg-quote { background: #fff; border: 1px solid #dce3ec; border-radius: 8px; overflow: hidden; }
+    .qg-quote-actions { display: flex; gap: .75rem; padding: 1rem 1.25rem; background: #f6f8fb; border-bottom: 1px solid #dce3ec; }
+    .qg-quote-actions button { padding: .55rem 1.1rem; border-radius: 5px; font-size: .875rem; font-weight: 600; cursor: pointer; font-family: inherit; border: none; transition: background .15s; }
+    .btn-print { background: #005ea2; color: #fff; }
+    .btn-print:hover { background: #004a85; }
+    .btn-pdf { background: #1b2a4a; color: #fff; }
+    .btn-pdf:hover { background: #111c31; }
+    .btn-regenerate { background: #fff; color: #5a6a7e; border: 1.5px solid #c8d3df !important; }
+    .btn-regenerate:hover { background: #f0f4f8; }
+
+    /* ── Quote document inner ── */
+    #quote-doc { padding: 2.5rem 2.5rem 2rem; font-size: .9rem; color: #1b2a4a; }
+    .q-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem; }
+    .q-brand { font-size: 1.3rem; font-weight: 700; color: #005ea2; }
+    .q-brand .q-gst { font-size: .8rem; font-weight: 400; color: #666; display: block; margin-top: .2rem; }
+    .q-meta { text-align: right; }
+    .q-meta .q-doc-title { font-size: 1.4rem; font-weight: 700; color: #1b2a4a; }
+    .q-meta .q-num { font-size: .8rem; color: #666; margin-top: .25rem; }
+    .q-addresses { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem; }
+    .q-addr-block label { font-size: .7rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #8a9bb0; display: block; margin-bottom: .35rem; }
+    .q-addr-block p { margin: 0; line-height: 1.6; }
+    .q-divider { border: none; border-top: 2px solid #1b2a4a; margin-bottom: 1.5rem; }
+    .q-table { width: 100%; border-collapse: collapse; margin-bottom: 1.5rem; }
+    .q-table thead tr { background: #1b2a4a; color: #fff; }
+    .q-table th { padding: .6rem .85rem; text-align: left; font-size: .8rem; letter-spacing: .04em; font-weight: 600; }
+    .q-table th:last-child, .q-table td:last-child { text-align: right; }
+    .q-table td { padding: .7rem .85rem; border-bottom: 1px solid #edf0f4; vertical-align: top; }
+    .q-table tbody tr:nth-child(even) td { background: #f8fafb; }
+    .q-totals { display: flex; justify-content: flex-end; margin-bottom: 1.5rem; }
+    .q-totals table { width: 240px; border-collapse: collapse; }
+    .q-totals td { padding: .4rem .6rem; font-size: .88rem; }
+    .q-totals .q-total-row td { font-weight: 700; font-size: 1rem; border-top: 2px solid #1b2a4a; padding-top: .6rem; color: #1b2a4a; }
+    .q-notes { background: #f6f8fb; border-radius: 6px; padding: 1rem 1.25rem; font-size: .85rem; color: #5a6a7e; line-height: 1.7; margin-bottom: 1.5rem; }
+    .q-notes strong { color: #1b2a4a; }
+    .q-footer { font-size: .78rem; color: #aaa; text-align: center; border-top: 1px solid #edf0f4; padding-top: 1rem; }
+
+    @media print {
+      .site-header, .qg-form-panel, .qg-quote-actions, .no-print { display: none !important; }
+      .qg-wrap { display: block; padding: 0; margin: 0; }
+      .qg-quote { border: none; border-radius: 0; }
+      #quote-doc { padding: 1.5rem; }
+      body { background: #fff; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header no-print">
+    <div class="container">
+      <a href="/" class="logo">NZ Tradie Tools</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav">
+        <a href="/find/">Find a Tradie</a>
+        <a href="/calculators/">Calculators</a>
+        <a href="/templates/">Templates</a>
+        <a href="/for-tradies/">For Tradies</a>
+        <a href="/articles/">Articles</a>
+        <a id="nav-my-listing" href="/dashboard/" class="nav-my-listing" style="display:none">My Listing</a>
+        <a href="/signup/" class="nav-cta">Free Listing →</a>
+      </nav>
+      <script>
+      (function(){
+        var t=document.querySelector('.nav-toggle'),n=document.getElementById('main-nav');
+        if(!t||!n)return;
+        t.addEventListener('click',function(){var o=t.getAttribute('aria-expanded')==='true';t.setAttribute('aria-expanded',String(!o));n.classList.toggle('is-open',!o);});
+        var tid=localStorage.getItem('tradieId');
+        if(tid){var el=document.getElementById('nav-my-listing');if(el)el.style.display='';}
+      })();
+      </script>
+    </div>
+  </header>
+
+  <div style="background:#1b2a4a;color:#fff;padding:.9rem 1.5rem;text-align:center;font-size:.92rem;" class="no-print">
+    <strong>AI Quote Generator</strong> — describe any job and get a professional, ready-to-send NZ quote in seconds.
+  </div>
+
+  <div class="qg-wrap">
+    <!-- ── Form ── -->
+    <div class="qg-form-panel">
+      <h2>⚡ Generate a Quote</h2>
+
+      <div class="qg-section-label">Your Business</div>
+      <label>Business name</label>
+      <input type="text" id="f-biz-name" placeholder="e.g. Smith Plumbing Ltd" maxlength="100">
+
+      <label>GST number <span>(optional — appears on quote)</span></label>
+      <input type="text" id="f-gst" placeholder="e.g. 123-456-789" maxlength="20">
+
+      <label>NZBN <span>(optional)</span></label>
+      <input type="text" id="f-nzbn" placeholder="e.g. 9429000000000" maxlength="20">
+
+      <label>Your address <span>(optional)</span></label>
+      <input type="text" id="f-biz-addr" placeholder="e.g. 12 Main St, Auckland 1010" maxlength="200">
+
+      <div class="qg-section-label">Customer</div>
+      <label>Customer name</label>
+      <input type="text" id="f-cust-name" placeholder="e.g. John Smith" maxlength="100">
+
+      <label>Customer address <span>(optional)</span></label>
+      <input type="text" id="f-cust-addr" placeholder="e.g. 45 Oak Ave, Wellington" maxlength="200">
+
+      <div class="qg-section-label">Job</div>
+      <label>Job description <span>(be specific — more detail = better quote)</span></label>
+      <textarea id="f-job" placeholder="e.g. Replace hot water cylinder in 3-bedroom house, supply and install 180L Rheem cylinder, remove old unit, test and certify. Also fix dripping kitchen tap."></textarea>
+
+      <button class="qg-gen-btn" id="gen-btn" onclick="generateQuote()">Generate Quote →</button>
+      <div class="qg-error" id="qg-error"></div>
+
+      <p style="font-size:.78rem;color:#8a9bb0;margin-top:1rem;text-align:center;">
+        Powered by AI · Pricing is indicative — adjust before sending
+      </p>
+    </div>
+
+    <!-- ── Preview ── -->
+    <div class="qg-preview-panel" id="preview-panel">
+      <div class="qg-empty" id="qg-empty">
+        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+        </svg>
+        <p>Fill in the form and click <strong>Generate Quote</strong> to create a professional NZ quote.</p>
+      </div>
+
+      <div class="qg-loading" id="qg-loading">
+        <div class="qg-spinner"></div>
+        <p>AI is building your quote…</p>
+      </div>
+
+      <div class="qg-quote" id="qg-quote" style="display:none">
+        <div class="qg-quote-actions">
+          <button class="btn-print" onclick="window.print()">🖨 Print</button>
+          <button class="btn-pdf" onclick="downloadPDF()">⬇ Save PDF</button>
+          <button class="btn-regenerate" onclick="generateQuote()">↻ Regenerate</button>
+        </div>
+        <div id="quote-doc"><!-- rendered by JS --></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  const API = 'https://tradietools.optified.nz/api/method/tradietools.api.generate_quote';
+  const GST_RATE = 0.15;
+
+  // Pre-fill from localStorage if logged in
+  (function(){
+    var tid = localStorage.getItem('tradieId');
+    var em  = localStorage.getItem('tradieEmail');
+    if (!tid || !em) return;
+    fetch('https://tradietools.optified.nz/api/method/tradietools.api.get_my_listing?email=' + encodeURIComponent(em), {
+      headers: {'Host': 'tradietools.optified.nz'}
+    })
+    .then(r => r.json())
+    .then(d => {
+      var l = d.message || {};
+      if (l.found === false) return;
+      if (l.name)             setValue('f-biz-name', l.name);
+      if (l.gst_number)       setValue('f-gst',      l.gst_number);
+      if (l.nzbn)             setValue('f-nzbn',     l.nzbn);
+      if (l.business_address) setValue('f-biz-addr', l.business_address);
+    })
+    .catch(function(){});
+  })();
+
+  function setValue(id, val) {
+    var el = document.getElementById(id);
+    if (el && !el.value) el.value = val;
+  }
+
+  function fmtNZD(n) {
+    return '$' + Number(n).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  }
+
+  function generateQuoteNum() {
+    var d = new Date();
+    return 'QT-' + d.getFullYear().toString().slice(2) +
+      String(d.getMonth()+1).padStart(2,'0') +
+      String(d.getDate()).padStart(2,'0') + '-' +
+      String(Math.floor(Math.random()*900)+100);
+  }
+
+  function formatDate(offsetDays) {
+    var d = new Date();
+    d.setDate(d.getDate() + (offsetDays || 0));
+    return d.toLocaleDateString('en-NZ', {day:'numeric',month:'long',year:'numeric'});
+  }
+
+  async function generateQuote() {
+    var job  = document.getElementById('f-job').value.trim();
+    var biz  = document.getElementById('f-biz-name').value.trim();
+    var gst  = document.getElementById('f-gst').value.trim();
+    var nzbn = document.getElementById('f-nzbn').value.trim();
+    var baddr = document.getElementById('f-biz-addr').value.trim();
+    var cust = document.getElementById('f-cust-name').value.trim();
+    var caddr = document.getElementById('f-cust-addr').value.trim();
+
+    var errEl = document.getElementById('qg-error');
+    errEl.style.display = 'none';
+
+    if (!job) {
+      errEl.textContent = 'Please describe the job first.';
+      errEl.style.display = 'block';
+      document.getElementById('f-job').focus();
+      return;
+    }
+
+    document.getElementById('gen-btn').disabled = true;
+    document.getElementById('qg-empty').style.display   = 'none';
+    document.getElementById('qg-quote').style.display   = 'none';
+    document.getElementById('qg-loading').style.display = 'flex';
+
+    var body = {
+      job_description: job,
+      business_name: biz,
+      gst_number: gst,
+      nzbn: nzbn,
+      customer_name: cust,
+      customer_address: caddr
+    };
+
+    var tid = localStorage.getItem('tradieId');
+    var em  = localStorage.getItem('tradieEmail');
+    if (tid && em) { body.tradie_id = tid; body.email = em; }
+
+    try {
+      var resp = await fetch(API, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(body)
+      });
+      var data = await resp.json();
+      if (!resp.ok || data.exc_type) {
+        var msg = (data._server_messages && JSON.parse(data._server_messages)[0]?.message) || 'Quote generation failed — please try again.';
+        throw new Error(msg);
+      }
+      var q = data.message;
+      renderQuote(q, biz || 'My Business', gst, nzbn, baddr, cust || 'Customer', caddr, job);
+    } catch(e) {
+      errEl.textContent = e.message || 'Something went wrong — please try again.';
+      errEl.style.display = 'block';
+      document.getElementById('qg-empty').style.display = 'flex';
+    } finally {
+      document.getElementById('qg-loading').style.display = 'none';
+      document.getElementById('gen-btn').disabled = false;
+    }
+  }
+
+  function renderQuote(q, bizName, gstNum, nzbn, bizAddr, custName, custAddr, jobDesc) {
+    var items = q.line_items || [];
+    var subtotal = items.reduce(function(s, i){ return s + (i.qty * i.unit_price); }, 0);
+    var gstAmt   = gstNum ? subtotal * GST_RATE : 0;
+    var total    = subtotal + gstAmt;
+    var qNum     = generateQuoteNum();
+
+    var rows = items.map(function(i){
+      var lineTotal = i.qty * i.unit_price;
+      return '<tr><td>' + esc(i.description) + '</td>' +
+        '<td style="text-align:center">' + i.qty + '</td>' +
+        '<td style="text-align:center">' + esc(i.unit) + '</td>' +
+        '<td style="text-align:right">' + fmtNZD(i.unit_price) + '</td>' +
+        '<td>' + fmtNZD(lineTotal) + '</td></tr>';
+    }).join('');
+
+    var gstRow = gstNum
+      ? '<tr><td style="text-align:right;color:#5a6a7e">GST (15%)</td><td style="text-align:right">' + fmtNZD(gstAmt) + '</td></tr>'
+      : '<tr><td style="text-align:right;color:#5a6a7e;font-size:.8rem">GST not registered</td><td></td></tr>';
+
+    var bizMeta = [];
+    if (gstNum)  bizMeta.push('GST: ' + gstNum);
+    if (nzbn)    bizMeta.push('NZBN: ' + nzbn);
+    if (bizAddr) bizMeta.push(bizAddr);
+
+    document.getElementById('quote-doc').innerHTML =
+      '<div class="q-header">' +
+        '<div class="q-brand">' + esc(bizName) +
+          (bizMeta.length ? '<span class="q-gst">' + bizMeta.map(esc).join(' &nbsp;·&nbsp; ') + '</span>' : '') +
+        '</div>' +
+        '<div class="q-meta">' +
+          '<div class="q-doc-title">QUOTE</div>' +
+          '<div class="q-num">' + qNum + '<br>Date: ' + formatDate(0) +
+            '<br>Valid until: ' + formatDate(q.validity_days || 30) + '</div>' +
+        '</div>' +
+      '</div>' +
+      '<hr class="q-divider">' +
+      '<div class="q-addresses">' +
+        '<div class="q-addr-block"><label>From</label><p><strong>' + esc(bizName) + '</strong>' +
+          (bizAddr ? '<br>' + esc(bizAddr) : '') + '</p></div>' +
+        '<div class="q-addr-block"><label>Quote for</label><p><strong>' + esc(custName) + '</strong>' +
+          (custAddr ? '<br>' + esc(custAddr) : '') + '</p></div>' +
+      '</div>' +
+      '<table class="q-table">' +
+        '<thead><tr><th>Description</th><th style="text-align:center">Qty</th><th style="text-align:center">Unit</th><th style="text-align:right">Unit Price</th><th style="text-align:right">Total</th></tr></thead>' +
+        '<tbody>' + rows + '</tbody>' +
+      '</table>' +
+      '<div class="q-totals"><table>' +
+        '<tr><td style="text-align:right;color:#5a6a7e">Subtotal</td><td style="text-align:right">' + fmtNZD(subtotal) + '</td></tr>' +
+        gstRow +
+        '<tr class="q-total-row"><td style="text-align:right">Total</td><td style="text-align:right">' + fmtNZD(total) + '</td></tr>' +
+      '</table></div>' +
+      (q.notes ? '<div class="q-notes"><strong>Terms &amp; Notes</strong><br>' + esc(q.notes).replace(/\n/g,'<br>') + '</div>' : '') +
+      '<div class="q-footer">Quote generated via TradieTools NZ &mdash; tradietools.nz &nbsp;|&nbsp; Pricing is indicative — confirm before signing.</div>';
+
+    document.getElementById('qg-quote').style.display = 'block';
+    document.getElementById('qg-quote').scrollIntoView({behavior:'smooth', block:'start'});
+  }
+
+  function esc(s) {
+    return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  function downloadPDF() {
+    var el = document.getElementById('quote-doc');
+    var bizName = document.getElementById('f-biz-name').value.trim() || 'Quote';
+    var d = new Date();
+    var fname = bizName.replace(/[^a-z0-9]/gi,'_') + '_Quote_' + d.getFullYear() + String(d.getMonth()+1).padStart(2,'0') + String(d.getDate()).padStart(2,'0') + '.pdf';
+    html2pdf().set({
+      margin: [10,12,10,12],
+      filename: fname,
+      image: { type:'jpeg', quality:.95 },
+      html2canvas: { scale:2, useCORS:true },
+      jsPDF: { unit:'mm', format:'a4', orientation:'portrait' }
+    }).from(el).save();
+  }
+  </script>
+</body>
+</html>
