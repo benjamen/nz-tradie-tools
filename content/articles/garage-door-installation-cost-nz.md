@@ -5,6 +5,16 @@ date: 2026-06-23
 tags: ["garage door", "garage door installation", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"
 draft: false
+updated: 2026-06-26
+faq:
+  - q: "How much does a garage door cost in NZ?"
+    a: "A standard single panel-lift (sectional) garage door costs $2,000–$4,500 installed in NZ in 2026. A double door runs $3,500–$7,500. Budget tilt doors start around $1,200 single. Premium aluminium-framed glass doors cost $3,500–$12,000 depending on size."
+  - q: "How much does garage door automation cost in NZ?"
+    a: "Adding a motor and remote to an existing or new door costs $400–$900 installed. Most new garage door installations include automation as standard — confirm with your installer whether it's included in the quote."
+  - q: "How long does garage door installation take?"
+    a: "A standard replacement garage door takes 2–4 hours to install. A new installation including framing and tracks takes 4–8 hours. Custom or large double doors may take a full day."
+  - q: "Do I need consent to replace a garage door in NZ?"
+    a: "No — replacing a garage door like-for-like does not require a building consent. Structural changes to the garage opening (widening or heightening) may require consent. Check with your local council if you're changing the opening size."
 ---
 
 A new garage door is one of the highest-ROI exterior upgrades on a NZ home. It changes the look of the whole frontage, improves security, and often saves more than its cost in reduced heat loss from attached garages. Here's what installation costs in NZ in 2026, what affects the price, and how to get a fair quote.

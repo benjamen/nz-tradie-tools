@@ -6,6 +6,16 @@ date: 2026-06-06
 tags: [careers, apprenticeships, plumbing, qualifications, NZ]
 author: "NZ Tradie Tools"
 draft: false
+updated: 2026-06-26
+faq:
+  - q: "How do you become a plumber in NZ?"
+    a: "To become a licensed plumber in NZ you complete a plumbing apprenticeship (typically 4 years) registered with the PGDB, gain your National Certificate in Plumbing Level 4, then apply for a Tradesperson Licence with the Plumbers, Gasfitters and Drainlayers Board. You must be licensed to carry out plumbing work independently."
+  - q: "How long does it take to become a plumber in NZ?"
+    a: "A plumbing apprenticeship in NZ takes 4 years to complete. After that, you apply for your Tradesperson Licence. The full journey from starting an apprenticeship to working as a licensed plumber is typically 4–5 years."
+  - q: "How much do plumbing apprentices earn in NZ?"
+    a: "First-year plumbing apprentices earn $19–$23/hr in NZ. By year 3–4 this typically rises to $26–$35/hr. Fully licensed plumbers earn $38–$55/hr employed, or $90–$130/hr self-employed."
+  - q: "Do you need a licence to be a plumber in NZ?"
+    a: "Yes — plumbing is a licensed trade in NZ under the Plumbers, Gasfitters and Drainlayers Act 2006. You must hold a Tradesperson or Craftsman Licence (or be a supervised apprentice) to carry out plumbing work. Working unlicensed carries fines of up to $10,000."
 ---
 
 Plumbing is one of the highest-paying trades in New Zealand and has a genuinely structured licensing system overseen by the **Plumbers, Gasfitters and Drainlayers Board (PGDB)**. This guide covers the full path from apprentice to licensed plumber — what's required, how long it takes, and what you can earn.

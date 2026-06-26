@@ -5,6 +5,16 @@ date: 2026-06-06
 tags: [earnings, salaries, pay rates, careers, NZ]
 author: "NZ Tradie Tools"
 draft: false
+updated: 2026-06-26
+faq:
+  - q: "How much do tradies earn in NZ?"
+    a: "NZ tradie earnings vary by trade: electricians earn $65,000–$110,000/yr, plumbers $60,000–$105,000, builders $55,000–$95,000, carpenters $55,000–$90,000. Self-employed tradies running their own business typically earn 20–40% more than employees at the same skill level."
+  - q: "What is the highest-paying trade in NZ?"
+    a: "Electricians and plumbers are consistently the highest-paid trades in NZ. Licensed gasfitters (often also plumbers) can earn $90,000–$130,000+ including overtime. Specialised trades like electrical inspectors and certifying drainlayers also command high rates."
+  - q: "How much does a first-year apprentice tradie earn in NZ?"
+    a: "First-year apprentices in NZ earn $19–$25/hr typically, depending on the employer and trade. The training minimum wage is $19.16/hr but most employers pay above this. By year 3–4, apprentice wages typically reach $25–$35/hr."
+  - q: "Do self-employed tradies earn more than employed tradies?"
+    a: "Yes, usually — a self-employed sole trader charges $80–$130/hr but has business costs (ACC, insurance, tools, admin, no paid leave). Net income for a busy sole trader often works out 20–40% higher than an equivalent employee, but with more risk and less security."
 ---
 
 NZ tradie earnings vary significantly by trade, experience, employment status, and region. This guide gives current (2026) pay rates across the main trades — employed vs self-employed, apprentice vs qualified, and a regional comparison.

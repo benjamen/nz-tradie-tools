@@ -6,6 +6,16 @@ date: 2026-05-21
 tags: [carpentry, pricing, NZ, hourly rates, business]
 author: "NZ Tradie Tools"
 draft: false
+updated: 2026-06-26
+faq:
+  - q: "How much do carpenters charge per hour in NZ?"
+    a: "NZ carpenters charge $65–$110/hr in 2026. A junior or first-year qualified carpenter sits toward the lower end; a licensed LBP carpenter with 10+ years runs $90–$110/hr. Auckland and Wellington rates are typically $10–$20/hr higher than regional centres."
+  - q: "How much does a carpenter charge per day in NZ?"
+    a: "Most NZ carpenters quote day rates of $550–$900/day for labour only, excluding materials. Day rates are common for framing, fit-out, and deck builds where the job runs multiple days."
+  - q: "How much does a deck cost in NZ?"
+    a: "A standard treated pine deck (3m × 4m) costs $8,000–$15,000 installed in NZ in 2026, including framing, decking boards, posts, and handrails. Hardwood or composite decking costs more. Consent adds $500–$1,500 if the deck is over 1.5m high."
+  - q: "Do I need an LBP for carpentry work in NZ?"
+    a: "Yes, for restricted building work — structural framing, weathertight work, and work on residential buildings. A Licensed Building Practitioner (LBP) must carry out or supervise this work and sign the Record of Building Work."
 ---
 
 Carpentry rates across New Zealand have shifted in 2026 as construction activity picks up from the 2024–25 downturn. Whether you are a self-employed carpenter wondering what to charge, or a homeowner trying to understand a quote, this guide covers current rates by trade level, city and job type — with IRD and LBP compliance notes included.

@@ -6,6 +6,16 @@ date: 2026-05-29
 tags: [tiling, pricing, NZ, trade rates, quoting]
 author: "NZ Tradie Tools"
 draft: false
+updated: 2026-06-26
+faq:
+  - q: "How much do tilers charge per square metre in NZ?"
+    a: "NZ tilers charge $60–$120/m² for labour in 2026. Standard floor or wall tiling with straight-lay pattern sits $60–$80/m². Large-format tiles, herringbone or diagonal patterns, or difficult substrates push to $90–$120/m². This is labour only — add tile supply cost on top."
+  - q: "How much does tiling a bathroom cost in NZ?"
+    a: "A standard NZ bathroom tiling job (floor + shower walls, ~15m²) costs $2,500–$5,500 in 2026 including tiles and labour. A small shower only (5–8m²) runs $1,200–$2,800. Large-format or imported tiles increase materials cost significantly."
+  - q: "How long does it take to tile a bathroom in NZ?"
+    a: "A standard bathroom takes 2–4 days for an experienced tiler — one day prep and adhesive, one day grouting and finishing. Complex layouts or large-format tiles take longer. Allow 24–48 hours for adhesive to cure before grouting."
+  - q: "Do tilers charge for materials separately?"
+    a: "Usually yes — most NZ tilers quote labour separately from tiles and materials. Some will supply tiles at a markup (10–20%). Always confirm what the quote includes before accepting."
 ---
 
 # NZ Tiler Pricing Guide 2026: Hourly Rates, Job Costs & How to Quote

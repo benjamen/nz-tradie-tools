@@ -6,6 +6,16 @@ date: 2026-04-28
 tags: [wages, pricing, labour costs, NZ, business]
 author: "NZ Tradie Tools"
 draft: false
+updated: 2026-06-26
+faq:
+  - q: "What is the minimum wage in NZ in 2026?"
+    a: "The adult minimum wage is $23.95/hr from 1 April 2026. The starting-out and training wage is $19.16/hr (80% of adult rate). These rates apply to all employees aged 16+."
+  - q: "What is the apprentice minimum wage in NZ 2026?"
+    a: "Apprentices on a formal training agreement can be paid the training minimum wage of $19.16/hr. In practice, most tradie employers pay above minimum — first-year apprentices typically earn $21–$26/hr depending on the trade and employer."
+  - q: "How does the 2026 minimum wage increase affect tradie quotes?"
+    a: "If you employ apprentices or labourers on or near minimum wage, your labour cost per hour increased on 1 April 2026. You need to review job quotes and day rates to ensure margins are still intact — especially on fixed-price contracts quoted before the increase."
+  - q: "When did the NZ minimum wage last increase?"
+    a: "The most recent increase was 1 April 2026, to $23.95/hr for adults. The previous rate was $23.50/hr."
 ---
 
 If you employ staff or apprentices and haven't updated your wage rates yet, you're already behind. The adult minimum wage increased to **$23.95 per hour on 1 April 2026** — up from $23.50, a 2% rise.

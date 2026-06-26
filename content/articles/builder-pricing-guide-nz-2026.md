@@ -5,6 +5,16 @@ date: 2026-05-08
 tags: [builders, pricing, costs, NZ, 2026]
 author: "NZ Tradie Tools"
 draft: false
+updated: 2026-06-26
+faq:
+  - q: "How much do builders charge per hour in NZ?"
+    a: "NZ builders charge $80–$130/hr in 2026 for labour only. A qualified builder charges $90–$120/hr; a sole trader LBP in a regional centre might be $80–$95/hr; Auckland builders often run $110–$130/hr. Day rates of $650–$950 are common for multi-day jobs."
+  - q: "How much does a house extension cost in NZ?"
+    a: "A single-storey house extension in NZ costs $2,500–$4,500/m² in 2026, fully finished. A 30m² bedroom addition runs $75,000–$135,000 including consent, framing, cladding, internal fit-out, and council fees."
+  - q: "How much does a new build house cost per m² in NZ?"
+    a: "New build construction costs in NZ are $2,800–$5,000/m² in 2026 for a standard spec home, excluding land and consent. High-spec or complex builds run $4,500–$7,000+/m². Auckland and Wellington costs sit toward the top of the range."
+  - q: "How do I know if a builder's quote is fair?"
+    a: "Compare at least three quotes on the same scope. Check the builder holds a current LBP licence at lbp.govt.nz. Ask whether the quote is fixed-price or estimate-based — fixed-price gives cost certainty but may have a contingency built in."
 ---
 
 If you've ever asked three builders for quotes and got three wildly different numbers, you're not alone. Builder pricing in New Zealand can feel like a mystery — one quote comes in at $28,000, another at $47,000, and you're left wondering whether someone's padding their margins or someone else is cutting corners. The truth is usually somewhere in between, and once you understand how builder pricing works, the variation starts to make a lot more sense.
