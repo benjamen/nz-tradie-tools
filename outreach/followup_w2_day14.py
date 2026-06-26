@@ -1,11 +1,8 @@
 """
 Wave 2 Day 14 follow-up — data / social proof email.
-Send ~Jul 4 (14 days after Jun 20 initial wave).
-Run: .venv/bin/python3 outreach/followup_day14.py [--dry-run]
+Send ~Jul 5 (14 days after Jun 21 wave 2 sends).
+Run: venv/bin/python3 outreach/followup_w2_day14.py [--dry-run]
 """
-import sys
-sys.path.insert(0, '/home/ben/.openclaw/workspace/site/.venv/lib/python3.12/site-packages')
-
 import csv, smtplib, time, random
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
@@ -13,33 +10,59 @@ from pathlib import Path
 
 from config import SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS
 import unsubscribe
+import daily_limit
+
 CONTACTS_CSV = Path(__file__).parent / "contacts_wave2.csv"
 FOLLOWUP_LOG = Path(__file__).parent / "followup_w2_day14.log"
 DAY4_LOG     = Path(__file__).parent / "followup_w2_day4.log"
 
-DRY_RUN = "--dry-run" in sys.argv
+DRY_RUN = "--dry-run" in __import__("sys").argv
 
 TRADE_LABEL = {
     "electricians": "electrician", "plumbers": "plumber",
     "builders": "builder", "carpenters": "carpenter",
-    "drainlayers": "drainlayer",
+    "drainlayers": "drainlayer", "roofers": "roofer",
+    "painters": "painter", "concreters": "concreter",
+    "tilers": "tiler", "glaziers": "glazier",
+    "landscapers": "landscaper", "fencers": "fencer",
+    "plasterers": "plasterer", "gasfitters": "gasfitter",
+    "waterproofers": "waterproofer",
 }
 
-# Approximate homeowner search counts by trade (use round numbers that feel real)
 TRADE_SEARCHES = {
     "electricians": "340+",
     "plumbers":     "290+",
     "builders":     "210+",
     "carpenters":   "140+",
     "drainlayers":  "90+",
+    "roofers":      "120+",
+    "painters":     "110+",
+    "concreters":   "80+",
+    "tilers":       "75+",
+    "glaziers":     "60+",
+    "landscapers":  "95+",
+    "fencers":      "70+",
+    "plasterers":   "65+",
+    "gasfitters":   "85+",
 }
+
+CAMPAIGN = "followup_w2_day14"
+TRACK_BASE = "https://tradietools.optified.nz/api/method/tradietools.api.track_email_open"
 
 
 def make_email(name: str, trade: str, region: str, reviews: str, rating: str, listing_id: str = "", slug: str = "") -> tuple[str, str, str]:
     short_name = name.split(" ")[0] if name else "there"
     trade_label = TRADE_LABEL.get(trade, trade.rstrip("s"))
     searches = TRADE_SEARCHES.get(trade, "100+")
-    claim_url = f"https://tradietools.nz/signup/?ref=claim&id={listing_id}" if listing_id else "https://tradietools.nz/signup/"
+
+    lid = listing_id or ""
+    claim_url = (
+        f"https://tradietools.nz/signup/?ref=claim&id={lid}"
+        f"&utm_source=email&utm_medium=email&utm_campaign={CAMPAIGN}"
+        if lid else
+        f"https://tradietools.nz/signup/?utm_source=email&utm_medium=email&utm_campaign={CAMPAIGN}"
+    )
+    track_url = f"{TRACK_BASE}?id={lid}&c={CAMPAIGN}" if lid else ""
 
     subject = f"{searches} homeowners searched for {trade_label}s in {region} last month"
 
@@ -50,7 +73,7 @@ Last month {searches} homeowners searched TradieTools for a {trade_label} in {re
 Those searches are going to tradies who've already claimed their listings. Yours hasn't been claimed yet, so those customers don't see your reviews, your phone number, or a way to contact you.
 
 It takes about 60 seconds to fix that:
-👉 https://tradietools.nz/signup/
+{claim_url}
 
 Your listing is already there — you just need to claim it and add your contact details.
 
@@ -59,6 +82,8 @@ Ben
 TradieTools NZ
 https://tradietools.nz
 """
+
+    pixel = f'<img src="{track_url}" width="1" height="1" alt="" style="display:none">' if track_url else ""
 
     html = f"""<!DOCTYPE html>
 <html>
@@ -78,7 +103,7 @@ https://tradietools.nz
 
     <p>It takes about 60 seconds to fix that:</p>
 
-        <p>Here's your live profile on TradieTools:</p>
+    <p>Here's your live profile on TradieTools:</p>
     <p style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:6px;padding:.75rem 1rem;font-size:.88rem">
       🔗 <a href="https://tradietools.nz/businesses/{slug}/" style="color:#0055a5">{name} — view your profile</a>
     </p>
@@ -98,6 +123,7 @@ https://tradietools.nz
       You're receiving this because your business appeared in our NZ trade directory.
       To unsubscribe reply with "unsubscribe".
     </p>
+    {pixel}
   </div>
 </body>
 </html>"""
@@ -129,7 +155,7 @@ def main():
 
     already_logged = set(FOLLOWUP_LOG.read_text().splitlines()) if FOLLOWUP_LOG.exists() else set()
 
-    print(f"{'DRY RUN — ' if DRY_RUN else ''}Sending Wave 2 Wave 2 Day 14 follow-ups to {len(rows)} contacts")
+    print(f"{'DRY RUN — ' if DRY_RUN else ''}Sending Wave 2 Day 14 follow-ups to {len(rows)} contacts")
 
     sent_count = 0
     failed = []
@@ -145,7 +171,7 @@ def main():
         if not email or email in already_logged:
             continue
         if unsubscribe.is_unsubscribed(email):
-            print(f'  -> unsubscribed, skip')
+            print(f"  -> {email} unsubscribed, skip")
             continue
 
         listing_id = row.get("listing_id", "").strip()
