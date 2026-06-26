@@ -3,28 +3,143 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page not found | NZ Tradie Tools</title>
+  <title>Page not found | TradieTools NZ</title>
   <meta name="robots" content="noindex">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/static/css/style.css">
   <style>
-    .error-wrap { max-width: 520px; margin: 4rem auto; padding: 0 1.25rem; text-align: center; }
-    .error-code { font-size: 5rem; font-weight: 800; color: #e2e8f0; line-height: 1; }
-    h1 { font-size: 1.5rem; color: #1b2a4a; margin: .5rem 0 .75rem; }
-    p { color: #64748b; margin-bottom: 1.75rem; }
-    .links { display: flex; flex-wrap: wrap; gap: .75rem; justify-content: center; }
-    .btn { display: inline-block; padding: .65rem 1.25rem; border-radius: 6px; font-weight: 600; font-size: .9rem; text-decoration: none; }
-    .btn-primary { background: #0055a5; color: #fff; }
-    .btn-secondary { background: #f1f5f9; color: #334155; }
-    .btn:hover { opacity: .88; }
+    .error-wrap {
+      max-width: 560px;
+      margin: 3rem auto 5rem;
+      padding: 0 1.25rem;
+    }
+    .error-badge {
+      display: inline-block;
+      background: #fef2f2;
+      color: #dc2626;
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      padding: .3rem .75rem;
+      border-radius: 999px;
+      margin-bottom: 1rem;
+    }
+    .error-wrap h1 {
+      font-size: 1.6rem;
+      color: #1b2a4a;
+      margin: 0 0 .75rem;
+    }
+    .error-wrap .lead {
+      color: #64748b;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+    .error-card {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 1.75rem 1.5rem;
+    }
+    .error-card h2 {
+      font-size: 1.05rem;
+      color: #1b2a4a;
+      margin: 0 0 .3rem;
+    }
+    .error-card .sub {
+      color: #64748b;
+      font-size: .88rem;
+      margin-bottom: 1.25rem;
+    }
+    .form-row { margin-bottom: 1rem; }
+    .form-row label {
+      display: block;
+      font-size: .82rem;
+      font-weight: 600;
+      color: #475569;
+      margin-bottom: .3rem;
+    }
+    .form-row input,
+    .form-row textarea {
+      width: 100%;
+      padding: .6rem .85rem;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      font-size: .92rem;
+      font-family: inherit;
+      color: #1e293b;
+      box-sizing: border-box;
+      background: #f8fafc;
+      transition: border-color .15s;
+    }
+    .form-row input:focus,
+    .form-row textarea:focus {
+      outline: none;
+      border-color: #0055a5;
+      background: #fff;
+    }
+    .form-row textarea { resize: vertical; min-height: 90px; }
+    .url-display {
+      font-size: .78rem;
+      color: #94a3b8;
+      background: #f1f5f9;
+      border-radius: 4px;
+      padding: .25rem .5rem;
+      margin-bottom: 1rem;
+      word-break: break-all;
+    }
+    .btn-submit {
+      display: block;
+      width: 100%;
+      padding: .75rem;
+      background: #0055a5;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: .95rem;
+      font-weight: 700;
+      cursor: pointer;
+      font-family: inherit;
+      transition: background .15s;
+    }
+    .btn-submit:hover { background: #004080; }
+    .btn-submit:disabled { background: #94a3b8; cursor: default; }
+    .success-msg {
+      display: none;
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: 8px;
+      padding: 1.25rem;
+      color: #166534;
+      text-align: center;
+    }
+    .quick-links {
+      margin-top: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: .6rem;
+    }
+    .quick-links a {
+      font-size: .85rem;
+      color: #0055a5;
+      text-decoration: none;
+      padding: .4rem .85rem;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      background: #f8fafc;
+    }
+    .quick-links a:hover { background: #e2e8f0; }
+    @media (max-width: 480px) {
+      .quick-links { flex-direction: column; }
+      .quick-links a { text-align: center; }
+    }
   </style>
 </head>
 <body>
   <header class="site-header">
     <div class="container">
-      <a href="/" class="logo">NZ Tradie Tools</a>
+      <a href="/" class="logo">TradieTools NZ</a>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
         <span></span><span></span><span></span>
       </button>
@@ -41,22 +156,110 @@
   </header>
 
   <div class="error-wrap">
-    <div class="error-code">404</div>
-    <h1>Page not found</h1>
-    <p>This page doesn't exist or has been moved. Try one of the links below.</p>
-    <div class="links">
-      <a href="/" class="btn btn-primary">Home</a>
-      <a href="/find/" class="btn btn-secondary">Find a Tradie</a>
-      <a href="/jobs/" class="btn btn-secondary">Cost Guides</a>
-      <a href="/signup/" class="btn btn-secondary">List your business</a>
+    <span class="error-badge">404 — Page not found</span>
+    <h1>Sorry, we couldn't find that page</h1>
+    <p class="lead">
+      This might be a missing region, a broken link, or a page that's moved.
+      Fill in the form below and we'll sort it out manually — usually within one business day.
+    </p>
+
+    <div class="error-card">
+      <h2>Let us know what you were looking for</h2>
+      <p class="sub">We'll fix it or point you in the right direction.</p>
+
+      <div class="url-display" id="url-display"></div>
+
+      <form id="error-form">
+        <div class="form-row">
+          <label for="ef-name">Your name</label>
+          <input type="text" id="ef-name" placeholder="e.g. Mark Smith" autocomplete="name">
+        </div>
+        <div class="form-row">
+          <label for="ef-email">Your email <span style="color:#dc2626">*</span></label>
+          <input type="email" id="ef-email" placeholder="mark@example.co.nz" required autocomplete="email">
+        </div>
+        <div class="form-row">
+          <label for="ef-message">What were you looking for?</label>
+          <textarea id="ef-message" placeholder="e.g. I was trying to find an electrician in Upper Hutt, or claim my listing for Wattex Electrical"></textarea>
+        </div>
+        <button type="submit" class="btn-submit" id="ef-btn">Send report</button>
+      </form>
+
+      <div class="success-msg" id="success-msg">
+        <strong>Thanks — we've got your report.</strong><br>
+        We'll look into it and follow up on your email shortly. Sorry for the hassle!
+      </div>
+    </div>
+
+    <div class="quick-links">
+      <a href="/">Home</a>
+      <a href="/find/">Find a Tradie</a>
+      <a href="/signup/">List your business</a>
+      <a href="/trades/get-quotes/">Get Quotes</a>
+      <a href="/contact/">Contact us</a>
     </div>
   </div>
 
   <footer class="site-footer">
     <div class="container">
-      <div><p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">NZ Tradie Tools</p><p>Free calculators, templates and guides for New Zealand tradies.</p></div>
-      <div style="text-align:right"><p><a href="/privacy/">Privacy Policy</a></p><p><a href="/contact/">Contact</a></p><p style="margin-top:.5rem">&copy; 2025 NZ Tradie Tools</p></div>
+      <div>
+        <p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">TradieTools NZ</p>
+        <p>Free calculators, templates and guides for New Zealand tradies.</p>
+      </div>
+      <div style="text-align:right">
+        <p><a href="/privacy/">Privacy Policy</a></p>
+        <p><a href="/contact/">Contact</a></p>
+        <p style="margin-top:.5rem">&copy; 2025 TradieTools NZ</p>
+      </div>
     </div>
   </footer>
+
+  <script>
+  (function () {
+    var pageUrl = window.location.href;
+    var urlEl = document.getElementById('url-display');
+    if (urlEl) urlEl.textContent = 'Page attempted: ' + pageUrl;
+
+    // Pre-fill message if the URL looks like a location/region page
+    var path = window.location.pathname;
+    var msgEl = document.getElementById('ef-message');
+    if (msgEl && !msgEl.value) {
+      if (/\/(find|businesses|locations|trades)\//.test(path)) {
+        var parts = path.replace(/\/$/, '').split('/').filter(Boolean);
+        var hint = parts.slice(-2).join(' / ');
+        msgEl.value = 'I was trying to find: ' + hint;
+      }
+    }
+
+    document.getElementById('error-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var btn  = document.getElementById('ef-btn');
+      var name = document.getElementById('ef-name').value.trim();
+      var email = document.getElementById('ef-email').value.trim();
+      var msg  = document.getElementById('ef-message').value.trim();
+
+      if (!email) { document.getElementById('ef-email').focus(); return; }
+
+      btn.disabled = true;
+      btn.textContent = 'Sending…';
+
+      fetch('https://tradietools.optified.nz/api/method/tradietools.api.report_error', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'X-Frappe-CSRF-Token': 'fetch' },
+        body: JSON.stringify({ page_url: pageUrl, name: name, email: email, message: msg })
+      })
+      .then(function (r) { return r.json(); })
+      .then(function () {
+        document.getElementById('error-form').style.display = 'none';
+        document.getElementById('success-msg').style.display = 'block';
+      })
+      .catch(function () {
+        btn.disabled = false;
+        btn.textContent = 'Send report';
+        alert('Something went wrong sending. Please email contact@tradietools.nz directly — sorry!');
+      });
+    });
+  })();
+  </script>
 </body>
 </html>
