@@ -27,7 +27,8 @@
         .site-header a { color: rgba(255,255,255,.6); text-decoration: none; font-size: .85rem; }
         .site-header a:hover { color: #fff; }
         .site-header h1 { margin: 0; font-size: 1.1rem; color: #fff; flex: 1; }
-        .site-header .logo { color: #fff; font-weight: 700; font-size: 1rem; text-decoration: none; }
+        .site-header .logo { color: #fff; font-weight: 700; font-size: 1rem; text-decoration: none; display:flex; align-items:center; }
+        .site-header .logo-img { height:46px; width:auto; mix-blend-mode:screen; }
 
         /* Layout */
         .main { max-width: 900px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
@@ -125,7 +126,7 @@
 </head>
 <body>
     <header class="site-header">
-        <a class="logo" href="/">TradieTools NZ</a>
+        <a class="logo" href="/"><img src="/static/img/logo-dark.png" alt="TradieTools NZ" class="logo-img"></a>
         <h1>My Dashboard</h1>
         <a href="/find/">Browse directory →</a>
     </header>
