@@ -47,8 +47,12 @@
 
     <script>
     (function(){
+        var API = 'https://tradietools.optified.nz/api/method/tradietools.api.';
         var params = new URLSearchParams(window.location.search);
+        var type  = params.get('type');
         var token = params.get('token');
+        var email = params.get('email');
+        var sig   = params.get('sig');
 
         function show(id) {
             ['state-loading','state-success','state-already','state-error'].forEach(function(s){
@@ -56,15 +60,7 @@
             });
         }
 
-        if (!token) { show('state-error'); return; }
-
-        fetch('https://tradietools.optified.nz/api/method/tradietools.api.unsubscribe_newsletter?token=' + encodeURIComponent(token), {
-            method: 'POST',
-            headers: { Accept: 'application/json' }
-        })
-        .then(function(r) { return r.json(); })
-        .then(function(d) {
-            var msg = d.message || {};
+        function done(msg) {
             if (msg.ok && msg.already_unsubscribed) {
                 document.getElementById('already-email').textContent = msg.email || '';
                 show('state-already');
@@ -74,8 +70,28 @@
             } else {
                 show('state-error');
             }
-        })
-        .catch(function() { show('state-error'); });
+        }
+
+        if (type === 'outreach') {
+            if (!email || !sig) { show('state-error'); return; }
+            fetch(API + 'outreach_unsubscribe', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({email: email, sig: sig})
+            })
+            .then(function(r){ return r.json(); })
+            .then(function(d){ done(d.message || d); })
+            .catch(function(){ show('state-error'); });
+        } else {
+            if (!token) { show('state-error'); return; }
+            fetch(API + 'unsubscribe_newsletter?token=' + encodeURIComponent(token), {
+                method: 'POST',
+                headers: {Accept: 'application/json'}
+            })
+            .then(function(r){ return r.json(); })
+            .then(function(d){ done(d.message || d); })
+            .catch(function(){ show('state-error'); });
+        }
     })();
     </script>
 </body>

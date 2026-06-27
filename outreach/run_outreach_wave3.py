@@ -16,7 +16,7 @@ from playwright.sync_api import sync_playwright
 import daily_limit
 import unsubscribe
 
-from config import SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS
+from config import SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, unsub_link
 OUTPUT   = Path(__file__).parent / "contacts_wave3.csv"
 SENT_LOG = Path(__file__).parent / "sent_wave3.log"
 LOG_FILE = Path(__file__).parent / "run_outreach_wave3.log"
@@ -78,7 +78,7 @@ but the free listing is genuinely free — no card needed.</p>
 TradieTools NZ · <a href="https://tradietools.nz">tradietools.nz</a></p>
 <div class="footer">
 TradieTools NZ · tradietools.nz · contact@tradietools.nz<br>
-Reply "unsubscribe" to be removed immediately.
+<a href="{unsub_url}" style="color:#94a3b8;font-size:.8em">Unsubscribe</a>
 </div></body></html>"""
 
 
@@ -167,7 +167,7 @@ def send(to_email, name, trade, region, listing_id="", slug=""):
     msg["From"]    = "Ben @ TradieTools <contact@tradietools.nz>"
     msg["To"]      = to_email
     msg.attach(MIMEText(
-        HTML_BODY.format(name=name, region=region, label=label, listing_id=listing_id, slug=slug),
+        HTML_BODY.format(name=name, region=region, label=label, listing_id=listing_id, slug=slug, unsub_url=unsub_link(to_email)),
         "html"
     ))
     with smtplib.SMTP_SSL(SMTP_HOST, SMTP_PORT) as s:

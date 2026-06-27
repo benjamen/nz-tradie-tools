@@ -8,7 +8,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from pathlib import Path
 
-from config import SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS
+from config import SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, unsub_link
 import unsubscribe
 import daily_limit
 
@@ -50,12 +50,13 @@ CAMPAIGN = "followup_day14"
 TRACK_BASE = "https://tradietools.optified.nz/api/method/tradietools.api.track_email_open"
 
 
-def make_email(name: str, trade: str, region: str, reviews: str, rating: str, listing_id: str = "", slug: str = "") -> tuple[str, str, str]:
+def make_email(name: str, email: str, trade: str, region: str, reviews: str, rating: str, listing_id: str = "", slug: str = "") -> tuple[str, str, str]:
     short_name = name.split(" ")[0] if name else "there"
     trade_label = TRADE_LABEL.get(trade, trade.rstrip("s"))
     searches = TRADE_SEARCHES.get(trade, "100+")
 
     lid = listing_id or ""
+    unsub_url = unsub_link(email)
     claim_url = (
         f"https://tradietools.nz/signup/?ref=claim&id={lid}"
         f"&utm_source=email&utm_medium=email&utm_campaign={CAMPAIGN}"
@@ -121,7 +122,7 @@ https://tradietools.nz
     <hr style="border:none;border-top:1px solid #e2e8f0;margin:1.25rem 0">
     <p style="font-size:.75rem;color:#94a3b8">
       You're receiving this because your business appeared in our NZ trade directory.
-      To unsubscribe reply with "unsubscribe".
+      <a href="{unsub_url}" style="color:#94a3b8;font-size:.8em">Unsubscribe</a>
     </p>
     {pixel}
   </div>
@@ -175,7 +176,7 @@ def main():
             continue
 
         listing_id = row.get("listing_id", "").strip()
-        subject, text, html = make_email(name, trade, region, reviews, rating, listing_id, row.get("listing_slug", ""))
+        subject, text, html = make_email(name, email, trade, region, reviews, rating, listing_id, row.get("listing_slug", ""))
 
         if DRY_RUN:
             print(f"  [DRY] {name} <{email}> — {subject}")
