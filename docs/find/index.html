@@ -352,6 +352,10 @@ async function load() {
     if (t) document.getElementById('tradeFilter').value = t;
     if (r) document.getElementById('regionFilter').value = r;
     if (q) document.getElementById('searchInput').value = q;
+    const rat = url.searchParams.get('min_rating'); if (rat) document.getElementById('ratingFilter').value = rat;
+    const av  = url.searchParams.get('available');  if (av)  document.getElementById('availFilter').value = av;
+    const sub = url.searchParams.get('suburb');      if (sub) document.getElementById('suburbFilter').value = sub;
+    const pr  = url.searchParams.get('premium');     if (pr)  document.getElementById('premiumFilter').value = pr;
 
     const [apiRes, clRes] = await Promise.all([
       fetch(API + '?limit=500'),
@@ -435,9 +439,13 @@ function applyFilters() {
   document.getElementById('clearBtn').classList.toggle('show', !!hasFilters);
 
   const url = new URL(location.href);
-  q ? url.searchParams.set('q',q) : url.searchParams.delete('q');
-  trade ? url.searchParams.set('trade',trade) : url.searchParams.delete('trade');
-  region ? url.searchParams.set('region',region) : url.searchParams.delete('region');
+  q      ? url.searchParams.set('q',q)                 : url.searchParams.delete('q');
+  trade  ? url.searchParams.set('trade',trade)          : url.searchParams.delete('trade');
+  region ? url.searchParams.set('region',region)        : url.searchParams.delete('region');
+  minRat ? url.searchParams.set('min_rating',String(minRat)) : url.searchParams.delete('min_rating');
+  avail  ? url.searchParams.set('available',avail)      : url.searchParams.delete('available');
+  suburb ? url.searchParams.set('suburb',suburb)        : url.searchParams.delete('suburb');
+  prem   ? url.searchParams.set('premium',prem)         : url.searchParams.delete('premium');
   history.replaceState(null,'',url);
 
   render();
