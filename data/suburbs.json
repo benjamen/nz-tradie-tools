@@ -1,0 +1,194 @@
+[
+  {
+    "slug": "ponsonby",
+    "name": "Ponsonby",
+    "blurb": "Ponsonby is one of Auckland's most sought-after inner suburbs. Older villas and character homes dominate, meaning most tradie jobs involve heritage-sensitive work — renovations, rewiring, repiling, and plumbing upgrades in pre-1940s homes.",
+    "demand": "High demand for builders and electricians due to the age and character of the housing stock.",
+    "lat": -36.8558,
+    "lng": 174.7384,
+    "city": "Auckland",
+    "region": "Auckland"
+  },
+  {
+    "slug": "mt-eden",
+    "name": "Mount Eden",
+    "blurb": "Mount Eden and its neighbouring suburbs (Sandringham, Balmoral, Kingsland) are packed with bungalows and villas under constant renovation. It's one of Auckland's highest-volume renovation corridors.",
+    "demand": "Strong demand for bathroom and kitchen renovators, plumbers, and painters.",
+    "lat": -36.8779,
+    "lng": 174.7571,
+    "city": "Auckland",
+    "region": "Auckland"
+  },
+  {
+    "slug": "remuera",
+    "name": "Remuera",
+    "blurb": "Remuera's premium housing stock drives consistent demand for high-spec tradie work. Homeowners here expect detailed quoting, tidy worksites, and quality finishes on new builds, extensions and full renovations.",
+    "demand": "Premium builds and full renovations. High per-job value, discerning clients.",
+    "lat": -36.88,
+    "lng": 174.7923,
+    "city": "Auckland",
+    "region": "Auckland"
+  },
+  {
+    "slug": "takapuna",
+    "name": "Takapuna",
+    "blurb": "Takapuna on the North Shore is a mix of 1960s–1980s homes and modern apartments. Bathroom and kitchen upgrades dominate, plus roofing work on ageing homes.",
+    "demand": "High demand for plumbers, bathroom renovators, roofers and painters.",
+    "lat": -36.7884,
+    "lng": 174.775,
+    "city": "Auckland",
+    "region": "Auckland"
+  },
+  {
+    "slug": "henderson",
+    "name": "Henderson",
+    "blurb": "Henderson and West Auckland have seen significant development over the past decade. New builds, extensions and weathertight remediation work are common across Henderson, Te Atatu and New Lynn.",
+    "demand": "Strong demand for builders, waterproofers and landscapers across the western corridor.",
+    "lat": -36.8751,
+    "lng": 174.6363,
+    "city": "Auckland",
+    "region": "Auckland"
+  },
+  {
+    "slug": "newmarket",
+    "name": "Newmarket",
+    "blurb": "Newmarket's mix of apartments and renovated character homes creates consistent demand for plumbing, electrical and kitchen work. Proximity to Epsom and Grafton extends the service zone.",
+    "demand": "Plumbing, electrical and kitchen renovation work from apartment and villa owners.",
+    "lat": -36.8693,
+    "lng": 174.7773,
+    "city": "Auckland",
+    "region": "Auckland"
+  },
+  {
+    "slug": "parnell",
+    "name": "Parnell",
+    "blurb": "Parnell is Auckland's oldest suburb and home to some of its finest villa and heritage properties. Tradie work here is often high-spec restoration — joinery, plasterwork, period-appropriate detailing.",
+    "demand": "Specialist builders, painters and heritage restoration tradespeople.",
+    "lat": -36.8596,
+    "lng": 174.78,
+    "city": "Auckland",
+    "region": "Auckland"
+  },
+  {
+    "slug": "albany",
+    "name": "Albany",
+    "blurb": "Albany on the upper North Shore is a fast-growing hub of new builds and large-lot homes. New construction, landscaping, and fit-out work dominate the area.",
+    "demand": "New build specialists, landscapers, and fit-out tradespeople.",
+    "lat": -36.7328,
+    "lng": 174.7005,
+    "city": "Auckland",
+    "region": "Auckland"
+  },
+  {
+    "slug": "botany",
+    "name": "Botany",
+    "blurb": "Botany and East Auckland have a high concentration of family homes built in the 1990s–2010s, many now due for their first major renovation cycle — kitchens, bathrooms, decks, and fencing.",
+    "demand": "Mid-cycle renovations: kitchens, bathrooms, decking, and tiling are the main jobs.",
+    "lat": -36.9236,
+    "lng": 174.91,
+    "city": "Auckland",
+    "region": "Auckland"
+  },
+  {
+    "slug": "onehunga",
+    "name": "Onehunga",
+    "blurb": "Onehunga is one of Auckland's most rapidly gentrifying suburbs. Older state homes and bungalows are being renovated or extended, with strong demand across most trades.",
+    "demand": "Builders, painters, plumbers and electricians for rapid renovation volume.",
+    "lat": -36.9253,
+    "lng": 174.7836,
+    "city": "Auckland",
+    "region": "Auckland"
+  },
+  {
+    "slug": "papakura",
+    "name": "Papakura",
+    "blurb": "Papakura in South Auckland serves as a hub for tradies working across Manukau, Pukekohe and Karaka. Lifestyle blocks, new subdivisions and older homes create varied demand.",
+    "demand": "Builders for new subdivisions, landscapers for lifestyle blocks, roofing and painting.",
+    "lat": -37.064,
+    "lng": 174.9438,
+    "city": "Auckland",
+    "region": "Auckland"
+  },
+  {
+    "slug": "manukau",
+    "name": "Manukau",
+    "blurb": "Manukau is South Auckland's commercial and residential centre. High-density housing, community builds and large-lot homes create consistent tradie demand across all trades.",
+    "demand": "High volume across all trades — builders, plumbers, electricians and painters.",
+    "lat": -36.9941,
+    "lng": 174.8796,
+    "city": "Auckland",
+    "region": "Auckland"
+  },
+  {
+    "slug": "newtown",
+    "name": "Newtown",
+    "city": "Wellington",
+    "region": "Wellington",
+    "blurb": "Newtown is one of Wellington's most diverse and densely populated suburbs. Its mix of 1900s villas and 1960s flats means constant demand for renovation tradies, electricians, and plumbers dealing with aging infrastructure.",
+    "demand": "High demand for electricians and plumbers upgrading pre-1970s homes."
+  },
+  {
+    "slug": "karori",
+    "name": "Karori",
+    "city": "Wellington",
+    "region": "Wellington",
+    "blurb": "Karori is Wellington's largest suburb by area — a leafy residential enclave with a mix of older homes and newer builds. Strong demand for landscaping, fencing, and general building work.",
+    "demand": "Strong demand for landscapers, builders and painters."
+  },
+  {
+    "slug": "johnsonville",
+    "name": "Johnsonville",
+    "city": "Wellington",
+    "region": "Wellington",
+    "blurb": "Johnsonville is a major Wellington suburb with significant housing stock from the 1950s–1980s, driving steady demand for renovation and maintenance tradies.",
+    "demand": "Steady demand for builders, roofers, and painters."
+  },
+  {
+    "slug": "petone",
+    "name": "Petone",
+    "city": "Lower Hutt",
+    "region": "Wellington",
+    "blurb": "Petone in the Hutt Valley is one of the fastest-gentrifying suburbs in Greater Wellington. Victorian and Edwardian villas are being renovated at pace.",
+    "demand": "High demand for renovation builders, electricians, and heritage plumbing work."
+  },
+  {
+    "slug": "upper-hutt",
+    "name": "Upper Hutt",
+    "city": "Upper Hutt",
+    "region": "Wellington",
+    "blurb": "Upper Hutt's more affordable housing draws first-home buyers, many needing renovation work. Strong residential construction activity with new subdivisions opening regularly.",
+    "demand": "Good demand for builders, fencers and landscapers in new-build areas."
+  },
+  {
+    "slug": "riccarton",
+    "name": "Riccarton",
+    "city": "Christchurch",
+    "region": "Canterbury",
+    "blurb": "Riccarton is Christchurch's commercial and residential heart. Post-quake rebuild activity remains strong, with both new builds and earthquake repairs keeping tradies busy.",
+    "demand": "Strong demand for builders, concrete layers, and electricians."
+  },
+  {
+    "slug": "sydenham",
+    "name": "Sydenham",
+    "city": "Christchurch",
+    "region": "Canterbury",
+    "blurb": "Sydenham is a rapidly regenerating suburb south of the Christchurch CBD. Earthquake land clearances have created significant new-build activity alongside commercial redevelopment.",
+    "demand": "High new-build demand for builders, plumbers and electricians."
+  },
+  {
+    "slug": "papanui",
+    "name": "Papanui",
+    "city": "Christchurch",
+    "region": "Canterbury",
+    "blurb": "Papanui is a mature, well-established Christchurch suburb with a mix of pre-quake villas and post-quake new builds. Maintenance and renovation demand is consistent.",
+    "demand": "Consistent demand for painters, roofers, and bathroom renovators."
+  },
+  {
+    "slug": "rolleston",
+    "name": "Rolleston",
+    "city": "Selwyn",
+    "region": "Canterbury",
+    "blurb": "Rolleston is one of New Zealand's fastest-growing towns, driven by Christchurch overspill. New subdivisions are booming and tradies who set up here have a ready pipeline of new-build work.",
+    "demand": "Excellent new-build pipeline for builders, landscapers, and electricians."
+  }
+]

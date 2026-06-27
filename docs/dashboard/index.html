@@ -273,6 +273,90 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Lead Inbox -->
+            <div class="section-card" id="leads-section" style="display:none">
+                <div class="section-head">
+                    <h2>📥 Recent Leads</h2>
+                    <span style="font-size:.8rem;color:var(--muted)" id="leads-count-label"></span>
+                </div>
+                <div class="section-body">
+                    <div id="leads-list"><p style="color:var(--muted);font-size:.88rem;margin:0">Loading leads…</p></div>
+                </div>
+            </div>
+
+            <!-- Licences & Badges -->
+            <div class="section-card">
+                <div class="section-head">
+                    <h2>🏅 Licences &amp; Badges</h2>
+                    <span style="font-size:.8rem;color:var(--muted)">Shown on your public profile</span>
+                </div>
+                <div class="section-body">
+                    <p style="font-size:.88rem;color:var(--muted);margin:0 0 1rem">Enter your licence numbers to unlock verified badges on your profile. We verify each number against the official register.</p>
+                    <div class="field-row">
+                        <div class="field-group">
+                            <label>LBP Number <span style="color:var(--muted);font-weight:400">(builders, roofers, renovators)</span></label>
+                            <input type="text" id="f-lbp" placeholder="e.g. LBP 123456">
+                        </div>
+                        <div class="field-group">
+                            <label>EWRB Number <span style="color:var(--muted);font-weight:400">(electricians)</span></label>
+                            <input type="text" id="f-ewrb" placeholder="e.g. 12345">
+                        </div>
+                    </div>
+                    <div class="field-row">
+                        <div class="field-group">
+                            <label>PGD Number <span style="color:var(--muted);font-weight:400">(plumbers, gasfitters, drainlayers)</span></label>
+                            <input type="text" id="f-pgd" placeholder="e.g. PG 12345">
+                        </div>
+                        <div class="field-group" style="display:flex;align-items:flex-end">
+                            <button class="btn-save" onclick="saveLicences()" id="btn-save-licences">Submit for verification</button>
+                        </div>
+                    </div>
+                    <span id="licence-msg" style="font-size:.85rem;display:none;margin-top:.4rem"></span>
+                    <div id="badge-status" style="margin-top:1rem;display:flex;flex-wrap:wrap;gap:.5rem"></div>
+                </div>
+            </div>
+
+            <!-- Feature My Listing -->
+            <div class="section-card" id="featured-section">
+                <div class="section-head">
+                    <h2>⭐ Feature My Listing</h2>
+                    <span style="font-size:.8rem;color:var(--muted)" id="featured-status-label"></span>
+                </div>
+                <div class="section-body">
+                    <p style="font-size:.88rem;color:var(--muted);margin:0 0 1rem">Featured listings appear at the top of search results and trade pages for your area. Priced at $25/week.</p>
+                    <div style="display:flex;gap:.75rem;flex-wrap:wrap;align-items:center">
+                        <select id="featured-weeks" style="border:1.5px solid var(--border);border-radius:6px;padding:.5rem .75rem;font-size:.9rem;font-family:inherit">
+                            <option value="2">2 weeks — $50</option>
+                            <option value="4" selected>4 weeks — $100</option>
+                            <option value="8">8 weeks — $200</option>
+                        </select>
+                        <button class="btn-save" id="btn-feature" onclick="purchaseFeatured()">Feature my listing →</button>
+                        <span id="feature-msg" style="font-size:.85rem;color:var(--muted)"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lead Credits -->
+            <div class="section-card" id="credits-section">
+                <div class="section-head">
+                    <h2>🎯 Lead Credits</h2>
+                    <span style="font-size:.8rem;color:var(--muted)" id="credits-balance-label"></span>
+                </div>
+                <div class="section-body">
+                    <p style="font-size:.88rem;color:var(--muted);margin:0 0 1rem">Not ready for a subscription? Buy lead credits instead. Each credit unlocks the full contact details for one homeowner lead in your region — $5 per lead.</p>
+                    <div style="display:flex;gap:.75rem;flex-wrap:wrap;align-items:center">
+                        <select id="credits-qty" style="border:1.5px solid var(--border);border-radius:6px;padding:.5rem .75rem;font-size:.9rem;font-family:inherit">
+                            <option value="5">5 leads — $25</option>
+                            <option value="10" selected>10 leads — $50</option>
+                            <option value="20">20 leads — $100</option>
+                        </select>
+                        <button class="btn-save" id="btn-buy-credits" onclick="buyLeadCredits()">Buy lead credits →</button>
+                        <span id="credits-msg" style="font-size:.85rem;color:var(--muted)"></span>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -386,6 +470,21 @@ function renderDashboard(d) {
     // Show photos section and load photos
     document.getElementById('photos-section').style.display = 'block';
     loadPhotos();
+
+    // Load leads and badges
+    loadLeads();
+    loadBadges();
+
+    // Featured status
+    if (d.is_featured) {
+        document.getElementById('featured-status-label').textContent = '✓ Currently featured';
+        document.getElementById('featured-status-label').style.color = '#15803d';
+    }
+
+    // Credits balance
+    if (d.lead_credits !== undefined) {
+        document.getElementById('credits-balance-label').textContent = d.lead_credits + ' credits remaining';
+    }
 
     // Availability toggle initial state
     var tw = d.taking_work !== undefined ? !!d.taking_work : true;
@@ -546,6 +645,170 @@ function deletePhoto(photoId) {
         if (d.success) loadPhotos();
     })
     .catch(function(){});
+}
+
+// ── Lead Inbox ─────────────────────────────────────────────────────────────
+function loadLeads() {
+    if (!TOKEN) return;
+    fetch(API + 'get_lead_inbox?token=' + encodeURIComponent(TOKEN))
+    .then(function(r){ return r.json(); })
+    .then(function(json){
+        var d = json.message || json;
+        if (!d.success) return;
+        document.getElementById('leads-section').style.display = 'block';
+        var leads = d.leads || [];
+        document.getElementById('leads-count-label').textContent = leads.length + ' lead' + (leads.length !== 1 ? 's' : '') + ' (last 30 days)';
+        var el = document.getElementById('leads-list');
+        if (!leads.length) {
+            el.innerHTML = '<p style="color:var(--muted);font-size:.88rem;margin:0">No leads in the last 30 days. Leads appear here as homeowners request quotes in your area.</p>';
+            return;
+        }
+        el.innerHTML = leads.map(function(l) {
+            var statusColor = l.lead_status === 'accepted' ? '#15803d' : l.lead_status === 'declined' ? '#dc2626' : '#d97706';
+            var statusLabel = l.lead_status === 'accepted' ? '✓ Accepted' : l.lead_status === 'declined' ? '✗ Declined' : '⏳ Pending';
+            var date = l.creation ? new Date(l.creation).toLocaleDateString('en-NZ', {day:'numeric',month:'short'}) : '';
+            return '<div style="border:1px solid var(--border);border-radius:8px;padding:1rem;margin-bottom:.75rem">'
+                + '<div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;margin-bottom:.4rem">'
+                + '<span style="font-weight:600;font-size:.95rem">' + esc(l.trade_type || 'Tradie') + ' job · ' + esc(l.city || '') + '</span>'
+                + '<div style="display:flex;align-items:center;gap:.5rem">'
+                + '<span style="font-size:.78rem;color:' + statusColor + ';font-weight:600">' + statusLabel + '</span>'
+                + '<span style="font-size:.78rem;color:var(--muted)">' + date + '</span>'
+                + '</div></div>'
+                + '<p style="font-size:.85rem;color:#374151;margin:.3rem 0">' + esc(l.job_preview || '') + '</p>'
+                + (l.lead_status === 'pending'
+                    ? '<div style="display:flex;gap:.5rem;margin-top:.75rem">'
+                    + '<button onclick="respondLead(\'' + esc(l.name) + '\',\'accept\')" style="background:#16a34a;color:#fff;border:none;border-radius:5px;padding:.45rem .9rem;font-size:.82rem;font-weight:600;cursor:pointer;font-family:inherit">Accept &amp; get contact details</button>'
+                    + '<button onclick="respondLead(\'' + esc(l.name) + '\',\'decline\')" style="background:#f1f5f9;color:#475569;border:1px solid var(--border);border-radius:5px;padding:.45rem .9rem;font-size:.82rem;font-weight:600;cursor:pointer;font-family:inherit">Not for me</button>'
+                    + '</div>'
+                    : '')
+                + '</div>';
+        }).join('');
+    })
+    .catch(function(){});
+}
+
+function respondLead(quoteName, action) {
+    var endpoint = action === 'accept' ? 'accept_lead' : 'decline_lead';
+    fetch(API + endpoint, {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json', 'X-Frappe-CSRF-Token': 'fetch'},
+        body: JSON.stringify({token: TOKEN, quote_name: quoteName})
+    })
+    .then(function(r){ return r.json(); })
+    .then(function(json){
+        var d = json.message || json;
+        if (d.success) {
+            if (action === 'accept' && d.customer_email) {
+                alert('Lead accepted! Contact:\nName: ' + (d.customer_name || '') + '\nEmail: ' + d.customer_email + '\nPhone: ' + (d.customer_phone || ''));
+            }
+            loadLeads();
+        } else {
+            alert(d.error || 'Could not update lead. Please try again.');
+        }
+    })
+    .catch(function(){ alert('Request failed. Please try again.'); });
+}
+
+// ── Licences ──────────────────────────────────────────────────────────────
+function loadBadges() {
+    if (!TRADIE_ID) return;
+    fetch(API + 'get_listing_badges?tradie_id=' + encodeURIComponent(TRADIE_ID))
+    .then(function(r){ return r.json(); })
+    .then(function(json){
+        var d = json.message || json;
+        var badges = d.badges || {};
+        var statusEl = document.getElementById('badge-status');
+        var html = '';
+        if (badges.lbp) html += '<span style="background:#dbeafe;color:#1d4ed8;padding:.25rem .7rem;border-radius:20px;font-size:.78rem;font-weight:600">✓ LBP ' + esc(badges.lbp.number) + '</span>';
+        if (badges.ewrb) html += '<span style="background:#dcfce7;color:#15803d;padding:.25rem .7rem;border-radius:20px;font-size:.78rem;font-weight:600">✓ EWRB ' + esc(badges.ewrb.number) + '</span>';
+        if (badges.pgd) html += '<span style="background:#fef3c7;color:#92400e;padding:.25rem .7rem;border-radius:20px;font-size:.78rem;font-weight:600">✓ PGD ' + esc(badges.pgd.number) + '</span>';
+        statusEl.innerHTML = html || '<span style="font-size:.82rem;color:var(--muted)">No verified badges yet.</span>';
+    })
+    .catch(function(){});
+}
+
+function saveLicences() {
+    var btn = document.getElementById('btn-save-licences');
+    var msg = document.getElementById('licence-msg');
+    var lbp = document.getElementById('f-lbp').value.trim();
+    var ewrb = document.getElementById('f-ewrb').value.trim();
+    var pgd = document.getElementById('f-pgd').value.trim();
+    if (!lbp && !ewrb && !pgd) { alert('Enter at least one licence number.'); return; }
+    btn.disabled = true; btn.textContent = 'Submitting…';
+    fetch(API + 'submit_licence_verification', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json', 'X-Frappe-CSRF-Token': 'fetch'},
+        body: JSON.stringify({tradie_id: TRADIE_ID, lead_token: TOKEN, lbp_number: lbp, ewrb_number: ewrb, pgd_number: pgd})
+    })
+    .then(function(r){ return r.json(); })
+    .then(function(json){
+        btn.disabled = false; btn.textContent = 'Submit for verification';
+        var d = json.message || json;
+        msg.style.display = 'inline';
+        if (d.success) {
+            msg.style.color = '#15803d';
+            msg.textContent = 'Submitted! Verification typically takes 1 business day.';
+            loadBadges();
+        } else {
+            msg.style.color = '#dc2626';
+            msg.textContent = d.error || 'Submission failed — please try again.';
+        }
+    })
+    .catch(function(){
+        btn.disabled = false; btn.textContent = 'Submit for verification';
+    });
+}
+
+// ── Featured listing ──────────────────────────────────────────────────────
+function purchaseFeatured() {
+    var weeks = document.getElementById('featured-weeks').value;
+    var btn = document.getElementById('btn-feature');
+    btn.disabled = true; btn.textContent = 'Redirecting…';
+    fetch(API + 'purchase_featured_spot', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json', 'X-Frappe-CSRF-Token': 'fetch'},
+        body: JSON.stringify({tradie_id: TRADIE_ID, lead_token: TOKEN, weeks: parseInt(weeks)})
+    })
+    .then(function(r){ return r.json(); })
+    .then(function(json){
+        btn.disabled = false; btn.textContent = 'Feature my listing →';
+        var d = json.message || json;
+        if (d.checkout_url) {
+            window.location.href = d.checkout_url;
+        } else {
+            document.getElementById('feature-msg').textContent = d.error || 'Could not create checkout. Please try again.';
+        }
+    })
+    .catch(function(){
+        btn.disabled = false; btn.textContent = 'Feature my listing →';
+        document.getElementById('feature-msg').textContent = 'Request failed. Please try again.';
+    });
+}
+
+// ── Lead credits ──────────────────────────────────────────────────────────
+function buyLeadCredits() {
+    var qty = document.getElementById('credits-qty').value;
+    var btn = document.getElementById('btn-buy-credits');
+    btn.disabled = true; btn.textContent = 'Redirecting…';
+    fetch(API + 'purchase_lead_credits', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json', 'X-Frappe-CSRF-Token': 'fetch'},
+        body: JSON.stringify({tradie_id: TRADIE_ID, lead_token: TOKEN, quantity: parseInt(qty)})
+    })
+    .then(function(r){ return r.json(); })
+    .then(function(json){
+        btn.disabled = false; btn.textContent = 'Buy lead credits →';
+        var d = json.message || json;
+        if (d.checkout_url) {
+            window.location.href = d.checkout_url;
+        } else {
+            document.getElementById('credits-msg').textContent = d.error || 'Could not create checkout. Please try again.';
+        }
+    })
+    .catch(function(){
+        btn.disabled = false; btn.textContent = 'Buy lead credits →';
+        document.getElementById('credits-msg').textContent = 'Request failed. Please try again.';
+    });
 }
 
 loadDashboard();

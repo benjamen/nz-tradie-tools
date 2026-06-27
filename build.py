@@ -789,6 +789,17 @@ def build_sitemap(articles, calculators, cities, trades, config, job_pages_count
             urls.append({"loc": f"{base_url}/templates/{t['slug']}",
                          "priority": "0.85", "changefreq": "monthly", "lastmod": today})
 
+    # Suburb SEO pages
+    suburbs_file = DATA_DIR / "suburbs.json"
+    if suburbs_file.exists():
+        suburb_data = json.loads(suburbs_file.read_text())
+        suburb_trade_slugs = ["plumbers", "electricians", "builders", "painters", "landscapers"]
+        for trade_slug in suburb_trade_slugs:
+            for suburb in suburb_data:
+                city_key = suburb.get("city", "Auckland").lower().replace(" ", "-")
+                urls.append({"loc": f"{base_url}/trades/{trade_slug}/{city_key}-{suburb['slug']}/",
+                             "priority": "0.75", "changefreq": "monthly", "lastmod": today})
+
     lines = ['<?xml version="1.0" encoding="UTF-8"?>',
              '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for u in urls:
@@ -1445,13 +1456,15 @@ td.national {{ background: #e8f0fe; font-weight: 600; }}
 
 
 def build_auckland_suburb_pages(config, env, nav, base_path):
-    """Generate /trades/{trade}/auckland-{suburb}/ pages for top 5 trades × 12 suburbs."""
-    suburbs_file = DATA_DIR / "auckland-suburbs.json"
+    """Generate /trades/{trade}/{city}-{suburb}/ pages for top trades × all suburbs."""
+    # Use unified suburbs.json if available, else fall back to auckland-suburbs.json
+    suburbs_file = DATA_DIR / "suburbs.json"
+    if not suburbs_file.exists():
+        suburbs_file = DATA_DIR / "auckland-suburbs.json"
     if not suburbs_file.exists():
         return 0
     suburbs = json.loads(suburbs_file.read_text())
     trades_data = json.loads((DATA_DIR / "trades.json").read_text())
-    # Top 5 trades for Auckland suburb pages
     target_slugs = {"plumbers", "electricians", "builders", "painters", "landscapers"}
     target_trades = [t for t in trades_data if t["slug"] in target_slugs]
 
@@ -1459,22 +1472,27 @@ def build_auckland_suburb_pages(config, env, nav, base_path):
     claimed = load_claimed_businesses()
     count = 0
 
+    # Cache top10 city data per trade
+    city_data_cache = {}
+
     for trade in target_trades:
-        # Load Auckland top10 data for this trade
-        auckland_json = DATA_DIR / "top10" / f"{trade['slug']}-auckland.json"
-        auck_data = json.loads(auckland_json.read_text()) if auckland_json.exists() else {}
-        raw_businesses = auck_data.get("businesses", [])
-
-        # Annotate with claimed profile URLs
-        businesses = []
-        for b in raw_businesses:
-            b = dict(b)
-            biz_slug = slugify(b.get("name", ""))
-            b["profile_url"] = f"/businesses/{biz_slug}/" if biz_slug in claimed else None
-            businesses.append(b)
-
         for suburb in suburbs:
-            other_suburbs = [s for s in suburbs if s["slug"] != suburb["slug"]]
+            city_key = suburb.get("city", "Auckland").lower().replace(" ", "-")
+            cache_key = f"{trade['slug']}-{city_key}"
+            if cache_key not in city_data_cache:
+                city_json = DATA_DIR / "top10" / f"{trade['slug']}-{city_key}.json"
+                raw = json.loads(city_json.read_text()).get("businesses", []) if city_json.exists() else []
+                businesses = []
+                for b in raw:
+                    b = dict(b)
+                    biz_slug = slugify(b.get("name", ""))
+                    b["profile_url"] = f"/businesses/{biz_slug}/" if biz_slug in claimed else None
+                    businesses.append(b)
+                city_data_cache[cache_key] = businesses
+
+            # Same-city suburbs for internal linking
+            same_city = [s for s in suburbs if s.get("city") == suburb.get("city") and s["slug"] != suburb["slug"]]
+
             ctx = {
                 **config,
                 "base_path": base_path,
@@ -1482,11 +1500,11 @@ def build_auckland_suburb_pages(config, env, nav, base_path):
                 "year": datetime.now().year,
                 "trade": trade,
                 "suburb": suburb,
-                "businesses": businesses,
-                "other_suburbs": other_suburbs,
+                "businesses": city_data_cache[cache_key],
+                "other_suburbs": same_city,
                 "trades": trades_data,
             }
-            out_dir = PUBLIC_DIR / "trades" / trade["slug"] / f"auckland-{suburb['slug']}"
+            out_dir = PUBLIC_DIR / "trades" / trade["slug"] / f"{city_key}-{suburb['slug']}"
             out_dir.mkdir(parents=True, exist_ok=True)
             (out_dir / "index.html").write_text(template.render(**ctx), encoding="utf-8")
             count += 1

@@ -579,6 +579,32 @@
           el.textContent='🏢 NZ Registered'+(b.nzbn.entity_name?' · '+b.nzbn.entity_name:'');
           container.appendChild(el);
         }
+        // Response time badge
+        if(m.response_time_label && !document.getElementById('tt-response-badge')){
+          var rtBadge=document.createElement('span');
+          rtBadge.id='tt-response-badge';
+          rtBadge.className='badge';
+          rtBadge.style.cssText='background:#e0f2fe;color:#0369a1';
+          rtBadge.textContent='⚡ Responds '+m.response_time_label.toLowerCase();
+          container.appendChild(rtBadge);
+        }
+
+        // Availability badge
+        var availBadge = document.getElementById('tt-avail-badge');
+        if(!availBadge){
+          availBadge = document.createElement('span');
+          availBadge.id = 'tt-avail-badge';
+          availBadge.className = 'badge';
+          container.insertBefore(availBadge, container.firstChild);
+        }
+        if(m.taking_work === false || m.taking_work === 0){
+          availBadge.style.cssText = 'background:#fee2e2;color:#991b1b';
+          availBadge.textContent = '⏸ Currently busy';
+        } else {
+          availBadge.style.cssText = 'background:#dcfce7;color:#166534';
+          availBadge.textContent = '✓ Taking work now';
+        }
+
         // Show "Get featured" CTA to owner when not already featured
         var ownerToken = new URLSearchParams(window.location.search).get('token') || '';
         if(ownerToken && !m.is_featured && !document.getElementById('tt-featured-cta')){
