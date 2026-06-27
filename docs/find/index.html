@@ -248,7 +248,15 @@
         <option value="">Any Availability</option>
         <option value="1">Taking work now</option>
       </select>
-      <input type="text" class="filter-select" id="suburbFilter" oninput="applyFilters()" placeholder="Suburb…" style="width:120px">
+      <input type="text" class="filter-select" id="suburbFilter" oninput="applyFilters()" placeholder="Suburb…" style="width:130px" list="suburb-options" autocomplete="off">
+      <datalist id="suburb-options">
+        <option value="Ponsonby"><option value="Mount Eden"><option value="Remuera"><option value="Takapuna">
+        <option value="Henderson"><option value="Newmarket"><option value="Parnell"><option value="Albany">
+        <option value="Botany"><option value="Onehunga"><option value="Papakura"><option value="Manukau">
+        <option value="Newtown"><option value="Karori"><option value="Johnsonville"><option value="Petone">
+        <option value="Upper Hutt"><option value="Riccarton"><option value="Sydenham"><option value="Papanui">
+        <option value="Rolleston">
+      </datalist>
       <button class="filter-clear" id="clearBtn" onclick="clearFilters()">Clear filters</button>
     </div>
   </div>
@@ -368,6 +376,19 @@ async function load() {
       const extra = claimedLookup[(t.name || '').toLowerCase().trim()] || {};
       return { ...t, ...extra };
     });
+    // Enrich suburb datalist with any suburbs from loaded listings
+    const dl = document.getElementById('suburb-options');
+    if (dl) {
+      const existing = new Set([...dl.options].map(o => o.value.toLowerCase()));
+      all.forEach(t => {
+        if (t.suburb && !existing.has(t.suburb.toLowerCase())) {
+          const opt = document.createElement('option');
+          opt.value = t.suburb;
+          dl.appendChild(opt);
+          existing.add(t.suburb.toLowerCase());
+        }
+      });
+    }
     applyFilters();
   } catch(e) {
     document.getElementById('listingArea').innerHTML =
