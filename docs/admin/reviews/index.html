@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Moderation — TradieTools Admin</title>
+    <meta name="robots" content="noindex,nofollow">
+    <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:system-ui,-apple-system,sans-serif;background:#f8fafc;color:#1e293b;min-height:100vh}
+    .topbar{background:#0f172a;padding:.75rem 1.5rem;display:flex;align-items:center;gap:1rem}
+    .topbar h1{color:#fff;font-size:1rem;font-weight:700}
+    .topbar span{color:#94a3b8;font-size:.85rem}
+    .wrap{max-width:860px;margin:2rem auto;padding:0 1rem 4rem}
+    .stats{display:flex;gap:1rem;margin-bottom:1.5rem;flex-wrap:wrap}
+    .stat{background:#fff;border:1px solid #e2e8f0;border-radius:8px;padding:.9rem 1.25rem;flex:1;min-width:120px;text-align:center}
+    .stat .n{font-size:1.75rem;font-weight:700;color:#0055a5}
+    .stat .l{font-size:.8rem;color:#64748b;margin-top:.15rem}
+    .card{background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:1.25rem 1.5rem;margin-bottom:1rem;transition:box-shadow .15s}
+    .card.approved{border-left:4px solid #16a34a;opacity:.6}
+    .card.rejected{border-left:4px solid #dc2626;opacity:.5}
+    .card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+    .meta{font-size:.8rem;color:#64748b;margin:.35rem 0 .6rem;display:flex;gap:.75rem;flex-wrap:wrap;align-items:center}
+    .stars{color:#f59e0b;letter-spacing:.05em;font-size:1rem}
+    .badge{font-size:.72rem;font-weight:700;padding:.15rem .45rem;border-radius:3px}
+    .badge-pending{background:#fef9c3;color:#854d0e}
+    .badge-approved{background:#dcfce7;color:#166534}
+    .badge-rejected{background:#fee2e2;color:#991b1b}
+    .business{font-weight:700;font-size:.88rem;color:#0055a5}
+    .reviewer{font-weight:600;font-size:.95rem}
+    .body{font-size:.9rem;color:#334155;line-height:1.6;margin:.5rem 0}
+    .jobtype{font-size:.78rem;background:#f1f5f9;color:#475569;padding:.15rem .45rem;border-radius:3px;display:inline-block}
+    .actions{display:flex;gap:.5rem;margin-top:.75rem;flex-wrap:wrap}
+    .btn{padding:.45rem 1rem;border:none;border-radius:5px;font-size:.85rem;font-weight:600;cursor:pointer;font-family:inherit;transition:opacity .15s}
+    .btn:disabled{opacity:.4;cursor:default}
+    .btn-approve{background:#16a34a;color:#fff}
+    .btn-reject{background:#dc2626;color:#fff}
+    .btn-view{background:#f1f5f9;color:#334155;text-decoration:none;display:inline-flex;align-items:center}
+    .msg{font-size:.82rem;margin-top:.4rem}
+    .empty{text-align:center;padding:3rem;color:#64748b}
+    #login-wrap{max-width:380px;margin:6rem auto;background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:2rem}
+    #login-wrap h2{font-size:1.2rem;margin-bottom:1rem}
+    #admin-token-input{width:100%;padding:.6rem .8rem;border:1px solid #cbd5e1;border-radius:6px;font-family:inherit;font-size:.95rem;margin-bottom:.75rem}
+    #login-err{color:#dc2626;font-size:.85rem;margin-top:.4rem;display:none}
+    .section-title{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#94a3b8;margin:1.5rem 0 .75rem}
+    </style>
+</head>
+<body>
+
+<div class="topbar">
+    <h1>TradieTools Admin</h1>
+    <span>Review Moderation</span>
+    <span id="topbar-count" style="margin-left:auto;color:#fbbf24"></span>
+</div>
+
+<!-- Login gate -->
+<div id="login-wrap">
+    <h2>Admin login</h2>
+    <input id="admin-token-input" type="password" placeholder="Admin token" autocomplete="off">
+    <button class="btn btn-approve" style="width:100%" onclick="doLogin()">Enter →</button>
+    <p id="login-err">Invalid token.</p>
+</div>
+
+<!-- Moderation dashboard -->
+<div id="dashboard" style="display:none">
+    <div class="wrap">
+        <div class="stats">
+            <div class="stat"><div class="n" id="stat-pending">—</div><div class="l">Pending</div></div>
+            <div class="stat"><div class="n" id="stat-approved">—</div><div class="l">Approved</div></div>
+            <div class="stat"><div class="n" id="stat-rejected">—</div><div class="l">Rejected</div></div>
+            <div class="stat"><div class="n" id="stat-total">—</div><div class="l">Total</div></div>
+        </div>
+
+        <div id="pending-section">
+            <div class="section-title">Pending review</div>
+            <div id="pending-list"><p class="empty">Loading…</p></div>
+        </div>
+
+        <div id="recent-section" style="margin-top:2rem">
+            <div class="section-title">Recently moderated</div>
+            <div id="recent-list"><p class="empty">Loading…</p></div>
+        </div>
+    </div>
+</div>
+
+<script>
+(function(){
+    var API = 'https://tradietools.optified.nz/api/method/tradietools.api.';
+    var TOKEN = '';
+
+    function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+    function stars(n){ var s=''; for(var i=1;i<=5;i++) s+=i<=n?'★':'☆'; return s; }
+    function ago(dt){
+        var ms = Date.now() - new Date(dt).getTime();
+        var m = Math.floor(ms/60000), h = Math.floor(m/60), d = Math.floor(h/24);
+        if(d>0) return d+'d ago'; if(h>0) return h+'h ago'; if(m>0) return m+'m ago'; return 'just now';
+    }
+    function badgeHtml(status){
+        var cls = status==='approved'?'badge-approved':status==='rejected'?'badge-rejected':'badge-pending';
+        return '<span class="badge '+cls+'">'+status+'</span>';
+    }
+
+    function doLogin(){
+        var t = document.getElementById('admin-token-input').value.trim();
+        if(!t) return;
+        TOKEN = t;
+        // Save to sessionStorage so page refresh doesn't need re-login
+        sessionStorage.setItem('tt_admin_token', t);
+        loadAll();
+    }
+    window.doLogin = doLogin;
+
+    document.getElementById('admin-token-input').addEventListener('keydown', function(e){
+        if(e.key==='Enter') doLogin();
+    });
+
+    function loadAll(){
+        Promise.all([
+            fetch(API+'get_pending_reviews?admin_token='+encodeURIComponent(TOKEN)).then(function(r){return r.json();}),
+            fetch(API+'get_all_reviews?admin_token='+encodeURIComponent(TOKEN)+'&limit=20').then(function(r){return r.json();})
+        ]).then(function(results){
+            var pending = results[0].message || results[0];
+            var all     = results[1].message || results[1];
+
+            if(pending.success === false){
+                document.getElementById('login-err').style.display='block';
+                TOKEN = '';
+                sessionStorage.removeItem('tt_admin_token');
+                return;
+            }
+
+            document.getElementById('login-wrap').style.display='none';
+            document.getElementById('dashboard').style.display='';
+
+            var pendingRows = pending.pending || [];
+            var allRows     = (all.reviews || []).filter(function(r){ return r.status !== 'pending'; });
+
+            // Stats
+            var approved = allRows.filter(function(r){ return r.status==='approved'; }).length;
+            var rejected = allRows.filter(function(r){ return r.status==='rejected'; }).length;
+            document.getElementById('stat-pending').textContent  = pendingRows.length;
+            document.getElementById('stat-approved').textContent = approved;
+            document.getElementById('stat-rejected').textContent = rejected;
+            document.getElementById('stat-total').textContent    = pendingRows.length + allRows.length;
+            document.getElementById('topbar-count').textContent  = pendingRows.length ? pendingRows.length+' pending' : '';
+
+            renderPending(pendingRows);
+            renderRecent(allRows);
+        }).catch(function(err){
+            console.error(err);
+            document.getElementById('pending-list').innerHTML='<p class="empty" style="color:#dc2626">Error loading — check token or server.</p>';
+        });
+    }
+
+    function renderPending(rows){
+        var el = document.getElementById('pending-list');
+        if(!rows.length){ el.innerHTML='<p class="empty">No pending reviews. ✓</p>'; return; }
+        el.innerHTML = rows.map(function(r){ return pendingCard(r); }).join('');
+    }
+
+    function renderRecent(rows){
+        var el = document.getElementById('recent-list');
+        if(!rows.length){ el.innerHTML='<p class="empty" style="font-size:.85rem">None yet.</p>'; return; }
+        el.innerHTML = rows.slice(0,15).map(function(r){ return recentCard(r); }).join('');
+    }
+
+    function pendingCard(r){
+        var profileUrl = 'https://tradietools.nz/businesses/'+esc(r.listing_slug)+'/';
+        return '<div class="card" id="card-'+r.id+'">' +
+            '<div class="card-top">' +
+                '<div>' +
+                    '<div class="reviewer">'+esc(r.reviewer_name)+'</div>' +
+                    '<div class="meta">' +
+                        '<span class="stars">'+stars(r.rating)+'</span>' +
+                        '<span>'+r.rating+'/5</span>' +
+                        (r.job_type ? '<span class="jobtype">'+esc(r.job_type)+'</span>' : '') +
+                        '<span>'+ago(r.created_at)+'</span>' +
+                    '</div>' +
+                '</div>' +
+                '<a class="business" href="'+profileUrl+'" target="_blank">'+esc(r.tradie_name || r.listing_slug)+'</a>' +
+            '</div>' +
+            '<p class="body">'+esc(r.preview || r.review_body)+'</p>' +
+            '<div class="actions">' +
+                '<button class="btn btn-approve" onclick="moderate('+r.id+',\'approve\')">✓ Approve</button>' +
+                '<button class="btn btn-reject"  onclick="moderate('+r.id+',\'reject\')">✗ Reject</button>' +
+                '<a class="btn btn-view" href="'+profileUrl+'" target="_blank">View listing ↗</a>' +
+            '</div>' +
+            '<p class="msg" id="msg-'+r.id+'"></p>' +
+        '</div>';
+    }
+
+    function recentCard(r){
+        return '<div class="card '+esc(r.status)+'">' +
+            '<div class="card-top">' +
+                '<div>' +
+                    '<span class="reviewer">'+esc(r.reviewer_name)+'</span>' +
+                    ' &nbsp; ' + badgeHtml(r.status) +
+                    '<div class="meta">' +
+                        '<span class="stars">'+stars(r.rating)+'</span>' +
+                        '<span>'+r.rating+'/5</span>' +
+                        (r.job_type ? '<span class="jobtype">'+esc(r.job_type)+'</span>' : '') +
+                        '<span>'+ago(r.created_at)+'</span>' +
+                    '</div>' +
+                '</div>' +
+                '<span class="business">'+esc(r.tradie_name || r.listing_slug || '')+'</span>' +
+            '</div>' +
+            '<p class="body" style="font-size:.85rem;color:#64748b">'+esc((r.preview || r.review_body || '').substring(0,150))+'</p>' +
+        '</div>';
+    }
+
+    window.moderate = function(id, action){
+        var msg = document.getElementById('msg-'+id);
+        var card = document.getElementById('card-'+id);
+        var btns = card.querySelectorAll('.btn');
+        btns.forEach(function(b){ b.disabled=true; });
+        msg.textContent = 'Processing…';
+        msg.style.color = '#64748b';
+        fetch(API+'moderate_review', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({review_id: id, action: action, admin_token: TOKEN})
+        })
+        .then(function(r){ return r.json(); })
+        .then(function(d){
+            var m = d.message || d;
+            if(m.success){
+                msg.style.color = action==='approve' ? '#16a34a' : '#dc2626';
+                msg.textContent = action==='approve' ? '✓ Approved — now visible on profile.' : '✗ Rejected and hidden.';
+                card.style.opacity = '.4';
+                card.style.pointerEvents = 'none';
+                // Update pending count
+                var pc = document.getElementById('stat-pending');
+                pc.textContent = Math.max(0, (parseInt(pc.textContent)||0) - 1);
+                var tc = document.getElementById('topbar-count');
+                var newCount = Math.max(0, (parseInt(pc.textContent)||0));
+                tc.textContent = newCount ? newCount+' pending' : '';
+            } else {
+                msg.style.color = '#dc2626';
+                msg.textContent = m.error || 'Error — try again.';
+                btns.forEach(function(b){ b.disabled=false; });
+            }
+        })
+        .catch(function(){
+            msg.style.color='#dc2626'; msg.textContent='Network error.';
+            btns.forEach(function(b){ b.disabled=false; });
+        });
+    };
+
+    // Auto-login if token saved in session
+    var saved = sessionStorage.getItem('tt_admin_token');
+    if(saved){ TOKEN=saved; document.getElementById('admin-token-input').value=saved; loadAll(); }
+})();
+</script>
+</body>
+</html>
