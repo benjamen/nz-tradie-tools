@@ -466,6 +466,16 @@
 
         if(reviewPage===1){
           list.innerHTML = m.reviews.map(reviewCard).join('');
+          // Inject/update AggregateRating JSON-LD dynamically for Google
+          if(m.avg_rating && reviewTotal > 0 && !document.getElementById('tt-agg-schema')){
+            var sc=document.createElement('script');
+            sc.id='tt-agg-schema'; sc.type='application/ld+json';
+            sc.textContent=JSON.stringify({"@context":"https://schema.org","@type":"LocalBusiness",
+              "name":document.title.split('|')[0].trim(),
+              "aggregateRating":{"@type":"AggregateRating","ratingValue":m.avg_rating,
+                "reviewCount":reviewTotal,"bestRating":5,"worstRating":1}});
+            document.head.appendChild(sc);
+          }
         } else {
           list.innerHTML += m.reviews.map(reviewCard).join('');
         }

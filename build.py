@@ -301,6 +301,7 @@ def build():
     build_claim_page(config, env, nav, base_path)
     build_get_quotes(config, env, nav, base_path)
     build_my_account(config, env, nav, base_path)
+    build_admin_reviews(config, env, nav, base_path)
 
     trades_count, locations_count = build_trades_and_locations(config, env, nav, base_path)
     suburb_pages = build_auckland_suburb_pages(config, env, nav, base_path)
@@ -1069,6 +1070,13 @@ def build_my_account(config, env, nav, base_path):
     ctx = {**config, "base_path": base_path, "nav": nav, "year": datetime.now().year}
     (PUBLIC_DIR / "my-account").mkdir(exist_ok=True)
     (PUBLIC_DIR / "my-account" / "index.html").write_text(template.render(**ctx), encoding="utf-8")
+
+
+def build_admin_reviews(config, env, nav, base_path):
+    template = env.get_template("admin-reviews.html")
+    ctx = {**config, "base_path": base_path, "nav": nav, "year": datetime.now().year}
+    (PUBLIC_DIR / "admin-reviews").mkdir(exist_ok=True)
+    (PUBLIC_DIR / "admin-reviews" / "index.html").write_text(template.render(**ctx), encoding="utf-8")
 
 
 def build_faq(config, env, nav, base_path):
