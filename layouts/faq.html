@@ -19,7 +19,7 @@
     <meta property="og:description" content="Answers to 60+ questions NZ tradies ask about tax, GST, ACC, contracts, pricing, and running a self-employed trade business in New Zealand.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ base_url }}/faq/">
-    <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta property="og:site_name" content="TradieTools NZ">
     <meta name="twitter:card" content="summary_large_image">
     <meta property="og:image" content="{{ base_url }}/static/img/social-card.svg">
     <meta name="twitter:image" content="{{ base_url }}/static/img/social-card.svg">
@@ -62,7 +62,7 @@
       ]
     }
     </script>
-    <link rel="icon" href="{{ base_path }}/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="{{ base_path }}/favicon.png" type="image/png">
     <link rel="stylesheet" href="{{ base_path }}/static/css/style.css">
     {% if ga_id %}
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ ga_id }}"></script>
@@ -577,7 +577,7 @@
                 <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="{{ beehiiv_form_id }}"></script>
                 {% else %}
                 <form action="{{ formspree_endpoint }}" method="POST">
-                    <input type="hidden" name="_subject" value="NZ Tradie Tools — Newsletter Signup">
+                    <input type="hidden" name="_subject" value="TradieTools NZ — Newsletter Signup">
                     <input type="hidden" name="source" value="faq-sidebar">
                     <input type="email" name="email" placeholder="Your email" required style="width:100%;padding:.45rem .6rem;border:1px solid #ccc;border-radius:4px;font-size:.88rem;margin-bottom:.5rem;box-sizing:border-box">
                     <button type="submit" style="width:100%;background:#0055a5;color:#fff;border:none;padding:.5rem;border-radius:4px;font-size:.88rem;font-weight:600;cursor:pointer">Subscribe free →</button>
@@ -601,7 +601,7 @@
     <footer class="site-footer">
         <div class="container">
             <div>
-                <p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">NZ Tradie Tools</p>
+                <img src="{{ base_path }}/static/img/logo-dark.png" alt="TradieTools NZ" style="height:64px;width:auto;display:block;margin-bottom:.5rem">
                 <p>Free calculators, templates and guides for New Zealand tradies.</p>
                 <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
             </div>
@@ -609,7 +609,7 @@
                 <p><a href="{{ base_path }}/glossary/">Tradie Glossary</a></p>
                 <p><a href="{{ base_path }}/privacy/">Privacy Policy</a></p>
                 <p><a href="{{ base_path }}/contact/">Contact</a></p>
-                <p style="margin-top:.5rem">&copy; {{ year }} NZ Tradie Tools</p>
+                <p style="margin-top:.5rem">&copy; {{ year }} TradieTools NZ</p>
             </div>
         </div>
     </footer>

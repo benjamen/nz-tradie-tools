@@ -19,10 +19,10 @@
     <meta property="og:description" content="Free professional templates for NZ tradies. Quote templates, GST invoices, job sheets, variation orders, safety checklists. Download PDF instantly.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ base_url }}/templates/">
-    <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta property="og:site_name" content="TradieTools NZ">
     <link rel="canonical" href="{{ base_url }}/templates/">
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"Free NZ Tradie Templates","description":"Free downloadable templates for New Zealand tradies","url":{{ (base_url ~ "/templates/") | tojson }},"numberOfItems":{{ templates | length }},"itemListElement":[{% for t in templates %}{"@type":"ListItem","position":{{ loop.index }},"name":{{ t.title | tojson }},"url":{{ (base_url ~ "/templates/" ~ t.slug ~ ".html") | tojson }}}{% if not loop.last %},{% endif %}{% endfor %}]}</script>
-    <link rel="icon" href="{{ base_path }}/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="{{ base_path }}/favicon.png" type="image/png">
     <link rel="stylesheet" href="{{ base_path }}/static/css/style.css">
     <link rel="stylesheet" href="{{ base_path }}/static/css/templates.css">
     <script>
@@ -255,14 +255,14 @@
     <footer class="site-footer">
         <div class="container">
             <div>
-                <p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">NZ Tradie Tools</p>
+                <img src="{{ base_path }}/static/img/logo-dark.png" alt="TradieTools NZ" style="height:64px;width:auto;display:block;margin-bottom:.5rem">
                 <p>Free calculators, templates and guides for New Zealand tradies.</p>
                 <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
             </div>
             <div style="text-align:right">
                 <p><a href="{{ base_path }}/privacy/">Privacy Policy</a></p>
                 <p><a href="{{ base_path }}/contact/">Contact</a></p>
-                <p style="margin-top:.5rem">&copy; {{ year }} NZ Tradie Tools</p>
+                <p style="margin-top:.5rem">&copy; {{ year }} TradieTools NZ</p>
             </div>
         </div>
     </footer>

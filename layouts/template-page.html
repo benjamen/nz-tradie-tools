@@ -19,7 +19,7 @@
     <meta property="og:description" content="{{ tmpl.seo_description }}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ base_url }}/templates/{{ tmpl.slug }}.html">
-    <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta property="og:site_name" content="TradieTools NZ">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ tmpl.title }} — Free NZ Download">
     <meta name="twitter:description" content="{{ tmpl.description }}">
@@ -27,7 +27,7 @@
     <meta name="twitter:image" content="{{ base_url }}/static/img/social-card.svg">
     <link rel="canonical" href="{{ base_url }}/templates/{{ tmpl.slug }}">
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":{{ base_url | tojson }}},{"@type":"ListItem","position":2,"name":"Templates","item":{{ (base_url ~ "/templates/") | tojson }}},{"@type":"ListItem","position":3,"name":{{ tmpl.title | tojson }},"item":{{ (base_url ~ "/templates/" ~ tmpl.slug) | tojson }}}]},{"@type":"HowTo","name":{{ ("How to use the " ~ tmpl.title) | tojson }},"description":{{ tmpl.description | tojson }},"step":[{"@type":"HowToStep","name":"Fill in your details","text":"Click any field in the template and type your business details."},{"@type":"HowToStep","name":"Customise the content","text":"Edit line items, dates, and other fields to match your job."},{"@type":"HowToStep","name":"Download as PDF","text":"Click the Download PDF button to save a professional PDF to your device."}]}]}</script>
-    <link rel="icon" href="{{ base_path }}/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="{{ base_path }}/favicon.png" type="image/png">
     <link rel="stylesheet" href="{{ base_path }}/static/css/style.css">
     <link rel="stylesheet" href="{{ base_path }}/static/css/templates.css">
     <script>
@@ -214,7 +214,7 @@
                         <div><div class="sig-line"></div><div class="sig-label">Authorised by (Tradie)</div></div>
                         <div><div class="sig-line"></div><div class="sig-label">Accepted by (Customer) / Date</div></div>
                     </div>
-                    <div class="doc-footer-note">NZ Tradie Tools — tradietools.nz | This quote is valid for <span contenteditable>30</span> days. GST registered under the Goods and Services Tax Act 1985.</div>
+                    <div class="doc-footer-note">TradieTools NZ — tradietools.nz | This quote is valid for <span contenteditable>30</span> days. GST registered under the Goods and Services Tax Act 1985.</div>
 
                     {% elif tmpl.slug == "tax-invoice-template" %}
                     <!-- GST TAX INVOICE -->
@@ -267,7 +267,7 @@
                         <div class="doc-section-label">Payment Details</div>
                         <div contenteditable class="block-field">Bank: [Your Bank] | Account: [XX-XXXX-XXXXXXX-XX] | Ref: INV-001</div>
                     </div>
-                    <div class="doc-footer-note">This is a tax invoice for GST purposes. GST registered under the Goods and Services Tax Act 1985. | NZ Tradie Tools — tradietools.nz</div>
+                    <div class="doc-footer-note">This is a tax invoice for GST purposes. GST registered under the Goods and Services Tax Act 1985. | TradieTools NZ — tradietools.nz</div>
 
                     {% elif tmpl.slug == "job-sheet" %}
                     <!-- JOB SHEET / WORK ORDER -->
@@ -319,7 +319,7 @@
                         <div><div class="sig-line"></div><div class="sig-label">Tradie signature / Time out</div></div>
                         <div><div class="sig-line"></div><div class="sig-label">Customer sign-off</div></div>
                     </div>
-                    <div class="doc-footer-note">NZ Tradie Tools — tradietools.nz</div>
+                    <div class="doc-footer-note">TradieTools NZ — tradietools.nz</div>
 
                     {% elif tmpl.slug == "variation-order" %}
                     <!-- VARIATION ORDER -->
@@ -374,7 +374,7 @@
                         <div><div class="sig-line"></div><div class="sig-label">Contractor authorised by / Date</div></div>
                         <div><div class="sig-line"></div><div class="sig-label">Client approved by / Date</div></div>
                     </div>
-                    <div class="doc-footer-note">NZ Tradie Tools — tradietools.nz</div>
+                    <div class="doc-footer-note">TradieTools NZ — tradietools.nz</div>
 
                     {% elif tmpl.slug == "site-safety-checklist" %}
                     <!-- SITE SAFETY CHECKLIST -->
@@ -416,7 +416,7 @@
                         {% endif %}
                     </div>
                     {% endfor %}
-                    <div class="doc-footer-note">Health & Safety at Work Act 2015 compliance checklist. NZ Tradie Tools — tradietools.nz</div>
+                    <div class="doc-footer-note">Health & Safety at Work Act 2015 compliance checklist. TradieTools NZ — tradietools.nz</div>
 
                     {% elif tmpl.slug == "subcontractor-agreement" %}
                     <!-- SUBCONTRACTOR AGREEMENT -->
@@ -471,7 +471,7 @@
                         <div><div class="sig-line"></div><div class="sig-label">Principal Contractor / Date</div></div>
                         <div><div class="sig-line"></div><div class="sig-label">Subcontractor / Date</div></div>
                     </div>
-                    <div class="doc-footer-note">This is a simple template only — not legal advice. For large contracts, seek legal review. NZ Tradie Tools — tradietools.nz</div>
+                    <div class="doc-footer-note">This is a simple template only — not legal advice. For large contracts, seek legal review. TradieTools NZ — tradietools.nz</div>
 
                     {% elif tmpl.slug == "vehicle-log-book" %}
                     <!-- VEHICLE LOG BOOK -->
@@ -510,7 +510,7 @@
                         <div class="doc-totals-row"><span>Business km</span><span contenteditable>0</span></div>
                         <div class="doc-totals-row total"><span>Business use %</span><span contenteditable>0%</span></div>
                     </div>
-                    <div class="doc-footer-note">Retain this log book and all vehicle expense receipts for 7 years. IRD may audit vehicle expense claims. NZ Tradie Tools — tradietools.nz</div>
+                    <div class="doc-footer-note">Retain this log book and all vehicle expense receipts for 7 years. IRD may audit vehicle expense claims. TradieTools NZ — tradietools.nz</div>
 
                     {% elif tmpl.slug == "tool-inventory" %}
                     <!-- TOOL INVENTORY -->
@@ -542,7 +542,7 @@
                     <div class="doc-totals" style="margin-top:1rem">
                         <div class="doc-totals-row total"><span>Total insured value</span><span>$<span contenteditable>0.00</span></span></div>
                     </div>
-                    <div class="doc-footer-note">NZ Tradie Tools — tradietools.nz | Update annually and after any major purchases.</div>
+                    <div class="doc-footer-note">TradieTools NZ — tradietools.nz | Update annually and after any major purchases.</div>
 
                     {% elif tmpl.slug == "job-completion-certificate" %}
                     <!-- JOB COMPLETION CERTIFICATE -->
@@ -587,7 +587,7 @@
                         <div><div class="sig-line"></div><div class="sig-label">Contractor / Date</div></div>
                         <div><div class="sig-line"></div><div class="sig-label">Client / Date</div></div>
                     </div>
-                    <div class="doc-footer-note">NZ Tradie Tools — tradietools.nz | Keep a copy for your records.</div>
+                    <div class="doc-footer-note">TradieTools NZ — tradietools.nz | Keep a copy for your records.</div>
 
                     {% elif tmpl.slug == "customer-feedback-form" %}
                     <!-- CUSTOMER FEEDBACK FORM -->
@@ -638,7 +638,7 @@
                         <div class="doc-section-label">Your Name (optional)</div>
                         <div contenteditable class="block-field"></div>
                     </div>
-                    <div class="doc-footer-note">NZ Tradie Tools — tradietools.nz</div>
+                    <div class="doc-footer-note">TradieTools NZ — tradietools.nz</div>
 
                     {% elif tmpl.slug == "swms" %}
                     <!-- SAFE WORK METHOD STATEMENT -->
@@ -694,7 +694,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="doc-footer-note">Review and update this SWMS if conditions change. Keep on site for duration of work. NZ Tradie Tools — tradietools.nz</div>
+                    <div class="doc-footer-note">Review and update this SWMS if conditions change. Keep on site for duration of work. TradieTools NZ — tradietools.nz</div>
 
                     {% elif tmpl.slug == "toolbox-meeting" %}
                     <!-- TOOLBOX MEETING RECORD -->
@@ -734,7 +734,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="doc-footer-note">Keep toolbox meeting records for 7 years. Hold meetings at least weekly on active sites. NZ Tradie Tools — tradietools.nz</div>
+                    <div class="doc-footer-note">Keep toolbox meeting records for 7 years. Hold meetings at least weekly on active sites. TradieTools NZ — tradietools.nz</div>
 
                     {% elif tmpl.slug == "progress-claim" %}
                     <!-- PROGRESS CLAIM -->
@@ -790,7 +790,7 @@
                         <div><div class="sig-line"></div><div class="sig-label">Authorised by (Contractor) / Date</div></div>
                         <div><div class="sig-line"></div><div class="sig-label">Received by (Principal) / Date</div></div>
                     </div>
-                    <div class="doc-footer-note">Construction Contracts Act 2002. NZ Tradie Tools — tradietools.nz</div>
+                    <div class="doc-footer-note">Construction Contracts Act 2002. TradieTools NZ — tradietools.nz</div>
 
                     {% elif tmpl.slug == "defects-list" %}
                     <!-- DEFECTS / SNAGGING LIST -->
@@ -831,7 +831,7 @@
                         <div><div class="sig-line"></div><div class="sig-label">Contractor / Date</div></div>
                         <div><div class="sig-line"></div><div class="sig-label">Client / Date</div></div>
                     </div>
-                    <div class="doc-footer-note">NZ Tradie Tools — tradietools.nz</div>
+                    <div class="doc-footer-note">TradieTools NZ — tradietools.nz</div>
 
                     {% elif tmpl.slug == "handover-checklist" %}
                     <!-- HANDOVER CHECKLIST -->
@@ -864,7 +864,7 @@
                         <div><div class="sig-line"></div><div class="sig-label">Contractor / Date</div></div>
                         <div><div class="sig-line"></div><div class="sig-label">Client acknowledgement / Date</div></div>
                     </div>
-                    <div class="doc-footer-note">NZ Tradie Tools — tradietools.nz</div>
+                    <div class="doc-footer-note">TradieTools NZ — tradietools.nz</div>
 
                     {% elif tmpl.slug == "purchase-order" %}
                     <!-- PURCHASE ORDER -->
@@ -918,7 +918,7 @@
                         <div><div class="sig-line"></div><div class="sig-label">Authorised by / Date</div></div>
                         <div><div class="sig-line"></div><div class="sig-label">Supplier acknowledgement / Date</div></div>
                     </div>
-                    <div class="doc-footer-note">NZ Tradie Tools — tradietools.nz | This PO constitutes a binding order when accepted by the supplier.</div>
+                    <div class="doc-footer-note">TradieTools NZ — tradietools.nz | This PO constitutes a binding order when accepted by the supplier.</div>
 
                     {% elif tmpl.slug == "employee-induction" %}
                     <!-- EMPLOYEE INDUCTION CHECKLIST -->
@@ -952,7 +952,7 @@
                         <div><div class="sig-line"></div><div class="sig-label">Employer / Date</div></div>
                         <div><div class="sig-line"></div><div class="sig-label">Employee signature / Date</div></div>
                     </div>
-                    <div class="doc-footer-note">NZ Tradie Tools — tradietools.nz | Retain a signed copy in the employee's personnel file.</div>
+                    <div class="doc-footer-note">TradieTools NZ — tradietools.nz | Retain a signed copy in the employee's personnel file.</div>
 
                     {% elif tmpl.slug == "incident-report" %}
                     <!-- INCIDENT REPORT -->
@@ -1007,7 +1007,7 @@
                         <div><div class="sig-line"></div><div class="sig-label">Completed by / Date</div></div>
                         <div><div class="sig-line"></div><div class="sig-label">Supervisor / PCBU sign-off / Date</div></div>
                     </div>
-                    <div class="doc-footer-note">Retain for 7 years. Notifiable incidents must be reported to WorkSafe NZ. NZ Tradie Tools — tradietools.nz</div>
+                    <div class="doc-footer-note">Retain for 7 years. Notifiable incidents must be reported to WorkSafe NZ. TradieTools NZ — tradietools.nz</div>
 
                     {% elif tmpl.slug == "maintenance-schedule" %}
                     <!-- MAINTENANCE SCHEDULE -->
@@ -1037,7 +1037,7 @@
                         {% endfor %}
                     </div>
                     {% endfor %}
-                    <div class="doc-footer-note">Prepared by: <span contenteditable>[Your Business Name]</span> | NZ Tradie Tools — tradietools.nz</div>
+                    <div class="doc-footer-note">Prepared by: <span contenteditable>[Your Business Name]</span> | TradieTools NZ — tradietools.nz</div>
 
                     {% elif tmpl.slug == "contractor-induction" %}
                     <!-- CONTRACTOR / VISITOR SITE INDUCTION -->
@@ -1069,7 +1069,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="doc-footer-note">All visitors must sign in and out. Health & Safety at Work Act 2015. NZ Tradie Tools — tradietools.nz</div>
+                    <div class="doc-footer-note">All visitors must sign in and out. Health & Safety at Work Act 2015. TradieTools NZ — tradietools.nz</div>
 
                     {% elif tmpl.slug == "terms-of-trade" %}
                     <!-- TERMS OF TRADE -->
@@ -1123,7 +1123,7 @@
                         <div><div class="sig-line"></div><div class="sig-label">Contractor / Date</div></div>
                         <div><div class="sig-line"></div><div class="sig-label">Client signature / Date</div></div>
                     </div>
-                    <div class="doc-footer-note">These terms are a template only — not legal advice. For high-value contracts, seek legal review. NZ Tradie Tools — tradietools.nz</div>
+                    <div class="doc-footer-note">These terms are a template only — not legal advice. For high-value contracts, seek legal review. TradieTools NZ — tradietools.nz</div>
 
                     {% elif tmpl.slug == "cca-payment-claim" %}
                     <!-- CCA PAYMENT CLAIM -->
@@ -1187,7 +1187,7 @@
                         <div><div class="sig-line"></div><div class="sig-label">Claimant signature / Date</div></div>
                         <div><div class="sig-line"></div><div class="sig-label">Served on (respondent) / Date received</div></div>
                     </div>
-                    <div class="doc-footer-note">Payment claim under Construction Contracts Act 2002 (NZ). Keep a copy of service proof (email, courier receipt). NZ Tradie Tools — tradietools.nz</div>
+                    <div class="doc-footer-note">Payment claim under Construction Contracts Act 2002 (NZ). Keep a copy of service proof (email, courier receipt). TradieTools NZ — tradietools.nz</div>
 
                     {% elif tmpl.slug == "site-safety-plan" %}
                     <!-- SITE-SPECIFIC SAFETY PLAN (SSSP) -->
@@ -1269,7 +1269,7 @@
                         <div><div class="sig-line"></div><div class="sig-label">Site Manager / Date</div></div>
                         <div><div class="sig-line"></div><div class="sig-label">Review date / Reviewed by</div></div>
                     </div>
-                    <div class="doc-footer-note">Review this SSSP whenever site conditions change. Health &amp; Safety at Work Act 2015. NZ Tradie Tools — tradietools.nz</div>
+                    <div class="doc-footer-note">Review this SSSP whenever site conditions change. Health &amp; Safety at Work Act 2015. TradieTools NZ — tradietools.nz</div>
 
                     {% elif tmpl.slug == "job-safety-analysis" %}
                     <!-- JOB SAFETY ANALYSIS (JSA) -->
@@ -1331,7 +1331,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="doc-footer-note">Health &amp; Safety at Work Act 2015. Review JSA if conditions change. NZ Tradie Tools — tradietools.nz</div>
+                    <div class="doc-footer-note">Health &amp; Safety at Work Act 2015. Review JSA if conditions change. TradieTools NZ — tradietools.nz</div>
 
                     {% elif tmpl.slug == "weekly-timesheet" %}
                     <!-- WEEKLY TIMESHEET -->
@@ -1378,7 +1378,7 @@
                         <div><div class="sig-line"></div><div class="sig-label">Employee signature</div></div>
                         <div><div class="sig-line"></div><div class="sig-label">Employer / supervisor approved / Date</div></div>
                     </div>
-                    <div class="doc-footer-note">Retain timesheets for 7 years for IRD payroll records. NZ Tradie Tools — tradietools.nz</div>
+                    <div class="doc-footer-note">Retain timesheets for 7 years for IRD payroll records. TradieTools NZ — tradietools.nz</div>
 
                     {% elif tmpl.slug == "payment-reminder" %}
                     <!-- PAYMENT REMINDER / OVERDUE INVOICE -->
@@ -1435,7 +1435,7 @@ If payment is not received by [date — 7 days from this letter], we will have n
                         <div><div class="sig-line"></div><div class="sig-label">Authorised by / Date</div></div>
                         <div></div>
                     </div>
-                    <div class="doc-footer-note">Keep a copy of this notice and any delivery confirmation. NZ Tradie Tools — tradietools.nz</div>
+                    <div class="doc-footer-note">Keep a copy of this notice and any delivery confirmation. TradieTools NZ — tradietools.nz</div>
 
                     {% elif tmpl.slug == "site-inspection-form" %}
                     <!-- PRE-QUOTE SITE INSPECTION FORM -->
@@ -1496,7 +1496,7 @@ If payment is not received by [date — 7 days from this letter], we will have n
                         <div><div class="sig-line"></div><div class="sig-label">Tradie / Date</div></div>
                         <div><div class="sig-line"></div><div class="sig-label">Client (site conditions confirmed) / Date</div></div>
                     </div>
-                    <div class="doc-footer-note">This form documents site conditions at time of inspection. Conditions may change prior to work commencing. NZ Tradie Tools — tradietools.nz</div>
+                    <div class="doc-footer-note">This form documents site conditions at time of inspection. Conditions may change prior to work commencing. TradieTools NZ — tradietools.nz</div>
 
                     {% elif tmpl.slug == "retention-release" %}
                     <!-- RETENTION RELEASE CERTIFICATE -->
@@ -1563,7 +1563,7 @@ If payment is not received by [date — 7 days from this letter], we will have n
                         <div><div class="sig-line"></div><div class="sig-label">Contractor / Date</div></div>
                         <div><div class="sig-line"></div><div class="sig-label">Principal / Client authorised by / Date</div></div>
                     </div>
-                    <div class="doc-footer-note">Construction Contracts Act 2002 — retention moneys must be held on trust (s18C). NZ Tradie Tools — tradietools.nz</div>
+                    <div class="doc-footer-note">Construction Contracts Act 2002 — retention moneys must be held on trust (s18C). TradieTools NZ — tradietools.nz</div>
 
                     {% endif %}
                 </div>
@@ -1622,14 +1622,14 @@ If payment is not received by [date — 7 days from this letter], we will have n
     <footer class="site-footer">
         <div class="container">
             <div>
-                <p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">NZ Tradie Tools</p>
+                <img src="{{ base_path }}/static/img/logo-dark.png" alt="TradieTools NZ" style="height:64px;width:auto;display:block;margin-bottom:.5rem">
                 <p>Free calculators, templates and guides for New Zealand tradies.</p>
                 <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
             </div>
             <div style="text-align:right">
                 <p><a href="{{ base_path }}/privacy/">Privacy Policy</a></p>
                 <p><a href="{{ base_path }}/contact/">Contact</a></p>
-                <p style="margin-top:.5rem">&copy; {{ year }} NZ Tradie Tools</p>
+                <p style="margin-top:.5rem">&copy; {{ year }} TradieTools NZ</p>
             </div>
         </div>
     </footer>

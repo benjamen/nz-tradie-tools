@@ -19,7 +19,7 @@
     <meta property="og:description" content="Find top-rated tradies in {{ city.name }}, {{ city.region }}. Google ratings, local pricing, and hiring tips.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ base_url }}/locations/{{ city.slug }}/">
-    <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta property="og:site_name" content="TradieTools NZ">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Find a Tradie in {{ city.name }}, NZ">
     <meta name="twitter:description" content="Top-rated builders, plumbers, electricians and painters in {{ city.name }} — Google ratings and local pricing.">
@@ -27,7 +27,7 @@
     <meta name="twitter:image" content="{{ base_url }}/static/img/social-card.svg">
     <link rel="canonical" href="{{ base_url }}/locations/{{ city.slug }}/">
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":{{ base_url | tojson }}},{"@type":"ListItem","position":2,"name":"Find a Tradie","item":{{ (base_url ~ "/trades/") | tojson }}},{"@type":"ListItem","position":3,"name":{{ city.name | tojson }},"item":{{ (base_url ~ "/locations/" ~ city.slug ~ "/") | tojson }}}]}</script>
-    <link rel="icon" href="{{ base_path }}/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="{{ base_path }}/favicon.png" type="image/png">
     <link rel="stylesheet" href="{{ base_path }}/static/css/style.css">
     {% if ga_id %}
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ ga_id }}"></script>
@@ -145,14 +145,14 @@
     <footer class="site-footer">
         <div class="container">
             <div>
-                <p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">NZ Tradie Tools</p>
+                <img src="{{ base_path }}/static/img/logo-dark.png" alt="TradieTools NZ" style="height:64px;width:auto;display:block;margin-bottom:.5rem">
                 <p>Free calculators, templates and guides for New Zealand tradies.</p>
                 <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
             </div>
             <div style="text-align:right">
                 <p><a href="{{ base_path }}/privacy/">Privacy Policy</a></p>
                 <p><a href="{{ base_path }}/contact/">Contact</a></p>
-                <p style="margin-top:.5rem">&copy; {{ year }} NZ Tradie Tools</p>
+                <p style="margin-top:.5rem">&copy; {{ year }} TradieTools NZ</p>
             </div>
         </div>
     </footer>

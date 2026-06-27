@@ -15,20 +15,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://tradietools.optified.nz">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap">
-    <title>{{ seo_title if seo_title else (page_title if page_title|length > 42 else page_title ~ ' — NZ Tradie Tools') }}</title>
+    <title>{{ seo_title if seo_title else (page_title if page_title|length > 42 else page_title ~ ' — TradieTools NZ') }}</title>
     <meta name="description" content="{{ description }}">
-    <meta property="og:title" content="{{ seo_title if seo_title else page_title }} — NZ Tradie Tools">
+    <meta property="og:title" content="{{ seo_title if seo_title else page_title }} — TradieTools NZ">
     <meta property="og:description" content="{{ description }}">
     <meta property="og:type" content="article">
     <meta property="og:url" content="{{ base_url }}/articles/{{ slug }}.html">
-    <meta property="og:site_name" content="NZ Tradie Tools">
+    <meta property="og:site_name" content="TradieTools NZ">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{ page_title }} — NZ Tradie Tools">
+    <meta name="twitter:title" content="{{ page_title }} — TradieTools NZ">
     <meta name="twitter:description" content="{{ description }}">
     <meta property="og:image" content="{{ base_url }}/static/img/social-card.png">
     <meta name="twitter:image" content="{{ base_url }}/static/img/social-card.png">
     <link rel="canonical" href="{{ base_url }}/articles/{{ slug }}">
-    <link rel="alternate" type="application/rss+xml" title="NZ Tradie Tools — Articles" href="{{ base_url }}/rss.xml">
+    <link rel="alternate" type="application/rss+xml" title="TradieTools NZ — Articles" href="{{ base_url }}/rss.xml">
     <script type="application/ld+json">
     {"@context":"https://schema.org","@graph":[
       {"@type":"Article",
@@ -41,7 +41,7 @@
        "url":{{ (base_url ~ "/articles/" ~ slug ~ ".html") | tojson }},
        "author":{"@id":{{ (base_url ~ "/#author") | tojson }}},
        "publisher":{"@id":{{ (base_url ~ "/#organization") | tojson }}}},
-      {"@type":"Organization","@id":{{ (base_url ~ "/#organization") | tojson }},"name":"NZ Tradie Tools","url":{{ base_url | tojson }},"description":{{ description | tojson }},"logo":{"@type":"ImageObject","url":{{ (base_url ~ "/favicon.svg") | tojson }},"width":512,"height":512},"contactPoint":{"@type":"ContactPoint","email":{{ contact_email | tojson }},"contactType":"customer service"},"sameAs":["https://www.facebook.com/nztradietools","https://www.linkedin.com/company/nz-tradie-tools"]},
+      {"@type":"Organization","@id":{{ (base_url ~ "/#organization") | tojson }},"name":"TradieTools NZ","url":{{ base_url | tojson }},"description":{{ description | tojson }},"logo":{"@type":"ImageObject","url":{{ (base_url ~ "/static/img/logo-dark.png") | tojson }},"width":400,"height":400},"contactPoint":{"@type":"ContactPoint","email":{{ contact_email | tojson }},"contactType":"customer service"},"sameAs":["https://www.facebook.com/nztradietools","https://www.linkedin.com/company/nz-tradie-tools"]},
       {"@type":"BreadcrumbList","itemListElement":[
         {"@type":"ListItem","position":1,"name":"Home","item":{{ base_url | tojson }}},
         {"@type":"ListItem","position":2,"name":"Articles","item":{{ (base_url ~ "/articles/") | tojson }}},
@@ -52,7 +52,7 @@
       ]}{% endif %}
     ]}
     </script>
-    <link rel="icon" href="{{ base_path }}/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="{{ base_path }}/favicon.png" type="image/png">
     <link rel="stylesheet" href="{{ base_path }}/static/css/style.css">
     {% if ga_id %}
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ ga_id }}"></script>
@@ -210,7 +210,7 @@
                 <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="{{ beehiiv_form_id }}"></script>
                 {% else %}
                 <form action="{{ formspree_endpoint }}" method="POST">
-                    <input type="hidden" name="_subject" value="NZ Tradie Tools — Newsletter Signup">
+                    <input type="hidden" name="_subject" value="TradieTools NZ — Newsletter Signup">
                     <input type="hidden" name="source" value="article-sidebar">
                     <input type="email" name="email" placeholder="Your email" required style="width:100%;padding:.45rem .6rem;border:1px solid #ccc;border-radius:4px;font-size:.88rem;margin-bottom:.5rem;box-sizing:border-box">
                     <button type="submit" style="width:100%;background:#0055a5;color:#fff;border:none;padding:.5rem;border-radius:4px;font-size:.88rem;font-weight:600;cursor:pointer">Subscribe free →</button>
@@ -245,7 +245,7 @@
     <footer class="site-footer">
         <div class="container">
             <div>
-                <p style="color:rgba(255,255,255,.85);font-weight:700;margin-bottom:.2rem">NZ Tradie Tools</p>
+                <img src="{{ base_path }}/static/img/logo-dark.png" alt="TradieTools NZ" style="height:64px;width:auto;display:block;margin-bottom:.5rem">
                 <p>Free calculators, templates and guides for New Zealand tradies.</p>
                 <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
             </div>
@@ -253,7 +253,7 @@
                 <p><a href="{{ base_path }}/glossary/">Tradie Glossary</a></p>
                 <p><a href="{{ base_path }}/privacy/">Privacy Policy</a></p>
                 <p><a href="{{ base_path }}/contact/">Contact</a></p>
-                <p style="margin-top:.5rem">&copy; {{ year }} NZ Tradie Tools</p>
+                <p style="margin-top:.5rem">&copy; {{ year }} TradieTools NZ</p>
             </div>
         </div>
     </footer>
