@@ -13,7 +13,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from pathlib import Path
 
-from config import SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, unsub_link
+from config import SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, unsub_link, first_name
 CONTACTS_CSV  = Path(__file__).parent / "contacts_found.csv"
 FOLLOWUP_LOG  = Path(__file__).parent / "followup_day4.log"
 
@@ -27,7 +27,7 @@ TRADE_LABEL = {
 
 
 def make_email(name: str, email: str, trade: str, region: str, reviews: str, rating: str, listing_id: str = "", slug: str = "") -> tuple[str, str, str]:
-    short_name = name.split(" ")[0] if name else "there"
+    short_name = first_name(name, email)
     trade_label = TRADE_LABEL.get(trade, trade.rstrip("s"))
     unsub_url = unsub_link(email)
     claim_url = f"https://tradietools.nz/signup/?ref=claim&id={listing_id}" if listing_id else "https://tradietools.nz/signup/"

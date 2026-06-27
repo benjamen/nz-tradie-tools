@@ -8,7 +8,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from pathlib import Path
 
-from config import SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, unsub_link
+from config import SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, unsub_link, first_name
 import unsubscribe
 import daily_limit
 
@@ -51,7 +51,7 @@ TRACK_BASE = "https://tradietools.optified.nz/api/method/tradietools.api.track_e
 
 
 def make_email(name: str, email: str, trade: str, region: str, reviews: str, rating: str, listing_id: str = "", slug: str = "") -> tuple[str, str, str]:
-    short_name = name.split(" ")[0] if name else "there"
+    short_name = first_name(name, email)
     trade_label = TRADE_LABEL.get(trade, trade.rstrip("s"))
     searches = TRADE_SEARCHES.get(trade, "100+")
 
