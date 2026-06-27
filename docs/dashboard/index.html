@@ -192,16 +192,43 @@
                 </a>
             </div>
 
-            <!-- Upgrade banner (free only) -->
-            <div class="upgrade-banner" id="upgrade-banner" style="display:none">
-                <div class="ub-text">
-                    <h3>Upgrade to get more leads</h3>
-                    <p>Verified badge boosts trust. Pro tier unlocks priority placement, unlimited leads, and full analytics.</p>
+            <!-- Upgrade block (free only) -->
+            <div id="upgrade-block" style="display:none">
+
+                <!-- Activity FOMO card -->
+                <div id="activity-card" style="background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:1.1rem 1.25rem;margin-bottom:1rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap">
+                    <div style="font-size:1.75rem">📬</div>
+                    <div style="flex:1;min-width:180px">
+                        <div id="activity-headline" style="font-weight:700;color:#1e293b;font-size:.97rem">Checking activity in your area…</div>
+                        <div id="activity-sub" style="font-size:.83rem;color:#64748b;margin-top:.2rem">Pro members are first in line for every lead.</div>
+                    </div>
+                    <a class="btn-upgrade" id="btn-activity-upgrade" href="#" style="white-space:nowrap">Go Pro — $29/mo →</a>
                 </div>
-                <div class="ub-btns">
-                    <a class="btn-upgrade" id="btn-go-verified" href="#">Verified — $29/mo</a>
-                    <a class="btn-upgrade-ghost" id="btn-go-pro" href="#">Pro — $59/mo</a>
+
+                <!-- Profile completeness -->
+                <div style="background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:1.1rem 1.25rem;margin-bottom:1rem">
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.6rem">
+                        <span style="font-weight:700;font-size:.93rem;color:#1e293b">Profile strength</span>
+                        <span id="profile-pct" style="font-size:.82rem;color:#64748b">0%</span>
+                    </div>
+                    <div style="height:6px;background:#e2e8f0;border-radius:3px;margin-bottom:.85rem">
+                        <div id="profile-bar" style="height:100%;background:#0055a5;border-radius:3px;transition:width .4s;width:0%"></div>
+                    </div>
+                    <div id="profile-checklist" style="display:flex;flex-direction:column;gap:.4rem;font-size:.85rem"></div>
                 </div>
+
+                <!-- Founding member banner -->
+                <div class="upgrade-banner" id="upgrade-banner">
+                    <div class="ub-text">
+                        <h3>🏆 Founding Member — $29/mo</h3>
+                        <p>Priority placement in search · Verified badge · Lead inbox · Analytics · Licence badges (LBP, EWRB, PGD)</p>
+                    </div>
+                    <div class="ub-btns">
+                        <a class="btn-upgrade" id="btn-go-verified" href="#">Get Pro →</a>
+                        <a class="btn-upgrade-ghost" href="https://tradietools.nz/for-tradies/" target="_blank">See what Pro includes</a>
+                    </div>
+                </div>
+
             </div>
 
             <!-- Edit listing -->
@@ -448,13 +475,52 @@ function renderDashboard(d) {
     // Listing ID
     document.getElementById('listing-id-label').textContent = 'Listing #' + TRADIE_ID;
 
-    // Upgrade banner — show only on free tier
+    // Upgrade block — show for free tier, personalise with activity data
     if (!d.is_premium) {
-        document.getElementById('upgrade-banner').style.display = 'flex';
-        document.getElementById('btn-go-verified').href =
-            'https://tradietools.optified.nz/api/method/tradietools.api.create_checkout_session?tier=verified&tradie_id=' + TRADIE_ID + '&tradie_email=' + encodeURIComponent(TRADIE_EMAIL) + '&billing_interval=monthly&ref=dashboard';
-        document.getElementById('btn-go-pro').href =
-            'https://tradietools.optified.nz/api/method/tradietools.api.create_checkout_session?tier=pro&tradie_id=' + TRADIE_ID + '&tradie_email=' + encodeURIComponent(TRADIE_EMAIL) + '&billing_interval=monthly&ref=dashboard';
+        document.getElementById('upgrade-block').style.display = 'block';
+        var checkoutUrl = 'https://tradietools.optified.nz/api/method/tradietools.api.create_checkout_session?tier=pro&tradie_id=' + TRADIE_ID + '&tradie_email=' + encodeURIComponent(TRADIE_EMAIL) + '&billing_interval=monthly&ref=dashboard';
+        document.getElementById('btn-go-verified').href = checkoutUrl;
+        document.getElementById('btn-activity-upgrade').href = checkoutUrl;
+
+        // Profile completeness checklist
+        var checks = [
+            { label: 'Business name & phone', done: !!(d.name && d.phone) },
+            { label: 'Profile photo', done: !!d.profile_photo_url },
+            { label: 'Hourly rate set', done: !!d.hourly_rate },
+            { label: 'At least 1 review', done: d.review_count > 0 },
+            { label: 'Verified badge (Pro)', done: false, locked: true },
+            { label: 'Licence badge (LBP/EWRB/PGD)', done: false, locked: true },
+        ];
+        var done = checks.filter(function(c){ return c.done; }).length;
+        var pct = Math.round(done / checks.length * 100);
+        document.getElementById('profile-pct').textContent = pct + '%';
+        document.getElementById('profile-bar').style.width = pct + '%';
+        document.getElementById('profile-checklist').innerHTML = checks.map(function(c) {
+            var icon = c.done ? '<span style="color:#16a34a">✓</span>' : c.locked ? '<span style="color:#94a3b8">🔒</span>' : '<span style="color:#ef4444">✗</span>';
+            var style = c.done ? 'color:#334155' : c.locked ? 'color:#94a3b8' : 'color:#64748b';
+            return '<div style="display:flex;align-items:center;gap:.5rem;' + style + '">' + icon + ' ' + c.label + '</div>';
+        }).join('');
+
+        // Fetch real activity data for FOMO headline
+        fetch(API + 'get_trade_activity?lead_token=' + encodeURIComponent(TOKEN))
+        .then(function(r){ return r.json(); })
+        .then(function(json){
+            var m = json.message || json;
+            var hl = document.getElementById('activity-headline');
+            var sub = document.getElementById('activity-sub');
+            if (m.success && m.quote_requests_30d > 0) {
+                var trade = m.trade || 'tradie';
+                var region = m.region || 'your area';
+                hl.textContent = m.quote_requests_30d + ' homeowner' + (m.quote_requests_30d !== 1 ? 's' : '') + ' searched for a ' + trade + ' in ' + region + ' this month.';
+                sub.textContent = 'Pro members appeared in those results. You didn\'t.';
+                sub.style.color = '#dc2626';
+                sub.style.fontWeight = '600';
+            } else if (m.success) {
+                hl.textContent = 'Be ready when the next lead comes in for ' + (m.region || 'your area') + '.';
+                sub.textContent = 'Pro members get priority placement and are emailed first.';
+            }
+        })
+        .catch(function(){});
     }
 
     // Pre-fill edit form
