@@ -235,25 +235,9 @@
 
     // --- Boot logic ---
 
-    var params  = new URLSearchParams(window.location.search);
-    var token   = params.get('token');
-    var nextUrl = params.get('next');
-
-    // Persist ?next= into localStorage so it survives the email round-trip
-    // (magic link URL only contains the token, not the original next param)
-    if (nextUrl) localStorage.setItem('tt_next', nextUrl);
-
-    function redirectAfterLogin() {
-        var dest = localStorage.getItem('tt_next');
-        localStorage.removeItem('tt_next');
-        if (dest && dest.startsWith('/')) {
-            window.location.href = dest;
-        } else {
-            loadDashboard();
-        }
-    }
-
     // 1. Token in URL → auth
+    var params = new URLSearchParams(window.location.search);
+    var token = params.get('token');
     if (token) {
         showSection('auth-section');
         fetch(API + 'homeowner_auth', {
@@ -272,8 +256,9 @@
             }
             sess = {homeowner_id: d.homeowner_id, email: d.email, first_name: d.first_name};
             localStorage.setItem('tt_homeowner', JSON.stringify(sess));
+            // Strip token from URL
             window.history.replaceState({}, '', '/my-account/');
-            redirectAfterLogin();
+            loadDashboard();
         })
         .catch(function(){
             showSection('login-section');
@@ -281,9 +266,10 @@
         return;
     }
 
-    // 2. Existing session — if ?next= present, follow it immediately
+    // 2. Existing session
     if (sess && sess.homeowner_id && sess.email) {
-        redirectAfterLogin();
+        showSection('dash-section');
+        loadDashboard();
         return;
     }
 
