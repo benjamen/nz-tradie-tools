@@ -190,5 +190,77 @@
     "region": "Canterbury",
     "blurb": "Rolleston is one of New Zealand's fastest-growing towns, driven by Christchurch overspill. New subdivisions are booming and tradies who set up here have a ready pipeline of new-build work.",
     "demand": "Excellent new-build pipeline for builders, landscapers, and electricians."
+  },
+  {
+    "slug": "thorndon",
+    "name": "Thorndon",
+    "city": "Wellington",
+    "region": "Wellington",
+    "blurb": "Thorndon is Wellington's oldest suburb and home to many of the city's finest heritage homes. Work here requires care with pre-1900 villas and colonial cottages — specialist builders, painters and electricians are in constant demand.",
+    "demand": "High demand for heritage builders, painters and licensed electricians."
+  },
+  {
+    "slug": "brooklyn",
+    "name": "Brooklyn",
+    "city": "Wellington",
+    "region": "Wellington",
+    "blurb": "Brooklyn sits on Wellington's southern hills with stunning harbour views and a mix of 1920s–1970s homes. Steep sections mean most work involves specialist knowledge of hillside construction, retaining walls and drainage.",
+    "demand": "Strong demand for builders, retaining wall specialists, and painters."
+  },
+  {
+    "slug": "island-bay",
+    "name": "Island Bay",
+    "city": "Wellington",
+    "region": "Wellington",
+    "blurb": "Island Bay is a popular southern Wellington suburb with older homes and active renovation. Its coastal position also drives demand for painting, weatherproofing and exterior maintenance.",
+    "demand": "Strong demand for exterior painters, plumbers and builders."
+  },
+  {
+    "slug": "lower-hutt",
+    "name": "Lower Hutt",
+    "city": "Lower Hutt",
+    "region": "Wellington",
+    "blurb": "Lower Hutt is the Hutt Valley's main city, with a large stock of 1950s–1980s homes undergoing renovation. Strong across all trades with growing new-build activity in surrounding areas.",
+    "demand": "High volume across all trades — builders, plumbers, electricians and roofers."
+  },
+  {
+    "slug": "burnside",
+    "name": "Burnside",
+    "city": "Christchurch",
+    "region": "Canterbury",
+    "blurb": "Burnside is a well-established Christchurch suburb popular with families. Post-quake rebuild work is winding down and renovation demand is taking over — bathrooms, kitchens and landscaping lead.",
+    "demand": "Good demand for kitchen and bathroom renovators, landscapers and painters."
+  },
+  {
+    "slug": "merivale",
+    "name": "Merivale",
+    "city": "Christchurch",
+    "region": "Canterbury",
+    "blurb": "Merivale is one of Christchurch's most prestigious inner suburbs. Premium renovation work, character home restorations and high-spec landscaping dominate. Tradies here can command above-average rates.",
+    "demand": "Premium renovation and landscaping with high per-job value."
+  },
+  {
+    "slug": "linwood",
+    "name": "Linwood",
+    "city": "Christchurch",
+    "region": "Canterbury",
+    "blurb": "Linwood east of the CBD was heavily impacted by the 2011 earthquakes. Significant new-build and repair activity continues, alongside older homes still awaiting renovation.",
+    "demand": "High demand for builders, concreters and electricians for ongoing rebuild work."
+  },
+  {
+    "slug": "north-shore-auckland",
+    "name": "North Shore",
+    "city": "Auckland",
+    "region": "Auckland",
+    "blurb": "Auckland's North Shore spans Devonport to Albany and is home to thousands of 1970s–1990s homes entering major renovation cycles. Demand is high across all trades, with bathroom and kitchen upgrades leading.",
+    "demand": "High volume across all trades — plumbers, tilers, painters and electricians."
+  },
+  {
+    "slug": "east-auckland",
+    "name": "East Auckland",
+    "city": "Auckland",
+    "region": "Auckland",
+    "blurb": "East Auckland covers Howick, Pakuranga and Botany Downs — a large area of 1980s–2000s family homes, many now due for their first full renovation. Bathroom and kitchen upgrades are the main driver.",
+    "demand": "Strong demand for tilers, bathroom renovators, kitchen fitters and landscapers."
   }
 ]
