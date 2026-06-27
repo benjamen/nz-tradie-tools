@@ -244,7 +244,7 @@ def build_articles(env, config, nav, base_path):
                "year": datetime.now().year,
                "inferred_trade": trade_display,
                "inferred_trade_slug": trade_slug,
-               "calc_slug": calc_slug}
+               "embedded_calculator": calc_slug}
         output_path.write_text(template.render(**ctx))
         logging.info(f"Article built: {output_path}")
 
