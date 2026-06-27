@@ -161,7 +161,7 @@
                     
                     
                     
-                    <button id="save-tradie-btn" onclick="toggleSaveTradie()" style="display:none;background:#fff;border:1.5px solid #0055a5;color:#0055a5;padding:.6rem 1.1rem;border-radius:6px;font-weight:600;font-size:.9rem;cursor:pointer;font-family:inherit">🔖 Save tradie</button>
+                    <button id="save-tradie-btn" onclick="toggleSaveTradie()" style="display:none;background:#fff;border:1.5px solid #0055a5;color:#0055a5;padding:.6rem 1.1rem;border-radius:6px;font-weight:600;font-size:.9rem;cursor:pointer;font-family:inherit">♡ Save tradie</button>
                 </div>
             </div>
 
@@ -844,32 +844,34 @@
   var TT_TRADIE_ID = null;
   var TT_TRADIE_SLUG = "kamo-kitchens";
 
+  function _getHoSess(){
+    try{ return JSON.parse(localStorage.getItem('tt_homeowner')||'null'); }catch(e){ return null; }
+  }
+
   function initSaveButton(){
-    var hoId    = localStorage.getItem('tt_ho_id');
-    var hoEmail = localStorage.getItem('tt_ho_email');
-    var btn     = document.getElementById('save-tradie-btn');
-    if(!hoId || !hoEmail || !btn) return;
+    var ho  = _getHoSess();
+    var btn = document.getElementById('save-tradie-btn');
+    if(!ho || !btn) return;
     btn.style.display = '';
   }
 
   window.toggleSaveTradie = function(){
-    var hoId    = localStorage.getItem('tt_ho_id');
-    var hoEmail = localStorage.getItem('tt_ho_email');
-    var btn     = document.getElementById('save-tradie-btn');
-    if(!hoId || !hoEmail) { window.location = '/my-account/'; return; }
+    var ho  = _getHoSess();
+    var btn = document.getElementById('save-tradie-btn');
+    if(!ho) { window.location = '/my-account/?next='+encodeURIComponent(window.location.pathname); return; }
     btn.disabled = true;
     fetch('https://tradietools.optified.nz/api/method/tradietools.api.save_tradie', {
       method: 'POST',
       headers: {'Content-Type':'application/json'},
-      body: JSON.stringify({homeowner_id: hoId, email: hoEmail, tradie_id: TT_TRADIE_ID, listing_slug: TT_TRADIE_SLUG})
+      body: JSON.stringify({homeowner_id: ho.homeowner_id, email: ho.email, tradie_id: TT_TRADIE_ID, listing_slug: TT_TRADIE_SLUG})
     })
     .then(function(r){ return r.json(); })
     .then(function(j){
       var d = j.message || j;
       btn.disabled = false;
       if(d.success){
-        btn.textContent = d.saved ? '🔖 Saved ✓' : '🔖 Save tradie';
-        btn.style.background = d.saved ? '#dbeafe' : '#fff';
+        btn.textContent = d.saved ? '♥ Saved' : '♡ Save tradie';
+        btn.style.background = d.saved ? '#e0f2fe' : '#fff';
       }
     })
     .catch(function(){ btn.disabled = false; });
