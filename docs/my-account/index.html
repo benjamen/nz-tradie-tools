@@ -165,17 +165,15 @@
         } else {
             savedEl.innerHTML = data.saved_tradies.map(function(t) {
                 var profileUrl = t.listing_slug ? '/businesses/' + t.listing_slug + '/' : '/find/';
-                var displayName = t.tradie_name ||
-                    (t.listing_slug ? t.listing_slug.replace(/-/g,' ').replace(/\b\w/g,function(c){return c.toUpperCase();}) : 'Tradie');
                 return '<div class="tradie-card">'
                     + '<div class="tradie-card-info">'
-                    + '<div class="name">' + displayName + '</div>'
+                    + '<div class="name">' + (t.tradie_name || 'Tradie') + '</div>'
                     + '<div class="meta">' + (t.trade || '') + (t.region ? ' · ' + t.region : '') + '</div>'
                     + '<div style="margin-top:.25rem">' + starsHtml(t.avg_rating, t.review_count) + '</div>'
                     + '</div>'
                     + '<div class="tradie-card-actions">'
                     + '<a href="' + profileUrl + '" class="btn-sm btn-primary" style="text-decoration:none">View profile →</a>'
-                    + '<button class="btn-sm btn-ghost" onclick="unsaveTradie(' + (t.tradie_id||'null') + ',' + JSON.stringify(t.listing_slug||'') + ',this)">Remove</button>'
+                    + '<button class="btn-sm btn-ghost" onclick="unsaveTradie(' + t.tradie_id + ',this)">Remove</button>'
                     + '</div>'
                     + '</div>';
             }).join('');
@@ -218,15 +216,12 @@
         .catch(function(){ showSection('login-section'); });
     }
 
-    window.unsaveTradie = function(tradieId, listingSlug, btn) {
+    window.unsaveTradie = function(tradieId, btn) {
         if (!sess) return;
-        var payload = {homeowner_id: sess.homeowner_id, email: sess.email};
-        if (tradieId) payload.tradie_id = tradieId;
-        if (listingSlug) payload.listing_slug = listingSlug;
         fetch(API + 'save_tradie', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify(payload)
+            body: JSON.stringify({homeowner_id: sess.homeowner_id, email: sess.email, tradie_id: tradieId})
         })
         .then(function(r){ return r.json(); })
         .then(function(json){
