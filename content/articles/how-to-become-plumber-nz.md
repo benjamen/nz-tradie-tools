@@ -912,3 +912,91 @@ The demand for skilled plumbers in New Zealand is strong, driven by new builds, 
 To learn more about the costs and benefits of becoming a plumber in New Zealand, we recommend visiting the tradie tools website at tradietools.nz, where you can access a range of resources and tools, including an apprentice wage calculator and job cost calculators. These tools can help you understand the financial aspects of a plumbing career, and make informed decisions about your training and career path.
 
 Remember, becoming a plumber requires a significant investment of time and money, but it can also provide a rewarding and challenging career with strong job prospects and good earning potential. With the right training and support, you can develop the skills and knowledge you need to succeed in this exciting and dynamic trade.
+
+## Introduction to Becoming a Plumber in NZ
+
+Becoming a plumber in New Zealand can be a rewarding and challenging career path, with a strong demand outlook and competitive wages. To become a registered plumber in NZ, you'll need to complete an apprenticeship, pass the Plumbers, Gasfitters and Drainlayers Board (PGDB) exam, and meet the registration requirements. In this article, we'll guide you through the process of becoming a plumber in NZ, including the costs, career paths, and exam requirements.
+
+## Plumbing Apprenticeship Wages by Year
+
+As a plumbing apprentice in NZ, your wages will increase as you progress through your apprenticeship. Here's a detailed table of typical hourly rates and annual salaries for plumbing apprentices:
+
+| Year | Typical Hourly Rate | Annual (40hr week) |
+| --- | --- | --- |
+| Year 1 | $15-19/hr | $31,200 - $39,520 |
+| Year 2 | $17-22/hr | $35,360 - $45,760 |
+| Year 3 | $20-26/hr | $41,600 - $54,080 |
+| Year 4 | $23-29/hr | $47,840 - $60,320 |
+| Newly registered plumber | $35-50/hr | $72,800 - $104,000 |
+| Experienced registered plumber (employee) | $45-65/hr | $93,600 - $135,200 |
+| Self-employed plumber (charge-out) | $90-160/hr | $187,200 - $332,800 |
+
+## Career Paths
+
+As a registered plumber in NZ, you'll have various career paths to choose from. You can work for a plumbing company, either as an employee or as a contractor, or you can go self-employed and start your own business. Specialising in gasfitting or drainage can also be a lucrative option, as these areas require specific skills and knowledge. With experience, you can move into project management or supervisory roles, overseeing large-scale plumbing projects and managing teams of plumbers. According to the PGDB, registered plumbers can earn between $72,800 and $104,000 per year, depending on their level of experience and expertise.
+
+Working for a plumbing company can provide job security and a steady income, while going self-employed offers the freedom to choose your own projects and clients. However, self-employment also requires more administrative work and financial management. Specialising in gasfitting or drainage can be a good option for those who enjoy working with specific systems and technologies. Moving into project management can be a good career progression for those who enjoy leading teams and overseeing large-scale projects.
+
+## The Plumbers, Gasfitters and Drainlayers Board (PGDB) Exam
+
+The PGDB exam is a critical step in becoming a registered plumber in NZ. The exam covers a range of topics, including the NZ plumbing code, water reticulation, and drainage. The exam format typically consists of a written test and a practical assessment, and the typical pass rate is around 70%. The exam fee is approximately $400, and you can prepare for the exam by studying the PGDB's study guide and attending revision courses.
+
+To sit the exam, you'll need to apply through the PGDB website and meet the eligibility requirements, which include completing an apprenticeship and gaining a certain amount of work experience. After passing the exam, you can apply for registration as a plumber, gasfitter, or drainlayer, which will allow you to work independently and use the protected titles.
+
+The PGDB exam is designed to test your knowledge and skills in areas such as:
+
+* NZ plumbing code and standards
+* Water reticulation and supply systems
+* Drainage and wastewater systems
+* Gasfitting and gas appliances
+* Safety and risk management
+
+To prepare for the exam, you can study the PGDB's study guide, attend revision courses, and practice with sample questions. You can also seek guidance from your employer or a qualified plumber who has experience with the exam.
+
+## Costs of Becoming a Plumber in NZ
+
+Becoming a plumber in NZ requires a significant investment of time and money. The costs include:
+
+* BCITO training fees: These fees can range from $2,000 to $6,000 per year, depending on whether you're employer-sponsored or self-funded.
+* PGDB exam and registration fees: The exam fee is approximately $400, and the registration fee is around $350-450.
+* Tools required: As a plumber, you'll need to purchase a range of tools, which can cost between $2,000 and $6,000 for a basic set.
+* Ongoing annual practising licence: This fee is approximately $280 per year and is required to maintain your registration as a plumber.
+* Continuing education requirements: You'll need to complete ongoing professional development to maintain your registration and stay up-to-date with industry developments.
+
+According to the BCITO, the total cost of becoming a plumber in NZ can range from $10,000 to $20,000, depending on the individual's circumstances. However, this investment can pay off in the long run, with registered plumbers earning competitive wages and having strong job prospects.
+
+## FAQ
+
+Here are some frequently asked questions about becoming a plumber in NZ:
+
+1. How long does it take to become a plumber in NZ?
+
+It typically takes around 4-5 years to complete a plumbing apprenticeship in NZ, which includes both on-the-job training and formal education. After completing your apprenticeship, you'll need to pass the PGDB exam and meet the registration requirements to become a registered plumber. The entire process can take around 5-6 years, depending on your individual circumstances.
+
+2. Can I do any plumbing work without a licence in NZ?
+
+No, in NZ, you need to be a registered plumber to perform most plumbing work, including installing, altering, or repairing plumbing systems. However, you can work under the supervision of a registered plumber as an apprentice or tradesperson. It's also important to note that some minor plumbing work, such as replacing washers or fixing leaks, can be done without a licence, but it's always best to check with the PGDB or a registered plumber to confirm.
+
+3. What is the difference between a plumber and a drainlayer?
+
+A plumber and a drainlayer are both tradespeople who work with plumbing systems, but they have different areas of expertise. A plumber typically works with water supply systems, including pipes, fittings, and appliances, while a drainlayer works with drainage and wastewater systems, including pipes, traps, and vents. In NZ, you can register as a plumber, gasfitter, or drainlayer, or you can register in multiple categories.
+
+4. Do I need a separate gasfitting licence?
+
+Yes, in NZ, you need a separate gasfitting licence to work with gas appliances and systems. This licence requires additional training and certification, and you'll need to meet the PGDB's requirements for gasfitting registration. However, if you're already a registered plumber, you may be able to complete a shorter gasfitting course and gain the necessary certification.
+
+5. How do I find a plumbing apprenticeship in NZ?
+
+You can find a plumbing apprenticeship in NZ by contacting the BCITO or a registered training provider. You can also search for apprenticeship vacancies on job boards or company websites. It's a good idea to research different employers and training providers to find the best fit for your needs and goals.
+
+6. Can overseas-trained plumbers work in NZ?
+
+Yes, overseas-trained plumbers can work in NZ, but they'll need to meet the PGDB's registration requirements and have their qualifications recognised by the NZ Qualifications Authority. They may also need to complete additional training or certification to meet NZ's plumbing standards and regulations. According to the PGDB, overseas-trained plumbers can apply for registration through the PGDB's mutual recognition process, which recognises the qualifications and experience of plumbers from certain countries.
+
+## Conclusion
+
+Becoming a plumber in NZ can be a rewarding and challenging career path, with a strong demand outlook and competitive wages. With the right training and certification, you can work independently as a registered plumber, gasfitter, or drainlayer, and enjoy a successful and lucrative career. To get started, you can use the TradieTools NZ apprentice wage calculator and job cost calculators to estimate your earnings and expenses.
+
+According to the PGDB, the demand for plumbers in NZ is expected to remain strong, driven by new builds, aging infrastructure, and water regulations. As a registered plumber, you'll have the opportunity to work on a wide range of projects, from residential homes to commercial buildings and infrastructure projects. With the right skills and knowledge, you can build a successful and rewarding career as a plumber in NZ.
+
+To learn more about becoming a plumber in NZ, you can visit the PGDB website or contact a registered training provider. You can also search for apprenticeship vacancies and job openings on job boards or company websites. Remember to always check the PGDB's registration requirements and ensure that you meet the necessary qualifications and standards to work as a plumber in NZ.

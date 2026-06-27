@@ -806,3 +806,55 @@ For building owners, the cost of earthquake strengthening can be significant, bu
 If you're a contractor or building owner looking to estimate the cost of a seismic strengthening project, check out our online calculators at tradietools.nz/calculators/. These calculators can help you estimate the cost of materials and labor for your project, and provide a detailed breakdown of the costs involved.
 
 In conclusion, the seismic strengthening market in New Zealand is a significant opportunity for contractors and building owners. With the right skills, expertise, and funding, we can ensure that our buildings are safe and resilient in the event of an earthquake, and that our communities are protected from the risks of seismic activity.
+
+## Grants and Funding for Earthquake Strengthening
+
+Earthquake strengthening can be a costly endeavour, but there are various grants and funding options available to help alleviate the financial burden. One such initiative is the Heritage EQUIP programme, a government grant specifically designed for heritage buildings in Wellington and Christchurch. This programme provides financial assistance to owners of heritage buildings to help them undertake seismic strengthening work, with grants of up to $250,000 per project. To be eligible, building owners must contribute at least 25% of the total project cost, with the grant covering up to 75% of the remaining costs.
+
+In addition to government grants, bank finance options are also available for earthquake strengthening projects. Many banks offer specialized loans for seismic strengthening work, with interest rates ranging from 5-8% per annum and loan terms of up to 10 years. For example, ANZ Bank offers a Seismic Strengthening Loan with a fixed interest rate of 6.5% per annum and a loan term of up to 7 years, with a maximum loan amount of $500,000.
+
+Wellington City Council has also implemented an earthquake-prone building policy, which requires building owners to strengthen their buildings within a 25-year timeframe. Building owners can apply for a 10-year extension, but this requires a detailed seismic assessment and a commitment to undertake strengthening work within the extended timeframe. The council also offers a range of resources and guidance to help building owners navigate the strengthening process, including a dedicated website and a team of specialist advisors.
+
+It's also important to consider the insurance implications of being below 34%NBS (New Building Standard). Many insurance companies will not provide cover for buildings that fall below this threshold, or will significantly increase premiums. In fact, a recent survey found that 75% of insurance companies in NZ will not provide cover for buildings with an NBS rating below 34%. Building owners who undertake seismic strengthening work can expect to see a significant reduction in their insurance premiums, with some insurers offering discounts of up to 20% for buildings that meet or exceed the 34%NBS threshold.
+
+## For NZ Contractors — Business Opportunities
+
+The seismic strengthening market in NZ is a significant and growing industry, with an estimated $5-10 billion of work to be undertaken nationally over the next 20 years. This presents a substantial opportunity for contractors to position themselves as specialists in this field and capitalize on the demand for skilled labour. The skills in demand include structural engineers, concreters, steel fabricators, heritage restoration specialists, and scaffolders, among others.
+
+To take advantage of this opportunity, contractors should focus on getting on approved contractor lists for local councils and government agencies. This can involve registering with the relevant authorities, obtaining necessary certifications, and demonstrating a track record of successful project delivery. Working with structural engineering firms as the hands-on contractor is also a viable strategy, as these firms often require skilled labour to undertake the physical work involved in seismic strengthening projects.
+
+Certifications such as the Licensed Building Practitioner (LBP) in the Structural category can also help contractors to differentiate themselves and demonstrate their expertise. Similarly, membership of professional organizations such as IPENZ (Institution of Professional Engineers New Zealand) can provide engineers with access to training, resources, and networking opportunities.
+
+The market dynamics vary between Wellington, Christchurch, and Auckland, with each city presenting unique opportunities and challenges. Wellington, for example, has a high concentration of heritage buildings, which requires specialized skills and expertise. Christchurch, on the other hand, has a large number of buildings that were damaged in the 2011 earthquakes, requiring significant repair and strengthening work. Auckland, with its rapidly growing population and urban development, presents opportunities for contractors to work on new builds and retrofits.
+
+In terms of specific market trends, Wellington is experiencing a surge in demand for seismic strengthening work, driven by the city's high earthquake risk and the need to protect its heritage buildings. Christchurch, on the other hand, is seeing a significant increase in demand for repair and rebuilding work, as the city continues to recover from the 2011 earthquakes. Auckland, meanwhile, is experiencing a growing demand for new builds and retrofits, driven by the city's rapid population growth and urban development.
+
+## FAQ
+
+1. **Does my residential home need earthquake strengthening in NZ?**
+
+Not all residential homes in NZ require earthquake strengthening, but it's essential to assess the risk and take action if necessary. The NZ government has introduced regulations requiring building owners to identify and strengthen earthquake-prone buildings, but these regulations primarily apply to commercial and multi-unit residential buildings. However, if you own a residential home in a high-risk area, such as Wellington or Christchurch, it's recommended that you undertake a seismic assessment to determine the risk and potential costs of strengthening. The cost of a seismic assessment can range from $2,000 to $10,000, depending on the complexity of the assessment and the size of the building.
+
+2. **Who pays for earthquake strengthening — the landlord or tenant?**
+
+In NZ, the cost of earthquake strengthening is typically borne by the building owner, which may be a landlord or property investor. However, the cost can be passed on to tenants through increased rent or lease payments. It's essential for landlords and tenants to review their lease agreements and understand their respective responsibilities and liabilities regarding earthquake strengthening. In some cases, the cost of strengthening may be shared between the landlord and tenant, depending on the terms of the lease agreement.
+
+3. **Can I do earthquake strengthening work without building consent?**
+
+No, earthquake strengthening work typically requires building consent, as it involves significant alterations to the building's structure. Building owners must obtain consent from their local council before commencing work, and the work must be undertaken by a qualified and licensed building practitioner. Failure to obtain consent can result in significant fines and penalties, as well as potential safety risks. The cost of obtaining building consent can range from $1,000 to $5,000, depending on the complexity of the project and the local council's fees.
+
+4. **How long does seismic strengthening work take?**
+
+The duration of seismic strengthening work varies depending on the scope and complexity of the project. Simple projects, such as retrofitting a residential home, may take several weeks to complete, while more complex projects, such as strengthening a large commercial building, can take several months or even years. Factors such as the size of the building, the extent of the work required, and the availability of skilled labour can all impact the project timeline. On average, a seismic strengthening project can take anywhere from 3-12 months to complete, depending on the scope of the work.
+
+5. **What happens if I don't strengthen a building identified as earthquake prone?**
+
+If a building is identified as earthquake prone and the owner fails to undertake strengthening work within the required timeframe, they may face significant penalties and liabilities. These can include fines of up to $200,000, as well as potential legal action from tenants, employees, or other stakeholders. In extreme cases, the local council may even order the building to be demolished if it poses a significant risk to public safety. Additionally, insurance companies may refuse to provide cover for buildings that are not strengthened, leaving the owner exposed to significant financial risk in the event of an earthquake.
+
+## Conclusion
+
+The seismic strengthening market in NZ is a growing and significant industry, presenting substantial opportunities for contractors and building owners alike. With an estimated $5-10 billion of work to be undertaken nationally over the next 20 years, there has never been a better time to get involved in this field. Whether you're a contractor looking to position yourself as a specialist in seismic strengthening or a building owner seeking to mitigate the risks associated with earthquake-prone buildings, there are many resources available to help you navigate this complex and rapidly evolving industry.
+
+For contractors, getting on approved contractor lists, working with structural engineering firms, and obtaining necessary certifications such as LBP and IPENZ membership can help to differentiate themselves and demonstrate their expertise. For building owners, understanding the grants and funding options available, such as the Heritage EQUIP programme, and navigating the complex regulatory environment can help to minimize costs and ensure compliance.
+
+To help you get started, we recommend visiting our website at tradietools.nz/calculators/ for a range of project estimators and resources to help you plan and budget for your seismic strengthening project. With the right expertise, resources, and planning, you can ensure that your building is safe, secure, and compliant with NZ's stringent earthquake regulations.
