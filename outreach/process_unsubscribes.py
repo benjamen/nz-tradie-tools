@@ -117,6 +117,20 @@ def process():
             continue
         sender = match.group(0).lower()
 
+        # Skip automated/service senders — they embed "unsubscribe" in footers
+        _skip_prefixes = ("noreply", "no-reply", "mailer-daemon", "postmaster",
+                          "bounce", "donotreply", "do-not-reply", "notifications",
+                          "support", "hello", "info")
+        _skip_domains  = ("formspree.io", "mailchannels.net", "sendgrid.net",
+                          "amazonses.com", "mailgun.org", "mandrillapp.com",
+                          "notifications.google.com")
+        sender_prefix = sender.split("@")[0]
+        sender_domain = sender.split("@")[-1] if "@" in sender else ""
+        if sender_prefix in _skip_prefixes or sender_domain in _skip_domains:
+            log(f"Skipping automated sender: {sender} (subject: {subject!r})")
+            mail.store(mid, "+FLAGS", "\\Seen")
+            continue
+
         if is_unsubscribe_message(subject, body):
             log(f"Unsubscribe request from: {sender} (subject: {subject!r})")
             unsub_mod.add(sender)
