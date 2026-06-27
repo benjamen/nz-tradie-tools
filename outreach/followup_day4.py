@@ -55,6 +55,8 @@ Cheers,
 Ben
 TradieTools NZ
 https://tradietools.nz
+
+To unsubscribe: {unsub_url}
 """
 
     html = f"""<!DOCTYPE html>

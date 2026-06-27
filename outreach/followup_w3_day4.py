@@ -69,6 +69,8 @@ Cheers,
 Ben
 TradieTools NZ
 https://tradietools.nz
+
+To unsubscribe: {unsub_url}
 """
 
     pixel = f'<img src="{track_url}" width="1" height="1" alt="" style="display:none">' if track_url else ""
