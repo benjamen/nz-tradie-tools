@@ -237,12 +237,14 @@ def build_articles(env, config, nav, base_path):
         date_val = front.get("date", "")
         date_iso = date_val.strftime("%Y-%m-%d") if hasattr(date_val, "strftime") else str(date_val)
         trade_display, trade_slug = _infer_trade_from_slug(article_path.stem)
+        calc_slug = _infer_calc_from_slug(article_path.stem)
         ctx = {**front, "content": html_body, "nav": nav,
                "base_url": base_url, "slug": article_path.stem, "date": date_iso,
                "affiliates": config.get("affiliates", {}),
                "year": datetime.now().year,
                "inferred_trade": trade_display,
-               "inferred_trade_slug": trade_slug}
+               "inferred_trade_slug": trade_slug,
+               "calc_slug": calc_slug}
         output_path.write_text(template.render(**ctx))
         logging.info(f"Article built: {output_path}")
 
@@ -261,9 +263,12 @@ def build():
                 dest = PUBLIC_DIR / "static" / f.relative_to(STATIC_DIR)
                 dest.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(f, dest)
-        favicon = STATIC_DIR / "favicon.svg"
-        if favicon.exists():
-            shutil.copy2(favicon, PUBLIC_DIR / "favicon.svg")
+        favicon_svg = STATIC_DIR / "favicon.svg"
+        if favicon_svg.exists():
+            shutil.copy2(favicon_svg, PUBLIC_DIR / "favicon.svg")
+        favicon_png = STATIC_DIR / "img" / "favicon.png"
+        if favicon_png.exists():
+            shutil.copy2(favicon_png, PUBLIC_DIR / "favicon.png")
 
     articles = []
     calculators = []

@@ -82,6 +82,21 @@
             </div>
         </article>
 
+        {% if embedded_calculator %}
+        <aside style="max-width:800px;margin:2rem auto;padding:0 1rem">
+            <div style="border:2px solid #0055a5;border-radius:10px;overflow:hidden;box-shadow:0 2px 12px rgba(0,85,165,.1)">
+                <div style="background:#0055a5;padding:.7rem 1.25rem;display:flex;align-items:center;justify-content:space-between">
+                    <span style="color:#fff;font-weight:700;font-size:.95rem">&#129518; Try the calculator</span>
+                    <a href="/calculators/{{ embedded_calculator }}/" target="_blank" style="color:rgba(255,255,255,.8);font-size:.8rem;text-decoration:none">Open full &#8599;</a>
+                </div>
+                <iframe src="/calculators/{{ embedded_calculator }}/"
+                    style="width:100%;height:540px;border:none;display:block;background:#fff"
+                    loading="lazy"
+                    title="Cost calculator"></iframe>
+            </div>
+        </aside>
+        {% endif %}
+
         {% if inferred_trade %}
         <aside style="max-width:800px;margin:1.5rem auto;padding:0 1rem">
             <div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:1.25rem 1.5rem">
