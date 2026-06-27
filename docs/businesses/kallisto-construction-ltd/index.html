@@ -589,6 +589,27 @@
           container.appendChild(rtBadge);
         }
 
+        // Save-tradie heart button (homeowners)
+        if(!document.getElementById('tt-save-btn')){
+          var saveBtn=document.createElement('button');
+          saveBtn.id='tt-save-btn';
+          saveBtn.style.cssText='background:#fff;color:#0055a5;border:1.5px solid #0055a5;border-radius:5px;padding:.25rem .7rem;font-size:.82rem;font-weight:600;cursor:pointer;font-family:inherit';
+          var hSess=null;try{hSess=JSON.parse(localStorage.getItem('tt_homeowner')||'null');}catch(e){}
+          saveBtn.textContent='♡ Save tradie';
+          saveBtn.onclick=function(){
+            if(!hSess){window.location.href='/my-account/?next='+encodeURIComponent(window.location.pathname);return;}
+            fetch('https://tradietools.optified.nz/api/method/tradietools.api.save_tradie',{
+              method:'POST',headers:{'Content-Type':'application/json'},
+              body:JSON.stringify({homeowner_id:hSess.homeowner_id,email:hSess.email,listing_slug:SLUG})
+            }).then(function(r){return r.json();}).then(function(j){
+              var d=j.message||j;
+              if(d.success){saveBtn.textContent=d.saved?'♥ Saved':'♡ Save tradie';
+                saveBtn.style.background=d.saved?'#e0f2fe':'#fff';}
+            });
+          };
+          container.appendChild(saveBtn);
+        }
+
         // Availability badge
         var availBadge = document.getElementById('tt-avail-badge');
         if(!availBadge){
