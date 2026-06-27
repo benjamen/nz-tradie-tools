@@ -221,8 +221,9 @@
                 <!-- Founding member banner -->
                 <div class="upgrade-banner" id="upgrade-banner">
                     <div class="ub-text">
-                        <h3>🏆 Founding Member — $29/mo</h3>
-                        <p>Priority placement in search · Verified badge · Lead inbox · Analytics · Licence badges (LBP, EWRB, PGD)</p>
+                        <h3>🏆 Founding Member — $29/mo <span id="spots-badge" style="font-size:.75rem;background:rgba(255,255,255,.15);border-radius:4px;padding:2px 8px;margin-left:.4rem;font-weight:600;letter-spacing:.02em">Loading spots…</span></h3>
+                        <p>Priority placement · Verified badge · Lead inbox · Analytics · Licence badges (LBP, EWRB, PGD)</p>
+                        <p style="font-size:.8rem;opacity:.75;margin-top:.3rem">Founding member price locks in forever — won't increase when we raise rates.</p>
                     </div>
                     <div class="ub-btns">
                         <a class="btn-upgrade" id="btn-go-verified" href="#">Get Pro →</a>
@@ -522,6 +523,32 @@ function renderDashboard(d) {
             }
         })
         .catch(function(){});
+
+        // Founding member spots counter (20 total, show remaining)
+        fetch('https://tradietools.optified.nz/api/method/tradietools.api.get_pro_subscriber_count')
+        .then(function(r){ return r.json(); })
+        .then(function(json){
+            var m = json.message || json;
+            var badge = document.getElementById('spots-badge');
+            if (!badge) return;
+            var taken = (m.count || 0);
+            var remaining = Math.max(0, 20 - taken);
+            if (remaining <= 0) {
+                badge.textContent = 'All founding spots taken';
+                badge.style.background = 'rgba(239,68,68,.3)';
+            } else if (remaining <= 5) {
+                badge.textContent = remaining + ' of 20 spots left';
+                badge.style.background = 'rgba(239,68,68,.25)';
+                badge.style.animation = 'pulse 2s infinite';
+            } else {
+                badge.textContent = remaining + ' of 20 spots left';
+                badge.style.background = 'rgba(255,255,255,.15)';
+            }
+        })
+        .catch(function(){
+            var badge = document.getElementById('spots-badge');
+            if (badge) badge.textContent = 'Limited spots';
+        });
     }
 
     // Pre-fill edit form
