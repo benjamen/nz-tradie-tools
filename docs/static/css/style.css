@@ -52,11 +52,11 @@ tr:nth-child(even) td { background: var(--bg-stripe); }
 
 /* ── Header ── */
 .site-header { background: var(--navy); border-bottom: 3px solid var(--blue); position: relative; z-index: 200; }
-.site-header .container { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 70px; }
+.site-header .container { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 80px; }
 
 .logo { color: var(--white); font-size: 1.1rem; font-weight: 700; letter-spacing: -.01em; text-decoration: none; display: flex; align-items: center; gap: .4rem; padding: .4rem 0; white-space: nowrap; }
 .logo:hover { opacity: .9; color: var(--white); }
-.logo-img { height: 62px; width: auto; display: block; background: #fff; border-radius: 10px; padding: 5px 10px; }
+.logo-img { height: 80px; width: auto; display: block; }
 
 /* Desktop nav */
 .main-nav { display: flex; align-items: stretch; }
@@ -110,7 +110,7 @@ tr:nth-child(even) td { background: var(--bg-stripe); }
   .nav-cta:hover { background: rgba(192,86,0,.3) !important; border-left-color: var(--orange) !important; }
 
   .logo { font-size: 1rem; }
-  .logo-img { height: 50px; padding: 4px 8px; }
+  .logo-img { height: 60px; }
 }
 
 /* ── Breadcrumb ── */
