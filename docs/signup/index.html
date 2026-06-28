@@ -462,6 +462,7 @@ if (claimId) {
       ? 'Your ' + (tier === 'pro' ? 'Pro' : 'Email Verified') + ' listing is live and your 30-day free trial has started. No charge until next month.'
       : 'Your ' + (tier === 'pro' ? 'Pro' : 'Email Verified') + ' listing is live. You\'ll receive an email confirmation from Stripe shortly.';
     history.replaceState(null, '', '/signup/');
+    if (typeof gtag !== 'undefined') gtag('event', 'listing_upgraded', { tier });
   } else if (p.get('cancelled') === '1') {
     history.replaceState(null, '', '/signup/');
   }
@@ -550,6 +551,7 @@ document.getElementById('signup-form').addEventListener('submit', async function
         document.getElementById('form-area').style.display = 'none';
         document.getElementById('verify-state').style.display = 'block';
         document.getElementById('verify-email-display').textContent = email;
+        if (typeof gtag !== 'undefined') gtag('event', 'verify_email_sent', { trade, region });
 
         // Wire up resend button
         document.getElementById('resend-btn').addEventListener('click', async function() {
@@ -597,6 +599,7 @@ document.getElementById('signup-form').addEventListener('submit', async function
 document.getElementById('stay-free-btn').addEventListener('click', function() {
   document.getElementById('upgrade-state').style.display = 'none';
   document.getElementById('success-state').style.display = 'block';
+  if (typeof gtag !== 'undefined') gtag('event', 'listing_stayed_free');
 });
 
 // ── Upgrade buttons: call checkout endpoint → redirect to Stripe ──
