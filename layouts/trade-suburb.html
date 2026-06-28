@@ -92,27 +92,45 @@
             <p>These {{ trade.plural }} service {{ suburb.name }} and surrounding Auckland suburbs. All ratings sourced from Google Maps and NoCowboys — sorted by rating and review count.</p>
 
             {% if businesses %}
-            <div class="top10-list">
+            <div class="tradie-grid">
                 {% for b in businesses %}
-                <div class="business-card">
-                    <div class="rank">{{ loop.index }}</div>
-                    <div class="business-name">{{ b.name }}</div>
-                    <div class="business-meta">
-                        <span>📍 {{ b.suburb }}{% if b.suburb and b.suburb.lower() != 'auckland' %}, Auckland{% endif %}</span>
-                        {% if b.rating %}
-                        <span><span class="stars">{% for i in range(b.rating|int) %}★{% endfor %}{% if b.rating % 1 >= 0.5 %}½{% endif %}</span> {{ b.rating }}/5 ({{ b.review_count }} reviews)</span>
-                        {% endif %}
-                        {% if b.phone %}<span>📞 {{ b.phone }}</span>{% endif %}
+                {% if b.profile_url %}
+                <div class="tradie-card is-verified">
+                    <span class="tc-rank">{{ loop.index }}</span>
+                    <div class="tc-top">
+                        <div class="tc-avatar trade-{{ trade.slug }}">{{ (b.name or ' ')[:1]|upper }}{% if (b.name or '').split(' ')|length > 1 %}{{ (b.name or '').split(' ')[1][:1]|upper }}{% endif %}</div>
+                        <div class="tc-info">
+                            <div class="tc-name"><a href="{{ base_path }}{{ b.profile_url }}">{{ b.name }}</a> <span class="badge-verified">VERIFIED</span></div>
+                            <div class="tc-location">📍 {{ b.suburb }}{% if b.suburb and b.suburb.lower() != 'auckland' %}, Auckland{% endif %}</div>
+                        </div>
                     </div>
-                    {% if b.known_for %}<p class="known-for">{{ b.known_for }}</p>{% endif %}
-                    <div class="business-links">
-                        {% if b.profile_url %}
-                        <a href="{{ base_path }}{{ b.profile_url }}" class="profile-link">✅ View full profile →</a>
-                        {% endif %}
-                        <a href="https://www.google.com/maps/search/{{ b.name|urlencode }}+{{ suburb.name }}+Auckland+NZ" rel="noopener" target="_blank">Search on Google Maps →</a>
-                        <a href="{{ base_path }}/claim/?business={{ b.name|urlencode }}&trade={{ trade.slug }}&city=auckland" class="claim-link">Is this your business? Claim listing →</a>
+                    {% if b.rating %}<div class="tc-meta"><span class="tc-stars">{% for i in range(b.rating|int) %}★{% endfor %}</span> <span>{{ b.rating }}/5 ({{ b.review_count }} reviews)</span></div>{% endif %}
+                    {% if b.known_for %}<div class="tc-tagline">{{ b.known_for }}</div>{% endif %}
+                    <div class="tc-actions">
+                        {% if b.phone %}<a href="tel:{{ b.phone }}" class="btn-call">📞 Call</a>{% endif %}
+                        <a href="{{ base_path }}/get-quotes/?trade={{ trade.slug }}&suburb={{ suburb.name|urlencode }}&city=Auckland" class="btn-quote">Get a Quote</a>
+                    </div>
+                    <div><a href="{{ base_path }}{{ b.profile_url }}" class="tc-profile-link">View full profile →</a></div>
+                </div>
+                {% else %}
+                <div class="tradie-card">
+                    <span class="tc-rank">{{ loop.index }}</span>
+                    <div class="tc-top">
+                        <div class="tc-avatar trade-{{ trade.slug }}">{{ (b.name or ' ')[:1]|upper }}{% if (b.name or '').split(' ')|length > 1 %}{{ (b.name or '').split(' ')[1][:1]|upper }}{% endif %}</div>
+                        <div class="tc-info">
+                            <div class="tc-name">{{ b.name }}</div>
+                            <div class="tc-location">📍 {{ b.suburb }}{% if b.suburb and b.suburb.lower() != 'auckland' %}, Auckland{% endif %}</div>
+                        </div>
+                    </div>
+                    {% if b.rating %}<div class="tc-meta"><span class="tc-stars">{% for i in range(b.rating|int) %}★{% endfor %}</span> <span>{{ b.rating }}/5 ({{ b.review_count }} reviews)</span></div>{% endif %}
+                    {% if b.known_for %}<div class="tc-tagline">{{ b.known_for }}</div>{% endif %}
+                    <a href="{{ base_path }}/get-quotes/?trade={{ trade.slug }}&suburb={{ suburb.name|urlencode }}&city=Auckland" class="btn-quote-full">Get a Quote</a>
+                    <div>
+                        <a href="https://www.google.com/maps/search/{{ b.name|urlencode }}+{{ suburb.name }}+Auckland+NZ" rel="noopener" target="_blank" style="font-size:.82rem;color:var(--blue)">Search on Google Maps →</a>
+                        &nbsp;·&nbsp; <a href="{{ base_path }}/claim/?business={{ b.name|urlencode }}&trade={{ trade.slug }}&city=auckland" class="claim-link">Claim listing →</a>
                     </div>
                 </div>
+                {% endif %}
                 {% endfor %}
             </div>
             {% else %}

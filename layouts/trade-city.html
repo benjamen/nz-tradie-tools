@@ -116,61 +116,82 @@
 
             {% if featured_businesses %}
             <div style="margin-bottom:1.5rem">
-                <h2 style="font-size:1.05rem;color:#5b21b6;font-weight:700;margin:0 0 .75rem;text-transform:uppercase;letter-spacing:.04em">✅ Verified Listings</h2>
+                <h2 style="font-size:1.05rem;color:var(--orange);font-weight:700;margin:0 0 .75rem;text-transform:uppercase;letter-spacing:.04em">✅ Claimed Listings</h2>
+                <div class="tradie-grid">
                 {% for fb in featured_businesses %}
-                <div class="business-card" style="border-left:4px solid #5b21b6;background:#faf5ff">
-                    <div class="business-name">{{ fb.business_name }}</div>
-                    <div class="business-meta">
-                        {% if fb.phone %}<span>📞 {{ fb.phone }}</span>{% endif %}
-                        {% if fb.suburb %}<span>📍 {{ fb.suburb }}</span>{% endif %}
-                        <span style="color:#5b21b6;font-weight:600">✅ Verified {% if fb.national %}· NZ-wide{% else %}· Local{% endif %}</span>
+                <div class="tradie-card is-pro">
+                    <div class="tc-top">
+                        <div class="tc-avatar trade-{{ trade.slug }}">{{ (fb.business_name or ' ')[:1]|upper }}{% if (fb.business_name or '').split(' ')|length > 1 %}{{ (fb.business_name or '').split(' ')[1][:1]|upper }}{% endif %}</div>
+                        <div class="tc-info">
+                            <div class="tc-pro-name">
+                                {% if fb.profile_url %}<a href="{{ base_path }}{{ fb.profile_url }}">{{ fb.business_name }}</a>{% else %}{{ fb.business_name }}{% endif %}
+                                <span class="badge-pro">PRO</span>
+                                {% if fb.lbp %}<span class="tc-verified-badge">✓ LBP</span>{% endif %}
+                            </div>
+                            {% if fb.rating %}<div class="tc-pro-rating"><span class="tc-stars">{% for i in range(fb.rating|int) %}★{% endfor %}</span> <span>{{ fb.rating }}/5 ({{ fb.review_count }} reviews)</span></div>{% endif %}
+                            {% if fb.suburb %}<div class="tc-pro-location">📍 {{ fb.suburb }}</div>{% endif %}
+                        </div>
                     </div>
-                    <div class="known-for">{{ fb.known_for }}</div>
-                    {% if fb.areas_served %}<div style="font-size:.82rem;color:#666;margin-top:.35rem">📍 Serves: {{ fb.areas_served | join(' · ') }}</div>{% endif %}
-                    <div style="margin-top:.6rem;display:flex;gap:.5rem;flex-wrap:wrap">
-                        {% if fb.profile_url %}<a href="{{ fb.profile_url }}" class="btn-profile">View profile →</a>{% endif %}
-                        {% if fb.website %}<a href="{{ fb.website }}" target="_blank" rel="noopener nofollow" style="font-size:.82rem;color:#0055a5">Visit website ↗</a>{% endif %}
+                    <div class="tc-pro-body">
+                        <div class="tc-pro-main">
+                            {% if fb.description or fb.tagline or fb.known_for %}<div class="tc-description">{{ fb.description or fb.tagline or fb.known_for }}</div>{% endif %}
+                            {% if fb.services %}<div class="tc-services">{% for s in fb.services %}<span class="tc-service-tag">{{ s }}</span>{% endfor %}</div>{% endif %}
+                            {% if fb.areas_served %}<div class="tc-areas">📍 Serves: {{ fb.areas_served|join(' · ') }}</div>{% endif %}
+                        </div>
+                        <div class="tc-pro-sidebar">
+                            <div class="tc-pro-actions">
+                                {% if fb.phone %}<a href="tel:{{ fb.phone }}" class="btn-call-direct">📞 {{ fb.phone }}</a>{% endif %}
+                                <a href="{{ base_path }}/get-quotes/?trade={{ trade.slug }}&suburb={{ fb.suburb|urlencode }}" class="btn-quote-full">Get a Quote</a>
+                            </div>
+                            <div class="tc-pro-links">
+                                {% if fb.profile_url %}<a href="{{ base_path }}{{ fb.profile_url }}" class="tc-profile-link">View full profile →</a>{% endif %}
+                                {% if fb.website %}<a href="{{ fb.website }}" target="_blank" rel="noopener nofollow">Visit website ↗</a>{% endif %}
+                            </div>
+                        </div>
                     </div>
                 </div>
                 {% endfor %}
+                </div>
             </div>
             {% endif %}
 
             {% if businesses %}
-            <div class="top10-list">
+            <div class="tradie-grid">
                 {% for b in businesses %}
-                <div class="business-card">
-                    <div class="rank">{{ b.rank }}</div>
-                    <div class="business-name">{{ b.name }}</div>
-                    <div class="business-meta">
-                        <span class="stars">{% for i in range(b.rating|int) %}★{% endfor %}{% if b.rating % 1 >= 0.5 %}½{% endif %}</span>
-                        <span><strong>{{ b.rating }}</strong> / 5 ({{ b.review_count }} reviews)</span>
-                        <span>📍 {{ b.suburb }}</span>
-                        {% if b.phone %}<span>📞 {{ b.phone }}</span>{% endif %}
+                {% if b.profile_url %}
+                <div class="tradie-card is-verified">
+                    <span class="tc-rank">{{ b.rank }}</span>
+                    <div class="tc-top">
+                        <div class="tc-avatar trade-{{ trade.slug }}">{{ (b.name or ' ')[:1]|upper }}{% if (b.name or '').split(' ')|length > 1 %}{{ (b.name or '').split(' ')[1][:1]|upper }}{% endif %}</div>
+                        <div class="tc-info">
+                            <div class="tc-name"><a href="{{ base_path }}{{ b.profile_url }}">{{ b.name }}</a> <span class="badge-verified">VERIFIED</span></div>
+                            <div class="tc-location">📍 {{ b.suburb }}</div>
+                        </div>
                     </div>
-                    <div class="known-for">{{ b.known_for }}</div>
-                    <div class="source-badge {% if b.verified %}verified{% else %}unverified{% endif %}">
-                        {% if b.verified %}
-                            ✅ Verified · {{ b.source }}{% if b.verified_date %} ({{ b.verified_date }}){% endif %}
-                        {% else %}
-                            ⚠️ Pending verification · {{ b.source }}
-                        {% endif %}
+                    {% if b.rating %}<div class="tc-meta"><span class="tc-stars">{% for i in range(b.rating|int) %}★{% endfor %}</span> <span>{{ b.rating }}/5 ({{ b.review_count }} reviews)</span></div>{% endif %}
+                    {% if b.known_for %}<div class="tc-tagline">{{ b.known_for }}</div>{% endif %}
+                    <div class="tc-actions">
+                        {% if b.phone %}<a href="tel:{{ b.phone }}" class="btn-call">📞 Call</a>{% endif %}
+                        <a href="{{ base_path }}/get-quotes/?trade={{ trade.slug }}&suburb={{ b.suburb|urlencode }}" class="btn-quote">Get a Quote</a>
                     </div>
-                    <div class="business-links">
-                        {% if b.profile_url %}
-                            <a href="{{ base_path }}{{ b.profile_url }}" class="profile-link">✅ View full profile →</a>
-                        {% endif %}
-                        {% if b.website %}<a href="{{ b.website }}" rel="noopener" target="_blank">Visit website →</a>{% endif %}
-                        {% if b.source_url %}
-                            <a href="{{ b.source_url }}" rel="noopener" target="_blank">View source →</a>
-                        {% else %}
-                            <a href="https://www.google.com/maps/search/{{ b.name|urlencode }}+{{ city.name }}+NZ" rel="noopener" target="_blank">Search on Google Maps →</a>
-                        {% endif %}
-                    </div>
-                    {% if not b.profile_url %}
-                    <a href="{{ base_path }}/claim/?business={{ b.name|urlencode }}&trade={{ trade.slug }}&city={{ city.slug }}" class="claim-link">Is this your business? Claim this listing →</a>
-                    {% endif %}
+                    <div><a href="{{ base_path }}{{ b.profile_url }}" class="tc-profile-link">View full profile →</a>{% if b.website %} &nbsp;·&nbsp; <a href="{{ b.website }}" target="_blank" rel="noopener" style="font-size:.82rem;color:var(--blue)">Website ↗</a>{% endif %}</div>
                 </div>
+                {% else %}
+                <div class="tradie-card">
+                    <span class="tc-rank">{{ b.rank }}</span>
+                    <div class="tc-top">
+                        <div class="tc-avatar trade-{{ trade.slug }}">{{ (b.name or ' ')[:1]|upper }}{% if (b.name or '').split(' ')|length > 1 %}{{ (b.name or '').split(' ')[1][:1]|upper }}{% endif %}</div>
+                        <div class="tc-info">
+                            <div class="tc-name">{{ b.name }}</div>
+                            <div class="tc-location">📍 {{ b.suburb }}</div>
+                        </div>
+                    </div>
+                    {% if b.rating %}<div class="tc-meta"><span class="tc-stars">{% for i in range(b.rating|int) %}★{% endfor %}</span> <span>{{ b.rating }}/5 ({{ b.review_count }} reviews)</span></div>{% endif %}
+                    {% if b.known_for %}<div class="tc-tagline">{{ b.known_for }}</div>{% endif %}
+                    <a href="{{ base_path }}/get-quotes/?trade={{ trade.slug }}&suburb={{ b.suburb|urlencode }}" class="btn-quote-full">Get a Quote</a>
+                    <div><a href="{{ base_path }}/claim/?business={{ b.name|urlencode }}&trade={{ trade.slug }}&city={{ city.slug }}" class="claim-link">Is this your business? Claim listing →</a>{% if b.source_url %} &nbsp;·&nbsp; <a href="{{ b.source_url }}" rel="noopener" target="_blank" style="font-size:.82rem;color:var(--muted)">View source →</a>{% endif %}</div>
+                </div>
+                {% endif %}
                 {% endfor %}
             </div>
             {% else %}
