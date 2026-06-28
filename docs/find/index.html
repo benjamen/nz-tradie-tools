@@ -54,6 +54,7 @@
     .business-links button { text-decoration:underline; }
     .source-badge { display:inline-flex; align-items:center; gap:.3rem; font-size:.78rem; margin-top:.35rem; }
     .source-badge.verified { color:#16a34a; }
+    .source-badge.unverified { color:#b45309; }
     .profile-link { display:inline-block; font-size:.82rem; font-weight:600; color:#166534; background:#dcfce7; border:1px solid #86efac; border-radius:var(--radius,4px); padding:.15rem .55rem; text-decoration:none; }
     .profile-link:hover { background:#bbf7d0; }
     .claim-link { display:inline-block; font-size:.78rem; color:#92400e; background:#fef9c3; border:1px solid #fde047; border-radius:var(--radius,4px); padding:.1rem .5rem; text-decoration:none; }
@@ -427,6 +428,7 @@ function freeCard(t) {
   const mapsQ = encodeURIComponent(`${t.name} ${t.region||''} New Zealand`);
   const mapsUrl = `https://www.google.com/maps/search/${mapsQ}`;
   const claimUrl = `/signup/?ref=claim&id=${esc(String(t.id||''))}&name=${encodeURIComponent(t.name||'')}`;
+  const desc = t.tagline || t.description || '';
   return `<div class="business-card${isHighlighted?' tt-highlighted':''}">
     <div class="business-name">${esc(t.name||'Unknown')} <span style="font-size:.78rem;font-weight:400;color:#555">${esc(label)}</span></div>
     <div class="business-meta">
@@ -435,11 +437,13 @@ function freeCard(t) {
       ${rate ? `<span>${esc(rate)}</span>` : ''}
       ${exp ? `<span>${esc(exp)}</span>` : ''}
     </div>
-    ${t.tagline ? `<div class="known-for">${esc(t.tagline)}</div>` : ''}
+    ${desc ? `<div class="known-for">${esc(desc)}</div>` : ''}
+    <div class="source-badge unverified">⚠️ Unverified listing</div>
     <div class="business-links">
+      ${t.slug ? `<a class="profile-link" href="/businesses/${esc(t.slug)}/">View full profile →</a>` : ''}
+      ${!isUnclaimed ? `<button onclick="ttQuote('${esc(String(t.id||''))}','${esc(t.name||'')}','${esc(label)}','${esc(t.region||'')}')">Get a Quote →</button>` : ''}
       ${isUnclaimed ? `<a href="${mapsUrl}" target="_blank" rel="noopener">Search on Google Maps →</a>` : ''}
       ${isUnclaimed ? `<a href="${claimUrl}" class="claim-link">Is this your business? Claim listing →</a>` : ''}
-      ${!isUnclaimed ? `<button onclick="ttQuote('${esc(String(t.id||''))}','${esc(t.name||'')}','${esc(label)}','${esc(t.region||'')}')">Get a Quote →</button>` : ''}
     </div>
   </div>`;
 }
@@ -458,7 +462,10 @@ function verifiedCard(t) {
   const verifiedLine = t.source
     ? `✅ Verified · ${esc(t.source)}${t.verified_date ? ` (${esc(t.verified_date)})` : ''}`
     : '✅ Listing verified';
-  return `<div class="business-card" style="border-left:4px solid #2563eb;${isHighlighted?'background:#fffbeb;':''}" >
+  const desc = t.tagline || t.description || '';
+  const services = (t.services||[]).slice(0,5);
+  const areas = (t.areas_served||[]).slice(0,6);
+  return `<div class="business-card" style="border-left:4px solid #2563eb${isHighlighted?';background:#fffbeb':''}" >
     <div class="business-name">${nameEl} <span style="font-size:.72rem;font-weight:700;color:#fff;background:#2563eb;padding:.1rem .4rem;border-radius:2px;vertical-align:middle">VERIFIED</span></div>
     <div class="business-meta">
       ${rat>0 ? `<span class="stars">${'★'.repeat(Math.floor(rat))}${rat%1>=0.5?'½':''}</span><span><strong>${rat.toFixed(1)}</strong> / 5 (${t.review_count||0} reviews)</span>` : ''}
@@ -466,12 +473,15 @@ function verifiedCard(t) {
       ${rate ? `<span>${esc(rate)}</span>` : ''}
       ${exp ? `<span>${esc(exp)}</span>` : ''}
     </div>
-    ${t.tagline ? `<div class="known-for">"${esc(t.tagline)}"</div>` : ''}
+    ${desc ? `<div class="known-for">${esc(desc)}</div>` : ''}
+    ${services.length ? `<div class="known-for" style="font-size:.85rem;color:#555">${services.map(s=>esc(s)).join(' · ')}</div>` : ''}
+    ${areas.length ? `<div style="font-size:.82rem;color:#666;margin-top:.25rem">📍 Serves: ${areas.map(a=>esc(a)).join(' · ')}</div>` : ''}
     <div class="source-badge verified">${verifiedLine}</div>
     <div class="business-links">
       ${phone ? `<button class="profile-link" data-phone="${esc(phone)}" onclick="revealPhone(this)">📞 Show number</button>` : ''}
       <button onclick="ttQuote('${esc(String(t.id||''))}','${esc(t.name||'')}','${esc(label)}','${esc(t.region||'')}')">Get a Quote →</button>
-      ${t.slug ? `<a class="profile-link" href="/businesses/${esc(t.slug)}/">View full profile →</a>` : ''}
+      ${t.slug ? `<a class="profile-link" href="/businesses/${esc(t.slug)}/">✅ View full profile →</a>` : ''}
+      ${t.website ? `<a href="${esc(t.website)}" target="_blank" rel="noopener">Visit website →</a>` : ''}
     </div>
   </div>`;
 }
@@ -482,7 +492,7 @@ function proCard(t, rank) {
   const phone = t.phone||'';
   const rate = t.hourly_rate ? `$${t.hourly_rate}/hr` : '';
   const exp  = t.experience_years ? `${t.experience_years}yrs exp` : '';
-  const location = [t.suburb, t.region].filter(Boolean).join(', ') || 'New Zealand';
+  const suburb = t.suburb || t.region || 'New Zealand';
   const desc = t.description || t.tagline || '';
   const isHighlighted = highlightId && String(t.id) === highlightId;
   const nameEl = t.slug
@@ -490,43 +500,56 @@ function proCard(t, rank) {
     : esc(t.name||'Unknown');
   const services = (t.services||[]).slice(0,5);
   const areas = (t.areas_served||[]).slice(0,6);
-
-  return `<div class="business-card" style="border-left:4px solid var(--orange,#f97316);${isHighlighted?'background:#fffbeb;':'background:#fff7f0;'}">
-    <div class="rank">${rank}</div>
-    <div class="business-name">${nameEl} <span style="font-size:.72rem;font-weight:700;color:#fff;background:var(--orange,#f97316);padding:.1rem .4rem;border-radius:2px;vertical-align:middle">PRO</span></div>
+  const licenceBadges = [
+    t.lbp_verified  ? '✓ LBP'  : '',
+    t.ewrb_verified ? '✓ EWRB' : '',
+    t.pgd_verified  ? '✓ PGD'  : '',
+  ].filter(Boolean);
+  return `<div class="business-card" style="border-left:4px solid #5b21b6;background:#faf5ff${isHighlighted?';outline:2px solid #5b21b6':''}">
+    <div class="business-name">${nameEl}</div>
     <div class="business-meta">
-      ${rat>0 ? `<span class="stars">${'★'.repeat(Math.floor(rat))}${rat%1>=0.5?'½':''}</span><span><strong>${rat.toFixed(1)}</strong> / 5 (${t.review_count||0} reviews)</span>` : ''}
-      <span>📍 ${esc(location)}</span>
+      ${phone ? `<span>📞 ${esc(phone)}</span>` : ''}
+      <span>📍 ${esc(suburb)}</span>
+      <span style="color:#5b21b6;font-weight:600">✅ Verified · Local</span>
+      ${rat>0 ? `<span class="stars">${'★'.repeat(Math.floor(rat))}${rat%1>=0.5?'½':''}</span><span><strong>${rat.toFixed(1)}</strong>/5 (${t.review_count||0} reviews)</span>` : ''}
       ${rate ? `<span>${esc(rate)}</span>` : ''}
       ${exp ? `<span>${esc(exp)}</span>` : ''}
     </div>
     ${desc ? `<div class="known-for">${esc(desc)}</div>` : ''}
-    ${services.length ? `<div class="known-for" style="font-size:.82rem;color:#555">${services.map(s=>esc(s)).join(' · ')}</div>` : ''}
+    ${services.length ? `<div class="known-for" style="font-size:.85rem;color:#555">${services.map(s=>esc(s)).join(' · ')}</div>` : ''}
     ${areas.length ? `<div style="font-size:.82rem;color:#666;margin-top:.25rem">📍 Serves: ${areas.map(a=>esc(a)).join(' · ')}</div>` : ''}
-    <div class="business-links">
-      ${phone ? `<a href="tel:${esc(phone)}" class="profile-link">📞 ${esc(phone)}</a>` : ''}
-      <button onclick="ttQuote('${esc(String(t.id||''))}','${esc(t.name||'')}','${esc(label)}','${esc(t.region||'')}')">Get a Quote →</button>
+    ${licenceBadges.length ? `<div style="font-size:.8rem;color:#16a34a;margin-top:.25rem">${licenceBadges.join(' · ')}</div>` : ''}
+    <div style="margin-top:.6rem;display:flex;gap:.5rem;flex-wrap:wrap;align-items:center">
       ${t.slug ? `<a class="profile-link" href="/businesses/${esc(t.slug)}/">View full profile →</a>` : ''}
-      ${t.website ? `<a href="${esc(t.website)}" target="_blank" rel="noopener">Visit website →</a>` : ''}
+      ${t.website ? `<a href="${esc(t.website)}" target="_blank" rel="noopener nofollow" style="font-size:.82rem;color:#0055a5">Visit website ↗</a>` : ''}
     </div>
   </div>`;
 }
 
 function featuredCard(t) {
-  const stars = t.avg_rating ? '★'.repeat(Math.floor(t.avg_rating)) + (t.avg_rating%1>=0.5?'½':'') : '';
-  return `<div class="tradie-card is-pro" style="border-left:4px solid #7c3aed;background:#faf5ff">
-    <span style="position:absolute;top:.6rem;right:.75rem;background:#7c3aed;color:#fff;font-size:.7rem;font-weight:700;padding:.1rem .45rem;border-radius:3px;letter-spacing:.05em">SPONSORED</span>
-    <div class="card-name">${t.name||'Unnamed'}</div>
-    <div class="card-meta">
-      ${t.trade?`<span>${tradeLabel(t.trade)}</span>`:''}
-      ${t.region?`<span>📍 ${t.suburb?t.suburb+', ':''}${t.region}</span>`:''}
-      ${stars?`<span style="color:#f59e0b">${stars}</span> <span>${t.avg_rating}/5 (${t.review_count||0} reviews)</span>`:''}
-      ${t.response_time_label?`<span>⚡ ${t.response_time_label}</span>`:''}
+  const rat = parseFloat(t.avg_rating||0);
+  const phone = t.phone||'';
+  const suburb = t.suburb || t.region || '';
+  const desc = t.description || t.tagline || '';
+  const services = (t.services||[]).slice(0,5);
+  const areas = (t.areas_served||[]).slice(0,6);
+  const nameEl = t.slug
+    ? `<a href="/businesses/${esc(t.slug)}/">${esc(t.name||'Unnamed')}</a>`
+    : esc(t.name||'Unnamed');
+  return `<div class="business-card" style="border-left:4px solid #5b21b6;background:#faf5ff">
+    <div class="business-name">${nameEl}</div>
+    <div class="business-meta">
+      ${phone ? `<span>📞 ${esc(phone)}</span>` : ''}
+      ${suburb ? `<span>📍 ${esc(suburb)}</span>` : ''}
+      <span style="color:#5b21b6;font-weight:600">✅ Sponsored · Local</span>
+      ${rat>0 ? `<span class="stars">${'★'.repeat(Math.floor(rat))}${rat%1>=0.5?'½':''}</span><span>${rat.toFixed(1)}/5 (${t.review_count||0} reviews)</span>` : ''}
     </div>
-    ${t.description?`<p style="font-size:.83rem;color:#555;margin:0">${t.description.slice(0,120)}${t.description.length>120?'…':''}</p>`:''}
-    <div class="card-actions">
-      ${t.phone?`<a href="tel:${t.phone}" class="btn-call">📞 Call</a>`:''}
-      ${t.profile_url?`<a href="${t.profile_url}" class="btn-profile">View profile →</a>`:''}
+    ${desc ? `<div class="known-for">${esc(desc.slice(0,200))}${desc.length>200?'…':''}</div>` : ''}
+    ${services.length ? `<div class="known-for" style="font-size:.85rem;color:#555">${services.map(s=>esc(s)).join(' · ')}</div>` : ''}
+    ${areas.length ? `<div style="font-size:.82rem;color:#666;margin-top:.25rem">📍 Serves: ${areas.map(a=>esc(a)).join(' · ')}</div>` : ''}
+    <div style="margin-top:.6rem;display:flex;gap:.5rem;flex-wrap:wrap;align-items:center">
+      ${t.slug ? `<a class="profile-link" href="/businesses/${esc(t.slug)}/">View full profile →</a>` : ''}
+      ${t.website ? `<a href="${esc(t.website)}" target="_blank" rel="noopener nofollow" style="font-size:.82rem;color:#0055a5">Visit website ↗</a>` : ''}
     </div>
   </div>`;
 }
