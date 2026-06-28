@@ -248,6 +248,66 @@
     "demand": "High demand for builders, concreters and electricians for ongoing rebuild work."
   },
   {
+    "slug": "birkenhead",
+    "name": "Birkenhead",
+    "city": "Auckland",
+    "region": "Auckland",
+    "blurb": "Birkenhead on the upper North Shore is a mix of 1960s–1980s homes with harbour views, many undergoing renovation. Strong demand for bathroom upgrades, reroofing, and deck work.",
+    "demand": "Good demand for roofers, bathroom renovators, painters and plumbers.",
+    "lat": -36.8167,
+    "lng": 174.7333
+  },
+  {
+    "slug": "glenfield",
+    "name": "Glenfield",
+    "city": "Auckland",
+    "region": "Auckland",
+    "blurb": "Glenfield is a large North Shore suburb with predominantly 1970s–1990s housing stock — ideal for tradies targeting mid-cycle renovations, kitchen upgrades, and exterior painting.",
+    "demand": "Steady demand for painters, kitchen renovators and plumbers.",
+    "lat": -36.7833,
+    "lng": 174.7167
+  },
+  {
+    "slug": "glen-innes",
+    "name": "Glen Innes",
+    "city": "Auckland",
+    "region": "Auckland",
+    "blurb": "Glen Innes is undergoing significant urban regeneration with Housing NZ rebuilds alongside older private homes. High demand across all trades as the suburb transforms.",
+    "demand": "High demand for builders, electricians and landscapers during urban renewal.",
+    "lat": -36.8833,
+    "lng": 174.8667
+  },
+  {
+    "slug": "ellerslie",
+    "name": "Ellerslie",
+    "city": "Auckland",
+    "region": "Auckland",
+    "blurb": "Ellerslie is a popular central Auckland suburb with a mix of bungalows and newer townhouses. Renovation and maintenance demand is consistent, with particularly strong demand for bathroom and kitchen work.",
+    "demand": "Consistent demand for plumbers, tilers, kitchen and bathroom renovators.",
+    "lat": -36.9,
+    "lng": 174.8
+  },
+  {
+    "slug": "te-atatu",
+    "name": "Te Atatu",
+    "city": "Auckland",
+    "region": "Auckland",
+    "blurb": "Te Atatu Peninsula and Te Atatu South are fast-developing western Auckland suburbs with a mix of older homes and new subdivisions. Strong demand across all trades as the area grows.",
+    "demand": "Growing demand for builders, landscapers and electricians in new-build and renovation work.",
+    "lat": -36.8667,
+    "lng": 174.65
+  },
+  {
+    "slug": "avondale",
+    "name": "Avondale",
+    "city": "Auckland",
+    "region": "Auckland",
+    "blurb": "Avondale is one of Auckland's fastest-gentrifying western suburbs. Older bungalows and state homes are being renovated or rebuilt, with strong demand for builders, electricians and painters.",
+    "demand": "Strong renovation demand — builders, electricians and painters are busiest.",
+    "lat": -36.8833,
+    "lng": 174.7167
+  },
+  {
     "slug": "north-shore-auckland",
     "name": "North Shore",
     "city": "Auckland",

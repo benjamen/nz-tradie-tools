@@ -1486,7 +1486,8 @@ def build_auckland_suburb_pages(config, env, nav, base_path):
         return 0
     suburbs = json.loads(suburbs_file.read_text())
     trades_data = json.loads((DATA_DIR / "trades.json").read_text())
-    target_slugs = {"plumbers", "electricians", "builders", "painters", "landscapers"}
+    target_slugs = {"plumbers", "electricians", "builders", "painters", "landscapers",
+                     "carpenters", "roofers", "concreters"}
     target_trades = [t for t in trades_data if t["slug"] in target_slugs]
 
     template = env.get_template("trade-suburb.html")
