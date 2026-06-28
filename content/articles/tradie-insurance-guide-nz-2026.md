@@ -210,3 +210,67 @@ As a tradie in New Zealand, it's essential to have adequate insurance coverage t
 Use an insurance tracker template, such as the one available at tradietools.nz/templates/, to help you stay on top of your insurance policies and premiums. By taking the time to understand your insurance options and selecting the right coverage for your business, you can protect your livelihood and focus on what you do best – providing excellent service to your clients.
 
 Remember, insurance is an essential investment in your business, and it's crucial to get it right. Don't wait until it's too late – review your insurance policies today and ensure you're adequately protected for the unexpected.
+
+## Insurance Cost Guide by Trade and Revenue
+
+As a tradie in New Zealand, it's essential to understand the typical annual insurance premiums for your trade and revenue level. The following table provides a detailed breakdown of estimated annual insurance premiums for various trades and revenue levels:
+
+| Trade | Annual Revenue | Public Liability | Tools | Income Protection | Total Estimate |
+| --- | --- | --- | --- | --- | --- |
+| Sole trader electrician | $120,000 | $800 - $1,200 | $500 - $800 | $1,500 - $2,500 | $3,300 - $5,500 |
+| Sole trader plumber | $100,000 | $700 - $1,100 | $400 - $700 | $1,200 - $2,000 | $2,800 - $4,400 |
+| Builder (sole trader) | $150,000 | $1,000 - $1,500 | $600 - $1,000 | $2,000 - $3,500 | $4,200 - $6,800 |
+| Painter | $80,000 | $500 - $900 | $300 - $600 | $800 - $1,500 | $2,000 - $3,500 |
+| Small plumbing company (3 staff) | $400,000 | $2,500 - $4,000 | $1,200 - $2,000 | $4,000 - $6,000 | $8,500 - $13,500 |
+
+Please note that these estimates vary depending on several factors, including the insurer, policy details, and individual circumstances. It's essential to consult with a licensed insurance broker or specialist tradie insurer to get a more accurate quote for your specific business.
+
+## How to Get the Best Insurance Deal
+
+To get the best insurance deal, it's crucial to compare quotes from multiple brokers and insurers. Consider specialist tradie insurers like Trade Risk and SBL, as well as general insurers like NZI and Vero. Bundling multiple policies with the same insurer can often result in discounts, so it's worth exploring this option.
+
+When comparing quotes, make sure to review the policy details, including the excess, coverage limits, and any exclusions. Your claims history can also impact your premiums, so it's essential to maintain a good claims record.
+
+Reviewing your insurance policies annually is vital to ensure you're getting the best deal. Your business may have changed, and your insurance needs may have shifted. By reviewing your policies regularly, you can adjust your coverage to reflect your current situation and avoid over- or under-insuring.
+
+Additionally, consider the following tips to get the best insurance deal:
+
+* Shop around and compare quotes from at least three brokers or insurers
+* Ask about bundling discounts and other promotions
+* Review your claims history and work to maintain a good record
+* Consider working with a specialist tradie insurer who understands the unique risks and challenges of your trade
+* Review your policies annually to ensure you're getting the best deal
+
+## Common Insurance Claims for NZ Tradies
+
+As a tradie, you're exposed to various risks that can result in insurance claims. Here are some common scenarios:
+
+* Damaged customer property: A plumber may accidentally flood a bathroom, resulting in an $8,000 claim to repair the damage.
+* Tools stolen from ute: A tradie may have their tools stolen from their ute, resulting in a $3,500 claim to replace the stolen equipment.
+* Public liability slip-and-fall: A customer may slip and fall on a tradie's site, resulting in a public liability claim to cover medical expenses and other damages.
+* Income protection claim: A tradie may need to undergo surgery, resulting in an income protection claim to cover their lost income while they're unable to work.
+
+These scenarios highlight the importance of having adequate insurance coverage to protect your business and finances. By understanding the common risks and claims associated with your trade, you can better prepare and mitigate potential losses.
+
+## FAQ
+
+Here are some frequently asked questions about tradie insurance:
+
+1. **Is public liability insurance mandatory for NZ tradies?**
+No, public liability insurance is not mandatory for NZ tradies. However, it's highly recommended to protect your business and finances in case of accidents or damages to third parties.
+2. **What happens if a subcontractor damages a client's property?**
+If a subcontractor damages a client's property, you may be held liable as the principal contractor. It's essential to ensure that your subcontractors have their own public liability insurance and that you have adequate coverage to protect your business.
+3. **Does ACC replace the need for income protection insurance?**
+No, ACC does not replace the need for income protection insurance. While ACC provides cover for work-related injuries, income protection insurance provides cover for non-work-related illnesses and injuries that may prevent you from working.
+4. **Can I claim for tools stolen from my vehicle?**
+Yes, you can claim for tools stolen from your vehicle if you have a tools insurance policy. Make sure to keep a record of your tools and equipment, including serial numbers and values, to support your claim.
+5. **What is the difference between public liability and professional indemnity?**
+Public liability insurance covers damages to third parties, such as customers or bystanders, while professional indemnity insurance covers damages resulting from professional negligence or mistakes. As a tradie, you may need both types of insurance to protect your business and finances.
+
+## Conclusion
+
+As a tradie in New Zealand, it's essential to have adequate insurance coverage to protect your business and finances. Don't underinsure, as this can leave you vulnerable to significant financial losses. Review your insurance policies annually to ensure you're getting the best deal and that your coverage reflects your current situation.
+
+To help you stay on top of your insurance, we recommend using an insurance tracker template, available at [tradietools.nz/templates/](http://tradietools.nz/templates/). This template will help you keep track of your policies, premiums, and claims history, making it easier to review and adjust your coverage as needed.
+
+Remember, insurance is an essential part of running a successful tradie business. By understanding your risks, comparing quotes, and maintaining adequate coverage, you can protect your business and finances and focus on what you do best – providing excellent services to your customers.
