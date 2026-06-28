@@ -20,7 +20,10 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ ga_id }}"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{ ga_id }}');</script>
     {% endif %}
-    <meta property="og:image" content="{{ base_url }}/static/img/social-card.svg">
+    <meta property="og:image" content="{{ base_url }}/static/img/social-card.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
     <meta name="twitter:image" content="{{ base_url }}/static/img/social-card.svg">
 {% include '_entity_schema.html' %}
 </head>
