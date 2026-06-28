@@ -366,23 +366,12 @@
                 </div>
             </div>
 
-            <!-- Lead Credits -->
-            <div class="section-card" id="credits-section">
-                <div class="section-head">
-                    <h2>🎯 Lead Credits</h2>
-                    <span style="font-size:.8rem;color:var(--muted)" id="credits-balance-label"></span>
-                </div>
+            <!-- Upgrade CTA (shown for free-tier only, hidden by JS for paid tiers) -->
+            <div class="section-card" id="upgrade-cta-section" style="border-left:4px solid var(--orange);background:#fff7f0">
+                <div class="section-head"><h2>🚀 Unlock More Leads</h2></div>
                 <div class="section-body">
-                    <p style="font-size:.88rem;color:var(--muted);margin:0 0 1rem">Not ready for a subscription? Buy lead credits instead. Each credit unlocks the full contact details for one homeowner lead in your region — $5 per lead.</p>
-                    <div style="display:flex;gap:.75rem;flex-wrap:wrap;align-items:center">
-                        <select id="credits-qty" style="border:1.5px solid var(--border);border-radius:6px;padding:.5rem .75rem;font-size:.9rem;font-family:inherit">
-                            <option value="5">5 leads — $25</option>
-                            <option value="10" selected>10 leads — $50</option>
-                            <option value="20">20 leads — $100</option>
-                        </select>
-                        <button class="btn-save" id="btn-buy-credits" onclick="buyLeadCredits()">Buy lead credits →</button>
-                        <span id="credits-msg" style="font-size:.85rem;color:var(--muted)"></span>
-                    </div>
+                    <p style="font-size:.92rem;color:var(--text);margin:0 0 1rem">Upgrade to <strong>Verified ($29/mo)</strong> to see full homeowner contact details on every lead — plus your listing appears above free listings in search results.</p>
+                    <a href="/signup/?upgrade=verified" class="btn-save" style="text-decoration:none;display:inline-block">Upgrade to Verified →</a>
                 </div>
             </div>
 
@@ -476,6 +465,12 @@ function renderDashboard(d) {
 
     // Listing ID
     document.getElementById('listing-id-label').textContent = 'Listing #' + TRADIE_ID;
+
+    // Upgrade CTA card — hide for paid tiers
+    if (d.is_premium) {
+        var ctaEl = document.getElementById('upgrade-cta-section');
+        if (ctaEl) ctaEl.style.display = 'none';
+    }
 
     // Upgrade block — show for free tier, personalise with activity data
     if (!d.is_premium) {
@@ -573,11 +568,6 @@ function renderDashboard(d) {
     if (d.is_featured) {
         document.getElementById('featured-status-label').textContent = '✓ Currently featured';
         document.getElementById('featured-status-label').style.color = '#15803d';
-    }
-
-    // Credits balance
-    if (d.lead_credits !== undefined) {
-        document.getElementById('credits-balance-label').textContent = d.lead_credits + ' credits remaining';
     }
 
     // Availability toggle initial state
@@ -876,32 +866,6 @@ function purchaseFeatured() {
     .catch(function(){
         btn.disabled = false; btn.textContent = 'Feature my listing →';
         document.getElementById('feature-msg').textContent = 'Request failed. Please try again.';
-    });
-}
-
-// ── Lead credits ──────────────────────────────────────────────────────────
-function buyLeadCredits() {
-    var qty = document.getElementById('credits-qty').value;
-    var btn = document.getElementById('btn-buy-credits');
-    btn.disabled = true; btn.textContent = 'Redirecting…';
-    fetch(API + 'purchase_lead_credits', {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json', 'X-Frappe-CSRF-Token': 'fetch'},
-        body: JSON.stringify({tradie_id: TRADIE_ID, lead_token: TOKEN, quantity: parseInt(qty)})
-    })
-    .then(function(r){ return r.json(); })
-    .then(function(json){
-        btn.disabled = false; btn.textContent = 'Buy lead credits →';
-        var d = json.message || json;
-        if (d.checkout_url) {
-            window.location.href = d.checkout_url;
-        } else {
-            document.getElementById('credits-msg').textContent = d.error || 'Could not create checkout. Please try again.';
-        }
-    })
-    .catch(function(){
-        btn.disabled = false; btn.textContent = 'Buy lead credits →';
-        document.getElementById('credits-msg').textContent = 'Request failed. Please try again.';
     });
 }
 
