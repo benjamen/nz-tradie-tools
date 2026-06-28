@@ -393,7 +393,7 @@ function initials(n) { return (n||'?').trim().split(/\s+/).map(w=>w[0]).join('')
 function esc(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 function stars(r) { const n=Math.round(r||0); return `<span class="tc-stars">${'★'.repeat(n)}${'☆'.repeat(5-n)}</span>`; }
 
-const TRADE_COLOURS = { electrician:'trade-electrician', plumber:'trade-plumber', builder:'trade-builder', painters:'trade-painter', roofer:'trade-roofer', landscaper:'trade-landscaper', hvac:'trade-hvac', gasfitter:'trade-gasfitter' };
+const TRADE_COLOURS = { electrician:'trade-electrician', electricians:'trade-electrician', plumber:'trade-plumber', plumbers:'trade-plumber', builder:'trade-builder', builders:'trade-builder', painter:'trade-painter', painters:'trade-painter', roofer:'trade-roofer', roofers:'trade-roofer', landscaper:'trade-landscaper', landscapers:'trade-landscaper', hvac:'trade-hvac', gasfitter:'trade-gasfitter', gasfitters:'trade-gasfitter', carpenter:'trade-carpenter', carpenters:'trade-carpenter', concreter:'trade-concreter', concreters:'trade-concreter' };
 function tradeColour(trade) { return TRADE_COLOURS[(trade||'').toLowerCase()] || ''; }
 
 function freeCard(t) {
@@ -486,28 +486,29 @@ function proCard(t, rank) {
   const areas = (t.areas_served||[]).slice(0,6);
 
   return `<div class="tradie-card is-pro${isHighlighted?' tt-highlighted':''}">
-    <div class="tc-rank">${rank}</div>
+    <div class="tc-top">
+      <div class="tc-avatar ${tradeColour(t.trade)}">${initials(t.name)}</div>
+      <div class="tc-info">
+        <div class="tc-pro-name">${nameEl}<span class="badge-pro">PRO</span>${verifiedBadge?`<span class="tc-verified-badge">${verifiedBadge}</span>`:''}</div>
+        ${rat>0 ? `<div class="tc-pro-rating"><span class="tc-stars">${stars(rat)}</span><span>${rat.toFixed(1)}/5 (${t.review_count||0} reviews)</span></div>` : ''}
+        ${location ? `<div class="tc-pro-location">📍 ${esc(location)}</div>` : ''}
+      </div>
+    </div>
     <div class="tc-pro-body">
       <div class="tc-pro-main">
-        <div class="tc-pro-name">${nameEl}<span class="badge-pro">PRO</span></div>
-        <div class="tc-pro-rating">
-          ${rat>0 ? `${stars(rat)}<span>${rat.toFixed(1)}/5 (${t.review_count||0} reviews)</span>` : ''}
-          ${location ? `<span class="tc-pro-location">📍 ${esc(location)}</span>` : ''}
-        </div>
-        ${desc ? `<p class="tc-description">${esc(desc)}</p>` : ''}
+        ${desc ? `<div class="tc-description">${esc(desc)}</div>` : ''}
         ${services.length ? `<div class="tc-services">${services.map(s=>`<span class="tc-service-tag">${esc(s)}</span>`).join('')}</div>` : ''}
-        ${areas.length ? `<div class="tc-areas">Areas: ${areas.map(a=>esc(a)).join(' · ')}</div>` : ''}
+        ${areas.length ? `<div class="tc-areas">📍 Serves: ${areas.map(a=>esc(a)).join(' · ')}</div>` : ''}
       </div>
       <div class="tc-pro-sidebar">
         <div class="tc-pro-actions">
-          ${phone ? `<a class="btn-call-direct" href="tel:${esc(phone)}">📞 Call now</a>` : ''}
+          ${phone ? `<a class="btn-call-direct" href="tel:${esc(phone)}">📞 ${esc(phone)}</a>` : ''}
           <button class="btn-quote-full" onclick="ttQuote('${esc(String(t.id||''))}','${esc(t.name||'')}','${esc(label)}','${esc(t.region||'')}')">Get a Quote</button>
         </div>
         ${(rate||exp) ? `<div class="tc-sidebar-stat">${rate?`<strong>${esc(rate)}</strong> `:''} ${exp?esc(exp):''}</div>` : ''}
-        ${verifiedBadge ? `<div class="tc-sidebar-stat">${verifiedBadge}</div>` : ''}
         <div class="tc-pro-links">
-          ${t.slug ? `<a href="/businesses/${esc(t.slug)}/">View full profile →</a>` : ''}
-          ${t.website ? `<a href="${esc(t.website)}" target="_blank" rel="noopener">Visit website →</a>` : ''}
+          ${t.slug ? `<a href="/businesses/${esc(t.slug)}/" class="tc-profile-link">View full profile →</a>` : ''}
+          ${t.website ? `<a href="${esc(t.website)}" target="_blank" rel="noopener">Visit website ↗</a>` : ''}
           ${t.source_url ? `<a href="${esc(t.source_url)}" target="_blank" rel="noopener">View reviews →</a>` : ''}
         </div>
       </div>

@@ -291,6 +291,16 @@ tr:nth-child(even) td { background: var(--bg-stripe); }
 .tc-avatar.trade-gasfitter   { background: #9a3412; }
 .tc-avatar.trade-carpenter   { background: #78350f; }
 .tc-avatar.trade-concreter   { background: #4b5563; }
+/* plural slug variants (used by Jinja trade-city templates) */
+.tc-avatar.trade-electricians { background: #b45309; }
+.tc-avatar.trade-plumbers     { background: #0369a1; }
+.tc-avatar.trade-builders     { background: #1e3a5f; }
+.tc-avatar.trade-painters     { background: #7c3aed; }
+.tc-avatar.trade-roofers      { background: #374151; }
+.tc-avatar.trade-landscapers  { background: #166534; }
+.tc-avatar.trade-gasfitters   { background: #9a3412; }
+.tc-avatar.trade-carpenters   { background: #78350f; }
+.tc-avatar.trade-concreters   { background: #4b5563; }
 
 /* Header row */
 .tc-top { display: flex; align-items: flex-start; gap: .85rem; }
