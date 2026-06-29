@@ -312,7 +312,26 @@ async function load() {
 
     all = (data.message?.listings || []).map(t => {
       const extra = claimedLookup[(t.name || '').toLowerCase().trim()] || {};
-      return { ...t, ...extra };
+      const merged = { ...t, ...extra };
+      // Parse JSON string fields from Frappe raw SQL
+      if (typeof merged.areas_served === 'string') {
+        try { merged.areas_served = JSON.parse(merged.areas_served); }
+        catch(e) { merged.areas_served = merged.areas_served ? [merged.areas_served] : []; }
+      }
+      if (!Array.isArray(merged.areas_served)) merged.areas_served = [];
+      // Use service_areas as services fallback for Frappe-native listings
+      if (!merged.services || !merged.services.length) {
+        const sa = merged.service_areas || '';
+        if (sa) {
+          try { merged.services = JSON.parse(sa); }
+          catch(e) { merged.services = sa.split(',').map(s=>s.trim()).filter(Boolean); }
+        }
+      }
+      // Field aliases: listing_slug → slug, website_url → website, is_insured → insured
+      if (!merged.slug && merged.listing_slug) merged.slug = merged.listing_slug;
+      if (!merged.website && merged.website_url) merged.website = merged.website_url;
+      if (!merged.insured && merged.is_insured) merged.insured = true;
+      return merged;
     });
     // Enrich suburb datalist with any suburbs from loaded listings
     const dl = document.getElementById('suburb-options');
