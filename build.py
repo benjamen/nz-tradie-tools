@@ -1130,22 +1130,29 @@ def build_claimed_lookup():
             b = json.loads(f.read_text(encoding="utf-8"))
             key = (b.get("business_name") or "").lower().strip()
             if key:
+                slug = b.get("slug", "")
                 lookup[key] = {
-                    "slug":          b.get("slug", ""),
-                    "tagline":       b.get("tagline", ""),
-                    "description":   b.get("description", ""),
-                    "website":       b.get("website", ""),
-                    "source":        b.get("source", ""),
-                    "source_url":    b.get("source_url", ""),
-                    "verified_date": b.get("claimed_date", ""),
-                    "suburb":        b.get("suburb", ""),
-                    "phone":         b.get("phone", ""),
-                    "services":      b.get("services", []),
-                    "areas_served":  b.get("areas_served", []),
-                    "hourly_rate":   b.get("hourly_rate", None),
+                    "slug":           slug,
+                    "profile_url":    f"/businesses/{slug}/" if slug else "",
+                    "tagline":        b.get("tagline", ""),
+                    "description":    b.get("description", ""),
+                    "website":        b.get("website", ""),
+                    "source":         b.get("source", ""),
+                    "source_url":     b.get("source_url", ""),
+                    "verified_date":  b.get("claimed_date", ""),
+                    "suburb":         b.get("suburb", ""),
+                    "phone":          b.get("phone", ""),
+                    "services":       b.get("services", []),
+                    "areas_served":   b.get("areas_served", []),
+                    "hourly_rate":    b.get("hourly_rate", None),
                     "experience_years": b.get("experience_years", None),
-                    "review_count":  b.get("review_count", None),
-                    "avg_rating":    b.get("rating", None),
+                    "review_count":   b.get("review_count", None),
+                    "avg_rating":     b.get("rating", None),
+                    "national":       b.get("national", False),
+                    "lbp_verified":   1 if b.get("lbp") else 0,
+                    "ewrb_verified":  1 if b.get("ewrb") else 0,
+                    "pgd_verified":   1 if b.get("pgd") else 0,
+                    "insured":        b.get("insured", False),
                 }
         except Exception:
             pass
