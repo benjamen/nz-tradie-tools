@@ -21,31 +21,29 @@
 </script>
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
 :root {
-  --brand:    #293d4c;
+  --brand:  #293d4c;
   --brand-dk: #1d2b36;
-  --cta:      #ff8400;
-  --cta-dk:   #e07400;
-  --text:     #1a1a1a;
-  --muted:    #5a5a5a;
-  --bg:       #f8f9fa;
-  --white:    #ffffff;
-  --radius:   6px;
-  --shadow:   0 2px 12px rgba(0,0,0,.08);
+  --cta:    #ff8400;
+  --cta-dk: #e07400;
+  --text:   #1a1a1a;
+  --muted:  #5a5a5a;
+  --bg:     #f8f9fa;
+  --white:  #ffffff;
+  --radius: 6px;
+  --shadow: 0 2px 12px rgba(0,0,0,.08);
 }
-
 body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: var(--text); line-height: 1.6; font-size: 16px; }
 
-/* ── Nav ── */
+/* Nav */
 nav { background: var(--brand); padding: .85rem 1.5rem; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,.25); }
 .nav-logo { display: flex; align-items: center; gap: .75rem; text-decoration: none; }
 .nav-logo img { height: 48px; width: auto; }
-.nav-logo-text { font-weight: 700; font-size: 1rem; color: var(--white); line-height: 1.2; max-width: 200px; }
+.nav-logo-text { font-weight: 700; font-size: 1rem; color: var(--white); }
 .nav-phone { background: var(--cta); color: var(--white); padding: .55rem 1.2rem; border-radius: var(--radius); text-decoration: none; font-weight: 700; font-size: .92rem; white-space: nowrap; }
 .nav-phone:hover { background: var(--cta-dk); }
 
-/* ── Hero ── */
+/* Hero */
 .hero { background: linear-gradient(150deg, var(--brand-dk) 0%, var(--brand) 60%, #1a4a6b 100%); color: var(--white); padding: 4.5rem 1.5rem 4rem; text-align: center; }
 .hero-logo { margin: 0 auto 1.5rem; }
 .hero-logo img { height: 100px; width: auto; border-radius: 50%; background: rgba(255,255,255,.1); padding: .5rem; }
@@ -53,33 +51,46 @@ nav { background: var(--brand); padding: .85rem 1.5rem; display: flex; align-ite
 .hero h1 { font-size: clamp(1.8rem, 5vw, 2.8rem); font-weight: 800; margin-bottom: .75rem; line-height: 1.2; }
 .hero .tagline { font-size: 1.1rem; opacity: .9; margin-bottom: .4rem; }
 .hero .review-line { font-size: .95rem; opacity: .75; margin-bottom: 2.25rem; }
-.hero .cta-row { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.cta-row { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
 .btn-cta { background: var(--cta); color: var(--white); padding: .9rem 2.2rem; border-radius: var(--radius); font-weight: 700; font-size: 1.05rem; text-decoration: none; display: inline-block; border: none; cursor: pointer; }
 .btn-cta:hover { background: var(--cta-dk); }
 .btn-outline { border: 2px solid rgba(255,255,255,.75); color: var(--white); padding: .85rem 2rem; border-radius: var(--radius); font-weight: 600; font-size: 1rem; text-decoration: none; display: inline-block; }
 .btn-outline:hover { background: rgba(255,255,255,.12); }
 
-/* ── Layout ── */
+/* Layout */
 .section { padding: 3.5rem 1.5rem; }
 .section-alt { background: var(--bg); }
 .container { max-width: 880px; margin: 0 auto; }
 h2 { font-size: 1.65rem; font-weight: 700; margin-bottom: 1.25rem; }
 .section-intro { color: var(--muted); margin-bottom: 1.5rem; }
 
-/* ── Services ── */
+/* About */
+.about-body p { margin-bottom: 1rem; color: var(--text); }
+.about-body p:last-child { margin-bottom: 0; }
+
+/* Services */
 .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; }
 .service-card { background: var(--white); border: 1px solid #e5e7eb; border-radius: var(--radius); padding: 1.5rem; border-top: 3px solid var(--cta); }
 .service-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: .4rem; }
+.service-card h3 a { color: var(--brand); text-decoration: none; }
+.service-card h3 a:hover { text-decoration: underline; }
 .service-card p { font-size: .9rem; color: var(--muted); }
 
-/* ── Trust ── */
+/* Trust */
 .trust-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; }
 .trust-item { text-align: center; padding: 1.5rem 1rem; background: var(--white); border: 1px solid #e5e7eb; border-radius: var(--radius); }
 .trust-icon { font-size: 2.2rem; margin-bottom: .6rem; }
-.trust-item strong { display: block; margin-bottom: .3rem; font-size: 1rem; }
+.trust-item strong { display: block; margin-bottom: .3rem; }
 .trust-item p { font-size: .87rem; color: var(--muted); }
 
-/* ── Reviews ── */
+/* Process */
+.process-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; counter-reset: step; }
+.process-step { background: var(--white); border: 1px solid #e5e7eb; border-radius: var(--radius); padding: 1.75rem 1.5rem; position: relative; }
+.step-num { display: inline-flex; align-items: center; justify-content: center; width: 2.25rem; height: 2.25rem; background: var(--brand); color: var(--white); border-radius: 50%; font-weight: 800; font-size: 1rem; margin-bottom: .85rem; }
+.process-step h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: .5rem; color: var(--brand); }
+.process-step p { font-size: .9rem; color: var(--muted); }
+
+/* Reviews */
 .reviews-intro { display: flex; align-items: center; gap: 1.25rem; margin-bottom: 1.75rem; flex-wrap: wrap; }
 .big-rating { font-size: 3.25rem; font-weight: 800; color: var(--brand); line-height: 1; }
 .rating-detail .stars { color: #fbbf24; font-size: 1.4rem; }
@@ -89,47 +100,56 @@ h2 { font-size: 1.65rem; font-weight: 700; margin-bottom: 1.25rem; }
 .review-card .stars { color: #fbbf24; font-size: 1rem; margin-bottom: .5rem; }
 .review-card p { font-size: .9rem; color: var(--text); margin-bottom: .75rem; font-style: italic; }
 .review-card .reviewer { font-size: .82rem; color: var(--muted); font-weight: 600; }
-.google-badge { display: inline-flex; align-items: center; gap: .45rem; background: var(--white); border: 1px solid #e5e7eb; border-radius: var(--radius); padding: .55rem .9rem; font-size: .85rem; font-weight: 600; margin-top: 1.5rem; text-decoration: none; color: var(--text); }
+.review-ctas { display: flex; gap: 1rem; margin-top: 1.5rem; flex-wrap: wrap; }
+.google-badge { display: inline-flex; align-items: center; gap: .45rem; background: var(--white); border: 1px solid #e5e7eb; border-radius: var(--radius); padding: .55rem .9rem; font-size: .85rem; font-weight: 600; text-decoration: none; color: var(--text); }
 .google-badge:hover { background: var(--bg); }
 
-/* ── Quote Form ── */
+/* Pricing */
+.pricing-range { background: var(--brand); color: var(--white); border-radius: var(--radius); padding: 1.5rem 2rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
+.price-figure { font-size: 2.5rem; font-weight: 800; line-height: 1; }
+.price-detail { font-size: .95rem; opacity: .9; }
+.pricing-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; }
+.pricing-col h3 { font-size: 1rem; font-weight: 700; margin-bottom: .75rem; color: var(--brand); }
+.pricing-col ul { padding-left: 1.25rem; }
+.pricing-col li { font-size: .9rem; color: var(--muted); margin-bottom: .3rem; }
+.pricing-disclaimer { font-size: .82rem; color: var(--muted); margin-top: 1rem; font-style: italic; }
+
+/* Quote Form */
 .quote-form { background: var(--white); border: 1px solid #e5e7eb; border-radius: var(--radius); padding: 2rem 2rem 1.5rem; box-shadow: var(--shadow); max-width: 640px; }
 .form-group { margin-bottom: 1.25rem; }
-.form-group > label, .group-label { display: block; font-weight: 700; font-size: .92rem; margin-bottom: .35rem; color: var(--text); }
+.form-group > label, .group-label { display: block; font-weight: 700; font-size: .92rem; margin-bottom: .35rem; }
 .field-desc { font-size: .85rem; color: var(--muted); margin-bottom: .55rem; }
 .form-group input[type="text"],
 .form-group input[type="tel"],
 .form-group input[type="email"],
-.form-group textarea {
-  width: 100%; padding: .65rem .85rem; border: 1px solid #d1d5db; border-radius: var(--radius);
-  font-size: .95rem; font-family: inherit; color: var(--text); background: var(--white);
-}
+.form-group textarea { width: 100%; padding: .65rem .85rem; border: 1px solid #d1d5db; border-radius: var(--radius); font-size: .95rem; font-family: inherit; color: var(--text); }
 .form-group input:focus, .form-group textarea:focus { outline: 2px solid var(--cta); border-color: var(--cta); }
 .form-group textarea { resize: vertical; min-height: 90px; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
 @media (max-width: 520px) { .form-row { grid-template-columns: 1fr; } }
-
-.checkbox-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: .45rem; margin-top: .1rem; }
-.check-label, .radio-label { display: flex; align-items: center; gap: .5rem; font-size: .92rem; padding: .45rem .6rem; border: 1px solid #e5e7eb; border-radius: var(--radius); cursor: pointer; transition: background .1s; }
+.checkbox-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(175px, 1fr)); gap: .4rem; margin-top: .1rem; }
+.check-label, .radio-label { display: flex; align-items: center; gap: .5rem; font-size: .9rem; padding: .45rem .6rem; border: 1px solid #e5e7eb; border-radius: var(--radius); cursor: pointer; }
 .check-label:hover, .radio-label:hover { background: var(--bg); }
 .check-label input, .radio-label input { accent-color: var(--cta); width: 1rem; height: 1rem; flex-shrink: 0; }
 .radio-group { display: flex; flex-direction: column; gap: .4rem; margin-top: .1rem; }
-
 .btn-submit { width: 100%; background: var(--cta); color: var(--white); padding: .95rem; border: none; border-radius: var(--radius); font-size: 1.05rem; font-weight: 700; cursor: pointer; margin-top: .75rem; }
 .btn-submit:hover { background: var(--cta-dk); }
 .btn-submit:disabled { opacity: .6; cursor: not-allowed; }
 #form-success { display: none; background: #dcfce7; border: 1px solid #16a34a; border-radius: var(--radius); padding: 1rem 1.25rem; color: #15803d; font-weight: 600; margin-top: 1rem; }
+#form-success ul { margin: .5rem 0 0 1.25rem; font-weight: 400; font-size: .9rem; }
 #form-error { display: none; background: #fee2e2; border: 1px solid #dc2626; border-radius: var(--radius); padding: 1rem 1.25rem; color: #b91c1c; margin-top: 1rem; }
 
-/* ── Contact ── */
+/* Contact */
 .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
 .contact-item { display: flex; align-items: flex-start; gap: .85rem; }
 .contact-icon { font-size: 1.5rem; flex-shrink: 0; }
 .contact-item strong { display: block; font-size: .82rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-bottom: .2rem; }
 .contact-item a { color: var(--brand); text-decoration: none; font-weight: 600; }
 .contact-item a:hover { text-decoration: underline; }
+.areas-list { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .3rem; }
+.area-tag { background: var(--bg); border: 1px solid #e5e7eb; border-radius: 20px; padding: .2rem .75rem; font-size: .82rem; color: var(--muted); }
 
-/* ── Footer ── */
+/* Footer */
 footer { background: var(--brand-dk); color: rgba(255,255,255,.65); padding: 2.25rem 1.5rem; text-align: center; font-size: .85rem; }
 footer a { color: rgba(255,255,255,.8); text-decoration: none; }
 footer a:hover { color: var(--white); }
@@ -138,7 +158,7 @@ footer a:hover { color: var(--white); }
 .tt-badge { display: inline-flex; align-items: center; gap: .4rem; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.18); border-radius: 20px; padding: .35rem .9rem; font-size: .78rem; color: rgba(255,255,255,.65); margin-top: .85rem; text-decoration: none; }
 .tt-badge:hover { color: var(--white); }
 
-@media (max-width: 640px) { .hero { padding: 3rem 1rem 2.5rem; } nav { padding: .7rem 1rem; } .quote-form { padding: 1.25rem; } }
+@media (max-width: 640px) { .hero { padding: 3rem 1rem 2.5rem; } nav { padding: .7rem 1rem; } .quote-form { padding: 1.25rem; } .pricing-range { flex-direction: column; gap: .75rem; } }
 </style>
 </head>
 <body>
@@ -146,67 +166,82 @@ footer a:hover { color: var(--white); }
 <!-- Nav -->
 <nav>
   <a class="nav-logo" href="#">
-    
     <img src="https://lirp.cdn-website.com/4d49136a/dms3rep/multi/opt/Logo+Dunners+Concrete-1920w.png" alt="Dunners Concrete Contractor Services logo">
     
   </a>
-  
   <a class="nav-phone" href="tel:03 242 03176">📞 03 242 03176</a>
-  
 </nav>
 
 <!-- Hero -->
 <section class="hero">
-  
   <div class="hero-logo"><img src="https://lirp.cdn-website.com/4d49136a/dms3rep/multi/opt/Logo+Dunners+Concrete-1920w.png" alt="Dunners Concrete Contractor Services"></div>
-  
   <div class="stars">★★★★★</div>
   <h1>Dunners Concrete Contractor Services</h1>
   <p class="tagline">Connecting You With Certified Concrete Experts In Dunedin City!</p>
   <p class="review-line">5.0 stars &nbsp;·&nbsp; 32 Google reviews &nbsp;·&nbsp; Dunedin, NZ</p>
   <div class="cta-row">
     <a class="btn-cta" href="#quote">Get a Free Quote</a>
-    
     <a class="btn-outline" href="tel:03 242 03176">Call 03 242 03176</a>
-    
   </div>
 </section>
 
-<!-- Services -->
+
+<!-- About -->
 <section class="section">
+  <div class="container">
+    <h2>About Dunners Concrete Contractor Services</h2>
+    <div class="about-body">
+      <p>Dunners Concrete Contractor Services delivers high-quality concrete solutions across Dunedin City and surrounding areas. As local concrete contractors, we understand how to handle both residential and commercial projects — from proper excavation preparations through to finishing and curing.</p><p>We specialise in concrete driveways, footpaths, patios, pads and slabs, retaining walls, decorative finishes, car parks, and commercial concrete. Dunedin&#39;s unique terrain — volcanic hills, coastal conditions, and clay soils — demands concrete mixes and techniques that most contractors don&#39;t understand. We do. Our mixes are specifically formulated for Dunedin&#39;s 724mm annual rainfall, varying soil types, and coastal salt exposure, ensuring results that last decades.</p><p>Want to make your home stand out? Think exposed aggregate driveways that catch the light, or coloured concrete paths that complement Dunedin&#39;s greens. Whether you&#39;re after a practical broom finish or something more decorative, we have the options and expertise to deliver.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Services -->
+<section class="section section-alt">
   <div class="container">
     <h2>Our Services</h2>
     <p class="section-intro">Professional concrete contractor services across Dunedin and surrounding areas.</p>
     <div class="services-grid">
       
       <div class="service-card">
-        <h3>Concrete Driveways</h3>
-        <p>New installations and replacements — plain, exposed aggregate or coloured.</p>
+        <h3><a href="https://www.dunnersconcrete.co.nz/concrete-driveway" target="_blank" rel="noopener">Concrete Driveways</a></h3>
+        <p>Our experienced driveway concreters transform entrances with durable, custom-designed concrete driveways that Dunedin homeowners trust for decades of reliable service.</p>
       </div>
       
       <div class="service-card">
-        <h3>Concrete Paths &amp; Patios</h3>
-        <p>Durable paths and outdoor living areas that complement your property.</p>
+        <h3><a href="https://www.dunnersconcrete.co.nz/concrete-path" target="_blank" rel="noopener">Concrete Paths</a></h3>
+        <p>Our path contractors create beautiful, functional footpaths that enhance property accessibility while complementing the aesthetic appeal of your landscape.</p>
       </div>
       
       <div class="service-card">
-        <h3>Concrete Slabs</h3>
-        <p>Garage floors, shed pads, pergola bases and more. Levelled and finished to spec.</p>
+        <h3><a href="https://www.dunnersconcrete.co.nz/concrete-patio" target="_blank" rel="noopener">Concrete Patios</a></h3>
+        <p>We craft stunning patios and porch slabs that transform your outdoor space into an ideal entertainment area, tailored to Dunedin&#39;s unique climate.</p>
       </div>
       
       <div class="service-card">
-        <h3>Decorative Concrete</h3>
-        <p>Exposed aggregate, broom, swirl and coloured finishes for a premium look.</p>
+        <h3><a href="https://www.dunnersconcrete.co.nz/garage/shed-slab/pad" target="_blank" rel="noopener">Pads &amp; Slabs</a></h3>
+        <p>From garage and shed slabs to equipment foundations — perfectly level, reinforced surfaces built to local specifications.</p>
       </div>
       
       <div class="service-card">
-        <h3>Retaining Walls</h3>
-        <p>Solid concrete retaining walls to manage slopes and protect your land.</p>
+        <h3><a href="https://www.dunnersconcrete.co.nz/retaining-wall" target="_blank" rel="noopener">Retaining Walls</a></h3>
+        <p>Our specialists create structurally sound retaining walls that manage slopes while enhancing your property&#39;s usable space.</p>
       </div>
       
       <div class="service-card">
-        <h3>Excavation &amp; Removal</h3>
-        <p>Break-up and removal of old concrete before your new pour.</p>
+        <h3><a href="https://www.dunnersconcrete.co.nz/decorative-concrete" target="_blank" rel="noopener">Decorative Concrete</a></h3>
+        <p>Exposed aggregate, broom, swirl, and coloured concrete options that combine practicality with distinctive artistic applications.</p>
+      </div>
+      
+      <div class="service-card">
+        <h3><a href="https://www.dunnersconcrete.co.nz/car-park-construction" target="_blank" rel="noopener">Car Park Construction</a></h3>
+        <p>From residential carports to commercial parking lots — durable surfaces engineered for heavy vehicle traffic and Otago&#39;s weather conditions.</p>
+      </div>
+      
+      <div class="service-card">
+        <h3><a href="https://www.dunnersconcrete.co.nz/commercial-concrete" target="_blank" rel="noopener">Commercial Concrete</a></h3>
+        <p>Foundations, flooring, and infrastructure projects for Dunedin businesses, delivered on schedule with minimal disruption to operations.</p>
       </div>
       
     </div>
@@ -218,32 +253,47 @@ footer a:hover { color: var(--white); }
   <div class="container">
     <h2>Why Choose Us</h2>
     <div class="trust-grid">
-      <div class="trust-item">
-        <div class="trust-icon">⭐</div>
-        <strong>5.0-Star Rated</strong>
-        <p>32 verified Google reviews from happy Dunedin customers</p>
-      </div>
-      <div class="trust-item">
-        <div class="trust-icon">🏆</div>
-        <strong>Local Experts</strong>
-        <p>Based in Dunedin — we know the area, the soil and the conditions</p>
-      </div>
-      <div class="trust-item">
-        <div class="trust-icon">💬</div>
-        <strong>Free Quotes</strong>
-        <p>No obligation estimates — we'll come to your property and give you a fair price</p>
-      </div>
-      <div class="trust-item">
-        <div class="trust-icon">✅</div>
-        <strong>Quality Guaranteed</strong>
-        <p>All work completed to the highest standard, every time</p>
-      </div>
+      <div class="trust-item"><div class="trust-icon">⭐</div><strong>5.0-Star Rated</strong><p>32 verified Google reviews from happy Dunedin customers</p></div>
+      <div class="trust-item"><div class="trust-icon">🏆</div><strong>Local Experts</strong><p>Based in Dunedin — we know the area, the soil and the local conditions</p></div>
+      <div class="trust-item"><div class="trust-icon">💬</div><strong>Free Quotes</strong><p>No obligation estimates — we'll come to your property and give you a fair price</p></div>
+      <div class="trust-item"><div class="trust-icon">✅</div><strong>Quality Guaranteed</strong><p>All work completed to the highest standard, every time</p></div>
     </div>
   </div>
 </section>
 
+
+<!-- Process -->
+<section class="section">
+  <div class="container">
+    <h2>Our Quotation Process</h2>
+    <p class="section-intro">Here's exactly what to expect from first enquiry through to project completion.</p>
+    <div class="process-steps">
+      
+      <div class="process-step">
+        <div class="step-num">1</div>
+        <h3>Project Discovery</h3>
+        <p>After your enquiry, Connor arranges a quick consult to confirm purpose, timing, and budget. We review access, drainage, and site constraints, then match you with experienced concrete contractors best suited to your project.</p>
+      </div>
+      
+      <div class="process-step">
+        <div class="step-num">2</div>
+        <h3>Three Professional Estimates</h3>
+        <p>Contractor teams visit to verify measurements, levels, and base requirements, and to confirm reinforcement and finish expectations. You&#39;ll receive three tailored proposals outlining methodology, materials, timelines, and pricing.</p>
+      </div>
+      
+      <div class="process-step">
+        <div class="step-num">3</div>
+        <h3>Your Confident Decision</h3>
+        <p>Each submission includes itemised costs, realistic schedules, clear inclusions, and notes on curing and aftercare. With our guidance, you select the option that balances performance and budget, then lock in dates for completion.</p>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
 <!-- Reviews -->
-<section class="section" id="reviews">
+<section class="section section-alt" id="reviews">
   <div class="container">
     <h2>What Our Customers Say</h2>
     <div class="reviews-intro">
@@ -274,14 +324,40 @@ footer a:hover { color: var(--white); }
       </div>
       
     </div>
-    
-    <a class="google-badge" href="https://maps.google.com/?cid=15160777677105593767" target="_blank" rel="noopener">
-      <svg width="16" height="16" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
-      See all 32 Google reviews →
-    </a>
-    
+    <div class="review-ctas">
+      <a class="google-badge" href="https://maps.google.com/?cid=15160777677105593767" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>See all 32 reviews →</a>
+      <a class="google-badge" href="https://maps.app.goo.gl/S1dhLxZUYRNNxgHv9" target="_blank" rel="noopener">📍 View Google Business Profile</a>
+    </div>
   </div>
 </section>
+
+
+<!-- Pricing -->
+<section class="section">
+  <div class="container">
+    <h2>Concrete Costs &amp; Pricing Guide for Dunedin</h2>
+    <div class="pricing-range">
+      <div class="price-figure">$90–$200/m²</div>
+      <div class="price-detail">Indicative range for most surface projects (driveways, paths, patios, slabs, car parks). Final pricing is determined by your contractor following a site visit.</div>
+    </div>
+    <div class="pricing-cols">
+      
+      <div class="pricing-col">
+        <h3>Key cost drivers</h3>
+        <ul><li>Excavation depth and base preparation</li><li>Site access for equipment and concrete trucks</li><li>Slab thickness and reinforcement spec</li><li>Layout complexity, edges, steps, or awkward shapes</li><li>Finish choice — broom/swirl through to exposed aggregate or coloured</li><li>Demolition, spoil removal, and reinstatement</li><li>Drainage allowances and joint layout</li></ul>
+      </div>
+      
+      
+      <div class="pricing-col">
+        <h3>Typical timeframes</h3>
+        <ul><li>Preparation and boxing: 1–3 days</li><li>Pour and finish: typically 1 day</li><li>Light foot traffic: 24–48 hours</li><li>Vehicles and loads: 5–7 days</li></ul>
+      </div>
+      
+    </div>
+    <p class="pricing-disclaimer">Pricing guidance only. Each contractor prepares their own independent quote following a site visit. Confirm whether quotes are GST-inclusive or exclusive.</p>
+  </div>
+</section>
+
 
 <!-- Quote Form -->
 <section class="section section-alt" id="quote">
@@ -291,274 +367,116 @@ footer a:hover { color: var(--white); }
     <div class="quote-form">
       <form id="quoteForm" novalidate>
         
-
-        
         <div class="form-row">
         
-
         
-
         
         <div class="form-group">
           <label for="f_name">First &amp; Last Name *</label>
-          <input type="text" id="f_name" name="name"
-            required
-            placeholder="Jane Smith">
+          <input type="text" id="f_name" name="name" required placeholder="Jane Smith">
         </div>
-
         
-
         
-
         
         <div class="form-group">
           <label for="f_phone">Phone Number *</label>
-          <input type="tel" id="f_phone" name="phone"
-            required
-            placeholder="021 000 000">
+          <input type="tel" id="f_phone" name="phone" required placeholder="021 000 000">
         </div>
-
         
-
-        
-
         
         </div>
-
         
-
         
-
         
         <div class="form-group">
           <label for="f_address">Project Street Address *</label>
-          <input type="text" id="f_address" name="address"
-            required
-            placeholder="123 Main St, South Dunedin">
+          <input type="text" id="f_address" name="address" required placeholder="123 Main St, South Dunedin">
         </div>
-
         
-
         
-
         
         <div class="form-group">
           <label for="f_email">Email Address</label>
-          <input type="email" id="f_email" name="email"
-            
-            placeholder="jane@example.com">
+          <input type="email" id="f_email" name="email"  placeholder="jane@example.com">
         </div>
-
         
-
         
-
         
         <div class="form-group">
           <span class="group-label">Project Type</span>
           <p class="field-desc">What type of project do you need help with?</p>
           <div class="checkbox-grid">
-            
-            <label class="check-label">
-              <input type="checkbox" name="project_type" value="Concrete Driveway"> Concrete Driveway
-            </label>
-            
-            <label class="check-label">
-              <input type="checkbox" name="project_type" value="Concrete Path"> Concrete Path
-            </label>
-            
-            <label class="check-label">
-              <input type="checkbox" name="project_type" value="Concrete Patio"> Concrete Patio
-            </label>
-            
-            <label class="check-label">
-              <input type="checkbox" name="project_type" value="Concrete Pad/Slab"> Concrete Pad/Slab
-            </label>
-            
-            <label class="check-label">
-              <input type="checkbox" name="project_type" value="Retaining Wall"> Retaining Wall
-            </label>
-            
-            <label class="check-label">
-              <input type="checkbox" name="project_type" value="Concrete Car Park"> Concrete Car Park
-            </label>
-            
+            <label class="check-label"><input type="checkbox" name="project_type" value="Concrete Driveway"> Concrete Driveway</label><label class="check-label"><input type="checkbox" name="project_type" value="Concrete Path"> Concrete Path</label><label class="check-label"><input type="checkbox" name="project_type" value="Concrete Patio"> Concrete Patio</label><label class="check-label"><input type="checkbox" name="project_type" value="Concrete Pad/Slab"> Concrete Pad/Slab</label><label class="check-label"><input type="checkbox" name="project_type" value="Retaining Wall"> Retaining Wall</label><label class="check-label"><input type="checkbox" name="project_type" value="Concrete Car Park"> Concrete Car Park</label>
           </div>
         </div>
-
         
-
         
-
         
         <div class="form-group">
           <span class="group-label">Concrete Finish</span>
           <p class="field-desc">What type of finish are you interested in?</p>
           <div class="checkbox-grid">
-            
-            <label class="check-label">
-              <input type="checkbox" name="finish_type" value="Plain Concrete"> Plain Concrete
-            </label>
-            
-            <label class="check-label">
-              <input type="checkbox" name="finish_type" value="Broom Finish"> Broom Finish
-            </label>
-            
-            <label class="check-label">
-              <input type="checkbox" name="finish_type" value="Swirl Finish"> Swirl Finish
-            </label>
-            
-            <label class="check-label">
-              <input type="checkbox" name="finish_type" value="Exposed Aggregate"> Exposed Aggregate
-            </label>
-            
-            <label class="check-label">
-              <input type="checkbox" name="finish_type" value="Coloured Concrete"> Coloured Concrete
-            </label>
-            
-            <label class="check-label">
-              <input type="checkbox" name="finish_type" value="Pavers"> Pavers
-            </label>
-            
+            <label class="check-label"><input type="checkbox" name="finish_type" value="Plain Concrete"> Plain Concrete</label><label class="check-label"><input type="checkbox" name="finish_type" value="Broom Finish"> Broom Finish</label><label class="check-label"><input type="checkbox" name="finish_type" value="Swirl Finish"> Swirl Finish</label><label class="check-label"><input type="checkbox" name="finish_type" value="Exposed Aggregate"> Exposed Aggregate</label><label class="check-label"><input type="checkbox" name="finish_type" value="Coloured Concrete"> Coloured Concrete</label><label class="check-label"><input type="checkbox" name="finish_type" value="Pavers"> Pavers</label>
           </div>
         </div>
-
         
-
         
-
         
         <div class="form-group">
           <span class="group-label">Excavation / Removal</span>
           <p class="field-desc">Is excavation or removal work required?</p>
           <div class="radio-group">
-            
-            <label class="radio-label">
-              <input type="radio" name="excavation" value="Yes"
-                > Yes
-            </label>
-            
-            <label class="radio-label">
-              <input type="radio" name="excavation" value="No"
-                > No
-            </label>
-            
+            <label class="radio-label"><input type="radio" name="excavation" value="Yes" > Yes</label><label class="radio-label"><input type="radio" name="excavation" value="No" > No</label>
           </div>
         </div>
         
-
         
-
         
         <div class="form-group">
           <span class="group-label">Project Range (Optional)</span>
           <p class="field-desc">This helps us understand the price range you&#39;re working within, so we can recommend the right approach.</p>
           <div class="radio-group">
-            
-            <label class="radio-label">
-              <input type="radio" name="budget" value="Below $4,999"
-                > Below $4,999
-            </label>
-            
-            <label class="radio-label">
-              <input type="radio" name="budget" value="$5,000 to $9,999"
-                > $5,000 to $9,999
-            </label>
-            
-            <label class="radio-label">
-              <input type="radio" name="budget" value="$10,000 to $19,999"
-                > $10,000 to $19,999
-            </label>
-            
-            <label class="radio-label">
-              <input type="radio" name="budget" value="$20,000 +"
-                > $20,000 +
-            </label>
-            
-            <label class="radio-label">
-              <input type="radio" name="budget" value="Not Sure / Please Guide Me"
-                > Not Sure / Please Guide Me
-            </label>
-            
+            <label class="radio-label"><input type="radio" name="budget" value="Below $4,999" > Below $4,999</label><label class="radio-label"><input type="radio" name="budget" value="$5,000 to $9,999" > $5,000 to $9,999</label><label class="radio-label"><input type="radio" name="budget" value="$10,000 to $19,999" > $10,000 to $19,999</label><label class="radio-label"><input type="radio" name="budget" value="$20,000 +" > $20,000 +</label><label class="radio-label"><input type="radio" name="budget" value="Not Sure / Please Guide Me" > Not Sure / Please Guide Me</label>
           </div>
         </div>
         
-
         
-
         
         <div class="form-group">
           <span class="group-label">Timeline</span>
           <p class="field-desc">When are you hoping to start your project?</p>
           <div class="radio-group">
-            
-            <label class="radio-label">
-              <input type="radio" name="timeline" value="As soon as possible"
-                > As soon as possible
-            </label>
-            
-            <label class="radio-label">
-              <input type="radio" name="timeline" value="In the next 1–3 months"
-                > In the next 1–3 months
-            </label>
-            
-            <label class="radio-label">
-              <input type="radio" name="timeline" value="In 3+ months"
-                > In 3+ months
-            </label>
-            
-            <label class="radio-label">
-              <input type="radio" name="timeline" value="Just planning for now"
-                > Just planning for now
-            </label>
-            
+            <label class="radio-label"><input type="radio" name="timeline" value="As soon as possible" > As soon as possible</label><label class="radio-label"><input type="radio" name="timeline" value="In the next 1–3 months" > In the next 1–3 months</label><label class="radio-label"><input type="radio" name="timeline" value="In 3+ months" > In 3+ months</label><label class="radio-label"><input type="radio" name="timeline" value="Just planning for now" > Just planning for now</label>
           </div>
         </div>
         
-
         
-
         
         <div class="form-group">
           <label for="f_description">Tell Us More About Your Project</label>
           <p class="field-desc">Once you submit the form, we may ask for more details and photos.</p>
-          <textarea id="f_description" name="description"
-            
-            placeholder="e.g. New concrete driveway, approximately 80m², replacing existing cracked concrete..."></textarea>
+          <textarea id="f_description" name="description"  placeholder="e.g. New concrete driveway, approximately 80m², replacing existing cracked concrete..."></textarea>
         </div>
-
         
-
         
-
         
         <div class="form-group">
           <span class="group-label">Preferred Contact Method</span>
           
           <div class="checkbox-grid">
-            
-            <label class="check-label">
-              <input type="checkbox" name="contact_method" value="Phone Call"> Phone Call
-            </label>
-            
-            <label class="check-label">
-              <input type="checkbox" name="contact_method" value="Text"> Text
-            </label>
-            
-            <label class="check-label">
-              <input type="checkbox" name="contact_method" value="Email"> Email
-            </label>
-            
+            <label class="check-label"><input type="checkbox" name="contact_method" value="Phone Call"> Phone Call</label><label class="check-label"><input type="checkbox" name="contact_method" value="Text"> Text</label><label class="check-label"><input type="checkbox" name="contact_method" value="Email"> Email</label>
           </div>
         </div>
-
         
-
         
-
         <button type="submit" class="btn-submit">Send Quote Request →</button>
-        <div id="form-success">Thanks! We'll be in touch within 24 hours.</div>
-        <div id="form-error">Something went wrong — please call us on <a href="tel:03 242 03176">03 242 03176</a>.</div>
+        <div id="form-success">
+          Thanks! Connor will get back to you within 24 hours.
+          
+          <ul><li>Approximate measurements in metres (length × width) helps speed things up</li><li>Photos of the existing area are always useful</li><li>Note any access details — can a concrete truck or digger get close?</li></ul>
+          
+        </div>
+        <div id="form-error">Something went wrong — please call <a href="tel:03 242 03176">03 242 03176</a> directly.</div>
       </form>
     </div>
   </div>
@@ -570,21 +488,15 @@ footer a:hover { color: var(--white); }
     <h2>Contact Us</h2>
     <div class="contact-grid">
       
-      <div class="contact-item">
-        <div class="contact-icon">📞</div>
-        <div><strong>Phone</strong><a href="tel:03 242 03176">03 242 03176</a></div>
-      </div>
+      <div class="contact-item"><div class="contact-icon">📞</div><div><strong>Phone</strong><a href="tel:03 242 03176">03 242 03176</a></div></div>
       
       
-      <div class="contact-item">
-        <div class="contact-icon">✉️</div>
-        <div><strong>Email</strong><a href="mailto:dunnersconcrete@gmail.com">dunnersconcrete@gmail.com</a></div>
-      </div>
+      <div class="contact-item"><div class="contact-icon">✉️</div><div><strong>Email</strong><a href="mailto:dunnersconcrete@gmail.com">dunnersconcrete@gmail.com</a></div></div>
       
-      <div class="contact-item">
-        <div class="contact-icon">📍</div>
-        <div><strong>Location</strong><span>Dunedin, New Zealand</span></div>
-      </div>
+      <div class="contact-item"><div class="contact-icon">📍</div><div><strong>Location</strong><span>Dunedin, New Zealand</span></div></div>
+      
+      <div class="contact-item"><div class="contact-icon">🗺️</div><div><strong>Areas Served</strong><div class="areas-list"><span class="area-tag">South Dunedin</span><span class="area-tag">St Clair</span><span class="area-tag">Mornington</span><span class="area-tag">North Dunedin</span><span class="area-tag">Mosgiel</span><span class="area-tag">Port Chalmers</span><span class="area-tag">Roslyn</span><span class="area-tag">Dunedin City</span></div></div></div>
+      
     </div>
   </div>
 </section>
@@ -592,12 +504,11 @@ footer a:hover { color: var(--white); }
 <!-- Footer -->
 <footer>
   <div class="footer-inner">
-    
     <img class="footer-logo" src="https://lirp.cdn-website.com/4d49136a/dms3rep/multi/opt/Logo+Dunners+Concrete-1920w.png" alt="Dunners Concrete Contractor Services">
-    
     <p><strong style="color:#fff">Dunners Concrete Contractor Services</strong></p>
     <p style="margin-top:.35rem">Concrete contractor · Dunedin, NZ</p>
     <p style="margin-top:.25rem"><a href="tel:03 242 03176">03 242 03176</a></p>
+    <p style="margin-top:.2rem"><a href="mailto:dunnersconcrete@gmail.com">dunnersconcrete@gmail.com</a></p>
     <p style="margin-top:1rem;font-size:.8rem">&copy; 2026 Dunners Concrete Contractor Services</p>
     <a class="tt-badge" href="https://tradietools.nz" target="_blank" rel="noopener">🔧 Listed on TradieTools NZ</a>
   </div>
@@ -605,80 +516,55 @@ footer a:hover { color: var(--white); }
 
 <script>
 (function () {
-  var form = document.getElementById('quoteForm');
-  var trade   = &#34;concreter&#34;;
-  var city    = &#34;Dunedin&#34;;
-  var phone   = &#34;03 242 03176&#34;;
+  var form  = document.getElementById('quoteForm');
+  var trade = &#34;concreter&#34;;
+  var city  = &#34;Dunedin&#34;;
+  var phone = &#34;03 242 03176&#34;;
 
   form.addEventListener('submit', async function (e) {
     e.preventDefault();
     var btn = form.querySelector('.btn-submit');
     document.getElementById('form-success').style.display = 'none';
     document.getElementById('form-error').style.display   = 'none';
-    btn.disabled = true;
-    btn.textContent = 'Sending…';
+    btn.disabled = true; btn.textContent = 'Sending…';
 
-    // Collect all field values (handles checkboxes with multiple values)
-    var collected = {};
-    var labelMap  = {};
+    var collected = {}, labelMap = {};
     form.querySelectorAll('[name]').forEach(function (el) {
       if (el.type === 'submit') return;
       var n = el.name;
-      // Build label map from the group-label or label
       if (!labelMap[n]) {
         var grp = el.closest('.form-group');
         var lbl = grp ? (grp.querySelector('.group-label') || grp.querySelector('label')) : null;
         labelMap[n] = lbl ? lbl.textContent.replace(' *','').trim() : n;
       }
-      if (el.type === 'checkbox') {
-        if (el.checked) {
-          if (!collected[n]) collected[n] = [];
-          collected[n].push(el.value);
-        }
-      } else if (el.type === 'radio') {
-        if (el.checked) collected[n] = el.value;
-      } else {
-        if (el.value) collected[n] = el.value;
-      }
+      if (el.type === 'checkbox') { if (el.checked) { if (!collected[n]) collected[n] = []; collected[n].push(el.value); } }
+      else if (el.type === 'radio') { if (el.checked) collected[n] = el.value; }
+      else { if (el.value) collected[n] = el.value; }
     });
 
-    // Format a readable description
-    var lines = Object.entries(collected).map(function (pair) {
-      var key = pair[0], val = pair[1];
-      var label = labelMap[key] || key;
-      return label + ': ' + (Array.isArray(val) ? val.join(', ') : val);
+    var lines = Object.entries(collected).map(function (p) {
+      return (labelMap[p[0]] || p[0]) + ': ' + (Array.isArray(p[1]) ? p[1].join(', ') : p[1]);
     });
-    var description = lines.join('\n');
 
     var data = {
       homeowner_name:  collected['name']    || '',
       homeowner_phone: collected['phone']   || phone,
       homeowner_email: collected['email']   || '',
       suburb:          collected['address'] || city,
-      trade:           trade,
-      city:            city,
-      description:     description,
-      source:          'tradie-site',
+      trade: trade, city: city,
+      description: lines.join('\n'),
+      source: 'tradie-site',
     };
 
     try {
-      var r = await fetch(
-        'https://tradietools.optified.nz/api/method/tradietools.api.create_quote_request',
-        { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Frappe-CSRF-Token': 'fetch' }, body: JSON.stringify(data) }
-      );
-      if (r.ok) {
-        document.getElementById('form-success').style.display = 'block';
-        form.reset();
-      } else { throw new Error('non-ok'); }
-    } catch (err) {
-      document.getElementById('form-error').style.display = 'block';
-    } finally {
-      btn.disabled = false;
-      btn.textContent = 'Send Quote Request →';
-    }
+      var r = await fetch('https://tradietools.optified.nz/api/method/tradietools.api.create_quote_request',
+        { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Frappe-CSRF-Token': 'fetch' }, body: JSON.stringify(data) });
+      if (r.ok) { document.getElementById('form-success').style.display = 'block'; form.reset(); }
+      else { throw new Error(); }
+    } catch (err) { document.getElementById('form-error').style.display = 'block'; }
+    finally { btn.disabled = false; btn.textContent = 'Send Quote Request →'; }
   });
 })();
 </script>
-
 </body>
 </html>
