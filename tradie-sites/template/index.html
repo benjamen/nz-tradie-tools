@@ -15,16 +15,8 @@
   "@type": "HomeAndConstructionBusiness",
   "name": {{ business.name | tojson }},
   "telephone": {{ business.phone | tojson }},
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": {{ business.region | tojson }},
-    "addressCountry": "NZ"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": {{ business.rating }},
-    "reviewCount": {{ business.review_count }}
-  }
+  "address": {"@type": "PostalAddress", "addressLocality": {{ business.region | tojson }}, "addressCountry": "NZ"},
+  "aggregateRating": {"@type": "AggregateRating", "ratingValue": {{ business.rating }}, "reviewCount": {{ business.review_count }}}
 }
 </script>
 <style>
@@ -33,6 +25,8 @@
 :root {
   --brand:    {{ business.brand_color }};
   --brand-dk: {{ business.brand_dark }};
+  --cta:      {{ business.cta_color }};
+  --cta-dk:   {{ business.cta_dark }};
   --text:     #1a1a1a;
   --muted:    #5a5a5a;
   --bg:       #f8f9fa;
@@ -41,207 +35,123 @@
   --shadow:   0 2px 12px rgba(0,0,0,.08);
 }
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  color: var(--text);
-  line-height: 1.6;
-  font-size: 16px;
-}
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: var(--text); line-height: 1.6; font-size: 16px; }
 
 /* ── Nav ── */
-nav {
-  background: var(--white);
-  border-bottom: 1px solid #e5e7eb;
-  padding: .75rem 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  box-shadow: var(--shadow);
-}
-.nav-brand { font-weight: 700; font-size: 1.1rem; color: var(--brand); text-decoration: none; }
-.nav-phone {
-  background: var(--brand);
-  color: var(--white);
-  padding: .5rem 1.1rem;
-  border-radius: var(--radius);
-  text-decoration: none;
-  font-weight: 600;
-  font-size: .9rem;
-  white-space: nowrap;
-}
-.nav-phone:hover { background: var(--brand-dk); }
+nav { background: var(--brand); padding: .85rem 1.5rem; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,.25); }
+.nav-logo { display: flex; align-items: center; gap: .75rem; text-decoration: none; }
+.nav-logo img { height: 48px; width: auto; }
+.nav-logo-text { font-weight: 700; font-size: 1rem; color: var(--white); line-height: 1.2; max-width: 200px; }
+.nav-phone { background: var(--cta); color: var(--white); padding: .55rem 1.2rem; border-radius: var(--radius); text-decoration: none; font-weight: 700; font-size: .92rem; white-space: nowrap; }
+.nav-phone:hover { background: var(--cta-dk); }
 
 /* ── Hero ── */
-.hero {
-  background: linear-gradient(135deg, var(--brand-dk) 0%, var(--brand) 100%);
-  color: var(--white);
-  padding: 4rem 1.5rem 3.5rem;
-  text-align: center;
-}
-.hero .stars { font-size: 1.5rem; letter-spacing: .1rem; margin-bottom: .5rem; color: #fbbf24; }
-.hero h1 { font-size: clamp(1.75rem, 5vw, 2.75rem); font-weight: 800; margin-bottom: .75rem; line-height: 1.2; }
+.hero { background: linear-gradient(150deg, var(--brand-dk) 0%, var(--brand) 60%, #1a4a6b 100%); color: var(--white); padding: 4.5rem 1.5rem 4rem; text-align: center; }
+.hero-logo { margin: 0 auto 1.5rem; }
+.hero-logo img { height: 100px; width: auto; border-radius: 50%; background: rgba(255,255,255,.1); padding: .5rem; }
+.hero .stars { font-size: 1.6rem; letter-spacing: .15rem; color: #fbbf24; margin-bottom: .6rem; }
+.hero h1 { font-size: clamp(1.8rem, 5vw, 2.8rem); font-weight: 800; margin-bottom: .75rem; line-height: 1.2; }
 .hero .tagline { font-size: 1.1rem; opacity: .9; margin-bottom: .4rem; }
-.hero .review-line { font-size: .95rem; opacity: .8; margin-bottom: 2rem; }
+.hero .review-line { font-size: .95rem; opacity: .75; margin-bottom: 2.25rem; }
 .hero .cta-row { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-.btn-primary {
-  background: var(--white);
-  color: var(--brand);
-  padding: .85rem 2rem;
-  border-radius: var(--radius);
-  font-weight: 700;
-  font-size: 1rem;
-  text-decoration: none;
-  display: inline-block;
-}
-.btn-primary:hover { background: #f0f7ff; }
-.btn-secondary {
-  border: 2px solid rgba(255,255,255,.7);
-  color: var(--white);
-  padding: .85rem 2rem;
-  border-radius: var(--radius);
-  font-weight: 600;
-  font-size: 1rem;
-  text-decoration: none;
-  display: inline-block;
-}
-.btn-secondary:hover { background: rgba(255,255,255,.1); }
+.btn-cta { background: var(--cta); color: var(--white); padding: .9rem 2.2rem; border-radius: var(--radius); font-weight: 700; font-size: 1.05rem; text-decoration: none; display: inline-block; border: none; cursor: pointer; }
+.btn-cta:hover { background: var(--cta-dk); }
+.btn-outline { border: 2px solid rgba(255,255,255,.75); color: var(--white); padding: .85rem 2rem; border-radius: var(--radius); font-weight: 600; font-size: 1rem; text-decoration: none; display: inline-block; }
+.btn-outline:hover { background: rgba(255,255,255,.12); }
 
-/* ── Sections ── */
+/* ── Layout ── */
 .section { padding: 3.5rem 1.5rem; }
 .section-alt { background: var(--bg); }
-.container { max-width: 860px; margin: 0 auto; }
-h2 { font-size: 1.6rem; font-weight: 700; margin-bottom: 1.25rem; }
+.container { max-width: 880px; margin: 0 auto; }
+h2 { font-size: 1.65rem; font-weight: 700; margin-bottom: 1.25rem; }
+.section-intro { color: var(--muted); margin-bottom: 1.5rem; }
 
 /* ── Services ── */
-.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; margin-top: 1.5rem; }
-.service-card {
-  background: var(--white);
-  border: 1px solid #e5e7eb;
-  border-radius: var(--radius);
-  padding: 1.5rem;
-  border-top: 3px solid var(--brand);
-}
+.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; }
+.service-card { background: var(--white); border: 1px solid #e5e7eb; border-radius: var(--radius); padding: 1.5rem; border-top: 3px solid var(--cta); }
 .service-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: .4rem; }
 .service-card p { font-size: .9rem; color: var(--muted); }
 
-/* ── Why choose us ── */
-.trust-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
-.trust-item { text-align: center; padding: 1.25rem; }
-.trust-icon { font-size: 2rem; margin-bottom: .5rem; }
-.trust-item strong { display: block; margin-bottom: .25rem; }
-.trust-item p { font-size: .88rem; color: var(--muted); }
+/* ── Trust ── */
+.trust-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; }
+.trust-item { text-align: center; padding: 1.5rem 1rem; background: var(--white); border: 1px solid #e5e7eb; border-radius: var(--radius); }
+.trust-icon { font-size: 2.2rem; margin-bottom: .6rem; }
+.trust-item strong { display: block; margin-bottom: .3rem; font-size: 1rem; }
+.trust-item p { font-size: .87rem; color: var(--muted); }
 
 /* ── Reviews ── */
-.reviews-intro { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
-.big-rating { font-size: 3rem; font-weight: 800; color: var(--brand); line-height: 1; }
-.rating-detail .stars { color: #fbbf24; font-size: 1.3rem; }
-.rating-detail p { font-size: .9rem; color: var(--muted); margin-top: .15rem; }
+.reviews-intro { display: flex; align-items: center; gap: 1.25rem; margin-bottom: 1.75rem; flex-wrap: wrap; }
+.big-rating { font-size: 3.25rem; font-weight: 800; color: var(--brand); line-height: 1; }
+.rating-detail .stars { color: #fbbf24; font-size: 1.4rem; }
+.rating-detail p { font-size: .9rem; color: var(--muted); margin-top: .2rem; }
 .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; }
-.review-card {
-  background: var(--white);
-  border: 1px solid #e5e7eb;
-  border-radius: var(--radius);
-  padding: 1.25rem;
-  box-shadow: var(--shadow);
-}
+.review-card { background: var(--white); border: 1px solid #e5e7eb; border-radius: var(--radius); padding: 1.25rem; box-shadow: var(--shadow); }
 .review-card .stars { color: #fbbf24; font-size: 1rem; margin-bottom: .5rem; }
 .review-card p { font-size: .9rem; color: var(--text); margin-bottom: .75rem; font-style: italic; }
 .review-card .reviewer { font-size: .82rem; color: var(--muted); font-weight: 600; }
-.google-badge { display: inline-flex; align-items: center; gap: .4rem; background: var(--white); border: 1px solid #e5e7eb; border-radius: var(--radius); padding: .5rem .85rem; font-size: .85rem; font-weight: 600; margin-top: 1.25rem; text-decoration: none; color: var(--text); }
+.google-badge { display: inline-flex; align-items: center; gap: .45rem; background: var(--white); border: 1px solid #e5e7eb; border-radius: var(--radius); padding: .55rem .9rem; font-size: .85rem; font-weight: 600; margin-top: 1.5rem; text-decoration: none; color: var(--text); }
 .google-badge:hover { background: var(--bg); }
 
-/* ── Quote form ── */
-.quote-form {
-  background: var(--white);
-  border: 1px solid #e5e7eb;
-  border-radius: var(--radius);
-  padding: 2rem;
-  box-shadow: var(--shadow);
-  max-width: 580px;
+/* ── Quote Form ── */
+.quote-form { background: var(--white); border: 1px solid #e5e7eb; border-radius: var(--radius); padding: 2rem 2rem 1.5rem; box-shadow: var(--shadow); max-width: 640px; }
+.form-group { margin-bottom: 1.25rem; }
+.form-group > label, .group-label { display: block; font-weight: 700; font-size: .92rem; margin-bottom: .35rem; color: var(--text); }
+.field-desc { font-size: .85rem; color: var(--muted); margin-bottom: .55rem; }
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%; padding: .65rem .85rem; border: 1px solid #d1d5db; border-radius: var(--radius);
+  font-size: .95rem; font-family: inherit; color: var(--text); background: var(--white);
 }
-.form-group { margin-bottom: 1.1rem; }
-.form-group label { display: block; font-weight: 600; font-size: .9rem; margin-bottom: .4rem; }
-.form-group input, .form-group textarea, .form-group select {
-  width: 100%;
-  padding: .65rem .85rem;
-  border: 1px solid #d1d5db;
-  border-radius: var(--radius);
-  font-size: .95rem;
-  font-family: inherit;
-  color: var(--text);
-  background: var(--white);
-}
-.form-group input:focus, .form-group textarea:focus, .form-group select:focus {
-  outline: 2px solid var(--brand);
-  border-color: var(--brand);
-}
-.form-group textarea { resize: vertical; min-height: 100px; }
+.form-group input:focus, .form-group textarea:focus { outline: 2px solid var(--cta); border-color: var(--cta); }
+.form-group textarea { resize: vertical; min-height: 90px; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-@media (max-width: 500px) { .form-row { grid-template-columns: 1fr; } }
-.btn-submit {
-  width: 100%;
-  background: var(--brand);
-  color: var(--white);
-  padding: .85rem;
-  border: none;
-  border-radius: var(--radius);
-  font-size: 1rem;
-  font-weight: 700;
-  cursor: pointer;
-  margin-top: .5rem;
-}
-.btn-submit:hover { background: var(--brand-dk); }
-#form-success { display: none; background: #dcfce7; border: 1px solid #16a34a; border-radius: var(--radius); padding: 1rem; color: #15803d; font-weight: 600; margin-top: 1rem; }
-#form-error { display: none; background: #fee2e2; border: 1px solid #dc2626; border-radius: var(--radius); padding: 1rem; color: #b91c1c; margin-top: 1rem; }
+@media (max-width: 520px) { .form-row { grid-template-columns: 1fr; } }
+
+.checkbox-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: .45rem; margin-top: .1rem; }
+.check-label, .radio-label { display: flex; align-items: center; gap: .5rem; font-size: .92rem; padding: .45rem .6rem; border: 1px solid #e5e7eb; border-radius: var(--radius); cursor: pointer; transition: background .1s; }
+.check-label:hover, .radio-label:hover { background: var(--bg); }
+.check-label input, .radio-label input { accent-color: var(--cta); width: 1rem; height: 1rem; flex-shrink: 0; }
+.radio-group { display: flex; flex-direction: column; gap: .4rem; margin-top: .1rem; }
+
+.btn-submit { width: 100%; background: var(--cta); color: var(--white); padding: .95rem; border: none; border-radius: var(--radius); font-size: 1.05rem; font-weight: 700; cursor: pointer; margin-top: .75rem; }
+.btn-submit:hover { background: var(--cta-dk); }
+.btn-submit:disabled { opacity: .6; cursor: not-allowed; }
+#form-success { display: none; background: #dcfce7; border: 1px solid #16a34a; border-radius: var(--radius); padding: 1rem 1.25rem; color: #15803d; font-weight: 600; margin-top: 1rem; }
+#form-error { display: none; background: #fee2e2; border: 1px solid #dc2626; border-radius: var(--radius); padding: 1rem 1.25rem; color: #b91c1c; margin-top: 1rem; }
 
 /* ── Contact ── */
 .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
 .contact-item { display: flex; align-items: flex-start; gap: .85rem; }
-.contact-icon { font-size: 1.4rem; flex-shrink: 0; }
-.contact-item strong { display: block; font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin-bottom: .15rem; }
+.contact-icon { font-size: 1.5rem; flex-shrink: 0; }
+.contact-item strong { display: block; font-size: .82rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-bottom: .2rem; }
 .contact-item a { color: var(--brand); text-decoration: none; font-weight: 600; }
 .contact-item a:hover { text-decoration: underline; }
 
 /* ── Footer ── */
-footer {
-  background: #111827;
-  color: #9ca3af;
-  padding: 2rem 1.5rem;
-  text-align: center;
-  font-size: .85rem;
-}
-footer a { color: #d1d5db; text-decoration: none; }
+footer { background: var(--brand-dk); color: rgba(255,255,255,.65); padding: 2.25rem 1.5rem; text-align: center; font-size: .85rem; }
+footer a { color: rgba(255,255,255,.8); text-decoration: none; }
 footer a:hover { color: var(--white); }
-.footer-inner { max-width: 860px; margin: 0 auto; }
-.tt-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: .4rem;
-  background: rgba(255,255,255,.06);
-  border: 1px solid rgba(255,255,255,.12);
-  border-radius: 20px;
-  padding: .3rem .8rem;
-  font-size: .78rem;
-  color: #9ca3af;
-  margin-top: .75rem;
-  text-decoration: none;
-}
+.footer-inner { max-width: 880px; margin: 0 auto; }
+.footer-logo { height: 60px; width: auto; margin-bottom: .75rem; border-radius: 50%; }
+.tt-badge { display: inline-flex; align-items: center; gap: .4rem; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.18); border-radius: 20px; padding: .35rem .9rem; font-size: .78rem; color: rgba(255,255,255,.65); margin-top: .85rem; text-decoration: none; }
 .tt-badge:hover { color: var(--white); }
 
-@media (max-width: 640px) {
-  .hero { padding: 3rem 1rem 2.5rem; }
-  nav { padding: .65rem 1rem; }
-}
+@media (max-width: 640px) { .hero { padding: 3rem 1rem 2.5rem; } nav { padding: .7rem 1rem; } .quote-form { padding: 1.25rem; } }
 </style>
 </head>
 <body>
 
 <!-- Nav -->
 <nav>
-  <a class="nav-brand" href="#">{{ business.name }}</a>
+  <a class="nav-logo" href="#">
+    {% if business.logo_url %}
+    <img src="{{ business.logo_url }}" alt="{{ business.name }} logo">
+    {% else %}
+    <span class="nav-logo-text">{{ business.name }}</span>
+    {% endif %}
+  </a>
   {% if business.phone %}
   <a class="nav-phone" href="tel:{{ business.phone }}">📞 {{ business.phone }}</a>
   {% endif %}
@@ -249,14 +159,17 @@ footer a:hover { color: var(--white); }
 
 <!-- Hero -->
 <section class="hero">
+  {% if business.logo_url %}
+  <div class="hero-logo"><img src="{{ business.logo_url }}" alt="{{ business.name }}"></div>
+  {% endif %}
   <div class="stars">★★★★★</div>
   <h1>{{ business.name }}</h1>
   <p class="tagline">{{ business.tagline }}</p>
-  <p class="review-line">{{ business.rating }} stars · {{ business.review_count }} Google reviews · {{ business.region }}</p>
+  <p class="review-line">{{ business.rating }} stars &nbsp;·&nbsp; {{ business.review_count }} Google reviews &nbsp;·&nbsp; {{ business.region }}, NZ</p>
   <div class="cta-row">
-    <a class="btn-primary" href="#quote">Get a Free Quote</a>
+    <a class="btn-cta" href="#quote">Get a Free Quote</a>
     {% if business.phone %}
-    <a class="btn-secondary" href="tel:{{ business.phone }}">Call {{ business.phone }}</a>
+    <a class="btn-outline" href="tel:{{ business.phone }}">Call {{ business.phone }}</a>
     {% endif %}
   </div>
 </section>
@@ -265,7 +178,7 @@ footer a:hover { color: var(--white); }
 <section class="section">
   <div class="container">
     <h2>Our Services</h2>
-    <p style="color:var(--muted)">Professional {{ business.trade_label }} services across {{ business.region }} and surrounding areas.</p>
+    <p class="section-intro">Professional {{ business.trade_label }} services across {{ business.region }} and surrounding areas.</p>
     <div class="services-grid">
       {% for svc in business.services %}
       <div class="service-card">
@@ -277,7 +190,7 @@ footer a:hover { color: var(--white); }
   </div>
 </section>
 
-<!-- Why choose us -->
+<!-- Trust signals -->
 <section class="section section-alt">
   <div class="container">
     <h2>Why Choose Us</h2>
@@ -285,22 +198,22 @@ footer a:hover { color: var(--white); }
       <div class="trust-item">
         <div class="trust-icon">⭐</div>
         <strong>{{ business.rating }}-Star Rated</strong>
-        <p>{{ business.review_count }} verified Google reviews from happy customers</p>
+        <p>{{ business.review_count }} verified Google reviews from happy {{ business.region }} customers</p>
       </div>
       <div class="trust-item">
         <div class="trust-icon">🏆</div>
         <strong>Local Experts</strong>
-        <p>Based in {{ business.region }} — we know the area and local conditions</p>
+        <p>Based in {{ business.region }} — we know the area, the soil and the conditions</p>
       </div>
       <div class="trust-item">
         <div class="trust-icon">💬</div>
         <strong>Free Quotes</strong>
-        <p>No obligation estimates — we'll come to you</p>
+        <p>No obligation estimates — we'll come to your property and give you a fair price</p>
       </div>
       <div class="trust-item">
         <div class="trust-icon">✅</div>
         <strong>Quality Guaranteed</strong>
-        <p>All work completed to the highest standard</p>
+        <p>All work completed to the highest standard, every time</p>
       </div>
     </div>
   </div>
@@ -329,7 +242,7 @@ footer a:hover { color: var(--white); }
     {% if business.google_url %}
     <a class="google-badge" href="{{ business.google_url }}" target="_blank" rel="noopener">
       <svg width="16" height="16" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
-      See all {{ business.review_count }} Google reviews
+      See all {{ business.review_count }} Google reviews →
     </a>
     {% endif %}
   </div>
@@ -338,35 +251,67 @@ footer a:hover { color: var(--white); }
 <!-- Quote Form -->
 <section class="section section-alt" id="quote">
   <div class="container">
-    <h2>Get a Free Quote</h2>
-    <p style="color:var(--muted);margin-bottom:1.5rem">Tell us about your project and we'll get back to you within 24 hours.</p>
+    <h2>Get Your Free Quote</h2>
+    <p class="section-intro">Fill in the form below and we'll get back to you within 24 hours.</p>
     <div class="quote-form">
-      <form id="quoteForm">
+      <form id="quoteForm" novalidate>
+        {% for field in business.form_fields %}
+
+        {% if field.type == 'row_start' %}
         <div class="form-row">
-          <div class="form-group">
-            <label for="fname">Your Name *</label>
-            <input type="text" id="fname" name="name" required placeholder="Jane Smith">
+        {% elif field.type == 'row_end' %}
+        </div>
+
+        {% elif field.type in ['text', 'tel', 'email'] %}
+        <div class="form-group">
+          <label for="f_{{ field.name }}">{{ field.label }}{% if field.required %} *{% endif %}</label>
+          <input type="{{ field.type }}" id="f_{{ field.name }}" name="{{ field.name }}"
+            {% if field.required %}required{% endif %}
+            placeholder="{{ field.placeholder or '' }}">
+        </div>
+
+        {% elif field.type == 'textarea' %}
+        <div class="form-group">
+          <label for="f_{{ field.name }}">{{ field.label }}{% if field.required %} *{% endif %}</label>
+          {% if field.description %}<p class="field-desc">{{ field.description }}</p>{% endif %}
+          <textarea id="f_{{ field.name }}" name="{{ field.name }}"
+            {% if field.required %}required{% endif %}
+            placeholder="{{ field.placeholder or '' }}"></textarea>
+        </div>
+
+        {% elif field.type == 'checkboxes' %}
+        <div class="form-group">
+          <span class="group-label">{{ field.label }}{% if field.required %} *{% endif %}</span>
+          {% if field.description %}<p class="field-desc">{{ field.description }}</p>{% endif %}
+          <div class="checkbox-grid">
+            {% for opt in field.options %}
+            <label class="check-label">
+              <input type="checkbox" name="{{ field.name }}" value="{{ opt }}"> {{ opt }}
+            </label>
+            {% endfor %}
           </div>
-          <div class="form-group">
-            <label for="fphone">Phone *</label>
-            <input type="tel" id="fphone" name="phone" required placeholder="021 000 000">
+        </div>
+
+        {% elif field.type == 'radio' %}
+        <div class="form-group">
+          <span class="group-label">{{ field.label }}{% if field.required %} *{% endif %}</span>
+          {% if field.description %}<p class="field-desc">{{ field.description }}</p>{% endif %}
+          <div class="radio-group">
+            {% for opt in field.options %}
+            <label class="radio-label">
+              <input type="radio" name="{{ field.name }}" value="{{ opt }}"
+                {% if field.required and loop.first %}required{% endif %}> {{ opt }}
+            </label>
+            {% endfor %}
           </div>
         </div>
-        <div class="form-group">
-          <label for="femail">Email</label>
-          <input type="email" id="femail" name="email" placeholder="jane@example.com">
-        </div>
-        <div class="form-group">
-          <label for="fsuburb">Your Suburb *</label>
-          <input type="text" id="fsuburb" name="suburb" required placeholder="e.g. South Dunedin">
-        </div>
-        <div class="form-group">
-          <label for="fjob">Tell us about your job *</label>
-          <textarea id="fjob" name="description" required placeholder="e.g. Concrete driveway, approximately 60m², need removal of old concrete first..."></textarea>
-        </div>
+        {% endif %}
+
+        {% endfor %}
+
         <button type="submit" class="btn-submit">Send Quote Request →</button>
         <div id="form-success">Thanks! We'll be in touch within 24 hours.</div>
-        <div id="form-error">Something went wrong — please call us directly on {{ business.phone }}.</div>
+        <div id="form-error">Something went wrong — please call us on <a href="tel:{{ business.phone }}">{{ business.phone }}</a>.</div>
       </form>
     </div>
   </div>
@@ -380,27 +325,18 @@ footer a:hover { color: var(--white); }
       {% if business.phone %}
       <div class="contact-item">
         <div class="contact-icon">📞</div>
-        <div>
-          <strong>Phone</strong>
-          <a href="tel:{{ business.phone }}">{{ business.phone }}</a>
-        </div>
+        <div><strong>Phone</strong><a href="tel:{{ business.phone }}">{{ business.phone }}</a></div>
       </div>
       {% endif %}
       {% if business.email %}
       <div class="contact-item">
         <div class="contact-icon">✉️</div>
-        <div>
-          <strong>Email</strong>
-          <a href="mailto:{{ business.email }}">{{ business.email }}</a>
-        </div>
+        <div><strong>Email</strong><a href="mailto:{{ business.email }}">{{ business.email }}</a></div>
       </div>
       {% endif %}
       <div class="contact-item">
         <div class="contact-icon">📍</div>
-        <div>
-          <strong>Location</strong>
-          <span>{{ business.region }}, New Zealand</span>
-        </div>
+        <div><strong>Location</strong><span>{{ business.region }}, New Zealand</span></div>
       </div>
     </div>
   </div>
@@ -409,53 +345,92 @@ footer a:hover { color: var(--white); }
 <!-- Footer -->
 <footer>
   <div class="footer-inner">
-    <p><strong style="color:var(--white)">{{ business.name }}</strong></p>
-    <p style="margin-top:.4rem">{{ business.trade_label | capitalize }} · {{ business.region }}, NZ</p>
+    {% if business.logo_url %}
+    <img class="footer-logo" src="{{ business.logo_url }}" alt="{{ business.name }}">
+    {% endif %}
+    <p><strong style="color:#fff">{{ business.name }}</strong></p>
+    <p style="margin-top:.35rem">{{ business.trade_label | capitalize }} · {{ business.region }}, NZ</p>
     {% if business.phone %}<p style="margin-top:.25rem"><a href="tel:{{ business.phone }}">{{ business.phone }}</a></p>{% endif %}
-    <p style="margin-top:1rem">&copy; {{ year }} {{ business.name }}</p>
-    <a class="tt-badge" href="https://tradietools.nz" target="_blank" rel="noopener">
-      🔧 Listed on TradieTools NZ
-    </a>
+    <p style="margin-top:1rem;font-size:.8rem">&copy; {{ year }} {{ business.name }}</p>
+    <a class="tt-badge" href="https://tradietools.nz" target="_blank" rel="noopener">🔧 Listed on TradieTools NZ</a>
   </div>
 </footer>
 
 <script>
-document.getElementById('quoteForm').addEventListener('submit', async function(e) {
-  e.preventDefault();
-  var btn = this.querySelector('.btn-submit');
-  btn.disabled = true;
-  btn.textContent = 'Sending…';
+(function () {
+  var form = document.getElementById('quoteForm');
+  var trade   = {{ business.api_trade | tojson }};
+  var city    = {{ business.region    | tojson }};
+  var phone   = {{ business.phone     | tojson }};
 
-  var data = {
-    homeowner_name: this.name.value,
-    homeowner_phone: this.phone.value,
-    homeowner_email: this.email.value || '',
-    suburb: this.suburb.value,
-    trade: {{ business.api_trade | tojson }},
-    city: {{ business.region | tojson }},
-    description: this.description.value,
-    source: 'tradie-site'
-  };
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    var btn = form.querySelector('.btn-submit');
+    document.getElementById('form-success').style.display = 'none';
+    document.getElementById('form-error').style.display   = 'none';
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
 
-  try {
-    var r = await fetch('https://tradietools.optified.nz/api/method/tradietools.api.create_quote_request', {
-      method: 'POST',
-      headers: {'Content-Type': 'application/json', 'X-Frappe-CSRF-Token': 'fetch'},
-      body: JSON.stringify(data)
+    // Collect all field values (handles checkboxes with multiple values)
+    var collected = {};
+    var labelMap  = {};
+    form.querySelectorAll('[name]').forEach(function (el) {
+      if (el.type === 'submit') return;
+      var n = el.name;
+      // Build label map from the group-label or label
+      if (!labelMap[n]) {
+        var grp = el.closest('.form-group');
+        var lbl = grp ? (grp.querySelector('.group-label') || grp.querySelector('label')) : null;
+        labelMap[n] = lbl ? lbl.textContent.replace(' *','').trim() : n;
+      }
+      if (el.type === 'checkbox') {
+        if (el.checked) {
+          if (!collected[n]) collected[n] = [];
+          collected[n].push(el.value);
+        }
+      } else if (el.type === 'radio') {
+        if (el.checked) collected[n] = el.value;
+      } else {
+        if (el.value) collected[n] = el.value;
+      }
     });
-    if (r.ok) {
-      document.getElementById('form-success').style.display = 'block';
-      this.reset();
-    } else {
-      throw new Error('non-ok');
+
+    // Format a readable description
+    var lines = Object.entries(collected).map(function (pair) {
+      var key = pair[0], val = pair[1];
+      var label = labelMap[key] || key;
+      return label + ': ' + (Array.isArray(val) ? val.join(', ') : val);
+    });
+    var description = lines.join('\n');
+
+    var data = {
+      homeowner_name:  collected['name']    || '',
+      homeowner_phone: collected['phone']   || phone,
+      homeowner_email: collected['email']   || '',
+      suburb:          collected['address'] || city,
+      trade:           trade,
+      city:            city,
+      description:     description,
+      source:          'tradie-site',
+    };
+
+    try {
+      var r = await fetch(
+        'https://tradietools.optified.nz/api/method/tradietools.api.create_quote_request',
+        { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Frappe-CSRF-Token': 'fetch' }, body: JSON.stringify(data) }
+      );
+      if (r.ok) {
+        document.getElementById('form-success').style.display = 'block';
+        form.reset();
+      } else { throw new Error('non-ok'); }
+    } catch (err) {
+      document.getElementById('form-error').style.display = 'block';
+    } finally {
+      btn.disabled = false;
+      btn.textContent = 'Send Quote Request →';
     }
-  } catch(err) {
-    document.getElementById('form-error').style.display = 'block';
-  } finally {
-    btn.disabled = false;
-    btn.textContent = 'Send Quote Request →';
-  }
-});
+  });
+})();
 </script>
 
 </body>
