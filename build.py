@@ -927,6 +927,7 @@ def build_index(articles, calculators, config, env, nav, base_path):
     template = env.get_template("index.html")
     ctx = {
         **config,
+        "description": "Find trusted NZ tradies by city — top-rated electricians, plumbers, builders, painters and more. Google ratings verified. Free to search.",
         "base_path": base_path,
         "page_title": config["title"],
         "articles": articles[:6],
