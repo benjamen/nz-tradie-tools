@@ -2,11 +2,59 @@
 <html lang="en-NZ">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0;url=/signup/">
-  <title>Redirecting… — TradieTools NZ</title>
-  <script>window.location.replace('/signup/' + window.location.search);</script>
+  <title>Claiming your listing… — TradieTools NZ</title>
+  <style>
+    body { font-family: Arial, sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; background: #f8fafc; color: #1b2a4a; }
+    .box { text-align: center; padding: 2rem; }
+    .spinner { width: 36px; height: 36px; border: 3px solid #dde3ec; border-top-color: #0055a5; border-radius: 50%; animation: spin .7s linear infinite; margin: 0 auto 1rem; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
 </head>
 <body>
-  <p>Redirecting to <a href="/signup/">sign up</a>…</p>
+<div class="box">
+  <div class="spinner"></div>
+  <p>Preparing your claim…</p>
+</div>
+<script>
+(function () {
+  var params = new URLSearchParams(location.search);
+  var slug   = params.get('slug') || params.get('business') || '';
+
+  function goSignup(id) {
+    var dest = '/signup/?ref=claim';
+    if (id) dest += '&id=' + encodeURIComponent(id);
+    // Pass through any extra params (utm_*, etc.)
+    ['utm_source','utm_medium','utm_campaign','upgrade'].forEach(function(k){
+      var v = params.get(k);
+      if (v) dest += '&' + k + '=' + encodeURIComponent(v);
+    });
+    window.location.replace(dest);
+  }
+
+  if (!slug) {
+    // No slug — just go to signup claim flow (generic)
+    goSignup(null);
+    return;
+  }
+
+  // Look up listing ID by slug name
+  var q = slug.replace(/-/g, ' ');
+  fetch('https://tradietools.optified.nz/api/method/tradietools.api.search_listings?q=' + encodeURIComponent(q) + '&limit=5')
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      var msg = data.message || data;
+      var listings = Array.isArray(msg) ? msg : (msg.listings || []);
+      // Find the one whose slug matches exactly
+      var match = null;
+      for (var i = 0; i < listings.length; i++) {
+        var l = listings[i];
+        var lSlug = (l.listing_slug || l.slug || '').toLowerCase();
+        if (lSlug === slug.toLowerCase()) { match = l; break; }
+      }
+      goSignup(match ? match.id : null);
+    })
+    .catch(function () { goSignup(null); });
+})();
+</script>
 </body>
 </html>

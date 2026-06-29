@@ -40,6 +40,11 @@
 
     .optional { font-size: .78rem; color: var(--muted); font-weight: 400; margin-left: .3rem; }
 
+    .type-toggle { display: flex; gap: 0; border: 1.5px solid var(--border); border-radius: 4px; overflow: hidden; }
+    .type-btn { flex: 1; background: var(--white); border: none; padding: .6rem .5rem; font-size: .88rem; font-family: var(--font); color: var(--muted); cursor: pointer; transition: background .12s, color .12s; font-weight: 500; }
+    .type-btn.active { background: var(--navy); color: #fff; font-weight: 700; }
+    .type-btn:not(.active):hover { background: var(--bg, #f6f6f6); color: var(--text); }
+
     .submit-btn {
       width: 100%; background: var(--navy); color: var(--white);
       border: none; padding: .85rem; font-size: 1rem; font-weight: 700;
@@ -175,9 +180,25 @@
       <div class="alert" id="alert"></div>
 
       <form id="signup-form" novalidate>
+
+        <!-- Business type selector -->
+        <div class="field" style="margin-bottom:1.25rem">
+          <label style="margin-bottom:.45rem;display:block">I'm a</label>
+          <div class="type-toggle">
+            <button type="button" class="type-btn active" id="type-sole" onclick="setType('sole')">👤 Sole Trader</button>
+            <button type="button" class="type-btn" id="type-company" onclick="setType('company')">🏢 Business / Company</button>
+          </div>
+        </div>
+
+        <!-- Business name — shown for company only -->
+        <div class="field" id="biz-name-field" style="display:none">
+          <label for="business_name">Business Name</label>
+          <input id="business_name" type="text" placeholder="e.g. Smith Electrical Ltd" autocomplete="organization">
+        </div>
+
         <div class="field-row">
           <div class="field">
-            <label for="name">Full Name</label>
+            <label for="name" id="name-label">Your Name</label>
             <input id="name" type="text" placeholder="John Smith" required autocomplete="name">
           </div>
           <div class="field">
@@ -404,9 +425,36 @@ const API_RESEND  = 'https://tradietools.optified.nz/api/method/tradietools.api.
 let tradieId    = null;
 let tradieEmail = null;
 const _params   = new URLSearchParams(location.search);
+
+// ── Business type toggle ──
+let bizType = 'sole'; // 'sole' | 'company'
+
+function setType(type) {
+  bizType = type;
+  document.getElementById('type-sole').classList.toggle('active', type === 'sole');
+  document.getElementById('type-company').classList.toggle('active', type === 'company');
+
+  const bizField = document.getElementById('biz-name-field');
+  const bizInput = document.getElementById('business_name');
+  const nameLabel = document.getElementById('name-label');
+
+  if (type === 'company') {
+    bizField.style.display = 'block';
+    bizInput.required = true;
+    nameLabel.textContent = 'Your Name (contact)';
+    document.getElementById('name').placeholder = 'e.g. John Smith';
+  } else {
+    bizField.style.display = 'none';
+    bizInput.required = false;
+    bizInput.value = '';
+    nameLabel.textContent = 'Your Name';
+    document.getElementById('name').placeholder = 'John Smith';
+  }
+}
 const isLeadRef = _params.get('ref') === 'lead';
 const isClaimRef = _params.get('ref') === 'claim';
 const claimId   = isClaimRef ? (_params.get('id') || null) : null;
+const claimSlug = isClaimRef ? (_params.get('slug') || null) : null;
 const bizSlug   = _params.get('business') || '';
 
 // ── Lead referral: show banner + customise copy ──
@@ -514,7 +562,8 @@ document.getElementById('signup-form').addEventListener('submit', async function
   alert.className = 'alert';
   alert.textContent = '';
 
-  const name   = document.getElementById('name').value.trim();
+  const contactName  = document.getElementById('name').value.trim();
+  const businessName = document.getElementById('business_name').value.trim();
   const phone  = document.getElementById('phone').value.trim();
   const email  = document.getElementById('email').value.trim();
   const trade  = document.getElementById('trade').value;
@@ -522,9 +571,17 @@ document.getElementById('signup-form').addEventListener('submit', async function
   const experience_years = document.getElementById('experience_years').value;
   const hourly_rate      = document.getElementById('hourly_rate').value;
 
-  if (!name || !phone || !email || !trade || !region) {
+  // listing name = business name for companies, contact name for sole traders
+  const listingName = (bizType === 'company' && businessName) ? businessName : contactName;
+
+  if (!contactName || !phone || !email || !trade || !region) {
     alert.className = 'alert error';
     alert.textContent = 'Please fill in all required fields.';
+    return;
+  }
+  if (bizType === 'company' && !businessName) {
+    alert.className = 'alert error';
+    alert.textContent = 'Please enter your business name.';
     return;
   }
 
@@ -532,7 +589,8 @@ document.getElementById('signup-form').addEventListener('submit', async function
   btn.textContent = 'Creating listing…';
 
   try {
-    const body = { name, phone, email, trade, region };
+    const body = { name: listingName, phone, email, trade, region };
+    if (bizType === 'company') body.contact_name = contactName;
     if (experience_years) body.experience_years = parseInt(experience_years);
     if (hourly_rate)      body.hourly_rate = parseInt(hourly_rate);
     if (claimId)          body.claim_id = claimId;
@@ -549,7 +607,8 @@ document.getElementById('signup-form').addEventListener('submit', async function
       tradieId    = msg.id || null;
       tradieEmail = email;
       localStorage.setItem('tradieEmail', email);
-      localStorage.setItem('tradieName', name);
+      localStorage.setItem('tradieName', contactName); // personal name for dashboard greeting
+      localStorage.setItem('tradieListingName', listingName); // business/listing name
       if (tradieId) localStorage.setItem('tradieId', tradieId);
 
       if (typeof gtag !== 'undefined') gtag('event', 'signup_complete', { trade, region });
