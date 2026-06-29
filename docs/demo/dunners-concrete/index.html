@@ -546,6 +546,7 @@ footer a:hover { color: var(--white); }
       return (labelMap[p[0]] || p[0]) + ': ' + (Array.isArray(p[1]) ? p[1].join(', ') : p[1]);
     });
 
+    var listingId = 2843;
     var data = {
       homeowner_name:  collected['name']    || '',
       homeowner_phone: collected['phone']   || phone,
@@ -555,6 +556,7 @@ footer a:hover { color: var(--white); }
       description: lines.join('\n'),
       source: 'tradie-site',
     };
+    if (listingId) data.listing_id = listingId;
 
     try {
       var r = await fetch('https://tradietools.optified.nz/api/method/tradietools.api.create_quote_request',

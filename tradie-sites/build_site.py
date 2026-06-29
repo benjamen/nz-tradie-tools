@@ -105,6 +105,7 @@ DUNNERS = {
         "disclaimer": "Pricing guidance only. Each contractor prepares their own independent quote following a site visit. Confirm whether quotes are GST-inclusive or exclusive.",
     },
     "areas": ["South Dunedin", "St Clair", "Mornington", "North Dunedin", "Mosgiel", "Port Chalmers", "Roslyn", "Dunedin City"],
+    "listing_id":          2843,
     "google_business_url": "https://maps.app.goo.gl/S1dhLxZUYRNNxgHv9",
     "form_success_hints": [
         "Approximate measurements in metres (length × width) helps speed things up",
@@ -186,8 +187,11 @@ if __name__ == "__main__":
             "rating":         data.get("avg_rating") or data.get("google_rating") or 5.0,
             "review_count":   data.get("review_count") or data.get("google_reviews") or 0,
             "google_url":     data.get("google_url", ""),
+            "listing_id":     args.listing_id,
             "brand_color":    "#1d4ed8",
             "brand_dark":     "#1e3a8a",
+            "cta_color":      "#e85d26",
+            "cta_dark":       "#c94d1e",
             "services":       [],
             "sample_reviews": [],
         }
