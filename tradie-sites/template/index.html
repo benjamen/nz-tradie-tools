@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ business.name }} — {{ business.trade_label }} in {{ business.region }}</title>
+<meta name="description" content="{{ business.meta_description }}">
+<meta property="og:title" content="{{ business.name }}">
+<meta property="og:description" content="{{ business.meta_description }}">
+<meta property="og:type" content="website">
+<link rel="canonical" href="{{ business.canonical_url }}">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": {{ business.name | tojson }},
+  "telephone": {{ business.phone | tojson }},
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": {{ business.region | tojson }},
+    "addressCountry": "NZ"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": {{ business.rating }},
+    "reviewCount": {{ business.review_count }}
+  }
+}
+</script>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --brand:    {{ business.brand_color }};
+  --brand-dk: {{ business.brand_dark }};
+  --text:     #1a1a1a;
+  --muted:    #5a5a5a;
+  --bg:       #f8f9fa;
+  --white:    #ffffff;
+  --radius:   6px;
+  --shadow:   0 2px 12px rgba(0,0,0,.08);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* ── Nav ── */
+nav {
+  background: var(--white);
+  border-bottom: 1px solid #e5e7eb;
+  padding: .75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow);
+}
+.nav-brand { font-weight: 700; font-size: 1.1rem; color: var(--brand); text-decoration: none; }
+.nav-phone {
+  background: var(--brand);
+  color: var(--white);
+  padding: .5rem 1.1rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: .9rem;
+  white-space: nowrap;
+}
+.nav-phone:hover { background: var(--brand-dk); }
+
+/* ── Hero ── */
+.hero {
+  background: linear-gradient(135deg, var(--brand-dk) 0%, var(--brand) 100%);
+  color: var(--white);
+  padding: 4rem 1.5rem 3.5rem;
+  text-align: center;
+}
+.hero .stars { font-size: 1.5rem; letter-spacing: .1rem; margin-bottom: .5rem; color: #fbbf24; }
+.hero h1 { font-size: clamp(1.75rem, 5vw, 2.75rem); font-weight: 800; margin-bottom: .75rem; line-height: 1.2; }
+.hero .tagline { font-size: 1.1rem; opacity: .9; margin-bottom: .4rem; }
+.hero .review-line { font-size: .95rem; opacity: .8; margin-bottom: 2rem; }
+.hero .cta-row { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.btn-primary {
+  background: var(--white);
+  color: var(--brand);
+  padding: .85rem 2rem;
+  border-radius: var(--radius);
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-primary:hover { background: #f0f7ff; }
+.btn-secondary {
+  border: 2px solid rgba(255,255,255,.7);
+  color: var(--white);
+  padding: .85rem 2rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-secondary:hover { background: rgba(255,255,255,.1); }
+
+/* ── Sections ── */
+.section { padding: 3.5rem 1.5rem; }
+.section-alt { background: var(--bg); }
+.container { max-width: 860px; margin: 0 auto; }
+h2 { font-size: 1.6rem; font-weight: 700; margin-bottom: 1.25rem; }
+
+/* ── Services ── */
+.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; margin-top: 1.5rem; }
+.service-card {
+  background: var(--white);
+  border: 1px solid #e5e7eb;
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  border-top: 3px solid var(--brand);
+}
+.service-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: .4rem; }
+.service-card p { font-size: .9rem; color: var(--muted); }
+
+/* ── Why choose us ── */
+.trust-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+.trust-item { text-align: center; padding: 1.25rem; }
+.trust-icon { font-size: 2rem; margin-bottom: .5rem; }
+.trust-item strong { display: block; margin-bottom: .25rem; }
+.trust-item p { font-size: .88rem; color: var(--muted); }
+
+/* ── Reviews ── */
+.reviews-intro { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
+.big-rating { font-size: 3rem; font-weight: 800; color: var(--brand); line-height: 1; }
+.rating-detail .stars { color: #fbbf24; font-size: 1.3rem; }
+.rating-detail p { font-size: .9rem; color: var(--muted); margin-top: .15rem; }
+.reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; }
+.review-card {
+  background: var(--white);
+  border: 1px solid #e5e7eb;
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+}
+.review-card .stars { color: #fbbf24; font-size: 1rem; margin-bottom: .5rem; }
+.review-card p { font-size: .9rem; color: var(--text); margin-bottom: .75rem; font-style: italic; }
+.review-card .reviewer { font-size: .82rem; color: var(--muted); font-weight: 600; }
+.google-badge { display: inline-flex; align-items: center; gap: .4rem; background: var(--white); border: 1px solid #e5e7eb; border-radius: var(--radius); padding: .5rem .85rem; font-size: .85rem; font-weight: 600; margin-top: 1.25rem; text-decoration: none; color: var(--text); }
+.google-badge:hover { background: var(--bg); }
+
+/* ── Quote form ── */
+.quote-form {
+  background: var(--white);
+  border: 1px solid #e5e7eb;
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  max-width: 580px;
+}
+.form-group { margin-bottom: 1.1rem; }
+.form-group label { display: block; font-weight: 600; font-size: .9rem; margin-bottom: .4rem; }
+.form-group input, .form-group textarea, .form-group select {
+  width: 100%;
+  padding: .65rem .85rem;
+  border: 1px solid #d1d5db;
+  border-radius: var(--radius);
+  font-size: .95rem;
+  font-family: inherit;
+  color: var(--text);
+  background: var(--white);
+}
+.form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+  outline: 2px solid var(--brand);
+  border-color: var(--brand);
+}
+.form-group textarea { resize: vertical; min-height: 100px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+@media (max-width: 500px) { .form-row { grid-template-columns: 1fr; } }
+.btn-submit {
+  width: 100%;
+  background: var(--brand);
+  color: var(--white);
+  padding: .85rem;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: .5rem;
+}
+.btn-submit:hover { background: var(--brand-dk); }
+#form-success { display: none; background: #dcfce7; border: 1px solid #16a34a; border-radius: var(--radius); padding: 1rem; color: #15803d; font-weight: 600; margin-top: 1rem; }
+#form-error { display: none; background: #fee2e2; border: 1px solid #dc2626; border-radius: var(--radius); padding: 1rem; color: #b91c1c; margin-top: 1rem; }
+
+/* ── Contact ── */
+.contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+.contact-item { display: flex; align-items: flex-start; gap: .85rem; }
+.contact-icon { font-size: 1.4rem; flex-shrink: 0; }
+.contact-item strong { display: block; font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin-bottom: .15rem; }
+.contact-item a { color: var(--brand); text-decoration: none; font-weight: 600; }
+.contact-item a:hover { text-decoration: underline; }
+
+/* ── Footer ── */
+footer {
+  background: #111827;
+  color: #9ca3af;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  font-size: .85rem;
+}
+footer a { color: #d1d5db; text-decoration: none; }
+footer a:hover { color: var(--white); }
+.footer-inner { max-width: 860px; margin: 0 auto; }
+.tt-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 20px;
+  padding: .3rem .8rem;
+  font-size: .78rem;
+  color: #9ca3af;
+  margin-top: .75rem;
+  text-decoration: none;
+}
+.tt-badge:hover { color: var(--white); }
+
+@media (max-width: 640px) {
+  .hero { padding: 3rem 1rem 2.5rem; }
+  nav { padding: .65rem 1rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- Nav -->
+<nav>
+  <a class="nav-brand" href="#">{{ business.name }}</a>
+  {% if business.phone %}
+  <a class="nav-phone" href="tel:{{ business.phone }}">📞 {{ business.phone }}</a>
+  {% endif %}
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="stars">★★★★★</div>
+  <h1>{{ business.name }}</h1>
+  <p class="tagline">{{ business.tagline }}</p>
+  <p class="review-line">{{ business.rating }} stars · {{ business.review_count }} Google reviews · {{ business.region }}</p>
+  <div class="cta-row">
+    <a class="btn-primary" href="#quote">Get a Free Quote</a>
+    {% if business.phone %}
+    <a class="btn-secondary" href="tel:{{ business.phone }}">Call {{ business.phone }}</a>
+    {% endif %}
+  </div>
+</section>
+
+<!-- Services -->
+<section class="section">
+  <div class="container">
+    <h2>Our Services</h2>
+    <p style="color:var(--muted)">Professional {{ business.trade_label }} services across {{ business.region }} and surrounding areas.</p>
+    <div class="services-grid">
+      {% for svc in business.services %}
+      <div class="service-card">
+        <h3>{{ svc.name }}</h3>
+        <p>{{ svc.description }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Why choose us -->
+<section class="section section-alt">
+  <div class="container">
+    <h2>Why Choose Us</h2>
+    <div class="trust-grid">
+      <div class="trust-item">
+        <div class="trust-icon">⭐</div>
+        <strong>{{ business.rating }}-Star Rated</strong>
+        <p>{{ business.review_count }} verified Google reviews from happy customers</p>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">🏆</div>
+        <strong>Local Experts</strong>
+        <p>Based in {{ business.region }} — we know the area and local conditions</p>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">💬</div>
+        <strong>Free Quotes</strong>
+        <p>No obligation estimates — we'll come to you</p>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">✅</div>
+        <strong>Quality Guaranteed</strong>
+        <p>All work completed to the highest standard</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section class="section" id="reviews">
+  <div class="container">
+    <h2>What Our Customers Say</h2>
+    <div class="reviews-intro">
+      <div class="big-rating">{{ business.rating }}</div>
+      <div class="rating-detail">
+        <div class="stars">★★★★★</div>
+        <p>{{ business.review_count }} Google reviews</p>
+      </div>
+    </div>
+    <div class="reviews-grid">
+      {% for review in business.sample_reviews %}
+      <div class="review-card">
+        <div class="stars">{% for i in range(review.rating) %}★{% endfor %}</div>
+        <p>"{{ review.text }}"</p>
+        <div class="reviewer">— {{ review.author }}</div>
+      </div>
+      {% endfor %}
+    </div>
+    {% if business.google_url %}
+    <a class="google-badge" href="{{ business.google_url }}" target="_blank" rel="noopener">
+      <svg width="16" height="16" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+      See all {{ business.review_count }} Google reviews
+    </a>
+    {% endif %}
+  </div>
+</section>
+
+<!-- Quote Form -->
+<section class="section section-alt" id="quote">
+  <div class="container">
+    <h2>Get a Free Quote</h2>
+    <p style="color:var(--muted);margin-bottom:1.5rem">Tell us about your project and we'll get back to you within 24 hours.</p>
+    <div class="quote-form">
+      <form id="quoteForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">Your Name *</label>
+            <input type="text" id="fname" name="name" required placeholder="Jane Smith">
+          </div>
+          <div class="form-group">
+            <label for="fphone">Phone *</label>
+            <input type="tel" id="fphone" name="phone" required placeholder="021 000 000">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="femail">Email</label>
+          <input type="email" id="femail" name="email" placeholder="jane@example.com">
+        </div>
+        <div class="form-group">
+          <label for="fsuburb">Your Suburb *</label>
+          <input type="text" id="fsuburb" name="suburb" required placeholder="e.g. South Dunedin">
+        </div>
+        <div class="form-group">
+          <label for="fjob">Tell us about your job *</label>
+          <textarea id="fjob" name="description" required placeholder="e.g. Concrete driveway, approximately 60m², need removal of old concrete first..."></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Send Quote Request →</button>
+        <div id="form-success">Thanks! We'll be in touch within 24 hours.</div>
+        <div id="form-error">Something went wrong — please call us directly on {{ business.phone }}.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="section" id="contact">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <div class="contact-grid">
+      {% if business.phone %}
+      <div class="contact-item">
+        <div class="contact-icon">📞</div>
+        <div>
+          <strong>Phone</strong>
+          <a href="tel:{{ business.phone }}">{{ business.phone }}</a>
+        </div>
+      </div>
+      {% endif %}
+      {% if business.email %}
+      <div class="contact-item">
+        <div class="contact-icon">✉️</div>
+        <div>
+          <strong>Email</strong>
+          <a href="mailto:{{ business.email }}">{{ business.email }}</a>
+        </div>
+      </div>
+      {% endif %}
+      <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <div>
+          <strong>Location</strong>
+          <span>{{ business.region }}, New Zealand</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <p><strong style="color:var(--white)">{{ business.name }}</strong></p>
+    <p style="margin-top:.4rem">{{ business.trade_label | capitalize }} · {{ business.region }}, NZ</p>
+    {% if business.phone %}<p style="margin-top:.25rem"><a href="tel:{{ business.phone }}">{{ business.phone }}</a></p>{% endif %}
+    <p style="margin-top:1rem">&copy; {{ year }} {{ business.name }}</p>
+    <a class="tt-badge" href="https://tradietools.nz" target="_blank" rel="noopener">
+      🔧 Listed on TradieTools NZ
+    </a>
+  </div>
+</footer>
+
+<script>
+document.getElementById('quoteForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  var btn = this.querySelector('.btn-submit');
+  btn.disabled = true;
+  btn.textContent = 'Sending…';
+
+  var data = {
+    homeowner_name: this.name.value,
+    homeowner_phone: this.phone.value,
+    homeowner_email: this.email.value || '',
+    suburb: this.suburb.value,
+    trade: {{ business.api_trade | tojson }},
+    city: {{ business.region | tojson }},
+    description: this.description.value,
+    source: 'tradie-site'
+  };
+
+  try {
+    var r = await fetch('https://tradietools.optified.nz/api/method/tradietools.api.create_quote_request', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json', 'X-Frappe-CSRF-Token': 'fetch'},
+      body: JSON.stringify(data)
+    });
+    if (r.ok) {
+      document.getElementById('form-success').style.display = 'block';
+      this.reset();
+    } else {
+      throw new Error('non-ok');
+    }
+  } catch(err) {
+    document.getElementById('form-error').style.display = 'block';
+  } finally {
+    btn.disabled = false;
+    btn.textContent = 'Send Quote Request →';
+  }
+});
+</script>
+
+</body>
+</html>
