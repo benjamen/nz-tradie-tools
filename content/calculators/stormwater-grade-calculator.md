@@ -1,6 +1,7 @@
 ---
 title: "NZ Stormwater & Wastewater Pipe Grade Calculator"
-description: "Calculate minimum pipe fall and check compliance with NZ Building Code E1/E2 and AS/NZS 3500.3 drainage standard for stormwater and foul drainage."
+seo_title: "Free Stormwater Pipe Grade Calculator NZ 2026 — E1/E2 Check"
+description: "Free NZ stormwater pipe grade calculator — check minimum fall, pipe slope and E1/E2 Building Code compliance for stormwater and foul drainage. Instant."
 tags: [drainage, stormwater, plumbing, AS/NZS 3500, drainlayers, NZ]
 author: "NZ Tradie Tools"
 related_articles: [new-plumbing-self-certification-nz, new-lead-free-plumbing-standards-nz, drain-grade-calculator]

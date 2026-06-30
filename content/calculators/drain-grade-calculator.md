@@ -1,6 +1,7 @@
 ---
 title: "Drain Grade & Pipe Slope Calculator — NZ"
-description: "Free NZ drain grade calculator — work out pipe gradient, fall and minimum slope for drainage to meet NZ plumbing code, with results for any pipe length."
+seo_title: "Free Drain Grade Calculator NZ 2026 — Pipe Slope & Fall"
+description: "Free NZ drain grade calculator — instant pipe gradient, fall and minimum slope for any pipe length. Meets NZ plumbing code. No signup required."
 tags: [drain, pipe grade, plumbing, calculator, NZ]
 author: "NZ Tradie Tools"
 layout: calculator

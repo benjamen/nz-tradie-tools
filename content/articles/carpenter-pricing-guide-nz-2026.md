@@ -1,6 +1,6 @@
 ---
 title: "NZ Carpenter Pricing Guide 2026 — What Carpenters Charge Per Hour and Per Job"
-seo_title: "NZ Carpenter Pricing Guide 2026"
+seo_title: "NZ Carpenter Hourly Rates 2026 — Pricing Guide & Job Costs"
 description: "Up-to-date NZ carpenter hourly rates, day rates and per-job pricing for 2026 — decks, framing, fit-out, stairs and more."
 date: 2026-05-21
 tags: [carpentry, pricing, NZ, hourly rates, business]

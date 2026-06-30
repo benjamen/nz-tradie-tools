@@ -1,6 +1,7 @@
 ---
 title: "Asphalt Driveway Cost NZ 2026 — Prices, Pros and Cons, Getting Quotes"
-description: "Asphalt driveway cost NZ 2026 — price per m², seal coat, chip seal vs asphalt, how long it lasts, and what to ask contractors. Complete homeowner guide."
+seo_title: "Asphalt Driveway Cost NZ 2026 — Price Per m² + Free Calculator"
+description: "Asphalt driveway cost NZ 2026 — price per m², free cost calculator, chip seal vs asphalt, how long it lasts, and what to ask contractors."
 date: 2026-06-23
 tags: ["asphalt driveway", "driveway", "asphalt", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"
@@ -8,6 +9,8 @@ draft: false
 ---
 
 Asphalt (also called tarmac or bitumen) is one of the most popular driveway surfaces in NZ — cheaper than concrete, smoother than chip seal, and fast to install. Here's what an asphalt driveway costs in NZ in 2026, how it compares to alternatives, and what to watch out for when getting quotes.
+
+**Want an instant price?** Use our [free asphalt driveway cost calculator](/calculators/asphalt-driveway-calculator/) — enter your size and surface type and get an estimate in seconds.
 
 ## Asphalt Driveway Cost Quick Reference
 

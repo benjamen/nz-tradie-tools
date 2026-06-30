@@ -1,6 +1,7 @@
 ---
 title: "NZ Construction Retentions Calculator"
-description: "Calculate retention amounts, release schedules and trust account requirements under the NZ Construction Contracts Act 2002 and 2015 amendments."
+seo_title: "Free NZ Retentions Calculator 2026 — Construction Contracts"
+description: "Free NZ retentions calculator — work out retention amounts, release dates and trust requirements under the Construction Contracts Act. Instant results."
 tags: [retentions, construction contracts, cash flow, subcontractors, NZ]
 author: "NZ Tradie Tools"
 related_articles: [unpaid-invoices-options-nz-tradies, cash-flow-management-nz-tradies, tradie-contract-guide-nz]
