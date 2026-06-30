@@ -1,118 +1,134 @@
 ---
-title: "NZ Vehicle Mileage Claim Calculator"
-description: "Free NZ vehicle mileage claim calculator — work out your IRD mileage reimbursement or tax deduction using the current 2024–25 kilometre rates for tradies."
-tags: [vehicle, mileage, IRD, tax, calculator, NZ]
+title: "IRD Kilometre Rate Calculator — NZ 2025–26"
+seo_title: "Free IRD Kilometre Rate Calculator NZ 2025–26 — Mileage Claim"
+description: "Free NZ IRD kilometre rate calculator for 2025–26. Enter your business km and vehicle type to get your exact Tier 1 / Tier 2 tax deduction. Updated rates."
+tags: [vehicle, mileage, IRD, tax, calculator, NZ, kilometre rates]
 author: "NZ Tradie Tools"
 layout: calculator
+date: 2026-06-30
 calculator_html: |
   <div class="calc-grid">
-    <div class="calc-group" style="grid-column:1/-1">
-      <label>Kilometres driven for business</label>
-      <input type="number" id="km" placeholder="e.g. 15000" oninput="calcMile()">
+    <div class="calc-group">
+      <label>Income year</label>
+      <select id="vy" onchange="calcMile()">
+        <option value="2526" selected>2025–26 (current)</option>
+        <option value="2425">2024–25</option>
+      </select>
+    </div>
+    <div class="calc-group">
+      <label>Vehicle type</label>
+      <select id="vtype" onchange="calcMile()">
+        <option value="petrol" selected>Petrol or diesel</option>
+        <option value="hybrid">Hybrid (petrol-electric)</option>
+        <option value="electric">Electric</option>
+      </select>
     </div>
     <div class="calc-group" style="grid-column:1/-1">
-      <label>IRD mileage rate</label>
-      <select id="rate" onchange="calcMile()">
-        <option value="0.95">$0.95/km — petrol or diesel (up to 14,000 km/yr)</option>
-        <option value="0.35">$0.35/km — petrol or diesel (over 14,000 km/yr)</option>
-        <option value="0.09">$0.09/km — electric vehicle</option>
+      <label>Total business kilometres driven this year</label>
+      <input type="number" id="km" placeholder="e.g. 15000" oninput="calcMile()">
+    </div>
+    <div class="calc-group">
+      <label>Your income tax rate</label>
+      <select id="taxrate" onchange="calcMile()">
+        <option value="0.17">17.5%</option>
+        <option value="0.30" selected>30%</option>
+        <option value="0.33">33%</option>
+        <option value="0.39">39%</option>
       </select>
     </div>
   </div>
   <div class="calc-result" id="mile-result" style="display:none">
-    <h3>Mileage Claim</h3>
-    <div class="result-row"><span>Kilometres claimed</span><span id="m-km"></span></div>
-    <div class="result-row"><span>Rate applied</span><span id="m-rate"></span></div>
-    <div class="result-row"><span>Total deduction / reimbursement</span><span id="m-total"></span></div>
-    <div class="result-row"><span>Tax saved (approx 28% tax rate)</span><span id="m-tax"></span></div>
+    <h3>Mileage Deduction Estimate</h3>
+    <div class="result-row"><span>Income year</span><span id="m-year"></span></div>
+    <div class="result-row"><span>Tier 1 (<span id="m-t1km"></span> km × <span id="m-t1rate"></span>)</span><span id="m-t1total"></span></div>
+    <div class="result-row"><span>Tier 2 (<span id="m-t2km"></span> km × <span id="m-t2rate"></span>)</span><span id="m-t2total"></span></div>
+    <div class="result-row"><span>Total deduction</span><span id="m-total" class="result-highlight"></span></div>
+    <div class="result-row"><span>Tax saved (at <span id="m-taxpct"></span>)</span><span id="m-tax"></span></div>
+    <p id="m-note" style="font-size:.85rem;color:#555;margin-top:.75rem;line-height:1.5"></p>
   </div>
   <script>
-  function fmt(n){return '$'+n.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g,',');}
+  var RATES={
+    '2526':{petrol:[1.04,0.35],hybrid:[0.83,0.20],electric:[0.09,0.09]},
+    '2425':{petrol:[0.95,0.35],hybrid:[0.26,0.19],electric:[0.09,0.09]}
+  };
+  function nzd(n){return '$'+n.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g,',');}
   function calcMile(){
     var km=parseFloat(document.getElementById('km').value);
-    var r=parseFloat(document.getElementById('rate').value);
+    var vy=document.getElementById('vy').value;
+    var vt=document.getElementById('vtype').value;
+    var tr=parseFloat(document.getElementById('taxrate').value);
     var res=document.getElementById('mile-result');
-    if(isNaN(km)||km<=0){res.style.display='none';return;}
-    // Handle two-tier rate for petrol over 14000
-    var total;
-    if(r===0.95&&km>14000){
-      total=14000*0.95+(km-14000)*0.35;
-    } else {
-      total=km*r;
-    }
-    document.getElementById('m-km').textContent=Math.round(km).toLocaleString()+' km';
-    document.getElementById('m-rate').textContent='$'+r.toFixed(2)+'/km';
-    document.getElementById('m-total').textContent=fmt(total);
-    document.getElementById('m-tax').textContent=fmt(total*0.28);
-    res.style.display='';
+    if(!km||km<=0){res.style.display='none';return;}
+    var rates=RATES[vy][vt];
+    var t1r=rates[0], t2r=rates[1];
+    var t1km=Math.min(km,14000), t2km=Math.max(0,km-14000);
+    var t1total=t1km*t1r, t2total=t2km*t2r;
+    var total=t1total+t2total;
+    var yearLabel=vy==='2526'?'2025–26':'2024–25';
+    document.getElementById('m-year').textContent=yearLabel;
+    document.getElementById('m-t1km').textContent=t1km.toLocaleString();
+    document.getElementById('m-t1rate').textContent='$'+t1r.toFixed(2);
+    document.getElementById('m-t1total').textContent=nzd(t1total);
+    document.getElementById('m-t2km').textContent=t2km.toLocaleString();
+    document.getElementById('m-t2rate').textContent='$'+t2r.toFixed(2);
+    document.getElementById('m-t2total').textContent=t2km>0?nzd(t2total):'—';
+    document.getElementById('m-total').textContent=nzd(total);
+    document.getElementById('m-taxpct').textContent=Math.round(tr*100)+'%';
+    document.getElementById('m-tax').textContent=nzd(total*tr);
+    var note=vt==='electric'
+      ? 'Electric vehicles use a flat rate — no Tier 1/Tier 2 split. The rate ($0.09/km) covers electricity costs only; you claim actual depreciation and other costs separately if using the actual-cost method.'
+      : km>14000
+        ? 'You\'ve crossed the 14,000 km Tier 1 threshold. The higher Tier 1 rate covers fixed costs (depreciation, insurance, rego). Tier 2 covers fuel and running costs only. Keep a logbook of every business trip for IRD if audited.'
+        : 'All your business km fall within the Tier 1 rate — you\'re claiming the full cost rate. Keep a record of each business trip: date, km, destination and purpose.';
+    document.getElementById('m-note').textContent=note;
+    res.style.display='block';
   }
   </script>
-related_articles: [vehicle-expenses-nz-tradies-ird]
-faqs:
-  - q: 'What is the IRD mileage rate for NZ in 2025?'
-    a: 'The IRD Tier 1 rate for the first 14,000 km of business travel per year is 73c/km for petrol or diesel vehicles in 2024–25. The Tier 2 rate for km above 14,000 is 21c/km. Electric vehicles use different rates.'
-  - q: 'Can NZ tradies claim vehicle expenses or mileage?'
-    a: 'Yes. You can either: (a) claim actual vehicle expenses (fuel, WOF, registration, insurance, loan interest) multiplied by business use %, or (b) use the IRD mileage rate for business km travelled. Most tradies use actual costs with a logbook.'
-  - q: 'Do I need a logbook for vehicle expenses in NZ?'
-    a: 'To claim actual vehicle expenses on a mixed-use vehicle, you need a logbook for 3 months every 3 years to establish the business vs private use percentage. The mileage rate method requires a record of business trips only.'
-  - q: 'What vehicles qualify for the IRD mileage rate in NZ?'
-    a: 'The IRD kilometre rate method applies to motor vehicles (including utes and vans). It is most suitable for low-km business use. Vehicles used predominantly for work (over 75% business) are often better treated as fully deductible business assets.'
-  - q: 'What are the IRD kilometre rates for 2025–26?'
-    a: 'IRD publishes its kilometre rates each year after the tax year ends. As a guide, the Tier 1 rate has sat around 73c/km for petrol/diesel for the first 14,000 km, with a Tier 2 rate near 21c/km above that. Always confirm the current year''s figures on the IRD website before filing, as rates are updated annually.'
-  - q: 'What records do I need to claim mileage in NZ?'
-    a: 'For the kilometre-rate method, keep a record of each business trip: date, distance, destination and purpose. For the actual-cost method you also need receipts for fuel, servicing, WOF, registration and insurance, plus a logbook to establish your business-use percentage.'
-  - q: 'Can I claim mileage on a ute?'
-    a: 'Yes. A ute used for business is treated like any other vehicle — you can use the kilometre-rate method or claim actual running costs by business-use percentage. If the ute is a genuine work vehicle that''s not available for private use, it may also be exempt from fringe benefit tax.'
-  - q: 'What''s the difference between the mileage and logbook methods?'
-    a: 'The mileage (kilometre-rate) method multiplies your business kilometres by IRD''s set rate — simple, but capped at lower rates above 14,000 km. The logbook (actual-cost) method claims a percentage of all real running costs, which usually suits higher-km or more expensive vehicles.'
-  - q: 'When should I use each method?'
-    a: 'Use the kilometre-rate method if you do relatively low business km and want simple record-keeping. Use the actual-cost/logbook method if you drive a lot for work or run a more expensive vehicle, as the deduction is generally larger. You must apply your chosen method consistently.'
+
+intro: |
+  Calculate your IRD vehicle mileage deduction for the 2025–26 or 2024–25 income year. The calculator automatically applies the Tier 1 / Tier 2 split at 14,000 km and shows your estimated tax saving. Always confirm current rates at ird.govt.nz before filing.
+
+faq:
+  - q: "What are the IRD kilometre rates for 2025–26?"
+    a: "The 2025–26 IRD kilometre rates are: petrol/diesel $1.04/km (Tier 1, first 14,000 km) and $0.35/km (Tier 2, over 14,000 km). Hybrid: $0.83/km and $0.20/km. Electric: $0.09/km (flat rate). These rates apply to business km driven between 1 April 2025 and 31 March 2026."
+  - q: "What is the difference between Tier 1 and Tier 2 IRD mileage rates?"
+    a: "Tier 1 covers the first 14,000 km of business travel per year and includes all vehicle costs — depreciation, insurance, registration and fuel. Tier 2 applies above 14,000 km and covers fuel and running costs only, which is why the rate is lower. If you drive under 14,000 km for business, you only use the Tier 1 rate."
+  - q: "Can NZ tradies claim vehicle expenses or mileage?"
+    a: "Yes. Self-employed tradies can claim either: (a) IRD kilometre rate — multiply business km by the set rate, no receipts needed for fuel; or (b) actual vehicle costs — track all real expenses (fuel, WOF, rego, insurance, depreciation) and claim the business-use percentage. Most low-km tradies use the km rate; high-km tradies often get a larger deduction with actual costs."
+  - q: "Do I need a logbook for the IRD kilometre rate method?"
+    a: "For the kilometre-rate method you just need a record of each business trip: date, km travelled, destination and purpose. You don't need to track fuel receipts. For the actual-cost method you need a 90-day logbook (once every 3 years) to establish your business use percentage."
+  - q: "When is the 2025–26 tax return due?"
+    a: "The 2025–26 income year ended 31 March 2026. If you file your IR3 yourself, it's due 7 July 2026. If you use a tax agent, the deadline extends to 31 March 2027. Ensure your vehicle km are tallied before filing."
+  - q: "Can I use the km rate for a ute or van?"
+    a: "Yes. The IRD kilometre rate applies to any motor vehicle including utes, vans and SUVs. If your ute is a genuine work vehicle not available for private use, it may be fully deductible as a business asset — different from the km-rate method. Talk to your accountant if your vehicle is primarily for work."
+  - q: "What kilometre rate should I use for reimbursing employees?"
+    a: "For reimbursing employees who use their own vehicles, IRD's Tier 1 rate ($1.04/km for 2025–26) is the standard benchmark. Reimbursements up to the Tier 1 rate are tax-free for the employee. Reimbursements above the Tier 1 rate attract PAYE."
+related_articles: [ird-kilometre-rates-2025-26-nz-tradies, vehicle-expenses-nz-tradies-ird]
 ---
 
-## IRD Mileage Rates for NZ Tradies (2024–25)
+## IRD Kilometre Rates 2025–26
 
-If you use your personal vehicle for business, you can claim a tax deduction based on the IRD's kilometre rates.
+The current IRD kilometre rates for the **2025–26 income year** (1 April 2025 – 31 March 2026):
 
-### 2024–25 IRD Kilometre Rates
-
-| Vehicle type | First 14,000 km | Over 14,000 km |
+| Vehicle type | Tier 1 (first 14,000 km) | Tier 2 (over 14,000 km) |
 |---|---|---|
-| Petrol or diesel | **$0.95/km** | **$0.35/km** |
-| Petrol hybrid | $0.26/km | $0.19/km |
-| Electric | $0.09/km | $0.09/km |
+| Petrol or diesel | **$1.04/km** | **$0.35/km** |
+| Hybrid (petrol-electric) | **$0.83/km** | **$0.20/km** |
+| Electric | **$0.09/km** | **$0.09/km** |
 
-*Rates updated August 2024. Always check [ird.govt.nz](https://www.ird.govt.nz) for current rates.*
+*Source: IRD (ird.govt.nz). Verify current rates before filing.*
 
 ### What Counts as Business Travel?
 
 - Travel between job sites
-- Travel from your office or yard to job sites
-- Trips to suppliers to pick up materials
-- Client meetings
+- Travel from your home office or yard to job sites
+- Trips to suppliers, merchants, or hardware stores
+- Client meetings and quotes
 
-**Does NOT include:** travel between home and your regular place of business (commuting).
+**Does NOT count:** Travel between home and a fixed regular workplace (commuting). But if your home is your base of operations, travel from home to client sites **is** deductible.
 
-If you work from home and your home is your base, travel from home to client sites **is** deductible.
+### Which Method Is Better — Km Rate or Actual Costs?
 
-### How to Claim Vehicle Expenses
+Use the **km rate** if your business km are relatively low and you want simple record-keeping.
 
-**Option 1: IRD kilometre rate (this calculator)**
-- Record every business trip (date, km, purpose)
-- Multiply by the IRD rate
-- No GST to claim, but simpler record-keeping
-
-**Option 2: Actual cost method**
-- Track all actual vehicle expenses (fuel, insurance, servicing, registration, depreciation)
-- Calculate the business use percentage
-- Claim that percentage of actual costs
-- More complex but often higher deduction for high-mileage tradies
-
-### Keeping a Mileage Log
-
-IRD can ask for records any time. Keep a logbook with:
-- Date of each trip
-- Start and end odometer readings (or km for the trip)
-- Purpose of the trip
-- Client or job name
-
-Apps like [Tradify](https://www.tradifyhq.com/) include built-in mileage tracking. Alternatively, a simple spreadsheet works fine.
+Use the **actual cost method** if you drive a high-km or expensive vehicle — it usually gives a larger deduction but requires tracking all expenses and a 90-day logbook once every 3 years.

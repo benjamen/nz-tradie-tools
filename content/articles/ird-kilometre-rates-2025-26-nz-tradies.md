@@ -1,7 +1,7 @@
 ---
 title: "IRD Kilometre Rates 2025–26: NZ Tradie Vehicle Expense Claims Guide"
-seo_title: "IRD Kilometre Rates 2025–26 NZ"
-description: "Updated IRD kilometre rates for the 2025-26 income year. NZ tradies: claim more with Tier 1 and Tier 2 rates before your IR3 is due 7 July 2026."
+seo_title: "IRD Kilometre Rates 2025–26 NZ — $1.04/km Tier 1 + Free Calculator"
+description: "IRD kilometre rates for 2025–26: petrol/diesel $1.04/km (Tier 1) and $0.35/km (Tier 2). Free calculator, logbook tips, and IR3 filing guide for NZ tradies."
 date: 2026-05-27
 tags: [tax, IRD, vehicle, deductions, NZ]
 author: "NZ Tradie Tools"
