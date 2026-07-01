@@ -1,6 +1,7 @@
 ---
 title: "Window Replacement Cost NZ 2026 — Prices, Types and Getting Quotes"
 description: "Window replacement cost NZ 2026 — aluminium, uPVC, timber, double glazing. Supply and install prices per window, what affects cost, and how to compare quotes."
+image: \"https://images.unsplash.com/photo-1527352774566-e4916e36c645?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["window replacement", "windows", "double glazing", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

@@ -2,6 +2,7 @@
 title: "Income Protection Insurance for NZ Tradies — Why ACC Isn't Enough"
 seo_title: "Income Protection Insurance for NZ Tradies"
 description: "ACC only covers accidents. If you're a tradie who gets cancer, has a heart attack, or develops a back condition that isn't work-related, you get nothing."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-08
 tags: [insurance, income protection, ACC, self-employed, financial]
 author: "NZ Tradie Tools"

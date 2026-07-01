@@ -1,6 +1,7 @@
 ---
 title: "Heat Pump Servicing Cost NZ 2026 — Clean, Service and Repair Prices"
 description: "Heat pump servicing cost NZ 2026 — annual service prices, filter cleaning, refrigerant top-up, repair costs, and how often to service your heat pump in NZ."
+image: \"https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["heat pump servicing", "heat pump service", "heat pump repair", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

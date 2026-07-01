@@ -1,6 +1,7 @@
 ---
 title: "Roof Painting Cost NZ 2026 — Iron, Tile and Metal Tile Prices"
 description: "Roof painting cost NZ 2026 — iron, concrete tile, and metal tile roof painting prices, preparation required, paint products, and how to find a roof painter near you."
+image: \"https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["roof painting", "roof paint", "roof coating", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

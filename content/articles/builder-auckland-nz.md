@@ -1,6 +1,7 @@
 ---
 title: "Builders Auckland 2026 — Day Rates, Project Costs and How to Find a Good Builder"
 description: "Builders Auckland 2026 — Auckland builder day rates, hourly rates, common project costs, LBP verification, lead times, and how to find a reliable builder in Auckland."
+image: \"https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["builders Auckland", "builder Auckland", "building cost Auckland", "NZ", "2026"]
 author: "NZ Tradie Tools"

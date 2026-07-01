@@ -1,6 +1,7 @@
 ---
 title: "Best Job Management Software for NZ Tradies 2026"
 description: "Honest comparison of Fergus, Tradify, Simpro, ServiceM8 and more — tested by NZ tradies. Prices, features, and which one suits your trade."
+image: \"https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=630&fit=crop&auto=format"
 date: 2026-04-20
 tags: [software, job management, NZ, reviews]
 author: "NZ Tradie Tools"

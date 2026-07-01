@@ -1,6 +1,7 @@
 ---
 title: "Rubbish Removal Cost NZ 2026 — Prices, What's Included and Skip vs Truck"
 description: "Rubbish removal cost NZ 2026 — prices for truck and man rubbish removal, comparison with skip bin hire, hard rubbish disposal, and finding a reliable rubbish removal service in NZ."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["rubbish removal cost NZ", "rubbish removal NZ", "junk removal NZ", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

@@ -1,6 +1,7 @@
 ---
 title: "Landscapers Auckland 2026 — Rates, Common Projects and How to Find a Good Landscaper"
 description: "Landscapers Auckland 2026 — Auckland landscaping rates, garden design and construction costs, retaining walls, irrigation, turf laying, and how to find a reliable Auckland landscaper."
+image: \"https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["landscapers Auckland", "landscaping Auckland", "landscape gardener Auckland", "NZ", "2026"]
 author: "NZ Tradie Tools"

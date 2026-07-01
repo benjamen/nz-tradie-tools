@@ -1,6 +1,7 @@
 ---
 title: "Tradie Insurance Guide NZ 2026 — What You Need"
 description: "Complete NZ tradie insurance guide 2026 — public liability, tool cover, income protection, professional indemnity. What you need, what it costs, who to use."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-27
 tags: ["tradie insurance", "public liability", "income protection", "NZ", "2026"]
 author: "NZ Tradie Tools"

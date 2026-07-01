@@ -1,6 +1,7 @@
 ---
 title: "Garden Design Cost NZ 2026 — Designer Fees, Plans and What's Included"
 description: "Garden design cost NZ 2026 — landscape designer fees, what's included in a garden design, difference between a designer and architect, and how to get good value."
+image: \"https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["garden design cost", "landscape designer NZ", "garden designer NZ", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

@@ -1,6 +1,7 @@
 ---
 title: "Garage Building Cost NZ 2026 — Single, Double and Tandem Prices"
 description: "Garage building cost NZ 2026 — single and double garage prices, steel kit vs custom-built, building consent requirements, and how to find a garage builder near you."
+image: \"https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["garage", "garage building cost", "double garage", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

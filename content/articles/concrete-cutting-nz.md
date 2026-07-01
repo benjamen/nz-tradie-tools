@@ -1,6 +1,7 @@
 ---
 title: "Concrete Cutting Cost NZ 2026 — Diamond Saw, Core Drilling and Demolition Prices"
 description: "Concrete cutting cost NZ 2026 — diamond saw cutting, core drilling, concrete breaking and removal prices, when you need a specialist, and how to find a concrete cutter near you."
+image: \"https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["concrete cutting", "core drilling", "concrete", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

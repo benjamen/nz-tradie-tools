@@ -2,6 +2,7 @@
 title: "Scope Creep and Change Orders: How to Protect Your Margins as an NZ Tradie"
 seo_title: "Scope Creep & Change Orders for NZ Tradies"
 description: "Control scope creep with formal change order processes. Protect your margins using NZ Construction Contracts Act procedures and best practices."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-02
 tags: [pricing, business, change-orders, NZ]
 author: "NZ Tradie Tools"

@@ -2,6 +2,7 @@
 title: "NZ Tradie Digital Marketing 2026: How to Win More Jobs Online"
 seo_title: "NZ Tradie Digital Marketing 2026"
 description: "As NZ construction slows, tradies investing in digital marketing are winning more work. Here's how to get found online and fill your diary in 2026."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-16
 tags: [digital marketing, SEO, social media, NZ, business]
 author: "NZ Tradie Tools"

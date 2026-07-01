@@ -1,6 +1,7 @@
 ---
 title: "Insulation Installation Cost NZ 2026 — Ceiling, Underfloor and Wall Prices"
 description: "Insulation installation cost NZ 2026 — ceiling insulation, underfloor insulation, and wall insulation prices, R-values explained, grants available, and how to choose an installer."
+image: \"https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["insulation cost NZ", "ceiling insulation NZ", "underfloor insulation NZ", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

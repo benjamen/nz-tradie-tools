@@ -1,6 +1,7 @@
 ---
 title: "Home Renovation Budget NZ 2026 — How to Plan Your Costs"
 description: "How to budget a home renovation in NZ — realistic costs per m², what to include, contingency, finance options, and avoiding cost blowouts. 2026 guide."
+image: \"https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-01
 tags: ["renovation budget", "costs", "planning", "homeowner", "NZ", "2026"]
 author: "NZ Tradie Tools"

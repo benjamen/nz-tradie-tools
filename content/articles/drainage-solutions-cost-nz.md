@@ -1,6 +1,7 @@
 ---
 title: "Drainage Solutions Cost NZ 2026 — French Drain, Soakpit and Channel Drain Prices"
 description: "Drainage solutions cost NZ 2026 — French drain, soakpit, channel drain and subsoil drain prices, consent requirements, and how to fix a wet or soggy section in NZ."
+image: \"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["drainage", "French drain", "soakpit", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

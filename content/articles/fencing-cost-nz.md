@@ -1,6 +1,7 @@
 ---
 title: "Fencing Cost NZ 2026 — Timber, Aluminium, Concrete and Colorbond Prices"
 description: "Fencing cost NZ 2026 — timber paling, aluminium slat, concrete, and Colorbond fence prices per metre, Fencing Act obligations, and how to find a fencing contractor."
+image: \"https://images.unsplash.com/photo-1604015641586-6fa03629f976?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["fencing cost NZ", "fence installation NZ", "timber fence NZ", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

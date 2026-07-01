@@ -1,6 +1,7 @@
 ---
 title: "Home Insulation NZ 2026 — What You Need, Costs and Subsidies"
 description: "Home insulation NZ 2026 — ceiling, underfloor and wall insulation options, R-values, Warmer Kiwi Homes subsidy, and costs. Complete homeowner guide."
+image: \"https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-01
 tags: ["insulation", "home insulation", "Warmer Kiwi Homes", "homeowner", "NZ", "2026"]
 author: "NZ Tradie Tools"

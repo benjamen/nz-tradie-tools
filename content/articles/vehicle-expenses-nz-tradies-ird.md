@@ -1,6 +1,7 @@
 ---
 title: "Vehicle Expenses for NZ Tradies: IRD Rules Explained (2025)"
 description: "How to claim vehicle expenses as a NZ self-employed tradie — logbook, mileage rates, actual costs, GST on vehicles, and what IRD expects."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-04-08
 tags: [vehicle, tax, IRD, deductions, NZ]
 author: "NZ Tradie Tools"

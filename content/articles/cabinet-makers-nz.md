@@ -1,6 +1,7 @@
 ---
 title: "Cabinet Makers NZ 2026 — Costs, Custom vs Flatpack, Christchurch and Tauranga"
 description: "Cabinet makers NZ 2026 — custom kitchen cabinet costs, how to find cabinet makers in Christchurch and Tauranga, custom vs flatpack comparison, and what to expect."
+image: \"https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["cabinet makers", "cabinets", "kitchen cabinets", "joinery", "costs", "NZ", "2026", "Christchurch", "Tauranga"]
 author: "NZ Tradie Tools"

@@ -1,6 +1,7 @@
 ---
 title: "Buy, Lease or Hire? NZ Tradie Equipment Finance Guide 2026"
 description: "Should NZ tradies buy, lease or hire equipment in 2026? Compare costs, tax treatment and cash flow impact to make the right call for your business."
+image: \"https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-20
 tags: [equipment, finance, tax, business, NZ]
 author: "NZ Tradie Tools"

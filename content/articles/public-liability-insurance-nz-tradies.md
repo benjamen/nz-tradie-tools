@@ -2,6 +2,7 @@
 title: "Public Liability Insurance for NZ Tradies — What It Covers and What It Doesn't"
 seo_title: "Public Liability Insurance for NZ Tradies"
 description: "Most commercial clients require it, and one uninsured claim could cost you everything. Here's what public liability insurance covers for NZ tradies."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-08
 tags: [insurance, public liability, risk, sole trader, compliance]
 author: "NZ Tradie Tools"

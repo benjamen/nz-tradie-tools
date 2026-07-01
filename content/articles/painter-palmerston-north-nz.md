@@ -1,6 +1,7 @@
 ---
 title: "Painters Palmerston North & Manawatū 2026 — Rates and Local Market"
 description: "Painters Palmerston North 2026 — Manawatū painter rates, exterior painting costs, student rental context, and how to find a reliable painter in Palmerston North and the Manawatū region."
+image: \"https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["painters Palmerston North", "painter Palmerston North", "painting cost Manawatu", "NZ", "2026"]
 author: "NZ Tradie Tools"

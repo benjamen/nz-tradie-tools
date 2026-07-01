@@ -2,6 +2,7 @@
 title: "How to Write a Tradie Contract in NZ — And Why You Need One for Every Job"
 seo_title: "How to Write a Tradie Contract in NZ"
 description: "A verbal agreement isn't worth the air it was said on when a dispute hits. Here's what makes a valid NZ tradie contract, what to include."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-08
 tags: [contracts, legal, CCA, payment, disputes]
 author: "NZ Tradie Tools"

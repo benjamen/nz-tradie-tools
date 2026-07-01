@@ -2,6 +2,7 @@
 title: "Retention Money in NZ Construction: Your Rights and How to Get It Back"
 seo_title: "Retention Money in NZ Construction"
 description: "Retentions can tie up thousands of dollars of your money for months. Here's how NZ construction retentions work, what the law requires."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-10
 tags: [retentions, cash flow, construction law, contracts, NZ]
 author: "NZ Tradie Tools"

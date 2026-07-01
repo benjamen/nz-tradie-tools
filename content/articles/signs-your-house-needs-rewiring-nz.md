@@ -1,6 +1,7 @@
 ---
 title: "10 Signs Your House Needs Rewiring NZ — When to Call an Electrician"
 description: "Warning signs your NZ home needs rewiring — flickering lights, tripping breakers, warm outlets, burning smell. What to do and how much rewiring costs in NZ."
+image: \"https://images.unsplash.com/photo-1621905252472-943afaa20e20?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-22
 tags: ["rewiring", "electrical", "homeowner", "safety", "NZ", "2026"]
 author: "NZ Tradie Tools"

@@ -2,6 +2,7 @@
 title: "Job Costing for NZ Tradies: How to Track Real Profit on Every Job"
 seo_title: "Job Costing for NZ Tradies"
 description: "Learn how NZ tradies can use job costing to track actual profit per job, spot budget blowouts early, and price future work more accurately."
+image: \"https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-16
 tags: [job costing, pricing, profit, business, NZ]
 author: "NZ Tradie Tools"

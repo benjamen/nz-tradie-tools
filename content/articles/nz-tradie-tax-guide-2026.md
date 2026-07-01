@@ -1,6 +1,7 @@
 ---
 title: "NZ Tradie Tax Guide 2026 — Complete Overview"
 description: "Everything self-employed New Zealand tradies need to know about tax in 2026. Income tax, GST, allowable deductions, provisional tax."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-29
 tags: [tax, EOFY, income-tax, GST, deductions, provisional-tax, NZ]
 author: "NZ Tradie Tools"

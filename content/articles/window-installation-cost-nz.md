@@ -1,6 +1,7 @@
 ---
 title: "Window Installation Cost NZ 2026 — Prices, Types and What to Expect"
 description: "Window installation cost NZ 2026 — aluminium vs uPVC vs timber, double glazing prices, labour costs, building consent rules, and how to compare installer quotes."
+image: \"https://images.unsplash.com/photo-1527352774566-e4916e36c645?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["window installation", "windows", "double glazing", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

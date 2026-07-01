@@ -2,6 +2,7 @@
 title: "Red Flags When Getting a Tradie Quote in NZ — What to Watch For"
 seo_title: "Red Flags When Getting a Tradie Quote in NZ"
 description: Know the red flags when getting a tradie quote in NZ. Signs of an unreliable contractor, what poor quotes look like, and how to protect yourself.
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-06
 tags: [hiring, quotes, homeowners, red flags, NZ]
 author: "NZ Tradie Tools"

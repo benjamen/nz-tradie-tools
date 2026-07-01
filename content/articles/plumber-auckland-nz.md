@@ -1,6 +1,7 @@
 ---
 title: "Plumbers Auckland 2026 — Call-Out Rates, Hourly Rates and What to Expect"
 description: "Plumbers Auckland 2026 — Auckland plumber hourly rates, call-out fees, common job costs, how to find a reliable Auckland plumber, and what questions to ask before hiring."
+image: \"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["plumbers Auckland", "plumber Auckland", "plumbing cost Auckland", "NZ", "2026"]
 author: "NZ Tradie Tools"

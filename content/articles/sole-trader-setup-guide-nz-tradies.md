@@ -1,6 +1,7 @@
 ---
 title: "How to Set Up as a Sole Trader in NZ: The Tradie's Guide"
 description: "Everything a New Zealand tradie needs to know to start trading legally as a sole trader — IRD registration, GST, bank accounts, insurance, and tools."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-04-04
 tags: [sole trader, setup, IRD, GST, NZ, business]
 author: "NZ Tradie Tools"

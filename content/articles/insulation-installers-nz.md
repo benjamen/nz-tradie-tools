@@ -1,6 +1,7 @@
 ---
 title: "Insulation Installers NZ 2026 — Costs, Types and How to Find One Near You"
 description: "Insulation installers NZ 2026 — ceiling, underfloor and wall insulation costs, R-values, Warmer Kiwi Homes subsidy, and how to find certified insulation installers near you."
+image: \"https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["insulation", "insulation installers", "ceiling insulation", "underfloor insulation", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

@@ -1,6 +1,7 @@
 ---
 title: "Landscapers Wellington 2026 — Rates, Steep Sections and Finding a Good Wellington Landscaper"
 description: "Landscapers Wellington 2026 — Wellington landscaper rates, retaining wall costs, steep section challenges, wind-tolerant planting, and how to find a reliable landscaper in Wellington."
+image: \"https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["landscapers Wellington", "landscaper Wellington", "landscaping cost Wellington", "NZ", "2026"]
 author: "NZ Tradie Tools"

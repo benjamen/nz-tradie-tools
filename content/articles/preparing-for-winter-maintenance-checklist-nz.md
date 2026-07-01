@@ -1,6 +1,7 @@
 ---
 title: "Preparing for Winter: A Maintenance Checklist for NZ Tradies"
 description: "As the temperature drops in NZ, help your clients prepare their properties with this essential winter maintenance checklist."
+image: \"https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=630&fit=crop&auto=format"
 date: 2026-04-25
 tags: [Winter, Maintenance, NZ, Construction]
 author: "NZ Tradie Tools"

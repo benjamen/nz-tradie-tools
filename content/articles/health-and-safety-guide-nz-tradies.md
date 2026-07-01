@@ -2,6 +2,7 @@
 title: "NZ Tradie Health & Safety Guide 2026 — HSWA Obligations for Small Trade Businesses"
 seo_title: "NZ Tradie Health & Safety Guide 2026"
 description: "A practical guide to Health & Safety at Work Act 2015 obligations for NZ tradies — PCBU duties, SWMS, incident reporting."
+image: \"https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=630&fit=crop&auto=format"
 date: 2026-04-18
 author: "NZ Tradie Tools"
 tags: [health and safety, HSWA, NZ, tradie, PCBU, SWMS, WorkSafe]

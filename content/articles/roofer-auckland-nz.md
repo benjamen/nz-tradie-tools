@@ -1,6 +1,7 @@
 ---
 title: "Roofers Auckland 2026 — Rates, Common Jobs and How to Find a Good Roofer"
 description: "Roofers Auckland 2026 — Auckland roofing rates, roof repair and replacement costs, how to find a licensed roofer, and what to watch out for in the Auckland roofing market."
+image: \"https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["roofers Auckland", "roofer Auckland", "roofing cost Auckland", "NZ", "2026"]
 author: "NZ Tradie Tools"

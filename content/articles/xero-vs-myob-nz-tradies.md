@@ -1,6 +1,7 @@
 ---
 title: "Xero vs MYOB for NZ Tradies: Which is Better in 2026?"
 description: "An honest comparison of Xero and MYOB for New Zealand self-employed tradies — pricing, features, GST filing, bank feeds."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-04-14
 tags: [Xero, MYOB, accounting, software, NZ]
 author: "NZ Tradie Tools"

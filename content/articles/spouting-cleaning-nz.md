@@ -1,6 +1,7 @@
 ---
 title: "Spouting Cleaning Cost NZ 2026 — Gutter Clean Prices and What's Involved"
 description: "Spouting cleaning cost NZ 2026 — gutter and downpipe cleaning prices, how often to clean, DIY vs professional, and how to find a spouting cleaner near you."
+image: \"https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["spouting cleaning", "gutter cleaning", "spouting", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

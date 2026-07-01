@@ -1,6 +1,7 @@
 ---
 title: "Staircase Renovation Cost NZ 2026 — Timber, Carpet, Handrails and Balustrades"
 description: "Staircase renovation cost NZ 2026 — timber tread installation, carpet removal, new handrails, glass balustrades, and full staircase replacement costs for NZ homes."
+image: \"https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["staircase renovation cost", "staircase NZ", "stair renovation NZ", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

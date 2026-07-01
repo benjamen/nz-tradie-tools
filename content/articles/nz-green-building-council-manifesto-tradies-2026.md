@@ -2,6 +2,7 @@
 title: "NZGBC 2026 Manifesto: Energy Efficiency Work Opportunities for NZ Tradies"
 seo_title: "NZGBC 2026 Manifesto"
 description: "The NZ Green Building Council's 2026 Manifesto signals a wave of energy efficiency work. Here's which trades will benefit and how to prepare."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-14
 tags: [energy efficiency, insulation, heat pumps, NZGBC, NZ]
 author: "NZ Tradie Tools"

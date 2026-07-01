@@ -1,6 +1,7 @@
 ---
 title: "Exterior House Painting Cost NZ 2026 — Prices, Preparation and What to Expect"
 description: "Exterior house painting cost NZ 2026 — price per m², weatherboard vs plaster, preparation costs, how many coats, and how to find and compare house painters near you."
+image: \"https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["house painting", "exterior painting", "painters", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

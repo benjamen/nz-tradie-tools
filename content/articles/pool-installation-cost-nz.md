@@ -1,6 +1,7 @@
 ---
 title: "Pool Installation Cost NZ 2026 — Inground, Fibreglass and Plunge Pool Prices"
 description: "Pool installation cost NZ 2026 — inground concrete, fibreglass, plunge pool and above-ground pool prices, fencing requirements, ongoing costs, and council rules."
+image: \"https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["pool", "swimming pool", "pool installation", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

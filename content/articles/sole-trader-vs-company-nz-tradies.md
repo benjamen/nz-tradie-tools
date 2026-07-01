@@ -2,6 +2,7 @@
 title: "Sole Trader vs Company: Which Structure Saves the Most Tax for NZ Tradies?"
 seo_title: "Sole Trader vs Company NZ"
 description: "Sole trader vs company for NZ tradies — the income crossover point where a company pays less tax, the trade-offs, and how to choose the right structure."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-08
 tags: [tax, business structure, sole trader, company, IRD]
 author: "NZ Tradie Tools"

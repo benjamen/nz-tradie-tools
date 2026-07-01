@@ -1,6 +1,7 @@
 ---
 title: "Security Alarm Installers NZ 2026 — Costs, Systems and Finding One Near You"
 description: "Security alarm installers NZ 2026 — alarm system costs, monitored vs unmonitored, what to look for in an installer, and how to find certified security alarm companies near you."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["security alarm", "alarm system", "security installers", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

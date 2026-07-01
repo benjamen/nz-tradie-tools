@@ -2,6 +2,7 @@
 title: "GST Guide for NZ Tradies 2026 — Registering, Filing & Avoiding IRD Mistakes"
 seo_title: "GST Guide for NZ Tradies 2026"
 description: "Everything NZ tradies need to know about GST in 2026 — the $60k registration threshold, filing frequency, claiming back GST, and how to avoid costly IRD mistakes."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-13
 slug: gst-guide-nz-tradies-2026
 tags: [GST, tax, IRD, sole-trader, NZ]

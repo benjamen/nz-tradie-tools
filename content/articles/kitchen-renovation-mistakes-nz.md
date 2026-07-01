@@ -1,6 +1,7 @@
 ---
 title: "10 Kitchen Renovation Mistakes NZ Homeowners Make (And How to Avoid Them)"
 description: "Biggest kitchen renovation mistakes in NZ — ordering joinery too late, ignoring the work triangle, skipping permits, cheap benchtops. How to avoid each one in 2026."
+image: \"https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-22
 tags: ["kitchen renovation", "mistakes", "homeowner", "planning", "NZ", "2026"]
 author: "NZ Tradie Tools"

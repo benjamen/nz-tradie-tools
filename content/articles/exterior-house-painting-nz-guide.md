@@ -1,6 +1,7 @@
 ---
 title: "Exterior House Painting NZ 2026 — Costs and How to Prep Properly"
 description: "Exterior house painting NZ — prep, paint selection, weatherboard vs plaster vs fibrous cement. DIY vs hire a painter, costs per m², and how to get quotes."
+image: \"https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-01
 tags: ["exterior painting", "painting", "homeowner", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

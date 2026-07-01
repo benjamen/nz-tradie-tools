@@ -1,6 +1,7 @@
 ---
 title: "Skip Bin Hire Cost NZ 2026 — Prices, Sizes and What You Can Put In"
 description: "Skip bin hire cost NZ 2026 — 2m³ to 9m³ skip prices, mini skip costs, what can and can't go in a skip, hire period, and how to find a skip bin company near you."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["skip bin hire", "skip bin", "rubbish removal", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

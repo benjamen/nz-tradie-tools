@@ -2,6 +2,7 @@
 title: "How to Calculate Your Overhead Rate as a NZ Tradie (2026 Guide)"
 seo_title: "How to Calculate Your Overhead Rate as a NZ Tradie"
 description: "Learn how to calculate your overhead rate as a NZ tradie, recover costs in every quote, and protect your profit margin in 2026."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-17
 tags: [business, pricing, overhead, quoting, NZ]
 author: "NZ Tradie Tools"

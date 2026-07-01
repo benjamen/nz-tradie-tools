@@ -2,6 +2,7 @@
 title: "What the New NZ-India Trade Agreement Means for Your Construction Business"
 seo_title: "What the New NZ-India Trade Agreement Means for Your…"
 description: "How the historic free trade agreement between New Zealand and India might affect material costs and opportunities for NZ tradies."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-04-28
 tags: [Trade, Economics, NZ, Construction]
 author: "NZ Tradie Tools"

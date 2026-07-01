@@ -1,6 +1,7 @@
 ---
 title: "Fence Painting Cost NZ 2026 — Timber, Paling and Picket Fence Prices"
 description: "Fence painting cost NZ 2026 — timber fence painting and staining prices per metre, preparation costs, product recommendations, DIY vs professional, and how often to repaint."
+image: \"https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["fence painting", "fence staining", "timber fence", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

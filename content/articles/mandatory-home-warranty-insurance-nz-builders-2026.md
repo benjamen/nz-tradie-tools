@@ -2,6 +2,7 @@
 title: "Mandatory Home Warranty Insurance for NZ Builders: What's Coming in 2026"
 seo_title: "Mandatory Home Warranty Insurance NZ Builders 2026"
 description: "The NZ Government is introducing compulsory home warranty insurance for new builds and large renos. Here's what NZ builders and tradies need to know."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-24
 tags: [insurance, compliance, LBP, MBIE, regulation, NZ]
 author: "NZ Tradie Tools"

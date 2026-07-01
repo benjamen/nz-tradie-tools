@@ -1,6 +1,7 @@
 ---
 title: "Hot Water Cylinder Cost NZ 2026 — Replacement Prices and What to Expect"
 description: "Hot water cylinder replacement cost NZ 2026 — electric vs heat pump cylinder prices, sizing, when to replace, and how to find a licensed plumber for hot water work."
+image: \"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["hot water cylinder", "hot water", "hot water system", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

@@ -2,6 +2,7 @@
 title: "Understanding the New NZ Granny Flat Rules: A Guide for Builders"
 seo_title: "Understanding the New NZ Granny Flat Rules"
 description: "Everything NZ builders need to know about the expanded granny flat building consent exemptions introduced in April 2026."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-04-29
 tags: [Regulations, Residential, NZ, Construction]
 author: "NZ Tradie Tools"

@@ -1,6 +1,7 @@
 ---
 title: "Builders Christchurch 2026 — Rates, EQC Context and How to Find a Good Builder"
 description: "Builders Christchurch 2026 — Canterbury builder day rates, project costs, post-earthquake repair context, LBP verification, and how to find a reliable Christchurch builder."
+image: \"https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["builders Christchurch", "builder Christchurch", "building cost Christchurch", "NZ", "2026"]
 author: "NZ Tradie Tools"

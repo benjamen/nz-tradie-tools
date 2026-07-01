@@ -1,6 +1,7 @@
 ---
 title: "How to Become a Licensed Electrician NZ"
 description: "How to become a licensed electrician in NZ — apprenticeship, EWRB registration, certifying electrician licence, costs, and timeframes. 2026 guide."
+image: \"https://images.unsplash.com/photo-1621905252472-943afaa20e20?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-14
 tags: ["licensed electrician", "apprenticeship", "EWRB", "career", "NZ", "2026"]
 author: "NZ Tradie Tools"

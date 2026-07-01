@@ -1,6 +1,7 @@
 ---
 title: "Waterblasting Cost NZ 2026 — House, Driveway and Deck Prices"
 description: "Waterblasting cost NZ 2026 — house exterior, driveway, deck and roof cleaning prices. What affects cost, DIY vs professional, and how to find waterblasters near you."
+image: \"https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["waterblasting", "pressure washing", "cleaning", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

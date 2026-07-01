@@ -1,6 +1,7 @@
 ---
 title: "Roof Replacement Cost NZ 2026 — Iron, Tile and Metal Tile Prices"
 description: "Roof replacement cost NZ 2026 — long-run iron, concrete tile, and metal tile prices per m², what's included, when to replace vs repair, and how to find a NZ roofer."
+image: \"https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["roof replacement", "roofing", "reroofing", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

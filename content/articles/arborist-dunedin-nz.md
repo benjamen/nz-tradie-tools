@@ -1,6 +1,7 @@
 ---
 title: "Arborist Dunedin NZ 2026 — Tree Services, Costs and Finding Certified Arborists"
 description: "Arborist Dunedin 2026 — tree removal, pruning, stump grinding and trimming costs in Dunedin. How to find a certified NZ arborist, DCC tree rules, and getting quotes."
+image: \"https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["arborist", "Dunedin", "tree removal", "tree pruning", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

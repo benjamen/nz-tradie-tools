@@ -1,6 +1,7 @@
 ---
 title: "Asbestos in NZ Homes — What Homeowners Need to Know"
 description: "Asbestos in NZ homes — where to look, testing options, what you can legally do yourself, and when to call a licensed removalist. 2026 homeowner guide."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-01
 tags: ["asbestos", "homeowner", "DIY", "safety", "NZ", "2026"]
 author: "NZ Tradie Tools"

@@ -1,6 +1,7 @@
 ---
 title: "Painters Christchurch 2026 — Rates, Rebuild Context and How to Find Good Painters"
 description: "Painters Christchurch 2026 — Canterbury painter rates, interior and exterior costs, post-earthquake rebuild context, insulation and painting, and how to find a reliable Christchurch painter."
+image: \"https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["painters Christchurch", "painter Christchurch", "painting cost Christchurch", "NZ", "2026"]
 author: "NZ Tradie Tools"

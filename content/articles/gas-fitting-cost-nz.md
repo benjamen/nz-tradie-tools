@@ -1,6 +1,7 @@
 ---
 title: "Gas Fitting Cost NZ 2026 — Call-Out Fees, Appliance Installation and Piping"
 description: "Gas fitting cost NZ 2026 — gasfitter hourly rates, call-out fees, gas hob and hot water installation costs, LPG vs natural gas, and why all gas work needs a licensed gasfitter."
+image: \"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["gas fitting cost NZ", "gasfitter NZ", "gas installation NZ", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

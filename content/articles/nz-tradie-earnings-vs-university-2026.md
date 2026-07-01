@@ -2,6 +2,7 @@
 title: "Why NZ Tradies Out-Earn University Graduates in 2026 — Debt-Free"
 seo_title: "Why NZ Tradies Out-Earn University Graduates in 2026"
 description: "A new NZ Initiative report confirms tradies earn as much as university graduates in 2026 — and finish their training without student debt."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-17
 tags: [careers, earnings, apprenticeships, industry news, NZ]
 author: "NZ Tradie Tools"

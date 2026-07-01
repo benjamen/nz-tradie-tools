@@ -1,6 +1,7 @@
 ---
 title: "Painters Queenstown & Wanaka 2026 — Rates, Alpine Conditions and Local Market"
 description: "Painters Queenstown 2026 — Queenstown and Wanaka painter rates, exterior painting costs for alpine conditions, ski season access considerations, and finding a reliable painter in the Lakes district."
+image: \"https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["painters Queenstown", "painter Queenstown", "painting cost Queenstown", "Wanaka painter", "NZ", "2026"]
 author: "NZ Tradie Tools"

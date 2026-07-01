@@ -1,6 +1,7 @@
 ---
 title: "The Case for Energy Efficiency: Opportunities for NZ Tradies"
 description: "With energy prices rising, homeowners are looking for ways to cut bills. Here's how to position your tradie business to capture this growing market."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-14
 tags: [Energy, Sustainability, NZ, Construction, Business]
 author: "NZ Tradie Tools"

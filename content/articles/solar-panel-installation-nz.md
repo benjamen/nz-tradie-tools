@@ -1,6 +1,7 @@
 ---
 title: "Solar Panel Installation NZ 2026 — Costs, Payback, Hamilton and Beyond"
 description: "Solar panel installation NZ 2026 — system costs, payback periods, best installers in Hamilton and across NZ. Battery storage, net metering, and getting quotes."
+image: \"https://images.unsplash.com/photo-1621905252472-943afaa20e20?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["solar panels", "solar installation", "solar energy", "costs", "NZ", "2026", "Hamilton"]
 author: "NZ Tradie Tools"

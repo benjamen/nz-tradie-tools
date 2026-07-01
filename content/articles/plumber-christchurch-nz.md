@@ -1,6 +1,7 @@
 ---
 title: "Plumbers Christchurch 2026 — Rates, EQ Repair Context and How to Find a Good Plumber"
 description: "Plumbers Christchurch 2026 — Canterbury plumber rates, call-out fees, earthquake repair context, hot water costs, and how to find a reliable plumber in Christchurch."
+image: \"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["plumbers Christchurch", "plumber Christchurch", "plumbing cost Christchurch", "NZ", "2026"]
 author: "NZ Tradie Tools"

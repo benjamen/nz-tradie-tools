@@ -1,6 +1,7 @@
 ---
 title: "Home Renovation Checklist NZ — The Complete 50-Point Checklist for 2026"
 description: "Complete NZ home renovation checklist — from pre-purchase due diligence through to code compliance certificate. 50 checkpoints to keep your renovation on track."
+image: \"https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-22
 tags: ["renovation checklist", "homeowner", "planning", "NZ", "2026"]
 author: "NZ Tradie Tools"

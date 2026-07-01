@@ -1,6 +1,7 @@
 ---
 title: "Tilers Christchurch 2026 — Rates, EQ Tile Repair Context and Finding a Canterbury Tiler"
 description: "Tilers Christchurch 2026 — Canterbury tiler rates, bathroom and floor tiling costs, post-earthquake tile repair context, and how to find a reliable tiler in Christchurch."
+image: \"https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["tilers Christchurch", "tiler Christchurch", "tiling cost Christchurch", "NZ", "2026"]
 author: "NZ Tradie Tools"

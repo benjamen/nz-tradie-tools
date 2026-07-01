@@ -2,6 +2,7 @@
 title: "Trade Qualifications NZ 2026 — What You Actually Need by Trade"
 seo_title: "Trade Qualifications NZ 2026 — What You Need"
 description: "A plain-English guide to NZ trade qualifications in 2026 — NZQA levels, New Zealand Certificates, apprenticeships and licensing requirements by trade."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-13
 slug: trade-qualifications-nz-2026
 tags: [apprenticeship, qualifications, licensing, careers, NZ]

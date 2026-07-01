@@ -1,6 +1,7 @@
 ---
 title: "How to Get Your LBP Licence in New Zealand (2026 Guide)"
 description: "How to get an LBP licence in NZ — eligibility, application steps, costs, processing times, skills maintenance, and what happens if your licence lapses."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-04-12
 updated: 2026-06-26
 tags: [LBP, licensing, builders, compliance, NZ, 2026]

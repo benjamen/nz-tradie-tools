@@ -1,6 +1,7 @@
 ---
 title: "Plumbers Wellington 2026 — Rates, What to Expect and Local Market"
 description: "Plumbers Wellington 2026 — Wellington plumber rates, call-out fees, common job costs, PGDB verification, and how to find a reliable plumber in the Wellington region."
+image: \"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["plumbers Wellington", "plumber Wellington", "plumbing cost Wellington", "NZ", "2026"]
 author: "NZ Tradie Tools"

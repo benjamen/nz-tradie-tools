@@ -2,6 +2,7 @@
 title: "Fastcrew vs Tradify vs Fergus: Which NZ Tradie App Is Right for Your Business?"
 seo_title: "Fastcrew vs Tradify vs Fergus NZ"
 description: "An honest comparison of Fastcrew, Tradify, and Fergus for NZ tradies — pricing, features, ease of use, and NZ compliance support."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-04-19
 author: "NZ Tradie Tools"
 tags: [Fastcrew, Tradify, Fergus, tradie software, NZ, job management, comparison]

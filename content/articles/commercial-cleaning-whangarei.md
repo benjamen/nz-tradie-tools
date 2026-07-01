@@ -1,6 +1,7 @@
 ---
 title: "Commercial Cleaning Whangarei 2026 — Local Prices, Contractors and Contracts"
 description: "Commercial cleaning Whangarei 2026 — local office cleaning costs, how to find commercial cleaners in Whangarei, contract terms, and what to look for in a cleaning company."
+image: \"https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["commercial cleaning", "Whangarei", "office cleaning", "cleaning", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

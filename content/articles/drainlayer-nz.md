@@ -1,6 +1,7 @@
 ---
 title: "Drainlayer NZ 2026 — What They Do, Costs, and Finding a Licensed Drainlayer"
 description: "Drainlayer NZ 2026 — what drainlayers do, cost of drainlaying work, when you must use a registered drainlayer under the PGDB, and how to find one near you."
+image: \"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["drainlayer", "drainlaying", "drainage", "PGDB", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

@@ -2,6 +2,7 @@
 title: "NZ Silica Dust Regulations 2026: What Every Tradie Needs to Know"
 seo_title: "NZ Silica Dust Regulations 2026"
 description: "WorkSafe NZ is cracking down on silica dust exposure. Here's what NZ tradies must do to stay compliant and protect their workers in 2026."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-23
 tags: [WorkSafe, health and safety, silica dust, compliance, NZ]
 author: "NZ Tradie Tools"

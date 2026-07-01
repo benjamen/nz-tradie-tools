@@ -1,6 +1,7 @@
 ---
 title: "Home Security Installation Cost NZ 2026 — Alarm, Camera and Monitoring Prices"
 description: "Home security installation cost NZ 2026 — alarm system prices, security camera costs, monitored vs unmonitored options, and how to find a licensed security installer in NZ."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["home security", "security alarm", "security cameras", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

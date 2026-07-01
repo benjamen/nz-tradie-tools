@@ -1,6 +1,7 @@
 ---
 title: "The 2026 NZGBC Manifesto: What It Means for NZ Tradies"
 description: "The New Zealand Green Building Council's new 2026 manifesto pushes for energy-efficient homes. Discover the business opportunities for NZ tradies."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-18
 tags: [Energy, Sustainability, NZ, Construction, Business]
 author: "NZ Tradie Tools"

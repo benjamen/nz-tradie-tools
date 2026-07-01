@@ -2,6 +2,7 @@
 title: "Roof Replacement Cost NZ 2026: Full Price Guide"
 seo_title: "Roof Replacement Cost NZ 2026"
 description: "How much does a new roof cost in NZ? 2026 roof replacement costs by house size and material, consent rules, labour factors and how to get quotes."
+image: \"https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-18
 tags: ["roof replacement", "reroofing", "cost", "NZ", "2026", "home renovation"]
 author: "NZ Tradie Tools"

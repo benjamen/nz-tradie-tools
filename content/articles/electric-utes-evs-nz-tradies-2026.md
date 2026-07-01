@@ -1,6 +1,7 @@
 ---
 title: "Electric Utes Are Here: What NZ Tradies Need to Know in 2026"
 description: "Electric utes have arrived in NZ — discover real running cost savings, the new 2026 FBT rates for EVs, and whether an electric ute suits your trade business."
+image: \"https://images.unsplash.com/photo-1621905252472-943afaa20e20?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-29
 tags: [vehicles, EV, tax, tools, NZ]
 author: "NZ Tradie Tools"

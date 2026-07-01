@@ -1,6 +1,7 @@
 ---
 title: "AI Tools for NZ Tradies in 2026: Work Smarter This Winter"
 description: "A practical guide to AI-powered quoting, job costing, and admin tools that can save NZ tradies hours every week — and what to ignore."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-20
 tags: [AI, tools, technology, business, NZ]
 author: "NZ Tradie Tools"

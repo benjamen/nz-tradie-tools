@@ -2,6 +2,7 @@
 title: "IRD Provisional Tax Planning for NZ Tradies — June 2026 Guide"
 seo_title: "IRD Provisional Tax for NZ Tradies 2026"
 description: "Plan your IRD provisional tax payments correctly as a NZ tradie. Avoid penalties and manage cash flow with our 2026 guide."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-06
 tags: [IRD, tax, provisional-tax, compliance, business, NZ]
 author: "NZ Tradie Tools"

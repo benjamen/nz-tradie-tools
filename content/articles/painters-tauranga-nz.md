@@ -1,6 +1,7 @@
 ---
 title: "Painters Tauranga 2026 — Rates, Salt Air Considerations and Local Market"
 description: "Painters Tauranga 2026 — Bay of Plenty painter rates, exterior painting costs in salt air, how to find a reliable Tauranga painter, and what questions to ask."
+image: \"https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["painters Tauranga", "painter Tauranga", "painting cost Tauranga", "NZ", "2026"]
 author: "NZ Tradie Tools"

@@ -2,6 +2,7 @@
 title: "Going Self-Employed as a NZ Tradie — Your Complete Start-Up Checklist"
 seo_title: "Going Self-Employed as a NZ Tradie"
 description: "Everything you need to do when going self-employed as a tradie in New Zealand — IRD registration, GST, ACC, insurance, contracts."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-08
 tags: [self-employed, sole trader, IRD, GST, ACC, new business, NZ]
 author: "NZ Tradie Tools"

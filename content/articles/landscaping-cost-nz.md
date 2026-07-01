@@ -1,6 +1,7 @@
 ---
 title: "Landscaping Cost NZ 2026 — Garden Design, Lawns, Paving and What to Expect"
 description: "Landscaping cost NZ 2026 — garden design, lawn installation, paving, planting and maintenance prices. How to find and compare landscapers near you."
+image: \"https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["landscaping", "garden", "lawn", "paving", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

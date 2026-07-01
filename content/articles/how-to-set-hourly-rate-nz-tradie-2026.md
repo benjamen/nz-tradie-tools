@@ -2,6 +2,7 @@
 title: "How to Set Your Hourly Rate as a Self-Employed NZ Tradie in 2026"
 seo_title: "How to Set Your Hourly Rate as a Self-Employed NZ Tradie"
 description: "A step-by-step guide to calculating the right charge-out rate for NZ tradies — covering overheads, tax, and profit margins with real NZD examples."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-09
 tags: [pricing, business, sole-trader, NZ]
 author: "NZ Tradie Tools"

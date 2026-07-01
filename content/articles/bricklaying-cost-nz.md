@@ -1,6 +1,7 @@
 ---
 title: "Bricklaying Cost NZ 2026 — Garden Wall, Retaining Wall and House Brick Prices"
 description: "Bricklaying cost NZ 2026 — brick wall, garden wall, retaining wall and brick veneer prices per m², what bricklayers charge in NZ, and how to get accurate quotes."
+image: \"https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["bricklaying", "brick wall", "bricklayer", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

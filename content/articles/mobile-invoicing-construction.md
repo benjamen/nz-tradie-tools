@@ -1,6 +1,7 @@
 ---
 title: "Mobile Invoicing for NZ Construction Trades"
 description: "How NZ construction tradies can invoice on-site with offline mobile apps, PayNow integration and GST-ready templates — get paid faster from any job site."
+image: \"https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop&auto=format"
 date: 2026-04-25
 tags: [construction, invoicing, NZ, mobile]
 author: "Benjamen"

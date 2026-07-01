@@ -2,6 +2,7 @@
 title: "The Fuel Price Shock: How to Protect Your NZ Tradie Business Margins"
 seo_title: "The Fuel Price Shock NZ"
 description: "Diesel prices have surged in 2026, hitting excavation and transport costs. Learn how to adjust your quotes and protect your margins."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-04-30
 tags: [Costs, Fuel, NZ, Business, Economics]
 author: "NZ Tradie Tools"

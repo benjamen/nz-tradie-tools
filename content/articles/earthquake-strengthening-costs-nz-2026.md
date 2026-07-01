@@ -1,6 +1,7 @@
 ---
 title: "Earthquake Strengthening Costs NZ 2026"
 description: "Earthquake strengthening costs in NZ 2026 — seismic assessment, retrofit options, and costs per %NBS. What building owners and contractors need to know."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-18
 tags: ["earthquake strengthening", "seismic", "NBS", "retrofit", "NZ", "2026"]
 author: "NZ Tradie Tools"

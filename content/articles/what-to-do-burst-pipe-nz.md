@@ -1,6 +1,7 @@
 ---
 title: "What to Do If You Have a Burst Pipe NZ — Emergency Steps & Costs"
 description: "Burst pipe NZ — what to do first, how to stop the water, what you can fix yourself vs what needs a plumber, and typical emergency plumbing costs in 2026."
+image: \"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-22
 tags: ["burst pipe", "plumbing", "emergency", "homeowner", "NZ", "2026"]
 author: "NZ Tradie Tools"

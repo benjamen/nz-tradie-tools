@@ -1,6 +1,7 @@
 ---
 title: "NZ Building Consent Reform 2026: What Tradies Need to Know"
 description: "The biggest building consent reform in decades is underway in NZ. Granny flat exemptions, product approvals, liability changes."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-04-26
 tags: [building consent, regulation, NZ, builders, 2026]
 author: "NZ Tradie Tools"

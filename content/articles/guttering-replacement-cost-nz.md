@@ -1,6 +1,7 @@
 ---
 title: "Guttering Replacement Cost NZ 2026 — Spouting Prices, Types and What to Expect"
 description: "Guttering (spouting) replacement cost NZ 2026 — PVC vs aluminium vs Colorsteel prices per metre, downpipes, gutter guards, and how to find spouting contractors near you."
+image: \"https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["guttering", "spouting", "gutter replacement", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

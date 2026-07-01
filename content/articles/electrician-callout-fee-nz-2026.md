@@ -2,6 +2,7 @@
 title: "Electrician Callout Fee NZ 2026: Rates & Job Costs"
 seo_title: "Electrician Callout Fee NZ 2026"
 description: "What's the electrician callout fee in NZ? 2026 callout fees, hourly rates, after-hours charges, common job costs and how to keep electrical costs down."
+image: \"https://images.unsplash.com/photo-1621905252472-943afaa20e20?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-18
 tags: ["electrician", "callout fee", "hourly rate", "NZ", "2026", "electrical"]
 author: "NZ Tradie Tools"

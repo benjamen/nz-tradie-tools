@@ -1,6 +1,7 @@
 ---
 title: "Why Industrial Construction is Leading the NZ Market in 2026"
 description: "With projects like Christchurch's Ryans Road development fast-tracked, industrial construction is a key growth area for NZ tradies."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-11
 tags: [Industrial, Infrastructure, NZ, Construction]
 author: "NZ Tradie Tools"

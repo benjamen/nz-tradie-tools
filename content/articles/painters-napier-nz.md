@@ -1,6 +1,7 @@
 ---
 title: "Painters Napier & Hawke's Bay 2026 — Rates, Art Deco Homes and Local Market"
 description: "Painters Napier 2026 — Hawke's Bay painter rates, exterior painting costs, Art Deco home considerations, and how to find a reliable painter in Napier and Hastings."
+image: \"https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["painters Napier", "painter Napier", "painting cost Hawkes Bay", "NZ", "2026"]
 author: "NZ Tradie Tools"

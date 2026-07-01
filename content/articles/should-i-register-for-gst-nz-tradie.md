@@ -2,6 +2,7 @@
 title: "Should I Register for GST? A NZ Tradie's Guide to the $60,000 Threshold"
 seo_title: "Should I Register for GST? NZ Tradie Guide"
 description: "If your annual turnover is heading toward $60,000, you need to understand GST registration — what it means, when it's compulsory."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-08
 tags: [GST, IRD, tax, sole trader, NZ]
 author: "NZ Tradie Tools"

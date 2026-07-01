@@ -2,6 +2,7 @@
 title: "Understanding the New Building Consent Reforms: What NZ Builders Should Know"
 seo_title: "Understanding the New Building Consent Reforms NZ"
 description: "With new planning and consenting reforms coming to NZ, here’s how to stay prepared for the future of construction compliance."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-20
 tags: [Regulations, Planning, NZ, Construction]
 author: "NZ Tradie Tools"

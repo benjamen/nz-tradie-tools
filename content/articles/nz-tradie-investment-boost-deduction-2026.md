@@ -2,6 +2,7 @@
 title: "The 20% Investment Boost: How NZ Tradies Can Claim It Before EOFY"
 seo_title: "The 20% Investment Boost NZ"
 description: "The Investment Boost deduction lets NZ tradies write off new asset costs faster. Here's exactly how to claim it on your 2026 return."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-08
 tags: [tax, IRD, depreciation, EOFY, NZ]
 author: "NZ Tradie Tools"

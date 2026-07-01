@@ -1,6 +1,7 @@
 ---
 title: "Painters Auckland 2026 — Rates, What to Expect and How to Get Good Quotes"
 description: "Painters Auckland 2026 — Auckland painter hourly rates and day rates, interior and exterior painting costs, how to find a reliable Auckland painter, and what questions to ask."
+image: \"https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["painters Auckland", "painter Auckland", "painting cost Auckland", "NZ", "2026"]
 author: "NZ Tradie Tools"

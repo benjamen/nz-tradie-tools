@@ -1,6 +1,7 @@
 ---
 title: "How to Get Paid Faster as a NZ Tradie — 8 Practical Tips"
 description: "Late payments kill tradie cash flow. Here's exactly how to get paid faster in 2026 — invoicing, payment terms, on-site payments, and legal options."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-04-17
 author: "NZ Tradie Tools"
 tags: [cash flow, invoicing, payments, NZ tradie, Construction Contracts Act]

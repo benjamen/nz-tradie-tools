@@ -1,6 +1,7 @@
 ---
 title: "Tilers Auckland 2026 — Rates, Lead Times and How to Find a Good Tiler"
 description: "Tilers Auckland 2026 — Auckland tiler labour rates per m², floor and wall tiling costs, lead times, what to look for in a tiler, and how to get accurate quotes."
+image: \"https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["tilers Auckland", "tiler Auckland", "tiling cost Auckland", "NZ", "2026"]
 author: "NZ Tradie Tools"

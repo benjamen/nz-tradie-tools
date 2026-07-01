@@ -1,6 +1,7 @@
 ---
 title: "Commercial Cleaning Cost NZ 2026 — Prices, Contracts and What to Expect"
 description: "Commercial cleaning cost NZ 2026 — hourly rates, contract cleaning prices by building type, office cleaning vs industrial. How to get and compare quotes."
+image: \"https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["commercial cleaning", "cleaning", "office cleaning", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

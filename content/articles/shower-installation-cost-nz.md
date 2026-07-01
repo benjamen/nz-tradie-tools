@@ -1,6 +1,7 @@
 ---
 title: "Shower Installation Cost NZ 2026 — Prices, Types and What to Expect"
 description: "Shower installation cost NZ 2026 — shower recess, walk-in, prefab vs tiled shower costs, waterproofing requirements, and how to find a shower installer near you."
+image: \"https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["shower installation", "shower", "bathroom", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

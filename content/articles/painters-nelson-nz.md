@@ -1,6 +1,7 @@
 ---
 title: "Painters Nelson & Marlborough 2026 — Rates, Sunshine and Local Market"
 description: "Painters Nelson 2026 — Nelson and Marlborough painter rates, exterior painting costs, what NZ's sunniest region means for paint life, and how to find a reliable local painter."
+image: \"https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["painters Nelson", "painter Nelson", "painting cost Nelson", "NZ", "2026"]
 author: "NZ Tradie Tools"

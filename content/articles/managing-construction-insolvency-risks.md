@@ -2,6 +2,7 @@
 title: "Managing Construction Insolvency Risks: How to Stay Secure in 2026"
 seo_title: "Managing Construction Insolvency Risks 2026"
 description: "With construction insolvencies rising, learn how to protect your NZ tradie business from cash flow gaps and subcontractor risk."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-17
 tags: [Business, Insolvency, NZ, Construction]
 author: "NZ Tradie Tools"

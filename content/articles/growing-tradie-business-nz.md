@@ -2,6 +2,7 @@
 title: "How to Grow Your Tradie Business in NZ — From One-Man Band to a Proper Team"
 seo_title: "How to Grow Your Tradie Business in NZ"
 description: "How to grow your NZ tradie business — the systems, hires and processes you need, and how to avoid the growth traps that kill small operators."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-04-16
 author: "NZ Tradie Tools"
 tags: [tradie business, growth, NZ, hiring, systems, sole trader]

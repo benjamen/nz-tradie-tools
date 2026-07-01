@@ -1,6 +1,7 @@
 ---
 title: "Shower Tiling Cost NZ 2026 — Tiler Prices, Tile Supply and Waterproofing"
 description: "Shower tiling cost NZ 2026 — tiler labour rates per m², tile supply costs, waterproofing membrane prices, floor tile vs wall tile, and how to find a shower tiler near you."
+image: \"https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["shower tiling", "tiling cost", "shower tiles", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

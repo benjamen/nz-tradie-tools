@@ -1,6 +1,7 @@
 ---
 title: "8 Common Tax Mistakes NZ Tradies Make (and How to Fix Them)"
 description: "These eight tax mistakes cost NZ tradies thousands of dollars every year — in missed deductions, penalties, and interest."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-08
 tags: [tax, IRD, mistakes, deductions, sole trader]
 author: "NZ Tradie Tools"

@@ -2,6 +2,7 @@
 title: "New Lead-Free Plumbing Standards: What NZ Plumbers Need to Know"
 seo_title: "New Lead-Free Plumbing Standards NZ"
 description: "From May 2, 2026, new lead-free standards for plumbing materials have taken effect. Ensure your projects remain compliant."
+image: \"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-09
 tags: [Plumbing, NZ, Regulations, Health]
 author: "NZ Tradie Tools"

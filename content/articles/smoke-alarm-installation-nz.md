@@ -1,6 +1,7 @@
 ---
 title: "Smoke Alarm Installation Cost NZ 2026 — Costs, Laws and What's Required"
 description: "Smoke alarm installation cost NZ 2026 — ionisation vs photoelectric, hardwired vs battery, rental property laws, interconnection requirements, and what electricians charge."
+image: \"https://images.unsplash.com/photo-1621905252472-943afaa20e20?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["smoke alarm", "smoke alarm installation", "fire safety", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

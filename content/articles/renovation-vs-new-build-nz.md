@@ -1,6 +1,7 @@
 ---
 title: "Renovation vs New Build NZ — Which Makes More Financial Sense in 2026?"
 description: "Renovation vs new build NZ — cost comparison, hidden renovation costs, new build advantages, and how to decide which is right for your property and budget in 2026."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-22
 tags: ["renovation", "new build", "homeowner", "planning", "NZ", "2026"]
 author: "NZ Tradie Tools"

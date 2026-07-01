@@ -1,6 +1,7 @@
 ---
 title: "Earthworks Contractors NZ 2026 — Costs, What They Do, and How to Get Quotes"
 description: "Earthworks contractors NZ 2026 — excavation costs, site clearing, retaining walls, drainage earthworks. What earthworks involve, when you need consent, and how to compare quotes."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["earthworks", "excavation", "earthworks contractors", "site preparation", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

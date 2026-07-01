@@ -1,6 +1,7 @@
 ---
 title: "Window Cleaning Cost NZ 2026 — Residential and Commercial Prices"
 description: "Window cleaning cost NZ 2026 — residential window cleaning prices per window, whole-house costs, commercial window cleaning rates, how often to clean, and how to find a window cleaner near you."
+image: \"https://images.unsplash.com/photo-1527352774566-e4916e36c645?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["window cleaning", "window cleaner", "cleaning", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

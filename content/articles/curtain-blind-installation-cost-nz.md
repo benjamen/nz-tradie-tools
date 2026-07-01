@@ -1,6 +1,7 @@
 ---
 title: "Curtain & Blind Installation Cost NZ 2026 — Prices, Types and What to Know"
 description: "Curtain and blind installation cost NZ 2026 — curtain and blind prices per window, installation costs, thermal lining for NZ homes, and what to budget for a full house window dressing."
+image: \"https://images.unsplash.com/photo-1527352774566-e4916e36c645?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["curtain installation cost NZ", "blind cost NZ", "window treatments NZ", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

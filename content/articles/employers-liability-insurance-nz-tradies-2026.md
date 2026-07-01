@@ -2,6 +2,7 @@
 title: "Employers Liability Insurance NZ: What Tradies with Staff Must Know in 2026"
 seo_title: "Employers Liability Insurance NZ 2026"
 description: "NZ tradies with employees need employers liability insurance in 2026. Learn what it covers, what it costs, and how new WorkSafe rules affect you."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-16
 tags: [insurance, employment, compliance, health-and-safety, NZ]
 author: "NZ Tradie Tools"

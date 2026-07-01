@@ -2,6 +2,7 @@
 title: "Fixed-Price vs Cost-Plus Contracts: Which Should NZ Tradies Use in 2026?"
 seo_title: "Fixed-Price vs Cost-Plus Contracts NZ 2026"
 description: "NZ tradies face rising material costs in 2026. Learn when to use fixed-price vs cost-plus contracts to protect your margins and avoid costly losses."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-14
 tags: [contracts, pricing, business, NZ, quoting]
 author: "NZ Tradie Tools"

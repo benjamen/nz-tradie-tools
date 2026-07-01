@@ -1,6 +1,7 @@
 ---
 title: "Builders Wellington 2026 — Day Rates, Project Costs and How to Find a Good Builder"
 description: "Builders Wellington 2026 — Wellington builder day rates, project costs, what makes Wellington building distinctive, LBP verification, and how to find a reliable builder in the capital."
+image: \"https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["builders Wellington", "builder Wellington", "building cost Wellington", "NZ", "2026"]
 author: "NZ Tradie Tools"

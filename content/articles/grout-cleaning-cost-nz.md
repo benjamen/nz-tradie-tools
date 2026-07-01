@@ -1,6 +1,7 @@
 ---
 title: "Grout Cleaning and Repair Cost NZ 2026 — Regrout, Clean and Seal Prices"
 description: "Grout cleaning and repair cost NZ 2026 — professional grout cleaning prices, regrouting costs, grout sealing, and when to regrout vs clean. Find a tiler near you in NZ."
+image: \"https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["grout cleaning", "regrouting", "tile grout", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

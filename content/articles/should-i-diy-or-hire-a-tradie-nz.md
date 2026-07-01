@@ -1,6 +1,7 @@
 ---
 title: "Should I DIY or Hire a Tradie? NZ Homeowner Decision Guide 2026"
 description: "DIY vs tradie NZ — a practical framework for deciding what to tackle yourself and what to pay a professional for. Covers legal limits, cost comparison, and risk."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-22
 tags: ["DIY", "homeowner", "tradie", "decision", "NZ", "2026"]
 author: "NZ Tradie Tools"

@@ -1,6 +1,7 @@
 ---
 title: "Deck Staining Cost NZ 2026 — Prices, Products and How Often to Stain"
 description: "Deck staining cost NZ 2026 — timber deck staining and oiling prices, preparation costs, product recommendations, how often to stain in NZ conditions, and DIY vs professional."
+image: \"https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["deck staining", "deck oil", "deck maintenance", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

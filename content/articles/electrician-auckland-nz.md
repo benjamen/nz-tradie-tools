@@ -1,6 +1,7 @@
 ---
 title: "Electricians Auckland 2026 — Call-Out Rates, Hourly Rates and Common Job Costs"
 description: "Electricians Auckland 2026 — Auckland electrician hourly rates, call-out fees, common job costs, how to verify a licensed electrician, and how to find one near you."
+image: \"https://images.unsplash.com/photo-1621905252472-943afaa20e20?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["electricians Auckland", "electrician Auckland", "electrical cost Auckland", "NZ", "2026"]
 author: "NZ Tradie Tools"

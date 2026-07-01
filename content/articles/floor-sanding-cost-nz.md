@@ -1,6 +1,7 @@
 ---
 title: "Floor Sanding Cost NZ 2026 — Timber Floor Sand and Finish Prices"
 description: "Floor sanding cost NZ 2026 — timber floor sanding and finishing prices per m², stain and coating options, how many times can a floor be sanded, and how to find a floor sander near you."
+image: \"https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["floor sanding", "timber floor", "floor finishing", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

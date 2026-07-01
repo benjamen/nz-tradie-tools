@@ -2,6 +2,7 @@
 title: "Consumer Guarantees Act & Fair Trading Act: NZ Tradie Guide 2026"
 seo_title: "Consumer Guarantees Act & Fair Trading Act NZ 2026"
 description: "What New Zealand tradies need to know about the Consumer Guarantees Act and Fair Trading Act — warranties, disputes, and staying compliant."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-15
 tags: [compliance, consumer law, NZ, warranties, disputes]
 author: "NZ Tradie Tools"

@@ -1,6 +1,7 @@
 ---
 title: "Chimney Cleaning Cost NZ 2026 — Sweep, Inspection and Repair Prices"
 description: "Chimney cleaning cost NZ 2026 — chimney sweep prices, flue inspection costs, woodburner maintenance, creosote removal, and how to find a chimney sweep near you in NZ."
+image: \"https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["chimney cleaning", "chimney sweep", "woodburner", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

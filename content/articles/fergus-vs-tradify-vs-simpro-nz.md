@@ -1,6 +1,7 @@
 ---
 title: "Fergus vs Tradify vs Simpro: Which is Best for NZ Tradies?"
 description: "A detailed side-by-side comparison of the three most popular job management apps for New Zealand tradies — with real NZD pricing."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-04-06
 tags: [Fergus, Tradify, Simpro, software, comparison, NZ]
 author: "NZ Tradie Tools"

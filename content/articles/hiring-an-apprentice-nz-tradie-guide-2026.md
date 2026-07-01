@@ -1,6 +1,7 @@
 ---
 title: "Hiring an Apprentice in NZ: The 2026 Guide for Tradies"
 description: "Everything NZ tradies need to know about hiring an apprentice in 2026 — BCITO changes, Apprenticeship Boost funding, costs."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-04-26
 tags: [apprentice, hiring, BCITO, NZ, business]
 author: "NZ Tradie Tools"

@@ -2,6 +2,7 @@
 title: "NZ Approves 40,000 New Building Products: What Tradies Need to Know in 2026"
 seo_title: "NZ Approves 40,000 New Building Products 2026"
 description: "Nearly 40,000 Australian building products are now approved for use in New Zealand. Here's what NZ tradies need to know about lower costs and new options."
+image: \"https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-09
 tags: [building products, regulations, materials, NZ, 2026]
 author: "NZ Tradie Tools"

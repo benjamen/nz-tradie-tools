@@ -1,6 +1,7 @@
 ---
 title: "Painters Dunedin 2026 — Rates, Heritage Homes and Otago Weather"
 description: "Painters Dunedin 2026 — Otago painter rates, exterior painting costs, heritage villa considerations, and how Dunedin's climate affects paint choice and timing."
+image: \"https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["painters Dunedin", "painter Dunedin", "painting cost Dunedin", "NZ", "2026"]
 author: "NZ Tradie Tools"

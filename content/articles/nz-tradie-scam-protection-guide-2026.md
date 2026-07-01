@@ -1,6 +1,7 @@
 ---
 title: "How to Protect Your NZ Tradie Business From Scams in 2026"
 description: "Fake tradie scams are rising in New Zealand. Here's how legitimate tradies can protect their reputation, customers, and cashflow in 2026."
+image: \"https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-19
 tags: [scams, business, NZ, consumer protection, reputation]
 author: "NZ Tradie Tools"

@@ -1,6 +1,7 @@
 ---
 title: "Locksmith Cost NZ 2026 — Call-Out Fees, Lock Changes and What to Expect"
 description: "Locksmith cost NZ 2026 — call-out fees, lock change prices, car lockout costs, rekeying vs replacing. How to find a licensed locksmith near you."
+image: \"https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["locksmith", "locksmith cost", "lock change", "NZ", "2026"]
 author: "NZ Tradie Tools"

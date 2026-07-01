@@ -2,6 +2,7 @@
 title: "Xero vs MYOB vs Hnry for NZ Tradies (2026) — Which Accounting App?"
 seo_title: "Xero vs MYOB vs Hnry for NZ Tradies (2026)"
 description: "Xero vs MYOB vs Hnry compared for NZ tradies and sole traders. Real NZD pricing, GST handling, payroll, and which is best for different business structures."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 tags: [Xero, MYOB, Hnry, accounting software, sole trader, NZ, comparison, GST]
 author: "NZ Tradie Tools"
 date: 2026-05-19

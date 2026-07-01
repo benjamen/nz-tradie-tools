@@ -1,6 +1,7 @@
 ---
 title: "Plumbers Hamilton & Waikato 2026 — Rates, Call-Out Fees and Finding a Reliable Plumber"
 description: "Plumbers Hamilton 2026 — Waikato plumber rates, call-out fees, hot water costs, and how to find a reliable PGDB-registered plumber in Hamilton and the Waikato region."
+image: \"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["plumbers Hamilton", "plumber Hamilton", "plumbing cost Hamilton", "Waikato plumber", "NZ", "2026"]
 author: "NZ Tradie Tools"

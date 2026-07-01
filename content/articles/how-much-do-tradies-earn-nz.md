@@ -1,6 +1,7 @@
 ---
 title: "How Much Do Tradies Earn in NZ? — 2026 Salary Guide by Trade"
 description: "NZ tradie earnings by trade in 2026. Electrician, plumber, builder, carpenter pay rates — employed vs self-employed, apprentice vs qualified."
+image: \"https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-06
 tags: [earnings, salaries, pay rates, careers, NZ]
 author: "NZ Tradie Tools"

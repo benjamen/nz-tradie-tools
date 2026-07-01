@@ -2,6 +2,7 @@
 title: "The True Cost of Employing a Tradie in NZ: What to Build Into Your Rates (2026)"
 seo_title: "The True Cost of Employing a Tradie in NZ 2026"
 description: "Beyond the hourly wage: KiwiSaver, ACC levies, leave, and overheads add 30–40% to NZ employee costs. Here's how to calculate and recover them."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-15
 tags: [employment, business, pricing, NZ, wages, KiwiSaver, ACC]
 author: "NZ Tradie Tools"

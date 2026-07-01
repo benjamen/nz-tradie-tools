@@ -2,6 +2,7 @@
 title: "Understanding the New Proportional Liability Rules for NZ Tradies"
 seo_title: "Understanding the New Proportional Liability Rules for NZ…"
 description: "How the proposed shift to proportional liability might change risk management and construction insurance in New Zealand."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-01
 tags: [Regulations, Liability, NZ, Construction, Insurance]
 author: "NZ Tradie Tools"

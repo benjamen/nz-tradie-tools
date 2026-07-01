@@ -2,6 +2,7 @@
 title: "Best Accounting Software for NZ Tradies 2026 — Xero vs MYOB vs Hnry"
 seo_title: "Best Accounting Software for NZ Tradies 2026"
 description: "Compare the best accounting software for NZ tradies in 2026 — Xero, MYOB and Hnry on price, GST handling, invoicing and ease of use for sole traders."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-13
 slug: best-accounting-software-nz-tradies-2026
 tags: [accounting, Xero, MYOB, GST, software, NZ]

@@ -1,6 +1,7 @@
 ---
 title: "Handyman Cost NZ 2026 — Hourly Rates, Call-Out Fees and Common Job Prices"
 description: "Handyman cost NZ 2026 — hourly rates, call-out fees, what a handyman can legally do, and common job prices for minor repairs, maintenance, and small renovation tasks."
+image: \"https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["handyman cost NZ", "handyman rates NZ", "handyman NZ", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

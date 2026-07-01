@@ -1,6 +1,7 @@
 ---
 title: "Kitchen Cabinet Painting Cost NZ 2026 — Spray Paint vs Brush, Costs and Results"
 description: "Kitchen cabinet painting cost NZ 2026 — spray painting vs brush, cost to repaint kitchen cabinets, what paint to use, and whether painting is better value than replacing."
+image: \"https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["kitchen cabinet painting", "repaint kitchen cabinets NZ", "kitchen cabinet spray paint", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

@@ -2,6 +2,7 @@
 title: "Google Business Profile for NZ Tradies 2026 — Get Found Locally"
 seo_title: "Google Business Profile for NZ Tradies 2026"
 description: "How NZ tradies can set up and optimise a Google Business Profile to rank in local search and Maps, win more reviews, and get more job enquiries in 2026."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-13
 slug: google-business-profile-nz-tradies-2026
 tags: [marketing, local-SEO, Google, reviews, NZ]

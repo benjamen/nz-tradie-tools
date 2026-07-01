@@ -1,6 +1,7 @@
 ---
 title: "Roofers Christchurch 2026 — Rates, EQ Roof Context and Finding a Canterbury Roofer"
 description: "Roofers Christchurch 2026 — Canterbury roofer rates, re-roofing costs, earthquake roof repair context, iron vs tile costs, and how to find a reliable Christchurch roofer."
+image: \"https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["roofers Christchurch", "roofer Christchurch", "roofing cost Christchurch", "NZ", "2026"]
 author: "NZ Tradie Tools"

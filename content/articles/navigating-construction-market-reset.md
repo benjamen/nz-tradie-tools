@@ -2,6 +2,7 @@
 title: "Navigating the Current Construction Market: Stability Over Growth"
 seo_title: "Navigating the Current Construction Market"
 description: With rising insolvencies and increased material costs, learn how to run a disciplined, cash-flow-positive construction business in NZ in 2026.
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-12
 tags: [Business, Insolvency, NZ, Construction]
 author: "NZ Tradie Tools"

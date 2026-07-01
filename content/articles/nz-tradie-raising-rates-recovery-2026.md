@@ -1,6 +1,7 @@
 ---
 title: "How NZ Tradies Should Raise Their Rates in the 2026 Recovery"
 description: "The NZ construction market is recovering fast. Here's how to raise your labour rates without losing clients, backed by real market data."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-31
 tags: [pricing, business, labour rates, NZ, construction recovery]
 author: "NZ Tradie Tools"

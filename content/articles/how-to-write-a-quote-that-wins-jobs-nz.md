@@ -1,6 +1,7 @@
 ---
 title: "How to Write a Quote That Wins Jobs (NZ Tradie Guide 2026)"
 description: "A practical guide to writing professional, winning quotes as a NZ tradie — structure, presentation, pricing, follow-up, and a free template."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-26
 tags: [quoting, business, templates, NZ]
 author: "NZ Tradie Tools"

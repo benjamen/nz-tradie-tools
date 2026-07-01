@@ -2,6 +2,7 @@
 title: "Tradie App Fatigue: Why NZ Tradies Are Paying Too Much for Too Many Tools"
 seo_title: "Tradie App Fatigue NZ"
 description: "Most NZ tradies juggle 4–5 software subscriptions. We break down the real monthly cost of app fatigue and how to consolidate your tools to save money."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-04-20
 author: "NZ Tradie Tools"
 tags: [tradie software, app fatigue, NZ, Fastcrew, job management]

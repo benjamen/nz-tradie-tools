@@ -1,6 +1,7 @@
 ---
 title: "Heat Pump Repair Cost NZ 2026 — Service, Gas Top-Up, Fault Diagnosis and When to Replace"
 description: "Heat pump repair cost NZ 2026 — repair and service costs, gas recharge prices, common faults, when repair makes sense vs replacement, and finding a reliable heat pump technician."
+image: \"https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["heat pump repair cost NZ", "heat pump service NZ", "heat pump fault NZ", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

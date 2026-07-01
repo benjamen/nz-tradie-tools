@@ -1,6 +1,7 @@
 ---
 title: "Demolition Cost NZ 2026 — House Demolition, Partial Demo and What to Budget"
 description: "Demolition cost NZ 2026 — house demolition prices per m², partial demolition costs, asbestos removal, council consent, and what's involved in knocking down a house in NZ."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["demolition cost NZ", "house demolition NZ", "demolition NZ", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

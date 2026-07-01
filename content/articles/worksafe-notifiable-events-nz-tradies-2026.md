@@ -2,6 +2,7 @@
 title: "NZ WorkSafe Notifiable Events: What Every Tradie Must Report in 2026"
 seo_title: "NZ WorkSafe Notifiable Events 2026"
 description: "A practical guide for NZ tradies on WorkSafe's notifiable event rules — what to report, when, and the penalties for getting it wrong."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-21
 tags: [WorkSafe, Health & Safety, Compliance, HSWA, NZ]
 author: "NZ Tradie Tools"

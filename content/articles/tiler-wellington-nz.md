@@ -1,6 +1,7 @@
 ---
 title: "Tilers Wellington 2026 — Rates, Heritage Homes and What to Know"
 description: "Tilers Wellington 2026 — Wellington tiler rates, bathroom and kitchen tiling costs, considerations for Wellington's older homes, and how to find a reliable tiler in the Wellington region."
+image: \"https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["tilers Wellington", "tiler Wellington", "tiling cost Wellington", "NZ", "2026"]
 author: "NZ Tradie Tools"

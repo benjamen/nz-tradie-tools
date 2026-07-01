@@ -2,6 +2,7 @@
 title: "Tradify vs ServiceM8 for NZ Tradies (2026) — Honest Comparison"
 seo_title: "Tradify vs ServiceM8 for NZ Tradies (2026)"
 description: "Tradify vs ServiceM8 compared for NZ tradies — features, pricing and mobile app. Which is better for plumbers, electricians and builders?"
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 tags: [Tradify, ServiceM8, job management software, tradie app, NZ, comparison]
 author: "NZ Tradie Tools"
 date: 2026-05-19

@@ -2,6 +2,7 @@
 title: "NZ Building Material Prices by Region 2026: Auckland, Wellington, Christchurch"
 seo_title: "NZ Material Prices by Region 2026 | Timber & Gib"
 description: "Current NZ building material prices by region (June 2026) — timber, concrete, gib, insulation, roofing and paint, with regional breakdowns and supplier links."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-02
 tags: [material prices, regional, timber, concrete, gib, insulation, roofing, paint, cost estimation]
 author: "NZ Tradie Tools"

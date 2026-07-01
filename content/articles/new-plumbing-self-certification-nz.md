@@ -2,6 +2,7 @@
 title: "Understanding the New Plumbing Self-Certification Scheme for NZ Tradies"
 seo_title: "Understanding the New Plumbing Self-Certification Scheme…"
 description: "The new NZ plumbing self-certification scheme explained — what changes for plumbers and drainlayers, how it affects your workflow, and steps to stay compliant."
+image: \"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
 date: 2026-04-23
 tags: [Plumbing, NZ, Regulations, Productivity]
 author: "NZ Tradie Tools"

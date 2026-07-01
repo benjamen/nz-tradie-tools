@@ -2,6 +2,7 @@
 title: "Tradie Business Plan NZ — Simple Template and What to Actually Include"
 seo_title: "Tradie Business Plan NZ"
 description: "How to write a tradie business plan in NZ — what to include, what to skip, and how to use a simple plan to actually run your business."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-06
 tags: [business plan, self-employed, sole-trader, business, NZ]
 author: "NZ Tradie Tools"

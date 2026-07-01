@@ -1,6 +1,7 @@
 ---
 title: "Kitchen Splashback Cost NZ 2026 — Glass, Tile and Stone Prices"
 description: "Kitchen splashback cost NZ 2026 — glass, tile, stone, and acrylic splashback prices, what's involved in installation, and how to choose the right splashback for your kitchen."
+image: \"https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["splashback", "kitchen splashback", "glass splashback", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

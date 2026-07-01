@@ -1,6 +1,7 @@
 ---
 title: "Door Installation Cost NZ 2026 — Interior, Exterior and Sliding Doors"
 description: "Door installation cost NZ 2026 — interior door, exterior door, and sliding door prices, supply and install costs, what affects price, and whether you need a builder or can DIY."
+image: \"https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["door installation cost", "door replacement cost", "exterior door NZ", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

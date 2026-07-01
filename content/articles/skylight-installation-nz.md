@@ -1,6 +1,7 @@
 ---
 title: "Skylight Installation Cost NZ 2026 — Prices, Types and Consent Rules"
 description: "Skylight installation cost NZ 2026 — fixed, vented and tubular skylight costs, Velux vs alternatives, consent rules, and how to find a skylight installer near you."
+image: \"https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["skylight", "skylight installation", "Velux", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

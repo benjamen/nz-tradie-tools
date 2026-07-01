@@ -1,6 +1,7 @@
 ---
 title: "Pergola Cost NZ 2026 — Timber, Aluminium and Louvre Pergola Prices"
 description: "Pergola cost NZ 2026 — timber, aluminium, louvre and polycarbonate pergola prices, building consent rules, DIY vs professional installation, and how to find a pergola builder near you."
+image: \"https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["pergola", "pergola cost", "outdoor living", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

@@ -1,6 +1,7 @@
 ---
 title: "Fence Installation Cost NZ 2026 — Timber, Colour Steel and What to Expect"
 description: "Fence installation cost NZ 2026 — timber paling, colour steel, pool fencing and boundary fence prices per metre. Who pays for a boundary fence, consent rules, and how to get quotes."
+image: \"https://images.unsplash.com/photo-1604015641586-6fa03629f976?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["fence", "fencing", "fence installation", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

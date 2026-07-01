@@ -2,6 +2,7 @@
 title: "Healthy Homes Compliance Work: A Goldmine for NZ Tradies in 2026"
 seo_title: "Healthy Homes Compliance Work NZ 2026"
 description: "Every NZ rental must now meet Healthy Homes Standards from day one of any tenancy. Here's what work landlords need done."
+image: \"https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=630&fit=crop&auto=format"
 date: 2026-04-28
 tags: [healthy homes, rental, compliance, NZ, electricians, insulation]
 author: "NZ Tradie Tools"

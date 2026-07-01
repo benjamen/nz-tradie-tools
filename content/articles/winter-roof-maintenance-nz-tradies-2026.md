@@ -1,6 +1,7 @@
 ---
 title: "Winter Roof Maintenance Guide for NZ Tradies 2026"
 description: "Essential winter roof inspection and maintenance tips for NZ roofers and builders. Prevent water ingress and storm damage."
+image: \"https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-06
 tags: [roofing, winter, maintenance, NZ]
 author: "NZ Tradie Tools"

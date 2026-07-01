@@ -2,6 +2,7 @@
 title: "How to Recalculate Your Labour Rates When Minimum Wage Increases — NZ Tradie Guide 2026"
 seo_title: "Recalculate Labour Rates After Min Wage Rise NZ"
 description: "Step-by-step guide to updating your labour rates and charge-out rates when New Zealand's minimum wage rises, with calculators and worked examples."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-03
 tags: [pricing, labour, business, cash-flow, NZ]
 author: "NZ Tradie Tools"

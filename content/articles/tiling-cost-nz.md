@@ -1,6 +1,7 @@
 ---
 title: "Tiling Cost NZ 2026 — Prices Per m², Bathroom, Kitchen and Floor Tiles"
 description: "Tiling cost NZ 2026 — price per m² for bathroom, kitchen, and floor tiling, tile types, grout and adhesive, and how to find and compare tilers near you."
+image: \"https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["tiling", "tiles", "tiler", "bathroom tiling", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

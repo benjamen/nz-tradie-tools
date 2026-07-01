@@ -1,6 +1,7 @@
 ---
 title: "NZ Concreter Pricing Guide 2026: Hourly Rates & Job Costs"
 description: "What NZ concreters charge in 2026 — hourly rates, m² prices for slabs, driveways and paths, plus tips to price jobs and win more work."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-30
 tags: [pricing, concreting, rates, NZ, business]
 author: "NZ Tradie Tools"

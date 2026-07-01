@@ -1,6 +1,7 @@
 ---
 title: "Scaffolding Hire NZ 2026 — Costs, Types and When You Need It"
 description: "Scaffolding hire cost NZ 2026 — weekly hire rates, erection and dismantling costs, when to hire vs use a ladder, and how to find scaffolders near you."
+image: \"https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["scaffolding hire", "scaffolding", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

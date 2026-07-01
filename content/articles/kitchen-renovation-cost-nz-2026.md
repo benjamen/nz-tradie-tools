@@ -2,6 +2,7 @@
 title: "Kitchen Renovation Cost NZ 2026: Complete Price Guide"
 seo_title: "Kitchen Renovation Cost NZ 2026"
 description: "Kitchen renovation cost NZ 2026 — full breakdown of cabinetry, benchtops, appliances and labour, plus consent rules, timelines and ways to save."
+image: \"https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-18
 tags: ["kitchen renovation", "cost", "NZ", "2026", "home renovation"]
 author: "NZ Tradie Tools"

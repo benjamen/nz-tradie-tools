@@ -1,6 +1,7 @@
 ---
 title: "Shed Installation Cost NZ 2026 — Steel Kit Sheds, Wooden Sheds and What You Need"
 description: "Shed installation cost NZ 2026 — steel kit shed prices, timber garden shed costs, concrete slab, council consent thresholds, and what to expect from installation."
+image: \"https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["shed cost NZ", "shed installation NZ", "garden shed NZ", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

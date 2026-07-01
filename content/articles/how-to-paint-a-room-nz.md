@@ -1,6 +1,7 @@
 ---
 title: "How to Paint a Room NZ — Step-by-Step Guide"
 description: "How to paint a room in NZ — prep, primer, cutting in, and rolling for a professional finish. Tools, paint types, and common mistakes to avoid."
+image: \"https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-01
 tags: ["painting", "DIY", "homeowner", "NZ", "2026"]
 author: "NZ Tradie Tools"

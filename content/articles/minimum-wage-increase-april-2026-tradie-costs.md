@@ -2,6 +2,7 @@
 title: "NZ Minimum Wage Rises to $23.95 in April 2026: What It Means for Tradie Businesses"
 seo_title: "NZ Minimum Wage Rises to $23.95 in April 2026"
 description: "The adult minimum wage increased to $23.95/hr on 1 April 2026. Here's how to update your labour costs, quotes, and pricing before you fall behind."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-04-28
 tags: [wages, pricing, labour costs, NZ, business]
 author: "NZ Tradie Tools"

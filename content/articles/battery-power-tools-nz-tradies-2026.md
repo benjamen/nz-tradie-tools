@@ -1,6 +1,7 @@
 ---
 title: "Best Battery Power Tool Platforms for NZ Tradies in 2026"
 description: "Makita, Milwaukee or DeWalt? A practical NZ guide to choosing the right cordless tool platform for your trade in 2026, with NZD prices and tips."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-21
 tags: [tools, equipment, cordless, power tools, NZ]
 author: "NZ Tradie Tools"

@@ -1,6 +1,7 @@
 ---
 title: "Solar Hot Water Cost NZ 2026 — System Prices, Payback and Installation"
 description: "Solar hot water cost NZ 2026 — flat plate and evacuated tube system prices, installation costs, EECA grants, payback periods, and how to find a solar hot water installer near you."
+image: \"https://images.unsplash.com/photo-1621905252472-943afaa20e20?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["solar hot water", "solar water heater", "hot water", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

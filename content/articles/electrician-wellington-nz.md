@@ -1,6 +1,7 @@
 ---
 title: "Electricians Wellington 2026 — Rates, Call-Out Fees and Finding a Reliable Wellington Electrician"
 description: "Electricians Wellington 2026 — Wellington electrician hourly rates, call-out fees, common job costs, EV charger installation, and how to find a reliable EWRB-registered electrician in Wellington."
+image: \"https://images.unsplash.com/photo-1621905252472-943afaa20e20?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["electricians Wellington", "electrician Wellington", "electrical cost Wellington", "NZ", "2026"]
 author: "NZ Tradie Tools"

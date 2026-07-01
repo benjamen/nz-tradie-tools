@@ -1,6 +1,7 @@
 ---
 title: "Painters Hamilton 2026 — Rates, What to Expect and Local Market"
 description: "Painters Hamilton 2026 — Waikato painter rates, interior and exterior painting costs, how Hamilton's climate affects exterior paint, and how to find a reliable Hamilton painter."
+image: \"https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["painters Hamilton", "painter Hamilton", "painting cost Hamilton", "NZ", "2026"]
 author: "NZ Tradie Tools"

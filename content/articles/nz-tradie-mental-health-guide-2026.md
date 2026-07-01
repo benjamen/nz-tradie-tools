@@ -2,6 +2,7 @@
 title: "NZ Tradie Mental Health: What the Construction Industry Isn't Talking About in 2026"
 seo_title: "NZ Tradie Mental Health Guide 2026"
 description: "Construction workers face a 25% higher suicide rate than other sectors. Here's what NZ tradies and bosses need to know — and do — in 2026."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-26
 tags: [mental health, wellbeing, construction, NZ, WorkSafe]
 author: "NZ Tradie Tools"

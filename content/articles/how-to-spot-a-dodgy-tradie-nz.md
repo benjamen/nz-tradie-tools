@@ -1,6 +1,7 @@
 ---
 title: "How to Spot a Dodgy Tradie NZ — Red Flags and How to Protect Yourself"
 description: "How to spot a dodgy tradie in NZ — cash-only demands, large upfront deposits, no licence, fake reviews. Red flags to watch for and how to check a tradie is legit."
+image: \"https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-22
 tags: ["tradie", "scam", "homeowner", "protection", "NZ", "2026"]
 author: "NZ Tradie Tools"

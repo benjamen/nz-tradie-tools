@@ -2,6 +2,7 @@
 title: "NZ Tradie Retention Crisis 2026: Why Tradies Leave for Australia (& What You Can Earn)"
 seo_title: "NZ Tradie Retention Crisis 2026 vs Australia"
 description: "62,800 NZers left in 2026—63% to Australia. Why? A crane op makes $230k in Sydney. Here's the wage gap, government support programs."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-08
 tags: [employment, wages, labour shortage, australia, NZ]
 author: "NZ Tradie Tools"

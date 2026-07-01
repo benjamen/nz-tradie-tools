@@ -1,6 +1,7 @@
 ---
 title: "Carport Cost NZ 2026 — Steel, Timber and Flat Roof Carport Prices"
 description: "Carport cost NZ 2026 — steel kit, timber, and attached carport prices, building consent rules, single vs double carport costs, and how to find a carport builder near you."
+image: \"https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["carport", "carport cost", "garage", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

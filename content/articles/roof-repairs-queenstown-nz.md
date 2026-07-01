@@ -1,6 +1,7 @@
 ---
 title: "Roof Repairs Queenstown NZ 2026 — Costs, Local Roofers and What to Expect"
 description: "Roof repairs Queenstown NZ — local costs, snow and frost damage repair, finding qualified Queenstown roofers, and when to repair vs replace. 2026 guide."
+image: \"https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["roof repairs", "Queenstown", "roofers", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

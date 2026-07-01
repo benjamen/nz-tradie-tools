@@ -1,6 +1,7 @@
 ---
 title: "Heat Pump Installation Cost NZ 2026"
 description: "Heat pump installation costs in NZ 2026 — supply, labour, and running costs by home size. Includes price ranges for leading brands and NZ regions."
+image: \"https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-27
 tags: ["heat pump", "installation", "cost", "HVAC", "NZ", "2026"]
 author: "NZ Tradie Tools"

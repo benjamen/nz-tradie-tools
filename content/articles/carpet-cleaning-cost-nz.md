@@ -1,6 +1,7 @@
 ---
 title: "Carpet Cleaning Cost NZ 2026 — Steam, Dry Clean and End of Tenancy Prices"
 description: "Carpet cleaning cost NZ 2026 — steam cleaning vs dry cleaning prices per room, end of tenancy rates, how often to clean, and how to find carpet cleaners near you."
+image: \"https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["carpet cleaning", "carpet cleaner", "steam cleaning", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

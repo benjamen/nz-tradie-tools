@@ -2,6 +2,7 @@
 title: "Why We're Building Fastcrew: A NZ Tradie App That Doesn't Cost the Earth"
 seo_title: "Why We Built Fastcrew — NZ Tradie App"
 description: "The honest story behind Fastcrew — why we got fed up with expensive, bloated tradie software and decided to build something better for Kiwi tradies."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-04-21
 author: "NZ Tradie Tools"
 tags: [Fastcrew, tradie software, NZ, job management, quoting]

@@ -1,6 +1,7 @@
 ---
 title: "Toilet Installation Cost NZ 2026 — Supply, Replace and Fit Prices"
 description: "Toilet installation cost NZ 2026 — toilet supply prices, plumber fit-off costs, wall-hung vs close-coupled options, and how to replace a toilet in NZ without overcapitalising."
+image: \"https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["toilet installation", "toilet", "plumber", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

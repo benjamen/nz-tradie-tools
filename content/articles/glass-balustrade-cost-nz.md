@@ -1,6 +1,7 @@
 ---
 title: "Glass Balustrade Cost NZ 2026 — Frameless, Semi-Frameless and Pool Fence Prices"
 description: "Glass balustrade cost NZ 2026 — frameless, semi-frameless and framed glass balustrade prices, pool fence compliance, deck railing options, and how to find an installer near you."
+image: \"https://images.unsplash.com/photo-1527352774566-e4916e36c645?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["glass balustrade", "balustrade", "pool fence", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

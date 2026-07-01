@@ -1,6 +1,7 @@
 ---
 title: "What Adds Value to a NZ Home — Best Renovations for ROI in 2026"
 description: "What home renovations add value in NZ 2026 — kitchen, bathroom, deck, insulation, heat pump. Which improvements deliver ROI and which don't. Homeowner guide."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-25
 tags: ["home value", "renovation ROI", "homeowner", "NZ", "2026"]
 author: "NZ Tradie Tools"

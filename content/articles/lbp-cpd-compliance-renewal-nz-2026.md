@@ -2,6 +2,7 @@
 title: "NZ LBP Compliance 2026: CPD, Record of Work and Licence Renewal Guide"
 seo_title: "NZ LBP Compliance 2026"
 description: "What Licensed Building Practitioners in New Zealand must do to stay compliant in 2026 — CPD points, Record of Work obligations, and licence renewal."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-20
 tags: [LBP, compliance, building, regulations, NZ]
 author: "NZ Tradie Tools"

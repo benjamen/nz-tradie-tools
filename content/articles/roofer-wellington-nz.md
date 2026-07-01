@@ -1,6 +1,7 @@
 ---
 title: "Roofers Wellington 2026 — Rates, Wind Damage and How to Find a Good Roofer"
 description: "Roofers Wellington 2026 — Wellington roofing rates, wind damage repair costs, roof replacement prices, and how to find a reliable roofer in the Wellington region."
+image: \"https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["roofers Wellington", "roofer Wellington", "roofing cost Wellington", "NZ", "2026"]
 author: "NZ Tradie Tools"

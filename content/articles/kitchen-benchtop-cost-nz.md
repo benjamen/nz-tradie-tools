@@ -1,6 +1,7 @@
 ---
 title: "Kitchen Benchtop Cost NZ 2026 — Stone, Laminate and Timber Prices"
 description: "Kitchen benchtop cost NZ 2026 — engineered stone, laminate, timber, stainless steel and concrete benchtop prices, installation costs, and how to choose the right benchtop for your NZ kitchen."
+image: \"https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["kitchen benchtop", "benchtop cost", "stone benchtop", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

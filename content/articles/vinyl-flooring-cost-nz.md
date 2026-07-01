@@ -1,6 +1,7 @@
 ---
 title: "Vinyl Flooring Cost NZ 2026 — LVT, Sheet Vinyl and What to Expect"
 description: "Vinyl flooring cost NZ 2026 — luxury vinyl tile (LVT), vinyl plank, and sheet vinyl prices per m², waterproof options for kitchens and bathrooms, and installation costs."
+image: \"https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["vinyl flooring", "LVT", "vinyl plank", "flooring", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

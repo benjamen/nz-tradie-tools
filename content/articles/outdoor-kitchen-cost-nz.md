@@ -1,6 +1,7 @@
 ---
 title: "Outdoor Kitchen Cost NZ 2026 — Built-In BBQ, Benchtops and Full Setups"
 description: "Outdoor kitchen cost NZ 2026 — built-in BBQ prices, outdoor benchtop and cabinet costs, complete outdoor kitchen setup prices, and what to include for NZ conditions."
+image: \"https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["outdoor kitchen cost NZ", "outdoor kitchen NZ", "built-in BBQ NZ", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

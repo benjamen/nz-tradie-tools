@@ -1,6 +1,7 @@
 ---
 title: "How to Mark Up Materials in NZ Tradie Quotes: A 2026 Guide"
 description: "A practical guide for New Zealand tradies on marking up materials correctly — with real percentages, escalation clauses, and pricing strategies for 2026."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-26
 tags: [pricing, quoting, materials, job costing, NZ]
 author: "NZ Tradie Tools"

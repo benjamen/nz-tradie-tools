@@ -2,6 +2,7 @@
 title: "Why Flood Resilience Work Matters for NZ Construction in 2026"
 seo_title: "Why Flood Resilience Work Matters for NZ Construction"
 description: "With massive investment in flood resilience projects across NZ, learn about the opportunities and importance for local construction firms."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-10
 tags: [Infrastructure, Resilience, NZ, Construction]
 author: "NZ Tradie Tools"

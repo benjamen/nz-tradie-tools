@@ -1,6 +1,7 @@
 ---
 title: "Roof Replacement NZ 2026 — Costs, Materials and What to Expect"
 description: "Roof replacement costs NZ 2026 — iron, Colorsteel, concrete tile, and long-run. How to get quotes, what's included, and how to spot a good roofer."
+image: \"https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-01
 tags: ["roof replacement", "roofing", "homeowner", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

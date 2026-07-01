@@ -2,6 +2,7 @@
 title: "NZ Building Material Prices Winter 2026: How to Protect Your Quotes"
 seo_title: "NZ Building Material Prices Winter 2026"
 description: "Timber up 5.2%, cladding up 5%, concrete up 4.5% — what NZ tradies need to know about material costs in winter 2026 and how to keep quotes profitable."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-23
 tags: [materials, pricing, quoting, NZ, winter]
 author: "NZ Tradie Tools"

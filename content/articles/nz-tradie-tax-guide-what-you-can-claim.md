@@ -1,6 +1,7 @@
 ---
 title: "NZ Tradie Tax Guide 2026: Every Deduction You Can Claim"
 description: "A plain-English guide to tax deductions for New Zealand self-employed tradies — tools, vehicles, home office, ACC, and more."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-26
 tags: [tax, IRD, deductions, sole trader, NZ]
 author: "NZ Tradie Tools"

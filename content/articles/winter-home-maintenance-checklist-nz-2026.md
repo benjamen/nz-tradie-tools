@@ -2,6 +2,7 @@
 title: "NZ Winter Home Maintenance Checklist 2026 — What to Check Before June"
 seo_title: "NZ Winter Home Maintenance Checklist 2026"
 description: "A practical NZ winter home maintenance checklist for 2026. Roof, insulation, heating, plumbing, gutters — what to check, what it costs."
+image: \"https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=630&fit=crop&auto=format"
 tags: [winter, home maintenance, checklist, NZ, insulation, heating, roofing, plumbing]
 author: "NZ Tradie Tools"
 date: 2026-05-19

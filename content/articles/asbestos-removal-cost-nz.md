@@ -1,6 +1,7 @@
 ---
 title: "Asbestos Removal Cost NZ 2026 — Testing, Removal and What the Law Requires"
 description: "Asbestos removal cost NZ 2026 — testing prices, Class A and B removal costs, licensed removalist requirements under WorkSafe NZ, and what to do if you find asbestos."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["asbestos removal", "asbestos", "asbestos testing", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

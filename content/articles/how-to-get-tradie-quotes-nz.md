@@ -1,6 +1,7 @@
 ---
 title: "How to Get Tradie Quotes in NZ — A Homeowner's Guide to Getting It Right"
 description: "How to get accurate tradie quotes in NZ — what to include in your brief, how many quotes to get, how to compare them, and red flags to watch for. 2026 guide."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-22
 tags: ["quotes", "homeowner", "tradie", "planning", "NZ", "2026"]
 author: "NZ Tradie Tools"

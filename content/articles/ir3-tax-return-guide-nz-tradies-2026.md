@@ -1,6 +1,7 @@
 ---
 title: "IR3 Guide 2026 — NZ Tradie Tax Return: Deadline 7 July 2026"
 description: "IR3 guide 2026 for NZ tradies — file by 7 July 2026, key deductions, Investment Boost claims, provisional tax, and step-by-step myIR walkthrough."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-19
 updated: 2026-06-26
 tags: [tax, IRD, self-employed, compliance, NZ]

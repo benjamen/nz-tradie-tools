@@ -1,6 +1,7 @@
 ---
 title: "Painters Wellington 2026 — Rates, What to Expect and Local Conditions"
 description: "Painters Wellington 2026 — Wellington painter hourly rates, exterior painting costs for windy coastal conditions, how to find a reliable Wellington painter, and what to ask."
+image: \"https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["painters Wellington", "painter Wellington", "painting cost Wellington", "NZ", "2026"]
 author: "NZ Tradie Tools"

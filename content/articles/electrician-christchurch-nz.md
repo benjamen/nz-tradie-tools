@@ -1,6 +1,7 @@
 ---
 title: "Electricians Christchurch 2026 — Rates, Common Jobs and How to Find a Good Electrician"
 description: "Electricians Christchurch 2026 — Canterbury electrician rates, call-out fees, EV charger and switchboard costs, EWRB verification, and how to find a reliable Christchurch electrician."
+image: \"https://images.unsplash.com/photo-1621905252472-943afaa20e20?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["electricians Christchurch", "electrician Christchurch", "electrical cost Christchurch", "NZ", "2026"]
 author: "NZ Tradie Tools"

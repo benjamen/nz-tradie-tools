@@ -1,6 +1,7 @@
 ---
 title: "Home Extension Cost NZ 2026 — Add-On, Upstairs and Sleepout Prices"
 description: "Home extension cost NZ 2026 — single and double storey extension costs per m², sleepout prices, building consent process, and how to budget for adding space to your NZ home."
+image: \"https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["home extension", "house extension", "addition", "sleepout", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

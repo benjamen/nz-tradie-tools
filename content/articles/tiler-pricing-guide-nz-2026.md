@@ -2,6 +2,7 @@
 title: "NZ Tiler Pricing Guide 2026: Hourly Rates, Job Costs & How to Quote"
 seo_title: "NZ Tiler Pricing Guide 2026"
 description: "Current NZ tiler hourly rates, per-square-metre pricing and quoting tips for 2026 — price wall and floor tiling jobs to protect your margins and win work."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-29
 tags: [tiling, pricing, NZ, trade rates, quoting]
 author: "NZ Tradie Tools"

@@ -2,6 +2,7 @@
 title: "Provisional Tax for NZ Tradies: What It Is and How to Manage It"
 seo_title: "Provisional Tax for NZ Tradies"
 description: Provisional tax catches a lot of self-employed tradies off guard. Here's exactly how it works, when payments are due, and how to avoid IRD penalties.
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-08
 tags: [provisional tax, IRD, tax, sole trader, cash flow]
 author: "NZ Tradie Tools"

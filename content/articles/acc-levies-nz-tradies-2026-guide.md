@@ -2,6 +2,7 @@
 title: "ACC Levies for NZ Tradies 2026/27: What Every Self-Employed Tradie Must Know"
 seo_title: "ACC Levies for NZ Tradies 2026/27"
 description: "ACC levies are changing in 2026/27. Here's what NZ self-employed tradies need to know about rates, CoverPlus Extra, and how to reduce your bill."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-09
 tags: [ACC, self-employed, compliance, NZ, levies]
 author: "NZ Tradie Tools"

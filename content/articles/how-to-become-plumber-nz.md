@@ -2,6 +2,7 @@
 title: "How to Become a Plumber in NZ — Apprenticeships, Certifications, and Pay"
 seo_title: "How to Become a Plumber in NZ"
 description: "Step-by-step guide to becoming a licensed plumber in New Zealand — plumbing apprenticeships, Plumbers Gasfitters and Drainlayers Board registration."
+image: \"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-06
 tags: [careers, apprenticeships, plumbing, qualifications, NZ]
 author: "NZ Tradie Tools"

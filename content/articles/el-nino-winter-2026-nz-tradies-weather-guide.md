@@ -1,6 +1,7 @@
 ---
 title: "El Niño Winter 2026: NZ Tradies Weather Planning Guide"
 description: "NIWA forecast: windy conditions and temperature swings ahead. How to plan jobs, manage safety, and adjust scheduling for June-August 2026."
+image: \"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-07
 tags: [weather, winter, seasonal, planning, safety, NZ]
 author: "NZ Tradie Tools"

@@ -1,6 +1,7 @@
 ---
 title: "House Washing Cost NZ 2026 — Soft Wash, Waterblast and Exterior Clean Prices"
 description: "House washing cost NZ 2026 — exterior house wash prices, soft wash vs waterblasting, how often to wash, moss and mould treatment, and how to find a house washer near you."
+image: \"https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["house washing", "exterior cleaning", "soft wash", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"
