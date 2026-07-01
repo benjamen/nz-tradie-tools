@@ -67,6 +67,17 @@ tr:nth-child(even) td { background: var(--bg-stripe); }
 .nav-my-listing { color: rgba(255,255,255,.9) !important; font-weight: 600 !important; border-left: 1px solid rgba(255,255,255,.1); }
 .nav-my-listing:hover { color: var(--white) !important; background: rgba(255,255,255,.1) !important; }
 
+/* For Tradies dropdown */
+.nav-dropdown { position: relative; display: flex; align-items: stretch; border-left: 1px solid rgba(255,255,255,.1); }
+.nav-dropdown-btn { background: none; border: none; color: rgba(255,255,255,.82); font-size: .85rem; font-weight: 500; font-family: var(--font); cursor: pointer; padding: 0 .85rem; letter-spacing: .01em; white-space: nowrap; transition: background .15s, color .15s; min-height: 58px; }
+.nav-dropdown-btn:hover, .nav-dropdown:hover .nav-dropdown-btn { color: #fff; background: rgba(255,255,255,.1); }
+.nav-dropdown-menu { display: none; position: absolute; top: 100%; right: 0; min-width: 185px; background: #1b2a4a; border: 1px solid rgba(255,255,255,.12); border-top: 2px solid var(--orange); border-radius: 0 0 6px 6px; box-shadow: 0 8px 24px rgba(0,0,0,.35); z-index: 300; }
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown-menu.is-open { display: block; }
+.nav-dropdown-menu a { display: block; color: rgba(255,255,255,.82); text-decoration: none; font-size: .85rem; padding: .65rem 1rem; border-bottom: 1px solid rgba(255,255,255,.07); transition: background .12s, color .12s; white-space: nowrap; }
+.nav-dropdown-menu a:last-child { border-bottom: none; }
+.nav-dropdown-menu a:hover { background: rgba(255,255,255,.1); color: #fff; }
+
 /* Hamburger button — hidden on desktop */
 .nav-toggle { display: none; flex-direction: column; justify-content: center; align-items: center; gap: 5px; background: none; border: 2px solid rgba(255,255,255,.3); cursor: pointer; padding: .45rem .55rem; border-radius: var(--radius); margin-left: auto; flex-shrink: 0; }
 .nav-toggle span { display: block; width: 22px; height: 2px; background: #fff; border-radius: 2px; transition: transform .22s ease, opacity .22s ease; }
@@ -108,6 +119,16 @@ tr:nth-child(even) td { background: var(--bg-stripe); }
   }
   .nav-cta { border-left: 4px solid var(--orange) !important; background: rgba(192,86,0,.18) !important; }
   .nav-cta:hover { background: rgba(192,86,0,.3) !important; border-left-color: var(--orange) !important; }
+
+  /* Mobile dropdown — flat, inline */
+  .nav-dropdown { flex-direction: column; border-left: none; border-bottom: 1px solid rgba(255,255,255,.08); }
+  .nav-dropdown-btn { text-align: left; border-left: 4px solid transparent; border-bottom: none; padding: .9rem 1.25rem; font-size: .97rem; min-height: unset; width: 100%; }
+  .nav-dropdown-btn:hover { border-left-color: var(--blue); background: rgba(255,255,255,.07); color: #fff; }
+  .nav-dropdown-menu { display: none; position: static; border: none; border-top: 1px solid rgba(255,255,255,.07); box-shadow: none; border-radius: 0; background: rgba(0,0,0,.2); }
+  .nav-dropdown-menu.is-open { display: block; }
+  .nav-dropdown:hover .nav-dropdown-menu { display: none; }
+  .nav-dropdown-menu a { padding-left: 2rem; font-size: .9rem; border-left: 4px solid transparent; }
+  .nav-dropdown-menu a:hover { border-left-color: var(--blue); }
 
   .logo { font-size: 1rem; }
   .logo-img { height: 60px; }

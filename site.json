@@ -39,28 +39,8 @@
       "url": "/post-job/"
     },
     {
-      "label": "Job Costs",
+      "label": "Cost Guides",
       "url": "/jobs/"
-    },
-    {
-      "label": "Calculators",
-      "url": "/calculators/"
-    },
-    {
-      "label": "Templates",
-      "url": "/templates/"
-    },
-    {
-      "label": "For Tradies",
-      "url": "/for-tradies/"
-    },
-    {
-      "label": "Articles",
-      "url": "/articles/"
-    },
-    {
-      "label": "Contact",
-      "url": "/contact/"
     }
   ]
 }
