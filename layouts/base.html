@@ -25,8 +25,8 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ page_title }} — TradieTools NZ">
     <meta name="twitter:description" content="{{ description }}">
-    <meta property="og:image" content="{{ base_url }}/static/img/social-card.png">
-    <meta name="twitter:image" content="{{ base_url }}/static/img/social-card.png">
+    <meta property="og:image" content="{{ image if image else (base_url ~ '/static/img/social-card.png') }}">
+    <meta name="twitter:image" content="{{ image if image else (base_url ~ '/static/img/social-card.png') }}">
     <link rel="canonical" href="{{ base_url }}/articles/{{ slug }}">
     <link rel="alternate" type="application/rss+xml" title="TradieTools NZ — Articles" href="{{ base_url }}/rss.xml">
     <script type="application/ld+json">
