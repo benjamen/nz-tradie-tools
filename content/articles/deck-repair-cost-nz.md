@@ -1,6 +1,7 @@
 ---
 title: "Deck Repair Cost NZ 2026 — Board Replacement, Piles and Handrail Fixes"
 description: "Deck repair cost NZ 2026 — timber deck board replacement, pile repairs, handrail and balustrade fixes, rotted frame costs, and when repair vs replacement makes sense."
+image: \"https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["deck repair cost", "deck repair NZ", "timber deck repair", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

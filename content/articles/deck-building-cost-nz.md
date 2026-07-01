@@ -1,6 +1,7 @@
 ---
 title: "Deck Building Cost NZ 2026 — Timber, Composite and What to Expect"
 description: "Deck building cost NZ 2026 — timber vs composite decking prices per m², when you need building consent, what affects cost, and how to get quotes from deck builders."
+image: \"https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["deck", "decking", "deck building", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

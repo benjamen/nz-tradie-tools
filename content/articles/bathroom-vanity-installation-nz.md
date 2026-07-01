@@ -1,6 +1,7 @@
 ---
 title: "Bathroom Vanity Installation Cost NZ 2026 — Supply, Fit and Replace Prices"
 description: "Bathroom vanity installation cost NZ 2026 — vanity unit prices, plumber fit-off costs, wall-hung vs freestanding, and how to replace a bathroom vanity in NZ."
+image: \"https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["bathroom vanity", "vanity installation", "bathroom", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

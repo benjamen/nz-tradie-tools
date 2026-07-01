@@ -1,6 +1,7 @@
 ---
 title: "Air Conditioning Cost NZ 2026 — Installation, Running Costs and Best Units"
 description: "Air conditioning cost NZ 2026 — split system, ducted and portable air conditioner prices, installation costs, running cost comparison, and how to find an AC installer near you."
+image: \"https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["air conditioning", "air conditioner", "heat pump", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

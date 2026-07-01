@@ -2,6 +2,7 @@
 title: "Deck Cost NZ 2026: How Much Does a Deck Cost?"
 seo_title: "Deck Cost NZ 2026"
 description: "How much does a deck cost in NZ in 2026? Labour rates per m², materials comparison, consent rules, cost factors and tips for getting deck quotes."
+image: \"https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-18
 tags: ["deck cost", "decking", "NZ", "2026", "outdoor", "home renovation"]
 author: "NZ Tradie Tools"

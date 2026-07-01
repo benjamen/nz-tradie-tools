@@ -1,6 +1,7 @@
 ---
 title: "Retaining Wall Cost NZ 2026 — Timber, Block and Concrete Prices"
 description: "Retaining wall cost NZ 2026 — timber sleeper, concrete block, and engineered concrete wall prices per m², when consent is required, drainage requirements, and how to get quotes."
+image: \"https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["retaining wall", "retaining", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

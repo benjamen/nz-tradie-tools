@@ -1,6 +1,7 @@
 ---
 title: "Carpet Installation Cost NZ 2026 — Prices, Types and Finding Carpet Layers Near You"
 description: "Carpet installation cost NZ 2026 — price per m², carpet types, underlay, removal of old carpet, and how to find carpet layers near you. Full homeowner guide."
+image: \"https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["carpet", "carpet installation", "carpet layers", "flooring", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

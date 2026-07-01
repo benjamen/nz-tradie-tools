@@ -1,6 +1,7 @@
 ---
 title: "10 Bathroom Renovation Mistakes NZ Homeowners Make (And How to Avoid Them)"
 description: "Common NZ bathroom renovation mistakes — wrong tile order, skipping waterproofing sign-off, not booking trades early, layout changes mid-build. How to avoid each one."
+image: \"https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-22
 tags: ["bathroom renovation", "mistakes", "homeowner", "planning", "NZ", "2026"]
 author: "NZ Tradie Tools"

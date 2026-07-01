@@ -2,6 +2,7 @@
 title: "How Much Do Builders Charge in NZ? 2026 Pricing Guide"
 seo_title: "NZ Builder Costs 2026 — Hourly Rates, Day Rates & Project Pricing"
 description: "NZ builder hourly rates, day rates and project costs for 2026 — what affects pricing, how quotes are structured, and what to ask before you hire."
+image: \"https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-08
 tags: [builders, pricing, costs, NZ, 2026]
 author: "NZ Tradie Tools"

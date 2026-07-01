@@ -1,6 +1,7 @@
 ---
 title: "Building Consent Costs NZ 2026 — Full Guide"
 description: "Building consent costs in NZ 2026 — council fees, MBIE levy, BRANZ levy, inspection costs. What to budget before you start any building project."
+image: \"https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-27
 tags: ["building consent", "costs", "MBIE", "council", "builders", "NZ", "2026"]
 author: "NZ Tradie Tools"

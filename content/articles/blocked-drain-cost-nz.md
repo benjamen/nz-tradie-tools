@@ -1,6 +1,7 @@
 ---
 title: "Blocked Drain Cost NZ 2026 — Call-Out Prices, Causes and When to Call a Drainlayer"
 description: "Blocked drain cost NZ 2026 — plumber and drainlayer call-out prices, hydro-jetting, CCTV inspection costs, common causes, and what to do when drains block."
+image: \"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["blocked drain", "drain", "plumber", "drainlayer", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

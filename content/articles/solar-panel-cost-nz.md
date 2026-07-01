@@ -1,6 +1,7 @@
 ---
 title: "Solar Panel Installation Cost NZ 2026 — System Prices, Payback and Choosing a Installer"
 description: "Solar panel installation cost NZ 2026 — residential solar system prices by size, payback periods, battery storage costs, net metering, and how to find a solar installer near you."
+image: \"https://images.unsplash.com/photo-1621905252472-943afaa20e20?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["solar panels", "solar installation", "solar cost", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

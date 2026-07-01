@@ -2,6 +2,7 @@
 title: "How Much Do Electricians Charge in NZ? 2026 Pricing & Callout Rates"
 seo_title: "How Much Do Electricians Charge in NZ? 2026 Pricing &…"
 description: "NZ electrician callout fees, hourly rates, and common job costs in 2026 — plus what affects pricing and how to get accurate quotes."
+image: \"https://images.unsplash.com/photo-1621905252472-943afaa20e20?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-08
 tags: [electricians, pricing, callout rates, NZ, 2026]
 author: "NZ Tradie Tools"

@@ -1,6 +1,7 @@
 ---
 title: "Bathroom Tiling Cost NZ 2026 — Floor, Wall and Full Bathroom Tile Prices"
 description: "Bathroom tiling cost NZ 2026 — bathroom floor and wall tile costs per m², tiler labour rates, tile supply prices, full bathroom tiling costs, and how to find a bathroom tiler near you."
+image: \"https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["bathroom tiling", "bathroom tiles", "tiling cost", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

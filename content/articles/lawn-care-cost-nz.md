@@ -1,6 +1,7 @@
 ---
 title: "Lawn Care Cost NZ 2026 — Mowing, Fertilising and Lawn Renovation Prices"
 description: "Lawn care cost NZ 2026 — lawn mowing prices per visit, fertilising and aeration costs, lawn renovation and new lawn prices, and how to find a lawn care service near you."
+image: \"https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["lawn care", "lawn mowing", "lawn maintenance", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

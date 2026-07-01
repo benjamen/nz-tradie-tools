@@ -1,6 +1,7 @@
 ---
 title: "Cladding Replacement Cost NZ 2026 — Weatherboard, Plaster and Fibre Cement Prices"
 description: "Cladding replacement cost NZ 2026 — weatherboard, fibre cement, plaster and brick veneer cladding replacement costs, weathertightness context, consent rules, and how to find a cladding contractor."
+image: \"https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["cladding replacement", "cladding", "weatherboard", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

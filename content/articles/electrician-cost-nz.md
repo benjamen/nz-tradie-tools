@@ -1,6 +1,7 @@
 ---
 title: "Electrician Cost NZ 2026 — Hourly Rates, Call-Out Fees and Common Job Prices"
 description: "Electrician cost NZ 2026 — hourly rates, call-out fees, switchboard upgrades, EV charger installation, and how to find a registered electrician near you."
+image: \"https://images.unsplash.com/photo-1621905252472-943afaa20e20?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["electrician", "electrical", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

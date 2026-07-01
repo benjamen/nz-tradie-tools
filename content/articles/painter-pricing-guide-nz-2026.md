@@ -2,6 +2,7 @@
 title: "How Much Do Painters Charge in NZ? 2026 Rates & Project Costs"
 seo_title: "How Much Do Painters Charge in NZ? 2026 Rates & Project…"
 description: "NZ painter hourly rates, day rates, and project costs for interior and exterior painting in 2026 — what drives price differences and how quotes work."
+image: \"https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-08
 tags: [painters, pricing, costs, interior, exterior, NZ, 2026]
 author: "NZ Tradie Tools"

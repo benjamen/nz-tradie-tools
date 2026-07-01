@@ -1,6 +1,7 @@
 ---
 title: "Heat Pump Installation Cost NZ 2026 — Prices, Brands and What to Expect"
 description: "Heat pump installation cost NZ 2026 — supply and install prices, best brands, running costs, how many kW you need, and how to get quotes from certified installers."
+image: \"https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["heat pump", "heat pump installation", "costs", "NZ", "2026", "Mitsubishi", "Daikin"]
 author: "NZ Tradie Tools"

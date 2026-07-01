@@ -1,6 +1,7 @@
 ---
 title: "Kitchen Renovation Cost NZ 2026 — Full Budgets, Timelines and Trade Breakdown"
 description: "Kitchen renovation cost NZ 2026 — cabinetry, benchtops, appliances, plumbing, electrical. Realistic budget ranges from cosmetic refresh to full gut renovation."
+image: \"https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["kitchen renovation", "kitchen", "renovation", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

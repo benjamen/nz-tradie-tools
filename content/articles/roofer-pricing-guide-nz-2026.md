@@ -1,6 +1,7 @@
 ---
 title: "How Much Do Roofers Charge in NZ? 2026 Roofing Costs & Rates"
 description: "NZ roofing costs by job type — reroof, repairs, spouting, tile vs iron — with typical 2026 prices and what affects your quote."
+image: \"https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1200&h=630&fit=crop&auto=format"
 date: 2026-05-08
 tags: [roofers, pricing, costs, roofing, NZ, 2026]
 author: "NZ Tradie Tools"

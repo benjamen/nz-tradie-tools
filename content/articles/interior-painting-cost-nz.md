@@ -1,6 +1,7 @@
 ---
 title: "Interior House Painting Cost NZ 2026 — Prices, Prep and What Painters Charge"
 description: "Interior house painting cost NZ 2026 — price per m², ceiling vs walls, how many coats, what affects cost, and how to find and compare interior painters near you."
+image: \"https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["interior painting", "house painting", "painters", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

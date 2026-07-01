@@ -1,6 +1,7 @@
 ---
 title: "Bathroom Renovation Cost NZ 2026 — Full Budgets, Timelines and What to Expect"
 description: "Bathroom renovation cost NZ 2026 — full renovation vs refresh prices, tiling, waterproofing, plumbing fixtures, and how to budget for a NZ bathroom renovation."
+image: \"https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["bathroom renovation", "bathroom", "renovation", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

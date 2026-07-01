@@ -2,6 +2,7 @@
 title: "Asphalt Driveway Cost NZ 2026 — Prices, Pros and Cons, Getting Quotes"
 seo_title: "Asphalt Driveway Cost NZ 2026 — Price Per m² + Free Calculator"
 description: "Asphalt driveway cost NZ 2026 — price per m², free cost calculator, chip seal vs asphalt, how long it lasts, and what to ask contractors."
+image: \"https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["asphalt driveway", "driveway", "asphalt", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

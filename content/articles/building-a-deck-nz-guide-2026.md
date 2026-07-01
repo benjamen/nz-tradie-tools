@@ -1,6 +1,7 @@
 ---
 title: "Building a Deck NZ 2026 — Costs, Consent Rules and DIY Guide"
 description: "Building a deck NZ — whether you need consent, how to choose timber, costs, and a step-by-step construction overview. Complete 2026 homeowner guide."
+image: \"https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-01
 tags: ["deck", "decking", "DIY", "homeowner", "building consent", "NZ", "2026"]
 author: "NZ Tradie Tools"

@@ -1,6 +1,7 @@
 ---
 title: "Carpet Installation Cost NZ 2026 — Per Square Metre Prices, Underlay and What to Know"
 description: "Carpet installation cost NZ 2026 — carpet and underlay prices per m², room and full-house costs, choosing the right carpet grade for NZ homes, and finding a good carpet layer."
+image: \"https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["carpet installation cost NZ", "carpet cost NZ", "carpet layer NZ", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"

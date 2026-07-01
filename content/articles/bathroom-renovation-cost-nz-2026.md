@@ -2,6 +2,7 @@
 title: "Bathroom Renovation Cost NZ 2026: Full Price Breakdown"
 seo_title: "Bathroom Renovation Cost NZ 2026"
 description: "How much does a bathroom renovation cost in NZ? 2026 price ranges, full item breakdown, consent rules, labour rates, costs by city, and ways to save."
+image: \"https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-18
 tags: ["bathroom renovation", "cost", "NZ", "2026", "home renovation"]
 author: "NZ Tradie Tools"

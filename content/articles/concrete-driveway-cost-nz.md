@@ -1,6 +1,7 @@
 ---
 title: "Concrete Driveway Cost NZ 2026 — Prices, Finishes and What to Expect"
 description: "Concrete driveway cost NZ 2026 — price per m², plain vs exposed aggregate vs coloured, how thick, drainage requirements, and how to compare concrete contractor quotes."
+image: \"https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop&auto=format"
 date: 2026-06-23
 tags: ["concrete driveway", "driveway", "concrete", "costs", "NZ", "2026"]
 author: "NZ Tradie Tools"
