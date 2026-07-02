@@ -1,7 +1,7 @@
 ---
 title: "Insulation Installers Rotorua 2026 — Insulation Costs, Grants and What to Expect"
 description: "Insulation installers Rotorua 2026 — Rotorua insulation costs, ceiling vs underfloor prices, Warmer Kiwi Homes grants, and how to find a reliable insulation installer near you."
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1584225064536-4d0abe013e95?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["insulation installers Rotorua", "insulation cost Rotorua", "ceiling insulation Rotorua", "Bay of Plenty", "NZ", "2026"]
 author: "TradieTools NZ"

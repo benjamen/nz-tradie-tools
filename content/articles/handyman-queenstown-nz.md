@@ -1,7 +1,7 @@
 ---
 title: "Handyman Queenstown 2026 — Handyman Rates, Costs and What They Can Do"
 description: "Handyman Queenstown 2026 — Queenstown handyman hourly rates, typical job costs, what a handyman can and can't do, and how to find a reliable handyman near you."
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["handyman Queenstown", "handyman cost Queenstown", "odd jobs Queenstown", "Queenstown-Lakes", "NZ", "2026"]
 author: "TradieTools NZ"

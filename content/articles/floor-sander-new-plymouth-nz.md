@@ -1,7 +1,7 @@
 ---
 title: "Floor Sanders New Plymouth 2026 — Timber Floor Sanding Costs and What to Expect"
 description: "Floor sanders New Plymouth 2026 — New Plymouth floor sanding costs, timber finishing prices, staining rates, and how to find a reliable floor sander near you."
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["floor sanding New Plymouth", "floor sanders New Plymouth", "timber floor New Plymouth", "Taranaki", "NZ", "2026"]
 author: "TradieTools NZ"

@@ -1,7 +1,7 @@
 ---
 title: "Plumbers Tauranga 2026 — Hourly Rates, Call-Out Fees and Common Job Costs"
 description: "Plumbers Tauranga 2026 — Tauranga plumber hourly rates, call-out fees, hot water cylinder costs, drain unblocking prices, and how to find a reliable plumber near you."
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["plumbers Tauranga", "plumber Tauranga", "plumbing cost Tauranga", "Bay of Plenty", "NZ", "2026"]
 author: "TradieTools NZ"

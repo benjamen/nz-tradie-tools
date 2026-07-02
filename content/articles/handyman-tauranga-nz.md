@@ -1,7 +1,7 @@
 ---
 title: "Handyman Tauranga 2026 — Hourly Rates, Jobs and What to Expect"
 description: "Handyman Tauranga 2026 — Tauranga handyman hourly rates, call-out fees, common jobs, what a handyman can and can't do, and how to find a reliable handyman near you."
-image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["handyman Tauranga", "handyman cost Tauranga", "Bay of Plenty", "NZ", "2026"]
 author: "TradieTools NZ"

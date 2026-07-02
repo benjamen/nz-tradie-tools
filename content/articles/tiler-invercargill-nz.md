@@ -1,7 +1,7 @@
 ---
 title: "Tilers Invercargill 2026 — Tiling Rates, Costs and What to Expect"
 description: "Tilers Invercargill 2026 — Invercargill tiler rates, floor and wall tiling costs, bathroom tiling prices, and how to find a reliable tiler near you."
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["tilers Invercargill", "tiler Invercargill", "tiling cost Invercargill", "Southland", "NZ", "2026"]
 author: "TradieTools NZ"

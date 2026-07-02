@@ -1,7 +1,7 @@
 ---
 title: "Roofers Tauranga 2026 — Roof Replacement Costs, Repair Prices and What to Expect"
 description: "Roofers Tauranga 2026 — Tauranga roof replacement cost, repair prices, iron vs tile vs membrane, how to get quotes, and how to find a reliable roofer near you."
-image: "https://images.unsplash.com/photo-1632207691143-643e2a9a9361?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["roofers Tauranga", "roofer Tauranga", "roof replacement Tauranga", "Bay of Plenty", "NZ", "2026"]
 author: "TradieTools NZ"

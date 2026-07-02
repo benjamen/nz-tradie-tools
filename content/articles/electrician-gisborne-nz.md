@@ -1,7 +1,7 @@
 ---
 title: "Electricians Gisborne 2026 — Electrician Rates, Costs and What to Expect"
 description: "Electricians Gisborne 2026 — Gisborne electrician hourly rates, call-out costs, common job prices, and how to find a reliable registered electrician near you."
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1621905252472-943afaa20e20?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["electricians Gisborne", "electrician Gisborne", "electrician cost Gisborne", "Gisborne", "NZ", "2026"]
 author: "TradieTools NZ"

@@ -1,7 +1,7 @@
 ---
 title: "Fence Installers Nelson 2026 — Fencing Costs, Materials and What to Expect"
 description: "Fence installers Nelson 2026 — Nelson fencing costs, timber vs Colorbond prices, fence consent requirements, and how to find a reliable fence installer near you."
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1580281657702-257584239a55?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["fence installers Nelson", "fencing Nelson", "fence cost Nelson", "Nelson-Tasman", "NZ", "2026"]
 author: "TradieTools NZ"

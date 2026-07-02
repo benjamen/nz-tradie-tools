@@ -1,7 +1,7 @@
 ---
 title: "Locksmiths Invercargill 2026 — Locksmith Costs, Lockout Prices and What to Expect"
 description: "Locksmiths Invercargill 2026 — Invercargill locksmith call-out rates, emergency lockout costs, lock replacement prices, and how to find a reliable locksmith near you."
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["locksmiths Invercargill", "locksmith Invercargill", "locksmith cost Invercargill", "Southland", "NZ", "2026"]
 author: "TradieTools NZ"

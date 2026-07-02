@@ -1,7 +1,7 @@
 ---
 title: "Tilers New Plymouth 2026 — Tiling Rates, Bathroom Costs and What to Expect"
 description: "Tilers New Plymouth 2026 — New Plymouth tiler hourly rates, bathroom tiling cost, floor and wall tiling prices, and how to find a reliable tiler near you."
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["tilers New Plymouth", "tiler New Plymouth", "tiling cost New Plymouth", "Taranaki", "NZ", "2026"]
 author: "TradieTools NZ"

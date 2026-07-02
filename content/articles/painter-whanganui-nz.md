@@ -1,7 +1,7 @@
 ---
 title: "Painters Whanganui 2026 — Painting Rates, Costs and What to Expect"
 description: "Painters Whanganui 2026 — Whanganui painter rates, interior painting costs, exterior house painting prices, and how to find a reliable painter near you."
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["painters Whanganui", "painter Whanganui", "painting cost Whanganui", "Manawatu-Whanganui", "NZ", "2026"]
 author: "TradieTools NZ"

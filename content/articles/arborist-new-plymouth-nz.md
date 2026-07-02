@@ -1,7 +1,7 @@
 ---
 title: "Arborists New Plymouth 2026 — Tree Removal Costs, Pruning Prices and What to Expect"
 description: "Arborists New Plymouth 2026 — New Plymouth tree removal cost, pruning prices, stump grinding rates, council consent rules, and how to find a qualified arborist near you."
-image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1535192025727-0d7aaf27a9db?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["arborists New Plymouth", "arborist New Plymouth", "tree removal New Plymouth", "tree pruning New Plymouth", "Taranaki", "NZ", "2026"]
 author: "TradieTools NZ"

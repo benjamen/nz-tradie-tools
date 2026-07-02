@@ -1,7 +1,7 @@
 ---
 title: "Plumbers Whanganui 2026 — Plumber Rates, Costs and What to Expect"
 description: "Plumbers Whanganui 2026 — Whanganui plumber hourly rates, call-out costs, common job prices, and how to find a reliable registered plumber near you."
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["plumbers Whanganui", "plumber Whanganui", "plumber cost Whanganui", "Manawatu-Whanganui", "NZ", "2026"]
 author: "TradieTools NZ"

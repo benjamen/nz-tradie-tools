@@ -1,7 +1,7 @@
 ---
 title: "Painters Palmerston North 2026 — Interior and Exterior Painting Costs"
 description: "Painters Palmerston North 2026 — Palmerston North painter hourly rates, exterior house painting cost, interior room prices, and how to find a reliable painter near you."
-image: "https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["painters Palmerston North", "painter Palmerston North", "painting cost Palmerston North", "Manawatu-Whanganui", "NZ", "2026"]
 author: "TradieTools NZ"

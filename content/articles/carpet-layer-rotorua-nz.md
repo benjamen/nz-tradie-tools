@@ -1,7 +1,7 @@
 ---
 title: "Carpet Layers Rotorua 2026 — Carpet Costs, Types and What to Expect"
 description: "Carpet layers Rotorua 2026 — Rotorua carpet laying costs, wool vs synthetic pricing, underlay costs, and how to find a reliable carpet layer near you."
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["carpet layers Rotorua", "carpet layer Rotorua", "carpet cost Rotorua", "Bay of Plenty", "NZ", "2026"]
 author: "TradieTools NZ"

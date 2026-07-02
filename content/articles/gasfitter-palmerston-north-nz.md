@@ -1,7 +1,7 @@
 ---
 title: "Gasfitters Palmerston North 2026 — Gas Fitting Rates, Costs and What Requires a Licensed Gasfitter"
 description: "Gasfitters Palmerston North 2026 — Palmerston North gasfitter rates, gas hob installation cost, gas hot water prices, LPG vs natural gas, and how to find a licensed gasfitter near you."
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["gasfitters Palmerston North", "gasfitter Palmerston North", "gas fitting Palmerston North", "Manawatu-Whanganui", "NZ", "2026"]
 author: "TradieTools NZ"

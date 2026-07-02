@@ -1,7 +1,7 @@
 ---
 title: "House Washing Dunedin 2026 — Waterblasting Costs and What to Expect"
 description: "House washing Dunedin 2026 — Dunedin house washing costs, waterblasting prices, roof treatment rates, driveway cleaning costs, and how to find a reliable house washer near you."
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1604328702728-d26d2062c20a?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["house washing Dunedin", "waterblasting Dunedin", "house wash cost Dunedin", "Otago", "NZ", "2026"]
 author: "TradieTools NZ"

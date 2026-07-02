@@ -1,7 +1,7 @@
 ---
 title: "Drainlayers Wellington 2026 — Drain Costs, Sewer Repair Prices and What to Expect"
 description: "Drainlayers Wellington 2026 — Wellington drainlayer rates, sewer repair costs, drain camera inspection prices, new connection fees, and how to find a licensed drainlayer near you."
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["drainlayers Wellington", "drainlayer Wellington", "drain cost Wellington", "Wellington", "NZ", "2026"]
 author: "TradieTools NZ"

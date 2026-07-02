@@ -1,7 +1,7 @@
 ---
 title: "Carpet Layers Wellington 2026 — Carpet Installation Costs and What to Expect"
 description: "Carpet layers Wellington 2026 — Wellington carpet installation cost, supply and lay prices, carpet types for NZ homes, and how to find a reliable carpet layer near you."
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["carpet layers Wellington", "carpet installation Wellington", "carpet cost Wellington", "Wellington", "NZ", "2026"]
 author: "TradieTools NZ"

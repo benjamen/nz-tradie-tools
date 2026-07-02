@@ -1,7 +1,7 @@
 ---
 title: "EV Charger Installation New Plymouth 2026 — Home EV Charging Costs and What to Expect"
 description: "EV charger installation New Plymouth 2026 — New Plymouth home EV charger costs, Level 2 charging prices, smart charger options, and how to find a qualified electrician near you."
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["EV charger installation New Plymouth", "home EV charger New Plymouth", "electric vehicle charger New Plymouth", "Taranaki", "NZ", "2026"]
 author: "TradieTools NZ"

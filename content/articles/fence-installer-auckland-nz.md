@@ -1,7 +1,7 @@
 ---
 title: "Fence Installers Auckland 2026 — Fencing Costs, Materials and What to Expect"
 description: "Fence installers Auckland 2026 — Auckland fencing costs per metre, timber vs aluminium vs concrete, pool fencing prices, and how to find a reliable fence installer near you."
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1580281657702-257584239a55?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["fence installers Auckland", "fencing Auckland", "fence cost Auckland", "Auckland", "NZ", "2026"]
 author: "TradieTools NZ"

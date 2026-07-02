@@ -1,7 +1,7 @@
 ---
 title: "Roofers New Plymouth 2026 — Roof Replacement Costs, Repair Prices and What to Expect"
 description: "Roofers New Plymouth 2026 — New Plymouth roof replacement cost, repair prices, iron vs tile vs membrane, how to get quotes, and how to find a reliable roofer near you."
-image: "https://images.unsplash.com/photo-1632207691143-643e2a9a9361?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["roofers New Plymouth", "roofer New Plymouth", "roof replacement New Plymouth", "Taranaki", "NZ", "2026"]
 author: "TradieTools NZ"

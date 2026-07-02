@@ -1,7 +1,7 @@
 ---
 title: "Plumbers Dunedin 2026 — Hourly Rates, Call-Out Fees and Common Job Costs"
 description: "Plumbers Dunedin 2026 — Dunedin plumber hourly rates, call-out fees, hot water cylinder costs, drain unblocking prices, and how to find a reliable plumber near you."
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["plumbers Dunedin", "plumber Dunedin", "plumbing cost Dunedin", "Otago", "NZ", "2026"]
 author: "TradieTools NZ"

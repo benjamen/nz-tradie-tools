@@ -1,7 +1,7 @@
 ---
 title: "Tilers Hamilton 2026 — Tiling Rates, Bathroom and Kitchen Tile Costs"
 description: "Tilers Hamilton 2026 — Hamilton tiler hourly rates, bathroom tiling cost, kitchen splashback prices, floor tiling rates, and how to find a reliable tiler near you."
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["tilers Hamilton", "tiler Hamilton", "tiling cost Hamilton", "Waikato", "NZ", "2026"]
 author: "TradieTools NZ"

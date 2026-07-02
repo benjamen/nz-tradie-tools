@@ -1,7 +1,7 @@
 ---
 title: "House Washers Rotorua 2026 — House Washing Costs, Soft Wash vs Pressure Wash"
 description: "House washers Rotorua 2026 — Rotorua house washing costs, soft wash vs pressure wash, roof treatment prices, and how to find a reliable house washing company near you."
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1604328702728-d26d2062c20a?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["house washers Rotorua", "house washing Rotorua", "house wash cost Rotorua", "Bay of Plenty", "NZ", "2026"]
 author: "TradieTools NZ"

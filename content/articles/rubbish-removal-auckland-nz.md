@@ -1,7 +1,7 @@
 ---
 title: "Rubbish Removal Auckland 2026 — Costs, Skip Bins and What to Expect"
 description: "Rubbish removal Auckland 2026 — Auckland rubbish removal costs, skip bin hire prices, man-and-van rates, what can and can't be removed, and how to find a reliable rubbish removal company near you."
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["rubbish removal Auckland", "skip bin Auckland", "junk removal Auckland", "Auckland", "NZ", "2026"]
 author: "TradieTools NZ"

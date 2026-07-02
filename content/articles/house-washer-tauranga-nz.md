@@ -1,7 +1,7 @@
 ---
 title: "House Washing Tauranga 2026 — Waterblasting Costs and What to Expect"
 description: "House washing Tauranga 2026 — Tauranga house washing costs, waterblasting prices, roof treatment rates, driveway cleaning costs, and how to find a reliable house washer near you."
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1604328702728-d26d2062c20a?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["house washing Tauranga", "waterblasting Tauranga", "house wash cost Tauranga", "Bay of Plenty", "NZ", "2026"]
 author: "TradieTools NZ"

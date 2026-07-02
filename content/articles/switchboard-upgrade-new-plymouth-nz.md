@@ -1,7 +1,7 @@
 ---
 title: "Switchboard Upgrade New Plymouth 2026 — Costs, What's Involved and When You Need One"
 description: "Switchboard upgrade New Plymouth 2026 — New Plymouth switchboard upgrade costs, fuse board replacement prices, RCD installation, and how to find a qualified electrician near you."
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1621905252472-943afaa20e20?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["switchboard upgrade New Plymouth", "fuse board replacement New Plymouth", "electrician New Plymouth", "Taranaki", "NZ", "2026"]
 author: "TradieTools NZ"

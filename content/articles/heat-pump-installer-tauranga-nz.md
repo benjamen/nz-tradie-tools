@@ -1,7 +1,7 @@
 ---
 title: "Heat Pump Installation Tauranga 2026 — Costs, Brands and What to Expect"
 description: "Heat pump installation Tauranga 2026 — Tauranga heat pump costs, best brands for NZ conditions, installation prices, servicing costs, and how to find a reliable installer near you."
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1631545804879-ae80498e6e7e?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["heat pump installation Tauranga", "heat pump Tauranga", "heat pump cost Tauranga", "Bay of Plenty", "NZ", "2026"]
 author: "TradieTools NZ"

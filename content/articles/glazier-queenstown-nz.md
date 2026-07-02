@@ -1,7 +1,7 @@
 ---
 title: "Glaziers Queenstown 2026 — Glass Repair Costs, Window Replacement and What to Expect"
 description: "Glaziers Queenstown 2026 — Queenstown glazier call-out rates, glass repair costs, window replacement prices, double glazing costs, and how to find a reliable glazier near you."
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["glaziers Queenstown", "glazier Queenstown", "glass repair Queenstown", "window replacement Queenstown", "Queenstown-Lakes", "NZ", "2026"]
 author: "TradieTools NZ"

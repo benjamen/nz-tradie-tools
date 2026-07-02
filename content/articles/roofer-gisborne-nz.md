@@ -1,7 +1,7 @@
 ---
 title: "Roofers Gisborne 2026 — Roofing Costs, Repairs and What to Expect"
 description: "Roofers Gisborne 2026 — Gisborne roofing costs, roof repair prices, re-roofing quotes, iron vs tile vs membrane costs, and how to find a reliable roofer near you."
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["roofers Gisborne", "roofer Gisborne", "roofing cost Gisborne", "Gisborne", "NZ", "2026"]
 author: "TradieTools NZ"

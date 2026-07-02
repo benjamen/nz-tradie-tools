@@ -1,7 +1,7 @@
 ---
 title: "Pergola Builders Tauranga 2026 — Pergola Costs, Types and What to Expect"
 description: "Pergola builders Tauranga 2026 — Tauranga pergola costs, louvred vs shade sail vs timber prices, consent requirements, and how to find a reliable pergola builder near you."
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1558908067-dd0e7b4ed52e?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["pergola builders Tauranga", "pergola cost Tauranga", "pergola Tauranga", "Bay of Plenty", "NZ", "2026"]
 author: "TradieTools NZ"

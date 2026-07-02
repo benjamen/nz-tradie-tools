@@ -1,7 +1,7 @@
 ---
 title: "Heat Pump Installers Invercargill 2026 — Heat Pump Costs, Brands and What to Expect"
 description: "Heat pump installers Invercargill 2026 — Invercargill heat pump installation costs, single vs multi-split pricing, best brands for Invercargill's climate, and how to find a reliable installer near you."
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1631545804879-ae80498e6e7e?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["heat pump installers Invercargill", "heat pump cost Invercargill", "heat pump installation Invercargill", "Southland", "NZ", "2026"]
 author: "TradieTools NZ"

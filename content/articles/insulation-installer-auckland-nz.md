@@ -1,7 +1,7 @@
 ---
 title: "Insulation Installers Auckland 2026 — Insulation Costs, Types and Subsidies"
 description: "Insulation installers Auckland 2026 — Auckland ceiling insulation cost, underfloor insulation prices, Warmer Kiwi Homes subsidies, and how to find a reliable insulation installer near you."
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1584225064536-4d0abe013e95?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["insulation Auckland", "insulation installer Auckland", "ceiling insulation Auckland", "Auckland", "NZ", "2026"]
 author: "TradieTools NZ"

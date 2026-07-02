@@ -1,7 +1,7 @@
 ---
 title: "Floor Sanders Christchurch 2026 — Timber Floor Sanding Costs and What to Expect"
 description: "Floor sanders Christchurch 2026 — Christchurch floor sanding cost, timber floor finishing prices, staining rates, what floors can be sanded, and how to find a reliable floor sander near you."
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["floor sanding Christchurch", "floor sanders Christchurch", "timber floor Christchurch", "Canterbury", "NZ", "2026"]
 author: "TradieTools NZ"

@@ -1,7 +1,7 @@
 ---
 title: "Solar Installers Hamilton 2026 — Solar Panel Costs, Payback and What to Expect"
 description: "Solar installers Hamilton 2026 — Hamilton solar panel installation costs, system sizes, payback periods, battery storage prices, and how to find a reliable solar installer near you."
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["solar installers Hamilton", "solar panels Hamilton", "solar installation cost Hamilton", "Waikato", "NZ", "2026"]
 author: "TradieTools NZ"

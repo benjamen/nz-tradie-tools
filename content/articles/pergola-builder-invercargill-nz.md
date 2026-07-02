@@ -1,7 +1,7 @@
 ---
 title: "Pergola Builders Invercargill 2026 — Pergola Costs, Types and What to Expect"
 description: "Pergola builders Invercargill 2026 — Invercargill pergola costs, louvred vs timber vs polycarbonate prices, consent requirements, and how to find a reliable pergola builder near you."
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1558908067-dd0e7b4ed52e?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["pergola builders Invercargill", "pergola cost Invercargill", "pergola Invercargill", "Southland", "NZ", "2026"]
 author: "TradieTools NZ"
