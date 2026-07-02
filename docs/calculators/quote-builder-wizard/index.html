@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- NZ-local signals -->
+    <meta name="geo.region" content="NZ">
+    <meta name="geo.placename" content="New Zealand">
+    <meta name="ICBM" content="-41.2866, 174.7756">
+    <!-- Performance -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://tradietools.optified.nz">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap">
+    <title>Quote Builder Wizard — NZ Tradie Quotes</title>
+    <meta name="description" content="Build a complete, professional quote for any NZ trade job in 4 steps — labour, materials, markup, GST, and a printable summary your client can sign.">
+    <meta property="og:title" content="Quote Builder Wizard — Build a Professional NZ Tradie Quote Step by Step — TradieTools NZ">
+    <meta property="og:description" content="Build a complete, professional quote for any NZ trade job in 4 steps — labour, materials, markup, GST, and a printable summary your client can sign.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradietools.nz/calculators/quote-builder-wizard/">
+    <meta property="og:site_name" content="TradieTools NZ">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Quote Builder Wizard — Build a Professional NZ Tradie Quote Step by Step — TradieTools NZ">
+    <meta name="twitter:description" content="Build a complete, professional quote for any NZ trade job in 4 steps — labour, materials, markup, GST, and a printable summary your client can sign.">
+    <meta property="og:image" content="https://tradietools.nz/static/img/social-card.svg">
+    <meta name="twitter:image" content="https://tradietools.nz/static/img/social-card.svg">
+    <link rel="canonical" href="https://tradietools.nz/calculators/quote-builder-wizard/">
+    <link rel="alternate" type="application/rss+xml" title="TradieTools NZ — Articles" href="https://tradietools.nz/rss.xml">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"Quote Builder Wizard \u2014 Build a Professional NZ Tradie Quote Step by Step","description":"Build a complete, professional quote for any NZ trade job in 4 steps \u2014 labour, materials, markup, GST, and a printable summary your client can sign.","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://tradietools.nz/calculators/quote-builder-wizard/","offers":{"@type":"Offer","price":"0","priceCurrency":"NZD"},"author":{"@type":"Organization","name":"TradieTools NZ","url":"https://tradietools.nz"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tradietools.nz"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://tradietools.nz/calculators/"},{"@type":"ListItem","position":3,"name":"Quote Builder Wizard \u2014 Build a Professional NZ Tradie Quote Step by Step","item":"https://tradietools.nz/calculators/quote-builder-wizard/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What should a NZ tradie quote include to be legally valid?","acceptedAnswer":{"@type":"Answer","text":"A NZ quote should include: your business name and NZBN/GST number, date and expiry, client details, detailed scope of work, inclusions and exclusions, total price (+ GST or GST incl), and payment terms."}},{"@type":"Question","name":"What is the difference between a quote and an estimate in NZ?","acceptedAnswer":{"@type":"Answer","text":"A quote is a fixed price offer. If accepted, you must complete the work at that price unless agreed variations arise. An estimate is an approximation and is not binding. Clients prefer quotes; courts distinguish between the two."}},{"@type":"Question","name":"How long should a tradie quote be valid for in NZ?","acceptedAnswer":{"@type":"Answer","text":"Most NZ tradies set a quote validity of 30\u201360 days. In periods of material price volatility, 14\u201330 days may be more appropriate. Always specify the expiry date on the quote document."}},{"@type":"Question","name":"Do I need to charge GST on quotes if I\u0027m not yet GST-registered?","acceptedAnswer":{"@type":"Answer","text":"No. If you\u0027re not GST-registered, your quote is GST-exclusive and you should clearly state \u0027Not registered for GST\u0027 or \u0027No GST applicable\u0027. Once you register, you must charge GST on all taxable supplies."}}]}]}</script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to use the Quote Builder Wizard \u2014 Build a Professional NZ Tradie Quote Step by Step",
+      "description": "Build a complete, professional quote for any NZ trade job in 4 steps \u2014 labour, materials, markup, GST, and a printable summary your client can sign.",
+      "totalTime": "PT1M",
+      "tool": [{"@type": "HowToTool", "name": "Web browser"}],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Enter your values",
+          "text": "Fill in the fields in the calculator with your project details. All fields accept New Zealand dollar amounts unless labelled otherwise."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Get your instant result",
+          "text": "The calculator updates automatically as you type — no button press needed. Results are shown in NZD and include any applicable GST or rates."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Use the result in your quote or plan",
+          "text": "Copy the result into your quote, job estimate, or budget. For a detailed breakdown by city or scope, see the related job cost guides on TradieTools NZ."
+        }
+      ]
+    }
+    </script>
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJW7HLW8D8"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BJW7HLW8D8');</script>
+    
+<script type="application/ld+json">
+[{"@context":"https://schema.org","@type":"WebSite","@id":"https://tradietools.nz/#website","name":"Quote Builder Wizard — Build a Professional NZ Tradie Quote Step by Step","url":"https://tradietools.nz","inLanguage":"en-NZ","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://tradietools.nz/calculators/?q={search_term_string}"},"query-input":"required name=search_term_string"},"publisher":{"@id":"https://tradietools.nz/#organization"}},
+{"@context":"https://schema.org","@type":"Organization","@id":"https://tradietools.nz/#organization","name":"Quote Builder Wizard — Build a Professional NZ Tradie Quote Step by Step","url":"https://tradietools.nz","description":"Build a complete, professional quote for any NZ trade job in 4 steps — labour, materials, markup, GST, and a printable summary your client can sign.","logo":{"@type":"ImageObject","url":"https://tradietools.nz/favicon.svg","width":512,"height":512},"contactPoint":{"@type":"ContactPoint","email":"contact@tradietools.nz","contactType":"customer service"},"sameAs":["https://www.facebook.com/nztradietools", "https://www.linkedin.com/company/nz-tradie-tools"]}]
+</script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo"><img src="/static/img/logo-dark.png" alt="TradieTools NZ" class="logo-img"></a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                
+                <a href="/trades/">Find a Tradie</a>
+                
+                <a href="/post-job/">Post a Job</a>
+                
+                <a href="/jobs/">Cost Guides</a>
+                
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">For Tradies &#9660;</button>
+                    <div class="nav-dropdown-menu" role="menu">
+                        <a href="/for-tradies/" role="menuitem">For Tradies Hub</a>
+                        <a href="/calculators/" role="menuitem">Calculators</a>
+                        <a href="/templates/" role="menuitem">Free Templates</a>
+                        <a href="/articles/" role="menuitem">Articles &amp; Guides</a>
+                        <a href="/contact/" role="menuitem">Contact</a>
+                    </div>
+                </div>
+                <a id="nav-my-listing" href="/find/" class="nav-my-listing" style="display:none">My Listing</a>
+                <a href="/signup/" class="nav-cta">Free Listing &#8594;</a>
+            </nav>
+            <script>
+            (function(){
+                var t=document.querySelector('.nav-toggle'),n=document.getElementById('main-nav');
+                if(!t||!n)return;
+                t.addEventListener('click',function(){
+                    var o=n.classList.toggle('is-open');
+                    t.setAttribute('aria-expanded',o);
+                });
+                document.addEventListener('click',function(e){
+                    if(!t.contains(e.target)&&!n.contains(e.target)){
+                        n.classList.remove('is-open');
+                        t.setAttribute('aria-expanded','false');
+                    }
+                });
+                var id=localStorage.getItem('tradieId');
+                if(id){var ml=document.getElementById('nav-my-listing');if(ml){ml.style.display='';ml.href='/find/?highlight='+encodeURIComponent(id);}}
+            })();
+            </script>
+        </div>
+    </header>
+
+    <section class="hero" style="padding:1.75rem 0 1.5rem">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb" style="color:rgba(255,255,255,.55);margin-bottom:.75rem">
+                <a href="/" style="color:rgba(255,255,255,.55)">Home</a> &rsaquo;
+                <a href="/calculators/" style="color:rgba(255,255,255,.55)">Calculators</a> &rsaquo;
+                <span>Quote Builder Wizard — Build a Professional NZ Tradie Quote Step by Step</span>
+            </nav>
+            <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:1.5rem;flex-wrap:wrap">
+                <div>
+                    <span style="display:inline-block;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#f97316;background:rgba(249,115,22,.15);border:1px solid rgba(249,115,22,.3);border-radius:4px;padding:.15rem .5rem;margin-bottom:.5rem">Free Calculator</span>
+                    <h1 style="font-size:1.9rem;font-weight:800;margin:0 0 .4rem;line-height:1.2;color:#fff">Quote Builder Wizard — Build a Professional NZ Tradie Quote Step by Step</h1>
+                    <p style="color:rgba(255,255,255,.75);margin:0;font-size:.97rem;max-width:580px;line-height:1.55">Build a complete, professional quote for any NZ trade job in 4 steps — labour, materials, markup, GST, and a printable summary your client can sign.</p>
+                </div>
+                <a href="/calculators/" style="flex-shrink:0;font-size:.82rem;color:rgba(255,255,255,.55);text-decoration:none;padding:.4rem .85rem;border:1px solid rgba(255,255,255,.2);border-radius:6px;white-space:nowrap;align-self:flex-start">← All calculators</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container page-layout">
+        <main class="main-content" style="padding-top:1.5rem">
+            <div class="calculator-wrapper" style="margin-bottom:2rem">
+                <style>
+.qb-steps{display:flex;gap:.3rem;margin-bottom:1.5rem;flex-wrap:wrap}
+.qb-step{flex:1;min-width:80px;padding:.4rem .6rem;text-align:center;border-radius:5px;font-size:.8rem;font-weight:600;cursor:pointer;border:2px solid #dde3ec;color:#888;background:#fff;transition:.15s}
+.qb-step.active{background:#0055a5;color:#fff;border-color:#0055a5}
+.qb-step.done{background:#dcfce7;color:#166534;border-color:#86efac}
+.qb-panel{display:none}
+.qb-panel.active{display:block}
+.qb-row{display:flex;gap:.5rem;align-items:flex-end;margin-bottom:.5rem;flex-wrap:wrap}
+.qb-row input,.qb-row select{flex:1;min-width:80px}
+.qb-row label{font-size:.8rem;color:#555;display:block;margin-bottom:.2rem}
+.qb-add{background:#0055a5;color:#fff;border:none;padding:.4rem .8rem;border-radius:4px;cursor:pointer;font-size:.83rem;white-space:nowrap}
+.qb-add:hover{background:#003d7a}
+.qb-del{background:#fee2e2;color:#b91c1c;border:1px solid #fca5a5;padding:.3rem .5rem;border-radius:4px;cursor:pointer;font-size:.8rem}
+.qb-summary-table{width:100%;border-collapse:collapse;font-size:.88rem;margin-top:1rem}
+.qb-summary-table th{background:#1b2a4a;color:#fff;padding:.4rem .6rem;text-align:left}
+.qb-summary-table td{padding:.4rem .6rem;border-bottom:1px solid #e8ecf0}
+.qb-summary-table tr:last-child td{border-bottom:none}
+.qb-total-row td{font-weight:700;background:#f0f4f8;font-size:.95rem}
+.qb-nav{display:flex;justify-content:space-between;margin-top:1.25rem;gap:.5rem}
+.qb-btn-prev{background:#f0f4f8;color:#333;border:1px solid #dde3ec;padding:.5rem 1rem;border-radius:5px;cursor:pointer;font-size:.9rem}
+.qb-btn-next{background:#0055a5;color:#fff;border:none;padding:.5rem 1.25rem;border-radius:5px;cursor:pointer;font-size:.9rem;font-weight:600}
+.qb-btn-next:hover{background:#003d7a}
+.qb-quote-output{background:#fff;border:1px solid #dde3ec;border-radius:6px;padding:1.5rem;font-size:.88rem;line-height:1.6;margin-top:1rem}
+.qb-quote-output h3{margin-top:0;font-size:1rem;color:#1b2a4a}
+.qb-quote-output .qo-header{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;border-bottom:2px solid #1b2a4a;padding-bottom:.75rem;margin-bottom:.75rem}
+.qb-quote-output .qo-section{margin-bottom:.75rem}
+.qb-quote-output table{width:100%;border-collapse:collapse;font-size:.85rem}
+.qb-quote-output th{background:#f0f4f8;padding:.35rem .5rem;text-align:left;font-weight:600}
+.qb-quote-output td{padding:.3rem .5rem;border-bottom:1px solid #f0f4f8}
+.qb-quote-output .sig-line{margin-top:1.5rem;border-top:1px dashed #ccc;padding-top:.75rem;display:flex;gap:2rem;flex-wrap:wrap}
+.qb-quote-output .sig-block{flex:1;min-width:160px}
+.qb-quote-output .sig-block .line{border-bottom:1px solid #333;margin-bottom:.2rem;height:1.8rem}
+@media print{.qb-steps,.qb-nav,.sidebar,header.site-header,.breadcrumb{display:none!important}.qb-quote-output{border:none;padding:0}}
+</style>
+
+<div class="qb-steps" id="qb-steps">
+  <div class="qb-step active" onclick="qbGoto(0)">1. Job Details</div>
+  <div class="qb-step" onclick="qbGoto(1)">2. Labour</div>
+  <div class="qb-step" onclick="qbGoto(2)">3. Materials</div>
+  <div class="qb-step" onclick="qbGoto(3)">4. Review &amp; Quote</div>
+</div>
+
+<!-- Step 1: Job Details -->
+<div class="qb-panel active" id="qbp-0">
+  <div class="calc-grid">
+    <div class="calc-group"><label>Your business / trading name</label><input type="text" id="qb-biz" placeholder="e.g. Smith Electrical Ltd"></div>
+    <div class="calc-group"><label>Your phone number</label><input type="text" id="qb-phone" placeholder="e.g. 027 123 4567"></div>
+    <div class="calc-group"><label>Your email</label><input type="email" id="qb-email" placeholder="e.g. joe@smithelectrical.co.nz"></div>
+    <div class="calc-group"><label>GST number (optional)</label><input type="text" id="qb-gst" placeholder="e.g. 123-456-789"></div>
+    <div class="calc-group"><label>Client name</label><input type="text" id="qb-client" placeholder="e.g. Jane Thompson"></div>
+    <div class="calc-group"><label>Job address / description</label><input type="text" id="qb-addr" placeholder="e.g. 45 Beach Rd, Tauranga — kitchen rewire"></div>
+    <div class="calc-group"><label>Quote date</label><input type="date" id="qb-date"></div>
+    <div class="calc-group"><label>Quote valid for (days)</label><input type="number" id="qb-valid" value="30" placeholder="e.g. 30"></div>
+    <div class="calc-group">
+      <label>Payment terms</label>
+      <select id="qb-terms">
+        <option value="50% deposit required. Balance due on completion.">50% deposit, balance on completion</option>
+        <option value="30% deposit. Progress claim at 50% completion. Balance on completion.">30% deposit + progress claim + balance</option>
+        <option value="Full payment due within 7 days of invoice.">Full payment within 7 days</option>
+        <option value="Full payment due within 14 days of invoice.">Full payment within 14 days</option>
+      </select>
+    </div>
+    <div class="calc-group">
+      <label>GST registered?</label>
+      <select id="qb-gst-reg">
+        <option value="1">Yes — add 15% GST to quote</option>
+        <option value="0">No — quote is GST-exclusive</option>
+      </select>
+    </div>
+  </div>
+  <div class="qb-nav">
+    <span></span>
+    <button class="qb-btn-next" onclick="qbNext(0)">Next: Labour →</button>
+  </div>
+</div>
+
+<!-- Step 2: Labour -->
+<div class="qb-panel" id="qbp-1">
+  <p style="font-size:.88rem;color:#555;margin-top:0">Add each labour line — tradesperson, hours, and rate. Include yourself, employees, and subbies.</p>
+  <div id="qb-labour-rows">
+    <div class="qb-labour-row qb-row">
+      <div><label>Description</label><input type="text" class="lr-desc" placeholder="e.g. Electrician — first fix" style="width:170px"></div>
+      <div><label>Hours</label><input type="number" class="lr-hrs" placeholder="8" style="width:70px" oninput="qbCalcLabour()"></div>
+      <div><label>Rate ($/hr)</label><input type="number" class="lr-rate" placeholder="95" style="width:80px" oninput="qbCalcLabour()"></div>
+      <div><label>Markup (%)</label><input type="number" class="lr-mkp" placeholder="0" value="0" style="width:65px" oninput="qbCalcLabour()"></div>
+      <div style="align-self:flex-end"><button class="qb-del" onclick="qbDelRow(this,'qb-labour-rows',qbCalcLabour)">✕</button></div>
+    </div>
+  </div>
+  <button class="qb-add" onclick="qbAddLabourRow()" style="margin-top:.5rem">+ Add Labour Line</button>
+  <div class="calc-result" id="qb-labour-total" style="display:none;margin-top:.75rem">
+    <div class="result-row"><span>Total labour cost</span><span id="qb-lt" class="result-highlight"></span></div>
+  </div>
+  <div class="qb-nav">
+    <button class="qb-btn-prev" onclick="qbGoto(0)">← Back</button>
+    <button class="qb-btn-next" onclick="qbNext(1)">Next: Materials →</button>
+  </div>
+</div>
+
+<!-- Step 3: Materials -->
+<div class="qb-panel" id="qbp-2">
+  <p style="font-size:.88rem;color:#555;margin-top:0">Add each materials or subcontractor line. You can set a markup on materials to cover your supply costs.</p>
+  <div id="qb-mat-rows">
+    <div class="qb-mat-row qb-row">
+      <div><label>Description</label><input type="text" class="mr-desc" placeholder="e.g. Cable & conduit" style="width:170px"></div>
+      <div><label>Cost ($)</label><input type="number" class="mr-cost" placeholder="450" style="width:90px" oninput="qbCalcMats()"></div>
+      <div><label>Markup (%)</label><input type="number" class="mr-mkp" placeholder="20" value="20" style="width:65px" oninput="qbCalcMats()"></div>
+      <div style="align-self:flex-end"><button class="qb-del" onclick="qbDelRow(this,'qb-mat-rows',qbCalcMats)">✕</button></div>
+    </div>
+  </div>
+  <button class="qb-add" onclick="qbAddMatRow()" style="margin-top:.5rem">+ Add Materials Line</button>
+  <div class="calc-group" style="margin-top:.75rem;max-width:300px">
+    <label>Contingency / allowance (%)</label>
+    <input type="number" id="qb-contingency" placeholder="e.g. 5" value="0" oninput="qbCalcMats()">
+    <small style="font-size:.78rem;color:#888">Added to materials total as a buffer</small>
+  </div>
+  <div class="calc-result" id="qb-mat-total" style="display:none;margin-top:.75rem">
+    <div class="result-row"><span>Total materials (incl. markup &amp; contingency)</span><span id="qb-mt" class="result-highlight"></span></div>
+  </div>
+  <div class="qb-nav">
+    <button class="qb-btn-prev" onclick="qbGoto(1)">← Back</button>
+    <button class="qb-btn-next" onclick="qbNext(2)">Review Quote →</button>
+  </div>
+</div>
+
+<!-- Step 4: Review & Quote -->
+<div class="qb-panel" id="qbp-3">
+  <div id="qb-quote-preview"></div>
+  <div style="display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1rem">
+    <button onclick="window.print()" style="background:#1b2a4a;color:#fff;border:none;padding:.6rem 1.25rem;border-radius:5px;cursor:pointer;font-size:.9rem">🖨 Print / Save PDF</button>
+    <button onclick="qbReset()" style="background:#f0f4f8;color:#333;border:1px solid #dde3ec;padding:.6rem 1rem;border-radius:5px;cursor:pointer;font-size:.9rem">Start New Quote</button>
+  </div>
+  <div class="qb-nav">
+    <button class="qb-btn-prev" onclick="qbGoto(2)">← Edit Materials</button>
+    <span></span>
+  </div>
+</div>
+
+<script>
+var qbStep=0;
+function nzd(n){return '$'+Math.abs(n).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g,',');}
+function qbGoto(n){
+  document.querySelectorAll('.qb-panel').forEach(function(p,i){p.classList.toggle('active',i===n);});
+  document.querySelectorAll('.qb-step').forEach(function(s,i){
+    s.classList.remove('active','done');
+    if(i===n) s.classList.add('active');
+    else if(i<n) s.classList.add('done');
+  });
+  qbStep=n;
+  if(n===3) qbBuildPreview();
+}
+function qbNext(n){qbGoto(n+1);}
+
+function qbGetLabour(){
+  var rows=document.querySelectorAll('#qb-labour-rows .qb-labour-row');
+  var items=[],total=0;
+  rows.forEach(function(r){
+    var desc=r.querySelector('.lr-desc').value||'Labour';
+    var hrs=parseFloat(r.querySelector('.lr-hrs').value)||0;
+    var rate=parseFloat(r.querySelector('.lr-rate').value)||0;
+    var mkp=(parseFloat(r.querySelector('.lr-mkp').value)||0)/100;
+    var cost=hrs*rate*(1+mkp);
+    if(hrs||rate){items.push({desc:desc,hrs:hrs,rate:rate,mkp:mkp*100,cost:cost});total+=cost;}
+  });
+  return {items:items,total:total};
+}
+function qbCalcLabour(){
+  var l=qbGetLabour();
+  if(l.total>0){
+    document.getElementById('qb-lt').textContent=nzd(l.total);
+    document.getElementById('qb-labour-total').style.display='';
+  } else {document.getElementById('qb-labour-total').style.display='none';}
+}
+function qbGetMats(){
+  var rows=document.querySelectorAll('#qb-mat-rows .qb-mat-row');
+  var items=[],subtotal=0;
+  rows.forEach(function(r){
+    var desc=r.querySelector('.mr-desc').value||'Materials';
+    var cost=parseFloat(r.querySelector('.mr-cost').value)||0;
+    var mkp=(parseFloat(r.querySelector('.mr-mkp').value)||0)/100;
+    var total=cost*(1+mkp);
+    if(cost){items.push({desc:desc,cost:cost,mkp:mkp*100,total:total});subtotal+=total;}
+  });
+  var cont=(parseFloat(document.getElementById('qb-contingency').value)||0)/100;
+  var total=subtotal*(1+cont);
+  return {items:items,subtotal:subtotal,cont:cont*100,total:total};
+}
+function qbCalcMats(){
+  var m=qbGetMats();
+  if(m.total>0){
+    document.getElementById('qb-mt').textContent=nzd(m.total);
+    document.getElementById('qb-mat-total').style.display='';
+  } else {document.getElementById('qb-mat-total').style.display='none';}
+}
+function qbAddLabourRow(){
+  var row=document.createElement('div');
+  row.className='qb-labour-row qb-row';
+  row.innerHTML='<div><label>Description</label><input type="text" class="lr-desc" placeholder="e.g. Labourer" style="width:170px"></div>'+
+    '<div><label>Hours</label><input type="number" class="lr-hrs" placeholder="8" style="width:70px" oninput="qbCalcLabour()"></div>'+
+    '<div><label>Rate ($/hr)</label><input type="number" class="lr-rate" placeholder="85" style="width:80px" oninput="qbCalcLabour()"></div>'+
+    '<div><label>Markup (%)</label><input type="number" class="lr-mkp" placeholder="0" value="0" style="width:65px" oninput="qbCalcLabour()"></div>'+
+    '<div style="align-self:flex-end"><button class="qb-del" onclick="qbDelRow(this,\'qb-labour-rows\',qbCalcLabour)">✕</button></div>';
+  document.getElementById('qb-labour-rows').appendChild(row);
+}
+function qbAddMatRow(){
+  var row=document.createElement('div');
+  row.className='qb-mat-row qb-row';
+  row.innerHTML='<div><label>Description</label><input type="text" class="mr-desc" placeholder="e.g. Plumbing supplies" style="width:170px"></div>'+
+    '<div><label>Cost ($)</label><input type="number" class="mr-cost" placeholder="200" style="width:90px" oninput="qbCalcMats()"></div>'+
+    '<div><label>Markup (%)</label><input type="number" class="mr-mkp" placeholder="20" value="20" style="width:65px" oninput="qbCalcMats()"></div>'+
+    '<div style="align-self:flex-end"><button class="qb-del" onclick="qbDelRow(this,\'qb-mat-rows\',qbCalcMats)">✕</button></div>';
+  document.getElementById('qb-mat-rows').appendChild(row);
+}
+function qbDelRow(btn,containerId,recalc){
+  var rows=document.querySelectorAll('#'+containerId+' > div');
+  if(rows.length<=1){btn.closest('div.qb-row').querySelectorAll('input').forEach(function(i){i.value='';});recalc();return;}
+  btn.closest('div.qb-row').remove();recalc();
+}
+function qbBuildPreview(){
+  var biz=document.getElementById('qb-biz').value||'Your Business';
+  var phone=document.getElementById('qb-phone').value;
+  var email=document.getElementById('qb-email').value;
+  var gstno=document.getElementById('qb-gst').value;
+  var client=document.getElementById('qb-client').value||'Client';
+  var addr=document.getElementById('qb-addr').value||'Job address/description';
+  var date=document.getElementById('qb-date').value||(new Date().toISOString().split('T')[0]);
+  var valid=document.getElementById('qb-valid').value||'30';
+  var terms=document.getElementById('qb-terms').value;
+  var gstReg=document.getElementById('qb-gst-reg').value==='1';
+  var l=qbGetLabour();
+  var m=qbGetMats();
+  var subtotal=l.total+m.total;
+  var gstAmt=gstReg?subtotal*0.15:0;
+  var total=subtotal+gstAmt;
+
+  var labourRows='';
+  l.items.forEach(function(it){
+    labourRows+='<tr><td>'+esc(it.desc)+'</td><td style="text-align:right">'+it.hrs+' hrs @ '+nzd(it.rate)+'/hr'+(it.mkp?'+'+it.mkp+'%':'')+'</td><td style="text-align:right">'+nzd(it.cost)+'</td></tr>';
+  });
+  var matRows='';
+  m.items.forEach(function(it){
+    matRows+='<tr><td>'+esc(it.desc)+'</td><td style="text-align:right">Cost '+nzd(it.cost)+(it.mkp?'+'+it.mkp+'% mkp':'')+'</td><td style="text-align:right">'+nzd(it.total)+'</td></tr>';
+  });
+  if(m.cont>0) matRows+='<tr><td>Contingency ('+m.cont+'%)</td><td></td><td style="text-align:right">'+nzd(m.total-m.subtotal)+'</td></tr>';
+
+  var html='<div class="qb-quote-output">'+
+    '<div class="qo-header">'+
+      '<div><strong>'+esc(biz)+'</strong>'+(phone?'<br>'+esc(phone):'')+(email?'<br>'+esc(email):'')+(gstno?'<br>GST: '+esc(gstno):'')+'</div>'+
+      '<div style="text-align:right"><div style="font-size:1.2rem;font-weight:700;color:#0055a5">QUOTE</div>'+
+        '<div style="font-size:.8rem;color:#666">Date: '+date+'</div>'+
+        '<div style="font-size:.8rem;color:#666">Valid for '+valid+' days</div>'+
+      '</div>'+
+    '</div>'+
+    '<div class="qo-section"><strong>Client:</strong> '+esc(client)+'<br><strong>Job:</strong> '+esc(addr)+'</div>';
+
+  if(l.items.length){
+    html+='<div class="qo-section"><table><thead><tr><th>Labour</th><th style="text-align:right">Rate / Hours</th><th style="text-align:right">Amount</th></tr></thead><tbody>'+labourRows+
+      '<tr style="font-weight:600"><td colspan="2">Labour subtotal</td><td style="text-align:right">'+nzd(l.total)+'</td></tr></tbody></table></div>';
+  }
+  if(m.items.length){
+    html+='<div class="qo-section"><table><thead><tr><th>Materials &amp; Supplies</th><th style="text-align:right">Basis</th><th style="text-align:right">Amount</th></tr></thead><tbody>'+matRows+
+      '<tr style="font-weight:600"><td colspan="2">Materials subtotal</td><td style="text-align:right">'+nzd(m.total)+'</td></tr></tbody></table></div>';
+  }
+  html+='<table style="margin-top:.5rem"><tbody>'+
+    '<tr><td style="padding:.25rem .5rem">Subtotal (excl. GST)</td><td style="text-align:right;padding:.25rem .5rem">'+nzd(subtotal)+'</td></tr>';
+  if(gstReg) html+='<tr><td style="padding:.25rem .5rem">GST (15%)</td><td style="text-align:right;padding:.25rem .5rem">'+nzd(gstAmt)+'</td></tr>';
+  html+='<tr style="font-weight:700;font-size:1.05rem;background:#f0f4f8"><td style="padding:.35rem .5rem">TOTAL '+(gstReg?'(incl. GST)':'(GST-excl.)')+'</td><td style="text-align:right;padding:.35rem .5rem">'+nzd(total)+'</td></tr></tbody></table>';
+  html+='<div style="margin-top:1rem;font-size:.83rem;color:#555"><strong>Payment terms:</strong> '+esc(terms)+'</div>';
+  html+='<div style="margin-top:.75rem;font-size:.8rem;color:#777">This quote is valid for '+valid+' days from the date above. Any variations to scope or materials will be quoted separately. All prices are in NZD.</div>';
+  html+='<div class="sig-line">'+
+    '<div class="sig-block"><div class="line"></div><div style="font-size:.78rem;color:#666">Authorised signature ('+esc(biz)+')</div></div>'+
+    '<div class="sig-block"><div class="line"></div><div style="font-size:.78rem;color:#666">Client signature &amp; date (acceptance)</div></div>'+
+  '</div></div>';
+  document.getElementById('qb-quote-preview').innerHTML=html;
+}
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function qbReset(){
+  document.getElementById('qb-labour-rows').querySelectorAll('input').forEach(function(i){i.value='';});
+  document.getElementById('qb-mat-rows').querySelectorAll('input').forEach(function(i){i.value='';});
+  document.querySelectorAll('#qb-labour-rows .qb-labour-row:not(:first-child)').forEach(function(r){r.remove();});
+  document.querySelectorAll('#qb-mat-rows .qb-mat-row:not(:first-child)').forEach(function(r){r.remove();});
+  qbGoto(0);
+}
+// Set default date
+document.getElementById('qb-date').value=new Date().toISOString().split('T')[0];
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="how-to-use-the-quote-builder">How to Use the Quote Builder</h2>
+<p>Work through the four steps to build a complete, print-ready quote:</p>
+<ol>
+<li><strong>Job Details</strong> — your business info, client name, and payment terms</li>
+<li><strong>Labour</strong> — add each labour line with hours and rate (you can add markup for admin/profit)</li>
+<li><strong>Materials</strong> — add each materials or subcontractor line with your markup</li>
+<li><strong>Review</strong> — check the formatted quote, then print or save as PDF</li>
+</ol>
+<h3 id="tips-for-professional-quotes">Tips for Professional Quotes</h3>
+<p><strong>Labour markup:</strong> Many tradies add 10–20% markup on subcontractor labour to cover management overhead. Your own labour should already be priced at your target rate — no additional markup needed.</p>
+<p><strong>Materials markup:</strong> A 15–25% markup on materials is standard in NZ to cover procurement time, handling, and warranty risk. This is different from the cost of the materials themselves.</p>
+<p><strong>Contingency:</strong> For jobs with uncertain scope (renovations, maintenance work), add a 5–10% contingency to materials to buffer against underestimates.</p>
+<p><strong>Quote validity:</strong> 14–30 days is standard. For material-heavy jobs, shorter validity protects you from price changes. Always note that material costs are subject to availability.</p>
+<p><strong>GST:</strong> If you're GST-registered, always show GST separately on quotes and invoices. Clients can then see the pre-GST price and the 15% GST amount.</p>
+<h3 id="after-the-quote-is-accepted">After the Quote is Accepted</h3>
+<p>Once your client signs the quote:
+- Issue a <strong>deposit invoice</strong> if required (use our <a href="/templates/tax-invoice-template">Tax Invoice Template</a>)
+- For any scope changes, issue a <strong>variation order</strong> before doing the extra work (<a href="/templates/variation-order">Variation Order template</a>)
+- At completion, issue the <strong>final invoice</strong> referencing the original quote number</p>
+<p>Use our <a href="/calculators/job-cost-calculator">Job Cost Calculator</a> to check your margins after the job is done.</p>
+            </div>
+
+            
+            <section class="faq-section" style="margin-top:2rem">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">What should a NZ tradie quote include to be legally valid?</button>
+                        <div class="faq-answer" hidden><p>A NZ quote should include: your business name and NZBN/GST number, date and expiry, client details, detailed scope of work, inclusions and exclusions, total price (+ GST or GST incl), and payment terms.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">What is the difference between a quote and an estimate in NZ?</button>
+                        <div class="faq-answer" hidden><p>A quote is a fixed price offer. If accepted, you must complete the work at that price unless agreed variations arise. An estimate is an approximation and is not binding. Clients prefer quotes; courts distinguish between the two.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">How long should a tradie quote be valid for in NZ?</button>
+                        <div class="faq-answer" hidden><p>Most NZ tradies set a quote validity of 30–60 days. In periods of material price volatility, 14–30 days may be more appropriate. Always specify the expiry date on the quote document.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">Do I need to charge GST on quotes if I'm not yet GST-registered?</button>
+                        <div class="faq-answer" hidden><p>No. If you're not GST-registered, your quote is GST-exclusive and you should clearly state 'Not registered for GST' or 'No GST applicable'. Once you register, you must charge GST on all taxable supplies.</p></div>
+                    </div>
+                    
+                </div>
+            </section>
+            <script>
+            document.querySelectorAll('.faq-question').forEach(function(btn){
+                btn.addEventListener('click',function(){
+                    var ans=this.nextElementSibling;
+                    var open=this.getAttribute('aria-expanded')==='true';
+                    this.setAttribute('aria-expanded',!open);
+                    if(open){ans.hidden=true;}else{ans.hidden=false;}
+                });
+            });
+            </script>
+            
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:#0f172a;color:#fff;border:none">
+                <img src="https://fastcrew.nz/assets/fastcrew/images/Fastcrewlogo-light.png" alt="FastCrew" style="height:28px;margin-bottom:.75rem;display:block">
+                <p style="color:rgba(255,255,255,.88);font-size:.85rem;margin-bottom:.6rem">The only tradie app built for NZ compliance.</p>
+                <ul style="color:rgba(255,255,255,.82);font-size:.82rem;margin:0 0 1rem;padding-left:1.1rem">
+                    <li>AI-powered quoting</li>
+                    <li>H&amp;S compliance &amp; SWMS</li>
+                    <li>Jobs, quotes &amp; invoicing</li>
+                    <li>Xero + Stripe · From $39/mo</li>
+                </ul>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#ea6325;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Start free trial →</a>
+                <p style="color:rgba(255,255,255,.5);font-size:.75rem;text-align:center;margin:.5rem 0 0">14-day free trial · No credit card required</p>
+            </div>
+            
+            
+            <div class="sidebar-widget">
+                <h3>Related Guides</h3>
+                <ul>
+                    
+                    <li><a href="/articles/how-to-price-a-job-nz-tradie-guide">How to Price a Job: The Complete NZ Tradie Guide (2026)</a></li>
+                    
+                    <li><a href="/articles/tradie-contract-guide-nz">How to Write a Tradie Contract in NZ — And Why You Need One for Every Job</a></li>
+                    
+                </ul>
+            </div>
+            
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://fastcrew.nz" rel="noopener" target="_blank">Fastcrew — All-in-One Tradie App</a></li>
+                    <li><a href="https://www.xero.com/nz/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <img src="/static/img/logo-dark.png" alt="TradieTools NZ" style="height:64px;width:auto;display:block;margin-bottom:.5rem">
+                <p>Free calculators, templates and guides for New Zealand tradies.</p>
+                <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
+            </div>
+            <div style="text-align:right">
+                <p><a href="/glossary/">Tradie Glossary</a></p>
+                <p><a href="/privacy/">Privacy Policy</a></p>
+                <p><a href="/contact/">Contact</a></p>
+                <p style="margin-top:.5rem">&copy; 2026 TradieTools NZ</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

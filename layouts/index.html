@@ -435,13 +435,12 @@
             <div class="calc-grid">
                 {% for calc in calculators[:12] %}
                 {%- set slug_lower = calc.slug | lower -%}
-                {%- set icon = "🔧" -%}
-                {%- set badge = "Tools" -%}
-                {%- for k, v in calc_icons.items() -%}{%- if k in slug_lower -%}{%- set icon = v -%}{%- endif -%}{%- endfor -%}
-                {%- for k, v in calc_categories.items() -%}{%- if k in slug_lower -%}{%- set badge = v -%}{%- endif -%}{%- endfor -%}
-                <a href="{{ calc.url }}" class="calc-card">
-                    <span class="calc-badge">{{ badge }}</span>
-                    <div class="calc-icon">{{ icon }}</div>
+                {%- set ns = namespace(icon="🔧", badge="Tools") -%}
+                {%- for k, v in calc_icons.items() -%}{%- if k in slug_lower -%}{%- set ns.icon = v -%}{%- endif -%}{%- endfor -%}
+                {%- for k, v in calc_categories.items() -%}{%- if k in slug_lower -%}{%- set ns.badge = v -%}{%- endif -%}{%- endfor -%}
+                <a href="{{ calc.url }}/" class="calc-card">
+                    <span class="calc-badge">{{ ns.badge }}</span>
+                    <div class="calc-icon">{{ ns.icon }}</div>
                     <div class="calc-title">{{ calc.title }}</div>
                     <p class="calc-desc">{{ calc.description }}</p>
                 </a>

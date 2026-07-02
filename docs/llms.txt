@@ -25,10 +25,10 @@ Find trusted NZ tradies — or list your trade business free. Electricians, plum
 ## Key Pages
 
 - All calculators: https://tradietools.nz/calculators/
-- GST calculator: https://tradietools.nz/calculators/gst-calculator.html
-- Hourly rate calculator: https://tradietools.nz/calculators/hourly-rate-calculator.html
-- Job cost calculator: https://tradietools.nz/calculators/job-cost-calculator.html
-- Markup vs margin: https://tradietools.nz/calculators/markup-margin-calculator.html
+- GST calculator: https://tradietools.nz/calculators/gst-calculator/
+- Hourly rate calculator: https://tradietools.nz/calculators/hourly-rate-calculator/
+- Job cost calculator: https://tradietools.nz/calculators/job-cost-calculator/
+- Markup vs margin: https://tradietools.nz/calculators/markup-margin-calculator/
 - Free templates: https://tradietools.nz/templates/
 - Tradie rates NZ: https://tradietools.nz/tradie-rates/
 - All articles: https://tradietools.nz/articles/

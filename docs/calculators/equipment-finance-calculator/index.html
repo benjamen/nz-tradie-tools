@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- NZ-local signals -->
+    <meta name="geo.region" content="NZ">
+    <meta name="geo.placename" content="New Zealand">
+    <meta name="ICBM" content="-41.2866, 174.7756">
+    <!-- Performance -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://tradietools.optified.nz">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap">
+    <title>NZ Equipment Finance & Loan Calculator for Tradies</title>
+    <meta name="description" content="Calculate weekly repayments, total interest and true cost of financing tools, vehicles or equipment for your NZ tradie business.">
+    <meta property="og:title" content="NZ Equipment Finance & Loan Calculator for Tradies — TradieTools NZ">
+    <meta property="og:description" content="Calculate weekly repayments, total interest and true cost of financing tools, vehicles or equipment for your NZ tradie business.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradietools.nz/calculators/equipment-finance-calculator/">
+    <meta property="og:site_name" content="TradieTools NZ">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NZ Equipment Finance & Loan Calculator for Tradies — TradieTools NZ">
+    <meta name="twitter:description" content="Calculate weekly repayments, total interest and true cost of financing tools, vehicles or equipment for your NZ tradie business.">
+    <meta property="og:image" content="https://tradietools.nz/static/img/social-card.svg">
+    <meta name="twitter:image" content="https://tradietools.nz/static/img/social-card.svg">
+    <link rel="canonical" href="https://tradietools.nz/calculators/equipment-finance-calculator/">
+    <link rel="alternate" type="application/rss+xml" title="TradieTools NZ — Articles" href="https://tradietools.nz/rss.xml">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"NZ Equipment Finance \u0026 Loan Calculator for Tradies","description":"Calculate weekly repayments, total interest and true cost of financing tools, vehicles or equipment for your NZ tradie business.","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://tradietools.nz/calculators/equipment-finance-calculator/","offers":{"@type":"Offer","price":"0","priceCurrency":"NZD"},"author":{"@type":"Organization","name":"TradieTools NZ","url":"https://tradietools.nz"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tradietools.nz"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://tradietools.nz/calculators/"},{"@type":"ListItem","position":3,"name":"NZ Equipment Finance \u0026 Loan Calculator for Tradies","item":"https://tradietools.nz/calculators/equipment-finance-calculator/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I calculate repayments on a tradie equipment loan?","acceptedAnswer":{"@type":"Answer","text":"Monthly repayment = P \u00d7 [r(1+r)^n] \u00f7 [(1+r)^n \u2013 1], where P = loan amount, r = monthly interest rate, n = number of months. For example, $30,000 at 8.5% over 5 years = $615/month."}},{"@type":"Question","name":"Should I buy or finance equipment as a NZ tradie?","acceptedAnswer":{"@type":"Answer","text":"Finance preserves cash flow and keeps capital working in the business. If equipment earns more than its finance cost, borrowing makes sense. If your business can buy outright without straining cash, that eliminates interest cost."}},{"@type":"Question","name":"Can I claim equipment loan repayments as a tax deduction in NZ?","acceptedAnswer":{"@type":"Answer","text":"You can claim the interest portion of loan repayments as a deduction, but not the principal. You also claim depreciation on the asset separately based on IRD depreciation rates."}},{"@type":"Question","name":"What is a balloon payment on equipment finance?","acceptedAnswer":{"@type":"Answer","text":"A balloon payment is a large lump sum due at the end of the loan term. It lowers monthly repayments during the loan but requires you to pay out, refinance, or return the asset at the end."}}]}]}</script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to use the NZ Equipment Finance \u0026 Loan Calculator for Tradies",
+      "description": "Calculate weekly repayments, total interest and true cost of financing tools, vehicles or equipment for your NZ tradie business.",
+      "totalTime": "PT1M",
+      "tool": [{"@type": "HowToTool", "name": "Web browser"}],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Enter your values",
+          "text": "Fill in the fields in the calculator with your project details. All fields accept New Zealand dollar amounts unless labelled otherwise."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Get your instant result",
+          "text": "The calculator updates automatically as you type — no button press needed. Results are shown in NZD and include any applicable GST or rates."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Use the result in your quote or plan",
+          "text": "Copy the result into your quote, job estimate, or budget. For a detailed breakdown by city or scope, see the related job cost guides on TradieTools NZ."
+        }
+      ]
+    }
+    </script>
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJW7HLW8D8"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BJW7HLW8D8');</script>
+    
+<script type="application/ld+json">
+[{"@context":"https://schema.org","@type":"WebSite","@id":"https://tradietools.nz/#website","name":"NZ Equipment Finance & Loan Calculator for Tradies","url":"https://tradietools.nz","inLanguage":"en-NZ","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://tradietools.nz/calculators/?q={search_term_string}"},"query-input":"required name=search_term_string"},"publisher":{"@id":"https://tradietools.nz/#organization"}},
+{"@context":"https://schema.org","@type":"Organization","@id":"https://tradietools.nz/#organization","name":"NZ Equipment Finance & Loan Calculator for Tradies","url":"https://tradietools.nz","description":"Calculate weekly repayments, total interest and true cost of financing tools, vehicles or equipment for your NZ tradie business.","logo":{"@type":"ImageObject","url":"https://tradietools.nz/favicon.svg","width":512,"height":512},"contactPoint":{"@type":"ContactPoint","email":"contact@tradietools.nz","contactType":"customer service"},"sameAs":["https://www.facebook.com/nztradietools", "https://www.linkedin.com/company/nz-tradie-tools"]}]
+</script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo"><img src="/static/img/logo-dark.png" alt="TradieTools NZ" class="logo-img"></a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                
+                <a href="/trades/">Find a Tradie</a>
+                
+                <a href="/post-job/">Post a Job</a>
+                
+                <a href="/jobs/">Cost Guides</a>
+                
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">For Tradies &#9660;</button>
+                    <div class="nav-dropdown-menu" role="menu">
+                        <a href="/for-tradies/" role="menuitem">For Tradies Hub</a>
+                        <a href="/calculators/" role="menuitem">Calculators</a>
+                        <a href="/templates/" role="menuitem">Free Templates</a>
+                        <a href="/articles/" role="menuitem">Articles &amp; Guides</a>
+                        <a href="/contact/" role="menuitem">Contact</a>
+                    </div>
+                </div>
+                <a id="nav-my-listing" href="/find/" class="nav-my-listing" style="display:none">My Listing</a>
+                <a href="/signup/" class="nav-cta">Free Listing &#8594;</a>
+            </nav>
+            <script>
+            (function(){
+                var t=document.querySelector('.nav-toggle'),n=document.getElementById('main-nav');
+                if(!t||!n)return;
+                t.addEventListener('click',function(){
+                    var o=n.classList.toggle('is-open');
+                    t.setAttribute('aria-expanded',o);
+                });
+                document.addEventListener('click',function(e){
+                    if(!t.contains(e.target)&&!n.contains(e.target)){
+                        n.classList.remove('is-open');
+                        t.setAttribute('aria-expanded','false');
+                    }
+                });
+                var id=localStorage.getItem('tradieId');
+                if(id){var ml=document.getElementById('nav-my-listing');if(ml){ml.style.display='';ml.href='/find/?highlight='+encodeURIComponent(id);}}
+            })();
+            </script>
+        </div>
+    </header>
+
+    <section class="hero" style="padding:1.75rem 0 1.5rem">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb" style="color:rgba(255,255,255,.55);margin-bottom:.75rem">
+                <a href="/" style="color:rgba(255,255,255,.55)">Home</a> &rsaquo;
+                <a href="/calculators/" style="color:rgba(255,255,255,.55)">Calculators</a> &rsaquo;
+                <span>NZ Equipment Finance & Loan Calculator for Tradies</span>
+            </nav>
+            <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:1.5rem;flex-wrap:wrap">
+                <div>
+                    <span style="display:inline-block;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#f97316;background:rgba(249,115,22,.15);border:1px solid rgba(249,115,22,.3);border-radius:4px;padding:.15rem .5rem;margin-bottom:.5rem">Free Calculator</span>
+                    <h1 style="font-size:1.9rem;font-weight:800;margin:0 0 .4rem;line-height:1.2;color:#fff">NZ Equipment Finance & Loan Calculator for Tradies</h1>
+                    <p style="color:rgba(255,255,255,.75);margin:0;font-size:.97rem;max-width:580px;line-height:1.55">Calculate weekly repayments, total interest and true cost of financing tools, vehicles or equipment for your NZ tradie business.</p>
+                </div>
+                <a href="/calculators/" style="flex-shrink:0;font-size:.82rem;color:rgba(255,255,255,.55);text-decoration:none;padding:.4rem .85rem;border:1px solid rgba(255,255,255,.2);border-radius:6px;white-space:nowrap;align-self:flex-start">← All calculators</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container page-layout">
+        <main class="main-content" style="padding-top:1.5rem">
+            <div class="calculator-wrapper" style="margin-bottom:2rem">
+                <div class="calc-grid">
+  <div class="calc-group">
+    <label>Purchase price (inc GST) — $</label>
+    <input type="number" id="ef-price" placeholder="e.g. 55000" oninput="calcEF()">
+  </div>
+  <div class="calc-group">
+    <label>Deposit / trade-in value — $</label>
+    <input type="number" id="ef-deposit" value="0" oninput="calcEF()">
+  </div>
+  <div class="calc-group">
+    <label>Interest rate (% p.a.)</label>
+    <input type="number" id="ef-rate" placeholder="e.g. 9.5" step="0.1" oninput="calcEF()">
+    <small>Typical NZ equipment finance: 7–14% p.a. depending on lender and credit.</small>
+  </div>
+  <div class="calc-group">
+    <label>Loan term</label>
+    <select id="ef-term" onchange="calcEF()">
+      <option value="12">1 year</option>
+      <option value="24">2 years</option>
+      <option value="36" selected>3 years</option>
+      <option value="48">4 years</option>
+      <option value="60">5 years</option>
+      <option value="84">7 years</option>
+    </select>
+  </div>
+  <div class="calc-group">
+    <label>Repayment frequency</label>
+    <select id="ef-freq" onchange="calcEF()">
+      <option value="52">Weekly</option>
+      <option value="26">Fortnightly</option>
+      <option value="12">Monthly</option>
+    </select>
+  </div>
+  <div class="calc-group">
+    <label>Balloon / residual payment — $</label>
+    <input type="number" id="ef-balloon" value="0" oninput="calcEF()">
+    <small>Some commercial leases include a final lump-sum payment.</small>
+  </div>
+</div>
+<div class="calc-result" id="ef-result" style="display:none">
+  <h3>Finance Summary</h3>
+  <div class="result-row"><span>Amount financed</span><span id="ef-r-financed"></span></div>
+  <div class="result-row"><span>Interest rate</span><span id="ef-r-rate"></span></div>
+  <div class="result-row"><span id="ef-r-freq-label">Repayment</span><span id="ef-r-payment" style="font-size:1.2rem;font-weight:700;color:#0055a5"></span></div>
+  <div class="result-row"><span>Total repayments</span><span id="ef-r-total-rep"></span></div>
+  <div class="result-row"><span>Total interest paid</span><span id="ef-r-interest" style="color:#c53030"></span></div>
+  <div class="result-row" style="font-weight:700;border-top:2px solid #0055a5;padding-top:.5rem"><span>True total cost</span><span id="ef-r-true"></span></div>
+  <div style="margin-top:1rem;background:#f0f4ff;border-radius:6px;padding:.75rem;font-size:.85rem">
+    <strong>Tax tip:</strong> Interest on business equipment loans is generally deductible. The equipment itself is depreciated using IRD's diminishing value rates. Use our <a href="/calculators/depreciation-calculator.html">depreciation calculator</a> to estimate your annual deduction.
+  </div>
+</div>
+<script>
+function fmt(n){return "$"+n.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g,",");}
+function calcEF(){
+  var price=parseFloat(document.getElementById("ef-price").value)||0;
+  var deposit=parseFloat(document.getElementById("ef-deposit").value)||0;
+  var annualRate=parseFloat(document.getElementById("ef-rate").value)||0;
+  var termMonths=parseInt(document.getElementById("ef-term").value)||36;
+  var freq=parseInt(document.getElementById("ef-freq").value)||12;
+  var balloon=parseFloat(document.getElementById("ef-balloon").value)||0;
+  var r=document.getElementById("ef-result");
+  if(!price||!annualRate){r.style.display="none";return;}
+  var principal=price-deposit;
+  if(principal<=0){r.style.display="none";return;}
+  var n=termMonths/12*freq;
+  var rPer=annualRate/100/freq;
+  var pv=principal-balloon/Math.pow(1+rPer,n);
+  var payment;
+  if(rPer===0){payment=pv/n;}
+  else{payment=pv*rPer/(1-Math.pow(1+rPer,-n));}
+  var totalRep=payment*n+balloon;
+  var totalInt=totalRep-principal;
+  var freqLabel=freq===52?"Weekly payment":freq===26?"Fortnightly payment":"Monthly payment";
+  document.getElementById("ef-r-financed").textContent=fmt(principal);
+  document.getElementById("ef-r-rate").textContent=annualRate+"% p.a.";
+  document.getElementById("ef-r-freq-label").textContent=freqLabel;
+  document.getElementById("ef-r-payment").textContent=fmt(payment);
+  document.getElementById("ef-r-total-rep").textContent=fmt(totalRep);
+  document.getElementById("ef-r-interest").textContent=fmt(totalInt);
+  document.getElementById("ef-r-true").textContent=fmt(price-deposit+totalInt);
+  r.style.display="";
+}
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="financing-tools-and-equipment-for-nz-tradies">Financing Tools and Equipment for NZ Tradies</h2>
+<p>Most tradespeople finance at least some of their equipment — a work ute, a new compressor, or a set of power tools. Understanding the true cost of that finance helps you make better purchasing decisions.</p>
+<h3 id="types-of-equipment-finance-in-nz">Types of Equipment Finance in NZ</h3>
+<p><strong>Hire purchase</strong> — you own the asset from day one. Interest and depreciation are both deductible. Most common for tools and plant.</p>
+<p><strong>Finance lease</strong> — you don't own the asset; you lease it for an agreed term with a balloon payment at the end. The lease payments are fully deductible. Common for vehicles.</p>
+<p><strong>Chattel mortgage</strong> — similar to hire purchase, but the lender holds a mortgage over the asset. Common for larger equipment.</p>
+<p><strong>Personal loan / overdraft</strong> — higher interest rate, but more flexibility. Generally only suitable for smaller purchases.</p>
+<h3 id="nz-lenders-for-trade-equipment">NZ Lenders for Trade Equipment</h3>
+<ul>
+<li><strong>Heartland Bank</strong> — popular for trade vehicles and equipment</li>
+<li><strong>UDC Finance</strong> — vehicle and equipment specialists</li>
+<li><strong>HSBC / BNZ / ANZ</strong> — business loans, better rates for established businesses</li>
+<li><strong>Dealer finance</strong> — convenient but often higher rates; always compare</li>
+</ul>
+<h3 id="the-investment-boost-deduction">The Investment Boost Deduction</h3>
+<p>From 22 August 2023, the NZ government introduced the <strong>Investment Boost</strong> deduction — an immediate 20% tax deduction on the cost of new assets (on top of normal depreciation) for the first year. This significantly improves the after-tax cost of new equipment purchases. See our <a href="/articles/nz-tradie-investment-boost-deduction-2026">Investment Boost article</a> for details.</p>
+<h3 id="should-you-buy-or-finance">Should You Buy or Finance?</h3>
+<p>If your cash flow is tight, financing spreads the cost but adds interest. If you have the cash, buying outright is cheaper overall. The break-even point is usually where the after-tax interest cost exceeds the return you could earn on that cash in your business.</p>
+            </div>
+
+            
+            <section class="faq-section" style="margin-top:2rem">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">How do I calculate repayments on a tradie equipment loan?</button>
+                        <div class="faq-answer" hidden><p>Monthly repayment = P × [r(1+r)^n] ÷ [(1+r)^n – 1], where P = loan amount, r = monthly interest rate, n = number of months. For example, $30,000 at 8.5% over 5 years = $615/month.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">Should I buy or finance equipment as a NZ tradie?</button>
+                        <div class="faq-answer" hidden><p>Finance preserves cash flow and keeps capital working in the business. If equipment earns more than its finance cost, borrowing makes sense. If your business can buy outright without straining cash, that eliminates interest cost.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">Can I claim equipment loan repayments as a tax deduction in NZ?</button>
+                        <div class="faq-answer" hidden><p>You can claim the interest portion of loan repayments as a deduction, but not the principal. You also claim depreciation on the asset separately based on IRD depreciation rates.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">What is a balloon payment on equipment finance?</button>
+                        <div class="faq-answer" hidden><p>A balloon payment is a large lump sum due at the end of the loan term. It lowers monthly repayments during the loan but requires you to pay out, refinance, or return the asset at the end.</p></div>
+                    </div>
+                    
+                </div>
+            </section>
+            <script>
+            document.querySelectorAll('.faq-question').forEach(function(btn){
+                btn.addEventListener('click',function(){
+                    var ans=this.nextElementSibling;
+                    var open=this.getAttribute('aria-expanded')==='true';
+                    this.setAttribute('aria-expanded',!open);
+                    if(open){ans.hidden=true;}else{ans.hidden=false;}
+                });
+            });
+            </script>
+            
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:#0f172a;color:#fff;border:none">
+                <img src="https://fastcrew.nz/assets/fastcrew/images/Fastcrewlogo-light.png" alt="FastCrew" style="height:28px;margin-bottom:.75rem;display:block">
+                <p style="color:rgba(255,255,255,.88);font-size:.85rem;margin-bottom:.6rem">The only tradie app built for NZ compliance.</p>
+                <ul style="color:rgba(255,255,255,.82);font-size:.82rem;margin:0 0 1rem;padding-left:1.1rem">
+                    <li>AI-powered quoting</li>
+                    <li>H&amp;S compliance &amp; SWMS</li>
+                    <li>Jobs, quotes &amp; invoicing</li>
+                    <li>Xero + Stripe · From $39/mo</li>
+                </ul>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#ea6325;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Start free trial →</a>
+                <p style="color:rgba(255,255,255,.5);font-size:.75rem;text-align:center;margin:.5rem 0 0">14-day free trial · No credit card required</p>
+            </div>
+            
+            
+            <div class="sidebar-widget">
+                <h3>Related Guides</h3>
+                <ul>
+                    
+                    <li><a href="/articles/nz-tradie-investment-boost-deduction-2026">The 20% Investment Boost: How NZ Tradies Can Claim It Before EOFY</a></li>
+                    
+                    <li><a href="/articles/vehicle-expenses-nz-tradies-ird">Vehicle Expenses for NZ Tradies: IRD Rules Explained (2025)</a></li>
+                    
+                </ul>
+            </div>
+            
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://fastcrew.nz" rel="noopener" target="_blank">Fastcrew — All-in-One Tradie App</a></li>
+                    <li><a href="https://www.xero.com/nz/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <img src="/static/img/logo-dark.png" alt="TradieTools NZ" style="height:64px;width:auto;display:block;margin-bottom:.5rem">
+                <p>Free calculators, templates and guides for New Zealand tradies.</p>
+                <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
+            </div>
+            <div style="text-align:right">
+                <p><a href="/glossary/">Tradie Glossary</a></p>
+                <p><a href="/privacy/">Privacy Policy</a></p>
+                <p><a href="/contact/">Contact</a></p>
+                <p style="margin-top:.5rem">&copy; 2026 TradieTools NZ</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

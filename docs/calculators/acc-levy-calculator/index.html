@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- NZ-local signals -->
+    <meta name="geo.region" content="NZ">
+    <meta name="geo.placename" content="New Zealand">
+    <meta name="ICBM" content="-41.2866, 174.7756">
+    <!-- Performance -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://tradietools.optified.nz">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap">
+    <title>ACC Levy Calculator NZ — Self-Employed Tradie Levies 2025/26</title>
+    <meta name="description" content="Calculate your ACC levies as a self-employed NZ tradie — work levy, earner levy, and working safer levy based on your trade and income.">
+    <meta property="og:title" content="ACC Levy Calculator NZ — Self-Employed Tradie Levies 2025/26 — TradieTools NZ">
+    <meta property="og:description" content="Calculate your ACC levies as a self-employed NZ tradie — work levy, earner levy, and working safer levy based on your trade and income.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradietools.nz/calculators/acc-levy-calculator/">
+    <meta property="og:site_name" content="TradieTools NZ">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ACC Levy Calculator NZ — Self-Employed Tradie Levies 2025/26 — TradieTools NZ">
+    <meta name="twitter:description" content="Calculate your ACC levies as a self-employed NZ tradie — work levy, earner levy, and working safer levy based on your trade and income.">
+    <meta property="og:image" content="https://tradietools.nz/static/img/social-card.svg">
+    <meta name="twitter:image" content="https://tradietools.nz/static/img/social-card.svg">
+    <link rel="canonical" href="https://tradietools.nz/calculators/acc-levy-calculator/">
+    <link rel="alternate" type="application/rss+xml" title="TradieTools NZ — Articles" href="https://tradietools.nz/rss.xml">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"ACC Levy Calculator NZ \u2014 Self-Employed Tradie Levies 2025/26","description":"Calculate your ACC levies as a self-employed NZ tradie \u2014 work levy, earner levy, and working safer levy based on your trade and income.","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://tradietools.nz/calculators/acc-levy-calculator/","offers":{"@type":"Offer","price":"0","priceCurrency":"NZD"},"author":{"@type":"Organization","name":"TradieTools NZ","url":"https://tradietools.nz"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tradietools.nz"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://tradietools.nz/calculators/"},{"@type":"ListItem","position":3,"name":"ACC Levy Calculator NZ \u2014 Self-Employed Tradie Levies 2025/26","item":"https://tradietools.nz/calculators/acc-levy-calculator/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How is ACC levy calculated for self-employed NZ tradies?","acceptedAnswer":{"@type":"Answer","text":"Self-employed tradies pay ACC based on their liable earnings (net profit up to the maximum) multiplied by their industry levy rate. The 2024\u201325 working safer levy is $0.08 per $100 plus a trade-specific earners\u0027 levy, totalling roughly $1.39\u2013$2.80 per $100 for most trades."}},{"@type":"Question","name":"What is the ACC earners\u0027 levy rate in New Zealand?","acceptedAnswer":{"@type":"Answer","text":"For 2024\u201325 the earners\u0027 levy is $1.39 per $100 of liable earnings, paid by all NZ earners. Self-employed people also pay a work levy set by their industry classification."}},{"@type":"Question","name":"Is ACC levy tax-deductible for NZ sole traders?","acceptedAnswer":{"@type":"Answer","text":"Yes. The work portion of your ACC levy is fully tax-deductible as a business expense. The earners\u0027 levy portion is not deductible."}},{"@type":"Question","name":"What is the maximum liable earnings for ACC?","acceptedAnswer":{"@type":"Answer","text":"The maximum liable earnings for 2024\u201325 is $142,283. ACC levies are only charged on income up to this threshold."}}]}]}</script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to use the ACC Levy Calculator NZ \u2014 Self-Employed Tradie Levies 2025/26",
+      "description": "Calculate your ACC levies as a self-employed NZ tradie \u2014 work levy, earner levy, and working safer levy based on your trade and income.",
+      "totalTime": "PT1M",
+      "tool": [{"@type": "HowToTool", "name": "Web browser"}],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Enter your values",
+          "text": "Fill in the fields in the calculator with your project details. All fields accept New Zealand dollar amounts unless labelled otherwise."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Get your instant result",
+          "text": "The calculator updates automatically as you type — no button press needed. Results are shown in NZD and include any applicable GST or rates."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Use the result in your quote or plan",
+          "text": "Copy the result into your quote, job estimate, or budget. For a detailed breakdown by city or scope, see the related job cost guides on TradieTools NZ."
+        }
+      ]
+    }
+    </script>
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJW7HLW8D8"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BJW7HLW8D8');</script>
+    
+<script type="application/ld+json">
+[{"@context":"https://schema.org","@type":"WebSite","@id":"https://tradietools.nz/#website","name":"ACC Levy Calculator NZ — Self-Employed Tradie Levies 2025/26","url":"https://tradietools.nz","inLanguage":"en-NZ","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://tradietools.nz/calculators/?q={search_term_string}"},"query-input":"required name=search_term_string"},"publisher":{"@id":"https://tradietools.nz/#organization"}},
+{"@context":"https://schema.org","@type":"Organization","@id":"https://tradietools.nz/#organization","name":"ACC Levy Calculator NZ — Self-Employed Tradie Levies 2025/26","url":"https://tradietools.nz","description":"Calculate your ACC levies as a self-employed NZ tradie — work levy, earner levy, and working safer levy based on your trade and income.","logo":{"@type":"ImageObject","url":"https://tradietools.nz/favicon.svg","width":512,"height":512},"contactPoint":{"@type":"ContactPoint","email":"contact@tradietools.nz","contactType":"customer service"},"sameAs":["https://www.facebook.com/nztradietools", "https://www.linkedin.com/company/nz-tradie-tools"]}]
+</script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo"><img src="/static/img/logo-dark.png" alt="TradieTools NZ" class="logo-img"></a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                
+                <a href="/trades/">Find a Tradie</a>
+                
+                <a href="/post-job/">Post a Job</a>
+                
+                <a href="/jobs/">Cost Guides</a>
+                
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">For Tradies &#9660;</button>
+                    <div class="nav-dropdown-menu" role="menu">
+                        <a href="/for-tradies/" role="menuitem">For Tradies Hub</a>
+                        <a href="/calculators/" role="menuitem">Calculators</a>
+                        <a href="/templates/" role="menuitem">Free Templates</a>
+                        <a href="/articles/" role="menuitem">Articles &amp; Guides</a>
+                        <a href="/contact/" role="menuitem">Contact</a>
+                    </div>
+                </div>
+                <a id="nav-my-listing" href="/find/" class="nav-my-listing" style="display:none">My Listing</a>
+                <a href="/signup/" class="nav-cta">Free Listing &#8594;</a>
+            </nav>
+            <script>
+            (function(){
+                var t=document.querySelector('.nav-toggle'),n=document.getElementById('main-nav');
+                if(!t||!n)return;
+                t.addEventListener('click',function(){
+                    var o=n.classList.toggle('is-open');
+                    t.setAttribute('aria-expanded',o);
+                });
+                document.addEventListener('click',function(e){
+                    if(!t.contains(e.target)&&!n.contains(e.target)){
+                        n.classList.remove('is-open');
+                        t.setAttribute('aria-expanded','false');
+                    }
+                });
+                var id=localStorage.getItem('tradieId');
+                if(id){var ml=document.getElementById('nav-my-listing');if(ml){ml.style.display='';ml.href='/find/?highlight='+encodeURIComponent(id);}}
+            })();
+            </script>
+        </div>
+    </header>
+
+    <section class="hero" style="padding:1.75rem 0 1.5rem">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb" style="color:rgba(255,255,255,.55);margin-bottom:.75rem">
+                <a href="/" style="color:rgba(255,255,255,.55)">Home</a> &rsaquo;
+                <a href="/calculators/" style="color:rgba(255,255,255,.55)">Calculators</a> &rsaquo;
+                <span>ACC Levy Calculator NZ — Self-Employed Tradie Levies 2025/26</span>
+            </nav>
+            <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:1.5rem;flex-wrap:wrap">
+                <div>
+                    <span style="display:inline-block;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#f97316;background:rgba(249,115,22,.15);border:1px solid rgba(249,115,22,.3);border-radius:4px;padding:.15rem .5rem;margin-bottom:.5rem">Free Calculator</span>
+                    <h1 style="font-size:1.9rem;font-weight:800;margin:0 0 .4rem;line-height:1.2;color:#fff">ACC Levy Calculator NZ — Self-Employed Tradie Levies 2025/26</h1>
+                    <p style="color:rgba(255,255,255,.75);margin:0;font-size:.97rem;max-width:580px;line-height:1.55">Calculate your ACC levies as a self-employed NZ tradie — work levy, earner levy, and working safer levy based on your trade and income.</p>
+                </div>
+                <a href="/calculators/" style="flex-shrink:0;font-size:.82rem;color:rgba(255,255,255,.55);text-decoration:none;padding:.4rem .85rem;border:1px solid rgba(255,255,255,.2);border-radius:6px;white-space:nowrap;align-self:flex-start">← All calculators</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container page-layout">
+        <main class="main-content" style="padding-top:1.5rem">
+            <div class="calculator-wrapper" style="margin-bottom:2rem">
+                <div class="calc-grid">
+  <div class="calc-group">
+    <label>Trade / occupation</label>
+    <select id="acc-trade" onchange="calcACC()">
+      <option value="2.14">Builder / Carpenter (general)</option>
+      <option value="1.02">Electrician</option>
+      <option value="1.52">Plumber / Gasfitter</option>
+      <option value="4.38">Roofer</option>
+      <option value="1.85">Painter / Decorator</option>
+      <option value="2.60">Landscaper / Groundskeeper</option>
+      <option value="3.10">Demolition Worker</option>
+      <option value="1.95">Concreter</option>
+      <option value="2.30">Tiler / Flooring</option>
+      <option value="1.45">HVAC / Heat Pump Installer</option>
+      <option value="2.80">Excavator / Earthworks</option>
+      <option value="1.20">Kitchen / Cabinet Maker</option>
+      <option value="2.00">Other construction trade</option>
+    </select>
+  </div>
+  <div class="calc-group">
+    <label>Annual liable income ($)</label>
+    <input type="number" id="acc-income" placeholder="e.g. 80000" oninput="calcACC()">
+  </div>
+  <div class="calc-group">
+    <label>Levy year</label>
+    <select id="acc-year" onchange="calcACC()">
+      <option value="2526" selected>2025/26</option>
+    </select>
+  </div>
+</div>
+<div class="calc-result" id="acc-result" style="display:none">
+  <h3>ACC Levy Estimate</h3>
+  <div class="result-row"><span>Work levy rate</span><span id="acc-work-rate"></span></div>
+  <div class="result-row"><span>Work levy</span><span id="acc-work"></span></div>
+  <div class="result-row"><span>Earner levy (1.33% up to $139,384)</span><span id="acc-earner"></span></div>
+  <div class="result-row"><span>Working Safer levy (0.08%)</span><span id="acc-safer"></span></div>
+  <div class="result-row"><span>Total ACC levy (estimated)</span><span id="acc-total" class="result-highlight"></span></div>
+  <div class="result-row"><span>Effective rate of income</span><span id="acc-eff"></span></div>
+  <div class="result-row"><span>Weekly ACC cost</span><span id="acc-weekly"></span></div>
+  <div style="margin-top:.75rem;padding:.6rem;background:#fff8e1;border-radius:4px;font-size:.85rem">
+    <strong>Important:</strong> These are estimates based on published ACC levy rates. Your actual levy is calculated by IRD from your tax return and invoiced by ACC separately. Rates vary by industry classification unit (CU) — ACC may reclassify your trade if your work description changes.
+  </div>
+</div>
+<script>
+function nzd(n){return '$'+n.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g,',');}
+var EARNER_RATE = 1.33/100;
+var EARNER_MAX = 139384;
+var SAFER_RATE = 0.08/100;
+function calcACC(){
+  var workRate = parseFloat(document.getElementById('acc-trade').value);
+  var income = parseFloat(document.getElementById('acc-income').value)||0;
+  if(!income){document.getElementById('acc-result').style.display='none';return;}
+  var workLevy = income * workRate/100;
+  var earnerBase = Math.min(income, EARNER_MAX);
+  var earnerLevy = earnerBase * EARNER_RATE;
+  var saferLevy = income * SAFER_RATE;
+  var total = workLevy + earnerLevy + saferLevy;
+  var eff = total/income*100;
+  document.getElementById('acc-work-rate').textContent = workRate.toFixed(2)+'% of liable income';
+  document.getElementById('acc-work').textContent = nzd(workLevy);
+  document.getElementById('acc-earner').textContent = nzd(earnerLevy);
+  document.getElementById('acc-safer').textContent = nzd(saferLevy);
+  document.getElementById('acc-total').textContent = nzd(total);
+  document.getElementById('acc-eff').textContent = eff.toFixed(2)+'%';
+  document.getElementById('acc-weekly').textContent = nzd(total/52)+'/week';
+  document.getElementById('acc-result').style.display='';
+}
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="how-acc-levies-work-for-self-employed-tradies">How ACC Levies Work for Self-Employed Tradies</h2>
+<p>As a self-employed person in New Zealand, you pay <strong>three separate ACC levies</strong> based on your liable earnings:</p>
+<h3 id="1-work-levy">1. Work Levy</h3>
+<p>Covers workplace injuries. The rate varies significantly by trade — roofers pay more than electricians because the statistical injury risk is higher. ACC assigns each trade a <strong>classification unit (CU)</strong> with its own levy rate.</p>
+<h3 id="2-earner-levy-133-for-202526">2. Earner Levy (1.33% for 2025/26)</h3>
+<p>Covers non-work injuries (e.g., a weekend sports injury, car accident outside work). Applied to all earning New Zealanders, capped at the maximum liable earnings ($139,384 for 2025/26).</p>
+<h3 id="3-working-safer-levy-008">3. Working Safer Levy (0.08%)</h3>
+<p>A flat levy that funds WorkSafe NZ's activities. Small relative to the other levies.</p>
+<h3 id="how-its-collected">How It's Collected</h3>
+<p>As a self-employed person, your ACC levies are <strong>calculated by IRD from your tax return</strong> and billed directly by ACC — usually twice per year. You don't pay through PAYE.</p>
+<p>ACC sends:
+- A <strong>cover plus invoice</strong> for the current year (estimated)
+- An <strong>end-of-year adjustment</strong> once your actual income is known</p>
+<h3 id="is-acc-enough">Is ACC Enough?</h3>
+<p>ACC only covers <strong>accident-related</strong> injury. It doesn't cover illness, gradual onset conditions (like back problems from years of heavy work), or mental health conditions. Read our article on <a href="/articles/income-protection-insurance-nz-tradies">Income Protection Insurance</a> for the full picture.</p>
+<h3 id="reducing-your-acc-levies">Reducing Your ACC Levies</h3>
+<ul>
+<li><strong>ACC CoverPlus Extra</strong> — negotiate a fixed agreed income for ACC purposes rather than actual income. Useful if your income fluctuates</li>
+<li><strong>Good employer discount</strong> — available if you've had no claims and meet safety criteria</li>
+<li><strong>Industry training levies</strong> — apprentices and trainees may attract reduced rates</li>
+</ul>
+            </div>
+
+            
+            <section class="faq-section" style="margin-top:2rem">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">How is ACC levy calculated for self-employed NZ tradies?</button>
+                        <div class="faq-answer" hidden><p>Self-employed tradies pay ACC based on their liable earnings (net profit up to the maximum) multiplied by their industry levy rate. The 2024–25 working safer levy is $0.08 per $100 plus a trade-specific earners' levy, totalling roughly $1.39–$2.80 per $100 for most trades.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">What is the ACC earners' levy rate in New Zealand?</button>
+                        <div class="faq-answer" hidden><p>For 2024–25 the earners' levy is $1.39 per $100 of liable earnings, paid by all NZ earners. Self-employed people also pay a work levy set by their industry classification.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">Is ACC levy tax-deductible for NZ sole traders?</button>
+                        <div class="faq-answer" hidden><p>Yes. The work portion of your ACC levy is fully tax-deductible as a business expense. The earners' levy portion is not deductible.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">What is the maximum liable earnings for ACC?</button>
+                        <div class="faq-answer" hidden><p>The maximum liable earnings for 2024–25 is $142,283. ACC levies are only charged on income up to this threshold.</p></div>
+                    </div>
+                    
+                </div>
+            </section>
+            <script>
+            document.querySelectorAll('.faq-question').forEach(function(btn){
+                btn.addEventListener('click',function(){
+                    var ans=this.nextElementSibling;
+                    var open=this.getAttribute('aria-expanded')==='true';
+                    this.setAttribute('aria-expanded',!open);
+                    if(open){ans.hidden=true;}else{ans.hidden=false;}
+                });
+            });
+            </script>
+            
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:#0f172a;color:#fff;border:none">
+                <img src="https://fastcrew.nz/assets/fastcrew/images/Fastcrewlogo-light.png" alt="FastCrew" style="height:28px;margin-bottom:.75rem;display:block">
+                <p style="color:rgba(255,255,255,.88);font-size:.85rem;margin-bottom:.6rem">The only tradie app built for NZ compliance.</p>
+                <ul style="color:rgba(255,255,255,.82);font-size:.82rem;margin:0 0 1rem;padding-left:1.1rem">
+                    <li>AI-powered quoting</li>
+                    <li>H&amp;S compliance &amp; SWMS</li>
+                    <li>Jobs, quotes &amp; invoicing</li>
+                    <li>Xero + Stripe · From $39/mo</li>
+                </ul>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#ea6325;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Start free trial →</a>
+                <p style="color:rgba(255,255,255,.5);font-size:.75rem;text-align:center;margin:.5rem 0 0">14-day free trial · No credit card required</p>
+            </div>
+            
+            
+            <div class="sidebar-widget">
+                <h3>Related Guides</h3>
+                <ul>
+                    
+                    <li><a href="/articles/nz-tradie-tax-guide-what-you-can-claim">NZ Tradie Tax Guide 2026: Every Deduction You Can Claim</a></li>
+                    
+                    <li><a href="/articles/income-protection-insurance-nz-tradies">Income Protection Insurance for NZ Tradies — Why ACC Isn't Enough</a></li>
+                    
+                </ul>
+            </div>
+            
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://fastcrew.nz" rel="noopener" target="_blank">Fastcrew — All-in-One Tradie App</a></li>
+                    <li><a href="https://www.xero.com/nz/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <img src="/static/img/logo-dark.png" alt="TradieTools NZ" style="height:64px;width:auto;display:block;margin-bottom:.5rem">
+                <p>Free calculators, templates and guides for New Zealand tradies.</p>
+                <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
+            </div>
+            <div style="text-align:right">
+                <p><a href="/glossary/">Tradie Glossary</a></p>
+                <p><a href="/privacy/">Privacy Policy</a></p>
+                <p><a href="/contact/">Contact</a></p>
+                <p style="margin-top:.5rem">&copy; 2026 TradieTools NZ</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

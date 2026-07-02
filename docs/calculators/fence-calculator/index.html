@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- NZ-local signals -->
+    <meta name="geo.region" content="NZ">
+    <meta name="geo.placename" content="New Zealand">
+    <meta name="ICBM" content="-41.2866, 174.7756">
+    <!-- Performance -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://tradietools.optified.nz">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap">
+    <title>Fence Calculator — NZ — TradieTools NZ</title>
+    <meta name="description" content="Calculate posts, rails, palings, and concrete needed for any NZ fence. Covers timber paling, post-and-rail, and Colorbond.">
+    <meta property="og:title" content="Fence Calculator — NZ — TradieTools NZ">
+    <meta property="og:description" content="Calculate posts, rails, palings, and concrete needed for any NZ fence. Covers timber paling, post-and-rail, and Colorbond.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradietools.nz/calculators/fence-calculator/">
+    <meta property="og:site_name" content="TradieTools NZ">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Fence Calculator — NZ — TradieTools NZ">
+    <meta name="twitter:description" content="Calculate posts, rails, palings, and concrete needed for any NZ fence. Covers timber paling, post-and-rail, and Colorbond.">
+    <meta property="og:image" content="https://tradietools.nz/static/img/social-card.svg">
+    <meta name="twitter:image" content="https://tradietools.nz/static/img/social-card.svg">
+    <link rel="canonical" href="https://tradietools.nz/calculators/fence-calculator/">
+    <link rel="alternate" type="application/rss+xml" title="TradieTools NZ — Articles" href="https://tradietools.nz/rss.xml">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"Fence Calculator \u2014 NZ","description":"Calculate posts, rails, palings, and concrete needed for any NZ fence. Covers timber paling, post-and-rail, and Colorbond.","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://tradietools.nz/calculators/fence-calculator/","offers":{"@type":"Offer","price":"0","priceCurrency":"NZD"},"author":{"@type":"Organization","name":"TradieTools NZ","url":"https://tradietools.nz"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tradietools.nz"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://tradietools.nz/calculators/"},{"@type":"ListItem","position":3,"name":"Fence Calculator \u2014 NZ","item":"https://tradietools.nz/calculators/fence-calculator/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much fencing do I need per lineal metre in NZ?","acceptedAnswer":{"@type":"Answer","text":"Measure total fence line in metres. Standard paling fences use posts every 2.4\u20132.7 m. A 30 m fence needs roughly 12\u201313 posts. Rails, palings or battens, and fixings are then calculated off this."}},{"@type":"Question","name":"How much does a fence cost per metre in NZ?","acceptedAnswer":{"@type":"Answer","text":"A standard 1.8 m timber paling fence in NZ costs $90\u2013$180/lm supply and install. A metal post-and-rail lifestyle fence is $100\u2013$200/lm. Retaining fences with structural requirements can reach $300\u2013$500/lm."}},{"@type":"Question","name":"Do I need council approval for a fence in NZ?","acceptedAnswer":{"@type":"Answer","text":"Fences up to 2 m high are generally permitted without resource consent. Fences on boundary or over 2 m often require neighbour agreement and council consent. Retaining fences over 1 m usually need a building consent."}},{"@type":"Question","name":"What timber treatment is needed for NZ fence posts?","acceptedAnswer":{"@type":"Answer","text":"Posts in-ground require H5 treatment (CCA-treated). Rails and battens above ground require H3.2. Using the correct hazard class is mandatory under NZS 3602."}},{"@type":"Question","name":"Who pays for a boundary fence in NZ?","acceptedAnswer":{"@type":"Answer","text":"Under the Fencing Act 1978, neighbours generally share the cost of an adequate boundary fence equally. If you want a more expensive fence than your neighbour agrees to, you usually cover the extra. Serve a written Fencing Notice to formalise the cost split before starting."}},{"@type":"Question","name":"What are the boundary fence rules in NZ?","acceptedAnswer":{"@type":"Answer","text":"The Fencing Act 1978 governs shared boundary fences: neighbours can be required to contribute to a reasonable fence, with disputes resolved via the Disputes Tribunal. The Act doesn\u0027t set a height \u2014 local council district plans and the Building Act cover height and consent limits."}},{"@type":"Question","name":"How much does fencing cost in NZ?","acceptedAnswer":{"@type":"Answer","text":"A standard 1.8 m timber paling fence runs $90\u2013$180 per lineal metre supplied and installed. Lifestyle post-and-rail is $100\u2013$200/lm, while structural retaining fences can reach $300\u2013$500/lm. Site access, ground conditions and post type are the biggest cost drivers."}},{"@type":"Question","name":"Timber vs concrete fence posts \u2014 which is better?","acceptedAnswer":{"@type":"Answer","text":"H5-treated timber posts are cheaper and easier to work with but can rot or move over decades. Concrete posts cost more upfront but resist rot, borer and fire, and hold palings dead straight long-term. Concrete is popular for exposed or coastal sites; timber suits budget and standard residential jobs."}},{"@type":"Question","name":"How do I read the results from this fence calculator?","acceptedAnswer":{"@type":"Answer","text":"Enter your total fence length and post spacing. The calculator estimates the number of posts, rails, palings and fixings, plus an indicative cost range. Treat materials counts as a buy list and the cost as a planning guide \u2014 get a quote for the final supply-and-install price."}}]}]}</script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to use the Fence Calculator \u2014 NZ",
+      "description": "Calculate posts, rails, palings, and concrete needed for any NZ fence. Covers timber paling, post-and-rail, and Colorbond.",
+      "totalTime": "PT1M",
+      "tool": [{"@type": "HowToTool", "name": "Web browser"}],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Enter your values",
+          "text": "Fill in the fields in the calculator with your project details. All fields accept New Zealand dollar amounts unless labelled otherwise."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Get your instant result",
+          "text": "The calculator updates automatically as you type — no button press needed. Results are shown in NZD and include any applicable GST or rates."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Use the result in your quote or plan",
+          "text": "Copy the result into your quote, job estimate, or budget. For a detailed breakdown by city or scope, see the related job cost guides on TradieTools NZ."
+        }
+      ]
+    }
+    </script>
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJW7HLW8D8"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BJW7HLW8D8');</script>
+    
+<script type="application/ld+json">
+[{"@context":"https://schema.org","@type":"WebSite","@id":"https://tradietools.nz/#website","name":"Fence Calculator — NZ","url":"https://tradietools.nz","inLanguage":"en-NZ","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://tradietools.nz/calculators/?q={search_term_string}"},"query-input":"required name=search_term_string"},"publisher":{"@id":"https://tradietools.nz/#organization"}},
+{"@context":"https://schema.org","@type":"Organization","@id":"https://tradietools.nz/#organization","name":"Fence Calculator — NZ","url":"https://tradietools.nz","description":"Calculate posts, rails, palings, and concrete needed for any NZ fence. Covers timber paling, post-and-rail, and Colorbond.","logo":{"@type":"ImageObject","url":"https://tradietools.nz/favicon.svg","width":512,"height":512},"contactPoint":{"@type":"ContactPoint","email":"contact@tradietools.nz","contactType":"customer service"},"sameAs":["https://www.facebook.com/nztradietools", "https://www.linkedin.com/company/nz-tradie-tools"]}]
+</script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo"><img src="/static/img/logo-dark.png" alt="TradieTools NZ" class="logo-img"></a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                
+                <a href="/trades/">Find a Tradie</a>
+                
+                <a href="/post-job/">Post a Job</a>
+                
+                <a href="/jobs/">Cost Guides</a>
+                
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">For Tradies &#9660;</button>
+                    <div class="nav-dropdown-menu" role="menu">
+                        <a href="/for-tradies/" role="menuitem">For Tradies Hub</a>
+                        <a href="/calculators/" role="menuitem">Calculators</a>
+                        <a href="/templates/" role="menuitem">Free Templates</a>
+                        <a href="/articles/" role="menuitem">Articles &amp; Guides</a>
+                        <a href="/contact/" role="menuitem">Contact</a>
+                    </div>
+                </div>
+                <a id="nav-my-listing" href="/find/" class="nav-my-listing" style="display:none">My Listing</a>
+                <a href="/signup/" class="nav-cta">Free Listing &#8594;</a>
+            </nav>
+            <script>
+            (function(){
+                var t=document.querySelector('.nav-toggle'),n=document.getElementById('main-nav');
+                if(!t||!n)return;
+                t.addEventListener('click',function(){
+                    var o=n.classList.toggle('is-open');
+                    t.setAttribute('aria-expanded',o);
+                });
+                document.addEventListener('click',function(e){
+                    if(!t.contains(e.target)&&!n.contains(e.target)){
+                        n.classList.remove('is-open');
+                        t.setAttribute('aria-expanded','false');
+                    }
+                });
+                var id=localStorage.getItem('tradieId');
+                if(id){var ml=document.getElementById('nav-my-listing');if(ml){ml.style.display='';ml.href='/find/?highlight='+encodeURIComponent(id);}}
+            })();
+            </script>
+        </div>
+    </header>
+
+    <section class="hero" style="padding:1.75rem 0 1.5rem">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb" style="color:rgba(255,255,255,.55);margin-bottom:.75rem">
+                <a href="/" style="color:rgba(255,255,255,.55)">Home</a> &rsaquo;
+                <a href="/calculators/" style="color:rgba(255,255,255,.55)">Calculators</a> &rsaquo;
+                <span>Fence Calculator — NZ</span>
+            </nav>
+            <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:1.5rem;flex-wrap:wrap">
+                <div>
+                    <span style="display:inline-block;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#f97316;background:rgba(249,115,22,.15);border:1px solid rgba(249,115,22,.3);border-radius:4px;padding:.15rem .5rem;margin-bottom:.5rem">Free Calculator</span>
+                    <h1 style="font-size:1.9rem;font-weight:800;margin:0 0 .4rem;line-height:1.2;color:#fff">Fence Calculator — NZ</h1>
+                    <p style="color:rgba(255,255,255,.75);margin:0;font-size:.97rem;max-width:580px;line-height:1.55">Calculate posts, rails, palings, and concrete needed for any NZ fence. Covers timber paling, post-and-rail, and Colorbond.</p>
+                </div>
+                <a href="/calculators/" style="flex-shrink:0;font-size:.82rem;color:rgba(255,255,255,.55);text-decoration:none;padding:.4rem .85rem;border:1px solid rgba(255,255,255,.2);border-radius:6px;white-space:nowrap;align-self:flex-start">← All calculators</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container page-layout">
+        <main class="main-content" style="padding-top:1.5rem">
+            <div class="calculator-wrapper" style="margin-bottom:2rem">
+                <div class="calc-grid">
+  <div class="calc-group"><label>Fence length (m)</label><input type="number" id="fn-len" placeholder="e.g. 30" oninput="calcFence()"></div>
+  <div class="calc-group"><label>Fence height (m)</label><input type="number" id="fn-h" placeholder="e.g. 1.8" value="1.8" oninput="calcFence()"></div>
+  <div class="calc-group"><label>Post spacing (m)</label><input type="number" id="fn-ps" placeholder="e.g. 2.4" value="2.4" oninput="calcFence()"></div>
+  <div class="calc-group"><label>Post hole depth (m)</label><input type="number" id="fn-pd" placeholder="e.g. 0.6" value="0.6" oninput="calcFence()"></div>
+  <div class="calc-group"><label>Paling width (mm)</label><input type="number" id="fn-pw" placeholder="e.g. 100" value="100" oninput="calcFence()"></div>
+  <div class="calc-group"><label>Paling gap (mm)</label><input type="number" id="fn-pg" placeholder="e.g. 5" value="5" oninput="calcFence()"></div>
+  <div class="calc-group"><label>Number of rails</label><input type="number" id="fn-nr" placeholder="e.g. 3" value="3" oninput="calcFence()"></div>
+</div>
+<div class="calc-result" id="fn-result" style="display:none">
+  <h3>Result</h3>
+  <div class="result-row"><span>Posts needed</span><span id="fn-posts"></span></div>
+  <div class="result-row"><span>Rails needed</span><span id="fn-rails"></span></div>
+  <div class="result-row"><span>Palings needed</span><span id="fn-palings"></span></div>
+  <div class="result-row"><span>Concrete (20kg bags)</span><span id="fn-concrete"></span></div>
+  <div class="result-row"><span>Post hole diameter</span><span id="fn-phdia"></span></div>
+</div>
+<script>
+function calcFence(){
+  var l=parseFloat(document.getElementById('fn-len').value)||0,
+      h=parseFloat(document.getElementById('fn-h').value)||1.8,
+      ps=parseFloat(document.getElementById('fn-ps').value)||2.4,
+      pd=parseFloat(document.getElementById('fn-pd').value)||0.6,
+      pw=parseFloat(document.getElementById('fn-pw').value)||100,
+      pg=parseFloat(document.getElementById('fn-pg').value)||5,
+      nr=parseFloat(document.getElementById('fn-nr').value)||3;
+  if(!l){document.getElementById('fn-result').style.display='none';return;}
+  var posts=Math.ceil(l/ps)+1;
+  var rails=Math.ceil(l/ps)*nr;
+  var spacingM=(pw+pg)/1000;
+  var palingsPerBay=Math.ceil(ps/spacingM);
+  var palings=palingsPerBay*Math.ceil(l/ps);
+  var holeDia=0.2, holeR=holeDia/2;
+  var concretePerHole=Math.PI*holeR*holeR*pd;
+  var bags=Math.ceil(concretePerHole*posts/0.01);
+  document.getElementById('fn-posts').textContent=posts+' posts';
+  document.getElementById('fn-rails').textContent=rails+' rails ('+l+'m lengths)';
+  document.getElementById('fn-palings').textContent=palings+' palings';
+  document.getElementById('fn-concrete').textContent=bags+' × 20kg bags';
+  document.getElementById('fn-phdia').textContent=(holeDia*1000)+'mm recommended';
+  document.getElementById('fn-result').style.display='';
+}
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="fence-calculator-for-nz-builders-fencers">Fence Calculator for NZ Builders &amp; Fencers</h2>
+<p>Calculate posts, rails, palings, and concrete for timber paling fences. Useful for quoting or ordering materials.</p>
+<h3 id="nz-fencing-standards">NZ Fencing Standards</h3>
+<ul>
+<li><strong>Boundary fences:</strong> Standard height is 1.8m for residential privacy</li>
+<li><strong>Pool fencing:</strong> Minimum 1.2m, NZ Building Code F9 — must be self-closing</li>
+<li><strong>Post depth:</strong> Bury at least 1/3 of total post length underground (min 600mm)</li>
+<li><strong>Timber treatment:</strong> All ground-contact timber must be <strong>H4 treated</strong></li>
+</ul>
+<h3 id="recommended-post-sizes">Recommended Post Sizes</h3>
+<table>
+<thead>
+<tr>
+<th>Fence Height</th>
+<th>Post Size</th>
+<th>Post Spacing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Up to 1.2m</td>
+<td>100×75mm H4</td>
+<td>Up to 2.4m</td>
+</tr>
+<tr>
+<td>1.2–1.8m</td>
+<td>100×100mm H4</td>
+<td>Up to 2.4m</td>
+</tr>
+<tr>
+<td>1.8m+</td>
+<td>125×125mm H4</td>
+<td>Up to 2.4m</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fencing-cost-guide">Fencing Cost Guide</h3>
+<p>See our <a href="/jobs/fencing-and-gates/">fencing &amp; gates cost guide</a> for NZ prices by city.</p>
+            </div>
+
+            
+            <section class="faq-section" style="margin-top:2rem">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">How much fencing do I need per lineal metre in NZ?</button>
+                        <div class="faq-answer" hidden><p>Measure total fence line in metres. Standard paling fences use posts every 2.4–2.7 m. A 30 m fence needs roughly 12–13 posts. Rails, palings or battens, and fixings are then calculated off this.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">How much does a fence cost per metre in NZ?</button>
+                        <div class="faq-answer" hidden><p>A standard 1.8 m timber paling fence in NZ costs $90–$180/lm supply and install. A metal post-and-rail lifestyle fence is $100–$200/lm. Retaining fences with structural requirements can reach $300–$500/lm.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">Do I need council approval for a fence in NZ?</button>
+                        <div class="faq-answer" hidden><p>Fences up to 2 m high are generally permitted without resource consent. Fences on boundary or over 2 m often require neighbour agreement and council consent. Retaining fences over 1 m usually need a building consent.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">What timber treatment is needed for NZ fence posts?</button>
+                        <div class="faq-answer" hidden><p>Posts in-ground require H5 treatment (CCA-treated). Rails and battens above ground require H3.2. Using the correct hazard class is mandatory under NZS 3602.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">Who pays for a boundary fence in NZ?</button>
+                        <div class="faq-answer" hidden><p>Under the Fencing Act 1978, neighbours generally share the cost of an adequate boundary fence equally. If you want a more expensive fence than your neighbour agrees to, you usually cover the extra. Serve a written Fencing Notice to formalise the cost split before starting.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">What are the boundary fence rules in NZ?</button>
+                        <div class="faq-answer" hidden><p>The Fencing Act 1978 governs shared boundary fences: neighbours can be required to contribute to a reasonable fence, with disputes resolved via the Disputes Tribunal. The Act doesn't set a height — local council district plans and the Building Act cover height and consent limits.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">How much does fencing cost in NZ?</button>
+                        <div class="faq-answer" hidden><p>A standard 1.8 m timber paling fence runs $90–$180 per lineal metre supplied and installed. Lifestyle post-and-rail is $100–$200/lm, while structural retaining fences can reach $300–$500/lm. Site access, ground conditions and post type are the biggest cost drivers.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">Timber vs concrete fence posts — which is better?</button>
+                        <div class="faq-answer" hidden><p>H5-treated timber posts are cheaper and easier to work with but can rot or move over decades. Concrete posts cost more upfront but resist rot, borer and fire, and hold palings dead straight long-term. Concrete is popular for exposed or coastal sites; timber suits budget and standard residential jobs.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">How do I read the results from this fence calculator?</button>
+                        <div class="faq-answer" hidden><p>Enter your total fence length and post spacing. The calculator estimates the number of posts, rails, palings and fixings, plus an indicative cost range. Treat materials counts as a buy list and the cost as a planning guide — get a quote for the final supply-and-install price.</p></div>
+                    </div>
+                    
+                </div>
+            </section>
+            <script>
+            document.querySelectorAll('.faq-question').forEach(function(btn){
+                btn.addEventListener('click',function(){
+                    var ans=this.nextElementSibling;
+                    var open=this.getAttribute('aria-expanded')==='true';
+                    this.setAttribute('aria-expanded',!open);
+                    if(open){ans.hidden=true;}else{ans.hidden=false;}
+                });
+            });
+            </script>
+            
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:#0f172a;color:#fff;border:none">
+                <img src="https://fastcrew.nz/assets/fastcrew/images/Fastcrewlogo-light.png" alt="FastCrew" style="height:28px;margin-bottom:.75rem;display:block">
+                <p style="color:rgba(255,255,255,.88);font-size:.85rem;margin-bottom:.6rem">The only tradie app built for NZ compliance.</p>
+                <ul style="color:rgba(255,255,255,.82);font-size:.82rem;margin:0 0 1rem;padding-left:1.1rem">
+                    <li>AI-powered quoting</li>
+                    <li>H&amp;S compliance &amp; SWMS</li>
+                    <li>Jobs, quotes &amp; invoicing</li>
+                    <li>Xero + Stripe · From $39/mo</li>
+                </ul>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#ea6325;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Start free trial →</a>
+                <p style="color:rgba(255,255,255,.5);font-size:.75rem;text-align:center;margin:.5rem 0 0">14-day free trial · No credit card required</p>
+            </div>
+            
+            
+            <div class="sidebar-widget">
+                <h3>Related Guides</h3>
+                <ul>
+                    
+                    <li><a href="/articles/how-to-price-a-job-nz-tradie-guide">How to Price a Job: The Complete NZ Tradie Guide (2026)</a></li>
+                    
+                </ul>
+            </div>
+            
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://fastcrew.nz" rel="noopener" target="_blank">Fastcrew — All-in-One Tradie App</a></li>
+                    <li><a href="https://www.xero.com/nz/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <img src="/static/img/logo-dark.png" alt="TradieTools NZ" style="height:64px;width:auto;display:block;margin-bottom:.5rem">
+                <p>Free calculators, templates and guides for New Zealand tradies.</p>
+                <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
+            </div>
+            <div style="text-align:right">
+                <p><a href="/glossary/">Tradie Glossary</a></p>
+                <p><a href="/privacy/">Privacy Policy</a></p>
+                <p><a href="/contact/">Contact</a></p>
+                <p style="margin-top:.5rem">&copy; 2026 TradieTools NZ</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- NZ-local signals -->
+    <meta name="geo.region" content="NZ">
+    <meta name="geo.placename" content="New Zealand">
+    <meta name="ICBM" content="-41.2866, 174.7756">
+    <!-- Performance -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://tradietools.optified.nz">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap">
+    <title>NZ Job Cost & Quote Builder — TradieTools NZ</title>
+    <meta name="description" content="Calculate job costs, apply your markup, and produce a quote price with GST for NZ tradie jobs — with regional labour rates by city.">
+    <meta property="og:title" content="NZ Job Cost & Quote Builder — TradieTools NZ">
+    <meta property="og:description" content="Calculate job costs, apply your markup, and produce a quote price with GST for NZ tradie jobs — with regional labour rates by city.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradietools.nz/calculators/job-cost-calculator/">
+    <meta property="og:site_name" content="TradieTools NZ">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NZ Job Cost & Quote Builder — TradieTools NZ">
+    <meta name="twitter:description" content="Calculate job costs, apply your markup, and produce a quote price with GST for NZ tradie jobs — with regional labour rates by city.">
+    <meta property="og:image" content="https://tradietools.nz/static/img/social-card.svg">
+    <meta name="twitter:image" content="https://tradietools.nz/static/img/social-card.svg">
+    <link rel="canonical" href="https://tradietools.nz/calculators/job-cost-calculator/">
+    <link rel="alternate" type="application/rss+xml" title="TradieTools NZ — Articles" href="https://tradietools.nz/rss.xml">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"NZ Job Cost \u0026 Quote Builder","description":"Calculate job costs, apply your markup, and produce a quote price with GST for NZ tradie jobs \u2014 with regional labour rates by city.","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://tradietools.nz/calculators/job-cost-calculator/","offers":{"@type":"Offer","price":"0","priceCurrency":"NZD"},"author":{"@type":"Organization","name":"TradieTools NZ","url":"https://tradietools.nz"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tradietools.nz"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://tradietools.nz/calculators/"},{"@type":"ListItem","position":3,"name":"NZ Job Cost \u0026 Quote Builder","item":"https://tradietools.nz/calculators/job-cost-calculator/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I calculate the cost of a job as a NZ tradie?","acceptedAnswer":{"@type":"Answer","text":"Job cost = (hours \u00d7 hourly rate) + materials cost + subcontractor costs + overhead allocation. Add your profit margin last. Always price from cost up, not from what you think the client will pay."}},{"@type":"Question","name":"What profit margin should a NZ tradie add to a job quote?","acceptedAnswer":{"@type":"Answer","text":"A minimum gross margin of 35\u201345% is typical for NZ trade businesses. Net profit after overheads should target 15\u201325%. Underpricing may win the job but erodes business viability over time."}},{"@type":"Question","name":"What should I include in a job quote in NZ?","acceptedAnswer":{"@type":"Answer","text":"A valid NZ job quote should include: scope of work, inclusions and exclusions, materials specification, labour hours or fixed price, GST status (+ GST or GST inclusive), payment terms, and expiry date of quote."}},{"@type":"Question","name":"How do I handle variation costs on a quoted job?","acceptedAnswer":{"@type":"Answer","text":"Issue a written variation order before doing extra work, outlining additional scope, cost, and effect on timeline. Under NZ contract law, variations not documented in writing are difficult to enforce as additional charges."}},{"@type":"Question","name":"What\u0027s the difference between cost-plus and fixed-price pricing?","acceptedAnswer":{"@type":"Answer","text":"Cost-plus means you charge for actual time and materials plus an agreed margin \u2014 the final figure isn\u0027t fixed, so the client carries the risk of overruns. Fixed-price means you commit to one total upfront, so you carry the risk. Use fixed price for well-defined jobs and cost-plus where scope is uncertain."}},{"@type":"Question","name":"How much margin should I add to a job?","acceptedAnswer":{"@type":"Answer","text":"Add enough to cover overheads and leave net profit. A gross margin of 35\u201345% is common for NZ trades, translating to a markup of roughly 50\u201380% on direct costs. Higher-risk or specialist jobs justify more; never quote at break-even just to win work."}},{"@type":"Question","name":"What\u0027s the difference between a quote and an estimate in NZ?","acceptedAnswer":{"@type":"Answer","text":"Under the Consumer Guarantees Act, a quote is a fixed price you\u0027re bound to (unless the scope changes), while an estimate is only a best-guess that the final price can reasonably differ from. Always label which one you\u0027re giving so the client knows what they\u0027re agreeing to."}},{"@type":"Question","name":"How do I handle price variations under NZ Consumer Law?","acceptedAnswer":{"@type":"Answer","text":"If you gave a fixed quote, you generally can\u0027t charge more unless the client agreed to extra work in writing. If you gave an estimate, the final price must still be reasonable. Document every change as a signed variation to stay compliant and avoid disputes."}},{"@type":"Question","name":"How do I read the results from this job cost calculator?","acceptedAnswer":{"@type":"Answer","text":"Enter your labour hours and rate, materials, subcontractor costs and overhead, then your target margin. The calculator totals your direct costs and applies the margin to show a recommended quote price. Use it as your floor \u2014 never quote below the figure it produces."}}]}]}</script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to use the NZ Job Cost \u0026 Quote Builder",
+      "description": "Calculate job costs, apply your markup, and produce a quote price with GST for NZ tradie jobs \u2014 with regional labour rates by city.",
+      "totalTime": "PT1M",
+      "tool": [{"@type": "HowToTool", "name": "Web browser"}],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Enter your values",
+          "text": "Fill in the fields in the calculator with your project details. All fields accept New Zealand dollar amounts unless labelled otherwise."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Get your instant result",
+          "text": "The calculator updates automatically as you type — no button press needed. Results are shown in NZD and include any applicable GST or rates."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Use the result in your quote or plan",
+          "text": "Copy the result into your quote, job estimate, or budget. For a detailed breakdown by city or scope, see the related job cost guides on TradieTools NZ."
+        }
+      ]
+    }
+    </script>
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJW7HLW8D8"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BJW7HLW8D8');</script>
+    
+<script type="application/ld+json">
+[{"@context":"https://schema.org","@type":"WebSite","@id":"https://tradietools.nz/#website","name":"NZ Job Cost & Quote Builder","url":"https://tradietools.nz","inLanguage":"en-NZ","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://tradietools.nz/calculators/?q={search_term_string}"},"query-input":"required name=search_term_string"},"publisher":{"@id":"https://tradietools.nz/#organization"}},
+{"@context":"https://schema.org","@type":"Organization","@id":"https://tradietools.nz/#organization","name":"NZ Job Cost & Quote Builder","url":"https://tradietools.nz","description":"Calculate job costs, apply your markup, and produce a quote price with GST for NZ tradie jobs — with regional labour rates by city.","logo":{"@type":"ImageObject","url":"https://tradietools.nz/favicon.svg","width":512,"height":512},"contactPoint":{"@type":"ContactPoint","email":"contact@tradietools.nz","contactType":"customer service"},"sameAs":["https://www.facebook.com/nztradietools", "https://www.linkedin.com/company/nz-tradie-tools"]}]
+</script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo"><img src="/static/img/logo-dark.png" alt="TradieTools NZ" class="logo-img"></a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                
+                <a href="/trades/">Find a Tradie</a>
+                
+                <a href="/post-job/">Post a Job</a>
+                
+                <a href="/jobs/">Cost Guides</a>
+                
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">For Tradies &#9660;</button>
+                    <div class="nav-dropdown-menu" role="menu">
+                        <a href="/for-tradies/" role="menuitem">For Tradies Hub</a>
+                        <a href="/calculators/" role="menuitem">Calculators</a>
+                        <a href="/templates/" role="menuitem">Free Templates</a>
+                        <a href="/articles/" role="menuitem">Articles &amp; Guides</a>
+                        <a href="/contact/" role="menuitem">Contact</a>
+                    </div>
+                </div>
+                <a id="nav-my-listing" href="/find/" class="nav-my-listing" style="display:none">My Listing</a>
+                <a href="/signup/" class="nav-cta">Free Listing &#8594;</a>
+            </nav>
+            <script>
+            (function(){
+                var t=document.querySelector('.nav-toggle'),n=document.getElementById('main-nav');
+                if(!t||!n)return;
+                t.addEventListener('click',function(){
+                    var o=n.classList.toggle('is-open');
+                    t.setAttribute('aria-expanded',o);
+                });
+                document.addEventListener('click',function(e){
+                    if(!t.contains(e.target)&&!n.contains(e.target)){
+                        n.classList.remove('is-open');
+                        t.setAttribute('aria-expanded','false');
+                    }
+                });
+                var id=localStorage.getItem('tradieId');
+                if(id){var ml=document.getElementById('nav-my-listing');if(ml){ml.style.display='';ml.href='/find/?highlight='+encodeURIComponent(id);}}
+            })();
+            </script>
+        </div>
+    </header>
+
+    <section class="hero" style="padding:1.75rem 0 1.5rem">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb" style="color:rgba(255,255,255,.55);margin-bottom:.75rem">
+                <a href="/" style="color:rgba(255,255,255,.55)">Home</a> &rsaquo;
+                <a href="/calculators/" style="color:rgba(255,255,255,.55)">Calculators</a> &rsaquo;
+                <span>NZ Job Cost & Quote Builder</span>
+            </nav>
+            <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:1.5rem;flex-wrap:wrap">
+                <div>
+                    <span style="display:inline-block;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#f97316;background:rgba(249,115,22,.15);border:1px solid rgba(249,115,22,.3);border-radius:4px;padding:.15rem .5rem;margin-bottom:.5rem">Free Calculator</span>
+                    <h1 style="font-size:1.9rem;font-weight:800;margin:0 0 .4rem;line-height:1.2;color:#fff">NZ Job Cost & Quote Builder</h1>
+                    <p style="color:rgba(255,255,255,.75);margin:0;font-size:.97rem;max-width:580px;line-height:1.55">Calculate job costs, apply your markup, and produce a quote price with GST for NZ tradie jobs — with regional labour rates by city.</p>
+                </div>
+                <a href="/calculators/" style="flex-shrink:0;font-size:.82rem;color:rgba(255,255,255,.55);text-decoration:none;padding:.4rem .85rem;border:1px solid rgba(255,255,255,.2);border-radius:6px;white-space:nowrap;align-self:flex-start">← All calculators</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container page-layout">
+        <main class="main-content" style="padding-top:1.5rem">
+            <div class="calculator-wrapper" style="margin-bottom:2rem">
+                <div class="calc-grid">
+  <div class="calc-group">
+    <label>Your trade</label>
+    <select id="trade-sel" onchange="updateRate()">
+      <option value="">— Select trade —</option>
+      <option value="builders">Builder / LBP</option>
+      <option value="plumbers">Plumber / Gasfitter</option>
+      <option value="electricians">Electrician</option>
+      <option value="painters">Painter</option>
+      <option value="other">Other</option>
+    </select>
+  </div>
+  <div class="calc-group">
+    <label>City / Region</label>
+    <select id="city-sel" onchange="updateRate()">
+      <option value="">— Select city —</option>
+      <option value="auckland">Auckland</option>
+      <option value="wellington">Wellington</option>
+      <option value="christchurch">Christchurch</option>
+      <option value="hamilton">Hamilton</option>
+      <option value="tauranga">Tauranga</option>
+      <option value="dunedin">Dunedin</option>
+      <option value="palmerston-north">Palmerston North</option>
+      <option value="napier">Napier / Hastings</option>
+      <option value="new-plymouth">New Plymouth</option>
+      <option value="rotorua">Rotorua</option>
+      <option value="whangarei">Whangarei</option>
+      <option value="nelson">Nelson</option>
+      <option value="queenstown">Queenstown</option>
+      <option value="invercargill">Invercargill / Dunedin South</option>
+      <option value="lower-hutt">Lower Hutt / Upper Hutt / Porirua</option>
+      <option value="gisborne">Gisborne</option>
+      <option value="whanganui">Whanganui</option>
+    </select>
+  </div>
+</div>
+<div id="rate-hint" style="display:none;background:#e8f4fd;border:1px solid #b3d9f5;border-radius:6px;padding:.75rem 1rem;margin-bottom:1rem;font-size:.9rem;color:#0055a5"></div>
+<div class="calc-grid">
+  <div class="calc-group">
+    <label>Labour hours</label>
+    <input type="number" id="hours" value="" placeholder="e.g. 8" oninput="calcLabour()">
+  </div>
+  <div class="calc-group">
+    <label>Hourly rate (ex GST) — $/hr</label>
+    <input type="number" id="rate" value="" placeholder="e.g. 95" oninput="calcLabour()">
+  </div>
+  <div class="calc-group">
+    <label>Labour cost (ex GST) — $</label>
+    <input type="number" id="labour" value="0" oninput="calcJob()">
+  </div>
+  <div class="calc-group">
+    <label>Materials cost (ex GST) — $</label>
+    <input type="number" id="materials" value="0" oninput="calcJob()">
+  </div>
+  <div class="calc-group">
+    <label>Subcontractor cost (ex GST) — $</label>
+    <input type="number" id="sub" value="0" oninput="calcJob()">
+  </div>
+  <div class="calc-group">
+    <label>Other costs (ex GST) — $</label>
+    <input type="number" id="other" value="0" oninput="calcJob()">
+  </div>
+  <div class="calc-group">
+    <label>Markup on labour %</label>
+    <input type="number" id="labour-markup" value="20" oninput="calcJob()">
+  </div>
+  <div class="calc-group">
+    <label>Markup on materials %</label>
+    <input type="number" id="mat-markup" value="15" oninput="calcJob()">
+  </div>
+</div>
+<div class="calc-result" id="job-result">
+  <h3>Quote Summary</h3>
+  <div class="result-row"><span>Labour (with markup)</span><span id="j-labour"></span></div>
+  <div class="result-row"><span>Materials (with markup)</span><span id="j-mat"></span></div>
+  <div class="result-row"><span>Subcontractors</span><span id="j-sub"></span></div>
+  <div class="result-row"><span>Other costs</span><span id="j-other"></span></div>
+  <div class="result-row"><span>Subtotal (ex GST)</span><span id="j-sub-total"></span></div>
+  <div class="result-row"><span>GST (15%)</span><span id="j-gst"></span></div>
+  <div class="result-row total-row"><span>Total quote price (inc GST)</span><span id="j-total"></span></div>
+  <div class="result-row"><span>Your gross profit</span><span id="j-profit" class="result-highlight"></span></div>
+</div>
+<script>
+var RATES = {
+  builders:     {auckland:110,wellington:100,christchurch:95,hamilton:90,tauranga:95,queenstown:115,dunedin:85,whangarei:85,"palmerston-north":85,napier:85,"new-plymouth":85,rotorua:85,nelson:90,invercargill:80,"lower-hutt":95,gisborne:80,whanganui:80,other:90},
+  plumbers:     {auckland:140,wellington:130,christchurch:120,hamilton:115,tauranga:125,queenstown:145,dunedin:110,whangarei:110,"palmerston-north":110,napier:110,"new-plymouth":110,rotorua:110,nelson:115,invercargill:105,"lower-hutt":125,gisborne:105,whanganui:105,other:115},
+  electricians: {auckland:130,wellington:120,christchurch:115,hamilton:110,tauranga:115,queenstown:135,dunedin:105,whangarei:105,"palmerston-north":105,napier:105,"new-plymouth":105,rotorua:105,nelson:110,invercargill:100,"lower-hutt":115,gisborne:100,whanganui:100,other:110},
+  painters:     {auckland:75,wellington:70,christchurch:65,hamilton:60,tauranga:65,queenstown:80,dunedin:58,whangarei:58,"palmerston-north":58,napier:58,"new-plymouth":58,rotorua:58,nelson:60,invercargill:55,"lower-hutt":68,gisborne:55,whanganui:55,other:62},
+  other:        {auckland:100,wellington:95,christchurch:90,hamilton:85,tauranga:90,queenstown:105,dunedin:80,whangarei:80,"palmerston-north":80,napier:80,"new-plymouth":80,rotorua:80,nelson:85,invercargill:75,"lower-hutt":90,gisborne:75,whanganui:75,other:85}
+};
+var RANGE = {
+  builders:10, plumbers:15, electricians:12, painters:10, other:10
+};
+function fmt(n){return '$'+n.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g,',');}
+function updateRate(){
+  var trade=document.getElementById('trade-sel').value;
+  var city=document.getElementById('city-sel').value;
+  var hint=document.getElementById('rate-hint');
+  if(trade && city && RATES[trade]){
+    var mid=RATES[trade][city]||RATES[trade]['other'];
+    var rng=RANGE[trade]||10;
+    var lo=mid-rng; var hi=mid+rng;
+    var cityName=document.getElementById('city-sel').options[document.getElementById('city-sel').selectedIndex].text;
+    var tradeName=document.getElementById('trade-sel').options[document.getElementById('trade-sel').selectedIndex].text;
+    hint.style.display='block';
+    hint.innerHTML='<strong>Typical '+tradeName+' rate in '+cityName+':</strong> $'+lo+'–$'+hi+'/hr (ex GST). We\'ve pre-filled the midpoint — adjust to your actual rate.';
+    document.getElementById('rate').value=mid;
+    calcLabour();
+  } else {
+    hint.style.display='none';
+  }
+}
+function calcLabour(){
+  var h=parseFloat(document.getElementById('hours').value)||0;
+  var r=parseFloat(document.getElementById('rate').value)||0;
+  if(h>0&&r>0){
+    document.getElementById('labour').value=(h*r).toFixed(2);
+  }
+  calcJob();
+}
+function calcJob(){
+  var lab=parseFloat(document.getElementById('labour').value)||0;
+  var mat=parseFloat(document.getElementById('materials').value)||0;
+  var sub=parseFloat(document.getElementById('sub').value)||0;
+  var oth=parseFloat(document.getElementById('other').value)||0;
+  var lm=parseFloat(document.getElementById('labour-markup').value)||0;
+  var mm=parseFloat(document.getElementById('mat-markup').value)||0;
+  var labCharge=lab*(1+lm/100);
+  var matCharge=mat*(1+mm/100);
+  var subtotal=labCharge+matCharge+sub+oth;
+  var gst=subtotal*0.15;
+  var total=subtotal+gst;
+  var profit=(labCharge-lab)+(matCharge-mat);
+  document.getElementById('j-labour').textContent=fmt(labCharge);
+  document.getElementById('j-mat').textContent=fmt(matCharge);
+  document.getElementById('j-sub').textContent=fmt(sub);
+  document.getElementById('j-other').textContent=fmt(oth);
+  document.getElementById('j-sub-total').textContent=fmt(subtotal);
+  document.getElementById('j-gst').textContent=fmt(gst);
+  document.getElementById('j-total').textContent=fmt(total);
+  document.getElementById('j-profit').textContent=fmt(profit);
+}
+calcJob();
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="how-to-build-an-accurate-job-quote">How to Build an Accurate Job Quote</h2>
+<p>Winning jobs is great, but winning profitable jobs is better. Many NZ tradies underprice their work because they forget to account for all costs and apply the right markup.</p>
+<h3 id="regional-labour-rates-in-nz-2025">Regional Labour Rates in NZ (2025)</h3>
+<p>Rates vary significantly across New Zealand. Auckland and Queenstown are consistently the most expensive due to higher overheads and demand. Use the city selector above to get the typical rate for your region.</p>
+<table>
+<thead>
+<tr>
+<th>Trade</th>
+<th>Auckland</th>
+<th>Wellington</th>
+<th>Christchurch</th>
+<th>Hamilton</th>
+<th>Queenstown</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Builder / LBP</td>
+<td>$100–$120/hr</td>
+<td>$90–$110/hr</td>
+<td>$85–$105/hr</td>
+<td>$80–$100/hr</td>
+<td>$105–$125/hr</td>
+</tr>
+<tr>
+<td>Plumber</td>
+<td>$125–$155/hr</td>
+<td>$115–$145/hr</td>
+<td>$105–$135/hr</td>
+<td>$100–$130/hr</td>
+<td>$130–$160/hr</td>
+</tr>
+<tr>
+<td>Electrician</td>
+<td>$118–$142/hr</td>
+<td>$108–$132/hr</td>
+<td>$103–$127/hr</td>
+<td>$98–$122/hr</td>
+<td>$123–$147/hr</td>
+</tr>
+<tr>
+<td>Painter</td>
+<td>$65–$85/hr</td>
+<td>$60–$80/hr</td>
+<td>$55–$75/hr</td>
+<td>$50–$70/hr</td>
+<td>$70–$90/hr</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-difference-between-markup-and-margin">The Difference Between Markup and Margin</h3>
+<ul>
+<li><strong>Markup</strong> — the percentage you add on top of your cost (e.g. cost $100, markup 20% = charge $120)</li>
+<li><strong>Margin</strong> — the percentage of the selling price that is profit (e.g. sell $120, profit $20 = 16.7% margin)</li>
+</ul>
+<p>A 20% markup gives you a 16.7% gross margin — not 20%.</p>
+<h3 id="what-to-always-include-in-a-quote">What to Always Include in a Quote</h3>
+<ol>
+<li>All labour time (including travel, site prep, cleanup)</li>
+<li>Materials at supplier cost — then apply your markup</li>
+<li>Any subcontractor or hire costs</li>
+<li>A contingency for variations (5–10% on complex jobs)</li>
+<li>GST clearly shown separately</li>
+</ol>
+<h3 id="quote-presentation-tips">Quote Presentation Tips</h3>
+<ul>
+<li>Use a professional template — <a href="https://www.tradifyhq.com/"><a href="https://www.tradifyhq.com/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">Tradify</a></a> and <a href="https://www.fergus.com/"><a href="https://www.fergus.com/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">Fergus</a></a> both produce great-looking quotes</li>
+<li>Always specify what's <strong>included</strong> and what's <strong>excluded</strong></li>
+<li>Set a quote validity period (e.g. 30 days)</li>
+<li>Require a deposit on large jobs (10–20% is standard)</li>
+</ul>
+            </div>
+
+            
+            <section class="faq-section" style="margin-top:2rem">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">How do I calculate the cost of a job as a NZ tradie?</button>
+                        <div class="faq-answer" hidden><p>Job cost = (hours × hourly rate) + materials cost + subcontractor costs + overhead allocation. Add your profit margin last. Always price from cost up, not from what you think the client will pay.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">What profit margin should a NZ tradie add to a job quote?</button>
+                        <div class="faq-answer" hidden><p>A minimum gross margin of 35–45% is typical for NZ trade businesses. Net profit after overheads should target 15–25%. Underpricing may win the job but erodes business viability over time.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">What should I include in a job quote in NZ?</button>
+                        <div class="faq-answer" hidden><p>A valid NZ job quote should include: scope of work, inclusions and exclusions, materials specification, labour hours or fixed price, GST status (+ GST or GST inclusive), payment terms, and expiry date of quote.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">How do I handle variation costs on a quoted job?</button>
+                        <div class="faq-answer" hidden><p>Issue a written variation order before doing extra work, outlining additional scope, cost, and effect on timeline. Under NZ contract law, variations not documented in writing are difficult to enforce as additional charges.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">What's the difference between cost-plus and fixed-price pricing?</button>
+                        <div class="faq-answer" hidden><p>Cost-plus means you charge for actual time and materials plus an agreed margin — the final figure isn't fixed, so the client carries the risk of overruns. Fixed-price means you commit to one total upfront, so you carry the risk. Use fixed price for well-defined jobs and cost-plus where scope is uncertain.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">How much margin should I add to a job?</button>
+                        <div class="faq-answer" hidden><p>Add enough to cover overheads and leave net profit. A gross margin of 35–45% is common for NZ trades, translating to a markup of roughly 50–80% on direct costs. Higher-risk or specialist jobs justify more; never quote at break-even just to win work.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">What's the difference between a quote and an estimate in NZ?</button>
+                        <div class="faq-answer" hidden><p>Under the Consumer Guarantees Act, a quote is a fixed price you're bound to (unless the scope changes), while an estimate is only a best-guess that the final price can reasonably differ from. Always label which one you're giving so the client knows what they're agreeing to.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">How do I handle price variations under NZ Consumer Law?</button>
+                        <div class="faq-answer" hidden><p>If you gave a fixed quote, you generally can't charge more unless the client agreed to extra work in writing. If you gave an estimate, the final price must still be reasonable. Document every change as a signed variation to stay compliant and avoid disputes.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">How do I read the results from this job cost calculator?</button>
+                        <div class="faq-answer" hidden><p>Enter your labour hours and rate, materials, subcontractor costs and overhead, then your target margin. The calculator totals your direct costs and applies the margin to show a recommended quote price. Use it as your floor — never quote below the figure it produces.</p></div>
+                    </div>
+                    
+                </div>
+            </section>
+            <script>
+            document.querySelectorAll('.faq-question').forEach(function(btn){
+                btn.addEventListener('click',function(){
+                    var ans=this.nextElementSibling;
+                    var open=this.getAttribute('aria-expanded')==='true';
+                    this.setAttribute('aria-expanded',!open);
+                    if(open){ans.hidden=true;}else{ans.hidden=false;}
+                });
+            });
+            </script>
+            
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:#0f172a;color:#fff;border:none">
+                <img src="https://fastcrew.nz/assets/fastcrew/images/Fastcrewlogo-light.png" alt="FastCrew" style="height:28px;margin-bottom:.75rem;display:block">
+                <p style="color:rgba(255,255,255,.88);font-size:.85rem;margin-bottom:.6rem">The only tradie app built for NZ compliance.</p>
+                <ul style="color:rgba(255,255,255,.82);font-size:.82rem;margin:0 0 1rem;padding-left:1.1rem">
+                    <li>AI-powered quoting</li>
+                    <li>H&amp;S compliance &amp; SWMS</li>
+                    <li>Jobs, quotes &amp; invoicing</li>
+                    <li>Xero + Stripe · From $39/mo</li>
+                </ul>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#ea6325;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Start free trial →</a>
+                <p style="color:rgba(255,255,255,.5);font-size:.75rem;text-align:center;margin:.5rem 0 0">14-day free trial · No credit card required</p>
+            </div>
+            
+            
+            <div class="sidebar-widget">
+                <h3>Related Guides</h3>
+                <ul>
+                    
+                    <li><a href="/articles/how-to-price-a-job-nz-tradie-guide">How to Price a Job: The Complete NZ Tradie Guide (2026)</a></li>
+                    
+                    <li><a href="/articles/how-to-write-a-quote-that-wins-jobs-nz">How to Write a Quote That Wins Jobs (NZ Tradie Guide 2026)</a></li>
+                    
+                    <li><a href="/articles/nz-construction-recovery-2026-what-tradies-need-to-know">NZ Construction Recovery 2026: What Every Tradie Needs to Know</a></li>
+                    
+                </ul>
+            </div>
+            
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://fastcrew.nz" rel="noopener" target="_blank">Fastcrew — All-in-One Tradie App</a></li>
+                    <li><a href="https://www.xero.com/nz/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <img src="/static/img/logo-dark.png" alt="TradieTools NZ" style="height:64px;width:auto;display:block;margin-bottom:.5rem">
+                <p>Free calculators, templates and guides for New Zealand tradies.</p>
+                <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
+            </div>
+            <div style="text-align:right">
+                <p><a href="/glossary/">Tradie Glossary</a></p>
+                <p><a href="/privacy/">Privacy Policy</a></p>
+                <p><a href="/contact/">Contact</a></p>
+                <p style="margin-top:.5rem">&copy; 2026 TradieTools NZ</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

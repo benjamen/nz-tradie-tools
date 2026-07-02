@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- NZ-local signals -->
+    <meta name="geo.region" content="NZ">
+    <meta name="geo.placename" content="New Zealand">
+    <meta name="ICBM" content="-41.2866, 174.7756">
+    <!-- Performance -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://tradietools.optified.nz">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap">
+    <title>NZ Voltage Drop Calculator — AS/NZS 3000 Wiring Rules</title>
+    <meta name="description" content="Calculate voltage drop percentage for NZ residential and commercial electrical installations per AS/NZS 3000:2018 Wiring Rules.">
+    <meta property="og:title" content="NZ Voltage Drop Calculator — AS/NZS 3000 Wiring Rules — TradieTools NZ">
+    <meta property="og:description" content="Calculate voltage drop percentage for NZ residential and commercial electrical installations per AS/NZS 3000:2018 Wiring Rules.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradietools.nz/calculators/voltage-drop-calculator/">
+    <meta property="og:site_name" content="TradieTools NZ">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NZ Voltage Drop Calculator — AS/NZS 3000 Wiring Rules — TradieTools NZ">
+    <meta name="twitter:description" content="Calculate voltage drop percentage for NZ residential and commercial electrical installations per AS/NZS 3000:2018 Wiring Rules.">
+    <meta property="og:image" content="https://tradietools.nz/static/img/social-card.svg">
+    <meta name="twitter:image" content="https://tradietools.nz/static/img/social-card.svg">
+    <link rel="canonical" href="https://tradietools.nz/calculators/voltage-drop-calculator/">
+    <link rel="alternate" type="application/rss+xml" title="TradieTools NZ — Articles" href="https://tradietools.nz/rss.xml">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"NZ Voltage Drop Calculator \u2014 AS/NZS 3000 Wiring Rules","description":"Calculate voltage drop percentage for NZ residential and commercial electrical installations per AS/NZS 3000:2018 Wiring Rules.","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://tradietools.nz/calculators/voltage-drop-calculator/","offers":{"@type":"Offer","price":"0","priceCurrency":"NZD"},"author":{"@type":"Organization","name":"TradieTools NZ","url":"https://tradietools.nz"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tradietools.nz"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://tradietools.nz/calculators/"},{"@type":"ListItem","position":3,"name":"NZ Voltage Drop Calculator \u2014 AS/NZS 3000 Wiring Rules","item":"https://tradietools.nz/calculators/voltage-drop-calculator/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is voltage drop and why does it matter in NZ electrical installations?","acceptedAnswer":{"@type":"Answer","text":"Voltage drop is the reduction in voltage along a cable due to resistance. AS/NZS 3000:2018 limits voltage drop to 5% from the supply point to the point of use. Excessive voltage drop causes poor equipment performance and motor overheating."}},{"@type":"Question","name":"How do I calculate voltage drop for a NZ electrical circuit?","acceptedAnswer":{"@type":"Answer","text":"Vd = 2 \u00d7 I \u00d7 L \u00d7 R/1000, where I = current (A), L = cable length (m), R = resistance of cable conductor (\u03a9/km from AS/NZS 3008). For a 20 A circuit, 30 m of 2.5 mm\u00b2 cable: Vd = 2 \u00d7 20 \u00d7 30 \u00d7 7.41/1000 = 8.9 V (4.0% of 230 V)."}},{"@type":"Question","name":"When does voltage drop require upsizing the cable in NZ?","acceptedAnswer":{"@type":"Answer","text":"If calculated voltage drop exceeds 5% (11.5 V on a 230 V supply), you must use a larger cable cross-section. Increase to the next standard size (e.g. 2.5 mm\u00b2 to 4 mm\u00b2) and recalculate until within limit."}},{"@type":"Question","name":"Does AS/NZS 3000 voltage drop apply to solar PV circuits in NZ?","acceptedAnswer":{"@type":"Answer","text":"Yes. DC wiring from solar panels to the inverter should also be designed for less than 3% voltage drop (some designers use 1\u20132%) to minimise energy losses. AC output circuits follow the standard 5% limit."}}]}]}</script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to use the NZ Voltage Drop Calculator \u2014 AS/NZS 3000 Wiring Rules",
+      "description": "Calculate voltage drop percentage for NZ residential and commercial electrical installations per AS/NZS 3000:2018 Wiring Rules.",
+      "totalTime": "PT1M",
+      "tool": [{"@type": "HowToTool", "name": "Web browser"}],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Enter your values",
+          "text": "Fill in the fields in the calculator with your project details. All fields accept New Zealand dollar amounts unless labelled otherwise."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Get your instant result",
+          "text": "The calculator updates automatically as you type — no button press needed. Results are shown in NZD and include any applicable GST or rates."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Use the result in your quote or plan",
+          "text": "Copy the result into your quote, job estimate, or budget. For a detailed breakdown by city or scope, see the related job cost guides on TradieTools NZ."
+        }
+      ]
+    }
+    </script>
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJW7HLW8D8"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BJW7HLW8D8');</script>
+    
+<script type="application/ld+json">
+[{"@context":"https://schema.org","@type":"WebSite","@id":"https://tradietools.nz/#website","name":"NZ Voltage Drop Calculator — AS/NZS 3000 Wiring Rules","url":"https://tradietools.nz","inLanguage":"en-NZ","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://tradietools.nz/calculators/?q={search_term_string}"},"query-input":"required name=search_term_string"},"publisher":{"@id":"https://tradietools.nz/#organization"}},
+{"@context":"https://schema.org","@type":"Organization","@id":"https://tradietools.nz/#organization","name":"NZ Voltage Drop Calculator — AS/NZS 3000 Wiring Rules","url":"https://tradietools.nz","description":"Calculate voltage drop percentage for NZ residential and commercial electrical installations per AS/NZS 3000:2018 Wiring Rules.","logo":{"@type":"ImageObject","url":"https://tradietools.nz/favicon.svg","width":512,"height":512},"contactPoint":{"@type":"ContactPoint","email":"contact@tradietools.nz","contactType":"customer service"},"sameAs":["https://www.facebook.com/nztradietools", "https://www.linkedin.com/company/nz-tradie-tools"]}]
+</script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo"><img src="/static/img/logo-dark.png" alt="TradieTools NZ" class="logo-img"></a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                
+                <a href="/trades/">Find a Tradie</a>
+                
+                <a href="/post-job/">Post a Job</a>
+                
+                <a href="/jobs/">Cost Guides</a>
+                
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">For Tradies &#9660;</button>
+                    <div class="nav-dropdown-menu" role="menu">
+                        <a href="/for-tradies/" role="menuitem">For Tradies Hub</a>
+                        <a href="/calculators/" role="menuitem">Calculators</a>
+                        <a href="/templates/" role="menuitem">Free Templates</a>
+                        <a href="/articles/" role="menuitem">Articles &amp; Guides</a>
+                        <a href="/contact/" role="menuitem">Contact</a>
+                    </div>
+                </div>
+                <a id="nav-my-listing" href="/find/" class="nav-my-listing" style="display:none">My Listing</a>
+                <a href="/signup/" class="nav-cta">Free Listing &#8594;</a>
+            </nav>
+            <script>
+            (function(){
+                var t=document.querySelector('.nav-toggle'),n=document.getElementById('main-nav');
+                if(!t||!n)return;
+                t.addEventListener('click',function(){
+                    var o=n.classList.toggle('is-open');
+                    t.setAttribute('aria-expanded',o);
+                });
+                document.addEventListener('click',function(e){
+                    if(!t.contains(e.target)&&!n.contains(e.target)){
+                        n.classList.remove('is-open');
+                        t.setAttribute('aria-expanded','false');
+                    }
+                });
+                var id=localStorage.getItem('tradieId');
+                if(id){var ml=document.getElementById('nav-my-listing');if(ml){ml.style.display='';ml.href='/find/?highlight='+encodeURIComponent(id);}}
+            })();
+            </script>
+        </div>
+    </header>
+
+    <section class="hero" style="padding:1.75rem 0 1.5rem">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb" style="color:rgba(255,255,255,.55);margin-bottom:.75rem">
+                <a href="/" style="color:rgba(255,255,255,.55)">Home</a> &rsaquo;
+                <a href="/calculators/" style="color:rgba(255,255,255,.55)">Calculators</a> &rsaquo;
+                <span>NZ Voltage Drop Calculator — AS/NZS 3000 Wiring Rules</span>
+            </nav>
+            <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:1.5rem;flex-wrap:wrap">
+                <div>
+                    <span style="display:inline-block;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#f97316;background:rgba(249,115,22,.15);border:1px solid rgba(249,115,22,.3);border-radius:4px;padding:.15rem .5rem;margin-bottom:.5rem">Free Calculator</span>
+                    <h1 style="font-size:1.9rem;font-weight:800;margin:0 0 .4rem;line-height:1.2;color:#fff">NZ Voltage Drop Calculator — AS/NZS 3000 Wiring Rules</h1>
+                    <p style="color:rgba(255,255,255,.75);margin:0;font-size:.97rem;max-width:580px;line-height:1.55">Calculate voltage drop percentage for NZ residential and commercial electrical installations per AS/NZS 3000:2018 Wiring Rules.</p>
+                </div>
+                <a href="/calculators/" style="flex-shrink:0;font-size:.82rem;color:rgba(255,255,255,.55);text-decoration:none;padding:.4rem .85rem;border:1px solid rgba(255,255,255,.2);border-radius:6px;white-space:nowrap;align-self:flex-start">← All calculators</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container page-layout">
+        <main class="main-content" style="padding-top:1.5rem">
+            <div class="calculator-wrapper" style="margin-bottom:2rem">
+                <div class="calc-grid">
+  <div class="calc-group">
+    <label>System voltage</label>
+    <select id="vd-voltage" onchange="calcVD()">
+      <option value="230">230V single phase (standard NZ)</option>
+      <option value="400">400V three phase</option>
+      <option value="24">24V DC (low voltage)</option>
+      <option value="12">12V DC (low voltage)</option>
+    </select>
+  </div>
+  <div class="calc-group">
+    <label>Current load (Amps)</label>
+    <input type="number" id="vd-amps" placeholder="e.g. 16" step="0.1" oninput="calcVD()">
+  </div>
+  <div class="calc-group">
+    <label>Cable run length (one way, metres)</label>
+    <input type="number" id="vd-length" placeholder="e.g. 25" oninput="calcVD()">
+  </div>
+  <div class="calc-group">
+    <label>Cable size</label>
+    <select id="vd-cable" onchange="calcVD()">
+      <option value="0.0183">1.0mm² twin &amp; earth</option>
+      <option value="0.0115">1.5mm² twin &amp; earth</option>
+      <option value="0.00727">2.5mm² twin &amp; earth</option>
+      <option value="0.00464">4mm² twin &amp; earth</option>
+      <option value="0.00292">6mm² twin &amp; earth</option>
+      <option value="0.00183">10mm² cable</option>
+      <option value="0.00115">16mm² cable</option>
+    </select>
+  </div>
+  <div class="calc-group">
+    <label>Installation type</label>
+    <select id="vd-install" onchange="calcVD()">
+      <option value="final">Final sub-circuit (3% max allowed)</option>
+      <option value="mains">Mains / sub-mains (1% max allowed)</option>
+    </select>
+  </div>
+</div>
+<div class="calc-result" id="vd-result" style="display:none">
+  <h3>Voltage Drop Result</h3>
+  <div class="result-row"><span>Voltage drop</span><span id="vd-r-volts"></span></div>
+  <div class="result-row"><span>Voltage drop %</span><span id="vd-r-pct" style="font-weight:700;font-size:1.1rem"></span></div>
+  <div class="result-row"><span>Maximum allowed</span><span id="vd-r-max"></span></div>
+  <div class="result-row"><span>Compliance</span><span id="vd-r-comply"></span></div>
+  <div id="vd-upgrade" style="display:none;margin-top:.75rem;background:#fff8e1;border:1px solid #f6c90e;border-radius:6px;padding:.75rem;font-size:.85rem"></div>
+</div>
+<script>
+function calcVD(){
+  var V=parseFloat(document.getElementById("vd-voltage").value)||230;
+  var I=parseFloat(document.getElementById("vd-amps").value)||0;
+  var L=parseFloat(document.getElementById("vd-length").value)||0;
+  var R=parseFloat(document.getElementById("vd-cable").value)||0.00727;
+  var install=document.getElementById("vd-install").value;
+  var r=document.getElementById("vd-result");
+  if(!I||!L){r.style.display="none";return;}
+  var vd=2*I*L*R;
+  var pct=(vd/V)*100;
+  var maxPct=install==="final"?3:1;
+  var pass=pct<=maxPct;
+  document.getElementById("vd-r-volts").textContent=vd.toFixed(2)+"V";
+  document.getElementById("vd-r-pct").textContent=pct.toFixed(2)+"%";
+  document.getElementById("vd-r-max").textContent=maxPct+"% (AS/NZS 3000 limit)";
+  document.getElementById("vd-r-comply").innerHTML=pass
+    ?"<span style="color:#22543d;font-weight:600">✓ Compliant</span>"
+    :"<span style="color:#c53030;font-weight:600">✗ Exceeds limit — upsize cable</span>";
+  var up=document.getElementById("vd-upgrade");
+  if(!pass){
+    var newL=maxPct/100*V/(2*I*R);
+    up.innerHTML="<strong>Options:</strong> Upsize cable to next size, or reduce run length to "+newL.toFixed(0)+"m for this cable size. Consider adding an intermediate distribution board.";
+    up.style.display="";
+  }else{up.style.display="none";}
+  r.style.display="";
+}
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="voltage-drop-in-nz-electrical-installations">Voltage Drop in NZ Electrical Installations</h2>
+<p>Voltage drop occurs when current flows through a cable — the cable's resistance causes a reduction in voltage at the far end. Too much drop means appliances don't get sufficient voltage to operate correctly, and in commercial settings can cause equipment failure.</p>
+<h3 id="nz-compliance-asnzs-30002018">NZ Compliance — AS/NZS 3000:2018</h3>
+<p>New Zealand follows the <strong>AS/NZS 3000:2018 Wiring Rules</strong> (the "Wiring Rules"). Maximum allowed voltage drop:</p>
+<table>
+<thead>
+<tr>
+<th>Circuit type</th>
+<th>Maximum voltage drop</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Final sub-circuits</td>
+<td>3% of supply voltage</td>
+</tr>
+<tr>
+<td>Mains and sub-mains</td>
+<td>1% of supply voltage</td>
+</tr>
+</tbody>
+</table>
+<p>For a 230V single-phase supply:
+- Final circuits: max <strong>6.9V</strong> drop
+- Mains: max <strong>2.3V</strong> drop</p>
+<h3 id="formula-used">Formula Used</h3>
+<p>This calculator uses the standard resistive formula:</p>
+<p><strong>Vd = 2 × I × L × R</strong></p>
+<p>Where I = current (amps), L = one-way cable length (metres), R = resistance per metre of conductor (Ω/m).</p>
+<p>Note: this is a simplified resistive calculation. For large cable sizes or long runs, reactance also plays a role — refer to AS/NZS 3008.1.1 for full de-rating tables.</p>
+<h3 id="all-electrical-work-must-be-done-by-a-registered-electrician">All Electrical Work Must Be Done by a Registered Electrician</h3>
+<p>In New Zealand, electrical installation work must be carried out by a licensed electrician and covered by a Certificate of Compliance (CoC). WorkSafe NZ enforces this under the Electricity Act 1992.</p>
+            </div>
+
+            
+            <section class="faq-section" style="margin-top:2rem">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">What is voltage drop and why does it matter in NZ electrical installations?</button>
+                        <div class="faq-answer" hidden><p>Voltage drop is the reduction in voltage along a cable due to resistance. AS/NZS 3000:2018 limits voltage drop to 5% from the supply point to the point of use. Excessive voltage drop causes poor equipment performance and motor overheating.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">How do I calculate voltage drop for a NZ electrical circuit?</button>
+                        <div class="faq-answer" hidden><p>Vd = 2 × I × L × R/1000, where I = current (A), L = cable length (m), R = resistance of cable conductor (Ω/km from AS/NZS 3008). For a 20 A circuit, 30 m of 2.5 mm² cable: Vd = 2 × 20 × 30 × 7.41/1000 = 8.9 V (4.0% of 230 V).</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">When does voltage drop require upsizing the cable in NZ?</button>
+                        <div class="faq-answer" hidden><p>If calculated voltage drop exceeds 5% (11.5 V on a 230 V supply), you must use a larger cable cross-section. Increase to the next standard size (e.g. 2.5 mm² to 4 mm²) and recalculate until within limit.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">Does AS/NZS 3000 voltage drop apply to solar PV circuits in NZ?</button>
+                        <div class="faq-answer" hidden><p>Yes. DC wiring from solar panels to the inverter should also be designed for less than 3% voltage drop (some designers use 1–2%) to minimise energy losses. AC output circuits follow the standard 5% limit.</p></div>
+                    </div>
+                    
+                </div>
+            </section>
+            <script>
+            document.querySelectorAll('.faq-question').forEach(function(btn){
+                btn.addEventListener('click',function(){
+                    var ans=this.nextElementSibling;
+                    var open=this.getAttribute('aria-expanded')==='true';
+                    this.setAttribute('aria-expanded',!open);
+                    if(open){ans.hidden=true;}else{ans.hidden=false;}
+                });
+            });
+            </script>
+            
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:#0f172a;color:#fff;border:none">
+                <img src="https://fastcrew.nz/assets/fastcrew/images/Fastcrewlogo-light.png" alt="FastCrew" style="height:28px;margin-bottom:.75rem;display:block">
+                <p style="color:rgba(255,255,255,.88);font-size:.85rem;margin-bottom:.6rem">The only tradie app built for NZ compliance.</p>
+                <ul style="color:rgba(255,255,255,.82);font-size:.82rem;margin:0 0 1rem;padding-left:1.1rem">
+                    <li>AI-powered quoting</li>
+                    <li>H&amp;S compliance &amp; SWMS</li>
+                    <li>Jobs, quotes &amp; invoicing</li>
+                    <li>Xero + Stripe · From $39/mo</li>
+                </ul>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#ea6325;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Start free trial →</a>
+                <p style="color:rgba(255,255,255,.5);font-size:.75rem;text-align:center;margin:.5rem 0 0">14-day free trial · No credit card required</p>
+            </div>
+            
+            
+            <div class="sidebar-widget">
+                <h3>Related Guides</h3>
+                <ul>
+                    
+                    <li><a href="/articles/health-and-safety-guide-nz-tradies">NZ Tradie Health & Safety Guide 2026 — HSWA Obligations for Small Trade Businesses</a></li>
+                    
+                    <li><a href="/articles/how-to-get-lbp-licence-new-zealand">How to Get Your LBP Licence in New Zealand (2026 Guide)</a></li>
+                    
+                </ul>
+            </div>
+            
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://fastcrew.nz" rel="noopener" target="_blank">Fastcrew — All-in-One Tradie App</a></li>
+                    <li><a href="https://www.xero.com/nz/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <img src="/static/img/logo-dark.png" alt="TradieTools NZ" style="height:64px;width:auto;display:block;margin-bottom:.5rem">
+                <p>Free calculators, templates and guides for New Zealand tradies.</p>
+                <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
+            </div>
+            <div style="text-align:right">
+                <p><a href="/glossary/">Tradie Glossary</a></p>
+                <p><a href="/privacy/">Privacy Policy</a></p>
+                <p><a href="/contact/">Contact</a></p>
+                <p style="margin-top:.5rem">&copy; 2026 TradieTools NZ</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

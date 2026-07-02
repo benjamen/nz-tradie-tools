@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- NZ-local signals -->
+    <meta name="geo.region" content="NZ">
+    <meta name="geo.placename" content="New Zealand">
+    <meta name="ICBM" content="-41.2866, 174.7756">
+    <!-- Performance -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://tradietools.optified.nz">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap">
+    <title>Gib Calculator NZ 2026 — Sheets & Cost</title>
+    <meta name="description" content="Free NZ gib board calculator — enter your room dimensions to get sheet count, stopping coats, scrim, materials and installed cost estimate. Includes NZ pricing.">
+    <meta property="og:title" content="Gib & Plasterboard Calculator NZ — Sheets, Stopping & Labour Cost — TradieTools NZ">
+    <meta property="og:description" content="Free NZ gib board calculator — enter your room dimensions to get sheet count, stopping coats, scrim, materials and installed cost estimate. Includes NZ pricing.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradietools.nz/calculators/gib-plasterboard-calculator/">
+    <meta property="og:site_name" content="TradieTools NZ">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gib & Plasterboard Calculator NZ — Sheets, Stopping & Labour Cost — TradieTools NZ">
+    <meta name="twitter:description" content="Free NZ gib board calculator — enter your room dimensions to get sheet count, stopping coats, scrim, materials and installed cost estimate. Includes NZ pricing.">
+    <meta property="og:image" content="https://tradietools.nz/static/img/social-card.svg">
+    <meta name="twitter:image" content="https://tradietools.nz/static/img/social-card.svg">
+    <link rel="canonical" href="https://tradietools.nz/calculators/gib-plasterboard-calculator/">
+    <link rel="alternate" type="application/rss+xml" title="TradieTools NZ — Articles" href="https://tradietools.nz/rss.xml">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"Gib \u0026 Plasterboard Calculator NZ \u2014 Sheets, Stopping \u0026 Labour Cost","description":"Free NZ gib board calculator \u2014 enter your room dimensions to get sheet count, stopping coats, scrim, materials and installed cost estimate. Includes NZ pricing.","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://tradietools.nz/calculators/gib-plasterboard-calculator/","offers":{"@type":"Offer","price":"0","priceCurrency":"NZD"},"author":{"@type":"Organization","name":"TradieTools NZ","url":"https://tradietools.nz"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tradietools.nz"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://tradietools.nz/calculators/"},{"@type":"ListItem","position":3,"name":"Gib \u0026 Plasterboard Calculator NZ \u2014 Sheets, Stopping \u0026 Labour Cost","item":"https://tradietools.nz/calculators/gib-plasterboard-calculator/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How many sheets of gib do I need for a room?","acceptedAnswer":{"@type":"Answer","text":"Measure your total wall area (perimeter \u00d7 height) and ceiling area. Divide by 2.88 m\u00b2 (standard 2400\u00d71200 sheet) and add 15\u201320% for waste and cuts. A typical 3.5m \u00d7 4m room with 2.4m stud is about 12\u201314 sheets for walls, plus 5 ceiling sheets."}},{"@type":"Question","name":"What is Level 4 stopping in NZ?","acceptedAnswer":{"@type":"Answer","text":"Level 4 (NZS 4334) is the standard for most NZ residential interiors \u2014 two coats of stopping compound sanded smooth, ready for paint with flat or low-sheen finish. Level 5 adds a skim coat for high-gloss or critical lighting situations. Level 3 is basic, used in garages or utility spaces."}},{"@type":"Question","name":"How much does gib stopping cost per m\u00b2 in NZ?","acceptedAnswer":{"@type":"Answer","text":"Gib board supply and fix costs $45\u2013$65/m\u00b2 installed. Stopping adds $18\u2013$42/m\u00b2 depending on level. A full Level 4 gib, stop and sand job (supply + install) typically runs $65\u2013$110/m\u00b2 in NZ. Auckland costs 10\u201315% more."}},{"@type":"Question","name":"What is the difference between standard gib and Noiseline?","acceptedAnswer":{"@type":"Answer","text":"Standard 10mm Gib is the most common residential plasterboard. Noiseline (13mm) has improved acoustic ratings for party walls and bedroom partitions. Aqualine is moisture-resistant for bathrooms. Braceline provides additional racking resistance for earthquake zones. All are made by Winstone Wallboards in NZ."}},{"@type":"Question","name":"Does gibbing require a building consent?","acceptedAnswer":{"@type":"Answer","text":"Internal gib replacement (like-for-like) is generally exempt from consent. New partition walls and changes to fire-rated or bracing walls may require consent. Always confirm with your local council if unsure."}}]}]}</script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to use the Gib \u0026 Plasterboard Calculator NZ \u2014 Sheets, Stopping \u0026 Labour Cost",
+      "description": "Free NZ gib board calculator \u2014 enter your room dimensions to get sheet count, stopping coats, scrim, materials and installed cost estimate. Includes NZ pricing.",
+      "totalTime": "PT1M",
+      "tool": [{"@type": "HowToTool", "name": "Web browser"}],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Enter your values",
+          "text": "Fill in the fields in the calculator with your project details. All fields accept New Zealand dollar amounts unless labelled otherwise."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Get your instant result",
+          "text": "The calculator updates automatically as you type — no button press needed. Results are shown in NZD and include any applicable GST or rates."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Use the result in your quote or plan",
+          "text": "Copy the result into your quote, job estimate, or budget. For a detailed breakdown by city or scope, see the related job cost guides on TradieTools NZ."
+        }
+      ]
+    }
+    </script>
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJW7HLW8D8"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BJW7HLW8D8');</script>
+    
+<script type="application/ld+json">
+[{"@context":"https://schema.org","@type":"WebSite","@id":"https://tradietools.nz/#website","name":"Gib & Plasterboard Calculator NZ — Sheets, Stopping & Labour Cost","url":"https://tradietools.nz","inLanguage":"en-NZ","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://tradietools.nz/calculators/?q={search_term_string}"},"query-input":"required name=search_term_string"},"publisher":{"@id":"https://tradietools.nz/#organization"}},
+{"@context":"https://schema.org","@type":"Organization","@id":"https://tradietools.nz/#organization","name":"Gib & Plasterboard Calculator NZ — Sheets, Stopping & Labour Cost","url":"https://tradietools.nz","description":"Free NZ gib board calculator — enter your room dimensions to get sheet count, stopping coats, scrim, materials and installed cost estimate. Includes NZ pricing.","logo":{"@type":"ImageObject","url":"https://tradietools.nz/favicon.svg","width":512,"height":512},"contactPoint":{"@type":"ContactPoint","email":"contact@tradietools.nz","contactType":"customer service"},"sameAs":["https://www.facebook.com/nztradietools", "https://www.linkedin.com/company/nz-tradie-tools"]}]
+</script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo"><img src="/static/img/logo-dark.png" alt="TradieTools NZ" class="logo-img"></a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                
+                <a href="/trades/">Find a Tradie</a>
+                
+                <a href="/post-job/">Post a Job</a>
+                
+                <a href="/jobs/">Cost Guides</a>
+                
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">For Tradies &#9660;</button>
+                    <div class="nav-dropdown-menu" role="menu">
+                        <a href="/for-tradies/" role="menuitem">For Tradies Hub</a>
+                        <a href="/calculators/" role="menuitem">Calculators</a>
+                        <a href="/templates/" role="menuitem">Free Templates</a>
+                        <a href="/articles/" role="menuitem">Articles &amp; Guides</a>
+                        <a href="/contact/" role="menuitem">Contact</a>
+                    </div>
+                </div>
+                <a id="nav-my-listing" href="/find/" class="nav-my-listing" style="display:none">My Listing</a>
+                <a href="/signup/" class="nav-cta">Free Listing &#8594;</a>
+            </nav>
+            <script>
+            (function(){
+                var t=document.querySelector('.nav-toggle'),n=document.getElementById('main-nav');
+                if(!t||!n)return;
+                t.addEventListener('click',function(){
+                    var o=n.classList.toggle('is-open');
+                    t.setAttribute('aria-expanded',o);
+                });
+                document.addEventListener('click',function(e){
+                    if(!t.contains(e.target)&&!n.contains(e.target)){
+                        n.classList.remove('is-open');
+                        t.setAttribute('aria-expanded','false');
+                    }
+                });
+                var id=localStorage.getItem('tradieId');
+                if(id){var ml=document.getElementById('nav-my-listing');if(ml){ml.style.display='';ml.href='/find/?highlight='+encodeURIComponent(id);}}
+            })();
+            </script>
+        </div>
+    </header>
+
+    <section class="hero" style="padding:1.75rem 0 1.5rem">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb" style="color:rgba(255,255,255,.55);margin-bottom:.75rem">
+                <a href="/" style="color:rgba(255,255,255,.55)">Home</a> &rsaquo;
+                <a href="/calculators/" style="color:rgba(255,255,255,.55)">Calculators</a> &rsaquo;
+                <span>Gib & Plasterboard Calculator NZ — Sheets, Stopping & Labour Cost</span>
+            </nav>
+            <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:1.5rem;flex-wrap:wrap">
+                <div>
+                    <span style="display:inline-block;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#f97316;background:rgba(249,115,22,.15);border:1px solid rgba(249,115,22,.3);border-radius:4px;padding:.15rem .5rem;margin-bottom:.5rem">Free Calculator</span>
+                    <h1 style="font-size:1.9rem;font-weight:800;margin:0 0 .4rem;line-height:1.2;color:#fff">Gib & Plasterboard Calculator NZ — Sheets, Stopping & Labour Cost</h1>
+                    <p style="color:rgba(255,255,255,.75);margin:0;font-size:.97rem;max-width:580px;line-height:1.55">Free NZ gib board calculator — enter your room dimensions to get sheet count, stopping coats, scrim, materials and installed cost estimate. Includes NZ pricing.</p>
+                </div>
+                <a href="/calculators/" style="flex-shrink:0;font-size:.82rem;color:rgba(255,255,255,.55);text-decoration:none;padding:.4rem .85rem;border:1px solid rgba(255,255,255,.2);border-radius:6px;white-space:nowrap;align-self:flex-start">← All calculators</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container page-layout">
+        <main class="main-content" style="padding-top:1.5rem">
+            <div class="calculator-wrapper" style="margin-bottom:2rem">
+                <div class="calc-grid">
+  <div class="calc-group"><label>Total wall area to gib (m²)</label><input type="number" id="gb-area" placeholder="e.g. 120" oninput="calcGib()"></div>
+  <div class="calc-group"><label>Ceiling area (m²)</label><input type="number" id="gb-ceil" placeholder="e.g. 80" value="0" oninput="calcGib()"></div>
+  <div class="calc-group"><label>Gib sheet size</label>
+    <select id="gb-sheet" onchange="calcGib()">
+      <option value="3.0">2400 × 1200 mm (2.88 m²)</option>
+      <option value="3.6" selected>2400 × 1200 mm standard (2.88 m²) + 25% waste</option>
+      <option value="4.32">Ceiling/large sheets (inc. waste)</option>
+    </select>
+  </div>
+  <div class="calc-group"><label>Stopping level</label>
+    <select id="gb-stop" onchange="calcGib()">
+      <option value="1">Level 3 — basic (1 coat, no skim)</option>
+      <option value="2" selected>Level 4 — standard (2 coats + sand)</option>
+      <option value="3">Level 5 — premium smooth (3 coats + fine skim)</option>
+    </select>
+  </div>
+  <div class="calc-group"><label>Gib type</label>
+    <select id="gb-type" onchange="calcGib()">
+      <option value="25" selected>Standard 10mm</option>
+      <option value="30">Noiseline / Aqualine 13mm</option>
+      <option value="45">Fire-rated / Braceline</option>
+    </select>
+  </div>
+</div>
+<div class="calc-result" id="gb-result" style="display:none">
+  <h3>Gib & Plasterboard Estimate</h3>
+  <div class="result-row"><span>Total area to gib</span><span id="gb-tot-area"></span></div>
+  <div class="result-row"><span>Sheets required (inc. waste)</span><span id="gb-sheets"></span></div>
+  <div class="result-row"><span>Scrim tape (lm)</span><span id="gb-scrim"></span></div>
+  <div class="result-row"><span>Stopping compound (bags)</span><span id="gb-compound"></span></div>
+  <div class="result-row"><span>Gib fixings (screws, box)</span><span id="gb-fixings"></span></div>
+  <div class="result-row"><span>Materials only</span><span id="gb-mat-cost"></span></div>
+  <div class="result-row"><span>Installed cost estimate</span><span id="gb-total" class="result-highlight"></span></div>
+</div>
+<script>
+function nzd(n){return '$'+Math.round(n).toLocaleString();}
+function calcGib(){
+  var walls=parseFloat(document.getElementById('gb-area').value)||0;
+  var ceil=parseFloat(document.getElementById('gb-ceil').value)||0;
+  var sheetFactor=parseFloat(document.getElementById('gb-sheet').value);
+  var stopLevel=parseInt(document.getElementById('gb-stop').value);
+  var matPpm=parseFloat(document.getElementById('gb-type').value);
+  if(!walls&&!ceil){document.getElementById('gb-result').style.display='none';return;}
+  var total=walls+ceil;
+  var sheets=Math.ceil(total/sheetFactor);
+  var scrim=Math.ceil(total*2.5);
+  var compound=Math.ceil(total/10*stopLevel);
+  var fixings=Math.ceil(sheets/5)+1;
+  var matCost=sheets*matPpm+(scrim*0.9)+(compound*18)+(fixings*22);
+  var stopRatePerM2=[0,18,28,42][stopLevel];
+  var labour=total*(55+stopRatePerM2);
+  var total_cost=matCost+labour;
+  document.getElementById('gb-tot-area').textContent=total.toFixed(1)+' m²';
+  document.getElementById('gb-sheets').textContent=sheets+' sheets';
+  document.getElementById('gb-scrim').textContent=scrim+' lm';
+  document.getElementById('gb-compound').textContent=compound+' bags (5kg)';
+  document.getElementById('gb-fixings').textContent=fixings+' boxes';
+  document.getElementById('gb-mat-cost').textContent=nzd(matCost);
+  document.getElementById('gb-total').textContent=nzd(total_cost)+' – '+nzd(total_cost*1.25);
+  document.getElementById('gb-result').style.display='';
+}
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="gib-plasterboard-in-nz-what-you-need-to-know">Gib &amp; Plasterboard in NZ — What You Need to Know</h2>
+<p><strong>Gib</strong> is New Zealand's dominant plasterboard brand (manufactured by Winstone Wallboards, a Fletcher Building subsidiary). In NZ trade, "gib" and "plasterboard" are used interchangeably — if a quote says "gib and stop", it means supply and install plasterboard and apply stopping compound.</p>
+<h3 id="nz-gib-sheet-types">NZ Gib Sheet Types</h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Thickness</th>
+<th>Use</th>
+<th>Approx cost/sheet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Standard</td>
+<td>10 mm</td>
+<td>General walls &amp; ceilings</td>
+<td>$18–$25</td>
+</tr>
+<tr>
+<td>Noiseline</td>
+<td>13 mm</td>
+<td>Party walls, bedrooms</td>
+<td>$28–$38</td>
+</tr>
+<tr>
+<td>Aqualine</td>
+<td>10 mm</td>
+<td>Bathrooms, wet areas</td>
+<td>$22–$30</td>
+</tr>
+<tr>
+<td>Braceline</td>
+<td>10 mm</td>
+<td>Seismic bracing walls</td>
+<td>$28–$36</td>
+</tr>
+<tr>
+<td>Fyreline</td>
+<td>13 mm</td>
+<td>Fire-rated walls</td>
+<td>$32–$42</td>
+</tr>
+</tbody>
+</table>
+<h3 id="stopping-levels-explained">Stopping Levels Explained</h3>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Description</th>
+<th>When used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Level 3</td>
+<td>One coat, unfilled — not ready to paint</td>
+<td>Garages, utility areas</td>
+</tr>
+<tr>
+<td>Level 4</td>
+<td>Two coats + sand — standard finish</td>
+<td>All NZ residential interiors</td>
+</tr>
+<tr>
+<td>Level 5</td>
+<td>Three coats + skim — critical finish</td>
+<td>High-gloss paint, feature walls</td>
+</tr>
+</tbody>
+</table>
+<h3 id="typical-gib-stopping-costs-nz-2026">Typical Gib &amp; Stopping Costs NZ 2026</h3>
+<table>
+<thead>
+<tr>
+<th>Scope</th>
+<th>Cost range (ex GST)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gib supply and fix only</td>
+<td>$45–$65/m²</td>
+</tr>
+<tr>
+<td>Stopping Level 4 only</td>
+<td>$25–$35/m²</td>
+</tr>
+<tr>
+<td>Full gib + Level 4 stop + sand</td>
+<td>$70–$100/m²</td>
+</tr>
+<tr>
+<td>Full gib + Level 5 premium</td>
+<td>$90–$130/m²</td>
+</tr>
+</tbody>
+</table>
+<p>All prices ex GST. Auckland 10–15% above average. Christchurch and Wellington within 5% of average. Smaller cities typically 5–10% below.</p>
+            </div>
+
+            
+            <section class="faq-section" style="margin-top:2rem">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">How many sheets of gib do I need for a room?</button>
+                        <div class="faq-answer" hidden><p>Measure your total wall area (perimeter × height) and ceiling area. Divide by 2.88 m² (standard 2400×1200 sheet) and add 15–20% for waste and cuts. A typical 3.5m × 4m room with 2.4m stud is about 12–14 sheets for walls, plus 5 ceiling sheets.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">What is Level 4 stopping in NZ?</button>
+                        <div class="faq-answer" hidden><p>Level 4 (NZS 4334) is the standard for most NZ residential interiors — two coats of stopping compound sanded smooth, ready for paint with flat or low-sheen finish. Level 5 adds a skim coat for high-gloss or critical lighting situations. Level 3 is basic, used in garages or utility spaces.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">How much does gib stopping cost per m² in NZ?</button>
+                        <div class="faq-answer" hidden><p>Gib board supply and fix costs $45–$65/m² installed. Stopping adds $18–$42/m² depending on level. A full Level 4 gib, stop and sand job (supply + install) typically runs $65–$110/m² in NZ. Auckland costs 10–15% more.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">What is the difference between standard gib and Noiseline?</button>
+                        <div class="faq-answer" hidden><p>Standard 10mm Gib is the most common residential plasterboard. Noiseline (13mm) has improved acoustic ratings for party walls and bedroom partitions. Aqualine is moisture-resistant for bathrooms. Braceline provides additional racking resistance for earthquake zones. All are made by Winstone Wallboards in NZ.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">Does gibbing require a building consent?</button>
+                        <div class="faq-answer" hidden><p>Internal gib replacement (like-for-like) is generally exempt from consent. New partition walls and changes to fire-rated or bracing walls may require consent. Always confirm with your local council if unsure.</p></div>
+                    </div>
+                    
+                </div>
+            </section>
+            <script>
+            document.querySelectorAll('.faq-question').forEach(function(btn){
+                btn.addEventListener('click',function(){
+                    var ans=this.nextElementSibling;
+                    var open=this.getAttribute('aria-expanded')==='true';
+                    this.setAttribute('aria-expanded',!open);
+                    if(open){ans.hidden=true;}else{ans.hidden=false;}
+                });
+            });
+            </script>
+            
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:#0f172a;color:#fff;border:none">
+                <img src="https://fastcrew.nz/assets/fastcrew/images/Fastcrewlogo-light.png" alt="FastCrew" style="height:28px;margin-bottom:.75rem;display:block">
+                <p style="color:rgba(255,255,255,.88);font-size:.85rem;margin-bottom:.6rem">The only tradie app built for NZ compliance.</p>
+                <ul style="color:rgba(255,255,255,.82);font-size:.82rem;margin:0 0 1rem;padding-left:1.1rem">
+                    <li>AI-powered quoting</li>
+                    <li>H&amp;S compliance &amp; SWMS</li>
+                    <li>Jobs, quotes &amp; invoicing</li>
+                    <li>Xero + Stripe · From $39/mo</li>
+                </ul>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#ea6325;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Start free trial →</a>
+                <p style="color:rgba(255,255,255,.5);font-size:.75rem;text-align:center;margin:.5rem 0 0">14-day free trial · No credit card required</p>
+            </div>
+            
+            
+            <div class="sidebar-widget">
+                <h3>Related Guides</h3>
+                <ul>
+                    
+                    <li><a href="/articles/job-costing-guide-nz-tradies-2026">Job Costing for NZ Tradies: How to Track Real Profit on Every Job</a></li>
+                    
+                </ul>
+            </div>
+            
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://fastcrew.nz" rel="noopener" target="_blank">Fastcrew — All-in-One Tradie App</a></li>
+                    <li><a href="https://www.xero.com/nz/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <img src="/static/img/logo-dark.png" alt="TradieTools NZ" style="height:64px;width:auto;display:block;margin-bottom:.5rem">
+                <p>Free calculators, templates and guides for New Zealand tradies.</p>
+                <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
+            </div>
+            <div style="text-align:right">
+                <p><a href="/glossary/">Tradie Glossary</a></p>
+                <p><a href="/privacy/">Privacy Policy</a></p>
+                <p><a href="/contact/">Contact</a></p>
+                <p style="margin-top:.5rem">&copy; 2026 TradieTools NZ</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

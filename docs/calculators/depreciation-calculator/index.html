@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- NZ-local signals -->
+    <meta name="geo.region" content="NZ">
+    <meta name="geo.placename" content="New Zealand">
+    <meta name="ICBM" content="-41.2866, 174.7756">
+    <!-- Performance -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://tradietools.optified.nz">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap">
+    <title>NZ Tool & Equipment Depreciation Calculator</title>
+    <meta name="description" content="Calculate the annual depreciation deduction for your tools and equipment using the IRD diminishing value method. Updated for NZ 2026 tax rules.">
+    <meta property="og:title" content="NZ Tool & Equipment Depreciation Calculator — TradieTools NZ">
+    <meta property="og:description" content="Calculate the annual depreciation deduction for your tools and equipment using the IRD diminishing value method. Updated for NZ 2026 tax rules.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradietools.nz/calculators/depreciation-calculator/">
+    <meta property="og:site_name" content="TradieTools NZ">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NZ Tool & Equipment Depreciation Calculator — TradieTools NZ">
+    <meta name="twitter:description" content="Calculate the annual depreciation deduction for your tools and equipment using the IRD diminishing value method. Updated for NZ 2026 tax rules.">
+    <meta property="og:image" content="https://tradietools.nz/static/img/social-card.svg">
+    <meta name="twitter:image" content="https://tradietools.nz/static/img/social-card.svg">
+    <link rel="canonical" href="https://tradietools.nz/calculators/depreciation-calculator/">
+    <link rel="alternate" type="application/rss+xml" title="TradieTools NZ — Articles" href="https://tradietools.nz/rss.xml">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"NZ Tool \u0026 Equipment Depreciation Calculator","description":"Calculate the annual depreciation deduction for your tools and equipment using the IRD diminishing value method. Updated for NZ 2026 tax rules.","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://tradietools.nz/calculators/depreciation-calculator/","offers":{"@type":"Offer","price":"0","priceCurrency":"NZD"},"author":{"@type":"Organization","name":"TradieTools NZ","url":"https://tradietools.nz"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tradietools.nz"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://tradietools.nz/calculators/"},{"@type":"ListItem","position":3,"name":"NZ Tool \u0026 Equipment Depreciation Calculator","item":"https://tradietools.nz/calculators/depreciation-calculator/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does tax depreciation work for tradies in NZ?","acceptedAnswer":{"@type":"Answer","text":"The IRD allows you to deduct the depreciation of business assets over their useful life. For tools and equipment you can use the diminishing value (DV) or straight-line (SL) method based on IRD-set rates."}},{"@type":"Question","name":"Can I write off tools immediately in NZ?","acceptedAnswer":{"@type":"Answer","text":"Yes. Assets costing $1,000 or less (excluding GST) can be written off immediately as a low-value asset deduction. From 17 March 2021 this threshold increased from $500 to $1,000."}},{"@type":"Question","name":"What is the depreciation rate for a ute in NZ?","acceptedAnswer":{"@type":"Answer","text":"The IRD depreciation rate for a light commercial vehicle (ute) is 30% DV or 21% SL. So a $40,000 ute depreciates by $12,000 DV in year 1, $8,400 in year 2, and so on."}},{"@type":"Question","name":"Do I claim depreciation on tools I also use personally?","acceptedAnswer":{"@type":"Answer","text":"You can only claim the business-use portion. If a tool is used 80% for work and 20% personally, you claim 80% of the depreciation. Keep a usage log if the split is likely to be questioned."}}]}]}</script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to use the NZ Tool \u0026 Equipment Depreciation Calculator",
+      "description": "Calculate the annual depreciation deduction for your tools and equipment using the IRD diminishing value method. Updated for NZ 2026 tax rules.",
+      "totalTime": "PT1M",
+      "tool": [{"@type": "HowToTool", "name": "Web browser"}],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Enter your values",
+          "text": "Fill in the fields in the calculator with your project details. All fields accept New Zealand dollar amounts unless labelled otherwise."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Get your instant result",
+          "text": "The calculator updates automatically as you type — no button press needed. Results are shown in NZD and include any applicable GST or rates."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Use the result in your quote or plan",
+          "text": "Copy the result into your quote, job estimate, or budget. For a detailed breakdown by city or scope, see the related job cost guides on TradieTools NZ."
+        }
+      ]
+    }
+    </script>
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJW7HLW8D8"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BJW7HLW8D8');</script>
+    
+<script type="application/ld+json">
+[{"@context":"https://schema.org","@type":"WebSite","@id":"https://tradietools.nz/#website","name":"NZ Tool & Equipment Depreciation Calculator","url":"https://tradietools.nz","inLanguage":"en-NZ","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://tradietools.nz/calculators/?q={search_term_string}"},"query-input":"required name=search_term_string"},"publisher":{"@id":"https://tradietools.nz/#organization"}},
+{"@context":"https://schema.org","@type":"Organization","@id":"https://tradietools.nz/#organization","name":"NZ Tool & Equipment Depreciation Calculator","url":"https://tradietools.nz","description":"Calculate the annual depreciation deduction for your tools and equipment using the IRD diminishing value method. Updated for NZ 2026 tax rules.","logo":{"@type":"ImageObject","url":"https://tradietools.nz/favicon.svg","width":512,"height":512},"contactPoint":{"@type":"ContactPoint","email":"contact@tradietools.nz","contactType":"customer service"},"sameAs":["https://www.facebook.com/nztradietools", "https://www.linkedin.com/company/nz-tradie-tools"]}]
+</script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo"><img src="/static/img/logo-dark.png" alt="TradieTools NZ" class="logo-img"></a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                
+                <a href="/trades/">Find a Tradie</a>
+                
+                <a href="/post-job/">Post a Job</a>
+                
+                <a href="/jobs/">Cost Guides</a>
+                
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">For Tradies &#9660;</button>
+                    <div class="nav-dropdown-menu" role="menu">
+                        <a href="/for-tradies/" role="menuitem">For Tradies Hub</a>
+                        <a href="/calculators/" role="menuitem">Calculators</a>
+                        <a href="/templates/" role="menuitem">Free Templates</a>
+                        <a href="/articles/" role="menuitem">Articles &amp; Guides</a>
+                        <a href="/contact/" role="menuitem">Contact</a>
+                    </div>
+                </div>
+                <a id="nav-my-listing" href="/find/" class="nav-my-listing" style="display:none">My Listing</a>
+                <a href="/signup/" class="nav-cta">Free Listing &#8594;</a>
+            </nav>
+            <script>
+            (function(){
+                var t=document.querySelector('.nav-toggle'),n=document.getElementById('main-nav');
+                if(!t||!n)return;
+                t.addEventListener('click',function(){
+                    var o=n.classList.toggle('is-open');
+                    t.setAttribute('aria-expanded',o);
+                });
+                document.addEventListener('click',function(e){
+                    if(!t.contains(e.target)&&!n.contains(e.target)){
+                        n.classList.remove('is-open');
+                        t.setAttribute('aria-expanded','false');
+                    }
+                });
+                var id=localStorage.getItem('tradieId');
+                if(id){var ml=document.getElementById('nav-my-listing');if(ml){ml.style.display='';ml.href='/find/?highlight='+encodeURIComponent(id);}}
+            })();
+            </script>
+        </div>
+    </header>
+
+    <section class="hero" style="padding:1.75rem 0 1.5rem">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb" style="color:rgba(255,255,255,.55);margin-bottom:.75rem">
+                <a href="/" style="color:rgba(255,255,255,.55)">Home</a> &rsaquo;
+                <a href="/calculators/" style="color:rgba(255,255,255,.55)">Calculators</a> &rsaquo;
+                <span>NZ Tool & Equipment Depreciation Calculator</span>
+            </nav>
+            <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:1.5rem;flex-wrap:wrap">
+                <div>
+                    <span style="display:inline-block;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#f97316;background:rgba(249,115,22,.15);border:1px solid rgba(249,115,22,.3);border-radius:4px;padding:.15rem .5rem;margin-bottom:.5rem">Free Calculator</span>
+                    <h1 style="font-size:1.9rem;font-weight:800;margin:0 0 .4rem;line-height:1.2;color:#fff">NZ Tool & Equipment Depreciation Calculator</h1>
+                    <p style="color:rgba(255,255,255,.75);margin:0;font-size:.97rem;max-width:580px;line-height:1.55">Calculate the annual depreciation deduction for your tools and equipment using the IRD diminishing value method. Updated for NZ 2026 tax rules.</p>
+                </div>
+                <a href="/calculators/" style="flex-shrink:0;font-size:.82rem;color:rgba(255,255,255,.55);text-decoration:none;padding:.4rem .85rem;border:1px solid rgba(255,255,255,.2);border-radius:6px;white-space:nowrap;align-self:flex-start">← All calculators</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container page-layout">
+        <main class="main-content" style="padding-top:1.5rem">
+            <div class="calculator-wrapper" style="margin-bottom:2rem">
+                <div class="calc-grid">
+  <div class="calc-group">
+    <label>Purchase price (ex GST) — $</label>
+    <input type="number" id="price" placeholder="e.g. 5000" oninput="calcDep()">
+  </div>
+  <div class="calc-group">
+    <label>Depreciation rate (DV%) — IRD rate</label>
+    <select id="dep-rate" onchange="calcDep()">
+      <option value="30">30% — Power tools, hand tools</option>
+      <option value="25">25% — Ladders, scaffolding</option>
+      <option value="20">20% — Work vehicles (cars/utes)</option>
+      <option value="13.5">13.5% — Trailers</option>
+      <option value="48">48% — Computers, tablets</option>
+      <option value="67">67% — Mobile phones</option>
+      <option value="custom">Custom rate</option>
+    </select>
+  </div>
+  <div class="calc-group" id="custom-group" style="display:none">
+    <label>Custom DV rate %</label>
+    <input type="number" id="custom-rate" placeholder="e.g. 25" oninput="calcDep()">
+  </div>
+  <div class="calc-group">
+    <label>Years to show</label>
+    <input type="number" id="years" value="5" min="1" max="15" oninput="calcDep()">
+  </div>
+  <div class="calc-group">
+    <label>Business use %</label>
+    <input type="number" id="bus-pct" value="100" min="1" max="100" oninput="calcDep()">
+  </div>
+</div>
+<div id="dep-result" style="display:none;margin-top:1.25rem">
+  <div class="calc-result">
+    <h3>Depreciation Schedule</h3>
+    <div id="dep-table"></div>
+  </div>
+</div>
+<script>
+document.getElementById('dep-rate').addEventListener('change',function(){
+  document.getElementById('custom-group').style.display=this.value==='custom'?'':'none';
+  calcDep();
+});
+function fmt(n){return '$'+n.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g,',');}
+function calcDep(){
+  var price=parseFloat(document.getElementById('price').value);
+  var sel=document.getElementById('dep-rate').value;
+  var rate=sel==='custom'?parseFloat(document.getElementById('custom-rate').value):parseFloat(sel);
+  var yrs=parseInt(document.getElementById('years').value)||5;
+  var bus=parseFloat(document.getElementById('bus-pct').value)||100;
+  var res=document.getElementById('dep-result');
+  if(isNaN(price)||price<=0||isNaN(rate)||rate<=0){res.style.display='none';return;}
+  var html='<div class="result-row" style="font-weight:600"><span>Year</span><span>Depreciation</span><span>Book value</span><span>Tax deduction</span></div>';
+  var val=price;
+  for(var y=1;y<=yrs;y++){
+    var dep=val*(rate/100);
+    var deduct=dep*(bus/100);
+    val=val-dep;
+    html+='<div class="result-row"><span>Year '+y+'</span><span>'+fmt(dep)+'</span><span>'+fmt(val)+'</span><span class="result-highlight">'+fmt(deduct)+'</span></div>';
+  }
+  document.getElementById('dep-table').innerHTML=html;
+  res.style.display='';
+}
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="how-depreciation-works-for-nz-tradies">How Depreciation Works for NZ Tradies</h2>
+<p>When you buy tools or equipment for your business, you generally can't deduct the full cost in the year of purchase (unless it's under $1,000 — see low-value asset rule below). Instead, you claim depreciation over the asset's useful life.</p>
+<h3 id="the-low-value-asset-rule">The Low-Value Asset Rule</h3>
+<p><strong>Good news:</strong> Items costing $1,000 or less (ex GST) can be written off in full in the year of purchase. This covers most hand tools, drill bits, small power tools, and accessories.</p>
+<p>For anything over $1,000, you depreciate it over time.</p>
+<h3 id="ird-depreciation-rates-for-tradies">IRD Depreciation Rates for Tradies</h3>
+<p>IRD publishes depreciation rates for different asset types. The <strong>diminishing value (DV)</strong> method is most common:</p>
+<table>
+<thead>
+<tr>
+<th>Asset</th>
+<th>DV rate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Power tools (drill, grinder, saw)</td>
+<td>30%</td>
+</tr>
+<tr>
+<td>Hand tools</td>
+<td>30%</td>
+</tr>
+<tr>
+<td>Ladders, scaffolding</td>
+<td>25%</td>
+</tr>
+<tr>
+<td>Work vehicles (utes, vans)</td>
+<td>20%</td>
+</tr>
+<tr>
+<td>Trailers</td>
+<td>13.5%</td>
+</tr>
+<tr>
+<td>Computers, tablets</td>
+<td>48%</td>
+</tr>
+<tr>
+<td>Mobile phones</td>
+<td>67%</td>
+</tr>
+</tbody>
+</table>
+<p>Full rate table at <a href="https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-income/depreciation">ird.govt.nz/depreciation</a>.</p>
+<h3 id="business-vs-private-use">Business vs Private Use</h3>
+<p>If you use equipment for both business and private purposes (e.g. a ute you also use on weekends), you can only claim the business-use percentage. Keep a logbook to support your claim.</p>
+<h3 id="tracking-depreciation">Tracking Depreciation</h3>
+<p>Your accountant or a tool like <a href="https://www.xero.com/nz/"><a href="https://www.xero.com/nz/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">Xero</a></a> can manage a fixed asset register that automatically calculates annual depreciation. Well worth it once you have more than a handful of assets.</p>
+            </div>
+
+            
+            <section class="faq-section" style="margin-top:2rem">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">How does tax depreciation work for tradies in NZ?</button>
+                        <div class="faq-answer" hidden><p>The IRD allows you to deduct the depreciation of business assets over their useful life. For tools and equipment you can use the diminishing value (DV) or straight-line (SL) method based on IRD-set rates.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">Can I write off tools immediately in NZ?</button>
+                        <div class="faq-answer" hidden><p>Yes. Assets costing $1,000 or less (excluding GST) can be written off immediately as a low-value asset deduction. From 17 March 2021 this threshold increased from $500 to $1,000.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">What is the depreciation rate for a ute in NZ?</button>
+                        <div class="faq-answer" hidden><p>The IRD depreciation rate for a light commercial vehicle (ute) is 30% DV or 21% SL. So a $40,000 ute depreciates by $12,000 DV in year 1, $8,400 in year 2, and so on.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">Do I claim depreciation on tools I also use personally?</button>
+                        <div class="faq-answer" hidden><p>You can only claim the business-use portion. If a tool is used 80% for work and 20% personally, you claim 80% of the depreciation. Keep a usage log if the split is likely to be questioned.</p></div>
+                    </div>
+                    
+                </div>
+            </section>
+            <script>
+            document.querySelectorAll('.faq-question').forEach(function(btn){
+                btn.addEventListener('click',function(){
+                    var ans=this.nextElementSibling;
+                    var open=this.getAttribute('aria-expanded')==='true';
+                    this.setAttribute('aria-expanded',!open);
+                    if(open){ans.hidden=true;}else{ans.hidden=false;}
+                });
+            });
+            </script>
+            
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:#0f172a;color:#fff;border:none">
+                <img src="https://fastcrew.nz/assets/fastcrew/images/Fastcrewlogo-light.png" alt="FastCrew" style="height:28px;margin-bottom:.75rem;display:block">
+                <p style="color:rgba(255,255,255,.88);font-size:.85rem;margin-bottom:.6rem">The only tradie app built for NZ compliance.</p>
+                <ul style="color:rgba(255,255,255,.82);font-size:.82rem;margin:0 0 1rem;padding-left:1.1rem">
+                    <li>AI-powered quoting</li>
+                    <li>H&amp;S compliance &amp; SWMS</li>
+                    <li>Jobs, quotes &amp; invoicing</li>
+                    <li>Xero + Stripe · From $39/mo</li>
+                </ul>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#ea6325;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Start free trial →</a>
+                <p style="color:rgba(255,255,255,.5);font-size:.75rem;text-align:center;margin:.5rem 0 0">14-day free trial · No credit card required</p>
+            </div>
+            
+            
+            <div class="sidebar-widget">
+                <h3>Related Guides</h3>
+                <ul>
+                    
+                    <li><a href="/articles/nz-tradie-investment-boost-deduction-2026">The 20% Investment Boost: How NZ Tradies Can Claim It Before EOFY</a></li>
+                    
+                    <li><a href="/articles/nz-tradie-tax-guide-what-you-can-claim">NZ Tradie Tax Guide 2026: Every Deduction You Can Claim</a></li>
+                    
+                </ul>
+            </div>
+            
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://fastcrew.nz" rel="noopener" target="_blank">Fastcrew — All-in-One Tradie App</a></li>
+                    <li><a href="https://www.xero.com/nz/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <img src="/static/img/logo-dark.png" alt="TradieTools NZ" style="height:64px;width:auto;display:block;margin-bottom:.5rem">
+                <p>Free calculators, templates and guides for New Zealand tradies.</p>
+                <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
+            </div>
+            <div style="text-align:right">
+                <p><a href="/glossary/">Tradie Glossary</a></p>
+                <p><a href="/privacy/">Privacy Policy</a></p>
+                <p><a href="/contact/">Contact</a></p>
+                <p style="margin-top:.5rem">&copy; 2026 TradieTools NZ</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

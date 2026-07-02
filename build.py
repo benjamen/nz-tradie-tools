@@ -406,7 +406,15 @@ def process_page(md_file, config, env, layout_name, section, nav, base_path, art
     }
 
     rendered = template.render(**ctx)
-    out_path = PUBLIC_DIR / section / f"{slug}.html"
+    if section == "calculators":
+        slug_dir = PUBLIC_DIR / section / slug
+        slug_dir.mkdir(exist_ok=True)
+        out_path = slug_dir / "index.html"
+        old_flat = PUBLIC_DIR / section / f"{slug}.html"
+        if old_flat.exists():
+            old_flat.unlink()
+    else:
+        out_path = PUBLIC_DIR / section / f"{slug}.html"
     out_path.write_text(rendered, encoding="utf-8")
     return ctx
 
@@ -908,10 +916,10 @@ def build_robots(config):
         "- Markup vs margin: 25% markup = 20% margin. 50% markup = 33% margin.\n\n"
         "## Key Pages\n\n"
         f"- All calculators: {base_url}/calculators/\n"
-        f"- GST calculator: {base_url}/calculators/gst-calculator.html\n"
-        f"- Hourly rate calculator: {base_url}/calculators/hourly-rate-calculator.html\n"
-        f"- Job cost calculator: {base_url}/calculators/job-cost-calculator.html\n"
-        f"- Markup vs margin: {base_url}/calculators/markup-margin-calculator.html\n"
+        f"- GST calculator: {base_url}/calculators/gst-calculator/\n"
+        f"- Hourly rate calculator: {base_url}/calculators/hourly-rate-calculator/\n"
+        f"- Job cost calculator: {base_url}/calculators/job-cost-calculator/\n"
+        f"- Markup vs margin: {base_url}/calculators/markup-margin-calculator/\n"
         f"- Free templates: {base_url}/templates/\n"
         f"- Tradie rates NZ: {base_url}/tradie-rates/\n"
         f"- All articles: {base_url}/articles/\n"

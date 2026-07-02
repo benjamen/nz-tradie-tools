@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- NZ-local signals -->
+    <meta name="geo.region" content="NZ">
+    <meta name="geo.placename" content="New Zealand">
+    <meta name="ICBM" content="-41.2866, 174.7756">
+    <!-- Performance -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://tradietools.optified.nz">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap">
+    <title>Labour Cost Calculator — NZ Tradies — TradieTools NZ</title>
+    <meta name="description" content="Calculate total labour cost for a job, team, or project in NZ. Includes on-costs, overhead loading, and a profitability check for your quote.">
+    <meta property="og:title" content="Labour Cost Calculator — NZ Tradies — TradieTools NZ">
+    <meta property="og:description" content="Calculate total labour cost for a job, team, or project in NZ. Includes on-costs, overhead loading, and a profitability check for your quote.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradietools.nz/calculators/labour-cost-calculator/">
+    <meta property="og:site_name" content="TradieTools NZ">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Labour Cost Calculator — NZ Tradies — TradieTools NZ">
+    <meta name="twitter:description" content="Calculate total labour cost for a job, team, or project in NZ. Includes on-costs, overhead loading, and a profitability check for your quote.">
+    <meta property="og:image" content="https://tradietools.nz/static/img/social-card.svg">
+    <meta name="twitter:image" content="https://tradietools.nz/static/img/social-card.svg">
+    <link rel="canonical" href="https://tradietools.nz/calculators/labour-cost-calculator/">
+    <link rel="alternate" type="application/rss+xml" title="TradieTools NZ — Articles" href="https://tradietools.nz/rss.xml">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"Labour Cost Calculator \u2014 NZ Tradies","description":"Calculate total labour cost for a job, team, or project in NZ. Includes on-costs, overhead loading, and a profitability check for your quote.","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://tradietools.nz/calculators/labour-cost-calculator/","offers":{"@type":"Offer","price":"0","priceCurrency":"NZD"},"author":{"@type":"Organization","name":"TradieTools NZ","url":"https://tradietools.nz"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tradietools.nz"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://tradietools.nz/calculators/"},{"@type":"ListItem","position":3,"name":"Labour Cost Calculator \u2014 NZ Tradies","item":"https://tradietools.nz/calculators/labour-cost-calculator/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I calculate total labour cost for a NZ construction job?","acceptedAnswer":{"@type":"Answer","text":"Total labour cost = number of workers \u00d7 hours per worker \u00d7 fully loaded hourly rate (including ACC, KiwiSaver, leave entitlement, and tool allowance). Always use fully loaded rates in quotes to avoid undercharging."}},{"@type":"Question","name":"What is a fully loaded labour rate in NZ?","acceptedAnswer":{"@type":"Answer","text":"A fully loaded rate includes: gross wage + employer KiwiSaver (3%) + ACC employer levy + holiday pay reserve (8%) + sick leave liability. For a worker on $40/hr, the fully loaded cost is approximately $47\u2013$50/hr."}},{"@type":"Question","name":"How much should I charge for labour on a building project?","acceptedAnswer":{"@type":"Answer","text":"NZ building labour charge-out rates in 2025 range from $85\u2013$130/hr for a licensed builder, $95\u2013$140/hr for a licensed electrician or plumber, and $70\u2013$100/hr for experienced carpenters or labourers."}},{"@type":"Question","name":"Can I claim labour costs as a business expense in NZ?","acceptedAnswer":{"@type":"Answer","text":"Yes. All wages, including your own PAYE wages if you are an employee of your own company, are fully deductible. Subcontractor payments are also deductible provided you hold a valid tax invoice."}}]}]}</script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to use the Labour Cost Calculator \u2014 NZ Tradies",
+      "description": "Calculate total labour cost for a job, team, or project in NZ. Includes on-costs, overhead loading, and a profitability check for your quote.",
+      "totalTime": "PT1M",
+      "tool": [{"@type": "HowToTool", "name": "Web browser"}],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Enter your values",
+          "text": "Fill in the fields in the calculator with your project details. All fields accept New Zealand dollar amounts unless labelled otherwise."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Get your instant result",
+          "text": "The calculator updates automatically as you type — no button press needed. Results are shown in NZD and include any applicable GST or rates."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Use the result in your quote or plan",
+          "text": "Copy the result into your quote, job estimate, or budget. For a detailed breakdown by city or scope, see the related job cost guides on TradieTools NZ."
+        }
+      ]
+    }
+    </script>
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJW7HLW8D8"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BJW7HLW8D8');</script>
+    
+<script type="application/ld+json">
+[{"@context":"https://schema.org","@type":"WebSite","@id":"https://tradietools.nz/#website","name":"Labour Cost Calculator — NZ Tradies","url":"https://tradietools.nz","inLanguage":"en-NZ","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://tradietools.nz/calculators/?q={search_term_string}"},"query-input":"required name=search_term_string"},"publisher":{"@id":"https://tradietools.nz/#organization"}},
+{"@context":"https://schema.org","@type":"Organization","@id":"https://tradietools.nz/#organization","name":"Labour Cost Calculator — NZ Tradies","url":"https://tradietools.nz","description":"Calculate total labour cost for a job, team, or project in NZ. Includes on-costs, overhead loading, and a profitability check for your quote.","logo":{"@type":"ImageObject","url":"https://tradietools.nz/favicon.svg","width":512,"height":512},"contactPoint":{"@type":"ContactPoint","email":"contact@tradietools.nz","contactType":"customer service"},"sameAs":["https://www.facebook.com/nztradietools", "https://www.linkedin.com/company/nz-tradie-tools"]}]
+</script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo"><img src="/static/img/logo-dark.png" alt="TradieTools NZ" class="logo-img"></a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                
+                <a href="/trades/">Find a Tradie</a>
+                
+                <a href="/post-job/">Post a Job</a>
+                
+                <a href="/jobs/">Cost Guides</a>
+                
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">For Tradies &#9660;</button>
+                    <div class="nav-dropdown-menu" role="menu">
+                        <a href="/for-tradies/" role="menuitem">For Tradies Hub</a>
+                        <a href="/calculators/" role="menuitem">Calculators</a>
+                        <a href="/templates/" role="menuitem">Free Templates</a>
+                        <a href="/articles/" role="menuitem">Articles &amp; Guides</a>
+                        <a href="/contact/" role="menuitem">Contact</a>
+                    </div>
+                </div>
+                <a id="nav-my-listing" href="/find/" class="nav-my-listing" style="display:none">My Listing</a>
+                <a href="/signup/" class="nav-cta">Free Listing &#8594;</a>
+            </nav>
+            <script>
+            (function(){
+                var t=document.querySelector('.nav-toggle'),n=document.getElementById('main-nav');
+                if(!t||!n)return;
+                t.addEventListener('click',function(){
+                    var o=n.classList.toggle('is-open');
+                    t.setAttribute('aria-expanded',o);
+                });
+                document.addEventListener('click',function(e){
+                    if(!t.contains(e.target)&&!n.contains(e.target)){
+                        n.classList.remove('is-open');
+                        t.setAttribute('aria-expanded','false');
+                    }
+                });
+                var id=localStorage.getItem('tradieId');
+                if(id){var ml=document.getElementById('nav-my-listing');if(ml){ml.style.display='';ml.href='/find/?highlight='+encodeURIComponent(id);}}
+            })();
+            </script>
+        </div>
+    </header>
+
+    <section class="hero" style="padding:1.75rem 0 1.5rem">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb" style="color:rgba(255,255,255,.55);margin-bottom:.75rem">
+                <a href="/" style="color:rgba(255,255,255,.55)">Home</a> &rsaquo;
+                <a href="/calculators/" style="color:rgba(255,255,255,.55)">Calculators</a> &rsaquo;
+                <span>Labour Cost Calculator — NZ Tradies</span>
+            </nav>
+            <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:1.5rem;flex-wrap:wrap">
+                <div>
+                    <span style="display:inline-block;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#f97316;background:rgba(249,115,22,.15);border:1px solid rgba(249,115,22,.3);border-radius:4px;padding:.15rem .5rem;margin-bottom:.5rem">Free Calculator</span>
+                    <h1 style="font-size:1.9rem;font-weight:800;margin:0 0 .4rem;line-height:1.2;color:#fff">Labour Cost Calculator — NZ Tradies</h1>
+                    <p style="color:rgba(255,255,255,.75);margin:0;font-size:.97rem;max-width:580px;line-height:1.55">Calculate total labour cost for a job, team, or project in NZ. Includes on-costs, overhead loading, and a profitability check for your quote.</p>
+                </div>
+                <a href="/calculators/" style="flex-shrink:0;font-size:.82rem;color:rgba(255,255,255,.55);text-decoration:none;padding:.4rem .85rem;border:1px solid rgba(255,255,255,.2);border-radius:6px;white-space:nowrap;align-self:flex-start">← All calculators</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container page-layout">
+        <main class="main-content" style="padding-top:1.5rem">
+            <div class="calculator-wrapper" style="margin-bottom:2rem">
+                <div class="calc-tabs">
+  <button class="calc-tab active" onclick="switchLCTab('job')">Job / Project</button>
+  <button class="calc-tab" onclick="switchLCTab('team')">Team Rate</button>
+  <button class="calc-tab" onclick="switchLCTab('quote')">Quote Check</button>
+</div>
+<div id="lctab-job">
+  <div class="calc-grid">
+    <div class="calc-group"><label>Number of workers</label><input type="number" id="lj-num" placeholder="e.g. 2" value="1" oninput="calcLabourJob()"></div>
+    <div class="calc-group"><label>Hours per worker per day</label><input type="number" id="lj-hrs" placeholder="e.g. 8" value="8" oninput="calcLabourJob()"></div>
+    <div class="calc-group"><label>Number of days</label><input type="number" id="lj-days" placeholder="e.g. 5" oninput="calcLabourJob()"></div>
+    <div class="calc-group"><label>Hourly charge-out rate ($/hr)</label><input type="number" id="lj-rate" placeholder="e.g. 95" oninput="calcLabourJob()"></div>
+    <div class="calc-group"><label>Overhead / on-cost (%)</label><input type="number" id="lj-oc" placeholder="e.g. 25" value="25" oninput="calcLabourJob()"></div>
+  </div>
+  <div class="calc-result" id="lj-result" style="display:none">
+    <h3>Labour Cost Breakdown</h3>
+    <div class="result-row"><span>Total hours</span><span id="lj-thrs"></span></div>
+    <div class="result-row"><span>Direct labour cost</span><span id="lj-direct"></span></div>
+    <div class="result-row"><span>Overhead / on-costs</span><span id="lj-oc-out"></span></div>
+    <div class="result-row"><span>Total labour cost (your cost)</span><span id="lj-cost"></span></div>
+    <div class="result-row"><span>Billable amount to client</span><span id="lj-bill" class="result-highlight"></span></div>
+    <div class="result-row"><span>Gross margin on labour</span><span id="lj-margin"></span></div>
+  </div>
+</div>
+<div id="lctab-team" style="display:none">
+  <div style="font-size:.85rem;color:#555;margin-bottom:1rem">Add up to 4 team members with different rates:</div>
+  <div class="calc-grid">
+    <div class="calc-group"><label>Worker 1 — hourly rate ($)</label><input type="number" id="tm-r1" placeholder="e.g. 45" oninput="calcTeam()"></div>
+    <div class="calc-group"><label>Worker 1 — daily hours</label><input type="number" id="tm-h1" placeholder="8" value="8" oninput="calcTeam()"></div>
+    <div class="calc-group"><label>Worker 2 — hourly rate ($)</label><input type="number" id="tm-r2" placeholder="e.g. 32" oninput="calcTeam()"></div>
+    <div class="calc-group"><label>Worker 2 — daily hours</label><input type="number" id="tm-h2" placeholder="8" value="8" oninput="calcTeam()"></div>
+    <div class="calc-group"><label>Worker 3 — hourly rate ($)</label><input type="number" id="tm-r3" placeholder="optional" oninput="calcTeam()"></div>
+    <div class="calc-group"><label>Worker 3 — daily hours</label><input type="number" id="tm-h3" placeholder="8" value="8" oninput="calcTeam()"></div>
+    <div class="calc-group"><label>Days on job</label><input type="number" id="tm-days" placeholder="e.g. 3" oninput="calcTeam()"></div>
+    <div class="calc-group"><label>Target margin on labour (%)</label><input type="number" id="tm-margin" placeholder="e.g. 20" value="20" oninput="calcTeam()"></div>
+  </div>
+  <div class="calc-result" id="tm-result" style="display:none">
+    <h3>Team Labour Cost</h3>
+    <div class="result-row"><span>Total team cost/day</span><span id="tm-daily"></span></div>
+    <div class="result-row"><span>Total job cost</span><span id="tm-total"></span></div>
+    <div class="result-row"><span>Quote this for labour</span><span id="tm-quote" class="result-highlight"></span></div>
+  </div>
+</div>
+<div id="lctab-quote" style="display:none">
+  <div class="calc-grid">
+    <div class="calc-group"><label>Quoted labour amount ($)</label><input type="number" id="qc-quote" placeholder="e.g. 4500" oninput="calcQCheck()"></div>
+    <div class="calc-group"><label>Your actual labour cost ($)</label><input type="number" id="qc-cost" placeholder="e.g. 3200" oninput="calcQCheck()"></div>
+  </div>
+  <div class="calc-result" id="qc-result" style="display:none">
+    <h3>Quote Check</h3>
+    <div class="result-row"><span>Gross profit on labour</span><span id="qc-gp"></span></div>
+    <div class="result-row"><span>Gross margin %</span><span id="qc-margin" class="result-highlight"></span></div>
+    <div class="result-row"><span>Markup %</span><span id="qc-markup"></span></div>
+    <div id="qc-signal" style="margin-top:.5rem;padding:.5rem .75rem;font-size:.84rem;border-radius:3px"></div>
+  </div>
+</div>
+<script>
+function nzd(n){return '$'+Math.round(n).toLocaleString();}
+function switchLCTab(t){
+  ['job','team','quote'].forEach(function(id){document.getElementById('lctab-'+id).style.display=id===t?'':'none';});
+  document.querySelectorAll('.calc-tab').forEach(function(b,i){b.classList.toggle('active',['job','team','quote'][i]===t);});
+}
+function calcLabourJob(){
+  var num=parseFloat(document.getElementById('lj-num').value)||0;
+  var hrs=parseFloat(document.getElementById('lj-hrs').value)||8;
+  var days=parseFloat(document.getElementById('lj-days').value)||0;
+  var rate=parseFloat(document.getElementById('lj-rate').value)||0;
+  var oc=parseFloat(document.getElementById('lj-oc').value)||25;
+  if(!num||!days||!rate){document.getElementById('lj-result').style.display='none';return;}
+  var totalHrs=num*hrs*days;
+  var direct=totalHrs*rate;
+  var ocCost=direct*oc/100;
+  var cost=direct+ocCost;
+  var bill=direct*(1+oc/100);
+  var margin=(bill-direct)/bill*100;
+  document.getElementById('lj-thrs').textContent=totalHrs+' hrs';
+  document.getElementById('lj-direct').textContent=nzd(direct);
+  document.getElementById('lj-oc-out').textContent=nzd(ocCost);
+  document.getElementById('lj-cost').textContent=nzd(cost);
+  document.getElementById('lj-bill').textContent=nzd(bill);
+  document.getElementById('lj-margin').textContent=margin.toFixed(1)+'%';
+  document.getElementById('lj-result').style.display='';
+}
+function calcTeam(){
+  var r1=parseFloat(document.getElementById('tm-r1').value)||0;
+  var h1=parseFloat(document.getElementById('tm-h1').value)||8;
+  var r2=parseFloat(document.getElementById('tm-r2').value)||0;
+  var h2=parseFloat(document.getElementById('tm-h2').value)||8;
+  var r3=parseFloat(document.getElementById('tm-r3').value)||0;
+  var h3=parseFloat(document.getElementById('tm-h3').value)||8;
+  var days=parseFloat(document.getElementById('tm-days').value)||0;
+  var margin=parseFloat(document.getElementById('tm-margin').value)||20;
+  if(!days){document.getElementById('tm-result').style.display='none';return;}
+  var daily=r1*h1+r2*h2+(r3?r3*h3:0);
+  var total=daily*days;
+  var quote=total/(1-margin/100);
+  document.getElementById('tm-daily').textContent=nzd(daily)+'/day';
+  document.getElementById('tm-total').textContent=nzd(total);
+  document.getElementById('tm-quote').textContent=nzd(quote)+' (at '+margin+'% margin)';
+  document.getElementById('tm-result').style.display='';
+}
+function calcQCheck(){
+  var quote=parseFloat(document.getElementById('qc-quote').value)||0;
+  var cost=parseFloat(document.getElementById('qc-cost').value)||0;
+  if(!quote||!cost){document.getElementById('qc-result').style.display='none';return;}
+  var gp=quote-cost;
+  var margin=gp/quote*100;
+  var markup=gp/cost*100;
+  document.getElementById('qc-gp').textContent=nzd(gp);
+  document.getElementById('qc-margin').textContent=margin.toFixed(1)+'%';
+  document.getElementById('qc-markup').textContent=markup.toFixed(1)+'%';
+  var sig=document.getElementById('qc-signal');
+  if(margin<10){sig.style.background='#fef2f2';sig.style.borderLeft='3px solid #ef4444';sig.textContent='⚠ Under 10% margin — barely covering overhead. Review your rate.';}
+  else if(margin<20){sig.style.background='#fffbeb';sig.style.borderLeft='3px solid #f59e0b';sig.textContent='⚠ 10–20% margin — acceptable but lean. Consider whether you\'re covering all costs.';}
+  else{sig.style.background='#f0fdf4';sig.style.borderLeft='3px solid #22c55e';sig.textContent='✓ Healthy margin. Keep tracking actuals vs estimate to stay profitable.';}
+  document.getElementById('qc-result').style.display='';
+}
+</script>
+
+            </div>
+
+            <div class="article-body">
+                <h2 id="setting-your-labour-rate-in-nz">Setting Your Labour Rate in NZ</h2>
+<p>The right charge-out rate isn't just your wages — it must recover all your costs and leave a profit.</p>
+<h3 id="the-cost-plus-formula">The Cost-Plus Formula</h3>
+<blockquote>
+<p><strong>Charge rate = (Actual wage cost × overhead factor) ÷ billable hours ratio</strong></p>
+</blockquote>
+<p>For a tradesperson earning $50/hr actual cost, with 25% overhead and 75% billable time:</p>
+<blockquote>
+<p>($50 × 1.25) ÷ 0.75 = <strong>$83/hr minimum charge-out</strong></p>
+</blockquote>
+<h3 id="overhead-items-often-missed">Overhead Items Often Missed</h3>
+<ul>
+<li>Vehicle (loan, insurance, WoF, fuel, registration)</li>
+<li>Tools and equipment</li>
+<li>Software (job management, accounting, invoicing)</li>
+<li>Mobile phone</li>
+<li>ACC employer levy</li>
+<li>Public liability and business insurance</li>
+<li>Downtime (rain days, travel, quoting, admin)</li>
+<li>KiwiSaver contributions</li>
+</ul>
+<h3 id="nz-trades-labour-benchmarks-2025">NZ Trades Labour Benchmarks (2025)</h3>
+<table>
+<thead>
+<tr>
+<th>Trade</th>
+<th>Typical charge-out rate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Electrician</td>
+<td>$95–$130/hr</td>
+</tr>
+<tr>
+<td>Plumber</td>
+<td>$90–$130/hr</td>
+</tr>
+<tr>
+<td>Builder (LBP)</td>
+<td>$80–$120/hr</td>
+</tr>
+<tr>
+<td>Tiler</td>
+<td>$80–$110/hr</td>
+</tr>
+<tr>
+<td>Painter</td>
+<td>$55–$85/hr</td>
+</tr>
+<tr>
+<td>Landscaper</td>
+<td>$65–$95/hr</td>
+</tr>
+</tbody>
+</table>
+<p>Use our <a href="/calculators/hourly-rate-calculator">Hourly Rate Calculator</a> to calculate your minimum viable rate.</p>
+            </div>
+
+            
+            <section class="faq-section" style="margin-top:2rem">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">How do I calculate total labour cost for a NZ construction job?</button>
+                        <div class="faq-answer" hidden><p>Total labour cost = number of workers × hours per worker × fully loaded hourly rate (including ACC, KiwiSaver, leave entitlement, and tool allowance). Always use fully loaded rates in quotes to avoid undercharging.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">What is a fully loaded labour rate in NZ?</button>
+                        <div class="faq-answer" hidden><p>A fully loaded rate includes: gross wage + employer KiwiSaver (3%) + ACC employer levy + holiday pay reserve (8%) + sick leave liability. For a worker on $40/hr, the fully loaded cost is approximately $47–$50/hr.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">How much should I charge for labour on a building project?</button>
+                        <div class="faq-answer" hidden><p>NZ building labour charge-out rates in 2025 range from $85–$130/hr for a licensed builder, $95–$140/hr for a licensed electrician or plumber, and $70–$100/hr for experienced carpenters or labourers.</p></div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">Can I claim labour costs as a business expense in NZ?</button>
+                        <div class="faq-answer" hidden><p>Yes. All wages, including your own PAYE wages if you are an employee of your own company, are fully deductible. Subcontractor payments are also deductible provided you hold a valid tax invoice.</p></div>
+                    </div>
+                    
+                </div>
+            </section>
+            <script>
+            document.querySelectorAll('.faq-question').forEach(function(btn){
+                btn.addEventListener('click',function(){
+                    var ans=this.nextElementSibling;
+                    var open=this.getAttribute('aria-expanded')==='true';
+                    this.setAttribute('aria-expanded',!open);
+                    if(open){ans.hidden=true;}else{ans.hidden=false;}
+                });
+            });
+            </script>
+            
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget" style="background:#0f172a;color:#fff;border:none">
+                <img src="https://fastcrew.nz/assets/fastcrew/images/Fastcrewlogo-light.png" alt="FastCrew" style="height:28px;margin-bottom:.75rem;display:block">
+                <p style="color:rgba(255,255,255,.88);font-size:.85rem;margin-bottom:.6rem">The only tradie app built for NZ compliance.</p>
+                <ul style="color:rgba(255,255,255,.82);font-size:.82rem;margin:0 0 1rem;padding-left:1.1rem">
+                    <li>AI-powered quoting</li>
+                    <li>H&amp;S compliance &amp; SWMS</li>
+                    <li>Jobs, quotes &amp; invoicing</li>
+                    <li>Xero + Stripe · From $39/mo</li>
+                </ul>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#ea6325;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Start free trial →</a>
+                <p style="color:rgba(255,255,255,.5);font-size:.75rem;text-align:center;margin:.5rem 0 0">14-day free trial · No credit card required</p>
+            </div>
+            
+            
+            <div class="sidebar-widget">
+                <h3>Related Guides</h3>
+                <ul>
+                    
+                    <li><a href="/articles/how-to-price-a-job-nz-tradie-guide">How to Price a Job: The Complete NZ Tradie Guide (2026)</a></li>
+                    
+                    <li><a href="/articles/markup-vs-margin-nz-tradies-2026">Markup vs Margin: The NZ Tradie's Guide to Getting Your Numbers Right (2026)</a></li>
+                    
+                </ul>
+            </div>
+            
+            <div class="sidebar-widget">
+                <h3>All Calculators</h3>
+                <ul>
+                    <li><a href="/calculators/gst-calculator">GST Calculator</a></li>
+                    <li><a href="/calculators/hourly-rate-calculator">Hourly Rate Calculator</a></li>
+                    <li><a href="/calculators/job-cost-calculator">Job Cost &amp; Quote Builder</a></li>
+                    <li><a href="/calculators/vehicle-mileage-calculator">Vehicle Mileage Claim</a></li>
+                    <li><a href="/calculators/depreciation-calculator">Tool Depreciation</a></li>
+                    <li><a href="/calculators/markup-margin-calculator">Markup vs Margin</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Top Software for NZ Tradies</h3>
+                <ul>
+                    <li><a href="https://fastcrew.nz" rel="noopener" target="_blank">Fastcrew — All-in-One Tradie App</a></li>
+                    <li><a href="https://www.xero.com/nz/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">Xero — Accounting</a></li>
+                    <li><a href="https://www.fergus.com/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">Fergus — Job Management</a></li>
+                    <li><a href="https://www.tradifyhq.com/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">Tradify — Quoting &amp; Invoicing</a></li>
+                    <li><a href="https://www.myob.com/nz/?utm_source=tradietools&utm_medium=article&utm_campaign=affiliate" rel="sponsored noopener" target="_blank">MYOB — Accounting</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <img src="/static/img/logo-dark.png" alt="TradieTools NZ" style="height:64px;width:auto;display:block;margin-bottom:.5rem">
+                <p>Free calculators, templates and guides for New Zealand tradies.</p>
+                <p class="disclosure">Some links are affiliate links — we may earn a commission at no extra cost to you.</p>
+            </div>
+            <div style="text-align:right">
+                <p><a href="/glossary/">Tradie Glossary</a></p>
+                <p><a href="/privacy/">Privacy Policy</a></p>
+                <p><a href="/contact/">Contact</a></p>
+                <p style="margin-top:.5rem">&copy; 2026 TradieTools NZ</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
