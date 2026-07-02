@@ -609,6 +609,9 @@ document.getElementById('signup-form').addEventListener('submit', async function
       localStorage.setItem('tradieName', contactName); // personal name for dashboard greeting
       localStorage.setItem('tradieListingName', listingName); // business/listing name
       if (tradieId) localStorage.setItem('tradieId', tradieId);
+      // Store slug for profile link — mirrors Python slugify in build.py
+      var _slug = (claimSlug || listingName.toLowerCase().replace(/[^\w\s-]/g,'').replace(/[\s_]+/g,'-').replace(/^-+|-+$/g,''));
+      if (_slug) localStorage.setItem('tradieSlug', _slug);
 
       if (typeof gtag !== 'undefined') gtag('event', 'signup_complete', { trade, region });
 

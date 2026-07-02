@@ -92,7 +92,8 @@
                     }
                 });
                 var id=localStorage.getItem('tradieId');
-                if(id){var ml=document.getElementById('nav-my-listing');if(ml){ml.style.display='';ml.href='/find/?highlight='+encodeURIComponent(id);}}
+                var slug=localStorage.getItem('tradieSlug');
+                if(id){var ml=document.getElementById('nav-my-listing');if(ml){ml.style.display='';ml.href=slug?'/businesses/'+slug+'/':'/find/?highlight='+encodeURIComponent(id);}}
             })();
             </script>
         </div>
