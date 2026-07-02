@@ -1,6 +1,6 @@
-# NZ Tradie Tools
+# TradieTools NZ
 
-Free calculators, guides, and tools for New Zealand tradies — builders, plumbers, electricians, painters and more.
+Find trusted NZ tradies — or list your trade business free. Electricians, plumbers, builders and more across New Zealand.
 
 ## What We Offer
 
@@ -39,4 +39,4 @@ Free calculators, guides, and tools for New Zealand tradies — builders, plumbe
 ## About
 
 Free tools for NZ tradies — builders, plumbers, electricians, painters, roofers and more. No login or signup required. Built and maintained by NZ tradespeople.
-Contact: instituteofbba@gmail.com
+Contact: contact@tradietools.nz

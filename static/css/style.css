@@ -1,4 +1,4 @@
-/* NZ Tradie Tools — Official Style */
+/* TradieTools NZ — Official Style */
 
 /* Font loaded via <link> in HTML head for performance — no @import */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -8,7 +8,7 @@
   --blue:       #005ea2;
   --blue-dark:  #003d7a;
   --blue-light: #dbe8f5;
-  --orange:     #c05600;
+  --orange:     #f97316;
   --text:       #1b1b1b;
   --muted:      #5a5a5a;
   --border:     #b8b8b8;
@@ -63,7 +63,7 @@ tr:nth-child(even) td { background: var(--bg-stripe); }
 .main-nav a { color: rgba(255,255,255,.82); font-size: .85rem; font-weight: 500; text-decoration: none; display: flex; align-items: center; padding: 0 .85rem; border-left: 1px solid rgba(255,255,255,.1); transition: background .15s, color .15s; letter-spacing: .01em; min-height: 58px; white-space: nowrap; }
 .main-nav a:hover, .main-nav a.active { color: var(--white); background: rgba(255,255,255,.1); }
 .nav-cta { background: var(--orange) !important; color: var(--white) !important; font-weight: 700 !important; padding: 0 1.1rem !important; letter-spacing: .01em; }
-.nav-cta:hover { background: #a34900 !important; color: var(--white) !important; }
+.nav-cta:hover { background: #e06010 !important; color: var(--white) !important; }
 .nav-my-listing { color: rgba(255,255,255,.9) !important; font-weight: 600 !important; border-left: 1px solid rgba(255,255,255,.1); }
 .nav-my-listing:hover { color: var(--white) !important; background: rgba(255,255,255,.1) !important; }
 
@@ -117,8 +117,8 @@ tr:nth-child(even) td { background: var(--bg-stripe); }
     background: rgba(255,255,255,.07);
     color: #fff;
   }
-  .nav-cta { border-left: 4px solid var(--orange) !important; background: rgba(192,86,0,.18) !important; padding: .9rem 1.25rem !important; font-size: .97rem !important; }
-  .nav-cta:hover { background: rgba(192,86,0,.3) !important; border-left-color: var(--orange) !important; }
+  .nav-cta { border-left: 4px solid var(--orange) !important; background: rgba(249,115,22,.18) !important; padding: .9rem 1.25rem !important; font-size: .97rem !important; }
+  .nav-cta:hover { background: rgba(249,115,22,.3) !important; border-left-color: var(--orange) !important; }
 
   /* Mobile dropdown — flat, inline */
   .nav-dropdown { flex-direction: column; border-left: none; border-bottom: 1px solid rgba(255,255,255,.08); }
@@ -246,7 +246,7 @@ tr:nth-child(even) td { background: var(--bg-stripe); }
 
 .listing-card--pro { border-left: 4px solid var(--orange); background: #fffdf8; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
 
-.listing-card--premium { border: 2px solid var(--orange); background: #fff8f0; box-shadow: 0 2px 8px rgba(192,86,0,.1); }
+.listing-card--premium { border: 2px solid var(--orange); background: #fff8f0; box-shadow: 0 2px 8px rgba(249,115,22,.1); }
 
 .listing-rank { position: absolute; top: 1rem; right: 1rem; background: var(--navy); color: var(--white); border-radius: 50%; width: 2rem; height: 2rem; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; }
 

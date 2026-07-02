@@ -1,14 +1,14 @@
 {
-  "title": "NZ Tradie Tools",
-  "description": "Free calculators, guides, and tools for New Zealand tradies \u2014 builders, plumbers, electricians, painters and more.",
+  "title": "TradieTools NZ",
+  "description": "Find trusted NZ tradies \u2014 or list your trade business free. Electricians, plumbers, builders and more across New Zealand.",
   "base_url": "https://tradietools.nz",
   "base_path": "",
-  "author": "NZ Tradie Tools",
-  "author_name": "Benjamen",
+  "author": "TradieTools NZ",
+  "author_name": "Ben",
   "ga_id": "G-BJW7HLW8D8",
   "beehiiv_form_id": "",
   "formspree_endpoint": "https://formspree.io/f/xgorlloq",
-  "contact_email": "instituteofbba@gmail.com",
+  "contact_email": "contact@tradietools.nz",
   "same_as": [
     "https://www.facebook.com/nztradietools",
     "https://www.linkedin.com/company/nz-tradie-tools"
