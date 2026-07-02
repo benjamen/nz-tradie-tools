@@ -1,0 +1,44 @@
+---
+title: "EV Charger Installation Nelson 2026 — Home EV Charging Costs and What to Expect"
+description: "EV charger installation Nelson 2026 — Nelson home EV charger costs, Level 2 charging prices, smart charger options, and how to find a qualified electrician near you."
+image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format"
+date: 2026-07-02
+tags: ["EV charger installation Nelson", "home EV charger Nelson", "electric vehicle charger Nelson", "Nelson-Tasman", "NZ", "2026"]
+author: "TradieTools NZ"
+draft: false
+---
+
+Nelson's environmentally-conscious community is among NZ's keenest EV adopters. The region's short commute distances suit EVs perfectly, and Nelson's high sunshine hours make solar + EV charging a popular combination. Here's what home EV charger installation costs in Nelson in 2026.
+
+## Nelson EV Charger Installation Costs 2026
+
+| Service | Nelson typical cost |
+|---|---|
+| Level 2 charger (7kW, supply + install) | $880–$1,750 |
+| Smart / Wi-Fi charger (supply + install) | $1,350–$2,750 |
+| Three-phase charger (22kW, supply + install) | $2,100–$4,300 |
+| Installation labour only (charger supplied) | $320–$700 |
+| Switchboard upgrade (if required) | $1,400–$3,200 |
+| Additional cabling run (per metre) | $32–$70/m |
+
+*All prices GST inclusive. Broadly regional.*
+
+## Level 1 vs Level 2 Charging
+
+**Level 1 (standard 10A wall socket):** ~15km range per hour. Fine for plug-in hybrids or very low mileage. **Not recommended** for daily EV drivers.
+
+**Level 2 (dedicated 7kW circuit):** ~50km per hour. Charges a full EV battery overnight. **Recommended for most owners.** Requires a licensed electrician to install a dedicated 32A circuit.
+
+## Smart Charger Benefits
+
+Smart chargers allow off-peak scheduling (charge when electricity is cheapest), app monitoring, and solar integration. Popular NZ brands: Wallbox, EVNEX, Ohme.
+
+## Installation Requirements
+
+EV charger installation is **restricted electrical work** — must be done by a registered electrician who will issue an Electrical Certificate of Compliance. Older homes may need a switchboard upgrade first.
+
+**Find Nelson electricians:** [Electricians Nelson](/trades/electricians/?location=nelson) | [Post a Job Free](/post-job/)
+
+---
+
+*Related: [Electricians Nelson](/articles/electrician-nelson-nz/) | [Switchboard Upgrade Nelson](/articles/switchboard-upgrade-nelson-nz/) | [Solar Installers Nelson](/articles/solar-installer-nelson-nz/)*
