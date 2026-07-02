@@ -35,7 +35,7 @@
         .hub-hero h1 { font-size:2.2rem; font-weight:800; margin:0 0 .75rem; line-height:1.2; color:#fff; }
         .hub-hero p { font-size:1.05rem; color:rgba(255,255,255,.85); max-width:580px; margin:0 0 1.5rem; }
         .hub-hero .cta-row { display:flex; gap:.75rem; flex-wrap:wrap; }
-        .hub-hero .btn-primary { background:#ea6325; color:#fff; padding:.7rem 1.4rem; border-radius:6px; font-weight:700; text-decoration:none; font-size:.95rem; }
+        .hub-hero .btn-primary { background:#f97316; color:#fff; padding:.7rem 1.4rem; border-radius:6px; font-weight:700; text-decoration:none; font-size:.95rem; }
         .hub-hero .btn-secondary { background:rgba(255,255,255,.12); color:#fff; border:1px solid rgba(255,255,255,.3); padding:.7rem 1.4rem; border-radius:6px; font-weight:600; text-decoration:none; font-size:.95rem; }
         .hub-stats { display:flex; gap:2rem; flex-wrap:wrap; margin-top:1.5rem; }
         .hub-stats .stat { text-align:center; }
@@ -49,14 +49,14 @@
         .hub-section { margin:2.5rem 0; }
         .hub-section h2 { font-size:1.35rem; font-weight:800; color:#0f172a; margin:0 0 .25rem; display:flex; align-items:center; gap:.5rem; }
         .hub-section .section-desc { font-size:.9rem; color:#64748b; margin:0 0 1rem; }
-        .hub-section .view-all { font-size:.85rem; font-weight:600; color:#0055a5; text-decoration:none; margin-top:.75rem; display:inline-block; }
-        .listing-cta-box { background:linear-gradient(135deg,#0055a5,#0f172a); color:#fff; border-radius:10px; padding:2rem 2.25rem; margin:2rem 0; display:flex; align-items:center; gap:2rem; flex-wrap:wrap; }
+        .hub-section .view-all { font-size:.85rem; font-weight:600; color:#005ea2; text-decoration:none; margin-top:.75rem; display:inline-block; }
+        .listing-cta-box { background:linear-gradient(135deg,#005ea2,#0f172a); color:#fff; border-radius:10px; padding:2rem 2.25rem; margin:2rem 0; display:flex; align-items:center; gap:2rem; flex-wrap:wrap; }
         .listing-cta-box h3 { margin:0 0 .4rem; font-size:1.25rem; font-weight:800; }
         .listing-cta-box p { margin:0; color:rgba(255,255,255,.82); font-size:.92rem; }
-        .listing-cta-box .btn { background:#ea6325; color:#fff; padding:.65rem 1.5rem; border-radius:6px; font-weight:700; text-decoration:none; white-space:nowrap; font-size:.95rem; }
+        .listing-cta-box .btn { background:#f97316; color:#fff; padding:.65rem 1.5rem; border-radius:6px; font-weight:700; text-decoration:none; white-space:nowrap; font-size:.95rem; }
         .tag-filter { display:flex; flex-wrap:wrap; gap:.5rem; margin-bottom:1.5rem; }
         .tag-filter a { background:#f1f5f9; color:#475569; padding:.35rem .85rem; border-radius:20px; font-size:.83rem; font-weight:600; text-decoration:none; border:1px solid #e2e8f0; }
-        .tag-filter a:hover, .tag-filter a.active { background:#0055a5; color:#fff; border-color:#0055a5; }
+        .tag-filter a:hover, .tag-filter a.active { background:#005ea2; color:#fff; border-color:#005ea2; }
         @media(max-width:640px){.hub-hero h1{font-size:1.6rem}.listing-cta-box{flex-direction:column;gap:1rem}.hub-hero .btn-secondary{display:none}}
     </style>
     {% if ga_id %}
@@ -223,12 +223,12 @@
         <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:1.75rem 2rem;margin:2rem 0">
             <h3 style="margin:0 0 1rem;font-size:1.1rem;color:#0f172a">Free Calculators for NZ Tradies</h3>
             <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.75rem">
-                <a href="{{ base_path }}/calculators/gst-calculator" style="background:#fff;border:1px solid #dde3ec;border-radius:6px;padding:.75rem 1rem;font-size:.88rem;font-weight:600;color:#0055a5;text-decoration:none">💸 GST Calculator</a>
-                <a href="{{ base_path }}/calculators/hourly-rate-calculator" style="background:#fff;border:1px solid #dde3ec;border-radius:6px;padding:.75rem 1rem;font-size:.88rem;font-weight:600;color:#0055a5;text-decoration:none">⏱ Hourly Rate Calculator</a>
-                <a href="{{ base_path }}/calculators/job-cost-calculator" style="background:#fff;border:1px solid #dde3ec;border-radius:6px;padding:.75rem 1rem;font-size:.88rem;font-weight:600;color:#0055a5;text-decoration:none">📋 Job Cost &amp; Quote Builder</a>
-                <a href="{{ base_path }}/calculators/vehicle-mileage-calculator" style="background:#fff;border:1px solid #dde3ec;border-radius:6px;padding:.75rem 1rem;font-size:.88rem;font-weight:600;color:#0055a5;text-decoration:none">🚐 Vehicle Mileage Claim</a>
-                <a href="{{ base_path }}/calculators/depreciation-calculator" style="background:#fff;border:1px solid #dde3ec;border-radius:6px;padding:.75rem 1rem;font-size:.88rem;font-weight:600;color:#0055a5;text-decoration:none">🔩 Tool Depreciation</a>
-                <a href="{{ base_path }}/calculators/markup-margin-calculator" style="background:#fff;border:1px solid #dde3ec;border-radius:6px;padding:.75rem 1rem;font-size:.88rem;font-weight:600;color:#0055a5;text-decoration:none">📊 Markup vs Margin</a>
+                <a href="{{ base_path }}/calculators/gst-calculator" style="background:#fff;border:1px solid #dde3ec;border-radius:6px;padding:.75rem 1rem;font-size:.88rem;font-weight:600;color:#005ea2;text-decoration:none">💸 GST Calculator</a>
+                <a href="{{ base_path }}/calculators/hourly-rate-calculator" style="background:#fff;border:1px solid #dde3ec;border-radius:6px;padding:.75rem 1rem;font-size:.88rem;font-weight:600;color:#005ea2;text-decoration:none">⏱ Hourly Rate Calculator</a>
+                <a href="{{ base_path }}/calculators/job-cost-calculator" style="background:#fff;border:1px solid #dde3ec;border-radius:6px;padding:.75rem 1rem;font-size:.88rem;font-weight:600;color:#005ea2;text-decoration:none">📋 Job Cost &amp; Quote Builder</a>
+                <a href="{{ base_path }}/calculators/vehicle-mileage-calculator" style="background:#fff;border:1px solid #dde3ec;border-radius:6px;padding:.75rem 1rem;font-size:.88rem;font-weight:600;color:#005ea2;text-decoration:none">🚐 Vehicle Mileage Claim</a>
+                <a href="{{ base_path }}/calculators/depreciation-calculator" style="background:#fff;border:1px solid #dde3ec;border-radius:6px;padding:.75rem 1rem;font-size:.88rem;font-weight:600;color:#005ea2;text-decoration:none">🔩 Tool Depreciation</a>
+                <a href="{{ base_path }}/calculators/markup-margin-calculator" style="background:#fff;border:1px solid #dde3ec;border-radius:6px;padding:.75rem 1rem;font-size:.88rem;font-weight:600;color:#005ea2;text-decoration:none">📊 Markup vs Margin</a>
             </div>
         </div>
 
@@ -236,7 +236,7 @@
         <div style="background:#fff8f0;border:1px solid #fed7aa;border-radius:10px;padding:1.75rem 2rem;margin:2rem 0">
             <h3 style="margin:0 0 .4rem;font-size:1.1rem;color:#9a3412">28 Free NZ Tradie Templates</h3>
             <p style="color:#7c2d12;font-size:.88rem;margin:0 0 1rem">Quote templates, tax invoices, variation orders, SWMS, subcontractor agreements and more — instant download, no email required.</p>
-            <a href="{{ base_path }}/templates/" style="background:#ea6325;color:#fff;padding:.6rem 1.3rem;border-radius:6px;font-weight:700;font-size:.9rem;text-decoration:none">Browse all 28 free templates →</a>
+            <a href="{{ base_path }}/templates/" style="background:#f97316;color:#fff;padding:.6rem 1.3rem;border-radius:6px;font-weight:700;font-size:.9rem;text-decoration:none">Browse all 28 free templates →</a>
         </div>
 
     </div>

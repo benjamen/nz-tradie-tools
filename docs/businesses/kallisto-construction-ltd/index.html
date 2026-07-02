@@ -71,7 +71,7 @@
     <style>
     .profile-header{background:#f0f4f8;border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;border:1px solid #dde3ec}
     .profile-name{font-size:1.5rem;font-weight:700;color:#1b2a4a;margin-bottom:.35rem}
-    .profile-trade{display:inline-block;background:#0055a5;color:#fff;font-size:.78rem;font-weight:700;padding:.2rem .65rem;border-radius:3px;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.75rem}
+    .profile-trade{display:inline-block;background:#005ea2;color:#fff;font-size:.78rem;font-weight:700;padding:.2rem .65rem;border-radius:3px;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.75rem}
     .profile-rating{display:flex;align-items:center;gap:.6rem;margin-bottom:.75rem}
     .stars{color:#f59e0b;font-size:1.25rem;letter-spacing:.05em}
     .rating-num{font-size:1.2rem;font-weight:700;color:#1b2a4a}
@@ -85,8 +85,8 @@
     .badge-insured{background:#ede9fe;color:#5b21b6}
     .badge-claimed{background:#fef9c3;color:#854d0e}
     .contact-buttons{display:flex;flex-wrap:wrap;gap:.65rem;margin:1rem 0}
-    .btn-phone{display:inline-flex;align-items:center;gap:.4rem;background:#0055a5;color:#fff;padding:.6rem 1.1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none}
-    .btn-website{display:inline-flex;align-items:center;gap:.4rem;background:#fff;color:#0055a5;padding:.6rem 1.1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none;border:2px solid #0055a5}
+    .btn-phone{display:inline-flex;align-items:center;gap:.4rem;background:#005ea2;color:#fff;padding:.6rem 1.1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none}
+    .btn-website{display:inline-flex;align-items:center;gap:.4rem;background:#fff;color:#005ea2;padding:.6rem 1.1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none;border:2px solid #005ea2}
     .btn-email{display:inline-flex;align-items:center;gap:.4rem;background:#f0f4f8;color:#1b2a4a;padding:.6rem 1.1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none;border:1px solid #dde3ec}
     .section-title{font-size:1.05rem;font-weight:700;color:#1b2a4a;margin:1.25rem 0 .5rem;border-bottom:1px solid #e8ecf0;padding-bottom:.3rem}
     .services-list{display:flex;flex-wrap:wrap;gap:.4rem;margin:.5rem 0}
@@ -96,9 +96,9 @@
     .contact-form h3{margin-top:0;color:#1b2a4a}
     .contact-form input,.contact-form textarea,.contact-form select{width:100%;padding:.5rem .75rem;border:1px solid #ccc;border-radius:4px;font-size:.9rem;margin-bottom:.65rem;box-sizing:border-box;font-family:inherit}
     .contact-form textarea{height:90px;resize:vertical}
-    .contact-form button{background:#0055a5;color:#fff;border:none;padding:.65rem 1.25rem;border-radius:4px;font-size:.9rem;font-weight:600;cursor:pointer;width:100%}
+    .contact-form button{background:#005ea2;color:#fff;border:none;padding:.65rem 1.25rem;border-radius:4px;font-size:.9rem;font-weight:600;cursor:pointer;width:100%}
     .contact-form button:hover{background:#003d7a}
-    .back-to-list{display:inline-flex;align-items:center;gap:.3rem;font-size:.88rem;color:#0055a5;margin-bottom:1rem}
+    .back-to-list{display:inline-flex;align-items:center;gap:.3rem;font-size:.88rem;color:#005ea2;margin-bottom:1rem}
     .claim-cta{background:#fff8e1;border:1px solid #ffe082;border-radius:6px;padding:.85rem 1rem;margin-top:1.5rem;font-size:.85rem;color:#78350f}
     .review-source{background:#fff;border:1px solid #dde3ec;border-radius:6px;padding:.85rem 1rem;margin-top:1rem;font-size:.88rem;display:flex;align-items:center;gap:.75rem}
     </style>
@@ -207,7 +207,7 @@
                     <a href="http://kallistoconstruction.nz/" rel="noopener" target="_blank" class="btn-website">🌐 Visit website</a>
                     
                     
-                    <button id="save-tradie-btn" onclick="toggleSaveTradie()" style="display:none;background:#fff;border:1.5px solid #0055a5;color:#0055a5;padding:.6rem 1.1rem;border-radius:6px;font-weight:600;font-size:.9rem;cursor:pointer;font-family:inherit">♡ Save tradie</button>
+                    <button id="save-tradie-btn" onclick="toggleSaveTradie()" style="display:none;background:#fff;border:1.5px solid #005ea2;color:#005ea2;padding:.6rem 1.1rem;border-radius:6px;font-weight:600;font-size:.9rem;cursor:pointer;font-family:inherit">♡ Save tradie</button>
                 </div>
             </div>
 
@@ -268,7 +268,7 @@
                 </div>
                 <button id="tt-load-more-reviews" onclick="loadReviews(false)" style="display:none;margin-top:.75rem;background:#f1f5f9;border:1px solid #cbd5e1;border-radius:6px;padding:.45rem 1rem;font-size:.85rem;cursor:pointer;font-family:inherit">Load more reviews</button>
                 <button id="tt-write-review-btn" onclick="document.getElementById('tt-review-form').style.display='block';this.style.display='none'"
-                    style="margin-top:1rem;padding:.5rem 1.1rem;background:#0055a5;color:#fff;border:none;border-radius:4px;font-size:.9rem;font-weight:600;cursor:pointer">
+                    style="margin-top:1rem;padding:.5rem 1.1rem;background:#005ea2;color:#fff;border:none;border-radius:4px;font-size:.9rem;font-weight:600;cursor:pointer">
                     Write a review
                 </button>
                 <form id="tt-review-form" style="display:none;margin-top:1rem;background:#f8fafc;border:1px solid #dde3ec;border-radius:6px;padding:1rem">
@@ -326,7 +326,7 @@
                     <li>Jobs, scheduling &amp; Xero</li>
                     <li>NZ-built · From $39/mo</li>
                 </ul>
-                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#ea6325;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Start free trial →</a>
+                <a href="https://fastcrew.nz" rel="noopener" target="_blank" style="display:block;background:#f97316;color:#fff;text-align:center;padding:.6rem 1rem;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none">Start free trial →</a>
             </div>
             
             <div class="sidebar-widget" style="background:#f0fdf4;border:2px solid #16a34a;border-radius:6px">
@@ -338,7 +338,7 @@
             <div class="sidebar-widget">
                 <h3>Similar Builders & LBPs in Auckland</h3>
                 <p style="font-size:.85rem;color:#555">Compare top-rated options in your area.</p>
-                <a href="/trades/builders/auckland" style="display:block;background:#0055a5;color:#fff;text-align:center;padding:.5rem;border-radius:4px;font-size:.88rem;font-weight:600;text-decoration:none;margin-top:.5rem">View all top 10 →</a>
+                <a href="/trades/builders/auckland" style="display:block;background:#005ea2;color:#fff;text-align:center;padding:.5rem;border-radius:4px;font-size:.88rem;font-weight:600;text-decoration:none;margin-top:.5rem">View all top 10 →</a>
             </div>
             <div class="sidebar-widget">
                 <h3>Useful Calculators</h3>
@@ -402,13 +402,13 @@
       '</div>'+
       '<p style="margin:0 0 .4rem;font-size:.9rem;color:#334155;line-height:1.6">'+esc(r.review_body)+'</p>'+
       (r.tradie_response ?
-        '<div style="margin-top:.5rem;padding:.6rem .75rem;background:#f0f4f8;border-left:3px solid #0055a5;border-radius:0 4px 4px 0">'+
-        '<p style="margin:0 0 .15rem;font-size:.78rem;font-weight:700;color:#0055a5">Response from the business:</p>'+
+        '<div style="margin-top:.5rem;padding:.6rem .75rem;background:#f0f4f8;border-left:3px solid #005ea2;border-radius:0 4px 4px 0">'+
+        '<p style="margin:0 0 .15rem;font-size:.78rem;font-weight:700;color:#005ea2">Response from the business:</p>'+
         '<p style="margin:0;font-size:.875rem;color:#334155;line-height:1.55">'+esc(r.tradie_response)+'</p>'+
         '</div>' : '')+
       (TOKEN_PARAM && !r.tradie_response ?
         '<div style="margin-top:.4rem">'+
-        '<button onclick="openResponseForm('+r.id+')" style="font-size:.78rem;color:#0055a5;background:none;border:none;cursor:pointer;text-decoration:underline;padding:0">Respond to this review</button>'+
+        '<button onclick="openResponseForm('+r.id+')" style="font-size:.78rem;color:#005ea2;background:none;border:none;cursor:pointer;text-decoration:underline;padding:0">Respond to this review</button>'+
         '</div>' : '')+
       '<button onclick="flagRev('+r.id+')" style="font-size:.75rem;color:#94a3b8;background:none;border:none;cursor:pointer;padding:0;margin-top:.2rem">Flag as inappropriate</button>'+
       '</div>';
@@ -491,10 +491,10 @@
     form.id = 'resp-form-'+reviewId;
     form.style.cssText = 'margin-top:.5rem;padding:.75rem;background:#f8fafc;border-radius:6px;border:1px solid #e2e8f0';
     form.innerHTML = '<p style="margin:0 0 .4rem;font-size:.82rem;font-weight:600;color:#374151">Your response (max 500 chars)</p>'+
-      '<textarea id="resp-text-'+reviewId+'" rows="3" style="width:100%;box-sizing:border-box;padding:.45rem .6rem;border:1.5px solid #cbd5e1;border-radius:5px;font-size:.875rem;font-family:inherit;resize:vertical" maxlength="500"></textarea>'+
+      '<textarea id="resp-text-'+reviewId+'" rows="3" style="width:100%;box-sizing:border-box;padding:.45rem .6rem;border:1.5px solid #cbd5e1;border-radius:6px;font-size:.875rem;font-family:inherit;resize:vertical" maxlength="500"></textarea>'+
       '<div style="display:flex;gap:.5rem;margin-top:.4rem">'+
-      '<button onclick="submitResponse('+reviewId+',\''+TOKEN_PARAM+'\')" style="background:#0055a5;color:#fff;border:none;border-radius:5px;padding:.4rem .9rem;font-size:.82rem;font-weight:600;cursor:pointer;font-family:inherit">Post response</button>'+
-      '<button onclick="document.getElementById(\'resp-form-'+reviewId+'\').style.display=\'none\'" style="background:#f1f5f9;border:none;border-radius:5px;padding:.4rem .75rem;font-size:.82rem;cursor:pointer;font-family:inherit">Cancel</button>'+
+      '<button onclick="submitResponse('+reviewId+',\''+TOKEN_PARAM+'\')" style="background:#005ea2;color:#fff;border:none;border-radius:6px;padding:.4rem .9rem;font-size:.82rem;font-weight:600;cursor:pointer;font-family:inherit">Post response</button>'+
+      '<button onclick="document.getElementById(\'resp-form-'+reviewId+'\').style.display=\'none\'" style="background:#f1f5f9;border:none;border-radius:6px;padding:.4rem .75rem;font-size:.82rem;cursor:pointer;font-family:inherit">Cancel</button>'+
       '</div><p id="resp-msg-'+reviewId+'" style="font-size:.82rem;margin:.3rem 0 0"></p>';
     card.appendChild(form);
   };
@@ -578,7 +578,7 @@
         if(!document.getElementById('tt-save-btn')){
           var saveBtn=document.createElement('button');
           saveBtn.id='tt-save-btn';
-          saveBtn.style.cssText='background:#fff;color:#0055a5;border:1.5px solid #0055a5;border-radius:5px;padding:.25rem .7rem;font-size:.82rem;font-weight:600;cursor:pointer;font-family:inherit';
+          saveBtn.style.cssText='background:#fff;color:#005ea2;border:1.5px solid #005ea2;border-radius:6px;padding:.25rem .7rem;font-size:.82rem;font-weight:600;cursor:pointer;font-family:inherit';
           var hSess=null;try{hSess=JSON.parse(localStorage.getItem('tt_homeowner')||'null');}catch(e){}
           saveBtn.textContent='♡ Save tradie';
           saveBtn.onclick=function(){
@@ -618,7 +618,7 @@
           cta.id='tt-featured-cta';
           cta.style.cssText='margin-top:.85rem;background:#faf5ff;border:1px solid #ddd6fe;border-radius:7px;padding:.75rem 1rem;font-size:.85rem;';
           cta.innerHTML='<strong style="color:#5b21b6">⭐ Get featured</strong> — Appear at the top of search results in your trade &amp; city. '
-            +'<button onclick="purchaseFeatured()" style="background:#5b21b6;color:#fff;border:none;border-radius:5px;padding:.3rem .8rem;font-size:.8rem;font-weight:600;cursor:pointer;margin-left:.5rem;font-family:inherit">$49/week →</button>';
+            +'<button onclick="purchaseFeatured()" style="background:#5b21b6;color:#fff;border:none;border-radius:6px;padding:.3rem .8rem;font-size:.8rem;font-weight:600;cursor:pointer;margin-left:.5rem;font-family:inherit">$49/week →</button>';
           document.querySelector('.profile-header').appendChild(cta);
         }
         // Show "Featured" indicator if already featured
@@ -681,7 +681,7 @@
             +'style="flex:1;min-width:200px;padding:.4rem .65rem;border:1px solid #cbd5e1;border-radius:4px;font-size:.85rem">'
             +'<input id="photo-caption-input" type="text" placeholder="Caption (optional)" '
             +'style="flex:1;min-width:160px;padding:.4rem .65rem;border:1px solid #cbd5e1;border-radius:4px;font-size:.85rem">'
-            +'<button onclick="ttAddPhoto()" style="background:#0055a5;color:#fff;border:none;border-radius:4px;padding:.4rem .9rem;font-size:.85rem;font-weight:600;cursor:pointer">Add photo</button>'
+            +'<button onclick="ttAddPhoto()" style="background:#005ea2;color:#fff;border:none;border-radius:4px;padding:.4rem .9rem;font-size:.85rem;font-weight:600;cursor:pointer">Add photo</button>'
             +'</div>'
             +'<p id="photo-msg" style="font-size:.8rem;margin:.3rem 0 0"></p>'
             +'</div>';
@@ -775,7 +775,7 @@
         var m=d.message||d;
         if(!m.success) return;
         var pct=m.score;
-        var colour=pct>=90?'#16a34a':pct>=70?'#0055a5':pct>=50?'#d97706':'#dc2626';
+        var colour=pct>=90?'#16a34a':pct>=70?'#005ea2':pct>=50?'#d97706':'#dc2626';
         var tips=(m.missing||[]).slice(0,4).map(function(t){
           return '<li style="margin:.3rem 0;font-size:.88rem">'+t.action+' <span style="color:#64748b;font-size:.8rem">(+'+t.points+' pts)</span></li>';
         }).join('');
@@ -809,7 +809,7 @@
           +'</div>'
           +'<p id="ins-msg" style="font-size:.8rem;margin:.3rem 0 0"></p>'
           +'</div>'
-          +'<p style="margin:.75rem 0 0;font-size:.78rem;color:#94a3b8">Score updates within 24h of changes. <a href="/signup/" style="color:#0055a5">Upgrade tier →</a></p>'
+          +'<p style="margin:.75rem 0 0;font-size:.78rem;color:#94a3b8">Score updates within 24h of changes. <a href="/signup/" style="color:#005ea2">Upgrade tier →</a></p>'
         );
       }).catch(function(){});
   }
@@ -847,10 +847,10 @@
           +'<div style="background:#f0fdf4;border-radius:7px;padding:.7rem .9rem;text-align:center"><div style="font-size:1.4rem;font-weight:800;color:#16a34a">'+(m.roi_label||'—')+'</div><div style="font-size:.75rem;color:#64748b">ROI on subscription</div></div>'
           +'</div>'
           +(m.rank_label?'<p style="font-size:.88rem;color:#334155;margin:.25rem 0"><strong>📍 Ranking:</strong> '+m.rank_label+'</p>':'')
-          +(m.benchmark_note?'<p style="font-size:.85rem;color:#0055a5;margin:.2rem 0 .75rem">'+m.benchmark_note+'</p>':'')
+          +(m.benchmark_note?'<p style="font-size:.85rem;color:#005ea2;margin:.2rem 0 .75rem">'+m.benchmark_note+'</p>':'')
           +(compRows?'<details style="margin-top:.5rem"><summary style="font-size:.85rem;font-weight:600;cursor:pointer;color:#475569">Tradies ranked above you</summary>'
             +'<table style="width:100%;border-collapse:collapse;margin-top:.5rem">'+compRows+'</table></details>':'')
-          +(m.upsell_message?'<p style="font-size:.82rem;background:#fef3c7;border-radius:5px;padding:.5rem .75rem;margin-top:.75rem;color:#92400e">'+m.upsell_message+'</p>':'')
+          +(m.upsell_message?'<p style="font-size:.82rem;background:#fef3c7;border-radius:6px;padding:.5rem .75rem;margin-top:.75rem;color:#92400e">'+m.upsell_message+'</p>':'')
           +'</div>';
       }).catch(function(){});
   }

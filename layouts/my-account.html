@@ -23,7 +23,7 @@
     .acct-head h1{font-size:1.5rem;color:#1e293b;margin:0}
     .btn-sm{padding:.45rem .9rem;border-radius:6px;border:none;cursor:pointer;font-family:inherit;font-size:.85rem;font-weight:600}
     .btn-ghost{background:#f1f5f9;color:#475569}
-    .btn-primary{background:#0055a5;color:#fff}
+    .btn-primary{background:#005ea2;color:#fff}
     .tradie-card{display:flex;justify-content:space-between;align-items:center;gap:.75rem;flex-wrap:wrap;padding:.85rem 1rem;border:1px solid #e2e8f0;border-radius:8px;margin-bottom:.65rem}
     .tradie-card-info .name{font-weight:700;color:#1e293b;font-size:.97rem}
     .tradie-card-info .meta{font-size:.82rem;color:#64748b;margin:.2rem 0}
@@ -206,7 +206,7 @@
         // Quote history
         var quotesEl = document.getElementById('quotes-list');
         if (!data.quotes || !data.quotes.length) {
-            quotesEl.innerHTML = '<p class="empty-state">No quote requests yet. <a href="/trades/get-quotes/" style="color:#0055a5">Get quotes →</a></p>';
+            quotesEl.innerHTML = '<p class="empty-state">No quote requests yet. <a href="/trades/get-quotes/" style="color:#005ea2">Get quotes →</a></p>';
         } else {
             quotesEl.innerHTML = data.quotes.map(function(q) {
                 var loc = q.suburb ? q.suburb + ', ' + q.city : q.city;

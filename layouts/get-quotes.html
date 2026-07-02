@@ -258,13 +258,13 @@
                             + '<div style="font-size:.85rem;color:#475569;margin:.2rem 0">' + trade + ' · ' + (t.region || loc) + '</div>'
                             + '<div style="margin-top:.3rem">' + ratingHtml + '</div>'
                             + '</div>'
-                            + '<a href="' + profileLink + '" style="background:#0055a5;color:#fff;padding:.5rem 1rem;border-radius:6px;text-decoration:none;font-size:.88rem;font-weight:600;white-space:nowrap">View profile →</a>'
+                            + '<a href="' + profileLink + '" style="background:#005ea2;color:#fff;padding:.5rem 1rem;border-radius:6px;text-decoration:none;font-size:.88rem;font-weight:600;white-space:nowrap">View profile →</a>'
                             + '</div>';
                     });
                     container.style.display = 'block';
                     container.innerHTML = '<p style="font-weight:600;color:#1e293b;margin-bottom:.75rem">Tradies we\'ve notified:</p>'
                         + '<div style="display:flex;flex-direction:column;gap:.75rem">' + cards.join('') + '</div>'
-                        + '<p style="margin-top:1rem;font-size:.85rem;color:#64748b">Each tradie has received your job details and will contact you directly. <a href="/find/?trade=' + encodeURIComponent(data.trade_type.toLowerCase()) + '&region=' + encodeURIComponent(data.city) + '" style="color:#0055a5">Browse more ' + data.trade_type.toLowerCase() + 's in ' + data.city + ' →</a></p>';
+                        + '<p style="margin-top:1rem;font-size:.85rem;color:#64748b">Each tradie has received your job details and will contact you directly. <a href="/find/?trade=' + encodeURIComponent(data.trade_type.toLowerCase()) + '&region=' + encodeURIComponent(data.city) + '" style="color:#005ea2">Browse more ' + data.trade_type.toLowerCase() + 's in ' + data.city + ' →</a></p>';
                 }
             })
             .catch(function(){
