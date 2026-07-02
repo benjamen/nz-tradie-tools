@@ -498,39 +498,44 @@
         </section>
 
         <!-- ══ NEWSLETTER ══ -->
-        <section class="section" style="background:linear-gradient(135deg,#1b2a4a 0%,#0055a5 100%);border-radius:10px;padding:2.5rem;color:#fff;text-align:center;margin:2rem 0">
-            <h2 style="color:#fff;margin-top:0;font-size:1.6rem">📬 Weekly Tradie Tips — Free</h2>
-            <p style="color:rgba(255,255,255,.88);font-size:1rem;max-width:480px;margin:.5rem auto 1.5rem">Tax reminders, pricing guides, new calculators, and NZ industry updates. One email per week. No spam.</p>
-            
-            <form id="newsletter-form" style="max-width:440px;margin:0 auto;display:flex;flex-direction:column;gap:.65rem">
-                <input type="email" id="nl-email" placeholder="Your email address" required style="padding:.7rem 1rem;font-size:.95rem;border:2px solid rgba(255,255,255,.35);background:rgba(255,255,255,.12);color:#fff;font-family:inherit;outline:none;border-radius:4px">
-                <input type="text" id="nl-trade" placeholder="Your trade (optional — builder, plumber...)" style="padding:.7rem 1rem;font-size:.95rem;border:2px solid rgba(255,255,255,.2);background:rgba(255,255,255,.08);color:#fff;font-family:inherit;outline:none;border-radius:4px">
-                <button type="submit" id="newsletter-btn" style="background:#ea6325;color:#fff;border:none;padding:.75rem 1.5rem;font-weight:700;font-size:1rem;cursor:pointer;border-radius:4px;font-family:inherit">Subscribe free →</button>
-                <div id="newsletter-success" style="display:none;background:rgba(255,255,255,.15);border-radius:6px;padding:.9rem 1.1rem;color:#fff;font-weight:600">✅ You're in! Welcome email on its way.</div>
-                <div id="newsletter-error" style="display:none;color:#fca5a5;font-size:.88rem"></div>
-            </form>
-            <script>
-            (function(){
-                var f=document.getElementById('newsletter-form');if(!f)return;
-                f.addEventListener('submit',function(e){
-                    e.preventDefault();
-                    var btn=document.getElementById('newsletter-btn');
-                    var email=document.getElementById('nl-email').value;
-                    var trade=document.getElementById('nl-trade').value;
-                    btn.textContent='Subscribing…';btn.disabled=true;
-                    document.getElementById('newsletter-error').style.display='none';
-                    var params=new URLSearchParams({email:email,trade:trade,source:'homepage'});
-                    fetch('https://tradietools.optified.nz/api/method/tradietools.api.subscribe_newsletter?'+params,{method:'POST',headers:{Accept:'application/json'}})
-                    .then(function(r){return r.json();})
-                    .then(function(d){
-                        if(d.message&&d.message.ok){f.style.display='none';document.getElementById('newsletter-success').style.display='block';}
-                        else{var err=(d.message&&d.message.error)||'Something went wrong.';document.getElementById('newsletter-error').textContent=err;document.getElementById('newsletter-error').style.display='block';btn.textContent='Subscribe free →';btn.disabled=false;}
-                    }).catch(function(){document.getElementById('newsletter-error').textContent='Connection error — please try again.';document.getElementById('newsletter-error').style.display='block';btn.textContent='Subscribe free →';btn.disabled=false;});
-                });
-            })();
-            </script>
-            <p style="color:rgba(255,255,255,.45);font-size:.78rem;margin-top:.75rem">One email per week. Unsubscribe any time.</p>
-            
+        <section class="section">
+            <div style="border:2px solid #e2e8f0;border-top:4px solid #f97316;border-radius:10px;padding:2rem 2.25rem;display:flex;align-items:center;gap:2.5rem;flex-wrap:wrap">
+                <div style="flex:1;min-width:220px">
+                    <div style="font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:#f97316;margin-bottom:.4rem">Free weekly email</div>
+                    <h2 style="margin:0 0 .4rem;font-size:1.25rem;border:none;padding:0;color:#1b2a4a">Stay sharp — NZ tradie tips direct to your inbox</h2>
+                    <p style="margin:0;color:#5a5a5a;font-size:.88rem">Pricing guides, tax reminders, new calculators and NZ industry updates. No spam.</p>
+                </div>
+                <div style="flex:1;min-width:260px">
+                    
+                    <form id="newsletter-form" style="display:flex;gap:.5rem;flex-wrap:wrap">
+                        <input type="email" id="nl-email" placeholder="Your email address" required style="flex:1;min-width:180px;padding:.7rem 1rem;font-size:.93rem;border:1.5px solid #d1d5db;border-radius:6px;font-family:inherit;outline:none;color:#1b2a4a">
+                        <button type="submit" id="newsletter-btn" style="background:#f97316;color:#fff;border:none;padding:.7rem 1.4rem;font-weight:700;font-size:.93rem;cursor:pointer;border-radius:6px;font-family:inherit;white-space:nowrap">Subscribe free</button>
+                    </form>
+                    <div id="newsletter-success" style="display:none;background:#f0fdf4;border:1px solid #86efac;border-radius:6px;padding:.75rem 1rem;color:#15803d;font-weight:600;font-size:.9rem;margin-top:.5rem">You're subscribed — welcome aboard!</div>
+                    <div id="newsletter-error" style="display:none;color:#dc2626;font-size:.83rem;margin-top:.35rem"></div>
+                    <p style="color:#94a3b8;font-size:.75rem;margin:.5rem 0 0">One email per week. Unsubscribe any time.</p>
+                    <script>
+                    (function(){
+                        var f=document.getElementById('newsletter-form');if(!f)return;
+                        f.addEventListener('submit',function(e){
+                            e.preventDefault();
+                            var btn=document.getElementById('newsletter-btn');
+                            var email=document.getElementById('nl-email').value;
+                            btn.textContent='Subscribing…';btn.disabled=true;
+                            document.getElementById('newsletter-error').style.display='none';
+                            var params=new URLSearchParams({email:email,trade:'',source:'homepage'});
+                            fetch('https://tradietools.optified.nz/api/method/tradietools.api.subscribe_newsletter?'+params,{method:'POST',headers:{Accept:'application/json'}})
+                            .then(function(r){if(!r.ok)throw new Error();return r.json();})
+                            .then(function(d){
+                                if(d.message&&d.message.ok){f.style.display='none';document.getElementById('newsletter-success').style.display='block';}
+                                else{var err=(d.message&&d.message.error)||'Something went wrong.';document.getElementById('newsletter-error').textContent=err;document.getElementById('newsletter-error').style.display='block';btn.textContent='Subscribe free';btn.disabled=false;}
+                            }).catch(function(){document.getElementById('newsletter-error').textContent='Connection error — please try again.';document.getElementById('newsletter-error').style.display='block';btn.textContent='Subscribe free';btn.disabled=false;});
+                        });
+                    })();
+                    </script>
+                    
+                </div>
+            </div>
         </section>
 
         <section class="section cta-box">
