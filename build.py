@@ -402,6 +402,7 @@ def process_page(md_file, config, env, layout_name, section, nav, base_path, art
         "inferred_trade": trade_display,
         "inferred_trade_slug": trade_slug,
         "embedded_calculator": embedded_calculator,
+        "image": front.get("image", ""),
     }
 
     rendered = template.render(**ctx)
