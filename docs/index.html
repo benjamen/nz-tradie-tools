@@ -186,14 +186,22 @@
 
         <!-- ══ TRADE CATEGORY TILES ══ -->
         <div class="trade-tiles">
-            <a href="/trades/electricians/"   class="trade-tile"><span class="tile-icon">⚡</span>Electricians</a>
-            <a href="/trades/plumbers/"       class="trade-tile"><span class="tile-icon">🔧</span>Plumbers</a>
-            <a href="/trades/builders/"       class="trade-tile"><span class="tile-icon">🏗️</span>Builders</a>
-            <a href="/trades/painters/"       class="trade-tile"><span class="tile-icon">🖌️</span>Painters</a>
-            <a href="/trades/roofers/"        class="trade-tile"><span class="tile-icon">🏠</span>Roofers</a>
-            <a href="/trades/landscapers/"    class="trade-tile"><span class="tile-icon">🌿</span>Landscapers</a>
-            <a href="/trades/arborists/"      class="trade-tile"><span class="tile-icon">🌳</span>Arborists</a>
-            <a href="/trades/"                class="trade-tile"><span class="tile-icon">🔍</span>All Trades</a>
+            <a href="/trades/electricians/"        class="trade-tile"><span class="tile-icon">⚡</span>Electricians</a>
+            <a href="/trades/plumbers/"            class="trade-tile"><span class="tile-icon">🔧</span>Plumbers</a>
+            <a href="/trades/builders/"            class="trade-tile"><span class="tile-icon">🏗️</span>Builders</a>
+            <a href="/trades/painters/"            class="trade-tile"><span class="tile-icon">🖌️</span>Painters</a>
+            <a href="/trades/roofers/"             class="trade-tile"><span class="tile-icon">🏠</span>Roofers</a>
+            <a href="/trades/landscapers/"         class="trade-tile"><span class="tile-icon">🌿</span>Landscapers</a>
+            <a href="/trades/arborists/"           class="trade-tile"><span class="tile-icon">🌳</span>Arborists</a>
+            <a href="/trades/carpenters/"          class="trade-tile"><span class="tile-icon">🪚</span>Carpenters</a>
+            <a href="/trades/tilers/"              class="trade-tile"><span class="tile-icon">🟦</span>Tilers</a>
+            <a href="/trades/gasfitters/"          class="trade-tile"><span class="tile-icon">🔥</span>Gasfitters</a>
+            <a href="/trades/drainlayers/"         class="trade-tile"><span class="tile-icon">🚿</span>Drainlayers</a>
+            <a href="/trades/plasterers/"          class="trade-tile"><span class="tile-icon">🧱</span>Plasterers</a>
+            <a href="/trades/heat-pump-installers/" class="trade-tile"><span class="tile-icon">❄️</span>Heat Pumps</a>
+            <a href="/trades/solar-installers/"    class="trade-tile"><span class="tile-icon">☀️</span>Solar</a>
+            <a href="/trades/fence-installers/"    class="trade-tile"><span class="tile-icon">🏡</span>Fencers</a>
+            <a href="/trades/"                     class="trade-tile"><span class="tile-icon">🔍</span>All Trades</a>
         </div>
 
         <!-- ══ HOW IT WORKS ══ -->
@@ -219,6 +227,42 @@
             </div>
             <div style="text-align:center">
                 <a href="/post-job/" style="display:inline-block;background:#f97316;color:#fff;padding:.75rem 2rem;font-weight:700;font-size:1rem;text-decoration:none;border-radius:5px">Get free quotes now →</a>
+            </div>
+        </section>
+
+        <!-- ══ NZ CITIES ══ -->
+        <section class="section" style="padding-top:0">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:.75rem;border-bottom:2px solid #e2e8f0;padding-bottom:.4rem">
+                <h2 style="margin:0;border:none;padding:0">Find tradies near you</h2>
+            </div>
+            <style>
+            .city-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:.6rem;margin:.25rem 0 .5rem}
+            .city-pill{display:flex;align-items:center;gap:.45rem;padding:.55rem .85rem;background:#f8fafc;border:1.5px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1b2a4a;font-size:.83rem;font-weight:600;transition:border-color .15s,background .15s}
+            .city-pill:hover{border-color:#f97316;background:#fff7ed;color:#f97316}
+            @media(max-width:700px){.city-grid{grid-template-columns:repeat(3,1fr)}}
+            @media(max-width:400px){.city-grid{grid-template-columns:repeat(2,1fr)}}
+            </style>
+            <div class="city-grid">
+                <a href="/locations/auckland/"        class="city-pill">📍 Auckland</a>
+                <a href="/locations/wellington/"       class="city-pill">📍 Wellington</a>
+                <a href="/locations/christchurch/"     class="city-pill">📍 Christchurch</a>
+                <a href="/locations/hamilton/"         class="city-pill">📍 Hamilton</a>
+                <a href="/locations/tauranga/"         class="city-pill">📍 Tauranga</a>
+                <a href="/locations/dunedin/"          class="city-pill">📍 Dunedin</a>
+                <a href="/locations/palmerston-north/" class="city-pill">📍 Palmerston North</a>
+                <a href="/locations/napier/"           class="city-pill">📍 Napier</a>
+                <a href="/locations/nelson/"           class="city-pill">📍 Nelson</a>
+                <a href="/locations/queenstown/"       class="city-pill">📍 Queenstown</a>
+                <a href="/locations/rotorua/"          class="city-pill">📍 Rotorua</a>
+                <a href="/locations/new-plymouth/"     class="city-pill">📍 New Plymouth</a>
+                <a href="/locations/whangarei/"        class="city-pill">📍 Whangārei</a>
+                <a href="/locations/hastings/"         class="city-pill">📍 Hastings</a>
+                <a href="/locations/invercargill/"     class="city-pill">📍 Invercargill</a>
+                <a href="/locations/whanganui/"        class="city-pill">📍 Whanganui</a>
+                <a href="/locations/lower-hutt/"       class="city-pill">📍 Lower Hutt</a>
+                <a href="/locations/upper-hutt/"       class="city-pill">📍 Upper Hutt</a>
+                <a href="/locations/porirua/"          class="city-pill">📍 Porirua</a>
+                <a href="/locations/gisborne/"         class="city-pill">📍 Gisborne</a>
             </div>
         </section>
 
