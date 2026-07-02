@@ -379,16 +379,39 @@ def render_profile(listing: dict) -> str:
         <a href="/jobs/">Job Costs</a>
         <a href="/calculators/">Calculators</a>
         <a href="/articles/">Articles</a>
-        <a href="/for-tradies/">For Tradies</a>
-        <a href="/signup/" class="nav-cta">Free Listing →</a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">For Tradies &#9660;</button>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="/for-tradies/" role="menuitem">For Tradies Hub</a>
+            <a href="/calculators/" role="menuitem">Calculators</a>
+            <a href="/templates/" role="menuitem">Free Templates</a>
+            <a href="/articles/" role="menuitem">Articles &amp; Guides</a>
+            <a href="/contact/" role="menuitem">Contact</a>
+            <a href="/tradie-login/" role="menuitem" id="nav-tradie-login-link">Log in to my listing</a>
+          </div>
+        </div>
+        <a id="nav-my-listing" href="/find/" class="nav-my-listing" style="display:none">My Listing</a>
+        <a id="nav-logout" href="#" style="display:none;font-size:.82rem;color:#64748b;text-decoration:none" onclick="ttLogout(event)">Log out</a>
+        <a href="/signup/" class="nav-cta">Free Listing &#8594;</a>
       </nav>
       <script>
       (function(){{
         var t=document.querySelector('.nav-toggle'),n=document.getElementById('main-nav');
         if(!t||!n)return;
         t.addEventListener('click',function(){{var o=n.classList.toggle('is-open');t.setAttribute('aria-expanded',o);}});
-        document.addEventListener('click',function(e){{if(!t.contains(e.target)&&!n.contains(e.target)){{n.classList.remove('is-open');t.setAttribute('aria-expanded','false');}}}});
+        var db=n.querySelector('.nav-dropdown-btn'),dm=n.querySelector('.nav-dropdown-menu');
+        if(db&&dm){{db.addEventListener('click',function(e){{if(window.innerWidth<=768){{e.stopPropagation();var open=dm.classList.toggle('is-open');db.setAttribute('aria-expanded',open);}}}});}}
+        document.addEventListener('click',function(e){{if(!t.contains(e.target)&&!n.contains(e.target)){{n.classList.remove('is-open');t.setAttribute('aria-expanded','false');if(dm){{dm.classList.remove('is-open');if(db)db.setAttribute('aria-expanded','false');}}}}}});
+        var id=localStorage.getItem('tradieId');var slug=localStorage.getItem('tradieSlug');
+        if(id){{
+          var ml=document.getElementById('nav-my-listing');
+          if(ml){{ml.style.display='';ml.href=slug?'/businesses/'+slug+'/':'/find/?highlight='+encodeURIComponent(id);}}
+          var lo=document.getElementById('nav-logout');if(lo)lo.style.display='';
+          var ll=document.getElementById('nav-tradie-login-link');if(ll)ll.style.display='none';
+        }}
       }})();
+      function ttLogout(e){{e.preventDefault();['tradieId','tradieSlug','tt_lead_token','tradieEmail','tradieName','tradieListingName'].forEach(function(k){{localStorage.removeItem(k);}});window.location.href='/';}}
+      window.ttLogout=ttLogout;
       </script>
     </div>
   </header>
