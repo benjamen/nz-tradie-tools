@@ -643,7 +643,13 @@ def build_templates(config, env, nav, base_path):
     for tmpl in templates:
         other_templates = [t for t in templates if t["slug"] != tmpl["slug"]]
         html = tpl_page.render(**shared, tmpl=tmpl, other_templates=other_templates)
-        (templates_dir / f"{tmpl['slug']}.html").write_text(html, encoding="utf-8")
+        slug_dir = templates_dir / tmpl["slug"]
+        slug_dir.mkdir(exist_ok=True)
+        (slug_dir / "index.html").write_text(html, encoding="utf-8")
+        # Remove old flat .html file if it exists
+        old_file = templates_dir / f"{tmpl['slug']}.html"
+        if old_file.exists():
+            old_file.unlink()
         count += 1
 
     # Build the downloadable ZIP bundle — clean PDFs via headless Chromium

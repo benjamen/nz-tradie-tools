@@ -21,7 +21,7 @@
     <meta property="og:url" content="{{ base_url }}/templates/">
     <meta property="og:site_name" content="TradieTools NZ">
     <link rel="canonical" href="{{ base_url }}/templates/">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"Free NZ Tradie Templates","description":"Free downloadable templates for New Zealand tradies","url":{{ (base_url ~ "/templates/") | tojson }},"numberOfItems":{{ templates | length }},"itemListElement":[{% for t in templates %}{"@type":"ListItem","position":{{ loop.index }},"name":{{ t.title | tojson }},"url":{{ (base_url ~ "/templates/" ~ t.slug ~ ".html") | tojson }}}{% if not loop.last %},{% endif %}{% endfor %}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"Free NZ Tradie Templates","description":"Free downloadable templates for New Zealand tradies","url":{{ (base_url ~ "/templates/") | tojson }},"numberOfItems":{{ templates | length }},"itemListElement":[{% for t in templates %}{"@type":"ListItem","position":{{ loop.index }},"name":{{ t.title | tojson }},"url":{{ (base_url ~ "/templates/" ~ t.slug ~ "/") | tojson }}}{% if not loop.last %},{% endif %}{% endfor %}]}</script>
     <link rel="icon" href="{{ base_path }}/favicon.png" type="image/png">
     <link rel="stylesheet" href="{{ base_path }}/static/css/style.css">
     <link rel="stylesheet" href="{{ base_path }}/static/css/templates.css">
@@ -189,7 +189,7 @@
             <h2>Browse All Templates</h2>
             <div class="template-grid">
                 {% for t in templates %}
-                <a href="{{ base_path }}/templates/{{ t.slug }}" class="template-card">
+                <a href="{{ base_path }}/templates/{{ t.slug }}/" class="template-card">
                     <div class="template-card-icon">{{ t.icon }}</div>
                     <span class="category-badge cat-{{ t.category }}">{{ t.category }}</span>
                     <h3>{{ t.title }}</h3>
