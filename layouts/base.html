@@ -20,14 +20,14 @@
     <meta property="og:title" content="{{ seo_title if seo_title else page_title }} — TradieTools NZ">
     <meta property="og:description" content="{{ description }}">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="{{ base_url }}/articles/{{ slug }}.html">
+    <meta property="og:url" content="{{ base_url }}/{{ section }}/{{ slug }}">
     <meta property="og:site_name" content="TradieTools NZ">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ page_title }} — TradieTools NZ">
     <meta name="twitter:description" content="{{ description }}">
     <meta property="og:image" content="{{ image if image else (base_url ~ '/static/img/social-card.png') }}">
     <meta name="twitter:image" content="{{ image if image else (base_url ~ '/static/img/social-card.png') }}">
-    <link rel="canonical" href="{{ base_url }}/articles/{{ slug }}">
+    <link rel="canonical" href="{{ base_url }}/{{ section }}/{{ slug }}">
     <link rel="alternate" type="application/rss+xml" title="TradieTools NZ — Articles" href="{{ base_url }}/rss.xml">
     <script type="application/ld+json">
     {"@context":"https://schema.org","@graph":[

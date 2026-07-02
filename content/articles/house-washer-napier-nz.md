@@ -1,7 +1,7 @@
 ---
 title: "House Washers Napier 2026 — House Washing Costs, Soft Wash vs Pressure Wash"
 description: "House washers Napier 2026 — Napier house washing costs, soft wash vs pressure wash, roof treatment prices, and how to find a reliable house washing company near you."
-image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["house washers Napier", "house washing Napier", "house wash cost Napier", "Hawke's Bay", "NZ", "2026"]
 author: "TradieTools NZ"
@@ -27,7 +27,7 @@ Napier's warm humid climate and proximity to the coast encourages mould and lich
 
 ## Napier House Washing Market
 
-Napier's warm humid climate and proximity to the coast encourages mould and lichen growth on exterior surfaces. Annual or bi-annual house washing is recommended for most Napier properties.
+Napier has a growing number of specialist house washing companies, particularly around Ahuriri, Taradale, and Meeanee. Most offer soft wash and high-pressure options, with some also providing roof treatment and window cleaning as part of a full exterior package.
 
 ## Soft Wash vs Pressure Wash
 
@@ -43,7 +43,7 @@ Napier's warm humid climate and proximity to the coast encourages mould and lich
 
 **Pre-paint:** Always wash before repainting — paint won't adhere properly to mould or dirt.
 
-**Find Napier house washers:** [House Washers Napier](/trades/house-washing/?location=napier) | [Post a Job Free](/post-job/)
+**Find Napier house washers:** [Search Napier Tradies](/find/?q=house+washer+napier) | [Post a Job Free](/post-job/)
 
 ---
 
