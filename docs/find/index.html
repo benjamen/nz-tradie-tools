@@ -224,7 +224,7 @@
 <footer class="site-footer">
   <div class="container">
     <div>
-      <img src="{{ base_path }}/static/img/logo-dark.png" alt="TradieTools NZ" style="height:64px;width:auto;display:block;margin-bottom:.5rem">
+      <img src="/static/img/logo-dark.png" alt="TradieTools NZ" style="height:64px;width:auto;display:block;margin-bottom:.5rem">
       <p>Free calculators, templates and guides for New Zealand tradies.</p>
     </div>
     <div style="text-align:right">
@@ -307,6 +307,11 @@ async function load() {
       fetch(API + '?limit=500'),
       fetch(CLAIMED_JSON).catch(() => null)
     ]);
+    if (!apiRes.ok) {
+      document.getElementById('resultsCount').textContent = '';
+      document.getElementById('grid').innerHTML = '<div style="grid-column:1/-1;padding:2rem 0;text-align:center;color:#666"><p>Search is temporarily unavailable — please try again shortly.</p><p style="margin-top:.5rem"><a href="/trades/" style="color:#f97316">Browse by trade →</a></p></div>';
+      return;
+    }
     const data = await apiRes.json();
     const claimedLookup = clRes ? await clRes.json().catch(() => ({})) : {};
 
