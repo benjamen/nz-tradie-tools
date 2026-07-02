@@ -366,12 +366,64 @@
                 </div>
             </div>
 
-            <!-- Upgrade CTA (shown for free-tier only, hidden by JS for paid tiers) -->
+            <!-- Lead Credits + Upgrade (shown for free-tier only) -->
             <div class="section-card" id="upgrade-cta-section" style="border-left:4px solid var(--orange);background:#fff7f0">
-                <div class="section-head"><h2>🚀 Unlock More Leads</h2></div>
+                <div class="section-head"><h2>🔓 Unlock Lead Contact Details</h2></div>
                 <div class="section-body">
-                    <p style="font-size:.92rem;color:var(--text);margin:0 0 1rem">Upgrade to <strong>Verified ($29/mo)</strong> to see full homeowner contact details on every lead — plus your listing appears above free listings in search results.</p>
-                    <a href="/signup/?upgrade=verified" class="btn-save" style="text-decoration:none;display:inline-block">Upgrade to Verified →</a>
+                    <p style="font-size:.92rem;color:var(--text);margin:0 0 1.25rem">When a homeowner requests a quote, you get a notification — but contact details are gated. Unlock them with a credit, or subscribe for unlimited access.</p>
+
+                    <!-- Credit balance -->
+                    <div id="credit-balance-bar" style="display:flex;align-items:center;gap:1rem;background:#eff6ff;border:1px solid #bfdbfe;border-radius:8px;padding:.85rem 1rem;margin-bottom:1.1rem;flex-wrap:wrap">
+                        <div style="font-size:2rem;font-weight:800;color:#1d4ed8;line-height:1;min-width:2.5rem;text-align:center" id="credit-count">0</div>
+                        <div style="flex:1;min-width:120px">
+                            <div style="font-weight:700;color:#1e3a8a;font-size:.9rem">Lead credits remaining</div>
+                            <div style="font-size:.78rem;color:#3b82f6;margin-top:.1rem">Each credit unlocks one homeowner's contact details</div>
+                        </div>
+                        <button id="btn-buy-credits" onclick="openCreditsModal()" style="background:#1d4ed8;color:#fff;border:none;padding:.55rem 1rem;border-radius:6px;font-size:.84rem;font-weight:700;cursor:pointer;white-space:nowrap">Buy credits</button>
+                    </div>
+
+                    <!-- Two-path CTA -->
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:.85rem">
+                        <div style="border:1.5px solid #e2e8f0;border-radius:8px;padding:1rem;background:#fff">
+                            <div style="font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#64748b;margin-bottom:.4rem">Pay per lead</div>
+                            <div style="font-size:1.3rem;font-weight:800;color:#1e293b;margin-bottom:.25rem">$20 <span style="font-size:.78rem;font-weight:400;color:#64748b">/ lead</span></div>
+                            <div style="font-size:.78rem;color:#64748b;margin-bottom:.75rem">Or 3 for $50 · 10 for $150.<br>Credits never expire.</div>
+                            <button onclick="openCreditsModal()" style="width:100%;background:#1d4ed8;color:#fff;border:none;padding:.55rem;border-radius:5px;font-size:.83rem;font-weight:700;cursor:pointer">Buy credits →</button>
+                        </div>
+                        <div style="border:1.5px solid #005ea2;border-radius:8px;padding:1rem;background:#eff6ff;position:relative">
+                            <div style="position:absolute;top:-10px;left:50%;transform:translateX(-50%);background:#005ea2;color:#fff;font-size:.6rem;font-weight:800;padding:.2rem .55rem;border-radius:8px;white-space:nowrap;letter-spacing:.06em">BETTER VALUE</div>
+                            <div style="font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#1d4ed8;margin-bottom:.4rem">Subscribe</div>
+                            <div style="font-size:1.3rem;font-weight:800;color:#1e293b;margin-bottom:.25rem">$29 <span style="font-size:.78rem;font-weight:400;color:#64748b">/ month</span></div>
+                            <div style="font-size:.78rem;color:#64748b;margin-bottom:.75rem">Unlimited leads included.<br>Priority placement in search.</div>
+                            <a id="btn-upgrade-verified" href="/signup/?upgrade=verified" style="display:block;width:100%;background:#005ea2;color:#fff;border:none;padding:.55rem;border-radius:5px;font-size:.83rem;font-weight:700;cursor:pointer;text-decoration:none;text-align:center;box-sizing:border-box">Upgrade — $29/mo →</a>
+                        </div>
+                    </div>
+                    <p style="font-size:.75rem;color:#94a3b8;margin-top:.75rem;text-align:center">At 2 leads/month, subscription saves $11. At 3+, it pays for itself 2×.</p>
+                </div>
+            </div>
+
+            <!-- Credits purchase modal -->
+            <div id="credits-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:9999;align-items:center;justify-content:center">
+                <div style="background:#fff;border-radius:12px;padding:2rem;max-width:400px;width:90%;position:relative;box-shadow:0 20px 60px rgba(0,0,0,.25)">
+                    <button onclick="closeCreditsModal()" style="position:absolute;top:.75rem;right:.85rem;background:none;border:none;font-size:1.3rem;cursor:pointer;color:#94a3b8">&times;</button>
+                    <h3 style="font-size:1.15rem;color:#1e293b;margin:0 0 .35rem">Buy Lead Credits</h3>
+                    <p style="font-size:.84rem;color:#64748b;margin:0 0 1.25rem">Each credit unlocks one homeowner's contact details. Credits never expire.</p>
+                    <div style="display:flex;flex-direction:column;gap:.65rem;margin-bottom:1.25rem">
+                        <button class="credit-pack-btn" onclick="buyCredits(1)" style="display:flex;justify-content:space-between;align-items:center;border:1.5px solid #e2e8f0;border-radius:8px;padding:.85rem 1rem;background:#fff;cursor:pointer;font-family:inherit">
+                            <div style="text-align:left"><div style="font-weight:700;color:#1e293b;font-size:.95rem">1 lead credit</div><div style="font-size:.76rem;color:#64748b">$20 per lead</div></div>
+                            <div style="font-weight:800;font-size:1.1rem;color:#1e293b">$20</div>
+                        </button>
+                        <button class="credit-pack-btn" onclick="buyCredits(3)" style="display:flex;justify-content:space-between;align-items:center;border:2px solid #005ea2;border-radius:8px;padding:.85rem 1rem;background:#eff6ff;cursor:pointer;font-family:inherit">
+                            <div style="text-align:left"><div style="font-weight:700;color:#1e293b;font-size:.95rem">3 lead credits <span style="background:#005ea2;color:#fff;font-size:.6rem;padding:.15rem .4rem;border-radius:4px;margin-left:.3rem">BEST VALUE</span></div><div style="font-size:.76rem;color:#3b82f6">$16.67 per lead</div></div>
+                            <div style="font-weight:800;font-size:1.1rem;color:#1e293b">$50</div>
+                        </button>
+                        <button class="credit-pack-btn" onclick="buyCredits(10)" style="display:flex;justify-content:space-between;align-items:center;border:1.5px solid #e2e8f0;border-radius:8px;padding:.85rem 1rem;background:#fff;cursor:pointer;font-family:inherit">
+                            <div style="text-align:left"><div style="font-weight:700;color:#1e293b;font-size:.95rem">10 lead credits</div><div style="font-size:.76rem;color:#64748b">$15 per lead</div></div>
+                            <div style="font-weight:800;font-size:1.1rem;color:#1e293b">$150</div>
+                        </button>
+                    </div>
+                    <div id="credits-modal-loading" style="display:none;text-align:center;padding:.5rem 0;font-size:.88rem;color:#64748b">Taking you to checkout…</div>
+                    <p style="font-size:.72rem;color:#94a3b8;text-align:center;margin:0">Secure payment via Stripe · NZD + GST · Instant delivery</p>
                 </div>
             </div>
 
@@ -470,10 +522,21 @@ function renderDashboard(d) {
     // Listing ID
     document.getElementById('listing-id-label').textContent = 'Listing #' + TRADIE_ID;
 
-    // Upgrade CTA card — hide for paid tiers
+    // Lead credits widget — show balance for free tier, hide section for paid
     if (d.is_premium) {
         var ctaEl = document.getElementById('upgrade-cta-section');
         if (ctaEl) ctaEl.style.display = 'none';
+    } else {
+        // Show credit balance
+        var bal = parseInt(d.lead_credit_balance || 0);
+        document.getElementById('credit-count').textContent = bal;
+        if (bal === 0) {
+            document.getElementById('credit-count').style.color = '#ef4444';
+        }
+        // Wire upgrade button to checkout
+        var checkoutBase = 'https://tradietools.optified.nz/api/method/tradietools.api.create_checkout_session?tier=verified&tradie_id=' + TRADIE_ID + '&tradie_email=' + encodeURIComponent(TRADIE_EMAIL) + '&billing_interval=monthly&ref=dashboard';
+        var upgradeBtn = document.getElementById('btn-upgrade-verified');
+        if (upgradeBtn) upgradeBtn.href = checkoutBase;
     }
 
     // Upgrade block — show for free tier, personalise with activity data
@@ -874,6 +937,57 @@ function purchaseFeatured() {
 }
 
 loadDashboard();
+
+// Lead Credits Modal
+function openCreditsModal() {
+    var m = document.getElementById('credits-modal');
+    if (m) { m.style.display = 'flex'; }
+}
+function closeCreditsModal() {
+    var m = document.getElementById('credits-modal');
+    if (m) { m.style.display = 'none'; }
+}
+function buyCredits(qty) {
+    if (!TRADIE_ID) return;
+    document.getElementById('credits-modal-loading').style.display = 'block';
+    document.querySelectorAll('.credit-pack-btn').forEach(function(b){ b.disabled = true; });
+    fetch(API + 'purchase_lead_credits', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json', 'X-Frappe-CSRF-Token': 'fetch'},
+        body: JSON.stringify({tradie_id: TRADIE_ID, quantity: qty})
+    })
+    .then(function(r){ return r.json(); })
+    .then(function(data) {
+        var m = data.message || data;
+        if (m.success && m.checkout_url) {
+            window.location.href = m.checkout_url;
+        } else {
+            document.getElementById('credits-modal-loading').textContent = 'Error: ' + (m.error || 'Please try again.');
+            document.querySelectorAll('.credit-pack-btn').forEach(function(b){ b.disabled = false; });
+        }
+    })
+    .catch(function() {
+        document.getElementById('credits-modal-loading').textContent = 'Connection error. Please try again.';
+        document.querySelectorAll('.credit-pack-btn').forEach(function(b){ b.disabled = false; });
+    });
+}
+// Close modal on backdrop click
+document.addEventListener('click', function(e) {
+    var m = document.getElementById('credits-modal');
+    if (m && e.target === m) closeCreditsModal();
+});
+// Handle return from Stripe credits purchase
+(function() {
+    var params = new URLSearchParams(window.location.search);
+    if (params.get('credits') === 'success') {
+        var banner = document.createElement('div');
+        banner.style.cssText = 'background:#f0fdf4;border:1.5px solid #86efac;border-radius:8px;padding:1rem 1.25rem;margin-bottom:1.25rem;color:#166534;font-weight:600;font-size:.92rem';
+        banner.textContent = '✓ Lead credits added to your account. They\'ll appear when the page loads.';
+        var content = document.getElementById('content');
+        if (content) content.prepend(banner);
+        window.history.replaceState({}, '', '/dashboard/');
+    }
+})();
 </script>
 </body>
 </html>
