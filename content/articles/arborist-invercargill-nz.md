@@ -1,7 +1,7 @@
 ---
 title: "Arborists Invercargill 2026 — Tree Removal, Pruning Costs and What to Expect"
 description: "Arborists Invercargill 2026 — Invercargill arborist rates, tree removal costs, tree pruning prices, and how to find a qualified arborist near you."
-image: "https://images.unsplash.com/photo-1535192025727-0d7aaf27a9db?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["arborists Invercargill", "arborist Invercargill", "tree removal Invercargill", "Southland", "NZ", "2026"]
 author: "TradieTools NZ"

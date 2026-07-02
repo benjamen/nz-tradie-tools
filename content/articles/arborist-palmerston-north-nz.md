@@ -1,7 +1,7 @@
 ---
 title: "Arborists Palmerston North 2026 — Tree Removal Costs, Pruning Prices and What to Expect"
 description: "Arborists Palmerston North 2026 — Palmerston North tree removal cost, pruning prices, stump grinding rates, council consent rules, and how to find a qualified arborist near you."
-image: "https://images.unsplash.com/photo-1535192025727-0d7aaf27a9db?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["arborists Palmerston North", "arborist Palmerston North", "tree removal Palmerston North", "tree pruning Palmerston North", "Manawatu-Whanganui", "NZ", "2026"]
 author: "TradieTools NZ"

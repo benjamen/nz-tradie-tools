@@ -1,7 +1,7 @@
 ---
 title: "Rubbish Removal Invercargill 2026 — Costs, Skip Bins and What to Expect"
 description: "Rubbish removal Invercargill 2026 — Invercargill rubbish removal costs, skip bin hire prices, same-day collection rates, and how to find a reliable rubbish removal company near you."
-image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["rubbish removal Invercargill", "skip bin Invercargill", "junk removal Invercargill", "Southland", "NZ", "2026"]
 author: "TradieTools NZ"

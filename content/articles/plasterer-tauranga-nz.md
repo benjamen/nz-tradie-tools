@@ -1,7 +1,7 @@
 ---
 title: "Plasterers Tauranga 2026 — Plastering Costs, GIB Stopping Prices and What to Expect"
 description: "Plasterers Tauranga 2026 — Tauranga plastering costs, GIB stopping prices, texture coat rates, plaster repair costs, and how to find a reliable plasterer near you."
-image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["plasterers Tauranga", "plasterer Tauranga", "plastering cost Tauranga", "Bay of Plenty", "NZ", "2026"]
 author: "TradieTools NZ"

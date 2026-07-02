@@ -1,7 +1,7 @@
 ---
 title: "Pergola Builders New Plymouth 2026 — Pergola Costs, Types and What to Expect"
 description: "Pergola builders New Plymouth 2026 — New Plymouth pergola costs, louvred vs shade sail vs timber prices, consent requirements, and how to find a reliable pergola builder near you."
-image: "https://images.unsplash.com/photo-1558908067-dd0e7b4ed52e?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1449844908441-8829872d2607?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["pergola builders New Plymouth", "pergola cost New Plymouth", "pergola New Plymouth", "Taranaki", "NZ", "2026"]
 author: "TradieTools NZ"

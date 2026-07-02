@@ -140,40 +140,43 @@
     </header>
 
     <!-- ══ HERO ══ -->
-    <section class="hero" style="padding-bottom:0">
-        <div class="container" style="padding-bottom:2rem">
-            <div class="hero-grid" style="display:grid;grid-template-columns:3fr 2fr;gap:2.5rem;align-items:start">
-                <!-- Homeowner — dominant left -->
+    <section class="hero" style="padding:2.5rem 0 0">
+        <div class="container">
+            <div style="display:grid;grid-template-columns:3fr 2fr;gap:2rem;align-items:stretch">
+
+                <!-- Left: homeowner -->
                 <div>
-                    <div style="font-size:.75rem;font-weight:700;letter-spacing:.08em;color:rgba(255,255,255,.5);text-transform:uppercase;margin-bottom:.4rem">For Homeowners</div>
-                    <h1 style="font-size:2.2rem;margin-bottom:.5rem;line-height:1.2">Find a Trusted NZ Tradie</h1>
-                    <p style="color:rgba(255,255,255,.88);margin-bottom:1.25rem;font-size:1rem">Search <span id="hp-listing-count">500+</span> rated electricians, plumbers, builders and more — by city, with verified ratings.</p>
-                    <!-- Primary CTA -->
-                    <a href="/post-job/" style="display:inline-block;background:#f97316;color:#fff;padding:.8rem 2rem;font-weight:700;font-size:1.05rem;text-decoration:none;border-radius:5px;margin-bottom:.5rem">Get 3 Free Quotes →</a>
-                    <div style="font-size:.76rem;color:rgba(255,255,255,.48);margin-bottom:1.25rem">Free &nbsp;·&nbsp; No obligation &nbsp;·&nbsp; Up to 3 local tradies respond</div>
-                    <!-- Secondary: search -->
-                    <div style="font-size:.78rem;color:rgba(255,255,255,.5);margin-bottom:.45rem">— or search directly —</div>
-                    <form action="/find/" method="get" style="display:flex;gap:0;max-width:420px;border:2px solid rgba(255,255,255,.35);border-radius:4px;overflow:hidden">
-                        <input type="text" name="q" placeholder="e.g. plumber, electrician…" style="flex:1;border:none;padding:.65rem .9rem;font-size:.93rem;background:#fff;color:#1b1b1b;font-family:inherit;outline:none;min-width:0">
-                        <button type="submit" style="background:rgba(255,255,255,.15);color:#fff;border:none;border-left:1px solid rgba(255,255,255,.25);padding:.65rem 1rem;font-weight:700;font-size:.93rem;cursor:pointer;white-space:nowrap;font-family:inherit">Search →</button>
+                    <div style="font-size:.7rem;font-weight:800;letter-spacing:.1em;color:#f97316;text-transform:uppercase;margin-bottom:.6rem">For Homeowners</div>
+                    <h1 style="font-size:2.4rem;font-weight:800;margin:0 0 .65rem;line-height:1.15;color:#fff">Find a Trusted<br>NZ Tradie</h1>
+                    <p style="color:rgba(255,255,255,.82);margin:0 0 1.5rem;font-size:1rem;line-height:1.6">Search <span id="hp-listing-count">500+</span> rated electricians, plumbers, builders and more — real ratings, real tradies.</p>
+                    <a href="/post-job/" style="display:inline-block;background:#f97316;color:#fff;padding:.85rem 2.2rem;font-weight:800;font-size:1.05rem;text-decoration:none;border-radius:6px;letter-spacing:.01em">Get 3 Free Quotes →</a>
+                    <p style="font-size:.73rem;color:rgba(255,255,255,.42);margin:.55rem 0 1.6rem">Free &nbsp;·&nbsp; No obligation &nbsp;·&nbsp; Local tradies respond</p>
+                    <form action="/find/" method="get" style="display:flex;max-width:400px;border-radius:6px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.25)">
+                        <input type="text" name="q" placeholder="e.g. plumber, electrician…" style="flex:1;border:none;padding:.7rem 1rem;font-size:.93rem;background:#fff;color:#1b1b1b;font-family:inherit;outline:none;min-width:0">
+                        <button type="submit" style="background:#005ea2;color:#fff;border:none;padding:.7rem 1.1rem;font-weight:700;font-size:.93rem;cursor:pointer;white-space:nowrap;font-family:inherit">Search →</button>
                     </form>
                 </div>
-                <!-- Tradie — secondary right -->
-                <div class="hero-tradie-col" style="border-left:1px solid rgba(255,255,255,.15);padding-left:2rem">
-                    <div style="font-size:.75rem;font-weight:700;letter-spacing:.08em;color:rgba(255,255,255,.5);text-transform:uppercase;margin-bottom:.4rem">For Tradies</div>
-                    <h2 style="font-size:1.25rem;color:#fff;margin-bottom:.5rem;border:none;line-height:1.3">Get found. Get leads. Free listing.</h2>
-                    <p style="color:rgba(255,255,255,.7);font-size:.88rem;margin-bottom:.9rem">Your business is already listed. Claim it in 5 minutes and start receiving enquiries from local homeowners.</p>
-                    <a href="/signup/" style="background:#f97316;color:#fff;padding:.6rem 1.3rem;font-weight:700;font-size:.92rem;text-decoration:none;display:inline-block;border-radius:4px">Claim your free listing →</a>
-                    <p style="color:rgba(255,255,255,.42);font-size:.75rem;margin-top:.5rem">No credit card &nbsp;·&nbsp; Verified from $29/mo &nbsp;·&nbsp; Pro from $59/mo</p>
+
+                <!-- Right: tradie -->
+                <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);border-radius:10px;padding:1.6rem 1.75rem;display:flex;flex-direction:column;justify-content:center">
+                    <div style="font-size:.7rem;font-weight:800;letter-spacing:.1em;color:#f97316;text-transform:uppercase;margin-bottom:.6rem">For Tradies</div>
+                    <h2 style="font-size:1.2rem;color:#fff;margin:0 0 .5rem;border:none;padding:0;font-weight:700;line-height:1.3">Get found. Get leads.<br>Free listing.</h2>
+                    <p style="color:rgba(255,255,255,.68);font-size:.86rem;margin:0 0 1.1rem;line-height:1.55">Your business is already listed. Claim it in 5 minutes and start getting enquiries from local homeowners.</p>
+                    <a href="/signup/" style="background:#f97316;color:#fff;padding:.65rem 1.4rem;font-weight:700;font-size:.92rem;text-decoration:none;display:inline-block;border-radius:6px;align-self:flex-start">Claim free listing →</a>
+                    <p style="color:rgba(255,255,255,.35);font-size:.72rem;margin:.5rem 0 0">No credit card &nbsp;·&nbsp; Verified from $29/mo</p>
                 </div>
+
+            </div>
+
+            <!-- Trust bar inline -->
+            <div style="border-top:1px solid rgba(255,255,255,.1);margin-top:2rem;padding:.75rem 0;display:flex;gap:2rem;flex-wrap:wrap;font-size:.8rem;color:rgba(255,255,255,.55)">
+                <span>✓ <span id="hp-trust-count">500+</span> tradies listed</span>
+                <span>✓ 20+ NZ cities</span>
+                <span>✓ Verified ratings</span>
+                <span>✓ Free to search &amp; quote</span>
             </div>
         </div>
     </section>
-
-    <!-- ══ TRUST BAR ══ -->
-    <div style="background:var(--navy);border-top:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.8);padding:.6rem 0;text-align:center;font-size:.85rem">
-        <div class="container"><span id="hp-trust-count">500+</span> NZ tradies listed &nbsp;·&nbsp; 20+ cities &nbsp;·&nbsp; Verified ratings &nbsp;·&nbsp; Free to search &amp; quote</div>
-    </div>
     <script>
     fetch('https://tradietools.optified.nz/api/method/tradietools.api.get_directory?limit=1')
       .then(function(r){if(!r.ok)throw new Error();return r.json();}).then(function(d){
@@ -438,10 +441,53 @@
             </div>
         </section>
 
-        <section class="section cta-box">
-            <h2>Free NZ Tradie Templates</h2>
-            <p>Quote templates, tax invoices, variation orders, SWMS, timesheets and more — 28 templates, free to download instantly.</p>
-            <a href="{{ base_path }}/templates/" class="btn-primary" style="display:inline-block;margin-top:.5rem;padding:.65rem 1.4rem;background:#0055a5;color:#fff;border-radius:5px;font-weight:600;text-decoration:none">Browse all 28 free templates →</a>
+        <!-- ══ TEMPLATES ══ -->
+        <section class="section">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:.75rem;border-bottom:2px solid #e2e8f0;padding-bottom:.4rem">
+                <h2 style="margin:0;border:none;padding:0">Free Tradie Templates</h2>
+                <a href="/templates/" style="font-size:.83rem;color:#f97316;text-decoration:none;font-weight:600;white-space:nowrap">View all 28 →</a>
+            </div>
+            <style>
+            .tmpl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.9rem;margin:.25rem 0 1.25rem}
+            .tmpl-card{display:flex;align-items:flex-start;gap:.85rem;border-radius:10px;border:1px solid #e2e8f0;padding:1rem 1.1rem;text-decoration:none;color:inherit;background:#fff;transition:box-shadow .18s,border-color .18s}
+            .tmpl-card:hover{box-shadow:0 5px 18px rgba(0,0,0,.08);border-color:#93c5fd;text-decoration:none;color:inherit}
+            .tmpl-card-icon{width:38px;height:38px;border-radius:8px;background:#f0f7ff;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}
+            .tmpl-card-body{}
+            .tmpl-card-title{font-size:.88rem;font-weight:700;color:#1b2a4a;margin:0 0 .2rem;line-height:1.3}
+            .tmpl-card-tag{font-size:.72rem;color:#f97316;font-weight:600}
+            @media(max-width:800px){.tmpl-grid{grid-template-columns:repeat(2,1fr)}}
+            @media(max-width:480px){.tmpl-grid{grid-template-columns:1fr}}
+            </style>
+            <div class="tmpl-grid">
+                <a href="/templates/quote-template/" class="tmpl-card"><div class="tmpl-card-icon">📋</div><div class="tmpl-card-body"><div class="tmpl-card-title">Quote Template</div><div class="tmpl-card-tag">Free download</div></div></a>
+                <a href="/templates/tax-invoice-template/" class="tmpl-card"><div class="tmpl-card-icon">🧾</div><div class="tmpl-card-body"><div class="tmpl-card-title">GST Tax Invoice</div><div class="tmpl-card-tag">Free download</div></div></a>
+                <a href="/templates/terms-of-trade/" class="tmpl-card"><div class="tmpl-card-icon">📝</div><div class="tmpl-card-body"><div class="tmpl-card-title">Terms of Trade</div><div class="tmpl-card-tag">Free download</div></div></a>
+                <a href="/templates/variation-order/" class="tmpl-card"><div class="tmpl-card-icon">🔄</div><div class="tmpl-card-body"><div class="tmpl-card-title">Variation Order</div><div class="tmpl-card-tag">Free download</div></div></a>
+                <a href="/templates/swms/" class="tmpl-card"><div class="tmpl-card-icon">🦺</div><div class="tmpl-card-body"><div class="tmpl-card-title">SWMS Template</div><div class="tmpl-card-tag">Free download</div></div></a>
+                <a href="/templates/weekly-timesheet/" class="tmpl-card"><div class="tmpl-card-icon">⏱️</div><div class="tmpl-card-body"><div class="tmpl-card-title">Weekly Timesheet</div><div class="tmpl-card-tag">Free download</div></div></a>
+                <a href="/templates/job-sheet/" class="tmpl-card"><div class="tmpl-card-icon">📄</div><div class="tmpl-card-body"><div class="tmpl-card-title">Job Sheet</div><div class="tmpl-card-tag">Free download</div></div></a>
+                <a href="/templates/site-safety-checklist/" class="tmpl-card"><div class="tmpl-card-icon">✅</div><div class="tmpl-card-body"><div class="tmpl-card-title">Site Safety Checklist</div><div class="tmpl-card-tag">Free download</div></div></a>
+                <a href="/templates/subcontractor-agreement/" class="tmpl-card"><div class="tmpl-card-icon">🤝</div><div class="tmpl-card-body"><div class="tmpl-card-title">Subcontractor Agreement</div><div class="tmpl-card-tag">Free download</div></div></a>
+                <a href="/templates/payment-reminder/" class="tmpl-card"><div class="tmpl-card-icon">💰</div><div class="tmpl-card-body"><div class="tmpl-card-title">Payment Reminder</div><div class="tmpl-card-tag">Free download</div></div></a>
+                <a href="/templates/progress-claim/" class="tmpl-card"><div class="tmpl-card-icon">📊</div><div class="tmpl-card-body"><div class="tmpl-card-title">Progress Claim</div><div class="tmpl-card-tag">Free download</div></div></a>
+                <a href="/templates/job-completion-certificate/" class="tmpl-card"><div class="tmpl-card-icon">🏆</div><div class="tmpl-card-body"><div class="tmpl-card-title">Job Completion Certificate</div><div class="tmpl-card-tag">Free download</div></div></a>
+                <a href="/templates/site-safety-plan/" class="tmpl-card"><div class="tmpl-card-icon">🦺</div><div class="tmpl-card-body"><div class="tmpl-card-title">Site Safety Plan</div><div class="tmpl-card-tag">Free download</div></div></a>
+                <a href="/templates/job-safety-analysis/" class="tmpl-card"><div class="tmpl-card-icon">⚠️</div><div class="tmpl-card-body"><div class="tmpl-card-title">Job Safety Analysis</div><div class="tmpl-card-tag">Free download</div></div></a>
+                <a href="/templates/incident-report/" class="tmpl-card"><div class="tmpl-card-icon">🚨</div><div class="tmpl-card-body"><div class="tmpl-card-title">Incident Report</div><div class="tmpl-card-tag">Free download</div></div></a>
+                <a href="/templates/handover-checklist/" class="tmpl-card"><div class="tmpl-card-icon">🔑</div><div class="tmpl-card-body"><div class="tmpl-card-title">Handover Checklist</div><div class="tmpl-card-tag">Free download</div></div></a>
+                <a href="/templates/purchase-order/" class="tmpl-card"><div class="tmpl-card-icon">🛒</div><div class="tmpl-card-body"><div class="tmpl-card-title">Purchase Order</div><div class="tmpl-card-tag">Free download</div></div></a>
+                <a href="/templates/cca-payment-claim/" class="tmpl-card"><div class="tmpl-card-icon">⚖️</div><div class="tmpl-card-body"><div class="tmpl-card-title">CCA Payment Claim</div><div class="tmpl-card-tag">Free download</div></div></a>
+                <a href="/templates/contractor-induction/" class="tmpl-card"><div class="tmpl-card-icon">👷</div><div class="tmpl-card-body"><div class="tmpl-card-title">Site Induction Form</div><div class="tmpl-card-tag">Free download</div></div></a>
+                <a href="/templates/toolbox-meeting/" class="tmpl-card"><div class="tmpl-card-icon">🔧</div><div class="tmpl-card-body"><div class="tmpl-card-title">Toolbox Meeting</div><div class="tmpl-card-tag">Free download</div></div></a>
+                <a href="/templates/vehicle-log-book/" class="tmpl-card"><div class="tmpl-card-icon">🚗</div><div class="tmpl-card-body"><div class="tmpl-card-title">Vehicle Log Book</div><div class="tmpl-card-tag">Free download</div></div></a>
+                <a href="/templates/tool-inventory/" class="tmpl-card"><div class="tmpl-card-icon">🔨</div><div class="tmpl-card-body"><div class="tmpl-card-title">Tool Inventory</div><div class="tmpl-card-tag">Free download</div></div></a>
+                <a href="/templates/maintenance-schedule/" class="tmpl-card"><div class="tmpl-card-icon">📅</div><div class="tmpl-card-body"><div class="tmpl-card-title">Maintenance Schedule</div><div class="tmpl-card-tag">Free download</div></div></a>
+                <a href="/templates/defects-list/" class="tmpl-card"><div class="tmpl-card-icon">🔍</div><div class="tmpl-card-body"><div class="tmpl-card-title">Defects List</div><div class="tmpl-card-tag">Free download</div></div></a>
+                <a href="/templates/site-inspection-form/" class="tmpl-card"><div class="tmpl-card-icon">📐</div><div class="tmpl-card-body"><div class="tmpl-card-title">Site Inspection Form</div><div class="tmpl-card-tag">Free download</div></div></a>
+                <a href="/templates/customer-feedback-form/" class="tmpl-card"><div class="tmpl-card-icon">⭐</div><div class="tmpl-card-body"><div class="tmpl-card-title">Customer Feedback Form</div><div class="tmpl-card-tag">Free download</div></div></a>
+                <a href="/templates/retention-release/" class="tmpl-card"><div class="tmpl-card-icon">💼</div><div class="tmpl-card-body"><div class="tmpl-card-title">Retention Release</div><div class="tmpl-card-tag">Free download</div></div></a>
+                <a href="/templates/employee-induction/" class="tmpl-card"><div class="tmpl-card-icon">👤</div><div class="tmpl-card-body"><div class="tmpl-card-title">Employee Induction</div><div class="tmpl-card-tag">Free download</div></div></a>
+            </div>
         </section>
     </div>
 

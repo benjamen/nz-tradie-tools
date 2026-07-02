@@ -1,7 +1,7 @@
 ---
 title: "House Washers Gisborne 2026 — House Washing Costs, Soft Wash vs Pressure Wash"
 description: "House washers Gisborne 2026 — Gisborne house washing costs, soft wash vs pressure wash, roof treatment prices, and how to find a reliable house washing company near you."
-image: "https://images.unsplash.com/photo-1604328702728-d26d2062c20a?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["house washers Gisborne", "house washing Gisborne", "house wash cost Gisborne", "Gisborne", "NZ", "2026"]
 author: "TradieTools NZ"

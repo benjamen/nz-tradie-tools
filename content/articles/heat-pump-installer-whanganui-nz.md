@@ -1,7 +1,7 @@
 ---
 title: "Heat Pump Installers Whanganui 2026 — Heat Pump Costs, Brands and What to Expect"
 description: "Heat pump installers Whanganui 2026 — Whanganui heat pump installation costs, single vs multi-split pricing, best brands for Whanganui's climate, and how to find a reliable installer near you."
-image: "https://images.unsplash.com/photo-1631545804879-ae80498e6e7e?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1621905252472-943afaa20e20?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["heat pump installers Whanganui", "heat pump cost Whanganui", "heat pump installation Whanganui", "Manawatu-Whanganui", "NZ", "2026"]
 author: "TradieTools NZ"

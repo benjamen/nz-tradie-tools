@@ -1,7 +1,7 @@
 ---
 title: "Plasterers Queenstown 2026 — Plastering Costs, GIB Stopping Rates and What to Expect"
 description: "Plasterers Queenstown 2026 — Queenstown plastering costs, GIB stopping rates, texture coat prices, and how to find a reliable plasterer near you."
-image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["plasterers Queenstown", "plasterer Queenstown", "plastering cost Queenstown", "Queenstown-Lakes", "NZ", "2026"]
 author: "TradieTools NZ"

@@ -1,7 +1,7 @@
 ---
 title: "Locksmiths Palmerston North 2026 — Locksmith Costs, Lockout Prices and What to Expect"
 description: "Locksmiths Palmerston North 2026 — Palmerston North locksmith call-out rates, lockout costs, lock replacement prices, rekeying costs, and how to find a reliable locksmith near you."
-image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["locksmiths Palmerston North", "locksmith Palmerston North", "locksmith cost Palmerston North", "Manawatu-Whanganui", "NZ", "2026"]
 author: "TradieTools NZ"

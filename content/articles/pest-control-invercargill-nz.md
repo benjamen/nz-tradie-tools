@@ -1,7 +1,7 @@
 ---
 title: "Pest Control Invercargill 2026 — Pest Control Costs, Common Pests and What to Expect"
 description: "Pest control Invercargill 2026 — Invercargill pest control costs, rodent treatment prices, cockroach and wasp extermination rates, and how to find a reliable pest controller near you."
-image: "https://images.unsplash.com/photo-1583852151376-4d6d654e6e25?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["pest control Invercargill", "pest controller Invercargill", "Southland", "NZ", "2026"]
 author: "TradieTools NZ"

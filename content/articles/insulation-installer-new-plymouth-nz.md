@@ -1,7 +1,7 @@
 ---
 title: "Insulation Installers New Plymouth 2026 — Insulation Costs, Grants and What to Expect"
 description: "Insulation installers New Plymouth 2026 — New Plymouth insulation costs, ceiling vs underfloor prices, Warmer Kiwi Homes grants, and how to find a reliable insulation installer near you."
-image: "https://images.unsplash.com/photo-1584225064536-4d0abe013e95?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["insulation installers New Plymouth", "insulation cost New Plymouth", "ceiling insulation New Plymouth", "Taranaki", "NZ", "2026"]
 author: "TradieTools NZ"

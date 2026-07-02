@@ -1,7 +1,7 @@
 ---
 title: "Concreters Napier 2026 — Concrete Prices, Driveway Costs and What to Expect"
 description: "Concreters Napier 2026 — Napier concrete driveway cost, slab pricing, path costs, decorative concrete rates, and how to find a reliable concreter near you."
-image: "https://images.unsplash.com/photo-1584536702729-f5bbb3be2d30?w=1200&h=630&fit=crop&auto=format"
+image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop&auto=format"
 date: 2026-07-02
 tags: ["concreters Napier", "concreter Napier", "concrete cost Napier", "Hawke's Bay", "NZ", "2026"]
 author: "TradieTools NZ"
