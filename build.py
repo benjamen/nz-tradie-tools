@@ -124,6 +124,8 @@ _TRADE_SLUG_MAP = [
     ("electrical",   "Electrician"),
     ("wiring",       "Electrician"),
     ("painting",     "Painter"),
+    ("paint",        "Painter"),
+    ("scaffold",     "Builder"),
     ("carpet",       "Flooring Specialist"),
     ("tile",         "Tiler"),
     ("drain",        "Drainlayer"),
