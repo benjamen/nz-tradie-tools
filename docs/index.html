@@ -250,7 +250,7 @@
             function stars(r){var s='';for(var i=0;i<5;i++)s+=i<Math.round(r)?'★':'☆';return s;}
             function titleCase(s){if(!s)return s;var skip=['a','an','the','and','or','of','in','at','to','for','by','nz'];return s.split(' ').map(function(w,i){return(i===0||skip.indexOf(w.toLowerCase())===-1)?w.charAt(0).toUpperCase()+w.slice(1).toLowerCase():w.toLowerCase();}).join(' ');}
             fetch(API+'get_directory?limit=12')
-            .then(function(r){return r.json();})
+            .then(function(r){if(!r.ok)throw new Error();return r.json();})
             .then(function(d){
                 var list=d.message&&d.message.listings;
                 if(!list||!list.length)return;
@@ -273,7 +273,7 @@
                     el.appendChild(card);
                 });
             })
-            .catch(function(){document.getElementById('spotlight-scroll').innerHTML='<p style="color:#bbb;font-size:.85rem">Could not load listings right now.</p>';});
+            .catch(function(){var s=document.getElementById('spotlight-scroll');if(s&&s.parentElement)s.parentElement.style.display='none';});
         })();
         </script>
 
