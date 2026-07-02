@@ -104,9 +104,11 @@
                         <a href="/templates/" role="menuitem">Free Templates</a>
                         <a href="/articles/" role="menuitem">Articles &amp; Guides</a>
                         <a href="/contact/" role="menuitem">Contact</a>
+                        <a href="/tradie-login/" role="menuitem" id="nav-tradie-login-link">Log in to my listing</a>
                     </div>
                 </div>
                 <a id="nav-my-listing" href="/find/" class="nav-my-listing" style="display:none">My Listing</a>
+                <a id="nav-logout" href="#" style="display:none;font-size:.82rem;color:#64748b;text-decoration:none" onclick="ttLogout(event)">Log out</a>
                 <a href="/signup/" class="nav-cta">Free Listing &#8594;</a>
             </nav>
             <script>
@@ -128,8 +130,14 @@
                 });
                 var id=localStorage.getItem('tradieId');
                 var slug=localStorage.getItem('tradieSlug');
-                if(id){var ml=document.getElementById('nav-my-listing');if(ml){ml.style.display='';ml.href=slug?'/businesses/'+slug+'/':'/find/?highlight='+encodeURIComponent(id);}}
+                if(id){
+                    var ml=document.getElementById('nav-my-listing');if(ml){ml.style.display='';ml.href=slug?'/businesses/'+slug+'/':'/find/?highlight='+encodeURIComponent(id);}
+                    var lo=document.getElementById('nav-logout');if(lo)lo.style.display='';
+                    var ll=document.getElementById('nav-tradie-login-link');if(ll)ll.style.display='none';
+                }
             })();
+            function ttLogout(e){e.preventDefault();['tradieId','tradieSlug','tt_lead_token','tradieEmail','tradieName','tradieListingName'].forEach(function(k){localStorage.removeItem(k);});window.location.href='/';}
+            window.ttLogout=ttLogout;
             </script>
         </div>
     </header>

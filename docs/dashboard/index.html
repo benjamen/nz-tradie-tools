@@ -423,6 +423,10 @@ function renderDashboard(d) {
 
     TRADIE_ID   = d.id || '';
     TRADIE_EMAIL = d.email || '';
+    // Restore nav session so My Listing link works after magic-link login
+    if (d.id)   localStorage.setItem('tradieId',          String(d.id));
+    if (d.slug) localStorage.setItem('tradieSlug',        d.slug);
+    if (d.name) localStorage.setItem('tradieListingName', d.name);
 
     // Avatar
     var av = document.getElementById('avatar');
