@@ -89,6 +89,10 @@
             .testimonials{grid-template-columns:1fr}
             .how-it-works{grid-template-columns:1fr}
         }
+        @media(max-width:420px){
+            .trade-tiles{grid-template-columns:repeat(2,1fr);gap:.4rem}
+            .trade-tile{font-size:.72rem;padding:.8rem .4rem}
+        }
     </style>
 </head>
 <body>
@@ -146,7 +150,7 @@
     <!-- ══ HERO ══ -->
     <section class="hero" style="padding:2.5rem 0 0">
         <div class="container">
-            <div style="display:grid;grid-template-columns:3fr 2fr;gap:2rem;align-items:stretch">
+            <div class="hero-grid" style="display:grid;grid-template-columns:3fr 2fr;gap:2rem;align-items:stretch">
 
                 <!-- Left: homeowner -->
                 <div>
@@ -162,7 +166,7 @@
                 </div>
 
                 <!-- Right: tradie -->
-                <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);border-radius:10px;padding:1.6rem 1.75rem;display:flex;flex-direction:column;justify-content:center">
+                <div class="hero-tradie-col" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);border-radius:10px;padding:1.6rem 1.75rem;display:flex;flex-direction:column;justify-content:center">
                     <div style="font-size:.7rem;font-weight:800;letter-spacing:.1em;color:#f97316;text-transform:uppercase;margin-bottom:.6rem">For Tradies</div>
                     <h2 style="font-size:1.2rem;color:#fff;margin:0 0 .5rem;border:none;padding:0;font-weight:700;line-height:1.3">Get found. Get leads.<br>Free listing.</h2>
                     <p style="color:rgba(255,255,255,.68);font-size:.86rem;margin:0 0 1.1rem;line-height:1.55">Your business is already listed. Claim it in 5 minutes and start getting enquiries from local homeowners.</p>
@@ -240,7 +244,8 @@
             .city-pill{display:flex;align-items:center;gap:.45rem;padding:.55rem .85rem;background:#f8fafc;border:1.5px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1b2a4a;font-size:.83rem;font-weight:600;transition:border-color .15s,background .15s}
             .city-pill:hover{border-color:#f97316;background:#fff7ed;color:#f97316}
             @media(max-width:700px){.city-grid{grid-template-columns:repeat(3,1fr)}}
-            @media(max-width:400px){.city-grid{grid-template-columns:repeat(2,1fr)}}
+            @media(max-width:480px){.city-grid{grid-template-columns:repeat(2,1fr)}}
+            @media(max-width:340px){.city-grid{grid-template-columns:1fr}}
             </style>
             <div class="city-grid">
                 <a href="/locations/auckland/"        class="city-pill">📍 Auckland</a>
@@ -490,7 +495,7 @@
             .calc-title{font-size:.88rem;font-weight:700;color:#1b2a4a;margin:0 0 .3rem;line-height:1.3}
             .calc-desc{font-size:.77rem;color:#64748b;margin:0;line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
             @media(max-width:800px){.calc-grid{grid-template-columns:repeat(2,1fr)}}
-            @media(max-width:480px){.calc-grid{grid-template-columns:repeat(2,1fr)}}
+            @media(max-width:480px){.calc-grid{grid-template-columns:1fr}}
             </style><div class="calc-grid">
                 <a href="/calculators/acc-levy-calculator/" class="calc-card">
                     <span class="calc-badge">Safety</span>
